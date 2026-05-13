@@ -14,9 +14,16 @@ Add these in Vercel Project Settings:
 - `DATABASE_URL`
 - `POSTGRES_URL`
 - `ADMIN_SECRET`
+- `ADMIN_EMAILS` for any extra admin email allowlist entries
 - `BLOB_READ_WRITE_TOKEN` after you connect Vercel Blob
 
 Either value can point to the Neon pooled connection string.
+
+The code already includes these admin emails:
+
+- `aryansingh19gh@gmail.com`
+- `yograjsharma@rjit.ac.in`
+- `shiroonigami23@gmail.com`
 
 ## First database run
 

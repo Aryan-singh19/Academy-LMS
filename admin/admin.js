@@ -1,4 +1,5 @@
 let adminSecret = '';
+let adminEmail = '';
 let selectedStudentId = '';
 let leaderboard = [];
 
@@ -25,7 +26,8 @@ function formatBytes(bytes) {
 async function fetchAdmin(path) {
     const response = await fetch(path, {
         headers: {
-            'x-admin-secret': adminSecret
+            'x-admin-secret': adminSecret,
+            'x-admin-email': adminEmail
         }
     });
     const payload = await response.json().catch(() => ({}));
@@ -169,8 +171,9 @@ window.loadStudentDetail = loadStudentDetail;
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('loadAdminBtn').addEventListener('click', async () => {
+        adminEmail = document.getElementById('adminEmailInput').value.trim().toLowerCase();
         adminSecret = document.getElementById('adminSecretInput').value.trim();
-        if (!adminSecret) return;
+        if (!adminEmail || !adminSecret) return;
         try {
             await loadLeaderboard();
         } catch (error) {

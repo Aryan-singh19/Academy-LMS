@@ -52,9 +52,13 @@ This repo now includes a Postgres schema and serverless API routes for a Vercel 
 
 1. Set `DATABASE_URL` or `POSTGRES_URL` in Vercel.
 2. Set `ADMIN_SECRET` in Vercel for the admin dashboard.
-3. Connect Vercel Blob if you want student avatar uploads and solved-PDF uploads.
-4. Apply [docs/academy_schema.sql](docs/academy_schema.sql) to Neon.
-5. Deploy so the frontend can use:
+3. Optional: set `ADMIN_EMAILS` in Vercel for extra admin addresses. The repo already allows:
+   - `aryansingh19gh@gmail.com`
+   - `yograjsharma@rjit.ac.in`
+   - `shiroonigami23@gmail.com`
+4. Connect Vercel Blob if you want student avatar uploads and solved-PDF uploads.
+5. Apply [docs/academy_schema.sql](docs/academy_schema.sql) to Neon.
+6. Deploy so the frontend can use:
    - `/api/profile`
    - `/api/social`
    - `/api/messages`

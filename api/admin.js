@@ -1,8 +1,27 @@
 const { getSql } = require('./_lib/db');
 const { allowMethods, sendJson } = require('./_lib/http');
 
+const BUILT_IN_ADMIN_EMAILS = new Set([
+    'aryansingh19gh@gmail.com',
+    'yograjsharma@rjit.ac.in',
+    'shiroonigami23@gmail.com'
+]);
+
 function getAdminSecret(req) {
     return String(req.headers['x-admin-secret'] || req.query.secret || '').trim();
+}
+
+function getAdminEmail(req) {
+    return String(req.headers['x-admin-email'] || req.query.email || '').trim().toLowerCase();
+}
+
+function getAllowedAdminEmails() {
+    const configured = String(process.env.ADMIN_EMAILS || '')
+        .split(',')
+        .map((item) => item.trim().toLowerCase())
+        .filter(Boolean);
+
+    return new Set([...BUILT_IN_ADMIN_EMAILS, ...configured]);
 }
 
 module.exports = async function handler(req, res) {
@@ -10,8 +29,19 @@ module.exports = async function handler(req, res) {
 
     try {
         const configuredSecret = String(process.env.ADMIN_SECRET || '').trim();
+        const adminEmail = getAdminEmail(req);
+        const allowedAdminEmails = getAllowedAdminEmails();
+
         if (!configuredSecret) {
             sendJson(res, 503, { error: 'ADMIN_SECRET is not configured in Vercel yet.' });
+            return;
+        }
+
+        if (!adminEmail || !allowedAdminEmails.has(adminEmail)) {
+            sendJson(res, 403, {
+                error: 'This email is not allowed for admin access.',
+                allowedAdminEmails: Array.from(allowedAdminEmails)
+            });
             return;
         }
 
@@ -127,7 +157,10 @@ module.exports = async function handler(req, res) {
             LIMIT 100
         `;
 
-        sendJson(res, 200, { leaderboard });
+        sendJson(res, 200, {
+            adminEmail,
+            leaderboard
+        });
     } catch (error) {
         console.error('Admin API error', error);
         sendJson(res, 500, { error: error.message || 'Unable to load admin data.' });
