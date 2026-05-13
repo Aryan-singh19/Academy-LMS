@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy LMS - Lectures & Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #000000; color: #ededed; font-family: 'Inter', sans-serif; }
+        .glass-nav { background: rgba(17, 17, 17, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
+        <a href="../index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-bold text-lg">A</div>
+            <span class="font-semibold tracking-tight text-white">Academy</span>
+        </a>
+        <div class="flex gap-4">
+            <a href="../index.html" class="text-sm font-medium text-gray-400 hover:text-white">Courses</a>
+            <a href="lectures.html" class="text-sm font-medium text-blue-400">Lectures</a>
+            <a href="resources.html" class="text-sm font-medium text-gray-400 hover:text-white">Resources</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-8 max-w-7xl mx-auto w-full">
+        <h1 class="text-4xl font-bold mb-8 text-white">Lecture Schedules</h1>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg">
+            <p class="text-gray-400 mb-6">Upcoming lectures, practicals, and tutorial sessions will be populated here.</p>
+            
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-gray-800 text-gray-300">
+                    <tr>
+                        <th class="p-4 rounded-tl-lg">Date</th>
+                        <th class="p-4">Time</th>
+                        <th class="p-4">Subject</th>
+                        <th class="p-4">Topic</th>
+                        <th class="p-4 rounded-tr-lg">Room / Link</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-800 text-gray-400">
+                    <tr class="hover:bg-gray-800/50 transition-colors">
+                        <td class="p-4">Oct 14</td>
+                        <td class="p-4">10:00 AM</td>
+                        <td class="p-4 text-blue-400 font-medium">CS601 (ML)</td>
+                        <td class="p-4">Convex Optimization Deep Dive</td>
+                        <td class="p-4">Lab 304</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800/50 transition-colors">
+                        <td class="p-4">Oct 15</td>
+                        <td class="p-4">11:30 AM</td>
+                        <td class="p-4 text-purple-400 font-medium">CS602 (CN)</td>
+                        <td class="p-4">OSI Model vs TCP/IP</td>
+                        <td class="p-4">Hall A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
