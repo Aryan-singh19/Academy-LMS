@@ -2,6 +2,8 @@ let remoteProfile = null;
 let socialDirectory = { directory: [], connections: [] };
 let activePeerId = '';
 let activeMessages = [];
+const MAX_PDF_BYTES = 10 * 1024 * 1024;
+const MAX_AVATAR_BYTES = 2 * 1024 * 1024;
 
 function formatDate(value) {
     if (!value) return 'Not yet';
@@ -11,8 +13,29 @@ function formatDate(value) {
     });
 }
 
+function formatBytes(bytes) {
+    if (!bytes) return '0 KB';
+    const units = ['B', 'KB', 'MB', 'GB'];
+    let value = bytes;
+    let index = 0;
+    while (value >= 1024 && index < units.length - 1) {
+        value /= 1024;
+        index += 1;
+    }
+    return `${value.toFixed(index === 0 ? 0 : 1)} ${units[index]}`;
+}
+
 function getStudentLabel() {
     return window.ACADEMY.getStudentName() || 'Student';
+}
+
+function getRemoteStudent() {
+    return remoteProfile && remoteProfile.student ? remoteProfile.student : {};
+}
+
+function getProfileValue(key) {
+    const student = getRemoteStudent();
+    return student[key] || '';
 }
 
 function renderProfilePage() {
@@ -23,12 +46,14 @@ function renderProfilePage() {
     const sessions = window.ACADEMY.getPracticeSessions();
     const storage = window.ACADEMY.getStorageSummary();
     const syncMeta = window.ACADEMY.getRemoteSyncStamp();
+    const remoteStudent = getRemoteStudent();
+    const uploads = remoteProfile && Array.isArray(remoteProfile.uploads) ? remoteProfile.uploads : [];
 
     document.getElementById('profileHero').innerHTML = `
         <div>
             <p class="revision-label">Personal progress</p>
             <h2 class="text-3xl font-extrabold text-white">${studentName}'s learning cockpit</h2>
-            <p class="text-slate-400 mt-2">Track what this student covered, sync it to Neon, and keep a portable record of notes, quiz marks, bookmarks, and recent activity.</p>
+            <p class="text-slate-400 mt-2">Track what this student covered, sync it to Neon, keep solved material in a study vault, and make the profile feel like a real academic identity instead of a lonely browser cache.</p>
         </div>
         <div class="profile-hero-actions">
             <input id="profileNameInput" class="search-input profile-name-input" value="${window.ACADEMY.escapeForAttribute(studentName)}" placeholder="Student name">
@@ -42,7 +67,65 @@ function renderProfilePage() {
         <article class="metric-card"><p class="metric-label">Completion</p><div class="metric-value">${stats.completionRate}%</div><p class="metric-subtext">${stats.completedTopics}/${stats.totalTopics} topics covered</p></article>
         <article class="metric-card"><p class="metric-label">Accuracy</p><div class="metric-value">${stats.quizAccuracy}%</div><p class="metric-subtext">${stats.correctAnswers}/${stats.totalAttempts} quiz answers correct</p></article>
         <article class="metric-card"><p class="metric-label">Bookmarks</p><div class="metric-value">${bookmarks.length}</div><p class="metric-subtext">Saved weak or important topics</p></article>
-        <article class="metric-card"><p class="metric-label">Practice runs</p><div class="metric-value">${sessions.length}</div><p class="metric-subtext">Stored drill or mock sessions</p></article>
+        <article class="metric-card"><p class="metric-label">Study vault</p><div class="metric-value">${uploads.filter((item) => item.upload_kind === 'study-pdf').length}</div><p class="metric-subtext">Uploaded solved PDFs</p></article>
+    `;
+
+    document.getElementById('profileIdentity').innerHTML = `
+        <section class="panel-card p-5">
+            <div class="section-head">
+                <h3>Student identity</h3>
+                <span>Optional profile details</span>
+            </div>
+            <div class="grid md:grid-cols-[160px_minmax(0,1fr)] gap-5">
+                <div class="space-y-4">
+                    <div class="avatar-shell">
+                        ${remoteStudent.avatar_url ? `<img src="${remoteStudent.avatar_url}" alt="${studentName}" class="avatar-image">` : `<span>${studentName.slice(0, 1).toUpperCase()}</span>`}
+                    </div>
+                    <input id="avatarUploadInput" type="file" accept="image/png,image/jpeg,image/webp" class="search-input">
+                    <button id="uploadAvatarBtn" class="secondary-cta w-full justify-center">Upload avatar</button>
+                    <p class="text-xs text-slate-500">Avatar limit: 2 MB</p>
+                </div>
+                <div class="space-y-4">
+                    <input id="profileHeadlineInput" class="search-input" placeholder="Headline, for example: CN revision sprinter and ML model tinkerer" value="${window.ACADEMY.escapeForAttribute(remoteStudent.headline || '')}">
+                    <textarea id="profileBioInput" class="note-input !min-h-[9rem]" placeholder="Short intro, strengths, or what you are currently revising...">${window.ACADEMY.escapeHtml(remoteStudent.bio || '')}</textarea>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input id="profileEmailInput" class="search-input" placeholder="Email (optional)" value="${window.ACADEMY.escapeForAttribute(remoteStudent.email || '')}">
+                        <input id="profileGithubInput" class="search-input" placeholder="GitHub URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.github_url || '')}">
+                        <input id="profileLinkedinInput" class="search-input" placeholder="LinkedIn URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.linkedin_url || '')}">
+                        <input id="profileWebsiteInput" class="search-input" placeholder="Website / portfolio URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.website_url || '')}">
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <button id="saveProfileDetailsBtn" class="primary-cta">Save profile details</button>
+                        <span class="metric-subtext">Everything here is optional.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `;
+
+    document.getElementById('profileCloud').innerHTML = `
+        <section class="panel-card p-5">
+            <div class="section-head">
+                <h3>Cloud + device memory</h3>
+                <span>${remoteProfile ? 'Neon active' : 'Local-first'}</span>
+            </div>
+            <div class="space-y-4">
+                <div class="status-chip status-${syncMeta.lastStatus || 'local-only'}">${syncMeta.lastStatus || 'local-only'}</div>
+                <div class="summary-list">
+                    <p><strong class="text-white">Device id:</strong> ${storage.deviceId}</p>
+                    <p><strong class="text-white">Local notes:</strong> ${storage.notesCount}</p>
+                    <p><strong class="text-white">Saved highlights:</strong> ${storage.highlightCount}</p>
+                    <p><strong class="text-white">Last sync:</strong> ${formatDate(syncMeta.lastSyncedAt)}</p>
+                    <p><strong class="text-white">Message:</strong> ${syncMeta.lastMessage}</p>
+                </div>
+                ${remoteProfile ? `
+                    <div class="study-rail-block !p-4">
+                        <p class="metric-label">Remote summary</p>
+                        <p class="text-sm text-slate-400 mt-2">${remoteProfile.summary.completed_topics || 0} completed topics • ${remoteProfile.summary.attempts_count || 0} quiz attempts • ${remoteProfile.summary.connections_count || 0} connections • ${remoteProfile.summary.direct_messages_count || 0} DMs received</p>
+                    </div>
+                ` : '<p class="text-sm text-slate-400">Sync once on Vercel to create a Neon-backed student profile.</p>'}
+            </div>
+        </section>
     `;
 
     document.getElementById('profileBreakdown').innerHTML = `
@@ -71,27 +154,36 @@ function renderProfilePage() {
         </section>
     `;
 
-    document.getElementById('profileCloud').innerHTML = `
+    document.getElementById('profileAssets').innerHTML = `
         <section class="panel-card p-5">
             <div class="section-head">
-                <h3>Cloud + device memory</h3>
-                <span>${remoteProfile ? 'Neon active' : 'Local-first'}</span>
+                <h3>Study vault</h3>
+                <span>PDF upload for solved material</span>
             </div>
             <div class="space-y-4">
-                <div class="status-chip status-${syncMeta.lastStatus || 'local-only'}">${syncMeta.lastStatus || 'local-only'}</div>
-                <div class="summary-list">
-                    <p><strong class="text-white">Device id:</strong> ${storage.deviceId}</p>
-                    <p><strong class="text-white">Local notes:</strong> ${storage.notesCount}</p>
-                    <p><strong class="text-white">Saved highlights:</strong> ${storage.highlightCount}</p>
-                    <p><strong class="text-white">Last sync:</strong> ${formatDate(syncMeta.lastSyncedAt)}</p>
-                    <p><strong class="text-white">Message:</strong> ${syncMeta.lastMessage}</p>
+                <div class="grid md:grid-cols-[1fr_1fr] gap-4">
+                    <input id="pdfTitleInput" class="search-input" placeholder="Title, for example: CN unit 3 solved answers">
+                    <input id="pdfDescriptionInput" class="search-input" placeholder="Short note or description">
                 </div>
-                ${remoteProfile ? `
-                    <div class="study-rail-block !p-4">
-                        <p class="metric-label">Remote summary</p>
-                        <p class="text-sm text-slate-400 mt-2">${remoteProfile.summary.completed_topics || 0} completed topics • ${remoteProfile.summary.attempts_count || 0} quiz attempts • ${remoteProfile.summary.connections_count || 0} connections</p>
-                    </div>
-                ` : '<p class="text-sm text-slate-400">Sync once on Vercel to create a Neon-backed student profile.</p>'}
+                <input id="pdfUploadInput" type="file" accept="application/pdf" class="search-input">
+                <div class="flex flex-wrap gap-3 items-center">
+                    <button id="uploadPdfBtn" class="primary-cta">Upload solved PDF</button>
+                    <span class="metric-subtext">PDF limit: 10 MB</span>
+                </div>
+                <div class="space-y-3">
+                    ${uploads.length ? uploads.map((upload) => `
+                        <article class="social-card">
+                            <div class="flex flex-wrap items-center justify-between gap-3">
+                                <div>
+                                    <strong class="text-white">${upload.title}</strong>
+                                    <p class="text-sm text-slate-400 mt-2">${upload.description || (upload.upload_kind === 'avatar' ? 'Profile image' : 'Solved study material')}</p>
+                                    <p class="text-xs text-slate-500 mt-2">${formatBytes(upload.size_bytes)} • ${formatDate(upload.uploaded_at)}</p>
+                                </div>
+                                <a href="${upload.download_url || upload.blob_url}" target="_blank" rel="noreferrer" class="secondary-cta text-sm !py-2 !px-4">Open</a>
+                            </div>
+                        </article>
+                    `).join('') : '<p class="text-slate-400">No uploads yet. Once Blob is connected in Vercel, students can upload solved PDFs and profile images here.</p>'}
+                </div>
             </div>
         </section>
     `;
@@ -147,10 +239,16 @@ function renderStudentDirectory() {
             <div class="space-y-3">
                 ${(socialDirectory.directory || []).length ? socialDirectory.directory.map((student) => `
                     <div class="social-card">
-                        <div>
-                            <strong class="text-white">${student.display_name}</strong>
-                            <p class="text-sm text-slate-400 mt-2">${student.bio || 'Ready to revise, probably mildly sleep-deprived like the rest of us.'}</p>
-                            <p class="text-xs text-slate-500 mt-2">Seen ${formatDate(student.last_seen_at)}</p>
+                        <div class="flex items-start gap-4">
+                            <div class="avatar-shell avatar-shell-small">
+                                ${student.avatar_url ? `<img src="${student.avatar_url}" alt="${student.display_name}" class="avatar-image">` : `<span>${student.display_name.slice(0, 1).toUpperCase()}</span>`}
+                            </div>
+                            <div class="flex-1">
+                                <strong class="text-white">${student.display_name}</strong>
+                                <p class="text-sm text-slate-400 mt-1">${student.headline || 'Showing up, studying hard, and pretending the syllabus is finite.'}</p>
+                                <p class="text-sm text-slate-400 mt-2">${student.bio || 'Ready to revise, probably mildly sleep-deprived like the rest of us.'}</p>
+                                <p class="text-xs text-slate-500 mt-2">Seen ${formatDate(student.last_seen_at)}</p>
+                            </div>
                         </div>
                         <div class="flex flex-wrap gap-2 mt-3">
                             <button onclick="connectStudent('${student.id}')" class="secondary-cta text-sm !py-2 !px-4" ${student.connected ? 'disabled' : ''}>
@@ -195,30 +293,57 @@ function renderInbox() {
 }
 
 function bindProfileActions() {
-    const saveNameBtn = document.getElementById('saveProfileNameBtn');
-    const syncBtn = document.getElementById('syncProfileBtn');
-    const exportBtn = document.getElementById('exportProfileBtn');
-    const sendDmBtn = document.getElementById('sendDmBtn');
+    bindClick('saveProfileNameBtn', saveProfileName);
+    bindClick('syncProfileBtn', syncProfileManually);
+    bindClick('exportProfileBtn', exportProfileSnapshot);
+    bindClick('sendDmBtn', sendDirectMessage);
+    bindClick('saveProfileDetailsBtn', saveProfileDetails);
+    bindClick('uploadAvatarBtn', uploadAvatar);
+    bindClick('uploadPdfBtn', uploadStudyPdf);
+}
 
-    if (saveNameBtn) {
-        saveNameBtn.addEventListener('click', () => {
-            const value = document.getElementById('profileNameInput').value.trim();
-            window.ACADEMY.setStudentName(value || 'Student');
-            renderProfilePage();
-        });
+function bindClick(id, handler) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.addEventListener('click', handler);
     }
+}
 
-    if (syncBtn) {
-        syncBtn.addEventListener('click', syncProfileManually);
-    }
+function saveProfileName() {
+    const value = document.getElementById('profileNameInput').value.trim();
+    window.ACADEMY.setStudentName(value || 'Student');
+    renderProfilePage();
+}
 
-    if (exportBtn) {
-        exportBtn.addEventListener('click', exportProfileSnapshot);
-    }
+function collectProfilePayload() {
+    return {
+        headline: document.getElementById('profileHeadlineInput').value.trim(),
+        bio: document.getElementById('profileBioInput').value.trim(),
+        email: document.getElementById('profileEmailInput').value.trim(),
+        githubUrl: document.getElementById('profileGithubInput').value.trim(),
+        linkedinUrl: document.getElementById('profileLinkedinInput').value.trim(),
+        websiteUrl: document.getElementById('profileWebsiteInput').value.trim()
+    };
+}
 
-    if (sendDmBtn) {
-        sendDmBtn.addEventListener('click', sendDirectMessage);
-    }
+async function saveProfileDetails() {
+    if (window.location.protocol === 'file:') return;
+    const displayName = document.getElementById('profileNameInput').value.trim() || getStudentLabel();
+    window.ACADEMY.setStudentName(displayName);
+
+    await fetch('/api/profile', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            deviceId: window.ACADEMY.state.deviceId,
+            displayName,
+            snapshot: window.ACADEMY.exportStudentSnapshot(),
+            profile: collectProfilePayload()
+        })
+    });
+
+    await hydrateRemoteProfile();
+    renderProfilePage();
 }
 
 async function syncProfileManually() {
@@ -228,6 +353,7 @@ async function syncProfileManually() {
     button.disabled = true;
 
     try {
+        await saveProfileDetails();
         await window.ACADEMY.syncStateToCloud();
         await hydrateRemoteProfile();
         await hydrateStudentDirectory();
@@ -322,6 +448,77 @@ async function sendDirectMessage() {
         await openMessageThread(activePeerId);
     } catch (error) {
         console.error('Unable to send direct message', error);
+    }
+}
+
+async function runBlobUpload(file, payload) {
+    const { upload } = await import('https://esm.sh/@vercel/blob/client');
+    return upload(payload.pathname, file, {
+        access: 'public',
+        handleUploadUrl: '/api/blob-upload',
+        multipart: file.size > 5 * 1024 * 1024,
+        clientPayload: JSON.stringify(payload)
+    });
+}
+
+async function uploadAvatar() {
+    const input = document.getElementById('avatarUploadInput');
+    const file = input && input.files ? input.files[0] : null;
+    if (!file) return;
+    if (file.size > MAX_AVATAR_BYTES) {
+        alert('Avatar must be 2 MB or smaller.');
+        return;
+    }
+
+    try {
+        await saveProfileDetails();
+        await runBlobUpload(file, {
+            deviceId: window.ACADEMY.state.deviceId,
+            uploadKind: 'avatar',
+            originalName: file.name,
+            title: `${getStudentLabel()} avatar`,
+            description: 'Profile image',
+            pathname: `students/${window.ACADEMY.state.deviceId}/avatars/${file.name}`
+        });
+        input.value = '';
+        await hydrateRemoteProfile();
+        renderProfilePage();
+    } catch (error) {
+        console.error('Unable to upload avatar', error);
+        alert(error.message || 'Unable to upload avatar right now.');
+    }
+}
+
+async function uploadStudyPdf() {
+    const input = document.getElementById('pdfUploadInput');
+    const file = input && input.files ? input.files[0] : null;
+    if (!file) return;
+    if (file.size > MAX_PDF_BYTES) {
+        alert('Solved PDF must be 10 MB or smaller.');
+        return;
+    }
+
+    const title = document.getElementById('pdfTitleInput').value.trim() || file.name.replace(/\.pdf$/i, '');
+    const description = document.getElementById('pdfDescriptionInput').value.trim();
+
+    try {
+        await saveProfileDetails();
+        await runBlobUpload(file, {
+            deviceId: window.ACADEMY.state.deviceId,
+            uploadKind: 'study-pdf',
+            originalName: file.name,
+            title,
+            description,
+            pathname: `students/${window.ACADEMY.state.deviceId}/study-pdfs/${file.name}`
+        });
+        input.value = '';
+        document.getElementById('pdfTitleInput').value = '';
+        document.getElementById('pdfDescriptionInput').value = '';
+        await hydrateRemoteProfile();
+        renderProfilePage();
+    } catch (error) {
+        console.error('Unable to upload study PDF', error);
+        alert(error.message || 'Unable to upload solved PDF right now.');
     }
 }
 

@@ -14,12 +14,26 @@ CREATE TABLE IF NOT EXISTS students (
     display_name TEXT NOT NULL,
     email TEXT,
     bio TEXT DEFAULT '',
+    headline TEXT DEFAULT '',
     avatar_seed TEXT DEFAULT '',
+    avatar_url TEXT DEFAULT '',
+    github_url TEXT DEFAULT '',
+    linkedin_url TEXT DEFAULT '',
+    website_url TEXT DEFAULT '',
+    extra_links JSONB NOT NULL DEFAULT '{}'::jsonb,
     profile_started_at TIMESTAMPTZ DEFAULT NOW(),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     last_seen_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+ALTER TABLE students ADD COLUMN IF NOT EXISTS bio TEXT DEFAULT '';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS headline TEXT DEFAULT '';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS avatar_url TEXT DEFAULT '';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS github_url TEXT DEFAULT '';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS linkedin_url TEXT DEFAULT '';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS website_url TEXT DEFAULT '';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS extra_links JSONB NOT NULL DEFAULT '{}'::jsonb;
 
 CREATE TABLE IF NOT EXISTS student_preferences (
     student_id UUID PRIMARY KEY REFERENCES students(id) ON DELETE CASCADE,
@@ -163,6 +177,21 @@ CREATE TABLE IF NOT EXISTS resource_assets (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+CREATE TABLE IF NOT EXISTS student_uploads (
+    id BIGSERIAL PRIMARY KEY,
+    student_id UUID NOT NULL REFERENCES students(id) ON DELETE CASCADE,
+    upload_kind TEXT NOT NULL,
+    title TEXT NOT NULL,
+    description TEXT DEFAULT '',
+    blob_url TEXT NOT NULL UNIQUE,
+    download_url TEXT DEFAULT '',
+    pathname TEXT NOT NULL,
+    content_type TEXT NOT NULL,
+    size_bytes BIGINT NOT NULL DEFAULT 0,
+    uploaded_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    CHECK (upload_kind IN ('avatar', 'study-pdf'))
+);
+
 CREATE TABLE IF NOT EXISTS student_state_snapshots (
     id BIGSERIAL PRIMARY KEY,
     student_id UUID NOT NULL REFERENCES students(id) ON DELETE CASCADE,
@@ -178,6 +207,10 @@ CREATE INDEX IF NOT EXISTS idx_topic_comments_topic_time ON topic_comments (topi
 CREATE INDEX IF NOT EXISTS idx_lecture_messages_scope_time ON lecture_messages (lecture_key, scope, created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_direct_messages_thread_time ON direct_messages (sender_student_id, recipient_student_id, created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_presence_lecture_scope ON lecture_presence (lecture_key, scope, last_seen_at DESC);
+CREATE INDEX IF NOT EXISTS idx_student_uploads_student_kind ON student_uploads (student_id, upload_kind, uploaded_at DESC);
+CREATE INDEX IF NOT EXISTS idx_students_last_seen ON students (last_seen_at DESC);
+CREATE INDEX IF NOT EXISTS idx_topic_progress_student_completed ON student_topic_progress (student_id, completed, updated_at DESC);
+CREATE INDEX IF NOT EXISTS idx_quiz_attempts_student_correct ON quiz_attempts (student_id, is_correct, attempted_at DESC);
 
 DROP TRIGGER IF EXISTS trg_students_updated_at ON students;
 CREATE TRIGGER trg_students_updated_at
@@ -209,11 +242,14 @@ BEFORE UPDATE ON lecture_watch_events
 FOR EACH ROW
 EXECUTE FUNCTION set_updated_at();
 
-CREATE OR REPLACE VIEW student_profile_summary AS
+DROP VIEW IF EXISTS student_profile_summary;
+CREATE VIEW student_profile_summary AS
 SELECT
     s.id AS student_id,
     s.display_name,
     s.device_id,
+    s.avatar_url,
+    s.headline,
     COUNT(DISTINCT CASE WHEN tp.completed THEN tp.topic_id END) AS completed_topics,
     COUNT(DISTINCT tp.topic_id) AS tracked_topics,
     COUNT(DISTINCT CASE WHEN tp.bookmarked THEN tp.topic_id END) AS bookmarked_topics,
@@ -225,4 +261,4 @@ FROM students s
 LEFT JOIN student_topic_progress tp ON tp.student_id = s.id
 LEFT JOIN quiz_attempts qa ON qa.student_id = s.id
 LEFT JOIN practice_sessions ps ON ps.student_id = s.id
-GROUP BY s.id, s.display_name, s.device_id;
+GROUP BY s.id, s.display_name, s.device_id, s.avatar_url, s.headline;

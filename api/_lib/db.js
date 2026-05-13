@@ -15,7 +15,23 @@ async function getSql() {
 
 async function getStudentByDevice(sql, deviceId) {
     const rows = await sql`
-        SELECT id, device_id, display_name, email, bio, avatar_seed, profile_started_at, created_at, updated_at, last_seen_at
+        SELECT
+            id,
+            device_id,
+            display_name,
+            email,
+            bio,
+            headline,
+            avatar_seed,
+            avatar_url,
+            github_url,
+            linkedin_url,
+            website_url,
+            extra_links,
+            profile_started_at,
+            created_at,
+            updated_at,
+            last_seen_at
         FROM students
         WHERE device_id = ${deviceId}
         LIMIT 1

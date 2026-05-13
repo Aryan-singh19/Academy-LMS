@@ -716,6 +716,57 @@ a {
     overflow: auto;
 }
 
+.avatar-shell {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(37, 99, 235, 0.16);
+    background: linear-gradient(135deg, rgba(219, 234, 254, 0.95), rgba(239, 246, 255, 0.98));
+    color: #16325c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.avatar-shell-small {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 0.95rem 0.8rem;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+    text-align: left;
+    color: #274164;
+}
+
+.admin-table tbody tr {
+    cursor: pointer;
+    transition: background 0.18s ease;
+}
+
+.admin-table tbody tr:hover,
+.admin-row-active {
+    background: rgba(219, 234, 254, 0.6);
+}
+
 @keyframes fadeSlideUp {
     from {
         opacity: 0;

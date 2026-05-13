@@ -24,7 +24,9 @@ module.exports = async function handler(req, res) {
                 SELECT
                     s.id,
                     s.display_name,
+                    s.headline,
                     s.bio,
+                    s.avatar_url,
                     s.last_seen_at,
                     EXISTS (
                         SELECT 1
@@ -39,7 +41,7 @@ module.exports = async function handler(req, res) {
             `;
 
             const connections = await sql`
-                SELECT s.id, s.display_name, s.bio, s.last_seen_at
+                SELECT s.id, s.display_name, s.headline, s.bio, s.avatar_url, s.last_seen_at
                 FROM student_connections sc
                 JOIN students s ON s.id = sc.connected_student_id
                 WHERE sc.student_id = ${student.id}

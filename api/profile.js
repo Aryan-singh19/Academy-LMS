@@ -5,21 +5,46 @@ function normalizeSnapshot(snapshot) {
     return snapshot && typeof snapshot === 'object' ? snapshot : {};
 }
 
-async function upsertStudent(sql, deviceId, displayName, snapshot) {
+function normalizeProfilePatch(profile) {
+    const patch = profile && typeof profile === 'object' ? profile : {};
+    return {
+        email: String(patch.email || '').trim() || null,
+        bio: String(patch.bio || '').trim().slice(0, 1000),
+        headline: String(patch.headline || '').trim().slice(0, 180),
+        githubUrl: String(patch.githubUrl || '').trim().slice(0, 240),
+        linkedinUrl: String(patch.linkedinUrl || '').trim().slice(0, 240),
+        websiteUrl: String(patch.websiteUrl || '').trim().slice(0, 240),
+        extraLinks: patch.extraLinks && typeof patch.extraLinks === 'object' ? patch.extraLinks : {}
+    };
+}
+
+async function upsertStudent(sql, deviceId, displayName, snapshot, profilePatch) {
     const rows = await sql`
         INSERT INTO students (
             device_id,
             display_name,
             email,
+            bio,
+            headline,
             avatar_seed,
+            github_url,
+            linkedin_url,
+            website_url,
+            extra_links,
             profile_started_at,
             last_seen_at
         )
         VALUES (
             ${deviceId},
             ${displayName},
-            ${snapshot.email || null},
+            ${profilePatch.email || snapshot.email || null},
+            ${profilePatch.bio || ''},
+            ${profilePatch.headline || ''},
             ${displayName.toLowerCase().replace(/[^a-z0-9]+/g, '-')},
+            ${profilePatch.githubUrl || ''},
+            ${profilePatch.linkedinUrl || ''},
+            ${profilePatch.websiteUrl || ''},
+            ${JSON.stringify(profilePatch.extraLinks || {})}::jsonb,
             ${snapshot.profileStartedAt || new Date().toISOString()},
             NOW()
         )
@@ -27,9 +52,29 @@ async function upsertStudent(sql, deviceId, displayName, snapshot) {
         DO UPDATE SET
             display_name = EXCLUDED.display_name,
             email = COALESCE(EXCLUDED.email, students.email),
+            bio = CASE WHEN EXCLUDED.bio <> '' THEN EXCLUDED.bio ELSE students.bio END,
+            headline = CASE WHEN EXCLUDED.headline <> '' THEN EXCLUDED.headline ELSE students.headline END,
+            github_url = CASE WHEN EXCLUDED.github_url <> '' THEN EXCLUDED.github_url ELSE students.github_url END,
+            linkedin_url = CASE WHEN EXCLUDED.linkedin_url <> '' THEN EXCLUDED.linkedin_url ELSE students.linkedin_url END,
+            website_url = CASE WHEN EXCLUDED.website_url <> '' THEN EXCLUDED.website_url ELSE students.website_url END,
+            extra_links = CASE WHEN EXCLUDED.extra_links <> '{}'::jsonb THEN EXCLUDED.extra_links ELSE students.extra_links END,
             last_seen_at = NOW(),
             updated_at = NOW()
-        RETURNING id, device_id, display_name, created_at, updated_at, last_seen_at
+        RETURNING
+            id,
+            device_id,
+            display_name,
+            email,
+            bio,
+            headline,
+            avatar_url,
+            github_url,
+            linkedin_url,
+            website_url,
+            extra_links,
+            created_at,
+            updated_at,
+            last_seen_at
     `;
     return rows[0];
 }
@@ -171,84 +216,96 @@ async function syncSnapshot(sql, student, snapshot) {
 }
 
 async function getProfileResponse(sql, student) {
-    const summaryRows = await sql`
-        SELECT
-            COUNT(DISTINCT CASE WHEN completed THEN topic_id END)::int AS completed_topics,
-            COUNT(DISTINCT CASE WHEN bookmarked THEN topic_id END)::int AS bookmarked_topics,
-            COUNT(DISTINCT topic_id)::int AS tracked_topics,
-            COALESCE(SUM(CASE WHEN note_text <> '' THEN 1 ELSE 0 END), 0)::int AS notes_count,
-            COALESCE(SUM(jsonb_array_length(highlights_json)), 0)::int AS highlights_count
-        FROM student_topic_progress
-        WHERE student_id = ${student.id}
-    `;
-
-    const quizRows = await sql`
-        SELECT
-            COUNT(*)::int AS attempts_count,
-            COALESCE(SUM(CASE WHEN is_correct THEN 1 ELSE 0 END), 0)::int AS correct_count
-        FROM quiz_attempts
-        WHERE student_id = ${student.id}
-    `;
-
-    const practiceRows = await sql`
-        SELECT
-            id,
-            course_id,
-            course_label,
-            mode,
-            correct_count,
-            total_count,
-            accuracy,
-            finished_at
-        FROM practice_sessions
-        WHERE student_id = ${student.id}
-        ORDER BY finished_at DESC
-        LIMIT 10
-    `;
-
-    const courseRows = await sql`
-        SELECT
-            course_id,
-            COUNT(*)::int AS tracked_topics,
-            COUNT(*) FILTER (WHERE completed)::int AS completed_topics,
-            COUNT(*) FILTER (WHERE bookmarked)::int AS bookmarked_topics
-        FROM student_topic_progress
-        WHERE student_id = ${student.id}
-        GROUP BY course_id
-        ORDER BY course_id
-    `;
-
-    const recentRows = await sql`
-        SELECT course_id, unit_id, topic_id, last_visited_at
-        FROM student_topic_progress
-        WHERE student_id = ${student.id} AND last_visited_at IS NOT NULL
-        ORDER BY last_visited_at DESC
-        LIMIT 8
-    `;
-
-    const connectionRows = await sql`
-        SELECT COUNT(*)::int AS connections_count
-        FROM student_connections
-        WHERE student_id = ${student.id}
-    `;
-
-    const dmRows = await sql`
-        SELECT COUNT(*)::int AS direct_messages_count
-        FROM direct_messages
-        WHERE recipient_student_id = ${student.id}
-    `;
+    const [summaryRows, practiceRows, courseRows, recentRows, uploadRows] = await Promise.all([
+        sql`
+            WITH quiz_stats AS (
+                SELECT
+                    COUNT(*)::int AS attempts_count,
+                    COALESCE(SUM(CASE WHEN is_correct THEN 1 ELSE 0 END), 0)::int AS correct_count
+                FROM quiz_attempts
+                WHERE student_id = ${student.id}
+            ),
+            connection_stats AS (
+                SELECT COUNT(*)::int AS connections_count
+                FROM student_connections
+                WHERE student_id = ${student.id}
+            ),
+            dm_stats AS (
+                SELECT COUNT(*)::int AS direct_messages_count
+                FROM direct_messages
+                WHERE recipient_student_id = ${student.id}
+            ),
+            topic_stats AS (
+                SELECT
+                    COUNT(DISTINCT CASE WHEN completed THEN topic_id END)::int AS completed_topics,
+                    COUNT(DISTINCT CASE WHEN bookmarked THEN topic_id END)::int AS bookmarked_topics,
+                    COUNT(DISTINCT topic_id)::int AS tracked_topics,
+                    COALESCE(SUM(CASE WHEN note_text <> '' THEN 1 ELSE 0 END), 0)::int AS notes_count,
+                    COALESCE(SUM(jsonb_array_length(highlights_json)), 0)::int AS highlights_count
+                FROM student_topic_progress
+                WHERE student_id = ${student.id}
+            )
+            SELECT *
+            FROM topic_stats, quiz_stats, connection_stats, dm_stats
+        `,
+        sql`
+            SELECT
+                id,
+                course_id,
+                course_label,
+                mode,
+                correct_count,
+                total_count,
+                accuracy,
+                finished_at
+            FROM practice_sessions
+            WHERE student_id = ${student.id}
+            ORDER BY finished_at DESC
+            LIMIT 10
+        `,
+        sql`
+            SELECT
+                course_id,
+                COUNT(*)::int AS tracked_topics,
+                COUNT(*) FILTER (WHERE completed)::int AS completed_topics,
+                COUNT(*) FILTER (WHERE bookmarked)::int AS bookmarked_topics
+            FROM student_topic_progress
+            WHERE student_id = ${student.id}
+            GROUP BY course_id
+            ORDER BY course_id
+        `,
+        sql`
+            SELECT course_id, unit_id, topic_id, last_visited_at
+            FROM student_topic_progress
+            WHERE student_id = ${student.id} AND last_visited_at IS NOT NULL
+            ORDER BY last_visited_at DESC
+            LIMIT 8
+        `,
+        sql`
+            SELECT
+                id,
+                upload_kind,
+                title,
+                description,
+                blob_url,
+                download_url,
+                content_type,
+                size_bytes,
+                uploaded_at
+            FROM student_uploads
+            WHERE student_id = ${student.id}
+            ORDER BY uploaded_at DESC
+            LIMIT 12
+        `
+    ]);
 
     return {
         student,
-        summary: {
-            ...(summaryRows[0] || {}),
-            ...(quizRows[0] || {}),
-            connections_count: Number(connectionRows[0] ? connectionRows[0].connections_count : 0),
-            direct_messages_count: Number(dmRows[0] ? dmRows[0].direct_messages_count : 0)
-        },
+        summary: summaryRows[0] || {},
         courseProgress: courseRows,
         recentActivity: recentRows,
-        practiceHistory: practiceRows
+        practiceHistory: practiceRows,
+        uploads: uploadRows
     };
 }
 
@@ -279,14 +336,17 @@ module.exports = async function handler(req, res) {
         const deviceId = String(body.deviceId || '').trim();
         const snapshot = normalizeSnapshot(body.snapshot);
         const displayName = String(body.displayName || snapshot.studentName || 'Student').trim().slice(0, 40);
+        const profilePatch = normalizeProfilePatch(body.profile);
 
         if (!deviceId) {
             sendJson(res, 400, { error: 'deviceId is required.' });
             return;
         }
 
-        const student = await upsertStudent(sql, deviceId, displayName || 'Student', snapshot);
-        await syncSnapshot(sql, student, snapshot);
+        const student = await upsertStudent(sql, deviceId, displayName || 'Student', snapshot, profilePatch);
+        if (Object.keys(snapshot).length) {
+            await syncSnapshot(sql, student, snapshot);
+        }
 
         sendJson(res, 200, {
             message: 'Student profile synced with Neon.',

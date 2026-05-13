@@ -13,6 +13,8 @@ Add these in Vercel Project Settings:
 
 - `DATABASE_URL`
 - `POSTGRES_URL`
+- `ADMIN_SECRET`
+- `BLOB_READ_WRITE_TOKEN` after you connect Vercel Blob
 
 Either value can point to the Neon pooled connection string.
 
@@ -31,12 +33,19 @@ psql "$DATABASE_URL" -f docs/academy_schema.sql
 - `/api/messages`
 - `/api/topic-comments`
 - `/api/lecture-chat`
+- `/api/blob-upload`
+- `/api/admin`
 
 ## Current behavior
 
 - Browser progress still works locally even with no backend.
 - When the API is available, the frontend now syncs profile state to Neon.
-- Topic comments, student directory, direct messages, and lecture chat require the API.
+- Topic comments, student directory, direct messages, lecture chat, and the admin dashboard require the API.
+- Student avatar uploads and solved-PDF uploads require Vercel Blob.
+
+## Why Blob for uploads
+
+Vercel documents that Functions have a `4.5 MB` request body limit, so a `10 MB` PDF should not be posted through a normal function body. The correct pattern is direct client upload to Blob, with Neon storing metadata and profile references.
 
 ## Important note
 

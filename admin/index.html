@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy LMS | Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body class="academy-page min-h-screen">
+    <header class="glass-nav sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4">
+            <div class="flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="brand-mark">A</div>
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
+                        <h1 class="text-xl font-extrabold text-white">Admin Area</h1>
+                    </div>
+                </div>
+                <a href="../index.html" class="nav-pill">Back to student site</a>
+            </div>
+            <div class="grid md:grid-cols-[1fr_auto] gap-3">
+                <input id="adminSecretInput" type="password" class="search-input" placeholder="Enter ADMIN_SECRET from Vercel">
+                <button id="loadAdminBtn" class="primary-cta">Load dashboard</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+        <section class="revision-banner mb-6">
+            <div>
+                <p class="revision-label">Separate admin surface</p>
+                <h2 class="text-3xl font-extrabold text-white">Student leaderboard and profile inspection</h2>
+                <p class="text-slate-400 mt-2">This page is intentionally separated from the student experience. It reads from Neon through the protected admin API and lets you inspect learner activity without mixing admin controls into the study portal.</p>
+            </div>
+        </section>
+        <section class="grid xl:grid-cols-[minmax(0,1.15fr)_380px] gap-6">
+            <section id="adminLeaderboard"></section>
+            <aside id="adminDetail"></aside>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
