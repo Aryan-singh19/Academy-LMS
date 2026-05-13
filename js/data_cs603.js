@@ -4,80 +4,70 @@ Object.assign(window.topicDetails, {
         'c3-u1t1': {
             title: 'Tokenization & Scanners',
             content: `
-<h3 class="text-2xl font-bold mb-4 text-purple-400">Chopping up the Code</h3>
-<p class="mb-4">When you feed source code into a compiler, the compiler does not understand words like <code>int</code> or <code>main</code>. It just sees a massive, terrifying wall of raw text characters.</p>
-<p class="mb-4">The first step of a compiler is the <strong>Lexical Analyzer (Scanner)</strong>. Its job is to read the raw characters from left to right, group them into meaningful chunks called <strong>Tokens</strong>, and strip out the useless junk like comments and whitespace.</p>
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The First Phase: Lexical Analysis</h3>
+<p class="mb-4">A compiler does not read your code like a human. When it looks at a file, it just sees one giant string of raw characters. The very first job of a compiler is to group these characters into meaningful chunks called <strong>Tokens</strong>. This phase is called Lexical Analysis, performed by a tool called a Scanner or Lexer.</p>
 
-<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg mt-4">
-    <thead class="bg-gray-700 text-gray-200">
-        <tr>
-            <th class="p-3">Raw Code Fragment</th>
-            <th class="p-3">Generated Token</th>
-            <th class="p-3">Type</th>
-        </tr>
-    </thead>
-    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
-        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-mono">int</td><td class="p-3 text-green-400">&lt;KEYWORD, int&gt;</td><td class="p-3">Reserved Word</td></tr>
-        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-mono">count</td><td class="p-3 text-blue-400">&lt;ID, count&gt;</td><td class="p-3">Identifier (Variable name)</td></tr>
-        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-mono">=</td><td class="p-3 text-yellow-400">&lt;OP, =&gt;</td><td class="p-3">Assignment Operator</td></tr>
-        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-mono">100</td><td class="p-3 text-purple-400">&lt;NUM, 100&gt;</td><td class="p-3">Integer Literal</td></tr>
-        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-mono">;</td><td class="p-3 text-gray-400">&lt;PUNCT, ;&gt;</td><td class="p-3">Punctuation</td></tr>
-    </tbody>
-</table>
-
-<div class="bg-gray-900 p-5 rounded-xl border-l-4 border-indigo-500 shadow-md">
-    <h4 class="text-indigo-400 font-bold mb-2">Lexical Errors</h4>
-    <p class="text-gray-300 text-sm">The scanner does NOT care if your code makes sense. If you write <code>int count = 100;</code>, the scanner happily tokenizes it. If you write <code>100 = int count;</code>, the scanner STILL happily tokenizes it. It just chops words. Figuring out if the grammar is legal is the job of the <em>Syntax Analyzer</em> in the next step.</p>
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-yellow-500 shadow-md mb-6 font-mono text-sm">
+    <p class="text-gray-400 mb-2">// Given the raw string:</p>
+    <p class="text-white bg-gray-900 p-2 rounded mb-4">int total = count + 5;</p>
+    <p class="text-gray-400 mb-2">// The Lexer converts it into a stream of Tokens:</p>
+    <ul class="text-green-400 space-y-1">
+        <li>&lt;KEYWORD, "int"&gt;</li>
+        <li>&lt;IDENTIFIER, "total"&gt;</li>
+        <li>&lt;ASSIGN_OP, "="&gt;</li>
+        <li>&lt;IDENTIFIER, "count"&gt;</li>
+        <li>&lt;PLUS_OP, "+"&gt;</li>
+        <li>&lt;NUMBER_LITERAL, "5"&gt;</li>
+        <li>&lt;SEMICOLON, ";"&gt;</li>
+    </ul>
 </div>
+
+<p class="text-gray-300 text-sm">During this phase, the Lexer also throws away all the "junk" that the computer doesn't need, such as whitespace, tabs, and comments.</p>
             `,
-            references: [
-                { title: 'Dragon Book (Compilers) Wikipedia', url: 'https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools' }
-            ],
             quizzes: [
                 {
-                    question: "What is the primary output of the Lexical Analyzer phase in a compiler?",
+                    question: "What is the primary output of the Lexical Analysis phase?",
                     options: [
-                        "A) Machine code (binary).",
-                        "B) An Abstract Syntax Tree (AST).",
-                        "C) A stream of Tokens and a populated Symbol Table.",
-                        "D) An optimized intermediate representation."
+                        "A) Machine Code",
+                        "B) An Abstract Syntax Tree (AST)",
+                        "C) A stream of Tokens",
+                        "D) A highly optimized executable file"
                     ],
                     answer: 2,
-                    explanation: "The lexical analyzer reads raw characters and outputs a stream of Tokens (like ID, NUM, KEYWORD) that the syntax analyzer can actually process."
+                    explanation: "Lexical analysis is purely about reading raw characters and grouping them into valid vocabulary words (Tokens) for the language."
                 }
             ]
         },
         'c3-u1t2': {
             title: 'Finite Automata (DFA/NFA)',
             content: `
-<h3 class="text-2xl font-bold mb-4 text-purple-400">The Math behind the Scanner</h3>
-<p class="mb-4">How exactly does the Lexical Analyzer know that <code>count123</code> is a valid variable name, but <code>123count</code> is illegal? It uses <strong>Regular Expressions</strong> and <strong>Finite Automata</strong>.</p>
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How Lexers Recognize Words</h3>
+<p class="mb-4">How does a compiler know that <code>123.45</code> is a valid number, but <code>123.45.67</code> is a syntax error? It uses <strong>Regular Expressions</strong> and <strong>Finite Automata</strong>.</p>
 
-<p class="mb-4">A Finite Automaton is a theoretical state machine. You start at the 'Start' state, and you trace the arrows based on the characters you read. If you end up in an 'Accepting' state when the word ends, it's a valid token. If you hit a dead end, it throws a Lexical Error.</p>
-
-<div class="mermaid bg-gray-800 p-6 rounded-lg mb-6 flex justify-center shadow-inner">
-stateDiagram-v2
-    [*] --> S0: Start
-    S0 --> S1: [a-z, A-Z] (Letter)
-    S0 --> Error: [0-9] (Digit)
-    S1 --> S1: [a-z, A-Z] (Letter)
-    S1 --> S1: [0-9] (Digit)
-    S1 --> [*]: Accepting (Valid ID)
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-purple-500 shadow-lg">
+        <h4 class="text-purple-400 font-bold mb-2">DFA (Deterministic Finite Automaton)</h4>
+        <p class="text-gray-300 text-sm mb-2">A state machine where, for every state and input character, there is exactly <strong>one</strong> predictable path to the next state.</p>
+        <p class="text-gray-300 text-sm">Lexers are ultimately compiled down into giant DFAs. They are extremely fast because there is no guesswork; you just follow the arrows based on the character you read.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-pink-500 shadow-lg">
+        <h4 class="text-pink-400 font-bold mb-2">NFA (Nondeterministic Finite Automaton)</h4>
+        <p class="text-gray-300 text-sm mb-2">A state machine where an input might give you <em>multiple</em> paths to choose from, or you can jump states without any input at all (Epsilon transitions).</p>
+        <p class="text-gray-300 text-sm">Computers cannot directly run NFAs efficiently. However, we write our rules using Regular Expressions, which are converted to NFAs, which are then mathematically converted into DFAs via Subset Construction.</p>
+    </div>
 </div>
-
-<p class="text-sm text-gray-400 italic text-center mb-6">State Diagram for a standard Identifier (must start with a letter, followed by letters or digits).</p>
             `,
             quizzes: [
                 {
-                    question: "In the context of lexical analysis, what is the difference between an NFA and a DFA?",
+                    question: "Why do compilers convert Regular Expressions into DFAs instead of executing NFAs directly?",
                     options: [
-                        "A) NFAs are faster than DFAs.",
-                        "B) DFAs can have multiple possible next states for the same input character, while NFAs are strictly deterministic.",
-                        "C) NFAs can have multiple transitions for the same input symbol and can use empty (epsilon) transitions. DFAs have exactly one transition per input symbol.",
-                        "D) DFAs are used for Syntax parsing, NFAs are used for Lexical scanning."
+                        "A) NFAs cannot handle numbers.",
+                        "B) DFAs are deterministic and provide exactly one path for any input, making them incredibly fast to execute in software. NFAs require backtracking and guesswork.",
+                        "C) DFAs use less RAM than NFAs.",
+                        "D) Regular expressions cannot be converted to NFAs."
                     ],
-                    answer: 2,
-                    explanation: "Non-deterministic Finite Automata (NFAs) can 'guess' which path to take and use epsilon transitions. Deterministic Finite Automata (DFAs) are completely rigid, making them faster to execute in code."
+                    answer: 1,
+                    explanation: "Determinism means speed. If you know exactly what state to jump to without having to 'guess and check' multiple paths, your lexer runs blazingly fast."
                 }
             ]
         }
@@ -86,56 +76,57 @@ stateDiagram-v2
         'c3-u2t1': {
             title: 'Context-Free Grammars',
             content: `
-<h3 class="text-2xl font-bold mb-4 text-purple-400">Is this Legal?</h3>
-<p class="mb-4">The Lexical analyzer chopped our code into tokens. Now, the <strong>Syntax Analyzer (Parser)</strong> checks if the tokens are in a legal order. Just because the words are valid English doesn't mean the sentence makes sense ("Dog runs house the").</p>
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Second Phase: Syntax Analysis (Parsing)</h3>
+<p class="mb-4">The Lexer verified that the words are spelled correctly. Now, the <strong>Parser</strong> verifies that the words are in the right order (Grammar).</p>
+<p class="mb-4"><code>"Dog the bit man."</code> has valid tokens, but invalid grammar. In programming: <code>count = 5 + ;</code> is invalid grammar.</p>
 
-<p class="mb-4">Compilers use <strong>Context-Free Grammars (CFGs)</strong> to define the strict rules of a programming language. A CFG consists of variables, terminals, and production rules.</p>
-
-<div class="bg-gray-900 p-6 rounded border border-gray-700 font-mono text-sm text-gray-300 mb-6 shadow-md">
-    <span class="text-gray-500">// Example CFG for simple arithmetic</span><br>
-    <span class="text-green-400">E</span> &rarr; <span class="text-green-400">E</span> + <span class="text-green-400">T</span><br>
-    <span class="text-green-400">E</span> &rarr; <span class="text-green-400">T</span><br>
-    <span class="text-green-400">T</span> &rarr; <span class="text-green-400">T</span> * <span class="text-blue-400">F</span><br>
-    <span class="text-green-400">T</span> &rarr; <span class="text-blue-400">F</span><br>
-    <span class="text-blue-400">F</span> &rarr; (<span class="text-green-400">E</span>) | <span class="text-yellow-400">id</span>
+<h3 class="text-xl font-bold mb-2 text-green-400">Context-Free Grammar (CFG)</h3>
+<p class="mb-4 text-gray-300 text-sm">Programming languages are defined by CFGs. A CFG is a set of recursive rules that define how statements can be constructed.</p>
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm text-yellow-300 shadow-inner">
+    E -> E + T<br>
+    E -> T<br>
+    T -> T * F<br>
+    T -> F<br>
+    F -> ( E )<br>
+    F -> id
 </div>
+<p class="text-gray-300 text-sm italic mb-4">This famous CFG ensures that multiplication happens before addition by burying the multiplication rules deeper in the tree.</p>
             `,
             quizzes: [
                 {
-                    question: "Why do compilers use Context-Free Grammars (CFGs) instead of Regular Expressions to parse syntax?",
-                    options: [
-                        "A) Because CFGs are easier to type.",
-                        "B) Because Regular Expressions cannot count or match nested structures (like correctly balancing deeply nested parentheses).",
-                        "C) Because CFGs are mathematically faster.",
-                        "D) Because CFGs were invented by Google."
-                    ],
+                    question: "What mathematical structure does the Parser output if the code has valid grammar?",
+                    options: ["A) Machine Code", "B) An Abstract Syntax Tree (AST)", "C) A Linked List", "D) A Hash Map"],
                     answer: 1,
-                    explanation: "Regular languages have no memory, so they cannot ensure that for every '(' there is a matching ')'. CFGs use a stack-like mechanism allowing them to parse nested mathematical expressions and blocks."
+                    explanation: "The parser organizes the flat stream of tokens into a hierarchical Tree structure that perfectly represents the order of operations."
                 }
             ]
         },
         'c3-u2t2': {
             title: 'Top-Down vs Bottom-Up Parsing',
             content: `
-<h3 class="text-2xl font-bold mb-4 text-purple-400">Building the Tree</h3>
-<p class="mb-4">The parser's ultimate goal is to build an <strong>Abstract Syntax Tree (AST)</strong>. It can do this in two ways:</p>
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How to Build the Tree</h3>
+<p class="mb-4">There are two main mathematical approaches to checking the grammar and building the Syntax Tree.</p>
 
-<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700 shadow-md">
-    <li><strong class="text-blue-400">Top-Down Parsing (LL):</strong> Starts at the root of the tree (the starting variable of the grammar) and tries to grow the tree downwards to match the tokens. Usually implemented using <em>Recursive Descent</em>. Prone to infinite loops if the grammar has left-recursion.</li>
-    <li><strong class="text-green-400">Bottom-Up Parsing (LR):</strong> Starts with the raw tokens at the bottom and tries to group them together and collapse them upwards until it reaches the root variable. Much more powerful, handles a wider class of grammars, and is used by tools like YACC and Bison.</li>
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong class="text-purple-400">Top-Down (LL Parsers):</strong> Starts at the very root of the tree (e.g., "Program") and tries to guess which rules to apply to reach the specific tokens in your code. Popular because it's easy for humans to write by hand (Recursive Descent Parsers). Used by GCC for C++.</li>
+    <li><strong class="text-orange-400">Bottom-Up (LR Parsers):</strong> Starts with the raw tokens in your code and tries to group them together and compress them upwards until it reaches the root "Program" node. These are mathematically more powerful and can handle a wider variety of grammars, but are so complex they usually have to be generated by a tool (like YACC or Bison).</li>
 </ul>
+
+<div class="bg-red-900/30 border border-red-500/50 p-4 rounded text-sm text-red-200">
+    <strong>The Left-Recursion Problem:</strong> Top-Down parsers will go into an infinite loop and crash if your grammar has rules like <code>A -> A + B</code>. It will continuously try to expand 'A' forever. You must mathematically refactor the grammar to remove Left-Recursion before using a Top-Down parser.
+</div>
             `,
             quizzes: [
                 {
-                    question: "What is a major limitation of standard Top-Down (Recursive Descent) parsers?",
+                    question: "Why do Top-Down (Recursive Descent) parsers crash if they encounter 'Left-Recursion' in a grammar rule?",
                     options: [
-                        "A) They cannot parse code written in C.",
-                        "B) They will enter an infinite loop if the grammar contains Left-Recursion (e.g., A -> A + a).",
-                        "C) They do not generate Syntax Trees.",
-                        "D) They use too much hard drive space."
+                        "A) Because they run out of tokens.",
+                        "B) Because a rule that calls itself on the very left side causes an infinite recursive loop before it can consume any tokens.",
+                        "C) Because bottom-up parsers delete the data.",
+                        "D) Because left-recursion requires floating-point math."
                     ],
                     answer: 1,
-                    explanation: "If a top-down parser sees a rule like 'A -> A', it will keep expanding 'A' infinitely before it ever reads a single token. The grammar must be restructured (left-factored) before top-down parsing works."
+                    explanation: "If A -> A x, the parser looks at A, and immediately calls A again, which calls A again, infinitely, causing a Stack Overflow."
                 }
             ]
         }
@@ -144,77 +135,174 @@ stateDiagram-v2
         'c3-u3t1': {
             title: 'Intermediate Code & Optimization',
             content: `
-<h3 class="text-2xl font-bold mb-4 text-purple-400">The Middleman</h3>
-<p class="mb-4">Why doesn't a C compiler just translate C code directly into Intel x86 Assembly code in one step? Because then you would have to write a completely new compiler for every language-to-hardware combination.</p>
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Universal Translator</h3>
+<p class="mb-4">Why does a C++ compiler work on Windows, Mac, and Linux? Because it uses <strong>Intermediate Representation (IR)</strong>. The compiler doesn't translate C++ directly into Intel x86 machine code. It translates C++ into a generic, abstract machine code first.</p>
+<p class="mb-4 text-gray-300">This allows the compiler to be split into two halves: the <strong>Front-end</strong> (which understands the language) and the <strong>Back-end</strong> (which understands the CPU). You can swap out the back-end to compile the code for an ARM chip without changing the front-end.</p>
 
-<p class="mb-4">Instead, modern compilers (like LLVM) translate the syntax tree into <strong>Intermediate Representation (IR)</strong>. IR is a generic, machine-independent assembly code. Once in IR, the compiler runs massive <strong>Optimizations</strong>.</p>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-    <div class="bg-gray-800 p-4 rounded-lg border-t-4 border-yellow-500 shadow-lg">
-        <h4 class="text-yellow-400 font-bold mb-2">Dead Code Elimination</h4>
-        <p class="text-gray-300 text-sm">If you have a variable <code>x = 5</code> but you never use <code>x</code> anywhere in the program, the compiler deletes it entirely to save RAM.</p>
-    </div>
-    
-    <div class="bg-gray-800 p-4 rounded-lg border-t-4 border-blue-500 shadow-lg">
-        <h4 class="text-blue-400 font-bold mb-2">Constant Folding</h4>
-        <p class="text-gray-300 text-sm">If you write <code>int days = 365 * 24 * 60;</code>, the compiler does the math at compile-time and just inserts <code>525600</code> into the binary so the CPU doesn't waste time multiplying.</p>
-    </div>
-</div>
+<h3 class="text-xl font-bold mb-2 text-green-400">Machine-Independent Optimization</h3>
+<p class="mb-4">Once the code is in IR form, the compiler runs passes to make it faster without changing what it does:</p>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-800 p-4 rounded border border-gray-700">
+    <li><strong>Constant Folding:</strong> If you write <code>int x = 60 * 24;</code>, the compiler does the math once during compile time and changes the code to <code>int x = 1440;</code> so the CPU doesn't waste time doing it at runtime.</li>
+    <li><strong>Dead Code Elimination:</strong> If you have an <code>if (false) { ... }</code> block, the compiler completely deletes that code from the final executable.</li>
+    <li><strong>Loop Invariant Code Motion:</strong> If a calculation inside a loop yields the same result every single time, the compiler automatically moves it *outside* the loop so it's only calculated once.</li>
+</ul>
             `,
-            references: [
-                { title: 'LLVM Compiler Infrastructure', url: 'https://llvm.org/' }
-            ],
             quizzes: [
                 {
-                    question: "What is the primary architectural advantage of using an Intermediate Representation (IR)?",
+                    question: "What is 'Constant Folding' in compiler optimization?",
                     options: [
-                        "A) It makes the compiler run faster.",
-                        "B) It allows the front-end (language parser) and back-end (hardware code generator) to be decoupled, making it much easier to support multiple languages and multiple CPU architectures.",
-                        "C) It hides the source code from hackers.",
-                        "D) It allows the code to run directly in a web browser."
+                        "A) Folding the code into a smaller file size.",
+                        "B) Evaluating constant expressions (like 2 + 3) at compile-time rather than runtime, replacing them with the final value (5).",
+                        "C) Making constants mutable.",
+                        "D) Folding the AST into a linear list."
                     ],
                     answer: 1,
-                    explanation: "By translating C++, Rust, and Swift all into the same LLVM IR, they can all share the exact same optimization logic and hardware generation logic."
+                    explanation: "If the math uses fixed numbers, the compiler does the math for you so the end-user's CPU doesn't have to."
                 }
             ]
         },
         'c3-u3t2': {
             title: 'Target Machine Code',
             content: `
-<h3 class="text-2xl font-bold mb-4 text-purple-400">The Final Descent</h3>
-<p class="mb-4">The final phase of the compiler takes the highly optimized Intermediate Representation and generates actual binary instructions for the specific CPU architecture (like ARM for your phone, or x86 for your laptop).</p>
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Final Phase</h3>
+<p class="mb-4">In the final step, the compiler translates the optimized Intermediate Representation (IR) into the actual 1s and 0s (Machine Code) that the specific target CPU understands.</p>
 
-<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
-    <li><strong class="text-red-400">Register Allocation:</strong> CPUs have extremely fast memory slots called Registers. There are very few of them (e.g., 16 or 32). The compiler plays a complex game of graph coloring to figure out which variables get to live in the fast Registers, and which get dumped into the slower RAM.</li>
-    <li><strong class="text-green-400">Instruction Selection:</strong> The compiler picks the specific hardware opcodes. For example, if it needs to multiply by 2, it might choose a "Bitwise Left Shift" instruction because it takes fewer CPU clock cycles than the "Multiply" instruction.</li>
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-yellow-500 shadow-lg mb-6">
+    <h4 class="text-yellow-400 font-bold mb-2">Register Allocation</h4>
+    <p class="text-gray-300 text-sm mb-4">This is the hardest problem in the back-end. A CPU only has a tiny number of ultra-fast memory slots called <strong>Registers</strong> (maybe 16 or 32). If your program uses 100 variables, the compiler has to figure out exactly which variables get to live in the fast registers at any given microsecond, and which ones get dumped into the slower RAM.</p>
+    <p class="text-gray-300 text-sm">Compilers solve this using an incredibly complex mathematical concept called <strong>Graph Coloring</strong>. Variables that are 'alive' at the same time are connected on a graph, and the compiler tries to color the graph with a limited number of colors (representing registers) without any two connected nodes sharing a color.</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "What famous algorithmic problem do compilers use to solve the issue of assigning variables to a limited number of CPU registers?",
+                    options: [
+                        "A) The Traveling Salesman Problem",
+                        "B) Graph Coloring",
+                        "C) Binary Search",
+                        "D) Matrix Inversion"
+                    ],
+                    answer: 1,
+                    explanation: "Graph coloring maps perfectly to register allocation. If two variables overlap in their lifetime, they are connected by an edge and cannot share the same color (register)."
+                }
+            ]
+        }
+    },
+    'cs603-u4': {
+        'c3-u4t1': {
+            title: 'Symbol Tables & Scope',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Compiler's Notebook</h3>
+<p class="mb-4">As the Lexer and Parser read your code, they need a place to "remember" all the variables and functions you declare. This is the <strong>Symbol Table</strong>.</p>
+<p class="mb-4 text-gray-300 text-sm">When you declare <code>int max_score = 100;</code>, the compiler creates an entry in the Symbol Table that records the name "max_score", its type "int", its scope level, and where it lives in memory.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Handling Scope (Hash Tables)</h3>
+<p class="mb-4 text-gray-300 text-sm">Symbol Tables are usually implemented as Hash Tables because the compiler needs lightning-fast <code>O(1)</code> lookups. But what happens if you declare a variable named <code>x</code> globally, and then declare another variable named <code>x</code> inside a specific function? (Variable Shadowing).</p>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-900 p-4 rounded border border-gray-700">
+    <li>To handle this, Symbol Tables use stacks of Hash Tables, or they chain entries.</li>
+    <li>When you enter a new function <code>{ ... }</code>, the compiler pushes a new scope onto the stack.</li>
+    <li>When it searches for <code>x</code>, it checks the local scope first. If it's not there, it checks the global scope.</li>
 </ul>
             `,
             quizzes: [
                 {
-                    question: "During code generation, what is 'Register Allocation'?",
+                    question: "What is the primary data structure used for implementing a Symbol Table in a production compiler?",
                     options: [
-                        "A) Registering the software license with the OS.",
-                        "B) The process of deciding which program variables will be kept in the CPU's high-speed hardware registers at any given time.",
-                        "C) Allocating space on the hard drive for the executable file.",
-                        "D) Generating log files for debugging."
+                        "A) A Queue",
+                        "B) A Linked List",
+                        "C) A Hash Table",
+                        "D) A Binary Tree"
                     ],
-                    answer: 1,
-                    explanation: "Since registers are the fastest memory in a computer (but also the scarcest), allocating them efficiently is critical for program speed."
+                    answer: 2,
+                    explanation: "Compilers have to look up variable names millions of times per second. Hash tables provide near-instant O(1) lookups."
+                }
+            ]
+        },
+        'c3-u4t2': {
+            title: 'Panic-Mode Error Recovery',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">When Programmers Mess Up</h3>
+<p class="mb-4">If you forget a semicolon on line 5, the parser encounters a syntax error. A bad compiler would just crash immediately. A good compiler implements <strong>Error Recovery</strong> so it can keep reading the rest of your file and find *other* errors, giving you a full list of mistakes at once.</p>
+
+<h3 class="text-xl font-bold mb-2 text-red-400">Panic-Mode Strategy</h3>
+<p class="mb-4 text-gray-300 text-sm">This is the most common error recovery strategy. When the parser hits a syntax error, it "panics" and starts throwing away tokens (ignoring your broken code) until it finds a "synchronizing token".</p>
+<p class="mb-4 text-gray-300 text-sm">A synchronizing token is usually a very clear boundary marker, like a semicolon <code>;</code> or a closing brace <code>}</code>. Once it finds that marker, it calms down, assumes the broken statement is over, and tries to resume normal parsing on the next line.</p>
+            `,
+            quizzes: [
+                {
+                    question: "What does 'Panic-Mode' error recovery do when it encounters a syntax error?",
+                    options: [
+                        "A) It deletes your source code file.",
+                        "B) It throws an exception and immediately shuts down the compiler.",
+                        "C) It discards input tokens until it finds a clear synchronizing token (like a semicolon), then resumes parsing.",
+                        "D) It tries to guess the missing code using AI."
+                    ],
+                    answer: 2,
+                    explanation: "It abandons the current broken line of code and skips ahead to the next clear stopping point so it can continue checking the rest of your file."
+                }
+            ]
+        }
+    },
+    'cs603-u5': {
+        'c3-u5t1': {
+            title: 'Data-Flow Analysis & Loop Unrolling',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Advanced Compiler Magic</h3>
+<p class="mb-4">Modern compilers (like LLVM and GCC) contain hundreds of optimization passes that can make your code run up to 10x faster than the raw logic you wrote.</p>
+
+<h3 class="text-xl font-bold mb-2 text-yellow-400">Data-Flow Analysis</h3>
+<p class="mb-4 text-gray-300 text-sm">The compiler mathematically proves the lifetime and usage of variables. If it can prove that the variable <code>y</code> is assigned the value <code>10</code>, and no code ever alters <code>y</code> before it is printed, the compiler can safely replace <code>y</code> with <code>10</code> directly, skipping the memory lookup.</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Loop Unrolling</h3>
+<p class="mb-4 text-gray-300 text-sm">Loops have overhead. Every time a <code>for</code> loop iterates, the CPU has to increment a counter, check if the counter is less than the limit, and perform a "jump" instruction back to the top.</p>
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm shadow-inner text-gray-300">
+    <span class="text-gray-500">// Your code:</span><br>
+    <span class="text-purple-400">for</span>(int i=0; i&lt;3; i++) { sum += i; }<br><br>
+    <span class="text-gray-500">// Unrolled code generated by compiler:</span><br>
+    sum += 0;<br>
+    sum += 1;<br>
+    sum += 2;
+</div>
+<p class="text-gray-300 text-sm italic">By unrolling small loops, the compiler completely removes the CPU overhead of the loop logic, trading a slightly larger file size for vastly improved execution speed.</p>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary benefit of Loop Unrolling?",
+                    options: [
+                        "A) It makes the source code easier for humans to read.",
+                        "B) It reduces the memory size of the compiled executable.",
+                        "C) It eliminates the CPU overhead of incrementing loop counters and evaluating loop conditions, resulting in faster execution.",
+                        "D) It prevents infinite loops."
+                    ],
+                    answer: 2,
+                    explanation: "If you know exactly how many times a loop will run, just copy-pasting the inner code that many times removes the need for the CPU to 'manage' the loop."
+                }
+            ]
+        },
+        'c3-u5t2': {
+            title: 'Peephole Optimization & Dead Code Elimination',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Final Polish</h3>
+<p class="mb-4">These optimizations happen at the very end, right as the Machine Code is being generated.</p>
+
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong class="text-pink-400">Peephole Optimization:</strong> The compiler looks at a tiny sliding window (a "peephole") of 2 or 3 machine code instructions. It looks for obvious, localized inefficiencies. For example, if it sees <code>Load X into Register 1</code> followed immediately by <code>Save Register 1 into X</code>, it knows the second instruction is completely redundant and deletes it.</li>
+    <li><strong class="text-red-400">Strength Reduction:</strong> The compiler replaces expensive math operations with cheaper ones. Example: Replacing <code>x * 2</code> with a bitwise left shift <code>x << 1</code>. Multiplication requires a complex circuit on the CPU, while bit-shifting takes exactly 1 clock cycle.</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "Which of the following is an example of 'Strength Reduction' optimization?",
+                    options: [
+                        "A) Deleting code that will never be reached.",
+                        "B) Unrolling a loop.",
+                        "C) Replacing an expensive multiplication operation (like x * 8) with a cheaper bitwise shift operation (x << 3).",
+                        "D) Register Allocation."
+                    ],
+                    answer: 2,
+                    explanation: "Strength reduction means swapping a 'strong' (expensive) CPU instruction for a 'weak' (cheap) CPU instruction that achieves the exact same mathematical result."
                 }
             ]
         }
     }
 });
-
-window.topicDetails['cs603-u1'].unitExam = {
-    title: "CS603 - Unit 1 & 2 Lexical/Syntax Assessment",
-    description: "Submit a complete derivation tree.",
-    mediumQuestions: [
-        "Explain the difference between a Lexical Error and a Syntax Error with examples.",
-        "Draw the DFA for a floating point number."
-    ],
-    hardQuestions: [
-        "Remove the left-recursion from the following grammar: A -> A + a | b",
-        "Prove that the grammar S -> aSb | SS | epsilon is ambiguous."
-    ]
-};
