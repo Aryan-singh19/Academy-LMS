@@ -306,3 +306,199 @@ Object.assign(window.topicDetails, {
         }
     }
 });
+
+Object.assign(window.topicDetails['cs603-u1'], {
+    'c3-u1t3': {
+        title: 'Regular Expressions & Token Patterns',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Teaching the Lexer What "Looks Right"</h3>
+<p class="mb-4">Regular Expressions are compact pattern rules used to describe valid tokens. They let the compiler say, "Identifiers look like this, numbers look like that, and nonsense like <code>42cat?</code> can go explain itself elsewhere."</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Token Type</th>
+            <th class="p-3">Typical Pattern</th>
+            <th class="p-3">Example</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3 font-bold text-blue-400">Identifier</td><td class="p-3"><code>[A-Za-z_][A-Za-z0-9_]*</code></td><td class="p-3"><code>total_marks</code></td></tr>
+        <tr><td class="p-3 font-bold text-green-400">Integer</td><td class="p-3"><code>[0-9]+</code></td><td class="p-3"><code>2048</code></td></tr>
+        <tr><td class="p-3 font-bold text-purple-400">Whitespace</td><td class="p-3"><code>[ \\t\\n]+</code></td><td class="p-3">space, tab, newline</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm">Lexers usually apply the <strong>longest match rule</strong>. If both <code>if</code> and <code>identifier</code> patterns can match, the scanner chooses the most specific correct interpretation instead of panicking like a student who has seen two plausible MCQ answers.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main role of regular expressions in lexical analysis?',
+                options: ['A) To build machine code directly', 'B) To define token patterns that the lexer can recognize', 'C) To optimize loops', 'D) To allocate registers'],
+                answer: 1,
+                explanation: 'Regex patterns describe the shapes of valid tokens such as identifiers, numbers, and operators.'
+            },
+            {
+                question: 'What does the longest match rule mean in scanning?',
+                options: ['A) Always pick the shortest token', 'B) Always pick the token with most vowels', 'C) Prefer the valid token consuming the longest applicable input', 'D) Ignore keywords'],
+                answer: 2,
+                explanation: 'Lexers generally consume the maximum valid character sequence for a token.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-u2'], {
+    'c3-u2t3': {
+        title: 'FIRST, FOLLOW & Predictive Parsing',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How a Parser Decides What Rule to Use Next</h3>
+<p class="mb-4">Predictive parsers need discipline. They cannot just stare at the grammar dramatically and hope inspiration arrives. They use <strong>FIRST</strong> and <strong>FOLLOW</strong> sets to decide which production rule should be used.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong>FIRST(X)</strong>: terminals that can appear at the beginning of something derived from X.</li>
+    <li><strong>FOLLOW(X)</strong>: terminals that can appear immediately after X in some valid sentential form.</li>
+    <li>These sets help create an <strong>LL(1) parsing table</strong>, where one lookahead symbol is enough to choose the next rule.</li>
+</ul>
+
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm text-gray-300">
+E  -> T E'<br>
+E' -> + T E' | epsilon<br>
+T  -> id
+</div>
+
+<p class="text-gray-300 text-sm">The whole point is to avoid parser ambiguity. In exam language: FIRST and FOLLOW are the answer key that tells the parser which production to bubble first.</p>
+        `,
+        quizzes: [
+            {
+                question: 'Why are FIRST and FOLLOW sets important in LL(1) parsing?',
+                options: ['A) They help assign registers', 'B) They help build predictive parsing tables', 'C) They replace lexical analysis', 'D) They generate assembly instructions'],
+                answer: 1,
+                explanation: 'Predictive parsing relies on these sets to choose productions using limited lookahead.'
+            },
+            {
+                question: 'What does FOLLOW(X) represent?',
+                options: ['A) Tokens inside comments', 'B) Symbols that may appear immediately after X', 'C) Only the first token of X', 'D) All grammar variables'],
+                answer: 1,
+                explanation: 'FOLLOW tells the parser what can legally come next after a non-terminal.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-u3'], {
+    'c3-u3t3': {
+        title: 'Three-Address Code & Syntax-Directed Translation',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Turning Trees into Actionable Steps</h3>
+<p class="mb-4">After parsing, the compiler must convert the abstract syntax tree into a simpler intermediate form that is easier to optimize. A classic representation is <strong>Three-Address Code (TAC)</strong>, where each instruction has at most three parts.</p>
+
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm text-gray-300">
+<span class="text-gray-500">// Expression:</span> a + b * c<br>
+t1 = b * c<br>
+t2 = a + t1
+</div>
+
+<p class="mb-4 text-gray-300 text-sm"><strong>Syntax-Directed Translation</strong> attaches semantic actions to grammar rules. That means while the parser builds structure, it can also generate useful output such as types, addresses, or TAC instructions.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Advantage</th>
+            <th class="p-3">Why it matters</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">Simple instructions</td><td class="p-3">Easier to optimize and rearrange</td></tr>
+        <tr><td class="p-3">Temporary variables</td><td class="p-3">Breaks complex expressions into manageable chunks</td></tr>
+        <tr><td class="p-3">Machine independence</td><td class="p-3">Useful before final target code generation</td></tr>
+    </tbody>
+</table>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main purpose of three-address code?',
+                options: ['A) To draw syntax trees', 'B) To represent computations in a simple intermediate form', 'C) To replace parsing entirely', 'D) To store comments'],
+                answer: 1,
+                explanation: 'TAC breaks complex expressions into simple assignments that are easy for compiler passes to analyze.'
+            },
+            {
+                question: 'What does syntax-directed translation do?',
+                options: ['A) Attaches semantic actions to grammar productions', 'B) Deletes tokens automatically', 'C) Converts DFAs into NFAs', 'D) Encrypts source code'],
+                answer: 0,
+                explanation: 'It combines parsing rules with actions that generate meaning or intermediate code.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-u4'], {
+    'c3-u4t3': {
+        title: 'Semantic Analysis & Type Checking',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Code Can Be Grammatically Correct and Still Completely Wrong</h3>
+<p class="mb-4">A parser might accept <code>int marks = "excellent";</code> as grammatically valid because the tokens are arranged correctly. But semantically it is nonsense. <strong>Semantic Analysis</strong> checks whether the program actually makes sense according to the language rules.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li>Verify variable declarations before use.</li>
+    <li>Check type compatibility in expressions and assignments.</li>
+    <li>Validate function calls, parameter counts, and return types.</li>
+    <li>Catch scope violations and impossible operations.</li>
+</ul>
+
+<div class="bg-red-900/30 border border-red-500/40 p-4 rounded text-sm text-red-200">
+    Real-life compiler vibe: syntax analysis says, "Your sentence is grammatically correct." Semantic analysis says, "Cool, but cats still cannot submit PDFs to integers."
+</div>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main responsibility of semantic analysis?',
+                options: ['A) Splitting raw text into tokens', 'B) Checking program meaning such as types and declarations', 'C) Drawing topologies', 'D) Sending packets'],
+                answer: 1,
+                explanation: 'Semantic analysis verifies correctness beyond grammar, especially declarations, scopes, and types.'
+            },
+            {
+                question: 'Which phase would catch assigning a string to an integer variable?',
+                options: ['A) Physical layer', 'B) Lexical analysis only', 'C) Semantic analysis / type checking', 'D) Register allocation'],
+                answer: 2,
+                explanation: 'That is a meaning-level type error, so semantic analysis is responsible.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-u5'], {
+    'c3-u5t3': {
+        title: 'Common Subexpression Elimination & Strength Reduction',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Stop Recomputing the Same Thing</h3>
+<p class="mb-4">If your code repeatedly calculates the same expression with unchanged operands, the compiler would like a quiet word. <strong>Common Subexpression Elimination (CSE)</strong> computes it once and reuses the result.</p>
+
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm text-gray-300">
+<span class="text-gray-500">// Before</span><br>
+x = (a * b) + c<br>
+y = (a * b) - d<br><br>
+<span class="text-gray-500">// After CSE</span><br>
+t1 = a * b<br>
+x = t1 + c<br>
+y = t1 - d
+</div>
+
+<p class="mb-4 text-gray-300 text-sm"><strong>Strength Reduction</strong> replaces expensive operations with cheaper equivalents. For example, multiplying by powers of two can often become bit shifts. It is the compiler version of taking the elevator instead of repeatedly climbing stairs with groceries.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What does common subexpression elimination achieve?',
+                options: ['A) It removes repeated computations by reusing earlier results', 'B) It deletes all loops', 'C) It encrypts the executable', 'D) It generates comments'],
+                answer: 0,
+                explanation: 'CSE avoids recomputing the same expression when its operands are unchanged.'
+            },
+            {
+                question: 'Why is strength reduction useful?',
+                options: ['A) It makes code harder to optimize', 'B) It replaces costly operations with cheaper equivalent ones', 'C) It removes registers', 'D) It adds recursion'],
+                answer: 1,
+                explanation: 'Using cheaper instructions can improve runtime performance without changing the result.'
+            }
+        ]
+    }
+});

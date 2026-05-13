@@ -359,3 +359,223 @@ Object.assign(window.topicDetails, {
         }
     }
 });
+
+Object.assign(window.topicDetails['cs602-u1'], {
+    'cn-u1t3': {
+        title: 'Network Topologies, Switching & Transmission Modes',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How a Network Is Physically Organized</h3>
+<p class="mb-4">A network is not just "devices somehow talking." The arrangement matters. A badly designed topology is like arranging a classroom so everyone has to pass notes through the loudest student in the room.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Topology</th>
+            <th class="p-3">Real-life picture</th>
+            <th class="p-3">Strength</th>
+            <th class="p-3">Weakness</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3 font-bold text-blue-400">Bus</td><td class="p-3">One shared hallway</td><td class="p-3">Cheap</td><td class="p-3">One cable issue can ruin everyone's day</td></tr>
+        <tr><td class="p-3 font-bold text-green-400">Star</td><td class="p-3">All desks around one teacher</td><td class="p-3">Easy to manage</td><td class="p-3">Central switch becomes critical</td></tr>
+        <tr><td class="p-3 font-bold text-purple-400">Ring</td><td class="p-3">Passing a note in a circle</td><td class="p-3">Predictable flow</td><td class="p-3">Breaks can be annoying</td></tr>
+        <tr><td class="p-3 font-bold text-orange-400">Mesh</td><td class="p-3">Everyone has backup routes</td><td class="p-3">Highly reliable</td><td class="p-3">Expensive and complex</td></tr>
+    </tbody>
+</table>
+
+<div class="mermaid bg-gray-900 p-5 rounded-lg mb-6 border border-gray-700">
+graph LR
+    A[Host A] --> S[Switch]
+    B[Host B] --> S
+    C[Host C] --> S
+    S --> R[Router]
+</div>
+
+<p class="mb-4 text-gray-300 text-sm">Transmission can also be <strong>simplex</strong> (one-way, like classroom announcements), <strong>half-duplex</strong> (walkie-talkie behavior: one side at a time), or <strong>full-duplex</strong> (phone calls: both sides talk together, occasionally to terrible effect).</p>
+        `,
+        quizzes: [
+            {
+                question: 'Which topology is most common in modern LANs because devices connect to one central switch?',
+                options: ['A) Bus', 'B) Star', 'C) Ring', 'D) Tree only'],
+                answer: 1,
+                explanation: 'Star topology dominates Ethernet LANs because it is easier to troubleshoot and scale using a central switch.'
+            },
+            {
+                question: 'Which transmission mode allows both ends to send data at the same time?',
+                options: ['A) Simplex', 'B) Half-duplex', 'C) Full-duplex', 'D) Broadcast-only'],
+                answer: 2,
+                explanation: 'Full-duplex means simultaneous two-way communication, like a proper phone conversation.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs602-u2'], {
+    'cn-u2t3': {
+        title: 'Subnetting, CIDR & NAT',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Carving One Big Address Block into Smaller Neighborhoods</h3>
+<p class="mb-4">Subnetting is how a network admin takes one IP range and slices it into smaller, manageable chunks. It is basically turning one giant hostel floor into labeled rooms so traffic stops wandering around like a confused fresher on day one.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong>CIDR</strong> uses slash notation such as <code>/24</code> to describe how many bits belong to the network part.</li>
+    <li>A <code>/24</code> network like <code>192.168.1.0/24</code> usually gives 254 usable host addresses.</li>
+    <li><strong>NAT</strong> lets many private devices share one public IP, which is why your whole house can browse the internet without every toaster owning its own public identity crisis.</li>
+</ul>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Prefix</th>
+            <th class="p-3">Mask</th>
+            <th class="p-3">Usable Hosts</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">/24</td><td class="p-3">255.255.255.0</td><td class="p-3">254</td></tr>
+        <tr><td class="p-3">/25</td><td class="p-3">255.255.255.128</td><td class="p-3">126</td></tr>
+        <tr><td class="p-3">/26</td><td class="p-3">255.255.255.192</td><td class="p-3">62</td></tr>
+    </tbody>
+</table>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main purpose of subnetting?',
+                options: ['A) To encrypt IP addresses', 'B) To divide a large network into smaller logical networks', 'C) To replace routing', 'D) To remove MAC addresses'],
+                answer: 1,
+                explanation: 'Subnetting improves management, reduces broadcast scope, and organizes address space more efficiently.'
+            },
+            {
+                question: 'Why is NAT widely used in homes and offices?',
+                options: ['A) It creates stronger passwords', 'B) It lets many private devices share one public IP address', 'C) It speeds up fiber cables physically', 'D) It removes the need for routers'],
+                answer: 1,
+                explanation: 'NAT conserves public IPv4 addresses and lets internal devices operate on private ranges.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs602-u3'], {
+    'cn-u3t3': {
+        title: 'Flow Control, Congestion Control & Sliding Window',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How TCP Avoids Flooding Everything</h3>
+<p class="mb-4">Networks fail in very human ways. Sometimes the sender is too fast, sometimes the receiver is too slow, and sometimes the entire path is more crowded than a canteen five minutes before lunch ends.</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-blue-500 shadow-lg">
+        <h4 class="text-blue-400 font-bold mb-2">Flow Control</h4>
+        <p class="text-gray-300 text-sm">Protects the <strong>receiver</strong>. TCP's sliding window tells the sender how much data can be accepted without overflowing the receiver buffer.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-orange-500 shadow-lg">
+        <h4 class="text-orange-400 font-bold mb-2">Congestion Control</h4>
+        <p class="text-gray-300 text-sm">Protects the <strong>network</strong>. TCP reduces its sending rate when packet loss or delay hints that routers are getting overwhelmed.</p>
+    </div>
+</div>
+
+<div class="mermaid bg-gray-900 p-5 rounded-lg mb-6 border border-gray-700">
+flowchart LR
+    S[Sender] -->|Window of packets| R[Receiver]
+    R -->|ACK + advertised window| S
+</div>
+
+<p class="text-gray-300 text-sm">The <strong>sliding window</strong> means TCP can send several packets before waiting, instead of behaving like a painfully formal person who sends one sentence and demands confirmation after each word.</p>
+        `,
+        quizzes: [
+            {
+                question: 'Flow control mainly protects which side of communication?',
+                options: ['A) Only the router', 'B) The receiver', 'C) The DNS server', 'D) The firewall'],
+                answer: 1,
+                explanation: 'Flow control keeps a fast sender from overwhelming a slower receiver.'
+            },
+            {
+                question: 'What does the TCP sliding window improve?',
+                options: ['A) It allows multiple packets in transit before waiting for ACKs', 'B) It changes IPv4 into IPv6', 'C) It removes packet headers', 'D) It disables retransmission'],
+                answer: 0,
+                explanation: 'Sliding windows improve throughput by keeping the pipeline busy.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs602-u4'], {
+    'cn-u4t3': {
+        title: 'SSL/TLS Handshake & HTTPS Trust',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">What Really Happens When the Browser Shows a Lock Icon</h3>
+<p class="mb-4">HTTPS is not magic. It is a carefully staged trust ritual where your browser and a server agree on keys without shouting secrets across the internet like two people discussing OTPs on speakerphone.</p>
+
+<div class="mermaid bg-gray-900 p-5 rounded-lg mb-6 border border-gray-700">
+sequenceDiagram
+    participant B as Browser
+    participant S as Server
+    B->>S: ClientHello
+    S->>B: ServerHello + Certificate
+    B->>S: Verify certificate, send key material
+    S->>B: Session established
+</div>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li>The server sends a <strong>digital certificate</strong> proving its identity.</li>
+    <li>The browser checks whether a trusted <strong>Certificate Authority</strong> signed that certificate.</li>
+    <li>After the handshake, fast symmetric encryption handles the actual data transfer.</li>
+</ul>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main job of a digital certificate in HTTPS?',
+                options: ['A) To compress images', 'B) To prove the server identity using a trusted signature', 'C) To replace routers', 'D) To store user passwords'],
+                answer: 1,
+                explanation: 'Certificates help the browser verify it is speaking to the real server and not an impostor.'
+            },
+            {
+                question: 'Why does TLS use asymmetric cryptography first and symmetric cryptography afterward?',
+                options: ['A) Because symmetric encryption is faster for bulk data after key exchange', 'B) Because browsers dislike math', 'C) Because HTTPS works only on Wi-Fi', 'D) Because asymmetric ciphers are always faster'],
+                answer: 0,
+                explanation: 'Asymmetric methods solve the secure key exchange problem, then symmetric methods handle the heavy lifting efficiently.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs602-u5'], {
+    'cn-u5t3': {
+        title: 'QoS, Latency, Jitter & Real-Time Traffic',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Fast Is Nice, Stable Is Better</h3>
+<p class="mb-4">Students often say, "My internet speed is 200 Mbps, so why is the call still awful?" Because speed is only one part of the story. Voice and video care deeply about delay consistency.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Metric</th>
+            <th class="p-3">Meaning</th>
+            <th class="p-3">Real-life effect</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3 font-bold text-blue-400">Latency</td><td class="p-3">Delay before data arrives</td><td class="p-3">Laggy responses</td></tr>
+        <tr><td class="p-3 font-bold text-green-400">Jitter</td><td class="p-3">Variation in delay</td><td class="p-3">Broken voice/video rhythm</td></tr>
+        <tr><td class="p-3 font-bold text-red-400">Packet loss</td><td class="p-3">Dropped packets</td><td class="p-3">Frozen frames, robotic audio</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm"><strong>Quality of Service (QoS)</strong> helps routers prioritize sensitive traffic like live calls over less urgent traffic like a giant game download. Nobody wants their viva voce audio competing equally with a background 18 GB update.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is jitter in networking?',
+                options: ['A) Extra encryption overhead', 'B) Variation in packet delay over time', 'C) Permanent packet storage', 'D) A replacement for QoS'],
+                answer: 1,
+                explanation: 'Jitter means packets are not arriving at evenly spaced intervals, which hurts real-time apps.'
+            },
+            {
+                question: 'Why is QoS useful in real-time communication?',
+                options: ['A) It prioritizes delay-sensitive traffic like voice and video', 'B) It removes IP addresses', 'C) It doubles storage space', 'D) It disables routers'],
+                answer: 0,
+                explanation: 'QoS lets networks favor important time-sensitive traffic when bandwidth is contested.'
+            }
+        ]
+    }
+});

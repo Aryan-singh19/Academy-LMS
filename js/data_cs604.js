@@ -385,3 +385,198 @@ gantt
         }
     }
 });
+
+Object.assign(window.topicDetails['cs604-u1'], {
+    'c4-u1t3': {
+        title: 'Stakeholders, Communication & Requirement Drift',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Projects Fail Quietly Before They Fail Publicly</h3>
+<p class="mb-4">Many projects do not collapse because the team is lazy. They collapse because stakeholders are misaligned, expectations are vague, and requirements mutate every week like they discovered a gym membership and a personality shift at the same time.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Stakeholder</th>
+            <th class="p-3">What they care about</th>
+            <th class="p-3">Risk if ignored</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">Client</td><td class="p-3">Business value</td><td class="p-3">Wrong product delivered</td></tr>
+        <tr><td class="p-3">Users</td><td class="p-3">Usability</td><td class="p-3">Adoption failure</td></tr>
+        <tr><td class="p-3">Developers</td><td class="p-3">Feasibility and clarity</td><td class="p-3">Rework and frustration</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm">Requirement drift is normal. The trick is not pretending change will never happen; it is building a communication rhythm that catches change before the sprint board turns into modern art.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is requirement drift?',
+                options: ['A) Random CPU failure', 'B) Gradual change in project requirements over time', 'C) A network protocol', 'D) A type of UML diagram'],
+                answer: 1,
+                explanation: 'Requirements drift means expectations shift over time, often due to new learning or changing business needs.'
+            },
+            {
+                question: 'Why is stakeholder communication important?',
+                options: ['A) It reduces clarity', 'B) It keeps expectations, decisions, and priorities aligned', 'C) It replaces testing', 'D) It removes scheduling needs'],
+                answer: 1,
+                explanation: 'Good communication prevents teams from building the wrong thing very efficiently.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u2'], {
+    'c4-u2t3': {
+        title: 'Earned Value Management (EVM)',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Measuring Whether the Project Is Actually on Track</h3>
+<p class="mb-4">A manager saying "we are 80% done" without a measurement model is basically performing optimistic fiction. <strong>Earned Value Management</strong> compares planned work, completed work, and actual spending.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong>PV (Planned Value):</strong> Budgeted cost of scheduled work.</li>
+    <li><strong>EV (Earned Value):</strong> Budgeted cost of work actually completed.</li>
+    <li><strong>AC (Actual Cost):</strong> Real money spent so far.</li>
+</ul>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Metric</th>
+            <th class="p-3">Formula</th>
+            <th class="p-3">Meaning</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">SV</td><td class="p-3">EV - PV</td><td class="p-3">Schedule variance</td></tr>
+        <tr><td class="p-3">CV</td><td class="p-3">EV - AC</td><td class="p-3">Cost variance</td></tr>
+        <tr><td class="p-3">CPI</td><td class="p-3">EV / AC</td><td class="p-3">Cost efficiency</td></tr>
+    </tbody>
+</table>
+        `,
+        quizzes: [
+            {
+                question: 'What does EV represent in EVM?',
+                options: ['A) Estimated voltage', 'B) Earned Value: the budgeted value of completed work', 'C) Event variance', 'D) Engineering visibility'],
+                answer: 1,
+                explanation: 'Earned Value measures how much planned value has actually been delivered.'
+            },
+            {
+                question: 'If EV is less than AC, what does that usually suggest?',
+                options: ['A) Under budget', 'B) Over budget', 'C) Ahead of schedule automatically', 'D) Perfect execution'],
+                answer: 1,
+                explanation: 'If actual spending exceeds earned value, cost performance is poor and the project is likely over budget.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u3'], {
+    'c4-u3t3': {
+        title: 'Risk Register, Heat Maps & Escalation',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">A Risk Nobody Writes Down Is a Surprise Waiting for a Meeting</h3>
+<p class="mb-4">Professional teams maintain a <strong>risk register</strong>: a living list of threats, owners, triggers, responses, and current status. It is less glamorous than product demos, but dramatically better for sleeping at night.</p>
+
+<div class="mermaid bg-gray-900 p-5 rounded-lg mb-6 border border-gray-700">
+quadrantChart
+    title Risk Heat Map
+    x-axis Low Impact --> High Impact
+    y-axis Low Probability --> High Probability
+    quadrant-1 Escalate now
+    quadrant-2 Watch closely
+    quadrant-3 Minor concern
+    quadrant-4 Backup plans
+</div>
+
+<p class="text-gray-300 text-sm">Heat maps help teams visualize which risks deserve immediate attention. Escalation matters when a risk crosses thresholds beyond the team’s authority, budget, or timeline tolerance.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is a risk register?',
+                options: ['A) A list of random bugs only', 'B) A documented record of identified risks and their management details', 'C) A salary ledger', 'D) A code parser'],
+                answer: 1,
+                explanation: 'A risk register tracks risks, owners, impact, response plans, and current status.'
+            },
+            {
+                question: 'Why are heat maps useful in risk management?',
+                options: ['A) They add colors for decoration only', 'B) They visually prioritize risks by impact and probability', 'C) They eliminate all uncertainty', 'D) They replace mitigation planning'],
+                answer: 1,
+                explanation: 'Heat maps make it easier to identify which risks are severe enough to escalate quickly.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u4'], {
+    'c4-u4t3': {
+        title: 'Build, Release & Environment Management',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Shipping Software Without Causing Ceremonial Damage</h3>
+<p class="mb-4">Configuration management is not only about versioning code. It is also about controlling <strong>builds</strong>, <strong>releases</strong>, and environments such as dev, staging, and production.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong>Build management:</strong> producing repeatable artifacts from source code.</li>
+    <li><strong>Release management:</strong> planning what changes go out, when, and with rollback plans.</li>
+    <li><strong>Environment management:</strong> making sure dev, test, and production do not drift into three different universes.</li>
+</ul>
+
+<p class="text-gray-300 text-sm">A classic disaster is "it worked in staging." Usually that means production had different configuration, secrets, data volume, or permissions. In short: same code, different environment, maximum embarrassment.</p>
+        `,
+        quizzes: [
+            {
+                question: 'Why is environment management important?',
+                options: ['A) To make all laptops identical colors', 'B) To reduce differences between development, testing, and production setups', 'C) To replace documentation', 'D) To avoid version control'],
+                answer: 1,
+                explanation: 'Controlling environments reduces deployment surprises caused by inconsistent configurations.'
+            },
+            {
+                question: 'What is release management mainly concerned with?',
+                options: ['A) Random daily coding', 'B) Planning and controlling what changes are deployed and when', 'C) Only UI design', 'D) Only employee leave'],
+                answer: 1,
+                explanation: 'Release management coordinates the timing, scope, and safety of production changes.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u5'], {
+    'c4-u5t3': {
+        title: 'Observability, SRE & Incident Response',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Keeping Systems Alive After Launch</h3>
+<p class="mb-4">Deploying software is not the finish line. It is the moment the real world begins filing complaints. Modern teams use observability and incident response practices to understand failures fast and recover before users completely lose patience.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Signal</th>
+            <th class="p-3">Purpose</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3 font-bold text-blue-400">Metrics</td><td class="p-3">Track trends like latency, CPU, error rate</td></tr>
+        <tr><td class="p-3 font-bold text-green-400">Logs</td><td class="p-3">Detailed event records for debugging</td></tr>
+        <tr><td class="p-3 font-bold text-purple-400">Traces</td><td class="p-3">Follow a request across services</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm"><strong>Site Reliability Engineering (SRE)</strong> treats reliability as an engineering goal. During incidents, teams triage, communicate, mitigate, and then run a blameless postmortem so the same fire does not return wearing a fake moustache next week.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is the goal of observability?',
+                options: ['A) To hide failures better', 'B) To understand system behavior using signals like metrics, logs, and traces', 'C) To replace deployment pipelines', 'D) To remove monitoring'],
+                answer: 1,
+                explanation: 'Observability helps engineers understand what is happening inside systems, especially during failures.'
+            },
+            {
+                question: 'What usually happens after a serious incident in mature teams?',
+                options: ['A) Nothing at all', 'B) A blameless postmortem to learn and improve', 'C) Deleting all logs', 'D) Disabling alerts forever'],
+                answer: 1,
+                explanation: 'Postmortems focus on learning, prevention, and system improvement rather than blame.'
+            }
+        ]
+    }
+});

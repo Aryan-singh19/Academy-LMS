@@ -113,7 +113,7 @@ function renderOverviewCards() {
         { label: 'Topics done', value: `${stats.completedTopics}/${stats.totalTopics}`, subtext: `${stats.completionRate}% completion` },
         { label: 'Quiz accuracy', value: `${stats.quizAccuracy}%`, subtext: `${stats.correctAnswers}/${stats.totalAttempts} correct` },
         { label: 'Study notes', value: `${stats.notesCount}`, subtext: `${stats.highlightCount} saved highlights` },
-        { label: 'Bookmarks', value: `${stats.bookmarkedCount}`, subtext: stats.lastVisitedLabel || 'Start a topic to build memory' }
+        { label: 'Device cache', value: 'Active', subtext: stats.lastVisitedLabel || 'Progress and notes stay on this device' }
     ];
 
     document.getElementById('overviewCards').innerHTML = cards.map((card, index) => `
@@ -389,6 +389,7 @@ function renderStudyRail() {
     const highlights = window.ACADEMY.getHighlights(activeTopicId);
     const attemptCount = Object.values(window.ACADEMY.state.quizAttempts).filter((attempt) => attempt.topicId === activeTopicId).length;
     const currentCourseStats = stats.courseStats[activeCourseId];
+    const mood = getCourseMoodMessage(activeCourseId);
 
     document.getElementById('studyRail').innerHTML = `
         <div class="space-y-6">
@@ -431,6 +432,14 @@ function renderStudyRail() {
                     <button onclick="jumpToPracticeTests()" class="secondary-cta text-sm justify-center">Open mixed practice</button>
                     <button onclick="selectTopic('exam')" class="secondary-cta text-sm justify-center">Open unit exam</button>
                 </div>
+            </section>
+
+            <section class="study-rail-block">
+                <div class="section-head">
+                    <h3>Student corner</h3>
+                    <span>Stay connected</span>
+                </div>
+                <p class="text-sm text-slate-300 leading-7">${mood}</p>
             </section>
         </div>
     `;
@@ -624,4 +633,15 @@ function openSearchResult(courseId, unitId, topicId) {
 function getCourseCompletionText(courseId) {
     const stats = window.ACADEMY.calculateStats().courseStats[courseId];
     return `${stats.completionRate}% done`;
+}
+
+function getCourseMoodMessage(courseId) {
+    const messages = {
+        cs601: 'ML feels dramatic at first, but most topics are just pattern-finding with extra Greek letters pretending to be celebrities.',
+        cs602: 'Networks is basically group travel for packets: some are organized, some get lost, and routers keep pretending everything is under control.',
+        cs603: 'Compiler Design is the course where tiny grammar mistakes create huge chaos, which is honestly relatable during exam season.',
+        cs604: 'Project Management is what happens when deadlines, humans, and spreadsheets enter the same room and nobody leaves calm.',
+        'cs603-cg': 'Graphics proves that making a circle look pretty can require enough math to ruin an otherwise peaceful afternoon.'
+    };
+    return messages[courseId] || 'One topic at a time still beats last-minute panic by a comfortable margin.';
 }
