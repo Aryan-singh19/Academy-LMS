@@ -188,5 +188,200 @@ gantt
                 }
             ]
         }
+    },
+    'cs604-u3': {
+        'c4-u3t1': {
+            title: 'Risk Identification & Assessment',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">What Could Go Wrong?</h3>
+<p class="mb-4">In software development, Murphy's Law is absolute: anything that can go wrong, will go wrong. Servers will crash, key developers will quit, and APIs will be deprecated. <strong>Risk Management</strong> is the formal process of predicting these disasters before they happen.</p>
+
+<h3 class="text-xl font-bold mb-2 text-yellow-400">Types of Risks</h3>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-900 p-4 rounded border border-gray-700">
+    <li><strong>Project Risks:</strong> Affect the schedule or resources. (e.g., The budget is slashed by 20%).</li>
+    <li><strong>Technical Risks:</strong> Affect the quality or feasibility of the software. (e.g., A required 3rd-party library is too slow).</li>
+    <li><strong>Business Risks:</strong> Affect the viability of the software. (e.g., A competitor launches a better product before you do).</li>
+</ul>
+
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-red-500 shadow-md">
+    <h4 class="text-red-400 font-bold mb-2">Risk Exposure Formula</h4>
+    <p class="text-gray-300 text-sm mb-2">You cannot worry about everything equally. You must calculate the Risk Exposure (RE) to prioritize.</p>
+    <p class="text-green-400 font-mono text-sm">RE = Probability of Failure × Cost of Failure</p>
+    <p class="text-gray-300 text-sm mt-2">A 1% chance of a catastrophic database deletion is a higher priority than a 90% chance of a button being slightly misaligned.</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "How is 'Risk Exposure' mathematically calculated?",
+                    options: [
+                        "A) By adding the project budget to the project timeline.",
+                        "B) By multiplying the Probability of the risk occurring by the Cost (or Impact) if it does occur.",
+                        "C) By counting the number of bugs in the code.",
+                        "D) By using the COCOMO model."
+                    ],
+                    answer: 1,
+                    explanation: "Risk Exposure helps managers prioritize. A highly probable risk that causes zero damage is safely ignored. A highly improbable risk that destroys the company must be addressed."
+                }
+            ]
+        },
+        'c4-u3t2': {
+            title: 'RMMM Plans (Mitigation)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">RMMM: Risk Mitigation, Monitoring, and Management</h3>
+<p class="mb-4">Once you identify a high-exposure risk, you must create a formal plan to deal with it. This is the RMMM document.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg mt-4 border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Phase</th>
+            <th class="p-3">Explanation</th>
+            <th class="p-3 text-purple-300">Example (Risk: Lead Dev Quits)</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-bold text-green-400">Mitigation</td><td class="p-3">Proactive steps taken *before* the disaster to lower the probability.</td><td class="p-3">Implement pair programming so knowledge is shared.</td></tr>
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-bold text-blue-400">Monitoring</td><td class="p-3">Watching for warning signs that the risk is about to happen.</td><td class="p-3">Notice that the Lead Dev is updating their LinkedIn profile.</td></tr>
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-bold text-red-400">Management</td><td class="p-3">The Contingency Plan. What to do when the disaster actually strikes.</td><td class="p-3">Have a contract with a freelance agency ready to sign immediately.</td></tr>
+    </tbody>
+</table>
+            `,
+            quizzes: [
+                {
+                    question: "In an RMMM plan, what is the difference between Mitigation and Management?",
+                    options: [
+                        "A) Mitigation is done by developers; Management is done by the CEO.",
+                        "B) Mitigation happens after the disaster to clean up; Management happens before.",
+                        "C) Mitigation consists of proactive steps to reduce the likelihood of the risk; Management is the reactive contingency plan executed when the risk actually becomes a reality.",
+                        "D) There is no difference."
+                    ],
+                    answer: 2,
+                    explanation: "Mitigation is wearing a seatbelt. Management is calling the ambulance after the crash."
+                }
+            ]
+        }
+    },
+    'cs604-u4': {
+        'c4-u4t1': {
+            title: 'Version Control (Git) & Baselines',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Software Configuration Management (SCM)</h3>
+<p class="mb-4">When 50 developers are modifying the same 10,000 files simultaneously, chaos ensues. SCM is the discipline of managing and tracking changes to software code over time. Without SCM, you get files named <code>final_code_v3_REAL_final_fixed.zip</code>.</p>
+
+<h3 class="text-xl font-bold mb-2 text-yellow-400">Version Control Systems (Git)</h3>
+<p class="mb-4 text-gray-300 text-sm">Git, invented by Linus Torvalds, is the industry standard distributed version control system. It takes "snapshots" (commits) of the entire codebase.</p>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-900 p-4 rounded border border-gray-700">
+    <li><strong>Branching:</strong> Allows a developer to create a parallel universe of the code, safely experiment, and then merge it back into the main timeline.</li>
+    <li><strong>Blame:</strong> A command that shows exactly which developer wrote which line of code, and when. Crucial for debugging (and pointing fingers).</li>
+</ul>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-green-500 shadow-lg mb-6">
+    <h4 class="text-green-400 font-bold mb-2">What is a Baseline?</h4>
+    <p class="text-gray-300 text-sm">A baseline is a milestone in the development process that has been formally reviewed and agreed upon (e.g., "Version 1.0 Release Candidate"). Once a baseline is established, it cannot be changed casually. Any modifications require formal approval.</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "In Software Configuration Management, what does it mean to establish a 'Baseline'?",
+                    options: [
+                        "A) Deleting all previous versions of the code.",
+                        "B) Establishing a formally reviewed and approved milestone version of the software that can only be changed through a formal change control process.",
+                        "C) Writing the base classes in object-oriented programming.",
+                        "D) Pushing code to GitHub."
+                    ],
+                    answer: 1,
+                    explanation: "A baseline acts as a stable foundation. You know it works, and you agree to lock it down so you can build the next phase on top of it without the foundation shifting."
+                }
+            ]
+        },
+        'c4-u4t2': {
+            title: 'Change Control Boards (CCB)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Bureaucracy of Code</h3>
+<p class="mb-4">In a large enterprise project, a developer cannot just push a random change directly to the production server. A seemingly small change (like altering a database column) might crash a completely different department's application.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">The Change Control Board (CCB)</h3>
+<p class="mb-4 text-gray-300 text-sm">The CCB is a committee that evaluates and approves every single proposed change to the baselined software. It usually consists of project managers, lead architects, and QA testers.</p>
+
+<ol class="list-decimal pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li>A developer submits a <strong>Change Request (CR)</strong>.</li>
+    <li>The CCB reviews the CR to evaluate technical feasibility, cost, and potential impact on other systems.</li>
+    <li>If approved, the CCB issues an <strong>Engineering Change Order (ECO)</strong> authorizing the developer to write the code.</li>
+    <li>The code is written, audited, and merged.</li>
+</ol>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary responsibility of a Change Control Board (CCB)?",
+                    options: [
+                        "A) To write the code for difficult features.",
+                        "B) To formally evaluate, approve, or reject proposed changes to a baselined software system based on cost and impact.",
+                        "C) To hire and fire developers.",
+                        "D) To manage the GitHub repository servers."
+                    ],
+                    answer: 1,
+                    explanation: "The CCB is the gatekeeper. They prevent cowboy developers from breaking the production environment with untested or highly disruptive changes."
+                }
+            ]
+        }
+    },
+    'cs604-u5': {
+        'c4-u5t1': {
+            title: 'CI/CD Pipelines',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">DevOps: Bridging the Gap</h3>
+<p class="mb-4">Historically, <strong>Developers (Dev)</strong> wrote the code, tossed it over a wall to <strong>Operations (Ops)</strong>, and told them to run it on the servers. This caused massive friction, because Devs want to release new features constantly, but Ops wants stability and hates changes. <strong>DevOps</strong> is a cultural and technical philosophy that merges these teams.</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Continuous Integration (CI)</h3>
+<p class="mb-4 text-gray-300 text-sm">Whenever a developer pushes code to GitHub, a cloud server (like GitHub Actions or Jenkins) automatically downloads the code, compiles it, and runs every single automated unit test. If any test fails, the code is rejected immediately. This ensures the main branch is NEVER broken.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Continuous Deployment (CD)</h3>
+<p class="mb-4 text-gray-300 text-sm">If the CI tests pass, the CD pipeline automatically takes the compiled code and pushes it directly to the live production servers without human intervention. Companies like Amazon deploy new code to production every 11 seconds using CI/CD.</p>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary goal of Continuous Integration (CI)?",
+                    options: [
+                        "A) To keep developers working continuously without breaks.",
+                        "B) To automatically build and test code every time a change is committed, preventing broken code from entering the main repository.",
+                        "C) To integrate the frontend UI with the backend database.",
+                        "D) To write unit tests automatically using AI."
+                    ],
+                    answer: 1,
+                    explanation: "CI acts as an automated bouncer. If your code breaks the tests, the CI server rejects your commit."
+                }
+            ]
+        },
+        'c4-u5t2': {
+            title: 'Docker & Microservices Architecture',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">"It works on my machine!"</h3>
+<p class="mb-4">The most infamous excuse in software engineering. A developer writes code on a Mac running Python 3.9, but the production server is Linux running Python 3.7. The code crashes.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-blue-500 shadow-lg mb-6">
+    <h4 class="text-blue-400 font-bold mb-2">Docker (Containerization)</h4>
+    <p class="text-gray-300 text-sm mb-2">Docker solves this by packaging the code, the exact version of Python, and the exact operating system libraries into a single, standardized box called a <strong>Container</strong>.</p>
+    <p class="text-gray-300 text-sm">If the container runs on the developer's laptop, it is mathematically guaranteed to run identically on an AWS server.</p>
+</div>
+
+<h3 class="text-xl font-bold mb-2 text-yellow-400">Microservices vs Monoliths</h3>
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong>Monolith:</strong> The old way. The entire application (Login, Billing, Shopping Cart) is compiled into one massive file. If the Shopping Cart breaks, the whole app crashes. You must re-deploy the entire massive file to fix a typo.</li>
+    <li><strong>Microservices:</strong> The DevOps way. The application is broken into dozens of tiny, independent Docker containers. The Login service is completely separate from the Billing service. If Billing crashes, people can still Login. You can update and deploy the Shopping Cart 10 times a day without touching the rest of the app.</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "How does Docker solve the 'It works on my machine' problem?",
+                    options: [
+                        "A) By forcing all developers to use Windows.",
+                        "B) By packaging the application code along with its exact dependencies and operating system environment into a standardized container that runs identically anywhere.",
+                        "C) By converting the code into Machine Learning models.",
+                        "D) By uploading the code to the blockchain."
+                    ],
+                    answer: 1,
+                    explanation: "Docker containers carry their own environment with them, ensuring absolute consistency between a local laptop and a production cloud server."
+                }
+            ]
+        }
     }
 });
