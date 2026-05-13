@@ -152,5 +152,170 @@ Object.assign(window.topicDetails, {
                 }
             ]
         }
+    },
+    'cs603-cg-u3': {
+        'cg-u3t1': {
+            title: 'Light Sources (Ambient, Diffuse, Specular)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Let There Be Light</h3>
+<p class="mb-4">Without light equations, a 3D sphere just looks like a flat 2D circle on the screen. Illumination models calculate how light interacts with surfaces to create shadows and highlights, giving the illusion of volume.</p>
+
+<h3 class="text-xl font-bold mb-2 text-yellow-400">The 3 Components of Basic Lighting</h3>
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong class="text-purple-400">Ambient Light:</strong> Background light that bounces around everywhere. It ensures shadows aren't pitch black. It hits every part of every object equally, regardless of where the sun is.</li>
+    <li><strong class="text-green-400">Diffuse Light:</strong> The matte reflection. Depends entirely on the angle of the light hitting the surface. If light hits a surface dead-on (perpendicular), it's very bright. If it hits at a steep angle, it's dark. (Calculated using the <strong>Dot Product</strong> of the light vector and the surface normal).</li>
+    <li><strong class="text-blue-400">Specular Light:</strong> The shiny highlight. Depends on the angle of the light AND where the camera (your eye) is looking. Think of the bright white dot on a shiny billiard ball.</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "Which component of an illumination model is responsible for the bright, shiny highlight on a polished apple?",
+                    options: [
+                        "A) Ambient Light",
+                        "B) Diffuse Light",
+                        "C) Specular Light",
+                        "D) Refracted Light"
+                    ],
+                    answer: 2,
+                    explanation: "Specular reflection creates the 'shiny dot' because it calculates light bouncing directly from the light source, off the surface, and perfectly straight into the camera lens."
+                }
+            ]
+        },
+        'cg-u3t2': {
+            title: 'Phong vs Gouraud Shading',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Coloring the Triangles</h3>
+<p class="mb-4">Once we know the lighting math, how do we actually paint the 3D triangles that make up a model? We have to interpolate (blend) colors across the surface.</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-orange-500 shadow-lg">
+        <h4 class="text-orange-400 font-bold mb-2">Gouraud Shading (Fast & Ugly)</h4>
+        <p class="text-gray-300 text-sm mb-2">Calculates the lighting math ONLY at the three corners (vertices) of the triangle. It then blindly blends the resulting colors across the middle.</p>
+        <p class="text-gray-300 text-sm"><strong>Problem:</strong> If a shiny specular highlight is supposed to be in the dead center of the triangle, Gouraud shading completely misses it because it only checks the corners. Looks blocky.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-indigo-500 shadow-lg">
+        <h4 class="text-indigo-400 font-bold mb-2">Phong Shading (Slow & Pretty)</h4>
+        <p class="text-gray-300 text-sm mb-2">Interpolates the <strong>Normal Vector</strong> (the angle of the surface) across the entire triangle, and then calculates the complex lighting math for <em>every single pixel</em> inside the triangle.</p>
+        <p class="text-gray-300 text-sm"><strong>Result:</strong> Perfectly smooth curves and highly accurate, crisp specular highlights. Extremely computationally expensive.</p>
+    </div>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "Why does Gouraud shading often fail to render sharp specular highlights (shiny spots) on large polygons?",
+                    options: [
+                        "A) It only calculates lighting at the vertices (corners), so if the highlight mathematically falls in the center of the polygon, it is completely missed.",
+                        "B) It doesn't support the color white.",
+                        "C) It is designed only for 2D graphics.",
+                        "D) It calculates lighting for every pixel, which blurs the highlight."
+                    ],
+                    answer: 0,
+                    explanation: "Gouraud calculates colors at the corners and blends them. If the corners are dark, the middle will be dark, completely ignoring a bright spotlight hitting the center."
+                }
+            ]
+        }
+    },
+    'cs603-cg-u4': {
+        'cg-u4t1': {
+            title: 'Bezier Curves',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Drawing Smooth Lines with Math</h3>
+<p class="mb-4">In graphics, if you want to draw a smooth curve (like the outline of a font or the curve of a sports car), you don't store a million tiny straight lines. You use parametric equations to define the curve with just a few <strong>Control Points</strong>.</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Bezier Curves</h3>
+<p class="mb-4 text-gray-300">Invented by Pierre Bézier to design Renault cars in the 1960s. A Bezier curve uses a set of control points. The curve absolutely touches the first and last point, but is "pulled" toward the middle points like gravity, without actually touching them.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong>Cubic Bezier:</strong> The most common type (used in Adobe Illustrator's Pen Tool). It uses 4 points: Start, End, and two "Handle" points that pull the curve.</li>
+    <li><strong>Mathematical Basis:</strong> They rely on Bernstein polynomials to smoothly interpolate between the points over time (from t=0 to t=1).</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "In a standard Cubic Bezier curve, how many control points dictate the shape of the curve?",
+                    options: ["A) 2", "B) 3", "C) 4", "D) Infinite"],
+                    answer: 2,
+                    explanation: "A cubic Bezier curve requires 4 points: a starting anchor, an ending anchor, and two directional control handles."
+                }
+            ]
+        },
+        'cg-u4t2': {
+            title: 'B-Spline & NURBS',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Problem with Bezier</h3>
+<p class="mb-4">Bezier curves are great, but they have a fatal flaw: <strong>Global Control</strong>. If you have a complex curve made of 20 points, and you move just ONE point in the middle, the <em>entire</em> curve shifts and warps mathematically.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-red-500 shadow-lg mb-6">
+    <h4 class="text-red-400 font-bold mb-2">B-Splines (Basis Splines)</h4>
+    <p class="text-gray-300 text-sm">B-Splines solve this by offering <strong>Local Control</strong>. Moving one control point only affects the immediate local area of the curve, leaving the rest of the shape perfectly intact. This is crucial for 3D modeling complex objects like airplanes.</p>
+</div>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">NURBS (Non-Uniform Rational B-Splines)</h3>
+<p class="mb-4 text-gray-300 text-sm">The industry standard for CAD and 3D modeling. "Rational" means they add a "weight" to each control point. If you increase the weight of a point, it pulls the curve closer to it with stronger gravity. NURBS are mathematically powerful enough to perfectly represent conic sections (like true, perfect circles), which standard Bezier and B-Splines cannot do.</p>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary advantage of B-Spline curves over Bezier curves for 3D modeling?",
+                    options: [
+                        "A) B-Splines are 2D only.",
+                        "B) B-Splines provide Local Control, meaning moving one point only alters a small section of the curve, whereas moving a point on a Bezier alters the entire curve.",
+                        "C) B-Splines don't use mathematics.",
+                        "D) B-Splines require fewer control points."
+                    ],
+                    answer: 1,
+                    explanation: "Local control is essential for complex modeling. You don't want the tail of your airplane model to warp just because you tweaked a curve on the nose."
+                }
+            ]
+        }
+    },
+    'cs603-cg-u5': {
+        'cg-u5t1': {
+            title: 'Keyframing & Kinematics',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Bringing Things to Life</h3>
+<p class="mb-4">Animation is just rapidly drawing slightly different images (frames). But manually drawing 60 frames per second is impossible.</p>
+
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong class="text-yellow-400">Keyframing:</strong> The animator only poses the character at the extremes (e.g., Frame 1: Arm down. Frame 30: Arm up). The computer uses mathematical curves (like Bezier) to <strong>Interpolate</strong> (tween) the arm smoothly across frames 2 through 29.</li>
+    <li><strong class="text-green-400">Forward Kinematics (FK):</strong> To move a hand, the animator rotates the shoulder, then the elbow, then the wrist. The movement propagates down the hierarchy.</li>
+    <li><strong class="text-blue-400">Inverse Kinematics (IK):</strong> Much smarter. The animator just grabs the character's hand and drags it to a doorknob. The computer mathematically calculates exactly how the elbow and shoulder must bend to allow the hand to reach that spot.</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "In 3D animation, if you move a character's foot to the floor, and the computer automatically calculates how the knee and hip joints must bend to accommodate the foot's position, what technique is being used?",
+                    options: ["A) Forward Kinematics", "B) Inverse Kinematics", "C) Keyframing", "D) Ray Tracing"],
+                    answer: 1,
+                    explanation: "Inverse Kinematics works backwards from the goal (the foot's position) to calculate the angles of the parent joints."
+                }
+            ]
+        },
+        'cg-u5t2': {
+            title: 'Ray Tracing Fundamentals',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Holy Grail of Graphics</h3>
+<p class="mb-4">Most video games use Rasterization (Z-buffers and projection) because it's fast. But it fakes shadows and reflections. <strong>Ray Tracing</strong> simulates the actual physics of light.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-purple-500 shadow-lg mb-6">
+    <h4 class="text-purple-400 font-bold mb-2">How it works (Backwards)</h4>
+    <p class="text-gray-300 text-sm mb-2">In the real world, billions of photons shoot out of a lightbulb, bounce off walls, and a tiny fraction happen to hit your eye. Simulating that is impossible.</p>
+    <p class="text-gray-300 text-sm">Ray Tracing works in reverse. The camera shoots a mathematical "ray" out of every single pixel on the screen into the 3D scene. When the ray hits an object (like a mirror), the ray bounces. It keeps bouncing until it hits a light source. The computer then calculates the exact color and shadow along that path.</p>
+    <p class="text-gray-300 text-sm mt-3 font-bold text-red-400">Result: Perfect, physically accurate reflections, glass refractions, and soft shadows.</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "Why do Ray Tracing algorithms typically trace rays 'backwards' from the camera lens into the scene, rather than from the light source to the camera?",
+                    options: [
+                        "A) Because light travels backwards in computers.",
+                        "B) Because 99.9% of rays shot from a light source will bounce off into space and never hit the tiny camera lens, wasting massive amounts of processing power. Tracing from the camera guarantees every calculated ray contributes to the final image.",
+                        "C) Because it makes shadows darker.",
+                        "D) Because Rasterization requires it."
+                    ],
+                    answer: 1,
+                    explanation: "It's an optimization trick. Only calculating the light paths that actually hit your eye saves the computer from simulating billions of useless photons."
+                }
+            ]
+        }
     }
 });
