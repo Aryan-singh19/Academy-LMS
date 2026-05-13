@@ -3,6 +3,19 @@ let activeUnitId = 'cs601-u1';
 let activeTopicId = 't1';
 
 window.loadedCourses = {}; // Track which data_csXXX.js files have been loaded
+window.studentProgress = JSON.parse(localStorage.getItem('academy_progress')) || { completedTopics: {} };
+
+function markTopicComplete(topicId) {
+    if (!window.studentProgress.completedTopics) window.studentProgress.completedTopics = {};
+    window.studentProgress.completedTopics[topicId] = true;
+    localStorage.setItem('academy_progress', JSON.stringify(window.studentProgress));
+    
+    // Visually update the button without re-rendering the whole view
+    const btn = document.getElementById(`btn-topic-${topicId}`);
+    if (btn && !btn.querySelector('.text-green-500')) {
+        btn.innerHTML += '<svg class="w-4 h-4 text-green-500 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+    }
+}
 
 function initApp() {
     renderCoursesNav();
@@ -99,9 +112,11 @@ function renderCourseView() {
                                 <div class="${unit.id === activeUnitId ? 'block' : 'hidden'} mt-2 ml-2 pl-3 border-l border-gray-700 space-y-1">
                                     ${unit.topics.map((topic, idx) => {
                                         const isTopicActive = topic.id === activeTopicId;
+                                        const isCompleted = window.studentProgress.completedTopics[topic.id];
                                         return `
-                                            <button onclick="selectTopic('${topic.id}')" class="w-full text-left py-2 px-3 text-sm rounded transition-colors ${isTopicActive ? 'bg-gray-700 text-white font-medium shadow-inner' : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'}">
-                                                ${idx + 1}. ${topic.title}
+                                            <button id="btn-topic-${topic.id}" onclick="selectTopic('${topic.id}')" class="w-full text-left py-2 px-3 text-sm rounded transition-colors flex justify-between items-center ${isTopicActive ? 'bg-gray-700 text-white font-medium shadow-inner' : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'}">
+                                                <span>${idx + 1}. ${topic.title}</span>
+                                                ${isCompleted ? '<svg class="w-4 h-4 text-green-500 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>' : ''}
                                             </button>
                                         `;
                                     }).join('')}
@@ -319,6 +334,10 @@ function checkAnswer(btnElement, selected, correct, explanation) {
         
         resultDiv.className = 'quiz-result mt-4 p-4 rounded-lg bg-green-900/20 border border-green-800/50 text-green-400 animate-fadeIn';
         resultDiv.innerHTML = `<p class="font-bold mb-1 flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Spot on!</p><p class="text-sm">${explanation}</p>`;
+        
+        if (activeTopicId !== 'exam') {
+            markTopicComplete(activeTopicId);
+        }
     } else {
         btnElement.classList.remove('border-gray-700', 'bg-gray-800');
         btnElement.classList.add('border-red-500', 'bg-red-900/40', 'opacity-100');
