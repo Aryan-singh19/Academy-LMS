@@ -10,6 +10,8 @@
             bookmarks: {},
             examDrafts: {},
             practiceSessions: [],
+            studentName: '',
+            recentTopics: [],
             lastVisited: null,
             updatedAt: null
         };
@@ -49,7 +51,17 @@
 
     function setLastVisited(courseId, unitId, topicId) {
         state.lastVisited = { courseId, unitId, topicId };
+        state.recentTopics = [topicId].concat((state.recentTopics || []).filter((id) => id !== topicId)).slice(0, 12);
         saveState();
+    }
+
+    function setStudentName(name) {
+        state.studentName = (name || '').trim().slice(0, 40);
+        saveState();
+    }
+
+    function getStudentName() {
+        return state.studentName || '';
     }
 
     function getNote(topicId) {
@@ -166,6 +178,10 @@
         return getTopicMeta(state.lastVisited.topicId);
     }
 
+    function getRecentTopics() {
+        return (state.recentTopics || []).map((topicId) => getTopicMeta(topicId)).filter(Boolean);
+    }
+
     function getUnitMeta(unitId) {
         for (const course of window.coursesData) {
             for (const unit of course.units) {
@@ -257,6 +273,8 @@
         toggleBookmark,
         isBookmarked,
         setLastVisited,
+        setStudentName,
+        getStudentName,
         getNote,
         setNote,
         getHighlights,
@@ -274,6 +292,7 @@
         getTopicMeta,
         getBookmarkedTopics,
         getContinueTopic,
+        getRecentTopics,
         getUnitMeta,
         getLoadedQuestionBank,
         calculateStats

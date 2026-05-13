@@ -28,7 +28,7 @@
                 <div class="brand-mark">A</div>
                 <div>
                     <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
-                    <h1 class="text-xl font-extrabold text-white">Lecture Deck</h1>
+                    <h1 class="text-xl font-extrabold text-white">Lecture Desk</h1>
                 </div>
             </a>
             <nav class="flex flex-wrap items-center gap-3 text-sm">
@@ -36,6 +36,7 @@
                 <a href="lectures.html" class="nav-pill nav-pill-active">Lectures</a>
                 <a href="resources.html" class="nav-pill">Resources</a>
                 <a href="tests.html" class="nav-pill">Tests</a>
+                <a href="profile.html" class="nav-pill">Profile</a>
             </nav>
         </div>
     </header>
@@ -43,100 +44,30 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
         <section class="revision-banner mb-8">
             <div>
-                <p class="revision-label">Keep pace</p>
-                <h2 class="text-3xl font-extrabold text-white">Upcoming study schedule</h2>
-                <p class="text-slate-400 mt-2">A cleaner view for lectures, tutorials, and revision slots that students can scan quickly before class.</p>
+                <p class="revision-label">Stay inside the portal</p>
+                <h2 class="text-3xl font-extrabold text-white">Watch lecture links without leaving Academy LMS</h2>
+                <p class="text-slate-400 mt-2">Add YouTube links in one file, and students can browse and watch them here inside an embedded study view.</p>
             </div>
-            <a href="tests.html" class="secondary-cta">Switch to tests</a>
+            <a href="resources.html" class="secondary-cta">Open resources</a>
         </section>
 
-        <section class="grid lg:grid-cols-[1.1fr_.9fr] gap-6">
-            <div class="panel-card p-5 sm:p-6 overflow-hidden">
-                <div class="section-head">
-                    <h3>Lecture timeline</h3>
-                    <span>Suggested weekly cadence</span>
-                </div>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left">
-                        <thead class="text-slate-300 bg-white/5">
-                            <tr>
-                                <th class="p-4">Day</th>
-                                <th class="p-4">Track</th>
-                                <th class="p-4">Focus</th>
-                                <th class="p-4">Mode</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-slate-300 divide-y divide-white/5">
-                            <tr>
-                                <td class="p-4">Monday</td>
-                                <td class="p-4">CS601</td>
-                                <td class="p-4">Regression, probability, and data prep recap</td>
-                                <td class="p-4">Lecture + quiz warmup</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4">Tuesday</td>
-                                <td class="p-4">CS602</td>
-                                <td class="p-4">Routing, addressing, and transport layer comparison</td>
-                                <td class="p-4">Tutorial + diagram review</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4">Wednesday</td>
-                                <td class="p-4">CS603</td>
-                                <td class="p-4">Lexical analysis, CFGs, and optimization basics</td>
-                                <td class="p-4">Problem solving</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4">Thursday</td>
-                                <td class="p-4">CS604</td>
-                                <td class="p-4">Agile, estimation, scheduling, and risk planning</td>
-                                <td class="p-4">Lecture + case study</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4">Friday</td>
-                                <td class="p-4">Mixed</td>
-                                <td class="p-4">Practice tests, bookmarked weak topics, and note cleanup</td>
-                                <td class="p-4">Self-revision</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <section class="panel-card p-5 mb-6">
+            <div class="section-head">
+                <h3>Lecture filters</h3>
+                <span>Choose a subject</span>
             </div>
+            <div id="lectureSubjectTabs" class="flex flex-wrap gap-2"></div>
+        </section>
 
-            <div class="space-y-6">
-                <section class="panel-card p-5 sm:p-6">
-                    <div class="section-head">
-                        <h3>How to use it</h3>
-                        <span>Short routine</span>
-                    </div>
-                    <ul class="space-y-3 text-slate-300">
-                        <li>Start with the course notes page and mark one topic complete after every focused block.</li>
-                        <li>Highlight formulas, definitions, and comparison lines that are likely exam anchors.</li>
-                        <li>Move to the tests page after each unit to reinforce recall under time pressure.</li>
-                    </ul>
-                </section>
-
-                <section class="panel-card p-5 sm:p-6">
-                    <div class="section-head">
-                        <h3>Suggested cadence</h3>
-                        <span>2-hour block</span>
-                    </div>
-                    <div class="space-y-3 text-slate-300">
-                        <div class="study-rail-block !p-4">
-                            <strong class="text-white">45 min</strong>
-                            <p class="mt-1">New topic reading and diagrams.</p>
-                        </div>
-                        <div class="study-rail-block !p-4">
-                            <strong class="text-white">30 min</strong>
-                            <p class="mt-1">Topic quizzes plus one saved note summary.</p>
-                        </div>
-                        <div class="study-rail-block !p-4">
-                            <strong class="text-white">45 min</strong>
-                            <p class="mt-1">Mixed practice or unit exam writing drill.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+        <section class="grid xl:grid-cols-[360px_minmax(0,1fr)] gap-6">
+            <aside id="lectureList" class="space-y-4"></aside>
+            <section class="panel-card p-5">
+                <div id="lectureViewer"></div>
+            </section>
         </section>
     </main>
+
+    <script src="../js/lecture-library.js"></script>
+    <script src="../js/lectures.js"></script>
 </body>
 </html>

@@ -8,6 +8,10 @@ let topicListFilter = 'all';
 function startApp() {
     const hero = document.getElementById('heroSection');
     const app = document.getElementById('appSection');
+    const nameInput = document.getElementById('studentNameInput');
+    if (nameInput && nameInput.value.trim()) {
+        window.ACADEMY.setStudentName(nameInput.value.trim());
+    }
 
     hero.classList.add('hero-exit');
     setTimeout(() => {
@@ -22,6 +26,7 @@ function startApp() {
 
 function initApp() {
     hydrateLastVisited();
+    hydrateStudentName();
     bindGlobalEvents();
     renderCoursesNav();
     renderOverviewCards();
@@ -30,6 +35,14 @@ function initApp() {
         renderCourseView();
         preloadRemainingCourses();
     });
+}
+
+function hydrateStudentName() {
+    const storedName = window.ACADEMY.getStudentName();
+    const nameInput = document.getElementById('studentNameInput');
+    if (nameInput && storedName) {
+        nameInput.value = storedName;
+    }
 }
 
 function hydrateLastVisited() {
@@ -130,10 +143,11 @@ function renderOverviewCards() {
 function renderStudentDock() {
     const continueTopic = window.ACADEMY.getContinueTopic();
     const bookmarks = window.ACADEMY.getBookmarkedTopics().slice(0, 6);
+    const studentName = window.ACADEMY.getStudentName();
     document.getElementById('studentDock').innerHTML = `
         <section class="panel-card p-5">
             <div class="section-head">
-                <h3>Continue studying</h3>
+                <h3>${studentName ? `${studentName}'s study desk` : 'Continue studying'}</h3>
                 <span>Local memory active</span>
             </div>
             ${continueTopic ? `

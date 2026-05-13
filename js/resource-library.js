@@ -1,0 +1,1 @@
+window.resourceLibrary = window.resourceLibrary || [];

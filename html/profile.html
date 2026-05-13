@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academy LMS | Resources</title>
+    <title>Academy LMS | Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -28,43 +28,30 @@
                 <div class="brand-mark">A</div>
                 <div>
                     <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
-                    <h1 class="text-xl font-extrabold text-white">Resource Desk</h1>
+                    <h1 class="text-xl font-extrabold text-white">Student Profile</h1>
                 </div>
             </a>
             <nav class="flex flex-wrap items-center gap-3 text-sm">
                 <a href="../index.html" class="nav-pill">Curriculum</a>
                 <a href="lectures.html" class="nav-pill">Lectures</a>
-                <a href="resources.html" class="nav-pill nav-pill-active">Resources</a>
+                <a href="resources.html" class="nav-pill">Resources</a>
                 <a href="tests.html" class="nav-pill">Tests</a>
-                <a href="profile.html" class="nav-pill">Profile</a>
+                <a href="profile.html" class="nav-pill nav-pill-active">Profile</a>
             </nav>
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-        <section class="revision-banner mb-8">
-            <div>
-                <p class="revision-label">Download hub</p>
-                <h2 class="text-3xl font-extrabold text-white">Notes, assignments, and mock papers in one place</h2>
-                <p class="text-slate-400 mt-2">Drop files into the repo, let the workflow sort them, and this page becomes the student-facing download desk.</p>
-            </div>
-            <a href="tests.html" class="secondary-cta">Start practicing</a>
+        <section id="profileHero" class="revision-banner mb-8"></section>
+        <section id="profileStats" class="grid md:grid-cols-2 xl:grid-cols-4 gap-4 mb-6"></section>
+        <section class="grid xl:grid-cols-[1fr_1fr] gap-6">
+            <section id="profileRecent"></section>
+            <section id="profileHistory"></section>
         </section>
-
-        <section class="panel-card p-5 mb-6">
-            <div class="section-head">
-                <h3>Resource filters</h3>
-                <span>Subject + type tabs</span>
-            </div>
-            <div id="resourceSubjectTabs" class="flex flex-wrap gap-2 mb-4"></div>
-            <div id="resourceTypeTabs" class="flex flex-wrap gap-2"></div>
-        </section>
-
-        <section id="resourceSummary" class="grid md:grid-cols-3 gap-4 mb-6"></section>
-        <section id="resourceGrid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-5"></section>
     </main>
 
-    <script src="../js/resource-library.js"></script>
-    <script src="../js/resources.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/shared.js"></script>
+    <script src="../js/profile.js"></script>
 </body>
 </html>
