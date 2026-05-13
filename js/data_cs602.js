@@ -1169,9 +1169,9 @@ graph LR
             ]
         }
     }
-};
+});
 
-topicDetails['cs601-u1'].unitExam = {
+window.topicDetails['cs601-u1'].unitExam = {
     title: "CS601 - Unit 1 Practical Assessment",
     description: "Submit a 500-word essay detailing how you would set up an ML pipeline to predict student dropout rates based on their cafeteria food choices. Upload your design architecture.",
     mediumQuestions: [
@@ -1184,7 +1184,7 @@ topicDetails['cs601-u1'].unitExam = {
     ]
 };
 
-topicDetails['cs601-u2'].unitExam = {
+window.topicDetails['cs601-u2'].unitExam = {
     title: "CS601 - Unit 2 Theoretical Assessment",
     description: "Answer the following questions regarding Neural Network architecture and backpropagation.",
     mediumQuestions: [
@@ -1197,7 +1197,7 @@ topicDetails['cs601-u2'].unitExam = {
     ]
 };
 
-topicDetails['cs601-u3'].unitExam = {
+window.topicDetails['cs601-u3'].unitExam = {
     title: "CS601 - Unit 3 Computer Vision Assessment",
     description: "Submit a diagram and explanation of how you would design a CNN to classify different species of birds from photographs.",
     mediumQuestions: [
@@ -1210,7 +1210,7 @@ topicDetails['cs601-u3'].unitExam = {
     ]
 };
 
-topicDetails['cs601-u4'].unitExam = {
+window.topicDetails['cs601-u4'].unitExam = {
     title: "CS601 - Unit 4 RNN Assessment",
     description: "Submit a long-form answer analyzing the flow of sequential data.",
     mediumQuestions: [
@@ -1223,7 +1223,7 @@ topicDetails['cs601-u4'].unitExam = {
     ]
 };
 
-topicDetails['cs601-u5'].unitExam = {
+window.topicDetails['cs601-u5'].unitExam = {
     title: "CS601 - Unit 5 Advanced ML Assessment",
     description: "Submit a technical architectural proposal.",
     mediumQuestions: [
@@ -1235,6 +1235,3 @@ topicDetails['cs601-u5'].unitExam = {
         "What is 'Mode Collapse' in GANs and mathematically why does it happen?"
     ]
 };
-
-
-});
