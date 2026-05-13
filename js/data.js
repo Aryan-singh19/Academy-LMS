@@ -788,8 +788,266 @@ To get a 4K image through the tiny "bottleneck" in the middle of the network, th
                 }
             ]
         },
-        'u3t3': { title: 'Pooling Layers & Strides', content: '<p>Content in progress.</p>', quizzes: [] },
-        'u3t4': { title: 'Famous Architectures (ResNet, VGG)', content: '<p>Content in progress.</p>', quizzes: [] }
+        'u3t3': {
+            title: 'Pooling Layers & Strides',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Shrinking the Image Down</h3>
+<p class="mb-4">As a Convolutional Neural Network processes an image, it creates dozens or hundreds of "Feature Maps" (one map for every filter used). If we don't shrink these maps down, the network will quickly run out of memory. This is where <strong>Pooling Layers</strong> and <strong>Strides</strong> come in.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Strides: Skipping Pixels</h3>
+<p class="mb-4 text-gray-300">Normally, a filter slides over the image one pixel at a time (Stride = 1). If we set the Stride to 2, the filter skips every other pixel. This instantly cuts the size of the resulting feature map in half, forcing the network to focus on broader, more generalized patterns.</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Pooling: Keeping Only the Best Stuff</h3>
+<p class="mb-4">A Pooling layer looks at a small window (like a 2x2 grid) and summarizes it into a single number. It aggressively downsamples the image.</p>
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border-l-4 border-purple-500 shadow-md">
+    <li><strong>Max Pooling:</strong> Looks at the 4 pixels in a 2x2 grid and only keeps the HIGHEST value. It essentially asks: "Did any pixel in this area strongly detect a feature? If yes, keep that signal, throw away the rest." This is the most popular type of pooling.</li>
+    <li><strong>Average Pooling:</strong> Takes the mathematical average of the 4 pixels. It's smoother, but sometimes dulls important, sharp signals.</li>
+</ul>
+
+<div class="bg-gray-900 p-4 border border-gray-700 rounded text-center mb-6 shadow-inner">
+    <p class="text-gray-400 text-sm"><em>Why does this matter?</em> Pooling gives the network <strong>Translation Invariance</strong>. If a network learns to detect a cat's eye in the top left corner, Max Pooling ensures it will still recognize that eye even if the cat shifts slightly to the right in the next frame.</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary function of a Max Pooling layer in a CNN?",
+                    options: [
+                        "A) To increase the resolution of the image to 4K.",
+                        "B) To drastically reduce the spatial dimensions of the data while keeping the most prominent features, thus reducing computation and preventing overfitting.",
+                        "C) To convert the image into black and white.",
+                        "D) To pool memory across multiple GPUs."
+                    ],
+                    answer: 1,
+                    explanation: "Max Pooling shrinks the image by taking only the 'loudest' signals from small grids, throwing away unnecessary redundant pixels."
+                }
+            ]
+        },
+        'u3t4': {
+            title: 'Famous Architectures (ResNet, VGG)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Standing on the Shoulders of Giants</h3>
+<p class="mb-4">You rarely need to design a CNN architecture from scratch. In the 2010s, researchers competed in the <strong>ImageNet Challenge</strong> (trying to classify 1 million images into 1,000 categories). The winners of this competition open-sourced their network architectures, and we still use them today.</p>
+
+<div class="space-y-6 mb-8">
+    <div class="bg-gray-800 p-6 border-t-4 border-yellow-500 rounded-b-xl shadow-lg hover:shadow-yellow-500/20 transition-all">
+        <h4 class="text-xl font-bold text-yellow-400 mb-2">VGG (Visual Geometry Group)</h4>
+        <p class="text-gray-300 text-sm mb-3">Created in 2014 by Oxford. Before VGG, people used massive, clunky 11x11 filters. VGG proved that using a deep stack of very tiny <strong>3x3 filters</strong> is mathematically better and more efficient. VGG-16 (16 layers deep) became the industry standard because of its elegant simplicity.</p>
+    </div>
+    
+    <div class="bg-gray-800 p-6 border-t-4 border-blue-500 rounded-b-xl shadow-lg hover:shadow-blue-500/20 transition-all">
+        <h4 class="text-xl font-bold text-blue-400 mb-2">ResNet (Residual Networks)</h4>
+        <p class="text-gray-300 text-sm mb-3">Created by Microsoft in 2015. They tried to build a 152-layer deep network, but hit the "Vanishing Gradient" problem hard—the network just forgot how to learn. Their genius solution was the <strong>Skip Connection</strong>.</p>
+        <p class="text-gray-300 text-sm">Instead of forcing data to go through every single layer, ResNet allows data to "skip" over layers and jump further down the network. This gives the gradient a superhighway to flow backward during training, completely solving the vanishing gradient problem and allowing for insanely deep networks.</p>
+    </div>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "What specific problem did ResNet's 'Skip Connections' solve, allowing networks to be hundreds of layers deep?",
+                    options: [
+                        "A) It solved the issue of not having enough RAM.",
+                        "B) It solved the Vanishing Gradient problem by giving error signals a direct path to flow backwards without being multiplied down to zero.",
+                        "C) It allowed the network to skip over broken pixels in an image.",
+                        "D) It skipped the compilation step in Python."
+                    ],
+                    answer: 1,
+                    explanation: "Skip connections act like a bypass lane on a highway. If the main road (a layer) is useless, the data just skips it, preserving the signal strength."
+                }
+            ]
+        }
+    },
+    'cs601-u4': {
+        'u4t1': {
+            title: 'The Problem with Time & Sequential Data',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Remembering the Past</h3>
+<p class="mb-4">Standard Neural Networks and CNNs have a massive flaw: <strong>Amnesia</strong>. When you feed an image into a CNN, it processes it and forgets it instantly. If you feed it a second image, it treats it as a completely independent event.</p>
+<p class="mb-4">This works fine for classifying static photos of dogs. But what if you are analyzing a video? Or reading a sentence? In the sentence <em>"I grew up in France, so I speak fluent ____,"</em> you only know the answer is "French" because you remember the word "France" from earlier in the sequence.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-purple-500 shadow-lg mb-6">
+    <h4 class="text-purple-400 font-bold mb-2 flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Time-Series Data</h4>
+    <p class="text-gray-300 text-sm">Any data where the order of events matters is sequential data. Examples include:</p>
+    <ul class="list-disc pl-5 mt-2 text-sm text-gray-400 space-y-1">
+        <li>Stock market prices (The price today depends on yesterday).</li>
+        <li>Weather forecasting.</li>
+        <li>Natural Language Processing (Text is just a sequence of words).</li>
+        <li>DNA Sequences.</li>
+    </ul>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "Why can't a standard Convolutional Neural Network (CNN) easily translate a paragraph of text?",
+                    options: [
+                        "A) Because CNNs only understand numbers, not text.",
+                        "B) Because CNNs have no internal memory state to remember words that came earlier in the paragraph; they treat every input independently.",
+                        "C) Because text cannot be flattened into a 1D array.",
+                        "D) Because CNNs are too fast."
+                    ],
+                    answer: 1,
+                    explanation: "Without a mechanism to pass information from the 'past' (previous words) to the 'present' (current word), networks cannot understand context or grammar."
+                }
+            ]
+        },
+        'u4t2': {
+            title: 'Recurrent Neural Networks (RNNs)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Loop of Memory</h3>
+<p class="mb-4">A <strong>Recurrent Neural Network (RNN)</strong> solves the amnesia problem by adding a loop. When an RNN processes data at "Time Step 1", it generates an output, but it also generates a <strong>Hidden State</strong> (a memory vector). It then passes this Hidden State forward to itself for "Time Step 2".</p>
+
+<p class="mb-4 text-gray-300">At Time Step 2, the network makes a decision based on TWO things:</p>
+<ol class="list-decimal pl-5 space-y-2 text-gray-300 text-sm mb-6 font-mono bg-gray-900 p-4 rounded border border-gray-700">
+    <li>The new data it just received.</li>
+    <li>The Hidden State (memory) it received from Time Step 1.</li>
+</ol>
+
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-red-500 shadow-lg mb-6">
+    <h4 class="text-red-400 font-bold mb-2">The Tragic Flaw of Standard RNNs</h4>
+    <p class="text-gray-300 text-sm">RNNs sound perfect, but they suffer terribly from the <strong>Vanishing Gradient Problem</strong>. Because the network loops over and over, the math multiplies the gradient hundreds of times. Within just 5 or 6 time steps, the gradient vanishes. <br><br><strong>Translation:</strong> Standard RNNs have a terrible short-term memory. They can remember the beginning of a short sentence, but if you give them a whole paragraph, they completely forget what the first sentence was about.</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "In an RNN, what is the 'Hidden State'?",
+                    options: [
+                        "A) A secret layer of neurons that the programmer cannot access.",
+                        "B) A vector of information generated at time 't' that is passed forward to time 't+1', acting as the network's short-term memory.",
+                        "C) The final output of the network.",
+                        "D) The bias weight."
+                    ],
+                    answer: 1,
+                    explanation: "The hidden state is the core mechanism of recurrence. It is the memo the network writes to its future self."
+                }
+            ]
+        },
+        'u4t3': {
+            title: 'LSTMs and Memory Cells',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Long Short-Term Memory (LSTM)</h3>
+<p class="mb-4">To fix the short-term amnesia of standard RNNs, researchers invented the <strong>LSTM</strong>. An LSTM is a highly complex RNN cell that acts like a computer's RAM. It explicitly decides what information to keep, and what to throw away.</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">The Three Gates</h3>
+<p class="mb-4 text-gray-300">An LSTM cell contains three distinct mathematical "gates" (usually powered by Sigmoid activation functions that output a number between 0 and 1, acting as a valve).</p>
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong class="text-red-400">1. Forget Gate:</strong> Looks at the new data and the old memory. Decides what irrelevant past information to delete. (e.g., If the text suddenly shifts from talking about "Alice" to "Bob", it forgets Alice's gender pronoun).</li>
+    <li><strong class="text-blue-400">2. Input Gate:</strong> Looks at the new data and decides what new information is important enough to write into the cell's long-term memory.</li>
+    <li><strong class="text-green-400">3. Output Gate:</strong> Decides what part of the internal long-term memory should be output as the actual prediction for this current time step.</li>
+</ul>
+
+<div class="mermaid bg-gray-800 p-6 rounded-lg mb-6 flex justify-center shadow-inner">
+graph LR
+    A[Past Memory] --> B(Forget Gate)
+    C[New Input] --> B
+    C --> D(Input Gate)
+    B --> E[Update Memory Core]
+    D --> E
+    E --> F(Output Gate)
+    F --> G[New Output & Future Memory]
+    style B fill:#742a2a,stroke:#fc8181
+    style D fill:#2b6cb0,stroke:#63b3ed
+    style F fill:#276749,stroke:#68d391
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "What is the specific role of the 'Forget Gate' in an LSTM cell?",
+                    options: [
+                        "A) It deletes the entire neural network to free up RAM.",
+                        "B) It randomly drops out neurons to prevent overfitting.",
+                        "C) It mathematically decides which pieces of historical information in the memory cell are no longer relevant and should be erased.",
+                        "D) It prevents the network from learning."
+                    ],
+                    answer: 2,
+                    explanation: "By using a sigmoid layer (outputting 0 to 1), the forget gate acts as a multiplier. If it outputs 0 for a specific memory feature, that feature is completely erased (multiplied by zero)."
+                }
+            ]
+        }
+    },
+    'cs601-u5': {
+        'u5t1': {
+            title: 'Generative Adversarial Networks (GANs)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Counterfeiter and the Cop</h3>
+<p class="mb-4">Most Neural Networks are designed to <em>classify</em> things (e.g., "This is a cat"). <strong>Generative Adversarial Networks (GANs)</strong> are designed to <em>create</em> things (e.g., "Draw a new picture of a cat that has never existed").</p>
+
+<p class="mb-4">A GAN is actually TWO neural networks locked in a fight to the death:</p>
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong class="text-red-400">The Generator (The Counterfeiter):</strong> Its job is to take random mathematical noise and generate fake data (like a fake image of a human face) that looks as realistic as possible.</li>
+    <li><strong class="text-blue-400">The Discriminator (The Cop):</strong> Its job is to look at a mix of real images and the Generator's fake images, and guess which ones are fake.</li>
+</ul>
+
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-yellow-500 shadow-lg mb-6">
+    <h4 class="text-yellow-400 font-bold mb-2">The Training Loop</h4>
+    <p class="text-gray-300 text-sm">When training starts, the Generator is terrible. It just outputs TV static. The Discriminator easily catches it. But through backpropagation, the Generator learns *why* it was caught and improves. Eventually, the Generator becomes so incredibly good at creating fake images that the Discriminator's accuracy drops to 50% (meaning it is just purely guessing because the fakes are flawless).</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "In a GAN, what is the ultimate goal of the Generator network?",
+                    options: [
+                        "A) To classify images with 100% accuracy.",
+                        "B) To fool the Discriminator into classifying its fake data as real data.",
+                        "C) To catch the Discriminator making mistakes.",
+                        "D) To reduce the file size of an image."
+                    ],
+                    answer: 1,
+                    explanation: "The Generator 'wins' the adversarial game when the Discriminator can no longer tell the difference between the Generator's output and reality."
+                }
+            ]
+        },
+        'u5t2': {
+            title: 'Transformers & Large Language Models',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Attention is All You Need</h3>
+<p class="mb-4">In 2017, Google researchers published a paper called "Attention is All You Need", introducing the <strong>Transformer</strong> architecture. This killed the RNN and birthed the modern AI era (including ChatGPT).</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">The Problem with RNNs</h3>
+<p class="mb-4 text-gray-300">RNNs read text sequentially (Word 1, then Word 2, then Word 3). This means they cannot be trained in parallel on GPUs, making them incredibly slow. Transformers process the ENTIRE sequence at once.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-green-500 shadow-lg mb-6">
+    <h4 class="text-green-400 font-bold mb-2">Self-Attention</h4>
+    <p class="text-gray-300 text-sm">How does a Transformer understand grammar if it reads everything at once? The <strong>Self-Attention Mechanism</strong>. When the network reads the word "bank", it mathematically queries every other word in the sentence to figure out the context. If it sees "river", it knows "bank" means land. If it sees "money", it knows "bank" means finance. It creates a massive matrix of relationships between every single word simultaneously.</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "What is the massive computational advantage Transformers have over RNNs?",
+                    options: [
+                        "A) Transformers do not use mathematics.",
+                        "B) Transformers process sequences sequentially, saving RAM.",
+                        "C) Transformers process the entire sequence simultaneously, allowing for massive parallelization on modern GPUs.",
+                        "D) Transformers only work on images."
+                    ],
+                    answer: 2,
+                    explanation: "Because there is no sequential bottleneck (waiting for word 1 to finish before processing word 2), Transformers can be trained on massive clusters of GPUs simultaneously, leading to models trained on the entire internet."
+                }
+            ]
+        },
+        'u5t3': {
+            title: 'Model Deployment (ONNX, Flask/FastAPI)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Getting Out of the Jupyter Notebook</h3>
+<p class="mb-4">A model sitting in a Python notebook is useless to the real world. <strong>Deployment (MLOps)</strong> is the engineering process of taking your trained model and putting it on a server so other applications can use it.</p>
+
+<ul class="list-disc pl-5 space-y-4 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong class="text-blue-400">ONNX (Open Neural Network Exchange):</strong> If you train a model in PyTorch (Python), but your company's high-speed servers run C++, you have a problem. ONNX is a universal file format. You convert your PyTorch model to an <code>.onnx</code> file, and you can run it in C++, Java, or even Javascript in a browser!</li>
+    <li><strong class="text-green-400">FastAPI:</strong> The modern standard for deploying Python models. You wrap your model in an API endpoint. A user's mobile app sends a photo to your <code>/predict</code> URL via HTTP, your server runs the model, and returns a JSON response: <code>{"classification": "hotdog", "confidence": 0.99}</code>.</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "What problem does the ONNX format solve?",
+                    options: [
+                        "A) It prevents the model from overfitting.",
+                        "B) It serves as an interoperable standard, allowing models trained in one framework (like PyTorch) to be run in completely different languages or hardware environments.",
+                        "C) It makes the model train faster.",
+                        "D) It generates training data automatically."
+                    ],
+                    answer: 1,
+                    explanation: "ONNX breaks vendor lock-in. You can train in Python and deploy in Rust or C# seamlessly."
+                }
+            ]
+        }
     }
 };
 
@@ -816,6 +1074,45 @@ topicDetails['cs601-u2'].unitExam = {
     hardQuestions: [
         "Derive the chain rule application for a 3-layer backpropagation pass.",
         "Compare and contrast L1 vs L2 regularization. In what scenario would L1 be strictly preferred?"
+    ]
+};
+
+topicDetails['cs601-u3'].unitExam = {
+    title: "CS601 - Unit 3 Computer Vision Assessment",
+    description: "Submit a diagram and explanation of how you would design a CNN to classify different species of birds from photographs.",
+    mediumQuestions: [
+        "Explain the mathematical process of a Convolution. How does a 3x3 filter interact with a 3x3 patch of an image?",
+        "Why is Max Pooling generally preferred over Average Pooling in modern image classification networks?"
+    ],
+    hardQuestions: [
+        "If you have a 128x128 image and you apply a 3x3 filter with a stride of 2, what is the spatial dimension of the resulting feature map?",
+        "Explain the concept of 'Translation Invariance' and how Convolutional Layers combined with Pooling Layers achieve it."
+    ]
+};
+
+topicDetails['cs601-u4'].unitExam = {
+    title: "CS601 - Unit 4 RNN Assessment",
+    description: "Submit a long-form answer analyzing the flow of sequential data.",
+    mediumQuestions: [
+        "Explain the primary architectural difference between a standard CNN and an RNN.",
+        "Give two examples of tasks where an RNN would drastically outperform a CNN."
+    ],
+    hardQuestions: [
+        "Explain the mathematical process of the 'Forget Gate' in an LSTM using the Sigmoid activation function.",
+        "Why do standard RNNs suffer from the Vanishing Gradient problem more severely than shallow feed-forward networks?"
+    ]
+};
+
+topicDetails['cs601-u5'].unitExam = {
+    title: "CS601 - Unit 5 Advanced ML Assessment",
+    description: "Submit a technical architectural proposal.",
+    mediumQuestions: [
+        "Explain the adversarial training loop of a GAN in detail. How do the Loss functions of the Generator and Discriminator interact?",
+        "Why is Self-Attention a superior mechanism to Recurrence for understanding long paragraphs of text?"
+    ],
+    hardQuestions: [
+        "Design a high-level system architecture using FastAPI, Docker, and an ONNX model to deploy a latency-sensitive computer vision system.",
+        "What is 'Mode Collapse' in GANs and mathematically why does it happen?"
     ]
 };
 
