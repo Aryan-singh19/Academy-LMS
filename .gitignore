@@ -2,3 +2,7 @@ E:/
 *.log
 .DS_Store
 Thumbs.db
+node_modules/
+.vercel/
+.env
+.env.*

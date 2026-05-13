@@ -1,5 +1,14 @@
 (function () {
     const STORAGE_KEY = 'academy_lms_state_v4';
+    let syncTimer = null;
+    let syncInFlight = false;
+
+    function generateDeviceId() {
+        if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+            return window.crypto.randomUUID();
+        }
+        return `device-${Date.now()}-${Math.random().toString(16).slice(2, 10)}`;
+    }
 
     function buildDefaultState() {
         return {
@@ -13,6 +22,13 @@
             studentName: '',
             recentTopics: [],
             lastVisited: null,
+            deviceId: '',
+            profileStartedAt: null,
+            remoteSync: {
+                lastSyncedAt: null,
+                lastStatus: 'local-only',
+                lastMessage: 'Cloud sync has not run yet.'
+            },
             updatedAt: null
         };
     }
@@ -20,29 +36,50 @@
     function loadState() {
         try {
             const raw = localStorage.getItem(STORAGE_KEY);
-            if (!raw) return buildDefaultState();
-            return { ...buildDefaultState(), ...JSON.parse(raw) };
+            const parsed = raw ? JSON.parse(raw) : {};
+            const merged = { ...buildDefaultState(), ...parsed };
+            merged.remoteSync = {
+                ...buildDefaultState().remoteSync,
+                ...(parsed.remoteSync || {})
+            };
+            merged.deviceId = merged.deviceId || generateDeviceId();
+            merged.profileStartedAt = merged.profileStartedAt || new Date().toISOString();
+            return merged;
         } catch (error) {
             console.error('Failed to read stored state', error);
-            return buildDefaultState();
+            const fallback = buildDefaultState();
+            fallback.deviceId = generateDeviceId();
+            fallback.profileStartedAt = new Date().toISOString();
+            return fallback;
         }
     }
 
     const state = loadState();
 
-    function saveState() {
+    function dispatchStateEvent() {
+        window.dispatchEvent(new CustomEvent('academy:state-changed', {
+            detail: {
+                updatedAt: state.updatedAt,
+                remoteSync: state.remoteSync
+            }
+        }));
+    }
+
+    function persistState(options = {}) {
         state.updatedAt = new Date().toISOString();
         localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        dispatchStateEvent();
+        if (!options.silent) scheduleCloudSync();
     }
 
     function markTopicComplete(topicId, complete) {
         state.completedTopics[topicId] = complete;
-        saveState();
+        persistState();
     }
 
     function toggleBookmark(topicId) {
         state.bookmarks[topicId] = !state.bookmarks[topicId];
-        saveState();
+        persistState();
     }
 
     function isBookmarked(topicId) {
@@ -52,12 +89,12 @@
     function setLastVisited(courseId, unitId, topicId) {
         state.lastVisited = { courseId, unitId, topicId };
         state.recentTopics = [topicId].concat((state.recentTopics || []).filter((id) => id !== topicId)).slice(0, 12);
-        saveState();
+        persistState();
     }
 
     function setStudentName(name) {
         state.studentName = (name || '').trim().slice(0, 40);
-        saveState();
+        persistState();
     }
 
     function getStudentName() {
@@ -70,7 +107,7 @@
 
     function setNote(topicId, note) {
         state.notes[topicId] = note;
-        saveState();
+        persistState();
     }
 
     function getHighlights(topicId) {
@@ -83,12 +120,12 @@
         const current = new Set(getHighlights(topicId));
         current.add(trimmed.slice(0, 280));
         state.highlights[topicId] = Array.from(current);
-        saveState();
+        persistState();
     }
 
     function clearHighlights(topicId) {
         state.highlights[topicId] = [];
-        saveState();
+        persistState();
     }
 
     function recordQuizAttempt(payload) {
@@ -100,12 +137,12 @@
             correct: payload.correct,
             attemptedAt: new Date().toISOString()
         };
-        saveState();
+        persistState();
     }
 
     function setExamDraft(unitId, draft) {
         state.examDrafts[unitId] = draft;
-        saveState();
+        persistState();
     }
 
     function getExamDraft(unitId) {
@@ -118,7 +155,7 @@
             finishedAt: new Date().toISOString()
         });
         state.practiceSessions = state.practiceSessions.slice(0, 20);
-        saveState();
+        persistState();
     }
 
     function getPracticeSessions() {
@@ -267,6 +304,114 @@
         };
     }
 
+    function getStorageSummary() {
+        const stats = calculateStats();
+        return {
+            deviceId: state.deviceId,
+            studentName: getStudentName(),
+            profileStartedAt: state.profileStartedAt,
+            updatedAt: state.updatedAt,
+            remoteSync: state.remoteSync,
+            completedTopics: stats.completedTopics,
+            totalTopics: stats.totalTopics,
+            notesCount: stats.notesCount,
+            highlightCount: stats.highlightCount,
+            bookmarkedCount: stats.bookmarkedCount,
+            totalAttempts: stats.totalAttempts,
+            correctAnswers: stats.correctAnswers,
+            practiceSessions: state.practiceSessions.length
+        };
+    }
+
+    function exportStudentSnapshot() {
+        const topicDirectory = {};
+        getAllTopics().forEach((topic) => {
+            topicDirectory[topic.topicId] = {
+                courseId: topic.courseId,
+                courseCode: topic.courseCode,
+                unitId: topic.unitId,
+                unitNumber: topic.unitNumber,
+                unitTitle: topic.unitTitle,
+                title: topic.title
+            };
+        });
+
+        return JSON.parse(JSON.stringify({
+            deviceId: state.deviceId,
+            studentName: getStudentName(),
+            profileStartedAt: state.profileStartedAt,
+            updatedAt: state.updatedAt,
+            remoteSync: state.remoteSync,
+            completedTopics: state.completedTopics,
+            quizAttempts: state.quizAttempts,
+            notes: state.notes,
+            highlights: state.highlights,
+            bookmarks: state.bookmarks,
+            examDrafts: state.examDrafts,
+            practiceSessions: state.practiceSessions,
+            recentTopics: state.recentTopics,
+            lastVisited: state.lastVisited,
+            topicDirectory,
+            stats: calculateStats()
+        }));
+    }
+
+    function setRemoteSyncStamp(status, message, metadata = {}) {
+        state.remoteSync = {
+            lastSyncedAt: new Date().toISOString(),
+            lastStatus: status,
+            lastMessage: message,
+            ...metadata
+        };
+        persistState({ silent: true });
+    }
+
+    function getRemoteSyncStamp() {
+        return state.remoteSync || buildDefaultState().remoteSync;
+    }
+
+    async function syncStateToCloud() {
+        if (syncInFlight) return;
+        if (window.location.protocol === 'file:') return;
+        if (!window.fetch) return;
+
+        syncInFlight = true;
+        try {
+            const response = await fetch('/api/profile', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    deviceId: state.deviceId,
+                    displayName: getStudentName() || 'Student',
+                    snapshot: exportStudentSnapshot()
+                })
+            });
+
+            if (!response.ok) {
+                const failure = await response.json().catch(() => ({}));
+                throw new Error(failure.error || 'Cloud sync failed.');
+            }
+
+            const payload = await response.json();
+            setRemoteSyncStamp('synced', payload.message || 'Synced to the Academy cloud profile.', {
+                studentId: payload.student ? payload.student.id : null
+            });
+        } catch (error) {
+            const status = String(error.message || '').toLowerCase().indexOf('database') !== -1 ? 'cloud-error' : 'local-only';
+            setRemoteSyncStamp(status, error.message || 'Cloud sync unavailable. Using local device memory.');
+        } finally {
+            syncInFlight = false;
+        }
+    }
+
+    function scheduleCloudSync() {
+        if (window.location.protocol === 'file:') return;
+        clearTimeout(syncTimer);
+        syncTimer = window.setTimeout(syncStateToCloud, 1400);
+    }
+
     window.ACADEMY = {
         state,
         markTopicComplete,
@@ -295,6 +440,20 @@
         getRecentTopics,
         getUnitMeta,
         getLoadedQuestionBank,
-        calculateStats
+        calculateStats,
+        getStorageSummary,
+        exportStudentSnapshot,
+        getRemoteSyncStamp,
+        setRemoteSyncStamp,
+        scheduleCloudSync,
+        syncStateToCloud
     };
+
+    if (window.location.protocol !== 'file:') {
+        window.addEventListener('online', scheduleCloudSync);
+    }
+
+    if (!state.updatedAt) {
+        persistState({ silent: true });
+    }
 })();

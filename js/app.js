@@ -4,6 +4,7 @@ let activeTopicId = 't1';
 let appStarted = false;
 const loadedCourses = {};
 let topicListFilter = 'all';
+let topicComments = [];
 
 function startApp() {
     const hero = document.getElementById('heroSection');
@@ -25,6 +26,7 @@ function startApp() {
 }
 
 function initApp() {
+    window.ACADEMY.scheduleCloudSync();
     hydrateLastVisited();
     hydrateStudentName();
     bindGlobalEvents();
@@ -365,8 +367,13 @@ function renderTopicContent() {
                     <div class="flex flex-wrap gap-3">${references}</div>
                 </section>
             ` : ''}
+            <section class="mt-10" id="topicCommentsSection">
+                ${renderTopicCommentsSection()}
+            </section>
         </div>
     `;
+
+    fetchTopicComments();
 
     setTimeout(() => {
         if (window.mermaid) {
@@ -639,6 +646,84 @@ function clearTopicHighlights() {
 
 function jumpToPracticeTests() {
     window.location.href = 'html/tests.html';
+}
+
+function renderTopicCommentsSection() {
+    if (window.location.protocol === 'file:') {
+        return `
+            <div class="panel-card p-5">
+                <div class="section-head">
+                    <h3>Topic comments</h3>
+                    <span>Cloud-only on deploy</span>
+                </div>
+                <p class="text-slate-400">Deploy this version on Vercel to unlock topic comments between students.</p>
+            </div>
+        `;
+    }
+
+    return `
+        <div class="panel-card p-5">
+            <div class="section-head">
+                <h3>Topic comments</h3>
+                <span>${topicComments.length} student notes</span>
+            </div>
+            <div class="chat-thread mb-4">
+                ${topicComments.length ? topicComments.map((comment) => `
+                    <article class="chat-message">
+                        <strong class="text-white">${comment.display_name}</strong>
+                        <p class="text-sm text-slate-400 mt-2">${comment.message_text}</p>
+                        <p class="text-xs text-slate-500 mt-2">${new Date(comment.created_at).toLocaleString()}</p>
+                    </article>
+                `).join('') : '<p class="text-slate-400">No comments yet. Drop a doubt, summary, or exam trick for the next student.</p>'}
+            </div>
+            <div class="space-y-3">
+                <textarea id="topicCommentInput" class="note-input !min-h-[8rem]" placeholder="Comment on this topic, explain one confusing point, or save the next student from the exact same headache."></textarea>
+                <div class="flex flex-wrap gap-3">
+                    <button onclick="postTopicComment()" class="primary-cta">Post comment</button>
+                    <button onclick="fetchTopicComments()" class="secondary-cta">Refresh</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+async function fetchTopicComments() {
+    if (activeTopicId === 'exam' || window.location.protocol === 'file:') return;
+    const section = document.getElementById('topicCommentsSection');
+    if (!section) return;
+
+    try {
+        const response = await fetch(`/api/topic-comments?topicId=${encodeURIComponent(activeTopicId)}`);
+        if (!response.ok) return;
+        const payload = await response.json();
+        topicComments = payload.comments || [];
+        section.innerHTML = renderTopicCommentsSection();
+    } catch (error) {
+        console.error('Unable to load topic comments', error);
+    }
+}
+
+async function postTopicComment() {
+    const field = document.getElementById('topicCommentInput');
+    const messageText = field ? field.value.trim() : '';
+    if (!messageText || window.location.protocol === 'file:') return;
+
+    try {
+        await fetch('/api/topic-comments', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                deviceId: window.ACADEMY.state.deviceId,
+                topicId: activeTopicId,
+                courseId: activeCourseId,
+                messageText
+            })
+        });
+        field.value = '';
+        await fetchTopicComments();
+    } catch (error) {
+        console.error('Unable to post topic comment', error);
+    }
 }
 
 function openReferenceModal(url, title) {
