@@ -9,6 +9,7 @@
             highlights: {},
             bookmarks: {},
             examDrafts: {},
+            practiceSessions: [],
             lastVisited: null,
             updatedAt: null
         };
@@ -99,6 +100,19 @@
         return state.examDrafts[unitId] || { medium: [], hard: [] };
     }
 
+    function recordPracticeSession(session) {
+        state.practiceSessions.unshift({
+            ...session,
+            finishedAt: new Date().toISOString()
+        });
+        state.practiceSessions = state.practiceSessions.slice(0, 20);
+        saveState();
+    }
+
+    function getPracticeSessions() {
+        return state.practiceSessions || [];
+    }
+
     function escapeHtml(value) {
         return String(value)
             .replace(/&/g, '&amp;')
@@ -141,6 +155,15 @@
 
     function getTopicMeta(topicId) {
         return getAllTopics().find((topic) => topic.topicId === topicId);
+    }
+
+    function getBookmarkedTopics() {
+        return getAllTopics().filter((topic) => state.bookmarks[topic.topicId]);
+    }
+
+    function getContinueTopic() {
+        if (!state.lastVisited) return null;
+        return getTopicMeta(state.lastVisited.topicId);
     }
 
     function getUnitMeta(unitId) {
@@ -242,11 +265,15 @@
         recordQuizAttempt,
         setExamDraft,
         getExamDraft,
+        recordPracticeSession,
+        getPracticeSessions,
         escapeHtml,
         escapeForAttribute,
         applyHighlights,
         getAllTopics,
         getTopicMeta,
+        getBookmarkedTopics,
+        getContinueTopic,
         getUnitMeta,
         getLoadedQuestionBank,
         calculateStats

@@ -7,27 +7,7 @@ const extraPracticeQuestions = [
         question: 'Which metric is usually most useful when the classes are imbalanced and you care about positive predictions being trustworthy?',
         options: ['Accuracy', 'Precision', 'Variance', 'MSE'],
         answer: 1,
-        explanation: 'Precision focuses on how many predicted positives were actually correct, which matters a lot when false positives are costly.'
-    },
-    {
-        id: 'bonus-ml-2',
-        courseId: 'cs601',
-        courseCode: 'CS601',
-        topicTitle: 'Overfitting',
-        question: 'A model performs brilliantly on training data but poorly on unseen data. What is the most likely issue?',
-        options: ['Underfitting', 'Overfitting', 'Normalization', 'Tokenization'],
-        answer: 1,
-        explanation: 'That is the classic signature of overfitting: memorizing training patterns instead of learning generalizable structure.'
-    },
-    {
-        id: 'bonus-ml-3',
-        courseId: 'cs601',
-        courseCode: 'CS601',
-        topicTitle: 'Deployment',
-        question: 'Why is monitoring a deployed model important even after it reaches production?',
-        options: ['Because deployment deletes the training data', 'Because data drift can reduce real-world performance over time', 'Because models cannot run twice', 'Because GPUs expire quickly'],
-        answer: 1,
-        explanation: 'Production data changes. Monitoring helps catch drift, degraded accuracy, or unstable predictions after launch.'
+        explanation: 'Precision focuses on how many predicted positives were actually correct, which matters when false positives are costly.'
     },
     {
         id: 'bonus-cn-1',
@@ -35,59 +15,19 @@ const extraPracticeQuestions = [
         courseCode: 'CS602',
         topicTitle: 'Routing',
         question: 'What does a routing algorithm mainly decide?',
-        options: ['How to compress video files', 'The best path for packets to reach a destination', 'How to encrypt files locally', 'How to increase monitor brightness'],
+        options: ['How to compress video files', 'The best path for packets to reach a destination', 'How to render websites', 'How to encrypt a mouse'],
         answer: 1,
-        explanation: 'Routing logic exists to choose packet paths across networks efficiently and reliably.'
-    },
-    {
-        id: 'bonus-cn-2',
-        courseId: 'cs602',
-        courseCode: 'CS602',
-        topicTitle: 'Transport layer',
-        question: 'Which protocol is usually preferred for real-time voice or video where low latency matters more than perfect reliability?',
-        options: ['TCP', 'UDP', 'HTTP', 'FTP'],
-        answer: 1,
-        explanation: 'UDP avoids connection overhead and retransmission delays, which suits real-time communication.'
-    },
-    {
-        id: 'bonus-cn-3',
-        courseId: 'cs602',
-        courseCode: 'CS602',
-        topicTitle: 'Security',
-        question: 'What is a firewall primarily used for?',
-        options: ['Cooling the router', 'Filtering and controlling network traffic', 'Converting IPv4 to images', 'Rendering websites'],
-        answer: 1,
-        explanation: 'Firewalls enforce traffic rules between trusted and untrusted zones.'
+        explanation: 'Routing algorithms choose efficient paths through the network.'
     },
     {
         id: 'bonus-cd-1',
         courseId: 'cs603',
         courseCode: 'CS603',
-        topicTitle: 'Lexical analysis',
-        question: 'What is the output of lexical analysis in a compiler?',
-        options: ['Machine code', 'A list of tokens', 'A project schedule', 'Only syntax trees'],
-        answer: 1,
-        explanation: 'The lexer converts raw character streams into tokens that later parser stages can understand.'
-    },
-    {
-        id: 'bonus-cd-2',
-        courseId: 'cs603',
-        courseCode: 'CS603',
-        topicTitle: 'Optimization',
-        question: 'Dead code elimination improves a program mainly by removing what?',
-        options: ['All loops', 'Useful variables', 'Statements that never affect observable output', 'Syntax rules'],
-        answer: 2,
-        explanation: 'Dead code does not affect the program result, so removing it can shrink and speed up generated code.'
-    },
-    {
-        id: 'bonus-cd-3',
-        courseId: 'cs603',
-        courseCode: 'CS603',
         topicTitle: 'Parsing',
         question: 'Why are context-free grammars important in compiler design?',
-        options: ['They define syntax structure for parsers', 'They replace machine code', 'They encrypt tokens', 'They manage team velocity'],
+        options: ['They define syntax structure for parsers', 'They replace machine code', 'They reduce RAM physically', 'They manage project cost'],
         answer: 0,
-        explanation: 'CFGs give the formal syntactic rules that parsing algorithms rely on.'
+        explanation: 'CFGs define the legal syntactic structure that parsing algorithms recognize.'
     },
     {
         id: 'bonus-pm-1',
@@ -95,34 +35,28 @@ const extraPracticeQuestions = [
         courseCode: 'CS604',
         topicTitle: 'Agile planning',
         question: 'What is the main value of sprint reviews in Agile teams?',
-        options: ['To avoid user feedback', 'To inspect working increments and adapt quickly', 'To replace all documentation forever', 'To lock scope permanently'],
+        options: ['To avoid user feedback', 'To inspect working increments and adapt quickly', 'To lock scope permanently', 'To replace release plans'],
         answer: 1,
-        explanation: 'Sprint reviews help teams show progress, gather feedback, and adjust priorities while work is still flexible.'
+        explanation: 'Sprint reviews help teams inspect progress and adjust direction while change is still affordable.'
     },
     {
-        id: 'bonus-pm-2',
-        courseId: 'cs604',
-        courseCode: 'CS604',
-        topicTitle: 'Risk management',
-        question: 'Which risk should usually get attention first?',
-        options: ['The one with the highest exposure', 'The oldest one', 'The cheapest one', 'The funniest one'],
-        answer: 0,
-        explanation: 'High exposure means a strong combination of probability and impact.'
-    },
-    {
-        id: 'bonus-pm-3',
-        courseId: 'cs604',
-        courseCode: 'CS604',
-        topicTitle: 'Scheduling',
-        question: 'If a task on the critical path slips by two days and nothing else changes, what happens?',
-        options: ['Nothing changes', 'The whole project is delayed by two days', 'The project becomes cheaper', 'The team skips testing'],
+        id: 'bonus-cg-1',
+        courseId: 'cs603-cg',
+        courseCode: 'CS603-CG',
+        topicTitle: 'Rendering',
+        question: 'What is the major strength of ray tracing compared with rasterization?',
+        options: ['Cheaper integer addition only', 'More physically realistic lighting, reflections, and shadows', 'No need for geometry', 'It removes textures'],
         answer: 1,
-        explanation: 'The critical path controls the shortest possible project duration, so delays there affect the full schedule.'
+        explanation: 'Ray tracing models light transport more realistically, which improves reflections and shadows.'
     }
 ];
 
 let practiceSession = [];
 let practiceCourse = 'all';
+let sessionMode = 'drill';
+let timerSeconds = 0;
+let timerHandle = null;
+let mockFinished = false;
 
 function buildPracticeBank() {
     return [...window.ACADEMY.getLoadedQuestionBank(), ...extraPracticeQuestions];
@@ -140,6 +74,7 @@ function pickRandomQuestions(bank, amount) {
 function initializeTestsPage() {
     renderPracticeHeader();
     buildPracticeSession();
+    renderPracticeHistory();
 }
 
 function renderPracticeHeader() {
@@ -163,10 +98,17 @@ function renderPracticeHeader() {
     `;
 }
 
-function buildPracticeSession() {
+function buildPracticeSession(mode = 'drill', durationMinutes = 0) {
+    stopTimer();
+    sessionMode = mode;
+    timerSeconds = durationMinutes * 60;
+    mockFinished = false;
+
     const bank = buildPracticeBank().filter((question) => practiceCourse === 'all' || question.courseId === practiceCourse);
-    practiceSession = pickRandomQuestions(bank, 12).map((question) => ({ ...question, sessionAnswer: null }));
+    const questionCount = mode === 'mock' ? 20 : 12;
+    practiceSession = pickRandomQuestions(bank, questionCount).map((question) => ({ ...question, sessionAnswer: null }));
     renderPracticeSession();
+    if (mode === 'mock') startTimer();
 }
 
 function renderPracticeSession() {
@@ -175,9 +117,12 @@ function renderPracticeSession() {
 
     document.getElementById('practiceMeta').innerHTML = `
         <div class="flex flex-wrap gap-3 items-center">
+            <span class="mini-badge">Mode: ${sessionMode === 'mock' ? 'Timed mock' : 'Drill'}</span>
             <span class="mini-badge">Question set: ${practiceSession.length}</span>
             <span class="mini-badge">Attempted: ${attempted}</span>
             <span class="mini-badge">Session score: ${score}</span>
+            <span class="mini-badge ${sessionMode === 'mock' ? 'timer-pill' : ''}">${sessionMode === 'mock' ? `Time left: ${formatTimer(timerSeconds)}` : 'No timer'}</span>
+            <button onclick="submitCurrentSession()" class="secondary-cta text-sm !py-2 !px-4">Submit session</button>
         </div>
     `;
 
@@ -193,14 +138,14 @@ function renderPracticeSession() {
                 </div>
                 <div class="space-y-3">
                     ${question.options.map((option, optionIndex) => `
-                        <button onclick="answerPracticeQuestion(${index}, ${optionIndex})" class="quiz-option ${getPracticeOptionClass(question, optionIndex)}" ${question.sessionAnswer !== null ? 'disabled' : ''}>
+                        <button onclick="answerPracticeQuestion(${index}, ${optionIndex})" class="quiz-option ${getPracticeOptionClass(question, optionIndex)}" ${question.sessionAnswer !== null || mockFinished ? 'disabled' : ''}>
                             ${option}
                         </button>
                     `).join('')}
                 </div>
-                ${question.sessionAnswer !== null ? `
+                ${question.sessionAnswer !== null || mockFinished ? `
                     <div class="quiz-feedback ${question.sessionAnswer === question.answer ? 'quiz-feedback-correct' : 'quiz-feedback-wrong'}">
-                        <strong>${question.sessionAnswer === question.answer ? 'Correct.' : 'Not quite.'}</strong>
+                        <strong>${question.sessionAnswer === question.answer ? 'Correct.' : 'Review this one.'}</strong>
                         <p>${question.explanation}</p>
                     </div>
                 ` : ''}
@@ -210,25 +155,30 @@ function renderPracticeSession() {
 }
 
 function getPracticeOptionClass(question, optionIndex) {
-    if (question.sessionAnswer === null) return '';
+    if (question.sessionAnswer === null && !mockFinished) return '';
     if (optionIndex === question.answer) return 'quiz-option-correct';
-    if (optionIndex === question.sessionAnswer && question.sessionAnswer !== question.answer) return 'quiz-option-wrong';
+    if (question.sessionAnswer !== null && optionIndex === question.sessionAnswer && question.sessionAnswer !== question.answer) return 'quiz-option-wrong';
     return 'quiz-option-muted';
 }
 
 function answerPracticeQuestion(index, optionIndex) {
     const question = practiceSession[index];
-    if (question.sessionAnswer !== null) return;
+    if (question.sessionAnswer !== null || mockFinished) return;
     question.sessionAnswer = optionIndex;
 
     window.ACADEMY.recordQuizAttempt({
-        quizId: `practice:${question.id}`,
+        quizId: `practice:${question.id}:${Date.now()}:${index}`,
         courseId: question.courseId,
         topicId: question.topicId || `practice-${question.courseId}`,
         question: question.question,
         selected: optionIndex,
         correct: optionIndex === question.answer
     });
+
+    if (sessionMode === 'mock' && practiceSession.every((item) => item.sessionAnswer !== null)) {
+        submitCurrentSession();
+        return;
+    }
 
     renderPracticeHeader();
     renderPracticeSession();
@@ -239,7 +189,87 @@ function setPracticeCourse(courseId) {
     document.querySelectorAll('[data-course-filter]').forEach((button) => {
         button.classList.toggle('course-pill-active', button.dataset.courseFilter === courseId);
     });
-    buildPracticeSession();
+    buildPracticeSession(sessionMode === 'mock' ? 'mock' : 'drill', sessionMode === 'mock' ? 15 : 0);
+}
+
+function startMockTest(minutes) {
+    buildPracticeSession('mock', minutes);
+}
+
+function startTimer() {
+    stopTimer();
+    timerHandle = window.setInterval(() => {
+        timerSeconds -= 1;
+        if (timerSeconds <= 0) {
+            timerSeconds = 0;
+            renderPracticeSession();
+            submitCurrentSession(true);
+            return;
+        }
+        renderPracticeSession();
+    }, 1000);
+}
+
+function stopTimer() {
+    if (timerHandle) {
+        clearInterval(timerHandle);
+        timerHandle = null;
+    }
+}
+
+function submitCurrentSession(autoSubmitted = false) {
+    if (mockFinished || !practiceSession.length) return;
+    mockFinished = true;
+    stopTimer();
+
+    const attempted = practiceSession.filter((item) => item.sessionAnswer !== null).length;
+    const correct = practiceSession.filter((item) => item.sessionAnswer === item.answer).length;
+    const total = practiceSession.length;
+    const accuracy = total ? Math.round((correct / total) * 100) : 0;
+
+    window.ACADEMY.recordPracticeSession({
+        courseId: practiceCourse,
+        courseLabel: practiceCourse === 'all' ? 'All subjects' : ((practiceSession[0] && practiceSession[0].courseCode) || practiceCourse.toUpperCase()),
+        mode: sessionMode,
+        attempted,
+        correct,
+        total,
+        accuracy,
+        autoSubmitted
+    });
+
+    renderPracticeHeader();
+    renderPracticeSession();
+    renderPracticeHistory();
+}
+
+function renderPracticeHistory() {
+    const sessions = window.ACADEMY.getPracticeSessions();
+    document.getElementById('practiceHistory').innerHTML = `
+        <section class="panel-card p-5">
+            <div class="section-head">
+                <h3>Mock history</h3>
+                <span>${sessions.length} saved sessions</span>
+            </div>
+            <div class="space-y-3">
+                ${sessions.length ? sessions.slice(0, 8).map((session) => `
+                    <div class="study-rail-block !p-4">
+                        <div class="flex items-center justify-between gap-3">
+                            <strong class="text-white">${session.courseLabel}</strong>
+                            <span class="mini-badge">${session.mode === 'mock' ? 'Timed mock' : 'Drill'}</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mt-2">${session.correct}/${session.total} correct • ${session.accuracy}% • ${new Date(session.finishedAt).toLocaleString()}</p>
+                    </div>
+                `).join('') : '<p class="text-sm text-slate-400">Complete a session and your recent scores will show up here.</p>'}
+            </div>
+        </section>
+    `;
+}
+
+function formatTimer(totalSeconds) {
+    const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+    const seconds = String(totalSeconds % 60).padStart(2, '0');
+    return `${minutes}:${seconds}`;
 }
 
 document.addEventListener('DOMContentLoaded', initializeTestsPage);

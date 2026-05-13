@@ -319,3 +319,254 @@ Object.assign(window.topicDetails, {
         }
     }
 });
+
+Object.assign(window.topicDetails['cs603-cg-u1'], {
+    'cg-u1t3': {
+        title: 'Line, Circle & Ellipse Drawing Algorithms',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Drawing Curves Without Asking the GPU to Cry</h3>
+<p class="mb-4">After straight lines, graphics systems need circles and ellipses. The challenge is the same: mathematical equations are continuous, but screens are a stubborn grid of discrete pixels.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Algorithm</th>
+            <th class="p-3">Used for</th>
+            <th class="p-3">Why it matters</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">DDA</td><td class="p-3">Basic line drawing</td><td class="p-3">Simple but floating-point heavy</td></tr>
+        <tr><td class="p-3">Bresenham</td><td class="p-3">Fast integer-based lines</td><td class="p-3">Efficient for hardware</td></tr>
+        <tr><td class="p-3">Midpoint circle</td><td class="p-3">Circles</td><td class="p-3">Uses symmetry to reduce work</td></tr>
+        <tr><td class="p-3">Midpoint ellipse</td><td class="p-3">Ellipses</td><td class="p-3">Handles changing curvature cleanly</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm">The secret weapon is <strong>symmetry</strong>. For circles, if you know one octant, you can mirror the rest. In other words, the algorithm works smarter, not harder, unlike many of us during exam week.</p>
+        `,
+        quizzes: [
+            {
+                question: 'Why is symmetry so useful in circle drawing algorithms?',
+                options: ['A) It removes all math', 'B) It lets the system compute a small portion and mirror the remaining points', 'C) It converts circles into squares', 'D) It is only used in animation'],
+                answer: 1,
+                explanation: 'A circle is highly symmetric, so one computed section can generate several others.'
+            }
+        ],
+        references: [
+            { title: 'Computer graphics overview (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Computer_graphics_(computer_science)' }
+        ]
+    },
+    'cg-u1t4': {
+        title: 'Windowing, Viewports & Clipping',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Showing Only the Part the User Should Actually See</h3>
+<p class="mb-4">A scene may be huge, but the screen only shows a selected region. <strong>Windowing</strong> chooses the world-space region of interest. <strong>Viewport mapping</strong> places that region on the physical display.</p>
+
+<div class="mermaid bg-gray-900 p-5 rounded-lg mb-6 border border-gray-700">
+flowchart LR
+    W[World Window] --> C[Clipping]
+    C --> V[Viewport Mapping]
+    V --> S[Screen Pixels]
+</div>
+
+<p class="mb-4 text-gray-300 text-sm"><strong>Clipping</strong> removes geometry that falls outside the visible region. Without clipping, the graphics system would happily keep processing invisible lines like a very obedient but extremely inefficient intern.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is the purpose of clipping in graphics?',
+                options: ['A) To enlarge the monitor', 'B) To discard geometry outside the visible region', 'C) To change colors automatically', 'D) To compress textures'],
+                answer: 1,
+                explanation: 'Clipping saves computation by removing invisible parts before full rendering.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-cg-u2'], {
+    'cg-u2t3': {
+        title: '3D Transformations & Viewing Pipeline',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How 3D Points Reach Your Screen</h3>
+<p class="mb-4">A 3D graphics pipeline moves geometry through several coordinate systems: model space, world space, camera space, clip space, and finally screen space. It sounds like bureaucracy, but each stage has a job.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong>Model transform:</strong> positions an object in the world.</li>
+    <li><strong>View transform:</strong> places the camera and defines what it sees.</li>
+    <li><strong>Projection transform:</strong> turns 3D into 2D-friendly coordinates.</li>
+    <li><strong>Viewport transform:</strong> maps final normalized coordinates to screen pixels.</li>
+</ul>
+
+<p class="text-gray-300 text-sm">The viewing pipeline is basically airport security for geometry. Every vertex has to pass through multiple checkpoints before it is allowed on screen.</p>
+        `,
+        quizzes: [
+            {
+                question: 'Which transformation stage is mainly responsible for simulating the camera position?',
+                options: ['A) Model transform', 'B) View transform', 'C) Texture transform', 'D) Lighting only'],
+                answer: 1,
+                explanation: 'The view transform converts world coordinates relative to the camera.'
+            }
+        ]
+    },
+    'cg-u2t4': {
+        title: 'Polygon Meshes, Curved Surfaces & Modeling',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How 3D Objects Are Represented</h3>
+<p class="mb-4">Most 3D objects are stored as <strong>polygon meshes</strong>, especially triangles. Triangles are the comfort food of graphics hardware: simple, predictable, and strangely effective.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Representation</th>
+            <th class="p-3">Best at</th>
+            <th class="p-3">Tradeoff</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">Triangle mesh</td><td class="p-3">Real-time rendering</td><td class="p-3">Curves need approximation</td></tr>
+        <tr><td class="p-3">Parametric surface</td><td class="p-3">Smooth design</td><td class="p-3">More math-heavy</td></tr>
+        <tr><td class="p-3">Implicit surface</td><td class="p-3">Organic shapes</td><td class="p-3">Harder to visualize directly</td></tr>
+    </tbody>
+</table>
+        `,
+        quizzes: [
+            {
+                question: 'Why are triangles so common in 3D graphics?',
+                options: ['A) They are the only shape with color', 'B) They are always curved', 'C) They are simple, planar, and efficient for hardware pipelines', 'D) They avoid all clipping'],
+                answer: 2,
+                explanation: 'Any polygon can be broken into triangles, and triangles are easy for GPUs to rasterize.'
+            }
+        ],
+        references: [
+            { title: 'Computer graphics overview (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Computer_graphics_(computer_science)' }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-cg-u3'], {
+    'cg-u3t3': {
+        title: 'Texture Mapping & UV Coordinates',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Wrapping Images Around Geometry</h3>
+<p class="mb-4">Without textures, a 3D wall is just a colored rectangle pretending to be interesting. <strong>Texture mapping</strong> projects image detail onto surfaces so models look rich without requiring millions of extra polygons.</p>
+
+<p class="mb-4 text-gray-300 text-sm"><strong>UV coordinates</strong> define how a 2D image maps to a 3D surface. They are called U and V instead of X and Y so nobody confuses texture space with geometric space, which was a solid choice by graphics people for once.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What do UV coordinates represent?',
+                options: ['A) Screen brightness values', 'B) Texture coordinates mapping 2D images onto 3D surfaces', 'C) Camera positions', 'D) Depth buffer indices'],
+                answer: 1,
+                explanation: 'UVs tell the renderer where each surface point samples from a texture image.'
+            }
+        ]
+    },
+    'cg-u3t4': {
+        title: 'Color Models, Aliasing & Anti-Aliasing',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Why Jagged Edges Appear and How We Fight Them</h3>
+<p class="mb-4">Aliasing happens when continuous detail is sampled too coarsely, causing jagged edges or shimmer. It is the visual equivalent of a low-quality photo of a striped shirt suddenly becoming a weird optical argument.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong>RGB</strong> is common for displays because screens emit red, green, and blue light.</li>
+    <li><strong>Aliasing</strong> appears when sampling misses fine detail.</li>
+    <li><strong>Anti-aliasing</strong> smooths edges by averaging or supersampling neighboring pixels.</li>
+    <li><strong>Filtering</strong> helps textures look less noisy when viewed far away or at angles.</li>
+</ul>
+        `,
+        quizzes: [
+            {
+                question: 'What is anti-aliasing mainly trying to reduce?',
+                options: ['A) CPU temperature', 'B) Jagged visual artifacts caused by sampling', 'C) File permissions', 'D) Animation speed'],
+                answer: 1,
+                explanation: 'Anti-aliasing reduces stair-step edges and shimmering caused by undersampling.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-cg-u4'], {
+    'cg-u4t3': {
+        title: 'Fractals, Procedural Curves & Terrain',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Generating Complexity from Rules</h3>
+<p class="mb-4">Not every mountain or cloud is modeled point by point. Procedural graphics uses rules and randomness to create rich natural detail. Fractals are especially good at this because nature absolutely loves repeating patterns at different scales.</p>
+
+<p class="text-gray-300 text-sm">A terrain generator can start with simple noise and repeatedly refine it into hills, valleys, and rocky edges. The result looks surprisingly believable, which is convenient because hand-modeling every pebble would be a deeply unfortunate career choice.</p>
+        `,
+        quizzes: [
+            {
+                question: 'Why are fractals useful in graphics?',
+                options: ['A) They generate repeated detail across scales, which suits natural forms', 'B) They remove all need for textures', 'C) They only work in 2D menus', 'D) They replace projection math'],
+                answer: 0,
+                explanation: 'Fractals and procedural methods are excellent for natural-looking complexity like coastlines, clouds, and terrain.'
+            }
+        ]
+    },
+    'cg-u4t4': {
+        title: 'Surface Patches & Subdivision',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Making Rough Models Smooth</h3>
+<p class="mb-4">Subdivision starts with a coarse mesh and repeatedly refines it into a smoother surface. Surface patches describe curved pieces mathematically so designers can work with smooth forms instead of thousands of jagged triangles.</p>
+
+<p class="text-gray-300 text-sm">Subdivision is like taking a blocky clay model and smoothing it again and again until it stops looking like a low-budget game character from 1998.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is the core idea behind subdivision surfaces?',
+                options: ['A) Increase polygon roughness intentionally', 'B) Repeatedly refine a coarse mesh into a smoother surface', 'C) Convert textures into audio', 'D) Remove control points'],
+                answer: 1,
+                explanation: 'Subdivision methods progressively smooth meshes while preserving their overall shape.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs603-cg-u5'], {
+    'cg-u5t3': {
+        title: 'Rendering Pipeline, Z-Testing & Real-Time Graphics',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How Modern GPUs Push Frames Fast Enough for Games</h3>
+<p class="mb-4">Real-time rendering pipelines transform vertices, assemble primitives, rasterize fragments, shade pixels, and test depth before writing the final frame. If that sounds like a lot, that is because GPUs are doing millions of these operations while your game still expects 60 FPS and emotional stability.</p>
+
+<p class="text-gray-300 text-sm"><strong>Z-testing</strong> compares fragment depth values so only the visible surface remains. This is a key part of why scenes do not look like every triangle is trying to speak over every other triangle.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is the purpose of Z-testing in the rendering pipeline?',
+                options: ['A) To choose texture color only', 'B) To compare depth and keep the visible fragment', 'C) To rotate models', 'D) To compute UV coordinates'],
+                answer: 1,
+                explanation: 'Z-testing ensures fragments hidden behind nearer surfaces do not overwrite visible ones.'
+            }
+        ]
+    },
+    'cg-u5t4': {
+        title: 'Particle Systems, Physics & Motion Capture',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Animating the Messy Stuff</h3>
+<p class="mb-4">Smoke, fire, rain, sparks, cloth, and crowds are hard to animate manually. Particle systems model many tiny simple elements whose combined behavior looks complex. Physics simulation handles motion under forces, and motion capture records real human performance.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Technique</th>
+            <th class="p-3">Best for</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">Particle systems</td><td class="p-3">Fire, smoke, rain, magic effects</td></tr>
+        <tr><td class="p-3">Physics simulation</td><td class="p-3">Cloth, rigid bodies, collisions</td></tr>
+        <tr><td class="p-3">Motion capture</td><td class="p-3">Realistic human movement</td></tr>
+    </tbody>
+</table>
+        `,
+        quizzes: [
+            {
+                question: 'Which technique is most associated with smoke, sparks, and rain effects?',
+                options: ['A) Motion capture', 'B) Particle systems', 'C) Orthographic projection', 'D) Clipping only'],
+                answer: 1,
+                explanation: 'Particle systems efficiently simulate many small independent elements.'
+            }
+        ]
+    }
+});

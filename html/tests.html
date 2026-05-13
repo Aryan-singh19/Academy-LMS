@@ -45,7 +45,13 @@
                 <button data-course-filter="cs602" onclick="setPracticeCourse('cs602')" class="course-pill">CN</button>
                 <button data-course-filter="cs603" onclick="setPracticeCourse('cs603')" class="course-pill">CD</button>
                 <button data-course-filter="cs604" onclick="setPracticeCourse('cs604')" class="course-pill">PM</button>
+                <button data-course-filter="cs603-cg" onclick="setPracticeCourse('cs603-cg')" class="course-pill">CG</button>
                 <button onclick="buildPracticeSession()" class="secondary-cta text-sm !py-2 !px-4 ml-auto">Generate new set</button>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <button onclick="startMockTest(10)" class="secondary-cta text-sm !py-2 !px-4">10 min mock</button>
+                <button onclick="startMockTest(15)" class="secondary-cta text-sm !py-2 !px-4">15 min mock</button>
+                <button onclick="startMockTest(20)" class="secondary-cta text-sm !py-2 !px-4">20 min mock</button>
             </div>
         </div>
     </header>
@@ -60,13 +66,17 @@
             </div>
             <div id="practiceMeta"></div>
         </section>
-        <section id="practiceList" class="space-y-5"></section>
+        <section class="grid xl:grid-cols-[minmax(0,1fr)_340px] gap-6">
+            <section id="practiceList" class="space-y-5"></section>
+            <aside id="practiceHistory"></aside>
+        </section>
     </main>
 
     <script src="../js/data.js"></script>
     <script src="../js/data_cs601.js"></script>
     <script src="../js/data_cs602.js"></script>
     <script src="../js/data_cs603.js"></script>
+    <script src="../js/data_cs603-cg.js"></script>
     <script src="../js/data_cs604.js"></script>
     <script src="../js/shared.js"></script>
     <script src="../js/tests.js"></script>

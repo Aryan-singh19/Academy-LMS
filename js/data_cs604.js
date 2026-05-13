@@ -580,3 +580,228 @@ Object.assign(window.topicDetails['cs604-u5'], {
         ]
     }
 });
+
+Object.assign(window.topicDetails['cs604-u1'], {
+    'c4-u1t4': {
+        title: 'Project Life Cycle & Phase Gates',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Projects Move Through Stages, Not Vibes</h3>
+<p class="mb-4">A project life cycle usually includes initiation, planning, execution, monitoring, and closure. <strong>Phase gates</strong> are decision checkpoints between stages where leadership asks, "Do we continue, fix course, or stop before this becomes expensive fan fiction?"</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is the purpose of a phase gate?',
+                options: ['A) To permanently block developers', 'B) To review project readiness before moving to the next stage', 'C) To replace all schedules', 'D) To delete risk logs'],
+                answer: 1,
+                explanation: 'Phase gates help organizations make structured go/no-go decisions at major milestones.'
+            }
+        ],
+        references: [
+            { title: 'Project management (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Project_management' }
+        ]
+    },
+    'c4-u1t5': {
+        title: 'Feasibility Study & Business Case',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Should We Even Start This Project?</h3>
+<p class="mb-4">Before building anything, teams examine <strong>technical</strong>, <strong>economic</strong>, <strong>operational</strong>, and <strong>schedule</strong> feasibility. The business case explains why the project deserves time, money, and several people's blood pressure.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li>Technical feasibility: can the solution actually be built?</li>
+    <li>Economic feasibility: is the value worth the cost?</li>
+    <li>Operational feasibility: will people adopt and support it?</li>
+    <li>Schedule feasibility: can it happen in time?</li>
+</ul>
+        `,
+        quizzes: [
+            {
+                question: 'Which feasibility question asks whether the project is worth its cost?',
+                options: ['A) Technical', 'B) Economic', 'C) Operational', 'D) Legal only'],
+                answer: 1,
+                explanation: 'Economic feasibility focuses on financial value versus investment.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u2'], {
+    'c4-u2t4': {
+        title: 'Work Breakdown Structure (WBS)',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Breaking Big Work into Smaller, Less Terrifying Work</h3>
+<p class="mb-4">A <strong>WBS</strong> divides the project into manageable deliverables and tasks. If the full project is one elephant, the WBS is how you stop pretending you can eat it in one bite.</p>
+
+<div class="mermaid bg-gray-900 p-5 rounded-lg mb-6 border border-gray-700">
+flowchart TD
+    P[Project] --> A[Frontend]
+    P --> B[Backend]
+    P --> C[Testing]
+    A --> A1[UI screens]
+    A --> A2[Validation]
+</div>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main purpose of a WBS?',
+                options: ['A) To increase ambiguity', 'B) To decompose the project into smaller manageable components', 'C) To replace budgeting', 'D) To avoid scheduling'],
+                answer: 1,
+                explanation: 'A WBS creates structure by breaking a large project into smaller deliverables and tasks.'
+            }
+        ]
+    },
+    'c4-u2t5': {
+        title: 'Resource Allocation & Leveling',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Schedules Look Great Until the Same Person Is Assigned to Five Things at Once</h3>
+<p class="mb-4">Resource allocation assigns people, tools, and budget to activities. <strong>Resource leveling</strong> adjusts the schedule when demand exceeds available capacity.</p>
+
+<p class="text-gray-300 text-sm">If one developer is somehow scheduled to design the UI, build the API, run testing, and attend three meetings at 10 AM, leveling is the process that politely tells the plan to return to reality.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What problem does resource leveling address?',
+                options: ['A) Too many backups', 'B) Over-allocation of limited resources', 'C) Missing CSS colors', 'D) IP collisions'],
+                answer: 1,
+                explanation: 'Resource leveling smooths schedules when available people or assets are overbooked.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u3'], {
+    'c4-u3t4': {
+        title: 'Qualitative vs Quantitative Risk Analysis',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Two Ways to Judge Risk</h3>
+<p class="mb-4"><strong>Qualitative analysis</strong> ranks risks using labels like low, medium, and high. <strong>Quantitative analysis</strong> assigns numeric estimates such as probability percentages or expected monetary value.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Type</th>
+            <th class="p-3">Best for</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">Qualitative</td><td class="p-3">Fast prioritization</td></tr>
+        <tr><td class="p-3">Quantitative</td><td class="p-3">Financial and schedule modeling</td></tr>
+    </tbody>
+</table>
+        `,
+        quizzes: [
+            {
+                question: 'Which risk analysis style uses numeric values like probability percentages or expected loss?',
+                options: ['A) Qualitative', 'B) Quantitative', 'C) Narrative only', 'D) Lexical'],
+                answer: 1,
+                explanation: 'Quantitative risk analysis uses numbers to estimate impact and exposure more precisely.'
+            }
+        ]
+    },
+    'c4-u3t5': {
+        title: 'Contingency, Fallback & Reserves',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Planning for the Plan to Go Wrong</h3>
+<p class="mb-4">A <strong>contingency plan</strong> explains what to do if a known risk occurs. A <strong>fallback plan</strong> is the backup when even the contingency is not enough. <strong>Reserves</strong> are extra budget or time set aside for uncertainty.</p>
+
+<p class="text-gray-300 text-sm">In simpler terms: contingency is carrying an umbrella, fallback is knowing which shop sells umbrellas nearby, and reserves are the money you kept because weather forecasts routinely develop trust issues.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is a contingency reserve mainly used for?',
+                options: ['A) Decorating status reports', 'B) Handling known-unknown project risks', 'C) Replacing all budgets', 'D) Avoiding communication'],
+                answer: 1,
+                explanation: 'Contingency reserves are set aside for anticipated uncertainty tied to identified risks.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u4'], {
+    'c4-u4t4': {
+        title: 'Configuration Audits & Status Accounting',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Knowing What Changed, Who Approved It, and Whether It Matches Reality</h3>
+<p class="mb-4"><strong>Status accounting</strong> tracks configuration items and their current states. <strong>Configuration audits</strong> verify that the actual product matches approved records and baselines.</p>
+
+<p class="text-gray-300 text-sm">This is the part of SCM that stops teams from confidently saying "version 2.1 is deployed" when production is actually running "2.1-final-final-please-work".</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is configuration auditing mainly concerned with?',
+                options: ['A) Checking whether actual configuration matches approved records', 'B) Making slides prettier', 'C) Replacing Git', 'D) Removing test cases'],
+                answer: 0,
+                explanation: 'Audits verify consistency between documented baselines and the real delivered system.'
+            }
+        ]
+    },
+    'c4-u4t5': {
+        title: 'Branching Strategy, Tags & Traceability',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Following a Change from Requirement to Release</h3>
+<p class="mb-4">Branching strategies define how teams isolate work. <strong>Tags</strong> mark important versions. <strong>Traceability</strong> links requirements, changes, builds, and releases so teams can explain how a feature moved from idea to production.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li>Feature branches isolate ongoing work.</li>
+    <li>Release tags identify exact shipped versions.</li>
+    <li>Traceability supports audits, debugging, and accountability.</li>
+</ul>
+        `,
+        quizzes: [
+            {
+                question: 'Why are tags useful in version control?',
+                options: ['A) They decorate commits only', 'B) They mark important versions such as releases or milestones', 'C) They replace baselines', 'D) They store passwords'],
+                answer: 1,
+                explanation: 'Tags help identify and revisit exact commit snapshots tied to releases or milestones.'
+            }
+        ]
+    }
+});
+
+Object.assign(window.topicDetails['cs604-u5'], {
+    'c4-u5t4': {
+        title: 'Infrastructure as Code & Immutable Deployments',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Treating Servers Like Versioned Artifacts, Not Sacred Furniture</h3>
+<p class="mb-4"><strong>Infrastructure as Code (IaC)</strong> defines environments in code using tools like Terraform or CloudFormation. <strong>Immutable deployments</strong> avoid patching live servers in-place; instead, teams replace old environments with fresh consistent ones.</p>
+
+<p class="text-gray-300 text-sm">Immutable deployment is like swapping the entire tiffin box instead of trying to repair a leaking lid during lunch break while still pretending everything is fine.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What is a major benefit of Infrastructure as Code?',
+                options: ['A) Servers become physically smaller', 'B) Environments become reproducible and version-controlled', 'C) It removes networking', 'D) It avoids documentation forever'],
+                answer: 1,
+                explanation: 'IaC allows teams to create, review, and reproduce infrastructure consistently through code.'
+            }
+        ]
+    },
+    'c4-u5t5': {
+        title: 'Security in DevOps (DevSecOps)',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Security Has to Join Early, Not Show Up Only After the Fire</h3>
+<p class="mb-4">DevSecOps integrates security checks into the pipeline. Instead of waiting for a final audit, teams scan dependencies, analyze code, manage secrets safely, and enforce policy continuously.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Practice</th>
+            <th class="p-3">Goal</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">Dependency scanning</td><td class="p-3">Catch vulnerable packages</td></tr>
+        <tr><td class="p-3">Secret management</td><td class="p-3">Protect credentials and tokens</td></tr>
+        <tr><td class="p-3">Policy checks</td><td class="p-3">Enforce safe deployment rules</td></tr>
+    </tbody>
+</table>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main idea behind DevSecOps?',
+                options: ['A) Security is postponed until release day', 'B) Security is integrated throughout the development and deployment lifecycle', 'C) Only operations handles security', 'D) Security means only antivirus'],
+                answer: 1,
+                explanation: 'DevSecOps embeds security checks and practices continuously instead of treating them as a final afterthought.'
+            }
+        ]
+    }
+});

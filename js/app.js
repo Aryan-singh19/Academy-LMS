@@ -3,6 +3,7 @@ let activeUnitId = 'cs601-u1';
 let activeTopicId = 't1';
 let appStarted = false;
 const loadedCourses = {};
+let topicListFilter = 'all';
 
 function startApp() {
     const hero = document.getElementById('heroSection');
@@ -24,6 +25,7 @@ function initApp() {
     bindGlobalEvents();
     renderCoursesNav();
     renderOverviewCards();
+    renderStudentDock();
     loadCourseData(activeCourseId, () => {
         renderCourseView();
         preloadRemainingCourses();
@@ -125,6 +127,43 @@ function renderOverviewCards() {
     `).join('');
 }
 
+function renderStudentDock() {
+    const continueTopic = window.ACADEMY.getContinueTopic();
+    const bookmarks = window.ACADEMY.getBookmarkedTopics().slice(0, 6);
+    document.getElementById('studentDock').innerHTML = `
+        <section class="panel-card p-5">
+            <div class="section-head">
+                <h3>Continue studying</h3>
+                <span>Local memory active</span>
+            </div>
+            ${continueTopic ? `
+                <button onclick="openSearchResult('${continueTopic.courseId}', '${continueTopic.unitId}', '${continueTopic.topicId}')" class="continue-card">
+                    <p class="metric-label">${continueTopic.courseCode} • Unit ${continueTopic.unitNumber}</p>
+                    <h4 class="text-xl font-bold text-white mt-2">${continueTopic.title}</h4>
+                    <p class="metric-subtext mt-2">Pick up where you left off without hunting through the sidebar again.</p>
+                </button>
+            ` : `
+                <div class="study-rail-block">
+                    <p class="text-sm text-slate-400">Start any topic once and your continue card will appear here.</p>
+                </div>
+            `}
+        </section>
+        <section class="panel-card p-5">
+            <div class="section-head">
+                <h3>Bookmarks</h3>
+                <span>${bookmarks.length} quick links</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                ${bookmarks.length ? bookmarks.map((topic) => `
+                    <button onclick="openSearchResult('${topic.courseId}', '${topic.unitId}', '${topic.topicId}')" class="reference-chip">
+                        ${topic.courseCode}: ${topic.title}
+                    </button>
+                `).join('') : '<p class="text-sm text-slate-400">Bookmark tough topics and they will show up here for quick revision.</p>'}
+            </div>
+        </section>
+    `;
+}
+
 function renderCoursesNav() {
     const stats = window.ACADEMY.calculateStats();
     document.getElementById('coursesNav').innerHTML = coursesData.map((course) => {
@@ -171,6 +210,8 @@ function renderCourseView() {
     const topicMeta = unit.topics.find((topic) => topic.id === activeTopicId);
     const topicSummary = topicMeta ? topicMeta.title : 'Unit Revision';
 
+    renderStudentDock();
+
     document.getElementById('mainContent').innerHTML = `
         <div class="grid gap-6 xl:grid-cols-[280px_minmax(0,1fr)_320px]">
             <aside class="panel-card p-4 h-fit xl:sticky xl:top-28">
@@ -182,6 +223,11 @@ function renderCourseView() {
                     <span class="mini-badge">${getCourseCompletionText(course.id)}</span>
                 </div>
                 <p class="text-sm text-slate-400 mb-5">${course.description}</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <button onclick="setTopicListFilter('all')" class="mini-badge ${topicListFilter === 'all' ? 'course-pill-active' : ''}">All</button>
+                    <button onclick="setTopicListFilter('bookmarked')" class="mini-badge ${topicListFilter === 'bookmarked' ? 'course-pill-active' : ''}">Bookmarked</button>
+                    <button onclick="setTopicListFilter('incomplete')" class="mini-badge ${topicListFilter === 'incomplete' ? 'course-pill-active' : ''}">Incomplete</button>
+                </div>
                 <div class="space-y-3">
                     ${course.units.map((entry) => renderUnitButton(entry)).join('')}
                 </div>
@@ -211,6 +257,11 @@ function renderCourseView() {
 
 function renderUnitButton(unit) {
     const isActive = unit.id === activeUnitId;
+    const visibleTopics = unit.topics.filter((topic) => {
+        if (topicListFilter === 'bookmarked') return window.ACADEMY.isBookmarked(topic.id);
+        if (topicListFilter === 'incomplete') return !window.ACADEMY.state.completedTopics[topic.id];
+        return true;
+    });
     return `
         <div class="unit-card ${isActive ? 'unit-card-active' : ''}">
             <button onclick="selectUnit('${unit.id}')" class="w-full text-left flex items-center justify-between gap-3">
@@ -221,7 +272,7 @@ function renderUnitButton(unit) {
                 <span class="text-slate-500">${isActive ? '•' : '+'}</span>
             </button>
             <div class="${isActive ? 'block' : 'hidden'} mt-3 space-y-2">
-                ${unit.topics.map((topic, index) => {
+                ${visibleTopics.length ? visibleTopics.map((topic, index) => {
                     const complete = window.ACADEMY.state.completedTopics[topic.id];
                     const bookmarked = window.ACADEMY.isBookmarked(topic.id);
                     return `
@@ -233,7 +284,7 @@ function renderUnitButton(unit) {
                             </span>
                         </button>
                     `;
-                }).join('')}
+                }).join('') : '<div class="text-sm text-slate-400 px-2 py-3">No topics match this filter in the current unit.</div>'}
                 <button onclick="selectTopic('exam')" class="topic-pill ${activeTopicId === 'exam' ? 'topic-pill-active' : ''}">
                     <span>Unit Exam / Revision</span>
                     <span class="topic-pill-icons">→</span>
@@ -377,6 +428,7 @@ function checkAnswer(quizId, selected, correct, explanation, question) {
     }
 
     renderOverviewCards();
+    renderStudentDock();
     renderCoursesNav();
     renderTopicContent();
     renderStudyRail();
@@ -448,6 +500,7 @@ function renderStudyRail() {
     noteInput.addEventListener('input', () => {
         window.ACADEMY.setNote(activeTopicId, noteInput.value);
         renderOverviewCards();
+        renderStudentDock();
     });
 }
 
@@ -531,6 +584,7 @@ function markCurrentTopicDone() {
     if (activeTopicId === 'exam') return;
     window.ACADEMY.markTopicComplete(activeTopicId, true);
     renderOverviewCards();
+    renderStudentDock();
     renderCoursesNav();
     renderCourseView();
 }
@@ -539,6 +593,7 @@ function toggleCurrentBookmark() {
     if (activeTopicId === 'exam') return;
     window.ACADEMY.toggleBookmark(activeTopicId);
     renderOverviewCards();
+    renderStudentDock();
     renderCourseView();
 }
 
@@ -554,6 +609,7 @@ function highlightSelectedText() {
     window.ACADEMY.addHighlight(activeTopicId, selectedText);
     selection.removeAllRanges();
     renderOverviewCards();
+    renderStudentDock();
     renderTopicContent();
     renderStudyRail();
 }
@@ -562,6 +618,7 @@ function clearTopicHighlights() {
     if (activeTopicId === 'exam') return;
     window.ACADEMY.clearHighlights(activeTopicId);
     renderOverviewCards();
+    renderStudentDock();
     renderTopicContent();
     renderStudyRail();
 }
@@ -627,6 +684,7 @@ function openSearchResult(courseId, unitId, topicId) {
     document.getElementById('topicSearchInput').value = '';
     document.getElementById('searchResults').classList.add('hidden');
     renderCoursesNav();
+    renderStudentDock();
     loadCourseData(courseId, renderCourseView);
 }
 
@@ -644,4 +702,9 @@ function getCourseMoodMessage(courseId) {
         'cs603-cg': 'Graphics proves that making a circle look pretty can require enough math to ruin an otherwise peaceful afternoon.'
     };
     return messages[courseId] || 'One topic at a time still beats last-minute panic by a comfortable margin.';
+}
+
+function setTopicListFilter(filter) {
+    topicListFilter = filter;
+    renderCourseView();
 }
