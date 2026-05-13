@@ -2,6 +2,7 @@ let adminSecret = '';
 let adminEmail = '';
 let selectedStudentId = '';
 let leaderboard = [];
+const ADMIN_EMAIL_KEY = 'academy_admin_email';
 
 function formatDate(value) {
     if (!value) return 'Not yet';
@@ -170,10 +171,17 @@ async function loadStudentDetail(studentId) {
 window.loadStudentDetail = loadStudentDetail;
 
 document.addEventListener('DOMContentLoaded', () => {
+    const storedEmail = localStorage.getItem(ADMIN_EMAIL_KEY) || '';
+    if (storedEmail) {
+        document.getElementById('adminEmailInput').value = storedEmail;
+        adminEmail = storedEmail;
+    }
+
     document.getElementById('loadAdminBtn').addEventListener('click', async () => {
         adminEmail = document.getElementById('adminEmailInput').value.trim().toLowerCase();
         adminSecret = document.getElementById('adminSecretInput').value.trim();
         if (!adminEmail || !adminSecret) return;
+        localStorage.setItem(ADMIN_EMAIL_KEY, adminEmail);
         try {
             await loadLeaderboard();
         } catch (error) {

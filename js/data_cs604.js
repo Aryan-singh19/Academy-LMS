@@ -428,6 +428,53 @@ Object.assign(window.topicDetails['cs604-u1'], {
 });
 
 Object.assign(window.topicDetails['cs604-u2'], {
+    'c4-u2t6': {
+        title: 'Critical Path, Float & Schedule Compression',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Critical Path: The Project's Mood Swing Trigger</h3>
+<p class="mb-4">The <strong>Critical Path</strong> is the longest chain of dependent tasks in the project. If even one task on that path slips, the whole project slips. It is basically the project's most dramatic friend: late by 20 minutes and now everyone's plan is ruined.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-900 rounded-lg overflow-hidden shadow-lg mt-4 border border-gray-700">
+    <thead class="bg-gray-800 text-gray-200">
+        <tr>
+            <th class="p-4">Concept</th>
+            <th class="p-4">Meaning</th>
+            <th class="p-4">Quick exam cue</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-800 text-sm">
+        <tr><td class="p-4 font-bold text-blue-300">Critical Path</td><td class="p-4">Longest dependency chain that decides total project duration.</td><td class="p-4">Zero slack.</td></tr>
+        <tr><td class="p-4 font-bold text-green-300">Float / Slack</td><td class="p-4">How long a task can slip without delaying the whole project.</td><td class="p-4">Non-critical tasks may have positive float.</td></tr>
+        <tr><td class="p-4 font-bold text-yellow-300">Fast Tracking</td><td class="p-4">Run tasks in parallel that were originally sequential.</td><td class="p-4">Faster, but riskier.</td></tr>
+        <tr><td class="p-4 font-bold text-red-300">Crashing</td><td class="p-4">Add more resources to shorten critical tasks.</td><td class="p-4">Costs more money.</td></tr>
+    </tbody>
+</table>
+
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-cyan-500 shadow-md">
+    <h4 class="text-cyan-300 font-bold mb-2">Real-life example</h4>
+    <p class="text-gray-300 text-sm">If the backend API, database schema, and payment gateway all block launch, they sit on the critical path. Meanwhile, changing the footer color has float. The footer may be loud, but it is not blocking release.</p>
+</div>
+        `,
+        quizzes: [
+            {
+                question: "What does 'float' mean in project scheduling?",
+                options: [
+                    "A) The amount of money reserved for emergencies.",
+                    "B) The time a task can be delayed without delaying the project or successor milestones.",
+                    "C) The total number of developers on standby.",
+                    "D) The number of tasks in the backlog."
+                ],
+                answer: 1,
+                explanation: "Float or slack tells you how much breathing room a task has. Critical path tasks usually have zero float."
+            },
+            {
+                question: "Which schedule compression technique usually increases cost directly?",
+                options: ["A) Crashing", "B) Fast tracking", "C) Buffering", "D) Escalation"],
+                answer: 0,
+                explanation: "Crashing means throwing extra resources at critical tasks, so it usually shortens time by spending more money."
+            }
+        ]
+    },
     'c4-u2t3': {
         title: 'Earned Value Management (EVM)',
         content: `

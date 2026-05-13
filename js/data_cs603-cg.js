@@ -444,6 +444,69 @@ Object.assign(window.topicDetails['cs603-cg-u2'], {
 });
 
 Object.assign(window.topicDetails['cs603-cg-u3'], {
+    'cg-u3t5': {
+        title: 'Ray Casting vs Ray Tracing',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Ray Casting vs Ray Tracing</h3>
+<p class="mb-4">Both techniques imagine rays leaving the camera and traveling into the scene. The difference is how much realism you demand before your laptop starts sounding like it is preparing for takeoff.</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-blue-500 shadow-lg">
+        <h4 class="text-blue-300 font-bold mb-2">Ray Casting</h4>
+        <p class="text-gray-300 text-sm">Shoots one primary ray per pixel to find what object is visible first. Good for visibility and basic shading, but it usually ignores realistic reflection, refraction, and global bounce lighting.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-purple-500 shadow-lg">
+        <h4 class="text-purple-300 font-bold mb-2">Ray Tracing</h4>
+        <p class="text-gray-300 text-sm">Shoots the primary ray, then spawns extra rays for reflection, shadow checks, and refraction. That is why mirrors, glass, and cinematic lighting look fantastic and why render time can become emotionally expensive.</p>
+    </div>
+</div>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-900 rounded-lg overflow-hidden shadow-lg mt-4 border border-gray-700">
+    <thead class="bg-gray-800 text-gray-200">
+        <tr>
+            <th class="p-4">Feature</th>
+            <th class="p-4">Ray Casting</th>
+            <th class="p-4">Ray Tracing</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-800 text-sm">
+        <tr><td class="p-4 font-bold text-cyan-300">Primary visibility</td><td class="p-4">Yes</td><td class="p-4">Yes</td></tr>
+        <tr><td class="p-4 font-bold text-green-300">Reflections</td><td class="p-4">Usually simplified or absent</td><td class="p-4">Natural and recursive</td></tr>
+        <tr><td class="p-4 font-bold text-yellow-300">Shadows</td><td class="p-4">Basic</td><td class="p-4">Accurate soft/hard variants</td></tr>
+        <tr><td class="p-4 font-bold text-red-300">Cost</td><td class="p-4">Lower</td><td class="p-4">Much higher</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm">A practical way to remember it: ray casting asks, "What am I looking at?" Ray tracing asks, "What am I looking at, what is it reflecting, what shadow is it casting, and how much battery life am I willing to sacrifice?"</p>
+        `,
+        quizzes: [
+            {
+                question: "What makes ray tracing more computationally expensive than basic ray casting?",
+                options: [
+                    "A) It uses only 2D geometry.",
+                    "B) It launches extra rays for effects like reflection, shadow, and refraction after the primary hit.",
+                    "C) It avoids all lighting calculations.",
+                    "D) It works only on monochrome scenes."
+                ],
+                answer: 1,
+                explanation: "Ray tracing recursively follows additional rays, so realism increases along with computation cost."
+            },
+            {
+                question: "Which statement best describes ray casting?",
+                options: [
+                    "A) It is mainly about finding the first visible surface along a viewing ray.",
+                    "B) It always computes global illumination.",
+                    "C) It is used only for vector displays.",
+                    "D) It cannot determine visibility."
+                ],
+                answer: 0,
+                explanation: "Ray casting is the simpler visibility-focused version: find the first surface and shade it without the full recursive realism stack."
+            }
+        ],
+        references: [
+            { title: "Wikipedia: Ray tracing", url: "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)" }
+        ]
+    },
     'cg-u3t3': {
         title: 'Texture Mapping & UV Coordinates',
         content: `

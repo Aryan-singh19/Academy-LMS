@@ -31,7 +31,7 @@
 - `html/tests.html`: Mixed-question practice mode across subjects.
 - `html/lectures.html`: Suggested lecture and revision schedule.
 - `html/resources.html`: Revision workflow and resource grouping.
-- `html/profile.html`: Student profile, sync view, linked students, and DMs.
+- `html/profile.html`: Student profile, automatic cloud backup, linked students, and DMs.
 - `admin/index.html`: Separate admin dashboard for leaderboard and student inspection.
 - `js/data*.js`: Course structure and content banks.
 - `api/*.js`: Vercel serverless endpoints for profile sync, comments, messages, lecture chat, Blob uploads, and admin reads.
@@ -68,6 +68,8 @@ This repo now includes a Postgres schema and serverless API routes for a Vercel 
    - `/api/admin`
 
 Setup notes live in [docs/vercel-neon-setup.md](docs/vercel-neon-setup.md).
+
+Student progress sync is automatic on the deployed app. Students do not need to press a manual sync button.
 
 ## Maintenance
 

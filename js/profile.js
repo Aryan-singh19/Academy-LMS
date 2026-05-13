@@ -4,6 +4,7 @@ let activePeerId = '';
 let activeMessages = [];
 const MAX_PDF_BYTES = 10 * 1024 * 1024;
 const MAX_AVATAR_BYTES = 2 * 1024 * 1024;
+let profileAutoSaveTimer = null;
 
 function formatDate(value) {
     if (!value) return 'Not yet';
@@ -58,7 +59,6 @@ function renderProfilePage() {
         <div class="profile-hero-actions">
             <input id="profileNameInput" class="search-input profile-name-input" value="${window.ACADEMY.escapeForAttribute(studentName)}" placeholder="Student name">
             <button id="saveProfileNameBtn" class="secondary-cta">Save name</button>
-            <button id="syncProfileBtn" class="primary-cta">Sync to cloud</button>
             <button id="exportProfileBtn" class="secondary-cta">Export JSON</button>
         </div>
     `;
@@ -95,8 +95,7 @@ function renderProfilePage() {
                         <input id="profileWebsiteInput" class="search-input" placeholder="Website / portfolio URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.website_url || '')}">
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <button id="saveProfileDetailsBtn" class="primary-cta">Save profile details</button>
-                        <span class="metric-subtext">Everything here is optional.</span>
+                        <span class="metric-subtext">Everything here is optional and autosaves quietly in the background.</span>
                     </div>
                 </div>
             </div>
@@ -123,7 +122,7 @@ function renderProfilePage() {
                         <p class="metric-label">Remote summary</p>
                         <p class="text-sm text-slate-400 mt-2">${remoteProfile.summary.completed_topics || 0} completed topics • ${remoteProfile.summary.attempts_count || 0} quiz attempts • ${remoteProfile.summary.connections_count || 0} connections • ${remoteProfile.summary.direct_messages_count || 0} DMs received</p>
                     </div>
-                ` : '<p class="text-sm text-slate-400">Sync once on Vercel to create a Neon-backed student profile.</p>'}
+                ` : '<p class="text-sm text-slate-400">The deployed Vercel app backs up progress automatically once the student starts using it.</p>'}
             </div>
         </section>
     `;
@@ -259,7 +258,7 @@ function renderStudentDirectory() {
                             </button>
                         </div>
                     </div>
-                `).join('') : '<p class="text-slate-400">Sync the profile on Vercel to see other active students here.</p>'}
+                `).join('') : '<p class="text-slate-400">Open the deployed app on Vercel and the student directory will start filling automatically as learners use it.</p>'}
             </div>
         </section>
     `;
@@ -294,12 +293,11 @@ function renderInbox() {
 
 function bindProfileActions() {
     bindClick('saveProfileNameBtn', saveProfileName);
-    bindClick('syncProfileBtn', syncProfileManually);
     bindClick('exportProfileBtn', exportProfileSnapshot);
     bindClick('sendDmBtn', sendDirectMessage);
-    bindClick('saveProfileDetailsBtn', saveProfileDetails);
     bindClick('uploadAvatarBtn', uploadAvatar);
     bindClick('uploadPdfBtn', uploadStudyPdf);
+    bindProfileAutosave();
 }
 
 function bindClick(id, handler) {
@@ -346,22 +344,34 @@ async function saveProfileDetails() {
     renderProfilePage();
 }
 
-async function syncProfileManually() {
-    const button = document.getElementById('syncProfileBtn');
-    if (!button) return;
-    button.textContent = 'Syncing...';
-    button.disabled = true;
+function queueProfileAutosave() {
+    if (window.location.protocol === 'file:') return;
+    clearTimeout(profileAutoSaveTimer);
+    profileAutoSaveTimer = window.setTimeout(async () => {
+        try {
+            await saveProfileDetails();
+            await window.ACADEMY.syncStateToCloud();
+            await hydrateStudentDirectory();
+        } catch (error) {
+            console.error('Unable to autosave profile details', error);
+        }
+    }, 900);
+}
 
-    try {
-        await saveProfileDetails();
-        await window.ACADEMY.syncStateToCloud();
-        await hydrateRemoteProfile();
-        await hydrateStudentDirectory();
-    } finally {
-        button.textContent = 'Sync to cloud';
-        button.disabled = false;
-        renderProfilePage();
-    }
+function bindProfileAutosave() {
+    [
+        'profileHeadlineInput',
+        'profileBioInput',
+        'profileEmailInput',
+        'profileGithubInput',
+        'profileLinkedinInput',
+        'profileWebsiteInput'
+    ].forEach((id) => {
+        const field = document.getElementById(id);
+        if (!field) return;
+        field.addEventListener('input', queueProfileAutosave);
+        field.addEventListener('blur', queueProfileAutosave);
+    });
 }
 
 function exportProfileSnapshot() {

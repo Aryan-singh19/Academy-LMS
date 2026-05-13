@@ -25,6 +25,26 @@ The code already includes these admin emails:
 - `yograjsharma@rjit.ac.in`
 - `shiroonigami23@gmail.com`
 
+## How to add secrets in Vercel
+
+1. Open your Vercel project dashboard.
+2. Open `Settings`.
+3. Open `Environment Variables`.
+4. Click `Add New`.
+5. Enter the variable name, for example `ADMIN_SECRET`.
+6. Paste the value.
+7. Select the environments you want, usually `Production` and `Preview`.
+8. Save the variable.
+9. Redeploy the project so the new value is available to Functions.
+
+Useful variables for this project:
+
+- `DATABASE_URL`
+- `POSTGRES_URL`
+- `ADMIN_SECRET`
+- `ADMIN_EMAILS`
+- `BLOB_READ_WRITE_TOKEN`
+
 ## First database run
 
 Apply the schema with:
@@ -46,7 +66,7 @@ psql "$DATABASE_URL" -f docs/academy_schema.sql
 ## Current behavior
 
 - Browser progress still works locally even with no backend.
-- When the API is available, the frontend now syncs profile state to Neon.
+- When the API is available, the frontend now syncs profile state to Neon automatically in the background.
 - Topic comments, student directory, direct messages, lecture chat, and the admin dashboard require the API.
 - Student avatar uploads and solved-PDF uploads require Vercel Blob.
 
