@@ -1235,3 +1235,194 @@ window.topicDetails['cs601-u5'].unitExam = {
         "What is 'Mode Collapse' in GANs and mathematically why does it happen?"
     ]
 };
+
+
+// Dynamically adding the expanded Unit 4 topics
+window.topicDetails['cs601-u4']['u4t4'] = {
+    title: 'Gated Recurrent Units (GRUs)',
+    content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Streamlined LSTM</h3>
+<p class="mb-4">LSTMs are powerful but computationally expensive because they have three distinct mathematical gates (Forget, Input, Output). In 2014, researchers introduced the <strong>Gated Recurrent Unit (GRU)</strong>, which solves the Vanishing Gradient problem just like an LSTM, but uses less math and runs much faster.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border-l-4 border-green-500 shadow-md">
+    <li><strong>Update Gate:</strong> Combines the duties of the LSTM's Forget and Input gates. It decides what to throw away and what new information to add, all in one step.</li>
+    <li><strong>Reset Gate:</strong> Decides how much of the past information to completely ignore before making the next prediction.</li>
+    <li><strong>No Cell State:</strong> An LSTM has a Hidden State AND a Cell State (the deep memory). A GRU merges them into a single Hidden State, saving memory and processing power.</li>
+</ul>
+    `,
+    quizzes: [
+        {
+            question: "Why might a Machine Learning engineer choose a GRU over an LSTM for a natural language processing task?",
+            options: [
+                "A) Because GRUs are more accurate.",
+                "B) Because GRUs have fewer parameters and gates, making them computationally faster to train while achieving nearly identical performance to LSTMs.",
+                "C) Because LSTMs cannot handle text.",
+                "D) Because GRUs do not suffer from overfitting."
+            ],
+            answer: 1,
+            explanation: "GRUs are computationally cheaper. If you have limited GPU power, a GRU gets you 99% of the LSTM's performance for much less computational cost."
+        }
+    ]
+};
+
+window.topicDetails['cs601-u4']['u4t5'] = {
+    title: 'Word Embeddings (Word2Vec/GloVe)',
+    content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Translating Words into Math</h3>
+<p class="mb-4">Neural networks cannot read English. They only read numbers. Originally, people used "One-Hot Encoding" (making a giant array with 10,000 zeros and a single '1' to represent a word). This was horribly inefficient and captured zero context.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-purple-500 shadow-lg mb-6">
+    <h4 class="text-purple-400 font-bold mb-2">Word2Vec (2013)</h4>
+    <p class="text-gray-300 text-sm mb-2">Google researchers realized you can train a shallow neural network to guess a missing word in a sentence (e.g., "The cat sat on the ___"). By doing this on millions of Wikipedia articles, the network's internal weights became a "map" of the English language.</p>
+    <p class="text-gray-300 text-sm font-bold">The result: Every word is mapped to a 300-dimensional mathematical vector (a coordinate in space).</p>
+</div>
+
+<p class="mb-4 text-gray-300 text-sm">Because words are now coordinates, you can do literal math on them! The most famous example in ML history is:</p>
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm text-green-400 text-center shadow-inner">
+    Vector(King) - Vector(Man) + Vector(Woman) ≈ Vector(Queen)
+</div>
+    `,
+    quizzes: [
+        {
+            question: "What is the primary advantage of Word Embeddings (like Word2Vec) over One-Hot Encoding?",
+            options: [
+                "A) Word embeddings take up more RAM.",
+                "B) One-Hot Encoding requires a GPU.",
+                "C) Word Embeddings capture semantic meaning and mathematical relationships between words (e.g., King and Queen are mathematically close together).",
+                "D) They are the exact same thing."
+            ],
+            answer: 2,
+            explanation: "One-hot encoding treats every word as a completely isolated entity. Word embeddings map words onto a multi-dimensional graph where synonyms are physically clustered together."
+        }
+    ]
+};
+
+window.topicDetails['cs601-u4']['u4t6'] = {
+    title: 'Seq2Seq Models & Early Attention',
+    content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Sequence to Sequence (Translation)</h3>
+<p class="mb-4">How does Google Translate work? It uses a <strong>Seq2Seq</strong> architecture consisting of an <strong>Encoder RNN</strong> and a <strong>Decoder RNN</strong>.</p>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-900 p-4 rounded border border-gray-700">
+    <li>The Encoder reads the English sentence word by word and compresses the entire meaning of the sentence into a single mathematical vector called the <strong>Context Vector</strong>.</li>
+    <li>The Decoder takes that single Context Vector and unravels it into a French sentence.</li>
+</ul>
+
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-red-500 shadow-md">
+    <h4 class="text-red-400 font-bold mb-2">The Bottleneck Problem</h4>
+    <p class="text-gray-300 text-sm mb-2">If the English sentence is 50 words long, forcing the Encoder to compress all that meaning into a <em>single</em> vector is impossible. It forgets the beginning of the sentence.</p>
+    <p class="text-gray-300 text-sm font-bold text-yellow-300">The Solution: Attention.</p>
+    <p class="text-gray-300 text-sm">Before Transformers took over the world, researchers added an "Attention Mechanism" to RNNs. Instead of passing one single vector, the Encoder passes ALL the vectors for every word. The Decoder then mathematically calculates "Which specific English words should I pay Attention to right now while I generate this specific French word?"</p>
+</div>
+    `,
+    quizzes: [
+        {
+            question: "What specific architectural flaw in basic Seq2Seq models did the 'Attention Mechanism' solve?",
+            options: [
+                "A) The model was too fast.",
+                "B) The 'Bottleneck Problem'—forcing a long sentence to be compressed into a single, fixed-size context vector caused massive data loss.",
+                "C) It couldn't translate French.",
+                "D) It required too much training data."
+            ],
+            answer: 1,
+            explanation: "Attention allows the decoder to look back at the entire input sequence and 'focus' on specific relevant words dynamically, rather than relying on a single summarized vector."
+        }
+    ]
+};
+
+window.topicDetails['cs601-u5']['u5t4'] = {
+    title: 'Reinforcement Learning Basics',
+    content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Learning by Trial and Error</h3>
+<p class="mb-4">Supervised Learning uses labeled data. Unsupervised Learning finds hidden patterns. <strong>Reinforcement Learning (RL)</strong> is entirely different: it learns by taking actions in an environment and receiving rewards or punishments.</p>
+
+<p class="mb-4 text-gray-300 text-sm">This is exactly how you train a dog. You don't give a dog a spreadsheet of "Good Actions" vs "Bad Actions". You say "Sit", and if it sits, you give it a treat (Positive Reward). If it bites the couch, you yell (Negative Reward).</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg mt-4 border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-4">RL Terminology</th>
+            <th class="p-4">Definition</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-4 font-bold text-blue-300">Agent</td><td class="p-4">The AI program (e.g., Mario in a video game).</td></tr>
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-4 font-bold text-green-300">Environment</td><td class="p-4">The world the Agent interacts with (e.g., The Super Mario level).</td></tr>
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-4 font-bold text-yellow-300">State</td><td class="p-4">The current situation (e.g., Mario is standing next to a Goomba).</td></tr>
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-4 font-bold text-purple-300">Action</td><td class="p-4">What the Agent does (e.g., Jump).</td></tr>
+        <tr class="hover:bg-gray-750 transition-colors"><td class="p-4 font-bold text-red-300">Reward</td><td class="p-4">The score received after the action (+100 for squishing the Goomba, -100 for dying).</td></tr>
+    </tbody>
+</table>
+    `,
+    quizzes: [
+        {
+            question: "In Reinforcement Learning, how does the Agent figure out the best strategy?",
+            options: [
+                "A) By reading a massive dataset of human-labeled CSV files.",
+                "B) By interacting with an environment, taking actions, and maximizing cumulative rewards through trial and error.",
+                "C) By compiling source code.",
+                "D) By using a Convolutional Neural Network."
+            ],
+            answer: 1,
+            explanation: "RL is all about maximizing the 'Treats'. The AI tries random things, sees what yields a high score, and updates its strategy."
+        }
+    ]
+};
+
+window.topicDetails['cs601-u5']['u5t5'] = {
+    title: 'Markov Decision Processes & Q-Learning',
+    content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Math of Decision Making</h3>
+<p class="mb-4">How do we mathematically represent an environment in Reinforcement Learning? We use a <strong>Markov Decision Process (MDP)</strong>.</p>
+<p class="mb-4 text-gray-300 text-sm bg-gray-900 p-4 rounded shadow-inner">The <strong>Markov Property</strong> states that the future depends <em>only</em> on the present state, not on the sequence of events that preceded it. (If you are playing chess, the best next move depends only on where the pieces are right now, not how they got there).</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Q-Learning: The Cheat Sheet</h3>
+<p class="mb-4 text-gray-300 text-sm">One of the most famous RL algorithms. The AI creates a massive "Q-Table". The rows are every possible State, and the columns are every possible Action. The numbers inside the table (Q-Values) represent the "Quality" of taking that action in that state.</p>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-800 p-4 rounded border-l-4 border-yellow-500">
+    <li><strong>Exploration vs Exploitation:</strong> At the start, the AI chooses random actions to explore the world (Exploration). Once the Q-Table is filled out with high scores, the AI starts looking at the table and picking the best known action (Exploitation).</li>
+    <li><strong>The Bellman Equation:</strong> The math formula used to update the Q-Values. It factors in the immediate reward, plus the discounted maximum expected reward of the future.</li>
+</ul>
+    `,
+    quizzes: [
+        {
+            question: "In Reinforcement Learning, what is the 'Exploration vs Exploitation' dilemma?",
+            options: [
+                "A) Choosing between mining bitcoin or buying stocks.",
+                "B) Choosing between running the code on a CPU or a GPU.",
+                "C) Choosing between trying new, unknown actions to potentially find better rewards (Exploration), or relying on known actions that already yield good rewards (Exploitation).",
+                "D) Choosing between Supervised and Unsupervised learning."
+            ],
+            answer: 2,
+            explanation: "If you always eat at your favorite restaurant (Exploitation), you'll never discover a new restaurant that might be even better (Exploration)."
+        }
+    ]
+};
+
+window.topicDetails['cs601-u5']['u5t6'] = {
+    title: 'AutoML & MLOps Pipelines',
+    content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Automating the Data Scientist</h3>
+<p class="mb-4">Building ML models used to require a PhD in mathematics. Today, the industry is moving towards <strong>AutoML (Automated Machine Learning)</strong>.</p>
+<p class="mb-4 text-gray-300 text-sm">With AutoML platforms (like Google Cloud AutoML or H2O.ai), you literally just upload your raw Excel file. The platform automatically cleans the data, tests 50 different algorithms (Random Forests, Neural Networks, SVMs), automatically tunes the hyperparameters, and hands you the single best-performing model.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">MLOps: Machine Learning Operations</h3>
+<p class="mb-4 text-gray-300 text-sm">Just deploying a model isn't enough. Models rot over time. This is called <strong>Model Drift</strong> or Data Drift. If you train a housing price predictor in 2019, it will be catastrophically wrong in 2024 because the economy changed.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-blue-500 shadow-lg mb-6">
+    <h4 class="text-blue-400 font-bold mb-2">The MLOps Pipeline</h4>
+    <p class="text-gray-300 text-sm mb-2">MLOps is DevOps for AI. It involves setting up automated pipelines that constantly monitor the live model's accuracy. When the accuracy drops below 90%, the pipeline automatically pulls the latest new data, completely retrains the model from scratch, tests it, and hot-swaps the new model into the live server without a human ever touching it.</p>
+</div>
+    `,
+    quizzes: [
+        {
+            question: "What is 'Model Drift' (or Concept Drift) in MLOps?",
+            options: [
+                "A) When a model's file size gets too large for the server.",
+                "B) When a live model's accuracy degrades over time because the real-world data it encounters has fundamentally changed from the data it was originally trained on.",
+                "C) When the GPU overheats and the weights drift.",
+                "D) When the model gets bored."
+            ],
+            answer: 1,
+            explanation: "The world is not static. A model trained to predict fashion trends in 2015 will be completely useless today. MLOps systems are built to automatically detect this drift and trigger retraining."
+        }
+    ]
+};
