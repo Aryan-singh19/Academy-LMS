@@ -387,6 +387,43 @@ gantt
 });
 
 Object.assign(window.topicDetails['cs604-u1'], {
+    'c4-u1t6': {
+        title: 'Requirements Prioritization & Change Negotiation',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Because Every Requirement Arrives Saying “I Am the Most Important”</h3>
+<p class="mb-4">Projects rarely fail because teams have too few ideas. They fail because every idea tries to cut the same queue. <strong>Requirements prioritization</strong> helps teams rank what must be done first, while <strong>change negotiation</strong> manages new demands without quietly exploding the plan.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Technique</th>
+            <th class="p-3">Use</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">MoSCoW</td><td class="p-3">Must, Should, Could, Won't for clear ranking</td></tr>
+        <tr><td class="p-3">Impact vs effort</td><td class="p-3">Quick visual trade-off analysis</td></tr>
+        <tr><td class="p-3">Negotiation log</td><td class="p-3">Records why a change was accepted, delayed, or rejected</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm">Humorous real-life version: if a hostel student says “I need coffee, notes, sleep, and emotional stability,” the timetable will usually fund only two of those today.</p>
+        `,
+        quizzes: [
+            {
+                question: 'Why is requirements prioritization important?',
+                options: ['A) It removes stakeholders', 'B) It helps teams focus on the highest-value work first', 'C) It prevents all change requests forever', 'D) It replaces scheduling'],
+                answer: 1,
+                explanation: 'Prioritization ensures effort goes first to the work with the most value or urgency.'
+            },
+            {
+                question: 'What is change negotiation mainly about?',
+                options: ['A) Accepting every new request automatically', 'B) Evaluating the impact of change and agreeing on trade-offs', 'C) Writing parser rules', 'D) Avoiding communication'],
+                answer: 1,
+                explanation: 'It balances new requests against scope, time, cost, and team capacity.'
+            }
+        ]
+    },
     'c4-u1t3': {
         title: 'Stakeholders, Communication & Requirement Drift',
         content: `
@@ -428,6 +465,37 @@ Object.assign(window.topicDetails['cs604-u1'], {
 });
 
 Object.assign(window.topicDetails['cs604-u2'], {
+    'c4-u2t7': {
+        title: 'Milestones, Buffers & Schedule Baselines',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Giving the Schedule Actual Checkpoints Instead of Vibes</h3>
+<p class="mb-4"><strong>Milestones</strong> mark important achievements. <strong>Buffers</strong> protect the plan from uncertainty. A <strong>schedule baseline</strong> is the approved timeline against which real progress is compared.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li>Milestones are zero-duration markers such as “design approved” or “testing complete”.</li>
+    <li>Buffers absorb delay without immediately wrecking downstream work.</li>
+    <li>Baselines make it possible to detect schedule variance honestly.</li>
+</ul>
+
+<div class="bg-gray-900 p-4 border border-gray-700 rounded text-sm text-gray-300 mb-6">
+    Project manager humor: a schedule without buffers is like planning a college commute assuming every auto driver wakes up spiritually aligned with your exam timetable.
+</div>
+        `,
+        quizzes: [
+            {
+                question: 'What is the main role of a schedule baseline?',
+                options: ['A) It is a draft that nobody measures against', 'B) It serves as the approved schedule used for tracking variance', 'C) It replaces milestones', 'D) It removes risk'],
+                answer: 1,
+                explanation: 'The baseline is the committed plan used to compare actual progress and delays.'
+            },
+            {
+                question: 'Why are buffers added to schedules?',
+                options: ['A) To make the chart look larger', 'B) To absorb uncertainty and protect critical commitments', 'C) To avoid estimation', 'D) To replace resources'],
+                answer: 1,
+                explanation: 'Buffers help teams survive normal uncertainty without instantly derailing the plan.'
+            }
+        ]
+    },
     'c4-u2t6': {
         title: 'Critical Path, Float & Schedule Compression',
         content: `

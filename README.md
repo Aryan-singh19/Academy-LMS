@@ -22,6 +22,7 @@
 
 ## Live URLs
 
+- Hosted on Vercel: `https://academy-lms-sepia.vercel.app/`
 - Student site: `https://academy-lms-sepia.vercel.app/`
 - Admin area: `https://academy-lms-sepia.vercel.app/admin/`
 

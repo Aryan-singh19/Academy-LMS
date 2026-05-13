@@ -5,6 +5,7 @@ let lectureChatState = {
     global: { messages: [], onlineCount: 0 }
 };
 let lecturePollingTimer = null;
+let lectureFetchInFlight = false;
 
 function getLectureSubjects() {
     return [
@@ -171,6 +172,8 @@ async function fetchLectureChat(scope) {
 
 async function queueLecturePresence() {
     clearInterval(lecturePollingTimer);
+    if (document.visibilityState === 'hidden') return;
+
     await Promise.all([
         sendLectureHeartbeat('local'),
         sendLectureHeartbeat('global'),
@@ -179,11 +182,17 @@ async function queueLecturePresence() {
     ]);
 
     lecturePollingTimer = window.setInterval(() => {
+        if (lectureFetchInFlight || document.visibilityState === 'hidden') return;
+        lectureFetchInFlight = true;
         sendLectureHeartbeat('local');
         sendLectureHeartbeat('global');
-        fetchLectureChat('local');
-        fetchLectureChat('global');
-    }, 30000);
+        Promise.all([
+            fetchLectureChat('local'),
+            fetchLectureChat('global')
+        ]).finally(() => {
+            lectureFetchInFlight = false;
+        });
+    }, 45000);
 }
 
 async function sendLectureHeartbeat(scope) {
@@ -239,4 +248,11 @@ window.sendLectureMessage = sendLectureMessage;
 document.addEventListener('DOMContentLoaded', () => {
     window.ACADEMY.scheduleCloudSync();
     renderLecturePage();
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            queueLecturePresence();
+            return;
+        }
+        clearInterval(lecturePollingTimer);
+    });
 });

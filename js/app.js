@@ -5,6 +5,7 @@ let appStarted = false;
 const loadedCourses = {};
 let topicListFilter = 'all';
 let topicComments = [];
+let openUnits = {};
 
 function startApp() {
     const hero = document.getElementById('heroSection');
@@ -54,6 +55,7 @@ function hydrateLastVisited() {
     activeCourseId = lastVisited.courseId || activeCourseId;
     activeUnitId = lastVisited.unitId || activeUnitId;
     activeTopicId = lastVisited.topicId || activeTopicId;
+    openUnits[activeUnitId] = true;
 }
 
 function bindGlobalEvents() {
@@ -130,7 +132,7 @@ function renderOverviewCards() {
         { label: 'Topics done', value: `${stats.completedTopics}/${stats.totalTopics}`, subtext: `${stats.completionRate}% completion` },
         { label: 'Quiz accuracy', value: `${stats.quizAccuracy}%`, subtext: `${stats.correctAnswers}/${stats.totalAttempts} correct` },
         { label: 'Study notes', value: `${stats.notesCount}`, subtext: `${stats.highlightCount} saved highlights` },
-        { label: 'Device cache', value: 'Active', subtext: stats.lastVisitedLabel || 'Progress and notes stay on this device' }
+        { label: 'Current focus', value: stats.lastVisitedLabel ? 'Ready' : 'Start now', subtext: stats.lastVisitedLabel || 'Pick a topic and your study lane will shape itself' }
     ];
 
     document.getElementById('overviewCards').innerHTML = cards.map((card, index) => `
@@ -150,7 +152,7 @@ function renderStudentDock() {
         <section class="panel-card p-5">
             <div class="section-head">
                 <h3>${studentName ? `${studentName}'s study desk` : 'Continue studying'}</h3>
-                <span>Local memory active</span>
+                <span>Pick up fast</span>
             </div>
             ${continueTopic ? `
                 <button onclick="openSearchResult('${continueTopic.courseId}', '${continueTopic.unitId}', '${continueTopic.topicId}')" class="continue-card">
@@ -178,6 +180,8 @@ function renderStudentDock() {
             </div>
         </section>
     `;
+
+    syncProfileAvatarNav();
 }
 
 function renderCoursesNav() {
@@ -199,18 +203,33 @@ function switchCourse(courseId) {
     activeCourseId = course.id;
     activeUnitId = course.units[0].id;
     activeTopicId = course.units[0].topics[0].id;
+    openUnits = { [activeUnitId]: true };
     window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
     renderCoursesNav();
     loadCourseData(courseId, renderCourseView);
 }
 
 function selectUnit(unitId) {
-    if (unitId === activeUnitId) return;
     const course = coursesData.find((item) => item.id === activeCourseId);
     const unit = course.units.find((entry) => entry.id === unitId);
+    if (unitId === activeUnitId) {
+        openUnits[unitId] = true;
+        renderCourseView();
+        return;
+    }
     activeUnitId = unitId;
     activeTopicId = unit.topics[0].id;
+    openUnits[unitId] = true;
     window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
+    renderCourseView();
+}
+
+function toggleUnitCollapse(unitId) {
+    openUnits[unitId] = !openUnits[unitId];
+    if (openUnits[unitId]) {
+        selectUnit(unitId);
+        return;
+    }
     renderCourseView();
 }
 
@@ -227,10 +246,11 @@ function renderCourseView() {
     const topicSummary = topicMeta ? topicMeta.title : 'Unit Revision';
 
     renderStudentDock();
+    syncProfileAvatarNav();
 
     document.getElementById('mainContent').innerHTML = `
-        <div class="grid gap-6 xl:grid-cols-[280px_minmax(0,1fr)_320px]">
-            <aside class="panel-card p-4 h-fit xl:sticky xl:top-28">
+        <div class="workspace-grid">
+            <aside class="panel-card p-4 workspace-panel workspace-panel-left">
                 <div class="flex items-start justify-between gap-3 mb-4">
                     <div>
                         <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code}</p>
@@ -244,12 +264,12 @@ function renderCourseView() {
                     <button onclick="setTopicListFilter('bookmarked')" class="mini-badge ${topicListFilter === 'bookmarked' ? 'course-pill-active' : ''}">Bookmarked</button>
                     <button onclick="setTopicListFilter('incomplete')" class="mini-badge ${topicListFilter === 'incomplete' ? 'course-pill-active' : ''}">Incomplete</button>
                 </div>
-                <div class="space-y-3">
+                <div class="space-y-3 workspace-panel-scroll">
                     ${course.units.map((entry) => renderUnitButton(entry)).join('')}
                 </div>
             </aside>
 
-            <section class="panel-card overflow-hidden">
+            <section class="panel-card overflow-hidden workspace-panel workspace-panel-center">
                 <div class="border-b border-white/8 px-5 sm:px-8 py-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                     <div>
                         <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code} / Unit ${unit.unitNumber}</p>
@@ -260,10 +280,10 @@ function renderCourseView() {
                         <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-2 !px-4">Mark complete</button>
                     </div>
                 </div>
-                <div id="topicContentArea" class="px-5 sm:px-8 py-6 sm:py-8"></div>
+                <div id="topicContentArea" class="px-5 sm:px-8 py-6 sm:py-8 workspace-panel-scroll topic-content-scroll"></div>
             </section>
 
-            <aside id="studyRail" class="panel-card p-5 h-fit xl:sticky xl:top-28"></aside>
+            <aside id="studyRail" class="panel-card p-5 workspace-panel workspace-panel-right workspace-panel-scroll"></aside>
         </div>
     `;
 
@@ -273,6 +293,7 @@ function renderCourseView() {
 
 function renderUnitButton(unit) {
     const isActive = unit.id === activeUnitId;
+    const isOpen = openUnits[unit.id] !== false && (openUnits[unit.id] || isActive);
     const visibleTopics = unit.topics.filter((topic) => {
         if (topicListFilter === 'bookmarked') return window.ACADEMY.isBookmarked(topic.id);
         if (topicListFilter === 'incomplete') return !window.ACADEMY.state.completedTopics[topic.id];
@@ -280,14 +301,19 @@ function renderUnitButton(unit) {
     });
     return `
         <div class="unit-card ${isActive ? 'unit-card-active' : ''}">
-            <button onclick="selectUnit('${unit.id}')" class="w-full text-left flex items-center justify-between gap-3">
-                <div>
-                    <p class="text-sm font-bold text-white">Unit ${unit.unitNumber}</p>
-                    <p class="text-xs text-slate-400 mt-1">${unit.title}</p>
-                </div>
-                <span class="text-slate-500">${isActive ? '•' : '+'}</span>
-            </button>
-            <div class="${isActive ? 'block' : 'hidden'} mt-3 space-y-2">
+            <div class="flex items-center gap-3">
+                <button onclick="selectUnit('${unit.id}')" class="unit-trigger">
+                    <div>
+                        <p class="text-sm font-bold text-white">Unit ${unit.unitNumber}</p>
+                        <p class="text-xs text-slate-400 mt-1">${unit.title}</p>
+                    </div>
+                </button>
+                <button onclick="toggleUnitCollapse('${unit.id}')" class="unit-toggle" aria-label="${isOpen ? 'Collapse unit' : 'Expand unit'}">
+                    <span>${isOpen ? '−' : '+'}</span>
+                </button>
+            </div>
+            <div class="${isOpen ? 'block' : 'hidden'} mt-3 space-y-2">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-500 px-1">Topics</p>
                 ${visibleTopics.length ? visibleTopics.map((topic, index) => {
                     const complete = window.ACADEMY.state.completedTopics[topic.id];
                     const bookmarked = window.ACADEMY.isBookmarked(topic.id);
@@ -338,9 +364,15 @@ function renderTopicContent() {
 
     contentArea.innerHTML = `
         <div class="content-shell">
-            <div class="topic-prose">
-                ${highlightedContent}
-            </div>
+            <details class="topic-fold" open>
+                <summary class="topic-fold-summary">
+                    <span>Core topic notes</span>
+                    <span class="topic-fold-hint">Expand or collapse</span>
+                </summary>
+                <div class="topic-fold-body topic-prose">
+                    ${highlightedContent}
+                </div>
+            </details>
             <section class="revision-banner">
                 <div>
                     <p class="revision-label">Study tools</p>
@@ -351,25 +383,33 @@ function renderTopicContent() {
                     <button onclick="clearTopicHighlights()" class="secondary-cta text-sm !py-2 !px-4">Clear highlights</button>
                 </div>
             </section>
-            <section class="mt-10">
-                <div class="section-head">
-                    <h3>Topic Knowledge Checks</h3>
-                    <span>${topic.quizzes.length} questions</span>
-                </div>
-                <div class="space-y-5">${quizCards}</div>
-            </section>
+            <details class="topic-fold mt-10" open>
+                <summary class="topic-fold-summary">
+                    <span>Topic knowledge checks</span>
+                    <span class="topic-fold-hint">${topic.quizzes.length} questions</span>
+                </summary>
+                <div class="topic-fold-body space-y-5">${quizCards}</div>
+            </details>
             ${references ? `
-                <section class="mt-10">
-                    <div class="section-head">
-                        <h3>References</h3>
-                        <span>Open inside app or new tab</span>
+                <details class="topic-fold mt-10">
+                    <summary class="topic-fold-summary">
+                        <span>References</span>
+                        <span class="topic-fold-hint">Open inside app or new tab</span>
+                    </summary>
+                    <div class="topic-fold-body">
+                        <div class="flex flex-wrap gap-3">${references}</div>
                     </div>
-                    <div class="flex flex-wrap gap-3">${references}</div>
-                </section>
+                </details>
             ` : ''}
-            <section class="mt-10" id="topicCommentsSection">
-                ${renderTopicCommentsSection()}
-            </section>
+            <details class="topic-fold mt-10" open>
+                <summary class="topic-fold-summary">
+                    <span>Student comments</span>
+                    <span class="topic-fold-hint">${topicComments.length} notes</span>
+                </summary>
+                <div class="topic-fold-body" id="topicCommentsSection">
+                    ${renderTopicCommentsSection()}
+                </div>
+            </details>
         </div>
     `;
 
@@ -474,7 +514,7 @@ function renderStudyRail() {
 
             <section class="study-rail-block">
                 <div class="section-head">
-                    <h3>Progress memory</h3>
+                    <h3>Progress snapshot</h3>
                     <span>${currentCourseStats ? currentCourseStats.completionRate : 0}%</span>
                 </div>
                 <ul class="text-sm text-slate-300 space-y-2">
@@ -491,7 +531,7 @@ function renderStudyRail() {
                 </div>
                 <textarea id="topicNoteInput" class="note-input" placeholder="Write your summary, formulas, mnemonics, or doubts here...">${note}</textarea>
                 <div class="flex items-center justify-between text-xs text-slate-500 mt-2">
-                    <span>Saved in your browser on this device.</span>
+                    <span>Your notes autosave quietly while you study.</span>
                     <button onclick="saveTopicNote()" class="text-accent hover:text-white transition-colors">Save now</button>
                 </div>
             </section>
@@ -648,6 +688,20 @@ function jumpToPracticeTests() {
     window.location.href = 'html/tests.html';
 }
 
+function syncProfileAvatarNav() {
+    const badge = document.getElementById('profileNavBadge');
+    if (!badge) return;
+
+    const avatarUrl = window.ACADEMY.getProfileAvatar();
+    const studentName = window.ACADEMY.getStudentName() || 'Student';
+    if (avatarUrl) {
+        badge.innerHTML = `<img src="${avatarUrl}" alt="${window.ACADEMY.escapeForAttribute(studentName)}" class="nav-avatar-image">`;
+        return;
+    }
+
+    badge.textContent = studentName.slice(0, 1).toUpperCase();
+}
+
 function renderTopicCommentsSection() {
     if (window.location.protocol === 'file:') {
         return `
@@ -779,6 +833,7 @@ function openSearchResult(courseId, unitId, topicId) {
     activeCourseId = courseId;
     activeUnitId = unitId;
     activeTopicId = topicId;
+    openUnits = { [unitId]: true };
     window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
     document.getElementById('topicSearchInput').value = '';
     document.getElementById('searchResults').classList.add('hidden');

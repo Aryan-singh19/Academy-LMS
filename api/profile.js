@@ -1,5 +1,6 @@
 const { getSql, getStudentByDevice } = require('./_lib/db');
 const { allowMethods, readJsonBody, sendJson } = require('./_lib/http');
+const { applyRateLimit } = require('./_lib/rate-limit');
 
 function normalizeSnapshot(snapshot) {
     return snapshot && typeof snapshot === 'object' ? snapshot : {};
@@ -311,6 +312,7 @@ async function getProfileResponse(sql, student) {
 
 module.exports = async function handler(req, res) {
     if (!allowMethods(req, res, ['GET', 'POST'])) return;
+    if (!applyRateLimit(req, res, { scope: 'profile', limit: req.method === 'GET' ? 90 : 45, windowMs: 60000 })) return;
 
     try {
         const sql = await getSql();

@@ -1,5 +1,6 @@
 const { getSql, getStudentByDevice } = require('./_lib/db');
 const { allowMethods, readJsonBody, sendJson } = require('./_lib/http');
+const { applyRateLimit } = require('./_lib/rate-limit');
 
 const MAX_PDF_BYTES = 10 * 1024 * 1024;
 const MAX_AVATAR_BYTES = 2 * 1024 * 1024;
@@ -22,6 +23,7 @@ function sanitizeSlug(value) {
 
 module.exports = async function handler(req, res) {
     if (!allowMethods(req, res, ['POST'])) return;
+    if (!applyRateLimit(req, res, { scope: 'blob-upload', limit: 20, windowMs: 60000 })) return;
 
     try {
         if (!process.env.BLOB_READ_WRITE_TOKEN) {

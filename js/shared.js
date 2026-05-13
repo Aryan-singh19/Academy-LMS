@@ -2,6 +2,11 @@
     const STORAGE_KEY = 'academy_lms_state_v4';
     let syncTimer = null;
     let syncInFlight = false;
+    let syncDirty = false;
+    let lastSyncStartedAt = 0;
+    const MIN_SYNC_GAP_MS = 12000;
+    const FOREGROUND_SYNC_DELAY_MS = 2200;
+    const BACKGROUND_SYNC_DELAY_MS = 9000;
 
     function generateDeviceId() {
         if (window.crypto && typeof window.crypto.randomUUID === 'function') {
@@ -23,6 +28,7 @@
             recentTopics: [],
             lastVisited: null,
             deviceId: '',
+            avatarUrl: '',
             profileStartedAt: null,
             remoteSync: {
                 lastSyncedAt: null,
@@ -69,7 +75,10 @@
         state.updatedAt = new Date().toISOString();
         localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
         dispatchStateEvent();
-        if (!options.silent) scheduleCloudSync();
+        if (!options.silent) {
+            syncDirty = true;
+            scheduleCloudSync();
+        }
     }
 
     function markTopicComplete(topicId, complete) {
@@ -99,6 +108,15 @@
 
     function getStudentName() {
         return state.studentName || '';
+    }
+
+    function setProfileAvatar(url) {
+        state.avatarUrl = String(url || '').trim();
+        persistState();
+    }
+
+    function getProfileAvatar() {
+        return state.avatarUrl || '';
     }
 
     function getNote(topicId) {
@@ -371,11 +389,18 @@
     }
 
     async function syncStateToCloud() {
-        if (syncInFlight) return;
+        if (syncInFlight || !syncDirty) return;
         if (window.location.protocol === 'file:') return;
-        if (!window.fetch) return;
+        if (!window.fetch || navigator.onLine === false) return;
+
+        const now = Date.now();
+        if (now - lastSyncStartedAt < MIN_SYNC_GAP_MS) {
+            scheduleCloudSync(MIN_SYNC_GAP_MS - (now - lastSyncStartedAt) + 500);
+            return;
+        }
 
         syncInFlight = true;
+        lastSyncStartedAt = now;
         try {
             const response = await fetch('/api/profile', {
                 method: 'POST',
@@ -398,18 +423,24 @@
             setRemoteSyncStamp('synced', payload.message || 'Synced to the Academy cloud profile.', {
                 studentId: payload.student ? payload.student.id : null
             });
+            syncDirty = false;
         } catch (error) {
             const status = String(error.message || '').toLowerCase().indexOf('database') !== -1 ? 'cloud-error' : 'local-only';
             setRemoteSyncStamp(status, error.message || 'Cloud sync unavailable. Using local device memory.');
+            scheduleCloudSync(25000);
         } finally {
             syncInFlight = false;
         }
     }
 
-    function scheduleCloudSync() {
+    function scheduleCloudSync(delayMs) {
         if (window.location.protocol === 'file:') return;
+        if (!syncDirty && typeof delayMs !== 'number') return;
         clearTimeout(syncTimer);
-        syncTimer = window.setTimeout(syncStateToCloud, 1400);
+        const computedDelay = typeof delayMs === 'number'
+            ? delayMs
+            : (document.visibilityState === 'visible' ? FOREGROUND_SYNC_DELAY_MS : BACKGROUND_SYNC_DELAY_MS);
+        syncTimer = window.setTimeout(syncStateToCloud, computedDelay);
     }
 
     window.ACADEMY = {
@@ -420,6 +451,8 @@
         setLastVisited,
         setStudentName,
         getStudentName,
+        setProfileAvatar,
+        getProfileAvatar,
         getNote,
         setNote,
         getHighlights,
@@ -450,7 +483,15 @@
     };
 
     if (window.location.protocol !== 'file:') {
-        window.addEventListener('online', scheduleCloudSync);
+        window.addEventListener('online', () => {
+            syncDirty = true;
+            scheduleCloudSync(1200);
+        });
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                scheduleCloudSync(800);
+            }
+        });
     }
 
     if (!state.updatedAt) {

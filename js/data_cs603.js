@@ -445,6 +445,44 @@ T  -> id
                 explanation: 'FOLLOW tells the parser what can legally come next after a non-terminal.'
             }
         ]
+    },
+    'c3-u2t4': {
+        title: 'LR Parsing Tables, Shift-Reduce & Conflicts',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">When the Parser Stops Guessing and Starts Consulting a Table</h3>
+<p class="mb-4">LR parsers read input from left to right and build a rightmost derivation in reverse. Instead of hoping intuition wins, they use an <strong>action table</strong> and a <strong>goto table</strong> to decide whether to <strong>shift</strong>, <strong>reduce</strong>, <strong>accept</strong>, or report an error.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Action</th>
+            <th class="p-3">Meaning</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-sm">
+        <tr><td class="p-3">Shift</td><td class="p-3">Read next token and push state</td></tr>
+        <tr><td class="p-3">Reduce</td><td class="p-3">Apply a grammar production and compress symbols</td></tr>
+        <tr><td class="p-3">Accept</td><td class="p-3">Input matches the grammar successfully</td></tr>
+        <tr><td class="p-3">Error</td><td class="p-3">Current token and state do not fit any valid move</td></tr>
+    </tbody>
+</table>
+
+<p class="mb-4 text-gray-300 text-sm"><strong>Shift-reduce conflict</strong> happens when the parser is torn between reading more input and reducing what it already has. It is the compiler equivalent of staring at a WhatsApp message and wondering whether to reply now or wait for one more clue.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What does a shift action do in an LR parser?',
+                options: ['A) Deletes the grammar', 'B) Reads the next token and pushes a new state', 'C) Prints assembly code', 'D) Clears the parsing stack'],
+                answer: 1,
+                explanation: 'Shift consumes the next input symbol and moves the parser to a new state.'
+            },
+            {
+                question: 'What is a shift-reduce conflict?',
+                options: ['A) A networking collision', 'B) A situation where the parser can either shift or reduce and the grammar is ambiguous for that state', 'C) A symbol table overflow', 'D) A runtime stack crash'],
+                answer: 1,
+                explanation: 'It appears when the parser table suggests two competing moves for the same situation.'
+            }
+        ]
     }
 });
 
@@ -524,6 +562,43 @@ Object.assign(window.topicDetails['cs603-u4'], {
                 options: ['A) Physical layer', 'B) Lexical analysis only', 'C) Semantic analysis / type checking', 'D) Register allocation'],
                 answer: 2,
                 explanation: 'That is a meaning-level type error, so semantic analysis is responsible.'
+            }
+        ]
+    },
+    'c3-u4t4': {
+        title: 'Scope Resolution, Symbol Lifetime & AST Binding',
+        content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Which Variable Are We Even Talking About?</h3>
+<p class="mb-4">A compiler does not just store names; it must connect each identifier use to the correct declaration. That job is easier with an <strong>Abstract Syntax Tree (AST)</strong> and scoped symbol tables.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border border-gray-700">
+    <li><strong>Scope resolution:</strong> decides which declaration a name refers to.</li>
+    <li><strong>Lifetime:</strong> describes how long a variable exists in memory.</li>
+    <li><strong>Binding:</strong> links an AST node to its declaration entry.</li>
+    <li><strong>Shadowing:</strong> occurs when an inner scope reuses a name from an outer scope.</li>
+</ul>
+
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm text-gray-300">
+int marks = 78;<br>
+{<br>
+&nbsp;&nbsp;int marks = 91; <span class="text-gray-500">// inner marks shadows outer marks</span><br>
+}
+</div>
+
+<p class="text-gray-300 text-sm">Real-life example: two cousins in a family both named Rahul. "Bring Rahul here" is a terrible instruction unless you also mention which room you mean.</p>
+        `,
+        quizzes: [
+            {
+                question: 'What does shadowing mean in compiler terminology?',
+                options: ['A) Hiding source code in a ZIP file', 'B) An inner declaration using the same name as an outer declaration', 'C) Reducing parse tables', 'D) Encrypting variables'],
+                answer: 1,
+                explanation: 'Shadowing happens when an inner scope reuses a name and temporarily hides the outer one.'
+            },
+            {
+                question: 'Why is AST binding important?',
+                options: ['A) It links identifier uses to the correct declarations', 'B) It replaces lexical analysis', 'C) It speeds up Wi-Fi', 'D) It renders graphics'],
+                answer: 0,
+                explanation: 'Binding lets later compiler stages know exactly which symbol each identifier refers to.'
             }
         ]
     }

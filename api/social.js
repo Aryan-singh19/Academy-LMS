@@ -1,8 +1,10 @@
 const { getSql, getStudentByDevice } = require('./_lib/db');
 const { allowMethods, readJsonBody, sendJson } = require('./_lib/http');
+const { applyRateLimit } = require('./_lib/rate-limit');
 
 module.exports = async function handler(req, res) {
     if (!allowMethods(req, res, ['GET', 'POST'])) return;
+    if (!applyRateLimit(req, res, { scope: 'social', limit: req.method === 'GET' ? 80 : 25, windowMs: 60000 })) return;
 
     try {
         const sql = await getSql();

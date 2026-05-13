@@ -1,5 +1,6 @@
 const { getSql } = require('./_lib/db');
 const { allowMethods, sendJson } = require('./_lib/http');
+const { applyRateLimit } = require('./_lib/rate-limit');
 
 const BUILT_IN_ADMIN_EMAILS = new Set([
     'aryansingh19gh@gmail.com',
@@ -26,6 +27,7 @@ function getAllowedAdminEmails() {
 
 module.exports = async function handler(req, res) {
     if (!allowMethods(req, res, ['GET'])) return;
+    if (!applyRateLimit(req, res, { scope: 'admin', limit: 40, windowMs: 60000 })) return;
 
     try {
         const configuredSecret = String(process.env.ADMIN_SECRET || '').trim();

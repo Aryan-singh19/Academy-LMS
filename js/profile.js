@@ -45,7 +45,6 @@ function renderProfilePage() {
     const recentTopics = window.ACADEMY.getRecentTopics();
     const bookmarks = window.ACADEMY.getBookmarkedTopics();
     const sessions = window.ACADEMY.getPracticeSessions();
-    const storage = window.ACADEMY.getStorageSummary();
     const syncMeta = window.ACADEMY.getRemoteSyncStamp();
     const remoteStudent = getRemoteStudent();
     const uploads = remoteProfile && Array.isArray(remoteProfile.uploads) ? remoteProfile.uploads : [];
@@ -54,7 +53,7 @@ function renderProfilePage() {
         <div>
             <p class="revision-label">Personal progress</p>
             <h2 class="text-3xl font-extrabold text-white">${studentName}'s learning cockpit</h2>
-            <p class="text-slate-400 mt-2">Track what this student covered, sync it to Neon, keep solved material in a study vault, and make the profile feel like a real academic identity instead of a lonely browser cache.</p>
+            <p class="text-slate-400 mt-2">Track completed topics, keep a neat academic identity, save solved material, and make this page feel like a study profile instead of a settings dump.</p>
         </div>
         <div class="profile-hero-actions">
             <input id="profileNameInput" class="search-input profile-name-input" value="${window.ACADEMY.escapeForAttribute(studentName)}" placeholder="Student name">
@@ -74,7 +73,7 @@ function renderProfilePage() {
         <section class="panel-card p-5">
             <div class="section-head">
                 <h3>Student identity</h3>
-                <span>Optional profile details</span>
+                <span>Optional details</span>
             </div>
             <div class="grid md:grid-cols-[160px_minmax(0,1fr)] gap-5">
                 <div class="space-y-4">
@@ -83,7 +82,7 @@ function renderProfilePage() {
                     </div>
                     <input id="avatarUploadInput" type="file" accept="image/png,image/jpeg,image/webp" class="search-input">
                     <button id="uploadAvatarBtn" class="secondary-cta w-full justify-center">Upload avatar</button>
-                    <p class="text-xs text-slate-500">Avatar limit: 2 MB</p>
+                    <p class="text-xs text-slate-500">Avatar limit: 2 MB. This picture becomes your profile circle across the study desk.</p>
                 </div>
                 <div class="space-y-4">
                     <input id="profileHeadlineInput" class="search-input" placeholder="Headline, for example: CN revision sprinter and ML model tinkerer" value="${window.ACADEMY.escapeForAttribute(remoteStudent.headline || '')}">
@@ -105,24 +104,22 @@ function renderProfilePage() {
     document.getElementById('profileCloud').innerHTML = `
         <section class="panel-card p-5">
             <div class="section-head">
-                <h3>Cloud + device memory</h3>
-                <span>${remoteProfile ? 'Neon active' : 'Local-first'}</span>
+                <h3>Study profile overview</h3>
+                <span>${remoteProfile ? 'Connected' : 'Preparing'}</span>
             </div>
             <div class="space-y-4">
-                <div class="status-chip status-${syncMeta.lastStatus || 'local-only'}">${syncMeta.lastStatus || 'local-only'}</div>
+                <div class="status-chip status-${syncMeta.lastStatus || 'local-only'}">${remoteProfile ? 'Saved automatically' : 'Local study mode'}</div>
                 <div class="summary-list">
-                    <p><strong class="text-white">Device id:</strong> ${storage.deviceId}</p>
-                    <p><strong class="text-white">Local notes:</strong> ${storage.notesCount}</p>
-                    <p><strong class="text-white">Saved highlights:</strong> ${storage.highlightCount}</p>
-                    <p><strong class="text-white">Last sync:</strong> ${formatDate(syncMeta.lastSyncedAt)}</p>
-                    <p><strong class="text-white">Message:</strong> ${syncMeta.lastMessage}</p>
+                    <p><strong class="text-white">Last save:</strong> ${formatDate(syncMeta.lastSyncedAt)}</p>
+                    <p><strong class="text-white">Saved notes:</strong> ${sessions.length ? 'Practice history recorded' : 'Start solving quizzes to build history'}</p>
+                    <p><strong class="text-white">Profile status:</strong> ${syncMeta.lastMessage}</p>
                 </div>
                 ${remoteProfile ? `
                     <div class="study-rail-block !p-4">
-                        <p class="metric-label">Remote summary</p>
-                        <p class="text-sm text-slate-400 mt-2">${remoteProfile.summary.completed_topics || 0} completed topics • ${remoteProfile.summary.attempts_count || 0} quiz attempts • ${remoteProfile.summary.connections_count || 0} connections • ${remoteProfile.summary.direct_messages_count || 0} DMs received</p>
+                        <p class="metric-label">Quick snapshot</p>
+                        <p class="text-sm text-slate-400 mt-2">${remoteProfile.summary.completed_topics || 0} completed topics • ${remoteProfile.summary.attempts_count || 0} quiz attempts • ${remoteProfile.summary.connections_count || 0} study connections • ${remoteProfile.summary.direct_messages_count || 0} messages received</p>
                     </div>
-                ` : '<p class="text-sm text-slate-400">The deployed Vercel app backs up progress automatically once the student starts using it.</p>'}
+                ` : '<p class="text-sm text-slate-400">Your details are stored quietly as you study. Once the deployed app connects, this page fills itself in automatically.</p>'}
             </div>
         </section>
     `;
@@ -181,7 +178,7 @@ function renderProfilePage() {
                                 <a href="${upload.download_url || upload.blob_url}" target="_blank" rel="noreferrer" class="secondary-cta text-sm !py-2 !px-4">Open</a>
                             </div>
                         </article>
-                    `).join('') : '<p class="text-slate-400">No uploads yet. Once Blob is connected in Vercel, students can upload solved PDFs and profile images here.</p>'}
+                    `).join('') : '<p class="text-slate-400">No uploads yet. Add solved PDFs, answer sheets, or compact revision notes here.</p>'}
                 </div>
             </div>
         </section>
@@ -244,8 +241,8 @@ function renderStudentDirectory() {
                             </div>
                             <div class="flex-1">
                                 <strong class="text-white">${student.display_name}</strong>
-                                <p class="text-sm text-slate-400 mt-1">${student.headline || 'Showing up, studying hard, and pretending the syllabus is finite.'}</p>
-                                <p class="text-sm text-slate-400 mt-2">${student.bio || 'Ready to revise, probably mildly sleep-deprived like the rest of us.'}</p>
+                                <p class="text-sm text-slate-400 mt-1">${student.headline || 'Studying, revising, and doing the brave academic thing.'}</p>
+                                <p class="text-sm text-slate-400 mt-2">${student.bio || 'Available for revision chats, shared notes, and surviving unit tests together.'}</p>
                                 <p class="text-xs text-slate-500 mt-2">Seen ${formatDate(student.last_seen_at)}</p>
                             </div>
                         </div>
@@ -258,7 +255,7 @@ function renderStudentDirectory() {
                             </button>
                         </div>
                     </div>
-                `).join('') : '<p class="text-slate-400">Open the deployed app on Vercel and the student directory will start filling automatically as learners use it.</p>'}
+                `).join('') : '<p class="text-slate-400">As more students start using the deployed portal, their profiles will appear here automatically.</p>'}
             </div>
         </section>
     `;
@@ -350,12 +347,11 @@ function queueProfileAutosave() {
     profileAutoSaveTimer = window.setTimeout(async () => {
         try {
             await saveProfileDetails();
-            await window.ACADEMY.syncStateToCloud();
-            await hydrateStudentDirectory();
+            await hydrateRemoteProfile();
         } catch (error) {
             console.error('Unable to autosave profile details', error);
         }
-    }, 900);
+    }, 1600);
 }
 
 function bindProfileAutosave() {
@@ -392,6 +388,9 @@ async function hydrateRemoteProfile() {
         const response = await fetch(`/api/profile?deviceId=${encodeURIComponent(window.ACADEMY.state.deviceId)}`);
         if (!response.ok) return;
         remoteProfile = await response.json();
+        if (remoteProfile && remoteProfile.student && remoteProfile.student.avatar_url) {
+            window.ACADEMY.setProfileAvatar(remoteProfile.student.avatar_url);
+        }
     } catch (error) {
         console.error('Unable to load remote profile', error);
     }
@@ -492,6 +491,9 @@ async function uploadAvatar() {
         });
         input.value = '';
         await hydrateRemoteProfile();
+        if (remoteProfile && remoteProfile.student && remoteProfile.student.avatar_url) {
+            window.ACADEMY.setProfileAvatar(remoteProfile.student.avatar_url);
+        }
         renderProfilePage();
     } catch (error) {
         console.error('Unable to upload avatar', error);
