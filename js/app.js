@@ -2,9 +2,54 @@ let activeCourseId = 'cs601';
 let activeUnitId = 'cs601-u1';
 let activeTopicId = 't1';
 
+window.loadedCourses = {}; // Track which data_csXXX.js files have been loaded
+
 function initApp() {
     renderCoursesNav();
-    renderCourseView();
+    loadCourseData(activeCourseId, () => {
+        renderCourseView();
+    });
+}
+
+function loadCourseData(courseId, callback) {
+    if (window.loadedCourses[courseId]) {
+        callback();
+        return;
+    }
+    
+    // Show a loading state in the content area if it exists
+    const contentArea = document.getElementById('topicContentArea');
+    if (contentArea) {
+        contentArea.innerHTML = `
+            <div class="flex flex-col items-center justify-center h-full text-center py-20 animate-fadeIn">
+                <svg class="animate-spin w-16 h-16 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                <h3 class="text-2xl font-bold text-gray-400 mb-2">Downloading Curriculum...</h3>
+                <p class="text-gray-500 text-sm">Fetching detailed notes and interactive quizzes for ${courseId.toUpperCase()}.</p>
+            </div>
+        `;
+    }
+
+    const script = document.createElement('script');
+    script.src = `js/data_${courseId}.js`;
+    
+    script.onload = () => {
+        window.loadedCourses[courseId] = true;
+        callback();
+    };
+    
+    script.onerror = () => {
+        if (contentArea) {
+            contentArea.innerHTML = `
+                <div class="flex flex-col items-center justify-center h-full text-center py-20 animate-fadeIn">
+                    <svg class="w-16 h-16 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    <h3 class="text-2xl font-bold text-red-400 mb-2">Under Construction</h3>
+                    <p class="text-gray-500 text-sm max-w-md mx-auto">The detailed content for ${courseId.toUpperCase()} has not been populated yet. We are actively writing these notes!</p>
+                </div>
+            `;
+        }
+    };
+    
+    document.body.appendChild(script);
 }
 
 function renderCoursesNav() {
@@ -16,11 +61,14 @@ function renderCoursesNav() {
         btn.className = `tab-btn ${course.id === activeCourseId ? 'active' : ''}`;
         btn.innerText = course.code;
         btn.onclick = () => {
+            if (activeCourseId === course.id) return;
             activeCourseId = course.id;
             activeUnitId = course.units[0].id; // Reset to first unit
             activeTopicId = course.units[0].topics[0].id; // Reset to first topic
             renderCoursesNav();
-            renderCourseView();
+            loadCourseData(course.id, () => {
+                renderCourseView();
+            });
         };
         navContainer.appendChild(btn);
     });
@@ -159,6 +207,26 @@ function renderTopicContent() {
         });
     }
 
+    // Render References if any
+    if (topic.references && topic.references.length > 0) {
+        html += `
+            <div class="mt-8 bg-gray-800 rounded-xl p-6 border border-gray-700">
+                <h3 class="text-lg font-bold text-gray-200 mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    External References & Readings
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                    ${topic.references.map(ref => `
+                        <button onclick="openReferenceModal('${ref.url}', '${ref.title.replace(/'/g, "\\'")}')" class="px-4 py-2 bg-gray-900 border border-gray-600 hover:border-blue-500 hover:text-blue-400 text-gray-300 text-sm font-medium rounded-lg transition-all flex items-center shadow-sm hover:shadow-md">
+                            ${ref.title}
+                            <svg class="w-4 h-4 ml-2 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </button>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+
     html += `</div>`;
     contentArea.innerHTML = html;
 
@@ -262,6 +330,33 @@ function checkAnswer(btnElement, selected, correct, explanation) {
         resultDiv.className = 'quiz-result mt-4 p-4 rounded-lg bg-red-900/20 border border-red-800/50 text-red-400 animate-fadeIn';
         resultDiv.innerHTML = `<p class="font-bold mb-1 flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Incorrect.</p><p class="text-sm text-gray-300">${explanation}</p>`;
     }
+    }
+}
+
+function openReferenceModal(url, title) {
+    const modal = document.getElementById('referenceModal');
+    const iframe = document.getElementById('modalIframe');
+    const titleEl = document.getElementById('modalTitle');
+    const extBtn = document.getElementById('modalExternalBtn');
+    
+    titleEl.innerHTML = `
+        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+        ${title}
+    `;
+    iframe.src = url;
+    extBtn.href = url;
+    
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeReferenceModal() {
+    const modal = document.getElementById('referenceModal');
+    const iframe = document.getElementById('modalIframe');
+    
+    modal.classList.add('hidden');
+    iframe.src = ''; // Stop video playback or frame loading
+    document.body.style.overflow = ''; // Restore scrolling
 }
 
 document.addEventListener('DOMContentLoaded', () => {
