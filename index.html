@@ -3,232 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academy LMS - Linear Aesthetic</title>
-    
-    <!-- Tailwind CSS CDN -->
+    <title>Academy LMS | Student Prep Hub</title>
+    <meta name="description" content="Academy LMS is a focused study hub for Machine Learning, Computer Networks, Compiler Design, and Project Management.">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom Tailwind Configuration for "Linear" Aesthetic -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        gray: {
-                            900: '#111111',
-                            800: '#1a1a1a',
-                            750: '#222222',
-                            700: '#2a2a2a',
-                            600: '#404040',
-                        },
-                        blue: {
-                            400: '#5e6ad2',
-                            500: '#4a55c2',
-                        }
+                        ink: '#08111f',
+                        panel: '#0e1a2b',
+                        line: '#1e3148',
+                        accent: '#5eead4',
+                        gold: '#fbbf24',
+                        coral: '#f97316'
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        fadeIn: 'fadeIn 0.5s ease-out',
-                        slideUp: 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
-                        float: 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        slideUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
+                        sans: ['Manrope', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace']
                     }
                 }
             }
-        }
+        };
     </script>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Mermaid JS for Diagrams -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true, theme: 'dark'});</script>
-
-    <style>
-        body {
-            background-color: #000000;
-            color: #ededed;
-        }
-        
-        /* Custom scrollbar for webkit */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #111; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555; 
-        }
-
-        /* Glass effect for navbar */
-        .glass-nav {
-            background: rgba(17, 17, 17, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-
-        /* Smooth row hover animations for tables */
-        tbody tr {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        tbody tr:hover {
-            transform: scale(1.01) translateX(8px);
-            background-color: rgba(94, 106, 210, 0.1) !important;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            border-left: 4px solid #5e6ad2;
-        }
-
-        /* Workflow / Diagram animations */
-        .mermaid {
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-        }
-        .mermaid:hover {
-            transform: scale(1.03) translateY(-5px);
-            box-shadow: 0 10px 30px rgba(94, 106, 210, 0.2);
-            border-color: rgba(94, 106, 210, 0.5);
-        }
-
-        /* Tab buttons styling */
-        .tab-btn {
-            padding: 0.5rem 1rem;
-            color: #888;
-            font-weight: 500;
-            border-radius: 6px;
-            transition: all 0.2s;
-        }
-        .tab-btn:hover {
-            color: #fff;
-            background: rgba(255,255,255,0.05);
-        }
-        .tab-btn.active {
-            color: #fff;
-            background: rgba(255,255,255,0.1);
-            box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
-        }
-    </style>
+    <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 </head>
-<body class="antialiased min-h-screen flex flex-col">
+<body class="academy-shell antialiased min-h-screen">
+    <div class="page-orb page-orb-a"></div>
+    <div class="page-orb page-orb-b"></div>
 
-    <!-- Landing / Hero Section -->
-    <div id="heroSection" class="flex-grow flex flex-col items-center justify-center p-6 relative overflow-hidden">
-        <!-- Subtle background glow -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
-        
-        <div class="z-10 text-center max-w-3xl animate-slideUp">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
-                Hello Students<br>Welcome To Academy
-            </h1>
-            <p class="text-lg md:text-xl text-gray-400 mb-10 font-light">
-                Your portal to deciphering the mysteries of CS601 to CS604. No more hunting for PDFs in obscure WhatsApp groups. Let's get to work.
-            </p>
-            <button onclick="startApp()" class="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-white/5 border border-white/10 rounded-full overflow-hidden transition-all hover:bg-white/10 hover:border-white/20 hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(94,106,210,0.2)]">
-                <span class="mr-2">Get Started</span>
-                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </button>
+    <section id="heroSection" class="min-h-screen flex items-center justify-center px-6 py-12 relative">
+        <div class="max-w-6xl w-full grid lg:grid-cols-[1.2fr_.8fr] gap-10 items-center">
+            <div class="reveal rise-in">
+                <div class="eyebrow">Academy LMS</div>
+                <h1 class="hero-title mt-4">Sharper prep for ML, CN, CD, and PM.</h1>
+                <p class="hero-copy mt-6">
+                    Deep notes, persistent study memory, highlightable topic content, quiz analytics, and revision tools built for your semester sprint.
+                </p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <button onclick="startApp()" class="primary-cta">Open Study Desk</button>
+                    <a href="html/tests.html" class="secondary-cta">Practice Tests</a>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-4 mt-10">
+                    <div class="stat-chip">
+                        <span class="stat-chip-label">Subjects</span>
+                        <strong>4 core + CG</strong>
+                    </div>
+                    <div class="stat-chip">
+                        <span class="stat-chip-label">Saved locally</span>
+                        <strong>Notes, highlights, marks</strong>
+                    </div>
+                    <div class="stat-chip">
+                        <span class="stat-chip-label">Workflow ready</span>
+                        <strong>Checks for repo hygiene</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-panel reveal rise-in-delayed">
+                <div class="hero-panel-grid">
+                    <div class="hero-card">
+                        <span class="hero-card-kicker">Track</span>
+                        <h2>Your momentum</h2>
+                        <p>Completion, bookmarked topics, latest activity, and quiz accuracy stay available every time you come back.</p>
+                    </div>
+                    <div class="hero-card hero-card-accent">
+                        <span class="hero-card-kicker">Study</span>
+                        <h2>Highlight and take notes</h2>
+                        <p>Select content, save your own notes per topic, and build a personal revision layer on top of the existing material.</p>
+                    </div>
+                    <div class="hero-card">
+                        <span class="hero-card-kicker">Revise</span>
+                        <h2>Mixed practice</h2>
+                        <p>Use the dedicated tests page to run random drills across Machine Learning, Networks, Compiler Design, and Project Management.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Main App Section (Hidden initially) -->
-    <div id="appSection" class="hidden flex-col h-screen overflow-hidden">
-        <!-- Navigation -->
-        <nav class="glass-nav sticky top-0 z-50 px-6 py-4 flex flex-col lg:flex-row items-center justify-between gap-4">
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <!-- Logo -->
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-bold text-lg">A</div>
-                    <span class="font-semibold tracking-tight">Academy</span>
-                </div>
-                <!-- Page Links -->
-                <div class="flex gap-4 text-sm font-medium text-gray-400">
-                    <a href="index.html" class="text-white hover:text-blue-400 transition-colors">Curriculum</a>
-                    <a href="html/lectures.html" class="hover:text-blue-400 transition-colors">Lectures</a>
-                    <a href="html/resources.html" class="hover:text-blue-400 transition-colors">Resources</a>
-                    <a href="html/tests.html" class="hover:text-blue-400 transition-colors">Tests</a>
-                </div>
-            </div>
-            <!-- Dynamic Course Tabs -->
-            <div id="coursesNav" class="flex flex-wrap justify-center gap-2">
-                <!-- Tabs injected by JS -->
-            </div>
-        </nav>
+    <div id="appSection" class="hidden min-h-screen">
+        <header class="glass-nav sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+                <div class="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="brand-mark">A</div>
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.28em] text-slate-400">Student Prep Workspace</p>
+                            <h1 class="text-xl font-extrabold text-white">Academy LMS</h1>
+                        </div>
+                    </div>
 
-        <!-- Main Content Area -->
-        <main class="flex-grow overflow-hidden p-4 md:p-8">
-            <div id="mainContent" class="max-w-7xl mx-auto h-full">
-                <!-- Course units injected by JS -->
+                    <nav class="flex flex-wrap items-center gap-3 text-sm">
+                        <a href="index.html" class="nav-pill nav-pill-active">Curriculum</a>
+                        <a href="html/lectures.html" class="nav-pill">Lectures</a>
+                        <a href="html/resources.html" class="nav-pill">Resources</a>
+                        <a href="html/tests.html" class="nav-pill">Tests</a>
+                    </nav>
+
+                    <div class="relative flex-1 xl:max-w-md">
+                        <input
+                            id="topicSearchInput"
+                            type="search"
+                            placeholder="Search topics, concepts, units..."
+                            class="search-input"
+                            autocomplete="off"
+                        >
+                        <div id="searchResults" class="search-results hidden"></div>
+                    </div>
+                </div>
             </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+            <section id="overviewCards" class="grid md:grid-cols-2 xl:grid-cols-4 gap-4 mb-6"></section>
+            <div class="flex flex-wrap gap-2 mb-6" id="coursesNav"></div>
+            <section id="mainContent"></section>
         </main>
     </div>
 
-    <!-- Iframe Modal -->
-    <div id="referenceModal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-12 animate-fadeIn bg-black/80 backdrop-blur-sm">
-        <div class="bg-gray-900 w-full h-full max-w-6xl rounded-2xl border border-gray-700 shadow-2xl flex flex-col overflow-hidden relative animate-slideUp">
-            <div class="flex justify-between items-center p-4 border-b border-gray-800 bg-black/50">
-                <h3 id="modalTitle" class="text-xl font-bold text-white flex items-center gap-2">
-                    <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-                    External Reference
-                </h3>
-                <div class="flex gap-3">
-                    <a id="modalExternalBtn" href="#" target="_blank" class="px-4 py-2 text-sm font-medium bg-gray-800 hover:bg-gray-700 border border-gray-600 text-gray-200 rounded transition-colors flex items-center gap-2">
-                        Open in New Tab
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+    <div id="referenceModal" class="hidden fixed inset-0 z-[100] items-center justify-center p-4 sm:p-6 lg:p-10 bg-slate-950/85 backdrop-blur">
+        <div class="modal-shell">
+            <div class="modal-head">
+                <h2 id="modalTitle" class="text-lg sm:text-xl font-bold text-white">Reference</h2>
+                <div class="flex items-center gap-3">
+                    <a id="modalExternalBtn" href="#" target="_blank" rel="noreferrer" class="secondary-cta text-sm !py-2 !px-4">
+                        Open in new tab
                     </a>
-                    <button onclick="closeReferenceModal()" class="px-4 py-2 text-sm font-bold bg-red-900/50 hover:bg-red-800 border border-red-700/50 text-red-200 rounded transition-colors flex items-center gap-2">
-                        Close
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
+                    <button onclick="closeReferenceModal()" class="danger-cta text-sm">Close</button>
                 </div>
             </div>
-            <div class="flex-grow bg-white">
-                <iframe id="modalIframe" class="w-full h-full border-none bg-white"></iframe>
-            </div>
+            <iframe id="modalIframe" title="External reference" class="w-full h-[75vh] bg-white"></iframe>
         </div>
     </div>
 
-    <!-- Load Data and App Logic -->
     <script src="js/data.js"></script>
+    <script src="js/shared.js"></script>
     <script src="js/app.js"></script>
-    <script>
-        function startApp() {
-            // Animate hero out
-            const hero = document.getElementById('heroSection');
-            hero.style.opacity = '0';
-            hero.style.transform = 'scale(0.95)';
-            hero.style.transition = 'all 0.5s ease';
-            
-            setTimeout(() => {
-                hero.classList.add('hidden');
-                const app = document.getElementById('appSection');
-                app.classList.remove('hidden');
-                app.classList.add('flex');
-                
-                // Initialize the app logic
-                initApp();
-            }, 500);
-        }
-    </script>
 </body>
 </html>

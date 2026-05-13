@@ -3,61 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academy LMS - Lectures & Schedule</title>
+    <title>Academy LMS | Lectures</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { background-color: #000000; color: #ededed; font-family: 'Inter', sans-serif; }
-        .glass-nav { background: rgba(17, 17, 17, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
-    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/app.css">
 </head>
-<body class="antialiased min-h-screen flex flex-col">
-    <!-- Navigation -->
-    <nav class="glass-nav sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
-        <a href="../index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-bold text-lg">A</div>
-            <span class="font-semibold tracking-tight text-white">Academy</span>
-        </a>
-        <div class="flex gap-4">
-            <a href="../index.html" class="text-sm font-medium text-gray-400 hover:text-white">Courses</a>
-            <a href="lectures.html" class="text-sm font-medium text-blue-400">Lectures</a>
-            <a href="resources.html" class="text-sm font-medium text-gray-400 hover:text-white">Resources</a>
+<body class="academy-page min-h-screen">
+    <header class="glass-nav sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
+            <a href="../index.html" class="flex items-center gap-3">
+                <div class="brand-mark">A</div>
+                <div>
+                    <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
+                    <h1 class="text-xl font-extrabold text-white">Lecture Deck</h1>
+                </div>
+            </a>
+            <nav class="flex flex-wrap items-center gap-3 text-sm">
+                <a href="../index.html" class="nav-pill">Curriculum</a>
+                <a href="lectures.html" class="nav-pill nav-pill-active">Lectures</a>
+                <a href="resources.html" class="nav-pill">Resources</a>
+                <a href="tests.html" class="nav-pill">Tests</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main class="flex-grow p-8 max-w-7xl mx-auto w-full">
-        <h1 class="text-4xl font-bold mb-8 text-white">Lecture Schedules</h1>
-        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg">
-            <p class="text-gray-400 mb-6">Upcoming lectures, practicals, and tutorial sessions will be populated here.</p>
-            
-            <table class="w-full text-left border-collapse">
-                <thead class="bg-gray-800 text-gray-300">
-                    <tr>
-                        <th class="p-4 rounded-tl-lg">Date</th>
-                        <th class="p-4">Time</th>
-                        <th class="p-4">Subject</th>
-                        <th class="p-4">Topic</th>
-                        <th class="p-4 rounded-tr-lg">Room / Link</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-800 text-gray-400">
-                    <tr class="hover:bg-gray-800/50 transition-colors">
-                        <td class="p-4">Oct 14</td>
-                        <td class="p-4">10:00 AM</td>
-                        <td class="p-4 text-blue-400 font-medium">CS601 (ML)</td>
-                        <td class="p-4">Convex Optimization Deep Dive</td>
-                        <td class="p-4">Lab 304</td>
-                    </tr>
-                    <tr class="hover:bg-gray-800/50 transition-colors">
-                        <td class="p-4">Oct 15</td>
-                        <td class="p-4">11:30 AM</td>
-                        <td class="p-4 text-purple-400 font-medium">CS602 (CN)</td>
-                        <td class="p-4">OSI Model vs TCP/IP</td>
-                        <td class="p-4">Hall A</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+        <section class="revision-banner mb-8">
+            <div>
+                <p class="revision-label">Keep pace</p>
+                <h2 class="text-3xl font-extrabold text-white">Upcoming study schedule</h2>
+                <p class="text-slate-400 mt-2">A cleaner view for lectures, tutorials, and revision slots that students can scan quickly before class.</p>
+            </div>
+            <a href="tests.html" class="secondary-cta">Switch to tests</a>
+        </section>
+
+        <section class="grid lg:grid-cols-[1.1fr_.9fr] gap-6">
+            <div class="panel-card p-5 sm:p-6 overflow-hidden">
+                <div class="section-head">
+                    <h3>Lecture timeline</h3>
+                    <span>Suggested weekly cadence</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="text-slate-300 bg-white/5">
+                            <tr>
+                                <th class="p-4">Day</th>
+                                <th class="p-4">Track</th>
+                                <th class="p-4">Focus</th>
+                                <th class="p-4">Mode</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-300 divide-y divide-white/5">
+                            <tr>
+                                <td class="p-4">Monday</td>
+                                <td class="p-4">CS601</td>
+                                <td class="p-4">Regression, probability, and data prep recap</td>
+                                <td class="p-4">Lecture + quiz warmup</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">Tuesday</td>
+                                <td class="p-4">CS602</td>
+                                <td class="p-4">Routing, addressing, and transport layer comparison</td>
+                                <td class="p-4">Tutorial + diagram review</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">Wednesday</td>
+                                <td class="p-4">CS603</td>
+                                <td class="p-4">Lexical analysis, CFGs, and optimization basics</td>
+                                <td class="p-4">Problem solving</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">Thursday</td>
+                                <td class="p-4">CS604</td>
+                                <td class="p-4">Agile, estimation, scheduling, and risk planning</td>
+                                <td class="p-4">Lecture + case study</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">Friday</td>
+                                <td class="p-4">Mixed</td>
+                                <td class="p-4">Practice tests, bookmarked weak topics, and note cleanup</td>
+                                <td class="p-4">Self-revision</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <section class="panel-card p-5 sm:p-6">
+                    <div class="section-head">
+                        <h3>How to use it</h3>
+                        <span>Short routine</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li>Start with the course notes page and mark one topic complete after every focused block.</li>
+                        <li>Highlight formulas, definitions, and comparison lines that are likely exam anchors.</li>
+                        <li>Move to the tests page after each unit to reinforce recall under time pressure.</li>
+                    </ul>
+                </section>
+
+                <section class="panel-card p-5 sm:p-6">
+                    <div class="section-head">
+                        <h3>Suggested cadence</h3>
+                        <span>2-hour block</span>
+                    </div>
+                    <div class="space-y-3 text-slate-300">
+                        <div class="study-rail-block !p-4">
+                            <strong class="text-white">45 min</strong>
+                            <p class="mt-1">New topic reading and diagrams.</p>
+                        </div>
+                        <div class="study-rail-block !p-4">
+                            <strong class="text-white">30 min</strong>
+                            <p class="mt-1">Topic quizzes plus one saved note summary.</p>
+                        </div>
+                        <div class="study-rail-block !p-4">
+                            <strong class="text-white">45 min</strong>
+                            <p class="mt-1">Mixed practice or unit exam writing drill.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
 </body>
 </html>

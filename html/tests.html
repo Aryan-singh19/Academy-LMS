@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy LMS | Practice Tests</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body class="academy-page min-h-screen">
+    <header class="glass-nav sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4">
+            <div class="flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
+                <a href="../index.html" class="flex items-center gap-3">
+                    <div class="brand-mark">A</div>
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
+                        <h1 class="text-xl font-extrabold text-white">Practice Tests</h1>
+                    </div>
+                </a>
+                <nav class="flex flex-wrap items-center gap-3 text-sm">
+                    <a href="../index.html" class="nav-pill">Curriculum</a>
+                    <a href="lectures.html" class="nav-pill">Lectures</a>
+                    <a href="resources.html" class="nav-pill">Resources</a>
+                    <a href="tests.html" class="nav-pill nav-pill-active">Tests</a>
+                </nav>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <button data-course-filter="all" onclick="setPracticeCourse('all')" class="course-pill course-pill-active">All subjects</button>
+                <button data-course-filter="cs601" onclick="setPracticeCourse('cs601')" class="course-pill">ML</button>
+                <button data-course-filter="cs602" onclick="setPracticeCourse('cs602')" class="course-pill">CN</button>
+                <button data-course-filter="cs603" onclick="setPracticeCourse('cs603')" class="course-pill">CD</button>
+                <button data-course-filter="cs604" onclick="setPracticeCourse('cs604')" class="course-pill">PM</button>
+                <button onclick="buildPracticeSession()" class="secondary-cta text-sm !py-2 !px-4 ml-auto">Generate new set</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+        <section id="practiceOverview" class="grid md:grid-cols-3 gap-4 mb-6"></section>
+        <section class="revision-banner mb-6">
+            <div>
+                <p class="revision-label">Mixed recall</p>
+                <h2 class="text-3xl font-extrabold text-white">Subject-wise drills with stored marks</h2>
+                <p class="text-slate-400 mt-2">This page mixes the built-in topic quizzes with extra subject questions so students can revise faster under a lightweight test format.</p>
+            </div>
+            <div id="practiceMeta"></div>
+        </section>
+        <section id="practiceList" class="space-y-5"></section>
+    </main>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/data_cs601.js"></script>
+    <script src="../js/data_cs602.js"></script>
+    <script src="../js/data_cs603.js"></script>
+    <script src="../js/data_cs604.js"></script>
+    <script src="../js/shared.js"></script>
+    <script src="../js/tests.js"></script>
+</body>
+</html>

@@ -3,52 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academy LMS - Resources</title>
+    <title>Academy LMS | Resources</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { background-color: #000000; color: #ededed; font-family: 'Inter', sans-serif; }
-        .glass-nav { background: rgba(17, 17, 17, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
-    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/app.css">
 </head>
-<body class="antialiased min-h-screen flex flex-col">
-    <!-- Navigation -->
-    <nav class="glass-nav sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
-        <a href="../index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-bold text-lg">A</div>
-            <span class="font-semibold tracking-tight text-white">Academy</span>
-        </a>
-        <div class="flex gap-4">
-            <a href="../index.html" class="text-sm font-medium text-gray-400 hover:text-white">Courses</a>
-            <a href="lectures.html" class="text-sm font-medium text-gray-400 hover:text-white">Lectures</a>
-            <a href="resources.html" class="text-sm font-medium text-blue-400">Resources</a>
-        </div>
-    </nav>
-
-    <main class="flex-grow p-8 max-w-7xl mx-auto w-full">
-        <h1 class="text-4xl font-bold mb-8 text-white">Resources & Downloads</h1>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Resource Card -->
-            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-colors group cursor-pointer">
-                <div class="w-12 h-12 bg-red-900/30 rounded-lg flex items-center justify-center mb-4 text-red-500 group-hover:scale-110 transition-transform">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+<body class="academy-page min-h-screen">
+    <header class="glass-nav sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
+            <a href="../index.html" class="flex items-center gap-3">
+                <div class="brand-mark">A</div>
+                <div>
+                    <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
+                    <h1 class="text-xl font-extrabold text-white">Resource Desk</h1>
                 </div>
-                <h3 class="text-xl font-bold text-gray-200 mb-2">CS601 Full Syllabus</h3>
-                <p class="text-sm text-gray-500 mb-4">Official PDF syllabus for Machine Learning (3rd Year).</p>
-                <span class="text-xs font-mono bg-gray-800 text-gray-400 px-2 py-1 rounded">PDF • 2.4 MB</span>
-            </div>
-
-            <!-- Resource Card -->
-            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition-colors group cursor-pointer">
-                <div class="w-12 h-12 bg-orange-900/30 rounded-lg flex items-center justify-center mb-4 text-orange-500 group-hover:scale-110 transition-transform">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-200 mb-2">Neural Network Slides</h3>
-                <p class="text-sm text-gray-500 mb-4">PPTX deck used in Lecture 4 covering Backprop.</p>
-                <span class="text-xs font-mono bg-gray-800 text-gray-400 px-2 py-1 rounded">PPTX • 15 MB</span>
-            </div>
+            </a>
+            <nav class="flex flex-wrap items-center gap-3 text-sm">
+                <a href="../index.html" class="nav-pill">Curriculum</a>
+                <a href="lectures.html" class="nav-pill">Lectures</a>
+                <a href="resources.html" class="nav-pill nav-pill-active">Resources</a>
+                <a href="tests.html" class="nav-pill">Tests</a>
+            </nav>
         </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+        <section class="revision-banner mb-8">
+            <div>
+                <p class="revision-label">Build your stack</p>
+                <h2 class="text-3xl font-extrabold text-white">Recommended revision assets</h2>
+                <p class="text-slate-400 mt-2">A structured resource page with faster scanning and better subject grouping than the original placeholder cards.</p>
+            </div>
+            <a href="tests.html" class="secondary-cta">Start practicing</a>
+        </section>
+
+        <section class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+            <article class="panel-card p-5">
+                <p class="metric-label">CS601</p>
+                <h3 class="text-xl font-bold text-white mt-2">Machine Learning</h3>
+                <ul class="mt-4 space-y-3 text-slate-300 text-sm">
+                    <li>Regression and probability formula sheet</li>
+                    <li>Neural network diagrams and backprop steps</li>
+                    <li>Model evaluation metrics cheat list</li>
+                </ul>
+            </article>
+            <article class="panel-card p-5">
+                <p class="metric-label">CS602</p>
+                <h3 class="text-xl font-bold text-white mt-2">Computer Networks</h3>
+                <ul class="mt-4 space-y-3 text-slate-300 text-sm">
+                    <li>OSI vs TCP/IP comparison summary</li>
+                    <li>IPv4, IPv6, and routing quick recall cards</li>
+                    <li>Security protocols and encryption comparison notes</li>
+                </ul>
+            </article>
+            <article class="panel-card p-5">
+                <p class="metric-label">CS603</p>
+                <h3 class="text-xl font-bold text-white mt-2">Compiler Design</h3>
+                <ul class="mt-4 space-y-3 text-slate-300 text-sm">
+                    <li>Finite automata and token flow snapshot</li>
+                    <li>Grammar and parsing methods revision grid</li>
+                    <li>Optimization techniques cue sheet</li>
+                </ul>
+            </article>
+            <article class="panel-card p-5">
+                <p class="metric-label">CS604</p>
+                <h3 class="text-xl font-bold text-white mt-2">Project Management</h3>
+                <ul class="mt-4 space-y-3 text-slate-300 text-sm">
+                    <li>Agile vs Waterfall comparison page</li>
+                    <li>COCOMO, PERT, and Gantt reminders</li>
+                    <li>Risk exposure and RMMM planning checklist</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="grid lg:grid-cols-[1fr_.9fr] gap-6 mt-8">
+            <article class="panel-card p-5 sm:p-6">
+                <div class="section-head">
+                    <h3>Revision workflow</h3>
+                    <span>Use the site better</span>
+                </div>
+                <div class="space-y-4 text-slate-300">
+                    <p>Use the notes rail on the main curriculum page to write a 3-5 line summary after every topic.</p>
+                    <p>Bookmark only weak or high-weightage topics so the bookmark count stays meaningful rather than noisy.</p>
+                    <p>Highlight definitions, algorithms, and tables you want to scan quickly before exams.</p>
+                </div>
+            </article>
+            <article class="panel-card p-5 sm:p-6">
+                <div class="section-head">
+                    <h3>Fast loop</h3>
+                    <span>30-minute refresh</span>
+                </div>
+                <div class="space-y-3 text-slate-300">
+                    <div class="study-rail-block !p-4">
+                        <strong class="text-white">10 min</strong>
+                        <p class="mt-1">Read one saved note from each subject.</p>
+                    </div>
+                    <div class="study-rail-block !p-4">
+                        <strong class="text-white">10 min</strong>
+                        <p class="mt-1">Attempt five mixed questions on the tests page.</p>
+                    </div>
+                    <div class="study-rail-block !p-4">
+                        <strong class="text-white">10 min</strong>
+                        <p class="mt-1">Open bookmarks and clear one weak area.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
 </html>

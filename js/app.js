@@ -1,384 +1,627 @@
 let activeCourseId = 'cs601';
 let activeUnitId = 'cs601-u1';
 let activeTopicId = 't1';
+let appStarted = false;
+const loadedCourses = {};
 
-window.loadedCourses = {}; // Track which data_csXXX.js files have been loaded
-window.studentProgress = JSON.parse(localStorage.getItem('academy_progress')) || { completedTopics: {} };
+function startApp() {
+    const hero = document.getElementById('heroSection');
+    const app = document.getElementById('appSection');
 
-function markTopicComplete(topicId) {
-    if (!window.studentProgress.completedTopics) window.studentProgress.completedTopics = {};
-    window.studentProgress.completedTopics[topicId] = true;
-    localStorage.setItem('academy_progress', JSON.stringify(window.studentProgress));
-    
-    // Visually update the button without re-rendering the whole view
-    const btn = document.getElementById(`btn-topic-${topicId}`);
-    if (btn && !btn.querySelector('.text-green-500')) {
-        btn.innerHTML += '<svg class="w-4 h-4 text-green-500 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
-    }
+    hero.classList.add('hero-exit');
+    setTimeout(() => {
+        hero.classList.add('hidden');
+        app.classList.remove('hidden');
+        if (!appStarted) {
+            initApp();
+            appStarted = true;
+        }
+    }, 380);
 }
 
 function initApp() {
+    hydrateLastVisited();
+    bindGlobalEvents();
     renderCoursesNav();
+    renderOverviewCards();
     loadCourseData(activeCourseId, () => {
         renderCourseView();
+        preloadRemainingCourses();
     });
 }
 
+function hydrateLastVisited() {
+    const lastVisited = window.ACADEMY.state.lastVisited;
+    if (!lastVisited) return;
+
+    activeCourseId = lastVisited.courseId || activeCourseId;
+    activeUnitId = lastVisited.unitId || activeUnitId;
+    activeTopicId = lastVisited.topicId || activeTopicId;
+}
+
+function bindGlobalEvents() {
+    const searchInput = document.getElementById('topicSearchInput');
+    searchInput.addEventListener('input', renderSearchResults);
+    searchInput.addEventListener('focus', renderSearchResults);
+    document.addEventListener('click', (event) => {
+        if (!event.target.closest('#topicSearchInput') && !event.target.closest('#searchResults')) {
+            document.getElementById('searchResults').classList.add('hidden');
+        }
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeReferenceModal();
+            document.getElementById('searchResults').classList.add('hidden');
+        }
+    });
+    document.getElementById('referenceModal').addEventListener('click', (event) => {
+        if (event.target.id === 'referenceModal') {
+            closeReferenceModal();
+        }
+    });
+}
+
+function preloadRemainingCourses() {
+    const remaining = coursesData.filter((course) => course.id !== activeCourseId);
+    const loadNext = (index) => {
+        if (index >= remaining.length) return;
+        loadCourseData(remaining[index].id, () => loadNext(index + 1));
+    };
+
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => loadNext(0), { timeout: 1500 });
+    } else {
+        setTimeout(() => loadNext(0), 900);
+    }
+}
+
 function loadCourseData(courseId, callback) {
-    if (window.loadedCourses[courseId]) {
+    if (loadedCourses[courseId]) {
         callback();
         return;
     }
-    
-    // Show a loading state in the content area if it exists
-    const contentArea = document.getElementById('topicContentArea');
-    if (contentArea) {
-        contentArea.innerHTML = `
-            <div class="flex flex-col items-center justify-center h-full text-center py-20 animate-fadeIn">
-                <svg class="animate-spin w-16 h-16 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                <h3 class="text-2xl font-bold text-gray-400 mb-2">Downloading Curriculum...</h3>
-                <p class="text-gray-500 text-sm">Fetching detailed notes and interactive quizzes for ${courseId.toUpperCase()}.</p>
-            </div>
-        `;
+
+    const existing = document.querySelector(`script[data-course-script="${courseId}"]`);
+    if (existing) {
+        loadedCourses[courseId] = true;
+        callback();
+        return;
     }
 
     const script = document.createElement('script');
     script.src = `js/data_${courseId}.js`;
-    
+    script.dataset.courseScript = courseId;
     script.onload = () => {
-        window.loadedCourses[courseId] = true;
+        loadedCourses[courseId] = true;
         callback();
     };
-    
     script.onerror = () => {
-        if (contentArea) {
-            contentArea.innerHTML = `
-                <div class="flex flex-col items-center justify-center h-full text-center py-20 animate-fadeIn">
-                    <svg class="w-16 h-16 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                    <h3 class="text-2xl font-bold text-red-400 mb-2">Under Construction</h3>
-                    <p class="text-gray-500 text-sm max-w-md mx-auto">The detailed content for ${courseId.toUpperCase()} has not been populated yet. We are actively writing these notes!</p>
-                </div>
-            `;
-        }
+        const container = document.getElementById('mainContent');
+        container.innerHTML = `
+            <section class="panel-card p-10 text-center">
+                <h2 class="text-2xl font-bold text-white mb-3">Unable to load ${courseId.toUpperCase()}</h2>
+                <p class="text-slate-400">The detail file for this course could not be loaded right now.</p>
+            </section>
+        `;
     };
-    
     document.body.appendChild(script);
 }
 
-function renderCoursesNav() {
-    const navContainer = document.getElementById('coursesNav');
-    navContainer.innerHTML = '';
-    
-    coursesData.forEach(course => {
-        const btn = document.createElement('button');
-        btn.className = `tab-btn ${course.id === activeCourseId ? 'active' : ''}`;
-        btn.innerText = course.code;
-        btn.onclick = () => {
-            if (activeCourseId === course.id) return;
-            activeCourseId = course.id;
-            activeUnitId = course.units[0].id; // Reset to first unit
-            activeTopicId = course.units[0].topics[0].id; // Reset to first topic
-            renderCoursesNav();
-            loadCourseData(course.id, () => {
-                renderCourseView();
-            });
-        };
-        navContainer.appendChild(btn);
-    });
+function renderOverviewCards() {
+    const stats = window.ACADEMY.calculateStats();
+    const cards = [
+        { label: 'Topics done', value: `${stats.completedTopics}/${stats.totalTopics}`, subtext: `${stats.completionRate}% completion` },
+        { label: 'Quiz accuracy', value: `${stats.quizAccuracy}%`, subtext: `${stats.correctAnswers}/${stats.totalAttempts} correct` },
+        { label: 'Study notes', value: `${stats.notesCount}`, subtext: `${stats.highlightCount} saved highlights` },
+        { label: 'Bookmarks', value: `${stats.bookmarkedCount}`, subtext: stats.lastVisitedLabel || 'Start a topic to build memory' }
+    ];
+
+    document.getElementById('overviewCards').innerHTML = cards.map((card, index) => `
+        <article class="metric-card reveal" style="animation-delay:${index * 70}ms">
+            <p class="metric-label">${card.label}</p>
+            <div class="metric-value">${card.value}</div>
+            <p class="metric-subtext">${card.subtext}</p>
+        </article>
+    `).join('');
 }
 
-function renderCourseView() {
-    const course = coursesData.find(c => c.id === activeCourseId);
-    const container = document.getElementById('mainContent');
-    
-    let html = `
-        <div class="animate-fadeIn flex flex-col md:flex-row gap-8 h-full">
-            
-            <!-- Left Sidebar: Units & Topics -->
-            <div class="w-full md:w-1/3 lg:w-1/4 shrink-0 flex flex-col gap-4">
-                <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 shadow-lg">
-                    <h2 class="text-xl font-bold text-white mb-1">${course.code}</h2>
-                    <p class="text-xs text-gray-400 mb-4 line-clamp-2" title="${course.description}">${course.description}</p>
-                    
-                    <div class="space-y-4">
-                        ${course.units.map(unit => `
-                            <div>
-                                <button onclick="selectUnit('${unit.id}')" class="w-full text-left font-bold py-2 px-3 rounded flex justify-between items-center transition-colors ${unit.id === activeUnitId ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' : 'text-gray-300 hover:bg-gray-700'}">
-                                    <span>Unit ${unit.unitNumber}</span>
-                                    <svg class="w-4 h-4 transform transition-transform ${unit.id === activeUnitId ? 'rotate-90 text-blue-400' : 'text-gray-500'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                </button>
-                                
-                                <!-- Topics List (visible if unit is active) -->
-                                <div class="${unit.id === activeUnitId ? 'block' : 'hidden'} mt-2 ml-2 pl-3 border-l border-gray-700 space-y-1">
-                                    ${unit.topics.map((topic, idx) => {
-                                        const isTopicActive = topic.id === activeTopicId;
-                                        const isCompleted = window.studentProgress.completedTopics[topic.id];
-                                        return `
-                                            <button id="btn-topic-${topic.id}" onclick="selectTopic('${topic.id}')" class="w-full text-left py-2 px-3 text-sm rounded transition-colors flex justify-between items-center ${isTopicActive ? 'bg-gray-700 text-white font-medium shadow-inner' : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'}">
-                                                <span>${idx + 1}. ${topic.title}</span>
-                                                ${isCompleted ? '<svg class="w-4 h-4 text-green-500 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>' : ''}
-                                            </button>
-                                        `;
-                                    }).join('')}
-                                    
-                                    <!-- Unit Exam Button -->
-                                    <button onclick="selectTopic('exam')" class="w-full text-left py-2 px-3 text-sm rounded transition-colors ${activeTopicId === 'exam' ? 'bg-purple-900/40 text-purple-300 font-medium border border-purple-500/30' : 'text-purple-400 hover:bg-gray-800'} mt-2 flex items-center">
-                                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                                        Unit Exam
-                                    </button>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            </div>
+function renderCoursesNav() {
+    const stats = window.ACADEMY.calculateStats();
+    document.getElementById('coursesNav').innerHTML = coursesData.map((course) => {
+        const courseStats = stats.courseStats[course.id] || { completionRate: 0, completed: 0, total: course.units.reduce((sum, unit) => sum + unit.topics.length, 0) };
+        return `
+            <button onclick="switchCourse('${course.id}')" class="course-pill ${course.id === activeCourseId ? 'course-pill-active' : ''}">
+                <span class="font-semibold">${course.code}</span>
+                <span class="text-xs text-slate-400">${courseStats.completed}/${courseStats.total} done</span>
+            </button>
+        `;
+    }).join('');
+}
 
-            <!-- Right Content Area -->
-            <div class="w-full md:w-2/3 lg:w-3/4 bg-gray-800 rounded-2xl p-6 md:p-10 border border-gray-700 shadow-2xl overflow-y-auto">
-                <div id="topicContentArea"></div>
-            </div>
-            
-        </div>
-    `;
-
-    container.innerHTML = html;
-    renderTopicContent();
+function switchCourse(courseId) {
+    if (courseId === activeCourseId) return;
+    const course = coursesData.find((item) => item.id === courseId);
+    activeCourseId = course.id;
+    activeUnitId = course.units[0].id;
+    activeTopicId = course.units[0].topics[0].id;
+    window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
+    renderCoursesNav();
+    loadCourseData(courseId, renderCourseView);
 }
 
 function selectUnit(unitId) {
-    if (activeUnitId === unitId) return; // Already active
-    
+    if (unitId === activeUnitId) return;
+    const course = coursesData.find((item) => item.id === activeCourseId);
+    const unit = course.units.find((entry) => entry.id === unitId);
     activeUnitId = unitId;
-    // Auto-select first topic of the newly selected unit
-    const course = coursesData.find(c => c.id === activeCourseId);
-    const unit = course.units.find(u => u.id === unitId);
     activeTopicId = unit.topics[0].id;
-    
+    window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
     renderCourseView();
 }
 
 function selectTopic(topicId) {
-    if (activeTopicId === topicId) return;
     activeTopicId = topicId;
+    window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
     renderCourseView();
+}
+
+function renderCourseView() {
+    const course = coursesData.find((item) => item.id === activeCourseId);
+    const unit = course.units.find((item) => item.id === activeUnitId);
+    const topicMeta = unit.topics.find((topic) => topic.id === activeTopicId);
+    const topicSummary = topicMeta ? topicMeta.title : 'Unit Revision';
+
+    document.getElementById('mainContent').innerHTML = `
+        <div class="grid gap-6 xl:grid-cols-[280px_minmax(0,1fr)_320px]">
+            <aside class="panel-card p-4 h-fit xl:sticky xl:top-28">
+                <div class="flex items-start justify-between gap-3 mb-4">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code}</p>
+                        <h2 class="text-xl font-bold text-white mt-1">${course.title}</h2>
+                    </div>
+                    <span class="mini-badge">${getCourseCompletionText(course.id)}</span>
+                </div>
+                <p class="text-sm text-slate-400 mb-5">${course.description}</p>
+                <div class="space-y-3">
+                    ${course.units.map((entry) => renderUnitButton(entry)).join('')}
+                </div>
+            </aside>
+
+            <section class="panel-card overflow-hidden">
+                <div class="border-b border-white/8 px-5 sm:px-8 py-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code} / Unit ${unit.unitNumber}</p>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">${topicSummary}</h2>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="toggleCurrentBookmark()" class="secondary-cta text-sm !py-2 !px-4">${window.ACADEMY.isBookmarked(activeTopicId) ? 'Remove bookmark' : 'Bookmark topic'}</button>
+                        <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-2 !px-4">Mark complete</button>
+                    </div>
+                </div>
+                <div id="topicContentArea" class="px-5 sm:px-8 py-6 sm:py-8"></div>
+            </section>
+
+            <aside id="studyRail" class="panel-card p-5 h-fit xl:sticky xl:top-28"></aside>
+        </div>
+    `;
+
+    renderTopicContent();
+    renderStudyRail();
+}
+
+function renderUnitButton(unit) {
+    const isActive = unit.id === activeUnitId;
+    return `
+        <div class="unit-card ${isActive ? 'unit-card-active' : ''}">
+            <button onclick="selectUnit('${unit.id}')" class="w-full text-left flex items-center justify-between gap-3">
+                <div>
+                    <p class="text-sm font-bold text-white">Unit ${unit.unitNumber}</p>
+                    <p class="text-xs text-slate-400 mt-1">${unit.title}</p>
+                </div>
+                <span class="text-slate-500">${isActive ? '•' : '+'}</span>
+            </button>
+            <div class="${isActive ? 'block' : 'hidden'} mt-3 space-y-2">
+                ${unit.topics.map((topic, index) => {
+                    const complete = window.ACADEMY.state.completedTopics[topic.id];
+                    const bookmarked = window.ACADEMY.isBookmarked(topic.id);
+                    return `
+                        <button onclick="selectTopic('${topic.id}')" class="topic-pill ${topic.id === activeTopicId ? 'topic-pill-active' : ''}">
+                            <span>${index + 1}. ${topic.title}</span>
+                            <span class="topic-pill-icons">
+                                ${bookmarked ? '<span title="Bookmarked">★</span>' : ''}
+                                ${complete ? '<span title="Completed">✓</span>' : ''}
+                            </span>
+                        </button>
+                    `;
+                }).join('')}
+                <button onclick="selectTopic('exam')" class="topic-pill ${activeTopicId === 'exam' ? 'topic-pill-active' : ''}">
+                    <span>Unit Exam / Revision</span>
+                    <span class="topic-pill-icons">→</span>
+                </button>
+            </div>
+        </div>
+    `;
 }
 
 function renderTopicContent() {
     const contentArea = document.getElementById('topicContentArea');
-    
-    // Check if exam is selected
     if (activeTopicId === 'exam') {
         renderExamContent(contentArea);
         return;
     }
 
-    // Check if we have data for this unit/topic in topicDetails
     const unitData = window.topicDetails[activeUnitId];
-    if (!unitData || !unitData[activeTopicId]) {
+    const topic = unitData && unitData[activeTopicId];
+    if (!topic) {
         contentArea.innerHTML = `
-            <div class="flex flex-col items-center justify-center h-full text-center py-20 animate-fadeIn">
-                <svg class="w-16 h-16 text-gray-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                <h3 class="text-2xl font-bold text-gray-400 mb-2">Content Brewin'</h3>
-                <p class="text-gray-500">The detailed notes and quizzes for this topic are currently being forged by our AI hamsters. Check back soon!</p>
+            <div class="empty-state">
+                <h3 class="text-2xl font-bold text-white mb-3">Content coming soon</h3>
+                <p class="text-slate-400">This topic outline exists, but the detailed notes have not been populated yet.</p>
             </div>
         `;
         return;
     }
 
-    const topic = unitData[activeTopicId];
-    
-    let html = `
-        <div class="animate-fadeIn">
-            <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-4">${topic.title}</h2>
-            
-            <div class="text-gray-300 leading-relaxed space-y-4">
-                ${topic.content}
+    const highlights = window.ACADEMY.getHighlights(activeTopicId);
+    const highlightedContent = window.ACADEMY.applyHighlights(topic.content, highlights);
+    const quizCards = (topic.quizzes || []).map((quiz, index) => renderQuizCard(quiz, index)).join('');
+    const references = (topic.references || []).map((ref) => `
+        <button onclick="openReferenceModal('${ref.url}', '${window.ACADEMY.escapeHtml(ref.title)}')" class="reference-chip">${ref.title}</button>
+    `).join('');
+
+    contentArea.innerHTML = `
+        <div class="content-shell">
+            <div class="topic-prose">
+                ${highlightedContent}
             </div>
-            
-            <hr class="border-gray-700 my-10">
-            <h2 class="text-2xl font-bold text-white mb-6">Topic Knowledge Checks</h2>
+            <section class="revision-banner">
+                <div>
+                    <p class="revision-label">Study tools</p>
+                    <h3 class="text-xl font-bold text-white">Save your own memory layer on this topic.</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="highlightSelectedText()" class="secondary-cta text-sm !py-2 !px-4">Highlight selection</button>
+                    <button onclick="clearTopicHighlights()" class="secondary-cta text-sm !py-2 !px-4">Clear highlights</button>
+                </div>
+            </section>
+            <section class="mt-10">
+                <div class="section-head">
+                    <h3>Topic Knowledge Checks</h3>
+                    <span>${topic.quizzes.length} questions</span>
+                </div>
+                <div class="space-y-5">${quizCards}</div>
+            </section>
+            ${references ? `
+                <section class="mt-10">
+                    <div class="section-head">
+                        <h3>References</h3>
+                        <span>Open inside app or new tab</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3">${references}</div>
+                </section>
+            ` : ''}
+        </div>
     `;
 
-    // Render Quizzes
-    if (topic.quizzes && topic.quizzes.length > 0) {
-        topic.quizzes.forEach((quiz, index) => {
-            html += `
-                <div class="mt-6 bg-gray-900 rounded-xl p-6 border border-blue-900/30 relative overflow-hidden shadow-lg">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
-                    <h3 class="text-lg font-bold text-blue-400 mb-4 flex items-center">
-                        <span class="bg-blue-900/50 text-blue-300 w-6 h-6 rounded-full flex items-center justify-center text-xs mr-2 border border-blue-700">Q${index+1}</span>
-                        ${quiz.question}
-                    </h3>
-                    <div class="space-y-2">
-                        ${quiz.options.map((opt, i) => `
-                            <button onclick="checkAnswer(this, ${i}, ${quiz.answer}, '${quiz.explanation.replace(/'/g, "\\'")}')" class="w-full text-left p-3 rounded bg-gray-800 border border-gray-700 hover:border-blue-500 hover:bg-gray-750 transition-colors">
-                                ${opt}
-                            </button>
-                        `).join('')}
-                    </div>
-                    <div class="quiz-result mt-4 hidden p-4 rounded-lg"></div>
-                </div>
-            `;
-        });
-    }
-
-    // Render References if any
-    if (topic.references && topic.references.length > 0) {
-        html += `
-            <div class="mt-8 bg-gray-800 rounded-xl p-6 border border-gray-700">
-                <h3 class="text-lg font-bold text-gray-200 mb-4 flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-                    External References & Readings
-                </h3>
-                <div class="flex flex-wrap gap-3">
-                    ${topic.references.map(ref => `
-                        <button onclick="openReferenceModal('${ref.url}', '${ref.title.replace(/'/g, "\\'")}')" class="px-4 py-2 bg-gray-900 border border-gray-600 hover:border-blue-500 hover:text-blue-400 text-gray-300 text-sm font-medium rounded-lg transition-all flex items-center shadow-sm hover:shadow-md">
-                            ${ref.title}
-                            <svg class="w-4 h-4 ml-2 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </button>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-    }
-
-    html += `</div>`;
-    contentArea.innerHTML = html;
-
-    // Re-render mermaid diagrams if any
     setTimeout(() => {
-        if(window.mermaid) {
-            try { mermaid.init(undefined, document.querySelectorAll('.mermaid')); } catch(e){}
+        if (window.mermaid) {
+            try {
+                mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+            } catch (error) {
+                console.error('Mermaid render failed', error);
+            }
         }
-    }, 100);
+    }, 60);
+}
+
+function renderQuizCard(quiz, index) {
+    const quizId = `${activeUnitId}:${activeTopicId}:${index}`;
+    const attempt = window.ACADEMY.state.quizAttempts[quizId];
+    const answered = Boolean(attempt);
+
+    return `
+        <article class="quiz-card">
+            <div class="flex items-center justify-between gap-3 mb-4">
+                <h4 class="text-lg font-bold text-white">Q${index + 1}. ${quiz.question}</h4>
+                <span class="mini-badge">${answered ? (attempt.correct ? 'Correct' : 'Attempted') : 'Pending'}</span>
+            </div>
+            <div class="space-y-3">
+                ${quiz.options.map((option, optionIndex) => {
+                    const buttonClass = getQuizButtonClass(attempt, optionIndex, quiz.answer);
+                    return `
+                        <button
+                            onclick="checkAnswer('${quizId}', ${optionIndex}, ${quiz.answer}, '${window.ACADEMY.escapeForAttribute(quiz.explanation)}', '${window.ACADEMY.escapeForAttribute(quiz.question)}')"
+                            class="quiz-option ${buttonClass}"
+                            ${answered ? 'disabled' : ''}
+                        >
+                            ${option}
+                        </button>
+                    `;
+                }).join('')}
+            </div>
+            ${attempt ? `
+                <div class="quiz-feedback ${attempt.correct ? 'quiz-feedback-correct' : 'quiz-feedback-wrong'}">
+                    <strong>${attempt.correct ? 'Nice work.' : 'Keep going.'}</strong>
+                    <p>${quiz.explanation}</p>
+                </div>
+            ` : ''}
+        </article>
+    `;
+}
+
+function getQuizButtonClass(attempt, optionIndex, correctIndex) {
+    if (!attempt) return '';
+    if (optionIndex === correctIndex) return 'quiz-option-correct';
+    if (optionIndex === attempt.selected && !attempt.correct) return 'quiz-option-wrong';
+    return 'quiz-option-muted';
+}
+
+function checkAnswer(quizId, selected, correct, explanation, question) {
+    if (window.ACADEMY.state.quizAttempts[quizId]) return;
+    window.ACADEMY.recordQuizAttempt({
+        quizId,
+        courseId: activeCourseId,
+        topicId: activeTopicId,
+        question,
+        selected,
+        correct: selected === correct
+    });
+
+    const topic = window.topicDetails[activeUnitId][activeTopicId];
+    const allCorrect = topic.quizzes.every((quiz, index) => {
+        const attempt = window.ACADEMY.state.quizAttempts[`${activeUnitId}:${activeTopicId}:${index}`];
+        return attempt && attempt.correct;
+    });
+    if (allCorrect) {
+        window.ACADEMY.markTopicComplete(activeTopicId, true);
+    }
+
+    renderOverviewCards();
+    renderCoursesNav();
+    renderTopicContent();
+    renderStudyRail();
+}
+
+function renderStudyRail() {
+    const meta = window.ACADEMY.getTopicMeta(activeTopicId);
+    const stats = window.ACADEMY.calculateStats();
+    const note = window.ACADEMY.getNote(activeTopicId);
+    const highlights = window.ACADEMY.getHighlights(activeTopicId);
+    const attemptCount = Object.values(window.ACADEMY.state.quizAttempts).filter((attempt) => attempt.topicId === activeTopicId).length;
+    const currentCourseStats = stats.courseStats[activeCourseId];
+
+    document.getElementById('studyRail').innerHTML = `
+        <div class="space-y-6">
+            <section>
+                <p class="text-xs uppercase tracking-[0.24em] text-slate-500">Current focus</p>
+                <h3 class="text-xl font-bold text-white mt-2">${meta ? meta.title : 'Unit revision'}</h3>
+                <p class="text-sm text-slate-400 mt-2">${meta ? `${meta.courseCode} • Unit ${meta.unitNumber}` : 'Essay-style practice area'}</p>
+            </section>
+
+            <section class="study-rail-block">
+                <div class="section-head">
+                    <h3>Progress memory</h3>
+                    <span>${currentCourseStats ? currentCourseStats.completionRate : 0}%</span>
+                </div>
+                <ul class="text-sm text-slate-300 space-y-2">
+                    <li>Quiz attempts on this topic: ${attemptCount}</li>
+                    <li>Highlights saved here: ${highlights.length}</li>
+                    <li>Status: ${window.ACADEMY.state.completedTopics[activeTopicId] ? 'Completed' : 'In progress'}</li>
+                </ul>
+            </section>
+
+            <section class="study-rail-block">
+                <div class="section-head">
+                    <h3>Notes</h3>
+                    <span>Autosaved</span>
+                </div>
+                <textarea id="topicNoteInput" class="note-input" placeholder="Write your summary, formulas, mnemonics, or doubts here...">${note}</textarea>
+                <div class="flex items-center justify-between text-xs text-slate-500 mt-2">
+                    <span>Saved in your browser on this device.</span>
+                    <button onclick="saveTopicNote()" class="text-accent hover:text-white transition-colors">Save now</button>
+                </div>
+            </section>
+
+            <section class="study-rail-block">
+                <div class="section-head">
+                    <h3>Revision nudges</h3>
+                    <span>Quick actions</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <button onclick="jumpToPracticeTests()" class="secondary-cta text-sm justify-center">Open mixed practice</button>
+                    <button onclick="selectTopic('exam')" class="secondary-cta text-sm justify-center">Open unit exam</button>
+                </div>
+            </section>
+        </div>
+    `;
+
+    const noteInput = document.getElementById('topicNoteInput');
+    noteInput.addEventListener('input', () => {
+        window.ACADEMY.setNote(activeTopicId, noteInput.value);
+        renderOverviewCards();
+    });
 }
 
 function renderExamContent(contentArea) {
-    const examData = window.topicDetails[activeUnitId].unitExam;
-    
-    let html = `
-        <div class="animate-fadeIn max-w-3xl mx-auto py-8">
-            <div class="text-center mb-10">
-                <div class="w-20 h-20 bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-6 text-purple-400 shadow-[0_0_30px_rgba(168,85,247,0.2)]">
-                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                </div>
-                <h2 class="text-4xl font-bold text-white mb-4">${examData.title}</h2>
-                <p class="text-gray-400 text-lg leading-relaxed">${examData.description}</p>
-            </div>
-            
-            <div class="space-y-8">
-                <!-- Medium Questions -->
-                <div class="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-lg">
-                    <div class="bg-gray-750 px-6 py-4 border-b border-gray-700">
-                        <h3 class="text-xl font-bold text-yellow-500 flex items-center">
-                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                            Medium Level Questions
-                        </h3>
-                    </div>
-                    <div class="p-6 space-y-6">
-                        ${examData.mediumQuestions.map((q, i) => `
-                            <div>
-                                <p class="text-gray-200 font-medium mb-3"><strong>Q${i+1}.</strong> ${q}</p>
-                                <textarea class="w-full bg-gray-900 border border-gray-700 rounded-lg p-4 text-gray-300 focus:outline-none focus:border-yellow-500 transition-colors resize-y h-32" placeholder="Type your answer here..."></textarea>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
+    const unitData = window.topicDetails[activeUnitId] || {};
+    const unitMeta = window.ACADEMY.getUnitMeta(activeUnitId);
+    const examData = unitData.unitExam || {
+        title: `${unitMeta.courseCode} Unit ${unitMeta.unitNumber} Revision Lab`,
+        description: `Use these prompts to turn the unit into long-form answers and exam-ready recall.`,
+        mediumQuestions: unitMeta.topics.map((topic) => `Explain the core idea behind "${topic.title}" with one example.`),
+        hardQuestions: [
+            `Connect all topics from Unit ${unitMeta.unitNumber} into one end-to-end answer that could score well in an exam.`,
+            `List the common mistakes a student might make in this unit and explain how to avoid them.`,
+            `Write a revision answer that compares the strongest concepts from this unit with practical real-world use.`
+        ]
+    };
+    const draft = window.ACADEMY.getExamDraft(activeUnitId);
 
-                <!-- Hard Questions -->
-                <div class="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-lg">
-                    <div class="bg-gray-750 px-6 py-4 border-b border-gray-700">
-                        <h3 class="text-xl font-bold text-red-500 flex items-center">
-                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                            Hard Level Questions
-                        </h3>
-                    </div>
-                    <div class="p-6 space-y-6">
-                        ${examData.hardQuestions.map((q, i) => `
-                            <div>
-                                <p class="text-gray-200 font-medium mb-3"><strong>Q${i+1}.</strong> ${q}</p>
-                                <textarea class="w-full bg-gray-900 border border-gray-700 rounded-lg p-4 text-gray-300 focus:outline-none focus:border-red-500 transition-colors resize-y h-48" placeholder="Type your detailed analysis here..."></textarea>
-                            </div>
-                        `).join('')}
-                    </div>
+    contentArea.innerHTML = `
+        <div class="space-y-8">
+            <section class="revision-banner">
+                <div>
+                    <p class="revision-label">Unit revision</p>
+                    <h3 class="text-3xl font-extrabold text-white">${examData.title}</h3>
+                    <p class="text-slate-400 mt-2">${examData.description}</p>
                 </div>
-            </div>
-            
-            <div class="mt-12 text-center">
-                <button class="bg-purple-600 hover:bg-purple-500 text-white px-10 py-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-transform transform active:scale-95">
-                    Submit Exam Responses
-                </button>
-            </div>
+                <div class="mini-badge">Draft saved locally</div>
+            </section>
+
+            <section class="exam-panel">
+                <div class="section-head">
+                    <h3>Medium questions</h3>
+                    <span>Structured answers</span>
+                </div>
+                <div class="space-y-5">
+                    ${examData.mediumQuestions.map((question, index) => `
+                        <div>
+                            <p class="text-white font-semibold mb-2">Q${index + 1}. ${question}</p>
+                            <textarea class="exam-input" data-exam-kind="medium" data-exam-index="${index}" placeholder="Write your answer here...">${draft.medium[index] || ''}</textarea>
+                        </div>
+                    `).join('')}
+                </div>
+            </section>
+
+            <section class="exam-panel">
+                <div class="section-head">
+                    <h3>Hard questions</h3>
+                    <span>Exam-depth practice</span>
+                </div>
+                <div class="space-y-5">
+                    ${examData.hardQuestions.map((question, index) => `
+                        <div>
+                            <p class="text-white font-semibold mb-2">Q${index + 1}. ${question}</p>
+                            <textarea class="exam-input exam-input-tall" data-exam-kind="hard" data-exam-index="${index}" placeholder="Build a detailed answer with headings and examples...">${draft.hard[index] || ''}</textarea>
+                        </div>
+                    `).join('')}
+                </div>
+            </section>
         </div>
     `;
-    contentArea.innerHTML = html;
+
+    contentArea.querySelectorAll('.exam-input').forEach((field) => {
+        field.addEventListener('input', saveExamDraftFromInputs);
+    });
 }
 
-function checkAnswer(btnElement, selected, correct, explanation) {
-    const parentContainer = btnElement.parentElement.parentElement;
-    const resultDiv = parentContainer.querySelector('.quiz-result');
-    const allButtons = parentContainer.querySelectorAll('button');
-    
-    // Disable all buttons after guessing
-    allButtons.forEach(b => {
-        b.disabled = true;
-        b.classList.remove('hover:border-blue-500', 'hover:bg-gray-750');
-        b.classList.add('opacity-50', 'cursor-not-allowed');
-    });
+function saveExamDraftFromInputs() {
+    const medium = Array.from(document.querySelectorAll('[data-exam-kind="medium"]')).map((field) => field.value);
+    const hard = Array.from(document.querySelectorAll('[data-exam-kind="hard"]')).map((field) => field.value);
+    window.ACADEMY.setExamDraft(activeUnitId, { medium, hard });
+}
 
-    resultDiv.classList.remove('hidden');
-    
-    if (selected === correct) {
-        btnElement.classList.remove('border-gray-700', 'bg-gray-800');
-        btnElement.classList.add('border-green-500', 'bg-green-900/40', 'opacity-100');
-        
-        resultDiv.className = 'quiz-result mt-4 p-4 rounded-lg bg-green-900/20 border border-green-800/50 text-green-400 animate-fadeIn';
-        resultDiv.innerHTML = `<p class="font-bold mb-1 flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Spot on!</p><p class="text-sm">${explanation}</p>`;
-        
-        if (activeTopicId !== 'exam') {
-            markTopicComplete(activeTopicId);
-        }
-    } else {
-        btnElement.classList.remove('border-gray-700', 'bg-gray-800');
-        btnElement.classList.add('border-red-500', 'bg-red-900/40', 'opacity-100');
-        
-        // Highlight correct answer
-        allButtons[correct].classList.remove('border-gray-700', 'bg-gray-800', 'opacity-50');
-        allButtons[correct].classList.add('border-green-500', 'bg-green-900/40', 'opacity-100');
+function saveTopicNote() {
+    const noteInput = document.getElementById('topicNoteInput');
+    if (!noteInput) return;
+    window.ACADEMY.setNote(activeTopicId, noteInput.value);
+    renderOverviewCards();
+}
 
-        resultDiv.className = 'quiz-result mt-4 p-4 rounded-lg bg-red-900/20 border border-red-800/50 text-red-400 animate-fadeIn';
-        resultDiv.innerHTML = `<p class="font-bold mb-1 flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Incorrect.</p><p class="text-sm text-gray-300">${explanation}</p>`;
-    }
+function markCurrentTopicDone() {
+    if (activeTopicId === 'exam') return;
+    window.ACADEMY.markTopicComplete(activeTopicId, true);
+    renderOverviewCards();
+    renderCoursesNav();
+    renderCourseView();
+}
+
+function toggleCurrentBookmark() {
+    if (activeTopicId === 'exam') return;
+    window.ACADEMY.toggleBookmark(activeTopicId);
+    renderOverviewCards();
+    renderCourseView();
+}
+
+function highlightSelectedText() {
+    if (activeTopicId === 'exam') return;
+    const selection = window.getSelection();
+    const selectedText = selection ? selection.toString().trim() : '';
+    if (!selectedText || selectedText.length < 3) return;
+
+    const contentArea = document.getElementById('topicContentArea');
+    if (!contentArea.contains(selection.anchorNode)) return;
+
+    window.ACADEMY.addHighlight(activeTopicId, selectedText);
+    selection.removeAllRanges();
+    renderOverviewCards();
+    renderTopicContent();
+    renderStudyRail();
+}
+
+function clearTopicHighlights() {
+    if (activeTopicId === 'exam') return;
+    window.ACADEMY.clearHighlights(activeTopicId);
+    renderOverviewCards();
+    renderTopicContent();
+    renderStudyRail();
+}
+
+function jumpToPracticeTests() {
+    window.location.href = 'html/tests.html';
 }
 
 function openReferenceModal(url, title) {
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalIframe').src = url;
+    document.getElementById('modalExternalBtn').href = url;
     const modal = document.getElementById('referenceModal');
-    const iframe = document.getElementById('modalIframe');
-    const titleEl = document.getElementById('modalTitle');
-    const extBtn = document.getElementById('modalExternalBtn');
-    
-    titleEl.innerHTML = `
-        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-        ${title}
-    `;
-    iframe.src = url;
-    extBtn.href = url;
-    
     modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    modal.classList.add('flex');
+    document.body.classList.add('overflow-hidden');
 }
 
 function closeReferenceModal() {
     const modal = document.getElementById('referenceModal');
-    const iframe = document.getElementById('modalIframe');
-    
     modal.classList.add('hidden');
-    iframe.src = ''; // Stop video playback or frame loading
-    document.body.style.overflow = ''; // Restore scrolling
+    modal.classList.remove('flex');
+    document.getElementById('modalIframe').src = '';
+    document.body.classList.remove('overflow-hidden');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    if(document.getElementById('coursesNav')) {
-        initApp();
+function renderSearchResults() {
+    const query = document.getElementById('topicSearchInput').value.trim().toLowerCase();
+    const container = document.getElementById('searchResults');
+    if (!query) {
+        container.classList.add('hidden');
+        container.innerHTML = '';
+        return;
     }
-});
+
+    const results = window.ACADEMY.getAllTopics()
+        .filter((topic) => {
+            const bag = `${topic.courseCode} ${topic.unitTitle} ${topic.title}`.toLowerCase();
+            return bag.includes(query);
+        })
+        .slice(0, 8);
+
+    if (!results.length) {
+        container.classList.remove('hidden');
+        container.innerHTML = `<div class="p-4 text-sm text-slate-400">No matching topics yet.</div>`;
+        return;
+    }
+
+    container.classList.remove('hidden');
+    container.innerHTML = results.map((result) => `
+        <button onclick="openSearchResult('${result.courseId}', '${result.unitId}', '${result.topicId}')" class="search-result-item">
+            <strong class="text-white">${result.title}</strong>
+            <span>${result.courseCode} • Unit ${result.unitNumber}</span>
+        </button>
+    `).join('');
+}
+
+function openSearchResult(courseId, unitId, topicId) {
+    activeCourseId = courseId;
+    activeUnitId = unitId;
+    activeTopicId = topicId;
+    window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
+    document.getElementById('topicSearchInput').value = '';
+    document.getElementById('searchResults').classList.add('hidden');
+    renderCoursesNav();
+    loadCourseData(courseId, renderCourseView);
+}
+
+function getCourseCompletionText(courseId) {
+    const stats = window.ACADEMY.calculateStats().courseStats[courseId];
+    return `${stats.completionRate}% done`;
+}
