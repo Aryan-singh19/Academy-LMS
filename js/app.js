@@ -330,7 +330,6 @@ function checkAnswer(btnElement, selected, correct, explanation) {
         resultDiv.className = 'quiz-result mt-4 p-4 rounded-lg bg-red-900/20 border border-red-800/50 text-red-400 animate-fadeIn';
         resultDiv.innerHTML = `<p class="font-bold mb-1 flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Incorrect.</p><p class="text-sm text-gray-300">${explanation}</p>`;
     }
-    }
 }
 
 function openReferenceModal(url, title) {
