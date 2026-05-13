@@ -306,8 +306,69 @@ graph LR
                 }
             ]
         },
-        't5': { title: 'Data Visualization', content: 'Detailed content coming soon.', quizzes: [] },
-        't6': { title: 'Hypothesis Function & Testing', content: 'Detailed content coming soon.', quizzes: [] },
+        't5': {
+            title: 'Data Visualization',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Making Spreadsheets Look Pretty</h3>
+<p class="mb-4">You can have the most accurate Machine Learning model in the world, but if you hand a CEO a giant CSV file with 10,000 numbers in it, they will stare at you blankly. <strong>Data Visualization</strong> is the art of translating raw, unreadable data into intuitive visual patterns.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">The Core Charts</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-yellow-500 shadow-lg transition-all hover:scale-105">
+        <h4 class="text-yellow-400 font-bold mb-3 text-lg flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg> Bar Charts</h4>
+        <p class="text-gray-300 text-sm">Used for comparing categorical data. Example: "Which programming language causes the most crying?" (Spoiler: It's C++).</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-blue-500 shadow-lg transition-all hover:scale-105">
+        <h4 class="text-blue-400 font-bold mb-3 text-lg flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg> Line Charts</h4>
+        <p class="text-gray-300 text-sm">Used to show trends over time. Example: Tracking your slowly fading hope throughout the semester.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-green-500 shadow-lg transition-all hover:scale-105">
+        <h4 class="text-green-400 font-bold mb-3 text-lg flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg> Scatter Plots</h4>
+        <p class="text-gray-300 text-sm">Used to find correlations between two continuous variables. Essential for Linear Regression analysis.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-t-4 border-purple-500 shadow-lg transition-all hover:scale-105">
+        <h4 class="text-purple-400 font-bold mb-3 text-lg flex items-center"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg> Histograms</h4>
+        <p class="text-gray-300 text-sm">Used for displaying the distribution of a single variable. "How many students got between 40-50 marks?"</p>
+    </div>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "If you want to visualize the relationship between 'Hours Studied' and 'Exam Score' to see if a positive correlation exists, which chart is best?",
+                    options: ["A) Pie Chart", "B) Scatter Plot", "C) Histogram", "D) Bar Chart"],
+                    answer: 1,
+                    explanation: "A Scatter Plot maps two continuous numerical variables against each other, allowing you to instantly see correlations (like a cluster of dots moving diagonally upwards)."
+                }
+            ]
+        },
+        't6': {
+            title: 'Hypothesis Function & Testing',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Educated Guess</h3>
+<p class="mb-4">In Machine Learning, the <strong>Hypothesis Function</strong> (often denoted as <code>h(x)</code>) is simply the mathematical formula your model is currently using to make predictions. When a model is "learning", it is just tweaking the numbers inside this hypothesis function.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Hypothesis Testing (Null vs Alternate)</h3>
+<p class="mb-4">This is how statisticians argue. You start with the boring assumption that nothing interesting is happening (The Null Hypothesis). Then you look at data. If the data is weird enough, you reject the boring assumption.</p>
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border-l-4 border-red-500 shadow-md">
+    <li><strong>Null Hypothesis (H₀):</strong> "This new experimental AI algorithm is NO BETTER than our old algorithm."</li>
+    <li><strong>Alternate Hypothesis (H₁):</strong> "The new AI algorithm is ACTUALLY BETTER than the old one."</li>
+    <li><strong>p-value:</strong> The probability that you'd get these results by pure dumb luck. If p &lt; 0.05 (5%), we say the results are statistically significant, we throw away H₀, and pop the champagne.</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "In statistics, what does the Null Hypothesis (H₀) typically state?",
+                    options: [
+                        "A) That your new model is the best in the world.",
+                        "B) That there is NO relationship, NO effect, or NO difference.",
+                        "C) That data is normally distributed.",
+                        "D) That the p-value is greater than 1."
+                    ],
+                    answer: 1,
+                    explanation: "The Null Hypothesis is the default, skeptical position. It assumes there is no relationship between variables until the data overwhelmingly proves otherwise."
+                }
+            ]
+        },
         't7': { title: 'Data Prep & Normalization', content: 'Detailed content coming soon.', quizzes: [] },
         't8': { title: 'Supervised vs Unsupervised Learning', content: 'Detailed content coming soon.', quizzes: [] }
     },
@@ -413,8 +474,53 @@ graph LR
                 }
             ]
         },
-        'u2t3': { title: 'Loss Function & Gradient Descent', content: '<p>Content in progress.</p>', quizzes: [] },
-        'u2t4': { title: 'Multilayer Network & Backpropagation', content: '<p>Content in progress.</p>', quizzes: [] },
+        'u2t3': {
+            title: 'Loss Function & Gradient Descent',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Cost of Being Wrong</h3>
+<p class="mb-4">A Neural Network learns by making terrible guesses, getting yelled at, and adjusting. The "yelling" is done mathematically by the <strong>Loss Function</strong> (also called Cost Function). It calculates exactly how far off the network's prediction was from the actual true answer.</p>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6">
+    <li><strong>Mean Squared Error (MSE):</strong> Used for Regression. You take the difference between the prediction and reality, square it (so negatives don't cancel out positives, and big errors are punished severely), and average it.</li>
+    <li><strong>Cross-Entropy Loss:</strong> Used for Classification. It heavily penalizes the model if it is highly confident about the wrong answer.</li>
+</ul>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Gradient Descent: The Downhill Skiing</h3>
+<p class="mb-4">Once we have a Loss score, we need to reduce it. We calculate the <em>Gradient</em> (the mathematical derivative/slope of the Loss function with respect to the weights). The gradient tells us which way is "up". We then update the weights by taking a small step in the <strong>opposite direction</strong> (downhill). This "step size" is controlled by the <strong>Learning Rate</strong>.</p>
+            `,
+            quizzes: [
+                {
+                    question: "What happens if your Learning Rate in Gradient Descent is set too high?",
+                    options: [
+                        "A) The model learns perfectly and instantly.",
+                        "B) The model might overshoot the minimum, bouncing back and forth across the 'valley' and never converging.",
+                        "C) The model will take millions of years to train.",
+                        "D) The GPU will overheat."
+                    ],
+                    answer: 1,
+                    explanation: "A high learning rate means taking massive steps. You might step right over the lowest point of the valley and end up higher on the other side, diverging instead of converging."
+                }
+            ]
+        },
+        'u2t4': {
+            title: 'Multilayer Network & Backpropagation',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Going Deep: Hidden Layers</h3>
+<p class="mb-4">A single neuron is a perceptron. It's weak. But if you arrange thousands of neurons into columns, and have the outputs of one column feed into the inputs of the next, you get a <strong>Multi-Layer Perceptron (MLP)</strong> or a Deep Neural Network.</p>
+<p class="mb-4 text-gray-300 text-sm">The layers between the Input and Output are called <strong>Hidden Layers</strong> because the programmer doesn't explicitly tell them what to look for. The first hidden layer might learn to detect lines. The second layer combines lines into shapes. The third layer combines shapes into faces. It learns this hierarchy autonomously.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Backpropagation: The Rumor Mill</h3>
+<p class="mb-4">Gradient descent is easy when you only have one weight. But how do you adjust a weight in Layer 1 based on an error that occurred in Layer 50? Enter <strong>Backpropagation</strong>.</p>
+<p class="mb-4">It is a brilliant application of the <strong>Chain Rule</strong> from calculus. When the network makes a prediction (Forward Pass), we calculate the total Loss. Backprop then works backwards from the output, calculating the gradient of the loss for every single weight, layer by layer, distributing the "blame" for the error to the neurons that caused it.</p>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary calculus rule that makes Backpropagation possible in deep networks?",
+                    options: ["A) The Power Rule", "B) The Quotient Rule", "C) The Chain Rule", "D) L'Hôpital's Rule"],
+                    answer: 2,
+                    explanation: "The Chain Rule allows us to calculate the derivative of nested functions. Since a deep network is just a function of a function of a function, the chain rule is used to propagate the gradients backward."
+                }
+            ]
+        },
         'u2t5': { title: 'Unstable Gradients & Regularization', content: '<p>Content in progress.</p>', quizzes: [] },
         'u2t6': { title: 'Auto Encoders & Hyperparameters', content: '<p>Content in progress.</p>', quizzes: [] }
     }
