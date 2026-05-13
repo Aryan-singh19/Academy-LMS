@@ -186,6 +186,68 @@ Object.assign(window.topicDetails, {
                     explanation: "Graph coloring maps perfectly to register allocation. If two variables overlap in their lifetime, they are connected by an edge and cannot share the same color (register)."
                 }
             ]
+        },
+        'c3-u3t4': {
+            title: 'Basic Blocks, Flow Graphs & Register Pressure',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">How Compilers Break Programs into Manageable Chunks</h3>
+<p class="mb-4">A compiler does not optimize an entire function as one giant emotional monolith. It first splits code into <strong>Basic Blocks</strong>: straight-line sequences of instructions with exactly one entry and one exit. Once control enters a basic block, it runs line by line with no surprises until the block ends.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-t-4 border-cyan-500 shadow-lg mb-6">
+    <h4 class="text-cyan-300 font-bold mb-2">Basic Block intuition</h4>
+    <p class="text-gray-300 text-sm">Think of a basic block like a train track segment between two switches. Inside the segment, the train just moves forward. Branches and jumps happen only at the ends.</p>
+</div>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-900 rounded-lg overflow-hidden shadow-lg mt-4 border border-gray-700">
+    <thead class="bg-gray-800 text-gray-200">
+        <tr>
+            <th class="p-4">Concept</th>
+            <th class="p-4">Meaning</th>
+            <th class="p-4">Why it matters</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-800 text-sm">
+        <tr><td class="p-4 font-bold text-blue-300">Basic Block</td><td class="p-4">Straight-line code chunk with one entry and one exit.</td><td class="p-4">Simplifies local optimization.</td></tr>
+        <tr><td class="p-4 font-bold text-green-300">Flow Graph</td><td class="p-4">Graph where nodes are blocks and edges show control transfer.</td><td class="p-4">Used for data-flow analysis and optimization.</td></tr>
+        <tr><td class="p-4 font-bold text-yellow-300">Liveness</td><td class="p-4">Whether a variable’s current value will still be needed later.</td><td class="p-4">Drives register allocation decisions.</td></tr>
+        <tr><td class="p-4 font-bold text-red-300">Register Pressure</td><td class="p-4">Too many simultaneously-live variables competing for few registers.</td><td class="p-4">Forces spilling variables to slower memory.</td></tr>
+    </tbody>
+</table>
+
+<p class="text-gray-300 text-sm mb-4">When many values are alive at once, the compiler experiences <strong>register pressure</strong>. CPUs do not give unlimited registers just because your code had big dreams. If pressure rises, some values are spilled to RAM, which is slower.</p>
+
+<div class="bg-gray-900 p-4 border border-gray-700 rounded mb-6 font-mono text-sm shadow-inner text-gray-300">
+if (a &gt; b) t1 = a + c;<br>
+else t1 = b + c;<br>
+result = t1 * d;
+</div>
+
+<p class="text-gray-300 text-sm">A flow graph makes this branching structure visible. That helps the compiler reason about which variables stay live across paths and where optimizations are still safe.</p>
+            `,
+            quizzes: [
+                {
+                    question: "What is a basic block in compiler design?",
+                    options: [
+                        "A) A block of comments ignored by the compiler.",
+                        "B) A straight-line sequence of instructions with one entry and one exit.",
+                        "C) A section of code containing only loops.",
+                        "D) The machine code header."
+                    ],
+                    answer: 1,
+                    explanation: "A basic block is the compiler's local optimization unit: enter once, run straight through, exit once."
+                },
+                {
+                    question: "What does high register pressure usually cause?",
+                    options: [
+                        "A) The compiler gains extra registers from the OS.",
+                        "B) Variables are spilled from registers into slower memory.",
+                        "C) All branches are removed automatically.",
+                        "D) The parser restarts."
+                    ],
+                    answer: 1,
+                    explanation: "When too many values are live together, the compiler must spill some of them into memory because registers are limited."
+                }
+            ]
         }
     },
     'cs603-u4': {
