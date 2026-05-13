@@ -202,20 +202,221 @@ graph TD
                 }
             ]
         },
-        't3': { title: 'Math: Probability, Stats & Linear Algebra', content: 'Detailed content coming soon.', quizzes: [] },
-        't4': { title: 'Convex Optimization', content: 'Detailed content coming soon.', quizzes: [] },
+        't3': {
+            title: 'Math: Probability, Stats & Linear Algebra',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Holy Trinity of ML Math</h3>
+<p class="mb-4">You can't just throw data at a wall and hope a neural network sticks. Underneath the slick Python libraries (like TensorFlow and PyTorch), Machine Learning is basically a terrifying amount of matrix multiplication wearing a trench coat. If you want to understand *how* ML learns, you need to understand the three pillars of its religion.</p>
+
+<div class="space-y-6 mb-8">
+    <div class="bg-gray-800 p-6 border-l-4 border-red-500 rounded-r-xl shadow-lg hover:shadow-red-500/20 transition-all">
+        <h4 class="text-xl font-bold text-red-400 mb-2">1. Linear Algebra (The Heavy Lifter)</h4>
+        <p class="text-gray-300 text-sm mb-3">Think of a single cell in an Excel spreadsheet. That's a scalar. A single row is a Vector (1D array). The whole spreadsheet is a Matrix (2D array). A spreadsheet of spreadsheets is a Tensor (n-Dimensional array).</p>
+        <p class="text-gray-300 text-sm"><strong>Why ML needs it:</strong> When a Neural Network processes a 4K image, it doesn't look at one pixel at a time (that would take years). It loads all 8 million pixels into a giant Matrix, multiplies it by another giant Matrix of "weights", and processes the whole image in milliseconds. GPUs are physically designed to do this specific type of math blindingly fast.</p>
+    </div>
+    
+    <div class="bg-gray-800 p-6 border-l-4 border-green-500 rounded-r-xl shadow-lg hover:shadow-green-500/20 transition-all">
+        <h4 class="text-xl font-bold text-green-400 mb-2">2. Probability (The Fortune Teller)</h4>
+        <p class="text-gray-300 text-sm mb-3">Machine Learning rarely gives a 100% "Yes" or "No". It gives probabilities. If you ask an ML model "Is this a picture of a dog?", it replies: "I am 87% confident it is a dog, and 13% confident it is a fluffy mop."</p>
+        <p class="text-gray-300 text-sm"><strong>Bayes' Theorem:</strong> This is the core of probability in ML. It’s the mathematical equation for changing your mind when you get new evidence. "I thought it was going to rain (prior belief), but I just looked outside and it's sunny (new evidence), so I probably don't need an umbrella (updated belief)."</p>
+    </div>
+    
+    <div class="bg-gray-800 p-6 border-l-4 border-blue-500 rounded-r-xl shadow-lg hover:shadow-blue-500/20 transition-all">
+        <h4 class="text-xl font-bold text-blue-400 mb-2">3. Statistics (The Bullshit Detector)</h4>
+        <p class="text-gray-300 text-sm mb-3">Statistics tells us if our model is actually smart, or if it just memorized the answers to the test. We use statistics to measure how spread out our data is (Variance) and to understand where the "average" lies (Mean).</p>
+        <p class="text-gray-300 text-sm">Without statistics, you might build a model that predicts the stock market perfectly for the year 2020, but completely fails in 2021 because it didn't learn the *trend*, it just memorized the *noise*.</p>
+    </div>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "Why is Linear Algebra, specifically Matrix Multiplication, so critical for modern Deep Learning?",
+                    options: [
+                        "A) Because it is the only math that Python understands natively.",
+                        "B) Because neural networks process massive amounts of data (like pixels or text) simultaneously, which is mathematically represented as matrix operations that GPUs can execute in parallel.",
+                        "C) Because drawing straight lines requires matrices.",
+                        "D) It isn't critical. Calculus is the only math used in ML."
+                    ],
+                    answer: 1,
+                    explanation: "Deep learning involves multiplying huge arrays of numbers (inputs and weights). Linear algebra provides the mathematical framework for this, and GPUs provide the hardware acceleration for it."
+                },
+                {
+                    question: "What is the primary role of Probability in Machine Learning outputs?",
+                    options: [
+                        "A) It guarantees that the model is always correct.",
+                        "B) It determines the physical memory required to run the model.",
+                        "C) It allows the model to quantify uncertainty, outputting confidence scores rather than absolute, rigid certainties.",
+                        "D) It randomly deletes data to keep the model guessing."
+                    ],
+                    answer: 2,
+                    explanation: "Real-world data is messy and uncertain. Probability allows models to express their predictions as a spectrum of confidence (e.g., 99% sure it's a cat) rather than breaking when they aren't 100% sure."
+                }
+            ]
+        },
+        't4': {
+            title: 'Convex Optimization',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Optimization: Rolling Down the Right Hill</h3>
+<p class="mb-4">Training a Machine Learning model is basically an endless game of trying to minimize a <strong>Loss Function</strong>. The Loss Function is a mathematical score of how terribly your model is currently performing. A high score means your model is hallucinating; a score near zero means it's a genius.</p>
+<p class="mb-4"><strong>Optimization</strong> is the mathematical process of tweaking your model's internal dials (weights and biases) to force that Loss score down to zero.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">The Blindfolded Hiker Metaphor</h3>
+<p class="mb-4">Imagine you are blindfolded and dropped by helicopter onto a mountainous landscape. Your goal is to hike to the absolute lowest valley (the Global Minimum, where the Loss is lowest). Because you are blindfolded, you can only feel the slope of the ground beneath your feet. If the ground slopes down to the left, you take a step left.</p>
+<p class="mb-4">This "feeling the slope" is called <strong>Gradient Descent</strong>.</p>
+<p class="mb-4 text-gray-300 bg-gray-800 p-4 rounded-lg border-l-4 border-red-500 shadow-md">
+<strong>The Nightmare (Non-Convex):</strong> If the landscape is a jagged mountain range, you might step down into a small ditch, feel that the ground goes up in all directions, and think "I made it! I'm at the bottom!" But you are trapped in a <em>Local Minimum</em>, completely unaware of the Grand Canyon just a mile away. Neural Networks live in this jagged nightmare.
+</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">The Dream: A Convex Bowl</h3>
+<p class="mb-4">A <strong>Convex Function</strong> is a mathematical landscape shaped exactly like a smooth, perfectly round cereal bowl. It only has ONE bottom. Period.</p>
+<p class="mb-6">If your ML algorithm's Loss Function is convex, it means it doesn't matter where you drop the blindfolded hiker. No matter which direction they step, as long as they go down, they are mathematically guaranteed to reach the absolute lowest point in the universe (the Global Minimum). Algorithms like Linear Regression are beautifully convex.</p>
+
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph LR
+    A[Start: High Loss] -->|Gradient Descent| B(Take a step downhill)
+    B --> C{Are we at the bottom?}
+    C -- No --> B
+    C -- Yes --> D[Global Minimum Reached!]
+    style A fill:#9b2c2c,stroke:#fc8181,color:#fff
+    style D fill:#276749,stroke:#68d391,color:#fff
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "What is the defining, highly desirable characteristic of a Convex Function in optimization?",
+                    options: [
+                        "A) It has multiple local minimums, allowing the model to choose the best one.",
+                        "B) It is completely flat.",
+                        "C) It has exactly one global minimum, meaning optimization algorithms cannot get trapped in 'fake' bottoms.",
+                        "D) It can only be processed by quantum computers."
+                    ],
+                    answer: 2,
+                    explanation: "A convex function's 'bowl' shape guarantees that any local minimum you find is, in fact, the one and only global minimum. You can't get stuck in a ditch."
+                },
+                {
+                    question: "In the blindfolded hiker metaphor of Gradient Descent, what does the 'altitude' (height) of the landscape represent?",
+                    options: [
+                        "A) The speed of the processor.",
+                        "B) The accuracy of the model.",
+                        "C) The Loss Function (error rate) of the model.",
+                        "D) The amount of training data."
+                    ],
+                    answer: 2,
+                    explanation: "The goal is to get to the lowest altitude. Therefore, altitude represents the Loss (error). As you step downhill, your error decreases."
+                }
+            ]
+        },
         't5': { title: 'Data Visualization', content: 'Detailed content coming soon.', quizzes: [] },
         't6': { title: 'Hypothesis Function & Testing', content: 'Detailed content coming soon.', quizzes: [] },
         't7': { title: 'Data Prep & Normalization', content: 'Detailed content coming soon.', quizzes: [] },
         't8': { title: 'Supervised vs Unsupervised Learning', content: 'Detailed content coming soon.', quizzes: [] }
     },
     'cs601-u2': {
-        'u2t1': { title: 'Linearity vs Non-linearity, Weights & Bias', content: '<p>Unit 2 intro content.</p>', quizzes: [] },
-        'u2t2': { title: 'Activation Functions (Sigmoid, ReLU)', content: '<p>Activation functions content.</p>', quizzes: [] },
-        'u2t3': { title: 'Loss Function & Gradient Descent', content: '<p>Gradient descent content.</p>', quizzes: [] },
-        'u2t4': { title: 'Multilayer Network & Backpropagation', content: '<p>Backprop content.</p>', quizzes: [] },
-        'u2t5': { title: 'Unstable Gradients & Regularization', content: '<p>Regularization content.</p>', quizzes: [] },
-        'u2t6': { title: 'Auto Encoders & Hyperparameters', content: '<p>Auto encoders content.</p>', quizzes: [] }
+        'u2t1': {
+            title: 'Linearity vs Non-linearity, Weights & Bias',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Limits of Straight Lines</h3>
+<p class="mb-4">Imagine trying to separate red apples from green apples on a table. If all the red apples are on the left and green on the right, you can just draw a straight line down the middle with a ruler. That's a <strong>Linear Problem</strong>. Linear regression and basic perceptrons are great at this.</p>
+<p class="mb-4">Now imagine the red apples are arranged in a tight circle in the center of the table, surrounded by a ring of green apples. Try drawing a single straight line to separate them. You can't. You need to draw a circle. This is a <strong>Non-linear Problem</strong>.</p>
+<p class="mb-4">The real world is aggressively non-linear. Speech recognition, image classification, and self-driving cars cannot be solved with straight lines. This is why we need Neural Networks.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Weights and Biases: The Dials of the Brain</h3>
+<p class="mb-4">Inside a neural network, every connection between two artificial neurons has a <strong>Weight</strong> and every neuron has a <strong>Bias</strong>.</p>
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-800 p-5 rounded-lg border-l-4 border-purple-500 shadow-md">
+    <li><strong>Weight (w):</strong> Think of this as the "Volume Knob" for an incoming signal. If a neuron detects a horizontal edge in an image, and horizontal edges are REALLY important for identifying a car, the network will turn the "weight" knob way up for that connection.</li>
+    <li><strong>Bias (b):</strong> Think of this as the "Activation Threshold". It shifts the entire function up or down. Even if all incoming signals are zero, the bias allows the neuron to still output a value. It asks: "How easy should it be for this neuron to fire?"</li>
+</ul>
+<p class="mb-4 font-mono text-sm bg-gray-900 p-3 rounded text-green-400 text-center shadow-inner">Output = (Input × Weight) + Bias</p>
+            `,
+            quizzes: [
+                {
+                    question: "Why do real-world ML applications (like facial recognition) require non-linear solutions?",
+                    options: [
+                        "A) Because human faces are round, not square.",
+                        "B) Because the data points in complex tasks cannot be cleanly separated or modeled using a single straight line or flat plane.",
+                        "C) Because computers cannot render straight lines efficiently.",
+                        "D) Because non-linear algorithms use less electricity."
+                    ],
+                    answer: 1,
+                    explanation: "Real-world data is highly complex. You cannot separate 'Cat' pixels from 'Dog' pixels with a single straight line through a graph. You need complex, curving, non-linear boundaries."
+                },
+                {
+                    question: "What is the best analogy for a 'Weight' in a neural network connection?",
+                    options: [
+                        "A) A volume knob that determines how loudly (how importantly) one neuron speaks to the next.",
+                        "B) The amount of physical memory the network uses.",
+                        "C) The bias threshold.",
+                        "D) The speed of the GPU."
+                    ],
+                    answer: 0,
+                    explanation: "Weights determine the strength or importance of a connection. A high weight means the input has a massive influence on the output."
+                }
+            ]
+        },
+        'u2t2': {
+            title: 'Activation Functions (Sigmoid, ReLU)',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Spark of Life: Activation Functions</h3>
+<p class="mb-4">If a Neural Network was just a bunch of Neurons doing <code>(Input × Weight) + Bias</code>, then mathematically, the entire 100-layer network collapses into one giant, boring Linear Regression model. No matter how many straight lines you add together, you just get another straight line.</p>
+<p class="mb-4"><strong>Activation Functions</strong> are the magical mathematical gates at the end of a neuron that inject <strong>Non-linearity</strong> into the network. They decide whether the neuron should "fire" (pass the signal along) or stay quiet, based on the input it received.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg mt-6">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-4">Function</th>
+            <th class="p-4">What it does</th>
+            <th class="p-4">Pros & Cons</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700">
+        <tr>
+            <td class="p-4 font-bold text-blue-300">Sigmoid</td>
+            <td class="p-4">Squishes any number, no matter how big or small, into a tiny range between <strong>0 and 1</strong>. Looks like an 'S' curve.</td>
+            <td class="p-4">
+                <span class="text-green-400">Pro:</span> Great for probabilities (0% to 100%).<br>
+                <span class="text-red-400">Con:</span> Causes the "Vanishing Gradient" problem. It squishes big numbers so hard that learning stops.
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 font-bold text-purple-300">ReLU (Rectified Linear Unit)</td>
+            <td class="p-4">If the number is negative, it outputs 0. If it's positive, it outputs the number itself. <code>max(0, x)</code></td>
+            <td class="p-4">
+                <span class="text-green-400">Pro:</span> Ridiculously fast to compute. Solves the Vanishing Gradient problem.<br>
+                <span class="text-red-400">Con:</span> "Dying ReLU" problem. If a neuron outputs negative numbers, it gets stuck at 0 forever and effectively "dies".
+            </td>
+        </tr>
+    </tbody>
+</table>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary mathematical purpose of an Activation Function in a neural network?",
+                    options: [
+                        "A) To speed up the internet connection during training.",
+                        "B) To introduce non-linearity, allowing the network to learn complex, curving patterns instead of just straight lines.",
+                        "C) To increase the voltage to the GPU.",
+                        "D) To reset the weights to zero."
+                    ],
+                    answer: 1,
+                    explanation: "Without activation functions, a 50-layer deep neural network is mathematically identical to a 1-layer linear regression model. Activation functions bend the lines."
+                },
+                {
+                    question: "If a neuron using the ReLU activation function receives an input of -45, what will it output?",
+                    options: [
+                        "A) -45",
+                        "B) 1",
+                        "C) 0",
+                        "D) 45"
+                    ],
+                    answer: 2,
+                    explanation: "ReLU stands for Rectified Linear Unit. Its logic is simple: if the input is less than 0, output 0. If it's greater than 0, output the input. Since -45 is less than 0, it outputs 0."
+                }
+            ]
+        },
+        'u2t3': { title: 'Loss Function & Gradient Descent', content: '<p>Content in progress.</p>', quizzes: [] },
+        'u2t4': { title: 'Multilayer Network & Backpropagation', content: '<p>Content in progress.</p>', quizzes: [] },
+        'u2t5': { title: 'Unstable Gradients & Regularization', content: '<p>Content in progress.</p>', quizzes: [] },
+        'u2t6': { title: 'Auto Encoders & Hyperparameters', content: '<p>Content in progress.</p>', quizzes: [] }
     }
 };
 
