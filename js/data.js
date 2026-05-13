@@ -33,9 +33,37 @@ const coursesData = [
                     { id: 'u2t6', title: 'Auto Encoders & Hyperparameters' }
                 ] 
             },
-            { id: 'cs601-u3', unitNumber: 3, title: 'Convolutional Neural Networks', topics: [{id: 'u3t1', title: 'Coming Soon'}] },
-            { id: 'cs601-u4', unitNumber: 4, title: 'RNNs & Reinforcement Learning', topics: [{id: 'u4t1', title: 'Coming Soon'}] },
-            { id: 'cs601-u5', unitNumber: 5, title: 'Advanced ML & Applications', topics: [{id: 'u5t1', title: 'Coming Soon'}] }
+            { 
+                id: 'cs601-u3', 
+                unitNumber: 3, 
+                title: 'Convolutional Neural Networks', 
+                topics: [
+                    {id: 'u3t1', title: 'Intro to Computer Vision & Image Processing'},
+                    {id: 'u3t2', title: 'Convolutional Layers & Filters'},
+                    {id: 'u3t3', title: 'Pooling Layers & Strides'},
+                    {id: 'u3t4', title: 'Famous Architectures (ResNet, VGG)'}
+                ] 
+            },
+            { 
+                id: 'cs601-u4', 
+                unitNumber: 4, 
+                title: 'RNNs & Sequential Data', 
+                topics: [
+                    {id: 'u4t1', title: 'The Problem with Time & Sequential Data'},
+                    {id: 'u4t2', title: 'Recurrent Neural Networks (RNNs)'},
+                    {id: 'u4t3', title: 'LSTMs and Memory Cells'}
+                ] 
+            },
+            { 
+                id: 'cs601-u5', 
+                unitNumber: 5, 
+                title: 'Advanced ML & Deployment', 
+                topics: [
+                    {id: 'u5t1', title: 'Generative Adversarial Networks (GANs)'},
+                    {id: 'u5t2', title: 'Transformers & Large Language Models'},
+                    {id: 'u5t3', title: 'Model Deployment (ONNX, Flask/FastAPI)'}
+                ] 
+            }
         ]
     },
     {
@@ -369,8 +397,98 @@ graph LR
                 }
             ]
         },
-        't7': { title: 'Data Prep & Normalization', content: 'Detailed content coming soon.', quizzes: [] },
-        't8': { title: 'Supervised vs Unsupervised Learning', content: 'Detailed content coming soon.', quizzes: [] }
+        't7': {
+            title: 'Data Prep & Normalization',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Janitorial Work of ML</h3>
+<p class="mb-4">Data scientists spend 80% of their time cleaning data and 20% of their time complaining about cleaning data. Algorithms only understand numbers. If your dataset is full of blank spaces, typos, and text (like "Male", "Female"), the algorithm will simply crash.</p>
+
+<h3 class="text-xl font-bold mb-2 text-yellow-400">Step 1: Handling Missing Data</h3>
+<p class="mb-4 text-gray-300">If a row is missing a value, you have a few options:</p>
+<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-800 p-4 rounded-lg">
+    <li><strong>Drop it:</strong> If you have 10 million rows, deleting 5 rows with missing data is fine.</li>
+    <li><strong>Mean Imputation:</strong> Replace the missing value with the average of that column. Good for normally distributed data.</li>
+    <li><strong>Median Imputation:</strong> Better if the column has extreme outliers (e.g., estimating income in a room full of average people and Elon Musk).</li>
+</ul>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Step 2: Normalization (Scaling)</h3>
+<p class="mb-4">Imagine a dataset predicting house prices based on "Number of Bedrooms" (1 to 5) and "Square Footage" (1,000 to 5,000). To an algorithm, 5,000 is a MASSIVELY more important number than 5. It will completely ignore the bedrooms. <strong>Normalization</strong> forces all columns to play on the same field.</p>
+<table class="w-full text-left border-collapse mb-6 bg-gray-900 border border-gray-700 rounded-lg overflow-hidden shadow-inner">
+    <thead class="bg-gray-800 text-gray-300">
+        <tr>
+            <th class="p-3">Technique</th>
+            <th class="p-3">What it does</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-400 text-sm divide-y divide-gray-800">
+        <tr>
+            <td class="p-3 text-purple-300">Min-Max Scaling</td>
+            <td class="p-3">Squishes all values into a strict range exactly between <strong>0 and 1</strong>. Great for neural networks.</td>
+        </tr>
+        <tr>
+            <td class="p-3 text-blue-300">Standardization (Z-Score)</td>
+            <td class="p-3">Shifts the data so the Mean is 0 and the Standard Deviation is 1. Better if the data has wild outliers.</td>
+        </tr>
+    </tbody>
+</table>
+            `,
+            quizzes: [
+                {
+                    question: "Why is feature scaling (Normalization) necessary before training models like Neural Networks or KNN?",
+                    options: [
+                        "A) It makes the file size of the CSV smaller.",
+                        "B) It ensures that features with vastly larger numerical ranges don't artificially dominate the learning process.",
+                        "C) It translates text data into numerical data.",
+                        "D) It increases the RAM required to train the model."
+                    ],
+                    answer: 1,
+                    explanation: "Without scaling, an algorithm might think a 'House Size' of 2000 is 1000x more important than 'Number of Bathrooms' of 2, simply because the number is bigger."
+                }
+            ]
+        },
+        't8': {
+            title: 'Supervised vs Unsupervised Learning',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Three Paradigms of AI</h3>
+<p class="mb-6">Machine Learning is generally divided into three major categories based on *how* the data is presented to the algorithm.</p>
+
+<div class="space-y-6 mb-8">
+    <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 border-l-4 border-blue-500 rounded-lg shadow-md transition-transform hover:-translate-y-1">
+        <h4 class="text-xl font-bold text-blue-400 mb-2">1. Supervised Learning (The Teacher)</h4>
+        <p class="text-gray-300 text-sm mb-3">You provide the algorithm with a massive dataset where the <strong>Answers are already known (Labeled Data)</strong>.</p>
+        <p class="text-gray-300 text-sm"><em>Analogy:</em> Giving a student a math textbook that has all the answers in the back. They try a problem, check the back of the book, realize they are wrong, and try again.</p>
+        <p class="text-gray-400 text-xs mt-2 italic">Examples: Image Classification (Is this a cat?), Price Prediction.</p>
+    </div>
+    
+    <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 border-l-4 border-purple-500 rounded-lg shadow-md transition-transform hover:-translate-y-1">
+        <h4 class="text-xl font-bold text-purple-400 mb-2">2. Unsupervised Learning (The Explorer)</h4>
+        <p class="text-gray-300 text-sm mb-3">You hand the algorithm a massive pile of data with <strong>NO answers (Unlabeled Data)</strong> and tell it to find hidden structures.</p>
+        <p class="text-gray-300 text-sm"><em>Analogy:</em> Handing a child a massive bucket of mixed Lego pieces without instructions. They naturally start grouping them by color and size.</p>
+        <p class="text-gray-400 text-xs mt-2 italic">Examples: Customer Segmentation (Clustering), Anomaly Detection (Credit Card Fraud).</p>
+    </div>
+    
+    <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 border-l-4 border-green-500 rounded-lg shadow-md transition-transform hover:-translate-y-1">
+        <h4 class="text-xl font-bold text-green-400 mb-2">3. Reinforcement Learning (The Gamer)</h4>
+        <p class="text-gray-300 text-sm mb-3">There is no dataset. An "Agent" is dropped into an environment and given a goal. It performs actions, and receives either a <strong>Reward</strong> or a <strong>Penalty</strong>.</p>
+        <p class="text-gray-300 text-sm"><em>Analogy:</em> Training a dog. Give paw = treat. Pee on rug = bad dog. Over time, the dog figures out the optimal policy to maximize treats.</p>
+        <p class="text-gray-400 text-xs mt-2 italic">Examples: AI playing Chess/Go, Self-driving cars.</p>
+    </div>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "If you have a dataset containing thousands of emails, but NONE of them are labeled as 'Spam' or 'Not Spam', which approach must you use to find patterns?",
+                    options: [
+                        "A) Supervised Learning",
+                        "B) Unsupervised Learning",
+                        "C) Reinforcement Learning",
+                        "D) Linear Regression"
+                    ],
+                    answer: 1,
+                    explanation: "Because there are no 'labels' (answers) provided, you must use Unsupervised Learning (like clustering) to see if the algorithm can group the emails based on similarities in their text."
+                }
+            ]
+        }
     },
     'cs601-u2': {
         'u2t1': {
@@ -521,8 +639,157 @@ graph LR
                 }
             ]
         },
-        'u2t5': { title: 'Unstable Gradients & Regularization', content: '<p>Content in progress.</p>', quizzes: [] },
-        'u2t6': { title: 'Auto Encoders & Hyperparameters', content: '<p>Content in progress.</p>', quizzes: [] }
+        'u2t5': {
+            title: 'Unstable Gradients & Regularization',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">When Networks Forget How to Learn</h3>
+<p class="mb-4">Training a 100-layer deep neural network sounds cool, until the math blows up. Because Backpropagation relies on the Chain Rule, gradients (the error signals) are multiplied together repeatedly as they travel backwards from the output layer to the first layer.</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-gray-800 p-5 rounded-xl border-l-4 border-red-500 shadow-md">
+        <h4 class="text-red-400 font-bold mb-2">The Vanishing Gradient</h4>
+        <p class="text-gray-300 text-sm">If you multiply a bunch of numbers smaller than 1 together (like <code>0.1 × 0.1 × 0.1</code>), the result approaches zero rapidly. By the time the error signal reaches the first layer, the gradient is 0.000000001. The first layer learns nothing. The network stagnates.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-xl border-l-4 border-orange-500 shadow-md">
+        <h4 class="text-orange-400 font-bold mb-2">The Exploding Gradient</h4>
+        <p class="text-gray-300 text-sm">If you multiply a bunch of numbers larger than 1 together, the result approaches infinity. The weights swing wildly out of control, resulting in mathematical errors (NaN - Not a Number) crashing your program.</p>
+    </div>
+</div>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Regularization: Stopping the Overthinkers</h3>
+<p class="mb-4">If a neural network is too big, it will <strong>Overfit</strong>. It stops learning general patterns and just literally memorizes the exact answers to the training data. Regularization is a way to penalize the network for being "too complex".</p>
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong>L1 Regularization (Lasso):</strong> Forces less important weights to become exactly ZERO, effectively deleting neurons that aren't useful.</li>
+    <li><strong>L2 Regularization (Ridge):</strong> Forces weights to become very small, but rarely zero. Promotes a smooth, distributed network where all neurons contribute a little bit.</li>
+    <li><strong class="text-blue-300">Dropout:</strong> During training, you literally turn off a random 20% to 50% of the neurons on every pass. This forces the remaining neurons to step up and learn robust features, rather than relying on a few "smart" neurons to do all the work.</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "How does the 'Dropout' technique help prevent Overfitting in Neural Networks?",
+                    options: [
+                        "A) It deletes the training data so the network has less to learn.",
+                        "B) It randomly disables a percentage of neurons during training, forcing the network to learn redundant and robust representations instead of relying on a few highly-weighted paths.",
+                        "C) It drops the learning rate to zero.",
+                        "D) It prevents the GPU from overheating by dropping the voltage."
+                    ],
+                    answer: 1,
+                    explanation: "Dropout acts like a harsh teacher who randomly kicks students out of a group project, forcing everyone else to actually learn the material instead of relying on the one smart kid."
+                }
+            ]
+        },
+        'u2t6': {
+            title: 'Auto Encoders & Hyperparameters',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Autoencoders: The Art of Compression</h3>
+<p class="mb-4">An <strong>Autoencoder</strong> is a fascinating type of Unsupervised Neural Network. Its only goal is to output the exact same thing it was given as input. Why is that useful? Because the network is shaped like an hourglass.</p>
+<p class="mb-4 text-gray-300 bg-gray-800 p-4 rounded-lg shadow-inner">
+To get a 4K image through the tiny "bottleneck" in the middle of the network, the <strong>Encoder</strong> half has to compress the image into a highly dense mathematical summary (called the Latent Space). The <strong>Decoder</strong> half then has to decompress that summary back into the original 4K image.
+</p>
+<p class="mb-6">Once trained, you can throw away the Decoder, and use the Encoder as an incredibly powerful data compression and feature extraction tool.</p>
+
+<h3 class="text-xl font-bold mb-2 text-green-400">Hyperparameters: The Dials Outside the Brain</h3>
+<p class="mb-4"><strong>Parameters</strong> (like Weights and Biases) are learned automatically by the model during training. <strong>Hyperparameters</strong> are the dials that YOU (the human) have to set manually *before* training begins.</p>
+
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg mt-4">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-4">Hyperparameter</th>
+            <th class="p-4">What it controls</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700">
+        <tr>
+            <td class="p-4 font-bold text-blue-300">Learning Rate</td>
+            <td class="p-4">How big of a step the gradient descent algorithm takes. Too high = chaos. Too low = takes millions of years.</td>
+        </tr>
+        <tr>
+            <td class="p-4 font-bold text-purple-300">Batch Size</td>
+            <td class="p-4">How many images/records the network looks at before it updates its weights. (e.g., look at 32 images, calculate average error, take a step).</td>
+        </tr>
+        <tr>
+            <td class="p-4 font-bold text-green-300">Epochs</td>
+            <td class="p-4">How many times the network will look at the ENTIRE dataset. Doing 100 epochs means the network sees every image 100 times.</td>
+        </tr>
+        <tr>
+            <td class="p-4 font-bold text-yellow-300">Network Architecture</td>
+            <td class="p-4">The number of hidden layers, and the number of neurons per layer.</td>
+        </tr>
+    </tbody>
+</table>
+            `,
+            quizzes: [
+                {
+                    question: "What is the difference between a Parameter and a Hyperparameter?",
+                    options: [
+                        "A) Parameters are for Linear Regression, Hyperparameters are for Neural Networks.",
+                        "B) Parameters (like weights) are learned automatically by the model during training. Hyperparameters (like learning rate) must be set manually by the programmer before training starts.",
+                        "C) Hyperparameters take up more RAM.",
+                        "D) There is no difference."
+                    ],
+                    answer: 1,
+                    explanation: "Hyperparameters are the architectural choices and training settings you decide on. Parameters are the internal math variables the machine tweaks itself."
+                }
+            ]
+        }
+    },
+    'cs601-u3': {
+        'u3t1': {
+            title: 'Intro to Computer Vision & Image Processing',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">Teaching Computers to See</h3>
+<p class="mb-4">For decades, humans tried to teach computers to recognize objects by writing explicit rules. "If you see two circles above a triangle, it's a face." This worked terribly because a face turned sideways broke the code. <strong>Computer Vision (CV)</strong> was revolutionized when we stopped writing rules and started using Neural Networks.</p>
+
+<h3 class="text-xl font-bold mb-2 text-purple-400">Images are just Tensors</h3>
+<p class="mb-4 text-gray-300">To a computer, a picture is not a picture. It is a massive spreadsheet of numbers. A 1000x1000 pixel color image is mathematically represented as a <strong>Tensor of shape (1000, 1000, 3)</strong>. The '3' represents the Red, Green, Blue (RGB) color channels. Every single pixel is a number from 0 to 255.</p>
+
+<div class="bg-gray-800 p-5 rounded-xl border-l-4 border-yellow-500 shadow-lg mb-6">
+    <h4 class="text-yellow-400 font-bold mb-2">The Problem with Standard Neural Networks</h4>
+    <p class="text-gray-300 text-sm">If you flatten a 1000x1000x3 image into a single 1D array to feed into a standard dense Neural Network, you get 3,000,000 inputs. If the first hidden layer has 1,000 neurons, you instantly have <strong>3 BILLION weights</strong> to train just in the first layer. The network will be too slow and will instantly overfit. We need something smarter: The Convolutional Neural Network (CNN).</p>
+</div>
+            `,
+            quizzes: [
+                {
+                    question: "Why do traditional dense Neural Networks fail at processing high-resolution images?",
+                    options: [
+                        "A) They cannot process colors, only black and white.",
+                        "B) Flattening an image destroys its spatial structure, and creates an absurdly high number of weights that require impossible amounts of compute power.",
+                        "C) They learn too fast and skip over the details.",
+                        "D) Images do not have a loss function."
+                    ],
+                    answer: 1,
+                    explanation: "A standard neural network connects every pixel to every neuron. For large images, this causes a combinatorial explosion of weights, making training impossible."
+                }
+            ]
+        },
+        'u3t2': {
+            title: 'Convolutional Layers & Filters',
+            content: `
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Magic Flashlight (Filters)</h3>
+<p class="mb-4">Instead of looking at the whole image at once, a <strong>Convolutional Layer</strong> looks at a tiny patch of the image (e.g., a 3x3 square). It slides a <strong>Filter</strong> (or Kernel) across the image from left to right, top to bottom. This sliding action is called a Convolution.</p>
+
+<ul class="list-disc pl-5 space-y-3 text-gray-300 text-sm mb-6 bg-gray-900 p-5 rounded-lg border border-gray-700">
+    <li><strong>What is a Filter?</strong> A filter is just a tiny 3x3 matrix of numbers. When it slides over the image, it multiplies its numbers with the pixel values underneath it.</li>
+    <li><strong>Feature Extraction:</strong> Different filters detect different things. One filter might be mathematically tuned to detect horizontal edges. Another might detect vertical edges. As you go deeper into the network, filters start detecting complex shapes like eyes or wheels.</li>
+    <li><strong>Weight Sharing:</strong> Instead of learning a separate weight for every single pixel, the network only learns the 9 weights inside the 3x3 filter. It then uses that SAME filter across the entire image. This reduces the number of parameters from billions to thousands!</li>
+</ul>
+            `,
+            quizzes: [
+                {
+                    question: "What is the primary advantage of 'Weight Sharing' in a Convolutional Layer?",
+                    options: [
+                        "A) It allows the network to share weights with other computers over the internet.",
+                        "B) It drastically reduces the number of parameters the network needs to learn, making image processing computationally feasible.",
+                        "C) It increases the file size of the image.",
+                        "D) It converts the image into a 1D array."
+                    ],
+                    answer: 1,
+                    explanation: "By sliding the exact same 3x3 filter across the entire image, the network only needs to learn 9 weights, instead of learning millions of weights for every single pixel position."
+                }
+            ]
+        },
+        'u3t3': { title: 'Pooling Layers & Strides', content: '<p>Content in progress.</p>', quizzes: [] },
+        'u3t4': { title: 'Famous Architectures (ResNet, VGG)', content: '<p>Content in progress.</p>', quizzes: [] }
     }
 };
 
