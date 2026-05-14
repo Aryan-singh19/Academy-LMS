@@ -108,4 +108,12 @@ function setResourceType(type) {
     renderResourcePage();
 }
 
-document.addEventListener('DOMContentLoaded', renderResourcePage);
+document.addEventListener('DOMContentLoaded', async () => {
+    const allowed = await window.ACADEMY.requireStudentAuth({
+        nextPath: '/html/resources.html'
+    });
+    if (!allowed) return;
+
+    window.ACADEMY.scheduleCloudSync();
+    renderResourcePage();
+});

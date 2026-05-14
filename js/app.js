@@ -109,6 +109,13 @@ async function handleGoogleCredential(response) {
         hydrateStudentName();
         syncProfileAvatarNav();
         syncAuthStatusLine();
+        const params = new URLSearchParams(window.location.search);
+        const nextPath = String(params.get('next') || '').trim();
+        if (nextPath) {
+            window.location.href = nextPath;
+            return;
+        }
+        startApp();
     } catch (error) {
         const line = document.getElementById('authStatusLine');
         if (line) line.textContent = error.message || 'Unable to complete Google sign-in.';
@@ -141,7 +148,10 @@ function syncAuthStatusLine() {
     if (startBtn) {
         startBtn.textContent = 'Sign in to continue';
     }
-    line.textContent = 'Sign in with Google to keep your account, profile, and study progress tied together across devices.';
+    const params = new URLSearchParams(window.location.search);
+    line.textContent = params.get('signin') === 'required'
+        ? 'Sign in with Google first, then we will take you straight into the student workspace you asked for.'
+        : 'Sign in with Google to keep your account, profile, and study progress tied together across devices.';
 }
 
 function hydrateStudentName() {
@@ -804,6 +814,17 @@ function clearTopicHighlights() {
 }
 
 function jumpToPracticeTests() {
+    if (!window.ACADEMY.isAuthenticated()) {
+        const line = document.getElementById('authStatusLine');
+        if (line) {
+            line.textContent = 'Sign in with Google first, then the practice tests will open under your student account.';
+        }
+        const mount = document.getElementById('googleSigninMount');
+        if (mount) {
+            mount.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
+    }
     window.location.href = 'html/tests.html';
 }
 

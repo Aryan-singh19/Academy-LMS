@@ -97,7 +97,7 @@ function renderLectureCommunity() {
             <section class="study-rail-block">
                 <div class="section-head">
                     <h3>Lecture room chat</h3>
-                    <span>${lectureChatState.local.onlineCount}/45 online</span>
+                    <span>${formatOnlineCount(lectureChatState.local.onlineCount)}</span>
                 </div>
                 <div class="chat-thread mb-4">
                     ${renderLectureMessages('local')}
@@ -110,7 +110,7 @@ function renderLectureCommunity() {
             <section class="study-rail-block">
                 <div class="section-head">
                     <h3>Global student chat</h3>
-                    <span>${lectureChatState.global.onlineCount}/45 online</span>
+                    <span>${formatOnlineCount(lectureChatState.global.onlineCount)}</span>
                 </div>
                 <div class="chat-thread mb-4">
                     ${renderLectureMessages('global')}
@@ -122,6 +122,11 @@ function renderLectureCommunity() {
             </section>
         </div>
     `;
+}
+
+function formatOnlineCount(count) {
+    const total = Number.isFinite(Number(count)) ? Number(count) : 0;
+    return `${total} online`;
 }
 
 function renderLectureMessages(scope) {
@@ -245,7 +250,12 @@ window.setLectureSubject = setLectureSubject;
 window.selectLecture = selectLecture;
 window.sendLectureMessage = sendLectureMessage;
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    const allowed = await window.ACADEMY.requireStudentAuth({
+        nextPath: '/html/lectures.html'
+    });
+    if (!allowed) return;
+
     window.ACADEMY.scheduleCloudSync();
     renderLecturePage();
     document.addEventListener('visibilitychange', () => {

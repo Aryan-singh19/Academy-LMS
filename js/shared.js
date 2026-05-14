@@ -500,6 +500,25 @@
         return Boolean(authSession.authenticated && authSession.student);
     }
 
+    function buildSigninRedirect(pathname) {
+        const next = pathname || `${window.location.pathname}${window.location.search}${window.location.hash}`;
+        return `/index.html?signin=required&next=${encodeURIComponent(next)}`;
+    }
+
+    async function requireStudentAuth(options = {}) {
+        if (window.location.protocol === 'file:') return true;
+        await loadAppConfig();
+        await hydrateAuthSession();
+        if (isAuthenticated()) {
+            return true;
+        }
+
+        if (options.redirect !== false) {
+            window.location.href = buildSigninRedirect(options.nextPath);
+        }
+        return false;
+    }
+
     async function signInWithGoogle(idToken) {
         const response = await fetch('/api/auth-google', {
             method: 'POST',
@@ -515,15 +534,17 @@
         if (!response.ok) {
             throw new Error(payload.error || 'Unable to sign in with Google.');
         }
+        const signedInStudent = payload.student || null;
         authSession = {
             authenticated: true,
-            student: payload.student
+            student: signedInStudent
         };
-        if (payload.student) {
-            state.studentName = payload.student.display_name || state.studentName;
-            state.avatarUrl = payload.student.avatar_url || state.avatarUrl;
+        if (signedInStudent) {
+            state.studentName = signedInStudent.display_name || state.studentName;
+            state.avatarUrl = signedInStudent.avatar_url || state.avatarUrl;
             persistState({ silent: true });
         }
+        await hydrateAuthSession();
         syncDirty = true;
         scheduleCloudSync(600);
         return payload;
@@ -580,6 +601,8 @@
         hydrateAuthSession,
         getSignedInStudent,
         isAuthenticated,
+        buildSigninRedirect,
+        requireStudentAuth,
         signInWithGoogle,
         logoutStudent,
         scheduleCloudSync,

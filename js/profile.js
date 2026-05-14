@@ -464,6 +464,11 @@ async function sendDirectMessage() {
 }
 
 async function runBlobUpload(file, payload) {
+    const appConfig = window.ACADEMY.getAppConfig();
+    if (!appConfig.blobEnabled) {
+        throw new Error('Blob uploads are not active on this deployment yet. Delete the old wrong token, keep only BLOB_READ_WRITE_TOKEN in Vercel, then redeploy once.');
+    }
+
     const { upload } = await import('https://esm.sh/@vercel/blob/client');
     return upload(payload.pathname, file, {
         access: 'public',
@@ -542,8 +547,11 @@ window.openMessageThread = openMessageThread;
 window.reportStudent = reportStudent;
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await window.ACADEMY.loadAppConfig();
-    await window.ACADEMY.hydrateAuthSession();
+    const allowed = await window.ACADEMY.requireStudentAuth({
+        nextPath: '/html/profile.html'
+    });
+    if (!allowed) return;
+
     window.ACADEMY.scheduleCloudSync();
     renderProfilePage();
     await hydrateRemoteProfile();

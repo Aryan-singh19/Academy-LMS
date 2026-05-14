@@ -272,4 +272,12 @@ function formatTimer(totalSeconds) {
     return `${minutes}:${seconds}`;
 }
 
-document.addEventListener('DOMContentLoaded', initializeTestsPage);
+document.addEventListener('DOMContentLoaded', async () => {
+    const allowed = await window.ACADEMY.requireStudentAuth({
+        nextPath: '/html/tests.html'
+    });
+    if (!allowed) return;
+
+    window.ACADEMY.scheduleCloudSync();
+    initializeTestsPage();
+});
