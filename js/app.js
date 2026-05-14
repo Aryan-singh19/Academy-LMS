@@ -19,12 +19,7 @@ function startApp() {
 
     hero.classList.add('hero-exit');
     setTimeout(() => {
-        hero.classList.add('hidden');
-        app.classList.remove('hidden');
-        if (!appStarted) {
-            initApp();
-            appStarted = true;
-        }
+        openStudyDeskDirectly();
     }, 380);
 }
 
@@ -51,6 +46,28 @@ async function bootstrapLanding() {
     syncProfileAvatarNav();
     renderGoogleSignin();
     syncAuthStatusLine();
+
+    if (shouldOpenStudyView()) {
+        openStudyDeskDirectly();
+    }
+}
+
+function shouldOpenStudyView() {
+    const params = new URLSearchParams(window.location.search);
+    return ['topics', 'study', 'app'].includes(String(params.get('view') || '').toLowerCase())
+        || window.location.hash === '#topics'
+        || window.location.hash === '#study';
+}
+
+function openStudyDeskDirectly() {
+    const hero = document.getElementById('heroSection');
+    const app = document.getElementById('appSection');
+    if (hero) hero.classList.add('hidden');
+    if (app) app.classList.remove('hidden');
+    if (!appStarted) {
+        initApp();
+        appStarted = true;
+    }
 }
 
 function renderGoogleSignin() {
@@ -58,7 +75,7 @@ function renderGoogleSignin() {
     const config = window.ACADEMY.getAppConfig();
     if (!mount) return;
     if (!config.googleClientId) {
-        mount.innerHTML = '<div class="text-sm text-slate-400">Google sign-in becomes available after `GOOGLE_CLIENT_ID` is added in Vercel.</div>';
+        mount.innerHTML = '<div class="text-sm text-red-500">Google sign-in is not live yet because `GOOGLE_CLIENT_ID` is missing in Vercel.</div>';
         return;
     }
     if (!window.google || !window.google.accounts || !window.google.accounts.id) {
