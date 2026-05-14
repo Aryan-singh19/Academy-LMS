@@ -10,13 +10,19 @@ let lastSelectionText = '';
 let lastHighlightForTopic = {};
 
 function startApp() {
-    const hero = document.getElementById('heroSection');
-    const app = document.getElementById('appSection');
-    const nameInput = document.getElementById('studentNameInput');
-    if (nameInput && nameInput.value.trim()) {
-        window.ACADEMY.setStudentName(nameInput.value.trim());
+    if (!window.ACADEMY.isAuthenticated()) {
+        const line = document.getElementById('authStatusLine');
+        if (line) {
+            line.textContent = 'Sign in with Google first, then Academy LMS will open your study desk automatically.';
+        }
+        const mount = document.getElementById('googleSigninMount');
+        if (mount) {
+            mount.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
     }
 
+    const hero = document.getElementById('heroSection');
     hero.classList.add('hero-exit');
     setTimeout(() => {
         openStudyDeskDirectly();
@@ -114,8 +120,26 @@ function syncAuthStatusLine() {
     if (!line) return;
     const student = window.ACADEMY.getSignedInStudent();
     if (student) {
+        const badge = document.getElementById('signinStateBadge');
+        const startBtn = document.getElementById('startStudyBtn');
+        if (badge) {
+            badge.textContent = `Signed in as ${student.display_name}`;
+            badge.classList.remove('hidden');
+        }
+        if (startBtn) {
+            startBtn.textContent = 'Open Study Desk';
+        }
         line.textContent = `${student.display_name} is signed in. Your study progress now follows your account instead of acting like a random browser stranger.`;
         return;
+    }
+    const badge = document.getElementById('signinStateBadge');
+    const startBtn = document.getElementById('startStudyBtn');
+    if (badge) {
+        badge.classList.add('hidden');
+        badge.textContent = '';
+    }
+    if (startBtn) {
+        startBtn.textContent = 'Sign in to continue';
     }
     line.textContent = 'Sign in with Google to keep your account, profile, and study progress tied together across devices.';
 }
