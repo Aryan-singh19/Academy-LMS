@@ -2,6 +2,7 @@ let adminSecret = '';
 let adminEmail = '';
 let selectedStudentId = '';
 let leaderboard = [];
+let openReports = [];
 const ADMIN_EMAIL_KEY = 'academy_admin_email';
 
 function formatDate(value) {
@@ -24,12 +25,15 @@ function formatBytes(bytes) {
     return `${value.toFixed(index === 0 ? 0 : 1)} ${units[index]}`;
 }
 
-async function fetchAdmin(path) {
+async function fetchAdmin(path, options = {}) {
     const response = await fetch(path, {
+        method: options.method || 'GET',
         headers: {
+            'Content-Type': 'application/json',
             'x-admin-secret': adminSecret,
             'x-admin-email': adminEmail
-        }
+        },
+        body: options.body
     });
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) {
@@ -45,6 +49,27 @@ function renderLeaderboard() {
                 <h3>Leaderboard</h3>
                 <span>${leaderboard.length} students</span>
             </div>
+            ${openReports.length ? `
+                <div class="study-rail-block !p-4 mb-4">
+                    <div class="section-head">
+                        <h3>Open reports</h3>
+                        <span>${openReports.length}</span>
+                    </div>
+                    <div class="space-y-3">
+                        ${openReports.map((report) => `
+                            <div class="social-card">
+                                <strong class="text-white">${report.target_name}</strong>
+                                <p class="text-sm text-slate-400 mt-2">${report.report_reason}</p>
+                                <p class="text-xs text-slate-500 mt-2">Reported by ${report.reporter_name} • ${formatDate(report.created_at)}</p>
+                                <div class="flex flex-wrap gap-2 mt-3">
+                                    <button class="secondary-cta text-sm !py-2 !px-4" onclick="loadStudentDetail('${report.target_student_id}')">Inspect</button>
+                                    <button class="primary-cta text-sm !py-2 !px-4" onclick="resolveReport(${report.id}, '${report.target_student_id}')">Resolve</button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            ` : ''}
             <div class="overflow-x-auto">
                 <table class="admin-table">
                     <thead>
@@ -63,6 +88,7 @@ function renderLeaderboard() {
                                 <td>
                                     <strong class="text-white">${student.display_name}</strong>
                                     <p class="text-xs text-slate-500 mt-1">${student.headline || 'No headline yet'}</p>
+                                    ${student.is_banned ? '<p class="text-xs text-red-500 mt-1">Banned</p>' : ''}
                                 </td>
                                 <td>${student.completed_topics}/${student.tracked_topics}</td>
                                 <td>${student.quiz_accuracy}%</td>
@@ -101,7 +127,13 @@ function renderDetail(detail) {
                     <p class="text-sm text-slate-400 mt-1">${student.headline || 'No headline yet'}</p>
                     <p class="text-sm text-slate-400 mt-2">${student.bio || 'No bio saved yet.'}</p>
                     <p class="text-xs text-slate-500 mt-2">Seen ${formatDate(student.last_seen_at)}</p>
+                    ${student.is_banned ? `<p class="text-xs text-red-500 mt-2">Banned: ${student.banned_reason || 'No reason recorded'}</p>` : ''}
                 </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                ${student.is_banned
+                    ? `<button class="primary-cta" onclick="adminUpdateStudent('${student.id}', 'unban')">Unban student</button>`
+                    : `<button class="danger-cta" onclick="adminUpdateStudent('${student.id}', 'ban')">Ban student</button>`}
             </div>
             <div class="summary-list">
                 <p><strong class="text-white">Email:</strong> ${student.email || 'Not provided'}</p>
@@ -110,6 +142,18 @@ function renderDetail(detail) {
                 <p><strong class="text-white">Website:</strong> ${student.website_url || 'Not provided'}</p>
                 <p><strong class="text-white">Progress:</strong> ${student.completed_topics || 0}/${student.tracked_topics || 0} topics</p>
                 <p><strong class="text-white">Quiz attempts:</strong> ${student.quiz_attempts_count || 0}</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-3">Reports</h4>
+                <div class="chat-thread">
+                    ${(detail.reports || []).length ? detail.reports.map((report) => `
+                        <article class="chat-message">
+                            <strong class="text-white">${report.reporter_name}</strong>
+                            <p class="text-sm text-slate-400 mt-2">${report.report_reason}</p>
+                            <p class="text-xs text-slate-500 mt-2">${report.report_details || 'No extra detail'} • ${formatDate(report.created_at)}</p>
+                        </article>
+                    `).join('') : '<p class="text-slate-400">No reports for this student.</p>'}
+                </div>
             </div>
             <div>
                 <h4 class="text-lg font-bold text-white mb-3">Uploads</h4>
@@ -153,6 +197,7 @@ function renderDetail(detail) {
 async function loadLeaderboard() {
     const payload = await fetchAdmin('/api/admin');
     leaderboard = payload.leaderboard || [];
+    openReports = payload.openReports || [];
     renderLeaderboard();
     if (leaderboard.length && !selectedStudentId) {
         await loadStudentDetail(leaderboard[0].id);
@@ -168,7 +213,44 @@ async function loadStudentDetail(studentId) {
     renderDetail(detail);
 }
 
+async function adminUpdateStudent(studentId, action) {
+    const reason = action === 'ban'
+        ? (window.prompt('Ban reason:', 'Spam, abuse, fake account, or repeated misconduct') || '').trim()
+        : '';
+    if (action === 'ban' && !reason) return;
+
+    await fetchAdmin('/api/admin', {
+        method: 'POST',
+        body: JSON.stringify({
+            action,
+            studentId,
+            reason
+        })
+    });
+    await loadLeaderboard();
+    if (selectedStudentId) {
+        await loadStudentDetail(selectedStudentId);
+    }
+}
+
+async function resolveReport(reportId, studentId) {
+    await fetchAdmin('/api/admin', {
+        method: 'POST',
+        body: JSON.stringify({
+            action: 'resolve-report',
+            studentId,
+            reportId
+        })
+    });
+    await loadLeaderboard();
+    if (studentId) {
+        await loadStudentDetail(studentId);
+    }
+}
+
 window.loadStudentDetail = loadStudentDetail;
+window.adminUpdateStudent = adminUpdateStudent;
+window.resolveReport = resolveReport;
 
 document.addEventListener('DOMContentLoaded', () => {
     const storedEmail = localStorage.getItem(ADMIN_EMAIL_KEY) || '';

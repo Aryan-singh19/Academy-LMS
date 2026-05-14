@@ -1,4 +1,4 @@
-const { getSql, getStudentByDevice } = require('./_lib/db');
+const { getSql, resolveStudent, assertStudentAllowed } = require('./_lib/db');
 const { allowMethods, readJsonBody, sendJson } = require('./_lib/http');
 const { applyRateLimit } = require('./_lib/rate-limit');
 
@@ -60,11 +60,8 @@ module.exports = async function handler(req, res) {
             return;
         }
 
-        const student = await getStudentByDevice(sql, deviceId);
-        if (!student) {
-            sendJson(res, 404, { error: 'Student not found. Sync the profile first.' });
-            return;
-        }
+        const student = await resolveStudent(req, sql, deviceId);
+        assertStudentAllowed(student);
 
         await sql`
             INSERT INTO lecture_presence (student_id, lecture_key, scope, last_seen_at)
@@ -101,6 +98,6 @@ module.exports = async function handler(req, res) {
         });
     } catch (error) {
         console.error('Lecture chat API error', error);
-        sendJson(res, 500, { error: error.message || 'Unable to load lecture chat.' });
+        sendJson(res, error.statusCode || 500, { error: error.message || 'Unable to load lecture chat.' });
     }
 };

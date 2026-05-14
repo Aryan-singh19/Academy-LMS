@@ -30,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({ startOnLoad: true, theme: 'base' });</script>
 </head>
@@ -63,6 +64,10 @@
                 <div class="mt-8 max-w-md">
                     <label for="studentNameInput" class="metric-label">Your name</label>
                     <input id="studentNameInput" type="text" class="search-input mt-2" placeholder="Enter your name to personalize this study desk">
+                </div>
+                <div class="mt-6 space-y-3 max-w-md">
+                    <div id="googleSigninMount" class="google-signin-slot"></div>
+                    <p id="authStatusLine" class="text-sm text-slate-400">Sign in with Google to keep your account, profile, and study progress tied together across devices.</p>
                 </div>
                 <div class="flex flex-wrap gap-4 mt-8">
                     <button onclick="startApp()" class="primary-cta">Open Study Desk</button>
@@ -119,7 +124,7 @@
                     </div>
 
                     <nav class="flex flex-wrap items-center gap-3 text-sm">
-                        <a href="index.html" class="nav-pill nav-pill-active">Home</a>
+                        <button type="button" onclick="focusTopicsPanel()" class="nav-pill nav-pill-active">Topics</button>
                         <a href="html/lectures.html" class="nav-pill">Lectures</a>
                         <a href="html/resources.html" class="nav-pill">Resources</a>
                         <a href="html/tests.html" class="nav-pill">Tests</a>
@@ -127,6 +132,7 @@
                             <span id="profileNavBadge" class="nav-avatar-badge">P</span>
                             <span>Profile</span>
                         </a>
+                        <button type="button" onclick="logoutStudentFromUi()" class="nav-pill">Logout</button>
                     </nav>
 
                     <div class="relative flex-1 xl:max-w-md">
@@ -180,6 +186,13 @@
             </div>
             <iframe id="modalIframe" title="External reference" class="w-full h-[75vh] bg-white"></iframe>
         </div>
+    </div>
+
+    <div id="selectionActionMenu" class="selection-menu hidden">
+        <button type="button" onclick="applySelectionHighlight()">Highlight</button>
+        <button type="button" onclick="removeSelectionHighlight()">Remove current</button>
+        <button type="button" onclick="removeLastHighlight()">Remove last</button>
+        <button type="button" onclick="hideSelectionActionMenu()">Cancel</button>
     </div>
 
     <script src="js/data.js"></script>

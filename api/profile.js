@@ -1,4 +1,4 @@
-const { getSql, getStudentByDevice } = require('./_lib/db');
+const { getSql, getStudentByDevice, resolveStudent, assertStudentAllowed } = require('./_lib/db');
 const { allowMethods, readJsonBody, sendJson } = require('./_lib/http');
 const { applyRateLimit } = require('./_lib/rate-limit');
 
@@ -319,16 +319,8 @@ module.exports = async function handler(req, res) {
 
         if (req.method === 'GET') {
             const deviceId = String(req.query.deviceId || '').trim();
-            if (!deviceId) {
-                sendJson(res, 400, { error: 'deviceId is required.' });
-                return;
-            }
-
-            const student = await getStudentByDevice(sql, deviceId);
-            if (!student) {
-                sendJson(res, 404, { error: 'No student profile found for this device yet.' });
-                return;
-            }
+            const student = await resolveStudent(req, sql, deviceId);
+            assertStudentAllowed(student);
 
             sendJson(res, 200, await getProfileResponse(sql, student));
             return;
@@ -346,6 +338,7 @@ module.exports = async function handler(req, res) {
         }
 
         const student = await upsertStudent(sql, deviceId, displayName || 'Student', snapshot, profilePatch);
+        assertStudentAllowed(student);
         if (Object.keys(snapshot).length) {
             await syncSnapshot(sql, student, snapshot);
         }
@@ -356,6 +349,6 @@ module.exports = async function handler(req, res) {
         });
     } catch (error) {
         console.error('Profile API error', error);
-        sendJson(res, 500, { error: error.message || 'Unable to sync profile.' });
+        sendJson(res, error.statusCode || 500, { error: error.message || 'Unable to sync profile.' });
     }
 };

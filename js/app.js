@@ -6,6 +6,8 @@ const loadedCourses = {};
 let topicListFilter = 'all';
 let topicComments = [];
 let openUnits = {};
+let lastSelectionText = '';
+let lastHighlightForTopic = {};
 
 function startApp() {
     const hero = document.getElementById('heroSection');
@@ -38,6 +40,67 @@ function initApp() {
         renderCourseView();
         preloadRemainingCourses();
     });
+}
+
+async function bootstrapLanding() {
+    hydrateStudentName();
+    syncProfileAvatarNav();
+    await window.ACADEMY.loadAppConfig();
+    await window.ACADEMY.hydrateAuthSession();
+    hydrateStudentName();
+    syncProfileAvatarNav();
+    renderGoogleSignin();
+    syncAuthStatusLine();
+}
+
+function renderGoogleSignin() {
+    const mount = document.getElementById('googleSigninMount');
+    const config = window.ACADEMY.getAppConfig();
+    if (!mount) return;
+    if (!config.googleClientId) {
+        mount.innerHTML = '<div class="text-sm text-slate-400">Google sign-in becomes available after `GOOGLE_CLIENT_ID` is added in Vercel.</div>';
+        return;
+    }
+    if (!window.google || !window.google.accounts || !window.google.accounts.id) {
+        window.setTimeout(renderGoogleSignin, 350);
+        return;
+    }
+
+    mount.innerHTML = '';
+    window.google.accounts.id.initialize({
+        client_id: config.googleClientId,
+        callback: handleGoogleCredential
+    });
+    window.google.accounts.id.renderButton(mount, {
+        theme: 'outline',
+        size: 'large',
+        shape: 'pill',
+        text: 'signup_with',
+        width: 320
+    });
+}
+
+async function handleGoogleCredential(response) {
+    try {
+        await window.ACADEMY.signInWithGoogle(response.credential);
+        hydrateStudentName();
+        syncProfileAvatarNav();
+        syncAuthStatusLine();
+    } catch (error) {
+        const line = document.getElementById('authStatusLine');
+        if (line) line.textContent = error.message || 'Unable to complete Google sign-in.';
+    }
+}
+
+function syncAuthStatusLine() {
+    const line = document.getElementById('authStatusLine');
+    if (!line) return;
+    const student = window.ACADEMY.getSignedInStudent();
+    if (student) {
+        line.textContent = `${student.display_name} is signed in. Your study progress now follows your account instead of acting like a random browser stranger.`;
+        return;
+    }
+    line.textContent = 'Sign in with Google to keep your account, profile, and study progress tied together across devices.';
 }
 
 function hydrateStudentName() {
@@ -276,6 +339,8 @@ function renderCourseView() {
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">${topicSummary}</h2>
                     </div>
                     <div class="flex flex-wrap gap-2">
+                        <button onclick="toggleMobilePanel('left')" class="secondary-cta text-sm !py-2 !px-4 mobile-panel-toggle">Outline</button>
+                        <button onclick="toggleMobilePanel('right')" class="secondary-cta text-sm !py-2 !px-4 mobile-panel-toggle">Notes</button>
                         <button onclick="toggleCurrentBookmark()" class="secondary-cta text-sm !py-2 !px-4">${window.ACADEMY.isBookmarked(activeTopicId) ? 'Remove bookmark' : 'Bookmark topic'}</button>
                         <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-2 !px-4">Mark complete</button>
                     </div>
@@ -373,16 +438,6 @@ function renderTopicContent() {
                     ${highlightedContent}
                 </div>
             </details>
-            <section class="revision-banner">
-                <div>
-                    <p class="revision-label">Study tools</p>
-                    <h3 class="text-xl font-bold text-white">Save your own memory layer on this topic.</h3>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <button onclick="highlightSelectedText()" class="secondary-cta text-sm !py-2 !px-4">Highlight selection</button>
-                    <button onclick="clearTopicHighlights()" class="secondary-cta text-sm !py-2 !px-4">Clear highlights</button>
-                </div>
-            </section>
             <details class="topic-fold mt-10" open>
                 <summary class="topic-fold-summary">
                     <span>Topic knowledge checks</span>
@@ -414,6 +469,7 @@ function renderTopicContent() {
     `;
 
     fetchTopicComments();
+    bindSelectionMenu();
 
     setTimeout(() => {
         if (window.mermaid) {
@@ -527,7 +583,7 @@ function renderStudyRail() {
             <section class="study-rail-block">
                 <div class="section-head">
                     <h3>Notes</h3>
-                    <span>Autosaved</span>
+                    <span>Live save</span>
                 </div>
                 <textarea id="topicNoteInput" class="note-input" placeholder="Write your summary, formulas, mnemonics, or doubts here...">${note}</textarea>
                 <div class="flex items-center justify-between text-xs text-slate-500 mt-2">
@@ -668,7 +724,29 @@ function highlightSelectedText() {
     if (!contentArea.contains(selection.anchorNode)) return;
 
     window.ACADEMY.addHighlight(activeTopicId, selectedText);
+    lastHighlightForTopic[activeTopicId] = selectedText;
     selection.removeAllRanges();
+    renderOverviewCards();
+    renderStudentDock();
+    renderTopicContent();
+    renderStudyRail();
+}
+
+function removeSelectionHighlight() {
+    if (!lastSelectionText || activeTopicId === 'exam') return;
+    window.ACADEMY.removeHighlight(activeTopicId, lastSelectionText);
+    hideSelectionActionMenu();
+    renderOverviewCards();
+    renderStudentDock();
+    renderTopicContent();
+    renderStudyRail();
+}
+
+function removeLastHighlight() {
+    const last = lastHighlightForTopic[activeTopicId];
+    if (!last || activeTopicId === 'exam') return;
+    window.ACADEMY.removeHighlight(activeTopicId, last);
+    hideSelectionActionMenu();
     renderOverviewCards();
     renderStudentDock();
     renderTopicContent();
@@ -688,6 +766,50 @@ function jumpToPracticeTests() {
     window.location.href = 'html/tests.html';
 }
 
+function bindSelectionMenu() {
+    const contentArea = document.getElementById('topicContentArea');
+    if (!contentArea) return;
+
+    const onSelection = () => {
+        const selection = window.getSelection();
+        const selectedText = selection ? selection.toString().trim() : '';
+        if (!selectedText || selectedText.length < 3 || !selection.rangeCount) {
+            hideSelectionActionMenu();
+            return;
+        }
+        if (!contentArea.contains(selection.anchorNode)) {
+            hideSelectionActionMenu();
+            return;
+        }
+
+        lastSelectionText = selectedText;
+        const rect = selection.getRangeAt(0).getBoundingClientRect();
+        showSelectionActionMenu(rect);
+    };
+
+    contentArea.addEventListener('mouseup', () => setTimeout(onSelection, 0));
+    contentArea.addEventListener('touchend', () => setTimeout(onSelection, 0));
+}
+
+function showSelectionActionMenu(rect) {
+    const menu = document.getElementById('selectionActionMenu');
+    if (!menu) return;
+    menu.style.left = `${Math.max(12, rect.left + window.scrollX)}px`;
+    menu.style.top = `${Math.max(12, rect.bottom + window.scrollY + 10)}px`;
+    menu.classList.remove('hidden');
+}
+
+function hideSelectionActionMenu() {
+    const menu = document.getElementById('selectionActionMenu');
+    if (!menu) return;
+    menu.classList.add('hidden');
+}
+
+function applySelectionHighlight() {
+    highlightSelectedText();
+    hideSelectionActionMenu();
+}
+
 function syncProfileAvatarNav() {
     const badge = document.getElementById('profileNavBadge');
     if (!badge) return;
@@ -700,6 +822,24 @@ function syncProfileAvatarNav() {
     }
 
     badge.textContent = studentName.slice(0, 1).toUpperCase();
+}
+
+function focusTopicsPanel() {
+    const target = document.getElementById('coursesNav') || document.getElementById('mainContent');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+async function logoutStudentFromUi() {
+    await window.ACADEMY.logoutStudent();
+    window.location.href = 'index.html';
+}
+
+function toggleMobilePanel(side) {
+    const target = side === 'left'
+        ? document.querySelector('.workspace-panel-left')
+        : document.querySelector('.workspace-panel-right');
+    if (!target) return;
+    target.classList.toggle('workspace-mobile-hidden');
 }
 
 function renderTopicCommentsSection() {
@@ -862,3 +1002,13 @@ function setTopicListFilter(filter) {
     topicListFilter = filter;
     renderCourseView();
 }
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('#selectionActionMenu')) {
+        hideSelectionActionMenu();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    bootstrapLanding();
+});

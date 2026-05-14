@@ -16,6 +16,7 @@
 - Persistent progress stored in `localStorage` for completed topics, bookmarks, notes, highlights, exam drafts, and quiz history.
 - A dedicated practice test page with mixed subject drills and stored marks.
 - A profile page with cloud-ready student analytics, exportable state, student directory, direct messages, optional bio/social links, avatar uploads, and a solved-PDF study vault.
+- Google sign-in backed by server-side session cookies, plus moderation hooks for user reports and admin bans.
 - Topic comments plus lecture-room and global lecture chat when deployed on Vercel with Neon.
 - A separate admin dashboard with leaderboard and profile inspection, kept outside the student-facing navigation.
 - Lightweight static-site maintenance workflows for syntax, formatting, HTML validation, and link checking.
@@ -52,20 +53,27 @@ Then visit `http://localhost:8000`.
 This repo now includes a Postgres schema and serverless API routes for a Vercel deployment backed by Neon.
 
 1. Set `DATABASE_URL` or `POSTGRES_URL` in Vercel.
-2. Set `ADMIN_SECRET` in Vercel for the admin dashboard.
-3. Optional: set `ADMIN_EMAILS` in Vercel for extra admin addresses. The repo already allows:
+2. Set `GOOGLE_CLIENT_ID` in Vercel to enable Sign in with Google.
+3. Set `ADMIN_SECRET` in Vercel for the admin dashboard.
+4. Optional: set `ADMIN_EMAILS` in Vercel for extra admin addresses. The repo already allows:
    - `aryansingh19gh@gmail.com`
    - `yograjsharma@rjit.ac.in`
    - `shiroonigami23@gmail.com`
-4. Connect Vercel Blob if you want student avatar uploads and solved-PDF uploads.
-5. Apply [docs/academy_schema.sql](docs/academy_schema.sql) to Neon.
-6. Deploy so the frontend can use:
+5. Connect Vercel Blob if you want student avatar uploads and solved-PDF uploads.
+6. Copy the generated `BLOB_READ_WRITE_TOKEN` from the connected Blob store into your project environment variables.
+7. Apply [docs/academy_schema.sql](docs/academy_schema.sql) to Neon.
+8. Deploy so the frontend can use:
+   - `/api/app-config`
+   - `/api/auth-google`
+   - `/api/auth-session`
+   - `/api/auth-logout`
    - `/api/profile`
    - `/api/social`
    - `/api/messages`
    - `/api/topic-comments`
    - `/api/lecture-chat`
    - `/api/blob-upload`
+   - `/api/report-user`
    - `/api/admin`
 
 Setup notes live in [docs/vercel-neon-setup.md](docs/vercel-neon-setup.md).

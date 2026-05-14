@@ -1,4 +1,4 @@
-const { getSql, getStudentByDevice } = require('./_lib/db');
+const { getSql, getStudentByDevice, getStudentFromSession, assertStudentAllowed } = require('./_lib/db');
 const { allowMethods, readJsonBody, sendJson } = require('./_lib/http');
 const { applyRateLimit } = require('./_lib/rate-limit');
 
@@ -48,10 +48,12 @@ module.exports = async function handler(req, res) {
                     throw new Error('deviceId and uploadKind are required.');
                 }
 
-                const student = await getStudentByDevice(sql, deviceId);
+                const sessionStudent = await getStudentFromSession(req, sql);
+                const student = sessionStudent || await getStudentByDevice(sql, deviceId);
                 if (!student) {
                     throw new Error('Student profile not found. Sync the profile first.');
                 }
+                assertStudentAllowed(student);
 
                 const isAvatar = uploadKind === 'avatar';
                 return {

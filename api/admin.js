@@ -1,5 +1,5 @@
 const { getSql } = require('./_lib/db');
-const { allowMethods, sendJson } = require('./_lib/http');
+const { allowMethods, sendJson, readJsonBody } = require('./_lib/http');
 const { applyRateLimit } = require('./_lib/rate-limit');
 
 const BUILT_IN_ADMIN_EMAILS = new Set([
@@ -26,7 +26,7 @@ function getAllowedAdminEmails() {
 }
 
 module.exports = async function handler(req, res) {
-    if (!allowMethods(req, res, ['GET'])) return;
+    if (!allowMethods(req, res, ['GET', 'POST'])) return;
     if (!applyRateLimit(req, res, { scope: 'admin', limit: 40, windowMs: 60000 })) return;
 
     try {
@@ -53,6 +53,73 @@ module.exports = async function handler(req, res) {
         }
 
         const sql = await getSql();
+
+        if (req.method === 'POST') {
+            const body = await readJsonBody(req);
+            const action = String(body.action || '').trim();
+            const studentId = String(body.studentId || '').trim();
+            if (!action || !studentId) {
+                sendJson(res, 400, { error: 'action and studentId are required.' });
+                return;
+            }
+
+            if (action === 'ban') {
+                const reason = String(body.reason || 'Removed by admin moderation.').trim().slice(0, 300);
+                await sql`
+                    UPDATE students
+                    SET
+                        is_banned = TRUE,
+                        banned_reason = ${reason},
+                        banned_at = NOW(),
+                        updated_at = NOW()
+                    WHERE id = ${studentId}
+                `;
+                await sql`
+                    UPDATE student_sessions
+                    SET revoked_at = NOW()
+                    WHERE student_id = ${studentId}
+                      AND revoked_at IS NULL
+                `;
+                sendJson(res, 200, { message: 'Student banned successfully.' });
+                return;
+            }
+
+            if (action === 'unban') {
+                await sql`
+                    UPDATE students
+                    SET
+                        is_banned = FALSE,
+                        banned_reason = '',
+                        banned_at = NULL,
+                        updated_at = NOW()
+                    WHERE id = ${studentId}
+                `;
+                sendJson(res, 200, { message: 'Student unbanned successfully.' });
+                return;
+            }
+
+            if (action === 'resolve-report') {
+                const reportId = Number(body.reportId || 0);
+                if (!reportId) {
+                    sendJson(res, 400, { error: 'reportId is required to resolve a report.' });
+                    return;
+                }
+                await sql`
+                    UPDATE student_reports
+                    SET
+                        status = 'resolved',
+                        reviewed_at = NOW(),
+                        reviewed_by_admin = ${adminEmail}
+                    WHERE id = ${reportId}
+                `;
+                sendJson(res, 200, { message: 'Report marked as resolved.' });
+                return;
+            }
+
+            sendJson(res, 400, { error: 'Unknown admin action.' });
+            return;
+        }
+
         const studentId = String(req.query.studentId || '').trim();
 
         if (studentId) {
@@ -67,6 +134,9 @@ module.exports = async function handler(req, res) {
                     s.github_url,
                     s.linkedin_url,
                     s.website_url,
+                    s.is_banned,
+                    s.banned_reason,
+                    s.banned_at,
                     s.last_seen_at,
                     p.completed_topics,
                     p.tracked_topics,
@@ -85,7 +155,7 @@ module.exports = async function handler(req, res) {
                 return;
             }
 
-            const [uploads, comments, messages] = await Promise.all([
+            const [uploads, comments, messages, reports] = await Promise.all([
                 sql`
                     SELECT upload_kind, title, description, blob_url, size_bytes, uploaded_at
                     FROM student_uploads
@@ -107,6 +177,20 @@ module.exports = async function handler(req, res) {
                        OR recipient_student_id = ${studentId}
                     ORDER BY created_at DESC
                     LIMIT 20
+                `,
+                sql`
+                    SELECT
+                        sr.id,
+                        sr.report_reason,
+                        sr.report_details,
+                        sr.status,
+                        sr.created_at,
+                        reporter.display_name AS reporter_name
+                    FROM student_reports sr
+                    JOIN students reporter ON reporter.id = sr.reporter_student_id
+                    WHERE sr.target_student_id = ${studentId}
+                    ORDER BY sr.created_at DESC
+                    LIMIT 20
                 `
             ]);
 
@@ -114,12 +198,13 @@ module.exports = async function handler(req, res) {
                 student: detailsRows[0],
                 uploads,
                 comments,
-                messages
+                messages,
+                reports
             });
             return;
         }
 
-        const leaderboard = await sql`
+        const [leaderboard, openReports] = await Promise.all([sql`
             WITH upload_counts AS (
                 SELECT student_id, COUNT(*)::int AS uploads_count
                 FROM student_uploads
@@ -157,11 +242,27 @@ module.exports = async function handler(req, res) {
             LEFT JOIN comment_counts c ON c.student_id = s.id
             ORDER BY completed_topics DESC, quiz_accuracy DESC, practice_sessions_count DESC, last_seen_at DESC
             LIMIT 100
-        `;
+        `, sql`
+            SELECT
+                sr.id,
+                sr.target_student_id,
+                target.display_name AS target_name,
+                reporter.display_name AS reporter_name,
+                sr.report_reason,
+                sr.status,
+                sr.created_at
+            FROM student_reports sr
+            JOIN students target ON target.id = sr.target_student_id
+            JOIN students reporter ON reporter.id = sr.reporter_student_id
+            WHERE sr.status = 'open'
+            ORDER BY sr.created_at DESC
+            LIMIT 50
+        `]);
 
         sendJson(res, 200, {
             adminEmail,
-            leaderboard
+            leaderboard,
+            openReports
         });
     } catch (error) {
         console.error('Admin API error', error);

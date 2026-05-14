@@ -2,6 +2,7 @@ let remoteProfile = null;
 let socialDirectory = { directory: [], connections: [] };
 let activePeerId = '';
 let activeMessages = [];
+let currentStudentId = '';
 const MAX_PDF_BYTES = 10 * 1024 * 1024;
 const MAX_AVATAR_BYTES = 2 * 1024 * 1024;
 let profileAutoSaveTimer = null;
@@ -57,8 +58,6 @@ function renderProfilePage() {
         </div>
         <div class="profile-hero-actions">
             <input id="profileNameInput" class="search-input profile-name-input" value="${window.ACADEMY.escapeForAttribute(studentName)}" placeholder="Student name">
-            <button id="saveProfileNameBtn" class="secondary-cta">Save name</button>
-            <button id="exportProfileBtn" class="secondary-cta">Export JSON</button>
         </div>
     `;
 
@@ -82,7 +81,6 @@ function renderProfilePage() {
                     </div>
                     <input id="avatarUploadInput" type="file" accept="image/png,image/jpeg,image/webp" class="search-input">
                     <button id="uploadAvatarBtn" class="secondary-cta w-full justify-center">Upload avatar</button>
-                    <p class="text-xs text-slate-500">Avatar limit: 2 MB. This picture becomes your profile circle across the study desk.</p>
                 </div>
                 <div class="space-y-4">
                     <input id="profileHeadlineInput" class="search-input" placeholder="Headline, for example: CN revision sprinter and ML model tinkerer" value="${window.ACADEMY.escapeForAttribute(remoteStudent.headline || '')}">
@@ -94,7 +92,7 @@ function renderProfilePage() {
                         <input id="profileWebsiteInput" class="search-input" placeholder="Website / portfolio URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.website_url || '')}">
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <span class="metric-subtext">Everything here is optional and autosaves quietly in the background.</span>
+                        <span class="metric-subtext">Optional profile details for classmates and collaborators.</span>
                     </div>
                 </div>
             </div>
@@ -253,6 +251,7 @@ function renderStudentDirectory() {
                             <button onclick="openMessageThread('${student.id}')" class="primary-cta text-sm !py-2 !px-4">
                                 ${connectedIds.has(student.id) ? 'Open DM' : 'Message'}
                             </button>
+                            <button onclick="reportStudent('${student.id}', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="secondary-cta text-sm !py-2 !px-4">Report</button>
                         </div>
                     </div>
                 `).join('') : '<p class="text-slate-400">As more students start using the deployed portal, their profiles will appear here automatically.</p>'}
@@ -271,26 +270,24 @@ function renderInbox() {
                 <h3>Direct messages</h3>
                 <span>${peer ? peer.display_name : 'Pick a student'}</span>
             </div>
-            <div class="chat-thread mb-4">
+            <div class="chat-thread chat-thread-whatsapp mb-4">
                 ${activeMessages.length ? activeMessages.map((message) => `
-                    <article class="chat-message">
-                        <strong class="text-white">${message.sender_name}</strong>
+                    <article class="chat-message chat-bubble ${message.sender_id === currentStudentId ? 'chat-bubble-own' : 'chat-bubble-peer'}">
+                        <strong class="text-white">${message.sender_id === currentStudentId ? 'You' : message.sender_name}</strong>
                         <p class="text-sm text-slate-400 mt-2">${message.message_text}</p>
                         <p class="text-xs text-slate-500 mt-2">${formatDate(message.created_at)}</p>
                     </article>
                 `).join('') : '<p class="text-slate-400">Choose a student from the directory to open a simple DM thread.</p>'}
             </div>
             <div class="space-y-3">
-                <textarea id="dmInput" class="note-input !min-h-[8rem]" placeholder="Write a revision doubt, study invite, or one calm message before the semester attacks again."></textarea>
-                <button id="sendDmBtn" class="primary-cta ${peer ? '' : 'opacity-60 pointer-events-none'}">Send message</button>
+                <textarea id="dmInput" class="note-input !min-h-[6rem]" placeholder="Write a revision doubt, study invite, or one calm message before the semester attacks again."></textarea>
+                <button id="sendDmBtn" class="primary-cta ${peer ? '' : 'opacity-60 pointer-events-none'}">Send</button>
             </div>
         </section>
     `;
 }
 
 function bindProfileActions() {
-    bindClick('saveProfileNameBtn', saveProfileName);
-    bindClick('exportProfileBtn', exportProfileSnapshot);
     bindClick('sendDmBtn', sendDirectMessage);
     bindClick('uploadAvatarBtn', uploadAvatar);
     bindClick('uploadPdfBtn', uploadStudyPdf);
@@ -302,12 +299,6 @@ function bindClick(id, handler) {
     if (element) {
         element.addEventListener('click', handler);
     }
-}
-
-function saveProfileName() {
-    const value = document.getElementById('profileNameInput').value.trim();
-    window.ACADEMY.setStudentName(value || 'Student');
-    renderProfilePage();
 }
 
 function collectProfilePayload() {
@@ -356,6 +347,7 @@ function queueProfileAutosave() {
 
 function bindProfileAutosave() {
     [
+        'profileNameInput',
         'profileHeadlineInput',
         'profileBioInput',
         'profileEmailInput',
@@ -368,17 +360,6 @@ function bindProfileAutosave() {
         field.addEventListener('input', queueProfileAutosave);
         field.addEventListener('blur', queueProfileAutosave);
     });
-}
-
-function exportProfileSnapshot() {
-    const blob = new Blob([JSON.stringify(window.ACADEMY.exportStudentSnapshot(), null, 2)], {
-        type: 'application/json'
-    });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'academy-lms-profile.json';
-    link.click();
-    URL.revokeObjectURL(link.href);
 }
 
 async function hydrateRemoteProfile() {
@@ -432,9 +413,31 @@ async function openMessageThread(peerId) {
         if (!response.ok) return;
         const payload = await response.json();
         activeMessages = payload.messages || [];
+        currentStudentId = payload.currentStudentId || currentStudentId;
         renderProfilePage();
     } catch (error) {
         console.error('Unable to load messages', error);
+    }
+}
+
+async function reportStudent(targetStudentId, studentName) {
+    const reportReason = window.prompt(`Report ${studentName} for:`, 'Spam, abuse, fake account, or inappropriate behavior');
+    if (!reportReason) return;
+
+    try {
+        await fetch('/api/report-user', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                deviceId: window.ACADEMY.state.deviceId,
+                targetStudentId,
+                reportReason
+            })
+        });
+        window.alert('Report sent to admin review.');
+    } catch (error) {
+        console.error('Unable to report student', error);
+        window.alert('Unable to report this user right now.');
     }
 }
 
@@ -536,11 +539,15 @@ async function uploadStudyPdf() {
 
 window.connectStudent = connectStudent;
 window.openMessageThread = openMessageThread;
+window.reportStudent = reportStudent;
 
 document.addEventListener('DOMContentLoaded', async () => {
+    await window.ACADEMY.loadAppConfig();
+    await window.ACADEMY.hydrateAuthSession();
     window.ACADEMY.scheduleCloudSync();
     renderProfilePage();
     await hydrateRemoteProfile();
     await hydrateStudentDirectory();
+    currentStudentId = remoteProfile && remoteProfile.student ? remoteProfile.student.id : currentStudentId;
     renderProfilePage();
 });

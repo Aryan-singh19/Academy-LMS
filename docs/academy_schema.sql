@@ -12,6 +12,9 @@ CREATE TABLE IF NOT EXISTS students (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     device_id TEXT NOT NULL UNIQUE,
     display_name TEXT NOT NULL,
+    google_sub TEXT UNIQUE,
+    auth_provider TEXT NOT NULL DEFAULT 'device',
+    email_verified BOOLEAN NOT NULL DEFAULT FALSE,
     email TEXT,
     bio TEXT DEFAULT '',
     headline TEXT DEFAULT '',
@@ -21,12 +24,19 @@ CREATE TABLE IF NOT EXISTS students (
     linkedin_url TEXT DEFAULT '',
     website_url TEXT DEFAULT '',
     extra_links JSONB NOT NULL DEFAULT '{}'::jsonb,
+    is_banned BOOLEAN NOT NULL DEFAULT FALSE,
+    banned_reason TEXT DEFAULT '',
+    banned_at TIMESTAMPTZ,
     profile_started_at TIMESTAMPTZ DEFAULT NOW(),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    last_seen_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    last_seen_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    last_login_at TIMESTAMPTZ
 );
 
+ALTER TABLE students ADD COLUMN IF NOT EXISTS google_sub TEXT UNIQUE;
+ALTER TABLE students ADD COLUMN IF NOT EXISTS auth_provider TEXT NOT NULL DEFAULT 'device';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS email_verified BOOLEAN NOT NULL DEFAULT FALSE;
 ALTER TABLE students ADD COLUMN IF NOT EXISTS bio TEXT DEFAULT '';
 ALTER TABLE students ADD COLUMN IF NOT EXISTS headline TEXT DEFAULT '';
 ALTER TABLE students ADD COLUMN IF NOT EXISTS avatar_url TEXT DEFAULT '';
@@ -34,6 +44,34 @@ ALTER TABLE students ADD COLUMN IF NOT EXISTS github_url TEXT DEFAULT '';
 ALTER TABLE students ADD COLUMN IF NOT EXISTS linkedin_url TEXT DEFAULT '';
 ALTER TABLE students ADD COLUMN IF NOT EXISTS website_url TEXT DEFAULT '';
 ALTER TABLE students ADD COLUMN IF NOT EXISTS extra_links JSONB NOT NULL DEFAULT '{}'::jsonb;
+ALTER TABLE students ADD COLUMN IF NOT EXISTS is_banned BOOLEAN NOT NULL DEFAULT FALSE;
+ALTER TABLE students ADD COLUMN IF NOT EXISTS banned_reason TEXT DEFAULT '';
+ALTER TABLE students ADD COLUMN IF NOT EXISTS banned_at TIMESTAMPTZ;
+ALTER TABLE students ADD COLUMN IF NOT EXISTS last_login_at TIMESTAMPTZ;
+
+CREATE TABLE IF NOT EXISTS student_sessions (
+    id BIGSERIAL PRIMARY KEY,
+    student_id UUID NOT NULL REFERENCES students(id) ON DELETE CASCADE,
+    session_token_hash TEXT NOT NULL UNIQUE,
+    device_id TEXT DEFAULT '',
+    user_agent TEXT DEFAULT '',
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    expires_at TIMESTAMPTZ NOT NULL,
+    revoked_at TIMESTAMPTZ
+);
+
+CREATE TABLE IF NOT EXISTS student_reports (
+    id BIGSERIAL PRIMARY KEY,
+    reporter_student_id UUID NOT NULL REFERENCES students(id) ON DELETE CASCADE,
+    target_student_id UUID NOT NULL REFERENCES students(id) ON DELETE CASCADE,
+    report_reason TEXT NOT NULL,
+    report_details TEXT DEFAULT '',
+    status TEXT NOT NULL DEFAULT 'open',
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    reviewed_at TIMESTAMPTZ,
+    reviewed_by_admin TEXT DEFAULT '',
+    CHECK (reporter_student_id <> target_student_id)
+);
 
 CREATE TABLE IF NOT EXISTS student_preferences (
     student_id UUID PRIMARY KEY REFERENCES students(id) ON DELETE CASCADE,
@@ -209,8 +247,13 @@ CREATE INDEX IF NOT EXISTS idx_direct_messages_thread_time ON direct_messages (s
 CREATE INDEX IF NOT EXISTS idx_presence_lecture_scope ON lecture_presence (lecture_key, scope, last_seen_at DESC);
 CREATE INDEX IF NOT EXISTS idx_student_uploads_student_kind ON student_uploads (student_id, upload_kind, uploaded_at DESC);
 CREATE INDEX IF NOT EXISTS idx_students_last_seen ON students (last_seen_at DESC);
+CREATE INDEX IF NOT EXISTS idx_students_google_sub ON students (google_sub);
+CREATE INDEX IF NOT EXISTS idx_students_ban_state ON students (is_banned, last_seen_at DESC);
 CREATE INDEX IF NOT EXISTS idx_topic_progress_student_completed ON student_topic_progress (student_id, completed, updated_at DESC);
 CREATE INDEX IF NOT EXISTS idx_quiz_attempts_student_correct ON quiz_attempts (student_id, is_correct, attempted_at DESC);
+CREATE INDEX IF NOT EXISTS idx_student_sessions_student_expiry ON student_sessions (student_id, expires_at DESC);
+CREATE INDEX IF NOT EXISTS idx_student_reports_target_time ON student_reports (target_student_id, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_student_reports_status_time ON student_reports (status, created_at DESC);
 
 DROP TRIGGER IF EXISTS trg_students_updated_at ON students;
 CREATE TRIGGER trg_students_updated_at

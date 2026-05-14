@@ -4,6 +4,14 @@
     let syncInFlight = false;
     let syncDirty = false;
     let lastSyncStartedAt = 0;
+    let appConfig = {
+        googleClientId: '',
+        blobEnabled: false
+    };
+    let authSession = {
+        authenticated: false,
+        student: null
+    };
     const MIN_SYNC_GAP_MS = 12000;
     const FOREGROUND_SYNC_DELAY_MS = 2200;
     const BACKGROUND_SYNC_DELAY_MS = 9000;
@@ -117,6 +125,14 @@
 
     function getProfileAvatar() {
         return state.avatarUrl || '';
+    }
+
+    function removeHighlight(topicId, snippet) {
+        const trimmed = String(snippet || '').trim();
+        if (!trimmed) return;
+        const current = getHighlights(topicId).filter((entry) => entry.toLowerCase() !== trimmed.toLowerCase());
+        state.highlights[topicId] = current;
+        persistState();
     }
 
     function getNote(topicId) {
@@ -443,6 +459,86 @@
         syncTimer = window.setTimeout(syncStateToCloud, computedDelay);
     }
 
+    async function loadAppConfig() {
+        if (window.location.protocol === 'file:') return appConfig;
+        try {
+            const response = await fetch('/api/app-config');
+            if (!response.ok) return appConfig;
+            appConfig = await response.json();
+        } catch (error) {
+            console.error('Unable to load app config', error);
+        }
+        return appConfig;
+    }
+
+    function getAppConfig() {
+        return appConfig;
+    }
+
+    async function hydrateAuthSession() {
+        if (window.location.protocol === 'file:') return authSession;
+        try {
+            const response = await fetch('/api/auth-session');
+            if (!response.ok) return authSession;
+            authSession = await response.json();
+            if (authSession.authenticated && authSession.student) {
+                state.studentName = authSession.student.display_name || state.studentName;
+                state.avatarUrl = authSession.student.avatar_url || state.avatarUrl;
+                persistState({ silent: true });
+            }
+        } catch (error) {
+            console.error('Unable to hydrate auth session', error);
+        }
+        return authSession;
+    }
+
+    function getSignedInStudent() {
+        return authSession.student || null;
+    }
+
+    function isAuthenticated() {
+        return Boolean(authSession.authenticated && authSession.student);
+    }
+
+    async function signInWithGoogle(idToken) {
+        const response = await fetch('/api/auth-google', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                idToken,
+                deviceId: state.deviceId
+            })
+        });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) {
+            throw new Error(payload.error || 'Unable to sign in with Google.');
+        }
+        authSession = {
+            authenticated: true,
+            student: payload.student
+        };
+        if (payload.student) {
+            state.studentName = payload.student.display_name || state.studentName;
+            state.avatarUrl = payload.student.avatar_url || state.avatarUrl;
+            persistState({ silent: true });
+        }
+        syncDirty = true;
+        scheduleCloudSync(600);
+        return payload;
+    }
+
+    async function logoutStudent() {
+        if (window.location.protocol !== 'file:') {
+            await fetch('/api/auth-logout', { method: 'POST' }).catch(() => null);
+        }
+        authSession = {
+            authenticated: false,
+            student: null
+        };
+    }
+
     window.ACADEMY = {
         state,
         markTopicComplete,
@@ -453,6 +549,7 @@
         getStudentName,
         setProfileAvatar,
         getProfileAvatar,
+        removeHighlight,
         getNote,
         setNote,
         getHighlights,
@@ -478,6 +575,13 @@
         exportStudentSnapshot,
         getRemoteSyncStamp,
         setRemoteSyncStamp,
+        loadAppConfig,
+        getAppConfig,
+        hydrateAuthSession,
+        getSignedInStudent,
+        isAuthenticated,
+        signInWithGoogle,
+        logoutStudent,
         scheduleCloudSync,
         syncStateToCloud
     };

@@ -29,8 +29,36 @@ function allowMethods(req, res, methods) {
     return false;
 }
 
+function parseCookies(req) {
+    const raw = String(req.headers.cookie || '');
+    if (!raw) return {};
+
+    return raw.split(';').reduce((acc, item) => {
+        const [name, ...rest] = item.trim().split('=');
+        if (!name) return acc;
+        acc[name] = decodeURIComponent(rest.join('=') || '');
+        return acc;
+    }, {});
+}
+
+function setCookie(res, name, value, options = {}) {
+    const parts = [`${name}=${encodeURIComponent(value)}`];
+    parts.push(`Path=${options.path || '/'}`);
+    if (options.maxAge !== undefined) parts.push(`Max-Age=${Math.max(0, Math.floor(options.maxAge))}`);
+    if (options.httpOnly !== false) parts.push('HttpOnly');
+    if (options.sameSite) parts.push(`SameSite=${options.sameSite}`);
+    if (options.secure !== false) parts.push('Secure');
+    if (options.expires) parts.push(`Expires=${options.expires.toUTCString()}`);
+
+    const existing = res.getHeader('Set-Cookie');
+    const next = Array.isArray(existing) ? existing.concat(parts.join('; ')) : existing ? [existing, parts.join('; ')] : parts.join('; ');
+    res.setHeader('Set-Cookie', next);
+}
+
 module.exports = {
     sendJson,
     readJsonBody,
-    allowMethods
+    allowMethods,
+    parseCookies,
+    setCookie
 };

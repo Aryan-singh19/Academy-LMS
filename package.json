@@ -4,10 +4,11 @@
   "private": true,
   "description": "Student prep portal with static study pages and Vercel serverless APIs backed by Neon Postgres.",
   "scripts": {
-    "check:js": "node --check api/_lib/db.js api/_lib/http.js api/profile.js api/social.js api/messages.js api/topic-comments.js api/lecture-chat.js api/blob-upload.js api/admin.js js/app.js js/lectures.js js/profile.js js/resources.js js/shared.js js/tests.js admin/admin.js scripts/organize_resources.js"
+    "check:js": "node --check api/_lib/db.js api/_lib/http.js api/_lib/rate-limit.js api/app-config.js api/auth-google.js api/auth-session.js api/auth-logout.js api/report-user.js api/profile.js api/social.js api/messages.js api/topic-comments.js api/lecture-chat.js api/blob-upload.js api/admin.js js/app.js js/lectures.js js/profile.js js/resources.js js/shared.js js/tests.js admin/admin.js scripts/organize_resources.js"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0",
-    "@vercel/blob": "^1.1.1"
+    "@vercel/blob": "^1.1.1",
+    "google-auth-library": "^9.15.1"
   }
 }
