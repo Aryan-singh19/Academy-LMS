@@ -15,6 +15,7 @@ async function verifyGoogleToken(idToken, audience) {
 async function upsertGoogleStudent(sql, payload, deviceId) {
     const googleSub = String(payload.sub || '').trim();
     const email = String(payload.email || '').trim().toLowerCase();
+    const normalizedEmail = email || null;
     const displayName = String(payload.name || 'Student').trim().slice(0, 60) || 'Student';
     const avatarUrl = String(payload.picture || '').trim();
     const emailVerified = Boolean(payload.email_verified);
@@ -23,9 +24,14 @@ async function upsertGoogleStudent(sql, payload, deviceId) {
         SELECT id
         FROM students
         WHERE google_sub = ${googleSub}
-           OR (${email || null} IS NOT NULL AND email = ${email || null})
+           OR email = ${normalizedEmail}
            OR device_id = ${deviceId}
-        ORDER BY CASE WHEN google_sub = ${googleSub} THEN 0 WHEN email = ${email || null} THEN 1 ELSE 2 END
+        ORDER BY CASE
+            WHEN google_sub = ${googleSub} THEN 0
+            WHEN email = ${normalizedEmail} THEN 1
+            WHEN device_id = ${deviceId} THEN 2
+            ELSE 3
+        END
         LIMIT 1
     `;
 
@@ -37,7 +43,7 @@ async function upsertGoogleStudent(sql, payload, deviceId) {
                 display_name = ${displayName},
                 google_sub = ${googleSub},
                 auth_provider = 'google',
-                email = ${email || null},
+                email = ${normalizedEmail},
                 email_verified = ${emailVerified},
                 avatar_url = CASE WHEN ${avatarUrl} <> '' THEN ${avatarUrl} ELSE avatar_url END,
                 last_seen_at = NOW(),
@@ -68,7 +74,7 @@ async function upsertGoogleStudent(sql, payload, deviceId) {
             ${displayName},
             ${googleSub},
             'google',
-            ${email || null},
+            ${normalizedEmail},
             ${emailVerified},
             ${displayName.toLowerCase().replace(/[^a-z0-9]+/g, '-')},
             ${avatarUrl},
