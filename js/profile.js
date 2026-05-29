@@ -469,7 +469,7 @@ async function runBlobUpload(file, payload) {
         throw new Error('Blob uploads are not active on this deployment yet. Delete the old wrong token, keep only BLOB_READ_WRITE_TOKEN in Vercel, then redeploy once.');
     }
 
-    const { upload } = await import('https://esm.sh/@vercel/blob/client');
+    const { upload } = await import('https://esm.sh/@vercel/blob@2.4.0/client');
     return upload(payload.pathname, file, {
         access: 'public',
         handleUploadUrl: '/api/blob-upload',
