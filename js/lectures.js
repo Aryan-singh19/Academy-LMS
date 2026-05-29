@@ -1,5 +1,6 @@
 let activeLectureSubject = 'all';
-let activeLectureIndex = 0;
+let activeLectureKey = '';
+let lectureSearchQuery = '';
 let lectureChatState = {
     local: { messages: [], onlineCount: 0 },
     global: { messages: [], onlineCount: 0 }
@@ -18,21 +19,28 @@ function getLectureSubjects() {
     ];
 }
 
-function getFilteredLectures() {
-    return (window.lectureLibrary || []).filter((item) => activeLectureSubject === 'all' || item.subject === activeLectureSubject);
-}
-
-function getActiveLecture() {
-    const lectures = getFilteredLectures();
-    return lectures[activeLectureIndex] || null;
-}
-
 function lectureKeyFor(lecture) {
     return lecture.lectureKey || `${lecture.subject}-${lecture.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 }
 
+function getFilteredLectures() {
+    return (window.lectureLibrary || []).filter((item) => {
+        if (activeLectureSubject !== 'all' && item.subject !== activeLectureSubject) return false;
+        if (!lectureSearchQuery) return true;
+        const haystack = `${item.subjectLabel} ${item.title} ${item.lecturer} ${item.description}`.toLowerCase();
+        return haystack.includes(lectureSearchQuery);
+    });
+}
+
+function getActiveLecture() {
+    const lectures = getFilteredLectures();
+    const matched = lectures.find((item) => lectureKeyFor(item) === activeLectureKey);
+    return matched || lectures[0] || null;
+}
+
 function renderLecturePage() {
     renderLectureTabs();
+    renderLectureToolbar();
     renderLectureList();
     renderLectureViewer();
 }
@@ -43,12 +51,36 @@ function renderLectureTabs() {
     `).join('');
 }
 
+function renderLectureToolbar() {
+    const lectures = getFilteredLectures();
+    const target = document.getElementById('lectureToolbar');
+    if (!target) return;
+
+    target.innerHTML = `
+        <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+            <div class="metric-subtext">${lectures.length} lecture options available</div>
+            <input id="lectureSearchInput" class="search-input md:max-w-md" placeholder="Search by topic, lecturer, or subject" value="${window.ACADEMY.escapeForAttribute(lectureSearchQuery)}">
+        </div>
+    `;
+
+    const input = document.getElementById('lectureSearchInput');
+    if (input) {
+        input.addEventListener('input', (event) => {
+            lectureSearchQuery = String(event.target.value || '').trim().toLowerCase();
+            const first = getFilteredLectures()[0];
+            activeLectureKey = first ? lectureKeyFor(first) : '';
+            renderLecturePage();
+        });
+    }
+}
+
 function renderLectureList() {
     const lectures = getFilteredLectures();
-    if (activeLectureIndex >= lectures.length) activeLectureIndex = 0;
+    const active = getActiveLecture();
+    activeLectureKey = active ? lectureKeyFor(active) : '';
 
-    document.getElementById('lectureList').innerHTML = lectures.length ? lectures.map((lecture, index) => `
-        <button onclick="selectLecture(${index})" class="continue-card ${activeLectureIndex === index ? 'ring-2 ring-blue-200' : ''}">
+    document.getElementById('lectureList').innerHTML = lectures.length ? lectures.map((lecture) => `
+        <button onclick="selectLecture('${lectureKeyFor(lecture)}')" class="continue-card ${activeLectureKey === lectureKeyFor(lecture) ? 'ring-2 ring-blue-200' : ''}">
             <p class="metric-label">${lecture.subjectLabel}</p>
             <h3 class="text-lg font-bold text-white mt-2">${lecture.title}</h3>
             <p class="metric-subtext mt-2">${lecture.lecturer}</p>
@@ -56,8 +88,8 @@ function renderLectureList() {
         </button>
     `).join('') : `
         <article class="panel-card p-5">
-            <h3 class="text-xl font-bold text-white">No lecture links yet</h3>
-            <p class="text-slate-400 mt-2">Add YouTube links in \`js/lecture-library.js\` and they will appear here.</p>
+            <h3 class="text-xl font-bold text-white">No lecture links match this filter</h3>
+            <p class="text-slate-400 mt-2">Try a different subject tab or clear the search text.</p>
         </article>
     `;
 }
@@ -72,16 +104,36 @@ function renderLectureViewer() {
     }
 
     target.innerHTML = `
-        <p class="metric-label">${lecture.subjectLabel} • Embedded lecture view</p>
+        <p class="metric-label">${lecture.subjectLabel} • Flexible lecture view</p>
         <h2 class="text-2xl font-extrabold text-white mt-2">${lecture.title}</h2>
         <p class="text-slate-400 mt-2">${lecture.description}</p>
-        <div class="mt-5 rounded-[1.25rem] overflow-hidden border border-blue-100 shadow-lg">
-            <iframe src="${normalizeLectureUrl(lecture.url)}" title="${lecture.title}" class="w-full h-[520px]" allowfullscreen></iframe>
+        <div class="flex flex-wrap gap-3 mt-4">
+            <a class="secondary-cta text-sm !py-2 !px-4" href="${lecture.url}" target="_blank" rel="noreferrer">Open on YouTube</a>
         </div>
+        ${renderLectureEmbed(lecture)}
     `;
 
     renderLectureCommunity();
     queueLecturePresence();
+}
+
+function renderLectureEmbed(lecture) {
+    const embedUrl = normalizeLectureUrl(lecture.url);
+    const embeddable = /^https:\/\/www\.youtube\.com\/embed\//.test(embedUrl);
+
+    if (!embeddable) {
+        return `
+            <div class="study-rail-block mt-5">
+                <p class="text-sm text-slate-300">This item opens directly on YouTube instead of inline embed. Students can still pick any lecture from the left list and switch instantly.</p>
+            </div>
+        `;
+    }
+
+    return `
+        <div class="mt-5 rounded-[1.25rem] overflow-hidden border border-blue-100 shadow-lg">
+            <iframe src="${embedUrl}" title="${lecture.title}" class="w-full h-[520px]" allowfullscreen></iframe>
+        </div>
+    `;
 }
 
 function renderLectureCommunity() {
@@ -103,7 +155,7 @@ function renderLectureCommunity() {
                     ${renderLectureMessages('local')}
                 </div>
                 <div class="space-y-3">
-                    <textarea id="localLectureMessage" class="note-input !min-h-[7rem]" placeholder="Ask about this lecture, timestamp a tough section, or admit that the professor just speedran three concepts in 40 seconds."></textarea>
+                    <textarea id="localLectureMessage" class="note-input !min-h-[7rem]" placeholder="Ask about this lecture, timestamp a tough section, or drop a revision shortcut."></textarea>
                     <button onclick="sendLectureMessage('local')" class="primary-cta">Send to this lecture room</button>
                 </div>
             </section>
@@ -116,7 +168,7 @@ function renderLectureCommunity() {
                     ${renderLectureMessages('global')}
                 </div>
                 <div class="space-y-3">
-                    <textarea id="globalLectureMessage" class="note-input !min-h-[7rem]" placeholder="Share a study tip, ask who is revising tonight, or drop the one topic that just personally offended you."></textarea>
+                    <textarea id="globalLectureMessage" class="note-input !min-h-[7rem]" placeholder="Discuss strategy, playlists, and exam prep rhythm with other students."></textarea>
                     <button onclick="sendLectureMessage('global')" class="secondary-cta">Send to global lounge</button>
                 </div>
             </section>
@@ -132,7 +184,7 @@ function formatOnlineCount(count) {
 function renderLectureMessages(scope) {
     const messages = lectureChatState[scope].messages || [];
     if (!messages.length) {
-        return '<p class="text-slate-400">No messages yet. Be the calm responsible scholar who starts the thread.</p>';
+        return '<p class="text-slate-400">No messages yet. Start the thread with a useful note for the next student.</p>';
     }
     return messages.map((message) => `
         <article class="chat-message">
@@ -145,6 +197,7 @@ function renderLectureMessages(scope) {
 
 function normalizeLectureUrl(url) {
     if (url.indexOf('embed') !== -1) return url;
+    if (url.indexOf('/results?') !== -1) return url;
     const match = url.match(/[?&]v=([^&]+)/);
     if (match) return `https://www.youtube.com/embed/${match[1]}`;
     return url;
@@ -152,12 +205,13 @@ function normalizeLectureUrl(url) {
 
 function setLectureSubject(subject) {
     activeLectureSubject = subject;
-    activeLectureIndex = 0;
+    const filtered = getFilteredLectures();
+    activeLectureKey = filtered[0] ? lectureKeyFor(filtered[0]) : '';
     renderLecturePage();
 }
 
-function selectLecture(index) {
-    activeLectureIndex = index;
+function selectLecture(lectureKey) {
+    activeLectureKey = lectureKey;
     renderLecturePage();
 }
 
@@ -257,6 +311,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!allowed) return;
 
     window.ACADEMY.scheduleCloudSync();
+    const initial = getFilteredLectures()[0];
+    activeLectureKey = initial ? lectureKeyFor(initial) : '';
     renderLecturePage();
     document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') {
