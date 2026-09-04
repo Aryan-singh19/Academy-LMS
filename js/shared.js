@@ -509,7 +509,7 @@
         if (window.location.protocol === 'file:') return true;
         await loadAppConfig();
         await hydrateAuthSession();
-        if (isAuthenticated()) {
+        if (isAuthenticated() || state.deviceId || !appConfig.googleClientId) {
             return true;
         }
 

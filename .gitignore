@@ -5,6 +5,8 @@ Thumbs.db
 node_modules/
 .vercel/
 .env
-.env.*
+.env.local
+.env.*.local
+!.env.example
 vercel.env
 vercel-import.env

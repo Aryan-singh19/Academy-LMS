@@ -1,18 +1,27 @@
 let cachedSql;
 const crypto = require('crypto');
 const { parseCookies } = require('./http');
+const { createMockSql } = require('./mock-db');
 
 async function getSql() {
     if (cachedSql) return cachedSql;
 
     const databaseUrl = process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.STORAGE_URL;
     if (!databaseUrl) {
-        throw new Error('Database URL missing. Set DATABASE_URL or POSTGRES_URL in Vercel.');
+        console.warn('[AI Studio] Database URL missing — using in-memory mock store.');
+        cachedSql = createMockSql();
+        return cachedSql;
     }
 
-    const { neon } = await import('@neondatabase/serverless');
-    cachedSql = neon(databaseUrl);
-    return cachedSql;
+    try {
+        const { neon } = await import('@neondatabase/serverless');
+        cachedSql = neon(databaseUrl);
+        return cachedSql;
+    } catch (err) {
+        console.warn('[AI Studio] Failed to connect to Neon database, falling back to in-memory mock:', err.message);
+        cachedSql = createMockSql();
+        return cachedSql;
+    }
 }
 
 async function getStudentByDevice(sql, deviceId) {
