@@ -5,13 +5,7 @@ const fs = require('fs');
 // Load environment variables from .env if present
 const envPath = path.join(__dirname, '.env');
 if (fs.existsSync(envPath)) {
-    if (typeof process.loadEnvFile === 'function') {
-        try {
-            process.loadEnvFile(envPath);
-        } catch (e) {
-            console.warn('[Env] Failed to load .env:', e.message);
-        }
-    } else {
+    try {
         const content = fs.readFileSync(envPath, 'utf8');
         for (const line of content.split('\n')) {
             const trimmed = line.trim();
@@ -20,13 +14,19 @@ if (fs.existsSync(envPath)) {
             if (eqIdx !== -1) {
                 const key = trimmed.slice(0, eqIdx).trim();
                 const val = trimmed.slice(eqIdx + 1).trim();
-                if (!process.env[key]) {
+                if (val && (!process.env[key] || process.env[key] === '')) {
                     process.env[key] = val;
                 }
             }
         }
+    } catch (e) {
+        console.warn('[Env] Failed to read .env:', e.message);
     }
 }
+if (!process.env.GOOGLE_CLIENT_ID) {
+    process.env.GOOGLE_CLIENT_ID = '659669320220-hnaqggmsjl9vobtjfhfngen7ec9462e5.apps.googleusercontent.com';
+}
+
 
 const app = express();
 const PORT = 3000;

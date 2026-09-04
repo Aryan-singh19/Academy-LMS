@@ -88,12 +88,14 @@ async function upsertGoogleStudent(sql, payload, deviceId) {
     return rows[0];
 }
 
+const DEFAULT_GOOGLE_CLIENT_ID = '659669320220-hnaqggmsjl9vobtjfhfngen7ec9462e5.apps.googleusercontent.com';
+
 module.exports = async function handler(req, res) {
     if (!allowMethods(req, res, ['POST'])) return;
     if (!applyRateLimit(req, res, { scope: 'auth-google', limit: 20, windowMs: 60000 })) return;
 
     try {
-        const googleClientId = String(process.env.GOOGLE_CLIENT_ID || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '').trim();
+        const googleClientId = String(process.env.GOOGLE_CLIENT_ID || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID).trim();
         if (!googleClientId) {
             sendJson(res, 503, { error: 'GOOGLE_CLIENT_ID is not configured yet.' });
             return;

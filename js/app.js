@@ -10,6 +10,18 @@ let lastSelectionText = '';
 let lastHighlightForTopic = {};
 
 function startApp() {
+    if (!window.ACADEMY.isAuthenticated()) {
+        const line = document.getElementById('authStatusLine');
+        if (line) {
+            line.textContent = 'Sign in with Google first, then Academy LMS will open your study desk automatically.';
+        }
+        const mount = document.getElementById('googleSigninMount');
+        if (mount) {
+            mount.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
+    }
+
     const hero = document.getElementById('heroSection');
     if (hero) hero.classList.add('hero-exit');
     setTimeout(() => {
@@ -69,15 +81,11 @@ function renderGoogleSignin() {
     const config = window.ACADEMY.getAppConfig();
     if (!mount) return;
     if (!config.googleClientId) {
-        mount.innerHTML = `
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/50 border border-emerald-800/50 text-xs text-emerald-300">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>Active study session • Synced with Neon DB</span>
-            </div>
-        `;
+        mount.innerHTML = '<div class="text-sm text-red-500">Google sign-in is not live yet because `GOOGLE_CLIENT_ID` is missing in Vercel.</div>';
         return;
     }
     if (!window.google || !window.google.accounts || !window.google.accounts.id) {
+        mount.innerHTML = '<div class="text-sm text-slate-400">Loading Google sign-in services...</div>';
         window.setTimeout(renderGoogleSignin, 350);
         return;
     }
@@ -129,7 +137,7 @@ function syncAuthStatusLine() {
         if (startBtn) {
             startBtn.textContent = 'Open Study Desk';
         }
-        line.textContent = `${student.display_name} is signed in. Your study progress follows your account across devices.`;
+        line.textContent = `${student.display_name} is signed in. Your study progress now follows your account instead of acting like a random browser stranger.`;
         return;
     }
     const badge = document.getElementById('signinStateBadge');
@@ -139,10 +147,12 @@ function syncAuthStatusLine() {
         badge.textContent = '';
     }
     if (startBtn) {
-        startBtn.textContent = 'Enter Study Workspace';
+        startBtn.textContent = 'Sign in to continue';
     }
-    const studentName = window.ACADEMY.getStudentName() || 'Student';
-    line.textContent = `Ready to study, ${studentName}. Notes, highlights, and quiz scores will automatically save and sync with your Neon database.`;
+    const params = new URLSearchParams(window.location.search);
+    line.textContent = params.get('signin') === 'required'
+        ? 'Sign in with Google first, then we will take you straight into the student workspace you asked for.'
+        : 'Sign in with Google to keep your account, profile, and study progress tied together across devices.';
 }
 
 function hydrateStudentName() {
