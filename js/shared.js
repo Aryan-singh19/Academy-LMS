@@ -606,8 +606,85 @@
         signInWithGoogle,
         logoutStudent,
         scheduleCloudSync,
-        syncStateToCloud
+        syncStateToCloud,
+        initDynamicHeaderNav
     };
+
+    async function initDynamicHeaderNav() {
+        const navElements = document.querySelectorAll('#academyHeaderNav, #publicHeaderNav, [data-academy-nav]');
+        if (!navElements.length) return;
+        try {
+            await hydrateAuthSession();
+            const authed = isAuthenticated();
+            const pathname = window.location.pathname;
+            const isInHtmlDir = pathname.includes('/html/') || pathname.endsWith('/html');
+
+            const homeHref = isInHtmlDir ? '../index.html' : 'index.html';
+            const topicsHref = isInHtmlDir ? '../index.html?view=topics' : 'index.html?view=topics';
+            const aboutHref = isInHtmlDir ? 'about.html' : 'html/about.html';
+            const policyHref = isInHtmlDir ? 'privacy.html' : 'html/privacy.html';
+            const contactHref = isInHtmlDir ? 'contact.html' : 'html/contact.html';
+            const lecturesHref = isInHtmlDir ? 'lectures.html' : 'html/lectures.html';
+            const resourcesHref = isInHtmlDir ? 'resources.html' : 'html/resources.html';
+            const testsHref = isInHtmlDir ? 'tests.html' : 'html/tests.html';
+            const profileHref = isInHtmlDir ? 'profile.html' : 'html/profile.html';
+
+            const isCurrent = (page) => {
+                if (page === 'home') return (pathname.endsWith('index.html') || pathname.endsWith('/')) && !window.location.search.includes('view=topics');
+                if (page === 'topics') return (pathname.endsWith('index.html') || pathname.endsWith('/')) && window.location.search.includes('view=topics');
+                if (page === 'about') return pathname.includes('about.html');
+                if (page === 'policy') return pathname.includes('privacy.html') || pathname.includes('terms.html');
+                if (page === 'contact') return pathname.includes('contact.html');
+                if (page === 'lectures') return pathname.includes('lectures.html');
+                if (page === 'resources') return pathname.includes('resources.html');
+                if (page === 'tests') return pathname.includes('tests.html');
+                if (page === 'profile') return pathname.includes('profile.html');
+                return false;
+            };
+
+            navElements.forEach((nav) => {
+                if (!authed) {
+                    // Strictly 4 tabs atop for students who have not logged in yet
+                    nav.innerHTML = `
+                        <a href="${homeHref}" class="nav-pill ${isCurrent('home') ? 'nav-pill-active' : ''}">Home</a>
+                        <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
+                        <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
+                        <a href="${contactHref}" class="nav-pill ${isCurrent('contact') ? 'nav-pill-active' : ''}">Contact</a>
+                    `;
+                } else {
+                    // All 7 tabs visible for logged in students
+                    const student = getSignedInStudent();
+                    const initial = (student && student.display_name ? student.display_name.charAt(0) : 'P').toUpperCase();
+                    const avatar = getProfileAvatar();
+                    const avatarMarkup = avatar
+                        ? `<img src="${escapeForAttribute(avatar)}" class="w-5 h-5 rounded-full object-cover inline-block mr-1" alt="Avatar" />`
+                        : `<span class="nav-avatar-badge mr-1">${initial}</span>`;
+
+                    nav.innerHTML = `
+                        <a href="${topicsHref}" class="nav-pill ${isCurrent('topics') ? 'nav-pill-active' : ''}">Topics</a>
+                        <a href="${lecturesHref}" class="nav-pill ${isCurrent('lectures') ? 'nav-pill-active' : ''}">Lectures</a>
+                        <a href="${resourcesHref}" class="nav-pill ${isCurrent('resources') ? 'nav-pill-active' : ''}">Resources</a>
+                        <a href="${testsHref}" class="nav-pill ${isCurrent('tests') ? 'nav-pill-active' : ''}">Tests</a>
+                        <a href="${profileHref}" class="nav-pill nav-pill-profile ${isCurrent('profile') ? 'nav-pill-active' : ''}">
+                            ${avatarMarkup}
+                            <span>Profile</span>
+                        </a>
+                        <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
+                        <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
+                        <button type="button" onclick="window.ACADEMY.logoutStudent().then(() => { window.location.href = '${homeHref}'; })" class="nav-pill text-slate-400 hover:text-white" title="Sign out of student account">Logout</button>
+                    `;
+                }
+            });
+        } catch (e) {
+            console.error('Error hydrating header navigation:', e);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initDynamicHeaderNav);
+    } else {
+        initDynamicHeaderNav();
+    }
 
     if (window.location.protocol !== 'file:') {
         window.addEventListener('online', () => {

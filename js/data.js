@@ -447,6 +447,332 @@ const coursesData = [
             { id: 'cs603-cg-u4', unitNumber: 4, title: 'Curves & Surfaces', topics: [{id: 'cg-u4t1', title: 'Bezier Curves'}, {id: 'cg-u4t2', title: 'B-Spline & NURBS'}, {id: 'cg-u4t3', title: 'Fractals, Procedural Curves & Terrain'}, {id: 'cg-u4t4', title: 'Surface Patches & Subdivision'}] },
             { id: 'cs603-cg-u5', unitNumber: 5, title: 'Animation & Rendering', topics: [{id: 'cg-u5t1', title: 'Keyframing & Kinematics'}, {id: 'cg-u5t2', title: 'Ray Tracing Fundamentals'}, {id: 'cg-u5t3', title: 'Rendering Pipeline, Z-Testing & Real-Time Graphics'}, {id: 'cg-u5t4', title: 'Particle Systems, Physics & Motion Capture'}] }
         ]
+    },
+
+    // === SEMESTER 7 COURSES ===
+    {
+        id: 'cs701',
+        semester: 7,
+        title: 'Software Architectures',
+        code: 'CS-701',
+        description: 'System-level architectural styles, quality attribute tactics (ATAM), microservices, API gateways, and component-based software engineering.',
+        units: [
+            {
+                id: 'cs701-u1',
+                unitNumber: 1,
+                title: 'Introduction to Software Architecture & Styles',
+                topics: [
+                    { id: 'cs701-u1t1', title: 'What is Software Architecture? Stakeholders & 4+1 View Model' },
+                    { id: 'cs701-u1t2', title: 'Architectural Styles vs Design Patterns: Component & Connector' },
+                    { id: 'cs701-u1t3', title: 'Data-Centered (Blackboard) & Data-Flow (Pipe & Filter) Styles' },
+                    { id: 'cs701-u1t4', title: 'Call-and-Return Styles: Layered Architecture, MVC & Tiering' },
+                    { id: 'cs701-u1t5', title: 'Event-Driven Architectures & Publish-Subscribe Systems' }
+                ]
+            },
+            {
+                id: 'cs701-u2',
+                unitNumber: 2,
+                title: 'Quality Attributes & Tactical Design',
+                topics: [
+                    { id: 'cs701-u2t1', title: 'Quality Attribute Scenarios: Availability, Performance, Modifiability' },
+                    { id: 'cs701-u2t2', title: 'Security Tactics, Testability & Usability in System Design' },
+                    { id: 'cs701-u2t3', title: 'Trade-Off Analysis: Latency, Throughput & Consistency' },
+                    { id: 'cs701-u2t4', title: 'Fault Tolerance Tactics: Heartbeats, Redundancy & Graceful Degradation' }
+                ]
+            },
+            {
+                id: 'cs701-u3',
+                unitNumber: 3,
+                title: 'Design, ADLs & Architectural Evaluation',
+                topics: [
+                    { id: 'cs701-u3t1', title: 'Attribute-Driven Design (ADD) Method' },
+                    { id: 'cs701-u3t2', title: 'Architectural Description Languages (ADLs): Wright, Acme & UML' },
+                    { id: 'cs701-u3t3', title: 'Documenting Software Architectures: Views, Interfaces & C4 Model' },
+                    { id: 'cs701-u3t4', title: 'Architecture Evaluation: ATAM (Tradeoff Analysis) & CBAM' }
+                ]
+            },
+            {
+                id: 'cs701-u4',
+                unitNumber: 4,
+                title: 'Distributed, Cloud-Native & Microservices',
+                topics: [
+                    { id: 'cs701-u4t1', title: 'Service-Oriented Architecture (SOA) vs Microservices' },
+                    { id: 'cs701-u4t2', title: 'Microservices Decomposition by Subdomain & Bounded Context' },
+                    { id: 'cs701-u4t3', title: 'API Gateway, Service Mesh & Circuit Breaker Pattern' },
+                    { id: 'cs701-u4t4', title: 'Event Sourcing, CQRS & Serverless (FaaS) Architectures' }
+                ]
+            },
+            {
+                id: 'cs701-u5',
+                unitNumber: 5,
+                title: 'Component-Based Engineering & Evolution',
+                topics: [
+                    { id: 'cs701-u5t1', title: 'Component-Based Software Engineering (CBSE) & Contracts' },
+                    { id: 'cs701-u5t2', title: 'Software Product Lines (SPL) & Domain Engineering' },
+                    { id: 'cs701-u5t3', title: 'Architectural Decay, Erosion & Technical Debt Management' },
+                    { id: 'cs701-u5t4', title: 'Architecture Recovery, Conformance Checking & Refactoring' }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'cs702-bd',
+        semester: 7,
+        title: 'Big Data',
+        code: 'CS-702 (Big Data)',
+        description: 'Hadoop distributed file system (HDFS), MapReduce execution flows, Apache Spark in-memory analytics, NoSQL paradigms, and real-time Kafka streaming.',
+        units: [
+            {
+                id: 'cs702bd-u1',
+                unitNumber: 1,
+                title: 'Big Data Fundamentals & Distributed Storage',
+                topics: [
+                    { id: 'cs702bd-u1t1', title: '5 V’s of Big Data: Volume, Velocity, Variety, Veracity, Value' },
+                    { id: 'cs702bd-u1t2', title: 'HDFS Architecture: NameNode, Secondary NameNode & DataNodes' },
+                    { id: 'cs702bd-u1t3', title: 'HDFS Block Replication, Rack Awareness & Heartbeat Protocol' },
+                    { id: 'cs702bd-u1t4', title: 'Hadoop YARN Architecture: ResourceManager & NodeManagers' }
+                ]
+            },
+            {
+                id: 'cs702bd-u2',
+                unitNumber: 2,
+                title: 'MapReduce Distributed Computing',
+                topics: [
+                    { id: 'cs702bd-u2t1', title: 'MapReduce Programming Model: Mappers, Reducers & Combiners' },
+                    { id: 'cs702bd-u2t2', title: 'Shuffle & Sort Phase, Partitioners & Spill Management' },
+                    { id: 'cs702bd-u2t3', title: 'Classic Algorithms: Word Count, Inverted Index & Matrix Multiply' },
+                    { id: 'cs702bd-u2t4', title: 'Distributed Joins: Map-Side Join vs Reduce-Side Join' }
+                ]
+            },
+            {
+                id: 'cs702bd-u3',
+                unitNumber: 3,
+                title: 'Apache Spark & In-Memory Compute',
+                topics: [
+                    { id: 'cs702bd-u3t1', title: 'Spark Ecosystem: Driver, Cluster Manager, Executors & Lineage' },
+                    { id: 'cs702bd-u3t2', title: 'Resilient Distributed Datasets (RDDs): Transformations vs Actions' },
+                    { id: 'cs702bd-u3t3', title: 'Spark SQL, DataFrames & Catalyst Optimizer Engine' },
+                    { id: 'cs702bd-u3t4', title: 'Spark Streaming & Structured Streaming Architecture' }
+                ]
+            },
+            {
+                id: 'cs702bd-u4',
+                unitNumber: 4,
+                title: 'NoSQL Databases & Distributed Consensus',
+                topics: [
+                    { id: 'cs702bd-u4t1', title: 'CAP Theorem, PACELC Theorem & BASE vs ACID Models' },
+                    { id: 'cs702bd-u4t2', title: 'Key-Value (Redis) & Document Stores (MongoDB BSON & Replica Sets)' },
+                    { id: 'cs702bd-u4t3', title: 'Column-Family: Cassandra Consistent Hashing, Gossip & LSM Trees' },
+                    { id: 'cs702bd-u4t4', title: 'Graph Databases: Neo4j Cypher & Index-Free Adjacency' }
+                ]
+            },
+            {
+                id: 'cs702bd-u5',
+                unitNumber: 5,
+                title: 'Big Data Pipelines & Streaming Architectures',
+                topics: [
+                    { id: 'cs702bd-u5t1', title: 'Apache Kafka Architecture: Topics, Partitions & Consumer Groups' },
+                    { id: 'cs702bd-u5t2', title: 'Lambda Architecture vs Kappa Architecture Data Pipelines' },
+                    { id: 'cs702bd-u5t3', title: 'Data Lakes, Parquet Columns & Lakehouses (Delta Lake / Iceberg)' },
+                    { id: 'cs702bd-u5t4', title: 'Big Data Governance, Kerberos Security & Apache Ranger' }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'cs702-wmc',
+        semester: 7,
+        title: 'Wireless & Mobile Computing',
+        code: 'CS-702 (Wireless)',
+        description: 'Wireless propagation, fading channels, MAC protocols (CSMA/CA, CDMA), cellular architectures (GSM, 4G LTE, 5G), Mobile IP, and MANET routing.',
+        units: [
+            {
+                id: 'cs702wmc-u1',
+                unitNumber: 1,
+                title: 'Wireless Transmission & Physical Layer',
+                topics: [
+                    { id: 'cs702wmc-u1t1', title: 'Electromagnetic Spectrum & Radio Frequency Propagation' },
+                    { id: 'cs702wmc-u1t2', title: 'Modulation: FSK, PSK, QAM & OFDM Principles' },
+                    { id: 'cs702wmc-u1t3', title: 'Signal Fading: Path Loss, Multipath Fading & Doppler Shift' },
+                    { id: 'cs702wmc-u1t4', title: 'Antennas, Beamforming & Multi-Input Multi-Output (MIMO)' }
+                ]
+            },
+            {
+                id: 'cs702wmc-u2',
+                unitNumber: 2,
+                title: 'Wireless Medium Access Control (MAC)',
+                topics: [
+                    { id: 'cs702wmc-u2t1', title: 'Hidden Terminal & Exposed Terminal Problems in Wireless' },
+                    { id: 'cs702wmc-u2t2', title: 'Multiple Access: FDMA, TDMA, CDMA & Walsh Orthogonal Codes' },
+                    { id: 'cs702wmc-u2t3', title: 'IEEE 802.11 Wi-Fi: CSMA/CA, RTS/CTS Handshake & NAV' },
+                    { id: 'cs702wmc-u2t4', title: 'Bluetooth Architecture: Piconet, Scatternet & Frequency Hopping' }
+                ]
+            },
+            {
+                id: 'cs702wmc-u3',
+                unitNumber: 3,
+                title: 'Cellular Networks: 2G GSM to 5G NR',
+                topics: [
+                    { id: 'cs702wmc-u3t1', title: 'Cellular Concept: Frequency Reuse, Cluster Size N & Cell Splitting' },
+                    { id: 'cs702wmc-u3t2', title: 'GSM Architecture: BTS, BSC, MSC, HLR, VLR & Security' },
+                    { id: 'cs702wmc-u3t3', title: 'Handoff Strategies: Hard Handoff, Soft Handoff & Power Control' },
+                    { id: 'cs702wmc-u3t4', title: '4G LTE vs 5G NR: Network Slicing, Massive MIMO & Millimeter Wave' }
+                ]
+            },
+            {
+                id: 'cs702wmc-u4',
+                unitNumber: 4,
+                title: 'Mobile Network Layer & Mobile IP',
+                topics: [
+                    { id: 'cs702wmc-u4t1', title: 'Mobile IP Architecture: Home Agent (HA), Foreign Agent & CoA' },
+                    { id: 'cs702wmc-u4t2', title: 'IP Tunneling & Encapsulation: IP-in-IP & Minimal Encapsulation' },
+                    { id: 'cs702wmc-u4t3', title: 'Triangle Routing Problem & Route Optimization Techniques' },
+                    { id: 'cs702wmc-u4t4', title: 'Dynamic Host Configuration Protocol (DHCP) for Mobile Devices' }
+                ]
+            },
+            {
+                id: 'cs702wmc-u5',
+                unitNumber: 5,
+                title: 'Mobile Transport, MANET & IoT Protocols',
+                topics: [
+                    { id: 'cs702wmc-u5t1', title: 'TCP over Wireless: Packet Loss vs Congestion Misinterpretations' },
+                    { id: 'cs702wmc-u5t2', title: 'Mobile TCP Variants: Indirect-TCP (I-TCP), Snooping TCP & M-TCP' },
+                    { id: 'cs702wmc-u5t3', title: 'Mobile Ad-Hoc Networks (MANET): DSDV vs AODV & DSR Routing' },
+                    { id: 'cs702wmc-u5t4', title: 'Wireless Sensor Networks (WSN) & Low-Power IoT (ZigBee, LoRaWAN)' }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'cs703-cis',
+        semester: 7,
+        title: 'Cryptography & Information Security',
+        code: 'CS-703 (InfoSec)',
+        description: 'Classical ciphers, DES/AES symmetric cryptography, RSA/ECC public key systems, SHA-256 hash algorithms, digital certificates, and network security defenses.',
+        units: [
+            {
+                id: 'cs703cis-u1',
+                unitNumber: 1,
+                title: 'Foundations of Security & Classical Cryptography',
+                topics: [
+                    { id: 'cs703cis-u1t1', title: 'CIA Triad, Security Attacks (Passive vs Active) & Threat Models' },
+                    { id: 'cs703cis-u1t2', title: 'Substitution Ciphers: Caesar, Playfair, Monoalphabetic & Vigenère' },
+                    { id: 'cs703cis-u1t3', title: 'Transposition Ciphers: Rail Fence, Columnar & One-Time Pad' },
+                    { id: 'cs703cis-u1t4', title: 'Modular Arithmetic, Euclidean Algorithm & Extended GCD' },
+                    { id: 'cs703cis-u1t5', title: 'Fermat’s Little Theorem, Euler’s Totient & Chinese Remainder Theorem' }
+                ]
+            },
+            {
+                id: 'cs703cis-u2',
+                unitNumber: 2,
+                title: 'Symmetric Ciphers: DES, AES & Modes',
+                topics: [
+                    { id: 'cs703cis-u2t1', title: 'Feistel Cipher Architecture: Confusion, Diffusion & Round Keys' },
+                    { id: 'cs703cis-u2t2', title: 'Data Encryption Standard (DES): 16 Rounds, S-Boxes & 3DES' },
+                    { id: 'cs703cis-u2t3', title: 'Advanced Encryption Standard (AES): SubBytes, ShiftRows, MixColumns' },
+                    { id: 'cs703cis-u2t4', title: 'Block Cipher Modes of Operation: ECB, CBC, CFB, OFB & CTR' },
+                    { id: 'cs703cis-u2t5', title: 'Stream Ciphers: RC4 Keystream Generation & LFSR' }
+                ]
+            },
+            {
+                id: 'cs703cis-u3',
+                unitNumber: 3,
+                title: 'Asymmetric Cryptography & Key Management',
+                topics: [
+                    { id: 'cs703cis-u3t1', title: 'Public Key Principles: One-Way Trapdoor Functions & Number Theory' },
+                    { id: 'cs703cis-u3t2', title: 'RSA Cryptosystem: Key Generation, Encryption, Proof & Factoring Attacks' },
+                    { id: 'cs703cis-u3t3', title: 'Diffie-Hellman Key Exchange: Discrete Logarithm & MITM Attack' },
+                    { id: 'cs703cis-u3t4', title: 'Elliptic Curve Cryptography (ECC) & ElGamal Cryptosystem' }
+                ]
+            },
+            {
+                id: 'cs703cis-u4',
+                unitNumber: 4,
+                title: 'Integrity, Hash Functions & Digital Signatures',
+                topics: [
+                    { id: 'cs703cis-u4t1', title: 'Cryptographic Hash Properties: Preimage & Collision Resistance' },
+                    { id: 'cs703cis-u4t2', title: 'Secure Hash Algorithm: SHA-256 Architecture & Merkle-Damgård' },
+                    { id: 'cs703cis-u4t3', title: 'Message Authentication Codes (HMAC) & Birthday Paradox Attacks' },
+                    { id: 'cs703cis-u4t4', title: 'Digital Signatures: RSA Signatures, DSA & ECDSA Verification' },
+                    { id: 'cs703cis-u4t5', title: 'Public Key Infrastructure (PKI): X.509 Certificates & Trust Chains' }
+                ]
+            },
+            {
+                id: 'cs703cis-u5',
+                unitNumber: 5,
+                title: 'Network Defenses, Protocols & Access Control',
+                topics: [
+                    { id: 'cs703cis-u5t1', title: 'Transport Layer Security: SSL/TLS Handshake & Session Keys' },
+                    { id: 'cs703cis-u5t2', title: 'IPSec Protocol Suite: AH vs ESP, Tunnel Mode vs Transport Mode' },
+                    { id: 'cs703cis-u5t3', title: 'Kerberos Authentication Architecture: KDC, AS, TGS & Tickets' },
+                    { id: 'cs703cis-u5t4', title: 'Firewalls (Stateful / Proxy), DMZ & Intrusion Detection (IDS/IPS)' }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'cs703-dm',
+        semester: 7,
+        title: 'Disaster Management',
+        code: 'CS-703 (Disaster Mgmt)',
+        description: 'Hazard identification, disaster management cycle, risk assessment, satellite GIS early warning systems, NDMA frameworks, and resilient engineering systems.',
+        units: [
+            {
+                id: 'cs703dm-u1',
+                unitNumber: 1,
+                title: 'Understanding Disasters, Hazards & Vulnerabilities',
+                topics: [
+                    { id: 'cs703dm-u1t1', title: 'Core Concepts: Hazards, Risks, Vulnerability & Capacity Equation' },
+                    { id: 'cs703dm-u1t2', title: 'Natural Hazards: Earthquakes, Floods, Cyclones, Tsunamis & Drought' },
+                    { id: 'cs703dm-u1t3', title: 'Anthropogenic Disasters: Industrial Leaks, Chemical & Nuclear Events' },
+                    { id: 'cs703dm-u1t4', title: 'Climate Change, Deforestation & Environmental Amplifiers' }
+                ]
+            },
+            {
+                id: 'cs703dm-u2',
+                unitNumber: 2,
+                title: 'The Disaster Management Cycle',
+                topics: [
+                    { id: 'cs703dm-u2t1', title: 'The Complete Cycle: Pre-Disaster, During & Post-Disaster Phases' },
+                    { id: 'cs703dm-u2t2', title: 'Prevention, Mitigation & Preparedness: Zoning & Building Codes' },
+                    { id: 'cs703dm-u2t3', title: 'Emergency Response, Search & Rescue, Incident Command & Triage' },
+                    { id: 'cs703dm-u2t4', title: 'Rehabilitation, Reconstruction & "Building Back Better" (BBB)' }
+                ]
+            },
+            {
+                id: 'cs703dm-u3',
+                unitNumber: 3,
+                title: 'Disaster Risk Assessment & Vulnerability Analysis',
+                topics: [
+                    { id: 'cs703dm-u3t1', title: 'Disaster Risk Assessment (DRA) Framework & Matrix' },
+                    { id: 'cs703dm-u3t2', title: 'Vulnerability Profiling: Physical, Economic, Social & Ecological' },
+                    { id: 'cs703dm-u3t3', title: 'Community-Based Disaster Risk Reduction (CBDRR) & Local Knowledge' },
+                    { id: 'cs703dm-u3t4', title: 'Structural vs Non-Structural Mitigation Measures' }
+                ]
+            },
+            {
+                id: 'cs703dm-u4',
+                unitNumber: 4,
+                title: 'Technology & Remote Sensing in Disaster Systems',
+                topics: [
+                    { id: 'cs703dm-u4t1', title: 'GIS & Satellite Remote Sensing for Hazard Mapping & Tracking' },
+                    { id: 'cs703dm-u4t2', title: 'Early Warning Systems (EWS): Doppler Radar, Ocean Buoys & SMS Alerts' },
+                    { id: 'cs703dm-u4t3', title: 'Emergency Communications: HAM Radio, Satphones & Mesh Networks' },
+                    { id: 'cs703dm-u4t4', title: 'AI, Big Data & Drone/UAV Applications in Disaster Relief' }
+                ]
+            },
+            {
+                id: 'cs703dm-u5',
+                unitNumber: 5,
+                title: 'Institutional Frameworks & Case Studies',
+                topics: [
+                    { id: 'cs703dm-u5t1', title: 'Institutional Setup in India: DM Act 2005, NDMA, SDMA & NDRF' },
+                    { id: 'cs703dm-u5t2', title: 'Global Frameworks: Sendai Framework (2015-2030) Priorities' },
+                    { id: 'cs703dm-u5t3', title: 'Critical IT Infrastructure: Disaster Recovery (DR) Sites & BCP' },
+                    { id: 'cs703dm-u5t4', title: 'Major Case Studies: 2004 Tsunami, Fukushima 2011 & Kedarnath 2013' }
+                ]
+            }
+        ]
     }
 ];
 

@@ -55,7 +55,16 @@ async function bootstrapLanding() {
     syncAuthStatusLine();
 
     if (shouldOpenStudyView()) {
-        openStudyDeskDirectly();
+        if (window.ACADEMY.isAuthenticated()) {
+            openStudyDeskDirectly();
+        } else {
+            const url = new URL(window.location.href);
+            url.searchParams.delete('view');
+            if (window.location.hash === '#topics' || window.location.hash === '#study') {
+                window.location.hash = '';
+            }
+            window.history.replaceState({}, '', url.pathname + (url.search ? url.search : '') + window.location.hash);
+        }
     }
 }
 
@@ -313,7 +322,8 @@ function renderCoursesNav() {
     const semesters = [
         { id: 'all', label: 'All Semesters' },
         { id: '5', label: '5th Semester' },
-        { id: '6', label: '6th Semester' }
+        { id: '6', label: '6th Semester' },
+        { id: '7', label: '7th Semester' }
     ];
 
     const filteredCourses = coursesData.filter((course) => {
@@ -335,11 +345,15 @@ function renderCoursesNav() {
         <div class="flex flex-wrap gap-2 w-full">
             ${filteredCourses.map((course) => {
                 const courseStats = stats.courseStats[course.id] || { completionRate: 0, completed: 0, total: course.units.reduce((sum, unit) => sum + unit.topics.length, 0) };
-                const isSem5 = course.semester === 5;
+                const badgeColor = course.semester === 5
+                    ? 'bg-amber-500/20 text-amber-300'
+                    : course.semester === 7
+                        ? 'bg-emerald-500/20 text-emerald-300'
+                        : 'bg-blue-500/20 text-blue-300';
                 return `
                     <button onclick="switchCourse('${course.id}')" class="course-pill ${course.id === activeCourseId ? 'course-pill-active' : ''}">
                         <div class="flex items-center gap-1.5">
-                            <span class="text-[10px] px-1.5 py-0.5 rounded font-mono font-bold ${isSem5 ? 'bg-amber-500/20 text-amber-300' : 'bg-blue-500/20 text-blue-300'}">Sem ${course.semester || 6}</span>
+                            <span class="text-[10px] px-1.5 py-0.5 rounded font-mono font-bold ${badgeColor}">Sem ${course.semester || 6}</span>
                             <span class="font-semibold">${course.code}</span>
                         </div>
                         <span class="text-xs text-slate-400">${courseStats.completed}/${courseStats.total} done</span>

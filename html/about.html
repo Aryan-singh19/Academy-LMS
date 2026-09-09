@@ -1,13 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academy LMS | About</title>
+    <meta name="description" content="Learn about Academy LMS, the mission, engineering stack, and full curriculum coverage for 5th and 6th semester Computer Science engineering students.">
     <link rel="stylesheet" href="../assets/css/tailwind.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/app.css">
 </head>
 <body class="academy-page min-h-screen">
@@ -20,7 +21,7 @@
                     <h1 class="text-xl font-extrabold text-white">About</h1>
                 </div>
             </a>
-            <nav class="flex flex-wrap items-center gap-3 text-sm">
+            <nav class="flex flex-wrap items-center gap-3 text-sm" id="publicHeaderNav">
                 <a href="../index.html" class="nav-pill">Home</a>
                 <a href="about.html" class="nav-pill nav-pill-active">About</a>
                 <a href="privacy.html" class="nav-pill">Policy</a>
@@ -28,25 +29,327 @@
             </nav>
         </div>
     </header>
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-10">
+        <!-- Hero Section -->
         <section class="revision-banner">
             <div>
-                <p class="revision-label">Why this exists</p>
-                <h2 class="text-3xl font-extrabold text-white">A calmer prep space for technical subjects.</h2>
-                <p class="text-slate-400 mt-2">Academy LMS brings topic notes, quizzes, resources, lectures, local memory, and early social learning tools together so students do not have to jump across ten tabs and three panic levels.</p>
+                <p class="revision-label">The Platform Vision</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 leading-tight">Built for Computer Science students who value clarity over chaos.</h2>
+                <p class="text-slate-300 mt-4 leading-relaxed text-base">
+                    Academy LMS is a focused preparation ecosystem designed to replace fragmented PDFs, cluttered browser tabs, and last-minute exam panic with structured syllabus notes, interactive Mermaid system architectures, step-by-step solved numericals, and active-recall practice modules.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+                    <div class="stat-chip !p-4">
+                        <span class="stat-chip-label">Subject Scope</span>
+                        <strong class="text-white text-base">14 Full Subjects</strong>
+                        <span class="text-xs text-slate-400">Semesters 5, 6 &amp; 7</span>
+                    </div>
+                    <div class="stat-chip !p-4">
+                        <span class="stat-chip-label">Architecture</span>
+                        <strong class="text-white text-base">65+ Diagrams</strong>
+                        <span class="text-xs text-slate-400">Mermaid Flows</span>
+                    </div>
+                    <div class="stat-chip !p-4">
+                        <span class="stat-chip-label">Practice Engine</span>
+                        <strong class="text-white text-base">7 Drill Modes</strong>
+                        <span class="text-xs text-slate-400">Simulators &amp; Sandbox</span>
+                    </div>
+                    <div class="stat-chip !p-4">
+                        <span class="stat-chip-label">Universal Access</span>
+                        <strong class="text-white text-base">All Google IDs</strong>
+                        <span class="text-xs text-slate-400">Zero Domain Lock</span>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="panel-card p-6 space-y-4">
-            <h3 class="text-2xl font-bold text-white">What students get</h3>
-            <p class="text-slate-400">Persistent notes, highlights, progress tracking, topic comments, lecture chat, practice history, and profile analytics. The goal is to feel like a study room, not a cold file dump.</p>
-            <p class="text-slate-400">The current version uses browser storage plus Neon-backed APIs on Vercel. That makes it easy to keep iterating now and evolve into a fuller hosted product later.</p>
+
+        <!-- The 4 Core Pillars -->
+        <section class="space-y-6">
+            <div class="text-left">
+                <p class="eyebrow">Methodology</p>
+                <h3 class="text-2xl font-bold text-white mt-1">The Four Pillars of Academy LMS</h3>
+                <p class="text-slate-400 text-sm mt-1">Every topic across the platform is engineered around four core pedagogical commitments.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+                <article class="panel-card p-6 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 font-bold flex items-center justify-center text-sm border border-blue-500/30">1</span>
+                        <h4 class="text-lg font-bold text-white">Visual &amp; System Architecture</h4>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Rather than wall-of-text explanations, systems like compiler pipelines, neural backpropagation graphs, OSI-to-TCP/IP protocol mappings, MapReduce data flows, and state machines are modeled with interactive Mermaid.js diagrams. Visualizing states and data transitions turns abstract CS concepts into intuitive mental models.
+                    </p>
+                </article>
+
+                <article class="panel-card p-6 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm border border-emerald-500/30">2</span>
+                        <h4 class="text-lg font-bold text-white">Mathematical &amp; Algorithmic Rigor</h4>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        University exams test derivations and mathematical numericals. Academy LMS provides fully worked, line-by-line solutions: FIRST &amp; FOLLOW grammar parsing sets, RSA public-key cryptosystems, IPv4 CIDR subnet calculations, CPM critical path float analysis, and formal Pumping Lemma contradiction proofs.
+                    </p>
+                </article>
+
+                <article class="panel-card p-6 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-sm border border-amber-500/30">3</span>
+                        <h4 class="text-lg font-bold text-white">Active Recall &amp; Multi-Modal Practice</h4>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Passive reading produces an illusion of competence. The built-in Practice Hub provides immediate topic quizzes, customizable timed mock exams with automated mark recording, interactive flashcards, rapid-fire streak challenges, and hands-on step-by-step numerical trainers.
+                    </p>
+                </article>
+
+                <article class="panel-card p-6 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm border border-purple-500/30">4</span>
+                        <h4 class="text-lg font-bold text-white">Persistent Student Memory</h4>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Your study state belongs to you. Every personal note, highlighted code snippet, topic bookmark, and quiz result persists on-device in browser LocalStorage. When students sign in via Google, an opt-in synchronization engine securely backs up their profile to a Neon PostgreSQL database on Vercel.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Complete Curriculum Coverage -->
+        <section class="panel-card p-6 sm:p-8 space-y-6">
+            <div>
+                <p class="eyebrow">Academic Coverage</p>
+                <h3 class="text-2xl font-bold text-white mt-1">Computer Science Curriculum Matrix</h3>
+                <p class="text-slate-400 text-sm mt-1">High-yield study modules organized systematically across both third-year semesters.</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Semester 5 -->
+                <div class="border border-blue-500/20 rounded-xl p-5 bg-blue-950/10">
+                    <div class="flex items-center justify-between gap-4 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-wider border border-blue-500/30">Semester 5</span>
+                        <span class="text-xs text-slate-400 font-mono">5 Core Subjects</span>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-blue-400">CS-501</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Theory of Computation</h5>
+                            <p class="text-xs text-slate-400 mt-1">DFA/NFA, Mealy/Moore, Pumping Lemma, Chomsky Hierarchy, PDA, Turing Machines.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-blue-400">CS-502</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Database Management (DBMS)</h5>
+                            <p class="text-xs text-slate-400 mt-1">Relational Algebra, SQL, Normalization (1NF to BCNF), ACID, Conflict Serializability.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-blue-400">CS-503</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Data Analytics</h5>
+                            <p class="text-xs text-slate-400 mt-1">Hypothesis Testing, Regression, ANOVA, Hadoop Ecosystem, MapReduce, Pig &amp; Hive.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-blue-400">CS-503-CS</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Cyber Security</h5>
+                            <p class="text-xs text-slate-400 mt-1">Symmetric/Asymmetric Ciphers, RSA Numericals, Hash Functions, Firewalls, Web Exploits.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-blue-400">CS-504</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Web Technology</h5>
+                            <p class="text-xs text-slate-400 mt-1">HTML5/CSS3, JavaScript DOM, PHP Backend, XML/JSON APIs, HTTP Lifecycle &amp; Status Codes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 6 -->
+                <div class="border border-emerald-500/20 rounded-xl p-5 bg-emerald-950/10">
+                    <div class="flex items-center justify-between gap-4 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider border border-emerald-500/30">Semester 6</span>
+                        <span class="text-xs text-slate-400 font-mono">4 Core + 1 Elective</span>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-emerald-400">CS-601</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Machine Learning</h5>
+                            <p class="text-xs text-slate-400 mt-1">Linear/Logistic Regression, Neural Networks, Backpropagation, Gradient Descent, SVM, K-Means.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-emerald-400">CS-602</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Computer Networks</h5>
+                            <p class="text-xs text-slate-400 mt-1">OSI vs TCP/IP, IPv4 Subnetting &amp; CIDR, Dijkstra &amp; Bellman-Ford, TCP/UDP Flow Control.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-emerald-400">CS-603</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Compiler Design</h5>
+                            <p class="text-xs text-slate-400 mt-1">Lexical Analysis, FIRST/FOLLOW Sets, LL(1) &amp; LR Parsers, 3-Address Code, CFG Optimization.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-emerald-400">CS-604</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Project Management</h5>
+                            <p class="text-xs text-slate-400 mt-1">Waterfall vs Agile/Scrum, COCOMO Estimation, CPM/PERT Critical Path, Risk Mitigation (RMMM).</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-emerald-400">CS-603-CG</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Computer Graphics</h5>
+                            <p class="text-xs text-slate-400 mt-1">Bresenham's Line Algorithm, 2D/3D Affine Transformations, Cohen-Sutherland Clipping, Ray Tracing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 7 (Final Year Core & Electives) -->
+                <div class="border border-purple-500/20 rounded-xl p-5 bg-purple-950/10">
+                    <div class="flex items-center justify-between gap-4 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-bold uppercase tracking-wider border border-purple-500/30">Semester 7</span>
+                        <span class="text-xs text-slate-400 font-mono">5 Advanced Final-Year Subjects</span>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-purple-400">CS-701</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Software Architectures</h5>
+                            <p class="text-xs text-slate-400 mt-1">4+1 View Model, Quality Attributes (ATAM), Architectural Tactics (Availability, Modifiability), Microservices &amp; Event-Driven Systems.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-purple-400">CS-702</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Big Data Analytics</h5>
+                            <p class="text-xs text-slate-400 mt-1">5Vs of Big Data, Hadoop Distributed File System (HDFS), MapReduce execution flows, Apache Spark RDDs, NoSQL (HBase/Cassandra).</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-purple-400">CS-702-WMC</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Wireless &amp; Mobile Computing</h5>
+                            <p class="text-xs text-slate-400 mt-1">Cellular frequency reuse, Handoff strategies, Mobile IP (Care-of Address), GSM architecture, MACAW, 4G/5G radio interfaces.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-purple-400">CS-703</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Cryptography &amp; Info Security</h5>
+                            <p class="text-xs text-slate-400 mt-1">Classical ciphers, AES/DES rounds, Diffie-Hellman Key Exchange, SHA-256/SHA-512, Digital Signatures, PKI &amp; TLS 1.3 handshakes.</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                            <span class="text-xs font-mono font-semibold text-purple-400">CS-703-DM</span>
+                            <h5 class="text-sm font-bold text-white mt-0.5">Disaster Management</h5>
+                            <p class="text-xs text-slate-400 mt-1">Hazard vs vulnerability matrices, Sendai Framework, Disaster Management Act 2005 (NDMA/NDRF), Remote Sensing/GIS &amp; IT Disaster Recovery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seven Multi-Modal Practice Modules -->
+        <section class="panel-card p-6 sm:p-8 space-y-6">
+            <div>
+                <p class="eyebrow">Interactive Testing Ecosystem</p>
+                <h3 class="text-2xl font-bold text-white mt-1">7 Interactive Practice &amp; Evaluation Modules</h3>
+                <p class="text-slate-400 text-sm mt-1">Engineered to simulate real university examinations, test mathematical recall, and allow real-time algorithmic experimentation.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                    <span class="text-blue-400 text-xs font-mono font-bold uppercase">Mode 1 &bull; Targeted Revision</span>
+                    <h4 class="text-base font-bold text-white">Topic Drills</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Unit-by-unit multiple choice questions with instant explanations, syllabus mapping, and concept cross-references.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                    <span class="text-emerald-400 text-xs font-mono font-bold uppercase">Mode 2 &bull; Exam Simulation</span>
+                    <h4 class="text-base font-bold text-white">Timed Mock Tests</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Customizable time-boxed test sessions (10 to 45 mins) calculating negative marking, subject-wise score splits, and percentile estimation.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                    <span class="text-amber-400 text-xs font-mono font-bold uppercase">Mode 3 &bull; Active Recall</span>
+                    <h4 class="text-base font-bold text-white">3D Active-Recall Flashcards</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Spatial 3D flipcards covering definitions, formulas, and theorems. Sorted dynamically by confidence rating ("Easy", "Good", "Hard").</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                    <span class="text-cyan-400 text-xs font-mono font-bold uppercase">Mode 4 &bull; Step-by-Step Math</span>
+                    <h4 class="text-base font-bold text-white">Numerical Solvers &amp; Trainers</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Hands-on computation modules for RSA key generation, Subnet CIDR masks, CPM float schedules, FIRST/FOLLOW sets, and Diffie-Hellman keys.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                    <span class="text-purple-400 text-xs font-mono font-bold uppercase">Mode 5 &bull; Real Exam Environment</span>
+                    <h4 class="text-base font-bold text-white">University Exam Simulator</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Descriptive multi-part essay exam questions. Includes live word counter, answer drafting sandbox, structured grading rubrics, and official model answers.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                    <span class="text-rose-400 text-xs font-mono font-bold uppercase">Mode 6 &bull; Interactive Sandbox</span>
+                    <h4 class="text-base font-bold text-white">Protocol &amp; Algorithm Sandbox</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Live algorithmic testbenches: Diffie-Hellman cryptographic negotiation, Cellular Cluster reuse planning, HDFS cluster hardware sizing, and Architecture SLA verification.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2 sm:col-span-2 lg:col-span-3">
+                    <span class="text-yellow-400 text-xs font-mono font-bold uppercase">Mode 7 &bull; Gamified Sprint</span>
+                    <h4 class="text-base font-bold text-white">60-Second Speed Streak Challenge</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Fast-paced rapid-fire arena testing immediate recall under time pressure. Combos unlock up to 3x scoring multipliers, competing against personal all-time bests.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section class="panel-card p-6 sm:p-8 space-y-4">
+            <p class="eyebrow">Engineering</p>
+            <h3 class="text-2xl font-bold text-white">Under the Hood: Architecture &amp; Tech Stack</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+                Academy LMS is engineered with modern web standards prioritizing instant page rendering, zero unnecessary JavaScript bloat, and resilient offline functionality.
+            </p>
+            <div class="grid sm:grid-cols-3 gap-4 pt-2">
+                <div class="study-rail-block !p-4">
+                    <strong class="text-white text-sm block mb-1">Static-First Core</strong>
+                    <p class="text-xs text-slate-400">Fast HTML5 and Tailwind CSS layout. Instant load times on mobile or low-bandwidth campus Wi-Fi networks.</p>
+                </div>
+                <div class="study-rail-block !p-4">
+                    <strong class="text-white text-sm block mb-1">Local-First Storage</strong>
+                    <p class="text-xs text-slate-400">All student study memory is recorded immediately to LocalStorage, ensuring zero data loss during connectivity drops.</p>
+                </div>
+                <div class="study-rail-block !p-4">
+                    <strong class="text-white text-sm block mb-1">Open Cloud Identity</strong>
+                    <p class="text-xs text-slate-400">Universal Google Sign-in open to all personal and institutional domains with serverless PostgreSQL synchronization.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section class="panel-card p-6 sm:p-8 space-y-5">
+            <div>
+                <p class="eyebrow">Frequently Asked Questions</p>
+                <h3 class="text-2xl font-bold text-white mt-1">Frequently Asked Questions</h3>
+                <p class="text-slate-400 text-sm mt-1">Clear answers on curriculum alignment, authentication, and offline capability.</p>
+            </div>
+
+            <div class="space-y-3 text-xs sm:text-sm">
+                <details class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 cursor-pointer">
+                    <summary class="font-bold text-white flex items-center justify-between">Which universities is this curriculum designed for?</summary>
+                    <p class="mt-2 text-slate-400 leading-relaxed">The curriculum aligns with the Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV) and AICTE model syllabi for Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering across Semesters 5, 6, and 7, including core subjects and department electives.</p>
+                </details>
+                <details class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 cursor-pointer">
+                    <summary class="font-bold text-white flex items-center justify-between">Do I need an institutional @rjit.ac.in email address to sign in?</summary>
+                    <p class="mt-2 text-slate-400 leading-relaxed">No. We have removed all institutional domain locks! Any student, educator, or engineer worldwide can sign in with any valid Google account (@gmail.com or university domains) to synchronize their progress, bookmarks, and study notes.</p>
+                </details>
+                <details class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 cursor-pointer">
+                    <summary class="font-bold text-white flex items-center justify-between">Can I study when my internet connection drops?</summary>
+                    <p class="mt-2 text-slate-400 leading-relaxed">Yes! Academy LMS is architected local-first. All syllabus notes, practice questions, and flashcard decks load into client cache and save your notes and progress directly into your browser's LocalStorage. Once reconnected, changes automatically sync with cloud storage.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Creator & Contact -->
+        <section class="panel-card p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div>
+                <p class="eyebrow">Creator</p>
+                <h4 class="text-xl font-bold text-white mt-1">Aryan Singh Chandel</h4>
+                <p class="text-slate-400 text-sm mt-1">Computer Science Engineering &bull; Developer &amp; Maintainer</p>
+                <p class="text-slate-400 text-xs mt-2">Email: <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-300 hover:text-white underline">aryansingh19gh@gmail.com</a></p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <a href="tests.html" class="primary-cta text-sm !py-2.5 !px-5">Start Practice Tests</a>
+                <a href="contact.html" class="secondary-cta text-sm !py-2.5 !px-5">Contact Support</a>
+            </div>
         </section>
     </main>
+
     <footer class="academy-footer">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 text-sm text-slate-400">
-            Aryan Singh Chandel â€¢ <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-200 hover:text-white">aryansingh19gh@gmail.com</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row gap-4 md:items-center md:justify-between text-sm text-slate-400">
+            <div>
+                <strong class="text-white">Academy LMS</strong> &bull; Student Preparation Portal
+            </div>
+            <div>
+                Aryan Singh Chandel &bull; <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-200 hover:text-white">aryansingh19gh@gmail.com</a>
+            </div>
         </div>
     </footer>
+    <script src="../js/shared.js"></script>
 </body>
 </html>
-

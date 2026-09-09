@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academy LMS | Practice Tests</title>
+    <title>Academy LMS | Interactive Practice &amp; Testing Hub</title>
+    <meta name="description" content="Interactive practice hub for Computer Science engineering students: topic drills, timed mock tests, 3D active-recall flashcards, step-by-step numerical trainers, and 60-second speed challenges across 9 semester subjects.">
     <link rel="stylesheet" href="../assets/css/tailwind.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/app.css">
 </head>
 <body class="academy-page min-h-screen">
@@ -19,58 +19,878 @@
                     <div class="brand-mark">A</div>
                     <div>
                         <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
-                        <h1 class="text-xl font-extrabold text-white">Practice Tests</h1>
+                        <h1 class="text-xl font-extrabold text-white">Practice &amp; Testing Hub</h1>
                     </div>
                 </a>
-                <nav class="flex flex-wrap items-center gap-3 text-sm">
-                <a href="../index.html?view=topics" class="nav-pill">Topics</a>
-                <a href="lectures.html" class="nav-pill">Lectures</a>
-                <a href="resources.html" class="nav-pill">Resources</a>
-                <a href="tests.html" class="nav-pill nav-pill-active">Tests</a>
-                <a href="profile.html" class="nav-pill">Profile</a>
-            </nav>
+                <nav id="academyHeaderNav" class="flex flex-wrap items-center gap-2 sm:gap-3 text-sm">
+                    <a href="../index.html" class="nav-pill">Home</a>
+                    <a href="about.html" class="nav-pill">About</a>
+                    <a href="privacy.html" class="nav-pill">Policy</a>
+                    <a href="contact.html" class="nav-pill">Contact</a>
+                </nav>
             </div>
-            <div class="flex flex-wrap gap-2">
-                <button data-course-filter="all" onclick="setPracticeCourse('all')" class="course-pill course-pill-active">All subjects</button>
-                <button data-course-filter="cs601" onclick="setPracticeCourse('cs601')" class="course-pill">ML</button>
-                <button data-course-filter="cs602" onclick="setPracticeCourse('cs602')" class="course-pill">CN</button>
-                <button data-course-filter="cs603" onclick="setPracticeCourse('cs603')" class="course-pill">CD</button>
-                <button data-course-filter="cs604" onclick="setPracticeCourse('cs604')" class="course-pill">PM</button>
-                <button data-course-filter="cs603-cg" onclick="setPracticeCourse('cs603-cg')" class="course-pill">CG</button>
-                <button onclick="buildPracticeSession()" class="secondary-cta text-sm !py-2 !px-4 ml-auto">Generate new set</button>
+
+            <!-- Practice Mode Selector Bar -->
+            <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-blue-500/10">
+                <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold mr-1">Modes:</span>
+                <button id="modeTab-drill" onclick="switchPracticeMode('drill')" class="practice-mode-tab active">Topic Drills</button>
+                <button id="modeTab-mock" onclick="switchPracticeMode('mock')" class="practice-mode-tab">Timed Mock Exams</button>
+                <button id="modeTab-flashcards" onclick="switchPracticeMode('flashcards')" class="practice-mode-tab">Flashcard Deck</button>
+                <button id="modeTab-numericals" onclick="switchPracticeMode('numericals')" class="practice-mode-tab">Numerical Trainer</button>
+                <button id="modeTab-simulator" onclick="switchPracticeMode('simulator')" class="practice-mode-tab">University Exam Simulator</button>
+                <button id="modeTab-sandbox" onclick="switchPracticeMode('sandbox')" class="practice-mode-tab">Protocol &amp; Algo Sandbox</button>
+                <button id="modeTab-speed" onclick="switchPracticeMode('speed')" class="practice-mode-tab">60s Speed Streak</button>
             </div>
-            <div class="flex flex-wrap gap-2">
-                <button onclick="startMockTest(10)" class="secondary-cta text-sm !py-2 !px-4">10 min mock</button>
-                <button onclick="startMockTest(15)" class="secondary-cta text-sm !py-2 !px-4">15 min mock</button>
-                <button onclick="startMockTest(20)" class="secondary-cta text-sm !py-2 !px-4">20 min mock</button>
+
+            <!-- Subject & Semester Filters -->
+            <div class="flex flex-wrap items-center gap-2 pt-1">
+                <div class="flex items-center gap-1.5 bg-slate-900/60 p-1 rounded-full border border-blue-500/20 text-xs">
+                    <button onclick="setSemesterFilter('all')" id="semFilter-all" class="px-2.5 py-1 rounded-full text-blue-300 font-medium bg-blue-500/20">All Sems</button>
+                    <button onclick="setSemesterFilter('sem5')" id="semFilter-sem5" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 5</button>
+                    <button onclick="setSemesterFilter('sem6')" id="semFilter-sem6" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 6</button>
+                    <button onclick="setSemesterFilter('sem7')" id="semFilter-sem7" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 7</button>
+                </div>
+
+                <div id="coursePillContainer" class="flex flex-wrap items-center gap-1.5">
+                    <button data-course-filter="all" onclick="setPracticeCourse('all')" class="course-pill course-pill-active">All subjects</button>
+                    <!-- Sem 5 subjects -->
+                    <button data-course-filter="cs501" data-sem="sem5" onclick="setPracticeCourse('cs501')" class="course-pill">TOC</button>
+                    <button data-course-filter="cs502" data-sem="sem5" onclick="setPracticeCourse('cs502')" class="course-pill">DBMS</button>
+                    <button data-course-filter="cs503" data-sem="sem5" onclick="setPracticeCourse('cs503')" class="course-pill">Data Analytics</button>
+                    <button data-course-filter="cs503-cs" data-sem="sem5" onclick="setPracticeCourse('cs503-cs')" class="course-pill">Cyber Sec</button>
+                    <button data-course-filter="cs504" data-sem="sem5" onclick="setPracticeCourse('cs504')" class="course-pill">Web Tech</button>
+                    <!-- Sem 6 subjects -->
+                    <button data-course-filter="cs601" data-sem="sem6" onclick="setPracticeCourse('cs601')" class="course-pill">ML</button>
+                    <button data-course-filter="cs602" data-sem="sem6" onclick="setPracticeCourse('cs602')" class="course-pill">Networks</button>
+                    <button data-course-filter="cs603" data-sem="sem6" onclick="setPracticeCourse('cs603')" class="course-pill">Compiler</button>
+                    <button data-course-filter="cs604" data-sem="sem6" onclick="setPracticeCourse('cs604')" class="course-pill">Project Mgmt</button>
+                    <button data-course-filter="cs603-cg" data-sem="sem6" onclick="setPracticeCourse('cs603-cg')" class="course-pill">Computer Graphics</button>
+                    <!-- Sem 7 subjects -->
+                    <button data-course-filter="cs701" data-sem="sem7" onclick="setPracticeCourse('cs701')" class="course-pill">Software Arch (CS701)</button>
+                    <button data-course-filter="cs702-bd" data-sem="sem7" onclick="setPracticeCourse('cs702-bd')" class="course-pill">Big Data (CS702)</button>
+                    <button data-course-filter="cs702-wmc" data-sem="sem7" onclick="setPracticeCourse('cs702-wmc')" class="course-pill">Wireless &amp; Mobile (CS702)</button>
+                    <button data-course-filter="cs703-cis" data-sem="sem7" onclick="setPracticeCourse('cs703-cis')" class="course-pill">Crypto &amp; InfoSec (CS703)</button>
+                    <button data-course-filter="cs703-dm" data-sem="sem7" onclick="setPracticeCourse('cs703-dm')" class="course-pill">Disaster Mgmt (CS703)</button>
+                </div>
+
+                <div id="drillControls" class="ml-auto flex items-center gap-2">
+                    <button onclick="buildPracticeSession(currentActiveMode === 'mock' ? 'mock' : 'drill')" class="secondary-cta text-xs !py-1.5 !px-3">Generate new set</button>
+                </div>
+            </div>
+
+            <!-- Mock Exam Specific Timer Controls (Hidden when not in Mock mode) -->
+            <div id="mockControls" class="hidden flex flex-wrap items-center gap-2 pt-1 border-t border-blue-500/10">
+                <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold mr-1">Select Duration:</span>
+                <button onclick="startMockTest(10)" class="secondary-cta text-xs !py-1.5 !px-3">10 min (Quick)</button>
+                <button onclick="startMockTest(15)" class="secondary-cta text-xs !py-1.5 !px-3">15 min (Standard)</button>
+                <button onclick="startMockTest(20)" class="secondary-cta text-xs !py-1.5 !px-3">20 min (Comprehensive)</button>
+                <button onclick="startMockTest(30)" class="secondary-cta text-xs !py-1.5 !px-3">30 min (Full Exam)</button>
             </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-        <section id="practiceOverview" class="grid md:grid-cols-3 gap-4 mb-6"></section>
-        <section class="revision-banner mb-6">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+        <!-- Overview Stats Cards -->
+        <section id="practiceOverview" class="grid md:grid-cols-3 gap-4"></section>
+
+        <!-- Dynamic Context Banner -->
+        <section class="revision-banner">
             <div>
-                <p class="revision-label">Mixed recall</p>
-                <h2 class="text-3xl font-extrabold text-white">Subject-wise drills with stored marks</h2>
-                <p class="text-slate-400 mt-2">This page mixes the built-in topic quizzes with extra subject questions so students can revise faster under a lightweight test format.</p>
+                <p id="practiceBannerLabel" class="revision-label">Interactive Practice</p>
+                <h2 id="practiceBannerTitle" class="text-3xl font-extrabold text-white mt-1">Subject-wise drills with stored marks</h2>
+                <p id="practiceBannerDesc" class="text-slate-300 mt-2 text-sm leading-relaxed">
+                    Test your understanding with active-recall question sets, detailed derivations, and persistent performance scoring across Semesters 5 and 6.
+                </p>
             </div>
-            <div id="practiceMeta"></div>
+            <div id="practiceMeta" class="mt-4 sm:mt-0"></div>
         </section>
-        <section class="grid xl:grid-cols-[minmax(0,1fr)_340px] gap-6">
+
+        <!-- VIEW 1: Standard Drills & Timed Mock Exams -->
+        <section id="drillView" class="grid xl:grid-cols-[minmax(0,1fr)_340px] gap-6">
             <section id="practiceList" class="space-y-5"></section>
             <aside id="practiceHistory"></aside>
         </section>
-    </main>
-    <footer class="academy-footer">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
-            <div>
-                <p class="font-bold text-white">Academy LMS</p>
-                <p class="text-sm text-slate-400">Timed practice, random drills, and tracked quiz performance for students.</p>
+
+        <!-- VIEW 2: Active Recall Flashcard Deck -->
+        <section id="flashcardView" class="hidden space-y-6">
+            <div class="panel-card p-6 sm:p-8 space-y-6 max-w-3xl mx-auto">
+                <div class="flex items-center justify-between gap-4 border-b border-blue-500/10 pb-4">
+                    <div>
+                        <span id="fcCategoryBadge" class="mini-badge">Computer Science</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Active Recall Memory Deck</h3>
+                    </div>
+                    <div class="text-right">
+                        <span id="fcProgressText" class="text-xs font-mono text-slate-400">Card 1 of 1</span>
+                        <div class="flex items-center gap-2 mt-1">
+                            <span class="text-xs text-emerald-400 font-semibold" id="fcMasteredCount">0 Mastered</span>
+                            <span class="text-slate-600">&bull;</span>
+                            <span class="text-xs text-amber-400 font-semibold" id="fcReviewCount">0 Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Flipping Flashcard -->
+                <div class="flashcard-wrapper" onclick="toggleFlashcardFlip()">
+                    <div id="flashcardInner" class="flashcard-card">
+                        <!-- Front Face -->
+                        <div class="flashcard-face flashcard-front">
+                            <div class="flex items-center justify-between w-full text-xs text-slate-400">
+                                <span id="fcFrontSubject" class="font-mono uppercase tracking-wider text-blue-400 font-bold">Topic Concept</span>
+                                <span class="text-[11px] bg-slate-800 px-2 py-0.5 rounded">Click anywhere to flip</span>
+                            </div>
+                            <div class="my-auto py-6 text-center">
+                                <h4 id="fcQuestionText" class="text-xl sm:text-2xl font-extrabold text-white leading-relaxed">
+                                    Loading active-recall card...
+                                </h4>
+                                <p id="fcHintText" class="text-xs text-slate-400 mt-3 italic">
+                                    Try to recall the formula, proof, or definition in your head before revealing the back.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center w-full text-xs text-blue-400 font-semibold">
+                                <span>&#128260; Tap or click to reveal answer &amp; solution</span>
+                            </div>
+                        </div>
+
+                        <!-- Back Face -->
+                        <div class="flashcard-face flashcard-back">
+                            <div class="flex items-center justify-between w-full text-xs text-slate-500">
+                                <span id="fcBackSubject" class="font-mono uppercase tracking-wider text-emerald-600 font-bold">Key Takeaway / Solution</span>
+                                <span class="text-[11px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold">Verified Solution</span>
+                            </div>
+                            <div class="my-auto py-4 text-left overflow-y-auto max-h-48">
+                                <div id="fcAnswerText" class="text-sm sm:text-base font-semibold text-slate-800 leading-relaxed space-y-2">
+                                    Explanation loads here...
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center w-full text-xs text-slate-500 font-medium">
+                                <span>Rate your recall below to organize review queue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self-Grading & Navigation Buttons -->
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-blue-500/10">
+                    <div class="flex items-center gap-2">
+                        <button onclick="prevFlashcard()" class="secondary-cta text-xs !py-2 !px-3">&larr; Previous</button>
+                        <button onclick="nextFlashcard()" class="secondary-cta text-xs !py-2 !px-3">Next &rarr;</button>
+                        <button onclick="shuffleFlashcards()" class="secondary-cta text-xs !py-2 !px-3">&#128256; Shuffle</button>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button onclick="gradeFlashcard('review')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 hover:bg-amber-500/25 transition">
+                            Needs Review
+                        </button>
+                        <button onclick="gradeFlashcard('mastered')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/25 transition">
+                            &#10003; Mastered
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="text-sm text-slate-400">
-                <p>Name: Aryan Singh Chandel</p>
-                <p>Contact: <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-200 hover:text-white">aryansingh19gh@gmail.com</a></p>
+        </section>
+
+        <!-- VIEW 3: Step-by-Step Numerical & Proof Trainer -->
+        <section id="numericalView" class="hidden space-y-6">
+            <div class="grid lg:grid-cols-2 gap-6">
+                <!-- Numerical 1: IPv4 Subnetting & CIDR Trainer -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Computer Networks (CS-602)</span>
+                        <button onclick="generateNewSubnetProblem()" class="secondary-cta text-xs !py-1 !px-2.5">Randomize Problem</button>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">IPv4 Subnetting &amp; CIDR Trainer</h3>
+                    <p class="text-xs text-slate-300">
+                        Solve for the subnet parameters of the network given below and click Verify.
+                    </p>
+
+                    <div class="bg-slate-900 p-4 rounded-xl border border-blue-500/20 font-mono text-center">
+                        <span class="text-xs text-slate-400 block mb-1">Target Network Address</span>
+                        <strong id="subnetAddressDisplay" class="text-lg text-cyan-300">192.168.10.0 /26</strong>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Subnet Mask (e.g. 255.255.255.192)</label>
+                            <input id="inputSubnetMask" type="text" placeholder="255.255.255.xxx" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Total Subnets Formed</label>
+                            <input id="inputSubnetCount" type="number" placeholder="e.g. 4" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Usable Hosts per Subnet</label>
+                            <input id="inputUsableHosts" type="number" placeholder="e.g. 62" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Subnet Block Size</label>
+                            <input id="inputBlockSize" type="number" placeholder="e.g. 64" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifySubnetCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify Calculation</button>
+                        <button onclick="revealSubnetSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="subnetFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 2: RSA Public-Key Cryptosystem Trainer -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Cyber Security (CS-503-CS)</span>
+                        <button onclick="generateNewRsaProblem()" class="secondary-cta text-xs !py-1 !px-2.5">Randomize Problem</button>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">RSA Public-Key Cryptosystem Trainer</h3>
+                    <p class="text-xs text-slate-300">
+                        Compute the RSA modulus, Euler totient, and private key satisfying the modular inverse.
+                    </p>
+
+                    <div class="bg-slate-900 p-4 rounded-xl border border-blue-500/20 font-mono text-center">
+                        <span class="text-xs text-slate-400 block mb-1">Prime Numbers &amp; Public Exponent</span>
+                        <strong id="rsaPrimesDisplay" class="text-lg text-emerald-400">p = 7, q = 11, e = 13</strong>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Modulus n (p &times; q)</label>
+                            <input id="inputRsaN" type="number" placeholder="e.g. 77" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Euler Totient &phi;(n)</label>
+                            <input id="inputRsaPhi" type="number" placeholder="e.g. 60" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="text-slate-400 block mb-1">Private Key d where (d &times; e) &equiv; 1 (mod &phi;(n))</label>
+                            <input id="inputRsaD" type="number" placeholder="e.g. 37" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyRsaCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify RSA Key</button>
+                        <button onclick="revealRsaSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="rsaFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 3: Critical Path Method (CPM) Float Trainer -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Project Management (CS-604)</span>
+                        <span class="text-xs text-slate-400 font-mono">Exam Milestone</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Critical Path &amp; Float Trainer</h3>
+                    <p class="text-xs text-slate-300">
+                        Given: Path 1 (A-B-D-F) durations: 3 + 4 + 6 + 2 days.<br>Path 2 (A-C-E-F) durations: 3 + 2 + 3 + 2 days.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Critical Path Duration (Days)</label>
+                            <input id="inputCpmDuration" type="number" placeholder="e.g. 15" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Path 2 Total Float / Slack (Days)</label>
+                            <input id="inputCpmFloat" type="number" placeholder="e.g. 5" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyCpmCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify CPM</button>
+                        <button onclick="revealCpmSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="cpmFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 4: FIRST & FOLLOW Set Parser Trainer -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Compiler Design (CS-603)</span>
+                        <span class="text-xs text-slate-400 font-mono">Grammar Parsing</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">FIRST &amp; FOLLOW Sets Trainer</h3>
+                    <p class="text-xs text-slate-300">
+                        Given grammar: E &rarr; T E', E' &rarr; + T E' | &epsilon;, T &rarr; F T', T' &rarr; * F T' | &epsilon;, F &rarr; ( E ) | id
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Is $ in FOLLOW(E)?</label>
+                            <select id="selectFollowE" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="">Select answer...</option>
+                                <option value="yes">Yes, because E is the start symbol</option>
+                                <option value="no">No, only terminal characters</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">What is FIRST(F)?</label>
+                            <select id="selectFirstF" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="">Select answer...</option>
+                                <option value="correct">{ (, id }</option>
+                                <option value="wrong1">{ +, * }</option>
+                                <option value="wrong2">{ &epsilon; }</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyParserCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify Sets</button>
+                        <button onclick="revealParserSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="parserFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 5: DFA Minimization & State Equivalence (CS-501) -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Theory of Computation (CS-501)</span>
+                        <span class="text-xs text-slate-400 font-mono">Myhill-Nerode Table</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">DFA State Minimization Trainer</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Given DFA with states {q0, q1, q2, q3, q4}, alphabet {0, 1}, start state q0, and accepting states {q2, q3}. Transitions: &delta;(q0,0)=q1, &delta;(q0,1)=q2; &delta;(q1,0)=q1, &delta;(q1,1)=q3; &delta;(q2,0)=q1, &delta;(q2,1)=q2; &delta;(q3,0)=q1, &delta;(q3,1)=q3; &delta;(q4,0)=q1, &delta;(q4,1)=q4.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Are states (q2, q3) equivalent?</label>
+                            <select id="selectDfaEquiv" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="">Select answer...</option>
+                                <option value="equiv">Equivalent (both final, same target classes)</option>
+                                <option value="dist">Distinguishable</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Total states in minimized DFA</label>
+                            <input id="inputDfaStates" type="number" placeholder="Enter integer (e.g. 3)" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyDfaMinimization()" class="primary-cta text-xs !py-2 !px-4">Verify Minimization</button>
+                        <button onclick="revealDfaSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="dfaMinFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 6: Relational Closure & Normalization (CS-502) -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">DBMS (CS-502)</span>
+                        <span class="text-xs text-slate-400 font-mono">Normalization &amp; Closures</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Attribute Closure &amp; BCNF Trainer</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Given relation R(A, B, C, D, E) with functional dependencies: F = { A &rarr; B, BC &rarr; D, E &rarr; C, D &rarr; A }.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">What is the attribute closure {AE}&#8314;?</label>
+                            <select id="selectClosureAE" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="">Select closure...</option>
+                                <option value="all">{A, B, C, D, E} (All attributes)</option>
+                                <option value="partial">{A, B, E}</option>
+                                <option value="wrong">{A, C, D}</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Is {AE} a Candidate Key of R?</label>
+                            <select id="selectIsCandidateKey" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="">Select answer...</option>
+                                <option value="yes">Yes, minimal superkey</option>
+                                <option value="no">No, proper subset also determines all</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyDbmsClosure()" class="primary-cta text-xs !py-2 !px-4">Verify Key &amp; Closure</button>
+                        <button onclick="revealDbmsSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="dbmsClosureFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 7: Diffie-Hellman Key Exchange (CS-703 CIS) -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Crypto &amp; InfoSec (CS-703)</span>
+                        <button onclick="generateNewDhProblem()" class="secondary-cta text-xs !py-1 !px-2.5">Randomize Problem</button>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Diffie-Hellman Key Derivation Trainer</h3>
+                    <p class="text-xs text-slate-300">
+                        Given public prime and generator, compute Alice's public key A, Bob's public key B, and the negotiated shared symmetric key K.
+                    </p>
+
+                    <div class="bg-slate-900 p-4 rounded-xl border border-blue-500/20 font-mono text-center">
+                        <span class="text-xs text-slate-400 block mb-1">Public Parameters &amp; Private Secrets</span>
+                        <strong id="dhParamsDisplay" class="text-lg text-amber-400">p = 23, g = 5, a = 6, b = 15</strong>
+                    </div>
+
+                    <div class="grid sm:grid-cols-3 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Alice's Public Key A = g^a mod p</label>
+                            <input id="inputDhA" type="number" placeholder="e.g. 8" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Bob's Public Key B = g^b mod p</label>
+                            <input id="inputDhB" type="number" placeholder="e.g. 19" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Shared Secret Key K = B^a mod p</label>
+                            <input id="inputDhK" type="number" placeholder="e.g. 2" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyDhCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify DH Keys</button>
+                        <button onclick="revealDhSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="dhFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 8: Cellular Frequency Reuse & Cluster Size (CS-702 WMC) -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Wireless &amp; Mobile (CS-702)</span>
+                        <button onclick="generateNewCellularProblem()" class="secondary-cta text-xs !py-1 !px-2.5">Randomize Problem</button>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Cellular Cluster &amp; Frequency Reuse Trainer</h3>
+                    <p class="text-xs text-slate-300">
+                        Solve for hexagonal cluster size N = i^2 + ij + j^2, co-channel reuse ratio Q = &radic;(3N), and capacity per cell.
+                    </p>
+
+                    <div class="bg-slate-900 p-4 rounded-xl border border-blue-500/20 font-mono text-center">
+                        <span class="text-xs text-slate-400 block mb-1">Shift Parameters &amp; Total Spectrum</span>
+                        <strong id="cellularParamsDisplay" class="text-lg text-emerald-400">i = 2, j = 1, Total Duplex Channels = 420</strong>
+                    </div>
+
+                    <div class="grid sm:grid-cols-3 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Cluster Size N (Cells)</label>
+                            <input id="inputCellularN" type="number" placeholder="e.g. 7" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Channels Allocated per Cell (k = S/N)</label>
+                            <input id="inputCellularK" type="number" placeholder="e.g. 60" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Co-Channel Reuse Ratio Q = &radic;(3N)</label>
+                            <input id="inputCellularQ" type="number" step="0.01" placeholder="e.g. 4.58" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyCellularCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify Cellular Design</button>
+                        <button onclick="revealCellularSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="cellularFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 9: HDFS Storage & Block Replication (CS-702 Big Data) -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Big Data (CS-702)</span>
+                        <span class="text-xs text-slate-400 font-mono">Distributed Storage</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">HDFS Block &amp; Replication Sizing Trainer</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        A cluster ingests a raw dataset of 320 GB. Default HDFS block size is 128 MB, and the replication factor is set to 3.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Total HDFS Raw Blocks Formed</label>
+                            <input id="inputHdfsBlocks" type="number" placeholder="e.g. 2560" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Total Physical Cluster Storage Required (GB)</label>
+                            <input id="inputHdfsStorage" type="number" placeholder="e.g. 960" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyHdfsCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify HDFS Sizing</button>
+                        <button onclick="revealHdfsSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="hdfsFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+
+                <!-- Numerical 10: System Availability & MTBF SLA Calculator (CS-701 Software Arch) -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="mini-badge">Software Architecture (CS-701)</span>
+                        <span class="text-xs text-slate-400 font-mono">Quality Tactics</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">System Availability &amp; MTBF SLA Trainer</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        A cloud service has Mean Time Between Failures (MTBF) = 4,320 hours and Mean Time To Repair (MTTR) = 0.5 hours (30 min failover).
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Availability A = MTBF / (MTBF + MTTR)</label>
+                            <select id="selectArchAvailability" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="">Select availability percentage...</option>
+                                <option value="99.988">99.988% (Three Nines+)</option>
+                                <option value="99.900">99.900% (Three Nines)</option>
+                                <option value="95.500">95.500%</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Expected Annual Downtime (Minutes / Year)</label>
+                            <input id="inputArchDowntime" type="number" step="0.1" placeholder="e.g. 60.9" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <button onclick="verifyArchCalculation()" class="primary-cta text-xs !py-2 !px-4">Verify Availability</button>
+                        <button onclick="revealArchSolution()" class="secondary-cta text-xs !py-2 !px-4">Show Full Steps</button>
+                    </div>
+
+                    <div id="archFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- VIEW 5: University Exam Simulator & Subjective Answer Grader -->
+        <section id="simulatorView" class="hidden space-y-6">
+            <div class="panel-card p-6 sm:p-8 space-y-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-blue-500/10 pb-4">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">University Format</span>
+                            <span id="simSubjectBadge" class="mini-badge">CS-701 Software Architectures</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-1.5">Descriptive Exam Simulator &amp; Rubric Grader</h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <label class="text-xs text-slate-400">Select Exam Question:</label>
+                        <select id="simQuestionSelect" onchange="loadSimulatorQuestion(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg text-xs p-2 text-white focus:border-blue-500 focus:outline-none">
+                            <!-- Populated dynamically -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Exam Question Card -->
+                <div class="bg-slate-900/90 rounded-xl p-5 border border-blue-500/20 space-y-3">
+                    <div class="flex items-center justify-between text-xs">
+                        <span id="simQCode" class="font-mono text-cyan-400 font-bold">RGPV / University Exam Format</span>
+                        <span id="simQMarks" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono font-bold">7 Marks</span>
+                    </div>
+                    <h4 id="simQTitle" class="text-lg sm:text-xl font-bold text-white leading-relaxed">
+                        Loading exam question...
+                    </h4>
+                    <p id="simQContext" class="text-xs text-slate-300 leading-relaxed">
+                        Prepare a complete answer containing architectural sketches, algebraic formulas, algorithms, and trade-off analysis as expected in university end-semester examinations.
+                    </p>
+                </div>
+
+                <!-- Workspace: Student Drafting Area + Interactive Rubric -->
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <!-- Left: Draft Area -->
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between text-xs text-slate-400">
+                            <span class="font-semibold text-white">Your Answer Outline / Draft</span>
+                            <span id="simWordCount" class="font-mono">0 words &bull; 0 chars</span>
+                        </div>
+                        <textarea id="simAnswerInput" oninput="updateSimWordCount()" rows="14" placeholder="Write your structured answer here... Outline key points: 1. Definition, 2. Architectural Diagram / Components, 3. Algorithmic Steps / Formulas, 4. Edge Cases & Complexity analysis..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-xs font-mono text-white focus:border-blue-500 focus:outline-none leading-relaxed"></textarea>
+                        <div class="flex items-center justify-between text-xs text-slate-400 pt-1">
+                            <span>Draft autosaves to local study memory</span>
+                            <button onclick="clearSimDraft()" class="text-xs text-slate-500 hover:text-slate-300">Clear Draft</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Self-Assessment Rubric & Grader -->
+                    <div class="space-y-4 bg-slate-950/60 p-5 rounded-xl border border-slate-800">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                            <span class="font-bold text-white text-sm">Grading Rubric &amp; Keyword Check</span>
+                            <span id="simCurrentScoreBadge" class="text-xs font-mono px-2.5 py-1 rounded bg-blue-500/20 text-blue-300 font-bold">0 / 7 Marks</span>
+                        </div>
+
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Check off each component you have addressed in your answer. University examiners award marks based on these specific technical deliverables:
+                        </p>
+
+                        <div id="simRubricList" class="space-y-2.5 text-xs">
+                            <!-- Populated dynamically based on active question -->
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-800 flex flex-wrap items-center gap-3">
+                            <button onclick="evaluateSimAnswer()" class="primary-cta text-xs !py-2 !px-4">Evaluate Answer</button>
+                            <button onclick="revealSimModelAnswer()" class="secondary-cta text-xs !py-2 !px-4">&#128196; Reveal Model Solution</button>
+                        </div>
+
+                        <div id="simEvaluationFeedback" class="hidden p-3 rounded-lg text-xs"></div>
+                    </div>
+                </div>
+
+                <!-- Model Solution Drawer (Hidden until revealed) -->
+                <div id="simModelAnswerBox" class="hidden bg-slate-900 border border-emerald-500/30 rounded-xl p-6 space-y-4">
+                    <div class="flex items-center justify-between border-b border-emerald-500/20 pb-3">
+                        <span class="text-emerald-400 font-bold text-sm flex items-center gap-2">
+                            <span>&#10003;</span> Official University Model Answer &amp; Marking Scheme
+                        </span>
+                        <button onclick="hideSimModelAnswer()" class="text-xs text-slate-400 hover:text-white">Close</button>
+                    </div>
+                    <div id="simModelAnswerContent" class="text-xs text-slate-300 space-y-3 leading-relaxed">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 6: Interactive Protocol & Algorithm Sandbox -->
+        <section id="sandboxView" class="hidden space-y-6">
+            <div class="grid lg:grid-cols-2 gap-6">
+                <!-- Sandbox 1: Diffie-Hellman Key Exchange Interactive Simulator -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2 border-b border-blue-500/10 pb-3">
+                        <span class="mini-badge">Interactive Protocol</span>
+                        <span class="text-xs font-mono text-cyan-400">CS-703 CIS</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Diffie-Hellman Key Exchange Simulator</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Simulate the transmission of public keys over an unsecure public channel and compute the identical symmetric secret without ever transmitting private keys.
+                    </p>
+
+                    <div class="grid sm:grid-cols-4 gap-2 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Prime p</label>
+                            <input id="simDhPrime" type="number" value="23" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Generator g</label>
+                            <input id="simDhGen" type="number" value="5" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Alice Secret a</label>
+                            <input id="simDhAlicePriv" type="number" value="6" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Bob Secret b</label>
+                            <input id="simDhBobPriv" type="number" value="15" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <button onclick="runDhSimulator()" class="primary-cta text-xs !py-2 !px-4 w-full justify-center">Run Key Exchange Protocol</button>
+
+                    <div id="simDhOutput" class="p-3 bg-slate-900 rounded-lg border border-slate-800 text-xs font-mono text-slate-300 space-y-1.5">
+                        <p class="text-slate-400 italic">Click "Run Key Exchange Protocol" to observe the step-by-step modular mathematics.</p>
+                    </div>
+                </article>
+
+                <!-- Sandbox 2: Cellular Frequency Reuse & Hexagonal Cluster Planner -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2 border-b border-blue-500/10 pb-3">
+                        <span class="mini-badge">Radio Network Planning</span>
+                        <span class="text-xs font-mono text-emerald-400">CS-702 WMC</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Cellular Cluster &amp; Capacity Planner</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Calculate cluster sizes N = i&sup2; + ij + j&sup2;, co-channel reuse distance D = R&radic;(3N), and signal-to-interference ratio (SIR).
+                    </p>
+
+                    <div class="grid sm:grid-cols-3 gap-2 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Shift i</label>
+                            <input id="simCellShiftI" type="number" value="2" min="0" max="10" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Shift j</label>
+                            <input id="simCellShiftJ" type="number" value="1" min="0" max="10" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Cell Radius R (km)</label>
+                            <input id="simCellRadius" type="number" value="1.5" step="0.1" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <button onclick="runCellularPlanner()" class="primary-cta text-xs !py-2 !px-4 w-full justify-center">Calculate Hexagonal Reuse Metrics</button>
+
+                    <div id="simCellOutput" class="p-3 bg-slate-900 rounded-lg border border-slate-800 text-xs font-mono text-slate-300 space-y-1.5">
+                        <p class="text-slate-400 italic">Click "Calculate Hexagonal Reuse Metrics" to compute cluster geometry and co-channel distance.</p>
+                    </div>
+                </article>
+
+                <!-- Sandbox 3: HDFS Block & Cluster Hardware Planner -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2 border-b border-blue-500/10 pb-3">
+                        <span class="mini-badge">Big Data Sizing</span>
+                        <span class="text-xs font-mono text-cyan-400">CS-702 Big Data</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">HDFS Storage &amp; NameNode RAM Planner</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Model distributed storage footprint, 3x rack replication overhead, and NameNode heap memory requirement (~150 bytes per block metadata).
+                    </p>
+
+                    <div class="grid sm:grid-cols-3 gap-2 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Raw Dataset (GB)</label>
+                            <input id="simHdfsDataGb" type="number" value="500" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Block Size (MB)</label>
+                            <select id="simHdfsBlockSize" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="64">64 MB</option>
+                                <option value="128" selected>128 MB (Default)</option>
+                                <option value="256">256 MB (High Throughput)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Replication Factor</label>
+                            <input id="simHdfsReplication" type="number" value="3" min="1" max="10" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <button onclick="runHdfsPlanner()" class="primary-cta text-xs !py-2 !px-4 w-full justify-center">Plan Cluster Capacity</button>
+
+                    <div id="simHdfsOutput" class="p-3 bg-slate-900 rounded-lg border border-slate-800 text-xs font-mono text-slate-300 space-y-1.5">
+                        <p class="text-slate-400 italic">Click "Plan Cluster Capacity" to compute disk, block count, and NameNode memory requirements.</p>
+                    </div>
+                </article>
+
+                <!-- Sandbox 4: Architecture Quality Attribute Scenario Builder -->
+                <article class="panel-card p-6 space-y-4">
+                    <div class="flex items-center justify-between gap-2 border-b border-blue-500/10 pb-3">
+                        <span class="mini-badge">System Design</span>
+                        <span class="text-xs font-mono text-amber-400">CS-701 Software Arch</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Quality Attribute Scenario &amp; Tactic Tester</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Construct a formal 6-part SEI Quality Attribute Scenario and select the architectural tactic to verify if the SLA response measure is satisfied.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-2 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Quality Attribute</label>
+                            <select id="simArchAttr" onchange="updateArchScenarioOptions()" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="availability">Availability (Fault Tolerance)</option>
+                                <option value="performance">Performance (Latency &amp; Throughput)</option>
+                                <option value="security">Security (Confidentiality &amp; Integrity)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Selected Architectural Tactic</label>
+                            <select id="simArchTactic" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white font-mono text-xs focus:border-blue-500 focus:outline-none">
+                                <option value="heartbeat">Heartbeat &amp; Active Redundancy</option>
+                                <option value="circuitbreaker">Circuit Breaker &amp; Fallback Degradation</option>
+                                <option value="retry">Blind Retry Loop (Anti-pattern)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button onclick="verifyArchScenario()" class="primary-cta text-xs !py-2 !px-4 w-full justify-center">Evaluate Architectural Tactic vs SLA</button>
+
+                    <div id="simArchOutput" class="p-3 bg-slate-900 rounded-lg border border-slate-800 text-xs font-mono text-slate-300 space-y-1.5">
+                        <p class="text-slate-400 italic">Click "Evaluate Architectural Tactic vs SLA" to run scenario trade-off verification.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- VIEW 4: 60-Second Speed Streak Challenge -->
+        <section id="speedView" class="hidden space-y-6">
+            <div class="panel-card p-6 sm:p-8 space-y-6 max-w-2xl mx-auto text-center">
+                <!-- Arena State 1: Ready to Start -->
+                <div id="speedStartPrompt" class="space-y-4">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-500/20 text-amber-400 font-extrabold text-2xl flex items-center justify-center mx-auto border border-amber-500/30">
+                        &#9889;
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-white">60-Second Rapid-Fire Streak Challenge</h3>
+                    <p class="text-slate-300 text-sm max-w-md mx-auto leading-relaxed">
+                        Answer as many high-yield technical questions as you can in 60 seconds! Build your streak combo multiplier and compete against your personal best.
+                    </p>
+                    <div class="flex items-center justify-center gap-4 text-xs text-slate-400 pt-2">
+                        <span>Personal Best: <strong id="speedHighScore" class="text-amber-300 font-mono">0 pts</strong></span>
+                        <span>&bull;</span>
+                        <span>Multipliers: <strong class="text-emerald-300 font-mono">Up to 3x</strong></span>
+                    </div>
+                    <button onclick="startSpeedChallenge()" class="primary-cta text-sm !py-3 !px-8 mt-2">
+                        Start 60s Challenge
+                    </button>
+                </div>
+
+                <!-- Arena State 2: Active Challenge -->
+                <div id="speedArena" class="hidden space-y-5 text-left">
+                    <div class="flex items-center justify-between gap-4 border-b border-blue-500/15 pb-3">
+                        <div class="flex items-center gap-3">
+                            <span class="text-xs uppercase tracking-wider text-slate-400 font-bold">Time Left:</span>
+                            <span id="speedTimerText" class="text-2xl font-extrabold font-mono text-amber-400">60s</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <span class="text-[10px] uppercase tracking-widest text-slate-400 block">Streak</span>
+                                <span id="speedStreakBadge" class="text-xs font-bold font-mono px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">0x Combo</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-[10px] uppercase tracking-widest text-slate-400 block">Score</span>
+                                <span id="speedScoreText" class="text-xl font-extrabold font-mono text-emerald-400">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar for Time -->
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div id="speedTimeBar" class="bg-amber-400 h-2 transition-all duration-1000 ease-linear" style="width: 100%;"></div>
+                    </div>
+
+                    <!-- Active Speed Question -->
+                    <div id="speedQuestionCard" class="bg-slate-900/90 p-5 rounded-xl border border-blue-500/30 space-y-4">
+                        <div>
+                            <span id="speedSubjectTag" class="text-xs font-mono uppercase tracking-wider text-blue-400 font-bold">Subject</span>
+                            <h4 id="speedQuestionTitle" class="text-base sm:text-lg font-bold text-white mt-1">
+                                Question text...
+                            </h4>
+                        </div>
+                        <div id="speedOptionsContainer" class="space-y-2.5"></div>
+                    </div>
+                </div>
+
+                <!-- Arena State 3: Finished Game Over Summary -->
+                <div id="speedSummary" class="hidden space-y-4">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 text-emerald-400 font-extrabold text-2xl flex items-center justify-center mx-auto border border-emerald-500/30">
+                        &#127942;
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-white">Time's Up! Challenge Complete</h3>
+                    <div class="grid grid-cols-3 gap-3 max-w-sm mx-auto pt-2">
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-[10px] uppercase tracking-wider text-slate-400 block">Final Score</span>
+                            <strong id="finalScoreVal" class="text-xl font-mono text-emerald-400">0</strong>
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-[10px] uppercase tracking-wider text-slate-400 block">Correct</span>
+                            <strong id="finalCorrectVal" class="text-xl font-mono text-blue-400">0</strong>
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-[10px] uppercase tracking-wider text-slate-400 block">Best Streak</span>
+                            <strong id="finalStreakVal" class="text-xl font-mono text-amber-400">0</strong>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 pt-3">
+                        <button onclick="startSpeedChallenge()" class="primary-cta text-xs !py-2.5 !px-5">Try Again</button>
+                        <button onclick="switchPracticeMode('drill')" class="secondary-cta text-xs !py-2.5 !px-5">Return to Drills</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="academy-footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row gap-4 md:items-center md:justify-between text-sm text-slate-400">
+            <div>
+                <strong class="text-white">Academy LMS</strong> &bull; Timed practice, random drills, numerical solvers, and active recall.
+            </div>
+            <div>
+                Aryan Singh Chandel &bull; <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-200 hover:text-white">aryansingh19gh@gmail.com</a>
             </div>
         </div>
     </footer>
@@ -86,8 +906,12 @@
     <script src="../js/data_cs603.js"></script>
     <script src="../js/data_cs603-cg.js"></script>
     <script src="../js/data_cs604.js"></script>
+    <script src="../js/data_cs701.js"></script>
+    <script src="../js/data_cs702-bd.js"></script>
+    <script src="../js/data_cs702-wmc.js"></script>
+    <script src="../js/data_cs703-cis.js"></script>
+    <script src="../js/data_cs703-dm.js"></script>
     <script src="../js/shared.js"></script>
     <script src="../js/tests.js"></script>
 </body>
 </html>
-

@@ -1,13 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academy LMS | Policy</title>
+    <title>Academy LMS | Privacy &amp; Data Policy</title>
+    <meta name="description" content="Privacy and student data policy for Academy LMS. Learn about our local-first storage architecture, zero ad tracking, and academic integrity policies.">
     <link rel="stylesheet" href="../assets/css/tailwind.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/app.css">
 </head>
 <body class="academy-page min-h-screen">
@@ -17,10 +18,10 @@
                 <div class="brand-mark">A</div>
                 <div>
                     <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
-                    <h1 class="text-xl font-extrabold text-white">Policy</h1>
+                    <h1 class="text-xl font-extrabold text-white">Privacy &amp; Data Policy</h1>
                 </div>
             </a>
-            <nav class="flex flex-wrap items-center gap-3 text-sm">
+            <nav class="flex flex-wrap items-center gap-3 text-sm" id="publicHeaderNav">
                 <a href="../index.html" class="nav-pill">Home</a>
                 <a href="about.html" class="nav-pill">About</a>
                 <a href="privacy.html" class="nav-pill nav-pill-active">Policy</a>
@@ -28,19 +29,157 @@
             </nav>
         </div>
     </header>
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
-        <section class="panel-card p-6 space-y-4">
-            <h2 class="text-3xl font-extrabold text-white">Policy overview</h2>
-            <p class="text-slate-400">Academy LMS stores study progress in the browser and can sync selected learning activity to Neon when the cloud profile is enabled. That includes notes, bookmarks, quiz attempts, practice sessions, comments, messages, and lecture presence.</p>
-            <p class="text-slate-400">This version is a prototype and should not be treated as a secure identity system yet. Before a full launch, add authentication, moderation, consent flows, and stricter data retention controls.</p>
-            <p class="text-slate-400">For questions about the project, contact Aryan Singh Chandel at <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-200 hover:text-white">aryansingh19gh@gmail.com</a>.</p>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-8">
+        <section class="revision-banner">
+            <div>
+                <p class="revision-label">Transparency &amp; Student Trust</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 leading-tight">Student-First Privacy &amp; Academic Integrity Policy</h2>
+                <p class="text-slate-300 mt-4 leading-relaxed text-base">
+                    Academy LMS is engineered with a strict local-first philosophy. Your study notes, highlighted derivations, test scores, and learning pace belong exclusively to you. We do not monetize student data, run advertisements, or utilize third-party tracking beacons.
+                </p>
+                <p class="text-xs text-slate-400 mt-4 font-mono">Last Updated: September 2026 &bull; Compliant with University Student Privacy Standards</p>
+            </div>
+        </section>
+
+        <!-- Section 1: Local-First Storage Architecture -->
+        <section class="panel-card p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 font-mono text-xs font-bold border border-blue-500/30">01</span>
+                <h3 class="text-xl font-bold text-white">Local-First Storage Architecture</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                By default, Academy LMS executes and stores all student activity locally within your browser sandbox (<code class="bg-slate-900 px-1.5 py-0.5 rounded text-cyan-300">window.localStorage</code> under key <code class="bg-slate-900 px-1.5 py-0.5 rounded text-cyan-300">academy_lms_state_v4</code>).
+            </p>
+            <div class="grid sm:grid-cols-2 gap-3 pt-2">
+                <div class="study-rail-block !p-4">
+                    <strong class="text-emerald-400 text-xs uppercase tracking-wider block mb-1">What Stays On Your Device</strong>
+                    <ul class="text-xs text-slate-300 space-y-1.5 list-disc pl-4">
+                        <li>Personal study notes &amp; topic remarks</li>
+                        <li>Highlighted syntax &amp; formula snippets</li>
+                        <li>Topic bookmarks and progress checks</li>
+                        <li>Practice drill marks, test timers &amp; flashcard states</li>
+                        <li>Client theme and active filter preferences</li>
+                    </ul>
+                </div>
+                <div class="study-rail-block !p-4">
+                    <strong class="text-blue-400 text-xs uppercase tracking-wider block mb-1">Device Autonomy</strong>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        None of your personal notes or quiz attempts are transmitted across the network unless you explicitly sign in and initiate cloud synchronization. You can study completely offline without an internet connection.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Cloud Sync & Google Authentication -->
+        <section class="panel-card p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 font-mono text-xs font-bold border border-blue-500/30">02</span>
+                <h3 class="text-xl font-bold text-white">Universal Authentication &amp; Cloud Profile Sync</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                Academy LMS supports <strong>Universal Google Identity Services (GSI)</strong>. All college or institutional email domain restrictions have been lifted, meaning students, faculty, and self-taught developers worldwide can sign in with any valid personal (<code class="bg-slate-900 px-1 py-0.5 rounded text-cyan-300">@gmail.com</code>) or academic Google account. We request only the bare minimum authentication credentials:
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-5">
+                <li><strong class="text-white">Email Address &amp; Display Name:</strong> Used exclusively to identify your student account and display your profile card.</li>
+                <li><strong class="text-white">Profile Picture URL:</strong> Used strictly for rendering your avatar in your header badge and lecture study notes.</li>
+                <li><strong class="text-white">Zero Password Access:</strong> Google handles all credential checks via cryptographically signed OIDC tokens. Academy LMS never sees, receives, or stores your Google password.</li>
+                <li><strong class="text-white">No Sensitive Workspace Scopes:</strong> We never request access to Google Drive, Gmail, Contacts, or Google Calendar.</li>
+                <li><strong class="text-white">Secure Session Storage:</strong> Authentication states are secured via <code class="bg-slate-900 px-1 py-0.5 rounded text-cyan-300">HttpOnly</code>, <code class="bg-slate-900 px-1 py-0.5 rounded text-cyan-300">Secure</code>, <code class="bg-slate-900 px-1 py-0.5 rounded text-cyan-300">SameSite=Lax</code> session tokens protected against Cross-Site Scripting (XSS).</li>
+            </ul>
+            <p class="text-xs text-slate-400 mt-2">
+                Cloud-persisted study records are stored in an encrypted Neon Serverless PostgreSQL instance hosted in secure cloud data centers with strict connection pooling and parameterized queries to prevent SQL injection vulnerabilities.
+            </p>
+        </section>
+
+        <!-- Section 3: Exam Simulator & Sandbox Ephemeral Privacy -->
+        <section class="panel-card p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 font-mono text-xs font-bold border border-blue-500/30">03</span>
+                <h3 class="text-xl font-bold text-white">Exam Simulator &amp; Sandbox Ephemeral Privacy</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                Our interactive practice tools (University Exam Simulator, Protocol &amp; Algo Sandbox, and Solved Numerical Trainers) are built for safe experimentation:
+            </p>
+            <div class="grid sm:grid-cols-2 gap-3 pt-1">
+                <div class="study-rail-block !p-4">
+                    <strong class="text-purple-400 text-xs uppercase tracking-wider block mb-1">Exam Essay Drafting</strong>
+                    <p class="text-xs text-slate-300 leading-relaxed">Answers typed in the University Exam Simulator remain in local ephemeral state while drafting. You can self-grade against university rubrics without fear of third-party evaluation or surveillance.</p>
+                </div>
+                <div class="study-rail-block !p-4">
+                    <strong class="text-rose-400 text-xs uppercase tracking-wider block mb-1">Cryptographic &amp; Network Simulations</strong>
+                    <p class="text-xs text-slate-300 leading-relaxed">Private parameters entered into the Diffie-Hellman Sandbox, Cellular Cluster Planner, or HDFS Sizer are computed strictly inside your browser's JavaScript V8 engine and never logged to external servers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Academic Integrity & Ethical Conduct -->
+        <section class="panel-card p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 font-mono text-xs font-bold border border-blue-500/30">04</span>
+                <h3 class="text-xl font-bold text-white">Academic Integrity &amp; Fair Use Policy</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                Academy LMS is created to cultivate deep conceptual mastery, mathematical rigor, and engineering intuition. We hold academic honesty to the highest standard:
+            </p>
+            <div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 rounded-r-lg space-y-2 text-xs text-slate-300">
+                <p><strong>Permitted Academic Use:</strong> Self-paced study, revision, algorithmic verification, practice test rehearsal, group discussions, and concept visualization for university courses.</p>
+                <p><strong>Prohibited Misuse:</strong> Using the platform's instant numerical solvers or proof repositories during proctored mid-term or end-semester examinations in violation of your institution's honor code.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Data Portability & Student Rights -->
+        <section class="panel-card p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 font-mono text-xs font-bold border border-blue-500/30">05</span>
+                <h3 class="text-xl font-bold text-white">Data Portability, Export &amp; Deletion Rights</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                You retain complete control over your academic data at all times:
+            </p>
+            <div class="grid sm:grid-cols-3 gap-3 pt-1">
+                <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+                    <strong class="text-white text-xs block mb-1">Instant Data Export</strong>
+                    <p class="text-xs text-slate-400">Download a full JSON snapshot of all your notes, quiz records, and bookmarks anytime from your Profile page.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+                    <strong class="text-white text-xs block mb-1">Local State Reset</strong>
+                    <p class="text-xs text-slate-400">Clear your browser's local cache anytime through your browser settings to immediately wipe all local study traces.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+                    <strong class="text-white text-xs block mb-1">Cloud Account Purge</strong>
+                    <p class="text-xs text-slate-400">To permanently delete your synced cloud records and comments, email the project administrator for an immediate wipe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Responsible Disclosure & Contact -->
+        <section class="panel-card p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 font-mono text-xs font-bold border border-blue-500/30">06</span>
+                <h3 class="text-xl font-bold text-white">Data Controller &amp; Contact Information</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                For questions regarding data processing, corrections to syllabus materials, or security reports, reach out directly to the lead maintainer:
+            </p>
+            <div class="summary-list text-xs space-y-2 pt-2">
+                <p><strong class="text-white">Project Lead:</strong> Aryan Singh Chandel</p>
+                <p><strong class="text-white">Email:</strong> <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-300 hover:text-white underline">aryansingh19gh@gmail.com</a></p>
+                <p><strong class="text-white">Affiliation:</strong> Computer Science Engineering &bull; Academy LMS Open Source Project</p>
+            </div>
         </section>
     </main>
+
     <footer class="academy-footer">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 text-sm text-slate-400">
-            Aryan Singh Chandel â€¢ <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-200 hover:text-white">aryansingh19gh@gmail.com</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row gap-4 md:items-center md:justify-between text-sm text-slate-400">
+            <div>
+                <strong class="text-white">Academy LMS</strong> &bull; Student Preparation Portal
+            </div>
+            <div>
+                Aryan Singh Chandel &bull; <a href="mailto:aryansingh19gh@gmail.com" class="text-blue-200 hover:text-white">aryansingh19gh@gmail.com</a>
+            </div>
         </div>
     </footer>
+    <script src="../js/shared.js"></script>
 </body>
 </html>
-

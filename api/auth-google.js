@@ -115,6 +115,9 @@ module.exports = async function handler(req, res) {
             return;
         }
 
+        // Universal entry: All email domains (Gmail, university/college accounts, and personal emails) are permitted.
+        // No domain restrictions are enforced so students across any institution can access the platform.
+
         const sql = await getSql();
         const student = await upsertGoogleStudent(sql, payload, deviceId);
         if (student.is_banned) {
