@@ -4,11 +4,21 @@ let activeResourceType = 'all';
 function getSubjects() {
     return [
         { id: 'all', label: 'All subjects' },
+        { id: 'cs501', label: 'CS501' },
+        { id: 'cs502', label: 'CS502' },
+        { id: 'cs503', label: 'CS503' },
+        { id: 'cs503-cs', label: 'CS503-CS' },
+        { id: 'cs504', label: 'CS504' },
         { id: 'cs601', label: 'CS601' },
         { id: 'cs602', label: 'CS602' },
         { id: 'cs603', label: 'CS603' },
         { id: 'cs603-cg', label: 'CS603-CG' },
-        { id: 'cs604', label: 'CS604' }
+        { id: 'cs604', label: 'CS604' },
+        { id: 'cs701', label: 'CS701' },
+        { id: 'cs702', label: 'CS702' },
+        { id: 'cs702-wmc', label: 'CS702-WMC' },
+        { id: 'cs703', label: 'CS703' },
+        { id: 'cs703-dm', label: 'CS703-DM' }
     ];
 }
 

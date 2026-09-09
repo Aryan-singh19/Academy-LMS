@@ -9,6 +9,8 @@ let topicComments = [];
 let openUnits = {};
 let lastSelectionText = '';
 let lastHighlightForTopic = {};
+let isLeftPanelCollapsed = localStorage.getItem('academy_left_collapsed') === 'true';
+let isRightPanelCollapsed = localStorage.getItem('academy_right_collapsed') === 'true';
 
 function startApp() {
     if (!window.ACADEMY.isAuthenticated()) {
@@ -196,6 +198,17 @@ function bindGlobalEvents() {
         if (event.key === 'Escape') {
             closeReferenceModal();
             document.getElementById('searchResults').classList.add('hidden');
+        }
+        const tag = event.target && event.target.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA' || (event.target && event.target.isContentEditable)) {
+            return;
+        }
+        if (event.key === '[') {
+            event.preventDefault();
+            toggleSidePanel('left');
+        } else if (event.key === ']') {
+            event.preventDefault();
+            toggleSidePanel('right');
         }
     });
     document.getElementById('referenceModal').addEventListener('click', (event) => {
@@ -419,49 +432,113 @@ function renderCourseView() {
     renderStudentDock();
     syncProfileAvatarNav();
 
-    document.getElementById('mainContent').innerHTML = `
-        <div class="workspace-grid">
-            <aside class="panel-card p-4 workspace-panel workspace-panel-left">
-                <div class="flex items-start justify-between gap-3 mb-4">
-                    <div>
-                        <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code}</p>
-                        <h2 class="text-xl font-bold text-white mt-1">${course.title}</h2>
-                    </div>
-                    <span class="mini-badge">${getCourseCompletionText(course.id)}</span>
-                </div>
-                <p class="text-sm text-slate-400 mb-5">${course.description}</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <button onclick="setTopicListFilter('all')" class="mini-badge ${topicListFilter === 'all' ? 'course-pill-active' : ''}">All</button>
-                    <button onclick="setTopicListFilter('bookmarked')" class="mini-badge ${topicListFilter === 'bookmarked' ? 'course-pill-active' : ''}">Bookmarked</button>
-                    <button onclick="setTopicListFilter('incomplete')" class="mini-badge ${topicListFilter === 'incomplete' ? 'course-pill-active' : ''}">Incomplete</button>
-                </div>
-                <div class="space-y-3 workspace-panel-scroll">
-                    ${course.units.map((entry) => renderUnitButton(entry)).join('')}
-                </div>
-            </aside>
+    // Maximize space for middle learning area when side panels are collapsed
+    const shell = document.getElementById('appMainShell');
+    if (shell) {
+        shell.classList.toggle('workspace-wide', isLeftPanelCollapsed || isRightPanelCollapsed);
+    }
 
+    const gridClasses = [
+        'workspace-grid',
+        isLeftPanelCollapsed ? 'left-collapsed' : '',
+        isRightPanelCollapsed ? 'right-collapsed' : ''
+    ].filter(Boolean).join(' ');
+
+    document.getElementById('mainContent').innerHTML = `
+        <div id="workspaceGrid" class="${gridClasses}">
+            <!-- Left Panel / Restore Edge Button -->
+            ${isLeftPanelCollapsed ? `
+                <div class="hidden xl:flex flex-col items-center">
+                    <button onclick="toggleSidePanel('left')" class="restore-edge-btn" title="Expand Outline sidebar (Press [)">
+                        <svg class="w-4 h-4 mr-1.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Outline (${course.code})</span>
+                    </button>
+                </div>
+            ` : `
+                <aside class="panel-card p-4 workspace-panel workspace-panel-left">
+                    <div class="flex items-start justify-between gap-3 mb-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code}</p>
+                            <h2 class="text-xl font-bold text-white mt-1">${course.title}</h2>
+                        </div>
+                        <div class="flex items-center gap-1.5 shrink-0">
+                            <span class="mini-badge">${getCourseCompletionText(course.id)}</span>
+                            <button onclick="toggleSidePanel('left')" class="panel-collapse-trigger" title="Collapse Outline (Press [)">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-5">${course.description}</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button onclick="setTopicListFilter('all')" class="mini-badge ${topicListFilter === 'all' ? 'course-pill-active' : ''}">All</button>
+                        <button onclick="setTopicListFilter('bookmarked')" class="mini-badge ${topicListFilter === 'bookmarked' ? 'course-pill-active' : ''}">Bookmarked</button>
+                        <button onclick="setTopicListFilter('incomplete')" class="mini-badge ${topicListFilter === 'incomplete' ? 'course-pill-active' : ''}">Incomplete</button>
+                    </div>
+                    <div class="space-y-3 workspace-panel-scroll">
+                        ${course.units.map((entry) => renderUnitButton(entry)).join('')}
+                    </div>
+                </aside>
+            `}
+
+            <!-- Middle Learning Content Area -->
             <section class="panel-card overflow-hidden workspace-panel workspace-panel-center">
-                <div class="border-b border-white/8 px-5 sm:px-8 py-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                <div class="border-b border-white/8 px-5 sm:px-8 py-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
                     <div>
                         <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code} / Unit ${unit.unitNumber}</p>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">${topicSummary}</h2>
                     </div>
-                    <div class="flex flex-wrap gap-2">
-                        <button onclick="toggleMobilePanel('left')" class="secondary-cta text-sm !py-2 !px-4 mobile-panel-toggle">Outline</button>
-                        <button onclick="toggleMobilePanel('right')" class="secondary-cta text-sm !py-2 !px-4 mobile-panel-toggle">Notes</button>
-                        <button onclick="toggleCurrentBookmark()" class="secondary-cta text-sm !py-2 !px-4">${window.ACADEMY.isBookmarked(activeTopicId) ? 'Remove bookmark' : 'Bookmark topic'}</button>
-                        <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-2 !px-4">Mark complete</button>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <!-- Left Outline Toggle -->
+                        <button onclick="toggleSidePanel('left')" class="panel-toggle-btn ${isLeftPanelCollapsed ? 'active' : ''}" title="${isLeftPanelCollapsed ? 'Expand Outline sidebar (Press [)' : 'Collapse Outline sidebar to widen learning area (Press [)'}">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${isLeftPanelCollapsed ? 'M13 5l7 7-7 7M5 5l7 7-7 7' : 'M11 19l-7-7 7-7m8 14l-7-7 7-7'}"></path>
+                            </svg>
+                            <span>${isLeftPanelCollapsed ? 'Show Outline' : 'Hide Outline'}</span>
+                        </button>
+
+                        <!-- Zen Focus Mode Toggle (Collapses both side panels) -->
+                        <button onclick="toggleFocusMode()" class="panel-toggle-btn ${isLeftPanelCollapsed && isRightPanelCollapsed ? 'active' : ''}" title="${isLeftPanelCollapsed && isRightPanelCollapsed ? 'Exit Zen Mode (Restore Panels)' : 'Zen Focus Mode (Both panels collapsed for maximum reading space)'}">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                            </svg>
+                            <span>${isLeftPanelCollapsed && isRightPanelCollapsed ? 'Exit Focus' : 'Focus View'}</span>
+                        </button>
+
+                        <!-- Right Study Rail Toggle -->
+                        <button onclick="toggleSidePanel('right')" class="panel-toggle-btn ${isRightPanelCollapsed ? 'active' : ''}" title="${isRightPanelCollapsed ? 'Expand Study Rail & Notes (Press ])' : 'Collapse Notes & Study Rail to widen learning area (Press ])'}">
+                            <span>${isRightPanelCollapsed ? 'Show Notes' : 'Hide Notes'}</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${isRightPanelCollapsed ? 'M11 19l-7-7 7-7m8 14l-7-7 7-7' : 'M13 5l7 7-7 7M5 5l7 7-7 7'}"></path>
+                            </svg>
+                        </button>
+
+                        <div class="h-4 w-[1px] bg-white/10 mx-1 hidden sm:block"></div>
+
+                        <button onclick="toggleCurrentBookmark()" class="secondary-cta text-sm !py-1.5 !px-3">${window.ACADEMY.isBookmarked(activeTopicId) ? '★ Bookmarked' : '☆ Bookmark'}</button>
+                        <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-1.5 !px-3">Mark complete</button>
                     </div>
                 </div>
                 <div id="topicContentArea" class="px-5 sm:px-8 py-6 sm:py-8 workspace-panel-scroll topic-content-scroll"></div>
             </section>
 
-            <aside id="studyRail" class="panel-card p-5 workspace-panel workspace-panel-right workspace-panel-scroll"></aside>
+            <!-- Right Panel / Restore Edge Button -->
+            ${isRightPanelCollapsed ? `
+                <div class="hidden xl:flex flex-col items-center">
+                    <button onclick="toggleSidePanel('right')" class="restore-edge-btn" title="Expand Notes & Study Rail (Press ])">
+                        <svg class="w-4 h-4 mr-1.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span>Notes & Rail</span>
+                    </button>
+                </div>
+            ` : `
+                <aside id="studyRail" class="panel-card p-5 workspace-panel workspace-panel-right workspace-panel-scroll"></aside>
+            `}
         </div>
     `;
 
     renderTopicContent();
-    renderStudyRail();
+    if (!isRightPanelCollapsed) {
+        renderStudyRail();
+    }
 }
 
 function renderUnitButton(unit) {
@@ -667,13 +744,24 @@ function renderStudyRail() {
     const attemptCount = Object.values(window.ACADEMY.state.quizAttempts).filter((attempt) => attempt.topicId === activeTopicId).length;
     const currentCourseStats = stats.courseStats[activeCourseId];
     const mood = getCourseMoodMessage(activeCourseId);
+    const subjectResources = (window.resourceLibrary || []).filter((item) => item.subject === activeCourseId);
 
-    document.getElementById('studyRail').innerHTML = `
+    const target = document.getElementById('studyRail');
+    if (!target) return;
+
+    target.innerHTML = `
         <div class="space-y-6">
             <section>
-                <p class="text-xs uppercase tracking-[0.24em] text-slate-500">Current focus</p>
-                <h3 class="text-xl font-bold text-white mt-2">${meta ? meta.title : 'Unit revision'}</h3>
-                <p class="text-sm text-slate-400 mt-2">${meta ? `${meta.courseCode} • Unit ${meta.unitNumber}` : 'Essay-style practice area'}</p>
+                <div class="flex items-start justify-between gap-2">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.24em] text-slate-500">Current focus</p>
+                        <h3 class="text-xl font-bold text-white mt-1">${meta ? meta.title : 'Unit revision'}</h3>
+                        <p class="text-sm text-slate-400 mt-1">${meta ? `${meta.courseCode} • Unit ${meta.unitNumber}` : 'Essay-style practice area'}</p>
+                    </div>
+                    <button onclick="toggleSidePanel('right')" class="panel-collapse-trigger shrink-0" title="Collapse Notes & Study Rail (Press ])">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
             </section>
 
             <section class="study-rail-block">
@@ -687,6 +775,27 @@ function renderStudyRail() {
                     <li>Status: ${window.ACADEMY.state.completedTopics[activeTopicId] ? 'Completed' : 'In progress'}</li>
                 </ul>
             </section>
+
+            ${subjectResources.length ? `
+                <section class="study-rail-block">
+                    <div class="section-head">
+                        <h3>Study materials</h3>
+                        <span>${subjectResources.length} files</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-2">Curated notes & formula sheets:</p>
+                    <div class="space-y-2">
+                        ${subjectResources.slice(0, 3).map((res) => `
+                            <a href="${res.path}" class="flex items-center justify-between p-2 rounded-lg bg-slate-900/80 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-800/80 transition-all text-xs group" target="_blank">
+                                <span class="text-slate-200 font-medium truncate pr-2 group-hover:text-blue-300">${res.title}</span>
+                                <span class="text-[10px] text-blue-400 uppercase font-mono px-1.5 py-0.5 rounded bg-blue-500/10 shrink-0">${res.typeLabel}</span>
+                            </a>
+                        `).join('')}
+                    </div>
+                    <a href="html/resources.html" class="inline-flex items-center justify-center w-full text-xs text-blue-400 hover:text-blue-300 font-semibold mt-3 pt-2 border-t border-white/5">
+                        Download desk &rarr;
+                    </a>
+                </section>
+            ` : ''}
 
             <section class="study-rail-block">
                 <div class="section-head">
@@ -722,11 +831,13 @@ function renderStudyRail() {
     `;
 
     const noteInput = document.getElementById('topicNoteInput');
-    noteInput.addEventListener('input', () => {
-        window.ACADEMY.setNote(activeTopicId, noteInput.value);
-        renderOverviewCards();
-        renderStudentDock();
-    });
+    if (noteInput) {
+        noteInput.addEventListener('input', () => {
+            window.ACADEMY.setNote(activeTopicId, noteInput.value);
+            renderOverviewCards();
+            renderStudentDock();
+        });
+    }
 }
 
 function renderExamContent(contentArea) {
@@ -953,12 +1064,34 @@ async function logoutStudentFromUi() {
     window.location.href = 'index.html';
 }
 
+function toggleSidePanel(side) {
+    if (side === 'left') {
+        isLeftPanelCollapsed = !isLeftPanelCollapsed;
+        localStorage.setItem('academy_left_collapsed', isLeftPanelCollapsed);
+    } else if (side === 'right') {
+        isRightPanelCollapsed = !isRightPanelCollapsed;
+        localStorage.setItem('academy_right_collapsed', isRightPanelCollapsed);
+    }
+    renderCourseView();
+}
+
+function toggleFocusMode() {
+    if (isLeftPanelCollapsed && isRightPanelCollapsed) {
+        // Exit focus mode: restore both panels
+        isLeftPanelCollapsed = false;
+        isRightPanelCollapsed = false;
+    } else {
+        // Enter focus mode: collapse both panels
+        isLeftPanelCollapsed = true;
+        isRightPanelCollapsed = true;
+    }
+    localStorage.setItem('academy_left_collapsed', isLeftPanelCollapsed);
+    localStorage.setItem('academy_right_collapsed', isRightPanelCollapsed);
+    renderCourseView();
+}
+
 function toggleMobilePanel(side) {
-    const target = side === 'left'
-        ? document.querySelector('.workspace-panel-left')
-        : document.querySelector('.workspace-panel-right');
-    if (!target) return;
-    target.classList.toggle('workspace-mobile-hidden');
+    toggleSidePanel(side);
 }
 
 function renderTopicCommentsSection() {

@@ -33,20 +33,35 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
         <section class="revision-banner mb-8">
             <div>
-                <p class="revision-label">Stay inside the portal</p>
-                <h2 class="text-3xl font-extrabold text-white">Watch lecture links without leaving Academy LMS</h2>
-                <p class="text-slate-400 mt-2">Add YouTube links in one file, and students can browse and watch them here inside an embedded study view.</p>
+                <p class="revision-label">Interactive Video Academy</p>
+                <h2 class="text-3xl font-extrabold text-white">Watch University Lectures &amp; Playlists Inside LMS</h2>
+                <p class="text-slate-400 mt-2">Curated YouTube courses, playlists, and numerical masterclasses across Semesters 5, 6, and 7 from Neso Academy, Gate Smashers, Abdul Bari, Andrew Ng, Computerphile, and NPTEL.</p>
             </div>
-            <a href="resources.html" class="secondary-cta">Open resources</a>
+            <div class="flex flex-wrap gap-2">
+                <a href="resources.html" class="secondary-cta">Study Resources</a>
+                <a href="tests.html" class="primary-cta">Practice Tests</a>
+            </div>
         </section>
 
-        <section class="panel-card p-5 mb-6">
+        <section class="panel-card p-5 mb-6 space-y-4">
             <div class="section-head">
-                <h3>Lecture filters</h3>
-                <span>Choose a subject</span>
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+                    <h3 class="text-base font-bold text-white">Curated Video Library</h3>
+                </div>
+                <span class="text-xs text-slate-400 font-mono">15 Subjects • 70+ Curated Lectures &amp; Playlists</span>
             </div>
-            <div id="lectureSubjectTabs" class="flex flex-wrap gap-2"></div>
-            <div id="lectureToolbar" class="mt-4"></div>
+            <div class="space-y-3">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 min-w-[80px]">Semester:</span>
+                    <div id="lectureSemesterTabs" class="flex flex-wrap gap-2"></div>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 min-w-[80px]">Subject:</span>
+                    <div id="lectureSubjectTabs" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+            <div id="lectureToolbar" class="pt-3 border-t border-slate-800"></div>
         </section>
 
         <section class="grid xl:grid-cols-[360px_minmax(0,1fr)] gap-6">

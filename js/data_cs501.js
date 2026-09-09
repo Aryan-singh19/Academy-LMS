@@ -69,6 +69,11 @@ stateDiagram-v2
                     answer: 2,
                     explanation: "q0 is the initial state where computation begins."
                 }
+            ],
+            references: [
+                { title: "TOC Formula Cheat Sheet & Matrix", url: "../assets/resources/cs501/notes/cs501-toc-formula-cheat-sheet.md" },
+                { title: "FSM Interactive Simulator", url: "https://morphett.info/fsm/" },
+                { title: "GeeksforGeeks Automata Theory", url: "https://www.geeksforgeeks.org/introduction-of-theory-of-computation/" }
             ]
         },
         'cs501-u1t2': {
@@ -324,6 +329,11 @@ graph TD
                     answer: 2,
                     explanation: "In NDFA, the transition function maps to any subset of states, which is an element of 2^Q."
                 }
+            ],
+            references: [
+                { title: "TOC University Solved Numericals", url: "../assets/resources/cs501/mock-papers/cs501-rgpv-solved-question-bank.md" },
+                { title: "Stanford CS103 Automata Tools", url: "https://web.stanford.edu/class/cs103/" },
+                { title: "JFLAP Automata Simulator", url: "http://www.jflap.org/" }
             ]
         },
         'cs501-u2t2': {
@@ -544,6 +554,10 @@ graph TD
                     answer: 1,
                     explanation: "Type 2 grammars generate Context Free Languages (CFLs), recognized by Pushdown Automata (PDAs)."
                 }
+            ],
+            references: [
+                { title: "Chomsky Hierarchy Reference Sheet", url: "../assets/resources/cs501/notes/cs501-toc-formula-cheat-sheet.md" },
+                { title: "GeeksforGeeks Chomsky Hierarchy", url: "https://www.geeksforgeeks.org/chomsky-hierarchy-in-theory-of-computation/" }
             ]
         },
         'cs501-u3t2': {
@@ -728,6 +742,10 @@ graph LR
                     answer: 1,
                     explanation: "The key addition in a PDA is the unbounded stack data structure operated by push and pop."
                 }
+            ],
+            references: [
+                { title: "PDA Construction Solved Bank", url: "../assets/resources/cs501/mock-papers/cs501-rgpv-solved-question-bank.md" },
+                { title: "NPTEL Pushdown Automata Lecture Notes", url: "https://nptel.ac.in/courses/106104028" }
             ]
         },
         'cs501-u4t2': {
@@ -901,6 +919,11 @@ graph TD
                     answer: 0,
                     explanation: "A Turing transition reads the current symbol, writes a replacement symbol, changes state, and shifts head Left (L) or Right (R)."
                 }
+            ],
+            references: [
+                { title: "Turing Machine & Halting Problem Notes", url: "../assets/resources/cs501/notes/cs501-toc-formula-cheat-sheet.md" },
+                { title: "Online Turing Machine Simulator", url: "https://morphett.info/turing/turing.html" },
+                { title: "Solved Turing Machine Numericals", url: "../assets/resources/cs501/mock-papers/cs501-rgpv-solved-question-bank.md" }
             ]
         },
         'cs501-u5t2': {

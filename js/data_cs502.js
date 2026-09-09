@@ -44,6 +44,11 @@ Object.assign(window.topicDetails, {
                     answer: 1,
                     explanation: "Traditional file systems lead to data duplication, inconsistent states across files, lack of declarative queries, and atomic concurrency issues."
                 }
+            ],
+            references: [
+                { title: "DBMS Architecture & Normalization Notes", url: "../assets/resources/cs502/notes/cs502-dbms-normalization-masterclass.md" },
+                { title: "PostgreSQL Official Tutorial", url: "https://www.postgresql.org/docs/current/tutorial.html" },
+                { title: "GeeksforGeeks DBMS Tutorials", url: "https://www.geeksforgeeks.org/dbms/" }
             ]
         },
         'cs502-u1t2': {
@@ -326,6 +331,11 @@ graph LR
                     answer: 1,
                     explanation: "Candidate keys are minimal super keys: removing any attribute destroys uniqueness."
                 }
+            ],
+            references: [
+                { title: "Relational Algebra & SQL Lab Manual", url: "../assets/resources/cs502/assignments/cs502-sql-lab-manual-and-queries.md" },
+                { title: "SQL Fiddle Interactive Engine", url: "https://sqlfiddle.com/" },
+                { title: "DB-Fiddle SQL Practice", url: "https://www.db-fiddle.com/" }
             ]
         },
         'cs502-u2t2': {
@@ -592,6 +602,10 @@ graph LR
                     answer: 1,
                     explanation: "BCNF strictly requires the determinant X in every non-trivial dependency X -> Y to be a super key."
                 }
+            ],
+            references: [
+                { title: "DBMS Normalization Masterclass (1NF to 5NF)", url: "../assets/resources/cs502/notes/cs502-dbms-normalization-masterclass.md" },
+                { title: "University Solved FD & Decomposition Bank", url: "../assets/resources/cs502/mock-papers/cs502-rgpv-solved-question-bank.md" }
             ]
         },
         'cs502-u3t3': {
@@ -797,6 +811,10 @@ graph LR
                     answer: 0,
                     explanation: "A schedule is conflict serializable if and only if its precedence graph is acyclic."
                 }
+            ],
+            references: [
+                { title: "Serializability & 2PL Solved Bank", url: "../assets/resources/cs502/mock-papers/cs502-rgpv-solved-question-bank.md" },
+                { title: "GeeksforGeeks Concurrency Control", url: "https://www.geeksforgeeks.org/concurrency-control-techniques/" }
             ]
         },
         'cs502-u4t3': {
@@ -1155,6 +1173,10 @@ graph LR
                     answer: 1,
                     explanation: "Functions must return a value via RETURN and can be embedded in SQL queries."
                 }
+            ],
+            references: [
+                { title: "SQL Lab Manual & Triggers Handbook", url: "../assets/resources/cs502/assignments/cs502-sql-lab-manual-and-queries.md" },
+                { title: "PostgreSQL PL/pgSQL Documentation", url: "https://www.postgresql.org/docs/current/plpgsql.html" }
             ]
         }
     }
