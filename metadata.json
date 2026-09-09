@@ -1,0 +1,6 @@
+{
+  "name": "Academy LMS",
+  "description": "Student prep portal with study notes, revision drills, lecture discussions, and practice tests for CS subjects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

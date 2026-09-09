@@ -23,7 +23,26 @@ Object.assign(window.topicDetails, {
 </div>
 
 <p class="text-gray-300 text-sm">During this phase, the Lexer also throws away all the "junk" that the computer doesn't need, such as whitespace, tabs, and comments.</p>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">The 6 Phases of Compiler Architecture</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph TD
+    Source[Source Code: High-Level Language] --> Lex[1. Lexical Analyzer: Scanner / Tokens]
+    Lex --> Syn[2. Syntax Analyzer: Parser / Parse Tree]
+    Syn --> Sem[3. Semantic Analyzer: Type Checking & Symbol Table]
+    Sem --> ICG[4. Intermediate Code Generator: 3-Address Code / Quadruples]
+    ICG --> Opt[5. Machine-Independent Optimizer: Dead Code, Loop Unrolling]
+    Opt --> Target[6. Target Code Generator: Assembly / Machine Code]
+    style Source fill:#1e293b,stroke:#64748b,color:#fff
+    style Lex fill:#1e293b,stroke:#3b82f6,color:#fff
+    style Syn fill:#1e293b,stroke:#10b981,color:#fff
+    style Sem fill:#1e293b,stroke:#f59e0b,color:#fff
+    style ICG fill:#1e293b,stroke:#ec4899,color:#fff
+    style Opt fill:#1e293b,stroke:#8b5cf6,color:#fff
+    style Target fill:#1e293b,stroke:#06b6d4,color:#fff
+</div>
+`,
             quizzes: [
                 {
                     question: "What is the primary output of the Lexical Analysis phase?",
@@ -56,7 +75,50 @@ Object.assign(window.topicDetails, {
         <p class="text-gray-300 text-sm">Computers cannot directly run NFAs efficiently. However, we write our rules using Regular Expressions, which are converted to NFAs, which are then mathematically converted into DFAs via Subset Construction.</p>
     </div>
 </div>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">Parsing Hierarchy & LL vs LR Classification</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph TD
+    Parser[Grammar Parsers] --> TopDown[Top-Down Parsers: Root to Leaves]
+    Parser --> BottomUp[Bottom-Up Parsers: Leaves to Root / Shift-Reduce]
+    TopDown --> LL[LL: Left-to-right, Leftmost derivation: LL 1, Recursive Descent]
+    BottomUp --> LR[LR: Left-to-right, Rightmost derivation in reverse]
+    LR --> SLR[SLR 1: Simple LR]
+    LR --> LALR[LALR 1: Look-Ahead LR, Yacc/Bison]
+    LR --> CLR[CLR 1: Canonical LR, Most Powerful]
+    style TopDown fill:#1e293b,stroke:#3b82f6,color:#fff
+    style BottomUp fill:#1e293b,stroke:#10b981,color:#fff
+    style LL fill:#1e293b,stroke:#f59e0b,color:#fff
+    style LR fill:#1e293b,stroke:#ec4899,color:#fff
+</div>
+
+<div class="bg-slate-900 p-5 rounded-xl border border-blue-500/30 mb-6">
+    <h4 class="text-amber-400 font-bold mb-2 text-base">University Exam Solved Numerical: FIRST and FOLLOW Sets</h4>
+    <p class="text-sm text-gray-300 mb-2"><strong>Given Grammar:</strong></p>
+    <div class="bg-gray-950 p-3 rounded font-mono text-xs text-cyan-300 mb-3 border border-slate-800">
+        E  &rarr; T E'<br>
+        E' &rarr; + T E' | &epsilon;<br>
+        T  &rarr; F T'<br>
+        T' &rarr; * F T' | &epsilon;<br>
+        F  &rarr; ( E ) | id
+    </div>
+    <div class="space-y-2 text-xs font-mono text-gray-300">
+        <div class="text-emerald-400 font-bold">1. FIRST Sets:</div>
+        <div>FIRST(F)  = { (, id }</div>
+        <div>FIRST(T') = { *, &epsilon; }</div>
+        <div>FIRST(T)  = FIRST(F) = { (, id }</div>
+        <div>FIRST(E') = { +, &epsilon; }</div>
+        <div>FIRST(E)  = FIRST(T) = { (, id }</div>
+        <div class="text-emerald-400 font-bold mt-2">2. FOLLOW Sets (Rule: $ in FOLLOW(Start)):</div>
+        <div>FOLLOW(E)  = { $, ) }</div>
+        <div>FOLLOW(E') = FOLLOW(E) = { $, ) }</div>
+        <div>FOLLOW(T)  = FIRST(E')  {&epsilon;} &cup; FOLLOW(E') = { +, $, ) }</div>
+        <div>FOLLOW(T') = FOLLOW(T) = { +, $, ) }</div>
+        <div>FOLLOW(F)  = FIRST(T')  {&epsilon;} &cup; FOLLOW(T') = { *, +, $, ) }</div>
+    </div>
+</div>
+`,
             quizzes: [
                 {
                     question: "Why do compilers convert Regular Expressions into DFAs instead of executing NFAs directly?",
@@ -115,7 +177,34 @@ Object.assign(window.topicDetails, {
 <div class="bg-red-900/30 border border-red-500/50 p-4 rounded text-sm text-red-200">
     <strong>The Left-Recursion Problem:</strong> Top-Down parsers will go into an infinite loop and crash if your grammar has rules like <code>A -> A + B</code>. It will continuously try to expand 'A' forever. You must mathematically refactor the grammar to remove Left-Recursion before using a Top-Down parser.
 </div>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">Control Flow Graph (CFG) & Basic Block Partitioning</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph TD
+    Entry([Entry]) --> B1[B1: i = 1, sum = 0]
+    B1 --> B2{B2: if i <= 100}
+    B2 -- True --> B3[B3: sum += i, i++]
+    B3 --> B2
+    B2 -- False --> B4[B4: print sum, return]
+    B4 --> Exit([Exit])
+    style Entry fill:#1e293b,stroke:#64748b,color:#fff
+    style B1 fill:#1e293b,stroke:#3b82f6,color:#fff
+    style B2 fill:#1e293b,stroke:#f59e0b,color:#fff
+    style B3 fill:#1e293b,stroke:#10b981,color:#fff
+    style B4 fill:#1e293b,stroke:#ec4899,color:#fff
+    style Exit fill:#1e293b,stroke:#64748b,color:#fff
+</div>
+
+<div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 rounded-r-lg mb-6">
+    <div class="font-bold text-amber-300 text-sm mb-1">Leader Identification Rules for Basic Blocks</div>
+    <ol class="list-decimal pl-5 text-xs text-slate-300 space-y-1">
+        <li>The very first three-address statement in the intermediate code is a leader.</li>
+        <li>Any statement that is the target of a conditional or unconditional jump (e.g. <code>goto L1</code>) is a leader.</li>
+        <li>Any statement that immediately follows a conditional or unconditional jump statement is a leader.</li>
+    </ol>
+</div>
+`,
             quizzes: [
                 {
                     question: "Why do Top-Down (Recursive Descent) parsers crash if they encounter 'Left-Recursion' in a grammar rule?",

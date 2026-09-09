@@ -3,6 +3,7 @@ let activeUnitId = 'cs601-u1';
 let activeTopicId = 't1';
 let appStarted = false;
 const loadedCourses = {};
+let activeSemesterFilter = 'all';
 let topicListFilter = 'all';
 let topicComments = [];
 let openUnits = {};
@@ -299,23 +300,64 @@ function renderStudentDock() {
     syncProfileAvatarNav();
 }
 
+function setSemesterFilter(sem) {
+    activeSemesterFilter = sem;
+    renderCoursesNav();
+}
+
 function renderCoursesNav() {
     const stats = window.ACADEMY.calculateStats();
-    document.getElementById('coursesNav').innerHTML = coursesData.map((course) => {
-        const courseStats = stats.courseStats[course.id] || { completionRate: 0, completed: 0, total: course.units.reduce((sum, unit) => sum + unit.topics.length, 0) };
-        return `
-            <button onclick="switchCourse('${course.id}')" class="course-pill ${course.id === activeCourseId ? 'course-pill-active' : ''}">
-                <span class="font-semibold">${course.code}</span>
-                <span class="text-xs text-slate-400">${courseStats.completed}/${courseStats.total} done</span>
-            </button>
-        `;
-    }).join('');
+    const nav = document.getElementById('coursesNav');
+    if (!nav) return;
+
+    const semesters = [
+        { id: 'all', label: 'All Semesters' },
+        { id: '5', label: '5th Semester' },
+        { id: '6', label: '6th Semester' }
+    ];
+
+    const filteredCourses = coursesData.filter((course) => {
+        if (activeSemesterFilter === 'all') return true;
+        return String(course.semester) === String(activeSemesterFilter);
+    });
+
+    nav.innerHTML = `
+        <div class="w-full flex flex-wrap items-center justify-between gap-3 mb-2 pb-2 border-b border-slate-800">
+            <div class="flex items-center gap-1 bg-slate-900/80 p-1 rounded-xl border border-slate-800">
+                ${semesters.map((sem) => `
+                    <button type="button" onclick="setSemesterFilter('${sem.id}')" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${activeSemesterFilter === sem.id ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}">
+                        ${sem.label}
+                    </button>
+                `).join('')}
+            </div>
+            <span class="text-xs text-slate-400 font-medium">${filteredCourses.length} subjects</span>
+        </div>
+        <div class="flex flex-wrap gap-2 w-full">
+            ${filteredCourses.map((course) => {
+                const courseStats = stats.courseStats[course.id] || { completionRate: 0, completed: 0, total: course.units.reduce((sum, unit) => sum + unit.topics.length, 0) };
+                const isSem5 = course.semester === 5;
+                return `
+                    <button onclick="switchCourse('${course.id}')" class="course-pill ${course.id === activeCourseId ? 'course-pill-active' : ''}">
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-[10px] px-1.5 py-0.5 rounded font-mono font-bold ${isSem5 ? 'bg-amber-500/20 text-amber-300' : 'bg-blue-500/20 text-blue-300'}">Sem ${course.semester || 6}</span>
+                            <span class="font-semibold">${course.code}</span>
+                        </div>
+                        <span class="text-xs text-slate-400">${courseStats.completed}/${courseStats.total} done</span>
+                    </button>
+                `;
+            }).join('')}
+        </div>
+    `;
 }
 
 function switchCourse(courseId) {
     if (courseId === activeCourseId) return;
     const course = coursesData.find((item) => item.id === courseId);
+    if (!course) return;
     activeCourseId = course.id;
+    if (activeSemesterFilter !== 'all' && String(course.semester) !== String(activeSemesterFilter)) {
+        activeSemesterFilter = String(course.semester);
+    }
     activeUnitId = course.units[0].id;
     activeTopicId = course.units[0].topics[0].id;
     openUnits = { [activeUnitId]: true };

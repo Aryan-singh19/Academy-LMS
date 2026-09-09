@@ -91,7 +91,28 @@ graph TD
         </tr>
     </tbody>
 </table>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">Scrum Agile Workflow & Ceremonies</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph LR
+    Backlog[Product Backlog: Prioritized User Stories] --> SprintPlanning[Sprint Planning]
+    SprintPlanning --> SprintBacklog[Sprint Backlog: 2-4 Week Scope]
+    SprintBacklog --> DailyScrum[Daily Standup: 15-min sync]
+    DailyScrum --> Dev[Sprint Execution & Development]
+    Dev --> Shipped[Potentially Shippable Product Increment]
+    Shipped --> Review[Sprint Review & Demo]
+    Review --> Retro[Sprint Retrospective: Continuous Improvement]
+    Retro -.-> SprintPlanning
+    style Backlog fill:#1e293b,stroke:#3b82f6,color:#fff
+    style SprintPlanning fill:#1e293b,stroke:#f59e0b,color:#fff
+    style SprintBacklog fill:#1e293b,stroke:#10b981,color:#fff
+    style DailyScrum fill:#1e293b,stroke:#ec4899,color:#fff
+    style Shipped fill:#1e293b,stroke:#06b6d4,color:#fff
+    style Review fill:#1e293b,stroke:#8b5cf6,color:#fff
+    style Retro fill:#1e293b,stroke:#64748b,color:#fff
+</div>
+`,
             quizzes: [
                 {
                     question: "In the Scrum framework, what is the purpose of the Daily Stand-up?",
@@ -173,7 +194,30 @@ gantt
     <li>PERT calculates time probabilistically using three estimates: <strong>Optimistic (O)</strong>, <strong>Most Likely (M)</strong>, and <strong>Pessimistic (P)</strong>.</li>
     <li>Expected Time = (O + 4M + P) / 6</li>
 </ul>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">Critical Path Method (CPM) & Float Calculation</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph LR
+    A((A: Start<br>Dur: 3)) --> B((B: Design<br>Dur: 4))
+    A --> C((C: Setup<br>Dur: 2))
+    B --> D((D: Coding<br>Dur: 6))
+    C --> E((E: Docs<br>Dur: 3))
+    D --> F((F: Finish<br>Dur: 2))
+    E --> F
+    style A fill:#1e293b,stroke:#3b82f6,color:#fff
+    style B fill:#1e293b,stroke:#ef4444,color:#fff
+    style D fill:#1e293b,stroke:#ef4444,color:#fff
+    style F fill:#1e293b,stroke:#ef4444,color:#fff
+    style C fill:#1e293b,stroke:#64748b,color:#fff
+    style E fill:#1e293b,stroke:#64748b,color:#fff
+</div>
+
+<div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 rounded-r-lg mb-6">
+    <div class="font-bold text-amber-300 text-sm mb-1">Exam Rule: Identifying the Critical Path</div>
+    <p class="text-xs text-slate-300">Path 1 (A-B-D-F): 3 + 4 + 6 + 2 = <strong>15 days</strong> (Longest path = Critical Path, Slack = 0).<br>Path 2 (A-C-E-F): 3 + 2 + 3 + 2 = 10 days (Slack = 15 - 10 = 5 days float). Any delay on the Critical Path directly delays the entire project!</p>
+</div>
+`,
             quizzes: [
                 {
                     question: "In project management, what is the 'Critical Path'?",

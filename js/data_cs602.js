@@ -31,7 +31,34 @@ Object.assign(window.topicDetails, {
 <div class="bg-gray-900 p-4 border border-gray-700 rounded text-sm text-gray-400 shadow-inner">
     <em>Mnemonic to remember the layers (bottom to top):</em> Please Do Not Throw Sausage Pizza Away.
 </div>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">OSI 7-Layer vs TCP/IP 4-Layer Architecture</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph LR
+    subgraph OSI [OSI 7-Layer Model]
+        L7[7. Application]
+        L6[6. Presentation]
+        L5[5. Session]
+        L4[4. Transport]
+        L3[3. Network]
+        L2[2. Data Link]
+        L1[1. Physical]
+    end
+    subgraph TCPIP [TCP/IP 4-Layer Model]
+        T4[Application: HTTP, DNS, SMTP]
+        T3[Transport: TCP, UDP]
+        T2[Internet: IP, ICMP, ARP]
+        T1[Network Access: Ethernet, Wi-Fi]
+    end
+    L7 & L6 & L5 -.-> T4
+    L4 -.-> T3
+    L3 -.-> T2
+    L2 & L1 -.-> T1
+    style OSI fill:#1e293b,stroke:#3b82f6,color:#fff
+    style TCPIP fill:#1e293b,stroke:#10b981,color:#fff
+</div>
+`,
             quizzes: [
                 {
                     question: "Which layer of the OSI model is responsible for logical addressing (IP addresses) and routing packets across multiple networks?",
@@ -97,7 +124,25 @@ Object.assign(window.topicDetails, {
         <tr class="hover:bg-gray-750 transition-colors"><td class="p-3 font-bold">Notation</td><td class="p-3">Dotted Decimal</td><td class="p-3">Hexadecimal</td></tr>
     </tbody>
 </table>
-            `,
+            
+
+<div class="bg-slate-900 p-5 rounded-xl border border-blue-500/30 mb-6">
+    <h4 class="text-amber-400 font-bold mb-2 text-base">University Exam Solved Numerical: IPv4 Subnetting & CIDR</h4>
+    <p class="text-sm text-gray-300 mb-2"><strong>Problem:</strong> Given the network address <code>192.168.10.0/26</code>, calculate:</p>
+    <div class="bg-gray-950 p-4 rounded text-xs font-mono text-emerald-300 space-y-1.5 border border-slate-800">
+        <div>1. Subnet Mask: /26 means 26 ones and 6 zeros.</div>
+        <div class="text-cyan-300">   Binary: 11111111.11111111.11111111.11000000 = 255.255.255.192</div>
+        <div>2. Number of Subnets: Host borrowed bits = 2. Total subnets = 2^2 = 4 subnets.</div>
+        <div>3. Block Size: 256 - 192 = 64 addresses per subnet.</div>
+        <div>4. Usable Hosts per Subnet: 2^(32 - 26) - 2 = 2^6 - 2 = 64 - 2 = 62 valid hosts.</div>
+        <div class="text-yellow-300 font-bold">5. Subnet 1 Boundaries:</div>
+        <div>   - Network ID:    192.168.10.0</div>
+        <div>   - First Host:    192.168.10.1</div>
+        <div>   - Last Host:     192.168.10.62</div>
+        <div>   - Broadcast ID:  192.168.10.63</div>
+    </div>
+</div>
+`,
             quizzes: [
                 {
                     question: "Why was IPv6 created?",

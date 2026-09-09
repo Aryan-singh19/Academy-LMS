@@ -42,7 +42,25 @@ graph TD
     style F fill:#38a169,stroke:#2f855a,color:#fff
     style E fill:#d69e2e,stroke:#b7791f,color:#fff
 </div>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">Machine Learning Taxonomy & Paradigms</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph TD
+    ML[Machine Learning Paradigms] --> Sup[Supervised Learning: Labeled Data]
+    ML --> Unsup[Unsupervised Learning: Unlabeled Data]
+    ML --> RL[Reinforcement Learning: Reward / Penalty]
+    Sup --> Reg[Regression: Continuous Targets e.g., House Price]
+    Sup --> Class[Classification: Discrete Classes e.g., Spam/Ham]
+    Unsup --> Clust[Clustering: K-Means, DBSCAN]
+    Unsup --> Dim[Dimensionality Reduction: PCA, t-SNE]
+    RL --> Policy[Policy / Q-Learning: Robotics, Game AI]
+    style ML fill:#1e293b,stroke:#3b82f6,color:#fff
+    style Sup fill:#1e293b,stroke:#10b981,color:#fff
+    style Unsup fill:#1e293b,stroke:#f59e0b,color:#fff
+    style RL fill:#1e293b,stroke:#ec4899,color:#fff
+</div>
+`,
             quizzes: [
                 {
                     question: "How does Machine Learning differ fundamentally from Traditional Programming?",
@@ -507,7 +525,36 @@ graph LR
 
 <h3 class="text-xl font-bold mb-2 text-green-400">Gradient Descent: The Downhill Skiing</h3>
 <p class="mb-4">Once we have a Loss score, we need to reduce it. We calculate the <em>Gradient</em> (the mathematical derivative/slope of the Loss function with respect to the weights). The gradient tells us which way is "up". We then update the weights by taking a small step in the <strong>opposite direction</strong> (downhill). This "step size" is controlled by the <strong>Learning Rate</strong>.</p>
-            `,
+            
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">Backpropagation & Computational Graph</h3>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph LR
+    subgraph Forward [Forward Pass: Compute Predictions & Loss]
+        X[Input x] -->|W1, b1| Z1[Hidden Linear: z1 = W1x+b1]
+        Z1 -->|Activation| A1[Hidden Act: a1 = sigma z1]
+        A1 -->|W2, b2| Z2[Output: y_hat = W2a1+b2]
+        Z2 --> Loss[Loss Function L]
+    end
+    subgraph Backward [Backward Pass: Chain Rule Gradients]
+        Loss -.->|dL/dy_hat| Z2
+        Z2 -.->|dL/dW2| A1
+        A1 -.->|dL/da1 * sigma'| Z1
+        Z1 -.->|dL/dW1| X
+    end
+    style Forward fill:#1e293b,stroke:#3b82f6,color:#fff
+    style Backward fill:#1e293b,stroke:#ef4444,color:#fff
+</div>
+
+<div class="bg-slate-900 p-5 rounded-xl border border-blue-500/30 mb-6">
+    <h4 class="text-amber-400 font-bold mb-2 text-base">Key Formula: Gradient Descent Weight Update</h4>
+    <div class="bg-gray-950 p-3 rounded font-mono text-xs text-emerald-300 space-y-1 border border-slate-800">
+        <div>W := W - &alpha; &middot; (&part;L / &part;W)</div>
+        <div>b := b - &alpha; &middot; (&part;L / &part;b)</div>
+        <div class="text-slate-400 mt-2">// Where &alpha; is the learning rate. If &alpha; is too large &rarr; divergence; if too small &rarr; slow convergence.</div>
+    </div>
+</div>
+`,
             quizzes: [
                 {
                     question: "What happens if your Learning Rate in Gradient Descent is set too high?",
