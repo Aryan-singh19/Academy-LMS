@@ -482,6 +482,29 @@ a {
     color: #ffffff;
 }
 
+.side-panel-collapse-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 0.55rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    white-space: nowrap;
+}
+
+.side-panel-collapse-btn:hover {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.4);
+    color: #93c5fd;
+    transform: translateY(-1px);
+}
+
 .workspace-panel {
     min-height: 0;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);

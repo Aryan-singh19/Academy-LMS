@@ -274,9 +274,10 @@
         const bank = [];
         Object.entries(window.topicDetails || {}).forEach(([unitId, unitTopics]) => {
             Object.entries(unitTopics).forEach(([topicId, topic]) => {
-                if (topicId === 'unitExam' || !topic || !Array.isArray(topic.quizzes)) return;
+                const topicQuizzes = Array.isArray(topic.quizzes) ? topic.quizzes : (Array.isArray(topic.quiz) ? topic.quiz : []);
+                if (topicId === 'unitExam' || !topic || topicQuizzes.length === 0) return;
                 const meta = getTopicMeta(topicId);
-                topic.quizzes.forEach((quiz, index) => {
+                topicQuizzes.forEach((quiz, index) => {
                     bank.push({
                         id: `${unitId}:${topicId}:${index}`,
                         courseId: meta ? meta.courseId : '',

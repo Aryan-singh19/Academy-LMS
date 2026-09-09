@@ -450,7 +450,7 @@ function renderCourseView() {
             ${isLeftPanelCollapsed ? `
                 <div class="hidden xl:flex flex-col items-center">
                     <button onclick="toggleSidePanel('left')" class="restore-edge-btn" title="Expand Outline sidebar (Press [)">
-                        <svg class="w-4 h-4 mr-1.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <svg class="w-4 h-4 mr-1.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
                         <span>Outline (${course.code})</span>
                     </button>
                 </div>
@@ -461,10 +461,11 @@ function renderCourseView() {
                             <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code}</p>
                             <h2 class="text-xl font-bold text-white mt-1">${course.title}</h2>
                         </div>
-                        <div class="flex items-center gap-1.5 shrink-0">
+                        <div class="flex items-center gap-2 shrink-0">
                             <span class="mini-badge">${getCourseCompletionText(course.id)}</span>
-                            <button onclick="toggleSidePanel('left')" class="panel-collapse-trigger" title="Collapse Outline (Press [)">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <button onclick="toggleSidePanel('left')" class="side-panel-collapse-btn" title="Collapse Outline sidebar (Press [)">
+                                <span>Collapse</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg>
                             </button>
                         </div>
                     </div>
@@ -487,35 +488,9 @@ function renderCourseView() {
                         <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code} / Unit ${unit.unitNumber}</p>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">${topicSummary}</h2>
                     </div>
-                    <div class="flex flex-wrap items-center gap-2">
-                        <!-- Left Outline Toggle -->
-                        <button onclick="toggleSidePanel('left')" class="panel-toggle-btn ${isLeftPanelCollapsed ? 'active' : ''}" title="${isLeftPanelCollapsed ? 'Expand Outline sidebar (Press [)' : 'Collapse Outline sidebar to widen learning area (Press [)'}">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${isLeftPanelCollapsed ? 'M13 5l7 7-7 7M5 5l7 7-7 7' : 'M11 19l-7-7 7-7m8 14l-7-7 7-7'}"></path>
-                            </svg>
-                            <span>${isLeftPanelCollapsed ? 'Show Outline' : 'Hide Outline'}</span>
-                        </button>
-
-                        <!-- Zen Focus Mode Toggle (Collapses both side panels) -->
-                        <button onclick="toggleFocusMode()" class="panel-toggle-btn ${isLeftPanelCollapsed && isRightPanelCollapsed ? 'active' : ''}" title="${isLeftPanelCollapsed && isRightPanelCollapsed ? 'Exit Zen Mode (Restore Panels)' : 'Zen Focus Mode (Both panels collapsed for maximum reading space)'}">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
-                            </svg>
-                            <span>${isLeftPanelCollapsed && isRightPanelCollapsed ? 'Exit Focus' : 'Focus View'}</span>
-                        </button>
-
-                        <!-- Right Study Rail Toggle -->
-                        <button onclick="toggleSidePanel('right')" class="panel-toggle-btn ${isRightPanelCollapsed ? 'active' : ''}" title="${isRightPanelCollapsed ? 'Expand Study Rail & Notes (Press ])' : 'Collapse Notes & Study Rail to widen learning area (Press ])'}">
-                            <span>${isRightPanelCollapsed ? 'Show Notes' : 'Hide Notes'}</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${isRightPanelCollapsed ? 'M11 19l-7-7 7-7m8 14l-7-7 7-7' : 'M13 5l7 7-7 7M5 5l7 7-7 7'}"></path>
-                            </svg>
-                        </button>
-
-                        <div class="h-4 w-[1px] bg-white/10 mx-1 hidden sm:block"></div>
-
-                        <button onclick="toggleCurrentBookmark()" class="secondary-cta text-sm !py-1.5 !px-3">${window.ACADEMY.isBookmarked(activeTopicId) ? '★ Bookmarked' : '☆ Bookmark'}</button>
-                        <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-1.5 !px-3">Mark complete</button>
+                    <div class="flex flex-wrap items-center gap-2.5">
+                        <button onclick="toggleCurrentBookmark()" class="secondary-cta text-sm !py-2 !px-4 font-semibold">${window.ACADEMY.isBookmarked(activeTopicId) ? '★ Bookmarked' : '☆ Bookmark'}</button>
+                        <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-2 !px-4 font-semibold">Mark complete</button>
                     </div>
                 </div>
                 <div id="topicContentArea" class="px-5 sm:px-8 py-6 sm:py-8 workspace-panel-scroll topic-content-scroll"></div>
@@ -525,7 +500,7 @@ function renderCourseView() {
             ${isRightPanelCollapsed ? `
                 <div class="hidden xl:flex flex-col items-center">
                     <button onclick="toggleSidePanel('right')" class="restore-edge-btn" title="Expand Notes & Study Rail (Press ])">
-                        <svg class="w-4 h-4 mr-1.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <svg class="w-4 h-4 mr-1.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg>
                         <span>Notes & Rail</span>
                     </button>
                 </div>
@@ -605,9 +580,11 @@ function renderTopicContent() {
         return;
     }
 
+    const quizzes = Array.isArray(topic.quizzes) ? topic.quizzes : (Array.isArray(topic.quiz) ? topic.quiz : []);
+    topic.quizzes = quizzes;
     const highlights = window.ACADEMY.getHighlights(activeTopicId);
     const highlightedContent = window.ACADEMY.applyHighlights(topic.content, highlights);
-    const quizCards = (topic.quizzes || []).map((quiz, index) => renderQuizCard(quiz, index)).join('');
+    const quizCards = quizzes.map((quiz, index) => renderQuizCard(quiz, index)).join('');
     const references = (topic.references || []).map((ref) => `
         <button onclick="openReferenceModal('${ref.url}', '${window.ACADEMY.escapeHtml(ref.title)}')" class="reference-chip">${ref.title}</button>
     `).join('');
@@ -626,7 +603,7 @@ function renderTopicContent() {
             <details class="topic-fold mt-10" open>
                 <summary class="topic-fold-summary">
                     <span>Topic knowledge checks</span>
-                    <span class="topic-fold-hint">${topic.quizzes.length} questions</span>
+                    <span class="topic-fold-hint">${quizzes.length} questions</span>
                 </summary>
                 <div class="topic-fold-body space-y-5">${quizCards}</div>
             </details>
@@ -720,8 +697,9 @@ function checkAnswer(quizId, selected, correct, explanation, question) {
         correct: selected === correct
     });
 
-    const topic = window.topicDetails[activeUnitId][activeTopicId];
-    const allCorrect = topic.quizzes.every((quiz, index) => {
+    const topic = window.topicDetails[activeUnitId] && window.topicDetails[activeUnitId][activeTopicId];
+    const quizzes = topic ? (Array.isArray(topic.quizzes) ? topic.quizzes : (Array.isArray(topic.quiz) ? topic.quiz : [])) : [];
+    const allCorrect = quizzes.length > 0 && quizzes.every((quiz, index) => {
         const attempt = window.ACADEMY.state.quizAttempts[`${activeUnitId}:${activeTopicId}:${index}`];
         return attempt && attempt.correct;
     });
@@ -745,6 +723,7 @@ function renderStudyRail() {
     const currentCourseStats = stats.courseStats[activeCourseId];
     const mood = getCourseMoodMessage(activeCourseId);
     const subjectResources = (window.resourceLibrary || []).filter((item) => item.subject === activeCourseId);
+    const cleanResourcePath = (path) => path.startsWith('../') ? path.slice(3) : path;
 
     const target = document.getElementById('studyRail');
     if (!target) return;
@@ -758,8 +737,9 @@ function renderStudyRail() {
                         <h3 class="text-xl font-bold text-white mt-1">${meta ? meta.title : 'Unit revision'}</h3>
                         <p class="text-sm text-slate-400 mt-1">${meta ? `${meta.courseCode} • Unit ${meta.unitNumber}` : 'Essay-style practice area'}</p>
                     </div>
-                    <button onclick="toggleSidePanel('right')" class="panel-collapse-trigger shrink-0" title="Collapse Notes & Study Rail (Press ])">
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <button onclick="toggleSidePanel('right')" class="side-panel-collapse-btn shrink-0" title="Collapse Notes & Study Rail (Press ])">
+                        <span>Collapse</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
                     </button>
                 </div>
             </section>
@@ -785,7 +765,7 @@ function renderStudyRail() {
                     <p class="text-xs text-slate-400 mb-2">Curated notes & formula sheets:</p>
                     <div class="space-y-2">
                         ${subjectResources.slice(0, 3).map((res) => `
-                            <a href="${res.path}" class="flex items-center justify-between p-2 rounded-lg bg-slate-900/80 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-800/80 transition-all text-xs group" target="_blank">
+                            <a href="${cleanResourcePath(res.path)}" class="flex items-center justify-between p-2 rounded-lg bg-slate-900/80 border border-slate-800 hover:border-blue-500/40 hover:bg-slate-800/80 transition-all text-xs group" target="_blank">
                                 <span class="text-slate-200 font-medium truncate pr-2 group-hover:text-blue-300">${res.title}</span>
                                 <span class="text-[10px] text-blue-400 uppercase font-mono px-1.5 py-0.5 rounded bg-blue-500/10 shrink-0">${res.typeLabel}</span>
                             </a>
