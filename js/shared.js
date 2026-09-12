@@ -514,7 +514,7 @@
             return true;
         }
 
-        if (options.redirect !== false) {
+        if (options.redirect === true) {
             window.location.href = buildSigninRedirect(options.nextPath);
         }
         return false;
@@ -583,6 +583,7 @@
         recordPracticeSession,
         getPracticeSessions,
         escapeHtml,
+        escapeForHtml: escapeHtml,
         escapeForAttribute,
         applyHighlights,
         getAllTopics,
@@ -645,12 +646,16 @@
 
             navElements.forEach((nav) => {
                 if (!authed) {
-                    // Strictly 4 tabs atop for students who have not logged in yet
+                    // Full access to learning tabs for all students, with quick sign-in link
                     nav.innerHTML = `
-                        <a href="${homeHref}" class="nav-pill ${isCurrent('home') ? 'nav-pill-active' : ''}">Home</a>
+                        <a href="${topicsHref}" class="nav-pill ${isCurrent('topics') ? 'nav-pill-active' : ''}">Topics</a>
+                        <a href="${lecturesHref}" class="nav-pill ${isCurrent('lectures') ? 'nav-pill-active' : ''}">Lectures</a>
+                        <a href="${resourcesHref}" class="nav-pill ${isCurrent('resources') ? 'nav-pill-active' : ''}">Resources</a>
+                        <a href="${testsHref}" class="nav-pill ${isCurrent('tests') ? 'nav-pill-active' : ''}">Tests</a>
                         <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
                         <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
                         <a href="${contactHref}" class="nav-pill ${isCurrent('contact') ? 'nav-pill-active' : ''}">Contact</a>
+                        <a href="${homeHref}" class="nav-pill text-blue-300 hover:text-white font-semibold">Sign In</a>
                     `;
                 } else {
                     // All 7 tabs visible for logged in students

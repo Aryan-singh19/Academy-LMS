@@ -119,11 +119,13 @@ function setResourceType(type) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const allowed = await window.ACADEMY.requireStudentAuth({
-        nextPath: '/html/resources.html'
-    });
-    if (!allowed) return;
-
-    window.ACADEMY.scheduleCloudSync();
+    if (window.ACADEMY) {
+        if (typeof window.ACADEMY.hydrateAuthSession === 'function') {
+            window.ACADEMY.hydrateAuthSession().catch(() => {});
+        }
+        if (typeof window.ACADEMY.scheduleCloudSync === 'function') {
+            window.ACADEMY.scheduleCloudSync();
+        }
+    }
     renderResourcePage();
 });

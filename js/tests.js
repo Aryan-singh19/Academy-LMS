@@ -2359,15 +2359,13 @@ window.handleSpeedAnswer = handleSpeedAnswer;
 
 // Page Lifecycle Initialization
 document.addEventListener('DOMContentLoaded', async () => {
-    if (window.ACADEMY && typeof window.ACADEMY.requireStudentAuth === 'function') {
-        const allowed = await window.ACADEMY.requireStudentAuth({
-            nextPath: '/html/tests.html'
-        });
-        if (!allowed) return;
-    }
-
-    if (window.ACADEMY && typeof window.ACADEMY.scheduleCloudSync === 'function') {
-        window.ACADEMY.scheduleCloudSync();
+    if (window.ACADEMY) {
+        if (typeof window.ACADEMY.hydrateAuthSession === 'function') {
+            window.ACADEMY.hydrateAuthSession().catch(() => {});
+        }
+        if (typeof window.ACADEMY.scheduleCloudSync === 'function') {
+            window.ACADEMY.scheduleCloudSync();
+        }
     }
 
     initializeTestsPage();

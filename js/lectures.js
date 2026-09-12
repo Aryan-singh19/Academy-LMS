@@ -9,27 +9,42 @@ let lectureChatState = {
 let lecturePollingTimer = null;
 let lectureFetchInFlight = false;
 
+const esc = (val) => {
+    if (window.ACADEMY && typeof window.ACADEMY.escapeHtml === 'function') {
+        return window.ACADEMY.escapeHtml(val);
+    }
+    if (window.ACADEMY && typeof window.ACADEMY.escapeForHtml === 'function') {
+        return window.ACADEMY.escapeForHtml(val);
+    }
+    return String(val || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+};
+
 const ALL_LECTURE_SUBJECTS = [
     // Semester 5
-    { id: 'cs501', semester: 5, label: 'CS-501 (TOC)', fullLabel: 'Theory of Computation' },
-    { id: 'cs502', semester: 5, label: 'CS-502 (DBMS)', fullLabel: 'Database Management Systems' },
-    { id: 'cs503', semester: 5, label: 'CS-503 (DA)', fullLabel: 'Data Analytics' },
-    { id: 'cs503-cs', semester: 5, label: 'CS-503-CS (Cyber)', fullLabel: 'Cyber Security' },
-    { id: 'cs504', semester: 5, label: 'CS-504 (Web)', fullLabel: 'Web Technology' },
+    { id: 'cs501', semester: 5, label: 'CS-501 (TOC)', fullLabel: 'Theory of Computation', aliases: ['cs501'] },
+    { id: 'cs502', semester: 5, label: 'CS-502 (DBMS)', fullLabel: 'Database Management Systems', aliases: ['cs502'] },
+    { id: 'cs503', semester: 5, label: 'CS-503 (DA)', fullLabel: 'Data Analytics', aliases: ['cs503'] },
+    { id: 'cs503-cs', semester: 5, label: 'CS-503-CS (Cyber)', fullLabel: 'Cyber Security', aliases: ['cs503-cs'] },
+    { id: 'cs504', semester: 5, label: 'CS-504 (Web)', fullLabel: 'Web Technology', aliases: ['cs504'] },
 
     // Semester 6
-    { id: 'cs601', semester: 6, label: 'CS-601 (ML)', fullLabel: 'Machine Learning' },
-    { id: 'cs602', semester: 6, label: 'CS-602 (CN)', fullLabel: 'Computer Networks' },
-    { id: 'cs603', semester: 6, label: 'CS-603 (CD)', fullLabel: 'Compiler Design' },
-    { id: 'cs603-cg', semester: 6, label: 'CS-603-CG (Graphics)', fullLabel: 'Computer Graphics' },
-    { id: 'cs604', semester: 6, label: 'CS-604 (PM)', fullLabel: 'Project Management' },
+    { id: 'cs601', semester: 6, label: 'CS-601 (ML)', fullLabel: 'Machine Learning', aliases: ['cs601'] },
+    { id: 'cs602', semester: 6, label: 'CS-602 (CN)', fullLabel: 'Computer Networks', aliases: ['cs602'] },
+    { id: 'cs603', semester: 6, label: 'CS-603 (CD)', fullLabel: 'Compiler Design', aliases: ['cs603'] },
+    { id: 'cs603-cg', semester: 6, label: 'CS-603-CG (Graphics)', fullLabel: 'Computer Graphics', aliases: ['cs603-cg'] },
+    { id: 'cs604', semester: 6, label: 'CS-604 (PM)', fullLabel: 'Project Management', aliases: ['cs604'] },
 
     // Semester 7
-    { id: 'cs701', semester: 7, label: 'CS-701 (Arch)', fullLabel: 'Software Architectures' },
-    { id: 'cs702', semester: 7, label: 'CS-702 (BigData)', fullLabel: 'Big Data Analytics' },
-    { id: 'cs702-wmc', semester: 7, label: 'CS-702-WMC (Wireless)', fullLabel: 'Wireless & Mobile Computing' },
-    { id: 'cs703', semester: 7, label: 'CS-703 (Crypto)', fullLabel: 'Cryptography & Info Security' },
-    { id: 'cs703-dm', semester: 7, label: 'CS-703-DM (Disaster)', fullLabel: 'Disaster Management' }
+    { id: 'cs701', semester: 7, label: 'CS-701 (Arch)', fullLabel: 'Software Architectures', aliases: ['cs701'] },
+    { id: 'cs702', semester: 7, label: 'CS-702 (BigData)', fullLabel: 'Big Data Analytics', aliases: ['cs702-bd', 'cs702'] },
+    { id: 'cs702-wmc', semester: 7, label: 'CS-702-WMC (Wireless)', fullLabel: 'Wireless & Mobile Computing', aliases: ['cs702-wmc'] },
+    { id: 'cs703', semester: 7, label: 'CS-703 (Crypto)', fullLabel: 'Cryptography & Info Security', aliases: ['cs703-cis', 'cs703'] },
+    { id: 'cs703-dm', semester: 7, label: 'CS-703-DM (Disaster)', fullLabel: 'Disaster Management', aliases: ['cs703-dm'] }
 ];
 
 function getLectureSemesters() {
@@ -59,8 +74,13 @@ function getFilteredLectures() {
         if (activeLectureSemester !== 'all' && String(item.semester) !== String(activeLectureSemester)) {
             return false;
         }
-        if (activeLectureSubject !== 'all' && item.subject !== activeLectureSubject) {
-            return false;
+        if (activeLectureSubject !== 'all') {
+            const isMatch = item.subject === activeLectureSubject ||
+                (activeLectureSubject === 'cs702' && (item.subject === 'cs702-bd' || item.subject === 'cs702')) ||
+                (activeLectureSubject === 'cs702-bd' && (item.subject === 'cs702-bd' || item.subject === 'cs702')) ||
+                (activeLectureSubject === 'cs703' && (item.subject === 'cs703-cis' || item.subject === 'cs703')) ||
+                (activeLectureSubject === 'cs703-cis' && (item.subject === 'cs703-cis' || item.subject === 'cs703'));
+            if (!isMatch) return false;
         }
         if (!lectureSearchQuery) return true;
         const topicString = Array.isArray(item.topics) ? item.topics.join(' ') : '';
@@ -167,25 +187,25 @@ function renderLectureList() {
         const isPlaylist = lecture.type === 'playlist';
         const semColor = lecture.semester === 5 ? 'blue' : lecture.semester === 6 ? 'emerald' : 'purple';
         const topicChips = (lecture.topics || []).slice(0, 3).map((t) =>
-            `<span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/90 text-slate-400 border border-slate-700/50">#${window.ACADEMY.escapeForHtml(t)}</span>`
+            `<span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/90 text-slate-400 border border-slate-700/50">#${esc(t)}</span>`
         ).join('');
 
         return `
             <button type="button" onclick="selectLecture('${lectureKeyFor(lecture)}')" class="continue-card text-left w-full transition-all ${isSelected ? 'ring-2 ring-blue-400 shadow-lg shadow-blue-500/10 bg-slate-800/90' : 'hover:bg-slate-850'}">
                 <div class="flex items-center justify-between gap-2">
                     <span class="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30">
-                        Sem ${lecture.semester} • ${window.ACADEMY.escapeForHtml(lecture.subjectCode || lecture.subject.toUpperCase())}
+                        Sem ${lecture.semester} • ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
                     </span>
                     <span class="text-[10px] font-semibold px-2 py-0.5 rounded ${isPlaylist ? 'bg-amber-500/15 text-amber-300 border border-amber-500/30' : 'bg-sky-500/15 text-sky-300 border border-sky-500/30'}">
-                        ${window.ACADEMY.escapeForHtml(lecture.typeLabel || (isPlaylist ? 'Full Playlist' : 'Deep-Dive'))}
+                        ${esc(lecture.typeLabel || (isPlaylist ? 'Full Playlist' : 'Deep-Dive'))}
                     </span>
                 </div>
-                <h3 class="text-base font-bold text-white mt-2 leading-snug">${window.ACADEMY.escapeForHtml(lecture.title)}</h3>
+                <h3 class="text-base font-bold text-white mt-2 leading-snug">${esc(lecture.title)}</h3>
                 <p class="text-xs text-slate-300 font-medium mt-1 flex items-center gap-1.5">
                     <svg class="w-3.5 h-3.5 text-red-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                    <span>${window.ACADEMY.escapeForHtml(lecture.lecturer)}</span>
+                    <span>${esc(lecture.lecturer)}</span>
                 </p>
-                <p class="text-xs text-slate-400 mt-2 line-clamp-2 leading-relaxed">${window.ACADEMY.escapeForHtml(lecture.description)}</p>
+                <p class="text-xs text-slate-400 mt-2 line-clamp-2 leading-relaxed">${esc(lecture.description)}</p>
                 ${topicChips ? `<div class="flex flex-wrap gap-1 mt-2.5 pt-2 border-t border-slate-800/80">${topicChips}</div>` : ''}
             </button>
         `;
@@ -204,30 +224,30 @@ function renderLectureViewer() {
     const semColor = lecture.semester === 5 ? 'blue' : lecture.semester === 6 ? 'emerald' : 'purple';
     const isPlaylist = lecture.type === 'playlist';
     const topicBadges = (lecture.topics || []).map((t) =>
-        `<span class="px-2.5 py-1 rounded-md text-xs bg-slate-900/80 text-slate-300 border border-slate-700 font-mono">#${window.ACADEMY.escapeForHtml(t)}</span>`
+        `<span class="px-2.5 py-1 rounded-md text-xs bg-slate-900/80 text-slate-300 border border-slate-700 font-mono">#${esc(t)}</span>`
     ).join('');
 
     target.innerHTML = `
         <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800">
             <div class="flex items-center gap-2">
                 <span class="px-2.5 py-1 rounded-md font-mono text-xs font-bold bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30">
-                    Semester ${lecture.semester} • ${window.ACADEMY.escapeForHtml(lecture.subjectCode || lecture.subject.toUpperCase())}
+                    Semester ${lecture.semester} • ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
                 </span>
                 <span class="text-xs font-semibold text-slate-400">
-                    ${window.ACADEMY.escapeForHtml(lecture.subjectLabel)}
+                    ${esc(lecture.subjectLabel)}
                 </span>
             </div>
             <span class="px-2.5 py-0.5 rounded text-xs font-semibold ${isPlaylist ? 'bg-amber-500/15 text-amber-300 border border-amber-500/30' : 'bg-sky-500/15 text-sky-300 border border-sky-500/30'}">
-                ${window.ACADEMY.escapeForHtml(lecture.typeLabel || (isPlaylist ? 'Full Course Playlist' : 'Deep-Dive Masterclass'))}
+                ${esc(lecture.typeLabel || (isPlaylist ? 'Full Course Playlist' : 'Deep-Dive Masterclass'))}
             </span>
         </div>
 
-        <h2 class="text-2xl font-extrabold text-white mt-3 leading-tight">${window.ACADEMY.escapeForHtml(lecture.title)}</h2>
+        <h2 class="text-2xl font-extrabold text-white mt-3 leading-tight">${esc(lecture.title)}</h2>
 
         <div class="flex flex-wrap items-center justify-between gap-3 mt-2">
             <div class="flex items-center gap-2 text-sm text-slate-300">
                 <svg class="w-4 h-4 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                <span class="font-bold text-white">${window.ACADEMY.escapeForHtml(lecture.lecturer)}</span>
+                <span class="font-bold text-white">${esc(lecture.lecturer)}</span>
                 <span class="text-slate-500">•</span>
                 <span class="text-xs text-slate-400">YouTube Academic Source</span>
             </div>
@@ -250,7 +270,7 @@ function renderLectureViewer() {
 
         <div class="mt-5 p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3">
             <h4 class="text-xs uppercase tracking-wider font-bold text-slate-400">Curriculum Overview &amp; Learning Objectives</h4>
-            <p class="text-sm text-slate-300 leading-relaxed">${window.ACADEMY.escapeForHtml(lecture.description)}</p>
+            <p class="text-sm text-slate-300 leading-relaxed">${esc(lecture.description)}</p>
             ${topicBadges ? `
                 <div class="pt-2 border-t border-slate-800/80">
                     <p class="text-xs text-slate-400 mb-1.5 font-semibold">Key Topics Covered:</p>
@@ -290,14 +310,14 @@ function copyLectureLink(url, btnId) {
 
 function renderLectureEmbed(lecture) {
     const embedUrl = normalizeLectureUrl(lecture.url);
-    const embeddable = /^https:\/\/www\.youtube\.com\/embed\//.test(embedUrl);
+    const embeddable = /^https:\/\/(www\.)?(youtube\.com|youtube-nocookie\.com)\/embed\//.test(embedUrl);
 
     if (!embeddable) {
         return `
             <div class="study-rail-block mt-5 p-6 text-center space-y-3">
                 <p class="text-base font-semibold text-white">Direct External Lecture Resource</p>
                 <p class="text-sm text-slate-300 max-w-lg mx-auto">This curated lecture or playlist is best experienced in full resolution directly on YouTube with channel annotations.</p>
-                <a class="primary-cta inline-flex items-center gap-2 !py-2.5 !px-5" href="${lecture.url}" target="_blank" rel="noreferrer">
+                <a class="primary-cta inline-flex items-center gap-2 !py-2.5 !px-5" href="${window.ACADEMY.escapeForAttribute(lecture.url)}" target="_blank" rel="noreferrer">
                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                     <span>Watch Full Lecture on YouTube</span>
                 </a>
@@ -312,7 +332,6 @@ function renderLectureEmbed(lecture) {
                 title="${window.ACADEMY.escapeForAttribute(lecture.title)}" 
                 class="w-full h-full border-0 absolute inset-0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen>
             </iframe>
         </div>
@@ -378,10 +397,10 @@ function renderLectureMessages(scope) {
     return messages.map((message) => `
         <article class="chat-message p-3 rounded-lg bg-slate-900/70 border border-slate-800">
             <div class="flex items-center justify-between gap-2">
-                <strong class="text-xs font-bold text-blue-300">${window.ACADEMY.escapeForHtml(message.display_name || 'Student')}</strong>
+                <strong class="text-xs font-bold text-blue-300">${esc(message.display_name || 'Student')}</strong>
                 <span class="text-[10px] text-slate-500 font-mono">${new Date(message.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
             </div>
-            <p class="text-xs text-slate-300 mt-1 leading-relaxed">${window.ACADEMY.escapeForHtml(message.message_text)}</p>
+            <p class="text-xs text-slate-300 mt-1 leading-relaxed">${esc(message.message_text)}</p>
         </article>
     `).join('');
 }
@@ -389,24 +408,34 @@ function renderLectureMessages(scope) {
 function normalizeLectureUrl(url) {
     if (!url) return '';
     if (url.includes('/results?')) return url;
-    if (url.includes('youtube.com/embed/')) return url;
 
-    // YouTube playlist: ?list=... or &list=...
-    const playlistMatch = url.match(/[?&]list=([a-zA-Z0-9_-]+)/);
-    if (playlistMatch && (url.includes('/playlist') || url.includes('/videoseries') || !url.includes('watch?v='))) {
-        return `https://www.youtube.com/embed/videoseries?list=${playlistMatch[1]}`;
-    }
-
-    // Shortened youtu.be/VIDEO_ID
-    const shortMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
-    if (shortMatch) {
-        return `https://www.youtube.com/embed/${shortMatch[1]}`;
-    }
-
-    // Standard youtube.com/watch?v=VIDEO_ID
+    // Check for watch?v=VIDEO_ID and optional &list=PLAYLIST_ID
     const watchMatch = url.match(/[?&]v=([a-zA-Z0-9_-]+)/);
+    const playlistMatch = url.match(/[?&]list=([a-zA-Z0-9_-]+)/);
+    const shortMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
+
     if (watchMatch) {
-        return `https://www.youtube.com/embed/${watchMatch[1]}`;
+        const videoId = watchMatch[1];
+        if (playlistMatch) {
+            return `https://www.youtube-nocookie.com/embed/${videoId}?list=${playlistMatch[1]}`;
+        }
+        return `https://www.youtube-nocookie.com/embed/${videoId}`;
+    }
+
+    if (shortMatch) {
+        const videoId = shortMatch[1];
+        if (playlistMatch) {
+            return `https://www.youtube-nocookie.com/embed/${videoId}?list=${playlistMatch[1]}`;
+        }
+        return `https://www.youtube-nocookie.com/embed/${videoId}`;
+    }
+
+    if (playlistMatch) {
+        return `https://www.youtube-nocookie.com/embed/videoseries?list=${playlistMatch[1]}`;
+    }
+
+    if (url.includes('youtube.com/embed/')) {
+        return url.replace('https://www.youtube.com/embed/', 'https://www.youtube-nocookie.com/embed/');
     }
 
     return url;
@@ -548,12 +577,15 @@ window.resetLectureFilters = resetLectureFilters;
 window.clearLectureSearch = clearLectureSearch;
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const allowed = await window.ACADEMY.requireStudentAuth({
-        nextPath: '/html/lectures.html'
-    });
-    if (!allowed) return;
-
-    window.ACADEMY.scheduleCloudSync();
+    // Non-blocking session & sync check
+    if (window.ACADEMY) {
+        if (typeof window.ACADEMY.hydrateAuthSession === 'function') {
+            window.ACADEMY.hydrateAuthSession().catch(() => {});
+        }
+        if (typeof window.ACADEMY.scheduleCloudSync === 'function') {
+            window.ACADEMY.scheduleCloudSync();
+        }
+    }
 
     // Check if a URL query parameter requested a specific subject or lecture
     const params = new URLSearchParams(window.location.search);
@@ -561,7 +593,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const paramLecture = params.get('lecture');
 
     if (paramSubject) {
-        const foundSubject = ALL_LECTURE_SUBJECTS.find((s) => s.id === paramSubject.toLowerCase());
+        const querySub = paramSubject.toLowerCase();
+        const foundSubject = ALL_LECTURE_SUBJECTS.find((s) => s.id === querySub || (s.aliases && s.aliases.includes(querySub)));
         if (foundSubject) {
             activeLectureSemester = String(foundSubject.semester);
             activeLectureSubject = foundSubject.id;

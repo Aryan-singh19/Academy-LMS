@@ -13,18 +13,6 @@ let isLeftPanelCollapsed = localStorage.getItem('academy_left_collapsed') === 't
 let isRightPanelCollapsed = localStorage.getItem('academy_right_collapsed') === 'true';
 
 function startApp() {
-    if (!window.ACADEMY.isAuthenticated()) {
-        const line = document.getElementById('authStatusLine');
-        if (line) {
-            line.textContent = 'Sign in with Google first, then Academy LMS will open your study desk automatically.';
-        }
-        const mount = document.getElementById('googleSigninMount');
-        if (mount) {
-            mount.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        return;
-    }
-
     const hero = document.getElementById('heroSection');
     if (hero) hero.classList.add('hero-exit');
     setTimeout(() => {
@@ -57,16 +45,7 @@ async function bootstrapLanding() {
     syncAuthStatusLine();
 
     if (shouldOpenStudyView()) {
-        if (window.ACADEMY.isAuthenticated()) {
-            openStudyDeskDirectly();
-        } else {
-            const url = new URL(window.location.href);
-            url.searchParams.delete('view');
-            if (window.location.hash === '#topics' || window.location.hash === '#study') {
-                window.location.hash = '';
-            }
-            window.history.replaceState({}, '', url.pathname + (url.search ? url.search : '') + window.location.hash);
-        }
+        openStudyDeskDirectly();
     }
 }
 
@@ -155,16 +134,13 @@ function syncAuthStatusLine() {
     const badge = document.getElementById('signinStateBadge');
     const startBtn = document.getElementById('startStudyBtn');
     if (badge) {
-        badge.classList.add('hidden');
-        badge.textContent = '';
+        badge.classList.remove('hidden');
+        badge.textContent = 'Guest Mode';
     }
     if (startBtn) {
-        startBtn.textContent = 'Sign in to continue';
+        startBtn.textContent = 'Open Study Desk';
     }
-    const params = new URLSearchParams(window.location.search);
-    line.textContent = params.get('signin') === 'required'
-        ? 'Sign in with Google first, then we will take you straight into the student workspace you asked for.'
-        : 'Sign in with Google to keep your account, profile, and study progress tied together across devices.';
+    line.textContent = 'Sign in with Google to sync your study notes across devices, or start exploring immediately as a guest.';
 }
 
 function hydrateStudentName() {
@@ -489,6 +465,10 @@ function renderCourseView() {
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">${topicSummary}</h2>
                     </div>
                     <div class="flex flex-wrap items-center gap-2.5">
+                        <a href="html/lectures.html?subject=${course.id}" class="secondary-cta text-sm !py-2 !px-4 font-semibold inline-flex items-center gap-1.5 text-blue-300 hover:text-white" title="Watch video lectures for ${course.name}">
+                            <svg class="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                            <span>Watch Lectures</span>
+                        </a>
                         <button onclick="toggleCurrentBookmark()" class="secondary-cta text-sm !py-2 !px-4 font-semibold">${window.ACADEMY.isBookmarked(activeTopicId) ? '★ Bookmarked' : '☆ Bookmark'}</button>
                         <button onclick="markCurrentTopicDone()" class="primary-cta text-sm !py-2 !px-4 font-semibold">Mark complete</button>
                     </div>
