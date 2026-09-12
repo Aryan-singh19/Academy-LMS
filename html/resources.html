@@ -13,15 +13,15 @@
 </head>
 <body class="academy-page min-h-screen">
     <header class="glass-nav sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
-            <a href="../index.html?view=topics" class="flex items-center gap-3">
-                <div class="brand-mark">A</div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-4">
+            <a href="../index.html?view=topics" class="flex items-center gap-2.5">
+                <div class="brand-mark !w-8 !h-8 !text-sm !rounded-lg">A</div>
                 <div>
-                    <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
-                    <h1 class="text-xl font-extrabold text-white">Resource Desk</h1>
+                    <p class="text-[10px] uppercase tracking-[0.24em] text-slate-400 font-semibold leading-none">Academy LMS</p>
+                    <h1 class="text-base sm:text-lg font-extrabold text-white leading-tight">Resource Desk</h1>
                 </div>
             </a>
-            <nav id="academyHeaderNav" class="flex flex-wrap items-center gap-3 text-sm">
+            <nav id="academyHeaderNav" class="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs sm:text-sm">
                 <a href="../index.html" class="nav-pill">Home</a>
                 <a href="about.html" class="nav-pill">About</a>
                 <a href="privacy.html" class="nav-pill">Policy</a>
@@ -30,27 +30,96 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-        <section class="revision-banner mb-8">
-            <div>
-                <p class="revision-label">Download hub</p>
-                <h2 class="text-3xl font-extrabold text-white">Notes, assignments, and mock papers in one place</h2>
-                <p class="text-slate-400 mt-2">Drop files into the repo, let the workflow sort them, and this page becomes the student-facing download desk.</p>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-4 space-y-4">
+        <section class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 sm:p-3.5 rounded-xl bg-slate-900/70 border border-blue-500/15">
+            <div class="min-w-0">
+                <div class="flex items-center gap-2">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400 font-mono bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 shrink-0">Download Desk</span>
+                    <h2 class="text-sm sm:text-base font-bold text-white truncate">Notes, Assignments, Syllabi &amp; Previous Papers</h2>
+                </div>
+                <p class="text-slate-400 text-xs mt-0.5 truncate">
+                    Organized study materials and downloads categorized across Semesters 5, 6, and 7.
+                </p>
             </div>
-            <a href="tests.html" class="secondary-cta">Start practicing</a>
+            <a href="tests.html" class="secondary-cta text-xs !py-1 !px-2.5 shrink-0">Start practicing</a>
         </section>
 
-        <section class="panel-card p-5 mb-6">
-            <div class="section-head">
-                <h3>Resource filters</h3>
-                <span>Subject + type tabs</span>
+        <!-- Search and Type Filter Bar (No subjects or subject filters) -->
+        <section class="panel-card p-3.5 space-y-3">
+            <!-- Search Bar -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                <div class="relative flex-1">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <input
+                        id="resourceSearchInput"
+                        type="search"
+                        placeholder="Search resources by title, topic, subject code (e.g. CS501, ML, Normalization, PERT)..."
+                        class="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-9 pr-8 py-2 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+                        oninput="handleResourceSearch(event)"
+                        autocomplete="off"
+                    >
+                    <button
+                        id="resourceSearchClearBtn"
+                        type="button"
+                        onclick="clearResourceSearch()"
+                        class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-white"
+                        title="Clear search"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="resourceMatchBadge" class="shrink-0 flex items-center justify-end text-xs text-slate-400 font-mono px-1">
+                    <!-- Populated dynamically -->
+                </div>
             </div>
-            <div id="resourceSubjectTabs" class="flex flex-wrap gap-2 mb-4"></div>
-            <div id="resourceTypeTabs" class="flex flex-wrap gap-2"></div>
+
+            <!-- Type Filter Tabs Row (Everything is default) -->
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-800/80">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 shrink-0">Type:</span>
+                <div id="resourceTypeTabs" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 flex-1"></div>
+            </div>
         </section>
 
-        <section id="resourceSummary" class="grid md:grid-cols-3 gap-4 mb-6"></section>
-        <section id="resourceGrid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-5"></section>
+        <!-- Summary Strip -->
+        <section id="resourceSummary" class="grid grid-cols-2 md:grid-cols-4 gap-3"></section>
+
+        <!-- Resources Grid -->
+        <section id="resourceGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></section>
+
+        <!-- In-App Document Preview Modal -->
+        <div id="resourcePreviewModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" onclick="handleModalBackdropClick(event)">
+            <div class="bg-slate-900 border border-blue-500/20 rounded-2xl max-w-3xl w-full max-h-[88vh] flex flex-col shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+                <div class="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-slate-950/60">
+                    <div class="min-w-0 pr-4">
+                        <div class="flex items-center gap-2">
+                            <span id="modalFileBadge" class="text-[10px] font-bold uppercase px-2 py-0.5 rounded font-mono">PDF</span>
+                            <span id="modalSubjectBadge" class="text-[10px] font-semibold text-slate-400 font-mono">CS501</span>
+                        </div>
+                        <h3 id="modalTitle" class="text-sm sm:text-base font-bold text-white truncate mt-1">Document Title</h3>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <a id="modalDownloadBtn" href="#" download class="primary-cta text-xs !py-1 !px-3 flex items-center gap-1">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            <span>Download</span>
+                        </a>
+                        <button type="button" onclick="closeResourcePreviewModal()" class="w-7 h-7 rounded-lg bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 flex items-center justify-center text-lg leading-none transition">
+                            &times;
+                        </button>
+                    </div>
+                </div>
+                <div id="modalBody" class="flex-1 overflow-y-auto p-4 sm:p-6 text-slate-300 text-xs sm:text-sm leading-relaxed space-y-4 font-sans select-text">
+                    <!-- Dynamic modal content -->
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="academy-footer">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">

@@ -62,6 +62,7 @@ function walkResources(dir) {
             const typeDir = path.join(subjectDir, type);
             if (!fs.statSync(typeDir).isDirectory()) return;
             fs.readdirSync(typeDir).forEach((file) => {
+                if (file.startsWith('.') || file.includes('gitkeep')) return;
                 const ext = path.extname(file).slice(1).toLowerCase();
                 const subjectRule = subjectRules.find((rule) => rule.id === subject) || { id: subject, label: subject.toUpperCase() };
                 const typeRule = typeRules.find((rule) => rule.id === type) || { id: type, label: type };

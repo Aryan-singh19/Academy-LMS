@@ -3,7 +3,7 @@ let activeUnitId = 'cs601-u1';
 let activeTopicId = 't1';
 let appStarted = false;
 const loadedCourses = {};
-let activeSemesterFilter = 'all';
+let activeSemesterFilter = '5';
 let topicListFilter = 'all';
 let topicComments = [];
 let openUnits = {};
@@ -299,8 +299,13 @@ function renderStudentDock() {
 }
 
 function setSemesterFilter(sem) {
-    activeSemesterFilter = sem;
-    renderCoursesNav();
+    activeSemesterFilter = String(sem);
+    const semesterCourses = coursesData.filter((course) => String(course.semester) === String(activeSemesterFilter));
+    if (semesterCourses.length > 0 && !semesterCourses.some((c) => c.id === activeCourseId)) {
+        switchCourse(semesterCourses[0].id);
+    } else {
+        renderCoursesNav();
+    }
 }
 
 function renderCoursesNav() {
@@ -309,14 +314,12 @@ function renderCoursesNav() {
     if (!nav) return;
 
     const semesters = [
-        { id: 'all', label: 'All Semesters' },
         { id: '5', label: '5th Semester' },
         { id: '6', label: '6th Semester' },
         { id: '7', label: '7th Semester' }
     ];
 
     const filteredCourses = coursesData.filter((course) => {
-        if (activeSemesterFilter === 'all') return true;
         return String(course.semester) === String(activeSemesterFilter);
     });
 

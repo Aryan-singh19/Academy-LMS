@@ -2,6 +2,78 @@ window.resourceLibrary = window.resourceLibrary || [
     {
         "subject": "cs501",
         "subjectLabel": "CS501",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS501 Theory of Computation Comprehensive Revision Handbook",
+        "path": "../assets/resources/cs501/notes/cs501-theory-of-computation-handbook.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs502",
+        "subjectLabel": "CS502",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS502 Database Management Systems Comprehensive Guide",
+        "path": "../assets/resources/cs502/notes/cs502-database-management-systems-guide.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs601",
+        "subjectLabel": "CS601",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS601 Machine Learning Core Formulas & Exam Guide",
+        "path": "../assets/resources/cs601/notes/cs601-machine-learning-revision-notes.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs602",
+        "subjectLabel": "CS602",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS602 Computer Networks Architecture & Protocols",
+        "path": "../assets/resources/cs602/notes/cs602-computer-networks-handbook.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs603",
+        "subjectLabel": "CS603",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS603 Compiler Design & Parsing Reference Notes",
+        "path": "../assets/resources/cs603/notes/cs603-compiler-design-reference.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs604",
+        "subjectLabel": "CS604",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS604 Software Project Management Comprehensive Notes",
+        "path": "../assets/resources/cs604/notes/cs604-software-project-management-guide.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs701",
+        "subjectLabel": "CS701",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS701 Software Architecture & Design Patterns Notes",
+        "path": "../assets/resources/cs701/notes/cs701-software-architecture-patterns.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs703-cis",
+        "subjectLabel": "CS703-CIS",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CS703 Cryptography & Information Security Study Guide",
+        "path": "../assets/resources/cs703-cis/notes/cs703-cryptography-network-security-notes.pdf",
+        "extension": "pdf"
+    },
+    {
+        "subject": "cs501",
+        "subjectLabel": "CS501",
         "type": "mock-papers",
         "typeLabel": "Mock Papers",
         "title": "Cs501 Rgpv Solved Question Bank",
@@ -169,15 +241,6 @@ window.resourceLibrary = window.resourceLibrary || [
         "title": "Cs703dm Disaster Management Handbook",
         "path": "../assets/resources/cs703-dm/notes/cs703dm-disaster-management-handbook.md",
         "extension": "md"
-    },
-    {
-        "subject": "general",
-        "subjectLabel": "GENERAL",
-        "type": "resources",
-        "typeLabel": "Other Resources",
-        "title": "General Resources Gitkeep",
-        "path": "../assets/resources/general/resources/general-resources-gitkeep",
-        "extension": ""
     },
     {
         "subject": "general",

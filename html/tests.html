@@ -13,26 +13,29 @@
 </head>
 <body class="academy-page min-h-screen">
     <header class="glass-nav sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4">
-            <div class="flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
-                <a href="../index.html?view=topics" class="flex items-center gap-3">
-                    <div class="brand-mark">A</div>
-                    <div>
-                        <p class="text-xs uppercase tracking-[0.26em] text-slate-500">Academy LMS</p>
-                        <h1 class="text-xl font-extrabold text-white">Practice &amp; Testing Hub</h1>
-                    </div>
-                </a>
-                <nav id="academyHeaderNav" class="flex flex-wrap items-center gap-2 sm:gap-3 text-sm">
-                    <a href="../index.html" class="nav-pill">Home</a>
-                    <a href="about.html" class="nav-pill">About</a>
-                    <a href="privacy.html" class="nav-pill">Policy</a>
-                    <a href="contact.html" class="nav-pill">Contact</a>
-                </nav>
-            </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-4">
+            <a href="../index.html?view=topics" class="flex items-center gap-2.5">
+                <div class="brand-mark !w-8 !h-8 !text-sm !rounded-lg">A</div>
+                <div>
+                    <p class="text-[10px] uppercase tracking-[0.24em] text-slate-400 font-semibold leading-none">Academy LMS</p>
+                    <h1 class="text-base sm:text-lg font-extrabold text-white leading-tight">Testing Hub</h1>
+                </div>
+            </a>
+            <nav id="academyHeaderNav" class="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs sm:text-sm">
+                <a href="../index.html" class="nav-pill">Home</a>
+                <a href="about.html" class="nav-pill">About</a>
+                <a href="privacy.html" class="nav-pill">Policy</a>
+                <a href="contact.html" class="nav-pill">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-            <!-- Practice Mode Selector Bar -->
-            <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-blue-500/10">
-                <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold mr-1">Modes:</span>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-4 space-y-4">
+        <!-- Practice Control Bar: Modes, Semesters, Subjects & Actions -->
+        <section class="panel-card p-3 sm:p-3.5 space-y-2.5">
+            <!-- Row 1: Practice Modes -->
+            <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+                <span class="text-[11px] uppercase tracking-wider text-slate-400 font-bold shrink-0 mr-1">Modes:</span>
                 <button id="modeTab-drill" onclick="switchPracticeMode('drill')" class="practice-mode-tab active">Topic Drills</button>
                 <button id="modeTab-mock" onclick="switchPracticeMode('mock')" class="practice-mode-tab">Timed Mock Exams</button>
                 <button id="modeTab-flashcards" onclick="switchPracticeMode('flashcards')" class="practice-mode-tab">Flashcard Deck</button>
@@ -42,68 +45,67 @@
                 <button id="modeTab-speed" onclick="switchPracticeMode('speed')" class="practice-mode-tab">60s Speed Streak</button>
             </div>
 
-            <!-- Subject & Semester Filters -->
-            <div class="flex flex-wrap items-center gap-2 pt-1">
-                <div class="flex items-center gap-1.5 bg-slate-900/60 p-1 rounded-full border border-blue-500/20 text-xs">
-                    <button onclick="setSemesterFilter('all')" id="semFilter-all" class="px-2.5 py-1 rounded-full text-blue-300 font-medium bg-blue-500/20">All Sems</button>
-                    <button onclick="setSemesterFilter('sem5')" id="semFilter-sem5" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 5</button>
+            <!-- Row 2: Semester & Subject Filters -->
+            <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-800/60">
+                <div class="flex items-center gap-1 bg-slate-900/80 p-0.5 rounded-full border border-blue-500/20 text-xs shrink-0">
+                    <button onclick="setSemesterFilter('sem5')" id="semFilter-sem5" class="px-2.5 py-1 rounded-full text-blue-300 font-semibold bg-blue-500/20 shadow-sm transition">Sem 5</button>
                     <button onclick="setSemesterFilter('sem6')" id="semFilter-sem6" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 6</button>
                     <button onclick="setSemesterFilter('sem7')" id="semFilter-sem7" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 7</button>
                 </div>
 
-                <div id="coursePillContainer" class="flex flex-wrap items-center gap-1.5">
-                    <button data-course-filter="all" onclick="setPracticeCourse('all')" class="course-pill course-pill-active">All subjects</button>
+                <div id="coursePillContainer" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 min-w-0 py-0.5">
+                    <button id="allSemCoursesBtn" data-course-filter="all" onclick="setPracticeCourse('all')" class="course-pill course-pill-active">All Sem 5</button>
                     <!-- Sem 5 subjects -->
-                    <button data-course-filter="cs501" data-sem="sem5" onclick="setPracticeCourse('cs501')" class="course-pill">TOC</button>
-                    <button data-course-filter="cs502" data-sem="sem5" onclick="setPracticeCourse('cs502')" class="course-pill">DBMS</button>
-                    <button data-course-filter="cs503" data-sem="sem5" onclick="setPracticeCourse('cs503')" class="course-pill">Data Analytics</button>
-                    <button data-course-filter="cs503-cs" data-sem="sem5" onclick="setPracticeCourse('cs503-cs')" class="course-pill">Cyber Sec</button>
-                    <button data-course-filter="cs504" data-sem="sem5" onclick="setPracticeCourse('cs504')" class="course-pill">Web Tech</button>
+                    <button data-course-filter="cs501" data-sem="sem5" onclick="setPracticeCourse('cs501')" class="course-pill">TOC (CS501)</button>
+                    <button data-course-filter="cs502" data-sem="sem5" onclick="setPracticeCourse('cs502')" class="course-pill">DBMS (CS502)</button>
+                    <button data-course-filter="cs503" data-sem="sem5" onclick="setPracticeCourse('cs503')" class="course-pill">Data Analytics (CS503)</button>
+                    <button data-course-filter="cs503-cs" data-sem="sem5" onclick="setPracticeCourse('cs503-cs')" class="course-pill">Cyber Sec (CS503-CS)</button>
+                    <button data-course-filter="cs504" data-sem="sem5" onclick="setPracticeCourse('cs504')" class="course-pill">Web Tech (CS504)</button>
                     <!-- Sem 6 subjects -->
-                    <button data-course-filter="cs601" data-sem="sem6" onclick="setPracticeCourse('cs601')" class="course-pill">ML</button>
-                    <button data-course-filter="cs602" data-sem="sem6" onclick="setPracticeCourse('cs602')" class="course-pill">Networks</button>
-                    <button data-course-filter="cs603" data-sem="sem6" onclick="setPracticeCourse('cs603')" class="course-pill">Compiler</button>
-                    <button data-course-filter="cs604" data-sem="sem6" onclick="setPracticeCourse('cs604')" class="course-pill">Project Mgmt</button>
-                    <button data-course-filter="cs603-cg" data-sem="sem6" onclick="setPracticeCourse('cs603-cg')" class="course-pill">Computer Graphics</button>
+                    <button data-course-filter="cs601" data-sem="sem6" onclick="setPracticeCourse('cs601')" class="course-pill" style="display:none">ML (CS601)</button>
+                    <button data-course-filter="cs602" data-sem="sem6" onclick="setPracticeCourse('cs602')" class="course-pill" style="display:none">Networks (CS602)</button>
+                    <button data-course-filter="cs603" data-sem="sem6" onclick="setPracticeCourse('cs603')" class="course-pill" style="display:none">Compiler (CS603)</button>
+                    <button data-course-filter="cs604" data-sem="sem6" onclick="setPracticeCourse('cs604')" class="course-pill" style="display:none">Project Mgmt (CS604)</button>
+                    <button data-course-filter="cs603-cg" data-sem="sem6" onclick="setPracticeCourse('cs603-cg')" class="course-pill" style="display:none">Graphics (CS603-CG)</button>
                     <!-- Sem 7 subjects -->
-                    <button data-course-filter="cs701" data-sem="sem7" onclick="setPracticeCourse('cs701')" class="course-pill">Software Arch (CS701)</button>
-                    <button data-course-filter="cs702-bd" data-sem="sem7" onclick="setPracticeCourse('cs702-bd')" class="course-pill">Big Data (CS702)</button>
-                    <button data-course-filter="cs702-wmc" data-sem="sem7" onclick="setPracticeCourse('cs702-wmc')" class="course-pill">Wireless &amp; Mobile (CS702)</button>
-                    <button data-course-filter="cs703-cis" data-sem="sem7" onclick="setPracticeCourse('cs703-cis')" class="course-pill">Crypto &amp; InfoSec (CS703)</button>
-                    <button data-course-filter="cs703-dm" data-sem="sem7" onclick="setPracticeCourse('cs703-dm')" class="course-pill">Disaster Mgmt (CS703)</button>
+                    <button data-course-filter="cs701" data-sem="sem7" onclick="setPracticeCourse('cs701')" class="course-pill" style="display:none">Software Arch (CS701)</button>
+                    <button data-course-filter="cs702-bd" data-sem="sem7" onclick="setPracticeCourse('cs702-bd')" class="course-pill" style="display:none">Big Data (CS702)</button>
+                    <button data-course-filter="cs702-wmc" data-sem="sem7" onclick="setPracticeCourse('cs702-wmc')" class="course-pill" style="display:none">Wireless &amp; Mobile</button>
+                    <button data-course-filter="cs703-cis" data-sem="sem7" onclick="setPracticeCourse('cs703-cis')" class="course-pill" style="display:none">Crypto &amp; InfoSec</button>
+                    <button data-course-filter="cs703-dm" data-sem="sem7" onclick="setPracticeCourse('cs703-dm')" class="course-pill" style="display:none">Disaster Mgmt</button>
                 </div>
 
-                <div id="drillControls" class="ml-auto flex items-center gap-2">
-                    <button onclick="buildPracticeSession(currentActiveMode === 'mock' ? 'mock' : 'drill')" class="secondary-cta text-xs !py-1.5 !px-3">Generate new set</button>
+                <div id="drillControls" class="shrink-0">
+                    <button onclick="buildPracticeSession(currentActiveMode === 'mock' ? 'mock' : 'drill')" class="secondary-cta text-xs !py-1 !px-2.5">Generate new set</button>
                 </div>
             </div>
 
-            <!-- Mock Exam Specific Timer Controls (Hidden when not in Mock mode) -->
-            <div id="mockControls" class="hidden flex flex-wrap items-center gap-2 pt-1 border-t border-blue-500/10">
-                <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold mr-1">Select Duration:</span>
-                <button onclick="startMockTest(10)" class="secondary-cta text-xs !py-1.5 !px-3">10 min (Quick)</button>
-                <button onclick="startMockTest(15)" class="secondary-cta text-xs !py-1.5 !px-3">15 min (Standard)</button>
-                <button onclick="startMockTest(20)" class="secondary-cta text-xs !py-1.5 !px-3">20 min (Comprehensive)</button>
-                <button onclick="startMockTest(30)" class="secondary-cta text-xs !py-1.5 !px-3">30 min (Full Exam)</button>
+            <!-- Row 3: Mock Exam Specific Timer Controls (Hidden when not in Mock mode) -->
+            <div id="mockControls" class="hidden flex flex-wrap items-center gap-2 pt-2 border-t border-slate-800/60">
+                <span class="text-[11px] uppercase tracking-wider text-amber-400 font-bold mr-1">Select Duration:</span>
+                <button onclick="startMockTest(10)" class="secondary-cta text-xs !py-1 !px-2.5">10 min (Quick)</button>
+                <button onclick="startMockTest(15)" class="secondary-cta text-xs !py-1 !px-2.5">15 min (Standard)</button>
+                <button onclick="startMockTest(20)" class="secondary-cta text-xs !py-1 !px-2.5">20 min (Comprehensive)</button>
+                <button onclick="startMockTest(30)" class="secondary-cta text-xs !py-1 !px-2.5">30 min (Full Exam)</button>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-6">
-        <!-- Overview Stats Cards -->
-        <section id="practiceOverview" class="grid md:grid-cols-3 gap-4"></section>
-
-        <!-- Dynamic Context Banner -->
-        <section class="revision-banner">
-            <div>
-                <p id="practiceBannerLabel" class="revision-label">Interactive Practice</p>
-                <h2 id="practiceBannerTitle" class="text-3xl font-extrabold text-white mt-1">Subject-wise drills with stored marks</h2>
-                <p id="practiceBannerDesc" class="text-slate-300 mt-2 text-sm leading-relaxed">
-                    Test your understanding with active-recall question sets, detailed derivations, and persistent performance scoring across Semesters 5 and 6.
+        <!-- Dynamic Context Bar & Overview Stats -->
+        <section class="flex flex-col md:flex-row md:items-center justify-between gap-3 p-3 rounded-xl bg-slate-900/70 border border-blue-500/15">
+            <div class="min-w-0">
+                <div class="flex items-center gap-2">
+                    <span id="practiceBannerLabel" class="text-[10px] font-bold uppercase tracking-wider text-blue-400 font-mono bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20 shrink-0">Topic Drills</span>
+                    <h2 id="practiceBannerTitle" class="text-sm sm:text-base font-bold text-white truncate">Subject-wise drills with stored marks</h2>
+                </div>
+                <p id="practiceBannerDesc" class="text-slate-400 text-xs mt-0.5 truncate">
+                    Active-recall question sets, detailed derivations, and persistent performance scoring.
                 </p>
             </div>
-            <div id="practiceMeta" class="mt-4 sm:mt-0"></div>
+            <div id="practiceMeta" class="shrink-0 flex items-center"></div>
         </section>
+
+        <!-- Overview Stats Strip -->
+        <section id="practiceOverview"></section>
 
         <!-- VIEW 1: Standard Drills & Timed Mock Exams -->
         <section id="drillView" class="grid xl:grid-cols-[minmax(0,1fr)_340px] gap-6">

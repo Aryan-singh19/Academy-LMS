@@ -1,13 +1,26 @@
-let activeLectureSemester = 'all';
+let activeLectureSemester = '5';
 let activeLectureSubject = 'all';
 let activeLectureKey = '';
 let lectureSearchQuery = '';
+let isLectureSidebarCollapsed = false;
+try {
+    isLectureSidebarCollapsed = localStorage.getItem('academy_lecture_sidebar_collapsed') === 'true';
+} catch (e) {}
+
 let lectureChatState = {
     local: { messages: [], onlineCount: 0 },
     global: { messages: [], onlineCount: 0 }
 };
 let lecturePollingTimer = null;
 let lectureFetchInFlight = false;
+
+function toggleLectureSidebar() {
+    isLectureSidebarCollapsed = !isLectureSidebarCollapsed;
+    try {
+        localStorage.setItem('academy_lecture_sidebar_collapsed', String(isLectureSidebarCollapsed));
+    } catch (e) {}
+    renderLecturePage();
+}
 
 const esc = (val) => {
     if (window.ACADEMY && typeof window.ACADEMY.escapeHtml === 'function') {
@@ -26,66 +39,105 @@ const esc = (val) => {
 
 const ALL_LECTURE_SUBJECTS = [
     // Semester 5
-    { id: 'cs501', semester: 5, label: 'CS-501 (TOC)', fullLabel: 'Theory of Computation', aliases: ['cs501'] },
-    { id: 'cs502', semester: 5, label: 'CS-502 (DBMS)', fullLabel: 'Database Management Systems', aliases: ['cs502'] },
-    { id: 'cs503', semester: 5, label: 'CS-503 (DA)', fullLabel: 'Data Analytics', aliases: ['cs503'] },
-    { id: 'cs503-cs', semester: 5, label: 'CS-503-CS (Cyber)', fullLabel: 'Cyber Security', aliases: ['cs503-cs'] },
-    { id: 'cs504', semester: 5, label: 'CS-504 (Web)', fullLabel: 'Web Technology', aliases: ['cs504'] },
+    { id: 'cs501', semester: 5, code: 'CS-501', label: 'CS-501 (TOC)', fullLabel: 'Theory of Computation', aliases: ['cs501', '501', 'toc', 'cs-501', 'computation', 'automata'] },
+    { id: 'cs502', semester: 5, code: 'CS-502', label: 'CS-502 (DBMS)', fullLabel: 'Database Management Systems', aliases: ['cs502', '502', 'dbms', 'cs-502', 'database', 'sql'] },
+    { id: 'cs503', semester: 5, code: 'CS-503', label: 'CS-503 (DA)', fullLabel: 'Data Analytics', aliases: ['cs503', '503', 'da', 'analytics', 'cs-503', 'dataanalytics'] },
+    { id: 'cs503-cs', semester: 5, code: 'CS-503-CS', label: 'CS-503-CS (Cyber)', fullLabel: 'Cyber Security', aliases: ['cs503-cs', 'cs503cs', '503cs', 'cyber', 'cybersecurity'] },
+    { id: 'cs504', semester: 5, code: 'CS-504', label: 'CS-504 (Web)', fullLabel: 'Web Technology', aliases: ['cs504', '504', 'web', 'wt', 'cs-504', 'webtech'] },
 
     // Semester 6
-    { id: 'cs601', semester: 6, label: 'CS-601 (ML)', fullLabel: 'Machine Learning', aliases: ['cs601'] },
-    { id: 'cs602', semester: 6, label: 'CS-602 (CN)', fullLabel: 'Computer Networks', aliases: ['cs602'] },
-    { id: 'cs603', semester: 6, label: 'CS-603 (CD)', fullLabel: 'Compiler Design', aliases: ['cs603'] },
-    { id: 'cs603-cg', semester: 6, label: 'CS-603-CG (Graphics)', fullLabel: 'Computer Graphics', aliases: ['cs603-cg'] },
-    { id: 'cs604', semester: 6, label: 'CS-604 (PM)', fullLabel: 'Project Management', aliases: ['cs604'] },
+    { id: 'cs601', semester: 6, code: 'CS-601', label: 'CS-601 (ML)', fullLabel: 'Machine Learning', aliases: ['cs601', '601', 'ml', 'cs-601', 'machinelearning'] },
+    { id: 'cs602', semester: 6, code: 'CS-602', label: 'CS-602 (CN)', fullLabel: 'Computer Networks', aliases: ['cs602', '602', 'cn', 'networks', 'cs-602', 'computernetworks'] },
+    { id: 'cs603', semester: 6, code: 'CS-603', label: 'CS-603 (CD)', fullLabel: 'Compiler Design', aliases: ['cs603', '603', 'cd', 'compiler', 'cs-603', 'compilerdesign'] },
+    { id: 'cs603-cg', semester: 6, code: 'CS-603-CG', label: 'CS-603-CG (Graphics)', fullLabel: 'Computer Graphics', aliases: ['cs603-cg', 'cs603cg', '603cg', 'graphics', 'cg'] },
+    { id: 'cs604', semester: 6, code: 'CS-604', label: 'CS-604 (PM)', fullLabel: 'Project Management', aliases: ['cs604', '604', 'pm', 'cs-604', 'projectmanagement', 'spm'] },
 
     // Semester 7
-    { id: 'cs701', semester: 7, label: 'CS-701 (Arch)', fullLabel: 'Software Architectures', aliases: ['cs701'] },
-    { id: 'cs702', semester: 7, label: 'CS-702 (BigData)', fullLabel: 'Big Data Analytics', aliases: ['cs702-bd', 'cs702'] },
-    { id: 'cs702-wmc', semester: 7, label: 'CS-702-WMC (Wireless)', fullLabel: 'Wireless & Mobile Computing', aliases: ['cs702-wmc'] },
-    { id: 'cs703', semester: 7, label: 'CS-703 (Crypto)', fullLabel: 'Cryptography & Info Security', aliases: ['cs703-cis', 'cs703'] },
-    { id: 'cs703-dm', semester: 7, label: 'CS-703-DM (Disaster)', fullLabel: 'Disaster Management', aliases: ['cs703-dm'] }
+    { id: 'cs701', semester: 7, code: 'CS-701', label: 'CS-701 (Arch)', fullLabel: 'Software Architectures', aliases: ['cs701', '701', 'arch', 'sa', 'cs-701', 'softwarearchitecture'] },
+    { id: 'cs702', semester: 7, code: 'CS-702', label: 'CS-702 (BigData)', fullLabel: 'Big Data Analytics', aliases: ['cs702-bd', 'cs702', '702', 'bd', 'bigdata', 'cs702bd', 'cs-702'] },
+    { id: 'cs702-wmc', semester: 7, code: 'CS-702-WMC', label: 'CS-702-WMC (Wireless)', fullLabel: 'Wireless & Mobile Computing', aliases: ['cs702-wmc', 'cs702wmc', '702wmc', 'wmc', 'wireless', 'mobile'] },
+    { id: 'cs703', semester: 7, code: 'CS-703', label: 'CS-703 (Crypto)', fullLabel: 'Cryptography & Info Security', aliases: ['cs703-cis', 'cs703', '703', 'cis', 'crypto', 'infosec', 'cs703cis', 'cs-703'] },
+    { id: 'cs703-dm', semester: 7, code: 'CS-703-DM', label: 'CS-703-DM (Disaster)', fullLabel: 'Disaster Management', aliases: ['cs703-dm', 'cs703dm', '703dm', 'dm', 'disaster', 'disastermgmt'] }
 ];
 
 function getLectureSemesters() {
     return [
-        { id: 'all', label: 'All Semesters' },
-        { id: '5', label: 'Semester 5 (5 Subjects)' },
-        { id: '6', label: 'Semester 6 (5 Subjects)' },
-        { id: '7', label: 'Semester 7 (5 Subjects)' }
+        { id: '5', label: 'Semester 5' },
+        { id: '6', label: 'Semester 6' },
+        { id: '7', label: 'Semester 7' }
     ];
 }
 
 function getLectureSubjects() {
-    let list = ALL_LECTURE_SUBJECTS;
-    if (activeLectureSemester !== 'all') {
-        list = list.filter((s) => String(s.semester) === String(activeLectureSemester));
-    }
-    const allLabel = activeLectureSemester === 'all' ? 'All Subjects' : `All Sem ${activeLectureSemester}`;
-    return [{ id: 'all', label: allLabel, fullLabel: 'All Subjects' }, ...list];
+    const list = ALL_LECTURE_SUBJECTS.filter((s) => String(s.semester) === String(activeLectureSemester));
+    const allLabel = `All Sem ${activeLectureSemester}`;
+    return [{ id: 'all', label: allLabel, fullLabel: `All Sem ${activeLectureSemester} Subjects` }, ...list];
 }
 
 function lectureKeyFor(lecture) {
     return lecture.lectureKey || `${lecture.subject}-${lecture.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 }
 
+function getMatchedSubjectIds(query) {
+    const q = String(query || '').trim().toLowerCase();
+    if (!q) return null;
+    const qNorm = q.replace(/[^a-z0-9]/g, '');
+    if (!qNorm) return [];
+
+    const matched = ALL_LECTURE_SUBJECTS.filter((sub) => {
+        const codeNorm = (sub.code || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+        const idNorm = sub.id.toLowerCase().replace(/[^a-z0-9]/g, '');
+        if (codeNorm.includes(qNorm) || qNorm.includes(codeNorm)) return true;
+        if (idNorm.includes(qNorm) || qNorm.includes(idNorm)) return true;
+        return (sub.aliases || []).some((alias) => {
+            const aNorm = alias.toLowerCase().replace(/[^a-z0-9]/g, '');
+            return aNorm.includes(qNorm) || qNorm.includes(aNorm);
+        });
+    });
+
+    return matched.map((s) => s.id);
+}
+
+function isLectureMatchSubject(lectureSubject, targetSubjectId) {
+    if (!lectureSubject || !targetSubjectId) return false;
+    if (lectureSubject === targetSubjectId) return true;
+    if (targetSubjectId === 'cs702' && (lectureSubject === 'cs702-bd' || lectureSubject === 'cs702')) return true;
+    if (targetSubjectId === 'cs702-bd' && (lectureSubject === 'cs702-bd' || lectureSubject === 'cs702')) return true;
+    if (targetSubjectId === 'cs703' && (lectureSubject === 'cs703-cis' || lectureSubject === 'cs703')) return true;
+    if (targetSubjectId === 'cs703-cis' && (lectureSubject === 'cs703-cis' || lectureSubject === 'cs703')) return true;
+    return false;
+}
+
 function getFilteredLectures() {
+    const matchedSubjectIds = getMatchedSubjectIds(lectureSearchQuery);
+
     return (window.lectureLibrary || []).filter((item) => {
-        if (activeLectureSemester !== 'all' && String(item.semester) !== String(activeLectureSemester)) {
+        // If user typed a search query but it didn't match any subject code/alias
+        if (lectureSearchQuery && matchedSubjectIds && matchedSubjectIds.length === 0) {
             return false;
         }
-        if (activeLectureSubject !== 'all') {
-            const isMatch = item.subject === activeLectureSubject ||
-                (activeLectureSubject === 'cs702' && (item.subject === 'cs702-bd' || item.subject === 'cs702')) ||
-                (activeLectureSubject === 'cs702-bd' && (item.subject === 'cs702-bd' || item.subject === 'cs702')) ||
-                (activeLectureSubject === 'cs703' && (item.subject === 'cs703-cis' || item.subject === 'cs703')) ||
-                (activeLectureSubject === 'cs703-cis' && (item.subject === 'cs703-cis' || item.subject === 'cs703'));
-            if (!isMatch) return false;
+
+        // Code-wise search: ONLY show lectures matching the found subject code(s)
+        if (matchedSubjectIds && matchedSubjectIds.length > 0) {
+            const matchesCode = matchedSubjectIds.some((subId) => isLectureMatchSubject(item.subject, subId));
+            if (!matchesCode) return false;
         }
-        if (!lectureSearchQuery) return true;
-        const topicString = Array.isArray(item.topics) ? item.topics.join(' ') : '';
-        const haystack = `${item.subjectCode || ''} ${item.subjectLabel || ''} ${item.title || ''} ${item.lecturer || ''} ${item.description || ''} ${item.typeLabel || ''} ${topicString}`.toLowerCase();
-        return haystack.includes(lectureSearchQuery);
+
+        // Semester filter (only when not searching for a specific code from another semester)
+        if (activeLectureSemester !== 'all' && String(item.semester) !== String(activeLectureSemester)) {
+            if (!matchedSubjectIds || matchedSubjectIds.length === 0) {
+                return false;
+            }
+        }
+
+        // Subject tab filter (when no code search is active)
+        if (activeLectureSubject !== 'all' && (!matchedSubjectIds || matchedSubjectIds.length === 0)) {
+            if (!isLectureMatchSubject(item.subject, activeLectureSubject)) {
+                return false;
+            }
+        }
+
+        return true;
     });
 }
 
@@ -95,7 +147,39 @@ function getActiveLecture() {
     return matched || lectures[0] || null;
 }
 
+function applySidebarState() {
+    const sidebar = document.getElementById('lectureSidebar');
+    const restoreEdge = document.getElementById('lectureRestoreEdge');
+    const grid = document.getElementById('lectureWorkspaceGrid');
+    const sidebarInput = document.getElementById('sidebarCodeSearchInput');
+    const clearBtn = document.getElementById('sidebarClearSearchBtn');
+
+    if (sidebarInput && document.activeElement !== sidebarInput) {
+        sidebarInput.value = lectureSearchQuery;
+    }
+    if (clearBtn) {
+        if (lectureSearchQuery) {
+            clearBtn.classList.remove('hidden');
+        } else {
+            clearBtn.classList.add('hidden');
+        }
+    }
+
+    if (!sidebar || !grid) return;
+
+    if (isLectureSidebarCollapsed) {
+        sidebar.classList.add('hidden');
+        if (restoreEdge) restoreEdge.classList.remove('hidden');
+        grid.className = 'grid grid-cols-1 xl:grid-cols-[auto_minmax(0,1fr)] gap-4 items-start transition-all';
+    } else {
+        sidebar.classList.remove('hidden');
+        if (restoreEdge) restoreEdge.classList.add('hidden');
+        grid.className = 'grid xl:grid-cols-[360px_minmax(0,1fr)] gap-6 items-start transition-all';
+    }
+}
+
 function renderLecturePage() {
+    applySidebarState();
     renderLectureTabs();
     renderLectureToolbar();
     renderLectureList();
@@ -122,23 +206,83 @@ function renderLectureTabs() {
     }
 }
 
+function setLectureSearch(query) {
+    lectureSearchQuery = String(query || '').trim();
+    const matchedIds = getMatchedSubjectIds(lectureSearchQuery);
+    if (matchedIds && matchedIds.length > 0) {
+        const found = ALL_LECTURE_SUBJECTS.find((s) => matchedIds.includes(s.id));
+        if (found) {
+            if (activeLectureSemester !== 'all' && String(found.semester) !== String(activeLectureSemester)) {
+                activeLectureSemester = String(found.semester);
+            }
+            if (matchedIds.length === 1) {
+                activeLectureSubject = found.id;
+            }
+        }
+    }
+    const filtered = getFilteredLectures();
+    activeLectureKey = filtered[0] ? lectureKeyFor(filtered[0]) : '';
+    renderLecturePage();
+}
+
+function searchByCode(code) {
+    if (!code || code === 'ALL') {
+        activeLectureSubject = 'all';
+        clearLectureSearch();
+        return;
+    }
+    setLectureSearch(code);
+}
+
+function setupSidebarSearchInput() {
+    const input = document.getElementById('sidebarCodeSearchInput');
+    if (!input || input.dataset.bound === 'true') return;
+    input.dataset.bound = 'true';
+    input.addEventListener('input', (event) => {
+        setLectureSearch(event.target.value);
+    });
+}
+
 function renderLectureToolbar() {
     const lectures = getFilteredLectures();
     const totalAll = (window.lectureLibrary || []).length;
     const target = document.getElementById('lectureToolbar');
     if (!target) return;
 
+    const matchedIds = getMatchedSubjectIds(lectureSearchQuery);
+
     target.innerHTML = `
-        <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-            <div class="flex items-center gap-2">
-                <span class="text-sm font-semibold text-white">${lectures.length}</span>
-                <span class="text-xs text-slate-400">of ${totalAll} lecture videos &amp; playlists matching current filter</span>
+        <div class="space-y-3">
+            <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="text-sm font-bold text-white font-mono bg-blue-500/15 text-blue-300 px-2 py-0.5 rounded border border-blue-500/30">${lectures.length}</span>
+                    <span class="text-xs text-slate-300">lectures matching subject code filter (of ${totalAll} total)</span>
+                </div>
+                <div class="relative w-full md:max-w-md">
+                    <input id="lectureSearchInput" class="search-input w-full !pr-8" placeholder="Search by subject code (e.g., CS501, 602, CS701, TOC, WMC)..." value="${window.ACADEMY.escapeForAttribute(lectureSearchQuery)}">
+                    ${lectureSearchQuery ? `
+                        <button type="button" onclick="clearLectureSearch()" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-bold" title="Clear code search">✕</button>
+                    ` : ''}
+                </div>
             </div>
-            <div class="relative w-full md:max-w-md">
-                <input id="lectureSearchInput" class="search-input w-full !pr-8" placeholder="Search by topic, lecturer, algorithm, or course..." value="${window.ACADEMY.escapeForAttribute(lectureSearchQuery)}">
-                ${lectureSearchQuery ? `
-                    <button type="button" onclick="clearLectureSearch()" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-bold" title="Clear search">✕</button>
-                ` : ''}
+
+            <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none">
+                <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
+                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
+                    Code:
+                </span>
+                <button type="button" onclick="searchByCode('ALL')" class="px-2.5 py-1 rounded text-xs font-mono font-bold transition-all ${!lectureSearchQuery && activeLectureSubject === 'all' ? 'bg-blue-600 text-white shadow-sm ring-1 ring-blue-400' : 'bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700'}">
+                    ALL
+                </button>
+                ${ALL_LECTURE_SUBJECTS.map((s) => {
+                    const isCodeActive = (matchedIds && matchedIds.includes(s.id)) ||
+                        (!lectureSearchQuery && (activeLectureSubject === s.id || (activeLectureSubject === 'cs702' && s.id === 'cs702') || (activeLectureSubject === 'cs703' && s.id === 'cs703')));
+                    return `
+                        <button type="button" onclick="searchByCode('${s.code}')" class="px-2 py-1 rounded text-xs font-mono font-semibold transition-all whitespace-nowrap ${isCodeActive ? 'bg-blue-600 text-white shadow-sm ring-1 ring-blue-400' : 'bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:bg-slate-700 hover:text-white'}">
+                            ${s.code}
+                        </button>
+                    `;
+                }).join('')}
             </div>
         </div>
     `;
@@ -146,18 +290,20 @@ function renderLectureToolbar() {
     const input = document.getElementById('lectureSearchInput');
     if (input) {
         input.addEventListener('input', (event) => {
-            lectureSearchQuery = String(event.target.value || '').trim().toLowerCase();
-            const first = getFilteredLectures()[0];
-            activeLectureKey = first ? lectureKeyFor(first) : '';
-            renderLecturePage();
+            setLectureSearch(event.target.value);
         });
     }
+
+    setupSidebarSearchInput();
 }
 
 function clearLectureSearch() {
     lectureSearchQuery = '';
-    const input = document.getElementById('lectureSearchInput');
-    if (input) input.value = '';
+    const mainInput = document.getElementById('lectureSearchInput');
+    if (mainInput) mainInput.value = '';
+    const sidebarInput = document.getElementById('sidebarCodeSearchInput');
+    if (sidebarInput) sidebarInput.value = '';
+
     const first = getFilteredLectures()[0];
     activeLectureKey = first ? lectureKeyFor(first) : '';
     renderLecturePage();
@@ -169,44 +315,61 @@ function renderLectureList() {
     activeLectureKey = active ? lectureKeyFor(active) : '';
 
     const container = document.getElementById('lectureList');
+    const countBadge = document.getElementById('lectureCountBadge');
+    const restoreBadge = document.getElementById('lectureRestoreBadge');
+
+    if (countBadge) {
+        countBadge.textContent = `${lectures.length} video${lectures.length === 1 ? '' : 's'}`;
+    }
+    if (restoreBadge) {
+        restoreBadge.textContent = `Playlist (${lectures.length})`;
+    }
+
     if (!container) return;
 
     if (!lectures.length) {
         container.innerHTML = `
-            <article class="panel-card p-5">
-                <h3 class="text-lg font-bold text-white">No lecture links found</h3>
-                <p class="text-sm text-slate-400 mt-2">Try clearing the search query or switching the subject or semester tab.</p>
-                <button type="button" onclick="resetLectureFilters()" class="secondary-cta text-xs mt-4 !py-2 !px-3">Reset Filters</button>
+            <article class="p-4 rounded-lg bg-slate-900/80 border border-slate-800 text-center space-y-2">
+                <p class="text-xs font-bold text-amber-300">No lectures found for code</p>
+                <p class="text-[11px] text-slate-400 leading-relaxed">
+                    ${lectureSearchQuery ? `No course matched code "<strong>${esc(lectureSearchQuery)}</strong>".` : 'No videos found.'}
+                    Search by subject code like <strong>CS501</strong>, <strong>602</strong>, <strong>CS701</strong>, <strong>TOC</strong>, or <strong>WMC</strong>.
+                </p>
+                <button type="button" onclick="clearLectureSearch()" class="secondary-cta text-[11px] mt-2 !py-1.5 !px-3">
+                    Reset Filter
+                </button>
             </article>
         `;
         return;
     }
 
-    container.innerHTML = lectures.map((lecture) => {
+    container.innerHTML = lectures.map((lecture, idx) => {
         const isSelected = activeLectureKey === lectureKeyFor(lecture);
         const isPlaylist = lecture.type === 'playlist';
         const semColor = lecture.semester === 5 ? 'blue' : lecture.semester === 6 ? 'emerald' : 'purple';
-        const topicChips = (lecture.topics || []).slice(0, 3).map((t) =>
-            `<span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/90 text-slate-400 border border-slate-700/50">#${esc(t)}</span>`
-        ).join('');
 
         return `
-            <button type="button" onclick="selectLecture('${lectureKeyFor(lecture)}')" class="continue-card text-left w-full transition-all ${isSelected ? 'ring-2 ring-blue-400 shadow-lg shadow-blue-500/10 bg-slate-800/90' : 'hover:bg-slate-850'}">
-                <div class="flex items-center justify-between gap-2">
-                    <span class="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30">
-                        Sem ${lecture.semester} • ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
-                    </span>
-                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded ${isPlaylist ? 'bg-amber-500/15 text-amber-300 border border-amber-500/30' : 'bg-sky-500/15 text-sky-300 border border-sky-500/30'}">
-                        ${esc(lecture.typeLabel || (isPlaylist ? 'Full Playlist' : 'Deep-Dive'))}
-                    </span>
+            <button type="button" onclick="selectLecture('${lectureKeyFor(lecture)}')" class="playlist-item w-full text-left p-2.5 rounded-lg border transition-all flex items-start gap-2.5 ${isSelected ? 'bg-blue-600/20 border-blue-500/60 shadow-sm shadow-blue-500/20 text-white ring-1 ring-blue-500' : 'bg-slate-900/60 border-slate-800/80 hover:bg-slate-800/80 hover:border-slate-700 text-slate-300'}">
+                <div class="shrink-0 w-6 h-6 rounded-md flex items-center justify-center font-mono text-[11px] font-bold ${isSelected ? 'bg-blue-500 text-white' : 'bg-slate-800 text-slate-400'}">
+                    ${isSelected ? '▶' : (idx + 1)}
                 </div>
-                <h3 class="text-base font-bold text-white mt-2 leading-snug">${esc(lecture.title)}</h3>
-                <p class="text-xs text-slate-300 font-medium mt-1 flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5 text-red-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                    <span>${esc(lecture.lecturer)}</span>
-                </p>
-                <p class="text-xs text-slate-400 mt-2 line-clamp-2 leading-relaxed">${esc(lecture.description)}</p>
-                ${topicChips ? `<div class="flex flex-wrap gap-1 mt-2.5 pt-2 border-t border-slate-800/80">${topicChips}</div>` : ''}
+                <div class="min-w-0 flex-1">
+                    <div class="flex items-center gap-1.5 leading-none">
+                        <span class="text-[10px] font-mono font-extrabold px-1.5 py-0.5 rounded bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30 shrink-0">
+                            ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
+                        </span>
+                        <span class="text-[10px] font-medium text-slate-400 shrink-0">
+                            ${esc(lecture.typeLabel || (isPlaylist ? 'Playlist' : 'Masterclass'))}
+                        </span>
+                    </div>
+                    <h4 class="text-xs font-semibold text-white mt-1 leading-snug truncate" title="${window.ACADEMY.escapeForAttribute(lecture.title)}">
+                        ${esc(lecture.title)}
+                    </h4>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 mt-1">
+                        <span class="truncate max-w-[170px] text-slate-400">${esc(lecture.lecturer)}</span>
+                        ${isSelected ? '<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider">Playing</span>' : ''}
+                    </div>
+                </div>
             </button>
         `;
     }).join('');
@@ -214,6 +377,7 @@ function renderLectureList() {
 
 function renderLectureViewer() {
     const target = document.getElementById('lectureViewer');
+    const lectures = getFilteredLectures();
     const lecture = getActiveLecture();
     if (!lecture) {
         target.innerHTML = '<p class="text-slate-400">No lecture selected.</p>';
@@ -230,10 +394,19 @@ function renderLectureViewer() {
     target.innerHTML = `
         <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800">
             <div class="flex items-center gap-2">
+                <button type="button" onclick="toggleLectureSidebar()" class="side-panel-collapse-btn text-xs font-semibold" title="${isLectureSidebarCollapsed ? 'Expand Lecture Playlist (Press [ )' : 'Collapse Lecture Playlist (Press [ )'}">
+                    ${isLectureSidebarCollapsed ? `
+                        <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
+                        <span>Show Playlist (${lectures.length})</span>
+                    ` : `
+                        <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"/></svg>
+                        <span>Hide Playlist</span>
+                    `}
+                </button>
                 <span class="px-2.5 py-1 rounded-md font-mono text-xs font-bold bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30">
                     Semester ${lecture.semester} • ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
                 </span>
-                <span class="text-xs font-semibold text-slate-400">
+                <span class="text-xs font-semibold text-slate-400 hidden sm:inline">
                     ${esc(lecture.subjectLabel)}
                 </span>
             </div>
@@ -442,14 +615,8 @@ function normalizeLectureUrl(url) {
 }
 
 function setLectureSemester(semester) {
-    activeLectureSemester = semester;
-    // Check if the currently active subject is still compatible with the chosen semester
-    if (activeLectureSubject !== 'all') {
-        const sub = ALL_LECTURE_SUBJECTS.find((s) => s.id === activeLectureSubject);
-        if (sub && semester !== 'all' && String(sub.semester) !== String(semester)) {
-            activeLectureSubject = 'all';
-        }
-    }
+    activeLectureSemester = String(semester);
+    activeLectureSubject = 'all';
     const filtered = getFilteredLectures();
     activeLectureKey = filtered[0] ? lectureKeyFor(filtered[0]) : '';
     renderLecturePage();
@@ -575,6 +742,19 @@ window.sendLectureMessage = sendLectureMessage;
 window.copyLectureLink = copyLectureLink;
 window.resetLectureFilters = resetLectureFilters;
 window.clearLectureSearch = clearLectureSearch;
+window.toggleLectureSidebar = toggleLectureSidebar;
+window.searchByCode = searchByCode;
+
+document.addEventListener('keydown', (e) => {
+    // If not typing in an input or textarea
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+        return;
+    }
+    if (e.key === '[' || e.key === ']') {
+        e.preventDefault();
+        toggleLectureSidebar();
+    }
+});
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Non-blocking session & sync check

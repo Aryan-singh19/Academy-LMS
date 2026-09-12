@@ -277,11 +277,20 @@
                 const topicQuizzes = Array.isArray(topic.quizzes) ? topic.quizzes : (Array.isArray(topic.quiz) ? topic.quiz : []);
                 if (topicId === 'unitExam' || !topic || topicQuizzes.length === 0) return;
                 const meta = getTopicMeta(topicId);
+                let courseId = meta ? meta.courseId : '';
+                let courseCode = meta ? meta.courseCode : '';
+                if (!courseId && unitId) {
+                    const prefix = unitId.split('-')[0].toLowerCase();
+                    if (prefix.startsWith('cs')) {
+                        courseId = prefix;
+                        courseCode = prefix.toUpperCase();
+                    }
+                }
                 topicQuizzes.forEach((quiz, index) => {
                     bank.push({
                         id: `${unitId}:${topicId}:${index}`,
-                        courseId: meta ? meta.courseId : '',
-                        courseCode: meta ? meta.courseCode : '',
+                        courseId: courseId || '',
+                        courseCode: courseCode || '',
                         unitId,
                         unitTitle: meta ? meta.unitTitle : '',
                         topicId,

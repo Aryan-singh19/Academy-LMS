@@ -394,7 +394,7 @@ const extraPracticeQuestions = [
 let currentActiveMode = 'drill'; // 'drill' | 'mock' | 'flashcards' | 'numericals' | 'speed'
 let practiceSession = [];
 let practiceCourse = 'all';
-let currentSemesterFilter = 'all';
+let currentSemesterFilter = 'sem5';
 let sessionMode = 'drill';
 let timerSeconds = 0;
 let timerHandle = null;
@@ -683,8 +683,8 @@ const simulatorQuestions = [
                 <p>Given linearly separable training data $(x_i, y_i)$ where $y_i \in \{-1, +1\}$, the decision hyperplane is $w^T x + b = 0$. The geometric margin between supporting hyperplanes is $\frac{2}{\|w\|}$. Maximizing this margin is formulated as the convex Quadratic Programming problem:</p>
                 <p class="font-mono text-cyan-300 text-center p-2 bg-slate-950 rounded-lg">minimize \frac{1}{2} \|w\|^2 \quad \text{subject to} \quad y_i (w^T x_i + b) \ge 1 \quad \forall i</p>
                 <h5 class="text-sm font-bold text-white">2. Soft Margin SVM &amp; Slack Variables</h5>
-                <p>For noisy or non-linearly separable data, slack variables $\xi_i \ge 0$ permit controlled misclassifications, balanced by penalty hyperparameter $C$:</p>
-                <p class="font-mono text-cyan-300 text-center p-2 bg-slate-950 rounded-lg">minimize \frac{1}{2} \|w\|^2 + C \sum_{i=1}^{n} \xi_i \quad \text{subject to} \quad y_i (w^T x_i + b) \ge 1 - \xi_i, \quad \xi_i \ge 0</p>
+                <p>For noisy or non-linearly separable data, slack variables &xi;<sub>i</sub> &ge; 0 permit controlled misclassifications, balanced by penalty hyperparameter $C$:</p>
+                <p class="font-mono text-cyan-300 text-center p-2 bg-slate-950 rounded-lg">minimize \frac{1}{2} \|w\|^2 + C \sum_{i=1}^{n} &xi;<sub>i</sub> \quad \text{subject to} \quad y_i (w^T x_i + b) \ge 1 - &xi;<sub>i</sub>, \quad &xi;<sub>i</sub> \ge 0</p>
                 <h5 class="text-sm font-bold text-white">3. The Kernel Trick</h5>
                 <p>To classify non-linear data without explicitly mapping points into an infinite-dimensional feature space $\phi(x)$, SVM utilizes Mercer's Theorem: $K(x, z) = \langle \phi(x), \phi(z) \rangle$. Standard kernels include the <strong>Radial Basis Function (RBF/Gaussian)</strong>: $K(x, z) = \exp(-\gamma \|x - z\|^2)$.</p>
             </div>
@@ -746,7 +746,7 @@ function pickRandomQuestions(bank, amount) {
  */
 function initializeTestsPage() {
     renderPracticeHeader();
-    buildPracticeSession('drill');
+    setSemesterFilter('sem5');
     renderPracticeHistory();
     initFlashcards();
     loadSpeedHighScore();
@@ -849,35 +849,42 @@ function updateBannerContent(mode) {
 }
 
 /**
- * Filter by Semester
+ * Filter by Semester (Only individual semesters, no All Sems)
  */
 function setSemesterFilter(semester) {
+    if (!['sem5', 'sem6', 'sem7'].includes(semester)) {
+        semester = 'sem5';
+    }
     currentSemesterFilter = semester;
 
-    ['all', 'sem5', 'sem6', 'sem7'].forEach((sem) => {
+    ['sem5', 'sem6', 'sem7'].forEach((sem) => {
         const btn = document.getElementById(`semFilter-${sem}`);
         if (btn) {
             if (sem === semester) {
-                btn.className = 'px-2.5 py-1 rounded-full text-blue-300 font-medium bg-blue-500/20';
+                btn.className = 'px-2.5 py-1 rounded-full text-blue-300 font-medium bg-blue-500/20 shadow-sm transition';
             } else {
                 btn.className = 'px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition';
             }
         }
     });
 
-    // Toggle subject pills visibility based on semester
+    const semLabel = semester === 'sem5' ? 'Sem 5' : (semester === 'sem6' ? 'Sem 6' : 'Sem 7');
+    const allBtn = document.getElementById('allSemCoursesBtn');
+    if (allBtn) {
+        allBtn.textContent = `All ${semLabel}`;
+    }
+
+    // Toggle subject pills visibility: strictly show only the pills of the active semester
     document.querySelectorAll('[data-course-filter]').forEach((button) => {
         const courseSem = button.dataset.sem;
         if (button.dataset.courseFilter === 'all') {
-            button.style.display = 'inline-block';
-        } else if (semester === 'all') {
             button.style.display = 'inline-block';
         } else {
             button.style.display = courseSem === semester ? 'inline-block' : 'none';
         }
     });
 
-    // Reset to all subjects when switching semester filter if current selection doesn't belong
+    // Reset to all subjects of the selected semester
     setPracticeCourse('all');
 }
 
@@ -908,21 +915,26 @@ function renderPracticeHeader() {
     if (!container) return;
 
     container.innerHTML = `
-        <article class="metric-card">
-            <p class="metric-label">All-time quiz accuracy</p>
-            <div class="metric-value">${stats.quizAccuracy}%</div>
-            <p class="metric-subtext">${stats.correctAnswers}/${stats.totalAttempts} correct attempts recorded</p>
-        </article>
-        <article class="metric-card">
-            <p class="metric-label">Saved notes &amp; highlights</p>
-            <div class="metric-value">${stats.notesCount}</div>
-            <p class="metric-subtext">${stats.highlightCount} highlighted syntax snippets</p>
-        </article>
-        <article class="metric-card">
-            <p class="metric-label">Curriculum mastery</p>
-            <div class="metric-value">${stats.completedTopics}</div>
-            <p class="metric-subtext">${stats.totalTopics} total syllabus topics tracked</p>
-        </article>
+        <div class="flex flex-wrap items-center justify-between gap-3 w-full py-2 px-3.5 rounded-xl bg-slate-900/50 border border-blue-500/15 text-xs">
+            <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                <div class="flex items-center gap-1.5">
+                    <span class="text-slate-400">Accuracy:</span>
+                    <span class="font-bold text-blue-300 font-mono">${stats.quizAccuracy}%</span>
+                    <span class="text-[11px] text-slate-500">(${stats.correctAnswers}/${stats.totalAttempts})</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="text-slate-400">Notes &amp; Highlights:</span>
+                    <span class="font-bold text-emerald-300 font-mono">${stats.notesCount}</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="text-slate-400">Mastery:</span>
+                    <span class="font-bold text-amber-300 font-mono">${stats.completedTopics}/${stats.totalTopics} topics</span>
+                </div>
+            </div>
+            <div class="text-[11px] text-slate-400 hidden sm:block">
+                Auto-saved to student profile
+            </div>
+        </div>
     `;
 }
 
@@ -997,24 +1009,27 @@ function renderPracticeSession() {
     listContainer.innerHTML = practiceSession.map((question, index) => {
         return `
             <article class="quiz-card">
-                <div class="flex items-start justify-between gap-4 mb-4">
+                <div class="flex items-start justify-between gap-3 mb-3">
                     <div>
-                        <p class="text-xs uppercase tracking-[0.24em] text-slate-500 font-mono font-semibold">${question.courseCode || 'CS'} &bull; ${question.topicTitle || 'Question'}</p>
-                        <h3 class="text-base sm:text-lg font-bold text-white mt-1.5 leading-snug">Q${index + 1}. ${question.question}</h3>
+                        <p class="text-[11px] uppercase tracking-[0.24em] text-blue-400 font-mono font-semibold">${question.courseCode || 'CS'} &bull; ${question.topicTitle || 'Question'}</p>
+                        <h3 class="text-sm sm:text-base font-bold text-white mt-1 leading-snug">Q${index + 1}. ${question.question}</h3>
                     </div>
-                    <span class="mini-badge">${question.sessionAnswer === null ? 'Open' : (question.sessionAnswer === question.answer ? 'Correct' : 'Review')}</span>
+                    <span class="mini-badge shrink-0">${question.sessionAnswer === null ? 'Open' : (question.sessionAnswer === question.answer ? 'Correct' : 'Review')}</span>
                 </div>
-                <div class="space-y-2.5">
-                    ${(question.options || []).map((option, optionIndex) => `
-                        <button onclick="answerPracticeQuestion(${index}, ${optionIndex})" class="quiz-option ${getPracticeOptionClass(question, optionIndex)}" ${question.sessionAnswer !== null || mockFinished ? 'disabled' : ''}>
-                            ${option}
+                <div class="space-y-2">
+                    ${(question.options || []).map((option, optionIndex) => {
+                        const letter = String.fromCharCode(65 + optionIndex);
+                        return `
+                        <button onclick="answerPracticeQuestion(${index}, ${optionIndex})" class="quiz-option flex items-start gap-2.5 ${getPracticeOptionClass(question, optionIndex)}" ${question.sessionAnswer !== null || mockFinished ? 'disabled' : ''}>
+                            <span class="w-5 h-5 rounded-md flex items-center justify-center font-mono font-bold text-xs bg-blue-500/15 text-blue-300 border border-blue-500/25 shrink-0 mt-0.5">${letter}</span>
+                            <span class="flex-1 text-xs sm:text-sm text-left leading-relaxed">${option}</span>
                         </button>
-                    `).join('')}
+                    `}).join('')}
                 </div>
                 ${question.sessionAnswer !== null || mockFinished ? `
                     <div class="quiz-feedback ${question.sessionAnswer === question.answer ? 'quiz-feedback-correct' : 'quiz-feedback-wrong'}">
                         <strong>${question.sessionAnswer === question.answer ? 'Correct Solution:' : 'Review Solution:'}</strong>
-                        <p class="mt-1">${question.explanation}</p>
+                        <p class="mt-1 text-xs sm:text-sm">${question.explanation}</p>
                     </div>
                 ` : ''}
             </article>
@@ -2297,6 +2312,7 @@ window.buildPracticeSession = buildPracticeSession;
 window.answerPracticeQuestion = answerPracticeQuestion;
 window.startMockTest = startMockTest;
 window.submitCurrentSession = submitCurrentSession;
+window.getPracticeSession = () => practiceSession;
 
 window.toggleFlashcardFlip = toggleFlashcardFlip;
 window.nextFlashcard = nextFlashcard;
@@ -2356,9 +2372,10 @@ window.verifyArchScenario = verifyArchScenario;
 
 window.startSpeedChallenge = startSpeedChallenge;
 window.handleSpeedAnswer = handleSpeedAnswer;
+window.initializeTestsPage = initializeTestsPage;
 
 // Page Lifecycle Initialization
-document.addEventListener('DOMContentLoaded', async () => {
+async function runTestsInit() {
     if (window.ACADEMY) {
         if (typeof window.ACADEMY.hydrateAuthSession === 'function') {
             window.ACADEMY.hydrateAuthSession().catch(() => {});
@@ -2369,4 +2386,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     initializeTestsPage();
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', runTestsInit);
+} else {
+    runTestsInit();
+}
