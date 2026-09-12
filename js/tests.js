@@ -387,6 +387,665 @@ const extraPracticeQuestions = [
         ],
         answer: 3,
         explanation: 'Priority 4 specifically focuses on enhancing preparedness for effective response and recovery, rehabilitation, and reconstruction under the principle of "Build Back Better".'
+    },
+
+    // ==========================================
+    // MASSIVE EXPANSION: ALL SEMESTERS & SUBJECTS
+    // ==========================================
+
+    // --- SEMESTER 5: CS-501 (TOC) ---
+    {
+        id: 'exp-toc-1',
+        courseId: 'cs501',
+        courseCode: 'CS501',
+        topicTitle: 'Context-Free Languages & Closure',
+        question: 'Under which of the following operations are Context-Free Languages (CFL) NOT closed?',
+        options: ['Union', 'Concatenation', 'Kleene Star', 'Intersection'],
+        answer: 3,
+        explanation: 'CFLs are closed under Union, Concatenation, and Kleene star, but are NOT closed under Intersection or Complement (e.g. L1={a^n b^n c^m} and L2={a^m b^n c^n} are CFLs, but L1 ∩ L2 = {a^n b^n c^n} is not CFL).'
+    },
+    {
+        id: 'exp-toc-2',
+        courseId: 'cs501',
+        courseCode: 'CS501',
+        topicTitle: 'Chomsky Normal Form (CNF)',
+        question: 'In a Chomsky Normal Form (CNF) grammar, if a string w has length |w| = n (where n >= 1), how many derivation steps are required to derive w?',
+        options: ['n steps', '2n - 1 steps', '2^n steps', 'n^2 steps'],
+        answer: 1,
+        explanation: 'In CNF, every production is of the form A -> BC or A -> a. To generate n terminals requires n terminal productions and n - 1 non-terminal branching productions, yielding exactly (n - 1) + n = 2n - 1 steps.'
+    },
+    {
+        id: 'exp-toc-3',
+        courseId: 'cs501',
+        courseCode: 'CS501',
+        topicTitle: 'Decidability & Rice Theorem',
+        question: 'According to Rice’s Theorem, which of the following statements is TRUE regarding Turing-recognizable languages?',
+        options: [
+            'All non-trivial semantic properties of Turing Machine languages are undecidable',
+            'All syntactic properties of Turing Machines are undecidable',
+            'Every context-sensitive language is undecidable',
+            'Testing if a Turing machine has fewer than 10 states is undecidable'
+        ],
+        answer: 0,
+        explanation: 'Rice\'s Theorem states that any non-trivial semantic property (property of the language recognized by the TM, rather than the TM\'s syntactic description) is undecidable.'
+    },
+
+    // --- SEMESTER 5: CS-502 (DBMS) ---
+    {
+        id: 'exp-dbms-1',
+        courseId: 'cs502',
+        courseCode: 'CS502',
+        topicTitle: 'Concurrency & Serializability',
+        question: 'Which of the following conditions is REQUIRED for a schedule S to be conflict serializable?',
+        options: [
+            'The precedence graph (serialization graph) of S must be a Directed Acyclic Graph (DAG)',
+            'All transactions must acquire exclusive locks before reading',
+            'Every read operation must be followed immediately by a commit',
+            'The number of transactions must be strictly less than 10'
+        ],
+        answer: 0,
+        explanation: 'A schedule S is conflict serializable if and only if its precedence (conflict) graph contains no directed cycles, meaning it is a Directed Acyclic Graph (DAG).'
+    },
+    {
+        id: 'exp-dbms-2',
+        courseId: 'cs502',
+        courseCode: 'CS502',
+        topicTitle: 'Storage & B+ Tree Indexing',
+        question: 'Why are B+ Trees overwhelmingly preferred over balanced binary search trees (like AVL trees) for database disk indexing?',
+        options: [
+            'B+ Trees require zero memory during operations',
+            'B+ Trees have high fan-out (order), resulting in very shallow tree depth and minimizing slow disk I/O seeks',
+            'Binary search trees cannot store string keys',
+            'B+ Trees completely eliminate index fragmentation'
+        ],
+        answer: 1,
+        explanation: 'Because disk block read latency dominates query execution, B+ Trees store hundreds of keys per node (high fanout), keeping tree depth typically between 3 to 4 levels for millions of records.'
+    },
+    {
+        id: 'exp-dbms-3',
+        courseId: 'cs502',
+        courseCode: 'CS502',
+        topicTitle: 'Recovery & Write-Ahead Logging (WAL)',
+        question: 'The Write-Ahead Logging (WAL) protocol requires that:',
+        options: [
+            'Database records must be written to disk before transactions begin',
+            'Log records representing an update must be flushed to non-volatile disk before the corresponding dirty database page is written to disk',
+            'All checkpoint records are deleted immediately upon transaction commit',
+            'Log records are written after the user receives the query result'
+        ],
+        answer: 1,
+        explanation: 'WAL guarantees Atomicity and Durability by mandating that undo/redo log records are safely persisted on disk prior to overwriting database buffer pages.'
+    },
+
+    // --- SEMESTER 5: CS-503 (Data Analytics) ---
+    {
+        id: 'exp-da-1',
+        courseId: 'cs503',
+        courseCode: 'CS503',
+        topicTitle: 'Model Evaluation & Metrics',
+        question: 'In severe class imbalance scenarios (e.g., fraud detection where only 0.1% of transactions are fraudulent), which metric is most misleading if used alone?',
+        options: ['Accuracy', 'Precision', 'Recall', 'F1-Score'],
+        answer: 0,
+        explanation: 'Accuracy is deceptive under extreme class imbalance because a trivial naive model that predicts "non-fraud" for 100% of cases achieves 99.9% accuracy while detecting zero fraud.'
+    },
+    {
+        id: 'exp-da-2',
+        courseId: 'cs503',
+        courseCode: 'CS503',
+        topicTitle: 'Clustering Algorithms',
+        question: 'What is a major limitation of the standard K-Means clustering algorithm?',
+        options: [
+            'It cannot handle numerical features',
+            'It is sensitive to initial centroid placement and assumes clusters are spherical and isotropic',
+            'Its computational time complexity is O(N!) in every iteration',
+            'It requires pre-computing all pair-wise distance matrices before execution'
+        ],
+        answer: 1,
+        explanation: 'K-Means optimizes squared Euclidean distance, making it sensitive to local minima (outliers) and forcing it to perform poorly on non-spherical, elongated, or manifold cluster geometries.'
+    },
+    {
+        id: 'exp-da-3',
+        courseId: 'cs503',
+        courseCode: 'CS503',
+        topicTitle: 'Principal Component Analysis (PCA)',
+        question: 'In Principal Component Analysis (PCA), what do the eigenvectors and eigenvalues of the data covariance matrix represent?',
+        options: [
+            'Eigenvectors represent the directions of maximum variance; eigenvalues represent the magnitude of variance along those directions',
+            'Eigenvectors represent class labels; eigenvalues represent cluster centroids',
+            'Eigenvectors represent outlier indices; eigenvalues represent training loss',
+            'Eigenvectors represent polynomial coefficients; eigenvalues represent intercept terms'
+        ],
+        answer: 0,
+        explanation: 'PCA orthogonally decomposes the covariance matrix: each eigenvector identifies an orthogonal principal axis, and its corresponding eigenvalue quantifies the variance captured.'
+    },
+
+    // --- SEMESTER 5: CS-503-CS (Cyber Security) ---
+    {
+        id: 'exp-cs-1',
+        courseId: 'cs503-cs',
+        courseCode: 'CS-503-CS',
+        topicTitle: 'Web Vulnerabilities & XSS',
+        question: 'Which type of Cross-Site Scripting (XSS) occurs when malicious JavaScript payload is permanently saved in the application’s backend database and served to other users?',
+        options: ['Reflected XSS', 'Stored (Persistent) XSS', 'DOM-based XSS', 'Blind SQLi'],
+        answer: 1,
+        explanation: 'Stored (or persistent) XSS stores the injected script directly in database tables (e.g. comment forums, user profiles), executing in the browser of every subsequent visitor viewing that page.'
+    },
+    {
+        id: 'exp-cs-2',
+        courseId: 'cs503-cs',
+        courseCode: 'CS-503-CS',
+        topicTitle: 'Network Layer Attacks',
+        question: 'How does an Address Resolution Protocol (ARP) Poisoning attack operate inside a Local Area Network (LAN)?',
+        options: [
+            'By flooding the DNS root servers with UDP queries',
+            'By transmitting fraudulent unsolicited gratuitous ARP replies associating the attacker’s MAC address with the default gateway’s IP address',
+            'By decrypting WPA3 handshake handoffs using rainbow tables',
+            'By altering the BGP autonomous system routing prefixes globally'
+        ],
+        answer: 1,
+        explanation: 'ARP is stateless and lacks authentication; attackers broadcast fake ARP messages to poison host ARP caches, positioning themselves as a Man-in-the-Middle (MitM).'
+    },
+    {
+        id: 'exp-cs-3',
+        courseId: 'cs503-cs',
+        courseCode: 'CS-503-CS',
+        topicTitle: 'Cryptography Foundations',
+        question: 'The security of the Diffie-Hellman Key Exchange and the ElGamal encryption scheme relies on the computational hardness of which mathematical problem?',
+        options: [
+            'Integer Factorization Problem',
+            'Discrete Logarithm Problem (DLP)',
+            'Travelling Salesperson Problem',
+            'Shortest Vector Problem in Lattices'
+        ],
+        answer: 1,
+        explanation: 'While RSA is based on the difficulty of integer factorization (finding prime factors of N = p*q), Diffie-Hellman relies on the hardness of calculating discrete logarithms modulo a large prime.'
+    },
+
+    // --- SEMESTER 5: CS-504 (Web Technology) ---
+    {
+        id: 'exp-web-1',
+        courseId: 'cs504',
+        courseCode: 'CS504',
+        topicTitle: 'Browser Security & CORS',
+        question: 'Under the Same-Origin Policy (SOP), which HTTP method triggers a preflight request (OPTIONS) before the actual request is dispatched across origins?',
+        options: [
+            'A standard GET request with standard headers',
+            'A POST request sending application/x-www-form-urlencoded',
+            'A PUT or DELETE request with custom headers like "Authorization"',
+            'A HEAD request without body'
+        ],
+        answer: 2,
+        explanation: 'Non-simple HTTP requests (such as PUT, DELETE, PATCH, or requests containing custom authorization headers or application/json payloads) require an HTTP OPTIONS preflight handshake.'
+    },
+    {
+        id: 'exp-web-2',
+        courseId: 'cs504',
+        courseCode: 'CS504',
+        topicTitle: 'JavaScript Runtime & Event Loop',
+        question: 'In modern JavaScript engines (V8), what is the priority order of the Event Loop execution queues?',
+        options: [
+            'Macrotask Queue (setTimeout) executes before all Microtasks (Promise.then)',
+            'Call Stack -> Microtask Queue (Promises, queueMicrotask) drained completely -> Next Macrotask -> Render UI',
+            'DOM events execute only after all setTimeouts are cleared',
+            'All async functions execute simultaneously on multiple native threads'
+        ],
+        answer: 1,
+        explanation: 'JavaScript runs a run-to-completion synchronous call stack. Once empty, the engine empties the entire Microtask queue (Promise callbacks) before processing the next Macrotask.'
+    },
+    {
+        id: 'exp-web-3',
+        courseId: 'cs504',
+        courseCode: 'CS504',
+        topicTitle: 'HTTP Protocols & Multiplexing',
+        question: 'What fundamental improvement did HTTP/2 introduce over HTTP/1.1 to solve Head-of-Line (HoL) blocking at the application layer?',
+        options: [
+            'HTTP/2 removed all TLS encryption requirements',
+            'HTTP/2 replaced TCP with UDP entirely',
+            'HTTP/2 introduced binary framing with stream multiplexing over a single persistent TCP connection',
+            'HTTP/2 forces client browsers to download assets sequentially'
+        ],
+        answer: 2,
+        explanation: 'HTTP/2 breaks requests and responses into independent binary frames tagged with stream IDs, allowing hundreds of concurrent requests over one TCP socket without blocking.'
+    },
+
+    // --- SEMESTER 6: CS-601 (Machine Learning) ---
+    {
+        id: 'exp-ml-1',
+        courseId: 'cs601',
+        courseCode: 'CS601',
+        topicTitle: 'Ensemble Learning',
+        question: 'How does a Random Forest model reduce variance compared to an individual Decision Tree?',
+        options: [
+            'By increasing the maximum depth of every decision tree to infinity',
+            'By training uncorrelated trees via Bootstrap Aggregation (Bagging) and random feature subset selection at each split',
+            'By applying gradient descent sequentially to minimize residuals of preceding trees',
+            'By normalizing all input weights to sum to 1'
+        ],
+        answer: 1,
+        explanation: 'Random Forest trains multiple deep, high-variance trees on bootstrap samples and decorrelates them by picking a random subset of features (typically sqrt(p)) at each split, dramatically lowering ensemble variance.'
+    },
+    {
+        id: 'exp-ml-2',
+        courseId: 'cs601',
+        courseCode: 'CS601',
+        topicTitle: 'Regularization Techniques',
+        question: 'Why does L1 Regularization (Lasso) promote feature sparsity (setting redundant weights exactly to zero), whereas L2 (Ridge) does not?',
+        options: [
+            'L1 loss is always concave and non-differentiable everywhere',
+            'The L1 diamond-shaped constraint region has sharp corners that intersect coordinate axes where weights equal zero',
+            'L2 penalty increases exponentially with the number of samples',
+            'Lasso only works on discrete binary datasets'
+        ],
+        answer: 1,
+        explanation: 'Geometrically, the contours of the sum-of-squares loss intersect the L1 penalty\'s diamond boundary at its vertices along the axes, driving non-essential coefficients to exactly 0.'
+    },
+    {
+        id: 'exp-ml-3',
+        courseId: 'cs601',
+        courseCode: 'CS601',
+        topicTitle: 'Deep Learning & Recurrent Networks',
+        question: 'What architectural innovation enables Long Short-Term Memory (LSTM) networks to mitigate the Vanishing Gradient problem during backpropagation through time?',
+        options: [
+            'Replacing backpropagation with simulated annealing',
+            'The Constant Error Carousel (CEC) in the Cell State regulated by multiplicative Input, Forget, and Output Gates',
+            'Removing all non-linear activation functions completely',
+            'Restricting input sequences to no more than 5 time steps'
+        ],
+        answer: 1,
+        explanation: 'LSTMs maintain an additive uninterrupted cell state highway (with forget gates controlling decay), allowing gradients to flow backwards without exponential exponential attenuation.'
+    },
+
+    // --- SEMESTER 6: CS-602 (Computer Networks) ---
+    {
+        id: 'exp-cn-1',
+        courseId: 'cs602',
+        courseCode: 'CS602',
+        topicTitle: 'Routing Protocols & Distance Vector',
+        question: 'In the Distance Vector Routing protocol (RIP), what technique is commonly used to mitigate the "Count-to-Infinity" convergence failure?',
+        options: ['Split Horizon with Poison Reverse', 'Dijkstra Spanning Tree', 'Token Ring Passing', 'Sliding Window Ack'],
+        answer: 0,
+        explanation: 'Split Horizon prevents a router from advertising a route back over the exact interface from which it learned it; Poison Reverse explicitly advertises that route as unreachable (infinity cost = 16).'
+    },
+    {
+        id: 'exp-cn-2',
+        courseId: 'cs602',
+        courseCode: 'CS602',
+        topicTitle: 'Data Link Layer & CSMA/CD',
+        question: 'In Ethernet CSMA/CD, if transmission rate is B bits/sec and propagation delay is Tp seconds, what is the MINIMUM frame length (L_min) required to reliably detect collisions?',
+        options: ['L_min = B * Tp', 'L_min = 2 * B * Tp', 'L_min = B / (2 * Tp)', 'L_min = 4 * B * Tp'],
+        answer: 1,
+        explanation: 'The transmission time of a packet must be at least twice the propagation delay (Tt >= 2 * Tp), ensuring that a collision occurring at the farthest end reaches the sender before transmission finishes: L_min = 2 * B * Tp.'
+    },
+    {
+        id: 'exp-cn-3',
+        courseId: 'cs602',
+        courseCode: 'CS602',
+        topicTitle: 'Transport Layer Security & Handshake',
+        question: 'During a TCP SYN Flood Denial of Service (DoS) attack, how does the SYN Cookies defense mechanism protect server memory from backlog queue exhaustion?',
+        options: [
+            'By dropping all incoming packets from external IP addresses',
+            'By encoding connection parameters into the Initial Sequence Number (ISN) and allocating zero state memory until the client returns the ACK',
+            'By doubling the server RAM capacity dynamically',
+            'By switching from TCP to UDP automatically'
+        ],
+        answer: 1,
+        explanation: 'SYN Cookies calculate a cryptographic hash of client IP, client port, server secret, and timestamp to generate the server\'s ISN; no half-open connection control block is allocated in kernel memory until the final ACK arrives.'
+    },
+
+    // --- SEMESTER 6: CS-603 (Compiler Design) ---
+    {
+        id: 'exp-cd-1',
+        courseId: 'cs603',
+        courseCode: 'CS603',
+        topicTitle: 'Grammars & Parsing',
+        question: 'Which of the following is a key distinguishing characteristic between an SLR(1) parser and an LALR(1) parser?',
+        options: [
+            'LALR(1) has fewer states than SLR(1)',
+            'LALR(1) incorporates 1-token lookahead directly into its items before merging core states, whereas SLR(1) relies on simple FOLLOW sets of non-terminals for reduction decisions',
+            'SLR(1) can parse ambiguous grammars while LALR(1) cannot',
+            'LALR(1) is a top-down parser while SLR(1) is a bottom-up parser'
+        ],
+        answer: 1,
+        explanation: 'SLR(1) uses LR(0) items and reduces across all tokens in FOLLOW(A); LALR(1) merges Canonical LR(1) states having identical cores while preserving precise lookaheads, avoiding many spurious reduce/reduce conflicts.'
+    },
+    {
+        id: 'exp-cd-2',
+        courseId: 'cs603',
+        courseCode: 'CS603',
+        topicTitle: 'Intermediate Code Optimization',
+        question: 'What is the primary benefit of converting compiler intermediate code into Static Single Assignment (SSA) form?',
+        options: [
+            'It forces the generated machine code to use only one register',
+            'Every variable is assigned exactly once, simplifying data-flow analyses like constant propagation and dead code elimination',
+            'It eliminates all branch instructions from loops',
+            'It translates procedural code directly into pure functional Haskell'
+        ],
+        answer: 1,
+        explanation: 'In SSA form, each variable is defined exactly once with Phi functions at control-flow merge points, rendering explicit Def-Use chains trivial and speeding up optimization algorithms.'
+    },
+    {
+        id: 'exp-cd-3',
+        courseId: 'cs603',
+        courseCode: 'CS603',
+        topicTitle: 'Run-Time Environment',
+        question: 'In procedural programming languages, what information is stored in an Activation Record (Stack Frame)?',
+        options: [
+            'The global compiler symbol table and AST nodes',
+            'Actual parameters, return address, dynamic/control link, static link, and local variable storage',
+            'The machine operating system kernel interrupt table',
+            'The virtual memory page table directory'
+        ],
+        answer: 1,
+        explanation: 'Stack frames store function execution context: return address, incoming parameters, dynamic link (pointing to caller frame), static link (lexical scope), and local variables.'
+    },
+
+    // --- SEMESTER 6: CS-603-CG (Computer Graphics) ---
+    {
+        id: 'exp-cg-1',
+        courseId: 'cs603-cg',
+        courseCode: 'CS-603-CG',
+        topicTitle: 'Rasterization & Line Generation',
+        question: 'What is the decisive computational advantage of Bresenham’s Line Drawing Algorithm over the Digital Differential Analyzer (DDA) algorithm?',
+        options: [
+            'Bresenham’s algorithm uses only incremental integer addition and bit-shifts, eliminating slow floating-point arithmetic and rounding',
+            'Bresenham’s algorithm draws lines in 3D without projection',
+            'Bresenham’s algorithm can only draw horizontal lines',
+            'Bresenham’s algorithm requires pre-calculating trigonometric cosine tables'
+        ],
+        answer: 0,
+        explanation: 'DDA uses floating-point division and rounding operations per pixel; Bresenham derives a decision parameter using integer-only math, making it exceptionally fast in hardware and software rasterizers.'
+    },
+    {
+        id: 'exp-cg-2',
+        courseId: 'cs603-cg',
+        courseCode: 'CS-603-CG',
+        topicTitle: 'Hidden Surface Removal',
+        question: 'How does the Depth Buffer (Z-Buffer) algorithm determine whether a generated pixel fragment should be written to the color frame buffer?',
+        options: [
+            'By sorting all polygons in ascending order of area',
+            'By comparing the fragment’s calculated z-depth with the existing value in the Z-buffer; if closer to the camera (smaller z in standard view coordinates), color and z-buffer are updated',
+            'By ray tracing photons backward to the light source',
+            'By testing if the fragment lies within the 4-bit Cohen-Sutherland viewport code'
+        ],
+        answer: 1,
+        explanation: 'Z-buffering operates per-fragment in screen space: if the incoming fragment\'s depth is closer than the value recorded in the depth buffer, it overwrites the color buffer and updates the depth buffer.'
+    },
+    {
+        id: 'exp-cg-3',
+        courseId: 'cs603-cg',
+        courseCode: 'CS-603-CG',
+        topicTitle: 'Shading & Illumination Models',
+        question: 'In the Phong Reflection Model, what does the specular component calculate?',
+        options: [
+            'Uniform baseline background lighting that hits surfaces equally from all directions',
+            'Light scattered equally in all directions (Lambertian reflection) based on the angle between surface normal and light source',
+            'The bright highlight reflection whose intensity depends on the angle between the viewer vector and the ideal reflected light ray',
+            'Atmospheric haze and distance fog extinction'
+        ],
+        answer: 2,
+        explanation: 'The specular term calculates shiny highlights using (R • V)^n, where R is the reflected light vector, V is the view vector, and n is the shininess exponent.'
+    },
+
+    // --- SEMESTER 6: CS-604 (Project Management) ---
+    {
+        id: 'exp-pm-1',
+        courseId: 'cs604',
+        courseCode: 'CS-604',
+        topicTitle: 'Network Scheduling & Critical Path',
+        question: 'In the Critical Path Method (CPM), what is the Total Float (Slack) of an activity?',
+        options: [
+            'The total financial budget allocated to the project sponsor',
+            'The amount of time an activity can be delayed without delaying the overall project completion date (LS - ES or LF - EF)',
+            'The duration of the shortest path through the project network',
+            'The total overtime hours worked by developers'
+        ],
+        answer: 1,
+        explanation: 'Total Float is the schedule flexibility of an activity calculated as Latest Start minus Earliest Start (or LF - EF); activities on the Critical Path have zero float.'
+    },
+    {
+        id: 'exp-pm-2',
+        courseId: 'cs604',
+        courseCode: 'CS-604',
+        topicTitle: 'Earned Value Management (EVM)',
+        question: 'In project cost management, if a project has a Cost Performance Index (CPI = EV / AC) of 0.82, what does this indicate?',
+        options: [
+            'The project is under budget and progressing ahead of schedule',
+            'The project is experiencing a cost overrun (spending $1.00 to achieve only $0.82 of planned work)',
+            'The project team has completed 82% of all requirements',
+            'The project risk matrix has been fully resolved'
+        ],
+        answer: 1,
+        explanation: 'A CPI < 1.0 signifies that the project is over budget, getting less value in work completed (EV) than actual money spent (AC).'
+    },
+    {
+        id: 'exp-pm-3',
+        courseId: 'cs604',
+        courseCode: 'CS-604',
+        topicTitle: 'Software Estimation Models',
+        question: 'Under Boehm’s Basic COCOMO model, what characterizes the "Organic Mode" of software development projects?',
+        options: [
+            'Tight constraints, complex mission-critical avionics systems, and unfamiliar hardware environments',
+            'Small, experienced project teams working in familiar, in-house environments with relaxed requirements',
+            'Agile teams operating with completely unwritten contracts',
+            'Open-source distributed code bases with thousands of anonymous contributors'
+        ],
+        answer: 1,
+        explanation: 'Organic mode represents small teams developing well-understood applications with stable requirements and high domain familiarity, leading to low effort multipliers.'
+    },
+
+    // --- SEMESTER 7: CS-701 (Software Architecture) ---
+    {
+        id: 'exp-arch-1',
+        courseId: 'cs701',
+        courseCode: 'CS701',
+        topicTitle: 'Distributed Systems & CAP Theorem',
+        question: 'Under Eric Brewer’s CAP Theorem, what must a distributed data store do in the event of an unavoidable network partition (P)?',
+        options: [
+            'Guarantee both strict Consistency (C) and full Availability (A) simultaneously',
+            'Trade off between Consistency (C - reject or delay requests to maintain single-source truth) and Availability (A - return stale local replica data)',
+            'Shut down all server nodes permanently',
+            'Convert relational database schemas into key-value stores'
+        ],
+        answer: 1,
+        explanation: 'Network partitions are physical inevitabilities in distributed networks; architects must choose between CP (Consistency over Availability) or AP (Availability over Consistency).'
+    },
+    {
+        id: 'exp-arch-2',
+        courseId: 'cs701',
+        courseCode: 'CS701',
+        topicTitle: 'Microservice Resilience Patterns',
+        question: 'What is the purpose of the Circuit Breaker pattern (e.g. Netflix Hystrix, Resilience4j) in distributed microservice architectures?',
+        options: [
+            'To encrypt all communication payloads between internal microservices',
+            'To detect service failures and prevent cascading failures across the entire cluster by quickly failing fast and opening the circuit when error thresholds are exceeded',
+            'To round-robin balance HTTP traffic between backend replicas',
+            'To generate OpenAPI 3.0 documentation automatically'
+        ],
+        answer: 1,
+        explanation: 'A circuit breaker monitors outgoing calls: when downstream failure rates spike, it trips into the Open state, rejecting calls immediately with fallback responses rather than tying up threads and crashing the caller.'
+    },
+    {
+        id: 'exp-arch-3',
+        courseId: 'cs701',
+        courseCode: 'CS701',
+        topicTitle: 'Architectural Styles & Hexagonal Architecture',
+        question: 'What is the fundamental philosophy of Hexagonal Architecture (Ports and Adapters)?',
+        options: [
+            'Application code must be structured into exactly six microservices',
+            'Core business domain logic is decoupled from external delivery mechanisms, databases, and UI through abstract ports (interfaces) and concrete adapters',
+            'All database queries must be written in GraphQL instead of SQL',
+            'The user interface is rendered in 3D polygon meshes'
+        ],
+        answer: 1,
+        explanation: 'Hexagonal architecture isolates pure domain logic in the center: outside dependencies (REST controllers, databases, message brokers) plug in via Adapters implementing Domain Ports.'
+    },
+
+    // --- SEMESTER 7: CS-702-BD (Big Data Analytics) ---
+    {
+        id: 'exp-bd-1',
+        courseId: 'cs702-bd',
+        courseCode: 'CS-702-BD',
+        topicTitle: 'Apache Spark Architecture',
+        question: 'In Apache Spark, what is the key difference between a Transformation (e.g., map, filter) and an Action (e.g., count, collect, saveAsTextFile)?',
+        options: [
+            'Transformations are executed immediately on disk; Actions run in memory',
+            'Transformations are lazy and merely build a Directed Acyclic Graph (DAG) lineage; Actions trigger actual execution and computation of the DAG',
+            'Actions can only be executed by the cluster NameNode',
+            'Transformations modify the original RDD in-place'
+        ],
+        answer: 1,
+        explanation: 'Spark RDDs are immutable: transformations evaluate lazily to construct execution plans; only when an Action is invoked does the Spark Driver submit tasks to executors.'
+    },
+    {
+        id: 'exp-bd-2',
+        courseId: 'cs702-bd',
+        courseCode: 'CS-702-BD',
+        topicTitle: 'HDFS Distributed Storage',
+        question: 'Why does Hadoop HDFS default to large block sizes (typically 128MB or 256MB) compared to traditional OS filesystem blocks (4KB)?',
+        options: [
+            'To minimize NameNode metadata memory footprint and amortize disk seek latency over large sequential streaming reads',
+            'Because modern hard drives cannot store files smaller than 128MB',
+            'To prevent any data encryption from slowing down reads',
+            'To eliminate all network transmission between worker nodes'
+        ],
+        answer: 0,
+        explanation: 'Each HDFS block occupies ~150 bytes in NameNode memory; large block sizes keep the metadata namespace small and maximize disk transfer rates for high-throughput batch analytics.'
+    },
+    {
+        id: 'exp-bd-3',
+        courseId: 'cs702-bd',
+        courseCode: 'CS-702-BD',
+        topicTitle: 'NoSQL Architecture & Cassandra',
+        question: 'How does Apache Cassandra achieve masterless, high-availability write operations without a central coordinator bottleneck?',
+        options: [
+            'By routing all transactions through an active-passive ZooKeeper master',
+            'Through a peer-to-peer ring architecture based on Consistent Hashing and a Gossip protocol for cluster state dissemination',
+            'By maintaining only a single replica of each row in memory',
+            'By locking every table before executing an insert'
+        ],
+        answer: 1,
+        explanation: 'Cassandra uses a decentralized ring topology where any node can accept writes, determining partition placement via consistent hashing and exchanging cluster topology through gossip.'
+    },
+
+    // --- SEMESTER 7: CS-702-WMC (Wireless & Mobile Computing) ---
+    {
+        id: 'exp-wmc-1',
+        courseId: 'cs702-wmc',
+        courseCode: 'CS-702-WMC',
+        topicTitle: 'Cellular System Engineering',
+        question: 'In cellular network frequency reuse planning, why is the cluster size N constrained to the formula N = i^2 + i*j + j^2 (where i and j are non-negative integers)?',
+        options: [
+            'To ensure that hexagonal cell clusters tile the Euclidean plane contiguously without geometric overlap or coverage gaps',
+            'To match the Fibonacci sequence for radio wave propagation',
+            'To restrict the maximum transmit power of mobile towers to under 100 Watts',
+            'To prevent base stations from using digital modulations'
+        ],
+        answer: 0,
+        explanation: 'Hexagonal tessellation requires specific coordinate shifts (i steps along one axis, turn 60 degrees, j steps along the other) yielding cluster sizes of N = 1, 3, 4, 7, 9, 12, etc.'
+    },
+    {
+        id: 'exp-wmc-2',
+        courseId: 'cs702-wmc',
+        courseCode: 'CS-702-WMC',
+        topicTitle: 'Wireless Medium Access & MAC',
+        question: 'Why does IEEE 802.11 Wi-Fi use CSMA/CA (Collision Avoidance) with RTS/CTS handshaking instead of standard Ethernet CSMA/CD (Collision Detection)?',
+        options: [
+            'Because Wi-Fi radios cannot transmit and receive simultaneously on the same frequency (Hidden Terminal Problem and large dynamic range difference)',
+            'Because collision detection is illegal in unlicensed radio bands',
+            'Because collision avoidance doubles the maximum transmission speed',
+            'Because wireless signals travel faster than light in copper cables'
+        ],
+        answer: 0,
+        explanation: 'In wireless transmission, local transmit power dwarfs incoming signals by orders of magnitude (making collision detection impractical) and the Hidden Terminal Problem prevents distant transmitters from sensing each other.'
+    },
+    {
+        id: 'exp-wmc-3',
+        courseId: 'cs702-wmc',
+        courseCode: 'CS-702-WMC',
+        topicTitle: 'Mobile IP & Mobility Management',
+        question: 'In Mobile IPv4, what is the "Triangular Routing Problem"?',
+        options: [
+            'Packets from a Correspondent Node must travel to the Home Agent before being tunneled to the Foreign Agent, introducing unnecessary latency and network overhead',
+            'Cellular antennas must be arranged in equilateral triangles to avoid dead spots',
+            'A mobile device requires three distinct IP addresses simultaneously',
+            'Base station handoffs take three times longer than wire transfers'
+        ],
+        answer: 0,
+        explanation: 'Correspondent nodes send packets to the mobile node\'s Home Address, which the Home Agent intercepts and tunnels to the Care-of Address, causing indirect triangle-shaped routing delay.'
+    },
+
+    // --- SEMESTER 7: CS-703-CIS (Cryptography & Information Security) ---
+    {
+        id: 'exp-cis-1',
+        courseId: 'cs703-cis',
+        courseCode: 'CS-703-CIS',
+        topicTitle: 'Public Key Cryptography & RSA',
+        question: 'In the RSA cryptosystem, given primes p = 7 and q = 11, what is the value of Euler’s Totient function phi(n)?',
+        options: ['77', '60', '18', '70'],
+        answer: 1,
+        explanation: 'n = p * q = 7 * 11 = 77. The totient function phi(n) = (p - 1) * (q - 1) = (7 - 1) * (11 - 1) = 6 * 10 = 60.'
+    },
+    {
+        id: 'exp-cis-2',
+        courseId: 'cs703-cis',
+        courseCode: 'CS-703-CIS',
+        topicTitle: 'Block Ciphers & AES',
+        question: 'In the Advanced Encryption Standard (AES), which round transformation provides non-linear confusion to defend against differential cryptanalysis?',
+        options: ['SubBytes (S-Box)', 'ShiftRows', 'MixColumns', 'AddRoundKey'],
+        answer: 0,
+        explanation: 'SubBytes performs a non-linear byte substitution using an algebraic inversion over the Galois Field GF(2^8) combined with an affine transformation, introducing essential non-linearity (confusion).'
+    },
+    {
+        id: 'exp-cis-3',
+        courseId: 'cs703-cis',
+        courseCode: 'CS-703-CIS',
+        topicTitle: 'Digital Signatures & Authentication',
+        question: 'In a public-key Digital Signature scheme, how does Alice digitally sign a message M to ensure non-repudiation and authenticity?',
+        options: [
+            'Alice encrypts the hash of M with Bob’s public key',
+            'Alice encrypts the hash of M with her own private key',
+            'Alice generates an MD5 checksum and sends it in plaintext',
+            'Alice sends M through a VPN tunnel'
+        ],
+        answer: 1,
+        explanation: 'Only Alice possesses her private key. Encrypting the message digest with her private key allows anyone holding her public key to verify that she created the signature.'
+    },
+
+    // --- SEMESTER 7: CS-703-DM (Disaster Management) ---
+    {
+        id: 'exp-dm-1',
+        courseId: 'cs703-dm',
+        courseCode: 'CS-703-DM',
+        topicTitle: 'Disaster Risk Formula & Vulnerability',
+        question: 'In international disaster risk reduction, how is Disaster Risk fundamentally formulated?',
+        options: [
+            'Risk = (Hazard x Vulnerability) / Coping Capacity',
+            'Risk = Total Economic Losses + Fatalities',
+            'Risk = Rainfall Volume / Soil Density',
+            'Risk = Number of Buildings x Population Density'
+        ],
+        answer: 0,
+        explanation: 'Disaster Risk is directly proportional to the physical Hazard intensity and population Vulnerability, and inversely proportional to institutional and community Coping Capacity.'
+    },
+    {
+        id: 'exp-dm-2',
+        courseId: 'cs703-dm',
+        courseCode: 'CS-703-DM',
+        topicTitle: 'Incident Management Systems',
+        question: 'In the Incident Command System (ICS), what is the recommended optimal "Span of Control" ratio of subordinates per supervisor?',
+        options: ['1:1 to 1:2', '1:3 to 1:7 (ideally 1:5)', '1:15 to 1:20', 'Unlimited ratio'],
+        answer: 1,
+        explanation: 'The ICS standard maintains that one supervisor can effectively direct between 3 and 7 individuals, with 1:5 considered the optimal operational ratio to ensure safety and accountability.'
+    },
+    {
+        id: 'exp-dm-3',
+        courseId: 'cs703-dm',
+        courseCode: 'CS-703-DM',
+        topicTitle: 'Seismology & Earthquake Magnitude',
+        question: 'On the logarithmic Richter (Moment Magnitude) Scale, an increase of 1.0 unit in magnitude corresponds approximately to how much increase in released seismic energy?',
+        options: ['10 times more energy', 'Approximately 31.6 times (10^1.5) more energy', '2 times more energy', '100 times more energy'],
+        answer: 1,
+        explanation: 'While wave amplitude increases by a factor of 10 for each whole unit on the Richter scale, the energy released scales as 10^(1.5) ≈ 31.62 times greater.'
     }
 ];
 

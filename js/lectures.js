@@ -487,6 +487,17 @@ function copyLectureLink(url, btnId) {
     }
 }
 
+function reloadLecturePlayer() {
+    const iframe = document.getElementById('lecturePlayerIframe');
+    if (iframe) {
+        const currentSrc = iframe.src;
+        iframe.src = 'about:blank';
+        setTimeout(() => {
+            iframe.src = currentSrc;
+        }, 100);
+    }
+}
+
 function renderLectureEmbed(lecture) {
     const embedUrl = normalizeLectureUrl(lecture.url);
     const embeddable = /^https:\/\/(www\.)?(youtube\.com|youtube-nocookie\.com)\/embed\//.test(embedUrl);
@@ -505,14 +516,35 @@ function renderLectureEmbed(lecture) {
     }
 
     return `
-        <div class="mt-4 rounded-2xl overflow-hidden border border-slate-700 bg-black shadow-2xl relative w-full aspect-video min-h-[360px] sm:min-h-[460px] lg:min-h-[520px]">
+        <div class="mt-4 relative w-full aspect-video rounded-xl bg-slate-950 border border-slate-700/80 shadow-2xl" style="isolation: isolate;">
             <iframe 
+                id="lecturePlayerIframe"
                 src="${embedUrl}" 
                 title="${window.ACADEMY.escapeForAttribute(lecture.title)}" 
-                class="w-full h-full border-0 absolute inset-0" 
+                class="w-full h-full rounded-xl border-0" 
+                style="transform: translateZ(0); -webkit-transform: translateZ(0);"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
             </iframe>
+        </div>
+        <div class="mt-2.5 flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-slate-400">
+            <div class="flex items-center gap-1.5">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>HD Video Stream Ready</span>
+                <span class="text-slate-600">•</span>
+                <button type="button" onclick="reloadLecturePlayer()" class="text-blue-400 hover:text-blue-300 underline font-medium" title="Reload player iframe">
+                    Reload Player
+                </button>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-[11px] text-slate-400 hidden sm:inline">Lines or glitch on Linux/Brave?</span>
+                <a href="${lecture.url}" target="_blank" rel="noreferrer" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-1">
+                    <span>Open in YouTube Tab</span>
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+            </div>
         </div>
     `;
 }
@@ -596,25 +628,25 @@ function normalizeLectureUrl(url) {
     if (watchMatch) {
         const videoId = watchMatch[1];
         if (playlistMatch) {
-            return `https://www.youtube-nocookie.com/embed/${videoId}?list=${playlistMatch[1]}`;
+            return `https://www.youtube.com/embed/${videoId}?list=${playlistMatch[1]}&rel=0`;
         }
-        return `https://www.youtube-nocookie.com/embed/${videoId}`;
+        return `https://www.youtube.com/embed/${videoId}?rel=0`;
     }
 
     if (shortMatch) {
         const videoId = shortMatch[1];
         if (playlistMatch) {
-            return `https://www.youtube-nocookie.com/embed/${videoId}?list=${playlistMatch[1]}`;
+            return `https://www.youtube.com/embed/${videoId}?list=${playlistMatch[1]}&rel=0`;
         }
-        return `https://www.youtube-nocookie.com/embed/${videoId}`;
+        return `https://www.youtube.com/embed/${videoId}?rel=0`;
     }
 
     if (playlistMatch) {
-        return `https://www.youtube-nocookie.com/embed/videoseries?list=${playlistMatch[1]}`;
+        return `https://www.youtube.com/embed/videoseries?list=${playlistMatch[1]}&rel=0`;
     }
 
-    if (url.includes('youtube.com/embed/')) {
-        return url.replace('https://www.youtube.com/embed/', 'https://www.youtube-nocookie.com/embed/');
+    if (url.includes('youtube-nocookie.com/embed/')) {
+        return url.replace('https://www.youtube-nocookie.com/embed/', 'https://www.youtube.com/embed/');
     }
 
     return url;
@@ -749,6 +781,7 @@ window.copyLectureLink = copyLectureLink;
 window.resetLectureFilters = resetLectureFilters;
 window.clearLectureSearch = clearLectureSearch;
 window.toggleLectureSidebar = toggleLectureSidebar;
+window.reloadLecturePlayer = reloadLecturePlayer;
 window.openPlaylistDrawer = openPlaylistDrawer;
 window.closePlaylistDrawer = closePlaylistDrawer;
 window.togglePlaylistDrawer = togglePlaylistDrawer;

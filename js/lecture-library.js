@@ -865,5 +865,456 @@ window.lectureLibrary = [
         description: 'Detailed case studies and engineering analysis of megathrust submarine earthquakes, open ocean wave dynamics, runup velocity, and sensor early-warning networks.',
         url: 'https://www.youtube.com/watch?v=Wx9vPv-T51I',
         lectureKey: 'cs703dm-tsunami-warning'
+    },
+
+    // --- EXPANDED HIGH-YIELD CURRICULUM LECTURES ---
+    // Semester 5: CS-501 (TOC)
+    {
+        semester: 5,
+        subject: 'cs501',
+        subjectCode: 'CS-501',
+        subjectLabel: 'Theory of Computation',
+        title: 'Turing Machine Construction & Transition Table with Solved Examples',
+        lecturer: 'Gate Smashers (Varun Singla)',
+        type: 'video',
+        typeLabel: 'Solved Numerical',
+        topics: ['Turing Machine Model', 'Transition Functions', 'Language Acceptance L={a^n b^n c^n}', 'Infinite Tape'],
+        description: 'Complete step-by-step design of standard Turing machines, instantaneous description (ID), multi-track models, and formal tape movements.',
+        url: 'https://www.youtube.com/watch?v=5Q_WzH6EfvY',
+        lectureKey: 'cs501-turing-machine-design'
+    },
+    {
+        semester: 5,
+        subject: 'cs501',
+        subjectCode: 'CS-501',
+        subjectLabel: 'Theory of Computation',
+        title: 'Decidability, Undecidability & The Halting Problem In-Depth',
+        lecturer: 'Neso Academy',
+        type: 'video',
+        typeLabel: 'Core Foundations',
+        topics: ['Halting Problem', 'Diagonalization Language', 'Rice Theorem', 'Post Correspondence Problem (PCP)'],
+        description: 'Rigorous theoretical exploration of computational limits, proofs of undecidability via Turing reduction, and language classifications.',
+        url: 'https://www.youtube.com/watch?v=92WHN-2hkXA',
+        lectureKey: 'cs501-decidability-halting'
+    },
+
+    // Semester 5: CS-502 (DBMS)
+    {
+        semester: 5,
+        subject: 'cs502',
+        subjectCode: 'CS-502',
+        subjectLabel: 'Database Management Systems',
+        title: 'B-Tree & B+ Tree Indexing in Relational Databases',
+        lecturer: 'Gate Smashers',
+        type: 'video',
+        typeLabel: 'Data Structures & Storage',
+        topics: ['B+ Tree Node Split', 'Multi-Level Indexing', 'Order of B Tree', 'Disk Block I/O Optimization'],
+        description: 'Comprehensive derivation of tree node fanout, maximum keys, search time complexity, and internal node pointer mechanisms.',
+        url: 'https://www.youtube.com/watch?v=aZjYr87r1b8',
+        lectureKey: 'cs502-btree-bplus-indexing'
+    },
+    {
+        semester: 5,
+        subject: 'cs502',
+        subjectCode: 'CS-502',
+        subjectLabel: 'Database Management Systems',
+        title: 'Two-Phase Locking (2PL), Strict 2PL & Deadlock Avoidance',
+        lecturer: 'Knowledge Gate',
+        type: 'video',
+        typeLabel: 'Concurrency Control',
+        topics: ['Growing & Shrinking Phase', 'Cascadelessness', 'Wait-Die vs Wound-Wait', 'Conflict Serializability'],
+        description: 'Detailed analysis of concurrency control protocols, strict 2PL vs rigorous 2PL guarantees, and deadlock prevention algorithms.',
+        url: 'https://www.youtube.com/watch?v=mD72xP8n0s8',
+        lectureKey: 'cs502-2pl-deadlock-handling'
+    },
+
+    // Semester 5: CS-503 (Data Analytics)
+    {
+        semester: 5,
+        subject: 'cs503',
+        subjectCode: 'CS-503',
+        subjectLabel: 'Data Analytics',
+        title: 'Logistic Regression & Confusion Matrix Derivation from Scratch',
+        lecturer: 'StatQuest with Josh Starmer',
+        type: 'video',
+        typeLabel: 'Machine Learning Math',
+        topics: ['Sigmoid Curve', 'Log-Odds / Logit', 'Maximum Likelihood Estimation', 'Precision & Recall'],
+        description: 'Clear visual mathematical breakdown of binary classification, cross-entropy cost function, and ROC/AUC performance evaluation.',
+        url: 'https://www.youtube.com/watch?v=yIYKR4sgzI8',
+        lectureKey: 'cs503-logistic-regression-statquest'
+    },
+    {
+        semester: 5,
+        subject: 'cs503',
+        subjectCode: 'CS-503',
+        subjectLabel: 'Data Analytics',
+        title: 'Principal Component Analysis (PCA) Step-by-Step Dimensionality Reduction',
+        lecturer: 'StatQuest with Josh Starmer',
+        type: 'video',
+        typeLabel: 'Dimensionality Reduction',
+        topics: ['Covariance Matrix', 'Eigenvectors & Eigenvalues', 'Variance Explained', 'Scree Plots'],
+        description: 'Intuitive geometric explanation of how PCA identifies principal axes of maximal variance and compresses high-dimensional datasets.',
+        url: 'https://www.youtube.com/watch?v=FgakZw6K1QQ',
+        lectureKey: 'cs503-pca-statquest'
+    },
+
+    // Semester 5: CS-503-CS (Cyber Security)
+    {
+        semester: 5,
+        subject: 'cs503-cs',
+        subjectCode: 'CS-503-CS',
+        subjectLabel: 'Cyber Security',
+        title: 'SQL Injection (SQLi) Attacks Explained & Defended',
+        lecturer: 'Computerphile (Dr. Mike Pound)',
+        type: 'video',
+        typeLabel: 'Application Security',
+        topics: ['Tautology Injection', 'Parameterized Queries / Prepared Statements', 'Input Sanitization', 'WAF'],
+        description: 'Hands-on breakdown of database injection vulnerabilities, union-based queries, and programmatic defense with parameterized SQL.',
+        url: 'https://www.youtube.com/watch?v=_jKylhJtPmI',
+        lectureKey: 'cs503cs-sqli-computerphile'
+    },
+    {
+        semester: 5,
+        subject: 'cs503-cs',
+        subjectCode: 'CS-503-CS',
+        subjectLabel: 'Cyber Security',
+        title: 'Buffer Overflow Vulnerability & Stack Smashing Exploitation',
+        lecturer: 'LiveOverflow',
+        type: 'video',
+        typeLabel: 'Binary Exploitation',
+        topics: ['Stack Frames (EIP/ESP)', 'Return Address Overwrite', 'Shellcode Execution', 'ASLR & Stack Canaries'],
+        description: 'In-depth low-level memory examination of x86 calling conventions, buffer boundaries, stack corruption, and hardware mitigation.',
+        url: 'https://www.youtube.com/watch?v=1S0aBV-Waeo',
+        lectureKey: 'cs503cs-buffer-overflow-liveoverflow'
+    },
+
+    // Semester 5: CS-504 (Web Technology)
+    {
+        semester: 5,
+        subject: 'cs504',
+        subjectCode: 'CS-504',
+        subjectLabel: 'Web Technology',
+        title: 'React.js Complete Modern Masterclass for Front-End Developers',
+        lecturer: 'freeCodeCamp (Bob Ziroll)',
+        type: 'video',
+        typeLabel: 'Front-End Framework',
+        topics: ['Virtual DOM', 'JSX Architecture', 'State & Props', 'Hooks (useState, useEffect)', 'Component Lifecycle'],
+        description: 'In-depth guide to modern declarative UI development, state reconciliation algorithms, custom hooks, and event routing.',
+        url: 'https://www.youtube.com/watch?v=bMknfKXIFA8',
+        lectureKey: 'cs504-reactjs-masterclass'
+    },
+    {
+        semester: 5,
+        subject: 'cs504',
+        subjectCode: 'CS-504',
+        subjectLabel: 'Web Technology',
+        title: 'Node.js & Express RESTful API Development with Middleware',
+        lecturer: 'freeCodeCamp (John Smilga)',
+        type: 'video',
+        typeLabel: 'Server-Side Architecture',
+        topics: ['Event Loop & Libuv', 'Express Routing', 'Custom Middleware', 'Async Controllers', 'CORS & Security Headers'],
+        description: 'Production-ready backend architecture covering non-blocking asynchronous event handling, HTTP status codes, and modular routing.',
+        url: 'https://www.youtube.com/watch?v=Oe421EPjeBE',
+        lectureKey: 'cs504-nodejs-express-fcc'
+    },
+
+    // Semester 6: CS-601 (Machine Learning)
+    {
+        semester: 6,
+        subject: 'cs601',
+        subjectCode: 'CS-601',
+        subjectLabel: 'Machine Learning',
+        title: 'Support Vector Machines (SVM) & The Kernel Trick Intuition',
+        lecturer: 'StatQuest with Josh Starmer',
+        type: 'video',
+        typeLabel: 'Supervised Learning',
+        topics: ['Maximum Margin Hyperplane', 'Support Vectors', 'Radial Basis Function (RBF)', 'Soft-Margin C Parameter'],
+        description: 'Geometric walkthrough of margin maximization, Lagrangian multipliers, and mapping non-linear data into higher dimensional space.',
+        url: 'https://www.youtube.com/watch?v=efR1C6CvhmE',
+        lectureKey: 'cs601-svm-kernel-statquest'
+    },
+    {
+        semester: 6,
+        subject: 'cs601',
+        subjectCode: 'CS-601',
+        subjectLabel: 'Machine Learning',
+        title: 'Convolutional Neural Networks (CNNs) & Visual Feature Extraction',
+        lecturer: '3Blue1Brown',
+        type: 'video',
+        typeLabel: 'Deep Learning & Vision',
+        topics: ['Convolution Kernels', 'Feature Maps', 'Pooling Layers (Max/Avg)', 'Stride & Padding', 'Fully Connected Layers'],
+        description: 'Stunning mathematical and visual journey into spatial convolution filters, edge detection, and weight sharing in vision networks.',
+        url: 'https://www.youtube.com/watch?v=KuXjwB4LzSA',
+        lectureKey: 'cs601-cnn-3blue1brown'
+    },
+
+    // Semester 6: CS-602 (Computer Networks)
+    {
+        semester: 6,
+        subject: 'cs602',
+        subjectCode: 'CS-602',
+        subjectLabel: 'Computer Networks',
+        title: 'Dijkstra Algorithm & Link State Routing Protocol (OSPF)',
+        lecturer: 'Gate Smashers',
+        type: 'video',
+        typeLabel: 'Network Layer Routing',
+        topics: ['Dijkstra Shortest Path', 'Link State Advertisements (LSA)', 'OSPF Cost Metric', 'Convergence Time'],
+        description: 'Rigorous calculation of shortest path spanning trees, routing table population, and intra-autonomous system protocol mechanics.',
+        url: 'https://www.youtube.com/watch?v=XB4MIexjvY0',
+        lectureKey: 'cs602-dijkstra-ospf'
+    },
+    {
+        semester: 6,
+        subject: 'cs602',
+        subjectCode: 'CS-602',
+        subjectLabel: 'Computer Networks',
+        title: 'TCP Congestion Control Deep Dive: AIMD, Slow Start & Fast Recovery',
+        lecturer: 'Hussein Nasser',
+        type: 'video',
+        typeLabel: 'Transport Protocols',
+        topics: ['Congestion Window (cwnd)', 'Threshold (ssthresh)', 'Duplicate ACKs', 'TCP Reno vs Tahoe'],
+        description: 'Detailed analysis of network queuing delay, packet loss detection, additive increase multiplicative decrease, and throughput graphs.',
+        url: 'https://www.youtube.com/watch?v=J_jZ3ZqH1qE',
+        lectureKey: 'cs602-tcp-congestion-aimd'
+    },
+
+    // Semester 6: CS-603 (Compiler Design)
+    {
+        semester: 6,
+        subject: 'cs603',
+        subjectCode: 'CS-603',
+        subjectLabel: 'Compiler Design',
+        title: 'Construction of LR(0) and SLR(1) Parsing Tables with Solved Problems',
+        lecturer: 'Gate Smashers',
+        type: 'video',
+        typeLabel: 'Bottom-Up Parsing',
+        topics: ['Canonical Collection of Items', 'Shift-Reduce Conflicts', 'FOLLOW Set Computation', 'SLR(1) Table'],
+        description: 'Complete algorithm for constructing DFA of LR(0) items, resolving shift/reduce ambiguities, and handling lookahead symbols.',
+        url: 'https://www.youtube.com/watch?v=8b3q26f1pEw',
+        lectureKey: 'cs603-lr0-slr1-parsing'
+    },
+    {
+        semester: 6,
+        subject: 'cs603',
+        subjectCode: 'CS-603',
+        subjectLabel: 'Compiler Design',
+        title: 'Intermediate Code Generation: Three Address Code & Quadruple Tables',
+        lecturer: 'Knowledge Gate',
+        type: 'video',
+        typeLabel: 'Code Generation',
+        topics: ['Three Address Code (TAC)', 'Quadruples & Triples', 'Syntax Directed Translation', 'Backpatching'],
+        description: 'Step-by-step translation of high-level control structures (if-else, while, boolean expressions) into linear 3-address instructions.',
+        url: 'https://www.youtube.com/watch?v=1q2d8q7p9pM',
+        lectureKey: 'cs603-three-address-code'
+    },
+
+    // Semester 6: CS-603-CG (Computer Graphics)
+    {
+        semester: 6,
+        subject: 'cs603-cg',
+        subjectCode: 'CS-603-CG',
+        subjectLabel: 'Computer Graphics',
+        title: '3D Geometric Transformations: Translation, Scaling & Homogeneous Matrices',
+        lecturer: 'The Cherno',
+        type: 'video',
+        typeLabel: '3D Mathematics & Shaders',
+        topics: ['Matrix Multiplication (4x4)', 'Homogeneous Coordinates', 'Euler Angles & Quaternions', 'Model-View-Projection (MVP)'],
+        description: 'Matrix formulations for linear spatial transformations in 3D coordinate space, camera view space, and clip-space projection.',
+        url: 'https://www.youtube.com/watch?v=d_i87_Xw7qI',
+        lectureKey: 'cs603cg-3d-transformations'
+    },
+    {
+        semester: 6,
+        subject: 'cs603-cg',
+        subjectCode: 'CS-603-CG',
+        subjectLabel: 'Computer Graphics',
+        title: 'Cohen-Sutherland 2D Line Clipping Algorithm Solved Example',
+        lecturer: 'Gate Smashers',
+        type: 'video',
+        typeLabel: 'Clipping Algorithms',
+        topics: ['Region Codes (TBRL)', 'Bitwise AND / OR Test', 'Intersection Calculation', 'Window-to-Viewport Mapping'],
+        description: '4-bit outcode assignment for 9 rectangular regions, trivial accept/reject evaluations, and slope-intercept intersection solving.',
+        url: 'https://www.youtube.com/watch?v=4yH_M1Zt-fI',
+        lectureKey: 'cs603cg-cohen-sutherland-clipping'
+    },
+
+    // Semester 6: CS-604 (Software Project Management)
+    {
+        semester: 6,
+        subject: 'cs604',
+        subjectCode: 'CS-604',
+        subjectLabel: 'Project Management',
+        title: 'COCOMO Model for Software Cost, Effort & Duration Estimation',
+        lecturer: 'Gate Smashers',
+        type: 'video',
+        typeLabel: 'Quantitative Estimation',
+        topics: ['Basic vs Intermediate COCOMO', 'Organic / Semidetached / Embedded Modes', 'Effort Equations (Person-Months)', 'Cost Drivers'],
+        description: 'Empirical estimation formulas based on KLOC (Kilo Lines of Code), effort multipliers, cost drivers, and project sizing.',
+        url: 'https://www.youtube.com/watch?v=u8k0jZ0H0kM',
+        lectureKey: 'cs604-cocomo-estimation'
+    },
+    {
+        semester: 6,
+        subject: 'cs604',
+        subjectCode: 'CS-604',
+        subjectLabel: 'Project Management',
+        title: 'Agile Scrum Framework Masterclass: Sprints, Ceremonies & Artifacts',
+        lecturer: 'freeCodeCamp',
+        type: 'video',
+        typeLabel: 'Agile Methodologies',
+        topics: ['Sprint Planning', 'Daily Standup', 'Sprint Review & Retrospective', 'Product Backlog Refinement'],
+        description: 'Practical exploration of user stories, acceptance criteria, velocity calculation, burndown charts, and Scrum Master facilitation.',
+        url: 'https://www.youtube.com/watch?v=2Vt7Ik8Ubl8',
+        lectureKey: 'cs604-agile-scrum-fcc'
+    },
+
+    // Semester 7: CS-701 (Software Architecture)
+    {
+        semester: 7,
+        subject: 'cs701',
+        subjectCode: 'CS-701',
+        subjectLabel: 'Software Architectures',
+        title: 'Microservices Architecture Patterns, API Gateways & Service Discovery',
+        lecturer: 'Fireship',
+        type: 'video',
+        typeLabel: 'System Architecture',
+        topics: ['Monolith vs Microservices', 'API Gateway Pattern', 'Service Registry (Eureka/Consul)', 'Circuit Breaker (Resilience4j)'],
+        description: 'Fast-paced architectural overview of microservice boundaries, asynchronous communication, database-per-service, and resiliency patterns.',
+        url: 'https://www.youtube.com/watch?v=rv4LlmLmVWk',
+        lectureKey: 'cs701-microservices-patterns'
+    },
+    {
+        semester: 7,
+        subject: 'cs701',
+        subjectCode: 'CS-701',
+        subjectLabel: 'Software Architectures',
+        title: 'Event-Driven Architecture & Message Brokers in Distributed Systems',
+        lecturer: 'Amigoscode',
+        type: 'video',
+        typeLabel: 'Distributed Systems',
+        topics: ['Event Producers & Consumers', 'Message Queues vs Event Streams', 'Publish-Subscribe Pattern', 'Idempotency'],
+        description: 'Architecting decoupled, highly scalable systems using asynchronous event ingestion, consumer groups, and eventual consistency.',
+        url: 'https://www.youtube.com/watch?v=R8m3OqK8k4g',
+        lectureKey: 'cs701-event-driven-architecture'
+    },
+
+    // Semester 7: CS-702-BD (Big Data Analytics)
+    {
+        semester: 7,
+        subject: 'cs702-bd',
+        subjectCode: 'CS-702-BD',
+        subjectLabel: 'Big Data Analytics',
+        title: 'Apache Spark Complete Architecture, Resilient Distributed Datasets (RDDs) & DAGs',
+        lecturer: 'Simplilearn',
+        type: 'video',
+        typeLabel: 'Big Data Processing',
+        topics: ['Spark Driver & Executors', 'Transformations vs Actions', 'In-Memory Caching', 'Spark SQL & DataFrames'],
+        description: 'Deep dive into distributed in-memory computing, DAG execution plans, catalyst optimizer, and cluster manager coordination.',
+        url: 'https://www.youtube.com/watch?v=_C8kWso4dU4',
+        lectureKey: 'cs702bd-spark-architecture'
+    },
+    {
+        semester: 7,
+        subject: 'cs702-bd',
+        subjectCode: 'CS-702-BD',
+        subjectLabel: 'Big Data Analytics',
+        title: 'Apache Kafka Crash Course: Topics, Partitions, Offsets & Consumer Groups',
+        lecturer: 'freeCodeCamp',
+        type: 'video',
+        typeLabel: 'Distributed Streaming',
+        topics: ['Distributed Commit Log', 'Partition Rebalancing', 'Zookeeper vs KRaft', 'Retention Policies'],
+        description: 'Hands-on architectural breakdown of enterprise event streaming, write-ahead logs, zero-copy reads, and horizontal scaling.',
+        url: 'https://www.youtube.com/watch?v=R873BlNVUB4',
+        lectureKey: 'cs702bd-kafka-crash-course'
+    },
+
+    // Semester 7: CS-702-WMC (Wireless & Mobile Computing)
+    {
+        semester: 7,
+        subject: 'cs702-wmc',
+        subjectCode: 'CS-702-WMC',
+        subjectLabel: 'Wireless & Mobile Computing',
+        title: '5G New Radio (NR) Architecture, Massive MIMO & Beamforming Technology',
+        lecturer: 'Telco Antennas',
+        type: 'video',
+        typeLabel: 'Next-Gen Wireless',
+        topics: ['Sub-6GHz vs mmWave', 'Beamforming Matrices', 'Network Slicing', 'Orthogonal Frequency Division Multiplexing (OFDM)'],
+        description: 'Technical evaluation of 5G air interface specifications, beam-steering algorithms, latency reduction, and gNodeB cell architecture.',
+        url: 'https://www.youtube.com/watch?v=MC_SfKh5-GE',
+        lectureKey: 'cs702wmc-5g-massive-mimo'
+    },
+    {
+        semester: 7,
+        subject: 'cs702-wmc',
+        subjectCode: 'CS-702-WMC',
+        subjectLabel: 'Wireless & Mobile Computing',
+        title: 'Mobile IP Architecture: Home Agent, Foreign Agent & Triangular Routing',
+        lecturer: 'Knowledge Gate',
+        type: 'video',
+        typeLabel: 'Mobile Networking',
+        topics: ['Home Address vs Care-of Address (CoA)', 'Tunneling & Encapsulation', 'Triangular Routing Problem', 'Route Optimization'],
+        description: 'Comprehensive protocol walkthrough of how mobile nodes maintain persistent TCP connections while roaming across alien subnets.',
+        url: 'https://www.youtube.com/watch?v=q6g6r8t8kQc',
+        lectureKey: 'cs702wmc-mobile-ip-routing'
+    },
+
+    // Semester 7: CS-703-CIS (Cryptography & Information Security)
+    {
+        semester: 7,
+        subject: 'cs703-cis',
+        subjectCode: 'CS-703-CIS',
+        subjectLabel: 'Cryptography & Info Security',
+        title: 'Advanced Encryption Standard (AES) Algorithm & Round Transformations',
+        lecturer: 'Computerphile (Dr. Mike Pound)',
+        type: 'video',
+        typeLabel: 'Symmetric Cryptography',
+        topics: ['SubBytes (S-Box)', 'ShiftRows Permutation', 'MixColumns Galois Field (GF(2^8))', 'AddRoundKey'],
+        description: 'Complete mathematical inspection of the 128-bit block cipher, substitution-permutation network, key expansion, and differential cryptanalysis resistance.',
+        url: 'https://www.youtube.com/watch?v=O4xNJsbiN6s',
+        lectureKey: 'cs703cis-aes-computerphile'
+    },
+    {
+        semester: 7,
+        subject: 'cs703-cis',
+        subjectCode: 'CS-703-CIS',
+        subjectLabel: 'Cryptography & Info Security',
+        title: 'Diffie-Hellman Key Exchange Algorithm Explained with Color Mixing Analogy',
+        lecturer: 'Art of the Problem',
+        type: 'video',
+        typeLabel: 'Asymmetric Cryptography',
+        topics: ['Discrete Logarithm Problem', 'Primitive Roots Modulo P', 'Shared Secret Derivation', 'Man-in-the-Middle Countermeasures'],
+        description: 'Celebrated intuitive explanation of one-way mathematical functions allowing two parties to establish a shared cryptographic secret over an unencrypted channel.',
+        url: 'https://www.youtube.com/watch?v=NmM9HA2MQGI',
+        lectureKey: 'cs703cis-diffie-hellman-explained'
+    },
+
+    // Semester 7: CS-703-DM (Disaster Management)
+    {
+        semester: 7,
+        subject: 'cs703-dm',
+        subjectCode: 'CS-703-DM',
+        subjectLabel: 'Disaster Management',
+        title: 'Remote Sensing & GIS Spatial Analysis in Flood & Landslide Mitigation',
+        lecturer: 'NPTEL (IIT Roorkee)',
+        type: 'video',
+        typeLabel: 'Geospatial Technology',
+        topics: ['Satellite Multispectral Imagery', 'DEM Digital Elevation Models', 'Inundation Modeling', 'Hazard Zonation Mapping'],
+        description: 'University level lecture on satellite remote sensing data integration, thematic GIS layer overlay, slope stability calculation, and vulnerable zone forecasting.',
+        url: 'https://www.youtube.com/watch?v=kYJ0l8D8r1I',
+        lectureKey: 'cs703dm-gis-remote-sensing'
+    },
+    {
+        semester: 7,
+        subject: 'cs703-dm',
+        subjectCode: 'CS-703-DM',
+        subjectLabel: 'Disaster Management',
+        title: 'Incident Command System (ICS) & Emergency Operations Center Coordination',
+        lecturer: 'NIDM India / FEMA',
+        type: 'video',
+        typeLabel: 'Operational Frameworks',
+        topics: ['Incident Commander Responsibilities', 'Operations & Logistics Sections', 'Unified Command Structure', 'Standard Operating Procedures'],
+        description: 'Professional disaster response management breakdown of standardized on-scene organizational structures, inter-agency communication, and tactical resource deployment.',
+        url: 'https://www.youtube.com/watch?v=3W_T7JvX5vM',
+        lectureKey: 'cs703dm-incident-command-system'
     }
 ];

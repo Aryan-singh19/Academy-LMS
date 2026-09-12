@@ -229,25 +229,124 @@ graph LR
             ]
         },
         'cn-u3t2': {
-            title: 'HTTP, DNS & The Web',
+            title: 'HTTP, DNS & The Web Architecture',
             content: `
-<h3 class="text-2xl font-bold mb-4 text-blue-400">The Application Layer</h3>
-<p class="mb-4">This is the layer you actually interact with. It contains the protocols that allow your web browser to render memes.</p>
+<h3 class="text-2xl font-bold mb-4 text-blue-400">The Application Layer: Protocols Powering the Modern Web</h3>
+<p class="mb-4">The Application Layer (Layer 7 in OSI, Layer 4 in TCP/IP) provides network services directly to end-user applications. Two cornerstone protocols govern the entire World Wide Web: <strong>DNS (Domain Name System)</strong> for global name resolution and <strong>HTTP (HyperText Transfer Protocol)</strong> for stateful/stateless resource retrieval.</p>
 
-<h3 class="text-xl font-bold mb-2 text-yellow-400">DNS (Domain Name System)</h3>
-<p class="mb-4 text-gray-300 text-sm">Computers only understand IP addresses (like <code>142.250.190.46</code>). Humans only understand words (like <code>google.com</code>). <strong>DNS is the phonebook of the internet.</strong> When you type google.com, your computer silently asks a DNS server, "Hey, what is the IP address for google.com?" The server replies, and then your computer connects to that IP.</p>
+<h3 class="text-xl font-bold mb-2 text-yellow-400">1. Domain Name System (DNS) Resolution Hierarchy</h3>
+<p class="mb-4 text-gray-300 text-sm">Computers operate exclusively on numerical IP addresses (IPv4 32-bit / IPv6 128-bit), while humans navigate through symbolic Fully Qualified Domain Names (FQDNs like <code>portal.university.edu</code>). DNS implements an inverted distributed hierarchical tree database operating predominantly over <strong>UDP port 53</strong> (and TCP 53 for zone transfers or responses > 512 bytes).</p>
 
-<h3 class="text-xl font-bold mb-2 text-blue-400">HTTP (HyperText Transfer Protocol)</h3>
-<p class="mb-4 text-gray-300 text-sm">The language of the World Wide Web. It is a simple Request/Response protocol.</p>
-<ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm mb-6 bg-gray-900 p-4 rounded border border-gray-700">
-    <li><strong>GET:</strong> "Give me this webpage."</li>
-    <li><strong>POST:</strong> "Here is some data I am submitting to you (like a login form)."</li>
-    <li><strong>Status 200:</strong> "OK! Here is the data."</li>
-    <li><strong>Status 404:</strong> "I have no idea what you are looking for."</li>
-    <li><strong>Status 500:</strong> "My server just caught on fire."</li>
-</ul>
+<div class="mermaid bg-gray-900 p-6 rounded-lg mb-6 flex justify-center border border-gray-700 shadow-inner">
+graph TD
+    Root["Root DNS Servers (13 Logical IP Clusters: a.root-servers.net to m)"]
+    Root --> TLD1["Top-Level Domain (TLD) .com / .net / .org"]
+    Root --> TLD2["Country-Code TLD .in / .uk / .de"]
+    Root --> TLD3["Sponsored TLD .edu / .gov / .mil"]
+    TLD1 --> Auth1["Authoritative DNS Server: google.com"]
+    TLD3 --> Auth2["Authoritative DNS Server: mit.edu"]
+    Auth1 --> Host["A / AAAA Record Resolution: 142.250.190.46"]
+    style Root fill:#1e293b,stroke:#ef4444,color:#fff
+    style TLD1 fill:#1e293b,stroke:#f59e0b,color:#fff
+    style TLD2 fill:#1e293b,stroke:#f59e0b,color:#fff
+    style TLD3 fill:#1e293b,stroke:#f59e0b,color:#fff
+    style Auth1 fill:#1e293b,stroke:#3b82f6,color:#fff
+    style Auth2 fill:#1e293b,stroke:#3b82f6,color:#fff
+    style Host fill:#1e293b,stroke:#10b981,color:#fff
+</div>
+
+<div class="bg-gray-800 p-5 rounded-xl border border-gray-700 mb-6">
+    <h4 class="text-green-400 font-bold mb-2 text-sm">Step-by-Step Recursive vs Iterative DNS Lookup:</h4>
+    <ol class="list-decimal pl-5 space-y-2 text-gray-300 text-xs leading-relaxed">
+        <li><strong>Browser Cache & OS Hosts:</strong> Checks local browser DNS cache (chrome://net-internals/#dns) & <code>/etc/hosts</code>.</li>
+        <li><strong>Recursive Resolver:</strong> Client sends recursive query to ISP Resolver or Public DNS (e.g. <code>8.8.8.8</code>, <code>1.1.1.1</code>).</li>
+        <li><strong>Iterative Root Query:</strong> Resolver queries Root Server: <em>"Where is .com?"</em> &rarr; Root returns .com TLD nameserver IPs.</li>
+        <li><strong>TLD Query:</strong> Resolver queries TLD Server: <em>"Where is google.com?"</em> &rarr; TLD returns Authoritative nameservers (ns1.google.com).</li>
+        <li><strong>Authoritative Query:</strong> Resolver queries Authoritative Server &rarr; Returns the final <strong>A Record (IPv4)</strong> or <strong>AAAA Record (IPv6)</strong>.</li>
+        <li><strong>Caching (TTL):</strong> Resolver caches the record for the duration specified in the Time-To-Live (TTL) field.</li>
+    </ol>
+</div>
+
+<h3 class="text-xl font-bold mb-2 text-blue-400">2. HTTP Evolution: HTTP/1.1 vs HTTP/2 vs HTTP/3</h3>
+<table class="w-full text-left border-collapse mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+    <thead class="bg-gray-700 text-gray-200">
+        <tr>
+            <th class="p-3">Feature</th>
+            <th class="p-3">HTTP/1.1 (1997)</th>
+            <th class="p-3">HTTP/2 (2015)</th>
+            <th class="p-3">HTTP/3 (2022)</th>
+        </tr>
+    </thead>
+    <tbody class="text-gray-300 divide-y divide-gray-700 text-xs">
+        <tr class="hover:bg-gray-750">
+            <td class="p-3 font-semibold text-amber-400">Transport Protocol</td>
+            <td class="p-3">TCP (Single request per socket / Keep-Alive)</td>
+            <td class="p-3">TCP + TLS 1.2/1.3</td>
+            <td class="p-3 text-emerald-400 font-bold">QUIC over UDP</td>
+        </tr>
+        <tr class="hover:bg-gray-750">
+            <td class="p-3 font-semibold text-amber-400">Framing Format</td>
+            <td class="p-3">Plain Text / ASCII</td>
+            <td class="p-3">Binary Framing Layer</td>
+            <td class="p-3">Binary QPACK Frames</td>
+        </tr>
+        <tr class="hover:bg-gray-750">
+            <td class="p-3 font-semibold text-amber-400">Multiplexing</td>
+            <td class="p-3 text-red-400">No (Suffers HOL blocking)</td>
+            <td class="p-3 text-emerald-400">Yes (Streams over 1 TCP connection)</td>
+            <td class="p-3 text-emerald-400 font-bold">Yes (Independent streams over QUIC)</td>
+        </tr>
+        <tr class="hover:bg-gray-750">
+            <td class="p-3 font-semibold text-amber-400">Transport HoL Blocking</td>
+            <td class="p-3 text-red-400">Severe</td>
+            <td class="p-3 text-red-400">Still present if 1 TCP packet drops</td>
+            <td class="p-3 text-emerald-400 font-bold">Zero! Dropped packet only stalls its own stream</td>
+        </tr>
+        <tr class="hover:bg-gray-750">
+            <td class="p-3 font-semibold text-amber-400">Header Compression</td>
+            <td class="p-3">None (Redundant overhead)</td>
+            <td class="p-3">HPACK (Static/Dynamic tables)</td>
+            <td class="p-3">QPACK (Out-of-order decompression)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 class="text-xl font-bold mb-2 text-cyan-400">3. Standard HTTP Status Codes Summary</h3>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 mb-6 text-xs">
+    <div class="bg-gray-900 p-3 rounded border border-gray-700">
+        <strong class="text-cyan-400 block mb-1">1xx Informational</strong>
+        <p class="text-gray-400">100 Continue<br>101 Switching Protocols</p>
+    </div>
+    <div class="bg-gray-900 p-3 rounded border border-gray-700">
+        <strong class="text-emerald-400 block mb-1">2xx Success</strong>
+        <p class="text-gray-400">200 OK<br>201 Created<br>204 No Content</p>
+    </div>
+    <div class="bg-gray-900 p-3 rounded border border-gray-700">
+        <strong class="text-yellow-400 block mb-1">3xx Redirection</strong>
+        <p class="text-gray-400">301 Moved Permanently<br>304 Not Modified</p>
+    </div>
+    <div class="bg-gray-900 p-3 rounded border border-gray-700">
+        <strong class="text-orange-400 block mb-1">4xx Client Error</strong>
+        <p class="text-gray-400">400 Bad Request<br>401 Unauthorized<br>403 Forbidden<br>404 Not Found</p>
+    </div>
+    <div class="bg-gray-900 p-3 rounded border border-gray-700">
+        <strong class="text-red-400 block mb-1">5xx Server Error</strong>
+        <p class="text-gray-400">500 Internal Error<br>502 Bad Gateway<br>503 Service Unavailable</p>
+    </div>
+</div>
             `,
             quizzes: [
+                {
+                    question: "How does HTTP/3 completely eliminate Head-of-Line (HoL) blocking at the transport layer compared to HTTP/2?",
+                    options: [
+                        "A) By increasing the TCP window size to 100 megabytes",
+                        "B) By running QUIC protocol on top of UDP, so a single lost packet only delays its specific multiplexed data stream rather than pausing all streams on the socket",
+                        "C) By deprecating TLS encryption entirely",
+                        "D) By forcing all assets to download synchronously"
+                    ],
+                    answer: 1,
+                    explanation: "In HTTP/2 over TCP, if one packet drops, the entire TCP buffer waits for retransmission, blocking all interleaved streams. HTTP/3 runs QUIC over UDP, allowing independent packet streams with no cross-stream blockage."
+                },
                 {
                     question: "What is the primary purpose of DNS?",
                     options: [
