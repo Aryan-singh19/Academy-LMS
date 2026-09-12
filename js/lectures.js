@@ -2,10 +2,8 @@ let activeLectureSemester = '5';
 let activeLectureSubject = 'all';
 let activeLectureKey = '';
 let lectureSearchQuery = '';
-let isLectureSidebarCollapsed = false;
-try {
-    isLectureSidebarCollapsed = localStorage.getItem('academy_lecture_sidebar_collapsed') === 'true';
-} catch (e) {}
+let isPlaylistDrawerOpen = false;
+let drawerSearchFilter = '';
 
 let lectureChatState = {
     local: { messages: [], onlineCount: 0 },
@@ -14,12 +12,45 @@ let lectureChatState = {
 let lecturePollingTimer = null;
 let lectureFetchInFlight = false;
 
+function openPlaylistDrawer() {
+    isPlaylistDrawerOpen = true;
+    const overlay = document.getElementById('playlistDrawerOverlay');
+    const drawer = document.getElementById('playlistDrawer');
+    if (overlay) overlay.classList.remove('hidden');
+    if (drawer) {
+        requestAnimationFrame(() => {
+            drawer.classList.remove('-translate-x-full');
+            drawer.classList.add('translate-x-0');
+        });
+    }
+    renderDrawerLectureList();
+}
+
+function closePlaylistDrawer() {
+    isPlaylistDrawerOpen = false;
+    const drawer = document.getElementById('playlistDrawer');
+    const overlay = document.getElementById('playlistDrawerOverlay');
+    if (drawer) {
+        drawer.classList.remove('translate-x-0');
+        drawer.classList.add('-translate-x-full');
+    }
+    setTimeout(() => {
+        if (!isPlaylistDrawerOpen && overlay) {
+            overlay.classList.add('hidden');
+        }
+    }, 200);
+}
+
+function togglePlaylistDrawer() {
+    if (isPlaylistDrawerOpen) {
+        closePlaylistDrawer();
+    } else {
+        openPlaylistDrawer();
+    }
+}
+
 function toggleLectureSidebar() {
-    isLectureSidebarCollapsed = !isLectureSidebarCollapsed;
-    try {
-        localStorage.setItem('academy_lecture_sidebar_collapsed', String(isLectureSidebarCollapsed));
-    } catch (e) {}
-    renderLecturePage();
+    togglePlaylistDrawer();
 }
 
 const esc = (val) => {
@@ -147,39 +178,7 @@ function getActiveLecture() {
     return matched || lectures[0] || null;
 }
 
-function applySidebarState() {
-    const sidebar = document.getElementById('lectureSidebar');
-    const restoreEdge = document.getElementById('lectureRestoreEdge');
-    const grid = document.getElementById('lectureWorkspaceGrid');
-    const sidebarInput = document.getElementById('sidebarCodeSearchInput');
-    const clearBtn = document.getElementById('sidebarClearSearchBtn');
-
-    if (sidebarInput && document.activeElement !== sidebarInput) {
-        sidebarInput.value = lectureSearchQuery;
-    }
-    if (clearBtn) {
-        if (lectureSearchQuery) {
-            clearBtn.classList.remove('hidden');
-        } else {
-            clearBtn.classList.add('hidden');
-        }
-    }
-
-    if (!sidebar || !grid) return;
-
-    if (isLectureSidebarCollapsed) {
-        sidebar.classList.add('hidden');
-        if (restoreEdge) restoreEdge.classList.remove('hidden');
-        grid.className = 'grid grid-cols-1 xl:grid-cols-[auto_minmax(0,1fr)] gap-4 items-start transition-all';
-    } else {
-        sidebar.classList.remove('hidden');
-        if (restoreEdge) restoreEdge.classList.add('hidden');
-        grid.className = 'grid xl:grid-cols-[360px_minmax(0,1fr)] gap-6 items-start transition-all';
-    }
-}
-
 function renderLecturePage() {
-    applySidebarState();
     renderLectureTabs();
     renderLectureToolbar();
     renderLectureList();
@@ -234,55 +233,30 @@ function searchByCode(code) {
     setLectureSearch(code);
 }
 
-function setupSidebarSearchInput() {
-    const input = document.getElementById('sidebarCodeSearchInput');
-    if (!input || input.dataset.bound === 'true') return;
-    input.dataset.bound = 'true';
-    input.addEventListener('input', (event) => {
-        setLectureSearch(event.target.value);
-    });
-}
-
 function renderLectureToolbar() {
     const lectures = getFilteredLectures();
     const totalAll = (window.lectureLibrary || []).length;
     const target = document.getElementById('lectureToolbar');
     if (!target) return;
 
-    const matchedIds = getMatchedSubjectIds(lectureSearchQuery);
-
     target.innerHTML = `
-        <div class="space-y-3">
-            <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-                <div class="flex items-center gap-2">
-                    <span class="text-sm font-bold text-white font-mono bg-blue-500/15 text-blue-300 px-2 py-0.5 rounded border border-blue-500/30">${lectures.length}</span>
-                    <span class="text-xs text-slate-300">lectures matching subject code filter (of ${totalAll} total)</span>
-                </div>
-                <div class="relative w-full md:max-w-md">
-                    <input id="lectureSearchInput" class="search-input w-full !pr-8" placeholder="Search by subject code (e.g., CS501, 602, CS701, TOC, WMC)..." value="${window.ACADEMY.escapeForAttribute(lectureSearchQuery)}">
-                    ${lectureSearchQuery ? `
-                        <button type="button" onclick="clearLectureSearch()" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-bold" title="Clear code search">✕</button>
-                    ` : ''}
-                </div>
+        <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-sm font-bold text-white font-mono bg-blue-500/15 text-blue-300 px-2 py-0.5 rounded border border-blue-500/30">${lectures.length}</span>
+                <span class="text-xs text-slate-300">lectures matching subject code filter (of ${totalAll} total)</span>
             </div>
-
-            <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none">
-                <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
-                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
-                    Code:
-                </span>
-                <button type="button" onclick="searchByCode('ALL')" class="px-2.5 py-1 rounded text-xs font-mono font-bold transition-all ${!lectureSearchQuery && activeLectureSubject === 'all' ? 'bg-blue-600 text-white shadow-sm ring-1 ring-blue-400' : 'bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700'}">
-                    ALL
-                </button>
-                ${ALL_LECTURE_SUBJECTS.map((s) => {
-                    const isCodeActive = (matchedIds && matchedIds.includes(s.id)) ||
-                        (!lectureSearchQuery && (activeLectureSubject === s.id || (activeLectureSubject === 'cs702' && s.id === 'cs702') || (activeLectureSubject === 'cs703' && s.id === 'cs703')));
-                    return `
-                        <button type="button" onclick="searchByCode('${s.code}')" class="px-2 py-1 rounded text-xs font-mono font-semibold transition-all whitespace-nowrap ${isCodeActive ? 'bg-blue-600 text-white shadow-sm ring-1 ring-blue-400' : 'bg-slate-800/80 text-slate-300 border border-slate-700/60 hover:bg-slate-700 hover:text-white'}">
-                            ${s.code}
-                        </button>
-                    `;
-                }).join('')}
+            <div class="relative w-full sm:max-w-md">
+                <input
+                    id="lectureSearchInput"
+                    type="search"
+                    class="search-input w-full !pr-8 text-xs sm:text-sm"
+                    placeholder="Search by subject code (e.g. CS501, 602, CS701, TOC, WMC)..."
+                    value="${window.ACADEMY.escapeForAttribute(lectureSearchQuery)}"
+                    autocomplete="off"
+                >
+                ${lectureSearchQuery ? `
+                    <button type="button" onclick="clearLectureSearch()" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-bold" title="Clear code search">✕</button>
+                ` : ''}
             </div>
         </div>
     `;
@@ -293,52 +267,76 @@ function renderLectureToolbar() {
             setLectureSearch(event.target.value);
         });
     }
-
-    setupSidebarSearchInput();
 }
 
 function clearLectureSearch() {
     lectureSearchQuery = '';
     const mainInput = document.getElementById('lectureSearchInput');
     if (mainInput) mainInput.value = '';
-    const sidebarInput = document.getElementById('sidebarCodeSearchInput');
-    if (sidebarInput) sidebarInput.value = '';
 
     const first = getFilteredLectures()[0];
     activeLectureKey = first ? lectureKeyFor(first) : '';
     renderLecturePage();
 }
 
+function handleDrawerSearch(event) {
+    drawerSearchFilter = (event && event.target ? event.target.value : '').toLowerCase().trim();
+    const clearBtn = document.getElementById('drawerClearSearchBtn');
+    if (clearBtn) {
+        if (drawerSearchFilter) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+    }
+    renderDrawerLectureList();
+}
+
+function clearDrawerSearch() {
+    drawerSearchFilter = '';
+    const input = document.getElementById('drawerSearchInput');
+    if (input) input.value = '';
+    const clearBtn = document.getElementById('drawerClearSearchBtn');
+    if (clearBtn) clearBtn.classList.add('hidden');
+    renderDrawerLectureList();
+}
+
 function renderLectureList() {
     const lectures = getFilteredLectures();
     const active = getActiveLecture();
     activeLectureKey = active ? lectureKeyFor(active) : '';
+    renderDrawerLectureList();
+}
 
-    const container = document.getElementById('lectureList');
-    const countBadge = document.getElementById('lectureCountBadge');
-    const restoreBadge = document.getElementById('lectureRestoreBadge');
+function renderDrawerLectureList() {
+    const container = document.getElementById('drawerLectureList');
+    const countBadge = document.getElementById('drawerCountBadge');
+
+    let lectures = getFilteredLectures();
+    if (drawerSearchFilter) {
+        lectures = lectures.filter((item) => {
+            const title = (item.title || '').toLowerCase();
+            const lecturer = (item.lecturer || '').toLowerCase();
+            const code = (item.subjectCode || item.subject || '').toLowerCase();
+            const topics = (item.topics || []).join(' ').toLowerCase();
+            return title.includes(drawerSearchFilter) || lecturer.includes(drawerSearchFilter) || code.includes(drawerSearchFilter) || topics.includes(drawerSearchFilter);
+        });
+    }
 
     if (countBadge) {
         countBadge.textContent = `${lectures.length} video${lectures.length === 1 ? '' : 's'}`;
-    }
-    if (restoreBadge) {
-        restoreBadge.textContent = `Playlist (${lectures.length})`;
     }
 
     if (!container) return;
 
     if (!lectures.length) {
         container.innerHTML = `
-            <article class="p-4 rounded-lg bg-slate-900/80 border border-slate-800 text-center space-y-2">
-                <p class="text-xs font-bold text-amber-300">No lectures found for code</p>
-                <p class="text-[11px] text-slate-400 leading-relaxed">
-                    ${lectureSearchQuery ? `No course matched code "<strong>${esc(lectureSearchQuery)}</strong>".` : 'No videos found.'}
-                    Search by subject code like <strong>CS501</strong>, <strong>602</strong>, <strong>CS701</strong>, <strong>TOC</strong>, or <strong>WMC</strong>.
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 text-center space-y-2">
+                <p class="text-xs font-bold text-amber-300">No videos found</p>
+                <p class="text-[11px] text-slate-400">
+                    No videos match your filter.
                 </p>
-                <button type="button" onclick="clearLectureSearch()" class="secondary-cta text-[11px] mt-2 !py-1.5 !px-3">
-                    Reset Filter
+                <button type="button" onclick="clearDrawerSearch()" class="secondary-cta text-[11px] !py-1 !px-2.5 mt-1">
+                    Clear Filter
                 </button>
-            </article>
+            </div>
         `;
         return;
     }
@@ -349,7 +347,11 @@ function renderLectureList() {
         const semColor = lecture.semester === 5 ? 'blue' : lecture.semester === 6 ? 'emerald' : 'purple';
 
         return `
-            <button type="button" onclick="selectLecture('${lectureKeyFor(lecture)}')" class="playlist-item w-full text-left p-2.5 rounded-lg border transition-all flex items-start gap-2.5 ${isSelected ? 'bg-blue-600/20 border-blue-500/60 shadow-sm shadow-blue-500/20 text-white ring-1 ring-blue-500' : 'bg-slate-900/60 border-slate-800/80 hover:bg-slate-800/80 hover:border-slate-700 text-slate-300'}">
+            <button
+                type="button"
+                onclick="handleSelectLectureFromDrawer('${lectureKeyFor(lecture)}')"
+                class="playlist-item w-full text-left p-2.5 rounded-xl border transition-all flex items-start gap-2.5 ${isSelected ? 'bg-blue-600/20 border-blue-500/60 shadow-md shadow-blue-500/10 text-white ring-1 ring-blue-500' : 'bg-slate-950/60 border-slate-800/80 hover:bg-slate-800/80 hover:border-slate-700 text-slate-300'}"
+            >
                 <div class="shrink-0 w-6 h-6 rounded-md flex items-center justify-center font-mono text-[11px] font-bold ${isSelected ? 'bg-blue-500 text-white' : 'bg-slate-800 text-slate-400'}">
                     ${isSelected ? '▶' : (idx + 1)}
                 </div>
@@ -358,21 +360,30 @@ function renderLectureList() {
                         <span class="text-[10px] font-mono font-extrabold px-1.5 py-0.5 rounded bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30 shrink-0">
                             ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
                         </span>
-                        <span class="text-[10px] font-medium text-slate-400 shrink-0">
-                            ${esc(lecture.typeLabel || (isPlaylist ? 'Playlist' : 'Masterclass'))}
+                        <span class="text-[10px] font-medium text-slate-400 shrink-0 truncate">
+                            ${esc(lecture.typeLabel || (isPlaylist ? 'Exam Prep Series' : 'Masterclass'))}
                         </span>
                     </div>
-                    <h4 class="text-xs font-semibold text-white mt-1 leading-snug truncate" title="${window.ACADEMY.escapeForAttribute(lecture.title)}">
+                    <h4 class="text-xs font-semibold text-white mt-1 leading-snug line-clamp-2" title="${window.ACADEMY.escapeForAttribute(lecture.title)}">
                         ${esc(lecture.title)}
                     </h4>
-                    <div class="flex items-center justify-between text-[11px] text-slate-400 mt-1">
-                        <span class="truncate max-w-[170px] text-slate-400">${esc(lecture.lecturer)}</span>
-                        ${isSelected ? '<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider">Playing</span>' : ''}
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 mt-1.5">
+                        <span class="truncate max-w-[170px] text-slate-400 font-medium">${esc(lecture.lecturer)}</span>
+                        ${isSelected ? '<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider font-mono">Now Playing</span>' : ''}
                     </div>
                 </div>
             </button>
         `;
     }).join('');
+}
+
+function handleSelectLectureFromDrawer(lectureKey) {
+    selectLecture(lectureKey);
+    if (window.innerWidth < 1024) {
+        closePlaylistDrawer();
+    } else {
+        renderDrawerLectureList();
+    }
 }
 
 function renderLectureViewer() {
@@ -394,14 +405,9 @@ function renderLectureViewer() {
     target.innerHTML = `
         <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800">
             <div class="flex items-center gap-2">
-                <button type="button" onclick="toggleLectureSidebar()" class="side-panel-collapse-btn text-xs font-semibold" title="${isLectureSidebarCollapsed ? 'Expand Lecture Playlist (Press [ )' : 'Collapse Lecture Playlist (Press [ )'}">
-                    ${isLectureSidebarCollapsed ? `
-                        <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
-                        <span>Show Playlist (${lectures.length})</span>
-                    ` : `
-                        <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"/></svg>
-                        <span>Hide Playlist</span>
-                    `}
+                <button type="button" onclick="openPlaylistDrawer()" class="secondary-cta text-xs !py-1 !px-2.5 font-semibold inline-flex items-center gap-1.5 hover:border-blue-500/40" title="Show Playlist (${lectures.length} videos)">
+                    <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
+                    <span>Show Playlist (${lectures.length})</span>
                 </button>
                 <span class="px-2.5 py-1 rounded-md font-mono text-xs font-bold bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30">
                     Semester ${lecture.semester} • ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
@@ -411,7 +417,7 @@ function renderLectureViewer() {
                 </span>
             </div>
             <span class="px-2.5 py-0.5 rounded text-xs font-semibold ${isPlaylist ? 'bg-amber-500/15 text-amber-300 border border-amber-500/30' : 'bg-sky-500/15 text-sky-300 border border-sky-500/30'}">
-                ${esc(lecture.typeLabel || (isPlaylist ? 'Full Course Playlist' : 'Deep-Dive Masterclass'))}
+                ${esc(lecture.typeLabel || (isPlaylist ? 'Exam Prep Series' : 'Deep-Dive Masterclass'))}
             </span>
         </div>
 
@@ -743,16 +749,28 @@ window.copyLectureLink = copyLectureLink;
 window.resetLectureFilters = resetLectureFilters;
 window.clearLectureSearch = clearLectureSearch;
 window.toggleLectureSidebar = toggleLectureSidebar;
+window.openPlaylistDrawer = openPlaylistDrawer;
+window.closePlaylistDrawer = closePlaylistDrawer;
+window.togglePlaylistDrawer = togglePlaylistDrawer;
+window.handleDrawerSearch = handleDrawerSearch;
+window.clearDrawerSearch = clearDrawerSearch;
+window.handleSelectLectureFromDrawer = handleSelectLectureFromDrawer;
 window.searchByCode = searchByCode;
 
 document.addEventListener('keydown', (e) => {
-    // If not typing in an input or textarea
+    // If typing in an input or textarea
     if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+        if (e.key === 'Escape') {
+            e.target.blur();
+            closePlaylistDrawer();
+        }
         return;
     }
-    if (e.key === '[' || e.key === ']') {
+    if (e.key === 'Escape') {
+        closePlaylistDrawer();
+    } else if (e.key === '[' || e.key === ']') {
         e.preventDefault();
-        toggleLectureSidebar();
+        togglePlaylistDrawer();
     }
 });
 
