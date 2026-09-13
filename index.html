@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({ startOnLoad: true, theme: 'base' });</script>
 </head>
 <body class="academy-shell antialiased min-h-screen">
     <div class="page-orb page-orb-a"></div>
@@ -69,20 +67,37 @@
 
             <div class="hero-panel reveal rise-in-delayed">
                 <div class="hero-panel-grid">
-                    <div class="hero-card">
-                        <span class="hero-card-kicker">Track</span>
-                        <h2>Your momentum</h2>
-                        <p>Completion rates, bookmarked topics, latest activity, and quiz accuracy stay preserved every time you return.</p>
+                    <div class="hero-card hover:border-blue-500/50 cursor-pointer group" onclick="jumpToProfile()">
+                        <div class="flex items-center justify-between">
+                            <span class="hero-card-kicker">Track</span>
+                            <span class="text-xs text-blue-400 font-semibold group-hover:translate-x-0.5 transition-transform">Profile &rarr;</span>
+                        </div>
+                        <h2 class="group-hover:text-blue-300 transition-colors">Your Momentum &amp; Stats</h2>
+                        <p>Completion rates, bookmarked topics, streak records, and quiz accuracy preserved across all your devices.</p>
                     </div>
-                    <div class="hero-card hero-card-accent">
-                        <span class="hero-card-kicker">Study</span>
-                        <h2>Visuals &amp; Deep Notes</h2>
-                        <p>Interactive Mermaid state machines, ER models, network handshakes, and step-by-step exam derivations with personal notes.</p>
+                    <div class="hero-card hero-card-accent hover:border-blue-400 cursor-pointer group" onclick="startApp()">
+                        <div class="flex items-center justify-between">
+                            <span class="hero-card-kicker">Study</span>
+                            <span class="text-xs text-blue-300 font-semibold group-hover:translate-x-0.5 transition-transform">Launch Desk &rarr;</span>
+                        </div>
+                        <h2 class="group-hover:text-blue-200 transition-colors">Visuals &amp; Deep Notes</h2>
+                        <p>Interactive architectural state diagrams, ER schemas, derivations, and private student notes in a distraction-free desk.</p>
                     </div>
-                    <div class="hero-card">
-                        <span class="hero-card-kicker">Revise</span>
-                        <h2>Semester-Wide Drills</h2>
+                    <div class="hero-card hover:border-blue-500/50 cursor-pointer group" onclick="jumpToPracticeTests()">
+                        <div class="flex items-center justify-between">
+                            <span class="hero-card-kicker">Revise</span>
+                            <span class="text-xs text-blue-400 font-semibold group-hover:translate-x-0.5 transition-transform">Start Drills &rarr;</span>
+                        </div>
+                        <h2 class="group-hover:text-blue-300 transition-colors">Semester-Wide Drills</h2>
                         <p>Run targeted or mixed practice drills across TOC, DBMS, Analytics, Security, Web Tech, ML, Networks, Compiler Design, and PM.</p>
+                    </div>
+                    <div class="hero-card hover:border-blue-500/50 cursor-pointer group" onclick="jumpToLectures()">
+                        <div class="flex items-center justify-between">
+                            <span class="hero-card-kicker">Connect</span>
+                            <span class="text-xs text-blue-400 font-semibold group-hover:translate-x-0.5 transition-transform">Join Rooms &rarr;</span>
+                        </div>
+                        <h2 class="group-hover:text-blue-300 transition-colors">Lectures &amp; Study Rooms</h2>
+                        <p>Curated video lectures, peer chat discussions, university question papers, and shared revision handbooks.</p>
                     </div>
                 </div>
             </div>
@@ -151,6 +166,84 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <!-- Syllabus Progress Breakdown Modal -->
+    <div id="progressBreakdownModal" class="hidden fixed inset-0 z-[110] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" role="dialog" aria-modal="true">
+        <div class="w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-6 relative max-h-[85vh] flex flex-col">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-blue-500/20 border border-blue-500/40 text-blue-400 flex items-center justify-center font-bold text-lg">
+                        📊
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Syllabus Completion Breakdown</h3>
+                        <p class="text-xs text-slate-400">Track your completed topics and coverage by semester</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeProgressModal()" class="text-slate-400 hover:text-white p-2 rounded-lg hover:bg-slate-800 text-lg leading-none" title="Close modal">&times;</button>
+            </div>
+            <div id="progressBreakdownContent" class="overflow-y-auto py-4 space-y-4 flex-1"></div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                <button type="button" id="toggleCompletedFilterBtn" onclick="toggleCompletedFilter()" class="secondary-cta text-xs !py-2 !px-3">
+                    Filter Desk: Completed Only
+                </button>
+                <button type="button" onclick="closeProgressModal()" class="primary-cta text-xs !py-2 !px-4">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Practice Drill Modal -->
+    <div id="quickDrillModal" class="hidden fixed inset-0 z-[110] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" role="dialog" aria-modal="true">
+        <div class="w-full max-w-xl bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-6 relative max-h-[90vh] flex flex-col">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center font-bold text-lg">
+                        ⚡
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Quick Practice Drill</h3>
+                        <p class="text-xs text-slate-400" id="quickDrillSubtitle">3 high-yield questions from current study lane</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeQuickDrillModal()" class="text-slate-400 hover:text-white p-2 rounded-lg hover:bg-slate-800 text-lg leading-none" title="Close modal">&times;</button>
+            </div>
+            <div id="quickDrillContent" class="overflow-y-auto py-4 space-y-4 flex-1"></div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between gap-3">
+                <button type="button" onclick="refreshQuickDrillQuestions()" class="secondary-cta text-xs !py-2 !px-3 flex items-center gap-1.5">
+                    <span>↻</span> New Questions
+                </button>
+                <a href="html/tests.html" class="primary-cta text-xs !py-2 !px-4 flex items-center gap-1.5">
+                    Full Practice Tests &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personal Saved Notes & Highlights Modal -->
+    <div id="savedNotesModal" class="hidden fixed inset-0 z-[110] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" role="dialog" aria-modal="true">
+        <div class="w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-6 relative max-h-[85vh] flex flex-col">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center font-bold text-lg">
+                        📝
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-white">My Study Notes &amp; Highlights</h3>
+                        <p class="text-xs text-slate-400">All personal notes, exam tips, and highlighted excerpts</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeSavedNotesModal()" class="text-slate-400 hover:text-white p-2 rounded-lg hover:bg-slate-800 text-lg leading-none" title="Close modal">&times;</button>
+            </div>
+            <div class="pt-3 pb-1">
+                <input id="notesSearchFilter" type="search" placeholder="Search across your saved notes..." oninput="filterSavedNotesList()" class="search-input !py-2 !px-3 text-xs" />
+            </div>
+            <div id="savedNotesContent" class="overflow-y-auto py-3 space-y-3 flex-1"></div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                <span id="savedNotesCountLabel" class="text-xs text-slate-400">0 notes saved</span>
+                <button type="button" onclick="closeSavedNotesModal()" class="primary-cta text-xs !py-2 !px-4">Close</button>
+            </div>
+        </div>
     </div>
 
     <div id="referenceModal" class="hidden fixed inset-0 z-[100] items-center justify-center p-4 sm:p-6 lg:p-10 bg-slate-950/85 backdrop-blur">

@@ -12,6 +12,23 @@
         authenticated: false,
         student: null
     };
+
+    try {
+        const cachedAuth = sessionStorage.getItem('academy_cached_auth');
+        if (cachedAuth) {
+            const parsed = JSON.parse(cachedAuth);
+            if (parsed && typeof parsed === 'object') {
+                authSession = Object.assign(authSession, parsed);
+            }
+        }
+        const cachedConfig = sessionStorage.getItem('academy_cached_config');
+        if (cachedConfig) {
+            const parsedCfg = JSON.parse(cachedConfig);
+            if (parsedCfg && typeof parsedCfg === 'object') {
+                appConfig = Object.assign(appConfig, parsedCfg);
+            }
+        }
+    } catch (e) {}
     const MIN_SYNC_GAP_MS = 12000;
     const FOREGROUND_SYNC_DELAY_MS = 2200;
     const BACKGROUND_SYNC_DELAY_MS = 9000;
@@ -471,10 +488,25 @@
 
     async function loadAppConfig() {
         if (window.location.protocol === 'file:') return appConfig;
+        if (appConfig && appConfig.googleClientId) {
+            // Already loaded from cache or earlier call; revalidate in background without blocking
+            fetch('/api/app-config')
+                .then((r) => (r.ok ? r.json() : null))
+                .then((fresh) => {
+                    if (fresh) {
+                        appConfig = fresh;
+                        try { sessionStorage.setItem('academy_cached_config', JSON.stringify(appConfig)); } catch (e) {}
+                    }
+                })
+                .catch(() => {});
+            return appConfig;
+        }
         try {
             const response = await fetch('/api/app-config');
-            if (!response.ok) return appConfig;
-            appConfig = await response.json();
+            if (response.ok) {
+                appConfig = await response.json();
+                try { sessionStorage.setItem('academy_cached_config', JSON.stringify(appConfig)); } catch (e) {}
+            }
         } catch (error) {
             console.error('Unable to load app config', error);
         }
@@ -489,13 +521,15 @@
         if (window.location.protocol === 'file:') return authSession;
         try {
             const response = await fetch('/api/auth-session');
-            if (!response.ok) return authSession;
-            authSession = await response.json();
-            state.isAdmin = Boolean(authSession.isAdmin);
-            if (authSession.authenticated && authSession.student) {
-                state.studentName = authSession.student.display_name || state.studentName;
-                state.avatarUrl = authSession.student.avatar_url || state.avatarUrl;
-                persistState({ silent: true });
+            if (response.ok) {
+                authSession = await response.json();
+                state.isAdmin = Boolean(authSession.isAdmin);
+                if (authSession.authenticated && authSession.student) {
+                    state.studentName = authSession.student.display_name || state.studentName;
+                    state.avatarUrl = authSession.student.avatar_url || state.avatarUrl;
+                    persistState({ silent: true });
+                }
+                try { sessionStorage.setItem('academy_cached_auth', JSON.stringify(authSession)); } catch (e) {}
             }
         } catch (error) {
             console.error('Unable to hydrate auth session', error);
@@ -679,8 +713,12 @@
         }
         authSession = {
             authenticated: false,
-            student: null
+            student: null,
+            isAdmin: false
         };
+        try {
+            sessionStorage.removeItem('academy_cached_auth');
+        } catch (e) {}
     }
 
     window.ACADEMY = {
@@ -737,101 +775,140 @@
         isAdmin
     };
 
+    function renderNavElements(navElements) {
+        if (!navElements || !navElements.length) return;
+        const authed = isAuthenticated();
+        const userIsAdmin = isAdmin();
+        const pathname = window.location.pathname;
+        const isInHtmlDir = pathname.includes('/html/') || pathname.endsWith('/html');
+
+        const homeHref = isInHtmlDir ? '../index.html' : 'index.html';
+        const topicsHref = isInHtmlDir ? '../index.html?view=topics' : 'index.html?view=topics';
+        const aboutHref = isInHtmlDir ? 'about.html' : 'html/about.html';
+        const policyHref = isInHtmlDir ? 'privacy.html' : 'html/privacy.html';
+        const contactHref = isInHtmlDir ? 'contact.html' : 'html/contact.html';
+        const lecturesHref = isInHtmlDir ? 'lectures.html' : 'html/lectures.html';
+        const resourcesHref = isInHtmlDir ? 'resources.html' : 'html/resources.html';
+        const testsHref = isInHtmlDir ? 'tests.html' : 'html/tests.html';
+        const profileHref = isInHtmlDir ? 'profile.html' : 'html/profile.html';
+        const adminHref = isInHtmlDir ? '../admin/index.html' : 'admin/index.html';
+
+        const adminNavMarkup = userIsAdmin ? `
+            <a href="${adminHref}" class="nav-pill border border-amber-500/40 text-amber-300 hover:text-white hover:border-amber-400 flex items-center gap-1.5" title="Academy LMS Admin Console">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span>Admin</span>
+            </a>
+        ` : '';
+
+        const isCurrent = (page) => {
+            if (page === 'home') return (pathname.endsWith('index.html') || pathname.endsWith('/')) && !window.location.search.includes('view=topics');
+            if (page === 'topics') return (pathname.endsWith('index.html') || pathname.endsWith('/')) && window.location.search.includes('view=topics');
+            if (page === 'about') return pathname.includes('about.html');
+            if (page === 'policy') return pathname.includes('privacy.html') || pathname.includes('terms.html');
+            if (page === 'contact') return pathname.includes('contact.html');
+            if (page === 'lectures') return pathname.includes('lectures.html');
+            if (page === 'resources') return pathname.includes('resources.html');
+            if (page === 'tests') return pathname.includes('tests.html');
+            if (page === 'profile') return pathname.includes('profile.html');
+            return false;
+        };
+
+        navElements.forEach((nav) => {
+            if (!authed) {
+                nav.innerHTML = `
+                    <a href="${topicsHref}" class="nav-pill ${isCurrent('topics') ? 'nav-pill-active' : ''}">Topics</a>
+                    <a href="${lecturesHref}" class="nav-pill ${isCurrent('lectures') ? 'nav-pill-active' : ''}">Lectures</a>
+                    <a href="${resourcesHref}" class="nav-pill ${isCurrent('resources') ? 'nav-pill-active' : ''}">Resources</a>
+                    <a href="${testsHref}" class="nav-pill ${isCurrent('tests') ? 'nav-pill-active' : ''}">Tests</a>
+                    <a href="${profileHref}" class="nav-pill nav-pill-profile ${isCurrent('profile') ? 'nav-pill-active' : ''}">
+                        <span class="nav-avatar-badge mr-1 bg-amber-500/30 text-amber-300 border border-amber-500/40">G</span>
+                        <span>Profile</span>
+                    </a>
+                    <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
+                    <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
+                    <a href="${contactHref}" class="nav-pill ${isCurrent('contact') ? 'nav-pill-active' : ''}">Contact</a>
+                    ${adminNavMarkup}
+                    <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Academy LMS', reason: 'Sign in with Google to sync your study notes, unlock all resources, and chat with classmates.' })" class="nav-pill text-blue-300 hover:text-white font-semibold flex items-center gap-1 cursor-pointer">
+                        <span>Sign In</span>
+                    </button>
+                `;
+            } else {
+                const student = getSignedInStudent();
+                const initial = (student && student.display_name ? student.display_name.charAt(0) : 'P').toUpperCase();
+                const avatar = getProfileAvatar();
+                const avatarMarkup = avatar
+                    ? `<img src="${escapeForAttribute(avatar)}" class="w-5 h-5 rounded-full object-cover inline-block mr-1" alt="Avatar" />`
+                    : `<span class="nav-avatar-badge mr-1">${initial}</span>`;
+
+                nav.innerHTML = `
+                    <a href="${topicsHref}" class="nav-pill ${isCurrent('topics') ? 'nav-pill-active' : ''}">Topics</a>
+                    <a href="${lecturesHref}" class="nav-pill ${isCurrent('lectures') ? 'nav-pill-active' : ''}">Lectures</a>
+                    <a href="${resourcesHref}" class="nav-pill ${isCurrent('resources') ? 'nav-pill-active' : ''}">Resources</a>
+                    <a href="${testsHref}" class="nav-pill ${isCurrent('tests') ? 'nav-pill-active' : ''}">Tests</a>
+                    <a href="${profileHref}" class="nav-pill nav-pill-profile ${isCurrent('profile') ? 'nav-pill-active' : ''}">
+                        ${avatarMarkup}
+                        <span>Profile</span>
+                    </a>
+                    <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
+                    <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
+                    ${adminNavMarkup}
+                    <button type="button" onclick="window.ACADEMY.logoutStudent().then(() => { window.location.href = '${homeHref}'; })" class="nav-pill text-slate-400 hover:text-white" title="Sign out of student account">Logout</button>
+                `;
+            }
+        });
+    }
+
     async function initDynamicHeaderNav() {
         const navElements = document.querySelectorAll('#academyHeaderNav, #publicHeaderNav, [data-academy-nav]');
         if (!navElements.length) return;
         try {
-            await hydrateAuthSession();
-            const authed = isAuthenticated();
-            const userIsAdmin = isAdmin();
-            const pathname = window.location.pathname;
-            const isInHtmlDir = pathname.includes('/html/') || pathname.endsWith('/html');
+            // 1. Instant 0ms synchronous paint from local/cached session
+            renderNavElements(navElements);
 
-            const homeHref = isInHtmlDir ? '../index.html' : 'index.html';
-            const topicsHref = isInHtmlDir ? '../index.html?view=topics' : 'index.html?view=topics';
-            const aboutHref = isInHtmlDir ? 'about.html' : 'html/about.html';
-            const policyHref = isInHtmlDir ? 'privacy.html' : 'html/privacy.html';
-            const contactHref = isInHtmlDir ? 'contact.html' : 'html/contact.html';
-            const lecturesHref = isInHtmlDir ? 'lectures.html' : 'html/lectures.html';
-            const resourcesHref = isInHtmlDir ? 'resources.html' : 'html/resources.html';
-            const testsHref = isInHtmlDir ? 'tests.html' : 'html/tests.html';
-            const profileHref = isInHtmlDir ? 'profile.html' : 'html/profile.html';
-            const adminHref = isInHtmlDir ? '../admin/index.html' : 'admin/index.html';
-
-            const adminNavMarkup = userIsAdmin ? `
-                <a href="${adminHref}" class="nav-pill border border-amber-500/40 text-amber-300 hover:text-white hover:border-amber-400 flex items-center gap-1.5" title="Academy LMS Admin Console">
-                    <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-                    <span>Admin</span>
-                </a>
-            ` : '';
-
-            const isCurrent = (page) => {
-                if (page === 'home') return (pathname.endsWith('index.html') || pathname.endsWith('/')) && !window.location.search.includes('view=topics');
-                if (page === 'topics') return (pathname.endsWith('index.html') || pathname.endsWith('/')) && window.location.search.includes('view=topics');
-                if (page === 'about') return pathname.includes('about.html');
-                if (page === 'policy') return pathname.includes('privacy.html') || pathname.includes('terms.html');
-                if (page === 'contact') return pathname.includes('contact.html');
-                if (page === 'lectures') return pathname.includes('lectures.html');
-                if (page === 'resources') return pathname.includes('resources.html');
-                if (page === 'tests') return pathname.includes('tests.html');
-                if (page === 'profile') return pathname.includes('profile.html');
-                return false;
-            };
-
-            navElements.forEach((nav) => {
-                if (!authed) {
-                    // Full access to learning tabs for all students, with Profile (Guest) and quick sign-in
-                    nav.innerHTML = `
-                        <a href="${topicsHref}" class="nav-pill ${isCurrent('topics') ? 'nav-pill-active' : ''}">Topics</a>
-                        <a href="${lecturesHref}" class="nav-pill ${isCurrent('lectures') ? 'nav-pill-active' : ''}">Lectures</a>
-                        <a href="${resourcesHref}" class="nav-pill ${isCurrent('resources') ? 'nav-pill-active' : ''}">Resources</a>
-                        <a href="${testsHref}" class="nav-pill ${isCurrent('tests') ? 'nav-pill-active' : ''}">Tests</a>
-                        <a href="${profileHref}" class="nav-pill nav-pill-profile ${isCurrent('profile') ? 'nav-pill-active' : ''}">
-                            <span class="nav-avatar-badge mr-1 bg-amber-500/30 text-amber-300 border border-amber-500/40">G</span>
-                            <span>Profile</span>
-                        </a>
-                        <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
-                        <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
-                        <a href="${contactHref}" class="nav-pill ${isCurrent('contact') ? 'nav-pill-active' : ''}">Contact</a>
-                        ${adminNavMarkup}
-                        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Academy LMS', reason: 'Sign in with Google to sync your study notes, unlock all resources, and chat with classmates.' })" class="nav-pill text-blue-300 hover:text-white font-semibold flex items-center gap-1 cursor-pointer">
-                            <span>Sign In</span>
-                        </button>
-                    `;
-                } else {
-                    // All 7 tabs visible for logged in students
-                    const student = getSignedInStudent();
-                    const initial = (student && student.display_name ? student.display_name.charAt(0) : 'P').toUpperCase();
-                    const avatar = getProfileAvatar();
-                    const avatarMarkup = avatar
-                        ? `<img src="${escapeForAttribute(avatar)}" class="w-5 h-5 rounded-full object-cover inline-block mr-1" alt="Avatar" />`
-                        : `<span class="nav-avatar-badge mr-1">${initial}</span>`;
-
-                    nav.innerHTML = `
-                        <a href="${topicsHref}" class="nav-pill ${isCurrent('topics') ? 'nav-pill-active' : ''}">Topics</a>
-                        <a href="${lecturesHref}" class="nav-pill ${isCurrent('lectures') ? 'nav-pill-active' : ''}">Lectures</a>
-                        <a href="${resourcesHref}" class="nav-pill ${isCurrent('resources') ? 'nav-pill-active' : ''}">Resources</a>
-                        <a href="${testsHref}" class="nav-pill ${isCurrent('tests') ? 'nav-pill-active' : ''}">Tests</a>
-                        <a href="${profileHref}" class="nav-pill nav-pill-profile ${isCurrent('profile') ? 'nav-pill-active' : ''}">
-                            ${avatarMarkup}
-                            <span>Profile</span>
-                        </a>
-                        <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
-                        <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
-                        ${adminNavMarkup}
-                        <button type="button" onclick="window.ACADEMY.logoutStudent().then(() => { window.location.href = '${homeHref}'; })" class="nav-pill text-slate-400 hover:text-white" title="Sign out of student account">Logout</button>
-                    `;
-                }
-            });
+            // 2. Asynchronous stale-while-revalidate update in background
+            hydrateAuthSession().then(() => {
+                renderNavElements(navElements);
+            }).catch(() => {});
         } catch (e) {
             console.error('Error hydrating header navigation:', e);
         }
     }
 
+    function initInstantPrefetch() {
+        if (typeof document === 'undefined') return;
+        const prefetched = new Set();
+        const prefetch = (href) => {
+            if (!href || prefetched.has(href)) return;
+            if (href.startsWith('http') || href.startsWith('//') || href.startsWith('mailto:') || href.startsWith('#') || href.startsWith('javascript:')) return;
+            prefetched.add(href);
+            try {
+                const link = document.createElement('link');
+                link.rel = 'prefetch';
+                link.href = href;
+                document.head.appendChild(link);
+            } catch (e) {}
+        };
+
+        const onHover = (e) => {
+            const anchor = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+            if (anchor) {
+                const href = anchor.getAttribute('href');
+                prefetch(href);
+            }
+        };
+
+        document.addEventListener('pointerenter', onHover, { passive: true, capture: true });
+        document.addEventListener('touchstart', onHover, { passive: true, capture: true });
+    }
+
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initDynamicHeaderNav);
+        document.addEventListener('DOMContentLoaded', () => {
+            initDynamicHeaderNav();
+            initInstantPrefetch();
+        });
     } else {
         initDynamicHeaderNav();
+        initInstantPrefetch();
     }
 
     if (window.location.protocol !== 'file:') {

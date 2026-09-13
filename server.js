@@ -1,4 +1,5 @@
 const express = require('express');
+const compression = require('compression');
 const path = require('path');
 const fs = require('fs');
 
@@ -33,6 +34,7 @@ const PORT = 3000;
 const HOST = '0.0.0.0';
 
 // Middlewares
+app.use(compression());
 app.use(express.json({ limit: '15mb' }));
 app.use(express.urlencoded({ extended: true, limit: '15mb' }));
 
@@ -71,12 +73,18 @@ app.all('/api/:route', async (req, res) => {
     }
 });
 
-// Static assets & frontend routing
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-app.use('/js', express.static(path.join(__dirname, 'js')));
-app.use('/admin', express.static(path.join(__dirname, 'admin')));
-app.use('/html', express.static(path.join(__dirname, 'html')));
-app.use(express.static(__dirname));
+// Static assets & frontend routing with high-performance cache headers
+const staticOptions = {
+    maxAge: '2h',
+    etag: true,
+    lastModified: true
+};
+
+app.use('/assets', express.static(path.join(__dirname, 'assets'), staticOptions));
+app.use('/js', express.static(path.join(__dirname, 'js'), staticOptions));
+app.use('/admin', express.static(path.join(__dirname, 'admin'), staticOptions));
+app.use('/html', express.static(path.join(__dirname, 'html'), { maxAge: '30m' }));
+app.use(express.static(__dirname, { maxAge: '30m' }));
 
 // Fallback for page navigation
 app.use((req, res) => {

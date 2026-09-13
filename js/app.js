@@ -13,11 +13,7 @@ let isLeftPanelCollapsed = localStorage.getItem('academy_left_collapsed') === 't
 let isRightPanelCollapsed = localStorage.getItem('academy_right_collapsed') === 'true';
 
 function startApp() {
-    const hero = document.getElementById('heroSection');
-    if (hero) hero.classList.add('hero-exit');
-    setTimeout(() => {
-        openStudyDeskDirectly();
-    }, 380);
+    openStudyDeskDirectly();
 }
 
 function initApp() {
@@ -37,16 +33,24 @@ function initApp() {
 async function bootstrapLanding() {
     hydrateStudentName();
     syncProfileAvatarNav();
-    await window.ACADEMY.loadAppConfig();
-    await window.ACADEMY.hydrateAuthSession();
-    hydrateStudentName();
-    syncProfileAvatarNav();
-    renderGoogleSignin();
-    syncAuthStatusLine();
-
+    
+    // Instant fast-path: If URL or hash requests study/topics, open desk in 0ms!
     if (shouldOpenStudyView()) {
         openStudyDeskDirectly();
     }
+
+    // Hydrate remote config & session in background without blocking initial paint
+    window.ACADEMY.loadAppConfig().then(() => {
+        renderGoogleSignin();
+    }).catch(() => {});
+
+    window.ACADEMY.hydrateAuthSession().then(() => {
+        hydrateStudentName();
+        syncProfileAvatarNav();
+        syncAuthStatusLine();
+        renderOverviewCards();
+        renderStudentDock();
+    }).catch(() => {});
 }
 
 function shouldOpenStudyView() {
@@ -243,15 +247,46 @@ function loadCourseData(courseId, callback) {
 function renderOverviewCards() {
     const stats = window.ACADEMY.calculateStats();
     const cards = [
-        { label: 'Topics done', value: `${stats.completedTopics}/${stats.totalTopics}`, subtext: `${stats.completionRate}% completion` },
-        { label: 'Quiz accuracy', value: `${stats.quizAccuracy}%`, subtext: `${stats.correctAnswers}/${stats.totalAttempts} correct` },
-        { label: 'Study notes', value: `${stats.notesCount}`, subtext: `${stats.highlightCount} saved highlights` },
-        { label: 'Current focus', value: stats.lastVisitedLabel ? 'Ready' : 'Start now', subtext: stats.lastVisitedLabel || 'Pick a topic and your study lane will shape itself' }
+        {
+            id: 'overviewCardTopics',
+            label: 'Topics done',
+            value: `${stats.completedTopics}/${stats.totalTopics}`,
+            subtext: `${stats.completionRate}% completion`,
+            actionHint: 'View breakdown &rarr;',
+            onClick: 'openProgressModal()'
+        },
+        {
+            id: 'overviewCardQuiz',
+            label: 'Quiz accuracy',
+            value: `${stats.quizAccuracy}%`,
+            subtext: `${stats.correctAnswers}/${stats.totalAttempts} correct`,
+            actionHint: 'Quick drill &rarr;',
+            onClick: 'openQuickDrillModal()'
+        },
+        {
+            id: 'overviewCardNotes',
+            label: 'Study notes',
+            value: `${stats.notesCount}`,
+            subtext: `${stats.highlightCount} saved highlights`,
+            actionHint: 'Open notes &rarr;',
+            onClick: 'openSavedNotesModal()'
+        },
+        {
+            id: 'overviewCardFocus',
+            label: 'Current focus',
+            value: stats.lastVisitedLabel ? 'Ready' : 'Start now',
+            subtext: stats.lastVisitedLabel || 'Pick a topic and your study lane will shape itself',
+            actionHint: 'Resume topic &rarr;',
+            onClick: 'resumeCurrentFocusTopic()'
+        }
     ];
 
     document.getElementById('overviewCards').innerHTML = cards.map((card, index) => `
-        <article class="metric-card reveal" style="animation-delay:${index * 70}ms">
-            <p class="metric-label">${card.label}</p>
+        <article id="${card.id}" class="metric-card reveal group hover:border-blue-500/40 cursor-pointer transition-all duration-150" style="animation-delay:${index * 40}ms" onclick="${card.onClick}" title="Click to interact">
+            <div class="flex items-center justify-between">
+                <p class="metric-label">${card.label}</p>
+                <span class="text-[11px] font-semibold text-blue-400 group-hover:translate-x-0.5 transition-transform">${card.actionHint}</span>
+            </div>
             <div class="metric-value">${card.value}</div>
             <p class="metric-subtext">${card.subtext}</p>
         </article>
@@ -616,15 +651,42 @@ function renderTopicContent() {
     fetchTopicComments();
     bindSelectionMenu();
 
-    setTimeout(() => {
-        if (window.mermaid) {
+    if (document.querySelector('.mermaid')) {
+        ensureMermaidLoaded(() => {
             try {
-                mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+                if (window.mermaid) {
+                    mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+                }
             } catch (error) {
                 console.error('Mermaid render failed', error);
             }
-        }
-    }, 60);
+        });
+    }
+}
+
+function ensureMermaidLoaded(callback) {
+    if (window.mermaid) {
+        if (callback) callback();
+        return;
+    }
+    const existing = document.querySelector('script[data-mermaid-script]');
+    if (existing) {
+        existing.addEventListener('load', () => { if (callback) callback(); });
+        return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js';
+    script.dataset.mermaidScript = 'true';
+    script.async = true;
+    script.onload = () => {
+        try {
+            if (window.mermaid) {
+                window.mermaid.initialize({ startOnLoad: false, theme: 'base' });
+            }
+        } catch (e) {}
+        if (callback) callback();
+    };
+    document.body.appendChild(script);
 }
 
 function renderQuizCard(quiz, index) {
@@ -1216,6 +1278,378 @@ function getCourseMoodMessage(courseId) {
 function setTopicListFilter(filter) {
     topicListFilter = filter;
     renderCourseView();
+}
+
+// --- Navigation Helpers for Quick-Action Launchers ---
+window.jumpToPracticeTests = function() {
+    window.location.href = 'html/tests.html';
+};
+window.jumpToProfile = function() {
+    window.location.href = 'html/profile.html';
+};
+window.jumpToLectures = function() {
+    window.location.href = 'html/lectures.html';
+};
+window.jumpToResources = function() {
+    window.location.href = 'html/resources.html';
+};
+
+// --- Feature 1: Syllabus Progress Breakdown Modal ---
+function openProgressModal() {
+    const modal = document.getElementById('progressBreakdownModal');
+    const content = document.getElementById('progressBreakdownContent');
+    if (!modal || !content) return;
+
+    const stats = window.ACADEMY.calculateStats();
+    const semesters = [
+        { sem: '5', label: 'Semester 5' },
+        { sem: '6', label: 'Semester 6' },
+        { sem: '7', label: 'Semester 7' }
+    ];
+
+    let html = `
+        <div class="grid sm:grid-cols-3 gap-3">
+            <div class="p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 text-center">
+                <span class="text-xs text-slate-400">Total Completed</span>
+                <p class="text-xl font-extrabold text-blue-400 mt-0.5">${stats.completedTopics} / ${stats.totalTopics}</p>
+            </div>
+            <div class="p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 text-center">
+                <span class="text-xs text-slate-400">Completion Rate</span>
+                <p class="text-xl font-extrabold text-emerald-400 mt-0.5">${stats.completionRate}%</p>
+            </div>
+            <div class="p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 text-center">
+                <span class="text-xs text-slate-400">Bookmarked</span>
+                <p class="text-xl font-extrabold text-amber-400 mt-0.5">${stats.bookmarkedCount}</p>
+            </div>
+        </div>
+
+        <div class="space-y-3 mt-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Semester Coverage</h4>
+    `;
+
+    semesters.forEach(s => {
+        const courses = (window.courseManifest || []).filter(c => c.semester === s.sem);
+        if (!courses.length) return;
+
+        let semTotal = 0;
+        let semCompleted = 0;
+
+        const courseRows = courses.map(c => {
+            const cs = stats.courseStats[c.id] || { totalTopics: 0, completedTopics: 0, completionRate: 0 };
+            semTotal += cs.totalTopics;
+            semCompleted += cs.completedTopics;
+            return `
+                <div class="flex items-center justify-between py-1.5 px-2.5 rounded-lg bg-slate-900/80 hover:bg-slate-800/60 text-xs">
+                    <span class="font-medium text-slate-300">${c.name} (${c.code})</span>
+                    <div class="flex items-center gap-2">
+                        <div class="w-20 bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                            <div class="bg-blue-500 h-1.5 rounded-full" style="width: ${cs.completionRate}%"></div>
+                        </div>
+                        <span class="font-mono text-[11px] text-slate-400 w-9 text-right">${cs.completionRate}%</span>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        const semRate = semTotal > 0 ? Math.round((semCompleted / semTotal) * 100) : 0;
+
+        html += `
+            <div class="p-3 rounded-xl bg-slate-950/40 border border-slate-800/80">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-white">${s.label}</span>
+                    <span class="text-xs font-semibold text-blue-400">${semCompleted}/${semTotal} topics (${semRate}%)</span>
+                </div>
+                <div class="space-y-1">
+                    ${courseRows}
+                </div>
+            </div>
+        `;
+    });
+
+    html += `</div>`;
+    content.innerHTML = html;
+    modal.classList.remove('hidden');
+}
+
+function closeProgressModal() {
+    const modal = document.getElementById('progressBreakdownModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+function toggleCompletedFilter() {
+    topicListFilter = topicListFilter === 'completed' ? 'all' : 'completed';
+    const btn = document.getElementById('toggleCompletedFilterBtn');
+    if (btn) {
+        btn.textContent = topicListFilter === 'completed' ? 'Show All Topics' : 'Filter Desk: Completed Only';
+        btn.classList.toggle('!bg-blue-600', topicListFilter === 'completed');
+    }
+    renderCourseView();
+    closeProgressModal();
+}
+
+// --- Feature 2: In-Desk Quick Practice Drill Modal ---
+let currentDrillQuestions = [];
+let drillAnswersState = {};
+
+function openQuickDrillModal() {
+    const modal = document.getElementById('quickDrillModal');
+    if (!modal) return;
+    refreshQuickDrillQuestions();
+    modal.classList.remove('hidden');
+}
+
+function closeQuickDrillModal() {
+    const modal = document.getElementById('quickDrillModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+function refreshQuickDrillQuestions() {
+    drillAnswersState = {};
+    const content = document.getElementById('quickDrillContent');
+    if (!content) return;
+
+    const allPool = [];
+    const courseDetail = window[`course_${activeCourseId.replace(/-/g, '_')}`];
+    if (courseDetail && courseDetail.units) {
+        courseDetail.units.forEach(u => {
+            (u.topics || []).forEach(t => {
+                (t.quizzes || []).forEach(q => {
+                    allPool.push({ ...q, topicTitle: t.title, unitTitle: u.title });
+                });
+            });
+        });
+    }
+
+    if (allPool.length < 3) {
+        allPool.push(
+            { question: "What is the primary objective of Supervised Learning?", options: ["Predict target labels from labelled data", "Find natural groupings without labels", "Maximize reward via policy search", "Compress representations with autoencoders"], answerIndex: 0, explanation: "Supervised learning trains on known input-output pairs to predict continuous or discrete targets.", topicTitle: "Introduction to ML" },
+            { question: "In the TCP 3-way handshake, what is the second packet sent?", options: ["SYN", "SYN-ACK", "ACK", "FIN"], answerIndex: 1, explanation: "The server acknowledges the client's SYN with a SYN-ACK packet before connection establishment.", topicTitle: "TCP Handshake" },
+            { question: "Which phase of a compiler constructs the Abstract Syntax Tree (AST)?", options: ["Lexical Analysis", "Syntax Analysis (Parser)", "Semantic Analysis", "Code Generation"], answerIndex: 1, explanation: "The syntax analyzer / parser parses lexical tokens according to context-free grammar to generate an AST.", topicTitle: "Compiler Architecture" }
+        );
+    }
+
+    const shuffled = allPool.sort(() => 0.5 - Math.random());
+    currentDrillQuestions = shuffled.slice(0, 3);
+    renderDrillQuestionsHtml();
+}
+
+function renderDrillQuestionsHtml() {
+    const content = document.getElementById('quickDrillContent');
+    if (!content) return;
+
+    content.innerHTML = currentDrillQuestions.map((q, qIdx) => {
+        const selectedOpt = drillAnswersState[qIdx];
+        const isAnswered = typeof selectedOpt === 'number';
+
+        const optionsHtml = q.options.map((opt, optIdx) => {
+            let optClass = 'p-2.5 rounded-xl border text-left text-xs transition-colors flex items-start gap-2.5 ';
+            if (!isAnswered) {
+                optClass += 'bg-slate-950/40 border-slate-800/80 hover:bg-slate-800/60 hover:border-blue-500/40 text-slate-300 cursor-pointer';
+            } else if (optIdx === q.answerIndex) {
+                optClass += 'bg-emerald-950/40 border-emerald-500/60 text-emerald-200 font-semibold';
+            } else if (optIdx === selectedOpt) {
+                optClass += 'bg-rose-950/40 border-rose-500/60 text-rose-200';
+            } else {
+                optClass += 'bg-slate-950/20 border-slate-800/40 text-slate-500 opacity-60';
+            }
+
+            const badge = ['A', 'B', 'C', 'D'][optIdx] || optIdx;
+
+            return `
+                <button type="button" ${isAnswered ? 'disabled' : ''} onclick="handleDrillAnswer(${qIdx}, ${optIdx})" class="${optClass} w-full">
+                    <span class="w-5 h-5 rounded-md bg-slate-800 font-mono text-[10px] font-bold flex items-center justify-center shrink-0">${badge}</span>
+                    <span>${window.ACADEMY.escapeHtml(opt)}</span>
+                </button>
+            `;
+        }).join('');
+
+        let feedbackHtml = '';
+        if (isAnswered) {
+            const isCorrect = selectedOpt === q.answerIndex;
+            feedbackHtml = `
+                <div class="mt-2.5 p-2.5 rounded-xl text-xs ${isCorrect ? 'bg-emerald-950/30 border border-emerald-500/30 text-emerald-300' : 'bg-rose-950/30 border border-rose-500/30 text-rose-300'}">
+                    <strong>${isCorrect ? '✓ Correct!' : '✗ Not quite.'}</strong> ${window.ACADEMY.escapeHtml(q.explanation || '')}
+                </div>
+            `;
+        }
+
+        return `
+            <div class="p-4 rounded-xl bg-slate-950/50 border border-slate-800/80 space-y-3">
+                <div class="flex items-center justify-between">
+                    <span class="text-[10px] uppercase tracking-wider font-bold text-blue-400">Question ${qIdx + 1} of 3</span>
+                    ${q.topicTitle ? `<span class="text-[10px] text-slate-500 truncate max-w-[200px]">${window.ACADEMY.escapeHtml(q.topicTitle)}</span>` : ''}
+                </div>
+                <p class="text-sm font-semibold text-white leading-snug">${window.ACADEMY.escapeHtml(q.question)}</p>
+                <div class="space-y-2">
+                    ${optionsHtml}
+                </div>
+                ${feedbackHtml}
+            </div>
+        `;
+    }).join('');
+}
+
+function handleDrillAnswer(qIdx, optIdx) {
+    if (typeof drillAnswersState[qIdx] === 'number') return;
+    drillAnswersState[qIdx] = optIdx;
+
+    const q = currentDrillQuestions[qIdx];
+    const isCorrect = optIdx === q.answerIndex;
+
+    const drillQuizId = `drill:${Date.now()}:${qIdx}`;
+    window.ACADEMY.state.quizAttempts[drillQuizId] = {
+        selected: optIdx,
+        isCorrect: isCorrect,
+        answeredAt: new Date().toISOString()
+    };
+    if (typeof window.ACADEMY.persistState === 'function') {
+        window.ACADEMY.persistState({ silent: true });
+    }
+    renderOverviewCards();
+    renderDrillQuestionsHtml();
+}
+
+// --- Feature 3: Personal Saved Notes & Highlights Modal ---
+let allSavedNotesList = [];
+
+function openSavedNotesModal() {
+    const modal = document.getElementById('savedNotesModal');
+    if (!modal) return;
+
+    allSavedNotesList = [];
+    const notes = window.ACADEMY.state.notes || {};
+    const highlights = window.ACADEMY.state.highlights || {};
+
+    Object.entries(notes).forEach(([key, noteText]) => {
+        if (!noteText || !noteText.trim()) return;
+        const [courseId, unitId, topicId] = key.split(':');
+        const course = (window.courseManifest || []).find(c => c.id === courseId);
+        allSavedNotesList.push({
+            type: 'note',
+            key,
+            courseId,
+            unitId,
+            topicId,
+            courseCode: course ? course.code : (courseId || '').toUpperCase(),
+            courseName: course ? course.name : '',
+            text: noteText.trim()
+        });
+    });
+
+    Object.entries(highlights).forEach(([key, list]) => {
+        if (!Array.isArray(list) || !list.length) return;
+        const [courseId, unitId, topicId] = key.split(':');
+        const course = (window.courseManifest || []).find(c => c.id === courseId);
+        list.forEach(hl => {
+            if (!hl || !hl.text) return;
+            allSavedNotesList.push({
+                type: 'highlight',
+                key,
+                courseId,
+                unitId,
+                topicId,
+                courseCode: course ? course.code : (courseId || '').toUpperCase(),
+                courseName: course ? course.name : '',
+                text: hl.text.trim()
+            });
+        });
+    });
+
+    const searchInput = document.getElementById('notesSearchFilter');
+    if (searchInput) searchInput.value = '';
+
+    filterSavedNotesList();
+    modal.classList.remove('hidden');
+}
+
+function closeSavedNotesModal() {
+    const modal = document.getElementById('savedNotesModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+function filterSavedNotesList() {
+    const content = document.getElementById('savedNotesContent');
+    const countLabel = document.getElementById('savedNotesCountLabel');
+    const searchInput = document.getElementById('notesSearchFilter');
+    if (!content) return;
+
+    const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+    const filtered = allSavedNotesList.filter(item => {
+        if (!query) return true;
+        return item.text.toLowerCase().includes(query) ||
+            item.courseCode.toLowerCase().includes(query) ||
+            item.courseName.toLowerCase().includes(query);
+    });
+
+    if (countLabel) {
+        countLabel.textContent = `${filtered.length} of ${allSavedNotesList.length} items`;
+    }
+
+    if (!filtered.length) {
+        content.innerHTML = `
+            <div class="text-center py-10 px-4">
+                <div class="text-3xl mb-2">📝</div>
+                <h4 class="text-sm font-bold text-white mb-1">${allSavedNotesList.length === 0 ? 'No study notes or highlights yet' : 'No matching notes found'}</h4>
+                <p class="text-xs text-slate-400 max-w-sm mx-auto leading-relaxed">
+                    ${allSavedNotesList.length === 0
+                        ? 'Open any topic in the study desk to type personal revision notes or select text to highlight important exam derivations!'
+                        : 'Try searching for different keywords or clear the filter.'}
+                </p>
+            </div>
+        `;
+        return;
+    }
+
+    content.innerHTML = filtered.map(item => `
+        <div class="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2 hover:border-slate-700/80 transition-colors">
+            <div class="flex items-center justify-between text-xs">
+                <div class="flex items-center gap-2">
+                    <span class="px-2 py-0.5 rounded-md font-mono text-[10px] font-bold ${item.type === 'note' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'bg-blue-500/20 text-blue-300 border border-blue-500/30'}">
+                        ${item.type === 'note' ? 'NOTE' : 'HIGHLIGHT'}
+                    </span>
+                    <span class="font-semibold text-white">${window.ACADEMY.escapeHtml(item.courseCode)}</span>
+                    <span class="text-slate-400 truncate max-w-[200px]">${window.ACADEMY.escapeHtml(item.courseName)}</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <button type="button" onclick="navigator.clipboard.writeText('${window.ACADEMY.escapeForAttribute(item.text)}')" class="text-slate-400 hover:text-white px-2 py-1 rounded bg-slate-800 text-[11px]" title="Copy text">Copy</button>
+                    <button type="button" onclick="jumpToNoteTopic('${item.courseId}', '${item.unitId}', '${item.topicId}')" class="text-blue-400 hover:text-blue-300 px-2.5 py-1 rounded bg-blue-500/15 border border-blue-500/30 text-[11px] font-semibold">Open topic &rarr;</button>
+                </div>
+            </div>
+            <p class="text-xs text-slate-200 leading-relaxed font-mono whitespace-pre-wrap bg-slate-900/50 p-2.5 rounded-lg border border-slate-800/50">${window.ACADEMY.escapeHtml(item.text)}</p>
+        </div>
+    `).join('');
+}
+
+function jumpToNoteTopic(courseId, unitId, topicId) {
+    closeSavedNotesModal();
+    if (courseId && topicId) {
+        selectCourse(courseId);
+        setTimeout(() => {
+            selectTopic(topicId);
+            const main = document.getElementById('mainContent');
+            if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 120);
+    }
+}
+
+// --- Feature 4: Resume Current Focus Topic ---
+function resumeCurrentFocusTopic() {
+    const last = window.ACADEMY.state.lastVisited;
+    if (last && last.courseId && last.topicId) {
+        selectCourse(last.courseId);
+        setTimeout(() => {
+            selectTopic(last.topicId);
+            const main = document.getElementById('mainContent');
+            if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    } else {
+        selectCourse(activeCourseId);
+        setTimeout(() => {
+            selectTopic('t1');
+            const main = document.getElementById('mainContent');
+            if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    }
 }
 
 document.addEventListener('click', (event) => {
