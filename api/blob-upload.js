@@ -119,10 +119,10 @@ module.exports = async function handler(req, res) {
                 }
 
                 const sessionStudent = await getStudentFromSession(req, sql);
-                const student = sessionStudent || await getStudentByDevice(sql, deviceId);
-                if (!student) {
-                    throw new Error('Student profile not found. Sync the profile first.');
+                if (!sessionStudent) {
+                    throw new Error('Authentication required. Guest users cannot upload files. Please sign in with Google first.');
                 }
+                const student = sessionStudent;
                 assertStudentAllowed(student);
 
                 const isAvatar = uploadKind === 'avatar';

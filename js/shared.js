@@ -560,6 +560,114 @@
         return payload;
     }
 
+    function closeSignInModal() {
+        const modal = document.getElementById('academyAuthModal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    }
+
+    async function showSignInPrompt(options = {}) {
+        const title = options.title || 'Sign In to Academy LMS';
+        const reason = options.reason || 'Sign in with your Google account to access all revision materials, join lecture discussions, and sync your study progress across devices.';
+        const nextPath = options.nextPath || `${window.location.pathname}${window.location.search}${window.location.hash}`;
+
+        let modal = document.getElementById('academyAuthModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'academyAuthModal';
+            modal.className = 'fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm';
+            modal.setAttribute('role', 'dialog');
+            modal.setAttribute('aria-modal', 'true');
+            modal.innerHTML = `
+                <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-6 text-center space-y-4 relative animate-in fade-in zoom-in duration-200">
+                    <button type="button" onclick="window.ACADEMY.closeSignInModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold w-8 h-8 rounded-lg hover:bg-slate-800 flex items-center justify-center transition-colors" title="Close">✕</button>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-500/30 text-blue-400 flex items-center justify-center mx-auto text-2xl font-bold shadow-inner">
+                        🎓
+                    </div>
+                    <div>
+                        <h3 id="academyAuthModalTitle" class="text-lg font-extrabold text-white leading-snug"></h3>
+                        <p id="academyAuthModalReason" class="text-xs text-slate-300 mt-2 leading-relaxed max-w-xs mx-auto"></p>
+                    </div>
+                    <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                        <div id="academyAuthModalGoogleMount" class="flex justify-center min-h-[44px] py-1 items-center">
+                            <span class="text-xs text-slate-400">Loading Google sign-in...</span>
+                        </div>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-xs">
+                        <button type="button" onclick="window.ACADEMY.closeSignInModal()" class="text-slate-400 hover:text-slate-200 py-1 px-2 rounded hover:bg-slate-800 transition-colors">
+                            Continue in Guest Mode
+                        </button>
+                        <a id="academyAuthModalDirectLink" href="#" class="text-blue-400 hover:text-blue-300 font-semibold py-1 px-2 rounded hover:bg-slate-800 transition-colors">
+                            Sign In Page &rarr;
+                        </a>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeSignInModal();
+                }
+            });
+        }
+
+        const titleEl = document.getElementById('academyAuthModalTitle');
+        const reasonEl = document.getElementById('academyAuthModalReason');
+        const directLink = document.getElementById('academyAuthModalDirectLink');
+        const mount = document.getElementById('academyAuthModalGoogleMount');
+
+        if (titleEl) titleEl.textContent = title;
+        if (reasonEl) reasonEl.textContent = reason;
+
+        const isInHtmlDir = window.location.pathname.includes('/html/') || window.location.pathname.endsWith('/html');
+        const homeHref = isInHtmlDir ? '../index.html' : 'index.html';
+        if (directLink) {
+            directLink.href = `${homeHref}?signin=required&next=${encodeURIComponent(nextPath)}`;
+        }
+
+        modal.classList.remove('hidden');
+
+        await loadAppConfig();
+        const config = getAppConfig();
+
+        if (window.google && window.google.accounts && window.google.accounts.id && config.googleClientId && mount) {
+            mount.innerHTML = '';
+            try {
+                window.google.accounts.id.initialize({
+                    client_id: config.googleClientId,
+                    callback: async (response) => {
+                        try {
+                            mount.innerHTML = '<span class="text-xs text-blue-400">Signing in...</span>';
+                            await signInWithGoogle(response.credential);
+                            closeSignInModal();
+                            if (typeof options.onSuccess === 'function') {
+                                options.onSuccess();
+                            } else {
+                                window.location.reload();
+                            }
+                        } catch (err) {
+                            mount.innerHTML = `<span class="text-xs text-red-400">${escapeHtml(err.message || 'Unable to sign in.')}</span>`;
+                        }
+                    }
+                });
+                window.google.accounts.id.renderButton(mount, {
+                    theme: 'outline',
+                    size: 'large',
+                    shape: 'pill',
+                    text: 'signin_with',
+                    width: 280
+                });
+            } catch (err) {
+                console.warn('GSI render error:', err);
+                mount.innerHTML = `<a href="${homeHref}?signin=required&next=${encodeURIComponent(nextPath)}" class="primary-cta text-xs !py-2 !px-4">Sign in with Google</a>`;
+            }
+        } else if (mount) {
+            mount.innerHTML = `<a href="${homeHref}?signin=required&next=${encodeURIComponent(nextPath)}" class="primary-cta text-xs !py-2 !px-4">Sign in with Google</a>`;
+        }
+    }
+
     async function logoutStudent() {
         if (window.location.protocol !== 'file:') {
             await fetch('/api/auth-logout', { method: 'POST' }).catch(() => null);
@@ -616,6 +724,8 @@
         requireStudentAuth,
         signInWithGoogle,
         logoutStudent,
+        showSignInPrompt,
+        closeSignInModal,
         scheduleCloudSync,
         syncStateToCloud,
         initDynamicHeaderNav
@@ -655,16 +765,22 @@
 
             navElements.forEach((nav) => {
                 if (!authed) {
-                    // Full access to learning tabs for all students, with quick sign-in link
+                    // Full access to learning tabs for all students, with Profile (Guest) and quick sign-in
                     nav.innerHTML = `
                         <a href="${topicsHref}" class="nav-pill ${isCurrent('topics') ? 'nav-pill-active' : ''}">Topics</a>
                         <a href="${lecturesHref}" class="nav-pill ${isCurrent('lectures') ? 'nav-pill-active' : ''}">Lectures</a>
                         <a href="${resourcesHref}" class="nav-pill ${isCurrent('resources') ? 'nav-pill-active' : ''}">Resources</a>
                         <a href="${testsHref}" class="nav-pill ${isCurrent('tests') ? 'nav-pill-active' : ''}">Tests</a>
+                        <a href="${profileHref}" class="nav-pill nav-pill-profile ${isCurrent('profile') ? 'nav-pill-active' : ''}">
+                            <span class="nav-avatar-badge mr-1 bg-amber-500/30 text-amber-300 border border-amber-500/40">G</span>
+                            <span>Profile</span>
+                        </a>
                         <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
                         <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
                         <a href="${contactHref}" class="nav-pill ${isCurrent('contact') ? 'nav-pill-active' : ''}">Contact</a>
-                        <a href="${homeHref}" class="nav-pill text-blue-300 hover:text-white font-semibold">Sign In</a>
+                        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Academy LMS', reason: 'Sign in with Google to sync your study notes, unlock all resources, and chat with classmates.' })" class="nav-pill text-blue-300 hover:text-white font-semibold flex items-center gap-1 cursor-pointer">
+                            <span>Sign In</span>
+                        </button>
                     `;
                 } else {
                     // All 7 tabs visible for logged in students

@@ -74,6 +74,34 @@ window.lectureLibrary = [
         url: 'https://www.youtube.com/watch?v=dNRDvLACg5Q',
         lectureKey: 'cs501-turing-machines'
     },
+    {
+        semester: 5,
+        subject: 'cs501',
+        subjectCode: 'CS-501',
+        subjectLabel: 'Theory of Computation',
+        title: 'Mastering PDA to CFG Conversion Step-by-Step',
+        lecturer: 'Learning Lab with Yograj',
+        type: 'video',
+        typeLabel: 'Solved Derivation',
+        topics: ['PDA to CFG Algorithm', 'Triplets [q, X, p]', 'Production Rules', 'Empty Stack Acceptance'],
+        description: 'Systematic blackboard derivation converting pushdown automata transitions δ(q, a, Z) into context-free grammar production rules with solved exam numericals.',
+        url: 'https://www.youtube.com/watch?v=fWDJrWw1YCU',
+        lectureKey: 'cs501-yograj-pda-to-cfg'
+    },
+    {
+        semester: 5,
+        subject: 'cs501',
+        subjectCode: 'CS-501',
+        subjectLabel: 'Theory of Computation',
+        title: '1001 Sequence Detector: State Diagram & Transition Table',
+        lecturer: 'Learning Lab with Yograj',
+        type: 'video',
+        typeLabel: 'Solved Numerical',
+        topics: ['1001 Sequence Detection', 'Mealy vs Moore Machine', 'State Minimization', 'Overlapping Patterns'],
+        description: 'Exam and GATE-focused design of a 1001 pattern sequence detector, state transition diagrams, overlapping bit tracking, and state table construction.',
+        url: 'https://www.youtube.com/watch?v=xvMpe0sKrbg',
+        lectureKey: 'cs501-yograj-sequence-detector'
+    },
 
     // --- CS-502: Database Management Systems (DBMS) ---
     {
@@ -234,6 +262,20 @@ window.lectureLibrary = [
         url: 'https://www.youtube.com/watch?v=AQDCe585Lnc',
         lectureKey: 'cs503cs-rsa-trapdoor'
     },
+    {
+        semester: 5,
+        subject: 'cs503-cs',
+        subjectCode: 'CS-503-CS',
+        subjectLabel: 'Cyber Security',
+        title: 'Cyber Law and Ethics Complete Series (IT Act 2000, Jurisdiction & Contracts)',
+        lecturer: 'Learning Lab with Yograj',
+        type: 'playlist',
+        typeLabel: 'University Syllabus Series',
+        topics: ['IT Act 2000', 'Cyber Torts', 'E-Commerce & Online Contracts', 'Jurisdiction in Cyberspace', 'Domain Name Disputes'],
+        description: 'Structured 8-part lecture series detailing Indian IT Act 2000, civil/criminal cyber jurisdiction, digital contracts, and online dispute resolution.',
+        url: 'https://www.youtube.com/playlist?list=PL424dCM7s48l2tCev9s2v7ZtmjZaPYxYI',
+        lectureKey: 'cs503cs-yograj-cyber-law-ethics'
+    },
 
     // --- CS-504: Web Technology ---
     {
@@ -356,6 +398,76 @@ window.lectureLibrary = [
     },
 
     // --- CS-602: Computer Networks ---
+    {
+        semester: 6,
+        subject: 'cs602',
+        subjectCode: 'CS-602',
+        subjectLabel: 'Computer Networks',
+        title: 'Computer Networks 21-Lecture Full Playlist (Error Control, OSI, IPv4, TCP/UDP)',
+        lecturer: 'Learning Lab with Yograj (Yograj Sharma)',
+        type: 'playlist',
+        typeLabel: 'University Syllabus Series',
+        topics: ['Error Control & CRC', 'Checksum Derivations', 'OSI 7 Layers', 'IPv4 Fragmentation & Offsets', 'TCP / UDP Headers', 'ARP / RARP', 'DNS & HTTP'],
+        description: 'Comprehensive 21-part university lecture series covering CRC polynomials, Checksum math, OSI protocol stacks, IPv4 datagram fragmentation, and transport headers.',
+        url: 'https://www.youtube.com/playlist?list=PL424dCM7s48neYqR5yL2P9uxlXW3DQSJq',
+        lectureKey: 'cs602-yograj-networks-playlist'
+    },
+    {
+        semester: 6,
+        subject: 'cs602',
+        subjectCode: 'CS-602',
+        subjectLabel: 'Computer Networks',
+        title: 'Cyclic Redundancy Check (CRC) Solved Example & Error Control',
+        lecturer: 'Learning Lab with Yograj',
+        type: 'video',
+        typeLabel: 'Solved Numerical',
+        topics: ['CRC Generator Polynomial G(x)', 'Modulo-2 Binary Division', 'Syndrome & Remainder Padding', 'Bit Error Detection'],
+        description: 'Blackboard solved numerical calculating transmitted codeword with generator polynomial, CRC remainder zero-padding, and receiver bit-error verification.',
+        url: 'https://www.youtube.com/watch?v=dSND1fgx6g8&list=PL424dCM7s48neYqR5yL2P9uxlXW3DQSJq',
+        lectureKey: 'cs602-yograj-crc-example'
+    },
+    {
+        semester: 6,
+        subject: 'cs602',
+        subjectCode: 'CS-602',
+        subjectLabel: 'Computer Networks',
+        title: 'Internet Checksum Calculation & 1s Complement Math',
+        lecturer: 'Learning Lab with Yograj',
+        type: 'video',
+        typeLabel: 'Solved Numerical',
+        topics: ['1s Complement Addition', 'End-Around Carry Wraparound', 'Bit Inversion', 'Checksum Verification Check'],
+        description: 'Practical step-by-step calculation of Internet checksums: 16-bit word addition, folding end-around carry, bit inversion, and receiver validation.',
+        url: 'https://www.youtube.com/watch?v=N8IJ2uvGWiE&list=PL424dCM7s48neYqR5yL2P9uxlXW3DQSJq',
+        lectureKey: 'cs602-yograj-checksum'
+    },
+    {
+        semester: 6,
+        subject: 'cs602',
+        subjectCode: 'CS-602',
+        subjectLabel: 'Computer Networks',
+        title: 'IPv4 Fragmentation & Reassembly: MTU & Offset Numericals',
+        lecturer: 'Learning Lab with Yograj',
+        type: 'video',
+        typeLabel: 'Solved Numerical',
+        topics: ['Maximum Transmission Unit (MTU)', 'Fragment Offset (Divided by 8)', 'More Fragments (MF) Flag', 'Dont Fragment (DF) Flag'],
+        description: 'Exam-focused numerical walkthrough calculating fragment payloads, 8-byte scale fragment offsets, and flag bits when MTU is smaller than total datagram length.',
+        url: 'https://www.youtube.com/watch?v=TzDh72hG4J8&list=PL424dCM7s48neYqR5yL2P9uxlXW3DQSJq',
+        lectureKey: 'cs602-yograj-ipv4-fragmentation'
+    },
+    {
+        semester: 6,
+        subject: 'cs602',
+        subjectCode: 'CS-602',
+        subjectLabel: 'Computer Networks',
+        title: 'TCP Header Format & Control Flags (URG, ACK, PSH, RST, SYN, FIN)',
+        lecturer: 'Learning Lab with Yograj',
+        type: 'video',
+        typeLabel: 'Protocol Architecture',
+        topics: ['32-bit Sequence & ACK Numbers', 'Header Length (HLEN)', '6 Control Bit Flags', 'Receive Window & Urgent Pointer'],
+        description: 'Complete breakdown of the 20-byte base TCP header, detailing byte stream sequence ordering, acknowledgment mechanisms, sliding window advertisements, and connection handshake flags.',
+        url: 'https://www.youtube.com/watch?v=6XYREH7lkog&list=PL424dCM7s48neYqR5yL2P9uxlXW3DQSJq',
+        lectureKey: 'cs602-yograj-tcp-header'
+    },
     {
         semester: 6,
         subject: 'cs602',

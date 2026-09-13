@@ -320,6 +320,28 @@ module.exports = async function handler(req, res) {
         if (req.method === 'GET') {
             const deviceId = String(req.query.deviceId || '').trim();
             const student = await resolveStudent(req, sql, deviceId);
+            if (!student) {
+                sendJson(res, 200, {
+                    guest: true,
+                    student: {
+                        id: 'guest',
+                        display_name: 'Guest Student',
+                        bio: 'Local study session in browser',
+                        headline: 'Exam preparation in progress'
+                    },
+                    summary: {
+                        completed_topics: 0,
+                        attempts_count: 0,
+                        connections_count: 0,
+                        direct_messages_count: 0
+                    },
+                    courseProgress: [],
+                    recentActivity: [],
+                    practiceHistory: [],
+                    uploads: []
+                });
+                return;
+            }
             assertStudentAllowed(student);
 
             sendJson(res, 200, await getProfileResponse(sql, student));

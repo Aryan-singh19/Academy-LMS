@@ -1,4 +1,4 @@
-﻿let remoteProfile = null;
+let remoteProfile = null;
 let socialDirectory = { directory: [], connections: [] };
 let activePeerId = '';
 let activeMessages = [];
@@ -57,6 +57,7 @@ function getProfileValue(key) {
 }
 
 function renderProfilePage() {
+    const isAuthed = window.ACADEMY.isAuthenticated();
     const stats = window.ACADEMY.calculateStats();
     const studentName = getStudentLabel();
     const recentTopics = window.ACADEMY.getRecentTopics();
@@ -67,13 +68,28 @@ function renderProfilePage() {
     const uploads = remoteProfile && Array.isArray(remoteProfile.uploads) ? remoteProfile.uploads : [];
 
     document.getElementById('profileHero').innerHTML = `
-        <div>
-            <p class="revision-label">Personal progress</p>
-            <h2 class="text-3xl font-extrabold text-white">${studentName}'s learning cockpit</h2>
-            <p class="text-slate-400 mt-2">Track completed topics, keep a neat academic identity, save solved material, and make this page feel like a study profile instead of a settings dump.</p>
+        <div class="space-y-2">
+            <div class="flex items-center gap-2">
+                <span class="revision-label">${isAuthed ? 'Verified Student Profile' : 'Guest Student Cockpit'}</span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full font-mono font-bold ${isAuthed ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-amber-500/20 text-amber-300 border border-amber-500/30'}">
+                    ${isAuthed ? 'ONLINE • CLOUD SYNCED' : 'LOCAL GUEST MODE'}
+                </span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">${studentName}'s learning cockpit</h2>
+            <p class="text-slate-300 text-xs sm:text-sm mt-1 max-w-2xl leading-relaxed">
+                ${isAuthed
+                    ? 'Track completed topics, manage your verified student identity, upload solved material to your study vault, and direct-message fellow students.'
+                    : 'Your quiz accuracy, completed topics, bookmarks, and revision progress are active and saved in your local browser session. Sign in with Google to sync across devices, message classmates, and upload to your study vault.'}
+            </p>
         </div>
-        <div class="profile-hero-actions">
-            <input id="profileNameInput" class="search-input profile-name-input" value="${window.ACADEMY.escapeForAttribute(studentName)}" placeholder="Student name">
+        <div class="profile-hero-actions flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-4 sm:mt-0">
+            <input id="profileNameInput" class="search-input profile-name-input text-xs sm:text-sm" value="${window.ACADEMY.escapeForAttribute(studentName)}" placeholder="Display name">
+            ${!isAuthed ? `
+                <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Academy LMS', reason: 'Sign in with Google to back up your progress across devices, chat with students, and access all study material.' })" class="primary-cta text-xs !py-2 !px-4 whitespace-nowrap shadow-lg shadow-blue-500/20 flex items-center justify-center gap-1.5">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/></svg>
+                    <span>Sign In with Google</span>
+                </button>
+            ` : ''}
         </div>
     `;
 
@@ -81,34 +97,40 @@ function renderProfilePage() {
         <article class="metric-card"><p class="metric-label">Completion</p><div class="metric-value">${stats.completionRate}%</div><p class="metric-subtext">${stats.completedTopics}/${stats.totalTopics} topics covered</p></article>
         <article class="metric-card"><p class="metric-label">Accuracy</p><div class="metric-value">${stats.quizAccuracy}%</div><p class="metric-subtext">${stats.correctAnswers}/${stats.totalAttempts} quiz answers correct</p></article>
         <article class="metric-card"><p class="metric-label">Bookmarks</p><div class="metric-value">${bookmarks.length}</div><p class="metric-subtext">Saved weak or important topics</p></article>
-        <article class="metric-card"><p class="metric-label">Study vault</p><div class="metric-value">${uploads.filter((item) => item.upload_kind === 'study-pdf').length}</div><p class="metric-subtext">Uploaded solved PDFs</p></article>
+        <article class="metric-card"><p class="metric-label">Study vault</p><div class="metric-value">${uploads.filter((item) => item.upload_kind === 'study-pdf').length}</div><p class="metric-subtext">${isAuthed ? 'Uploaded solved PDFs' : 'Cloud uploads (Sign In)'}</p></article>
     `;
 
     document.getElementById('profileIdentity').innerHTML = `
         <section class="panel-card p-5">
             <div class="section-head">
                 <h3>Student identity</h3>
-                <span>Optional details</span>
+                <span class="text-xs ${isAuthed ? 'text-emerald-400' : 'text-amber-400'}">${isAuthed ? 'Verified Account' : 'Local Session'}</span>
             </div>
             <div class="grid md:grid-cols-[160px_minmax(0,1fr)] gap-5">
                 <div class="space-y-4">
                     <div class="avatar-shell">
                         ${remoteStudent.avatar_url ? `<img src="${remoteStudent.avatar_url}" alt="${studentName}" class="avatar-image">` : `<span>${studentName.slice(0, 1).toUpperCase()}</span>`}
                     </div>
-                    <input id="avatarUploadInput" type="file" accept="image/png,image/jpeg,image/webp" class="search-input">
-                    <button id="uploadAvatarBtn" class="secondary-cta w-full justify-center">Upload avatar</button>
+                    ${isAuthed ? `
+                        <input id="avatarUploadInput" type="file" accept="image/png,image/jpeg,image/webp" class="search-input text-xs">
+                        <button id="uploadAvatarBtn" class="secondary-cta w-full justify-center text-xs">Upload avatar</button>
+                    ` : `
+                        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Upload Avatar', reason: 'Sign in with Google to set a custom profile photo and sync it across devices.' })" class="secondary-cta w-full justify-center text-xs text-slate-300 hover:text-white border-slate-700">
+                            🔒 Sign In to Upload
+                        </button>
+                    `}
                 </div>
                 <div class="space-y-4">
-                    <input id="profileHeadlineInput" class="search-input" placeholder="Headline, for example: CN revision sprinter and ML model tinkerer" value="${window.ACADEMY.escapeForAttribute(remoteStudent.headline || '')}">
-                    <textarea id="profileBioInput" class="note-input !min-h-[9rem]" placeholder="Short intro, strengths, or what you are currently revising...">${window.ACADEMY.escapeHtml(remoteStudent.bio || '')}</textarea>
+                    <input id="profileHeadlineInput" class="search-input text-xs sm:text-sm" placeholder="Headline, for example: CN revision sprinter and ML model tinkerer" value="${window.ACADEMY.escapeForAttribute(remoteStudent.headline || '')}">
+                    <textarea id="profileBioInput" class="note-input !min-h-[9rem] text-xs sm:text-sm" placeholder="Short intro, strengths, or what you are currently revising...">${window.ACADEMY.escapeHtml(remoteStudent.bio || '')}</textarea>
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input id="profileEmailInput" class="search-input" placeholder="Email (optional)" value="${window.ACADEMY.escapeForAttribute(remoteStudent.email || '')}">
-                        <input id="profileGithubInput" class="search-input" placeholder="GitHub URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.github_url || '')}">
-                        <input id="profileLinkedinInput" class="search-input" placeholder="LinkedIn URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.linkedin_url || '')}">
-                        <input id="profileWebsiteInput" class="search-input" placeholder="Website / portfolio URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.website_url || '')}">
+                        <input id="profileEmailInput" class="search-input text-xs sm:text-sm" placeholder="Email (optional)" value="${window.ACADEMY.escapeForAttribute(remoteStudent.email || '')}">
+                        <input id="profileGithubInput" class="search-input text-xs sm:text-sm" placeholder="GitHub URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.github_url || '')}">
+                        <input id="profileLinkedinInput" class="search-input text-xs sm:text-sm" placeholder="LinkedIn URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.linkedin_url || '')}">
+                        <input id="profileWebsiteInput" class="search-input text-xs sm:text-sm" placeholder="Website / portfolio URL" value="${window.ACADEMY.escapeForAttribute(remoteStudent.website_url || '')}">
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <span class="metric-subtext">Optional profile details for classmates and collaborators.</span>
+                        <span class="metric-subtext">Changes are saved to your session automatically.</span>
                     </div>
                 </div>
             </div>
@@ -119,21 +141,35 @@ function renderProfilePage() {
         <section class="panel-card p-5">
             <div class="section-head">
                 <h3>Study profile overview</h3>
-                <span>${remoteProfile ? 'Connected' : 'Preparing'}</span>
+                <span class="text-xs font-mono">${isAuthed ? 'Connected' : 'Local Storage'}</span>
             </div>
             <div class="space-y-4">
-                <div class="status-chip status-${syncMeta.lastStatus || 'local-only'}">${remoteProfile ? 'Saved automatically' : 'Local study mode'}</div>
-                <div class="summary-list">
-                    <p><strong class="text-white">Last save:</strong> ${formatDate(syncMeta.lastSyncedAt)}</p>
-                    <p><strong class="text-white">Saved notes:</strong> ${sessions.length ? 'Practice history recorded' : 'Start solving quizzes to build history'}</p>
-                    <p><strong class="text-white">Profile status:</strong> ${syncMeta.lastMessage}</p>
+                <div class="status-chip status-${isAuthed ? (syncMeta.lastStatus || 'synced') : 'local-only'}">
+                    ${isAuthed ? 'Cloud Synced via Google Account' : 'Local Browser Storage'}
                 </div>
-                ${remoteProfile ? `
-                    <div class="study-rail-block !p-4">
-                        <p class="metric-label">Quick snapshot</p>
-                        <p class="text-sm text-slate-400 mt-2">${remoteProfile.summary.completed_topics || 0} completed topics â€¢ ${remoteProfile.summary.attempts_count || 0} quiz attempts â€¢ ${remoteProfile.summary.connections_count || 0} study connections â€¢ ${remoteProfile.summary.direct_messages_count || 0} messages received</p>
+                <div class="summary-list text-xs space-y-1.5 text-slate-300">
+                    <p><strong class="text-white">Active progress:</strong> ${stats.completedTopics}/${stats.totalTopics} topics, ${stats.totalAttempts} quiz attempts</p>
+                    <p><strong class="text-white">Bookmarks:</strong> ${bookmarks.length} saved revision topics</p>
+                    <p><strong class="text-white">Practice sessions:</strong> ${sessions.length ? `${sessions.length} sessions recorded` : 'Start solving tests to record metrics'}</p>
+                    <p><strong class="text-white">Last status:</strong> ${isAuthed ? (syncMeta.lastMessage || 'Synced') : 'Stored locally in this browser'}</p>
+                </div>
+                ${!isAuthed ? `
+                    <div class="p-3.5 bg-blue-500/10 border border-blue-500/30 rounded-xl space-y-2">
+                        <h4 class="text-xs font-bold text-blue-300 flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                            <span>Back up your progress permanently</span>
+                        </h4>
+                        <p class="text-[11px] text-slate-300 leading-relaxed">Sign in with Google to enable automatic cloud backup so you never lose your bookmarks and scores when switching devices or clearing cookies.</p>
+                        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Enable Cloud Sync', reason: 'Sign in with Google to back up your progress and sync notes across devices.' })" class="primary-cta text-xs !py-1.5 !px-3 mt-1">
+                            Sign In to Enable Cloud Sync
+                        </button>
                     </div>
-                ` : '<p class="text-sm text-slate-400">Your details are stored quietly as you study. Once the deployed app connects, this page fills itself in automatically.</p>'}
+                ` : (remoteProfile ? `
+                    <div class="study-rail-block !p-4">
+                        <p class="metric-label">Cloud Snapshot</p>
+                        <p class="text-sm text-slate-400 mt-2">${remoteProfile.summary.completed_topics || 0} completed topics • ${remoteProfile.summary.attempts_count || 0} quiz attempts • ${remoteProfile.summary.connections_count || 0} study connections • ${remoteProfile.summary.direct_messages_count || 0} messages received</p>
+                    </div>
+                ` : '')}
             </div>
         </section>
     `;
@@ -168,18 +204,33 @@ function renderProfilePage() {
         <section class="panel-card p-5">
             <div class="section-head">
                 <h3>Study vault</h3>
-                <span>PDF/PPT upload for solved material</span>
+                <span>${isAuthed ? 'PDF/PPT upload for solved material' : 'Cloud storage for solved material'}</span>
             </div>
             <div class="space-y-4">
-                <div class="grid md:grid-cols-[1fr_1fr] gap-4">
-                    <input id="pdfTitleInput" class="search-input" placeholder="Title, for example: CN unit 3 solved answers">
-                    <input id="pdfDescriptionInput" class="search-input" placeholder="Short note or description">
-                </div>
-                <input id="pdfUploadInput" type="file" accept="application/pdf,.pdf,application/vnd.ms-powerpoint,.ppt,application/vnd.openxmlformats-officedocument.presentationml.presentation,.pptx" class="search-input">
-                <div class="flex flex-wrap gap-3 items-center">
-                    <button id="uploadPdfBtn" class="primary-cta">Upload solved file</button>
-                    <span class="metric-subtext">PDF: 10 MB, PPT/PPTX: 25 MB</span>
-                </div>
+                ${isAuthed ? `
+                    <div class="grid md:grid-cols-[1fr_1fr] gap-4">
+                        <input id="pdfTitleInput" class="search-input" placeholder="Title, for example: CN unit 3 solved answers">
+                        <input id="pdfDescriptionInput" class="search-input" placeholder="Short note or description">
+                    </div>
+                    <input id="pdfUploadInput" type="file" accept="application/pdf,.pdf,application/vnd.ms-powerpoint,.ppt,application/vnd.openxmlformats-officedocument.presentationml.presentation,.pptx" class="search-input">
+                    <div class="flex flex-wrap gap-3 items-center">
+                        <button id="uploadPdfBtn" class="primary-cta">Upload solved file</button>
+                        <span class="metric-subtext">PDF: 10 MB, PPT/PPTX: 25 MB</span>
+                    </div>
+                ` : `
+                    <div class="p-4 rounded-xl bg-slate-900/90 border border-blue-500/30 text-center space-y-2.5">
+                        <div class="flex items-center justify-center gap-2 text-sm font-semibold text-white">
+                            <span>🔒</span>
+                            <span>Sign In to Upload Study Materials</span>
+                        </div>
+                        <p class="text-xs text-slate-300 max-w-md mx-auto">
+                            Guest accounts cannot upload files to the study vault. Sign in with Google to upload solved assignment PDFs, PPT presentations, and revision notes to your private cloud vault.
+                        </p>
+                        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Upload Study Materials', reason: 'Sign in with Google to upload solved assignment PDFs, presentations, and study cheat-sheets to your study vault.' })" class="primary-cta text-xs !py-2 !px-4">
+                            Sign In with Google
+                        </button>
+                    </div>
+                `}
                 <div class="space-y-3">
                     ${uploads.length ? uploads.map((upload) => {
                         const parsedMeta = splitDescriptionAndAutoCheck(upload.description);
@@ -253,6 +304,29 @@ function renderProfilePage() {
 }
 
 function renderStudentDirectory() {
+    const isAuthed = window.ACADEMY.isAuthenticated();
+    if (!isAuthed) {
+        document.getElementById('profileStudents').innerHTML = `
+            <section class="panel-card p-6 text-center space-y-3">
+                <div class="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-500/30 text-blue-400 flex items-center justify-center mx-auto text-xl font-bold shadow-inner">
+                    👥
+                </div>
+                <div>
+                    <h3 class="text-base font-bold text-white">Student Network</h3>
+                    <p class="text-xs text-slate-400 max-w-md mx-auto mt-1 leading-relaxed">
+                        Connect with classmates across Semesters 5, 6, and 7 to form study groups, share notes, and prepare for exams together.
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to View Student Network', reason: 'Sign in with Google to explore the verified student directory and connect with study partners.' })" class="primary-cta text-xs !py-2 !px-5">
+                        Sign In to View Student Network
+                    </button>
+                </div>
+            </section>
+        `;
+        return;
+    }
+
     const connectedIds = new Set((socialDirectory.connections || []).map((student) => student.id));
     document.getElementById('profileStudents').innerHTML = `
         <section class="panel-card p-5">
@@ -291,6 +365,29 @@ function renderStudentDirectory() {
 }
 
 function renderInbox() {
+    const isAuthed = window.ACADEMY.isAuthenticated();
+    if (!isAuthed) {
+        document.getElementById('profileInbox').innerHTML = `
+            <section class="panel-card p-6 text-center space-y-3">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-400 flex items-center justify-center mx-auto text-xl font-bold shadow-inner">
+                    💬
+                </div>
+                <div>
+                    <h3 class="text-base font-bold text-white">Direct Messaging</h3>
+                    <p class="text-xs text-slate-400 max-w-md mx-auto mt-1 leading-relaxed">
+                        Direct messaging requires a signed-in student account to protect student safety and maintain clean academic discourse.
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Message Students', reason: 'Sign in with Google to send direct messages to classmates and collaborate.' })" class="secondary-cta text-xs !py-2 !px-5 hover:border-indigo-500/40">
+                        Sign In to Open Chat
+                    </button>
+                </div>
+            </section>
+        `;
+        return;
+    }
+
     const peer = (socialDirectory.directory || []).find((student) => student.id === activePeerId)
         || (socialDirectory.connections || []).find((student) => student.id === activePeerId);
 
@@ -509,6 +606,14 @@ async function runBlobUpload(file, payload) {
 }
 
 async function uploadAvatar() {
+    if (!window.ACADEMY.isAuthenticated()) {
+        window.ACADEMY.showSignInPrompt({
+            title: 'Sign In to Upload Avatar',
+            reason: 'Sign in with Google to set a custom profile avatar and sync it across devices.'
+        });
+        return;
+    }
+
     const input = document.getElementById('avatarUploadInput');
     const file = input && input.files ? input.files[0] : null;
     if (!file) return;
@@ -540,6 +645,14 @@ async function uploadAvatar() {
 }
 
 async function uploadStudyPdf() {
+    if (!window.ACADEMY.isAuthenticated()) {
+        window.ACADEMY.showSignInPrompt({
+            title: 'Sign In to Upload Solved Material',
+            reason: 'Sign in with Google to upload solved assignment PDFs, presentations, and study cheat-sheets to your study vault.'
+        });
+        return;
+    }
+
     const input = document.getElementById('pdfUploadInput');
     const file = input && input.files ? input.files[0] : null;
     if (!file) return;
@@ -591,17 +704,19 @@ window.openMessageThread = openMessageThread;
 window.reportStudent = reportStudent;
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const allowed = await window.ACADEMY.requireStudentAuth({
-        nextPath: '/html/profile.html'
-    });
-    if (!allowed) return;
+    await window.ACADEMY.loadAppConfig();
+    await window.ACADEMY.hydrateAuthSession();
 
-    window.ACADEMY.scheduleCloudSync();
+    // RENDER IMMEDIATELY so the profile is ALWAYS visible for both guests and authenticated students
     renderProfilePage();
-    await hydrateRemoteProfile();
-    await hydrateStudentDirectory();
-    currentStudentId = remoteProfile && remoteProfile.student ? remoteProfile.student.id : currentStudentId;
-    renderProfilePage();
+
+    if (window.ACADEMY.isAuthenticated()) {
+        window.ACADEMY.scheduleCloudSync();
+        await hydrateRemoteProfile();
+        await hydrateStudentDirectory();
+        currentStudentId = remoteProfile && remoteProfile.student ? remoteProfile.student.id : currentStudentId;
+        renderProfilePage();
+    }
 });
 
 

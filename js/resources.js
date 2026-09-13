@@ -45,9 +45,52 @@ function getFilteredResources() {
     });
 }
 
+const GUEST_RESOURCE_DEMO_LIMIT = 4;
+
+function promptGuestResource(title) {
+    if (window.ACADEMY && typeof window.ACADEMY.showSignInPrompt === 'function') {
+        window.ACADEMY.showSignInPrompt({
+            title: 'Sign In to Access All Resources',
+            reason: `"${title}" is part of the full curriculum. Sign in with Google to download and preview all 28+ semester revision handbooks, question papers, and solved notes.`
+        });
+    }
+}
+
+function renderGuestNotice() {
+    const isAuthed = window.ACADEMY && window.ACADEMY.isAuthenticated();
+    const existing = document.getElementById('resourceGuestBanner');
+    if (isAuthed) {
+        if (existing) existing.remove();
+        return;
+    }
+    const container = document.getElementById('resourceGrid');
+    if (!container || existing) return;
+
+    const banner = document.createElement('div');
+    banner.id = 'resourceGuestBanner';
+    banner.className = 'p-3.5 mb-5 rounded-xl bg-gradient-to-r from-blue-950/60 via-slate-900 to-indigo-950/60 border border-blue-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-lg shadow-blue-950/40';
+    banner.innerHTML = `
+        <div class="flex items-center gap-3">
+            <span class="text-xl shrink-0">🎓</span>
+            <div>
+                <div class="flex items-center gap-2">
+                    <p class="text-xs sm:text-sm font-bold text-white">Guest Demo Access Active</p>
+                    <span class="text-[9px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-mono font-bold border border-emerald-500/30">SAMPLE PREVIEW</span>
+                </div>
+                <p class="text-[11px] text-slate-300 mt-0.5">Sample study materials are open for download. Sign in with Google to unlock all 28+ semester revision handbooks, question banks, and notes.</p>
+            </div>
+        </div>
+        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Unlock All 28+ Study Resources', reason: 'Sign in with Google to download and preview all semester question banks, formula sheets, and solved handbooks.' })" class="primary-cta text-xs !py-1.5 !px-3.5 whitespace-nowrap shrink-0 shadow-md shadow-blue-500/20">
+            Sign In to Unlock All
+        </button>
+    `;
+    container.parentNode.insertBefore(banner, container);
+}
+
 function renderResourcePage() {
     renderResourceTypeTabs();
     renderResourceSummary();
+    renderGuestNotice();
     renderResourceGrid();
     updateMatchBadge();
 }
@@ -155,8 +198,12 @@ function renderResourceGrid() {
         return;
     }
 
+    const isAuthed = window.ACADEMY && window.ACADEMY.isAuthenticated();
+
     target.innerHTML = filtered.map((item, index) => {
         const isPdf = (item.extension || '').toLowerCase() === 'pdf';
+        const isUnlocked = isAuthed || index < GUEST_RESOURCE_DEMO_LIMIT;
+
         const extBadgeClass = isPdf
             ? 'bg-red-500/15 text-red-300 border-red-500/30'
             : 'bg-blue-500/15 text-blue-300 border-blue-500/30';
@@ -166,16 +213,23 @@ function renderResourceGrid() {
             : (item.type === 'mock-papers' ? 'text-amber-400' : 'text-emerald-400');
 
         return `
-            <article class="panel-card p-4 flex flex-col justify-between hover:border-blue-500/40 transition-colors group">
+            <article class="panel-card p-4 flex flex-col justify-between hover:border-blue-500/40 transition-colors group relative ${!isUnlocked ? 'border-amber-500/20 bg-slate-900/60' : ''}">
                 <div>
                     <div class="flex items-center justify-between gap-2 mb-2.5">
                         <div class="flex items-center gap-1.5 min-w-0">
                             <span class="text-[10px] font-bold uppercase tracking-wider font-mono bg-slate-800/90 text-slate-200 px-2 py-0.5 rounded border border-slate-700 shrink-0">${item.subjectLabel || 'CS'}</span>
                             <span class="text-[10px] font-semibold uppercase tracking-wider font-mono ${typeColor} truncate">${item.typeLabel || 'Resource'}</span>
                         </div>
-                        <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded border font-mono shrink-0 ${extBadgeClass}">
-                            ${(item.extension || 'FILE').toUpperCase()}
-                        </span>
+                        <div class="flex items-center gap-1.5 shrink-0">
+                            ${!isAuthed ? (
+                                isUnlocked
+                                    ? `<span class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">DEMO</span>`
+                                    : `<span class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1">🔒 LOCKED</span>`
+                            ) : ''}
+                            <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded border font-mono ${extBadgeClass}">
+                                ${(item.extension || 'FILE').toUpperCase()}
+                            </span>
+                        </div>
                     </div>
 
                     <h3 class="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-blue-300 transition-colors line-clamp-2">
@@ -188,29 +242,48 @@ function renderResourceGrid() {
                 </div>
 
                 <div class="flex items-center gap-2 mt-4 pt-3 border-t border-slate-800/80">
-                    <a
-                        href="${item.path}"
-                        class="primary-cta text-xs !py-1.5 !px-3 flex-1 text-center font-semibold flex items-center justify-center gap-1.5"
-                        download
-                        title="Download ${item.title}"
-                    >
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                        </svg>
-                        <span>Download</span>
-                    </a>
-                    <button
-                        type="button"
-                        onclick="previewResource(${index})"
-                        class="secondary-cta text-xs !py-1.5 !px-3 shrink-0 flex items-center justify-center gap-1"
-                        title="Preview ${item.title}"
-                    >
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                        </svg>
-                        <span>Preview</span>
-                    </button>
+                    ${isUnlocked ? `
+                        <a
+                            href="${item.path}"
+                            class="primary-cta text-xs !py-1.5 !px-3 flex-1 text-center font-semibold flex items-center justify-center gap-1.5"
+                            download
+                            title="Download ${item.title}"
+                        >
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            <span>Download</span>
+                        </a>
+                        <button
+                            type="button"
+                            onclick="previewResource(${index})"
+                            class="secondary-cta text-xs !py-1.5 !px-3 shrink-0 flex items-center justify-center gap-1"
+                            title="Preview ${item.title}"
+                        >
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            <span>Preview</span>
+                        </button>
+                    ` : `
+                        <button
+                            type="button"
+                            onclick="promptGuestResource('${window.ACADEMY.escapeForAttribute(item.title)}')"
+                            class="secondary-cta text-xs !py-1.5 !px-3 flex-1 font-semibold flex items-center justify-center gap-1.5 text-amber-300 border-amber-500/40 hover:bg-amber-500/10 hover:border-amber-500/60"
+                            title="Sign in to download ${item.title}"
+                        >
+                            <span>🔒 Sign In to Download</span>
+                        </button>
+                        <button
+                            type="button"
+                            onclick="promptGuestResource('${window.ACADEMY.escapeForAttribute(item.title)}')"
+                            class="secondary-cta text-xs !py-1.5 !px-3 shrink-0 flex items-center justify-center gap-1 text-slate-400 hover:text-amber-300"
+                            title="Sign in to preview ${item.title}"
+                        >
+                            <span>🔒 Preview</span>
+                        </button>
+                    `}
                 </div>
             </article>
         `;

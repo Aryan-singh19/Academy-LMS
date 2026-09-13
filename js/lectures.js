@@ -2,8 +2,9 @@ let activeLectureSemester = '5';
 let activeLectureSubject = 'all';
 let activeLectureKey = '';
 let lectureSearchQuery = '';
-let isPlaylistDrawerOpen = false;
-let drawerSearchFilter = '';
+let playlistFilterQuery = '';
+let currentEmbedPlayerMode = 'standard'; // 'standard' (youtube-nocookie) or 'direct' (youtube)
+const GUEST_LECTURE_DEMO_LIMIT = 2;
 
 let lectureChatState = {
     local: { messages: [], onlineCount: 0 },
@@ -12,45 +13,20 @@ let lectureChatState = {
 let lecturePollingTimer = null;
 let lectureFetchInFlight = false;
 
-function openPlaylistDrawer() {
-    isPlaylistDrawerOpen = true;
-    const overlay = document.getElementById('playlistDrawerOverlay');
-    const drawer = document.getElementById('playlistDrawer');
-    if (overlay) overlay.classList.remove('hidden');
-    if (drawer) {
-        requestAnimationFrame(() => {
-            drawer.classList.remove('-translate-x-full');
-            drawer.classList.add('translate-x-0');
+function isLectureLockedForGuest(lecture, indexInFiltered) {
+    const isAuthed = window.ACADEMY && window.ACADEMY.isAuthenticated();
+    if (isAuthed) return false;
+    // In guest demo mode, allow free access to the first 2 lectures of the active view
+    return indexInFiltered >= GUEST_LECTURE_DEMO_LIMIT;
+}
+
+function promptGuestLecture(title) {
+    if (window.ACADEMY && typeof window.ACADEMY.showSignInPrompt === 'function') {
+        window.ACADEMY.showSignInPrompt({
+            title: 'Sign In to Access Full Video Masterclasses',
+            reason: `"${title}" is part of the full university curriculum. Sign in with Google to watch all 95+ curated lectures, solved numerical series, and join live study discussions.`
         });
     }
-    renderDrawerLectureList();
-}
-
-function closePlaylistDrawer() {
-    isPlaylistDrawerOpen = false;
-    const drawer = document.getElementById('playlistDrawer');
-    const overlay = document.getElementById('playlistDrawerOverlay');
-    if (drawer) {
-        drawer.classList.remove('translate-x-0');
-        drawer.classList.add('-translate-x-full');
-    }
-    setTimeout(() => {
-        if (!isPlaylistDrawerOpen && overlay) {
-            overlay.classList.add('hidden');
-        }
-    }, 200);
-}
-
-function togglePlaylistDrawer() {
-    if (isPlaylistDrawerOpen) {
-        closePlaylistDrawer();
-    } else {
-        openPlaylistDrawer();
-    }
-}
-
-function toggleLectureSidebar() {
-    togglePlaylistDrawer();
 }
 
 const esc = (val) => {
@@ -180,8 +156,8 @@ function getActiveLecture() {
 
 function renderLecturePage() {
     renderLectureTabs();
-    renderLectureToolbar();
-    renderLectureList();
+    initTopSearchBar();
+    renderPlaylistList();
     renderLectureViewer();
 }
 
@@ -194,19 +170,31 @@ function renderLectureTabs() {
             </button>
         `).join('');
     }
+}
 
-    const subContainer = document.getElementById('lectureSubjectTabs');
-    if (subContainer) {
-        subContainer.innerHTML = getLectureSubjects().map((subject) => `
-            <button type="button" onclick="setLectureSubject('${subject.id}')" class="course-pill ${activeLectureSubject === subject.id ? 'course-pill-active' : ''}">
-                ${subject.label}
-            </button>
-        `).join('');
+function initTopSearchBar() {
+    const input = document.getElementById('lectureSearchInput');
+    const clearBtn = document.getElementById('lectureClearSearchBtn');
+    if (input) {
+        input.value = lectureSearchQuery;
+        input.oninput = (e) => {
+            setLectureSearch(e.target.value);
+        };
+    }
+    if (clearBtn) {
+        if (lectureSearchQuery) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
     }
 }
 
 function setLectureSearch(query) {
     lectureSearchQuery = String(query || '').trim();
+    const clearBtn = document.getElementById('lectureClearSearchBtn');
+    if (clearBtn) {
+        if (lectureSearchQuery) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+    }
+
     const matchedIds = getMatchedSubjectIds(lectureSearchQuery);
     if (matchedIds && matchedIds.length > 0) {
         const found = ALL_LECTURE_SUBJECTS.find((s) => matchedIds.includes(s.id));
@@ -221,7 +209,9 @@ function setLectureSearch(query) {
     }
     const filtered = getFilteredLectures();
     activeLectureKey = filtered[0] ? lectureKeyFor(filtered[0]) : '';
-    renderLecturePage();
+    renderLectureTabs();
+    renderPlaylistList();
+    renderLectureViewer();
 }
 
 function searchByCode(code) {
@@ -233,95 +223,61 @@ function searchByCode(code) {
     setLectureSearch(code);
 }
 
-function renderLectureToolbar() {
-    const lectures = getFilteredLectures();
-    const totalAll = (window.lectureLibrary || []).length;
-    const target = document.getElementById('lectureToolbar');
-    if (!target) return;
-
-    target.innerHTML = `
-        <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-            <div class="flex items-center gap-2">
-                <span class="text-sm font-bold text-white font-mono bg-blue-500/15 text-blue-300 px-2 py-0.5 rounded border border-blue-500/30">${lectures.length}</span>
-                <span class="text-xs text-slate-300">lectures matching subject code filter (of ${totalAll} total)</span>
-            </div>
-            <div class="relative w-full sm:max-w-md">
-                <input
-                    id="lectureSearchInput"
-                    type="search"
-                    class="search-input w-full !pr-8 text-xs sm:text-sm"
-                    placeholder="Search by subject code (e.g. CS501, 602, CS701, TOC, WMC)..."
-                    value="${window.ACADEMY.escapeForAttribute(lectureSearchQuery)}"
-                    autocomplete="off"
-                >
-                ${lectureSearchQuery ? `
-                    <button type="button" onclick="clearLectureSearch()" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-bold" title="Clear code search">✕</button>
-                ` : ''}
-            </div>
-        </div>
-    `;
-
-    const input = document.getElementById('lectureSearchInput');
-    if (input) {
-        input.addEventListener('input', (event) => {
-            setLectureSearch(event.target.value);
-        });
-    }
-}
-
 function clearLectureSearch() {
     lectureSearchQuery = '';
-    const mainInput = document.getElementById('lectureSearchInput');
-    if (mainInput) mainInput.value = '';
+    const input = document.getElementById('lectureSearchInput');
+    if (input) input.value = '';
+    const clearBtn = document.getElementById('lectureClearSearchBtn');
+    if (clearBtn) clearBtn.classList.add('hidden');
 
     const first = getFilteredLectures()[0];
     activeLectureKey = first ? lectureKeyFor(first) : '';
-    renderLecturePage();
+    renderLectureTabs();
+    renderPlaylistList();
+    renderLectureViewer();
 }
 
-function handleDrawerSearch(event) {
-    drawerSearchFilter = (event && event.target ? event.target.value : '').toLowerCase().trim();
-    const clearBtn = document.getElementById('drawerClearSearchBtn');
+function handlePlaylistFilter(event) {
+    playlistFilterQuery = (event && event.target ? event.target.value : '').toLowerCase().trim();
+    const clearBtn = document.getElementById('playlistClearFilterBtn');
     if (clearBtn) {
-        if (drawerSearchFilter) clearBtn.classList.remove('hidden');
+        if (playlistFilterQuery) clearBtn.classList.remove('hidden');
         else clearBtn.classList.add('hidden');
     }
-    renderDrawerLectureList();
+    renderPlaylistList();
 }
 
-function clearDrawerSearch() {
-    drawerSearchFilter = '';
-    const input = document.getElementById('drawerSearchInput');
+function clearPlaylistFilter() {
+    playlistFilterQuery = '';
+    const input = document.getElementById('playlistFilterInput');
     if (input) input.value = '';
-    const clearBtn = document.getElementById('drawerClearSearchBtn');
+    const clearBtn = document.getElementById('playlistClearFilterBtn');
     if (clearBtn) clearBtn.classList.add('hidden');
-    renderDrawerLectureList();
+    renderPlaylistList();
 }
 
-function renderLectureList() {
-    const lectures = getFilteredLectures();
-    const active = getActiveLecture();
-    activeLectureKey = active ? lectureKeyFor(active) : '';
-    renderDrawerLectureList();
-}
-
-function renderDrawerLectureList() {
-    const container = document.getElementById('drawerLectureList');
-    const countBadge = document.getElementById('drawerCountBadge');
+function renderPlaylistList() {
+    const container = document.getElementById('lectureListContainer');
+    const totalBadge = document.getElementById('playlistTotalBadge');
+    const isAuthed = window.ACADEMY && window.ACADEMY.isAuthenticated();
 
     let lectures = getFilteredLectures();
-    if (drawerSearchFilter) {
+    if (playlistFilterQuery) {
         lectures = lectures.filter((item) => {
             const title = (item.title || '').toLowerCase();
             const lecturer = (item.lecturer || '').toLowerCase();
             const code = (item.subjectCode || item.subject || '').toLowerCase();
             const topics = (item.topics || []).join(' ').toLowerCase();
-            return title.includes(drawerSearchFilter) || lecturer.includes(drawerSearchFilter) || code.includes(drawerSearchFilter) || topics.includes(drawerSearchFilter);
+            return title.includes(playlistFilterQuery) || lecturer.includes(playlistFilterQuery) || code.includes(playlistFilterQuery) || topics.includes(playlistFilterQuery);
         });
     }
 
-    if (countBadge) {
-        countBadge.textContent = `${lectures.length} video${lectures.length === 1 ? '' : 's'}`;
+    if (totalBadge) {
+        if (isAuthed) {
+            totalBadge.textContent = `${lectures.length} video${lectures.length === 1 ? '' : 's'}`;
+        } else {
+            totalBadge.textContent = `${lectures.length} videos (2 free demo)`;
+        }
     }
 
     if (!container) return;
@@ -331,9 +287,9 @@ function renderDrawerLectureList() {
             <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 text-center space-y-2">
                 <p class="text-xs font-bold text-amber-300">No videos found</p>
                 <p class="text-[11px] text-slate-400">
-                    No videos match your filter.
+                    No videos match your filter query.
                 </p>
-                <button type="button" onclick="clearDrawerSearch()" class="secondary-cta text-[11px] !py-1 !px-2.5 mt-1">
+                <button type="button" onclick="clearPlaylistFilter()" class="secondary-cta text-[11px] !py-1 !px-2.5 mt-1">
                     Clear Filter
                 </button>
             </div>
@@ -344,16 +300,16 @@ function renderDrawerLectureList() {
     container.innerHTML = lectures.map((lecture, idx) => {
         const isSelected = activeLectureKey === lectureKeyFor(lecture);
         const isPlaylist = lecture.type === 'playlist';
+        const isLocked = isLectureLockedForGuest(lecture, idx);
         const semColor = lecture.semester === 5 ? 'blue' : lecture.semester === 6 ? 'emerald' : 'purple';
 
         return `
-            <button
-                type="button"
-                onclick="handleSelectLectureFromDrawer('${lectureKeyFor(lecture)}')"
-                class="playlist-item w-full text-left p-2.5 rounded-xl border transition-all flex items-start gap-2.5 ${isSelected ? 'bg-blue-600/20 border-blue-500/60 shadow-md shadow-blue-500/10 text-white ring-1 ring-blue-500' : 'bg-slate-950/60 border-slate-800/80 hover:bg-slate-800/80 hover:border-slate-700 text-slate-300'}"
+            <div
+                class="playlist-item w-full text-left p-2.5 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${isSelected ? 'bg-blue-600/20 border-blue-500/60 shadow-md shadow-blue-500/10 text-white ring-1 ring-blue-500' : 'bg-slate-950/60 border-slate-800/80 hover:bg-slate-800/80 hover:border-slate-700 text-slate-300'}"
+                onclick="handlePlaylistCardClick('${lectureKeyFor(lecture)}', ${isLocked}, '${window.ACADEMY.escapeForAttribute(lecture.title)}')"
             >
-                <div class="shrink-0 w-6 h-6 rounded-md flex items-center justify-center font-mono text-[11px] font-bold ${isSelected ? 'bg-blue-500 text-white' : 'bg-slate-800 text-slate-400'}">
-                    ${isSelected ? '▶' : (idx + 1)}
+                <div class="shrink-0 w-6 h-6 rounded-md flex items-center justify-center font-mono text-[11px] font-bold ${isLocked ? 'bg-slate-800 text-amber-400' : isSelected ? 'bg-blue-500 text-white' : 'bg-slate-800 text-slate-400'}">
+                    ${isLocked ? '🔒' : isSelected ? '▶' : (idx + 1)}
                 </div>
                 <div class="min-w-0 flex-1">
                     <div class="flex items-center gap-1.5 leading-none">
@@ -363,6 +319,7 @@ function renderDrawerLectureList() {
                         <span class="text-[10px] font-medium text-slate-400 shrink-0 truncate">
                             ${esc(lecture.typeLabel || (isPlaylist ? 'Exam Prep Series' : 'Masterclass'))}
                         </span>
+                        ${isLocked ? '<span class="ml-auto text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/30">Sign In</span>' : ''}
                     </div>
                     <h4 class="text-xs font-semibold text-white mt-1 leading-snug line-clamp-2" title="${window.ACADEMY.escapeForAttribute(lecture.title)}">
                         ${esc(lecture.title)}
@@ -372,18 +329,19 @@ function renderDrawerLectureList() {
                         ${isSelected ? '<span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider font-mono">Now Playing</span>' : ''}
                     </div>
                 </div>
-            </button>
+            </div>
         `;
     }).join('');
 }
 
-function handleSelectLectureFromDrawer(lectureKey) {
-    selectLecture(lectureKey);
-    if (window.innerWidth < 1024) {
-        closePlaylistDrawer();
-    } else {
-        renderDrawerLectureList();
+function handlePlaylistCardClick(lectureKey, isLocked, title) {
+    if (isLocked) {
+        promptGuestLecture(title);
+        // Also select it so they can view description and YouTube link
+        selectLecture(lectureKey);
+        return;
     }
+    selectLecture(lectureKey);
 }
 
 function renderLectureViewer() {
@@ -396,6 +354,8 @@ function renderLectureViewer() {
         return;
     }
 
+    const currentIdx = lectures.findIndex((l) => lectureKeyFor(l) === lectureKeyFor(lecture));
+    const isLocked = isLectureLockedForGuest(lecture, currentIdx >= 0 ? currentIdx : 0);
     const semColor = lecture.semester === 5 ? 'blue' : lecture.semester === 6 ? 'emerald' : 'purple';
     const isPlaylist = lecture.type === 'playlist';
     const topicBadges = (lecture.topics || []).map((t) =>
@@ -405,10 +365,6 @@ function renderLectureViewer() {
     target.innerHTML = `
         <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800">
             <div class="flex items-center gap-2">
-                <button type="button" onclick="openPlaylistDrawer()" class="secondary-cta text-xs !py-1 !px-2.5 font-semibold inline-flex items-center gap-1.5 hover:border-blue-500/40" title="Show Playlist (${lectures.length} videos)">
-                    <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
-                    <span>Show Playlist (${lectures.length})</span>
-                </button>
                 <span class="px-2.5 py-1 rounded-md font-mono text-xs font-bold bg-${semColor}-500/15 text-${semColor}-300 border border-${semColor}-500/30">
                     Semester ${lecture.semester} • ${esc(lecture.subjectCode || lecture.subject.toUpperCase())}
                 </span>
@@ -445,7 +401,7 @@ function renderLectureViewer() {
             </div>
         </div>
 
-        ${renderLectureEmbed(lecture)}
+        ${renderLectureEmbed(lecture, isLocked)}
 
         <div class="mt-5 p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3">
             <h4 class="text-xs uppercase tracking-wider font-bold text-slate-400">Curriculum Overview &amp; Learning Objectives</h4>
@@ -498,15 +454,44 @@ function reloadLecturePlayer() {
     }
 }
 
-function renderLectureEmbed(lecture) {
+function toggleEmbedPlayerMode() {
+    currentEmbedPlayerMode = currentEmbedPlayerMode === 'standard' ? 'direct' : 'standard';
+    renderLectureViewer();
+}
+
+function renderLectureEmbed(lecture, isLocked) {
+    if (isLocked) {
+        return `
+            <div class="mt-4 p-8 sm:p-12 rounded-xl bg-slate-950/90 border border-blue-500/30 text-center space-y-4 shadow-2xl">
+                <div class="w-14 h-14 mx-auto rounded-2xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-center text-2xl">
+                    🔒
+                </div>
+                <div class="space-y-1.5 max-w-md mx-auto">
+                    <h3 class="text-base sm:text-lg font-bold text-white">Full Video Available with Sign-In</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        You are currently in <strong>Guest Demo Mode</strong> (first 2 videos free). Sign in with your Google account to unlock all 95+ curated lectures, playlists, solved numerical walkthroughs, and peer study chats.
+                    </p>
+                </div>
+                <div class="pt-2 flex flex-wrap justify-center gap-3">
+                    <button type="button" onclick="promptGuestLecture('${esc(lecture.title)}')" class="primary-cta text-xs !py-2.5 !px-5 shadow-lg shadow-blue-500/20">
+                        Sign In with Google to Stream
+                    </button>
+                    <a href="${window.ACADEMY.escapeForAttribute(lecture.url)}" target="_blank" rel="noreferrer" class="secondary-cta text-xs !py-2.5 !px-4">
+                        Watch Directly on YouTube
+                    </a>
+                </div>
+            </div>
+        `;
+    }
+
     const embedUrl = normalizeLectureUrl(lecture.url);
     const embeddable = /^https:\/\/(www\.)?(youtube\.com|youtube-nocookie\.com)\/embed\//.test(embedUrl);
 
     if (!embeddable) {
         return `
             <div class="study-rail-block mt-5 p-6 text-center space-y-3">
-                <p class="text-base font-semibold text-white">Direct External Lecture Resource</p>
-                <p class="text-sm text-slate-300 max-w-lg mx-auto">This curated lecture or playlist is best experienced in full resolution directly on YouTube with channel annotations.</p>
+                <p class="text-base font-semibold text-white">Direct Academic Source</p>
+                <p class="text-sm text-slate-300 max-w-lg mx-auto">This curated lecture or playlist is best experienced directly on YouTube.</p>
                 <a class="primary-cta inline-flex items-center gap-2 !py-2.5 !px-5" href="${window.ACADEMY.escapeForAttribute(lecture.url)}" target="_blank" rel="noreferrer">
                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                     <span>Watch Full Lecture on YouTube</span>
@@ -516,13 +501,12 @@ function renderLectureEmbed(lecture) {
     }
 
     return `
-        <div class="mt-4 relative w-full aspect-video rounded-xl bg-slate-950 border border-slate-700/80 shadow-2xl" style="isolation: isolate;">
+        <div class="mt-4 relative w-full aspect-video rounded-xl bg-slate-950 border border-slate-700/80 shadow-2xl overflow-hidden">
             <iframe 
                 id="lecturePlayerIframe"
                 src="${embedUrl}" 
                 title="${window.ACADEMY.escapeForAttribute(lecture.title)}" 
-                class="w-full h-full rounded-xl border-0" 
-                style="transform: translateZ(0); -webkit-transform: translateZ(0);"
+                class="w-full h-full border-0 block" 
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -530,18 +514,21 @@ function renderLectureEmbed(lecture) {
             </iframe>
         </div>
         <div class="mt-2.5 flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-slate-400">
-            <div class="flex items-center gap-1.5">
+            <div class="flex items-center gap-2">
                 <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>HD Video Stream Ready</span>
+                <span class="font-medium text-slate-300">Clean Stream Active</span>
                 <span class="text-slate-600">•</span>
                 <button type="button" onclick="reloadLecturePlayer()" class="text-blue-400 hover:text-blue-300 underline font-medium" title="Reload player iframe">
                     Reload Player
                 </button>
             </div>
-            <div class="flex items-center gap-2">
-                <span class="text-[11px] text-slate-400 hidden sm:inline">Lines or glitch on Linux/Brave?</span>
-                <a href="${lecture.url}" target="_blank" rel="noreferrer" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-1">
-                    <span>Open in YouTube Tab</span>
+            <div class="flex items-center gap-3">
+                <button type="button" onclick="toggleEmbedPlayerMode()" class="text-slate-400 hover:text-slate-200 underline font-medium text-[11px]" title="Toggle embed host domain">
+                    ${currentEmbedPlayerMode === 'standard' ? 'Alternative Domain' : 'Standard Domain'}
+                </button>
+                <span class="text-slate-600">•</span>
+                <a href="${window.ACADEMY.escapeForAttribute(lecture.url)}" target="_blank" rel="noreferrer" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-1">
+                    <span>Watch in YouTube Tab</span>
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                 </a>
             </div>
@@ -620,6 +607,8 @@ function normalizeLectureUrl(url) {
     if (!url) return '';
     if (url.includes('/results?')) return url;
 
+    const host = currentEmbedPlayerMode === 'direct' ? 'www.youtube.com' : 'www.youtube-nocookie.com';
+
     // Check for watch?v=VIDEO_ID and optional &list=PLAYLIST_ID
     const watchMatch = url.match(/[?&]v=([a-zA-Z0-9_-]+)/);
     const playlistMatch = url.match(/[?&]list=([a-zA-Z0-9_-]+)/);
@@ -628,25 +617,25 @@ function normalizeLectureUrl(url) {
     if (watchMatch) {
         const videoId = watchMatch[1];
         if (playlistMatch) {
-            return `https://www.youtube.com/embed/${videoId}?list=${playlistMatch[1]}&rel=0`;
+            return `https://${host}/embed/${videoId}?list=${playlistMatch[1]}&rel=0`;
         }
-        return `https://www.youtube.com/embed/${videoId}?rel=0`;
+        return `https://${host}/embed/${videoId}?rel=0`;
     }
 
     if (shortMatch) {
         const videoId = shortMatch[1];
         if (playlistMatch) {
-            return `https://www.youtube.com/embed/${videoId}?list=${playlistMatch[1]}&rel=0`;
+            return `https://${host}/embed/${videoId}?list=${playlistMatch[1]}&rel=0`;
         }
-        return `https://www.youtube.com/embed/${videoId}?rel=0`;
+        return `https://${host}/embed/${videoId}?rel=0`;
     }
 
     if (playlistMatch) {
-        return `https://www.youtube.com/embed/videoseries?list=${playlistMatch[1]}&rel=0`;
+        return `https://${host}/embed/videoseries?list=${playlistMatch[1]}&rel=0`;
     }
 
-    if (url.includes('youtube-nocookie.com/embed/')) {
-        return url.replace('https://www.youtube-nocookie.com/embed/', 'https://www.youtube.com/embed/');
+    if (url.includes('youtube.com/embed/') || url.includes('youtube-nocookie.com/embed/')) {
+        return url.replace(/https:\/\/(www\.)?(youtube\.com|youtube-nocookie\.com)\/embed\//, `https://${host}/embed/`);
     }
 
     return url;
@@ -657,21 +646,26 @@ function setLectureSemester(semester) {
     activeLectureSubject = 'all';
     const filtered = getFilteredLectures();
     activeLectureKey = filtered[0] ? lectureKeyFor(filtered[0]) : '';
-    renderLecturePage();
+    renderLectureTabs();
+    renderPlaylistList();
+    renderLectureViewer();
 }
 
 function setLectureSubject(subject) {
     activeLectureSubject = subject;
     const filtered = getFilteredLectures();
     activeLectureKey = filtered[0] ? lectureKeyFor(filtered[0]) : '';
-    renderLecturePage();
+    renderLectureTabs();
+    renderPlaylistList();
+    renderLectureViewer();
 }
 
 function selectLecture(lectureKey) {
     activeLectureKey = lectureKey;
-    renderLecturePage();
+    renderPlaylistList();
+    renderLectureViewer();
     // Smooth scroll to video player on mobile devices
-    if (window.innerWidth < 1280) {
+    if (window.innerWidth < 1024) {
         const viewer = document.getElementById('lectureViewer');
         if (viewer) viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -681,8 +675,11 @@ function resetLectureFilters() {
     activeLectureSemester = 'all';
     activeLectureSubject = 'all';
     lectureSearchQuery = '';
+    playlistFilterQuery = '';
     const input = document.getElementById('lectureSearchInput');
     if (input) input.value = '';
+    const pInput = document.getElementById('playlistFilterInput');
+    if (pInput) pInput.value = '';
     const filtered = getFilteredLectures();
     activeLectureKey = filtered[0] ? lectureKeyFor(filtered[0]) : '';
     renderLecturePage();
@@ -748,6 +745,17 @@ async function sendLectureHeartbeat(scope) {
 }
 
 async function sendLectureMessage(scope) {
+    const isAuthed = window.ACADEMY && window.ACADEMY.isAuthenticated();
+    if (!isAuthed) {
+        if (window.ACADEMY && typeof window.ACADEMY.showSignInPrompt === 'function') {
+            window.ACADEMY.showSignInPrompt({
+                title: 'Sign In to Join the Discussion',
+                reason: 'To prevent spam and keep the study environment helpful, posting messages and asking questions requires signing in.'
+            });
+        }
+        return;
+    }
+
     const lecture = getActiveLecture();
     const field = document.getElementById(`${scope}LectureMessage`);
     const messageText = field ? field.value.trim() : '';
@@ -780,32 +788,13 @@ window.sendLectureMessage = sendLectureMessage;
 window.copyLectureLink = copyLectureLink;
 window.resetLectureFilters = resetLectureFilters;
 window.clearLectureSearch = clearLectureSearch;
-window.toggleLectureSidebar = toggleLectureSidebar;
+window.handlePlaylistFilter = handlePlaylistFilter;
+window.clearPlaylistFilter = clearPlaylistFilter;
+window.handlePlaylistCardClick = handlePlaylistCardClick;
+window.promptGuestLecture = promptGuestLecture;
+window.toggleEmbedPlayerMode = toggleEmbedPlayerMode;
 window.reloadLecturePlayer = reloadLecturePlayer;
-window.openPlaylistDrawer = openPlaylistDrawer;
-window.closePlaylistDrawer = closePlaylistDrawer;
-window.togglePlaylistDrawer = togglePlaylistDrawer;
-window.handleDrawerSearch = handleDrawerSearch;
-window.clearDrawerSearch = clearDrawerSearch;
-window.handleSelectLectureFromDrawer = handleSelectLectureFromDrawer;
 window.searchByCode = searchByCode;
-
-document.addEventListener('keydown', (e) => {
-    // If typing in an input or textarea
-    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
-        if (e.key === 'Escape') {
-            e.target.blur();
-            closePlaylistDrawer();
-        }
-        return;
-    }
-    if (e.key === 'Escape') {
-        closePlaylistDrawer();
-    } else if (e.key === '[' || e.key === ']') {
-        e.preventDefault();
-        togglePlaylistDrawer();
-    }
-});
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Non-blocking session & sync check
