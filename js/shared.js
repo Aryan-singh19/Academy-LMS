@@ -491,6 +491,7 @@
             const response = await fetch('/api/auth-session');
             if (!response.ok) return authSession;
             authSession = await response.json();
+            state.isAdmin = Boolean(authSession.isAdmin);
             if (authSession.authenticated && authSession.student) {
                 state.studentName = authSession.student.display_name || state.studentName;
                 state.avatarUrl = authSession.student.avatar_url || state.avatarUrl;
@@ -508,6 +509,10 @@
 
     function isAuthenticated() {
         return Boolean(authSession.authenticated && authSession.student);
+    }
+
+    function isAdmin() {
+        return Boolean(authSession && authSession.isAdmin);
     }
 
     function buildSigninRedirect(pathname) {
@@ -728,7 +733,8 @@
         closeSignInModal,
         scheduleCloudSync,
         syncStateToCloud,
-        initDynamicHeaderNav
+        initDynamicHeaderNav,
+        isAdmin
     };
 
     async function initDynamicHeaderNav() {
@@ -737,6 +743,7 @@
         try {
             await hydrateAuthSession();
             const authed = isAuthenticated();
+            const userIsAdmin = isAdmin();
             const pathname = window.location.pathname;
             const isInHtmlDir = pathname.includes('/html/') || pathname.endsWith('/html');
 
@@ -749,6 +756,14 @@
             const resourcesHref = isInHtmlDir ? 'resources.html' : 'html/resources.html';
             const testsHref = isInHtmlDir ? 'tests.html' : 'html/tests.html';
             const profileHref = isInHtmlDir ? 'profile.html' : 'html/profile.html';
+            const adminHref = isInHtmlDir ? '../admin/index.html' : 'admin/index.html';
+
+            const adminNavMarkup = userIsAdmin ? `
+                <a href="${adminHref}" class="nav-pill border border-amber-500/40 text-amber-300 hover:text-white hover:border-amber-400 flex items-center gap-1.5" title="Academy LMS Admin Console">
+                    <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                    <span>Admin</span>
+                </a>
+            ` : '';
 
             const isCurrent = (page) => {
                 if (page === 'home') return (pathname.endsWith('index.html') || pathname.endsWith('/')) && !window.location.search.includes('view=topics');
@@ -778,6 +793,7 @@
                         <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
                         <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
                         <a href="${contactHref}" class="nav-pill ${isCurrent('contact') ? 'nav-pill-active' : ''}">Contact</a>
+                        ${adminNavMarkup}
                         <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Sign In to Academy LMS', reason: 'Sign in with Google to sync your study notes, unlock all resources, and chat with classmates.' })" class="nav-pill text-blue-300 hover:text-white font-semibold flex items-center gap-1 cursor-pointer">
                             <span>Sign In</span>
                         </button>
@@ -802,6 +818,7 @@
                         </a>
                         <a href="${aboutHref}" class="nav-pill ${isCurrent('about') ? 'nav-pill-active' : ''}">About</a>
                         <a href="${policyHref}" class="nav-pill ${isCurrent('policy') ? 'nav-pill-active' : ''}">Policy</a>
+                        ${adminNavMarkup}
                         <button type="button" onclick="window.ACADEMY.logoutStudent().then(() => { window.location.href = '${homeHref}'; })" class="nav-pill text-slate-400 hover:text-white" title="Sign out of student account">Logout</button>
                     `;
                 }

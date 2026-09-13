@@ -21,6 +21,7 @@ class MockDatabase {
         this.topicComments = [];
         this.lectureMessages = [];
         this.lecturePresence = new Map();
+        this.bannedDevices = new Map();
 
         this.seedInitialData();
     }
@@ -775,6 +776,40 @@ function createMockSql() {
                 s.banned_at = null;
             }
             return [];
+        }
+
+        // 19. Banned devices
+        if (query.includes('FROM banned_devices') && query.includes('device_id = ?')) {
+            const deviceId = values[0];
+            const item = mockDb.bannedDevices.get(deviceId);
+            return item ? [item] : [];
+        }
+
+        if (query.includes('FROM banned_devices') && query.includes('ORDER BY banned_at DESC')) {
+            return Array.from(mockDb.bannedDevices.values());
+        }
+
+        if (query.includes('INSERT INTO banned_devices')) {
+            const deviceId = values[0];
+            const record = {
+                id: mockDb.nextId++,
+                device_id: deviceId,
+                banned_reason: values[1] || 'Device banned',
+                banned_by_admin: values[2] || 'admin',
+                banned_at: values[3] || new Date().toISOString()
+            };
+            mockDb.bannedDevices.set(deviceId, record);
+            return [];
+        }
+
+        if (query.includes('DELETE FROM banned_devices')) {
+            const deviceId = values[0];
+            mockDb.bannedDevices.delete(deviceId);
+            return [];
+        }
+
+        if (query.includes('FROM banned_devices') && query.includes('COUNT(*)')) {
+            return [{ count: mockDb.bannedDevices.size }];
         }
 
         // Default empty array

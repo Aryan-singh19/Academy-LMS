@@ -148,9 +148,41 @@ async function getStudentFromSession(req, sql) {
     return rows[0] || null;
 }
 
+async function isDeviceBanned(sql, deviceId) {
+    if (!deviceId) return null;
+    try {
+        const rows = await sql`
+            SELECT device_id, banned_reason, banned_at
+            FROM banned_devices
+            WHERE device_id = ${deviceId}
+            LIMIT 1
+        `;
+        return rows[0] || null;
+    } catch (_) {
+        return null;
+    }
+}
+
 async function resolveStudent(req, sql, deviceId) {
+    if (deviceId) {
+        const devBan = await isDeviceBanned(sql, deviceId);
+        if (devBan) {
+            const error = new Error(devBan.banned_reason || 'This device is banned from Academy LMS for moderation violations.');
+            error.statusCode = 403;
+            throw error;
+        }
+    }
+
     const sessionStudent = await getStudentFromSession(req, sql);
     if (sessionStudent) {
+        if (sessionStudent.device_id) {
+            const devBan = await isDeviceBanned(sql, sessionStudent.device_id);
+            if (devBan) {
+                const error = new Error(devBan.banned_reason || 'This device is banned from Academy LMS for moderation violations.');
+                error.statusCode = 403;
+                throw error;
+            }
+        }
         return sessionStudent;
     }
     if (!deviceId) return null;
@@ -178,5 +210,6 @@ module.exports = {
     revokeStudentSession,
     getStudentFromSession,
     resolveStudent,
-    assertStudentAllowed
+    assertStudentAllowed,
+    isDeviceBanned
 };
