@@ -16,7 +16,7 @@ class MockDatabase {
         this.practiceSessions = [];
         this.snapshots = [];
         this.uploads = [];
-        this.connections = new Set();
+        this.connections = new Map();
         this.directMessages = [];
         this.topicComments = [];
         this.lectureMessages = [];
@@ -54,7 +54,7 @@ class MockDatabase {
                 device_id: 'device-seed-2',
                 display_name: 'Priya Sharma',
                 email: 'priya.sharma@example.edu',
-                bio: 'Studying Compiler Design and Computer Networks. Working through revision drills.',
+                bio: 'Studying Compiler Design and Computer Networks. Looking for study partners for unit revisions!',
                 headline: 'B.Tech CSE - 6th Sem',
                 avatar_seed: 'priya',
                 avatar_url: '',
@@ -70,6 +70,50 @@ class MockDatabase {
                 updated_at: new Date().toISOString(),
                 last_seen_at: new Date().toISOString(),
                 last_login_at: new Date().toISOString()
+            },
+            {
+                id: 'student-dev-3',
+                device_id: 'device-seed-3',
+                display_name: 'Rahul Verma',
+                email: 'rahul.verma@example.edu',
+                bio: 'Preparing TOC, CFG to PDA reductions and Web Tech stacks. Aiming for high percentile in GATE CS.',
+                headline: 'B.Tech CSE - 5th Sem',
+                avatar_seed: 'rahul',
+                avatar_url: '',
+                github_url: '',
+                linkedin_url: '',
+                website_url: '',
+                extra_links: {},
+                is_banned: false,
+                banned_reason: '',
+                banned_at: null,
+                profile_started_at: new Date(Date.now() - 5 * 86400000).toISOString(),
+                created_at: new Date(Date.now() - 5 * 86400000).toISOString(),
+                updated_at: new Date().toISOString(),
+                last_seen_at: new Date(Date.now() - 1800000).toISOString(),
+                last_login_at: new Date(Date.now() - 1800000).toISOString()
+            },
+            {
+                id: 'student-dev-4',
+                device_id: 'device-seed-4',
+                display_name: 'Ananya Roy',
+                email: 'ananya.roy@example.edu',
+                bio: 'Cloud computing, distributed consensus (Raft/Paxos) and Cyber Law notes collaborator.',
+                headline: 'B.Tech CSE - 7th Sem',
+                avatar_seed: 'ananya',
+                avatar_url: '',
+                github_url: '',
+                linkedin_url: '',
+                website_url: '',
+                extra_links: {},
+                is_banned: false,
+                banned_reason: '',
+                banned_at: null,
+                profile_started_at: new Date(Date.now() - 10 * 86400000).toISOString(),
+                created_at: new Date(Date.now() - 10 * 86400000).toISOString(),
+                updated_at: new Date().toISOString(),
+                last_seen_at: new Date(Date.now() - 900000).toISOString(),
+                last_login_at: new Date(Date.now() - 900000).toISOString()
             }
         ];
 
@@ -78,6 +122,28 @@ class MockDatabase {
             this.studentsByDevice.set(s.device_id, s);
             if (s.email) this.studentsByEmail.set(s.email, s);
         }
+
+        // Priya has sent an incoming connection request to Aryan
+        this.connections.set('student-dev-2:student-dev-1', {
+            student_id: 'student-dev-2',
+            connected_student_id: 'student-dev-1',
+            status: 'pending',
+            created_at: new Date(Date.now() - 3600000).toISOString()
+        });
+
+        // Ananya and Aryan are already mutually connected study partners
+        this.connections.set('student-dev-1:student-dev-4', {
+            student_id: 'student-dev-1',
+            connected_student_id: 'student-dev-4',
+            status: 'accepted',
+            created_at: new Date(Date.now() - 86400000).toISOString()
+        });
+        this.connections.set('student-dev-4:student-dev-1', {
+            student_id: 'student-dev-4',
+            connected_student_id: 'student-dev-1',
+            status: 'accepted',
+            created_at: new Date(Date.now() - 86400000).toISOString()
+        });
 
         this.topicComments.push(
             {
@@ -345,9 +411,22 @@ function createMockSql() {
             const directory = [];
             for (const s of mockDb.students.values()) {
                 if (s.id !== studentId && !s.is_banned) {
+                    const myConn = mockDb.connections.get(`${studentId}:${s.id}`);
+                    const theirConn = mockDb.connections.get(`${s.id}:${studentId}`);
+
+                    let connectionStatus = 'none';
+                    if (myConn && myConn.status === 'accepted') {
+                        connectionStatus = 'connected';
+                    } else if (myConn && myConn.status === 'pending') {
+                        connectionStatus = 'pending_sent';
+                    } else if (theirConn && theirConn.status === 'pending') {
+                        connectionStatus = 'pending_received';
+                    }
+
                     directory.push({
                         ...s,
-                        connected: mockDb.connections.has(`${studentId}:${s.id}`)
+                        connected: connectionStatus === 'connected',
+                        connection_status: connectionStatus
                     });
                 }
             }
@@ -357,27 +436,102 @@ function createMockSql() {
         if (query.includes('FROM student_connections sc') && query.includes('JOIN students s')) {
             const studentId = values[0];
             const list = [];
-            for (const key of mockDb.connections) {
-                const [fromId, toId] = key.split(':');
-                if (fromId === studentId) {
-                    const connected = mockDb.getStudentById(toId);
-                    if (connected) list.push(connected);
+            // Incoming pending requests (where current student is target/recipient)
+            if (query.includes('sc.connected_student_id = ?') && query.includes("sc.status = 'pending'")) {
+                for (const conn of mockDb.connections.values()) {
+                    if (conn.connected_student_id === studentId && conn.status === 'pending') {
+                        const requester = mockDb.getStudentById(conn.student_id);
+                        if (requester) {
+                            list.push({
+                                ...requester,
+                                requested_at: conn.created_at
+                            });
+                        }
+                    }
+                }
+                return list;
+            }
+
+            // Outgoing pending requests (where current student sent request)
+            if (query.includes('sc.student_id = ?') && query.includes("sc.status = 'pending'")) {
+                for (const conn of mockDb.connections.values()) {
+                    if (conn.student_id === studentId && conn.status === 'pending') {
+                        const target = mockDb.getStudentById(conn.connected_student_id);
+                        if (target) {
+                            list.push({
+                                ...target,
+                                requested_at: conn.created_at
+                            });
+                        }
+                    }
+                }
+                return list;
+            }
+
+            // Accepted mutual connections
+            for (const conn of mockDb.connections.values()) {
+                if (conn.student_id === studentId && conn.status === 'accepted') {
+                    const connected = mockDb.getStudentById(conn.connected_student_id);
+                    if (connected) {
+                        list.push({
+                            ...connected,
+                            connected_at: conn.created_at
+                        });
+                    }
                 }
             }
             return list;
         }
 
+        if (query.includes('FROM student_connections') && query.includes('student_id = ?') && query.includes('connected_student_id = ?')) {
+            const sid = values[0];
+            const cid = values[1];
+            const conn = mockDb.connections.get(`${sid}:${cid}`);
+            return conn ? [{ status: conn.status }] : [];
+        }
+
+        if (query.includes('UPDATE student_connections') && query.includes("SET status = 'accepted'")) {
+            const sid = values[0];
+            const cid = values[1];
+            const conn = mockDb.connections.get(`${sid}:${cid}`);
+            if (conn) {
+                conn.status = 'accepted';
+            } else {
+                mockDb.connections.set(`${sid}:${cid}`, {
+                    student_id: sid,
+                    connected_student_id: cid,
+                    status: 'accepted',
+                    created_at: new Date().toISOString()
+                });
+            }
+            return [];
+        }
+
         if (query.includes('INSERT INTO student_connections')) {
             const studentId = values[0];
             const peerId = values[1];
-            mockDb.connections.add(`${studentId}:${peerId}`);
+            const status = values[2] || 'accepted';
+            const existing = mockDb.connections.get(`${studentId}:${peerId}`);
+            if (existing) {
+                existing.status = status;
+            } else {
+                mockDb.connections.set(`${studentId}:${peerId}`, {
+                    student_id: studentId,
+                    connected_student_id: peerId,
+                    status,
+                    created_at: new Date().toISOString()
+                });
+            }
             return [];
         }
 
         if (query.includes('DELETE FROM student_connections')) {
-            const studentId = values[0];
-            const peerId = values[1];
-            mockDb.connections.delete(`${studentId}:${peerId}`);
+            const sid = values[0];
+            const cid = values[1];
+            mockDb.connections.delete(`${sid}:${cid}`);
+            if (query.includes('OR') || values.length > 2) {
+                mockDb.connections.delete(`${cid}:${sid}`);
+            }
             return [];
         }
 
@@ -434,11 +588,17 @@ function createMockSql() {
             const attempts = mockDb.quizAttempts.filter((a) => a.student_id === studentId);
             const correctCount = attempts.filter((a) => a.is_correct).length;
 
+            let connectionsCount = 0;
+            for (const conn of mockDb.connections.values()) {
+                if (conn.student_id === studentId && conn.status === 'accepted') connectionsCount++;
+            }
+            const directMessagesCount = mockDb.directMessages.filter((m) => m.recipient_student_id === studentId).length;
+
             return [{
                 attempts_count: attempts.length,
                 correct_count: correctCount,
-                connections_count: 0,
-                direct_messages_count: 0,
+                connections_count: connectionsCount,
+                direct_messages_count: directMessagesCount,
                 completed_topics: completedTopics,
                 bookmarked_topics: bookmarkedTopics,
                 tracked_topics: trackedTopics,

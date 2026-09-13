@@ -230,6 +230,7 @@ async function getProfileResponse(sql, student) {
                 SELECT COUNT(*)::int AS connections_count
                 FROM student_connections
                 WHERE student_id = ${student.id}
+                  AND status = 'accepted'
             ),
             dm_stats AS (
                 SELECT COUNT(*)::int AS direct_messages_count

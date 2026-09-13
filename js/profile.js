@@ -1,8 +1,45 @@
 let remoteProfile = null;
-let socialDirectory = { directory: [], connections: [] };
+let socialDirectory = {
+    directory: [],
+    connections: [],
+    incomingRequests: [],
+    outgoingRequests: [],
+    counts: { connections: 0, incoming: 0, outgoing: 0 }
+};
+let socialFilter = 'all'; // 'all' | 'connected' | 'requests'
+let socialActionPending = false;
+let socialToastTimeout = null;
 let activePeerId = '';
 let activeMessages = [];
 let currentStudentId = '';
+
+function showSocialToast(message, type = 'info') {
+    const existing = document.getElementById('socialToast');
+    if (existing) existing.remove();
+    if (socialToastTimeout) clearTimeout(socialToastTimeout);
+
+    const toast = document.createElement('div');
+    toast.id = 'socialToast';
+    const bgClass = type === 'success' ? 'bg-emerald-950/95 border-emerald-500/60 text-emerald-100 shadow-emerald-950/50' :
+                   type === 'error' ? 'bg-rose-950/95 border-rose-500/60 text-rose-100 shadow-rose-950/50' :
+                   'bg-slate-900/95 border-indigo-500/60 text-indigo-100 shadow-indigo-950/50';
+
+    toast.className = `fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 rounded-xl border shadow-2xl backdrop-blur-md text-xs font-medium transition-all duration-300 ${bgClass}`;
+    toast.innerHTML = `
+        <span class="text-sm shrink-0">${type === 'success' ? '✓' : type === 'error' ? '⚠️' : 'ℹ️'}</span>
+        <span class="flex-1">${window.ACADEMY.escapeForAttribute(message)}</span>
+        <button type="button" onclick="this.parentElement.remove()" class="text-slate-400 hover:text-white shrink-0 ml-1 text-sm font-bold">&times;</button>
+    `;
+    document.body.appendChild(toast);
+    socialToastTimeout = setTimeout(() => {
+        if (toast.parentElement) toast.remove();
+    }, 4500);
+}
+
+function setSocialFilter(filter) {
+    socialFilter = filter;
+    renderStudents();
+}
 const MAX_PDF_BYTES = 10 * 1024 * 1024;
 const MAX_PPT_BYTES = 25 * 1024 * 1024;
 const MAX_AVATAR_BYTES = 2 * 1024 * 1024;
@@ -327,38 +364,174 @@ function renderStudentDirectory() {
         return;
     }
 
-    const connectedIds = new Set((socialDirectory.connections || []).map((student) => student.id));
+    const incoming = socialDirectory.incomingRequests || [];
+    const outgoing = socialDirectory.outgoingRequests || [];
+    const connections = socialDirectory.connections || [];
+    const directory = socialDirectory.directory || [];
+
+    // Filter students to display
+    let displayedStudents = [];
+    if (socialFilter === 'connected') {
+        displayedStudents = directory.filter((s) => s.connection_status === 'connected' || s.connected);
+    } else if (socialFilter === 'requests') {
+        displayedStudents = directory.filter((s) => s.connection_status === 'pending_sent' || s.connection_status === 'pending_received');
+    } else {
+        displayedStudents = directory;
+    }
+
     document.getElementById('profileStudents').innerHTML = `
         <section class="panel-card p-5">
-            <div class="section-head">
-                <h3>Student network</h3>
-                <span>${(socialDirectory.connections || []).length} linked</span>
+            <div class="section-head mb-4">
+                <div>
+                    <h3>Student network</h3>
+                    <p class="text-xs text-slate-400 mt-0.5">Mutual study connections • Connect like Discord to link up</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/25">
+                        ${connections.length} Mutual Partners
+                    </span>
+                    ${incoming.length > 0 ? `
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30 animate-pulse">
+                            ${incoming.length} Request${incoming.length > 1 ? 's' : ''}
+                        </span>
+                    ` : ''}
+                </div>
             </div>
-            <div class="space-y-3">
-                ${(socialDirectory.directory || []).length ? socialDirectory.directory.map((student) => `
-                    <div class="social-card">
-                        <div class="flex items-start gap-4">
-                            <div class="avatar-shell avatar-shell-small">
-                                ${student.avatar_url ? `<img src="${student.avatar_url}" alt="${student.display_name}" class="avatar-image">` : `<span>${student.display_name.slice(0, 1).toUpperCase()}</span>`}
-                            </div>
-                            <div class="flex-1">
-                                <strong class="text-white">${student.display_name}</strong>
-                                <p class="text-sm text-slate-400 mt-1">${student.headline || 'Studying, revising, and doing the brave academic thing.'}</p>
-                                <p class="text-sm text-slate-400 mt-2">${student.bio || 'Available for revision chats, shared notes, and surviving unit tests together.'}</p>
-                                <p class="text-xs text-slate-500 mt-2">Seen ${formatDate(student.last_seen_at)}</p>
-                            </div>
+
+            <!-- Incoming Requests Banner (Discord style) -->
+            ${incoming.length > 0 ? `
+                <div class="p-4 rounded-xl bg-indigo-500/10 border border-indigo-500/30 space-y-3 mb-5">
+                    <div class="flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <span class="flex h-2.5 w-2.5 relative">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-indigo-500"></span>
+                            </span>
+                            <strong class="text-white text-xs uppercase tracking-wider font-semibold">Incoming Connection Requests (${incoming.length})</strong>
                         </div>
-                        <div class="flex flex-wrap gap-2 mt-3">
-                            <button onclick="connectStudent('${student.id}')" class="secondary-cta text-sm !py-2 !px-4" ${student.connected ? 'disabled' : ''}>
-                                ${student.connected ? 'Connected' : 'Connect'}
-                            </button>
-                            <button onclick="openMessageThread('${student.id}')" class="primary-cta text-sm !py-2 !px-4">
-                                ${connectedIds.has(student.id) ? 'Open DM' : 'Message'}
-                            </button>
-                            <button onclick="reportStudent('${student.id}', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="secondary-cta text-sm !py-2 !px-4">Report</button>
-                        </div>
+                        <span class="text-[11px] text-indigo-300">Accept to link as mutual study partner</span>
                     </div>
-                `).join('') : '<p class="text-slate-400">As more students start using the deployed portal, their profiles will appear here automatically.</p>'}
+                    <div class="space-y-2">
+                        ${incoming.map((reqStudent) => `
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 rounded-lg bg-slate-900/80 border border-indigo-500/20">
+                                <div class="flex items-center gap-3">
+                                    <div class="avatar-shell avatar-shell-small shrink-0">
+                                        ${reqStudent.avatar_url ? `<img src="${reqStudent.avatar_url}" alt="${reqStudent.display_name}" class="avatar-image">` : `<span>${reqStudent.display_name.slice(0, 1).toUpperCase()}</span>`}
+                                    </div>
+                                    <div class="min-w-0">
+                                        <div class="flex items-center gap-2 flex-wrap">
+                                            <strong class="text-white text-sm">${reqStudent.display_name}</strong>
+                                            <span class="text-[11px] text-slate-400 font-normal">sent you a request</span>
+                                        </div>
+                                        <p class="text-xs text-slate-400 mt-0.5 truncate">${reqStudent.headline || 'Computer Science Student'}</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <button type="button" onclick="window.handleConnectionAction('${reqStudent.id}', 'accept', '${window.ACADEMY.escapeForAttribute(reqStudent.display_name)}')" class="primary-cta text-xs !py-1.5 !px-3.5 !bg-emerald-600 hover:!bg-emerald-500">
+                                        Accept Connect
+                                    </button>
+                                    <button type="button" onclick="window.handleConnectionAction('${reqStudent.id}', 'reject', '${window.ACADEMY.escapeForAttribute(reqStudent.display_name)}')" class="secondary-cta text-xs !py-1.5 !px-3 text-slate-400 hover:text-white">
+                                        Decline
+                                    </button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            ` : ''}
+
+            <!-- Filter Navigation Tabs -->
+            <div class="flex items-center gap-1.5 border-b border-slate-700/60 pb-3 mb-4 overflow-x-auto">
+                <button type="button" onclick="window.setSocialFilter('all')" class="text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap transition-colors ${socialFilter === 'all' ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-400 hover:text-white hover:bg-slate-800'}">
+                    All Students (${directory.length})
+                </button>
+                <button type="button" onclick="window.setSocialFilter('connected')" class="text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap transition-colors ${socialFilter === 'connected' ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-400 hover:text-white hover:bg-slate-800'}">
+                    Mutual Partners (${connections.length})
+                </button>
+                <button type="button" onclick="window.setSocialFilter('requests')" class="text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap transition-colors relative ${socialFilter === 'requests' ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-400 hover:text-white hover:bg-slate-800'}">
+                    Requests (${incoming.length + outgoing.length})
+                    ${incoming.length > 0 ? `<span class="inline-block w-2 h-2 rounded-full bg-amber-400 ml-1"></span>` : ''}
+                </button>
+            </div>
+
+            <!-- Student Directory List -->
+            <div class="space-y-3">
+                ${displayedStudents.length ? displayedStudents.map((student) => {
+                    const status = student.connection_status || (student.connected ? 'connected' : 'none');
+                    return `
+                        <div class="social-card p-4 rounded-xl bg-slate-900/60 border border-slate-700/60 transition-all hover:border-slate-600">
+                            <div class="flex items-start justify-between gap-4 flex-wrap">
+                                <div class="flex items-start gap-3.5 flex-1 min-w-[240px]">
+                                    <div class="avatar-shell avatar-shell-small shrink-0">
+                                        ${student.avatar_url ? `<img src="${student.avatar_url}" alt="${student.display_name}" class="avatar-image">` : `<span>${student.display_name.slice(0, 1).toUpperCase()}</span>`}
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2 flex-wrap">
+                                            <strong class="text-white text-sm">${student.display_name}</strong>
+                                            ${status === 'connected' ? `
+                                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-medium bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                                                    ✓ Mutual Partner
+                                                </span>
+                                            ` : status === 'pending_sent' ? `
+                                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-medium bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                                                    ⏳ Request Sent
+                                                </span>
+                                            ` : status === 'pending_received' ? `
+                                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-medium bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
+                                                    👋 Sent You a Request
+                                                </span>
+                                            ` : ''}
+                                        </div>
+                                        <p class="text-xs text-slate-300 mt-1">${student.headline || 'Studying, revising, and preparing for exams.'}</p>
+                                        <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">${student.bio || 'Available for revision chats, shared notes, and mock tests.'}</p>
+                                        <p class="text-[11px] text-slate-500 mt-2">Active ${formatDate(student.last_seen_at)}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2 mt-3.5 pt-3 border-t border-slate-800/80">
+                                ${status === 'connected' ? `
+                                    <button type="button" onclick="openMessageThread('${student.id}')" class="primary-cta text-xs !py-1.5 !px-3.5">
+                                        Open DM
+                                    </button>
+                                    <button type="button" onclick="window.handleConnectionAction('${student.id}', 'disconnect', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="secondary-cta text-xs !py-1.5 !px-3 text-slate-400 hover:text-rose-300 hover:border-rose-500/40">
+                                        Disconnect
+                                    </button>
+                                ` : status === 'pending_sent' ? `
+                                    <button type="button" onclick="window.handleConnectionAction('${student.id}', 'cancel', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="secondary-cta text-xs !py-1.5 !px-3 text-amber-300 hover:border-amber-500/50">
+                                        Cancel Request
+                                    </button>
+                                    <button type="button" onclick="openMessageThread('${student.id}')" class="secondary-cta text-xs !py-1.5 !px-3">
+                                        Message
+                                    </button>
+                                ` : status === 'pending_received' ? `
+                                    <button type="button" onclick="window.handleConnectionAction('${student.id}', 'accept', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="primary-cta text-xs !py-1.5 !px-3.5 !bg-emerald-600 hover:!bg-emerald-500">
+                                        Accept Connect
+                                    </button>
+                                    <button type="button" onclick="window.handleConnectionAction('${student.id}', 'reject', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="secondary-cta text-xs !py-1.5 !px-3 text-slate-400 hover:text-white">
+                                        Decline
+                                    </button>
+                                ` : `
+                                    <button type="button" onclick="window.handleConnectionAction('${student.id}', 'connect', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="primary-cta text-xs !py-1.5 !px-3.5">
+                                        + Connect
+                                    </button>
+                                    <button type="button" onclick="openMessageThread('${student.id}')" class="secondary-cta text-xs !py-1.5 !px-3">
+                                        Message
+                                    </button>
+                                `}
+                                <button type="button" onclick="reportStudent('${student.id}', '${window.ACADEMY.escapeForAttribute(student.display_name)}')" class="secondary-cta text-xs !py-1.5 !px-3 ml-auto text-slate-400 hover:text-slate-200">
+                                    Report
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                }).join('') : `
+                    <div class="text-center py-8 text-slate-400 text-xs">
+                        ${socialFilter === 'connected' ? 'No mutual study partners yet. Send connection requests to classmates above!' :
+                          socialFilter === 'requests' ? 'No pending connection requests.' :
+                          'No students in directory yet.'}
+                    </div>
+                `}
             </div>
         </section>
     `;
@@ -389,26 +562,40 @@ function renderInbox() {
     }
 
     const peer = (socialDirectory.directory || []).find((student) => student.id === activePeerId)
-        || (socialDirectory.connections || []).find((student) => student.id === activePeerId);
+        || (socialDirectory.connections || []).find((student) => student.id === activePeerId)
+        || (socialDirectory.incomingRequests || []).find((student) => student.id === activePeerId)
+        || (socialDirectory.outgoingRequests || []).find((student) => student.id === activePeerId);
+
+    const isMutual = peer && (peer.connection_status === 'connected' || (socialDirectory.connections || []).some((c) => c.id === peer.id));
 
     document.getElementById('profileInbox').innerHTML = `
         <section class="panel-card p-5">
-            <div class="section-head">
-                <h3>Direct messages</h3>
-                <span>${peer ? peer.display_name : 'Pick a student'}</span>
+            <div class="section-head mb-4">
+                <div>
+                    <h3>Direct messages</h3>
+                    <p class="text-xs text-slate-400 mt-0.5">${peer ? `${peer.display_name} ${isMutual ? '• Mutual Study Partner' : '• Classmate'}` : 'Pick a student from the directory'}</p>
+                </div>
+                ${isMutual ? `
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                        Mutual Study Partner
+                    </span>
+                ` : ''}
             </div>
             <div class="chat-thread chat-thread-whatsapp mb-4">
                 ${activeMessages.length ? activeMessages.map((message) => `
                     <article class="chat-message chat-bubble ${message.sender_id === currentStudentId ? 'chat-bubble-own' : 'chat-bubble-peer'}">
                         <strong class="text-white">${message.sender_id === currentStudentId ? 'You' : message.sender_name}</strong>
-                        <p class="text-sm text-slate-400 mt-2">${message.message_text}</p>
-                        <p class="text-xs text-slate-500 mt-2">${formatDate(message.created_at)}</p>
+                        <p class="text-sm text-slate-300 mt-1.5 leading-relaxed">${message.message_text}</p>
+                        <p class="text-[11px] text-slate-400 mt-1.5">${formatDate(message.created_at)}</p>
                     </article>
-                `).join('') : '<p class="text-slate-400">Choose a student from the directory to open a simple DM thread.</p>'}
+                `).join('') : '<p class="text-slate-400 text-xs py-4">Choose a student from the directory to open a simple DM thread.</p>'}
             </div>
             <div class="space-y-3">
-                <textarea id="dmInput" class="note-input !min-h-[6rem]" placeholder="Write a revision doubt, study invite, or one calm message before the semester attacks again."></textarea>
-                <button id="sendDmBtn" class="primary-cta ${peer ? '' : 'opacity-60 pointer-events-none'}">Send</button>
+                <textarea id="dmInput" class="note-input !min-h-[5.5rem]" placeholder="Write a revision doubt, study invite, or message before the semester attacks again."></textarea>
+                <div class="flex items-center justify-between">
+                    <span class="text-[11px] text-slate-500">${peer ? `Sending to ${peer.display_name}` : 'Select a peer above'}</span>
+                    <button id="sendDmBtn" class="primary-cta text-xs !py-2 !px-4 ${peer ? '' : 'opacity-50 pointer-events-none'}">Send Message</button>
+                </div>
             </div>
         </section>
     `;
@@ -516,21 +703,46 @@ async function hydrateStudentDirectory() {
     }
 }
 
-async function connectStudent(targetStudentId) {
+async function handleConnectionAction(targetStudentId, action = 'connect', studentName = 'classmate') {
+    if (socialActionPending) return;
+    if (action === 'disconnect') {
+        const confirmed = window.confirm(`Disconnect from ${studentName}? You will no longer be mutual study partners.`);
+        if (!confirmed) return;
+    }
+
+    socialActionPending = true;
     try {
-        await fetch('/api/social', {
+        const response = await fetch('/api/social', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 deviceId: window.ACADEMY.state.deviceId,
-                targetStudentId
+                targetStudentId,
+                action
             })
         });
+
+        const data = await response.json();
+        if (!response.ok) {
+            showSocialToast(data.error || 'Unable to update connection.', 'error');
+            return;
+        }
+
+        showSocialToast(data.message || 'Connection updated.', 'success');
         await hydrateStudentDirectory();
-        renderProfilePage();
+        await hydrateRemoteProfile();
+        renderStudents();
+        renderInbox();
     } catch (error) {
-        console.error('Unable to connect student', error);
+        console.error('Connection action error:', error);
+        showSocialToast('Connection request failed. Please check network.', 'error');
+    } finally {
+        socialActionPending = false;
     }
+}
+
+async function connectStudent(targetStudentId) {
+    return handleConnectionAction(targetStudentId, 'connect');
 }
 
 async function openMessageThread(peerId) {
@@ -700,6 +912,9 @@ async function uploadStudyPdf() {
 }
 
 window.connectStudent = connectStudent;
+window.handleConnectionAction = handleConnectionAction;
+window.setSocialFilter = setSocialFilter;
+window.showSocialToast = showSocialToast;
 window.openMessageThread = openMessageThread;
 window.reportStudent = reportStudent;
 
