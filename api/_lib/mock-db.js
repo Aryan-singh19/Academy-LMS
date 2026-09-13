@@ -246,6 +246,26 @@ function createMockSql() {
             return student ? [student] : [];
         }
 
+        // 1b. SELECT students by google_sub
+        if (query.includes('FROM students') && query.includes('google_sub = ?')) {
+            const googleSub = values[0];
+            for (const s of mockDb.students.values()) {
+                if (s.google_sub === googleSub) return [s];
+            }
+            return [];
+        }
+
+        // 1c. SELECT students by email
+        if (query.includes('FROM students') && query.includes('email = ?')) {
+            const email = values[0];
+            const student = mockDb.studentsByEmail.get(email);
+            if (student) return [student];
+            for (const s of mockDb.students.values()) {
+                if (s.email && s.email.toLowerCase() === String(email).toLowerCase()) return [s];
+            }
+            return [];
+        }
+
         // 2. SELECT students by id
         if (query.includes('FROM students') && query.includes('id = ?')) {
             const id = values[0];

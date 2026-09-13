@@ -1,4 +1,4 @@
-const { getSql, getStudentByDevice, resolveStudent, assertStudentAllowed } = require('./_lib/db');
+const { getSql, getStudentByDevice, getStudentFromSession, resolveStudent, assertStudentAllowed } = require('./_lib/db');
 const { allowMethods, readJsonBody, sendJson } = require('./_lib/http');
 const { applyRateLimit } = require('./_lib/rate-limit');
 
@@ -360,7 +360,45 @@ module.exports = async function handler(req, res) {
             return;
         }
 
-        const student = await upsertStudent(sql, deviceId, displayName || 'Student', snapshot, profilePatch);
+        const sessionStudent = await getStudentFromSession(req, sql);
+        let student = null;
+
+        if (sessionStudent) {
+            const rows = await sql`
+                UPDATE students
+                SET
+                    display_name = COALESCE(NULLIF(${displayName}, ''), display_name),
+                    email = COALESCE(${profilePatch.email || snapshot.email || null}, email),
+                    bio = CASE WHEN ${profilePatch.bio || ''} <> '' THEN ${profilePatch.bio} ELSE bio END,
+                    headline = CASE WHEN ${profilePatch.headline || ''} <> '' THEN ${profilePatch.headline} ELSE headline END,
+                    github_url = CASE WHEN ${profilePatch.githubUrl || ''} <> '' THEN ${profilePatch.githubUrl} ELSE github_url END,
+                    linkedin_url = CASE WHEN ${profilePatch.linkedinUrl || ''} <> '' THEN ${profilePatch.linkedinUrl} ELSE linkedin_url END,
+                    website_url = CASE WHEN ${profilePatch.websiteUrl || ''} <> '' THEN ${profilePatch.websiteUrl} ELSE website_url END,
+                    extra_links = CASE WHEN ${JSON.stringify(profilePatch.extraLinks || {})}::jsonb <> '{}'::jsonb THEN ${JSON.stringify(profilePatch.extraLinks || {})}::jsonb ELSE extra_links END,
+                    last_seen_at = NOW(),
+                    updated_at = NOW()
+                WHERE id = ${sessionStudent.id}
+                RETURNING
+                    id,
+                    device_id,
+                    display_name,
+                    email,
+                    bio,
+                    headline,
+                    avatar_url,
+                    github_url,
+                    linkedin_url,
+                    website_url,
+                    extra_links,
+                    created_at,
+                    updated_at,
+                    last_seen_at
+            `;
+            student = rows[0] || sessionStudent;
+        } else {
+            student = await upsertStudent(sql, deviceId, displayName || 'Student', snapshot, profilePatch);
+        }
+
         assertStudentAllowed(student);
         if (Object.keys(snapshot).length) {
             await syncSnapshot(sql, student, snapshot);

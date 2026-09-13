@@ -12,6 +12,103 @@ async function verifyGoogleToken(idToken, audience) {
     return ticket.getPayload();
 }
 
+async function mergeGuestStudent(sql, guestId, primaryId) {
+    // 1. Topic progress: deduplicate and migrate
+    try {
+        await sql`
+            DELETE FROM student_topic_progress
+            WHERE student_id = ${guestId}
+              AND topic_id IN (
+                  SELECT topic_id FROM student_topic_progress WHERE student_id = ${primaryId}
+              )
+        `;
+        await sql`
+            UPDATE student_topic_progress
+            SET student_id = ${primaryId}
+            WHERE student_id = ${guestId}
+        `;
+    } catch (e) {
+        console.warn('Could not merge student_topic_progress:', e.message);
+    }
+
+    // 2. Exam drafts, quiz attempts, practice sessions
+    try {
+        await sql`UPDATE exam_drafts SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+    try {
+        await sql`UPDATE quiz_attempts SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+    try {
+        await sql`UPDATE practice_sessions SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+
+    // 3. Lecture events, presence, messages, comments
+    try {
+        await sql`UPDATE lecture_watch_events SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+    try {
+        await sql`UPDATE lecture_presence SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+    try {
+        await sql`UPDATE lecture_messages SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+    try {
+        await sql`UPDATE topic_comments SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+
+    // 4. Student connections: delete self-connections and duplicates, then reassign
+    try {
+        await sql`
+            DELETE FROM student_connections
+            WHERE (student_id = ${guestId} AND connected_student_id = ${primaryId})
+               OR (student_id = ${primaryId} AND connected_student_id = ${guestId})
+        `;
+        await sql`
+            DELETE FROM student_connections
+            WHERE student_id = ${guestId}
+              AND connected_student_id IN (
+                  SELECT connected_student_id FROM student_connections WHERE student_id = ${primaryId}
+              )
+        `;
+        await sql`
+            DELETE FROM student_connections
+            WHERE connected_student_id = ${guestId}
+              AND student_id IN (
+                  SELECT student_id FROM student_connections WHERE connected_student_id = ${primaryId}
+              )
+        `;
+        await sql`UPDATE student_connections SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+        await sql`UPDATE student_connections SET connected_student_id = ${primaryId} WHERE connected_student_id = ${guestId}`;
+    } catch (_) {}
+
+    // 5. Direct messages
+    try {
+        await sql`UPDATE direct_messages SET sender_student_id = ${primaryId} WHERE sender_student_id = ${guestId}`;
+        await sql`UPDATE direct_messages SET recipient_student_id = ${primaryId} WHERE recipient_student_id = ${guestId}`;
+    } catch (_) {}
+
+    // 6. Reports & uploads
+    try {
+        await sql`UPDATE student_reports SET reporter_student_id = ${primaryId} WHERE reporter_student_id = ${guestId}`;
+        await sql`UPDATE student_reports SET target_student_id = ${primaryId} WHERE target_student_id = ${guestId}`;
+        await sql`UPDATE student_uploads SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+
+    // 7. Sessions & snapshots
+    try {
+        await sql`UPDATE student_sessions SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+        await sql`UPDATE student_state_snapshots SET student_id = ${primaryId} WHERE student_id = ${guestId}`;
+    } catch (_) {}
+
+    // 8. Relinquish device_id and delete guest record
+    try {
+        await sql`UPDATE students SET device_id = ${'merged-' + guestId} WHERE id = ${guestId}`;
+        await sql`DELETE FROM students WHERE id = ${guestId}`;
+    } catch (e) {
+        console.warn('Could not remove merged guest student:', e.message);
+    }
+}
+
 async function upsertGoogleStudent(sql, payload, deviceId) {
     const googleSub = String(payload.sub || '').trim();
     const email = String(payload.email || '').trim().toLowerCase();
@@ -20,22 +117,58 @@ async function upsertGoogleStudent(sql, payload, deviceId) {
     const avatarUrl = String(payload.picture || '').trim();
     const emailVerified = Boolean(payload.email_verified);
 
-    const existing = await sql`
-        SELECT id
-        FROM students
-        WHERE google_sub = ${googleSub}
-           OR email = ${normalizedEmail}
-           OR device_id = ${deviceId}
-        ORDER BY CASE
-            WHEN google_sub = ${googleSub} THEN 0
-            WHEN email = ${normalizedEmail} THEN 1
-            WHEN device_id = ${deviceId} THEN 2
-            ELSE 3
-        END
-        LIMIT 1
-    `;
+    // 1. Locate any existing Google/email account
+    let authStudent = null;
+    if (googleSub) {
+        const rows = await sql`
+            SELECT *
+            FROM students
+            WHERE google_sub = ${googleSub}
+            LIMIT 1
+        `;
+        if (rows[0]) authStudent = rows[0];
+    }
+    if (!authStudent && normalizedEmail) {
+        const rows = await sql`
+            SELECT *
+            FROM students
+            WHERE email = ${normalizedEmail}
+            LIMIT 1
+        `;
+        if (rows[0]) authStudent = rows[0];
+    }
 
-    if (existing[0]) {
+    // 2. Locate any student record holding this device_id
+    let devStudent = null;
+    if (deviceId) {
+        const rows = await sql`
+            SELECT *
+            FROM students
+            WHERE device_id = ${deviceId}
+            LIMIT 1
+        `;
+        if (rows[0]) devStudent = rows[0];
+    }
+
+    // 3. Resolve conflict if device_id is held by another row
+    if (authStudent && devStudent && authStudent.id !== devStudent.id) {
+        const isGuest = !devStudent.google_sub || devStudent.auth_provider === 'device';
+        if (isGuest) {
+            // Merge guest progress into authenticated account and purge guest row
+            await mergeGuestStudent(sql, devStudent.id, authStudent.id);
+        } else {
+            // Another registered student used this machine previously; reassign their device_id
+            await sql`
+                UPDATE students
+                SET device_id = ${'prev-' + devStudent.id + '-' + Date.now()}
+                WHERE id = ${devStudent.id}
+            `;
+        }
+        devStudent = null;
+    }
+
+    // 4. Update existing authenticated student
+    if (authStudent) {
         const rows = await sql`
             UPDATE students
             SET
@@ -49,12 +182,33 @@ async function upsertGoogleStudent(sql, payload, deviceId) {
                 last_seen_at = NOW(),
                 last_login_at = NOW(),
                 updated_at = NOW()
-            WHERE id = ${existing[0].id}
+            WHERE id = ${authStudent.id}
             RETURNING *
         `;
         return rows[0];
     }
 
+    // 5. Upgrade existing guest record holding this device_id
+    if (devStudent) {
+        const rows = await sql`
+            UPDATE students
+            SET
+                display_name = ${displayName},
+                google_sub = ${googleSub},
+                auth_provider = 'google',
+                email = ${normalizedEmail},
+                email_verified = ${emailVerified},
+                avatar_url = CASE WHEN ${avatarUrl} <> '' THEN ${avatarUrl} ELSE avatar_url END,
+                last_seen_at = NOW(),
+                last_login_at = NOW(),
+                updated_at = NOW()
+            WHERE id = ${devStudent.id}
+            RETURNING *
+        `;
+        return rows[0];
+    }
+
+    // 6. Brand new user and device
     const rows = await sql`
         INSERT INTO students (
             device_id,
@@ -82,6 +236,17 @@ async function upsertGoogleStudent(sql, payload, deviceId) {
             NOW(),
             NOW()
         )
+        ON CONFLICT (device_id)
+        DO UPDATE SET
+            display_name = EXCLUDED.display_name,
+            google_sub = EXCLUDED.google_sub,
+            auth_provider = 'google',
+            email = EXCLUDED.email,
+            email_verified = EXCLUDED.email_verified,
+            avatar_url = CASE WHEN EXCLUDED.avatar_url <> '' THEN EXCLUDED.avatar_url ELSE students.avatar_url END,
+            last_seen_at = NOW(),
+            last_login_at = NOW(),
+            updated_at = NOW()
         RETURNING *
     `;
 
