@@ -91,7 +91,7 @@ test('end to end against a mock API: filters non-embeddable videos, writes outpu
         execFile('node', [script, `--only=${course.id}`], { env: { ...process.env, YOUTUBE_API_BASE: base, YOUTUBE_API_KEY: 'test' } }, (err, stdout) => (err ? reject(err) : resolve(stdout)));
       });
     });
-    const out = fs.readFileSync(path.join(tmp, 'js/lecture-library-auto.js'), 'utf8');
+    const out = fs.readFileSync(path.join(tmp, 'scripts/lectures/api-results.js'), 'utf8');
     const ctx = { window: {} };
     new Function('window', out)(ctx.window);
     const lib = ctx.window.lectureLibraryAuto;
@@ -99,7 +99,7 @@ test('end to end against a mock API: filters non-embeddable videos, writes outpu
     assert.ok(lib.length > 1, 'topic entries written');
     assert.ok(!lib.some((e) => e.url.includes('vid0') || e.url.includes('private1')), 'non-embeddable and private videos are skipped');
     assert.ok(lib.every((e) => /^https:\/\/www\.youtube\.com\/(watch\?v=[\w-]+&list=PLmock|playlist\?list=PLmock)$/.test(e.url)));
-    assert.ok(fs.readFileSync(path.join(tmp, 'scripts/lectures/REPORT.md'), 'utf8').includes(course.code));
+    assert.ok(fs.readFileSync(path.join(tmp, 'scripts/lectures/REPORT-api.md'), 'utf8').includes(course.code));
 
     // A second run with the quota exhausted must still rebuild the same output from cache.
     quotaDead = true;
@@ -110,7 +110,7 @@ test('end to end against a mock API: filters non-embeddable videos, writes outpu
       });
     });
     assert.equal(searches, before, 'cached searches are not repeated');
-    assert.equal(fs.readFileSync(path.join(tmp, 'js/lecture-library-auto.js'), 'utf8').split('\n').slice(2).join('\n'), out.split('\n').slice(2).join('\n'));
+    assert.equal(fs.readFileSync(path.join(tmp, 'scripts/lectures/api-results.js'), 'utf8').split('\n').slice(2).join('\n'), out.split('\n').slice(2).join('\n'));
     void run;
   } finally {
     server.close();
@@ -148,10 +148,29 @@ test('rotates to the next API key when the first one is out of quota', async () 
       (err, out) => (err ? reject(err) : resolve(out))));
     assert.deepEqual([...keysSeen].sort(), ['dead', 'live']);
     const ctx = {};
-    new Function('window', fs.readFileSync(path.join(tmp, 'js/lecture-library-auto.js'), 'utf8'))(ctx);
+    new Function('window', fs.readFileSync(path.join(tmp, 'scripts/lectures/api-results.js'), 'utf8'))(ctx);
     assert.equal(ctx.lectureLibraryAuto.filter((e) => e.match === 'topic').length, titles.length, 'every topic matched its own video');
   } finally {
     server.close();
     fs.rmSync(tmp, { recursive: true, force: true });
   }
+});
+
+test('found.json gives every non-curated topic a YouTube link', async () => {
+  const { buildCourse } = await import('./build_from_found.mjs');
+  const fs = await import('node:fs');
+  const found = JSON.parse(fs.readFileSync(new URL('./found.json', import.meta.url), 'utf8'));
+  const { courses, curated } = loadSiteData();
+  const curatedIds = new Set(curated.map((c) => c.subject));
+  let topics = 0; let linked = 0;
+  for (const c of courses.filter((x) => !curatedIds.has(x.id))) {
+    assert.ok(found[c.id], `no lectures for ${c.id}`);
+    const { entries } = buildCourse(c, found[c.id]);
+    topics += c.units.reduce((n, u) => n + u.topics.length, 0);
+    for (const e of entries.filter((x) => x.topicId)) {
+      linked += 1;
+      assert.match(e.url, /^https:\/\/www\.youtube\.com\/(watch\?v=[\w-]{11}|playlist\?list=PL[\w-]{16,32})$/);
+    }
+  }
+  assert.equal(linked, topics);
 });

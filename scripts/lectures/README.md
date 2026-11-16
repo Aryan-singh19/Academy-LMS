@@ -1,5 +1,21 @@
 # YouTube lectures for every subject and topic
 
+All 148 subjects without a hand-curated shelf (`js/lecture-library.js`) now have real YouTube lectures,
+and every one of their 2,960 topics has a **Watch lecture for this topic** button.
+
+- **Source:** `found.json` lists, per subject, a full-course playlist plus unit and topic videos
+  (RGPV channels such as Education Point and Jishan Ahmad first, then NPTEL, Neso Academy,
+  Engineering Funda, MIT OCW and similar). Every ID came from a real YouTube search result.
+- **Build:** `node scripts/lectures/build_from_found.mjs` writes `js/lecture-library-auto.js` and
+  `REPORT.md`. Each topic gets the video whose title matches it, else its unit's video, else a
+  whole-course video, else the subject playlist.
+- **Fix a broken link:** replace its ID in `found.json` (`"u"` is the unit number, `0` means the whole
+  course; an ID starting with `PL` is a playlist), then rebuild.
+- **Test:** `node --test scripts/lectures/` checks that every topic gets a valid YouTube link.
+
+## Optional: YouTube Data API fetcher
+
+
 `fetch_youtube_lectures.mjs` gives every subject without a hand-curated shelf (`js/lecture-library.js`)
 real lectures that play inside Academy:
 
@@ -8,7 +24,7 @@ real lectures that play inside Academy:
 2. Reads every video in that playlist and keeps only public, embeddable ones.
 3. Matches each topic to the video whose title fits it best. A topic with no matching video uses its
    unit's lecture; a unit with neither keeps the YouTube search shelf.
-4. Writes `js/lecture-library-auto.js` (loaded by the Lectures page) and `REPORT.md` (coverage per subject).
+4. Writes `api-results.js` and `REPORT-api.md` (not loaded by the site; use them to improve `found.json`).
 
 Each topic page has a **Watch lecture for this topic** button that opens its video.
 

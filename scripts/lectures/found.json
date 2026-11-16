@@ -3021,5 +3021,668 @@
    "title": "Research Methodology & IPR",
    "by": "RM and IPR lectures"
   }
+ },
+ "me405": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+    "t": "Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLCroaJeHBTHaeL2vw3l8YZ781Sq7SXdKi",
+    "t": "Manufacturing processes video lectures",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL82E9A8429ED7BB27",
+   "title": "Manufacturing Processes II, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "mcse101": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+    "t": "Applied numerical methods",
+    "by": "NPTEL IIT Kanpur"
+   },
+   {
+    "u": 0,
+    "id": "PL6EA0722B99332589",
+    "t": "Numerical optimization, Dr. Shirish Shevade, IISc",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLbMVogVj5nJS4AsBvnp9bCw0wAovDlXPl",
+   "title": "Advanced Numerical Analysis, Prof. Sachin Patwardhan, IIT Bombay",
+   "by": "NPTEL"
+  }
+ },
+ "mcse102": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "T0yzrZL1py0",
+    "t": "Persistent data structures",
+    "by": "MIT OpenCourseWare"
+   },
+   {
+    "u": 0,
+    "id": "WqCWghETNDc",
+    "t": "Retroactive data structures",
+    "by": "MIT OpenCourseWare"
+   },
+   {
+    "u": 0,
+    "id": "NMxLL3D5qd8",
+    "t": "Geometric structures: point location and range searching",
+    "by": "MIT OpenCourseWare"
+   },
+   {
+    "u": 0,
+    "id": "V3omVLzI0WE",
+    "t": "Memory hierarchy models: cache-efficient structures, B-trees",
+    "by": "MIT OpenCourseWare"
+   },
+   {
+    "u": 0,
+    "id": "bY8f4DSkQ6M",
+    "t": "Cache-oblivious structures",
+    "by": "MIT OpenCourseWare"
+   },
+   {
+    "u": 0,
+    "id": "0rCFkuQS968",
+    "t": "Static trees: least common ancestor, range minimum query",
+    "by": "MIT OpenCourseWare"
+   },
+   {
+    "u": 0,
+    "id": "NinWEPPrkDQ",
+    "t": "Strings: suffix tree, suffix array",
+    "by": "MIT OpenCourseWare"
+   },
+   {
+    "u": 0,
+    "id": "ABX-Hvn8ymE",
+    "t": "Succinct structures: compact suffix arrays",
+    "by": "MIT OpenCourseWare"
+   }
+  ],
+  "playlist": {
+   "id": "PLUl4u3cNGP61hsJNdULdudlRL493b-XZf",
+   "title": "MIT 6.851 Advanced Data Structures, Erik Demaine",
+   "by": "MIT OpenCourseWare"
+  }
+ },
+ "mcse103": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+    "t": "Advanced computer architecture, parallel processing and computing",
+    "by": "Smruti R. Sarangi"
+   }
+  ],
+  "playlist": {
+   "id": "PL1iLu2CSC9EWZMIh4_V5dGroMAwA84Lmz",
+   "title": "Advanced Computer Architecture (out-of-order processors, caches, multicore)",
+   "by": "Smruti R. Sarangi"
+  }
+ },
+ "mcse104": {
+  "videos": [],
+  "playlist": {
+   "id": "PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+   "title": "Computer Networks and Internet Protocol, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "mcse201": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+    "t": "Stanford CS229 Machine Learning Spring 2022",
+    "by": "Stanford Online"
+   },
+   {
+    "u": 0,
+    "id": "PLoROMvodv4rP8nAmISxFINlGKSK4rbLKh",
+    "t": "Stanford CS229M machine learning theory",
+    "by": "Stanford Online"
+   },
+   {
+    "u": 1,
+    "id": "jGwO_UgTS7I",
+    "t": "CS229 lecture 1 welcome",
+    "by": "Stanford Online"
+   }
+  ],
+  "playlist": {
+   "id": "PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU",
+   "title": "Stanford CS229: Machine Learning, Andrew Ng",
+   "by": "Stanford Online"
+  }
+ },
+ "mcse202": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "cQP8WApzIQQ",
+    "t": "MIT 6.824 distributed systems lecture 1 introduction, MapReduce",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "EpIgvowZr00",
+    "t": "GFS Google file system",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "M_teob23ZzY",
+    "t": "Primary-backup replication",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "UzzcUS2OHqo",
+    "t": "Go, threads and Raft consensus",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "pbmyrNjzdDk",
+    "t": "Zookeeper coordination",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "jJSh54J1s5o",
+    "t": "Cloud replicated DB, Aurora",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "aDp99WDIM_4",
+    "t": "Distributed transactions",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "Cw6Nj2evjSs",
+    "t": "Optimistic concurrency control",
+    "by": "MIT 6.824"
+   },
+   {
+    "u": 0,
+    "id": "PLL7liBDYa4YaKc07Ht4YWc1ZLSpiUFOnC",
+    "t": "Cloud computing course",
+    "by": "RGPV college lectures"
+   }
+  ]
+ },
+ "mcse203": {
+  "videos": [],
+  "playlist": {
+   "id": "PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+   "title": "Cryptography and Network Security course",
+   "by": "Neso Academy"
+  }
+ },
+ "mvl101": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+    "t": "Digital IC Design part 2",
+    "by": "Digital IC Design course"
+   },
+   {
+    "u": 0,
+    "id": "PLMSBalys69yw1tSoF42QW9jbbC0-UeCAy",
+    "t": "Digital IC Design part 3",
+    "by": "Digital IC Design course"
+   },
+   {
+    "u": 0,
+    "id": "PLBSHXm1TN16XgthOjXQrRgYrv3AUFBrEp",
+    "t": "CMOS digital VLSI design problem solving sessions",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLMSBalys69yzvAKErDt7tT7O-iIKPlOCP",
+   "title": "Digital IC Design (CMOS VLSI Design), part 1",
+   "by": "Digital IC Design course"
+  }
+ },
+ "mvl102": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+    "t": "CMOS analog VLSI design, IIT Bombay",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLBDB2c4Mp7hDu6dGJF4T5m0-Myuh06xix",
+    "t": "Analog VLSI design (Razavi)",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PL2135D8A0F7441AE1",
+    "t": "VLSI data conversion circuits, IIT Madras",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLbMVogVj5nJRlMz5diOg9wBizaU6-egJc",
+   "title": "Analog IC Design, Dr. Nagendra Krishnapura, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "mvl103": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+    "t": "VLSI design flow: RTL to GDS, IIIT Delhi",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLgwJf8NK-2e56-RWQe21_oSvaeNYf14BF",
+   "title": "CMOS Fabrication Technology in VLSI",
+   "by": "Engineering Funda"
+  }
+ },
+ "mvl104": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+    "t": "SystemVerilog full course: RTL design and verification",
+    "by": "Chip Logic Studio"
+   },
+   {
+    "u": 0,
+    "id": "PLYdInKVfi0KYAH0ZfakBOGPQ8kTNj8g_B",
+    "t": "SystemVerilog assertions assertion-based verification",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "WpG5RjZ2tRQ",
+    "t": "Introduction to SystemVerilog testbench architecture",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLwdnzlV3ogoVlY7iVqr-FhWUQEX7JDdiP",
+   "title": "Digital Design with Verilog, IIT Guwahati",
+   "by": "NPTEL"
+  }
+ },
+ "mvl201": {
+  "videos": [],
+  "playlist": {
+   "id": "PLB3F0FC99B5D89571",
+   "title": "Low Power VLSI Circuits & Systems, Prof. Ajit Pal, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "mth101": {
+  "videos": [],
+  "playlist": {
+   "id": "PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+   "title": "Advanced Thermodynamics, IIT Delhi (M.Tech Thermal)",
+   "by": "IIT Delhi"
+  }
+ },
+ "mth102": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+    "t": "Fluid mechanics complete lecture series",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLCoE5wxWtHFYiVGswvsWRaHjv18vxZzE2",
+   "title": "NPTEL Fluid Dynamics and Turbomachines, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "mth103": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL5F4F46C1983C6785",
+    "t": "Heat and mass transfer, IIT Bombay",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+    "t": "Fundamentals of heat transfer, IIT Delhi",
+    "by": "IIT Delhi"
+   }
+  ],
+  "playlist": {
+   "id": "PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo",
+   "title": "Convective Heat and Mass Transfer, Prof. A.W. Date, IIT Bombay",
+   "by": "NPTEL"
+  }
+ },
+ "mth202": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "WZb9Bx1cekI",
+    "t": "Diesel engine emissions and pollution control, alternative fuels",
+    "by": "IIT Kanpur"
+   },
+   {
+    "u": 0,
+    "id": "iSfI_OtSKxs",
+    "t": "Alternate fuels and sustainable transportation",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt",
+   "title": "Internal Combustion Engines, Prof. Sameer Khandekar, IIT Kanpur",
+   "by": "IIT Kanpur"
+  }
+ },
+ "mth203": {
+  "videos": [],
+  "playlist": {
+   "id": "PLE2DA184A2E479885",
+   "title": "Refrigeration and Air Conditioning, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "mst101": {
+  "videos": [],
+  "playlist": {
+   "id": "PLAE2D920B08D74108",
+   "title": "Structural Analysis II, IIT Bombay",
+   "by": "NPTEL"
+  }
+ },
+ "mst103": {
+  "videos": [],
+  "playlist": {
+   "id": "PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+   "title": "Modern Construction Materials, Dr. Ravindra Gettu, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "mst201": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+    "t": "Design of steel structures and plastic analysis",
+    "by": "Yogesh Kaushik"
+   }
+  ],
+  "playlist": {
+   "id": "PLFEqFwyPC3WzGFChBUyh3hQShYrXqPk4K",
+   "title": "Steel design of structures, IIT Madras live classes",
+   "by": "IIT Madras"
+  }
+ },
+ "mps101": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+    "t": "Power system analysis NPTEL NOC (Debapriya Das)",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+    "t": "Load flow analysis",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+    "t": "Fault analysis",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL319A4391E593ADF3",
+   "title": "Power System Analysis, Prof. A.K. Sinha, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "mps102": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "70gLa0-1Rho",
+    "t": "Introduction to power system stability problem, Prof. M.L. Kothari",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLEVP-S4VFKO_QznuoooIl0o4vQeCV3NHe",
+   "title": "Power system stability analysis playlist",
+   "by": "Power system lectures"
+  }
+ },
+ "mps103": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+    "t": "MIT 6.622 Power Electronics, Spring 2023",
+    "by": "MIT OpenCourseWare"
+   }
+  ],
+  "playlist": {
+   "id": "PLA07ACBDE053A8229",
+   "title": "Power Electronics, Prof. B.G. Fernandes, IIT Bombay",
+   "by": "NPTEL"
+  }
+ },
+ "mps104": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+    "t": "Economic operation of power system",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL6EA0722B99332589",
+   "title": "Numerical Optimization, Dr. Shirish Shevade, IISc",
+   "by": "NPTEL"
+  }
+ },
+ "mps201": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLD4ED2FAF3C155625",
+    "t": "Power system generation, transmission and distribution, Prof. D.P. Kothari",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+   "title": "Economic operation of power system playlist",
+   "by": "Power system lectures"
+  }
+ },
+ "mvl202": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLE995EF1D8630E34F",
+    "t": "Testing and verification in VLSI, Prof. Pallab Dasgupta",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLvd8d-SyI7hjk_Ci0zpTqImAtpEjdK5JF",
+    "t": "VLSI testing, Prof. James Li, NTU",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "rNzOgS6ptY0",
+    "t": "Testability measures: fault simulation, SCOAP controllability and observability",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "Ign9tPoP7mM",
+    "t": "Design for testability: observability, controllability, test points",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "lRf_UPXOnVU",
+    "t": "Testing of VLSI circuits",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLbMVogVj5nJTClnafWQ9FK2nt3cGG8kCF",
+   "title": "Design Verification and Test of Digital VLSI Circuits, IIT Guwahati",
+   "by": "NPTEL"
+  }
+ },
+ "mvl203": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PRQXzjTrCJY",
+    "t": "System on chip SOC",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "y9RAhEfLfJs",
+    "t": "Embedded systems introduction",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "nJ5LycpVOWI",
+    "t": "Introduction to embedded system design",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL90187D2B8F5AC28F",
+   "title": "Embedded Systems, Prof. Santanu Chaudhury, IIT Delhi",
+   "by": "NPTEL"
+  }
+ },
+ "mth104": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+    "t": "Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLbiOzt50Bx-kV3Lcn5piPyV9EvpmOybJR",
+    "t": "Introduction to computational fluid dynamics, Prof. S.A.E. Miller",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL8EAF844326CBB2E3",
+   "title": "Computational Fluid Dynamics, Dr. Suman Chakraborty, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "mth201": {
+  "videos": [],
+  "playlist": {
+   "id": "PLBE92469895618E50",
+   "title": "Design and Optimization of Energy Systems, Prof. C. Balaji, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "mst102": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "EwNAlL3yl4s",
+    "t": "Theory of elasticity and plasticity introduction: stress and strain analysis",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "HNfJ7RwkDTs",
+    "t": "Theory of plasticity lecture 1",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLbRMhDVUMngcbhsZgRWuYCi2kKQwQ0Av1",
+   "title": "Theory of Elasticity, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "mst104": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+    "t": "Structural dynamics from basic principles, equation of motion",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "GhmTtLGxPrY",
+    "t": "Introduction to structural dynamics",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL0463169721E0D76F",
+   "title": "Structural Dynamics, Dr. P. Banerji, IIT Bombay",
+   "by": "NPTEL"
+  }
+ },
+ "mps202": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "7mCXnnYpSGs",
+    "t": "Smart grid: introduction, benefits, architecture, components",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "NUr5HQk3l50",
+    "t": "Smart grid: basics to advanced technologies, IIT Roorkee (review session)",
+    "by": "NPTEL"
+   }
+  ]
  }
 }

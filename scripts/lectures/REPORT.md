@@ -2,12 +2,12 @@
 
 Built by `scripts/lectures/build_from_found.mjs` from `found.json`.
 
-- Subjects with lectures: **115 / 148**
-- Topics linked: **2300 / 2960**
-  - matched to a video about the topic: 377
-  - unit lecture video: 369
-  - whole-course video: 1110
-  - subject playlist only: 444
+- Subjects with lectures: **148 / 148**
+- Topics linked: **2960 / 2960**
+  - matched to a video about the topic: 451
+  - unit lecture video: 375
+  - whole-course video: 1530
+  - subject playlist only: 604
 
 Report a broken link by subject code and topic; it gets replaced in `found.json`.
 
@@ -70,7 +70,7 @@ Report a broken link by subject code and topic; it gets replaced in `found.json`
 | ME-402 | Instrumentation & Control | 4 | [AB Classes](https://www.youtube.com/playlist?list=PLbkIghvjQ7P-YzHeZWMaPpjGMAjRCYqkI) | 20 | 20 (3 with own video) |
 | ME-403 | Theory of Machines | 4 | [TOM lectures](https://www.youtube.com/playlist?list=PLYRGB44zNZWVibVLmWANp-7obQzOhJLRt) | 20 | 20 (4 with own video) |
 | ME-404 | Fluid Mechanics | 4 | [Clari Concepts](https://www.youtube.com/playlist?list=PLOKNrldi7ClhMMDSfsvL67nTzrT7q-38S) | 20 | 20 (4 with own video) |
-| ME-405 | Manufacturing Technology | 4 | none yet | 20 | 0 |
+| ME-405 | Manufacturing Technology | 4 | [NPTEL](https://www.youtube.com/playlist?list=PL82E9A8429ED7BB27) | 20 | 20 (1 with own video) |
 | ME-501 | Internal Combustion Engines | 5 | [IIT Kanpur](https://www.youtube.com/playlist?list=PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt) | 20 | 20 (12 with own video) |
 | ME-502 | Mechanical Vibrations | 5 | [NPTEL](https://www.youtube.com/playlist?list=PLAC668A0566953FB5) | 20 | 20 (3 with own video) |
 | ME-503(A) | Mechatronics | 5 | [Mechatronics lectures](https://www.youtube.com/playlist?list=PLjQMEOXj4i18_33ra0WN8m5h6SH17yBGZ) | 20 | 20 (4 with own video) |
@@ -129,35 +129,35 @@ Report a broken link by subject code and topic; it gets replaced in `found.json`
 | EX-801 | Electrical Drives | 8 | [NPTEL](https://www.youtube.com/playlist?list=PLFW6lRTa1g83sIfVY1p1xGqPGYUmXyahx) | 20 | 20 (8 with own video) |
 | EX-802(B) | Special Electrical Machines | 8 | [SEM lectures](https://www.youtube.com/playlist?list=PL_mruqjnuVd9ftLVehO6-P_HUCBICeBX3) | 20 | 20 (7 with own video) |
 | MT-RM | Research Methodology & IPR | 2 | [RM and IPR lectures](https://www.youtube.com/playlist?list=PLwKeZUTD_XirenK_QA9Gq3v-KDbO2s5sL) | 20 | 20 (7 with own video) |
-| MCSE-101 | Advanced Computational Mathematics | 1 | none yet | 20 | 0 |
-| MCSE-102 | Advanced Data Structures & Algorithms | 1 | none yet | 20 | 0 |
-| MCSE-103 | Advanced Computer Architecture | 1 | none yet | 20 | 0 |
-| MCSE-104 | Advanced Computer Networks | 1 | none yet | 20 | 0 |
-| MCSE-201 | Advanced Machine Learning | 2 | none yet | 20 | 0 |
-| MCSE-202 | Distributed Systems & Cloud Computing | 2 | none yet | 20 | 0 |
-| MCSE-203 | Advanced Information Security | 2 | none yet | 20 | 0 |
-| MVL-101 | Digital IC Design | 1 | none yet | 20 | 0 |
-| MVL-102 | Analog IC Design | 1 | none yet | 20 | 0 |
-| MVL-103 | VLSI Technology & Fabrication | 1 | none yet | 20 | 0 |
-| MVL-104 | Advanced Digital System Design & Verification | 1 | none yet | 20 | 0 |
-| MVL-201 | Low Power VLSI Design | 2 | none yet | 20 | 0 |
-| MVL-202 | VLSI Testing & Testability | 2 | none yet | 20 | 0 |
-| MVL-203 | System-on-Chip & Embedded System Design | 2 | none yet | 20 | 0 |
-| MTH-101 | Advanced Thermodynamics | 1 | none yet | 20 | 0 |
-| MTH-102 | Advanced Fluid Mechanics | 1 | none yet | 20 | 0 |
-| MTH-103 | Advanced Heat & Mass Transfer | 1 | none yet | 20 | 0 |
-| MTH-104 | Computational Fluid Dynamics | 1 | none yet | 20 | 0 |
-| MTH-201 | Design of Thermal Systems | 2 | none yet | 20 | 0 |
-| MTH-202 | Advanced IC Engines & Emissions | 2 | none yet | 20 | 0 |
-| MTH-203 | Advanced Refrigeration & Cryogenics | 2 | none yet | 20 | 0 |
-| MST-101 | Advanced Structural Analysis | 1 | none yet | 20 | 0 |
-| MST-102 | Theory of Elasticity & Plasticity | 1 | none yet | 20 | 0 |
-| MST-103 | Advanced Concrete Technology | 1 | none yet | 20 | 0 |
-| MST-104 | Structural Dynamics | 1 | none yet | 20 | 0 |
-| MST-201 | Advanced Design of Steel Structures | 2 | none yet | 20 | 0 |
-| MPS-101 | Advanced Power System Analysis | 1 | none yet | 20 | 0 |
-| MPS-102 | Power System Dynamics & Stability | 1 | none yet | 20 | 0 |
-| MPS-103 | Advanced Power Electronic Converters | 1 | none yet | 20 | 0 |
-| MPS-104 | Optimisation Techniques in Power Systems | 1 | none yet | 20 | 0 |
-| MPS-201 | Power System Operation & Control | 2 | none yet | 20 | 0 |
-| MPS-202 | Smart Grid Technologies | 2 | none yet | 20 | 0 |
+| MCSE-101 | Advanced Computational Mathematics | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLbMVogVj5nJS4AsBvnp9bCw0wAovDlXPl) | 20 | 20 (1 with own video) |
+| MCSE-102 | Advanced Data Structures & Algorithms | 1 | [MIT OpenCourseWare](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf) | 20 | 20 (4 with own video) |
+| MCSE-103 | Advanced Computer Architecture | 1 | [Smruti R. Sarangi](https://www.youtube.com/playlist?list=PL1iLu2CSC9EWZMIh4_V5dGroMAwA84Lmz) | 20 | 20 (1 with own video) |
+| MCSE-104 | Advanced Computer Networks | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD) | 20 | 20 (0 with own video) |
+| MCSE-201 | Advanced Machine Learning | 2 | [Stanford Online](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) | 20 | 20 (7 with own video) |
+| MCSE-202 | Distributed Systems & Cloud Computing | 2 | - | 20 | 20 (9 with own video) |
+| MCSE-203 | Advanced Information Security | 2 | [Neso Academy](https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK) | 20 | 20 (0 with own video) |
+| MVL-101 | Digital IC Design | 1 | [Digital IC Design course](https://www.youtube.com/playlist?list=PLMSBalys69yzvAKErDt7tT7O-iIKPlOCP) | 20 | 20 (0 with own video) |
+| MVL-102 | Analog IC Design | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLbMVogVj5nJRlMz5diOg9wBizaU6-egJc) | 20 | 20 (0 with own video) |
+| MVL-103 | VLSI Technology & Fabrication | 1 | [Engineering Funda](https://www.youtube.com/playlist?list=PLgwJf8NK-2e56-RWQe21_oSvaeNYf14BF) | 20 | 20 (0 with own video) |
+| MVL-104 | Advanced Digital System Design & Verification | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLwdnzlV3ogoVlY7iVqr-FhWUQEX7JDdiP) | 20 | 20 (8 with own video) |
+| MVL-201 | Low Power VLSI Design | 2 | [NPTEL](https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571) | 20 | 20 (0 with own video) |
+| MVL-202 | VLSI Testing & Testability | 2 | [NPTEL](https://www.youtube.com/playlist?list=PLbMVogVj5nJTClnafWQ9FK2nt3cGG8kCF) | 20 | 20 (7 with own video) |
+| MVL-203 | System-on-Chip & Embedded System Design | 2 | [NPTEL](https://www.youtube.com/playlist?list=PL90187D2B8F5AC28F) | 20 | 20 (6 with own video) |
+| MTH-101 | Advanced Thermodynamics | 1 | [IIT Delhi](https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f) | 20 | 20 (0 with own video) |
+| MTH-102 | Advanced Fluid Mechanics | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLCoE5wxWtHFYiVGswvsWRaHjv18vxZzE2) | 20 | 20 (0 with own video) |
+| MTH-103 | Advanced Heat & Mass Transfer | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo) | 20 | 20 (3 with own video) |
+| MTH-104 | Computational Fluid Dynamics | 1 | [NPTEL](https://www.youtube.com/playlist?list=PL8EAF844326CBB2E3) | 20 | 20 (0 with own video) |
+| MTH-201 | Design of Thermal Systems | 2 | [NPTEL](https://www.youtube.com/playlist?list=PLBE92469895618E50) | 20 | 20 (0 with own video) |
+| MTH-202 | Advanced IC Engines & Emissions | 2 | [IIT Kanpur](https://www.youtube.com/playlist?list=PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt) | 20 | 20 (3 with own video) |
+| MTH-203 | Advanced Refrigeration & Cryogenics | 2 | [NPTEL](https://www.youtube.com/playlist?list=PLE2DA184A2E479885) | 20 | 20 (0 with own video) |
+| MST-101 | Advanced Structural Analysis | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLAE2D920B08D74108) | 20 | 20 (0 with own video) |
+| MST-102 | Theory of Elasticity & Plasticity | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLbRMhDVUMngcbhsZgRWuYCi2kKQwQ0Av1) | 20 | 20 (5 with own video) |
+| MST-103 | Advanced Concrete Technology | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO) | 20 | 20 (0 with own video) |
+| MST-104 | Structural Dynamics | 1 | [NPTEL](https://www.youtube.com/playlist?list=PL0463169721E0D76F) | 20 | 20 (5 with own video) |
+| MST-201 | Advanced Design of Steel Structures | 2 | [IIT Madras](https://www.youtube.com/playlist?list=PLFEqFwyPC3WzGFChBUyh3hQShYrXqPk4K) | 20 | 20 (4 with own video) |
+| MPS-101 | Advanced Power System Analysis | 1 | [NPTEL](https://www.youtube.com/playlist?list=PL319A4391E593ADF3) | 20 | 20 (6 with own video) |
+| MPS-102 | Power System Dynamics & Stability | 1 | [Power system lectures](https://www.youtube.com/playlist?list=PLEVP-S4VFKO_QznuoooIl0o4vQeCV3NHe) | 20 | 20 (4 with own video) |
+| MPS-103 | Advanced Power Electronic Converters | 1 | [NPTEL](https://www.youtube.com/playlist?list=PLA07ACBDE053A8229) | 20 | 20 (0 with own video) |
+| MPS-104 | Optimisation Techniques in Power Systems | 1 | [NPTEL](https://www.youtube.com/playlist?list=PL6EA0722B99332589) | 20 | 20 (0 with own video) |
+| MPS-201 | Power System Operation & Control | 2 | [Power system lectures](https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor) | 20 | 20 (0 with own video) |
+| MPS-202 | Smart Grid Technologies | 2 | - | 20 | 20 (6 with own video) |

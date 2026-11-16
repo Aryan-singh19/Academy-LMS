@@ -22802,6 +22802,406 @@ window.lectureLibraryAuto = [
   "match": "course"
  },
  {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Manufacturing Technology: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Theory of Metal Cutting",
+   "Machine Tools",
+   "Grinding & Finishing",
+   "Non-conventional Machining",
+   "Jigs, Fixtures & Metrology"
+  ],
+  "description": "\"Manufacturing Processes II, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL82E9A8429ED7BB27",
+  "lectureKey": "me405-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Orthogonal & Oblique Cutting",
+  "unit": 1,
+  "topicId": "me405-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Theory of Metal Cutting",
+  "topics": [
+   "Orthogonal & Oblique Cutting"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Theory of Metal Cutting.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Chip Formation",
+  "unit": 1,
+  "topicId": "me405-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Theory of Metal Cutting",
+  "topics": [
+   "Chip Formation"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Theory of Metal Cutting.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Merchant's Circle",
+  "unit": 1,
+  "topicId": "me405-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Theory of Metal Cutting",
+  "topics": [
+   "Merchant's Circle"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Theory of Metal Cutting.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Tool Life & Wear",
+  "unit": 1,
+  "topicId": "me405-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Theory of Metal Cutting",
+  "topics": [
+   "Tool Life & Wear"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Theory of Metal Cutting.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Lathe",
+  "unit": 2,
+  "topicId": "me405-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Machine Tools",
+  "topics": [
+   "Lathe"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Machine Tools.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Drilling & Boring",
+  "unit": 2,
+  "topicId": "me405-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Machine Tools",
+  "topics": [
+   "Drilling & Boring"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Machine Tools.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Shaper, Planer & Slotter",
+  "unit": 2,
+  "topicId": "me405-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Machine Tools",
+  "topics": [
+   "Shaper, Planer & Slotter"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Machine Tools.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Milling",
+  "unit": 2,
+  "topicId": "me405-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Machine Tools",
+  "topics": [
+   "Milling"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Machine Tools.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Grinding Process",
+  "unit": 3,
+  "topicId": "me405-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Grinding & Finishing",
+  "topics": [
+   "Grinding Process"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Grinding & Finishing.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Grinding Wheel Specification",
+  "unit": 3,
+  "topicId": "me405-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Grinding & Finishing",
+  "topics": [
+   "Grinding Wheel Specification"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Grinding & Finishing.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Superfinishing Processes",
+  "unit": 3,
+  "topicId": "me405-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Grinding & Finishing",
+  "topics": [
+   "Superfinishing Processes"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\".",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Surface Roughness",
+  "unit": 3,
+  "topicId": "me405-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Grinding & Finishing",
+  "topics": [
+   "Surface Roughness"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Grinding & Finishing.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Need for Unconventional Processes",
+  "unit": 4,
+  "topicId": "me405-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-conventional Machining",
+  "topics": [
+   "Need for Unconventional Processes"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Non-conventional Machining.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "EDM & Wire EDM",
+  "unit": 4,
+  "topicId": "me405-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-conventional Machining",
+  "topics": [
+   "EDM & Wire EDM"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Non-conventional Machining.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "ECM & Chemical Machining",
+  "unit": 4,
+  "topicId": "me405-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-conventional Machining",
+  "topics": [
+   "ECM & Chemical Machining"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Non-conventional Machining.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "USM, LBM & AJM",
+  "unit": 4,
+  "topicId": "me405-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-conventional Machining",
+  "topics": [
+   "USM, LBM & AJM"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Non-conventional Machining.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Jigs & Fixtures",
+  "unit": 5,
+  "topicId": "me405-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Jigs, Fixtures & Metrology",
+  "topics": [
+   "Jigs & Fixtures"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Jigs, Fixtures & Metrology.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Limits, Fits & Tolerances",
+  "unit": 5,
+  "topicId": "me405-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Jigs, Fixtures & Metrology",
+  "topics": [
+   "Limits, Fits & Tolerances"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Jigs, Fixtures & Metrology.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Linear & Angular Measurement",
+  "unit": 5,
+  "topicId": "me405-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Jigs, Fixtures & Metrology",
+  "topics": [
+   "Linear & Angular Measurement"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Jigs, Fixtures & Metrology.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me405",
+  "subjectCode": "ME-405",
+  "subjectLabel": "Manufacturing Technology",
+  "title": "Comparators & Gauges",
+  "unit": 5,
+  "topicId": "me405-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Jigs, Fixtures & Metrology",
+  "topics": [
+   "Comparators & Gauges"
+  ],
+  "description": "\"Advanced manufacturing processes, Dr. A.K. Sharma, IIT Roorkee\" covers Jigs, Fixtures & Metrology.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSzoQXmu7dsj9ZKJyZ1P4O8",
+  "lectureKey": "me405-u5-t4",
+  "match": "course"
+ },
+ {
   "semester": 5,
   "subject": "me501",
   "subjectCode": "ME-501",
@@ -45979,6 +46379,12766 @@ window.lectureLibraryAuto = [
   "description": "\"Research methodology and IPR full playlist\" covers Intellectual Property Rights.",
   "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
   "lectureKey": "mt-rm-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Advanced Computational Mathematics: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Linear Algebra for Computing",
+   "Probability & Statistics",
+   "Random Processes & Queueing",
+   "Optimisation",
+   "Graph Theory & Combinatorics"
+  ],
+  "description": "\"Advanced Numerical Analysis, Prof. Sachin Patwardhan, IIT Bombay\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJS4AsBvnp9bCw0wAovDlXPl",
+  "lectureKey": "mcse101-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Vector Spaces & Linear Maps",
+  "unit": 1,
+  "topicId": "mcse101-u1t1",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Algebra for Computing",
+  "topics": [
+   "Vector Spaces & Linear Maps"
+  ],
+  "description": "\"Applied numerical methods\" covers Linear Algebra for Computing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Eigen Decomposition",
+  "unit": 1,
+  "topicId": "mcse101-u1t2",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Algebra for Computing",
+  "topics": [
+   "Eigen Decomposition"
+  ],
+  "description": "\"Applied numerical methods\" covers Linear Algebra for Computing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Singular Value Decomposition",
+  "unit": 1,
+  "topicId": "mcse101-u1t3",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Algebra for Computing",
+  "topics": [
+   "Singular Value Decomposition"
+  ],
+  "description": "\"Applied numerical methods\" covers Linear Algebra for Computing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Matrix Norms & Conditioning",
+  "unit": 1,
+  "topicId": "mcse101-u1t4",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Algebra for Computing",
+  "topics": [
+   "Matrix Norms & Conditioning"
+  ],
+  "description": "\"Applied numerical methods\" covers Linear Algebra for Computing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Random Variables & Distributions",
+  "unit": 2,
+  "topicId": "mcse101-u2t1",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Probability & Statistics",
+  "topics": [
+   "Random Variables & Distributions"
+  ],
+  "description": "\"Applied numerical methods\" covers Probability & Statistics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Joint Distributions & Bayes",
+  "unit": 2,
+  "topicId": "mcse101-u2t2",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Probability & Statistics",
+  "topics": [
+   "Joint Distributions & Bayes"
+  ],
+  "description": "\"Applied numerical methods\" covers Probability & Statistics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Estimation",
+  "unit": 2,
+  "topicId": "mcse101-u2t3",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Probability & Statistics",
+  "topics": [
+   "Estimation"
+  ],
+  "description": "\"Applied numerical methods\" covers Probability & Statistics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Limit Theorems & Inequalities",
+  "unit": 2,
+  "topicId": "mcse101-u2t4",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Probability & Statistics",
+  "topics": [
+   "Limit Theorems & Inequalities"
+  ],
+  "description": "\"Applied numerical methods\" covers Probability & Statistics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Random Processes",
+  "unit": 3,
+  "topicId": "mcse101-u3t1",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Random Processes & Queueing",
+  "topics": [
+   "Random Processes"
+  ],
+  "description": "\"Applied numerical methods\" covers Random Processes & Queueing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Markov Chains",
+  "unit": 3,
+  "topicId": "mcse101-u3t2",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Random Processes & Queueing",
+  "topics": [
+   "Markov Chains"
+  ],
+  "description": "\"Applied numerical methods\" covers Random Processes & Queueing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Queueing Models",
+  "unit": 3,
+  "topicId": "mcse101-u3t3",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Random Processes & Queueing",
+  "topics": [
+   "Queueing Models"
+  ],
+  "description": "\"Applied numerical methods\" covers Random Processes & Queueing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Hidden Markov Models",
+  "unit": 3,
+  "topicId": "mcse101-u3t4",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Random Processes & Queueing",
+  "topics": [
+   "Hidden Markov Models"
+  ],
+  "description": "\"Applied numerical methods\" covers Random Processes & Queueing.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Convex Optimisation",
+  "unit": 4,
+  "topicId": "mcse101-u4t1",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Convex Optimisation"
+  ],
+  "description": "\"Applied numerical methods\" covers Optimisation.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Gradient Methods",
+  "unit": 4,
+  "topicId": "mcse101-u4t2",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Gradient Methods"
+  ],
+  "description": "\"Applied numerical methods\".",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Constrained Optimisation",
+  "unit": 4,
+  "topicId": "mcse101-u4t3",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Constrained Optimisation"
+  ],
+  "description": "\"Applied numerical methods\" covers Optimisation.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Linear & Integer Programming",
+  "unit": 4,
+  "topicId": "mcse101-u4t4",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Linear & Integer Programming"
+  ],
+  "description": "\"Applied numerical methods\" covers Optimisation.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Graph Algorithms",
+  "unit": 5,
+  "topicId": "mcse101-u5t1",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Graph Theory & Combinatorics",
+  "topics": [
+   "Graph Algorithms"
+  ],
+  "description": "\"Applied numerical methods\" covers Graph Theory & Combinatorics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Spectral Graph Theory",
+  "unit": 5,
+  "topicId": "mcse101-u5t2",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Graph Theory & Combinatorics",
+  "topics": [
+   "Spectral Graph Theory"
+  ],
+  "description": "\"Applied numerical methods\" covers Graph Theory & Combinatorics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Combinatorial Counting",
+  "unit": 5,
+  "topicId": "mcse101-u5t3",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Graph Theory & Combinatorics",
+  "topics": [
+   "Combinatorial Counting"
+  ],
+  "description": "\"Applied numerical methods\" covers Graph Theory & Combinatorics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse101",
+  "subjectCode": "MCSE-101",
+  "subjectLabel": "Advanced Computational Mathematics",
+  "title": "Information Theory Basics",
+  "unit": 5,
+  "topicId": "mcse101-u5t4",
+  "lecturer": "NPTEL IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Graph Theory & Combinatorics",
+  "topics": [
+   "Information Theory Basics"
+  ],
+  "description": "\"Applied numerical methods\" covers Graph Theory & Combinatorics.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g82mSdmKyBhFj0Xutiuv8647",
+  "lectureKey": "mcse101-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Advanced Data Structures & Algorithms: full lecture series",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Analysis Techniques",
+   "Advanced Trees & Heaps",
+   "Graph Algorithms",
+   "Randomised Algorithms",
+   "Approximation & Parameterised Algorithms"
+  ],
+  "description": "\"MIT 6.851 Advanced Data Structures, Erik Demaine\" by MIT OpenCourseWare.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf",
+  "lectureKey": "mcse102-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Amortised Analysis",
+  "unit": 1,
+  "topicId": "mcse102-u1t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis Techniques",
+  "topics": [
+   "Amortised Analysis"
+  ],
+  "description": "\"Persistent data structures\" covers Analysis Techniques.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Advanced Recurrences",
+  "unit": 1,
+  "topicId": "mcse102-u1t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis Techniques",
+  "topics": [
+   "Advanced Recurrences"
+  ],
+  "description": "\"Persistent data structures\" covers Analysis Techniques.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Competitive Analysis",
+  "unit": 1,
+  "topicId": "mcse102-u1t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis Techniques",
+  "topics": [
+   "Competitive Analysis"
+  ],
+  "description": "\"Persistent data structures\" covers Analysis Techniques.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "External Memory Model",
+  "unit": 1,
+  "topicId": "mcse102-u1t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis Techniques",
+  "topics": [
+   "External Memory Model"
+  ],
+  "description": "\"Memory hierarchy models: cache-efficient structures, B-trees\".",
+  "url": "https://www.youtube.com/watch?v=V3omVLzI0WE",
+  "lectureKey": "mcse102-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Balanced Search Trees",
+  "unit": 2,
+  "topicId": "mcse102-u2t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Trees & Heaps",
+  "topics": [
+   "Balanced Search Trees"
+  ],
+  "description": "\"Persistent data structures\" covers Advanced Trees & Heaps.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Advanced Heaps",
+  "unit": 2,
+  "topicId": "mcse102-u2t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Trees & Heaps",
+  "topics": [
+   "Advanced Heaps"
+  ],
+  "description": "\"Persistent data structures\" covers Advanced Trees & Heaps.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Range Query Structures",
+  "unit": 2,
+  "topicId": "mcse102-u2t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Trees & Heaps",
+  "topics": [
+   "Range Query Structures"
+  ],
+  "description": "\"Geometric structures: point location and range searching\".",
+  "url": "https://www.youtube.com/watch?v=NMxLL3D5qd8",
+  "lectureKey": "mcse102-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "String Data Structures",
+  "unit": 2,
+  "topicId": "mcse102-u2t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Trees & Heaps",
+  "topics": [
+   "String Data Structures"
+  ],
+  "description": "\"Persistent data structures\".",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Shortest Paths",
+  "unit": 3,
+  "topicId": "mcse102-u3t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 3: Graph Algorithms",
+  "topics": [
+   "Shortest Paths"
+  ],
+  "description": "\"Persistent data structures\" covers Graph Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Network Flow",
+  "unit": 3,
+  "topicId": "mcse102-u3t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 3: Graph Algorithms",
+  "topics": [
+   "Network Flow"
+  ],
+  "description": "\"Persistent data structures\" covers Graph Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Matching",
+  "unit": 3,
+  "topicId": "mcse102-u3t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 3: Graph Algorithms",
+  "topics": [
+   "Matching"
+  ],
+  "description": "\"Persistent data structures\" covers Graph Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Connectivity & Decomposition",
+  "unit": 3,
+  "topicId": "mcse102-u3t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 3: Graph Algorithms",
+  "topics": [
+   "Connectivity & Decomposition"
+  ],
+  "description": "\"Persistent data structures\" covers Graph Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Randomisation Basics",
+  "unit": 4,
+  "topicId": "mcse102-u4t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 4: Randomised Algorithms",
+  "topics": [
+   "Randomisation Basics"
+  ],
+  "description": "\"Persistent data structures\" covers Randomised Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Randomised Data Structures",
+  "unit": 4,
+  "topicId": "mcse102-u4t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 4: Randomised Algorithms",
+  "topics": [
+   "Randomised Data Structures"
+  ],
+  "description": "\"Persistent data structures\".",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Randomised Graph Algorithms",
+  "unit": 4,
+  "topicId": "mcse102-u4t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 4: Randomised Algorithms",
+  "topics": [
+   "Randomised Graph Algorithms"
+  ],
+  "description": "\"Persistent data structures\" covers Randomised Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Streaming & Sketching",
+  "unit": 4,
+  "topicId": "mcse102-u4t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 4: Randomised Algorithms",
+  "topics": [
+   "Streaming & Sketching"
+  ],
+  "description": "\"Persistent data structures\" covers Randomised Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "NP-hardness & Reductions",
+  "unit": 5,
+  "topicId": "mcse102-u5t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 5: Approximation & Parameterised Algorithms",
+  "topics": [
+   "NP-hardness & Reductions"
+  ],
+  "description": "\"Persistent data structures\" covers Approximation & Parameterised Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Approximation Algorithms",
+  "unit": 5,
+  "topicId": "mcse102-u5t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 5: Approximation & Parameterised Algorithms",
+  "topics": [
+   "Approximation Algorithms"
+  ],
+  "description": "\"Persistent data structures\" covers Approximation & Parameterised Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "PTAS & FPTAS",
+  "unit": 5,
+  "topicId": "mcse102-u5t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 5: Approximation & Parameterised Algorithms",
+  "topics": [
+   "PTAS & FPTAS"
+  ],
+  "description": "\"Persistent data structures\" covers Approximation & Parameterised Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse102",
+  "subjectCode": "MCSE-102",
+  "subjectLabel": "Advanced Data Structures & Algorithms",
+  "title": "Parameterised Complexity",
+  "unit": 5,
+  "topicId": "mcse102-u5t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "video",
+  "typeLabel": "Unit 5: Approximation & Parameterised Algorithms",
+  "topics": [
+   "Parameterised Complexity"
+  ],
+  "description": "\"Persistent data structures\" covers Approximation & Parameterised Algorithms.",
+  "url": "https://www.youtube.com/watch?v=T0yzrZL1py0",
+  "lectureKey": "mcse102-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Advanced Computer Architecture: full lecture series",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Fundamentals & Performance",
+   "Instruction-level Parallelism",
+   "Memory Hierarchy",
+   "Multiprocessors",
+   "Data-level Parallelism & Accelerators"
+  ],
+  "description": "\"Advanced Computer Architecture (out-of-order processors, caches, multicore)\" by Smruti R. Sarangi.",
+  "url": "https://www.youtube.com/playlist?list=PL1iLu2CSC9EWZMIh4_V5dGroMAwA84Lmz",
+  "lectureKey": "mcse103-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Performance Metrics",
+  "unit": 1,
+  "topicId": "mcse103-u1t1",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals & Performance",
+  "topics": [
+   "Performance Metrics"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Fundamentals & Performance.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Instruction Set Design",
+  "unit": 1,
+  "topicId": "mcse103-u1t2",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals & Performance",
+  "topics": [
+   "Instruction Set Design"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Fundamentals & Performance.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Power & Energy",
+  "unit": 1,
+  "topicId": "mcse103-u1t3",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals & Performance",
+  "topics": [
+   "Power & Energy"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Fundamentals & Performance.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Benchmarks",
+  "unit": 1,
+  "topicId": "mcse103-u1t4",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals & Performance",
+  "topics": [
+   "Benchmarks"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Fundamentals & Performance.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Pipelining & Hazards",
+  "unit": 2,
+  "topicId": "mcse103-u2t1",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Instruction-level Parallelism",
+  "topics": [
+   "Pipelining & Hazards"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Instruction-level Parallelism.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Branch Prediction",
+  "unit": 2,
+  "topicId": "mcse103-u2t2",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Instruction-level Parallelism",
+  "topics": [
+   "Branch Prediction"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Instruction-level Parallelism.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Dynamic Scheduling",
+  "unit": 2,
+  "topicId": "mcse103-u2t3",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Instruction-level Parallelism",
+  "topics": [
+   "Dynamic Scheduling"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Instruction-level Parallelism.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Superscalar & VLIW",
+  "unit": 2,
+  "topicId": "mcse103-u2t4",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Instruction-level Parallelism",
+  "topics": [
+   "Superscalar & VLIW"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Instruction-level Parallelism.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Cache Design",
+  "unit": 3,
+  "topicId": "mcse103-u3t1",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Memory Hierarchy",
+  "topics": [
+   "Cache Design"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Memory Hierarchy.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Advanced Cache Optimisations",
+  "unit": 3,
+  "topicId": "mcse103-u3t2",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Memory Hierarchy",
+  "topics": [
+   "Advanced Cache Optimisations"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Memory Hierarchy.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Virtual Memory & TLB",
+  "unit": 3,
+  "topicId": "mcse103-u3t3",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Memory Hierarchy",
+  "topics": [
+   "Virtual Memory & TLB"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Memory Hierarchy.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Memory Technologies",
+  "unit": 3,
+  "topicId": "mcse103-u3t4",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Memory Hierarchy",
+  "topics": [
+   "Memory Technologies"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Memory Hierarchy.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Thread-level Parallelism",
+  "unit": 4,
+  "topicId": "mcse103-u4t1",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multiprocessors",
+  "topics": [
+   "Thread-level Parallelism"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Multiprocessors.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Cache Coherence",
+  "unit": 4,
+  "topicId": "mcse103-u4t2",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multiprocessors",
+  "topics": [
+   "Cache Coherence"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Multiprocessors.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Memory Consistency",
+  "unit": 4,
+  "topicId": "mcse103-u4t3",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multiprocessors",
+  "topics": [
+   "Memory Consistency"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Multiprocessors.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Interconnection Networks",
+  "unit": 4,
+  "topicId": "mcse103-u4t4",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multiprocessors",
+  "topics": [
+   "Interconnection Networks"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Multiprocessors.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Vector & SIMD",
+  "unit": 5,
+  "topicId": "mcse103-u5t1",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Data-level Parallelism & Accelerators",
+  "topics": [
+   "Vector & SIMD"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Data-level Parallelism & Accelerators.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "GPU Architecture",
+  "unit": 5,
+  "topicId": "mcse103-u5t2",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Data-level Parallelism & Accelerators",
+  "topics": [
+   "GPU Architecture"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\".",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Domain-specific Architectures",
+  "unit": 5,
+  "topicId": "mcse103-u5t3",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Data-level Parallelism & Accelerators",
+  "topics": [
+   "Domain-specific Architectures"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Data-level Parallelism & Accelerators.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse103",
+  "subjectCode": "MCSE-103",
+  "subjectLabel": "Advanced Computer Architecture",
+  "title": "Warehouse-scale Computers",
+  "unit": 5,
+  "topicId": "mcse103-u5t4",
+  "lecturer": "Smruti R. Sarangi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Data-level Parallelism & Accelerators",
+  "topics": [
+   "Warehouse-scale Computers"
+  ],
+  "description": "\"Advanced computer architecture, parallel processing and computing\" covers Data-level Parallelism & Accelerators.",
+  "url": "https://www.youtube.com/playlist?list=PL3R9-um41Jsz4as9nqgVB6YRR90rs0wE6",
+  "lectureKey": "mcse103-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Advanced Computer Networks: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Network Architecture",
+   "Routing",
+   "Transport & QoS",
+   "Software-defined & Virtual Networks",
+   "Wireless & Secure Networks"
+  ],
+  "description": "\"Computer Networks and Internet Protocol, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Layered Architecture",
+  "unit": 1,
+  "topicId": "mcse104-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Architecture",
+  "topics": [
+   "Layered Architecture"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Network Architecture.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Switching Techniques",
+  "unit": 1,
+  "topicId": "mcse104-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Architecture",
+  "topics": [
+   "Switching Techniques"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Network Architecture.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Network Performance",
+  "unit": 1,
+  "topicId": "mcse104-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Architecture",
+  "topics": [
+   "Network Performance"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Network Architecture.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Internet Architecture",
+  "unit": 1,
+  "topicId": "mcse104-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Architecture",
+  "topics": [
+   "Internet Architecture"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Network Architecture.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Intra-domain Routing",
+  "unit": 2,
+  "topicId": "mcse104-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Routing",
+  "topics": [
+   "Intra-domain Routing"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Routing.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Inter-domain Routing",
+  "unit": 2,
+  "topicId": "mcse104-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Routing",
+  "topics": [
+   "Inter-domain Routing"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Routing.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Multicast Routing",
+  "unit": 2,
+  "topicId": "mcse104-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Routing",
+  "topics": [
+   "Multicast Routing"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Routing.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "IPv6 & Addressing",
+  "unit": 2,
+  "topicId": "mcse104-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Routing",
+  "topics": [
+   "IPv6 & Addressing"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Routing.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "TCP Congestion Control",
+  "unit": 3,
+  "topicId": "mcse104-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Transport & QoS",
+  "topics": [
+   "TCP Congestion Control"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Transport & QoS.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Advanced Transport",
+  "unit": 3,
+  "topicId": "mcse104-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Transport & QoS",
+  "topics": [
+   "Advanced Transport"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Transport & QoS.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Quality of Service",
+  "unit": 3,
+  "topicId": "mcse104-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Transport & QoS",
+  "topics": [
+   "Quality of Service"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Transport & QoS.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Queue Management",
+  "unit": 3,
+  "topicId": "mcse104-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Transport & QoS",
+  "topics": [
+   "Queue Management"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Transport & QoS.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "SDN",
+  "unit": 4,
+  "topicId": "mcse104-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Software-defined & Virtual Networks",
+  "topics": [
+   "SDN"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Software-defined & Virtual Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "NFV",
+  "unit": 4,
+  "topicId": "mcse104-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Software-defined & Virtual Networks",
+  "topics": [
+   "NFV"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Software-defined & Virtual Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Data Centre Networks",
+  "unit": 4,
+  "topicId": "mcse104-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Software-defined & Virtual Networks",
+  "topics": [
+   "Data Centre Networks"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Software-defined & Virtual Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Programmable Data Planes",
+  "unit": 4,
+  "topicId": "mcse104-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Software-defined & Virtual Networks",
+  "topics": [
+   "Programmable Data Planes"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Software-defined & Virtual Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Wireless LANs",
+  "unit": 5,
+  "topicId": "mcse104-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wireless & Secure Networks",
+  "topics": [
+   "Wireless LANs"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Wireless & Secure Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Mobile & Ad Hoc Networks",
+  "unit": 5,
+  "topicId": "mcse104-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wireless & Secure Networks",
+  "topics": [
+   "Mobile & Ad Hoc Networks"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Wireless & Secure Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Network Security Protocols",
+  "unit": 5,
+  "topicId": "mcse104-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wireless & Secure Networks",
+  "topics": [
+   "Network Security Protocols"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Wireless & Secure Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mcse104",
+  "subjectCode": "MCSE-104",
+  "subjectLabel": "Advanced Computer Networks",
+  "title": "Network Attacks & Defence",
+  "unit": 5,
+  "topicId": "mcse104-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wireless & Secure Networks",
+  "topics": [
+   "Network Attacks & Defence"
+  ],
+  "description": "Full Advanced Computer Networks series; pick the lecture on Wireless & Secure Networks.",
+  "url": "https://www.youtube.com/playlist?list=PLrpK1inhO61WWxkuxSRJs3ZCacCzVhQbD",
+  "lectureKey": "mcse104-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Advanced Machine Learning: full lecture series",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Learning Theory",
+   "Kernel & Ensemble Methods",
+   "Probabilistic Models",
+   "Deep Learning",
+   "Generative Models & Reinforcement Learning"
+  ],
+  "description": "\"Stanford CS229: Machine Learning, Andrew Ng\" by Stanford Online.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU",
+  "lectureKey": "mcse201-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "PAC Learning",
+  "unit": 1,
+  "topicId": "mcse201-u1t1",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Learning Theory",
+  "topics": [
+   "PAC Learning"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\".",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "VC Dimension",
+  "unit": 1,
+  "topicId": "mcse201-u1t2",
+  "lecturer": "Stanford Online",
+  "type": "video",
+  "typeLabel": "Unit 1: Learning Theory",
+  "topics": [
+   "VC Dimension"
+  ],
+  "description": "\"CS229 lecture 1 welcome\" covers Learning Theory.",
+  "url": "https://www.youtube.com/watch?v=jGwO_UgTS7I",
+  "lectureKey": "mcse201-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Bias-Variance & Regularisation",
+  "unit": 1,
+  "topicId": "mcse201-u1t3",
+  "lecturer": "Stanford Online",
+  "type": "video",
+  "typeLabel": "Unit 1: Learning Theory",
+  "topics": [
+   "Bias-Variance & Regularisation"
+  ],
+  "description": "\"CS229 lecture 1 welcome\" covers Learning Theory.",
+  "url": "https://www.youtube.com/watch?v=jGwO_UgTS7I",
+  "lectureKey": "mcse201-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Model Selection",
+  "unit": 1,
+  "topicId": "mcse201-u1t4",
+  "lecturer": "Stanford Online",
+  "type": "video",
+  "typeLabel": "Unit 1: Learning Theory",
+  "topics": [
+   "Model Selection"
+  ],
+  "description": "\"CS229 lecture 1 welcome\" covers Learning Theory.",
+  "url": "https://www.youtube.com/watch?v=jGwO_UgTS7I",
+  "lectureKey": "mcse201-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Support Vector Machines",
+  "unit": 2,
+  "topicId": "mcse201-u2t1",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Kernel & Ensemble Methods",
+  "topics": [
+   "Support Vector Machines"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Kernel & Ensemble Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Kernel Methods",
+  "unit": 2,
+  "topicId": "mcse201-u2t2",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Kernel & Ensemble Methods",
+  "topics": [
+   "Kernel Methods"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Kernel & Ensemble Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Ensemble Learning",
+  "unit": 2,
+  "topicId": "mcse201-u2t3",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Kernel & Ensemble Methods",
+  "topics": [
+   "Ensemble Learning"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\".",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Dimensionality Reduction",
+  "unit": 2,
+  "topicId": "mcse201-u2t4",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Kernel & Ensemble Methods",
+  "topics": [
+   "Dimensionality Reduction"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Kernel & Ensemble Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Bayesian Learning",
+  "unit": 3,
+  "topicId": "mcse201-u3t1",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Probabilistic Models",
+  "topics": [
+   "Bayesian Learning"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\".",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Graphical Models",
+  "unit": 3,
+  "topicId": "mcse201-u3t2",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Probabilistic Models",
+  "topics": [
+   "Graphical Models"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Probabilistic Models.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Latent Variable Models",
+  "unit": 3,
+  "topicId": "mcse201-u3t3",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Probabilistic Models",
+  "topics": [
+   "Latent Variable Models"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Probabilistic Models.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Gaussian Processes",
+  "unit": 3,
+  "topicId": "mcse201-u3t4",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Probabilistic Models",
+  "topics": [
+   "Gaussian Processes"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Probabilistic Models.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Optimisation for Deep Networks",
+  "unit": 4,
+  "topicId": "mcse201-u4t1",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deep Learning",
+  "topics": [
+   "Optimisation for Deep Networks"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Deep Learning.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "CNNs & Sequence Models",
+  "unit": 4,
+  "topicId": "mcse201-u4t2",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deep Learning",
+  "topics": [
+   "CNNs & Sequence Models"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Deep Learning.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Transformers",
+  "unit": 4,
+  "topicId": "mcse201-u4t3",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deep Learning",
+  "topics": [
+   "Transformers"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Deep Learning.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Regularising Deep Networks",
+  "unit": 4,
+  "topicId": "mcse201-u4t4",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deep Learning",
+  "topics": [
+   "Regularising Deep Networks"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Deep Learning.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Generative Models",
+  "unit": 5,
+  "topicId": "mcse201-u5t1",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Generative Models & Reinforcement Learning",
+  "topics": [
+   "Generative Models"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Generative Models & Reinforcement Learning.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Reinforcement Learning Basics",
+  "unit": 5,
+  "topicId": "mcse201-u5t2",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Generative Models & Reinforcement Learning",
+  "topics": [
+   "Reinforcement Learning Basics"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\".",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Deep Reinforcement Learning",
+  "unit": 5,
+  "topicId": "mcse201-u5t3",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Generative Models & Reinforcement Learning",
+  "topics": [
+   "Deep Reinforcement Learning"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Generative Models & Reinforcement Learning.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse201",
+  "subjectCode": "MCSE-201",
+  "subjectLabel": "Advanced Machine Learning",
+  "title": "Responsible ML",
+  "unit": 5,
+  "topicId": "mcse201-u5t4",
+  "lecturer": "Stanford Online",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Generative Models & Reinforcement Learning",
+  "topics": [
+   "Responsible ML"
+  ],
+  "description": "\"Stanford CS229 Machine Learning Spring 2022\" covers Generative Models & Reinforcement Learning.",
+  "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+  "lectureKey": "mcse201-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Characteristics of Distributed Systems",
+  "unit": 1,
+  "topicId": "mcse202-u1t1",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 1: Distributed System Models",
+  "topics": [
+   "Characteristics of Distributed Systems"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\".",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "System Models",
+  "unit": 1,
+  "topicId": "mcse202-u1t2",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 1: Distributed System Models",
+  "topics": [
+   "System Models"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\".",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Communication",
+  "unit": 1,
+  "topicId": "mcse202-u1t3",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 1: Distributed System Models",
+  "topics": [
+   "Communication"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Distributed System Models.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "CAP Theorem",
+  "unit": 1,
+  "topicId": "mcse202-u1t4",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 1: Distributed System Models",
+  "topics": [
+   "CAP Theorem"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Distributed System Models.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Logical Clocks",
+  "unit": 2,
+  "topicId": "mcse202-u2t1",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 2: Time & Coordination",
+  "topics": [
+   "Logical Clocks"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Time & Coordination.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Clock Synchronisation",
+  "unit": 2,
+  "topicId": "mcse202-u2t2",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 2: Time & Coordination",
+  "topics": [
+   "Clock Synchronisation"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Time & Coordination.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Mutual Exclusion & Election",
+  "unit": 2,
+  "topicId": "mcse202-u2t3",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 2: Time & Coordination",
+  "topics": [
+   "Mutual Exclusion & Election"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Time & Coordination.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Global State & Snapshots",
+  "unit": 2,
+  "topicId": "mcse202-u2t4",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 2: Time & Coordination",
+  "topics": [
+   "Global State & Snapshots"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Time & Coordination.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Consensus Problem",
+  "unit": 3,
+  "topicId": "mcse202-u3t1",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 3: Consensus & Replication",
+  "topics": [
+   "Consensus Problem"
+  ],
+  "description": "\"Go, threads and Raft consensus\".",
+  "url": "https://www.youtube.com/watch?v=UzzcUS2OHqo",
+  "lectureKey": "mcse202-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Raft",
+  "unit": 3,
+  "topicId": "mcse202-u3t2",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 3: Consensus & Replication",
+  "topics": [
+   "Raft"
+  ],
+  "description": "\"Go, threads and Raft consensus\".",
+  "url": "https://www.youtube.com/watch?v=UzzcUS2OHqo",
+  "lectureKey": "mcse202-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Replication Strategies",
+  "unit": 3,
+  "topicId": "mcse202-u3t3",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 3: Consensus & Replication",
+  "topics": [
+   "Replication Strategies"
+  ],
+  "description": "\"Primary-backup replication\".",
+  "url": "https://www.youtube.com/watch?v=M_teob23ZzY",
+  "lectureKey": "mcse202-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Byzantine Fault Tolerance",
+  "unit": 3,
+  "topicId": "mcse202-u3t4",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 3: Consensus & Replication",
+  "topics": [
+   "Byzantine Fault Tolerance"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Consensus & Replication.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Distributed File Systems",
+  "unit": 4,
+  "topicId": "mcse202-u4t1",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 4: Distributed Storage & Big Data",
+  "topics": [
+   "Distributed File Systems"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\".",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Distributed Databases",
+  "unit": 4,
+  "topicId": "mcse202-u4t2",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 4: Distributed Storage & Big Data",
+  "topics": [
+   "Distributed Databases"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\".",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "NoSQL Systems",
+  "unit": 4,
+  "topicId": "mcse202-u4t3",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 4: Distributed Storage & Big Data",
+  "topics": [
+   "NoSQL Systems"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\".",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Big Data Frameworks",
+  "unit": 4,
+  "topicId": "mcse202-u4t4",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 4: Distributed Storage & Big Data",
+  "topics": [
+   "Big Data Frameworks"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Distributed Storage & Big Data.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Virtualisation & Containers",
+  "unit": 5,
+  "topicId": "mcse202-u5t1",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 5: Cloud-native Systems",
+  "topics": [
+   "Virtualisation & Containers"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Cloud-native Systems.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Microservices",
+  "unit": 5,
+  "topicId": "mcse202-u5t2",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 5: Cloud-native Systems",
+  "topics": [
+   "Microservices"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Cloud-native Systems.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Serverless Computing",
+  "unit": 5,
+  "topicId": "mcse202-u5t3",
+  "lecturer": "RGPV college lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cloud-native Systems",
+  "topics": [
+   "Serverless Computing"
+  ],
+  "description": "\"Cloud computing course\".",
+  "url": "https://www.youtube.com/playlist?list=PLL7liBDYa4YaKc07Ht4YWc1ZLSpiUFOnC",
+  "lectureKey": "mcse202-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse202",
+  "subjectCode": "MCSE-202",
+  "subjectLabel": "Distributed Systems & Cloud Computing",
+  "title": "Reliability Engineering",
+  "unit": 5,
+  "topicId": "mcse202-u5t4",
+  "lecturer": "MIT 6.824",
+  "type": "video",
+  "typeLabel": "Unit 5: Cloud-native Systems",
+  "topics": [
+   "Reliability Engineering"
+  ],
+  "description": "\"MIT 6.824 distributed systems lecture 1 introduction, MapReduce\" covers Cloud-native Systems.",
+  "url": "https://www.youtube.com/watch?v=cQP8WApzIQQ",
+  "lectureKey": "mcse202-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Advanced Information Security: full lecture series",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Cryptographic Foundations",
+   "Security Protocols",
+   "System & Software Security",
+   "Network & Web Security",
+   "Privacy & AI Security"
+  ],
+  "description": "\"Cryptography and Network Security course\" by Neso Academy.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Symmetric Cryptography",
+  "unit": 1,
+  "topicId": "mcse203-u1t1",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cryptographic Foundations",
+  "topics": [
+   "Symmetric Cryptography"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Cryptographic Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Public-key Cryptography",
+  "unit": 1,
+  "topicId": "mcse203-u1t2",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cryptographic Foundations",
+  "topics": [
+   "Public-key Cryptography"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Cryptographic Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Hash Functions & MACs",
+  "unit": 1,
+  "topicId": "mcse203-u1t3",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cryptographic Foundations",
+  "topics": [
+   "Hash Functions & MACs"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Cryptographic Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Digital Signatures & PKI",
+  "unit": 1,
+  "topicId": "mcse203-u1t4",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cryptographic Foundations",
+  "topics": [
+   "Digital Signatures & PKI"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Cryptographic Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Authentication Protocols",
+  "unit": 2,
+  "topicId": "mcse203-u2t1",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Security Protocols",
+  "topics": [
+   "Authentication Protocols"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Security Protocols.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "TLS 1.3",
+  "unit": 2,
+  "topicId": "mcse203-u2t2",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Security Protocols",
+  "topics": [
+   "TLS 1.3"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Security Protocols.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Protocol Attacks",
+  "unit": 2,
+  "topicId": "mcse203-u2t3",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Security Protocols",
+  "topics": [
+   "Protocol Attacks"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Security Protocols.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Formal Verification",
+  "unit": 2,
+  "topicId": "mcse203-u2t4",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Security Protocols",
+  "topics": [
+   "Formal Verification"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Security Protocols.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Memory Safety Vulnerabilities",
+  "unit": 3,
+  "topicId": "mcse203-u3t1",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 3: System & Software Security",
+  "topics": [
+   "Memory Safety Vulnerabilities"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on System & Software Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Exploit Mitigations",
+  "unit": 3,
+  "topicId": "mcse203-u3t2",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 3: System & Software Security",
+  "topics": [
+   "Exploit Mitigations"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on System & Software Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Access Control",
+  "unit": 3,
+  "topicId": "mcse203-u3t3",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 3: System & Software Security",
+  "topics": [
+   "Access Control"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on System & Software Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Trusted Computing & Sandboxing",
+  "unit": 3,
+  "topicId": "mcse203-u3t4",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 3: System & Software Security",
+  "topics": [
+   "Trusted Computing & Sandboxing"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on System & Software Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Network Security",
+  "unit": 4,
+  "topicId": "mcse203-u4t1",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Network & Web Security",
+  "topics": [
+   "Network Security"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Network & Web Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Web Application Security",
+  "unit": 4,
+  "topicId": "mcse203-u4t2",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Network & Web Security",
+  "topics": [
+   "Web Application Security"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Network & Web Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Malware Analysis",
+  "unit": 4,
+  "topicId": "mcse203-u4t3",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Network & Web Security",
+  "topics": [
+   "Malware Analysis"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Network & Web Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Security Operations",
+  "unit": 4,
+  "topicId": "mcse203-u4t4",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Network & Web Security",
+  "topics": [
+   "Security Operations"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Network & Web Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Privacy Technologies",
+  "unit": 5,
+  "topicId": "mcse203-u5t1",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Privacy & AI Security",
+  "topics": [
+   "Privacy Technologies"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Privacy & AI Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Privacy Regulation",
+  "unit": 5,
+  "topicId": "mcse203-u5t2",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Privacy & AI Security",
+  "topics": [
+   "Privacy Regulation"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Privacy & AI Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "Adversarial Machine Learning",
+  "unit": 5,
+  "topicId": "mcse203-u5t3",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Privacy & AI Security",
+  "topics": [
+   "Adversarial Machine Learning"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Privacy & AI Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mcse203",
+  "subjectCode": "MCSE-203",
+  "subjectLabel": "Advanced Information Security",
+  "title": "LLM & Agent Security",
+  "unit": 5,
+  "topicId": "mcse203-u5t4",
+  "lecturer": "Neso Academy",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Privacy & AI Security",
+  "topics": [
+   "LLM & Agent Security"
+  ],
+  "description": "Full Advanced Information Security series; pick the lecture on Privacy & AI Security.",
+  "url": "https://www.youtube.com/playlist?list=PLYfueOj8scQx4lCRAtZ-BWOoiDXP5hevK",
+  "lectureKey": "mcse203-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Digital IC Design: full lecture series",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "MOS Device Models",
+   "CMOS Inverter",
+   "Combinational Logic",
+   "Sequential Circuits & Timing",
+   "Interconnect & Arithmetic"
+  ],
+  "description": "\"Digital IC Design (CMOS VLSI Design), part 1\" by Digital IC Design course.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yzvAKErDt7tT7O-iIKPlOCP",
+  "lectureKey": "mvl101-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "MOSFET Operation",
+  "unit": 1,
+  "topicId": "mvl101-u1t1",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 1: MOS Device Models",
+  "topics": [
+   "MOSFET Operation"
+  ],
+  "description": "\"Digital IC Design part 2\" covers MOS Device Models.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Short-channel Effects",
+  "unit": 1,
+  "topicId": "mvl101-u1t2",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 1: MOS Device Models",
+  "topics": [
+   "Short-channel Effects"
+  ],
+  "description": "\"Digital IC Design part 2\" covers MOS Device Models.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "FinFET & Advanced Devices",
+  "unit": 1,
+  "topicId": "mvl101-u1t3",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 1: MOS Device Models",
+  "topics": [
+   "FinFET & Advanced Devices"
+  ],
+  "description": "\"Digital IC Design part 2\" covers MOS Device Models.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Device Capacitances",
+  "unit": 1,
+  "topicId": "mvl101-u1t4",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 1: MOS Device Models",
+  "topics": [
+   "Device Capacitances"
+  ],
+  "description": "\"Digital IC Design part 2\" covers MOS Device Models.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Static Characteristics",
+  "unit": 2,
+  "topicId": "mvl101-u2t1",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 2: CMOS Inverter",
+  "topics": [
+   "Static Characteristics"
+  ],
+  "description": "\"Digital IC Design part 2\" covers CMOS Inverter.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Dynamic Behaviour",
+  "unit": 2,
+  "topicId": "mvl101-u2t2",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 2: CMOS Inverter",
+  "topics": [
+   "Dynamic Behaviour"
+  ],
+  "description": "\"Digital IC Design part 2\" covers CMOS Inverter.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Power Consumption",
+  "unit": 2,
+  "topicId": "mvl101-u2t3",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 2: CMOS Inverter",
+  "topics": [
+   "Power Consumption"
+  ],
+  "description": "\"Digital IC Design part 2\" covers CMOS Inverter.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Inverter Chains & Sizing",
+  "unit": 2,
+  "topicId": "mvl101-u2t4",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 2: CMOS Inverter",
+  "topics": [
+   "Inverter Chains & Sizing"
+  ],
+  "description": "\"Digital IC Design part 2\" covers CMOS Inverter.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Static CMOS Gates",
+  "unit": 3,
+  "topicId": "mvl101-u3t1",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combinational Logic",
+  "topics": [
+   "Static CMOS Gates"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Combinational Logic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Logical Effort",
+  "unit": 3,
+  "topicId": "mvl101-u3t2",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combinational Logic",
+  "topics": [
+   "Logical Effort"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Combinational Logic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Ratioed & Pass-transistor Logic",
+  "unit": 3,
+  "topicId": "mvl101-u3t3",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combinational Logic",
+  "topics": [
+   "Ratioed & Pass-transistor Logic"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Combinational Logic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Dynamic Logic",
+  "unit": 3,
+  "topicId": "mvl101-u3t4",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combinational Logic",
+  "topics": [
+   "Dynamic Logic"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Combinational Logic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Latches & Flip-flops",
+  "unit": 4,
+  "topicId": "mvl101-u4t1",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sequential Circuits & Timing",
+  "topics": [
+   "Latches & Flip-flops"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Sequential Circuits & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Timing Constraints",
+  "unit": 4,
+  "topicId": "mvl101-u4t2",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sequential Circuits & Timing",
+  "topics": [
+   "Timing Constraints"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Sequential Circuits & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Clock Distribution",
+  "unit": 4,
+  "topicId": "mvl101-u4t3",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sequential Circuits & Timing",
+  "topics": [
+   "Clock Distribution"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Sequential Circuits & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Metastability & Synchronisers",
+  "unit": 4,
+  "topicId": "mvl101-u4t4",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sequential Circuits & Timing",
+  "topics": [
+   "Metastability & Synchronisers"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Sequential Circuits & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Interconnect Modelling",
+  "unit": 5,
+  "topicId": "mvl101-u5t1",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Interconnect & Arithmetic",
+  "topics": [
+   "Interconnect Modelling"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Interconnect & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Crosstalk & Signal Integrity",
+  "unit": 5,
+  "topicId": "mvl101-u5t2",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Interconnect & Arithmetic",
+  "topics": [
+   "Crosstalk & Signal Integrity"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Interconnect & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Adders",
+  "unit": 5,
+  "topicId": "mvl101-u5t3",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Interconnect & Arithmetic",
+  "topics": [
+   "Adders"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Interconnect & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl101",
+  "subjectCode": "MVL-101",
+  "subjectLabel": "Digital IC Design",
+  "title": "Multipliers",
+  "unit": 5,
+  "topicId": "mvl101-u5t4",
+  "lecturer": "Digital IC Design course",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Interconnect & Arithmetic",
+  "topics": [
+   "Multipliers"
+  ],
+  "description": "\"Digital IC Design part 2\" covers Interconnect & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLMSBalys69yxoIjeZ2Q3fxs69cGCU14B1",
+  "lectureKey": "mvl101-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Analog IC Design: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Single-stage Amplifiers",
+   "Current Mirrors & Differential Pairs",
+   "Operational Amplifiers",
+   "Noise & Frequency Response",
+   "Comparators & Data Converters"
+  ],
+  "description": "\"Analog IC Design, Dr. Nagendra Krishnapura, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJRlMz5diOg9wBizaU6-egJc",
+  "lectureKey": "mvl102-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Small-signal Models",
+  "unit": 1,
+  "topicId": "mvl102-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Single-stage Amplifiers",
+  "topics": [
+   "Small-signal Models"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Single-stage Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Common-source Amplifier",
+  "unit": 1,
+  "topicId": "mvl102-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Single-stage Amplifiers",
+  "topics": [
+   "Common-source Amplifier"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Single-stage Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Common-gate & Source Follower",
+  "unit": 1,
+  "topicId": "mvl102-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Single-stage Amplifiers",
+  "topics": [
+   "Common-gate & Source Follower"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Single-stage Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Biasing",
+  "unit": 1,
+  "topicId": "mvl102-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Single-stage Amplifiers",
+  "topics": [
+   "Biasing"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Single-stage Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Current Mirrors",
+  "unit": 2,
+  "topicId": "mvl102-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Current Mirrors & Differential Pairs",
+  "topics": [
+   "Current Mirrors"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Current Mirrors & Differential Pairs.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Differential Pair",
+  "unit": 2,
+  "topicId": "mvl102-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Current Mirrors & Differential Pairs",
+  "topics": [
+   "Differential Pair"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Current Mirrors & Differential Pairs.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Active Load",
+  "unit": 2,
+  "topicId": "mvl102-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Current Mirrors & Differential Pairs",
+  "topics": [
+   "Active Load"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Current Mirrors & Differential Pairs.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Mismatch",
+  "unit": 2,
+  "topicId": "mvl102-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Current Mirrors & Differential Pairs",
+  "topics": [
+   "Mismatch"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Current Mirrors & Differential Pairs.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Two-stage Op-amp",
+  "unit": 3,
+  "topicId": "mvl102-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Operational Amplifiers",
+  "topics": [
+   "Two-stage Op-amp"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Operational Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Folded Cascode Op-amp",
+  "unit": 3,
+  "topicId": "mvl102-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Operational Amplifiers",
+  "topics": [
+   "Folded Cascode Op-amp"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Operational Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Stability & Compensation",
+  "unit": 3,
+  "topicId": "mvl102-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Operational Amplifiers",
+  "topics": [
+   "Stability & Compensation"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Operational Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Common-mode Feedback",
+  "unit": 3,
+  "topicId": "mvl102-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Operational Amplifiers",
+  "topics": [
+   "Common-mode Feedback"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Operational Amplifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Frequency Response",
+  "unit": 4,
+  "topicId": "mvl102-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Noise & Frequency Response",
+  "topics": [
+   "Frequency Response"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Noise & Frequency Response.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Noise Sources",
+  "unit": 4,
+  "topicId": "mvl102-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Noise & Frequency Response",
+  "topics": [
+   "Noise Sources"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Noise & Frequency Response.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Noise Optimisation",
+  "unit": 4,
+  "topicId": "mvl102-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Noise & Frequency Response",
+  "topics": [
+   "Noise Optimisation"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Noise & Frequency Response.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Switched-capacitor Circuits",
+  "unit": 4,
+  "topicId": "mvl102-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Noise & Frequency Response",
+  "topics": [
+   "Switched-capacitor Circuits"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Noise & Frequency Response.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Comparators",
+  "unit": 5,
+  "topicId": "mvl102-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Comparators & Data Converters",
+  "topics": [
+   "Comparators"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Comparators & Data Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "DAC Architectures",
+  "unit": 5,
+  "topicId": "mvl102-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Comparators & Data Converters",
+  "topics": [
+   "DAC Architectures"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Comparators & Data Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "ADC Architectures",
+  "unit": 5,
+  "topicId": "mvl102-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Comparators & Data Converters",
+  "topics": [
+   "ADC Architectures"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Comparators & Data Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl102",
+  "subjectCode": "MVL-102",
+  "subjectLabel": "Analog IC Design",
+  "title": "Sigma-Delta Converters",
+  "unit": 5,
+  "topicId": "mvl102-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Comparators & Data Converters",
+  "topics": [
+   "Sigma-Delta Converters"
+  ],
+  "description": "\"CMOS analog VLSI design, IIT Bombay\" covers Comparators & Data Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQB44z6h0XO2644Vbv7OM8_",
+  "lectureKey": "mvl102-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "VLSI Technology & Fabrication: full lecture series",
+  "lecturer": "Engineering Funda",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Wafer Preparation",
+   "Oxidation & Lithography",
+   "Etching & Doping",
+   "Deposition & Metallisation",
+   "Process Integration & Packaging"
+  ],
+  "description": "\"CMOS Fabrication Technology in VLSI\" by Engineering Funda.",
+  "url": "https://www.youtube.com/playlist?list=PLgwJf8NK-2e56-RWQe21_oSvaeNYf14BF",
+  "lectureKey": "mvl103-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Crystal Growth",
+  "unit": 1,
+  "topicId": "mvl103-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wafer Preparation",
+  "topics": [
+   "Crystal Growth"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Wafer Preparation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Wafer Processing",
+  "unit": 1,
+  "topicId": "mvl103-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wafer Preparation",
+  "topics": [
+   "Wafer Processing"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Wafer Preparation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Cleanroom Technology",
+  "unit": 1,
+  "topicId": "mvl103-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wafer Preparation",
+  "topics": [
+   "Cleanroom Technology"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Wafer Preparation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Defects",
+  "unit": 1,
+  "topicId": "mvl103-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wafer Preparation",
+  "topics": [
+   "Defects"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Wafer Preparation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Thermal Oxidation",
+  "unit": 2,
+  "topicId": "mvl103-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Oxidation & Lithography",
+  "topics": [
+   "Thermal Oxidation"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Oxidation & Lithography.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Photolithography",
+  "unit": 2,
+  "topicId": "mvl103-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Oxidation & Lithography",
+  "topics": [
+   "Photolithography"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Oxidation & Lithography.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Advanced Lithography",
+  "unit": 2,
+  "topicId": "mvl103-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Oxidation & Lithography",
+  "topics": [
+   "Advanced Lithography"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Oxidation & Lithography.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "High-k Dielectrics",
+  "unit": 2,
+  "topicId": "mvl103-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Oxidation & Lithography",
+  "topics": [
+   "High-k Dielectrics"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Oxidation & Lithography.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Wet & Dry Etching",
+  "unit": 3,
+  "topicId": "mvl103-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Etching & Doping",
+  "topics": [
+   "Wet & Dry Etching"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Etching & Doping.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Diffusion",
+  "unit": 3,
+  "topicId": "mvl103-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Etching & Doping",
+  "topics": [
+   "Diffusion"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Etching & Doping.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Ion Implantation",
+  "unit": 3,
+  "topicId": "mvl103-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Etching & Doping",
+  "topics": [
+   "Ion Implantation"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Etching & Doping.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Rapid Thermal Processing",
+  "unit": 3,
+  "topicId": "mvl103-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Etching & Doping",
+  "topics": [
+   "Rapid Thermal Processing"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Etching & Doping.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "CVD",
+  "unit": 4,
+  "topicId": "mvl103-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deposition & Metallisation",
+  "topics": [
+   "CVD"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Deposition & Metallisation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "PVD",
+  "unit": 4,
+  "topicId": "mvl103-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deposition & Metallisation",
+  "topics": [
+   "PVD"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Deposition & Metallisation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Metallisation",
+  "unit": 4,
+  "topicId": "mvl103-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deposition & Metallisation",
+  "topics": [
+   "Metallisation"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Deposition & Metallisation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Low-k Dielectrics",
+  "unit": 4,
+  "topicId": "mvl103-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Deposition & Metallisation",
+  "topics": [
+   "Low-k Dielectrics"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Deposition & Metallisation.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "CMOS Process Flow",
+  "unit": 5,
+  "topicId": "mvl103-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Process Integration & Packaging",
+  "topics": [
+   "CMOS Process Flow"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Process Integration & Packaging.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Process Monitoring",
+  "unit": 5,
+  "topicId": "mvl103-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Process Integration & Packaging",
+  "topics": [
+   "Process Monitoring"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Process Integration & Packaging.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Packaging",
+  "unit": 5,
+  "topicId": "mvl103-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Process Integration & Packaging",
+  "topics": [
+   "Packaging"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Process Integration & Packaging.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl103",
+  "subjectCode": "MVL-103",
+  "subjectLabel": "VLSI Technology & Fabrication",
+  "title": "Yield & Reliability",
+  "unit": 5,
+  "topicId": "mvl103-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Process Integration & Packaging",
+  "topics": [
+   "Yield & Reliability"
+  ],
+  "description": "\"VLSI design flow: RTL to GDS, IIIT Delhi\" covers Process Integration & Packaging.",
+  "url": "https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR",
+  "lectureKey": "mvl103-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Advanced Digital System Design & Verification: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "HDL-based Design",
+   "FSMs & Datapaths",
+   "Synthesis & Timing",
+   "Functional Verification",
+   "FPGA & Formal Methods"
+  ],
+  "description": "\"Digital Design with Verilog, IIT Guwahati\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoVlY7iVqr-FhWUQEX7JDdiP",
+  "lectureKey": "mvl104-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Verilog Constructs",
+  "unit": 1,
+  "topicId": "mvl104-u1t1",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 1: HDL-based Design",
+  "topics": [
+   "Verilog Constructs"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers HDL-based Design.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Blocking vs Non-blocking",
+  "unit": 1,
+  "topicId": "mvl104-u1t2",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 1: HDL-based Design",
+  "topics": [
+   "Blocking vs Non-blocking"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers HDL-based Design.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "SystemVerilog for Design",
+  "unit": 1,
+  "topicId": "mvl104-u1t3",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 1: HDL-based Design",
+  "topics": [
+   "SystemVerilog for Design"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\".",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Parameterised Design",
+  "unit": 1,
+  "topicId": "mvl104-u1t4",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 1: HDL-based Design",
+  "topics": [
+   "Parameterised Design"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\".",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "FSM Design",
+  "unit": 2,
+  "topicId": "mvl104-u2t1",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 2: FSMs & Datapaths",
+  "topics": [
+   "FSM Design"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\".",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Datapath & Controller",
+  "unit": 2,
+  "topicId": "mvl104-u2t2",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 2: FSMs & Datapaths",
+  "topics": [
+   "Datapath & Controller"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers FSMs & Datapaths.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Pipelining in RTL",
+  "unit": 2,
+  "topicId": "mvl104-u2t3",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 2: FSMs & Datapaths",
+  "topics": [
+   "Pipelining in RTL"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\".",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Memories & FIFOs",
+  "unit": 2,
+  "topicId": "mvl104-u2t4",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 2: FSMs & Datapaths",
+  "topics": [
+   "Memories & FIFOs"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers FSMs & Datapaths.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Logic Synthesis",
+  "unit": 3,
+  "topicId": "mvl104-u3t1",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synthesis & Timing",
+  "topics": [
+   "Logic Synthesis"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers Synthesis & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Static Timing Analysis",
+  "unit": 3,
+  "topicId": "mvl104-u3t2",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synthesis & Timing",
+  "topics": [
+   "Static Timing Analysis"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers Synthesis & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Timing Closure",
+  "unit": 3,
+  "topicId": "mvl104-u3t3",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synthesis & Timing",
+  "topics": [
+   "Timing Closure"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers Synthesis & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Clock Domain Crossing",
+  "unit": 3,
+  "topicId": "mvl104-u3t4",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synthesis & Timing",
+  "topics": [
+   "Clock Domain Crossing"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers Synthesis & Timing.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Verification Planning",
+  "unit": 4,
+  "topicId": "mvl104-u4t1",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Functional Verification",
+  "topics": [
+   "Verification Planning"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\".",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Constrained Random Verification",
+  "unit": 4,
+  "topicId": "mvl104-u4t2",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Functional Verification",
+  "topics": [
+   "Constrained Random Verification"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers Functional Verification.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "UVM",
+  "unit": 4,
+  "topicId": "mvl104-u4t3",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Functional Verification",
+  "topics": [
+   "UVM"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers Functional Verification.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Assertions",
+  "unit": 4,
+  "topicId": "mvl104-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Functional Verification",
+  "topics": [
+   "Assertions"
+  ],
+  "description": "\"SystemVerilog assertions assertion-based verification\".",
+  "url": "https://www.youtube.com/playlist?list=PLYdInKVfi0KYAH0ZfakBOGPQ8kTNj8g_B",
+  "lectureKey": "mvl104-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "FPGA Architecture",
+  "unit": 5,
+  "topicId": "mvl104-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: FPGA & Formal Methods",
+  "topics": [
+   "FPGA Architecture"
+  ],
+  "description": "\"Introduction to SystemVerilog testbench architecture\".",
+  "url": "https://www.youtube.com/watch?v=WpG5RjZ2tRQ",
+  "lectureKey": "mvl104-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "FPGA Design Flow",
+  "unit": 5,
+  "topicId": "mvl104-u5t2",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 5: FPGA & Formal Methods",
+  "topics": [
+   "FPGA Design Flow"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers FPGA & Formal Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Formal Verification",
+  "unit": 5,
+  "topicId": "mvl104-u5t3",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 5: FPGA & Formal Methods",
+  "topics": [
+   "Formal Verification"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\".",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mvl104",
+  "subjectCode": "MVL-104",
+  "subjectLabel": "Advanced Digital System Design & Verification",
+  "title": "Emulation & Prototyping",
+  "unit": 5,
+  "topicId": "mvl104-u5t4",
+  "lecturer": "Chip Logic Studio",
+  "type": "playlist",
+  "typeLabel": "Unit 5: FPGA & Formal Methods",
+  "topics": [
+   "Emulation & Prototyping"
+  ],
+  "description": "\"SystemVerilog full course: RTL design and verification\" covers FPGA & Formal Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL4isOTp6hCIdwsmFLJukVb35F6nFbVoVB",
+  "lectureKey": "mvl104-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Low Power VLSI Design: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Power Fundamentals",
+   "Circuit-level Techniques",
+   "Architecture & System Techniques",
+   "Low-power Memory & Arithmetic",
+   "Power Analysis & Management"
+  ],
+  "description": "\"Low Power VLSI Circuits & Systems, Prof. Ajit Pal, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Sources of Power Dissipation",
+  "unit": 1,
+  "topicId": "mvl201-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Fundamentals",
+  "topics": [
+   "Sources of Power Dissipation"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Need for Low Power",
+  "unit": 1,
+  "topicId": "mvl201-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Fundamentals",
+  "topics": [
+   "Need for Low Power"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Leakage Mechanisms",
+  "unit": 1,
+  "topicId": "mvl201-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Fundamentals",
+  "topics": [
+   "Leakage Mechanisms"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Power Estimation",
+  "unit": 1,
+  "topicId": "mvl201-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Fundamentals",
+  "topics": [
+   "Power Estimation"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Voltage Scaling",
+  "unit": 2,
+  "topicId": "mvl201-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Circuit-level Techniques",
+  "topics": [
+   "Voltage Scaling"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Circuit-level Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Multi-threshold CMOS",
+  "unit": 2,
+  "topicId": "mvl201-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Circuit-level Techniques",
+  "topics": [
+   "Multi-threshold CMOS"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Circuit-level Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Body Biasing",
+  "unit": 2,
+  "topicId": "mvl201-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Circuit-level Techniques",
+  "topics": [
+   "Body Biasing"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Circuit-level Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Low-power Logic Styles",
+  "unit": 2,
+  "topicId": "mvl201-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Circuit-level Techniques",
+  "topics": [
+   "Low-power Logic Styles"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Circuit-level Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Clock Gating",
+  "unit": 3,
+  "topicId": "mvl201-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Architecture & System Techniques",
+  "topics": [
+   "Clock Gating"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Architecture & System Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Power Gating",
+  "unit": 3,
+  "topicId": "mvl201-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Architecture & System Techniques",
+  "topics": [
+   "Power Gating"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Architecture & System Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Multi-voltage Design",
+  "unit": 3,
+  "topicId": "mvl201-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Architecture & System Techniques",
+  "topics": [
+   "Multi-voltage Design"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Architecture & System Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "DVFS",
+  "unit": 3,
+  "topicId": "mvl201-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Architecture & System Techniques",
+  "topics": [
+   "DVFS"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Architecture & System Techniques.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "SRAM Power",
+  "unit": 4,
+  "topicId": "mvl201-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Low-power Memory & Arithmetic",
+  "topics": [
+   "SRAM Power"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Low-power Memory & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Low-power Caches",
+  "unit": 4,
+  "topicId": "mvl201-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Low-power Memory & Arithmetic",
+  "topics": [
+   "Low-power Caches"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Low-power Memory & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Low-power Arithmetic",
+  "unit": 4,
+  "topicId": "mvl201-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Low-power Memory & Arithmetic",
+  "topics": [
+   "Low-power Arithmetic"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Low-power Memory & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Bus Encoding",
+  "unit": 4,
+  "topicId": "mvl201-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Low-power Memory & Arithmetic",
+  "topics": [
+   "Bus Encoding"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Low-power Memory & Arithmetic.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Power-aware Design Flow",
+  "unit": 5,
+  "topicId": "mvl201-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Analysis & Management",
+  "topics": [
+   "Power-aware Design Flow"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Analysis & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "IR Drop & Electromigration",
+  "unit": 5,
+  "topicId": "mvl201-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Analysis & Management",
+  "topics": [
+   "IR Drop & Electromigration"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Analysis & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Thermal Management",
+  "unit": 5,
+  "topicId": "mvl201-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Analysis & Management",
+  "topics": [
+   "Thermal Management"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Analysis & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl201",
+  "subjectCode": "MVL-201",
+  "subjectLabel": "Low Power VLSI Design",
+  "title": "Energy Harvesting & IoT Chips",
+  "unit": 5,
+  "topicId": "mvl201-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Analysis & Management",
+  "topics": [
+   "Energy Harvesting & IoT Chips"
+  ],
+  "description": "Full Low Power VLSI Design series; pick the lecture on Power Analysis & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLB3F0FC99B5D89571",
+  "lectureKey": "mvl201-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "VLSI Testing & Testability: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Testing Fundamentals",
+   "Test Generation",
+   "Fault Simulation",
+   "Design for Testability",
+   "BIST & Memory Testing"
+  ],
+  "description": "\"Design Verification and Test of Digital VLSI Circuits, IIT Guwahati\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJTClnafWQ9FK2nt3cGG8kCF",
+  "lectureKey": "mvl202-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Need for Testing",
+  "unit": 1,
+  "topicId": "mvl202-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Testing Fundamentals",
+  "topics": [
+   "Need for Testing"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\".",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Defects & Fault Models",
+  "unit": 1,
+  "topicId": "mvl202-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Testing Fundamentals",
+  "topics": [
+   "Defects & Fault Models"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Testing Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Fault Equivalence & Collapsing",
+  "unit": 1,
+  "topicId": "mvl202-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Testing Fundamentals",
+  "topics": [
+   "Fault Equivalence & Collapsing"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Testing Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Yield & Quality",
+  "unit": 1,
+  "topicId": "mvl202-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Testing Fundamentals",
+  "topics": [
+   "Yield & Quality"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Testing Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Combinational ATPG",
+  "unit": 2,
+  "topicId": "mvl202-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Test Generation",
+  "topics": [
+   "Combinational ATPG"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Test Generation.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Fault Activation & Propagation",
+  "unit": 2,
+  "topicId": "mvl202-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Test Generation",
+  "topics": [
+   "Fault Activation & Propagation"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Test Generation.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Sequential ATPG",
+  "unit": 2,
+  "topicId": "mvl202-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Test Generation",
+  "topics": [
+   "Sequential ATPG"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Test Generation.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Delay Testing",
+  "unit": 2,
+  "topicId": "mvl202-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Test Generation",
+  "topics": [
+   "Delay Testing"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\".",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Fault Simulation Purpose",
+  "unit": 3,
+  "topicId": "mvl202-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Fault Simulation",
+  "topics": [
+   "Fault Simulation Purpose"
+  ],
+  "description": "\"Testability measures: fault simulation, SCOAP controllability and observability\".",
+  "url": "https://www.youtube.com/watch?v=rNzOgS6ptY0",
+  "lectureKey": "mvl202-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Parallel & Deductive Simulation",
+  "unit": 3,
+  "topicId": "mvl202-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Fault Simulation",
+  "topics": [
+   "Parallel & Deductive Simulation"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Fault Simulation.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Test Compaction",
+  "unit": 3,
+  "topicId": "mvl202-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Fault Simulation",
+  "topics": [
+   "Test Compaction"
+  ],
+  "description": "\"Design for testability: observability, controllability, test points\".",
+  "url": "https://www.youtube.com/watch?v=Ign9tPoP7mM",
+  "lectureKey": "mvl202-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Diagnosis",
+  "unit": 3,
+  "topicId": "mvl202-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Fault Simulation",
+  "topics": [
+   "Diagnosis"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Fault Simulation.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Testability Measures",
+  "unit": 4,
+  "topicId": "mvl202-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Design for Testability",
+  "topics": [
+   "Testability Measures"
+  ],
+  "description": "\"Testability measures: fault simulation, SCOAP controllability and observability\".",
+  "url": "https://www.youtube.com/watch?v=rNzOgS6ptY0",
+  "lectureKey": "mvl202-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Scan Design",
+  "unit": 4,
+  "topicId": "mvl202-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Design for Testability",
+  "topics": [
+   "Scan Design"
+  ],
+  "description": "\"Design for testability: observability, controllability, test points\".",
+  "url": "https://www.youtube.com/watch?v=Ign9tPoP7mM",
+  "lectureKey": "mvl202-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Boundary Scan",
+  "unit": 4,
+  "topicId": "mvl202-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Design for Testability",
+  "topics": [
+   "Boundary Scan"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers Design for Testability.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Test Compression",
+  "unit": 4,
+  "topicId": "mvl202-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Design for Testability",
+  "topics": [
+   "Test Compression"
+  ],
+  "description": "\"Design for testability: observability, controllability, test points\".",
+  "url": "https://www.youtube.com/watch?v=Ign9tPoP7mM",
+  "lectureKey": "mvl202-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Built-in Self-Test",
+  "unit": 5,
+  "topicId": "mvl202-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: BIST & Memory Testing",
+  "topics": [
+   "Built-in Self-Test"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers BIST & Memory Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Logic BIST",
+  "unit": 5,
+  "topicId": "mvl202-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: BIST & Memory Testing",
+  "topics": [
+   "Logic BIST"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers BIST & Memory Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Memory Fault Models",
+  "unit": 5,
+  "topicId": "mvl202-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: BIST & Memory Testing",
+  "topics": [
+   "Memory Fault Models"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers BIST & Memory Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl202",
+  "subjectCode": "MVL-202",
+  "subjectLabel": "VLSI Testing & Testability",
+  "title": "Memory BIST & Repair",
+  "unit": 5,
+  "topicId": "mvl202-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: BIST & Memory Testing",
+  "topics": [
+   "Memory BIST & Repair"
+  ],
+  "description": "\"Testing and verification in VLSI, Prof. Pallab Dasgupta\" covers BIST & Memory Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLE995EF1D8630E34F",
+  "lectureKey": "mvl202-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "System-on-Chip & Embedded System Design: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "SoC Fundamentals",
+   "On-chip Communication",
+   "Hardware-Software Co-design",
+   "Embedded Software",
+   "Verification & Applications"
+  ],
+  "description": "\"Embedded Systems, Prof. Santanu Chaudhury, IIT Delhi\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL90187D2B8F5AC28F",
+  "lectureKey": "mvl203-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "SoC Concept",
+  "unit": 1,
+  "topicId": "mvl203-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: SoC Fundamentals",
+  "topics": [
+   "SoC Concept"
+  ],
+  "description": "\"System on chip SOC\".",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "SoC Design Flow",
+  "unit": 1,
+  "topicId": "mvl203-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: SoC Fundamentals",
+  "topics": [
+   "SoC Design Flow"
+  ],
+  "description": "\"System on chip SOC\" covers SoC Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Processor Cores",
+  "unit": 1,
+  "topicId": "mvl203-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: SoC Fundamentals",
+  "topics": [
+   "Processor Cores"
+  ],
+  "description": "\"System on chip SOC\" covers SoC Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Accelerators",
+  "unit": 1,
+  "topicId": "mvl203-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: SoC Fundamentals",
+  "topics": [
+   "Accelerators"
+  ],
+  "description": "\"System on chip SOC\" covers SoC Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "On-chip Buses",
+  "unit": 2,
+  "topicId": "mvl203-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: On-chip Communication",
+  "topics": [
+   "On-chip Buses"
+  ],
+  "description": "\"System on chip SOC\".",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Network on Chip",
+  "unit": 2,
+  "topicId": "mvl203-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: On-chip Communication",
+  "topics": [
+   "Network on Chip"
+  ],
+  "description": "\"System on chip SOC\".",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Memory Subsystem",
+  "unit": 2,
+  "topicId": "mvl203-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: On-chip Communication",
+  "topics": [
+   "Memory Subsystem"
+  ],
+  "description": "\"System on chip SOC\" covers On-chip Communication.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Interrupts & Peripherals",
+  "unit": 2,
+  "topicId": "mvl203-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: On-chip Communication",
+  "topics": [
+   "Interrupts & Peripherals"
+  ],
+  "description": "\"System on chip SOC\" covers On-chip Communication.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Partitioning",
+  "unit": 3,
+  "topicId": "mvl203-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Hardware-Software Co-design",
+  "topics": [
+   "Partitioning"
+  ],
+  "description": "\"System on chip SOC\" covers Hardware-Software Co-design.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "High-level Synthesis",
+  "unit": 3,
+  "topicId": "mvl203-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Hardware-Software Co-design",
+  "topics": [
+   "High-level Synthesis"
+  ],
+  "description": "\"System on chip SOC\" covers Hardware-Software Co-design.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Virtual Prototyping",
+  "unit": 3,
+  "topicId": "mvl203-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Hardware-Software Co-design",
+  "topics": [
+   "Virtual Prototyping"
+  ],
+  "description": "\"System on chip SOC\" covers Hardware-Software Co-design.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Design Space Exploration",
+  "unit": 3,
+  "topicId": "mvl203-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Hardware-Software Co-design",
+  "topics": [
+   "Design Space Exploration"
+  ],
+  "description": "\"System on chip SOC\" covers Hardware-Software Co-design.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Embedded Programming",
+  "unit": 4,
+  "topicId": "mvl203-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Embedded Software",
+  "topics": [
+   "Embedded Programming"
+  ],
+  "description": "\"Embedded systems introduction\".",
+  "url": "https://www.youtube.com/watch?v=y9RAhEfLfJs",
+  "lectureKey": "mvl203-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "RTOS",
+  "unit": 4,
+  "topicId": "mvl203-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Embedded Software",
+  "topics": [
+   "RTOS"
+  ],
+  "description": "\"System on chip SOC\" covers Embedded Software.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Embedded Linux",
+  "unit": 4,
+  "topicId": "mvl203-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Embedded Software",
+  "topics": [
+   "Embedded Linux"
+  ],
+  "description": "\"Embedded systems introduction\".",
+  "url": "https://www.youtube.com/watch?v=y9RAhEfLfJs",
+  "lectureKey": "mvl203-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Firmware Updates & Security",
+  "unit": 4,
+  "topicId": "mvl203-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Embedded Software",
+  "topics": [
+   "Firmware Updates & Security"
+  ],
+  "description": "\"System on chip SOC\" covers Embedded Software.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "SoC Verification",
+  "unit": 5,
+  "topicId": "mvl203-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Verification & Applications",
+  "topics": [
+   "SoC Verification"
+  ],
+  "description": "\"System on chip SOC\".",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Low-power SoC",
+  "unit": 5,
+  "topicId": "mvl203-u5t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Verification & Applications",
+  "topics": [
+   "Low-power SoC"
+  ],
+  "description": "\"System on chip SOC\" covers Verification & Applications.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Automotive & IoT SoCs",
+  "unit": 5,
+  "topicId": "mvl203-u5t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Verification & Applications",
+  "topics": [
+   "Automotive & IoT SoCs"
+  ],
+  "description": "\"System on chip SOC\" covers Verification & Applications.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mvl203",
+  "subjectCode": "MVL-203",
+  "subjectLabel": "System-on-Chip & Embedded System Design",
+  "title": "Chiplets & Advanced Packaging",
+  "unit": 5,
+  "topicId": "mvl203-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Verification & Applications",
+  "topics": [
+   "Chiplets & Advanced Packaging"
+  ],
+  "description": "\"System on chip SOC\" covers Verification & Applications.",
+  "url": "https://www.youtube.com/watch?v=PRQXzjTrCJY",
+  "lectureKey": "mvl203-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Advanced Thermodynamics: full lecture series",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Exergy Analysis",
+   "Thermodynamic Relations",
+   "Mixtures & Psychrometry",
+   "Combustion & Chemical Equilibrium",
+   "Irreversible & Statistical Thermodynamics"
+  ],
+  "description": "\"Advanced Thermodynamics, IIT Delhi (M.Tech Thermal)\" by IIT Delhi.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Exergy Concept",
+  "unit": 1,
+  "topicId": "mth101-u1t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Exergy Analysis",
+  "topics": [
+   "Exergy Concept"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Exergy Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Exergy Balance",
+  "unit": 1,
+  "topicId": "mth101-u1t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Exergy Analysis",
+  "topics": [
+   "Exergy Balance"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Exergy Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Exergy of Power Cycles",
+  "unit": 1,
+  "topicId": "mth101-u1t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Exergy Analysis",
+  "topics": [
+   "Exergy of Power Cycles"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Exergy Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Entropy Generation Minimisation",
+  "unit": 1,
+  "topicId": "mth101-u1t4",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Exergy Analysis",
+  "topics": [
+   "Entropy Generation Minimisation"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Exergy Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Maxwell Relations",
+  "unit": 2,
+  "topicId": "mth101-u2t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Thermodynamic Relations",
+  "topics": [
+   "Maxwell Relations"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Thermodynamic Relations.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "General Property Relations",
+  "unit": 2,
+  "topicId": "mth101-u2t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Thermodynamic Relations",
+  "topics": [
+   "General Property Relations"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Thermodynamic Relations.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Real Gases",
+  "unit": 2,
+  "topicId": "mth101-u2t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Thermodynamic Relations",
+  "topics": [
+   "Real Gases"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Thermodynamic Relations.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Generalised Charts",
+  "unit": 2,
+  "topicId": "mth101-u2t4",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Thermodynamic Relations",
+  "topics": [
+   "Generalised Charts"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Thermodynamic Relations.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Ideal Gas Mixtures",
+  "unit": 3,
+  "topicId": "mth101-u3t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mixtures & Psychrometry",
+  "topics": [
+   "Ideal Gas Mixtures"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Mixtures & Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Real Mixtures",
+  "unit": 3,
+  "topicId": "mth101-u3t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mixtures & Psychrometry",
+  "topics": [
+   "Real Mixtures"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Mixtures & Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Psychrometry Advanced",
+  "unit": 3,
+  "topicId": "mth101-u3t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mixtures & Psychrometry",
+  "topics": [
+   "Psychrometry Advanced"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Mixtures & Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Phase Equilibrium",
+  "unit": 3,
+  "topicId": "mth101-u3t4",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mixtures & Psychrometry",
+  "topics": [
+   "Phase Equilibrium"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Mixtures & Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Combustion Thermodynamics",
+  "unit": 4,
+  "topicId": "mth101-u4t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Combustion & Chemical Equilibrium",
+  "topics": [
+   "Combustion Thermodynamics"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Combustion & Chemical Equilibrium.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Chemical Equilibrium",
+  "unit": 4,
+  "topicId": "mth101-u4t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Combustion & Chemical Equilibrium",
+  "topics": [
+   "Chemical Equilibrium"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Combustion & Chemical Equilibrium.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Second-law Analysis of Combustion",
+  "unit": 4,
+  "topicId": "mth101-u4t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Combustion & Chemical Equilibrium",
+  "topics": [
+   "Second-law Analysis of Combustion"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Combustion & Chemical Equilibrium.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Fuel Cells Thermodynamics",
+  "unit": 4,
+  "topicId": "mth101-u4t4",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Combustion & Chemical Equilibrium",
+  "topics": [
+   "Fuel Cells Thermodynamics"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Combustion & Chemical Equilibrium.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Irreversible Thermodynamics",
+  "unit": 5,
+  "topicId": "mth101-u5t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Irreversible & Statistical Thermodynamics",
+  "topics": [
+   "Irreversible Thermodynamics"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Irreversible & Statistical Thermodynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Statistical Thermodynamics Basics",
+  "unit": 5,
+  "topicId": "mth101-u5t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Irreversible & Statistical Thermodynamics",
+  "topics": [
+   "Statistical Thermodynamics Basics"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Irreversible & Statistical Thermodynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Kinetic Theory",
+  "unit": 5,
+  "topicId": "mth101-u5t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Irreversible & Statistical Thermodynamics",
+  "topics": [
+   "Kinetic Theory"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Irreversible & Statistical Thermodynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth101",
+  "subjectCode": "MTH-101",
+  "subjectLabel": "Advanced Thermodynamics",
+  "title": "Advanced Cycles",
+  "unit": 5,
+  "topicId": "mth101-u5t4",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Irreversible & Statistical Thermodynamics",
+  "topics": [
+   "Advanced Cycles"
+  ],
+  "description": "Full Advanced Thermodynamics series; pick the lecture on Irreversible & Statistical Thermodynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLy0B7DXYew_p4wguD-aAFcgcnXKdudy8f",
+  "lectureKey": "mth101-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Advanced Fluid Mechanics: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Fluid Kinematics & Conservation Laws",
+   "Navier-Stokes Equations & Exact Solutions",
+   "Boundary Layer Theory",
+   "Turbulence",
+   "Compressible & Potential Flow"
+  ],
+  "description": "\"NPTEL Fluid Dynamics and Turbomachines, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLCoE5wxWtHFYiVGswvsWRaHjv18vxZzE2",
+  "lectureKey": "mth102-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Description of Flow",
+  "unit": 1,
+  "topicId": "mth102-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fluid Kinematics & Conservation Laws",
+  "topics": [
+   "Description of Flow"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Fluid Kinematics & Conservation Laws.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Strain Rate & Vorticity",
+  "unit": 1,
+  "topicId": "mth102-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fluid Kinematics & Conservation Laws",
+  "topics": [
+   "Strain Rate & Vorticity"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Fluid Kinematics & Conservation Laws.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Reynolds Transport Theorem",
+  "unit": 1,
+  "topicId": "mth102-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fluid Kinematics & Conservation Laws",
+  "topics": [
+   "Reynolds Transport Theorem"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Fluid Kinematics & Conservation Laws.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Energy Equation",
+  "unit": 1,
+  "topicId": "mth102-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fluid Kinematics & Conservation Laws",
+  "topics": [
+   "Energy Equation"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Fluid Kinematics & Conservation Laws.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Navier-Stokes Equations",
+  "unit": 2,
+  "topicId": "mth102-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Navier-Stokes Equations & Exact Solutions",
+  "topics": [
+   "Navier-Stokes Equations"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Navier-Stokes Equations & Exact Solutions.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Couette & Poiseuille Flow",
+  "unit": 2,
+  "topicId": "mth102-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Navier-Stokes Equations & Exact Solutions",
+  "topics": [
+   "Couette & Poiseuille Flow"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Navier-Stokes Equations & Exact Solutions.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Unsteady Exact Solutions",
+  "unit": 2,
+  "topicId": "mth102-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Navier-Stokes Equations & Exact Solutions",
+  "topics": [
+   "Unsteady Exact Solutions"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Navier-Stokes Equations & Exact Solutions.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Creeping Flow",
+  "unit": 2,
+  "topicId": "mth102-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Navier-Stokes Equations & Exact Solutions",
+  "topics": [
+   "Creeping Flow"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Navier-Stokes Equations & Exact Solutions.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Boundary Layer Equations",
+  "unit": 3,
+  "topicId": "mth102-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boundary Layer Theory",
+  "topics": [
+   "Boundary Layer Equations"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Boundary Layer Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Integral Methods",
+  "unit": 3,
+  "topicId": "mth102-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boundary Layer Theory",
+  "topics": [
+   "Integral Methods"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Boundary Layer Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Separation",
+  "unit": 3,
+  "topicId": "mth102-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boundary Layer Theory",
+  "topics": [
+   "Separation"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Boundary Layer Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Thermal Boundary Layer",
+  "unit": 3,
+  "topicId": "mth102-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boundary Layer Theory",
+  "topics": [
+   "Thermal Boundary Layer"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Boundary Layer Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Nature of Turbulence",
+  "unit": 4,
+  "topicId": "mth102-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Turbulence",
+  "topics": [
+   "Nature of Turbulence"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Turbulence.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Reynolds Averaging",
+  "unit": 4,
+  "topicId": "mth102-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Turbulence",
+  "topics": [
+   "Reynolds Averaging"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Turbulence.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Turbulence Models",
+  "unit": 4,
+  "topicId": "mth102-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Turbulence",
+  "topics": [
+   "Turbulence Models"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Turbulence.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Wall Turbulence",
+  "unit": 4,
+  "topicId": "mth102-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Turbulence",
+  "topics": [
+   "Wall Turbulence"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Turbulence.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Potential Flow",
+  "unit": 5,
+  "topicId": "mth102-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Compressible & Potential Flow",
+  "topics": [
+   "Potential Flow"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Compressible & Potential Flow.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Elementary Potential Flows",
+  "unit": 5,
+  "topicId": "mth102-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Compressible & Potential Flow",
+  "topics": [
+   "Elementary Potential Flows"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Compressible & Potential Flow.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Compressible Flow",
+  "unit": 5,
+  "topicId": "mth102-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Compressible & Potential Flow",
+  "topics": [
+   "Compressible Flow"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Compressible & Potential Flow.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth102",
+  "subjectCode": "MTH-102",
+  "subjectLabel": "Advanced Fluid Mechanics",
+  "title": "Oblique Shocks & Expansion",
+  "unit": 5,
+  "topicId": "mth102-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Compressible & Potential Flow",
+  "topics": [
+   "Oblique Shocks & Expansion"
+  ],
+  "description": "\"Fluid mechanics complete lecture series\" covers Compressible & Potential Flow.",
+  "url": "https://www.youtube.com/playlist?list=PL780bLd7HstD4gD37ZKPB3HjEyfjqCKVo",
+  "lectureKey": "mth102-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Advanced Heat & Mass Transfer: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Advanced Conduction",
+   "Convection",
+   "Boiling & Condensation",
+   "Radiation",
+   "Mass Transfer & Heat Exchangers"
+  ],
+  "description": "\"Convective Heat and Mass Transfer, Prof. A.W. Date, IIT Bombay\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo",
+  "lectureKey": "mth103-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Multidimensional Steady Conduction",
+  "unit": 1,
+  "topicId": "mth103-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Conduction",
+  "topics": [
+   "Multidimensional Steady Conduction"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Advanced Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Transient Conduction",
+  "unit": 1,
+  "topicId": "mth103-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Conduction",
+  "topics": [
+   "Transient Conduction"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Advanced Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Numerical Conduction",
+  "unit": 1,
+  "topicId": "mth103-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Conduction",
+  "topics": [
+   "Numerical Conduction"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Advanced Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Extended Surfaces Advanced",
+  "unit": 1,
+  "topicId": "mth103-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Conduction",
+  "topics": [
+   "Extended Surfaces Advanced"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Advanced Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Convection Equations",
+  "unit": 2,
+  "topicId": "mth103-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Convection",
+  "topics": [
+   "Convection Equations"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Internal Forced Convection",
+  "unit": 2,
+  "topicId": "mth103-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Convection",
+  "topics": [
+   "Internal Forced Convection"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Natural Convection",
+  "unit": 2,
+  "topicId": "mth103-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Convection",
+  "topics": [
+   "Natural Convection"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Convection Enhancement",
+  "unit": 2,
+  "topicId": "mth103-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Convection",
+  "topics": [
+   "Convection Enhancement"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Pool Boiling",
+  "unit": 3,
+  "topicId": "mth103-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boiling & Condensation",
+  "topics": [
+   "Pool Boiling"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Boiling & Condensation.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Flow Boiling",
+  "unit": 3,
+  "topicId": "mth103-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boiling & Condensation",
+  "topics": [
+   "Flow Boiling"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Boiling & Condensation.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Film Condensation",
+  "unit": 3,
+  "topicId": "mth103-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boiling & Condensation",
+  "topics": [
+   "Film Condensation"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Boiling & Condensation.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Heat Pipes",
+  "unit": 3,
+  "topicId": "mth103-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Boiling & Condensation",
+  "topics": [
+   "Heat Pipes"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\".",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Radiation Properties",
+  "unit": 4,
+  "topicId": "mth103-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "Radiation Properties"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Radiation.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Radiation Exchange",
+  "unit": 4,
+  "topicId": "mth103-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "Radiation Exchange"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Radiation.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Gas Radiation",
+  "unit": 4,
+  "topicId": "mth103-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "Gas Radiation"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Radiation.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Solar Radiation",
+  "unit": 4,
+  "topicId": "mth103-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "Solar Radiation"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Radiation.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Diffusion Mass Transfer",
+  "unit": 5,
+  "topicId": "mth103-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Mass Transfer & Heat Exchangers",
+  "topics": [
+   "Diffusion Mass Transfer"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\".",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Convective Mass Transfer",
+  "unit": 5,
+  "topicId": "mth103-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Mass Transfer & Heat Exchangers",
+  "topics": [
+   "Convective Mass Transfer"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\".",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Heat Exchanger Design",
+  "unit": 5,
+  "topicId": "mth103-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Mass Transfer & Heat Exchangers",
+  "topics": [
+   "Heat Exchanger Design"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Mass Transfer & Heat Exchangers.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth103",
+  "subjectCode": "MTH-103",
+  "subjectLabel": "Advanced Heat & Mass Transfer",
+  "title": "Compact Heat Exchangers",
+  "unit": 5,
+  "topicId": "mth103-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Mass Transfer & Heat Exchangers",
+  "topics": [
+   "Compact Heat Exchangers"
+  ],
+  "description": "\"Heat and mass transfer, IIT Bombay\" covers Mass Transfer & Heat Exchangers.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "mth103-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Computational Fluid Dynamics: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Governing Equations",
+   "Finite Difference Method",
+   "Finite Volume Method",
+   "Pressure-Velocity Coupling",
+   "Turbulence & CFD Practice"
+  ],
+  "description": "\"Computational Fluid Dynamics, Dr. Suman Chakraborty, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL8EAF844326CBB2E3",
+  "lectureKey": "mth104-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Conservation Equations",
+  "unit": 1,
+  "topicId": "mth104-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Governing Equations",
+  "topics": [
+   "Conservation Equations"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Governing Equations.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Classification of PDEs",
+  "unit": 1,
+  "topicId": "mth104-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Governing Equations",
+  "topics": [
+   "Classification of PDEs"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Governing Equations.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Boundary Conditions",
+  "unit": 1,
+  "topicId": "mth104-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Governing Equations",
+  "topics": [
+   "Boundary Conditions"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Governing Equations.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Non-dimensionalisation",
+  "unit": 1,
+  "topicId": "mth104-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Governing Equations",
+  "topics": [
+   "Non-dimensionalisation"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Governing Equations.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Discretisation",
+  "unit": 2,
+  "topicId": "mth104-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Finite Difference Method",
+  "topics": [
+   "Discretisation"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Difference Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Consistency, Stability, Convergence",
+  "unit": 2,
+  "topicId": "mth104-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Finite Difference Method",
+  "topics": [
+   "Consistency, Stability, Convergence"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Difference Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Explicit & Implicit Schemes",
+  "unit": 2,
+  "topicId": "mth104-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Finite Difference Method",
+  "topics": [
+   "Explicit & Implicit Schemes"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Difference Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Solving Linear Systems",
+  "unit": 2,
+  "topicId": "mth104-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Finite Difference Method",
+  "topics": [
+   "Solving Linear Systems"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Difference Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "FVM Fundamentals",
+  "unit": 3,
+  "topicId": "mth104-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Finite Volume Method",
+  "topics": [
+   "FVM Fundamentals"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Volume Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Convection Schemes",
+  "unit": 3,
+  "topicId": "mth104-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Finite Volume Method",
+  "topics": [
+   "Convection Schemes"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Volume Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Unstructured Meshes",
+  "unit": 3,
+  "topicId": "mth104-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Finite Volume Method",
+  "topics": [
+   "Unstructured Meshes"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Volume Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Unsteady FVM",
+  "unit": 3,
+  "topicId": "mth104-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Finite Volume Method",
+  "topics": [
+   "Unsteady FVM"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Finite Volume Method.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Incompressible Flow Challenge",
+  "unit": 4,
+  "topicId": "mth104-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pressure-Velocity Coupling",
+  "topics": [
+   "Incompressible Flow Challenge"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Pressure-Velocity Coupling.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "SIMPLE Algorithm",
+  "unit": 4,
+  "topicId": "mth104-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pressure-Velocity Coupling",
+  "topics": [
+   "SIMPLE Algorithm"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Pressure-Velocity Coupling.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "SIMPLER, SIMPLEC & PISO",
+  "unit": 4,
+  "topicId": "mth104-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pressure-Velocity Coupling",
+  "topics": [
+   "SIMPLER, SIMPLEC & PISO"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Pressure-Velocity Coupling.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Compressible Solvers",
+  "unit": 4,
+  "topicId": "mth104-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pressure-Velocity Coupling",
+  "topics": [
+   "Compressible Solvers"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Pressure-Velocity Coupling.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "RANS Models in CFD",
+  "unit": 5,
+  "topicId": "mth104-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Turbulence & CFD Practice",
+  "topics": [
+   "RANS Models in CFD"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Turbulence & CFD Practice.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "LES & DNS",
+  "unit": 5,
+  "topicId": "mth104-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Turbulence & CFD Practice",
+  "topics": [
+   "LES & DNS"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Turbulence & CFD Practice.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "Verification & Validation",
+  "unit": 5,
+  "topicId": "mth104-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Turbulence & CFD Practice",
+  "topics": [
+   "Verification & Validation"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Turbulence & CFD Practice.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mth104",
+  "subjectCode": "MTH-104",
+  "subjectLabel": "Computational Fluid Dynamics",
+  "title": "CFD Tools & Workflow",
+  "unit": 5,
+  "topicId": "mth104-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Turbulence & CFD Practice",
+  "topics": [
+   "CFD Tools & Workflow"
+  ],
+  "description": "\"Computational fluid dynamics, Dr. K.M. Singh, IIT Roorkee\" covers Turbulence & CFD Practice.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJSj3mANcK5ZbTplWGWpcj_7",
+  "lectureKey": "mth104-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Design of Thermal Systems: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Design Fundamentals",
+   "System Simulation",
+   "Economics",
+   "Optimisation",
+   "Design Applications"
+  ],
+  "description": "\"Design and Optimization of Energy Systems, Prof. C. Balaji, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Engineering Design Process",
+  "unit": 1,
+  "topicId": "mth201-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Engineering Design Process"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Problem Formulation",
+  "unit": 1,
+  "topicId": "mth201-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Problem Formulation"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Modelling of Thermal Systems",
+  "unit": 1,
+  "topicId": "mth201-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Modelling of Thermal Systems"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Component Models",
+  "unit": 1,
+  "topicId": "mth201-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Component Models"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Steady-state Simulation",
+  "unit": 2,
+  "topicId": "mth201-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: System Simulation",
+  "topics": [
+   "Steady-state Simulation"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on System Simulation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Dynamic Simulation",
+  "unit": 2,
+  "topicId": "mth201-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: System Simulation",
+  "topics": [
+   "Dynamic Simulation"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on System Simulation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Information Flow Diagrams",
+  "unit": 2,
+  "topicId": "mth201-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: System Simulation",
+  "topics": [
+   "Information Flow Diagrams"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on System Simulation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Simulation Tools",
+  "unit": 2,
+  "topicId": "mth201-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: System Simulation",
+  "topics": [
+   "Simulation Tools"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on System Simulation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Time Value of Money",
+  "unit": 3,
+  "topicId": "mth201-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Economics",
+  "topics": [
+   "Time Value of Money"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Economic Evaluation",
+  "unit": 3,
+  "topicId": "mth201-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Economics",
+  "topics": [
+   "Economic Evaluation"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Cost Estimation",
+  "unit": 3,
+  "topicId": "mth201-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Economics",
+  "topics": [
+   "Cost Estimation"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Thermoeconomics",
+  "unit": 3,
+  "topicId": "mth201-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Economics",
+  "topics": [
+   "Thermoeconomics"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Optimisation Basics",
+  "unit": 4,
+  "topicId": "mth201-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Optimisation Basics"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Optimisation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Search Methods",
+  "unit": 4,
+  "topicId": "mth201-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Search Methods"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Optimisation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Linear & Dynamic Programming",
+  "unit": 4,
+  "topicId": "mth201-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Linear & Dynamic Programming"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Optimisation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Evolutionary Optimisation",
+  "unit": 4,
+  "topicId": "mth201-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Optimisation",
+  "topics": [
+   "Evolutionary Optimisation"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Optimisation.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Heat Exchanger Design",
+  "unit": 5,
+  "topicId": "mth201-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Design Applications",
+  "topics": [
+   "Heat Exchanger Design"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Piping & Pumping Systems",
+  "unit": 5,
+  "topicId": "mth201-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Design Applications",
+  "topics": [
+   "Piping & Pumping Systems"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Energy Systems Design",
+  "unit": 5,
+  "topicId": "mth201-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Design Applications",
+  "topics": [
+   "Energy Systems Design"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth201",
+  "subjectCode": "MTH-201",
+  "subjectLabel": "Design of Thermal Systems",
+  "title": "Renewable Thermal Systems",
+  "unit": 5,
+  "topicId": "mth201-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Design Applications",
+  "topics": [
+   "Renewable Thermal Systems"
+  ],
+  "description": "Full Design of Thermal Systems series; pick the lecture on Design Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLBE92469895618E50",
+  "lectureKey": "mth201-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Advanced IC Engines & Emissions: full lecture series",
+  "lecturer": "IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Engine Thermodynamics",
+   "Combustion",
+   "Advanced Combustion Modes",
+   "Emissions Formation & Control",
+   "Alternative Fuels & Electrification"
+  ],
+  "description": "\"Internal Combustion Engines, Prof. Sameer Khandekar, IIT Kanpur\" by IIT Kanpur.",
+  "url": "https://www.youtube.com/playlist?list=PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt",
+  "lectureKey": "mth202-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Fuel-air Cycle Analysis",
+  "unit": 1,
+  "topicId": "mth202-u1t1",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 1: Engine Thermodynamics",
+  "topics": [
+   "Fuel-air Cycle Analysis"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Engine Thermodynamics.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Thermodynamic Engine Models",
+  "unit": 1,
+  "topicId": "mth202-u1t2",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 1: Engine Thermodynamics",
+  "topics": [
+   "Thermodynamic Engine Models"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Engine Thermodynamics.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Gas Exchange",
+  "unit": 1,
+  "topicId": "mth202-u1t3",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 1: Engine Thermodynamics",
+  "topics": [
+   "Gas Exchange"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Engine Thermodynamics.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Heat Transfer in Engines",
+  "unit": 1,
+  "topicId": "mth202-u1t4",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 1: Engine Thermodynamics",
+  "topics": [
+   "Heat Transfer in Engines"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Engine Thermodynamics.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "SI Combustion",
+  "unit": 2,
+  "topicId": "mth202-u2t1",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 2: Combustion",
+  "topics": [
+   "SI Combustion"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Combustion.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "CI Combustion",
+  "unit": 2,
+  "topicId": "mth202-u2t2",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 2: Combustion",
+  "topics": [
+   "CI Combustion"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Combustion.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Spray & Mixing",
+  "unit": 2,
+  "topicId": "mth202-u2t3",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 2: Combustion",
+  "topics": [
+   "Spray & Mixing"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Combustion.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Combustion Diagnostics",
+  "unit": 2,
+  "topicId": "mth202-u2t4",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 2: Combustion",
+  "topics": [
+   "Combustion Diagnostics"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Combustion.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "HCCI",
+  "unit": 3,
+  "topicId": "mth202-u3t1",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 3: Advanced Combustion Modes",
+  "topics": [
+   "HCCI"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Advanced Combustion Modes.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "PCCI & RCCI",
+  "unit": 3,
+  "topicId": "mth202-u3t2",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 3: Advanced Combustion Modes",
+  "topics": [
+   "PCCI & RCCI"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Advanced Combustion Modes.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "GDI & Lean Burn",
+  "unit": 3,
+  "topicId": "mth202-u3t3",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 3: Advanced Combustion Modes",
+  "topics": [
+   "GDI & Lean Burn"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Advanced Combustion Modes.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Downsizing & Boosting",
+  "unit": 3,
+  "topicId": "mth202-u3t4",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 3: Advanced Combustion Modes",
+  "topics": [
+   "Downsizing & Boosting"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Advanced Combustion Modes.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Pollutant Formation",
+  "unit": 4,
+  "topicId": "mth202-u4t1",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 4: Emissions Formation & Control",
+  "topics": [
+   "Pollutant Formation"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Emissions Formation & Control.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "In-cylinder Control",
+  "unit": 4,
+  "topicId": "mth202-u4t2",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 4: Emissions Formation & Control",
+  "topics": [
+   "In-cylinder Control"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Aftertreatment",
+  "unit": 4,
+  "topicId": "mth202-u4t3",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 4: Emissions Formation & Control",
+  "topics": [
+   "Aftertreatment"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Emissions Formation & Control.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Emission Regulations & Testing",
+  "unit": 4,
+  "topicId": "mth202-u4t4",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 4: Emissions Formation & Control",
+  "topics": [
+   "Emission Regulations & Testing"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Emissions Formation & Control.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Biofuels",
+  "unit": 5,
+  "topicId": "mth202-u5t1",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 5: Alternative Fuels & Electrification",
+  "topics": [
+   "Biofuels"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Alternative Fuels & Electrification.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Gaseous Fuels",
+  "unit": 5,
+  "topicId": "mth202-u5t2",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 5: Alternative Fuels & Electrification",
+  "topics": [
+   "Gaseous Fuels"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Hybrid Powertrains",
+  "unit": 5,
+  "topicId": "mth202-u5t3",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 5: Alternative Fuels & Electrification",
+  "topics": [
+   "Hybrid Powertrains"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\" covers Alternative Fuels & Electrification.",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mth202",
+  "subjectCode": "MTH-202",
+  "subjectLabel": "Advanced IC Engines & Emissions",
+  "title": "Engine Calibration",
+  "unit": 5,
+  "topicId": "mth202-u5t4",
+  "lecturer": "IIT Kanpur",
+  "type": "video",
+  "typeLabel": "Unit 5: Alternative Fuels & Electrification",
+  "topics": [
+   "Engine Calibration"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "mth202-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Advanced Refrigeration & Cryogenics: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Advanced Vapour Compression",
+   "Absorption & Alternative Refrigeration",
+   "Refrigerants & Environment",
+   "Cryogenics",
+   "Cryogenic Systems & Applications"
+  ],
+  "description": "\"Refrigeration and Air Conditioning, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Multistage Systems",
+  "unit": 1,
+  "topicId": "mth203-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Vapour Compression",
+  "topics": [
+   "Multistage Systems"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Advanced Vapour Compression.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Cascade Refrigeration",
+  "unit": 1,
+  "topicId": "mth203-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Vapour Compression",
+  "topics": [
+   "Cascade Refrigeration"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Advanced Vapour Compression.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Component Matching",
+  "unit": 1,
+  "topicId": "mth203-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Vapour Compression",
+  "topics": [
+   "Component Matching"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Advanced Vapour Compression.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Transcritical CO2 Cycles",
+  "unit": 1,
+  "topicId": "mth203-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Advanced Vapour Compression",
+  "topics": [
+   "Transcritical CO2 Cycles"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Advanced Vapour Compression.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Vapour Absorption Advanced",
+  "unit": 2,
+  "topicId": "mth203-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Absorption & Alternative Refrigeration",
+  "topics": [
+   "Vapour Absorption Advanced"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Absorption & Alternative Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Adsorption Refrigeration",
+  "unit": 2,
+  "topicId": "mth203-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Absorption & Alternative Refrigeration",
+  "topics": [
+   "Adsorption Refrigeration"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Absorption & Alternative Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Ejector & Thermoelectric",
+  "unit": 2,
+  "topicId": "mth203-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Absorption & Alternative Refrigeration",
+  "topics": [
+   "Ejector & Thermoelectric"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Absorption & Alternative Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Magnetic & Vortex Cooling",
+  "unit": 2,
+  "topicId": "mth203-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Absorption & Alternative Refrigeration",
+  "topics": [
+   "Magnetic & Vortex Cooling"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Absorption & Alternative Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Refrigerant Properties",
+  "unit": 3,
+  "topicId": "mth203-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Refrigerants & Environment",
+  "topics": [
+   "Refrigerant Properties"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Refrigerants & Environment.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Refrigerant Phase-out",
+  "unit": 3,
+  "topicId": "mth203-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Refrigerants & Environment",
+  "topics": [
+   "Refrigerant Phase-out"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Refrigerants & Environment.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Natural Refrigerants",
+  "unit": 3,
+  "topicId": "mth203-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Refrigerants & Environment",
+  "topics": [
+   "Natural Refrigerants"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Refrigerants & Environment.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Refrigerant Safety",
+  "unit": 3,
+  "topicId": "mth203-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Refrigerants & Environment",
+  "topics": [
+   "Refrigerant Safety"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Refrigerants & Environment.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Cryogenic Fundamentals",
+  "unit": 4,
+  "topicId": "mth203-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Cryogenics",
+  "topics": [
+   "Cryogenic Fundamentals"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenics.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Gas Liquefaction",
+  "unit": 4,
+  "topicId": "mth203-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Cryogenics",
+  "topics": [
+   "Gas Liquefaction"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenics.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Gas Separation",
+  "unit": 4,
+  "topicId": "mth203-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Cryogenics",
+  "topics": [
+   "Gas Separation"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenics.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Cryocoolers",
+  "unit": 4,
+  "topicId": "mth203-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Cryogenics",
+  "topics": [
+   "Cryocoolers"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenics.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Cryogenic Insulation",
+  "unit": 5,
+  "topicId": "mth203-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cryogenic Systems & Applications",
+  "topics": [
+   "Cryogenic Insulation"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenic Systems & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Storage & Transfer",
+  "unit": 5,
+  "topicId": "mth203-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cryogenic Systems & Applications",
+  "topics": [
+   "Storage & Transfer"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenic Systems & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Material Properties at Low Temperature",
+  "unit": 5,
+  "topicId": "mth203-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cryogenic Systems & Applications",
+  "topics": [
+   "Material Properties at Low Temperature"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenic Systems & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mth203",
+  "subjectCode": "MTH-203",
+  "subjectLabel": "Advanced Refrigeration & Cryogenics",
+  "title": "Applications",
+  "unit": 5,
+  "topicId": "mth203-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cryogenic Systems & Applications",
+  "topics": [
+   "Applications"
+  ],
+  "description": "Full Advanced Refrigeration & Cryogenics series; pick the lecture on Cryogenic Systems & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "mth203-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Advanced Structural Analysis: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Matrix Methods Fundamentals",
+   "Direct Stiffness Method",
+   "Frames & Grids",
+   "Non-linear Analysis",
+   "Stability & Dynamic Analysis"
+  ],
+  "description": "\"Structural Analysis II, IIT Bombay\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Flexibility & Stiffness Concepts",
+  "unit": 1,
+  "topicId": "mst101-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Matrix Methods Fundamentals",
+  "topics": [
+   "Flexibility & Stiffness Concepts"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Matrix Methods Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Degrees of Freedom",
+  "unit": 1,
+  "topicId": "mst101-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Matrix Methods Fundamentals",
+  "topics": [
+   "Degrees of Freedom"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Matrix Methods Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Coordinate Systems",
+  "unit": 1,
+  "topicId": "mst101-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Matrix Methods Fundamentals",
+  "topics": [
+   "Coordinate Systems"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Matrix Methods Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Energy Principles",
+  "unit": 1,
+  "topicId": "mst101-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Matrix Methods Fundamentals",
+  "topics": [
+   "Energy Principles"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Matrix Methods Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Truss Element",
+  "unit": 2,
+  "topicId": "mst101-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Direct Stiffness Method",
+  "topics": [
+   "Truss Element"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Direct Stiffness Method.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Beam Element",
+  "unit": 2,
+  "topicId": "mst101-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Direct Stiffness Method",
+  "topics": [
+   "Beam Element"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Direct Stiffness Method.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Assembly & Boundary Conditions",
+  "unit": 2,
+  "topicId": "mst101-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Direct Stiffness Method",
+  "topics": [
+   "Assembly & Boundary Conditions"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Direct Stiffness Method.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Solution & Post-processing",
+  "unit": 2,
+  "topicId": "mst101-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Direct Stiffness Method",
+  "topics": [
+   "Solution & Post-processing"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Direct Stiffness Method.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Plane Frames",
+  "unit": 3,
+  "topicId": "mst101-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Frames & Grids",
+  "topics": [
+   "Plane Frames"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Frames & Grids.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Space Frames",
+  "unit": 3,
+  "topicId": "mst101-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Frames & Grids",
+  "topics": [
+   "Space Frames"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Frames & Grids.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Grids",
+  "unit": 3,
+  "topicId": "mst101-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Frames & Grids",
+  "topics": [
+   "Grids"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Frames & Grids.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Special Effects",
+  "unit": 3,
+  "topicId": "mst101-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Frames & Grids",
+  "topics": [
+   "Special Effects"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Frames & Grids.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Sources of Non-linearity",
+  "unit": 4,
+  "topicId": "mst101-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-linear Analysis",
+  "topics": [
+   "Sources of Non-linearity"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Non-linear Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Geometric Stiffness",
+  "unit": 4,
+  "topicId": "mst101-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-linear Analysis",
+  "topics": [
+   "Geometric Stiffness"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Non-linear Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Material Non-linearity",
+  "unit": 4,
+  "topicId": "mst101-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-linear Analysis",
+  "topics": [
+   "Material Non-linearity"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Non-linear Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Collapse Analysis",
+  "unit": 4,
+  "topicId": "mst101-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Non-linear Analysis",
+  "topics": [
+   "Collapse Analysis"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Non-linear Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Elastic Stability",
+  "unit": 5,
+  "topicId": "mst101-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Stability & Dynamic Analysis",
+  "topics": [
+   "Elastic Stability"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Stability & Dynamic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Frame Stability",
+  "unit": 5,
+  "topicId": "mst101-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Stability & Dynamic Analysis",
+  "topics": [
+   "Frame Stability"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Stability & Dynamic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Structural Dynamics Matrices",
+  "unit": 5,
+  "topicId": "mst101-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Stability & Dynamic Analysis",
+  "topics": [
+   "Structural Dynamics Matrices"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Stability & Dynamic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst101",
+  "subjectCode": "MST-101",
+  "subjectLabel": "Advanced Structural Analysis",
+  "title": "Computer Implementation",
+  "unit": 5,
+  "topicId": "mst101-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Stability & Dynamic Analysis",
+  "topics": [
+   "Computer Implementation"
+  ],
+  "description": "Full Advanced Structural Analysis series; pick the lecture on Stability & Dynamic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "mst101-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Theory of Elasticity & Plasticity: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Analysis of Stress",
+   "Analysis of Strain & Constitutive Relations",
+   "Two-dimensional Elasticity",
+   "Torsion of Non-circular Sections",
+   "Plasticity"
+  ],
+  "description": "\"Theory of Elasticity, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngcbhsZgRWuYCi2kKQwQ0Av1",
+  "lectureKey": "mst102-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Stress at a Point",
+  "unit": 1,
+  "topicId": "mst102-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis of Stress",
+  "topics": [
+   "Stress at a Point"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\".",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Principal Stresses",
+  "unit": 1,
+  "topicId": "mst102-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis of Stress",
+  "topics": [
+   "Principal Stresses"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Analysis of Stress.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Equilibrium Equations",
+  "unit": 1,
+  "topicId": "mst102-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis of Stress",
+  "topics": [
+   "Equilibrium Equations"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Analysis of Stress.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Octahedral & Deviatoric Stress",
+  "unit": 1,
+  "topicId": "mst102-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Analysis of Stress",
+  "topics": [
+   "Octahedral & Deviatoric Stress"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Analysis of Stress.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Strain at a Point",
+  "unit": 2,
+  "topicId": "mst102-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Analysis of Strain & Constitutive Relations",
+  "topics": [
+   "Strain at a Point"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\".",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Compatibility Equations",
+  "unit": 2,
+  "topicId": "mst102-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Analysis of Strain & Constitutive Relations",
+  "topics": [
+   "Compatibility Equations"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Analysis of Strain & Constitutive Relations.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Generalised Hooke's Law",
+  "unit": 2,
+  "topicId": "mst102-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Analysis of Strain & Constitutive Relations",
+  "topics": [
+   "Generalised Hooke's Law"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Analysis of Strain & Constitutive Relations.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Strain Energy",
+  "unit": 2,
+  "topicId": "mst102-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Analysis of Strain & Constitutive Relations",
+  "topics": [
+   "Strain Energy"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\".",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Plane Stress & Plane Strain",
+  "unit": 3,
+  "topicId": "mst102-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Two-dimensional Elasticity",
+  "topics": [
+   "Plane Stress & Plane Strain"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\".",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Airy Stress Function",
+  "unit": 3,
+  "topicId": "mst102-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Two-dimensional Elasticity",
+  "topics": [
+   "Airy Stress Function"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Two-dimensional Elasticity.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Polar Coordinates",
+  "unit": 3,
+  "topicId": "mst102-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Two-dimensional Elasticity",
+  "topics": [
+   "Polar Coordinates"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Two-dimensional Elasticity.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Saint-Venant's Principle",
+  "unit": 3,
+  "topicId": "mst102-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Two-dimensional Elasticity",
+  "topics": [
+   "Saint-Venant's Principle"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Two-dimensional Elasticity.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Torsion Fundamentals",
+  "unit": 4,
+  "topicId": "mst102-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Torsion of Non-circular Sections",
+  "topics": [
+   "Torsion Fundamentals"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Torsion of Non-circular Sections.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Membrane Analogy",
+  "unit": 4,
+  "topicId": "mst102-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Torsion of Non-circular Sections",
+  "topics": [
+   "Membrane Analogy"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Torsion of Non-circular Sections.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Torsion of Thin Sections",
+  "unit": 4,
+  "topicId": "mst102-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Torsion of Non-circular Sections",
+  "topics": [
+   "Torsion of Thin Sections"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Torsion of Non-circular Sections.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Torsion of Standard Shapes",
+  "unit": 4,
+  "topicId": "mst102-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Torsion of Non-circular Sections",
+  "topics": [
+   "Torsion of Standard Shapes"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Torsion of Non-circular Sections.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Plastic Behaviour",
+  "unit": 5,
+  "topicId": "mst102-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Plasticity",
+  "topics": [
+   "Plastic Behaviour"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Plasticity.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Yield Criteria",
+  "unit": 5,
+  "topicId": "mst102-u5t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Plasticity",
+  "topics": [
+   "Yield Criteria"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Plasticity.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Flow Rules",
+  "unit": 5,
+  "topicId": "mst102-u5t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Plasticity",
+  "topics": [
+   "Flow Rules"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\" covers Plasticity.",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst102",
+  "subjectCode": "MST-102",
+  "subjectLabel": "Theory of Elasticity & Plasticity",
+  "title": "Limit Analysis",
+  "unit": 5,
+  "topicId": "mst102-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Plasticity",
+  "topics": [
+   "Limit Analysis"
+  ],
+  "description": "\"Theory of elasticity and plasticity introduction: stress and strain analysis\".",
+  "url": "https://www.youtube.com/watch?v=EwNAlL3yl4s",
+  "lectureKey": "mst102-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Advanced Concrete Technology: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Cement Chemistry & Hydration",
+   "Admixtures & Aggregates",
+   "Mix Design",
+   "Special Concretes",
+   "Durability & Testing"
+  ],
+  "description": "\"Modern Construction Materials, Dr. Ravindra Gettu, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Cement Composition",
+  "unit": 1,
+  "topicId": "mst103-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cement Chemistry & Hydration",
+  "topics": [
+   "Cement Composition"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Cement Chemistry & Hydration.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u1-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Hydration Process",
+  "unit": 1,
+  "topicId": "mst103-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cement Chemistry & Hydration",
+  "topics": [
+   "Hydration Process"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Cement Chemistry & Hydration.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u1-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Supplementary Cementitious Materials",
+  "unit": 1,
+  "topicId": "mst103-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cement Chemistry & Hydration",
+  "topics": [
+   "Supplementary Cementitious Materials"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Cement Chemistry & Hydration.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u1-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Microstructure",
+  "unit": 1,
+  "topicId": "mst103-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Cement Chemistry & Hydration",
+  "topics": [
+   "Microstructure"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Cement Chemistry & Hydration.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u1-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Chemical Admixtures",
+  "unit": 2,
+  "topicId": "mst103-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Admixtures & Aggregates",
+  "topics": [
+   "Chemical Admixtures"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Admixtures & Aggregates.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u2-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Mineral Admixtures",
+  "unit": 2,
+  "topicId": "mst103-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Admixtures & Aggregates",
+  "topics": [
+   "Mineral Admixtures"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Admixtures & Aggregates.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u2-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Aggregate Properties",
+  "unit": 2,
+  "topicId": "mst103-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Admixtures & Aggregates",
+  "topics": [
+   "Aggregate Properties"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Admixtures & Aggregates.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u2-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Rheology of Fresh Concrete",
+  "unit": 2,
+  "topicId": "mst103-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Admixtures & Aggregates",
+  "topics": [
+   "Rheology of Fresh Concrete"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Admixtures & Aggregates.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u2-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "IS Method of Mix Design",
+  "unit": 3,
+  "topicId": "mst103-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mix Design",
+  "topics": [
+   "IS Method of Mix Design"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Mix Design.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "ACI Method",
+  "unit": 3,
+  "topicId": "mst103-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mix Design",
+  "topics": [
+   "ACI Method"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Mix Design.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "High-strength Concrete Design",
+  "unit": 3,
+  "topicId": "mst103-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mix Design",
+  "topics": [
+   "High-strength Concrete Design"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Mix Design.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Statistical Quality Control",
+  "unit": 3,
+  "topicId": "mst103-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Mix Design",
+  "topics": [
+   "Statistical Quality Control"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Mix Design.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Self-compacting Concrete",
+  "unit": 4,
+  "topicId": "mst103-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Special Concretes",
+  "topics": [
+   "Self-compacting Concrete"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Special Concretes.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Fibre Reinforced Concrete",
+  "unit": 4,
+  "topicId": "mst103-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Special Concretes",
+  "topics": [
+   "Fibre Reinforced Concrete"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Special Concretes.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Ultra-high Performance Concrete",
+  "unit": 4,
+  "topicId": "mst103-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Special Concretes",
+  "topics": [
+   "Ultra-high Performance Concrete"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Special Concretes.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Other Special Concretes",
+  "unit": 4,
+  "topicId": "mst103-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Special Concretes",
+  "topics": [
+   "Other Special Concretes"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Special Concretes.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Durability Mechanisms",
+  "unit": 5,
+  "topicId": "mst103-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Durability & Testing",
+  "topics": [
+   "Durability Mechanisms"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Durability & Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Durability Design",
+  "unit": 5,
+  "topicId": "mst103-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Durability & Testing",
+  "topics": [
+   "Durability Design"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Durability & Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Non-destructive Testing",
+  "unit": 5,
+  "topicId": "mst103-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Durability & Testing",
+  "topics": [
+   "Non-destructive Testing"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Durability & Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst103",
+  "subjectCode": "MST-103",
+  "subjectLabel": "Advanced Concrete Technology",
+  "title": "Sustainable Concrete",
+  "unit": 5,
+  "topicId": "mst103-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Durability & Testing",
+  "topics": [
+   "Sustainable Concrete"
+  ],
+  "description": "Full Advanced Concrete Technology series; pick the lecture on Durability & Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+  "lectureKey": "mst103-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Structural Dynamics: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "SDOF Free Vibration",
+   "SDOF Forced Vibration",
+   "MDOF Systems",
+   "Earthquake Analysis of MDOF",
+   "Continuous Systems & Numerical Methods"
+  ],
+  "description": "\"Structural Dynamics, Dr. P. Banerji, IIT Bombay\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL0463169721E0D76F",
+  "lectureKey": "mst104-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Equation of Motion",
+  "unit": 1,
+  "topicId": "mst104-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: SDOF Free Vibration",
+  "topics": [
+   "Equation of Motion"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\".",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Undamped Free Vibration",
+  "unit": 1,
+  "topicId": "mst104-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: SDOF Free Vibration",
+  "topics": [
+   "Undamped Free Vibration"
+  ],
+  "description": "\"Introduction to structural dynamics\" covers SDOF Free Vibration.",
+  "url": "https://www.youtube.com/watch?v=GhmTtLGxPrY",
+  "lectureKey": "mst104-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Damped Free Vibration",
+  "unit": 1,
+  "topicId": "mst104-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: SDOF Free Vibration",
+  "topics": [
+   "Damped Free Vibration"
+  ],
+  "description": "\"Introduction to structural dynamics\" covers SDOF Free Vibration.",
+  "url": "https://www.youtube.com/watch?v=GhmTtLGxPrY",
+  "lectureKey": "mst104-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Damping Mechanisms",
+  "unit": 1,
+  "topicId": "mst104-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: SDOF Free Vibration",
+  "topics": [
+   "Damping Mechanisms"
+  ],
+  "description": "\"Introduction to structural dynamics\" covers SDOF Free Vibration.",
+  "url": "https://www.youtube.com/watch?v=GhmTtLGxPrY",
+  "lectureKey": "mst104-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Harmonic Excitation",
+  "unit": 2,
+  "topicId": "mst104-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: SDOF Forced Vibration",
+  "topics": [
+   "Harmonic Excitation"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers SDOF Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Transmissibility & Isolation",
+  "unit": 2,
+  "topicId": "mst104-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: SDOF Forced Vibration",
+  "topics": [
+   "Transmissibility & Isolation"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers SDOF Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Arbitrary Excitation",
+  "unit": 2,
+  "topicId": "mst104-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: SDOF Forced Vibration",
+  "topics": [
+   "Arbitrary Excitation"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers SDOF Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Earthquake Response",
+  "unit": 2,
+  "topicId": "mst104-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: SDOF Forced Vibration",
+  "topics": [
+   "Earthquake Response"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers SDOF Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Equations of Motion",
+  "unit": 3,
+  "topicId": "mst104-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: MDOF Systems",
+  "topics": [
+   "Equations of Motion"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\".",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Natural Frequencies & Modes",
+  "unit": 3,
+  "topicId": "mst104-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: MDOF Systems",
+  "topics": [
+   "Natural Frequencies & Modes"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers MDOF Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Modal Analysis",
+  "unit": 3,
+  "topicId": "mst104-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: MDOF Systems",
+  "topics": [
+   "Modal Analysis"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers MDOF Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Damping in MDOF",
+  "unit": 3,
+  "topicId": "mst104-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: MDOF Systems",
+  "topics": [
+   "Damping in MDOF"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers MDOF Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Response Spectrum Analysis",
+  "unit": 4,
+  "topicId": "mst104-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Earthquake Analysis of MDOF",
+  "topics": [
+   "Response Spectrum Analysis"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Earthquake Analysis of MDOF.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Time History Analysis",
+  "unit": 4,
+  "topicId": "mst104-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Earthquake Analysis of MDOF",
+  "topics": [
+   "Time History Analysis"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Earthquake Analysis of MDOF.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Torsional Response",
+  "unit": 4,
+  "topicId": "mst104-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Earthquake Analysis of MDOF",
+  "topics": [
+   "Torsional Response"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Earthquake Analysis of MDOF.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Soil-Structure Interaction",
+  "unit": 4,
+  "topicId": "mst104-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Earthquake Analysis of MDOF",
+  "topics": [
+   "Soil-Structure Interaction"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Earthquake Analysis of MDOF.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Vibration of Beams",
+  "unit": 5,
+  "topicId": "mst104-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Continuous Systems & Numerical Methods",
+  "topics": [
+   "Vibration of Beams"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Continuous Systems & Numerical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Approximate Methods",
+  "unit": 5,
+  "topicId": "mst104-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Continuous Systems & Numerical Methods",
+  "topics": [
+   "Approximate Methods"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Continuous Systems & Numerical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Numerical Integration",
+  "unit": 5,
+  "topicId": "mst104-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Continuous Systems & Numerical Methods",
+  "topics": [
+   "Numerical Integration"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Continuous Systems & Numerical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mst104",
+  "subjectCode": "MST-104",
+  "subjectLabel": "Structural Dynamics",
+  "title": "Machine Foundations & Wind",
+  "unit": 5,
+  "topicId": "mst104-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Continuous Systems & Numerical Methods",
+  "topics": [
+   "Machine Foundations & Wind"
+  ],
+  "description": "\"Structural dynamics from basic principles, equation of motion\" covers Continuous Systems & Numerical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLk9NkkrvHVKwa3fOQjznj3MIqIWnLgc2H",
+  "lectureKey": "mst104-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Advanced Design of Steel Structures: full lecture series",
+  "lecturer": "IIT Madras",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Plastic & Limit State Design",
+   "Connections",
+   "Light-gauge & Industrial Structures",
+   "Multistorey & Tall Steel Buildings",
+   "Towers & Bridges"
+  ],
+  "description": "\"Steel design of structures, IIT Madras live classes\" by IIT Madras.",
+  "url": "https://www.youtube.com/playlist?list=PLFEqFwyPC3WzGFChBUyh3hQShYrXqPk4K",
+  "lectureKey": "mst201-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Plastic Analysis Review",
+  "unit": 1,
+  "topicId": "mst201-u1t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Plastic & Limit State Design",
+  "topics": [
+   "Plastic Analysis Review"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Limit State Design per IS 800",
+  "unit": 1,
+  "topicId": "mst201-u1t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Plastic & Limit State Design",
+  "topics": [
+   "Limit State Design per IS 800"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Plastic & Limit State Design.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Local Buckling",
+  "unit": 1,
+  "topicId": "mst201-u1t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Plastic & Limit State Design",
+  "topics": [
+   "Local Buckling"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Plastic & Limit State Design.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Combined Forces",
+  "unit": 1,
+  "topicId": "mst201-u1t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Plastic & Limit State Design",
+  "topics": [
+   "Combined Forces"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Plastic & Limit State Design.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Bolted Connections Advanced",
+  "unit": 2,
+  "topicId": "mst201-u2t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Connections",
+  "topics": [
+   "Bolted Connections Advanced"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Connections.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Welded Connections Advanced",
+  "unit": 2,
+  "topicId": "mst201-u2t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Connections",
+  "topics": [
+   "Welded Connections Advanced"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Connections.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Moment Connections",
+  "unit": 2,
+  "topicId": "mst201-u2t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Connections",
+  "topics": [
+   "Moment Connections"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Connections.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Base Plates & Splices",
+  "unit": 2,
+  "topicId": "mst201-u2t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Connections",
+  "topics": [
+   "Base Plates & Splices"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Connections.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Cold-formed Steel",
+  "unit": 3,
+  "topicId": "mst201-u3t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Light-gauge & Industrial Structures",
+  "topics": [
+   "Cold-formed Steel"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Light-gauge & Industrial Structures.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Industrial Buildings",
+  "unit": 3,
+  "topicId": "mst201-u3t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Light-gauge & Industrial Structures",
+  "topics": [
+   "Industrial Buildings"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Light-gauge & Industrial Structures.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Pre-engineered Buildings",
+  "unit": 3,
+  "topicId": "mst201-u3t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Light-gauge & Industrial Structures",
+  "topics": [
+   "Pre-engineered Buildings"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Light-gauge & Industrial Structures.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Space Structures",
+  "unit": 3,
+  "topicId": "mst201-u3t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Light-gauge & Industrial Structures",
+  "topics": [
+   "Space Structures"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Lateral Load Systems",
+  "unit": 4,
+  "topicId": "mst201-u4t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multistorey & Tall Steel Buildings",
+  "topics": [
+   "Lateral Load Systems"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Multistorey & Tall Steel Buildings.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Composite Construction",
+  "unit": 4,
+  "topicId": "mst201-u4t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multistorey & Tall Steel Buildings",
+  "topics": [
+   "Composite Construction"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Multistorey & Tall Steel Buildings.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Seismic Design of Steel",
+  "unit": 4,
+  "topicId": "mst201-u4t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multistorey & Tall Steel Buildings",
+  "topics": [
+   "Seismic Design of Steel"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Fire Resistance",
+  "unit": 4,
+  "topicId": "mst201-u4t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multistorey & Tall Steel Buildings",
+  "topics": [
+   "Fire Resistance"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Multistorey & Tall Steel Buildings.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Transmission Towers",
+  "unit": 5,
+  "topicId": "mst201-u5t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Towers & Bridges",
+  "topics": [
+   "Transmission Towers"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Towers & Bridges.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Chimneys & Tanks",
+  "unit": 5,
+  "topicId": "mst201-u5t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Towers & Bridges",
+  "topics": [
+   "Chimneys & Tanks"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Towers & Bridges.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Steel Bridges",
+  "unit": 5,
+  "topicId": "mst201-u5t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Towers & Bridges",
+  "topics": [
+   "Steel Bridges"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mst201",
+  "subjectCode": "MST-201",
+  "subjectLabel": "Advanced Design of Steel Structures",
+  "title": "Fatigue & Inspection",
+  "unit": 5,
+  "topicId": "mst201-u5t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Towers & Bridges",
+  "topics": [
+   "Fatigue & Inspection"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Towers & Bridges.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "mst201-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Advanced Power System Analysis: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Network Modelling",
+   "Load Flow Analysis",
+   "Contingency Analysis & Security",
+   "Fault Analysis",
+   "State Estimation"
+  ],
+  "description": "\"Power System Analysis, Prof. A.K. Sinha, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL319A4391E593ADF3",
+  "lectureKey": "mps101-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Primitive Network",
+  "unit": 1,
+  "topicId": "mps101-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Modelling",
+  "topics": [
+   "Primitive Network"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Network Modelling.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Ybus & Zbus",
+  "unit": 1,
+  "topicId": "mps101-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Modelling",
+  "topics": [
+   "Ybus & Zbus"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Network Modelling.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Sparse Matrix Techniques",
+  "unit": 1,
+  "topicId": "mps101-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Modelling",
+  "topics": [
+   "Sparse Matrix Techniques"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Network Modelling.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Component Modelling",
+  "unit": 1,
+  "topicId": "mps101-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Network Modelling",
+  "topics": [
+   "Component Modelling"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Network Modelling.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Newton-Raphson Load Flow",
+  "unit": 2,
+  "topicId": "mps101-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Analysis",
+  "topics": [
+   "Newton-Raphson Load Flow"
+  ],
+  "description": "\"Load flow analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "mps101-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Fast Decoupled Load Flow",
+  "unit": 2,
+  "topicId": "mps101-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Analysis",
+  "topics": [
+   "Fast Decoupled Load Flow"
+  ],
+  "description": "\"Load flow analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "mps101-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "DC Load Flow",
+  "unit": 2,
+  "topicId": "mps101-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Analysis",
+  "topics": [
+   "DC Load Flow"
+  ],
+  "description": "\"Load flow analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "mps101-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Control in Load Flow",
+  "unit": 2,
+  "topicId": "mps101-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Analysis",
+  "topics": [
+   "Control in Load Flow"
+  ],
+  "description": "\"Load flow analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "mps101-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Security Concepts",
+  "unit": 3,
+  "topicId": "mps101-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Contingency Analysis & Security",
+  "topics": [
+   "Security Concepts"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Contingency Analysis & Security.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Sensitivity Factors",
+  "unit": 3,
+  "topicId": "mps101-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Contingency Analysis & Security",
+  "topics": [
+   "Sensitivity Factors"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Contingency Analysis & Security.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Contingency Ranking",
+  "unit": 3,
+  "topicId": "mps101-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Contingency Analysis & Security",
+  "topics": [
+   "Contingency Ranking"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Contingency Analysis & Security.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Security-constrained Dispatch",
+  "unit": 3,
+  "topicId": "mps101-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Contingency Analysis & Security",
+  "topics": [
+   "Security-constrained Dispatch"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Contingency Analysis & Security.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Symmetrical Components",
+  "unit": 4,
+  "topicId": "mps101-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Symmetrical Components"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Fault Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Unsymmetrical Faults",
+  "unit": 4,
+  "topicId": "mps101-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Unsymmetrical Faults"
+  ],
+  "description": "\"Fault analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+  "lectureKey": "mps101-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Zbus Fault Analysis",
+  "unit": 4,
+  "topicId": "mps101-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Zbus Fault Analysis"
+  ],
+  "description": "\"Fault analysis\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+  "lectureKey": "mps101-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Short-circuit Studies",
+  "unit": 4,
+  "topicId": "mps101-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Short-circuit Studies"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers Fault Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "State Estimation Concept",
+  "unit": 5,
+  "topicId": "mps101-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: State Estimation",
+  "topics": [
+   "State Estimation Concept"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers State Estimation.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Weighted Least Squares",
+  "unit": 5,
+  "topicId": "mps101-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: State Estimation",
+  "topics": [
+   "Weighted Least Squares"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers State Estimation.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "Bad Data Detection",
+  "unit": 5,
+  "topicId": "mps101-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: State Estimation",
+  "topics": [
+   "Bad Data Detection"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers State Estimation.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps101",
+  "subjectCode": "MPS-101",
+  "subjectLabel": "Advanced Power System Analysis",
+  "title": "PMU-based Estimation",
+  "unit": 5,
+  "topicId": "mps101-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: State Estimation",
+  "topics": [
+   "PMU-based Estimation"
+  ],
+  "description": "\"Power system analysis NPTEL NOC (Debapriya Das)\" covers State Estimation.",
+  "url": "https://www.youtube.com/playlist?list=PLRWKj4sFG7-6gWwDMLI0Wy5DDRqyKP1uQ",
+  "lectureKey": "mps101-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Power System Dynamics & Stability: full lecture series",
+  "lecturer": "Power system lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Synchronous Machine Modelling",
+   "Excitation & Governor Systems",
+   "Small-signal Stability",
+   "Transient Stability",
+   "Voltage Stability"
+  ],
+  "description": "\"Power system stability analysis playlist\" by Power system lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_QznuoooIl0o4vQeCV3NHe",
+  "lectureKey": "mps102-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Park's Transformation",
+  "unit": 1,
+  "topicId": "mps102-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Synchronous Machine Modelling",
+  "topics": [
+   "Park's Transformation"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Synchronous Machine Modelling.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Machine Reactances",
+  "unit": 1,
+  "topicId": "mps102-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Synchronous Machine Modelling",
+  "topics": [
+   "Machine Reactances"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Synchronous Machine Modelling.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Time Constants",
+  "unit": 1,
+  "topicId": "mps102-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Synchronous Machine Modelling",
+  "topics": [
+   "Time Constants"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Synchronous Machine Modelling.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Simplified Models",
+  "unit": 1,
+  "topicId": "mps102-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Synchronous Machine Modelling",
+  "topics": [
+   "Simplified Models"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Synchronous Machine Modelling.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Excitation Systems",
+  "unit": 2,
+  "topicId": "mps102-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Excitation & Governor Systems",
+  "topics": [
+   "Excitation Systems"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\".",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Excitation System Models",
+  "unit": 2,
+  "topicId": "mps102-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Excitation & Governor Systems",
+  "topics": [
+   "Excitation System Models"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Excitation & Governor Systems.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Power System Stabiliser",
+  "unit": 2,
+  "topicId": "mps102-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Excitation & Governor Systems",
+  "topics": [
+   "Power System Stabiliser"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\".",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Prime Mover & Governor",
+  "unit": 2,
+  "topicId": "mps102-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Excitation & Governor Systems",
+  "topics": [
+   "Prime Mover & Governor"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Excitation & Governor Systems.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Linearisation",
+  "unit": 3,
+  "topicId": "mps102-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Small-signal Stability",
+  "topics": [
+   "Linearisation"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Small-signal Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Heffron-Phillips Model",
+  "unit": 3,
+  "topicId": "mps102-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Small-signal Stability",
+  "topics": [
+   "Heffron-Phillips Model"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Small-signal Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Modes of Oscillation",
+  "unit": 3,
+  "topicId": "mps102-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Small-signal Stability",
+  "topics": [
+   "Modes of Oscillation"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Small-signal Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Damping Control",
+  "unit": 3,
+  "topicId": "mps102-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Small-signal Stability",
+  "topics": [
+   "Damping Control"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Small-signal Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Transient Stability Concepts",
+  "unit": 4,
+  "topicId": "mps102-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Transient Stability",
+  "topics": [
+   "Transient Stability Concepts"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\".",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Equal Area Criterion",
+  "unit": 4,
+  "topicId": "mps102-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Transient Stability",
+  "topics": [
+   "Equal Area Criterion"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Transient Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Numerical Methods",
+  "unit": 4,
+  "topicId": "mps102-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Transient Stability",
+  "topics": [
+   "Numerical Methods"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Transient Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Enhancement Methods",
+  "unit": 4,
+  "topicId": "mps102-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Transient Stability",
+  "topics": [
+   "Enhancement Methods"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Transient Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Voltage Stability Concepts",
+  "unit": 5,
+  "topicId": "mps102-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Voltage Stability",
+  "topics": [
+   "Voltage Stability Concepts"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\".",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "PV & QV Curves",
+  "unit": 5,
+  "topicId": "mps102-u5t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Voltage Stability",
+  "topics": [
+   "PV & QV Curves"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Voltage Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Analysis Methods",
+  "unit": 5,
+  "topicId": "mps102-u5t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Voltage Stability",
+  "topics": [
+   "Analysis Methods"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Voltage Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps102",
+  "subjectCode": "MPS-102",
+  "subjectLabel": "Power System Dynamics & Stability",
+  "title": "Prevention of Collapse",
+  "unit": 5,
+  "topicId": "mps102-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Voltage Stability",
+  "topics": [
+   "Prevention of Collapse"
+  ],
+  "description": "\"Introduction to power system stability problem, Prof. M.L. Kothari\" covers Voltage Stability.",
+  "url": "https://www.youtube.com/watch?v=70gLa0-1Rho",
+  "lectureKey": "mps102-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Advanced Power Electronic Converters: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Power Semiconductor Devices",
+   "DC-DC Converters",
+   "Inverters & Multilevel Converters",
+   "Grid-connected Converters",
+   "Applications & Control"
+  ],
+  "description": "\"Power Electronics, Prof. B.G. Fernandes, IIT Bombay\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "mps103-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Silicon Devices",
+  "unit": 1,
+  "topicId": "mps103-u1t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "Silicon Devices"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Wide Bandgap Devices",
+  "unit": 1,
+  "topicId": "mps103-u1t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "Wide Bandgap Devices"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Gate Drivers",
+  "unit": 1,
+  "topicId": "mps103-u1t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "Gate Drivers"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Thermal Management",
+  "unit": 1,
+  "topicId": "mps103-u1t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "Thermal Management"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Non-isolated Converters",
+  "unit": 2,
+  "topicId": "mps103-u2t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC-DC Converters",
+  "topics": [
+   "Non-isolated Converters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers DC-DC Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Isolated Converters",
+  "unit": 2,
+  "topicId": "mps103-u2t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC-DC Converters",
+  "topics": [
+   "Isolated Converters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers DC-DC Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Resonant Converters",
+  "unit": 2,
+  "topicId": "mps103-u2t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC-DC Converters",
+  "topics": [
+   "Resonant Converters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers DC-DC Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Converter Design",
+  "unit": 2,
+  "topicId": "mps103-u2t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC-DC Converters",
+  "topics": [
+   "Converter Design"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers DC-DC Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Voltage Source Inverters",
+  "unit": 3,
+  "topicId": "mps103-u3t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Inverters & Multilevel Converters",
+  "topics": [
+   "Voltage Source Inverters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Inverters & Multilevel Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Space Vector PWM",
+  "unit": 3,
+  "topicId": "mps103-u3t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Inverters & Multilevel Converters",
+  "topics": [
+   "Space Vector PWM"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Inverters & Multilevel Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Multilevel Inverters",
+  "unit": 3,
+  "topicId": "mps103-u3t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Inverters & Multilevel Converters",
+  "topics": [
+   "Multilevel Inverters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Inverters & Multilevel Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "MMC",
+  "unit": 3,
+  "topicId": "mps103-u3t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Inverters & Multilevel Converters",
+  "topics": [
+   "MMC"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Inverters & Multilevel Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Grid Synchronisation",
+  "unit": 4,
+  "topicId": "mps103-u4t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Grid-connected Converters",
+  "topics": [
+   "Grid Synchronisation"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Grid-connected Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Current Control",
+  "unit": 4,
+  "topicId": "mps103-u4t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Grid-connected Converters",
+  "topics": [
+   "Current Control"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Grid-connected Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Filters",
+  "unit": 4,
+  "topicId": "mps103-u4t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Grid-connected Converters",
+  "topics": [
+   "Filters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Grid-connected Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Grid-forming Converters",
+  "unit": 4,
+  "topicId": "mps103-u4t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Grid-connected Converters",
+  "topics": [
+   "Grid-forming Converters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Grid-connected Converters.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Renewable Converters",
+  "unit": 5,
+  "topicId": "mps103-u5t1",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications & Control",
+  "topics": [
+   "Renewable Converters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Applications & Control.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Motor Drive Converters",
+  "unit": 5,
+  "topicId": "mps103-u5t2",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications & Control",
+  "topics": [
+   "Motor Drive Converters"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Applications & Control.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "EV Chargers",
+  "unit": 5,
+  "topicId": "mps103-u5t3",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications & Control",
+  "topics": [
+   "EV Chargers"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Applications & Control.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps103",
+  "subjectCode": "MPS-103",
+  "subjectLabel": "Advanced Power Electronic Converters",
+  "title": "Modelling & Simulation",
+  "unit": 5,
+  "topicId": "mps103-u5t4",
+  "lecturer": "MIT OpenCourseWare",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications & Control",
+  "topics": [
+   "Modelling & Simulation"
+  ],
+  "description": "\"MIT 6.622 Power Electronics, Spring 2023\" covers Applications & Control.",
+  "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62UTc77mJoubhDELSC8lfR0",
+  "lectureKey": "mps103-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Optimisation Techniques in Power Systems: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Optimisation Fundamentals",
+   "Classical Methods",
+   "Evolutionary & Metaheuristic Methods",
+   "Economic Dispatch & OPF",
+   "Unit Commitment & Planning"
+  ],
+  "description": "\"Numerical Optimization, Dr. Shirish Shevade, IISc\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL6EA0722B99332589",
+  "lectureKey": "mps104-auto-playlist"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Problem Formulation",
+  "unit": 1,
+  "topicId": "mps104-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Optimisation Fundamentals",
+  "topics": [
+   "Problem Formulation"
+  ],
+  "description": "\"Economic operation of power system\" covers Optimisation Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Classification",
+  "unit": 1,
+  "topicId": "mps104-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Optimisation Fundamentals",
+  "topics": [
+   "Classification"
+  ],
+  "description": "\"Economic operation of power system\" covers Optimisation Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Convexity",
+  "unit": 1,
+  "topicId": "mps104-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Optimisation Fundamentals",
+  "topics": [
+   "Convexity"
+  ],
+  "description": "\"Economic operation of power system\" covers Optimisation Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Optimality Conditions",
+  "unit": 1,
+  "topicId": "mps104-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Optimisation Fundamentals",
+  "topics": [
+   "Optimality Conditions"
+  ],
+  "description": "\"Economic operation of power system\" covers Optimisation Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Linear Programming Methods",
+  "unit": 2,
+  "topicId": "mps104-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Classical Methods",
+  "topics": [
+   "Linear Programming Methods"
+  ],
+  "description": "\"Economic operation of power system\" covers Classical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Non-linear Programming Methods",
+  "unit": 2,
+  "topicId": "mps104-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Classical Methods",
+  "topics": [
+   "Non-linear Programming Methods"
+  ],
+  "description": "\"Economic operation of power system\" covers Classical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Dynamic Programming",
+  "unit": 2,
+  "topicId": "mps104-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Classical Methods",
+  "topics": [
+   "Dynamic Programming"
+  ],
+  "description": "\"Economic operation of power system\" covers Classical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Integer Programming",
+  "unit": 2,
+  "topicId": "mps104-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Classical Methods",
+  "topics": [
+   "Integer Programming"
+  ],
+  "description": "\"Economic operation of power system\" covers Classical Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Genetic Algorithm",
+  "unit": 3,
+  "topicId": "mps104-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Evolutionary & Metaheuristic Methods",
+  "topics": [
+   "Genetic Algorithm"
+  ],
+  "description": "\"Economic operation of power system\" covers Evolutionary & Metaheuristic Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Particle Swarm Optimisation",
+  "unit": 3,
+  "topicId": "mps104-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Evolutionary & Metaheuristic Methods",
+  "topics": [
+   "Particle Swarm Optimisation"
+  ],
+  "description": "\"Economic operation of power system\" covers Evolutionary & Metaheuristic Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Other Metaheuristics",
+  "unit": 3,
+  "topicId": "mps104-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Evolutionary & Metaheuristic Methods",
+  "topics": [
+   "Other Metaheuristics"
+  ],
+  "description": "\"Economic operation of power system\" covers Evolutionary & Metaheuristic Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Multi-objective Optimisation",
+  "unit": 3,
+  "topicId": "mps104-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Evolutionary & Metaheuristic Methods",
+  "topics": [
+   "Multi-objective Optimisation"
+  ],
+  "description": "\"Economic operation of power system\" covers Evolutionary & Metaheuristic Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Economic Load Dispatch",
+  "unit": 4,
+  "topicId": "mps104-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Economic Dispatch & OPF",
+  "topics": [
+   "Economic Load Dispatch"
+  ],
+  "description": "\"Economic operation of power system\" covers Economic Dispatch & OPF.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Optimal Power Flow",
+  "unit": 4,
+  "topicId": "mps104-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Economic Dispatch & OPF",
+  "topics": [
+   "Optimal Power Flow"
+  ],
+  "description": "\"Economic operation of power system\" covers Economic Dispatch & OPF.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Environmental Dispatch",
+  "unit": 4,
+  "topicId": "mps104-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Economic Dispatch & OPF",
+  "topics": [
+   "Environmental Dispatch"
+  ],
+  "description": "\"Economic operation of power system\" covers Economic Dispatch & OPF.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Reactive Power Optimisation",
+  "unit": 4,
+  "topicId": "mps104-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Economic Dispatch & OPF",
+  "topics": [
+   "Reactive Power Optimisation"
+  ],
+  "description": "\"Economic operation of power system\" covers Economic Dispatch & OPF.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Unit Commitment",
+  "unit": 5,
+  "topicId": "mps104-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Unit Commitment & Planning",
+  "topics": [
+   "Unit Commitment"
+  ],
+  "description": "\"Economic operation of power system\" covers Unit Commitment & Planning.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "UC Solution Methods",
+  "unit": 5,
+  "topicId": "mps104-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Unit Commitment & Planning",
+  "topics": [
+   "UC Solution Methods"
+  ],
+  "description": "\"Economic operation of power system\" covers Unit Commitment & Planning.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Hydro-thermal Scheduling",
+  "unit": 5,
+  "topicId": "mps104-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Unit Commitment & Planning",
+  "topics": [
+   "Hydro-thermal Scheduling"
+  ],
+  "description": "\"Economic operation of power system\" covers Unit Commitment & Planning.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 1,
+  "subject": "mps104",
+  "subjectCode": "MPS-104",
+  "subjectLabel": "Optimisation Techniques in Power Systems",
+  "title": "Expansion Planning",
+  "unit": 5,
+  "topicId": "mps104-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Unit Commitment & Planning",
+  "topics": [
+   "Expansion Planning"
+  ],
+  "description": "\"Economic operation of power system\" covers Unit Commitment & Planning.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps104-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Power System Operation & Control: full lecture series",
+  "lecturer": "Power system lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Load Frequency Control",
+   "Voltage & Reactive Power Control",
+   "Energy Management Systems",
+   "Electricity Markets",
+   "Grid Operation with Renewables"
+  ],
+  "description": "\"Economic operation of power system playlist\" by Power system lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "mps201-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Frequency Control Basics",
+  "unit": 1,
+  "topicId": "mps201-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Load Frequency Control",
+  "topics": [
+   "Frequency Control Basics"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Load Frequency Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Single-area LFC",
+  "unit": 1,
+  "topicId": "mps201-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Load Frequency Control",
+  "topics": [
+   "Single-area LFC"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Load Frequency Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Two-area LFC",
+  "unit": 1,
+  "topicId": "mps201-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Load Frequency Control",
+  "topics": [
+   "Two-area LFC"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Load Frequency Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "AGC & Modern Control",
+  "unit": 1,
+  "topicId": "mps201-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Load Frequency Control",
+  "topics": [
+   "AGC & Modern Control"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Load Frequency Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Reactive Power Sources",
+  "unit": 2,
+  "topicId": "mps201-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Voltage & Reactive Power Control",
+  "topics": [
+   "Reactive Power Sources"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Voltage & Reactive Power Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Voltage Control Methods",
+  "unit": 2,
+  "topicId": "mps201-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Voltage & Reactive Power Control",
+  "topics": [
+   "Voltage Control Methods"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Voltage & Reactive Power Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Hierarchical Voltage Control",
+  "unit": 2,
+  "topicId": "mps201-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Voltage & Reactive Power Control",
+  "topics": [
+   "Hierarchical Voltage Control"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Voltage & Reactive Power Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Reactive Power Management",
+  "unit": 2,
+  "topicId": "mps201-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Voltage & Reactive Power Control",
+  "topics": [
+   "Reactive Power Management"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Voltage & Reactive Power Control.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Control Centres",
+  "unit": 3,
+  "topicId": "mps201-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Management Systems",
+  "topics": [
+   "Control Centres"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Energy Management Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "EMS Functions",
+  "unit": 3,
+  "topicId": "mps201-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Management Systems",
+  "topics": [
+   "EMS Functions"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Energy Management Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Load Forecasting",
+  "unit": 3,
+  "topicId": "mps201-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Management Systems",
+  "topics": [
+   "Load Forecasting"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Energy Management Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "WAMS",
+  "unit": 3,
+  "topicId": "mps201-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Management Systems",
+  "topics": [
+   "WAMS"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Energy Management Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Power Sector Restructuring",
+  "unit": 4,
+  "topicId": "mps201-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electricity Markets",
+  "topics": [
+   "Power Sector Restructuring"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Electricity Markets.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Market Structures",
+  "unit": 4,
+  "topicId": "mps201-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electricity Markets",
+  "topics": [
+   "Market Structures"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Electricity Markets.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Pricing",
+  "unit": 4,
+  "topicId": "mps201-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electricity Markets",
+  "topics": [
+   "Pricing"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Electricity Markets.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Ancillary Services",
+  "unit": 4,
+  "topicId": "mps201-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electricity Markets",
+  "topics": [
+   "Ancillary Services"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Electricity Markets.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Variability & Forecasting",
+  "unit": 5,
+  "topicId": "mps201-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Grid Operation with Renewables",
+  "topics": [
+   "Variability & Forecasting"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Grid Operation with Renewables.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Flexibility",
+  "unit": 5,
+  "topicId": "mps201-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Grid Operation with Renewables",
+  "topics": [
+   "Flexibility"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Grid Operation with Renewables.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Inertia & Frequency Stability",
+  "unit": 5,
+  "topicId": "mps201-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Grid Operation with Renewables",
+  "topics": [
+   "Inertia & Frequency Stability"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Grid Operation with Renewables.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps201",
+  "subjectCode": "MPS-201",
+  "subjectLabel": "Power System Operation & Control",
+  "title": "Grid Codes for RE",
+  "unit": 5,
+  "topicId": "mps201-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Grid Operation with Renewables",
+  "topics": [
+   "Grid Codes for RE"
+  ],
+  "description": "\"Power system generation, transmission and distribution, Prof. D.P. Kothari\" covers Grid Operation with Renewables.",
+  "url": "https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625",
+  "lectureKey": "mps201-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Smart Grid Concept",
+  "unit": 1,
+  "topicId": "mps202-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Smart Grid Fundamentals",
+  "topics": [
+   "Smart Grid Concept"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\".",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Smart Grid Architecture",
+  "unit": 1,
+  "topicId": "mps202-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Smart Grid Fundamentals",
+  "topics": [
+   "Smart Grid Architecture"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\".",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Smart Grid in India",
+  "unit": 1,
+  "topicId": "mps202-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Smart Grid Fundamentals",
+  "topics": [
+   "Smart Grid in India"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\".",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Drivers & Benefits",
+  "unit": 1,
+  "topicId": "mps202-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Smart Grid Fundamentals",
+  "topics": [
+   "Drivers & Benefits"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\".",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "AMI",
+  "unit": 2,
+  "topicId": "mps202-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Metering & Demand Response",
+  "topics": [
+   "AMI"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Advanced Metering & Demand Response.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Demand Response",
+  "unit": 2,
+  "topicId": "mps202-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Metering & Demand Response",
+  "topics": [
+   "Demand Response"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Advanced Metering & Demand Response.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Home Energy Management",
+  "unit": 2,
+  "topicId": "mps202-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Metering & Demand Response",
+  "topics": [
+   "Home Energy Management"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Advanced Metering & Demand Response.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Data Analytics",
+  "unit": 2,
+  "topicId": "mps202-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Advanced Metering & Demand Response",
+  "topics": [
+   "Data Analytics"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Advanced Metering & Demand Response.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Distribution Automation",
+  "unit": 3,
+  "topicId": "mps202-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Distribution Automation & Microgrids",
+  "topics": [
+   "Distribution Automation"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Distribution Automation & Microgrids.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Distributed Energy Resources",
+  "unit": 3,
+  "topicId": "mps202-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Distribution Automation & Microgrids",
+  "topics": [
+   "Distributed Energy Resources"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Distribution Automation & Microgrids.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Microgrids",
+  "unit": 3,
+  "topicId": "mps202-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Distribution Automation & Microgrids",
+  "topics": [
+   "Microgrids"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Distribution Automation & Microgrids.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Microgrid Control",
+  "unit": 3,
+  "topicId": "mps202-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Distribution Automation & Microgrids",
+  "topics": [
+   "Microgrid Control"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Distribution Automation & Microgrids.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Communication Technologies",
+  "unit": 4,
+  "topicId": "mps202-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Communication & Cyber Security",
+  "topics": [
+   "Communication Technologies"
+  ],
+  "description": "\"Smart grid: basics to advanced technologies, IIT Roorkee (review session)\".",
+  "url": "https://www.youtube.com/watch?v=NUr5HQk3l50",
+  "lectureKey": "mps202-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Communication Standards",
+  "unit": 4,
+  "topicId": "mps202-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Communication & Cyber Security",
+  "topics": [
+   "Communication Standards"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Communication & Cyber Security.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Cyber Security Threats",
+  "unit": 4,
+  "topicId": "mps202-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Communication & Cyber Security",
+  "topics": [
+   "Cyber Security Threats"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Communication & Cyber Security.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Cyber Security Measures",
+  "unit": 4,
+  "topicId": "mps202-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Communication & Cyber Security",
+  "topics": [
+   "Cyber Security Measures"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers Communication & Cyber Security.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "EV Integration",
+  "unit": 5,
+  "topicId": "mps202-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: EVs, Storage & Future Grids",
+  "topics": [
+   "EV Integration"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers EVs, Storage & Future Grids.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Energy Storage in Smart Grids",
+  "unit": 5,
+  "topicId": "mps202-u5t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: EVs, Storage & Future Grids",
+  "topics": [
+   "Energy Storage in Smart Grids"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\".",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Virtual Power Plants",
+  "unit": 5,
+  "topicId": "mps202-u5t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: EVs, Storage & Future Grids",
+  "topics": [
+   "Virtual Power Plants"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers EVs, Storage & Future Grids.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mps202",
+  "subjectCode": "MPS-202",
+  "subjectLabel": "Smart Grid Technologies",
+  "title": "Digital Twins & AI",
+  "unit": 5,
+  "topicId": "mps202-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: EVs, Storage & Future Grids",
+  "topics": [
+   "Digital Twins & AI"
+  ],
+  "description": "\"Smart grid: introduction, benefits, architecture, components\" covers EVs, Storage & Future Grids.",
+  "url": "https://www.youtube.com/watch?v=7mCXnnYpSGs",
+  "lectureKey": "mps202-u5-t4",
   "match": "course"
  }
 ];

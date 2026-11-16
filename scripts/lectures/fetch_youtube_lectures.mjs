@@ -25,8 +25,8 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, '..', '..');
 const CONFIG = JSON.parse(fs.readFileSync(path.join(HERE, 'config.json'), 'utf8'));
 const CACHE_FILE = path.join(HERE, 'cache.json');
-const OUT_FILE = path.join(ROOT, 'js', 'lecture-library-auto.js');
-const REPORT_FILE = path.join(HERE, 'REPORT.md');
+const OUT_FILE = path.join(HERE, 'api-results.js');
+const REPORT_FILE = path.join(HERE, 'REPORT-api.md');
 const API = process.env.YOUTUBE_API_BASE || 'https://www.googleapis.com/youtube/v3';
 // One key, or several comma-separated keys from different Google Cloud projects
 // (each project has its own daily quota; the next key is used when one runs out).
