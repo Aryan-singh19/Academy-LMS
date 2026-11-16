@@ -10,3 +10,4 @@ node_modules/
 !.env.example
 vercel.env
 vercel-import.env
+android/app/src/main/assets/site/

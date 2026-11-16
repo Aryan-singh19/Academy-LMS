@@ -2,7 +2,7 @@
 
 **Academy LMS** · Last updated: 16 November 2026
 
-Academy LMS is a free, open-source study portal for RGPV B.Tech students. This policy explains what data the web app, the Android app and the Windows app handle, where it is stored, and how you can control it. The in-app version lives at [`html/privacy.html`](html/privacy.html).
+Academy LMS is a free, open-source study portal for RGPV B.Tech and M.Tech students. This policy explains what data the web app, the Android app and the Windows app handle, where it is stored, and how you can control it. The in-app version lives at [`html/privacy.html`](html/privacy.html).
 
 ## 1. Summary
 
@@ -49,7 +49,7 @@ Links to the RGPV portal, YouTube searches and textbooks open external sites gov
 
 ## 5. Mobile and desktop apps
 
-- The **Android app** is a WebView wrapper around the live site. It adds no tracking and has the same data handling as the website.
+- The **Android app** loads the live site. When offline, it opens a copy of the study material bundled inside the app, whose data stays on the device. It adds no tracking and has the same data handling as the website. It requests only the Internet and network-state permissions.
 - The **Windows app** (Electron) loads the live site. When offline, it opens a bundled read-only copy whose data stays in local storage. External links open in your default browser.
 - **Self-hosted / Docker** deployments are controlled by whoever runs them. Without a `DATABASE_URL`, the server keeps data only in memory.
 

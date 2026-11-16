@@ -5,7 +5,17 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.KeyEvent;
+import android.net.ConnectivityManager;
+import android.net.NetworkCapabilities;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceResponse;
+import androidx.activity.OnBackPressedCallback;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
+import androidx.webkit.WebViewAssetLoader;
 import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.WebChromeClient;
@@ -40,6 +50,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 public class MainActivity extends AppCompatActivity {
 
     private static final String APP_URL = "https://academy-lms-sepia.vercel.app/";
+    // Bundled copy of the site (android/app/src/main/assets/site), served from a stable https origin
+    private static final String OFFLINE_HOST = "appassets.androidplatform.net";
+    private static final String OFFLINE_URL = "https://" + OFFLINE_HOST + "/assets/site/index.html?view=study";
+    private WebViewAssetLoader assetLoader;
+    private boolean showingOffline;
     private WebView webView;
     private SwipeRefreshLayout swipeRefresh;
     private ProgressBar progressBar;
@@ -64,6 +79,24 @@ public class MainActivity extends AppCompatActivity {
                 androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams.MATCH_PARENT,
                 androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams.MATCH_PARENT
         ));
+
+        // Android 15+ draws apps edge-to-edge: pad the content so it never sits under the status/nav bars or keyboard
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        root.setBackgroundColor(Color.parseColor("#0B0F19"));
+        WindowInsetsControllerCompat insetsController = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        insetsController.setAppearanceLightStatusBars(false);
+        insetsController.setAppearanceLightNavigationBars(false);
+        ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
+            Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
+            v.setPadding(bars.left, bars.top, bars.right, Math.max(bars.bottom, ime.bottom));
+            return WindowInsetsCompat.CONSUMED;
+        });
+
+        assetLoader = new WebViewAssetLoader.Builder()
+                .setDomain(OFFLINE_HOST)
+                .addPathHandler("/assets/", new WebViewAssetLoader.AssetsPathHandler(this))
+                .build();
 
         swipeRefresh = new SwipeRefreshLayout(this);
         swipeRefresh.setLayoutParams(new androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams(
@@ -119,7 +152,14 @@ public class MainActivity extends AppCompatActivity {
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         // SwipeRefresh
-        swipeRefresh.setOnRefreshListener(() -> webView.reload());
+        swipeRefresh.setOnRefreshListener(() -> {
+            if (showingOffline && isOnline()) {
+                showingOffline = false;
+                webView.loadUrl(APP_URL);
+            } else {
+                webView.reload();
+            }
+        });
 
         // WebViewClient
         webView.setWebViewClient(new WebViewClient() {
@@ -136,9 +176,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
+            public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
+                return assetLoader.shouldInterceptRequest(request.getUrl());
+            }
+
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                // live site unreachable: fall back to the study material bundled inside the app
+                if (request.isForMainFrame() && !showingOffline) {
+                    openOffline();
+                }
+            }
+
+            @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
-                if (url.contains("accounts.google.com") || url.contains("academy-lms") || url.contains("vercel.app")) {
+                if (url.contains(OFFLINE_HOST) || url.contains("accounts.google.com") || url.contains("academy-lms") || url.contains("vercel.app")) {
                     return false; // let WebView handle internal and auth URLs
                 }
                 try {
@@ -165,8 +218,37 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
-            webView.loadUrl(APP_URL);
+            if (isOnline()) {
+                webView.loadUrl(APP_URL);
+            } else {
+                openOffline();
+            }
         }
+
+        // Android 16 predictive back: go back inside the site first, then leave the app
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (webView.canGoBack()) {
+                    webView.goBack();
+                } else {
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                }
+            }
+        });
+    }
+
+    private void openOffline() {
+        showingOffline = true;
+        webView.loadUrl(OFFLINE_URL);
+    }
+
+    private boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        if (cm == null) return true;
+        NetworkCapabilities caps = cm.getNetworkCapabilities(cm.getActiveNetwork());
+        return caps != null && caps.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET);
     }
 
     private int dp(float value) {
@@ -320,14 +402,6 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK && webView.canGoBack()) {
-            webView.goBack();
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {

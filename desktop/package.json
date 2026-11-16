@@ -1,7 +1,7 @@
 {
   "name": "academy-lms-desktop",
   "productName": "Academy LMS",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Academy LMS desktop app for RGPV B.Tech students (all branches, semesters 1-8).",
   "main": "main.js",
   "author": "Aryan Singh Chandel <aryansingh19gh@gmail.com>",

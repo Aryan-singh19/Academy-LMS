@@ -4,18 +4,32 @@ plugins {
 
 android {
     namespace 'com.academy.lms'
-    compileSdk 34
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.academy.lms"
         minSdk 24
-        targetSdk 34
-        versionCode 4
-        versionName "2.1.1"
+        targetSdk 36
+        versionCode 5
+        versionName "2.2.0"
+    }
+
+    // Release signing (Play Store). Supplied by CI secrets or local env vars; absent = unsigned release.
+    def keystorePath = System.getenv('ANDROID_KEYSTORE_PATH')
+    signingConfigs {
+        if (keystorePath) {
+            release {
+                storeFile file(keystorePath)
+                storePassword System.getenv('ANDROID_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('ANDROID_KEY_ALIAS')
+                keyPassword System.getenv('ANDROID_KEY_PASSWORD')
+            }
+        }
     }
 
     buildTypes {
         release {
+            if (keystorePath) signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -31,8 +45,11 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity:1.9.3'
+    implementation 'androidx.core:core:1.15.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-    implementation 'androidx.webkit:webkit:1.10.0'
+    implementation 'androidx.webkit:webkit:1.12.1'
 }

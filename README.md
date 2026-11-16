@@ -347,12 +347,14 @@ git tag v2.0.0 && git push origin v2.0.0
 - [x] CSE semesters 5–7 with rich notes, quizzes and the practice suite
 - [x] **v2.0**: CSE, IT, ECE, ME and AU semesters 1–8 · My Programme navigation · PDFs · model papers · APK + EXE releases · Docker
 - [x] **v2.1**: Civil (CE) and Electrical (EX) semesters 1–8 · M.Tech CSE, VLSI, Thermal, Structural and Power Systems · safe programme switching with recent programmes
+- [x] **v2.2**: offline Android app · Android 16 target · Play Store launch kit ([docs/play-store](docs/play-store/README.md))
+- [ ] Google Play release (closed test with 12+ testers first)
 - [ ] More M.Tech specialisations (Communication, Production, Environmental, Data Science)
 - [ ] Hand-curated YouTube playlists for every new subject
 - [ ] Solved numericals and branch-specific trainers (thermo cycles, beam SFD/BMD, DSP filters)
 - [ ] Previous-year question links per subject
 - [ ] Offline-first PWA with background sync
-- [ ] Signed Windows build and Play Store listing
+- [ ] Code-signed Windows build
 
 Suggestions are welcome as [issues](https://github.com/Aryan-singh19/Academy-LMS/issues).
 
