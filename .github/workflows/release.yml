@@ -31,17 +31,39 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Bundle offline copy of the site into the app
+        working-directory: ${{ github.workspace }}
+        run: node scripts/bundle-android-site.js
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.5'
+          gradle-version: '8.14.3'
 
-      - name: Build APK
+      - name: Build APK (signed release if the keystore secret exists, otherwise debug)
         working-directory: android
-        run: gradle assembleDebug --stacktrace
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.jks"
+            export ANDROID_KEYSTORE_PATH="$RUNNER_TEMP/release.jks"
+            gradle assembleRelease --stacktrace
+            cp app/build/outputs/apk/release/app-release.apk ../app-built.apk
+          else
+            gradle assembleDebug --stacktrace
+            cp app/build/outputs/apk/debug/app-debug.apk ../app-built.apk
+          fi
 
       - name: Rename APK
-        run: cp android/app/build/outputs/apk/debug/app-debug.apk "Academy-LMS-${RELEASE_TAG}.apk"
+        run: cp app-built.apk "Academy-LMS-${RELEASE_TAG}.apk"
 
       - uses: actions/upload-artifact@v4
         with:

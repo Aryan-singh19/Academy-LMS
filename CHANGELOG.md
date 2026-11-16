@@ -9,6 +9,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - More M.Tech specialisations (Communication, Production, Environmental, Data Science).
 - Hand-curated YouTube playlists (currently unit-wise lecture search shelves).
 
+## [2.2.0] - 2026-11-16
+
+### Added
+- **Offline Android app**: the study material is bundled into the APK (about 4 MB extra, PDFs excluded). When there's no internet, the app opens the bundled copy, and pull-to-refresh switches back to the live site once you're online.
+- **Play Store launch kit** in `docs/play-store/`:
+  - listing text, 512 px icon, feature graphic and six captioned phone screenshots
+  - data safety and content rating answers
+  - a step-by-step guide and a share kit for growing users
+- `play-bundle.yml` builds the signed `.aab` for Google Play. The release workflow builds a signed APK once signing secrets are added.
+
+### Changed
+- The Android app targets Android 16 (API 36), as Google Play requires for new apps. It is built with AGP 8.11 and Gradle 8.14.
+- Android 16 support: predictive back gesture, edge-to-edge layout with proper status bar, navigation bar and keyboard insets, and cleartext HTTP disabled.
+
 ## [2.1.1] - 2026-11-16
 
 ### Added

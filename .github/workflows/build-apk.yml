@@ -25,10 +25,18 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Bundle offline copy of the site into the app
+        working-directory: ${{ github.workspace }}
+        run: node scripts/bundle-android-site.js
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.5'
+          gradle-version: '8.14.3'
 
       - name: Build debug APK
         run: gradle assembleDebug --stacktrace
