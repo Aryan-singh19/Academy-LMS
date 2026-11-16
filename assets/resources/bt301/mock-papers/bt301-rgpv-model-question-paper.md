@@ -1,6 +1,6 @@
 # BT-301 Mathematics-III — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 4: BT-401 · IT Sem 4: BT-401 · ECE Sem 3: BT-301 · ME Sem 3: BT-301 · AU Sem 3: BT-301.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 4: BT-401 · IT Sem 4: BT-401 · ECE Sem 3: BT-301 · EX Sem 4: BT-401 · CE Sem 3: BT-301 · ME Sem 3: BT-301 · AU Sem 3: BT-301.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

@@ -1,0 +1,486 @@
+// M.Tech (Thermal Engineering, Structural Engineering, Power Systems)
+@ mth101 | MTH-101 | Advanced Thermodynamics | Exergy analysis, thermodynamic relations, real gases, mixtures, chemical equilibrium and irreversible thermodynamics.
+# Exergy Analysis
+- Exergy Concept | Exergy is the useful work potential. | Exergy = maximum useful work relative to dead state | Dead State = equilibrium with environment | Exergy Destruction = T0 × entropy generation
+- Exergy Balance | Balances locate losses. | Closed System Exergy Balance = exergy in − out − destroyed = change | Flow Exergy = (h − h0) − T0(s − s0) + V²/2 + gz | Second-law Efficiency = exergy recovered / exergy supplied
+- Exergy of Power Cycles | Second-law analysis of cycles. | Rankine Cycle Exergy = losses mainly in boiler | Gas Turbine Exergy = losses in combustor | Exergoeconomics = cost of exergy losses
+- Entropy Generation Minimisation | Design to reduce irreversibility. | Gouy-Stodola Theorem = lost work = T0 Sgen | Entropy Generation Number = dimensionless irreversibility | Optimum Design = balances heat transfer and friction irreversibility
+# Thermodynamic Relations
+- Maxwell Relations | Relations among properties. | Maxwell Relation = (∂T/∂v)s = −(∂p/∂s)v | Helmholtz Function = a = u − Ts | Gibbs Function = g = h − Ts
+- General Property Relations | Derive unmeasured properties. | Clapeyron Equation = dp/dT = hfg/(T vfg) | Joule-Thomson Coefficient = μJT = (∂T/∂p)h | cp − cv Relation = T v β²/κ
+- Real Gases | Ideal gas law fails at high pressure. | Compressibility Factor = Z = pv/(RT) | Van der Waals Equation = (p + a/v²)(v − b) = RT | Law of Corresponding States = Z depends on reduced properties
+- Generalised Charts | Charts give real gas properties. | Reduced Pressure = p/pc | Enthalpy Departure = deviation from ideal gas | Fugacity = effective pressure of real gas
+# Mixtures & Psychrometry
+- Ideal Gas Mixtures | Mixtures follow Dalton and Amagat laws. | Dalton's Law = total pressure equals sum of partial pressures | Amagat's Law = total volume equals sum of partial volumes | Mole Fraction = moles of component / total
+- Real Mixtures | Non-ideal mixtures need models. | Kay's Rule = pseudo-critical properties of mixture | Partial Molar Property = property per mole in mixture | Activity Coefficient = deviation from ideal solution
+- Psychrometry Advanced | Moist air thermodynamics. | Adiabatic Saturation = defines thermodynamic wet bulb | Humidity Ratio = mass of vapour per mass of dry air | Enthalpy of Moist Air = h = 1.005T + ω(2501 + 1.88T)
+- Phase Equilibrium | Phases in equilibrium. | Gibbs Phase Rule = F = C − P + 2 | Raoult's Law = partial pressure = mole fraction × vapour pressure | Chemical Potential = equal across phases at equilibrium
+# Combustion & Chemical Equilibrium
+- Combustion Thermodynamics | Energy balance for reactions. | Enthalpy of Formation = enthalpy change forming compound from elements | Adiabatic Flame Temperature = temperature with no heat loss | Heating Value = heat released by complete combustion
+- Chemical Equilibrium | Reactions reach equilibrium. | Equilibrium Constant = Kp from Gibbs function change | Le Chatelier's Principle = equilibrium shifts to oppose change | Dissociation = breakdown of products at high temperature
+- Second-law Analysis of Combustion | Combustion is highly irreversible. | Entropy of Reaction = absolute entropy change | Exergy of Fuel = chemical exergy | Combustion Irreversibility = largest exergy loss in power plants
+- Fuel Cells Thermodynamics | Direct conversion of chemical energy. | Reversible Cell Voltage = −ΔG/(nF) | Fuel Cell Efficiency Limit = ΔG/ΔH | Nernst Equation = voltage variation with concentration
+# Irreversible & Statistical Thermodynamics
+- Irreversible Thermodynamics | Non-equilibrium processes. | Onsager Reciprocal Relations = symmetric coupling coefficients | Thermoelectric Effects = Seebeck, Peltier and Thomson | Entropy Production Rate = sum of fluxes × forces
+- Statistical Thermodynamics Basics | Microscopic origin of properties. | Boltzmann Entropy = S = k ln W | Partition Function = sum over states of e^(−E/kT) | Equipartition = ½kT per quadratic degree of freedom
+- Kinetic Theory | Molecular motion explains gas behaviour. | Mean Free Path = average distance between collisions | Maxwell-Boltzmann Distribution = molecular speed distribution | Transport Properties = viscosity, conductivity from kinetic theory
+- Advanced Cycles | Innovative power cycles. | Kalina Cycle = ammonia-water mixture cycle | Organic Rankine Cycle = organic fluid for low-grade heat | Supercritical CO2 Cycle = high-efficiency compact cycle
+
+@ mth102 | MTH-102 | Advanced Fluid Mechanics | Kinematics, Navier-Stokes equations, exact solutions, boundary layers, turbulence and compressible flow.
+# Fluid Kinematics & Conservation Laws
+- Description of Flow | Lagrangian and Eulerian views. | Lagrangian Description = follows fluid particles | Eulerian Description = observes fixed points | Material Derivative = D/Dt = ∂/∂t + V·∇
+- Strain Rate & Vorticity | Deformation of fluid elements. | Strain Rate Tensor = symmetric part of velocity gradient | Vorticity = ω = ∇ × V | Circulation = line integral of velocity
+- Reynolds Transport Theorem | Links system and control volume. | Reynolds Transport Theorem = converts system laws to control volume | Continuity Equation = ∂ρ/∂t + ∇·(ρV) = 0 | Momentum Equation = Newton's second law for fluids
+- Energy Equation | Conservation of energy in flow. | Energy Equation = first law for flowing fluid | Viscous Dissipation = conversion of work to heat | Stream Function = satisfies continuity for 2D flow
+# Navier-Stokes Equations & Exact Solutions
+- Navier-Stokes Equations | Momentum for viscous fluids. | Navier-Stokes Equation = ρ DV/Dt = −∇p + μ∇²V + ρg | Newtonian Constitutive Law = stress linear in strain rate | Non-dimensional Form = reveals Reynolds number
+- Couette & Poiseuille Flow | Classical exact solutions. | Couette Flow = linear profile between moving plates | Plane Poiseuille Flow = parabolic profile in channel | Hagen-Poiseuille Flow = parabolic profile in pipe
+- Unsteady Exact Solutions | Time-dependent viscous flows. | Stokes' First Problem = suddenly started plate | Stokes' Second Problem = oscillating plate | Penetration Depth = grows as √(νt)
+- Creeping Flow | Very low Reynolds number flows. | Stokes Flow = inertia negligible | Stokes Drag = F = 3πμDV on sphere | Lubrication Theory = thin film flows
+# Boundary Layer Theory
+- Boundary Layer Equations | Prandtl simplified Navier-Stokes. | Prandtl Boundary Layer Equations = thin layer approximations | Blasius Solution = laminar flat plate similarity solution | Thickness = δ ≈ 5x/√Rex
+- Integral Methods | Approximate boundary layer solutions. | Von Karman Momentum Integral = relates wall shear to momentum thickness | Momentum Thickness = loss of momentum flux | Shape Factor = displacement / momentum thickness
+- Separation | Adverse pressure gradient detaches flow. | Flow Separation = wall shear becomes zero | Adverse Pressure Gradient = pressure rising downstream | Separation Control = suction or vortex generators
+- Thermal Boundary Layer | Heat transfer near walls. | Thermal Boundary Layer = temperature varies near wall | Prandtl Number Effect = ratio of momentum to thermal diffusivity | Reynolds Analogy = links friction and heat transfer
+# Turbulence
+- Nature of Turbulence | Chaotic, three-dimensional flow. | Turbulence = irregular, diffusive, dissipative flow | Transition = laminar to turbulent change | Energy Cascade = energy passes from large to small eddies
+- Reynolds Averaging | Mean and fluctuating components. | Reynolds Decomposition = u = ū + u' | Reynolds Stress = −ρ u'v' | Closure Problem = more unknowns than equations
+- Turbulence Models | Models close RANS equations. | Mixing Length Model = Prandtl's algebraic model | k-ε Model = two-equation turbulence model | k-ω SST = blends near-wall and free-stream models
+- Wall Turbulence | Near-wall structure. | Law of the Wall = u⁺ = (1/κ) ln y⁺ + B | Viscous Sublayer = u⁺ = y⁺ | Kolmogorov Scale = smallest turbulent eddies
+# Compressible & Potential Flow
+- Potential Flow | Inviscid irrotational flow. | Velocity Potential = V = ∇φ | Laplace Equation = ∇²φ = 0 | Superposition = combining elementary flows
+- Elementary Potential Flows | Building blocks of potential flow. | Source and Sink = radial flows | Doublet = source-sink limit | Flow Past Cylinder = uniform flow plus doublet
+- Compressible Flow | Density changes at high Mach. | Mach Number = V/a | Isentropic Relations = T0/T = 1 + (γ − 1)M²/2 | Normal Shock = abrupt compression to subsonic
+- Oblique Shocks & Expansion | Supersonic turning flows. | Oblique Shock = inclined shock wave | Prandtl-Meyer Expansion = isentropic turning of supersonic flow | θ-β-M Relation = links deflection, shock angle and Mach
+
+@ mth103 | MTH-103 | Advanced Heat & Mass Transfer | Multidimensional and transient conduction, convection analysis, boiling and condensation, radiation exchange and mass transfer.
+# Advanced Conduction
+- Multidimensional Steady Conduction | Conduction in 2D and 3D. | Laplace Equation for Temperature = ∇²T = 0 | Separation of Variables = analytical 2D solution | Shape Factor = q = Sk ΔT
+- Transient Conduction | Time-dependent conduction. | Biot Number = hL/k | Fourier Number = αt/L² | Semi-infinite Solid = erf solution for surface temperature change
+- Numerical Conduction | Finite difference methods. | Finite Difference Method = discretise derivatives | Explicit Scheme = stability requires Fo ≤ 1/2 in 1D | Implicit Scheme = unconditionally stable
+- Extended Surfaces Advanced | Fin arrays and optimisation. | Fin Efficiency = actual / ideal heat transfer | Optimum Fin Profile = minimum mass for given heat | Overall Surface Efficiency = includes fin and base
+# Convection
+- Convection Equations | Boundary layer energy equation. | Energy Equation = u∂T/∂x + v∂T/∂y = α∂²T/∂y² | Nusselt Number = hL/k | Similarity Solution = Pohlhausen solution for flat plate
+- Internal Forced Convection | Flow in ducts. | Hydrodynamic Entry Length = about 0.05 Re D for laminar | Fully Developed Laminar Flow Nu = 3.66 constant wall temperature | Gnielinski Correlation = turbulent pipe flow Nusselt number
+- Natural Convection | Buoyancy-driven flow. | Rayleigh Number = Ra = Gr Pr | Boussinesq Approximation = density varies only in buoyancy term | Enclosure Convection = cavities heated from side or below
+- Convection Enhancement | Techniques increase h. | Twisted Tape Insert = swirl flow enhancement | Nanofluid = fluid with suspended nanoparticles | Microchannel = high surface-to-volume cooling
+# Boiling & Condensation
+- Pool Boiling | Boiling regimes. | Nukiyama Curve = boiling curve of heat flux versus superheat | Nucleate Boiling = bubbles form at sites | Critical Heat Flux = Zuber correlation maximum flux
+- Flow Boiling | Boiling in tubes. | Flow Patterns = bubbly, slug, annular flow | Dryout = liquid film disappears | Two-phase Multiplier = pressure drop enhancement
+- Film Condensation | Condensate film resists heat transfer. | Nusselt Film Condensation = laminar film analysis | Condensation on Tubes = horizontal tube correlation | Non-condensable Gases = reduce condensation
+- Heat Pipes | Passive two-phase devices. | Heat Pipe = evaporator, adiabatic and condenser sections | Wick = returns liquid by capillarity | Capillary Limit = maximum heat transport
+# Radiation
+- Radiation Properties | Surfaces emit and absorb. | Spectral Emissivity = emissivity at given wavelength | Grey Surface = emissivity independent of wavelength | Kirchhoff's Law = ελ = αλ at equilibrium
+- Radiation Exchange | Exchange between surfaces. | Radiosity = total radiation leaving surface | Network Method = surface and space resistances | Enclosure Analysis = N-surface exchange
+- Gas Radiation | Participating media. | Gas Emissivity = depends on partial pressure and path length | Beer's Law = I = I0 e^(−κx) | Hottel Charts = emissivity of CO2 and H2O
+- Solar Radiation | Solar energy heat transfer. | Solar Irradiance = flux reaching surface | Selective Surface = high absorptance, low emittance | Greenhouse Effect = glazing traps infrared
+# Mass Transfer & Heat Exchangers
+- Diffusion Mass Transfer | Concentration gradients drive diffusion. | Fick's Law = J = −D dC/dx | Equimolar Counter Diffusion = equal opposite fluxes | Stefan Flow = diffusion through stagnant gas
+- Convective Mass Transfer | Analogy with heat transfer. | Sherwood Number = hm L/D | Schmidt Number = ν/D | Chilton-Colburn Analogy = jH = jD
+- Heat Exchanger Design | Sizing and rating exchangers. | ε-NTU Method = effectiveness from NTU and capacity ratio | Fouling Factor = resistance from deposits | Kern Method = shell-side design method
+- Compact Heat Exchangers | High area density exchangers. | Compact Heat Exchanger = area density above 700 m²/m³ | Plate-fin Exchanger = fins between plates | Colburn j-factor = heat transfer correlation parameter
+
+@ mth104 | MTH-104 | Computational Fluid Dynamics | Governing equations, discretisation, finite difference and finite volume methods, pressure-velocity coupling, turbulence modelling and CFD practice.
+# Governing Equations
+- Conservation Equations | CFD solves conservation laws. | Conservative Form = derivatives of fluxes | Generic Transport Equation = unsteady + convection = diffusion + source | Conservation Property = discrete fluxes balance
+- Classification of PDEs | PDE type sets solution method. | Elliptic PDE = steady diffusion, e.g. Laplace | Parabolic PDE = transient diffusion | Hyperbolic PDE = wave propagation
+- Boundary Conditions | Conditions define the problem. | Dirichlet Condition = specified value | Neumann Condition = specified gradient | Robin Condition = mixed condition
+- Non-dimensionalisation | Scaling reveals key parameters. | Reynolds Number = inertia / viscous forces | Peclet Number = convection / diffusion | Courant Number = uΔt/Δx
+# Finite Difference Method
+- Discretisation | Derivatives approximated by differences. | Forward Difference = first-order accurate | Central Difference = second-order accurate | Truncation Error = terms dropped from Taylor series
+- Consistency, Stability, Convergence | Properties of numerical schemes. | Consistency = discrete equations approach PDE | Lax Equivalence Theorem = consistency + stability ⇒ convergence | Von Neumann Analysis = Fourier stability analysis
+- Explicit & Implicit Schemes | Time integration schemes. | Explicit Scheme = uses known values only | Crank-Nicolson Scheme = second-order implicit average | CFL Condition = Courant number ≤ 1 for explicit schemes
+- Solving Linear Systems | Algebraic equations from discretisation. | TDMA = tridiagonal matrix algorithm | Gauss-Seidel Iteration = iterative solver | Multigrid = accelerates convergence using coarse grids
+# Finite Volume Method
+- FVM Fundamentals | Integrate over control volumes. | Control Volume = cell around node | Face Flux = convective and diffusive transport across faces | Conservation = exact discrete conservation
+- Convection Schemes | Interpolating face values. | Upwind Scheme = bounded but first-order, numerically diffusive | QUICK Scheme = quadratic upstream interpolation | TVD Scheme = high-order without oscillations
+- Unstructured Meshes | Complex geometries. | Unstructured Mesh = arbitrary polyhedral cells | Non-orthogonal Correction = accounts for skewed faces | Mesh Quality = skewness and aspect ratio
+- Unsteady FVM | Time-dependent problems. | Implicit Euler = first-order stable time scheme | Second-order Backward Scheme = BDF2 | Time Step Selection = based on Courant number
+# Pressure-Velocity Coupling
+- Incompressible Flow Challenge | Pressure has no own equation. | Pressure-velocity Coupling = pressure enforces continuity | Checkerboard Pressure = oscillation on collocated grids | Staggered Grid = velocities at faces
+- SIMPLE Algorithm | Iterative pressure correction. | SIMPLE = semi-implicit method for pressure-linked equations | Pressure Correction Equation = derived from continuity | Under-relaxation = stabilises iterations
+- SIMPLER, SIMPLEC & PISO | Improved algorithms. | SIMPLEC = consistent variant with better convergence | PISO = pressure implicit with splitting, good for transient | Rhie-Chow Interpolation = avoids checkerboard on collocated grids
+- Compressible Solvers | Density-based methods. | Density-based Solver = solves coupled conservation equations | Roe Scheme = approximate Riemann solver | Shock Capturing = resolving shocks without oscillation
+# Turbulence & CFD Practice
+- RANS Models in CFD | Practical turbulence models. | k-ε Model = robust for free shear flows | k-ω SST = good near walls and separation | Wall Functions = log law near wall
+- LES & DNS | Resolving turbulence. | DNS = resolves all scales | LES = resolves large eddies, models small | Subgrid Scale Model = Smagorinsky model
+- Verification & Validation | Trusting CFD results. | Grid Independence Study = results unchanged with refinement | Validation = comparison with experiments | Richardson Extrapolation = estimates discretisation error
+- CFD Tools & Workflow | Practical CFD process. | Pre-processing = geometry and meshing | Solver = numerical solution | Post-processing = contours, vectors and streamlines
+
+@ mth201 | MTH-201 | Design of Thermal Systems | Modelling, simulation and optimisation of thermal systems, economics, and design of heat exchangers, piping and energy systems.
+# Design Fundamentals
+- Engineering Design Process | Systematic approach to thermal design. | Thermal System = interacting components transferring energy | Workable Design = satisfies requirements | Optimal Design = best design by chosen criterion
+- Problem Formulation | Defining design variables. | Design Variables = quantities the designer chooses | Constraints = limits on variables | Objective Function = quantity to minimise or maximise
+- Modelling of Thermal Systems | Models predict behaviour. | Mathematical Model = equations describing system | Lumped Model = spatial variation neglected | Curve Fitting = correlations from data
+- Component Models | Each component is modelled. | Heat Exchanger Model = effectiveness-NTU relation | Pump Model = head-flow characteristic | Compressor Model = performance map
+# System Simulation
+- Steady-state Simulation | Solving coupled component equations. | System Simulation = predicting behaviour of interconnected components | Successive Substitution = iterative solution method | Newton-Raphson Method = solves nonlinear system equations
+- Dynamic Simulation | Transient behaviour. | Dynamic Model = differential equations in time | Thermal Capacitance = energy storage term | Time Constant = response speed of system
+- Information Flow Diagrams | Organising simulation. | Information Flow Diagram = shows variables passed between components | Sequential Modular Approach = solve units in sequence | Equation-oriented Approach = solve all equations together
+- Simulation Tools | Software aids design. | EES = engineering equation solver | Aspen Plus = process simulator | TRNSYS = transient system simulation tool
+# Economics
+- Time Value of Money | Money now differs from later. | Present Worth = future amount discounted to today | Interest Rate = cost of capital | Annuity = series of equal payments
+- Economic Evaluation | Comparing alternatives. | Life Cycle Cost = total cost over lifetime | Payback Period = time to recover investment | Internal Rate of Return = discount rate giving zero NPV
+- Cost Estimation | Estimating capital and operating costs. | Capital Cost = equipment and installation | Operating Cost = energy, labour, maintenance | Six-tenths Rule = cost scales with capacity^0.6
+- Thermoeconomics | Combining exergy and economics. | Exergy Cost = cost per unit exergy | Specific Exergy Costing = SPECO method | Cost of Exergy Destruction = economic value of losses
+# Optimisation
+- Optimisation Basics | Finding the best design. | Calculus Method = set derivatives to zero | Lagrange Multipliers = constrained optimisation | Search Methods = numerical search for optimum
+- Search Methods | Numerical optimisation. | Golden Section Search = one-dimensional search | Steepest Descent = gradient-based multivariable search | Simplex Search = derivative-free method
+- Linear & Dynamic Programming | Structured optimisation. | Linear Programming = linear objective and constraints | Dynamic Programming = multistage decisions | Geometric Programming = posynomial objective functions
+- Evolutionary Optimisation | Global search methods. | Genetic Algorithm = population-based evolutionary search | Particle Swarm Optimisation = swarm-based search | Multi-objective Optimisation = Pareto optimal designs
+# Design Applications
+- Heat Exchanger Design | Selecting and sizing exchangers. | Rating Problem = performance of given exchanger | Sizing Problem = area for given duty | Pressure Drop Constraint = limits pumping power
+- Piping & Pumping Systems | Fluid distribution design. | System Curve = head versus flow of piping | Operating Point = intersection of pump and system curves | Economic Pipe Diameter = balances pipe and pumping cost
+- Energy Systems Design | Integrated energy systems. | Pinch Analysis = targets minimum utility use | Cogeneration Design = combined heat and power | Waste Heat Recovery = using exhaust heat
+- Renewable Thermal Systems | Solar and storage design. | Solar Collector Field = array of collectors | Thermal Energy Storage = sensible or latent storage | f-Chart Method = solar fraction estimation
+
+@ mth202 | MTH-202 | Advanced IC Engines & Emissions | Engine thermodynamics, combustion modelling, advanced combustion modes, emissions formation and aftertreatment, alternative fuels.
+# Engine Thermodynamics
+- Fuel-air Cycle Analysis | Realistic cycle analysis. | Fuel-air Cycle = accounts for variable specific heats | Actual Cycle Losses = heat, time, exhaust and pumping losses | Indicated Efficiency = indicated work / fuel energy
+- Thermodynamic Engine Models | Models predict performance. | Zero-dimensional Model = single zone in cylinder | Two-zone Model = burned and unburned zones | Wiebe Function = burn fraction profile
+- Gas Exchange | Breathing determines power. | Volumetric Efficiency = air inducted / swept volume | Valve Timing = influences gas exchange | Scavenging = clearing burnt gases in two-strokes
+- Heat Transfer in Engines | Heat loss affects efficiency. | Woschni Correlation = in-cylinder heat transfer coefficient | Thermal Barrier Coating = reduces heat loss | Knock Limited Heat Release = in SI engines
+# Combustion
+- SI Combustion | Flame propagation and knock. | Turbulent Flame Speed = enhanced by turbulence | Knock = autoignition of end gas | Octane Number = knock resistance
+- CI Combustion | Diffusion-controlled combustion. | Ignition Delay = physical and chemical delay | Premixed Combustion Phase = rapid heat release | Mixing-controlled Phase = diffusion combustion
+- Spray & Mixing | Fuel injection controls combustion. | Spray Penetration = distance travelled by fuel jet | Atomisation = break-up into droplets | Swirl Ratio = rotational air motion
+- Combustion Diagnostics | Measuring combustion. | In-cylinder Pressure Measurement = basis for analysis | Heat Release Rate = from pressure data | Optical Engine = visual access to combustion
+# Advanced Combustion Modes
+- HCCI | Homogeneous charge compression ignition. | HCCI = premixed charge autoignition | Low Temperature Combustion = low NOx and soot | Combustion Phasing Control = main HCCI challenge
+- PCCI & RCCI | Partially premixed and reactivity controlled. | PCCI = premixed charge compression ignition | RCCI = dual fuels of different reactivity | Reactivity Stratification = controls ignition
+- GDI & Lean Burn | Direct injection petrol engines. | GDI = gasoline direct injection | Stratified Charge = rich near plug, lean overall | Lean Burn = excess air improves efficiency
+- Downsizing & Boosting | Higher specific output. | Downsizing = smaller boosted engines | Turbocharging = exhaust-driven compressor | Miller Cycle = late intake valve closing
+# Emissions Formation & Control
+- Pollutant Formation | Mechanisms of emissions. | Thermal NOx = Zeldovich mechanism | Soot Formation = in fuel-rich zones | Unburned HC = crevice and wall quenching
+- In-cylinder Control | Reducing emissions at source. | EGR = lowers combustion temperature | Injection Rate Shaping = controls heat release | Water Injection = reduces NOx
+- Aftertreatment | Exhaust treatment devices. | Three-way Catalyst = for stoichiometric SI engines | DPF = diesel particulate filter | SCR = urea-based NOx reduction
+- Emission Regulations & Testing | Standards and test cycles. | BS-VI = Indian emission standard | RDE = real driving emissions testing | WLTP = worldwide harmonised light vehicle test procedure
+# Alternative Fuels & Electrification
+- Biofuels | Renewable liquid fuels. | Ethanol Blends = E10, E20 petrol blends | Biodiesel = FAME from vegetable oils | Renewable Diesel = hydrotreated vegetable oil
+- Gaseous Fuels | Cleaner gaseous fuels. | CNG = compressed natural gas | Hydrogen Engine = zero carbon combustion | Ammonia Fuel = carbon-free hydrogen carrier
+- Hybrid Powertrains | Engines with electric motors. | Parallel Hybrid = engine and motor both drive | Engine Load Shifting = operates engine efficiently | Atkinson Cycle Engine = efficiency-focused hybrid engine
+- Engine Calibration | Tuning for performance and emissions. | ECU Calibration = maps for fuel and timing | Model-based Calibration = using models to reduce testing | OBD = on-board diagnostics
+
+@ mth203 | MTH-203 | Advanced Refrigeration & Cryogenics | Advanced vapour compression and absorption systems, refrigerants, cryogenic liquefaction, separation and storage.
+# Advanced Vapour Compression
+- Multistage Systems | Staging improves low-temperature performance. | Two-stage Compression = with flash intercooling | Optimum Intermediate Pressure = √(p1 p2) approximately | Flash Gas Removal = improves efficiency
+- Cascade Refrigeration | Two cycles reach very low temperatures. | Cascade System = high-temperature and low-temperature cycles | Cascade Condenser = links two cycles | Refrigerant Selection = suitable for each temperature range
+- Component Matching | Components must balance. | Compressor Capacity = must match evaporator load | Balance Point = equilibrium of components | Capillary Tube = fixed expansion device
+- Transcritical CO2 Cycles | Natural refrigerant systems. | Transcritical Cycle = heat rejection above critical point | Gas Cooler = replaces condenser | Ejector = recovers expansion work
+# Absorption & Alternative Refrigeration
+- Vapour Absorption Advanced | Heat-driven refrigeration. | Double-effect Absorption = uses heat twice | LiBr-Water System = for air conditioning | Crystallisation = risk in LiBr systems
+- Adsorption Refrigeration | Solid adsorbents. | Adsorption Chiller = silica gel-water pair | Low-grade Heat = drives adsorption cycles | Intermittent Operation = adsorption and desorption cycles
+- Ejector & Thermoelectric | Other methods. | Steam Ejector Refrigeration = jet pump compression | Thermoelectric Cooling = Peltier effect | Figure of Merit ZT = thermoelectric material performance
+- Magnetic & Vortex Cooling | Emerging technologies. | Magnetocaloric Effect = temperature change with magnetisation | Vortex Tube = separates hot and cold air | Pulse Tube Cooler = cryocooler without moving parts at cold end
+# Refrigerants & Environment
+- Refrigerant Properties | Selecting refrigerants. | ODP = ozone depletion potential | GWP = global warming potential | Glide = temperature change during phase change in blends
+- Refrigerant Phase-out | Regulations drive change. | Montreal Protocol = phased out CFCs | Kigali Amendment = phase-down of HFCs | HFO Refrigerants = low-GWP alternatives such as R1234yf
+- Natural Refrigerants | Environment-friendly options. | Ammonia R717 = efficient industrial refrigerant | CO2 R744 = natural refrigerant with GWP 1 | Hydrocarbons = R290 propane, R600a isobutane
+- Refrigerant Safety | Flammability and toxicity. | Safety Classification = A1 to B3 classes | Leak Detection = sensors and soap tests | Charge Limits = restrict flammable refrigerant quantity
+# Cryogenics
+- Cryogenic Fundamentals | Very low temperatures below 123 K. | Cryogenics = science of temperatures below about 123 K | Liquid Nitrogen = boils at 77 K | Liquid Helium = boils at 4.2 K
+- Gas Liquefaction | Producing cryogenic liquids. | Linde-Hampson Cycle = Joule-Thomson expansion liquefaction | Claude Cycle = expansion engine plus JT valve | Inversion Temperature = above which JT expansion heats gas
+- Gas Separation | Separating air components. | Air Separation Unit = distillation of liquid air | Rectification Column = separates nitrogen and oxygen | Pressure Swing Adsorption = non-cryogenic separation
+- Cryocoolers | Small cryogenic refrigerators. | Stirling Cryocooler = regenerative cycle cooler | Gifford-McMahon Cooler = for MRI and research | Regenerator = periodic heat storage matrix
+# Cryogenic Systems & Applications
+- Cryogenic Insulation | Minimising heat leak. | Multilayer Insulation = reflective layers in vacuum | Vacuum Jacket = eliminates convection | Dewar Vessel = vacuum-insulated container
+- Storage & Transfer | Handling cryogenic liquids. | Boil-off = evaporation due to heat leak | Transfer Line = vacuum-insulated piping | Cool-down = bringing equipment to cryogenic temperature
+- Material Properties at Low Temperature | Materials change behaviour. | Ductile-brittle Transition = carbon steels become brittle | Austenitic Stainless Steel = suitable for cryogenic use | Thermal Contraction = large shrinkage on cooling
+- Applications | Cryogenics in industry and science. | MRI Magnets = superconducting magnets cooled by helium | Rocket Propellants = liquid hydrogen and oxygen | Cryopreservation = biological storage at low temperature
+
+@ mst101 | MST-101 | Advanced Structural Analysis | Matrix methods, direct stiffness method for trusses, beams, frames and grids, non-linear and stability analysis.
+# Matrix Methods Fundamentals
+- Flexibility & Stiffness Concepts | Two complementary matrix approaches. | Flexibility Coefficient = displacement due to unit force | Stiffness Coefficient = force due to unit displacement | Relation = stiffness matrix is inverse of flexibility matrix
+- Degrees of Freedom | Unknown displacements define the problem. | Kinematic Indeterminacy = number of unknown joint displacements | Static Indeterminacy = number of redundant forces | Restrained DOF = displacement known at supports
+- Coordinate Systems | Local and global coordinates. | Local Coordinates = along member axes | Global Coordinates = structure reference axes | Transformation Matrix = [T] relating local and global
+- Energy Principles | Matrix methods rest on energy theorems. | Principle of Virtual Work = basis of stiffness formulation | Castigliano's Theorem = derivative of strain energy | Minimum Potential Energy = equilibrium condition
+# Direct Stiffness Method
+- Truss Element | Axial member stiffness. | Truss Element Stiffness = (AE/L)[1 −1; −1 1] in local axes | Global Truss Matrix = transformed with direction cosines | Member Force = from nodal displacements
+- Beam Element | Bending member stiffness. | Beam Stiffness Matrix = 4×4 with EI/L³ terms | Fixed End Actions = equivalent nodal loads | Member End Moments = from displacements and fixed-end actions
+- Assembly & Boundary Conditions | Global system assembly. | Assembly = adding element matrices to global matrix | Boundary Condition Imposition = removing restrained DOF | Banded Matrix = efficient storage
+- Solution & Post-processing | Solving for displacements and forces. | Gaussian Elimination = solves [K]{D} = {P} | Support Reactions = from restrained equations | Member Forces = recovered element by element
+# Frames & Grids
+- Plane Frames | Combined axial and bending. | Plane Frame Element = 6×6 stiffness matrix | Axial-flexural Coupling = through transformation | Sway Frames = lateral DOF included
+- Space Frames | Three-dimensional frames. | Space Frame Element = 12×12 stiffness matrix | Torsional Stiffness = GJ/L | Member Orientation = defined by reference vector
+- Grids | Floor systems under transverse loads. | Grid Element = bending and torsion DOF | Grillage Analysis = bridge deck modelling | Torsion in Grids = significant in grid behaviour
+- Special Effects | Additional loading effects. | Temperature Loads = equivalent nodal forces | Support Settlement = prescribed displacement | Elastic Supports = spring stiffness added to diagonal
+# Non-linear Analysis
+- Sources of Non-linearity | Structures may behave non-linearly. | Geometric Non-linearity = large displacements | Material Non-linearity = plasticity | P-Delta Effect = secondary moments from axial load and sway
+- Geometric Stiffness | Axial force changes stiffness. | Geometric Stiffness Matrix = depends on axial force | Second-order Analysis = includes deformed geometry | Newton-Raphson Iteration = solves non-linear equations
+- Material Non-linearity | Plastic behaviour. | Plastic Hinge Analysis = hinges form at Mp | Pushover Analysis = incremental lateral load to collapse | Incremental-iterative Solution = load steps with iterations
+- Collapse Analysis | Ultimate capacity. | Collapse Load = load causing mechanism | Load Factor = collapse load / working load | Shakedown = repeated loading stability
+# Stability & Dynamic Analysis
+- Elastic Stability | Buckling of structures. | Eigenvalue Buckling = det([K] + λ[Kg]) = 0 | Critical Load Factor = lowest eigenvalue | Buckling Mode = eigenvector shape
+- Frame Stability | Buckling of frames. | Effective Length Factor = from stability analysis | Sway Buckling = frames without bracing | Non-sway Buckling = braced frames
+- Structural Dynamics Matrices | Mass and stiffness for vibrations. | Consistent Mass Matrix = derived from shape functions | Lumped Mass Matrix = masses at nodes | Eigenvalue Problem = [K − ω²M]{φ} = 0
+- Computer Implementation | Software practice. | Program Flow = input, assembly, solution, output | Bandwidth Minimisation = node renumbering | Commercial Software = STAAD.Pro, SAP2000, ETABS
+
+@ mst102 | MST-102 | Theory of Elasticity & Plasticity | Stress and strain analysis, compatibility, 2D elasticity, torsion, plasticity theories and yield criteria.
+# Analysis of Stress
+- Stress at a Point | Stress is a tensor. | Stress Tensor = nine components at a point | Cauchy's Formula = traction = stress tensor × normal | Symmetry of Stress = τxy = τyx
+- Principal Stresses | Extreme normal stresses. | Principal Stress = normal stress on plane with zero shear | Stress Invariants = I1, I2, I3 independent of axes | Characteristic Equation = σ³ − I1σ² + I2σ − I3 = 0
+- Equilibrium Equations | Differential equilibrium. | Equilibrium Equation = ∂σx/∂x + ∂τxy/∂y + ∂τxz/∂z + Bx = 0 | Body Force = force per unit volume | Mohr's Circle in 3D = three circles for principal stresses
+- Octahedral & Deviatoric Stress | Stress decomposition. | Hydrostatic Stress = mean normal stress | Deviatoric Stress = total minus hydrostatic | Octahedral Shear Stress = related to distortion energy
+# Analysis of Strain & Constitutive Relations
+- Strain at a Point | Strain is also a tensor. | Strain-displacement Relations = εx = ∂u/∂x, γxy = ∂u/∂y + ∂v/∂x | Principal Strains = extreme normal strains | Volumetric Strain = sum of normal strains
+- Compatibility Equations | Strains must fit together. | Compatibility Equation = ∂²εx/∂y² + ∂²εy/∂x² = ∂²γxy/∂x∂y | Saint-Venant Compatibility = six compatibility equations | Single-valued Displacements = ensured by compatibility
+- Generalised Hooke's Law | Linear elastic constitutive law. | Generalised Hooke's Law = stress linearly related to strain | Isotropic Material = two independent constants | Lame's Constants = λ and μ
+- Strain Energy | Energy stored in elastic bodies. | Strain Energy Density = ½ σij εij | Clapeyron's Theorem = strain energy equals half work of loads | Uniqueness Theorem = elasticity solution is unique
+# Two-dimensional Elasticity
+- Plane Stress & Plane Strain | 2D idealisations. | Plane Stress = σz = 0 for thin plates | Plane Strain = εz = 0 for long bodies | Conversion = by modifying elastic constants
+- Airy Stress Function | Solving 2D problems. | Airy Stress Function = σx = ∂²φ/∂y² | Biharmonic Equation = ∇⁴φ = 0 | Polynomial Solutions = for beams
+- Polar Coordinates | Problems with circular geometry. | Thick Cylinder = Lame's solution | Stress Concentration at Hole = Kirsch solution, factor 3 | Rotating Disc = centrifugal stresses
+- Saint-Venant's Principle | Local effects decay. | Saint-Venant's Principle = statically equivalent loads give same distant stresses | Semi-inverse Method = assume part of solution | Boussinesq Problem = point load on half-space
+# Torsion of Non-circular Sections
+- Torsion Fundamentals | Warping of non-circular shafts. | Warping = out-of-plane displacement of cross-section | Prandtl Stress Function = φ for torsion | Torsion Equation = ∇²φ = −2Gθ
+- Membrane Analogy | Visualising torsional stress. | Membrane Analogy = stress function like soap film deflection | Shear Stress = slope of membrane | Torque = twice volume under membrane
+- Torsion of Thin Sections | Open and closed thin-walled sections. | Thin Rectangular Section = J = bt³/3 | Closed Thin-walled Section = Bredt-Batho formula | Shear Flow = q = T/(2A)
+- Torsion of Standard Shapes | Known solutions. | Elliptical Section = exact Prandtl solution | Equilateral Triangle = exact solution | Rectangular Section = series solution
+# Plasticity
+- Plastic Behaviour | Permanent deformation after yield. | Yield Point = start of plastic deformation | Strain Hardening = increase of yield stress with plastic strain | Bauschinger Effect = reduced yield on load reversal
+- Yield Criteria | When yielding starts. | Tresca Criterion = maximum shear stress | von Mises Criterion = distortion energy | Yield Surface = boundary of elastic region in stress space
+- Flow Rules | Plastic strain direction. | Normality Rule = plastic strain normal to yield surface | Levy-Mises Equations = rigid-plastic flow rule | Prandtl-Reuss Equations = elastic-plastic flow rule
+- Limit Analysis | Collapse by plastic theorems. | Lower Bound Theorem = statically admissible field gives lower bound | Upper Bound Theorem = kinematically admissible mechanism gives upper bound | Slip Line Field = plane strain plasticity
+
+@ mst103 | MST-103 | Advanced Concrete Technology | Cement chemistry, admixtures, mix design, special concretes, durability, testing and sustainable concrete.
+# Cement Chemistry & Hydration
+- Cement Composition | Clinker compounds govern behaviour. | C3S = alite, early strength | C2S = belite, later strength | C3A = aluminate, rapid hydration and sulphate vulnerability
+- Hydration Process | Cement reacts with water. | C-S-H Gel = main strength-giving product | Calcium Hydroxide = by-product of hydration | Heat of Hydration = exothermic release
+- Supplementary Cementitious Materials | SCMs improve performance. | Fly Ash = pozzolan from coal combustion | GGBS = ground granulated blast furnace slag | Silica Fume = very fine pozzolan improving strength
+- Microstructure | Pores and transition zone. | Capillary Pores = control permeability | Interfacial Transition Zone = weak zone around aggregates | Gel Pores = very fine pores within C-S-H
+# Admixtures & Aggregates
+- Chemical Admixtures | Admixtures modify properties. | Superplasticiser = high-range water reducer, e.g. PCE | Retarder = delays setting | Air-entraining Agent = improves freeze-thaw resistance
+- Mineral Admixtures | Pozzolanic reaction benefits. | Pozzolanic Reaction = CH + silica forms C-S-H | Metakaolin = calcined clay pozzolan | Rice Husk Ash = agricultural pozzolan
+- Aggregate Properties | Aggregates affect strength and durability. | Alkali-Aggregate Reaction = expansive reaction with reactive silica | Aggregate Grading = particle size distribution | Recycled Aggregate = from demolition waste
+- Rheology of Fresh Concrete | Flow behaviour. | Bingham Model = yield stress and plastic viscosity | Slump Flow = test for self-compacting concrete | Thixotropy = viscosity reduces with shearing
+# Mix Design
+- IS Method of Mix Design | IS 10262 procedure. | Target Mean Strength = fck + 1.65s | Water-Cement Ratio Selection = from strength and durability | Water Content = from workability and aggregate size
+- ACI Method | American mix design. | ACI 211 = absolute volume method | Bulk Volume of Coarse Aggregate = from fineness modulus | Trial Mix = laboratory verification
+- High-strength Concrete Design | Strength above 60 MPa. | Low w/b Ratio = about 0.25-0.35 | Silica Fume Use = densifies matrix | Packing Density = optimised particle packing
+- Statistical Quality Control | Variability in concrete. | Standard Deviation = spread of strength results | Acceptance Criteria = IS 456 compliance rules | Characteristic Strength = 5% fractile
+# Special Concretes
+- Self-compacting Concrete | Flows without vibration. | SCC = fills formwork under own weight | L-box Test = passing ability | V-funnel Test = viscosity measure
+- Fibre Reinforced Concrete | Fibres improve toughness. | Steel Fibre = improves flexural toughness | Polypropylene Fibre = controls plastic shrinkage cracks | Toughness Index = energy absorption measure
+- Ultra-high Performance Concrete | Exceptional strength and durability. | UHPC = compressive strength above 150 MPa | Reactive Powder Concrete = fine powders, no coarse aggregate | Heat Curing = accelerates strength
+- Other Special Concretes | Concretes for special needs. | Lightweight Concrete = density below 1800 kg/m³ | Geopolymer Concrete = alkali-activated binder | Pervious Concrete = allows water to pass
+# Durability & Testing
+- Durability Mechanisms | Concrete deterioration processes. | Carbonation = CO2 lowers pH causing corrosion | Chloride Attack = depassivates reinforcement | Sulphate Attack = expansive products
+- Durability Design | Designing for service life. | Exposure Class = environmental severity | Cover Depth = protects reinforcement | Service Life Modelling = Fick's law for chloride ingress
+- Non-destructive Testing | Testing in-situ concrete. | Rebound Hammer = surface hardness | UPV = ultrasonic pulse velocity | Half-cell Potential = corrosion probability
+- Sustainable Concrete | Reducing carbon footprint. | Embodied Carbon = CO2 from materials production | LC3 = limestone calcined clay cement | Carbon Capture in Concrete = CO2 curing and mineralisation
+
+@ mst104 | MST-104 | Structural Dynamics | SDOF and MDOF vibration, modal analysis, response spectrum, continuous systems and numerical methods for dynamic response.
+# SDOF Free Vibration
+- Equation of Motion | Dynamic equilibrium. | D'Alembert's Principle = inertia force in equilibrium | SDOF Equation = mü + cu̇ + ku = p(t) | Natural Frequency = ωn = √(k/m)
+- Undamped Free Vibration | Harmonic motion. | Free Vibration Response = u(t) = u0 cos ωnt + (v0/ωn) sin ωnt | Natural Period = Tn = 2π/ωn | Amplitude = √(u0² + (v0/ωn)²)
+- Damped Free Vibration | Damping decays motion. | Damping Ratio = ζ = c/(2mωn) | Damped Frequency = ωD = ωn√(1 − ζ²) | Logarithmic Decrement = δ = ln(ui/ui+1) ≈ 2πζ
+- Damping Mechanisms | Energy dissipation sources. | Viscous Damping = force proportional to velocity | Coulomb Damping = friction damping | Hysteretic Damping = energy loss in material
+# SDOF Forced Vibration
+- Harmonic Excitation | Steady-state response. | Dynamic Amplification Factor = Rd = 1/√((1 − r²)² + (2ζr)²) | Resonance = r = 1 gives Rd = 1/(2ζ) | Phase Angle = lag of response
+- Transmissibility & Isolation | Reducing transmitted force. | Transmissibility = transmitted force / applied force | Isolation Region = r > √2 | Base Excitation = support motion response
+- Arbitrary Excitation | General loading. | Duhamel's Integral = convolution with impulse response | Impulse Response = h(t) = (1/mωD) e^(−ζωnt) sin ωDt | Step Load = dynamic factor of 2 for undamped system
+- Earthquake Response | Response to ground motion. | Relative Displacement Equation = mü + cu̇ + ku = −mü_g | Pseudo-acceleration = A = ωn² D | Response Spectrum = peak response versus period
+# MDOF Systems
+- Equations of Motion | Matrix form. | MDOF Equation = [M]{ü} + [C]{u̇} + [K]{u} = {p} | Shear Building = lumped mass at floors | Coupling = through stiffness or mass
+- Natural Frequencies & Modes | Eigenvalue analysis. | Frequency Equation = det([K] − ω²[M]) = 0 | Mode Shape = eigenvector | Orthogonality = modes orthogonal with respect to M and K
+- Modal Analysis | Decoupling equations. | Modal Superposition = response as sum of modes | Modal Participation Factor = contribution of mode to excitation | Effective Modal Mass = mass participating in mode
+- Damping in MDOF | Classical damping. | Rayleigh Damping = C = αM + βK | Modal Damping = damping ratio per mode | Non-classical Damping = cannot be diagonalised
+# Earthquake Analysis of MDOF
+- Response Spectrum Analysis | Peak response estimation. | RSA = modal peak responses from spectrum | SRSS = square root of sum of squares | CQC = complete quadratic combination for close modes
+- Time History Analysis | Response to recorded ground motion. | Time History Analysis = step-by-step integration | Ground Motion Scaling = matching target spectrum | Non-linear Time History = includes inelastic behaviour
+- Torsional Response | Asymmetric buildings twist. | Centre of Mass = point of inertia force | Centre of Rigidity = point of stiffness resultant | Eccentricity = distance between CM and CR
+- Soil-Structure Interaction | Flexible foundations alter response. | SSI = interaction between structure and soil | Foundation Impedance = stiffness and damping of soil | Period Lengthening = effect of flexible base
+# Continuous Systems & Numerical Methods
+- Vibration of Beams | Distributed mass systems. | Euler-Bernoulli Beam Vibration = EI ∂⁴u/∂x⁴ + m ∂²u/∂t² = 0 | Natural Frequencies of Simply Supported Beam = ωn = (nπ)² √(EI/(mL⁴)) | Infinite DOF = continuous systems have infinite modes
+- Approximate Methods | Estimating fundamental frequency. | Rayleigh's Method = energy-based frequency estimate | Rayleigh-Ritz Method = assumed mode shapes | Stodola Method = iterative fundamental mode
+- Numerical Integration | Time stepping methods. | Central Difference Method = explicit conditionally stable | Newmark-β Method = average acceleration unconditionally stable | Wilson-θ Method = extended interval method
+- Machine Foundations & Wind | Other dynamic loads. | Machine Foundation = designed to avoid resonance | Vortex Shedding = periodic wind-induced forces | Tuned Mass Damper = reduces tall building vibration
+
+@ mst201 | MST-201 | Advanced Design of Steel Structures | Plastic design, connections, light-gauge, industrial buildings, multistorey frames, towers and bridges in steel.
+# Plastic & Limit State Design
+- Plastic Analysis Review | Collapse-based design. | Plastic Moment = Mp = Zp fy | Shape Factor = Zp/Ze | Mechanism Method = finds collapse load
+- Limit State Design per IS 800 | Indian code approach. | Section Classification = plastic, compact, semi-compact, slender | Partial Safety Factors = γm0 = 1.10, γm1 = 1.25 | Design Strength = characteristic strength / γm
+- Local Buckling | Thin elements buckle locally. | Width-thickness Ratio = controls local buckling | Effective Width = reduced width for slender plates | Slender Section = local buckling before yield
+- Combined Forces | Members under axial and bending. | Interaction Equation = P/Pd + M/Md ≤ 1 | Beam-column = member with axial force and moment | Moment Amplification = second-order effect
+# Connections
+- Bolted Connections Advanced | High-strength bolts. | HSFG Bolt = slip-critical friction connection | Prying Action = extra bolt tension from flange bending | Bolt Group Eccentric Load = combined shear and torsion
+- Welded Connections Advanced | Weld design. | Eccentric Weld Group = polar moment of weld | Fatigue of Welds = stress range governs life | Weld Defects = porosity, lack of fusion
+- Moment Connections | Rigid beam-column joints. | End Plate Connection = bolted moment connection | Panel Zone = column web in joint | Stiffener = prevents local failure
+- Base Plates & Splices | Column bases and joints. | Moment-resisting Base = anchor bolts in tension | Column Splice = joins column segments | Shear Key = transfers horizontal shear
+# Light-gauge & Industrial Structures
+- Cold-formed Steel | Thin-walled sections. | Cold-formed Section = shaped at room temperature | Distortional Buckling = cross-section distorts | IS 801 = code for light-gauge steel
+- Industrial Buildings | Portal frames and gantries. | Portal Frame = rigid frame for sheds | Crane Gantry Girder = carries crane loads | Bracing System = resists wind and crane surge
+- Pre-engineered Buildings | Economical steel systems. | PEB = factory-designed tapered sections | Purlins and Girts = secondary members | Standing Seam Roof = continuous roofing
+- Space Structures | Large-span structures. | Space Truss = three-dimensional truss | Double Layer Grid = two layers connected by diagonals | Geodesic Dome = triangulated spherical structure
+# Multistorey & Tall Steel Buildings
+- Lateral Load Systems | Resisting wind and earthquake. | Moment Resisting Frame = rigid joints | Braced Frame = concentric or eccentric bracing | Shear Wall-frame = combined system
+- Composite Construction | Steel and concrete together. | Composite Beam = steel beam with concrete slab | Shear Connector = stud transferring shear | Composite Column = steel section encased or filled
+- Seismic Design of Steel | Ductile steel systems. | Special Moment Frame = high ductility | Eccentrically Braced Frame = link yields | Capacity Design = protects non-ductile elements
+- Fire Resistance | Steel weakens at high temperature. | Critical Temperature = about 550 °C | Fire Protection = intumescent coatings and boards | Fire Resistance Rating = minutes of resistance
+# Towers & Bridges
+- Transmission Towers | Lattice towers support lines. | Lattice Tower = angle-section truss tower | Wind Load on Tower = per IS 802 | Broken Wire Condition = design load case
+- Chimneys & Tanks | Special steel structures. | Steel Chimney = self-supporting stack | Elevated Water Tank = steel tank on staging | Wind-induced Oscillation = vortex shedding
+- Steel Bridges | Bridges using plate girders and trusses. | Plate Girder Bridge = for medium spans | Truss Bridge = Pratt or Warren configuration | IRC Loading = Class AA and 70R vehicle loads
+- Fatigue & Inspection | Bridges face repeated loads. | Fatigue Life = cycles before crack | S-N Curve = stress range versus cycles | Inspection = periodic checks for cracks and corrosion
+
+@ mps101 | MPS-101 | Advanced Power System Analysis | Network modelling, sparse techniques, load flow, contingency analysis, fault analysis and state estimation.
+# Network Modelling
+- Primitive Network | Elements before interconnection. | Primitive Impedance Matrix = element impedances | Incidence Matrix = connects elements to buses | Ybus Formation = AᵀyA
+- Ybus & Zbus | Network matrices. | Ybus = sparse admittance matrix | Zbus Building Algorithm = adds elements step by step | Mutual Coupling = off-diagonal primitive terms
+- Sparse Matrix Techniques | Efficient computation. | Sparsity = most Ybus elements are zero | Optimal Ordering = minimises fill-ins | LU Factorisation = solves network equations
+- Component Modelling | Models of power system elements. | Generator Model = voltage behind reactance | Transformer Model = π model with off-nominal tap | Load Model = constant power, current or impedance
+# Load Flow Analysis
+- Newton-Raphson Load Flow | Robust load flow method. | Power Mismatch = specified minus calculated power | Jacobian Matrix = J1-J4 submatrices | Quadratic Convergence = few iterations
+- Fast Decoupled Load Flow | Exploiting P-δ and Q-V decoupling. | B' and B'' Matrices = constant matrices | Decoupling = P depends on δ, Q on V | Speed = suitable for repeated studies
+- DC Load Flow | Linear approximation. | DC Load Flow = P = Bθ | Assumptions = flat voltages, lossless lines | Applications = market and contingency screening
+- Control in Load Flow | Adjusting devices. | Tap Changing Transformer = voltage control in load flow | PV Bus Q Limits = switching to PQ when exceeded | Phase Shifter = controls active power flow
+# Contingency Analysis & Security
+- Security Concepts | Secure operation under contingencies. | N-1 Criterion = system survives single outage | Contingency Analysis = simulates outages | Security States = normal, alert, emergency, restorative
+- Sensitivity Factors | Fast contingency evaluation. | Generation Shift Factor = change in line flow per generation change | Line Outage Distribution Factor = flow redistribution after outage | PTDF = power transfer distribution factor
+- Contingency Ranking | Screening severe cases. | Performance Index = ranks contingencies | Contingency Selection = identifies critical outages | Corrective Action = rescheduling to relieve overloads
+- Security-constrained Dispatch | Economic and secure operation. | SCOPF = security-constrained optimal power flow | Preventive Control = secure before contingency | Corrective Control = acts after contingency
+# Fault Analysis
+- Symmetrical Components | Analysing unbalanced faults. | Sequence Networks = positive, negative, zero | Transformation Matrix = A with operator a | Sequence Impedance = per component
+- Unsymmetrical Faults | LG, LL and LLG faults. | LG Fault = sequence networks in series | LL Fault = positive and negative in parallel | LLG Fault = all three networks connected
+- Zbus Fault Analysis | Systematic fault computation. | Fault Current = Vf/(Zkk + Zf) | Post-fault Voltage = Vi = Vf − Zik If | Open Conductor Fault = series fault analysis
+- Short-circuit Studies | Equipment rating. | Fault Level = MVA at bus | IEC 60909 = short circuit calculation standard | Breaker Selection = based on fault current
+# State Estimation
+- State Estimation Concept | Estimating system state from measurements. | State Estimation = best estimate of voltages and angles | Measurement Redundancy = more measurements than states | SCADA Data = input to state estimator
+- Weighted Least Squares | Standard estimation method. | WLS Estimator = minimises weighted squared residuals | Gain Matrix = HᵀWH | Measurement Jacobian = H matrix
+- Bad Data Detection | Identifying erroneous measurements. | Chi-square Test = detects bad data | Largest Normalised Residual = identifies bad measurement | Observability = states determinable from measurements
+- PMU-based Estimation | Synchrophasors improve estimation. | PMU = phasor measurement unit | Synchrophasor = GPS time-stamped phasor | Linear State Estimation = possible with PMUs
+
+@ mps102 | MPS-102 | Power System Dynamics & Stability | Synchronous machine modelling, excitation and governor systems, small-signal, transient and voltage stability.
+# Synchronous Machine Modelling
+- Park's Transformation | dq0 frame simplifies machine equations. | Park's Transformation = converts abc to dq0 | d-axis = aligned with field | q-axis = 90° ahead of d-axis
+- Machine Reactances | Different reactances for time scales. | Synchronous Reactance = steady state Xd | Transient Reactance = X'd after subtransient decay | Subtransient Reactance = X''d immediately after fault
+- Time Constants | Decay of currents. | T'do = open-circuit transient time constant | T''d = subtransient time constant | Field Winding Dynamics = flux decay
+- Simplified Models | Models for stability studies. | Classical Model = constant voltage behind X'd | One-axis Model = includes field dynamics | Swing Equation = 2H/ωs d²δ/dt² = Pm − Pe
+# Excitation & Governor Systems
+- Excitation Systems | Control generator voltage. | DC Exciter = older rotating exciter | Static Exciter = thyristor-based excitation | AVR = automatic voltage regulator
+- Excitation System Models | IEEE standard models. | IEEE Type ST1A = static exciter model | Exciter Gain = high gain improves voltage regulation | Limiters = protect against over-excitation
+- Power System Stabiliser | Damps oscillations. | PSS = adds damping via excitation | Phase Compensation = lead-lag blocks | Washout Filter = removes steady-state signals
+- Prime Mover & Governor | Control mechanical power. | Speed Governor = adjusts valve/gate | Droop = speed regulation characteristic | Turbine Model = steam or hydro dynamics
+# Small-signal Stability
+- Linearisation | Analysing small perturbations. | State-space Model = ẋ = Ax + Bu | Eigenvalues = determine stability | Damping Ratio of Mode = −σ/√(σ² + ω²)
+- Heffron-Phillips Model | Single machine infinite bus. | Heffron-Phillips Constants = K1-K6 | Synchronising Torque = in phase with δ | Damping Torque = in phase with speed
+- Modes of Oscillation | Types of electromechanical modes. | Local Mode = 1-2 Hz, one plant against system | Inter-area Mode = 0.1-0.8 Hz between regions | Participation Factor = state contribution to mode
+- Damping Control | Improving small-signal stability. | PSS Tuning = places damping on modes | FACTS Damping Controller = auxiliary damping | Wide-area Damping = uses remote PMU signals
+# Transient Stability
+- Transient Stability Concepts | Large disturbance stability. | Transient Stability = maintaining synchronism after large disturbance | First Swing Stability = stable in first oscillation | Multi-machine Stability = all generators in synchronism
+- Equal Area Criterion | SMIB transient stability. | Equal Area Criterion = accelerating area equals decelerating area | Critical Clearing Angle = maximum angle to clear fault | Critical Clearing Time = corresponding time
+- Numerical Methods | Solving swing equations. | Euler Method = simple numerical integration | Runge-Kutta Method = more accurate integration | Trapezoidal Rule = implicit integration in simulators
+- Enhancement Methods | Improving transient stability. | Fast Fault Clearing = reduces accelerating area | Fast Valving = reduces mechanical power | Braking Resistor = absorbs excess power
+# Voltage Stability
+- Voltage Stability Concepts | Maintaining acceptable voltages. | Voltage Stability = ability to maintain voltages after disturbance | Voltage Collapse = progressive voltage decline | Reactive Power Deficiency = main cause
+- PV & QV Curves | Tools for voltage stability. | PV Curve = nose curve showing loadability | Nose Point = maximum loadability | QV Curve = reactive power margin
+- Analysis Methods | Assessing voltage stability. | Continuation Power Flow = traces PV curve | Modal Analysis = eigenvalues of reduced Jacobian | L-index = voltage stability indicator
+- Prevention of Collapse | Countermeasures. | Under-voltage Load Shedding = removes load to restore voltage | OLTC Blocking = stops tap changer action | Reactive Reserve = keep generators' reactive margin
+
+@ mps103 | MPS-103 | Advanced Power Electronic Converters | Switching devices, DC-DC converter design, multilevel inverters, PWM, grid-connected converters and control.
+# Power Semiconductor Devices
+- Silicon Devices | Workhorse switches. | IGBT = high-voltage high-current switch | Power MOSFET = fast switching at low voltage | Safe Operating Area = voltage-current limits
+- Wide Bandgap Devices | SiC and GaN improve efficiency. | SiC MOSFET = high voltage, high temperature | GaN HEMT = very fast switching | Switching Loss = energy lost during transitions
+- Gate Drivers | Driving switches correctly. | Gate Driver = provides gate voltage and current | Dead Time = prevents shoot-through | Isolation = galvanic isolation of gate signals
+- Thermal Management | Removing device heat. | Junction Temperature = device internal temperature | Thermal Resistance = °C/W from junction to ambient | Heat Sink Design = based on losses
+# DC-DC Converters
+- Non-isolated Converters | Basic topologies. | Buck Converter = Vo = D Vin | Boost Converter = Vo = Vin/(1 − D) | CCM vs DCM = continuous or discontinuous inductor current
+- Isolated Converters | Transformer-isolated topologies. | Flyback Converter = stores energy in coupled inductor | Forward Converter = transfers energy directly | Full-bridge Converter = high power isolated
+- Resonant Converters | Soft switching reduces losses. | ZVS = zero voltage switching | ZCS = zero current switching | LLC Converter = resonant converter for high efficiency
+- Converter Design | Component sizing. | Inductor Design = ripple current specification | Output Capacitor = ripple voltage specification | Magnetics Design = core selection and winding
+# Inverters & Multilevel Converters
+- Voltage Source Inverters | DC to AC conversion. | Three-phase VSI = six-switch bridge | Sinusoidal PWM = triangle carrier comparison | Overmodulation = modulation index above 1
+- Space Vector PWM | Efficient modulation. | Space Vector = represents switching states | SVPWM = 15% better DC bus utilisation | Sector Identification = locates reference vector
+- Multilevel Inverters | More levels, better waveforms. | NPC Inverter = neutral point clamped | Cascaded H-bridge = series H-bridge cells | Flying Capacitor Inverter = capacitor-clamped levels
+- MMC | Modular multilevel converter. | MMC = submodules in arms | Submodule = half-bridge with capacitor | Capacitor Voltage Balancing = key MMC control
+# Grid-connected Converters
+- Grid Synchronisation | Converters lock to grid. | PLL = phase-locked loop for grid angle | SRF-PLL = synchronous reference frame PLL | Grid Code = connection requirements
+- Current Control | Regulating injected current. | dq Current Control = PI control in rotating frame | Proportional-resonant Control = tracks AC references | Decoupling = cross-coupling compensation
+- Filters | Reducing harmonics. | L Filter = simple inductor filter | LCL Filter = better attenuation, risk of resonance | Active Damping = control-based resonance damping
+- Grid-forming Converters | Converters that set voltage. | Grid-following Converter = injects current following grid | Grid-forming Converter = establishes voltage and frequency | Virtual Synchronous Machine = emulates inertia
+# Applications & Control
+- Renewable Converters | Solar and wind interfaces. | PV Inverter = with MPPT | Wind Converter = back-to-back converter | Battery Converter = bidirectional DC-DC
+- Motor Drive Converters | Inverters for motors. | Vector Control = field-oriented control | DTC = direct torque control | Regenerative Drive = returns energy to grid
+- EV Chargers | Charging infrastructure converters. | On-board Charger = AC to DC in vehicle | DC Fast Charger = high-power off-board converter | Wireless Charging = inductive power transfer
+- Modelling & Simulation | Analysing converter behaviour. | State-space Averaging = averaged converter model | Small-signal Model = linearised around operating point | PLECS/MATLAB = converter simulation tools
+
+@ mps104 | MPS-104 | Optimisation Techniques in Power Systems | Linear, non-linear, dynamic and evolutionary optimisation applied to economic dispatch, OPF and unit commitment.
+# Optimisation Fundamentals
+- Problem Formulation | Defining optimisation problems. | Objective Function = quantity to minimise or maximise | Decision Variables = controllable quantities | Constraints = equality and inequality limits
+- Classification | Types of optimisation problems. | Linear Programming = linear objective and constraints | Non-linear Programming = non-linear functions | Mixed-integer Programming = discrete and continuous variables
+- Convexity | Convex problems are tractable. | Convex Problem = convex objective over convex set | Local vs Global Optimum = coincide for convex problems | Hessian = positive semidefinite for convex functions
+- Optimality Conditions | Conditions for optimum. | Lagrange Multipliers = for equality constraints | KKT Conditions = for inequality constraints | Shadow Price = sensitivity of objective to constraint
+# Classical Methods
+- Linear Programming Methods | Solving LPs. | Simplex Method = moves between vertices | Interior Point Method = traverses interior of feasible region | Duality = primal and dual problems
+- Non-linear Programming Methods | Gradient-based methods. | Gradient Method = moves along negative gradient | Newton's Method = uses second derivatives | Penalty Function Method = converts constraints into penalties
+- Dynamic Programming | Multistage decisions. | Bellman's Principle of Optimality = optimal policy has optimal sub-policies | Stage and State = DP structure | Curse of Dimensionality = state space growth
+- Integer Programming | Discrete decisions. | Branch and Bound = solves integer programs | Cutting Planes = tighten LP relaxation | MILP Solvers = Gurobi, CPLEX
+# Evolutionary & Metaheuristic Methods
+- Genetic Algorithm | Evolution-inspired search. | Genetic Algorithm = selection, crossover and mutation | Fitness Function = evaluates solutions | Chromosome Encoding = representation of solution
+- Particle Swarm Optimisation | Swarm intelligence. | PSO = particles move toward personal and global bests | Inertia Weight = balances exploration and exploitation | Velocity Update = drives particle movement
+- Other Metaheuristics | Nature-inspired methods. | Simulated Annealing = probabilistic acceptance of worse solutions | Differential Evolution = vector differences for mutation | Ant Colony Optimisation = pheromone-based search
+- Multi-objective Optimisation | Trade-offs between goals. | Pareto Front = set of non-dominated solutions | NSGA-II = multi-objective genetic algorithm | Weighted Sum Method = combines objectives
+# Economic Dispatch & OPF
+- Economic Load Dispatch | Minimum fuel cost dispatch. | Equal Incremental Cost = optimality criterion | Lambda Iteration = solves dispatch | Valve-point Effect = non-convex cost curve
+- Optimal Power Flow | Dispatch with network constraints. | OPF = minimises cost subject to power flow equations | AC-OPF = full non-linear model | DC-OPF = linearised approximation
+- Environmental Dispatch | Considering emissions. | Emission Dispatch = minimise emissions | Combined Economic Emission Dispatch = multi-objective | Price Penalty Factor = converts emissions to cost
+- Reactive Power Optimisation | Minimising losses. | Reactive Power Dispatch = optimises voltages and taps | Loss Minimisation = objective in ORPD | Voltage Profile Improvement = secondary objective
+# Unit Commitment & Planning
+- Unit Commitment | Scheduling generators. | Unit Commitment = on/off decisions over horizon | Minimum Up/Down Time = unit constraints | Start-up Cost = cost to turn on a unit
+- UC Solution Methods | Algorithms for UC. | Priority List = simple heuristic | Lagrangian Relaxation = decomposes problem | MILP Formulation = modern standard approach
+- Hydro-thermal Scheduling | Coordinating water and fuel. | Hydrothermal Coordination = uses hydro to minimise thermal cost | Water Value = marginal value of stored water | Reservoir Constraints = storage limits
+- Expansion Planning | Long-term investment decisions. | Generation Expansion Planning = new capacity decisions | Transmission Expansion Planning = new lines | Stochastic Programming = handles uncertainty
+
+@ mps201 | MPS-201 | Power System Operation & Control | Load frequency control, AGC, voltage and reactive power control, energy management systems and electricity markets.
+# Load Frequency Control
+- Frequency Control Basics | Balancing generation and load. | Frequency Deviation = due to generation-load mismatch | Primary Control = governor droop response | Secondary Control = restores nominal frequency
+- Single-area LFC | Model of an isolated area. | LFC Block Diagram = governor, turbine and power system | Steady-state Error = −ΔPL/(β) with droop | Integral Control = eliminates steady-state error
+- Two-area LFC | Interconnected areas. | Tie-line Power = exchange between areas | Area Control Error = ACE = ΔPtie + B Δf | Frequency Bias = B setting for each area
+- AGC & Modern Control | Automatic generation control. | AGC = automatic generation control | Optimal LFC = state feedback control | Renewable Impact = reduced inertia challenges
+# Voltage & Reactive Power Control
+- Reactive Power Sources | Generating and absorbing VARs. | Synchronous Generator = controllable reactive source | Shunt Capacitor = supplies reactive power | Shunt Reactor = absorbs reactive power
+- Voltage Control Methods | Maintaining voltage profile. | OLTC = on-load tap changer | SVC = static VAR compensator | STATCOM = static synchronous compensator
+- Hierarchical Voltage Control | Coordinated control levels. | Primary Voltage Control = AVR action | Secondary Voltage Control = regional coordination | Tertiary Voltage Control = system-wide optimisation
+- Reactive Power Management | Planning reactive resources. | Reactive Reserve = available reactive capacity | Voltage-VAR Optimisation = minimises losses | Power Factor Correction = at loads
+# Energy Management Systems
+- Control Centres | System operation centres. | Load Despatch Centre = operates grid, e.g. NLDC, RLDC, SLDC | SCADA = supervisory control and data acquisition | EMS = energy management system applications
+- EMS Functions | Real-time applications. | State Estimation = system state from measurements | Contingency Analysis = security assessment | Optimal Power Flow = economic and secure dispatch
+- Load Forecasting | Predicting demand. | Short-term Load Forecasting = hours to days ahead | Time Series Methods = ARIMA models | ML Forecasting = neural networks and gradient boosting
+- WAMS | Wide area monitoring. | WAMS = wide area measurement system | PMU = synchronised phasor measurements | Oscillation Monitoring = detects poorly damped modes
+# Electricity Markets
+- Power Sector Restructuring | From monopoly to competition. | Deregulation = unbundling of generation, transmission, distribution | Electricity Act 2003 = Indian power sector reform law | Open Access = non-discriminatory transmission use
+- Market Structures | How electricity is traded. | Power Exchange = IEX, PXIL in India | Day-ahead Market = trading for next day | Real-time Market = trading close to delivery
+- Pricing | Price formation. | Market Clearing Price = intersection of supply and demand | LMP = locational marginal price | Congestion Management = handling transmission limits
+- Ancillary Services | Services for reliability. | Ancillary Services = reserves, frequency and voltage support | Spinning Reserve = online backup capacity | Deviation Settlement Mechanism = penalises schedule deviations in India
+# Grid Operation with Renewables
+- Variability & Forecasting | Renewables are variable. | RE Forecasting = predicting solar and wind output | Ramp Rate = rate of change of generation | Net Load = load minus renewable generation
+- Flexibility | Handling variability. | Flexible Generation = fast-ramping units | Battery Storage = fast frequency response | Demand Response = shifting consumer load
+- Inertia & Frequency Stability | Low inertia grids. | System Inertia = stored kinetic energy | RoCoF = rate of change of frequency | Synthetic Inertia = converter-based inertial response
+- Grid Codes for RE | Requirements for renewables. | LVRT = low voltage ride through | Reactive Power Capability = required from RE plants | Scheduling and Forecasting Regulations = for RE generators
+
+@ mps202 | MPS-202 | Smart Grid Technologies | Smart grid architecture, AMI, distribution automation, microgrids, communication, cyber security and EV integration.
+# Smart Grid Fundamentals
+- Smart Grid Concept | Modernising the grid with digital technology. | Smart Grid = grid using sensing, communication and control | Self-healing = automatic fault isolation and restoration | Prosumer = consumer who also produces energy
+- Smart Grid Architecture | Layers of a smart grid. | NIST Conceptual Model = seven domains of smart grid | SGAM = smart grid architecture model | Interoperability = systems work together
+- Smart Grid in India | National initiatives. | National Smart Grid Mission = Indian smart grid programme | Smart Meter National Programme = AMI rollout | RDSS = revamped distribution sector scheme
+- Drivers & Benefits | Why smart grids. | Reliability Improvement = fewer outages | Renewable Integration = accommodating variable sources | Loss Reduction = lower technical and commercial losses
+# Advanced Metering & Demand Response
+- AMI | Two-way metering infrastructure. | Smart Meter = digital meter with communication | AMI = advanced metering infrastructure | MDMS = meter data management system
+- Demand Response | Consumers adjust use. | Demand Response = changes in consumption for incentives | Time-of-Use Tariff = price varies by time | Direct Load Control = utility controls appliances
+- Home Energy Management | Smart homes optimise energy. | HEMS = home energy management system | Smart Appliance = responds to signals | Load Scheduling = shifting appliances to cheap hours
+- Data Analytics | Using meter data. | Load Profiling = consumer usage patterns | Theft Detection = identifying abnormal consumption | Big Data in Utilities = analytics on large datasets
+# Distribution Automation & Microgrids
+- Distribution Automation | Automating distribution networks. | FLISR = fault location, isolation and service restoration | Recloser = automatic reclosing breaker | Sectionaliser = isolates faulted sections
+- Distributed Energy Resources | Small generation at distribution level. | DER = distributed energy resources | Hosting Capacity = DER a feeder can accommodate | Reverse Power Flow = from DER to substation
+- Microgrids | Local grids that can island. | Microgrid = local grid with sources and loads | Islanding = operating disconnected from main grid | Microgrid Controller = manages sources and loads
+- Microgrid Control | Hierarchical control. | Droop Control = decentralised power sharing | Secondary Control = restores voltage and frequency | Energy Management = optimal scheduling
+# Communication & Cyber Security
+- Communication Technologies | Networks for smart grid. | PLC = power line communication | RF Mesh = wireless mesh for meters | Cellular IoT = NB-IoT and LTE-M
+- Communication Standards | Protocols for grid devices. | IEC 61850 = substation automation standard | DNP3 = SCADA protocol | DLMS/COSEM = metering protocol
+- Cyber Security Threats | Grids are cyber targets. | Cyber Attack = unauthorised access or disruption | False Data Injection = manipulating measurements | Ransomware on Utilities = disrupting operations
+- Cyber Security Measures | Protecting the grid. | Defence in Depth = layered security | IEC 62351 = security for power system protocols | Security Operations Centre = monitoring threats
+# EVs, Storage & Future Grids
+- EV Integration | Electric vehicles as grid loads and resources. | Smart Charging = controlled EV charging | V2G = vehicle-to-grid power export | Charging Load Impact = peak demand increase
+- Energy Storage in Smart Grids | Storage provides flexibility. | Battery Energy Storage System = grid-scale batteries | Peak Shaving = reducing peak demand | Frequency Regulation = fast storage response
+- Virtual Power Plants | Aggregating DERs. | VPP = aggregated DER acting as one plant | Aggregator = entity managing many DERs | Peer-to-peer Energy Trading = consumers trading directly
+- Digital Twins & AI | Advanced analytics. | Digital Twin = virtual replica of grid | AI for Grid Operation = forecasting and optimisation | Blockchain in Energy = transparent energy transactions

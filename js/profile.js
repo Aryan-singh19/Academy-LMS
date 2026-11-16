@@ -215,7 +215,7 @@ function renderProfilePage() {
         <section class="panel-card p-5">
             <div class="section-head">
                 <h3>Course coverage</h3>
-                <span>${window.ACADEMY.getProgramLabel()}</span>
+                <span>${window.ACADEMY.getProgramLabel()} &middot; <a href="../index.html?view=study&pick=1" class="text-blue-400 hover:underline">Change programme</a></span>
             </div>
             <div class="space-y-4">
                 ${window.ACADEMY.getPlanEntries(window.ACADEMY.getProgram().branch, window.ACADEMY.getProgram().semester).map(({ course, code }) => ({ ...course, code })).map((course) => {

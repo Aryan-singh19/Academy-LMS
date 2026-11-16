@@ -1,6 +1,6 @@
 # CSIT-504(B) Artificial Intelligence — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: IT Sem 5: CSIT-504(B).
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: IT Sem 5: CSIT-504(B) · EX Sem 8: EX-802(D).
 
 **Time: 3 Hours | Maximum Marks: 70**
 

@@ -1,6 +1,6 @@
 # EC-305 Network Analysis — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 3: EC-305.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 3: EC-305 · EX Sem 3: EX-304.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

@@ -267,6 +267,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -287,6 +289,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -307,6 +311,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -327,6 +333,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -347,6 +355,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -367,6 +377,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -387,6 +399,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -407,6 +421,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -427,6 +443,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -447,6 +465,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -467,6 +487,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -487,6 +509,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -507,6 +531,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -527,6 +553,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -547,6 +575,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -567,6 +597,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -587,6 +619,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -607,6 +641,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -627,6 +663,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -647,6 +685,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -667,6 +707,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -687,6 +729,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -707,6 +751,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -727,6 +773,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -747,6 +795,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -767,6 +817,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -787,6 +839,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -807,6 +861,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -827,6 +883,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -847,6 +905,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -867,6 +927,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -888,6 +950,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -909,6 +973,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -930,6 +996,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -951,6 +1019,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -972,6 +1042,8 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME",
             "AU"
         ],
@@ -1407,11 +1479,14 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME"
         ],
         "semesters": [
             8,
-            7
+            7,
+            6
         ],
         "generated": true
     },
@@ -1427,11 +1502,14 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME"
         ],
         "semesters": [
             8,
-            7
+            7,
+            6
         ],
         "generated": true
     },
@@ -1447,11 +1525,14 @@ window.resourceLibrary.push(...[
             "CSE",
             "IT",
             "EC",
+            "EX",
+            "CE",
             "ME"
         ],
         "semesters": [
             8,
-            7
+            7,
+            6
         ],
         "generated": true
     },
@@ -1668,10 +1749,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/it504-ai/notes/it504-ai-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "IT"
+            "IT",
+            "EX"
         ],
         "semesters": [
-            5
+            5,
+            8
         ],
         "generated": true
     },
@@ -1684,10 +1767,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/it504-ai/mock-papers/it504-ai-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "IT"
+            "IT",
+            "EX"
         ],
         "semesters": [
-            5
+            5,
+            8
         ],
         "generated": true
     },
@@ -1700,10 +1785,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/it504-ai/mock-papers/it504-ai-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "IT"
+            "IT",
+            "EX"
         ],
         "semesters": [
-            5
+            5,
+            8
         ],
         "generated": true
     },
@@ -1908,10 +1995,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec303/notes/ec303-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            3
+            3,
+            4
         ],
         "generated": true
     },
@@ -1924,10 +2013,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec303/mock-papers/ec303-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            3
+            3,
+            4
         ],
         "generated": true
     },
@@ -1940,10 +2031,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec303/mock-papers/ec303-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            3
+            3,
+            4
         ],
         "generated": true
     },
@@ -2004,7 +2097,8 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec305/notes/ec305-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
             3
@@ -2020,7 +2114,8 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec305/mock-papers/ec305-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
             3
@@ -2036,7 +2131,8 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec305/mock-papers/ec305-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
             3
@@ -2052,10 +2148,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec402/notes/ec402-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            4
+            4,
+            3
         ],
         "generated": true
     },
@@ -2068,10 +2166,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec402/mock-papers/ec402-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            4
+            4,
+            3
         ],
         "generated": true
     },
@@ -2084,10 +2184,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec402/mock-papers/ec402-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            4
+            4,
+            3
         ],
         "generated": true
     },
@@ -2148,7 +2250,8 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec404/notes/ec404-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
             4
@@ -2164,7 +2267,8 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec404/mock-papers/ec404-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
             4
@@ -2180,7 +2284,8 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec404/mock-papers/ec404-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
             4
@@ -2196,10 +2301,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec405/notes/ec405-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            4
+            4,
+            3
         ],
         "generated": true
     },
@@ -2212,10 +2319,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec405/mock-papers/ec405-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            4
+            4,
+            3
         ],
         "generated": true
     },
@@ -2228,10 +2337,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec405/mock-papers/ec405-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            4
+            4,
+            3
         ],
         "generated": true
     },
@@ -2244,10 +2355,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec501/notes/ec501-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            5
+            5,
+            6
         ],
         "generated": true
     },
@@ -2260,10 +2373,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec501/mock-papers/ec501-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            5
+            5,
+            6
         ],
         "generated": true
     },
@@ -2276,10 +2391,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/ec501/mock-papers/ec501-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "EC"
+            "EC",
+            "EX"
         ],
         "semesters": [
-            5
+            5,
+            6
         ],
         "generated": true
     },
@@ -2970,6 +3087,7 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me304/notes/me304-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
+            "CE",
             "ME",
             "AU"
         ],
@@ -2987,6 +3105,7 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me304/mock-papers/me304-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
+            "CE",
             "ME",
             "AU"
         ],
@@ -3004,6 +3123,7 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me304/mock-papers/me304-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
+            "CE",
             "ME",
             "AU"
         ],
@@ -3174,10 +3294,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me404/notes/me404-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
+            "CE",
             "ME",
             "AU"
         ],
         "semesters": [
+            5,
             4
         ],
         "generated": true
@@ -3191,10 +3313,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me404/mock-papers/me404-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
+            "CE",
             "ME",
             "AU"
         ],
         "semesters": [
+            5,
             4
         ],
         "generated": true
@@ -3208,10 +3332,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me404/mock-papers/me404-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
+            "CE",
             "ME",
             "AU"
         ],
         "semesters": [
+            5,
             4
         ],
         "generated": true
@@ -3429,10 +3555,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me504-fem/notes/me504-fem-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
-            "ME"
+            "ME",
+            "MT-ST"
         ],
         "semesters": [
-            5
+            5,
+            2
         ],
         "generated": true
     },
@@ -3445,10 +3573,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me504-fem/mock-papers/me504-fem-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
-            "ME"
+            "ME",
+            "MT-ST"
         ],
         "semesters": [
-            5
+            5,
+            2
         ],
         "generated": true
     },
@@ -3461,10 +3591,12 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me504-fem/mock-papers/me504-fem-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
-            "ME"
+            "ME",
+            "MT-ST"
         ],
         "semesters": [
-            5
+            5,
+            2
         ],
         "generated": true
     },
@@ -3774,9 +3906,11 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me703-or/notes/me703-or-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
+            "CE",
             "ME"
         ],
         "semesters": [
+            6,
             7
         ],
         "generated": true
@@ -3790,9 +3924,11 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me703-or/mock-papers/me703-or-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
+            "CE",
             "ME"
         ],
         "semesters": [
+            6,
             7
         ],
         "generated": true
@@ -3806,9 +3942,11 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/me703-or/mock-papers/me703-or-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
+            "CE",
             "ME"
         ],
         "semesters": [
+            6,
             7
         ],
         "generated": true
@@ -4308,6 +4446,7 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/au703/notes/au703-unit-wise-study-notes.pdf",
         "extension": "pdf",
         "branches": [
+            "EX",
             "AU"
         ],
         "semesters": [
@@ -4324,6 +4463,7 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/au703/mock-papers/au703-rgpv-model-question-paper.pdf",
         "extension": "pdf",
         "branches": [
+            "EX",
             "AU"
         ],
         "semesters": [
@@ -4340,6 +4480,7 @@ window.resourceLibrary.push(...[
         "path": "../assets/resources/au703/mock-papers/au703-question-bank-with-answers.md",
         "extension": "md",
         "branches": [
+            "EX",
             "AU"
         ],
         "semesters": [
@@ -4440,6 +4581,3198 @@ window.resourceLibrary.push(...[
         ],
         "semesters": [
             8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce302",
+        "subjectLabel": "CE-302",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-302 Construction Materials — Unit-wise Study Notes",
+        "path": "../assets/resources/ce302/notes/ce302-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce302",
+        "subjectLabel": "CE-302",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-302 Construction Materials — RGPV Model Question Paper",
+        "path": "../assets/resources/ce302/mock-papers/ce302-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce302",
+        "subjectLabel": "CE-302",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-302 Construction Materials — Question Bank with Answers",
+        "path": "../assets/resources/ce302/mock-papers/ce302-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce303",
+        "subjectLabel": "CE-303",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-303 Surveying — Unit-wise Study Notes",
+        "path": "../assets/resources/ce303/notes/ce303-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce303",
+        "subjectLabel": "CE-303",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-303 Surveying — RGPV Model Question Paper",
+        "path": "../assets/resources/ce303/mock-papers/ce303-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce303",
+        "subjectLabel": "CE-303",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-303 Surveying — Question Bank with Answers",
+        "path": "../assets/resources/ce303/mock-papers/ce303-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce304",
+        "subjectLabel": "CE-304",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-304 Building Planning & Architecture — Unit-wise Study Notes",
+        "path": "../assets/resources/ce304/notes/ce304-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce304",
+        "subjectLabel": "CE-304",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-304 Building Planning & Architecture — RGPV Model Question Paper",
+        "path": "../assets/resources/ce304/mock-papers/ce304-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce304",
+        "subjectLabel": "CE-304",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-304 Building Planning & Architecture — Question Bank with Answers",
+        "path": "../assets/resources/ce304/mock-papers/ce304-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce402",
+        "subjectLabel": "CE-402",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-402 Construction Technology — Unit-wise Study Notes",
+        "path": "../assets/resources/ce402/notes/ce402-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce402",
+        "subjectLabel": "CE-402",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-402 Construction Technology — RGPV Model Question Paper",
+        "path": "../assets/resources/ce402/mock-papers/ce402-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce402",
+        "subjectLabel": "CE-402",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-402 Construction Technology — Question Bank with Answers",
+        "path": "../assets/resources/ce402/mock-papers/ce402-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce403",
+        "subjectLabel": "CE-403",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-403 Structural Analysis-I — Unit-wise Study Notes",
+        "path": "../assets/resources/ce403/notes/ce403-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce403",
+        "subjectLabel": "CE-403",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-403 Structural Analysis-I — RGPV Model Question Paper",
+        "path": "../assets/resources/ce403/mock-papers/ce403-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce403",
+        "subjectLabel": "CE-403",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-403 Structural Analysis-I — Question Bank with Answers",
+        "path": "../assets/resources/ce403/mock-papers/ce403-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce404",
+        "subjectLabel": "CE-404",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-404 Transportation Engineering-I — Unit-wise Study Notes",
+        "path": "../assets/resources/ce404/notes/ce404-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce404",
+        "subjectLabel": "CE-404",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-404 Transportation Engineering-I — RGPV Model Question Paper",
+        "path": "../assets/resources/ce404/mock-papers/ce404-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce404",
+        "subjectLabel": "CE-404",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-404 Transportation Engineering-I — Question Bank with Answers",
+        "path": "../assets/resources/ce404/mock-papers/ce404-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce405",
+        "subjectLabel": "CE-405",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-405 Engineering Geology & Remote Sensing — Unit-wise Study Notes",
+        "path": "../assets/resources/ce405/notes/ce405-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce405",
+        "subjectLabel": "CE-405",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-405 Engineering Geology & Remote Sensing — RGPV Model Question Paper",
+        "path": "../assets/resources/ce405/mock-papers/ce405-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce405",
+        "subjectLabel": "CE-405",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-405 Engineering Geology & Remote Sensing — Question Bank with Answers",
+        "path": "../assets/resources/ce405/mock-papers/ce405-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce502",
+        "subjectLabel": "CE-502",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-502 Transportation Engineering-II — Unit-wise Study Notes",
+        "path": "../assets/resources/ce502/notes/ce502-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce502",
+        "subjectLabel": "CE-502",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-502 Transportation Engineering-II — RGPV Model Question Paper",
+        "path": "../assets/resources/ce502/mock-papers/ce502-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce502",
+        "subjectLabel": "CE-502",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-502 Transportation Engineering-II — Question Bank with Answers",
+        "path": "../assets/resources/ce502/mock-papers/ce502-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce503a",
+        "subjectLabel": "CE-503(A)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-503(A) Structural Analysis-II — Unit-wise Study Notes",
+        "path": "../assets/resources/ce503a/notes/ce503a-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce503a",
+        "subjectLabel": "CE-503(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-503(A) Structural Analysis-II — RGPV Model Question Paper",
+        "path": "../assets/resources/ce503a/mock-papers/ce503a-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce503a",
+        "subjectLabel": "CE-503(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-503(A) Structural Analysis-II — Question Bank with Answers",
+        "path": "../assets/resources/ce503a/mock-papers/ce503a-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce504b",
+        "subjectLabel": "CE-504(B)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-504(B) Remote Sensing & GIS — Unit-wise Study Notes",
+        "path": "../assets/resources/ce504b/notes/ce504b-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce504b",
+        "subjectLabel": "CE-504(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-504(B) Remote Sensing & GIS — RGPV Model Question Paper",
+        "path": "../assets/resources/ce504b/mock-papers/ce504b-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce504b",
+        "subjectLabel": "CE-504(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-504(B) Remote Sensing & GIS — Question Bank with Answers",
+        "path": "../assets/resources/ce504b/mock-papers/ce504b-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce601",
+        "subjectLabel": "CE-601",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-601 Structural Design & Drawing (RCC-I) — Unit-wise Study Notes",
+        "path": "../assets/resources/ce601/notes/ce601-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce601",
+        "subjectLabel": "CE-601",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-601 Structural Design & Drawing (RCC-I) — RGPV Model Question Paper",
+        "path": "../assets/resources/ce601/mock-papers/ce601-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce601",
+        "subjectLabel": "CE-601",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-601 Structural Design & Drawing (RCC-I) — Question Bank with Answers",
+        "path": "../assets/resources/ce601/mock-papers/ce601-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce602",
+        "subjectLabel": "CE-602",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-602 Environmental Engineering-I — Unit-wise Study Notes",
+        "path": "../assets/resources/ce602/notes/ce602-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce602",
+        "subjectLabel": "CE-602",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-602 Environmental Engineering-I — RGPV Model Question Paper",
+        "path": "../assets/resources/ce602/mock-papers/ce602-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce602",
+        "subjectLabel": "CE-602",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-602 Environmental Engineering-I — Question Bank with Answers",
+        "path": "../assets/resources/ce602/mock-papers/ce602-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce603a",
+        "subjectLabel": "CE-603(A)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-603(A) Water Resource Engineering — Unit-wise Study Notes",
+        "path": "../assets/resources/ce603a/notes/ce603a-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce603a",
+        "subjectLabel": "CE-603(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-603(A) Water Resource Engineering — RGPV Model Question Paper",
+        "path": "../assets/resources/ce603a/mock-papers/ce603a-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce603a",
+        "subjectLabel": "CE-603(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-603(A) Water Resource Engineering — Question Bank with Answers",
+        "path": "../assets/resources/ce603a/mock-papers/ce603a-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce701",
+        "subjectLabel": "CE-701",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-701 Geotechnical Engineering — Unit-wise Study Notes",
+        "path": "../assets/resources/ce701/notes/ce701-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce701",
+        "subjectLabel": "CE-701",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-701 Geotechnical Engineering — RGPV Model Question Paper",
+        "path": "../assets/resources/ce701/mock-papers/ce701-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce701",
+        "subjectLabel": "CE-701",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-701 Geotechnical Engineering — Question Bank with Answers",
+        "path": "../assets/resources/ce701/mock-papers/ce701-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce702a",
+        "subjectLabel": "CE-702(A)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-702(A) Prestressed Concrete Structures — Unit-wise Study Notes",
+        "path": "../assets/resources/ce702a/notes/ce702a-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce702a",
+        "subjectLabel": "CE-702(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-702(A) Prestressed Concrete Structures — RGPV Model Question Paper",
+        "path": "../assets/resources/ce702a/mock-papers/ce702a-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce702a",
+        "subjectLabel": "CE-702(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-702(A) Prestressed Concrete Structures — Question Bank with Answers",
+        "path": "../assets/resources/ce702a/mock-papers/ce702a-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce702b",
+        "subjectLabel": "CE-702(B)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-702(B) Environmental Engineering-II — Unit-wise Study Notes",
+        "path": "../assets/resources/ce702b/notes/ce702b-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce702b",
+        "subjectLabel": "CE-702(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-702(B) Environmental Engineering-II — RGPV Model Question Paper",
+        "path": "../assets/resources/ce702b/mock-papers/ce702b-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce702b",
+        "subjectLabel": "CE-702(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-702(B) Environmental Engineering-II — Question Bank with Answers",
+        "path": "../assets/resources/ce702b/mock-papers/ce702b-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce801",
+        "subjectLabel": "CE-801",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-801 Design of Steel Structures — Unit-wise Study Notes",
+        "path": "../assets/resources/ce801/notes/ce801-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce801",
+        "subjectLabel": "CE-801",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-801 Design of Steel Structures — RGPV Model Question Paper",
+        "path": "../assets/resources/ce801/mock-papers/ce801-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce801",
+        "subjectLabel": "CE-801",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-801 Design of Steel Structures — Question Bank with Answers",
+        "path": "../assets/resources/ce801/mock-papers/ce801-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce802b",
+        "subjectLabel": "CE-802(B)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-802(B) Foundation Engineering — Unit-wise Study Notes",
+        "path": "../assets/resources/ce802b/notes/ce802b-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce802b",
+        "subjectLabel": "CE-802(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-802(B) Foundation Engineering — RGPV Model Question Paper",
+        "path": "../assets/resources/ce802b/mock-papers/ce802b-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce802b",
+        "subjectLabel": "CE-802(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-802(B) Foundation Engineering — Question Bank with Answers",
+        "path": "../assets/resources/ce802b/mock-papers/ce802b-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce802d",
+        "subjectLabel": "CE-802(D)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "CE-802(D) Earthquake Resistant Design of Structures — Unit-wise Study Notes",
+        "path": "../assets/resources/ce802d/notes/ce802d-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE",
+            "MT-ST"
+        ],
+        "semesters": [
+            8,
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce802d",
+        "subjectLabel": "CE-802(D)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-802(D) Earthquake Resistant Design of Structures — RGPV Model Question Paper",
+        "path": "../assets/resources/ce802d/mock-papers/ce802d-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "CE",
+            "MT-ST"
+        ],
+        "semesters": [
+            8,
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ce802d",
+        "subjectLabel": "CE-802(D)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "CE-802(D) Earthquake Resistant Design of Structures — Question Bank with Answers",
+        "path": "../assets/resources/ce802d/mock-papers/ce802d-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "CE",
+            "MT-ST"
+        ],
+        "semesters": [
+            8,
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex303",
+        "subjectLabel": "EX-303",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-303 Electrical Measurements & Measuring Instruments — Unit-wise Study Notes",
+        "path": "../assets/resources/ex303/notes/ex303-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex303",
+        "subjectLabel": "EX-303",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-303 Electrical Measurements & Measuring Instruments — RGPV Model Question Paper",
+        "path": "../assets/resources/ex303/mock-papers/ex303-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex303",
+        "subjectLabel": "EX-303",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-303 Electrical Measurements & Measuring Instruments — Question Bank with Answers",
+        "path": "../assets/resources/ex303/mock-papers/ex303-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            3
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex402",
+        "subjectLabel": "EX-402",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-402 Electrical Machine-I — Unit-wise Study Notes",
+        "path": "../assets/resources/ex402/notes/ex402-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex402",
+        "subjectLabel": "EX-402",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-402 Electrical Machine-I — RGPV Model Question Paper",
+        "path": "../assets/resources/ex402/mock-papers/ex402-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex402",
+        "subjectLabel": "EX-402",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-402 Electrical Machine-I — Question Bank with Answers",
+        "path": "../assets/resources/ex402/mock-papers/ex402-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex404",
+        "subjectLabel": "EX-404",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-404 Power System-I — Unit-wise Study Notes",
+        "path": "../assets/resources/ex404/notes/ex404-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex404",
+        "subjectLabel": "EX-404",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-404 Power System-I — RGPV Model Question Paper",
+        "path": "../assets/resources/ex404/mock-papers/ex404-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex404",
+        "subjectLabel": "EX-404",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-404 Power System-I — Question Bank with Answers",
+        "path": "../assets/resources/ex404/mock-papers/ex404-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            4
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex501",
+        "subjectLabel": "EX-501",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-501 Electrical Machine-II — Unit-wise Study Notes",
+        "path": "../assets/resources/ex501/notes/ex501-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex501",
+        "subjectLabel": "EX-501",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-501 Electrical Machine-II — RGPV Model Question Paper",
+        "path": "../assets/resources/ex501/mock-papers/ex501-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex501",
+        "subjectLabel": "EX-501",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-501 Electrical Machine-II — Question Bank with Answers",
+        "path": "../assets/resources/ex501/mock-papers/ex501-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex502",
+        "subjectLabel": "EX-502",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-502 Power Electronics — Unit-wise Study Notes",
+        "path": "../assets/resources/ex502/notes/ex502-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex502",
+        "subjectLabel": "EX-502",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-502 Power Electronics — RGPV Model Question Paper",
+        "path": "../assets/resources/ex502/mock-papers/ex502-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex502",
+        "subjectLabel": "EX-502",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-502 Power Electronics — Question Bank with Answers",
+        "path": "../assets/resources/ex502/mock-papers/ex502-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex503c",
+        "subjectLabel": "EX-503(C)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-503(C) Renewable Power Generation — Unit-wise Study Notes",
+        "path": "../assets/resources/ex503c/notes/ex503c-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex503c",
+        "subjectLabel": "EX-503(C)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-503(C) Renewable Power Generation — RGPV Model Question Paper",
+        "path": "../assets/resources/ex503c/mock-papers/ex503c-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex503c",
+        "subjectLabel": "EX-503(C)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-503(C) Renewable Power Generation — Question Bank with Answers",
+        "path": "../assets/resources/ex503c/mock-papers/ex503c-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex504a",
+        "subjectLabel": "EX-504(A)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-504(A) Industrial Electronics — Unit-wise Study Notes",
+        "path": "../assets/resources/ex504a/notes/ex504a-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex504a",
+        "subjectLabel": "EX-504(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-504(A) Industrial Electronics — RGPV Model Question Paper",
+        "path": "../assets/resources/ex504a/mock-papers/ex504a-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex504a",
+        "subjectLabel": "EX-504(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-504(A) Industrial Electronics — Question Bank with Answers",
+        "path": "../assets/resources/ex504a/mock-papers/ex504a-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            5
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex601",
+        "subjectLabel": "EX-601",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-601 Power System-II — Unit-wise Study Notes",
+        "path": "../assets/resources/ex601/notes/ex601-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex601",
+        "subjectLabel": "EX-601",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-601 Power System-II — RGPV Model Question Paper",
+        "path": "../assets/resources/ex601/mock-papers/ex601-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex601",
+        "subjectLabel": "EX-601",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-601 Power System-II — Question Bank with Answers",
+        "path": "../assets/resources/ex601/mock-papers/ex601-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex603a",
+        "subjectLabel": "EX-603(A)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-603(A) Utilization of Electrical Energy — Unit-wise Study Notes",
+        "path": "../assets/resources/ex603a/notes/ex603a-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex603a",
+        "subjectLabel": "EX-603(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-603(A) Utilization of Electrical Energy — RGPV Model Question Paper",
+        "path": "../assets/resources/ex603a/mock-papers/ex603a-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex603a",
+        "subjectLabel": "EX-603(A)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-603(A) Utilization of Electrical Energy — Question Bank with Answers",
+        "path": "../assets/resources/ex603a/mock-papers/ex603a-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            6
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex701",
+        "subjectLabel": "EX-701",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-701 Power System Protection — Unit-wise Study Notes",
+        "path": "../assets/resources/ex701/notes/ex701-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex701",
+        "subjectLabel": "EX-701",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-701 Power System Protection — RGPV Model Question Paper",
+        "path": "../assets/resources/ex701/mock-papers/ex701-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex701",
+        "subjectLabel": "EX-701",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-701 Power System Protection — Question Bank with Answers",
+        "path": "../assets/resources/ex701/mock-papers/ex701-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex702b",
+        "subjectLabel": "EX-702(B)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-702(B) HVDC & FACTS — Unit-wise Study Notes",
+        "path": "../assets/resources/ex702b/notes/ex702b-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX",
+            "MT-PS"
+        ],
+        "semesters": [
+            7,
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex702b",
+        "subjectLabel": "EX-702(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-702(B) HVDC & FACTS — RGPV Model Question Paper",
+        "path": "../assets/resources/ex702b/mock-papers/ex702b-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX",
+            "MT-PS"
+        ],
+        "semesters": [
+            7,
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex702b",
+        "subjectLabel": "EX-702(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-702(B) HVDC & FACTS — Question Bank with Answers",
+        "path": "../assets/resources/ex702b/mock-papers/ex702b-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX",
+            "MT-PS"
+        ],
+        "semesters": [
+            7,
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex702c",
+        "subjectLabel": "EX-702(C)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-702(C) High Voltage Engineering — Unit-wise Study Notes",
+        "path": "../assets/resources/ex702c/notes/ex702c-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex702c",
+        "subjectLabel": "EX-702(C)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-702(C) High Voltage Engineering — RGPV Model Question Paper",
+        "path": "../assets/resources/ex702c/mock-papers/ex702c-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex702c",
+        "subjectLabel": "EX-702(C)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-702(C) High Voltage Engineering — Question Bank with Answers",
+        "path": "../assets/resources/ex702c/mock-papers/ex702c-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            7
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex801",
+        "subjectLabel": "EX-801",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-801 Electrical Drives — Unit-wise Study Notes",
+        "path": "../assets/resources/ex801/notes/ex801-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex801",
+        "subjectLabel": "EX-801",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-801 Electrical Drives — RGPV Model Question Paper",
+        "path": "../assets/resources/ex801/mock-papers/ex801-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex801",
+        "subjectLabel": "EX-801",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-801 Electrical Drives — Question Bank with Answers",
+        "path": "../assets/resources/ex801/mock-papers/ex801-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex802b",
+        "subjectLabel": "EX-802(B)",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "EX-802(B) Special Electrical Machines — Unit-wise Study Notes",
+        "path": "../assets/resources/ex802b/notes/ex802b-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex802b",
+        "subjectLabel": "EX-802(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-802(B) Special Electrical Machines — RGPV Model Question Paper",
+        "path": "../assets/resources/ex802b/mock-papers/ex802b-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "ex802b",
+        "subjectLabel": "EX-802(B)",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "EX-802(B) Special Electrical Machines — Question Bank with Answers",
+        "path": "../assets/resources/ex802b/mock-papers/ex802b-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "EX"
+        ],
+        "semesters": [
+            8
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mt-rm",
+        "subjectLabel": "MT-RM",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MT-RM Research Methodology & IPR — Unit-wise Study Notes",
+        "path": "../assets/resources/mt-rm/notes/mt-rm-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE",
+            "MT-VLSI",
+            "MT-TH",
+            "MT-ST",
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mt-rm",
+        "subjectLabel": "MT-RM",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MT-RM Research Methodology & IPR — RGPV Model Question Paper",
+        "path": "../assets/resources/mt-rm/mock-papers/mt-rm-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE",
+            "MT-VLSI",
+            "MT-TH",
+            "MT-ST",
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mt-rm",
+        "subjectLabel": "MT-RM",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MT-RM Research Methodology & IPR — Question Bank with Answers",
+        "path": "../assets/resources/mt-rm/mock-papers/mt-rm-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE",
+            "MT-VLSI",
+            "MT-TH",
+            "MT-ST",
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse101",
+        "subjectLabel": "MCSE-101",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MCSE-101 Advanced Computational Mathematics — Unit-wise Study Notes",
+        "path": "../assets/resources/mcse101/notes/mcse101-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse101",
+        "subjectLabel": "MCSE-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-101 Advanced Computational Mathematics — RGPV Model Question Paper",
+        "path": "../assets/resources/mcse101/mock-papers/mcse101-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse101",
+        "subjectLabel": "MCSE-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-101 Advanced Computational Mathematics — Question Bank with Answers",
+        "path": "../assets/resources/mcse101/mock-papers/mcse101-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse102",
+        "subjectLabel": "MCSE-102",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MCSE-102 Advanced Data Structures & Algorithms — Unit-wise Study Notes",
+        "path": "../assets/resources/mcse102/notes/mcse102-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse102",
+        "subjectLabel": "MCSE-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-102 Advanced Data Structures & Algorithms — RGPV Model Question Paper",
+        "path": "../assets/resources/mcse102/mock-papers/mcse102-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse102",
+        "subjectLabel": "MCSE-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-102 Advanced Data Structures & Algorithms — Question Bank with Answers",
+        "path": "../assets/resources/mcse102/mock-papers/mcse102-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse103",
+        "subjectLabel": "MCSE-103",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MCSE-103 Advanced Computer Architecture — Unit-wise Study Notes",
+        "path": "../assets/resources/mcse103/notes/mcse103-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse103",
+        "subjectLabel": "MCSE-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-103 Advanced Computer Architecture — RGPV Model Question Paper",
+        "path": "../assets/resources/mcse103/mock-papers/mcse103-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse103",
+        "subjectLabel": "MCSE-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-103 Advanced Computer Architecture — Question Bank with Answers",
+        "path": "../assets/resources/mcse103/mock-papers/mcse103-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse104",
+        "subjectLabel": "MCSE-104",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MCSE-104 Advanced Computer Networks — Unit-wise Study Notes",
+        "path": "../assets/resources/mcse104/notes/mcse104-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse104",
+        "subjectLabel": "MCSE-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-104 Advanced Computer Networks — RGPV Model Question Paper",
+        "path": "../assets/resources/mcse104/mock-papers/mcse104-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse104",
+        "subjectLabel": "MCSE-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-104 Advanced Computer Networks — Question Bank with Answers",
+        "path": "../assets/resources/mcse104/mock-papers/mcse104-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse201",
+        "subjectLabel": "MCSE-201",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MCSE-201 Advanced Machine Learning — Unit-wise Study Notes",
+        "path": "../assets/resources/mcse201/notes/mcse201-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse201",
+        "subjectLabel": "MCSE-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-201 Advanced Machine Learning — RGPV Model Question Paper",
+        "path": "../assets/resources/mcse201/mock-papers/mcse201-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse201",
+        "subjectLabel": "MCSE-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-201 Advanced Machine Learning — Question Bank with Answers",
+        "path": "../assets/resources/mcse201/mock-papers/mcse201-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse202",
+        "subjectLabel": "MCSE-202",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MCSE-202 Distributed Systems & Cloud Computing — Unit-wise Study Notes",
+        "path": "../assets/resources/mcse202/notes/mcse202-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse202",
+        "subjectLabel": "MCSE-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-202 Distributed Systems & Cloud Computing — RGPV Model Question Paper",
+        "path": "../assets/resources/mcse202/mock-papers/mcse202-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse202",
+        "subjectLabel": "MCSE-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-202 Distributed Systems & Cloud Computing — Question Bank with Answers",
+        "path": "../assets/resources/mcse202/mock-papers/mcse202-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse203",
+        "subjectLabel": "MCSE-203",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MCSE-203 Advanced Information Security — Unit-wise Study Notes",
+        "path": "../assets/resources/mcse203/notes/mcse203-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse203",
+        "subjectLabel": "MCSE-203",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-203 Advanced Information Security — RGPV Model Question Paper",
+        "path": "../assets/resources/mcse203/mock-papers/mcse203-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mcse203",
+        "subjectLabel": "MCSE-203",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MCSE-203 Advanced Information Security — Question Bank with Answers",
+        "path": "../assets/resources/mcse203/mock-papers/mcse203-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-CSE"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl101",
+        "subjectLabel": "MVL-101",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MVL-101 Digital IC Design — Unit-wise Study Notes",
+        "path": "../assets/resources/mvl101/notes/mvl101-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl101",
+        "subjectLabel": "MVL-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-101 Digital IC Design — RGPV Model Question Paper",
+        "path": "../assets/resources/mvl101/mock-papers/mvl101-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl101",
+        "subjectLabel": "MVL-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-101 Digital IC Design — Question Bank with Answers",
+        "path": "../assets/resources/mvl101/mock-papers/mvl101-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl102",
+        "subjectLabel": "MVL-102",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MVL-102 Analog IC Design — Unit-wise Study Notes",
+        "path": "../assets/resources/mvl102/notes/mvl102-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl102",
+        "subjectLabel": "MVL-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-102 Analog IC Design — RGPV Model Question Paper",
+        "path": "../assets/resources/mvl102/mock-papers/mvl102-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl102",
+        "subjectLabel": "MVL-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-102 Analog IC Design — Question Bank with Answers",
+        "path": "../assets/resources/mvl102/mock-papers/mvl102-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl103",
+        "subjectLabel": "MVL-103",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MVL-103 VLSI Technology & Fabrication — Unit-wise Study Notes",
+        "path": "../assets/resources/mvl103/notes/mvl103-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl103",
+        "subjectLabel": "MVL-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-103 VLSI Technology & Fabrication — RGPV Model Question Paper",
+        "path": "../assets/resources/mvl103/mock-papers/mvl103-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl103",
+        "subjectLabel": "MVL-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-103 VLSI Technology & Fabrication — Question Bank with Answers",
+        "path": "../assets/resources/mvl103/mock-papers/mvl103-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl104",
+        "subjectLabel": "MVL-104",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MVL-104 Advanced Digital System Design & Verification — Unit-wise Study Notes",
+        "path": "../assets/resources/mvl104/notes/mvl104-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl104",
+        "subjectLabel": "MVL-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-104 Advanced Digital System Design & Verification — RGPV Model Question Paper",
+        "path": "../assets/resources/mvl104/mock-papers/mvl104-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl104",
+        "subjectLabel": "MVL-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-104 Advanced Digital System Design & Verification — Question Bank with Answers",
+        "path": "../assets/resources/mvl104/mock-papers/mvl104-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl201",
+        "subjectLabel": "MVL-201",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MVL-201 Low Power VLSI Design — Unit-wise Study Notes",
+        "path": "../assets/resources/mvl201/notes/mvl201-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl201",
+        "subjectLabel": "MVL-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-201 Low Power VLSI Design — RGPV Model Question Paper",
+        "path": "../assets/resources/mvl201/mock-papers/mvl201-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl201",
+        "subjectLabel": "MVL-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-201 Low Power VLSI Design — Question Bank with Answers",
+        "path": "../assets/resources/mvl201/mock-papers/mvl201-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl202",
+        "subjectLabel": "MVL-202",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MVL-202 VLSI Testing & Testability — Unit-wise Study Notes",
+        "path": "../assets/resources/mvl202/notes/mvl202-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl202",
+        "subjectLabel": "MVL-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-202 VLSI Testing & Testability — RGPV Model Question Paper",
+        "path": "../assets/resources/mvl202/mock-papers/mvl202-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl202",
+        "subjectLabel": "MVL-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-202 VLSI Testing & Testability — Question Bank with Answers",
+        "path": "../assets/resources/mvl202/mock-papers/mvl202-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl203",
+        "subjectLabel": "MVL-203",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MVL-203 System-on-Chip & Embedded System Design — Unit-wise Study Notes",
+        "path": "../assets/resources/mvl203/notes/mvl203-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl203",
+        "subjectLabel": "MVL-203",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-203 System-on-Chip & Embedded System Design — RGPV Model Question Paper",
+        "path": "../assets/resources/mvl203/mock-papers/mvl203-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mvl203",
+        "subjectLabel": "MVL-203",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MVL-203 System-on-Chip & Embedded System Design — Question Bank with Answers",
+        "path": "../assets/resources/mvl203/mock-papers/mvl203-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-VLSI"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth101",
+        "subjectLabel": "MTH-101",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MTH-101 Advanced Thermodynamics — Unit-wise Study Notes",
+        "path": "../assets/resources/mth101/notes/mth101-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth101",
+        "subjectLabel": "MTH-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-101 Advanced Thermodynamics — RGPV Model Question Paper",
+        "path": "../assets/resources/mth101/mock-papers/mth101-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth101",
+        "subjectLabel": "MTH-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-101 Advanced Thermodynamics — Question Bank with Answers",
+        "path": "../assets/resources/mth101/mock-papers/mth101-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth102",
+        "subjectLabel": "MTH-102",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MTH-102 Advanced Fluid Mechanics — Unit-wise Study Notes",
+        "path": "../assets/resources/mth102/notes/mth102-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth102",
+        "subjectLabel": "MTH-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-102 Advanced Fluid Mechanics — RGPV Model Question Paper",
+        "path": "../assets/resources/mth102/mock-papers/mth102-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth102",
+        "subjectLabel": "MTH-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-102 Advanced Fluid Mechanics — Question Bank with Answers",
+        "path": "../assets/resources/mth102/mock-papers/mth102-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth103",
+        "subjectLabel": "MTH-103",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MTH-103 Advanced Heat & Mass Transfer — Unit-wise Study Notes",
+        "path": "../assets/resources/mth103/notes/mth103-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth103",
+        "subjectLabel": "MTH-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-103 Advanced Heat & Mass Transfer — RGPV Model Question Paper",
+        "path": "../assets/resources/mth103/mock-papers/mth103-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth103",
+        "subjectLabel": "MTH-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-103 Advanced Heat & Mass Transfer — Question Bank with Answers",
+        "path": "../assets/resources/mth103/mock-papers/mth103-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth104",
+        "subjectLabel": "MTH-104",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MTH-104 Computational Fluid Dynamics — Unit-wise Study Notes",
+        "path": "../assets/resources/mth104/notes/mth104-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth104",
+        "subjectLabel": "MTH-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-104 Computational Fluid Dynamics — RGPV Model Question Paper",
+        "path": "../assets/resources/mth104/mock-papers/mth104-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth104",
+        "subjectLabel": "MTH-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-104 Computational Fluid Dynamics — Question Bank with Answers",
+        "path": "../assets/resources/mth104/mock-papers/mth104-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth201",
+        "subjectLabel": "MTH-201",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MTH-201 Design of Thermal Systems — Unit-wise Study Notes",
+        "path": "../assets/resources/mth201/notes/mth201-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth201",
+        "subjectLabel": "MTH-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-201 Design of Thermal Systems — RGPV Model Question Paper",
+        "path": "../assets/resources/mth201/mock-papers/mth201-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth201",
+        "subjectLabel": "MTH-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-201 Design of Thermal Systems — Question Bank with Answers",
+        "path": "../assets/resources/mth201/mock-papers/mth201-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth202",
+        "subjectLabel": "MTH-202",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MTH-202 Advanced IC Engines & Emissions — Unit-wise Study Notes",
+        "path": "../assets/resources/mth202/notes/mth202-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth202",
+        "subjectLabel": "MTH-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-202 Advanced IC Engines & Emissions — RGPV Model Question Paper",
+        "path": "../assets/resources/mth202/mock-papers/mth202-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth202",
+        "subjectLabel": "MTH-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-202 Advanced IC Engines & Emissions — Question Bank with Answers",
+        "path": "../assets/resources/mth202/mock-papers/mth202-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth203",
+        "subjectLabel": "MTH-203",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MTH-203 Advanced Refrigeration & Cryogenics — Unit-wise Study Notes",
+        "path": "../assets/resources/mth203/notes/mth203-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth203",
+        "subjectLabel": "MTH-203",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-203 Advanced Refrigeration & Cryogenics — RGPV Model Question Paper",
+        "path": "../assets/resources/mth203/mock-papers/mth203-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mth203",
+        "subjectLabel": "MTH-203",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MTH-203 Advanced Refrigeration & Cryogenics — Question Bank with Answers",
+        "path": "../assets/resources/mth203/mock-papers/mth203-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-TH"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst101",
+        "subjectLabel": "MST-101",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MST-101 Advanced Structural Analysis — Unit-wise Study Notes",
+        "path": "../assets/resources/mst101/notes/mst101-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst101",
+        "subjectLabel": "MST-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-101 Advanced Structural Analysis — RGPV Model Question Paper",
+        "path": "../assets/resources/mst101/mock-papers/mst101-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst101",
+        "subjectLabel": "MST-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-101 Advanced Structural Analysis — Question Bank with Answers",
+        "path": "../assets/resources/mst101/mock-papers/mst101-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst102",
+        "subjectLabel": "MST-102",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MST-102 Theory of Elasticity & Plasticity — Unit-wise Study Notes",
+        "path": "../assets/resources/mst102/notes/mst102-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst102",
+        "subjectLabel": "MST-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-102 Theory of Elasticity & Plasticity — RGPV Model Question Paper",
+        "path": "../assets/resources/mst102/mock-papers/mst102-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst102",
+        "subjectLabel": "MST-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-102 Theory of Elasticity & Plasticity — Question Bank with Answers",
+        "path": "../assets/resources/mst102/mock-papers/mst102-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst103",
+        "subjectLabel": "MST-103",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MST-103 Advanced Concrete Technology — Unit-wise Study Notes",
+        "path": "../assets/resources/mst103/notes/mst103-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst103",
+        "subjectLabel": "MST-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-103 Advanced Concrete Technology — RGPV Model Question Paper",
+        "path": "../assets/resources/mst103/mock-papers/mst103-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst103",
+        "subjectLabel": "MST-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-103 Advanced Concrete Technology — Question Bank with Answers",
+        "path": "../assets/resources/mst103/mock-papers/mst103-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst104",
+        "subjectLabel": "MST-104",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MST-104 Structural Dynamics — Unit-wise Study Notes",
+        "path": "../assets/resources/mst104/notes/mst104-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst104",
+        "subjectLabel": "MST-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-104 Structural Dynamics — RGPV Model Question Paper",
+        "path": "../assets/resources/mst104/mock-papers/mst104-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst104",
+        "subjectLabel": "MST-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-104 Structural Dynamics — Question Bank with Answers",
+        "path": "../assets/resources/mst104/mock-papers/mst104-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst201",
+        "subjectLabel": "MST-201",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MST-201 Advanced Design of Steel Structures — Unit-wise Study Notes",
+        "path": "../assets/resources/mst201/notes/mst201-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst201",
+        "subjectLabel": "MST-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-201 Advanced Design of Steel Structures — RGPV Model Question Paper",
+        "path": "../assets/resources/mst201/mock-papers/mst201-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mst201",
+        "subjectLabel": "MST-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MST-201 Advanced Design of Steel Structures — Question Bank with Answers",
+        "path": "../assets/resources/mst201/mock-papers/mst201-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-ST"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps101",
+        "subjectLabel": "MPS-101",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MPS-101 Advanced Power System Analysis — Unit-wise Study Notes",
+        "path": "../assets/resources/mps101/notes/mps101-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps101",
+        "subjectLabel": "MPS-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-101 Advanced Power System Analysis — RGPV Model Question Paper",
+        "path": "../assets/resources/mps101/mock-papers/mps101-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps101",
+        "subjectLabel": "MPS-101",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-101 Advanced Power System Analysis — Question Bank with Answers",
+        "path": "../assets/resources/mps101/mock-papers/mps101-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps102",
+        "subjectLabel": "MPS-102",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MPS-102 Power System Dynamics & Stability — Unit-wise Study Notes",
+        "path": "../assets/resources/mps102/notes/mps102-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps102",
+        "subjectLabel": "MPS-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-102 Power System Dynamics & Stability — RGPV Model Question Paper",
+        "path": "../assets/resources/mps102/mock-papers/mps102-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps102",
+        "subjectLabel": "MPS-102",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-102 Power System Dynamics & Stability — Question Bank with Answers",
+        "path": "../assets/resources/mps102/mock-papers/mps102-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps103",
+        "subjectLabel": "MPS-103",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MPS-103 Advanced Power Electronic Converters — Unit-wise Study Notes",
+        "path": "../assets/resources/mps103/notes/mps103-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps103",
+        "subjectLabel": "MPS-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-103 Advanced Power Electronic Converters — RGPV Model Question Paper",
+        "path": "../assets/resources/mps103/mock-papers/mps103-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps103",
+        "subjectLabel": "MPS-103",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-103 Advanced Power Electronic Converters — Question Bank with Answers",
+        "path": "../assets/resources/mps103/mock-papers/mps103-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps104",
+        "subjectLabel": "MPS-104",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MPS-104 Optimisation Techniques in Power Systems — Unit-wise Study Notes",
+        "path": "../assets/resources/mps104/notes/mps104-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps104",
+        "subjectLabel": "MPS-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-104 Optimisation Techniques in Power Systems — RGPV Model Question Paper",
+        "path": "../assets/resources/mps104/mock-papers/mps104-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps104",
+        "subjectLabel": "MPS-104",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-104 Optimisation Techniques in Power Systems — Question Bank with Answers",
+        "path": "../assets/resources/mps104/mock-papers/mps104-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            1
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps201",
+        "subjectLabel": "MPS-201",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MPS-201 Power System Operation & Control — Unit-wise Study Notes",
+        "path": "../assets/resources/mps201/notes/mps201-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps201",
+        "subjectLabel": "MPS-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-201 Power System Operation & Control — RGPV Model Question Paper",
+        "path": "../assets/resources/mps201/mock-papers/mps201-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps201",
+        "subjectLabel": "MPS-201",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-201 Power System Operation & Control — Question Bank with Answers",
+        "path": "../assets/resources/mps201/mock-papers/mps201-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps202",
+        "subjectLabel": "MPS-202",
+        "type": "notes",
+        "typeLabel": "Notes",
+        "title": "MPS-202 Smart Grid Technologies — Unit-wise Study Notes",
+        "path": "../assets/resources/mps202/notes/mps202-unit-wise-study-notes.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps202",
+        "subjectLabel": "MPS-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-202 Smart Grid Technologies — RGPV Model Question Paper",
+        "path": "../assets/resources/mps202/mock-papers/mps202-rgpv-model-question-paper.pdf",
+        "extension": "pdf",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            2
+        ],
+        "generated": true
+    },
+    {
+        "subject": "mps202",
+        "subjectLabel": "MPS-202",
+        "type": "mock-papers",
+        "typeLabel": "Mock Papers",
+        "title": "MPS-202 Smart Grid Technologies — Question Bank with Answers",
+        "path": "../assets/resources/mps202/mock-papers/mps202-question-bank-with-answers.md",
+        "extension": "md",
+        "branches": [
+            "MT-PS"
+        ],
+        "semesters": [
+            2
         ],
         "generated": true
     }

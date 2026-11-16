@@ -220,6 +220,13 @@ a {
     color: #10233e;
 }
 
+.stat-chip-sub {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+}
+
 .continue-card {
     width: 100%;
     text-align: left;
@@ -351,6 +358,10 @@ a {
     border-radius: 1rem;
     background: rgba(8, 17, 31, 0.96);
     box-shadow: 0 18px 35px rgba(8, 17, 31, 0.28);
+}
+
+.selection-menu.hidden {
+    display: none;
 }
 
 .selection-menu button {

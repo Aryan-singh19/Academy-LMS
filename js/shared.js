@@ -325,6 +325,7 @@
 
     // ---------------------------------------------------------------- programme (branch + semester)
     const PROGRAM_KEY = 'academy-program-v1';
+    const RECENT_PROGRAMS_KEY = 'academy-recent-programs-v1';
     const DEFAULT_PROGRAM = { branch: 'CSE', semester: 6 };
 
     function getBranchPlan() {
@@ -362,6 +363,9 @@
         if (!plan[branch] || !plan[branch][semester]) return getProgram();
         const program = { branch, semester: Number(semester) };
         try {
+            const recent = getRecentPrograms().filter((item) => !(item.branch === branch && item.semester === program.semester));
+            recent.unshift(program);
+            localStorage.setItem(RECENT_PROGRAMS_KEY, JSON.stringify(recent.slice(0, 4)));
             localStorage.setItem(PROGRAM_KEY, JSON.stringify(program));
         } catch (error) {
             // storage unavailable: keep in-memory default
@@ -407,6 +411,21 @@
         if (placement) return placement.code;
         const course = (window.coursesData || []).find((item) => item.id === courseId);
         return course ? course.code : String(courseId || '').toUpperCase();
+    }
+
+    function getRecentPrograms() {
+        try {
+            const plan = getBranchPlan();
+            const list = JSON.parse(localStorage.getItem(RECENT_PROGRAMS_KEY) || '[]');
+            return Array.isArray(list) ? list.filter((item) => item && plan[item.branch] && plan[item.branch][item.semester]) : [];
+        } catch (error) {
+            return [];
+        }
+    }
+
+    function getDegree(branchKey) {
+        const branch = getBranches()[branchKey];
+        return (branch && branch.degree) || 'B.Tech';
     }
 
     function getProgramLabel(program) {
@@ -897,6 +916,8 @@
         findPlacement,
         getDisplayCode,
         getProgramLabel,
+        getRecentPrograms,
+        getDegree,
         loadCourseScripts,
         getStorageSummary,
         exportStudentSnapshot,

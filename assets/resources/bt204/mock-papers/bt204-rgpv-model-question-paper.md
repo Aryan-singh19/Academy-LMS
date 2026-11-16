@@ -1,6 +1,6 @@
 # BT-204 Basic Civil Engineering & Mechanics — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-204 · IT Sem 2: BT-204 · ECE Sem 2: BT-204 · ME Sem 2: BT-204 · AU Sem 2: BT-204.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-204 · IT Sem 2: BT-204 · ECE Sem 2: BT-204 · EX Sem 2: BT-204 · CE Sem 2: BT-204 · ME Sem 2: BT-204 · AU Sem 2: BT-204.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

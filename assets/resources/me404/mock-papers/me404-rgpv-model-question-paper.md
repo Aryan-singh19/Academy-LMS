@@ -1,6 +1,6 @@
 # ME-404 Fluid Mechanics — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ME Sem 4: ME-404 · AU Sem 4: AU-404.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CE Sem 5: CE-501 · ME Sem 4: ME-404 · AU Sem 4: AU-404.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

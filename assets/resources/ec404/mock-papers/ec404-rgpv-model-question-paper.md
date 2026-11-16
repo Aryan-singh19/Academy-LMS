@@ -1,6 +1,6 @@
 # EC-404 Control System — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 4: EC-404.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 4: EC-404 · EX Sem 4: EX-405.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

@@ -8,11 +8,11 @@
   <a href="https://github.com/Aryan-singh19/Academy-LMS/releases/latest"><img src="https://img.shields.io/github/v/release/Aryan-singh19/Academy-LMS?style=for-the-badge&label=Download&color=2563eb" alt="Latest release"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge" alt="MIT License"/></a>
   <br/>
-  <img src="https://img.shields.io/badge/Branches-CSE_·_IT_·_ECE_·_ME_·_AU-7c3aed?style=flat-square" alt="Branches"/>
-  <img src="https://img.shields.io/badge/Subjects-97-2563eb?style=flat-square" alt="Subjects"/>
-  <img src="https://img.shields.io/badge/Topics-1990-0891b2?style=flat-square" alt="Topics"/>
-  <img src="https://img.shields.io/badge/MCQs-4900%2B-ea580c?style=flat-square" alt="MCQs"/>
-  <img src="https://img.shields.io/badge/PDF_handbooks-170%2B-ef4444?style=flat-square" alt="PDFs"/>
+  <img src="https://img.shields.io/badge/Branches-CSE_·_IT_·_ECE_·_EX_·_ME_·_CE_·_AU_+_M.Tech-7c3aed?style=flat-square" alt="Branches"/>
+  <img src="https://img.shields.io/badge/Subjects-163-2563eb?style=flat-square" alt="Subjects"/>
+  <img src="https://img.shields.io/badge/Topics-3300%2B-0891b2?style=flat-square" alt="Topics"/>
+  <img src="https://img.shields.io/badge/MCQs-8800%2B-ea580c?style=flat-square" alt="MCQs"/>
+  <img src="https://img.shields.io/badge/PDF_handbooks-300%2B-ef4444?style=flat-square" alt="PDFs"/>
   <img src="https://img.shields.io/badge/Stack-Vanilla_JS_+_Tailwind-14b8a6?style=flat-square&logo=javascript" alt="Stack"/>
   <img src="https://img.shields.io/badge/Docker-ready-2496ed?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
   <img src="https://img.shields.io/badge/Android_+_Windows-apps-3ddc84?style=flat-square&logo=android&logoColor=white" alt="Apps"/>
@@ -63,6 +63,20 @@ Subjects per semester (RGPV AICTE-flexible scheme; elective slots show the most 
 | 📡 **ECE**: Electronics & Communication | 5 | 5 | 5 | 5 | 4 | 4 | 4 | 3 |
 | ⚙️ **ME**: Mechanical Engineering | 5 | 5 | 5 | 5 | 5 | 4 | 4 | 3 |
 | 🚗 **AU**: Automobile Engineering | 5 | 5 | 5 | 5 | 5 | 4 | 4 | 3 |
+| ⚡ **EX**: Electrical & Electronics | 5 | 5 | 5 | 5 | 4 | 4 | 4 | 3 |
+| 🏗️ **CE**: Civil Engineering | 5 | 5 | 5 | 5 | 4 | 4 | 4 | 4 |
+
+**M.Tech** (theory semesters 1–2; semesters 3–4 are electives and dissertation):
+
+| Specialisation | S1 | S2 |
+|---|:-:|:-:|
+| 🧠 Computer Science & Engg. (MCSE) | 4 | 4 |
+| 🔬 VLSI Design (MVL) | 4 | 4 |
+| 🔥 Thermal Engineering (MTH) | 4 | 4 |
+| 🏛️ Structural Engineering (MST) | 4 | 4 |
+| 🔌 Power Systems (MPS) | 4 | 4 |
+
+Every M.Tech programme includes Research Methodology & IPR in semester 2.
 
 <details>
 <summary><b>Full subject list per branch</b> (click to expand)</summary>
@@ -118,6 +132,30 @@ Subjects per semester (RGPV AICTE-flexible scheme; elective slots show the most 
 - **S7:** AU-701 Mechanical Vibration, AU-702 Heat & Mass Transfer, AU-703 Vehicle Body Engg. & Aerodynamics, AU-704 Electric & Hybrid Vehicles
 - **S8:** AU-801 Vehicle Maintenance & Fault Diagnosis, AU-802 Automotive Safety & Legislation, AU-803 Refrigeration & Air Conditioning
 
+**EX:**
+- **S3:** ES-301, EX-302 Electronic Devices, EX-303 Electrical Measurements & Instrumentation, EX-304 Network Analysis, EX-305 Signals & Systems
+- **S4:** BT-401, EX-402 Electrical Machines-I, EX-403 Digital Electronics, EX-404 Power Systems-I, EX-405 Control Systems
+- **S5:** EX-501 Electrical Machines-II, EX-502 Power Electronics, EX-503(C) Renewable Power Generation, EX-504(A) Industrial Electronics
+- **S6:** EX-601 Power Systems-II, EX-602 Microprocessors, EX-603(A) Utilization of Electrical Energy, EX-604(B) IoT
+- **S7:** EX-701 Power System Protection, EX-702(B) HVDC & FACTS, EX-702(C) High Voltage Engg., EX-703(A) Electric & Hybrid Vehicles
+- **S8:** EX-801 Electrical Drives, EX-802(B) Special Electrical Machines, EX-802(D) Artificial Intelligence
+
+**CE:**
+- **S3:** BT-301, CE-302 Construction Materials, CE-303 Surveying, CE-304 Building Planning & Architecture, CE-305 Strength of Materials
+- **S4:** ES-401, CE-402 Construction Technology, CE-403 Structural Analysis-I, CE-404 Transportation Engg.-I, CE-405 Engg. Geology & Remote Sensing
+- **S5:** CE-501 Fluid Mechanics, CE-502 Transportation Engg.-II, CE-503(A) Structural Analysis-II, CE-504(B) Remote Sensing & GIS
+- **S6:** CE-601 RCC Design, CE-602 Environmental Engg.-I, CE-603(A) Water Resource Engg., CE-604(D) Operations Research
+- **S7:** CE-701 Geotechnical Engg., CE-702(A) Prestressed Concrete, CE-702(B) Environmental Engg.-II, CE-703(A) IoT
+- **S8:** CE-801 Steel Structures, CE-802(B) Foundation Engg., CE-802(D) Earthquake Resistant Design, CE-803(B) Data Analytics
+
+**M.Tech:**
+- **CSE:** Adv. Computational Maths, Adv. Data Structures & Algorithms, Adv. Computer Architecture, Adv. Computer Networks · Adv. Machine Learning, Distributed Systems & Cloud, Adv. Information Security, Research Methodology & IPR
+- **VLSI:** Digital IC Design, Analog IC Design, VLSI Technology & Fabrication, Adv. Digital System Design & Verification · Low Power VLSI, VLSI Testing & Testability, SoC & Embedded Design, Research Methodology & IPR
+- **Thermal:** Adv. Thermodynamics, Adv. Fluid Mechanics, Adv. Heat & Mass Transfer, CFD · Design of Thermal Systems, Adv. IC Engines & Emissions, Adv. Refrigeration & Cryogenics, Research Methodology & IPR
+- **Structural:** Adv. Structural Analysis, Elasticity & Plasticity, Adv. Concrete Technology, Structural Dynamics · Adv. Steel Design, FEM, Earthquake Resistant Design, Research Methodology & IPR
+- **Power Systems:** Adv. Power System Analysis, Dynamics & Stability, Adv. Power Electronic Converters, Optimisation Techniques · Operation & Control, Smart Grid, HVDC & FACTS, Research Methodology & IPR
+
+> M.Tech paper codes differ slightly between RGPV institutes; the subjects follow the common RGPV M.Tech schemes.
 > AU semesters 6–8 follow the commonly offered RGPV papers. Confirm elective codes with your department and the [official RGPV syllabus portal](https://www.rgpv.ac.in).
 </details>
 
@@ -308,8 +346,8 @@ git tag v2.0.0 && git push origin v2.0.0
 
 - [x] CSE semesters 5–7 with rich notes, quizzes and the practice suite
 - [x] **v2.0**: CSE, IT, ECE, ME and AU semesters 1–8 · My Programme navigation · PDFs · model papers · APK + EXE releases · Docker
-- [ ] Civil (CE) and Electrical & Electronics (EX), semesters 1–8
-- [ ] M.Tech: CSE, VLSI/Embedded (ECE), Thermal & Design (ME)
+- [x] **v2.1**: Civil (CE) and Electrical (EX) semesters 1–8 · M.Tech CSE, VLSI, Thermal, Structural and Power Systems · safe programme switching with recent programmes
+- [ ] More M.Tech specialisations (Communication, Production, Environmental, Data Science)
 - [ ] Hand-curated YouTube playlists for every new subject
 - [ ] Solved numericals and branch-specific trainers (thermo cycles, beam SFD/BMD, DSP filters)
 - [ ] Previous-year question links per subject

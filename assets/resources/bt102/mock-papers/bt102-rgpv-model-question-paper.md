@@ -1,6 +1,6 @@
 # BT-102 Mathematics-I — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-102 · IT Sem 1: BT-102 · ECE Sem 1: BT-102 · ME Sem 1: BT-102 · AU Sem 1: BT-102.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-102 · IT Sem 1: BT-102 · ECE Sem 1: BT-102 · EX Sem 1: BT-102 · CE Sem 1: BT-102 · ME Sem 1: BT-102 · AU Sem 1: BT-102.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

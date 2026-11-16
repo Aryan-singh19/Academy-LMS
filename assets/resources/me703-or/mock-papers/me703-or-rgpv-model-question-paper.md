@@ -1,6 +1,6 @@
 # ME-703(A) Operations Research & Supply Chain — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ME Sem 7: ME-703(A).
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CE Sem 6: CE-604(D) · ME Sem 7: ME-703(A).
 
 **Time: 3 Hours | Maximum Marks: 70**
 

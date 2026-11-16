@@ -1,6 +1,6 @@
 # BT-202 Mathematics-II — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-202 · IT Sem 2: BT-202 · ECE Sem 2: BT-202 · ME Sem 2: BT-202 · AU Sem 2: BT-202.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-202 · IT Sem 2: BT-202 · ECE Sem 2: BT-202 · EX Sem 2: BT-202 · CE Sem 2: BT-202 · ME Sem 2: BT-202 · AU Sem 2: BT-202.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

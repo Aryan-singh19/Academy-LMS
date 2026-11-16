@@ -1,0 +1,378 @@
+// Electrical & Electronics Engineering (EX) semesters 3-8
+@ ex303 | EX-303 | Electrical Measurements & Measuring Instruments | Galvanometers, indicating instruments, wattmeters, energy meters, bridges, instrument transformers and potentiometers.
+# Measurement Fundamentals & Galvanometers
+- Measurement Basics | Instruments are classified by operation and output. | Absolute Instrument = gives value from constants, e.g. tangent galvanometer | Secondary Instrument = calibrated against absolute instrument | Deflecting Torque = torque moving the pointer
+- Torques in Instruments | Three torques act in indicating instruments. | Controlling Torque = spring or gravity torque opposing deflection | Damping Torque = brings pointer to rest quickly | Eddy Current Damping = damping by induced currents
+- D'Arsonval Galvanometer | Moving coil galvanometer detects small currents. | D'Arsonval Galvanometer = moving coil in permanent magnet field | Current Sensitivity = deflection per unit current | Critical Damping Resistance = resistance for critical damping
+- Ballistic Galvanometer | Measures charge in short pulses. | Ballistic Galvanometer = measures quantity of charge | Ballistic Throw = first maximum deflection | Flux Meter = special ballistic galvanometer for flux
+# Indicating Instruments
+- PMMC Instrument | Accurate DC measurement. | PMMC = permanent magnet moving coil, linear scale | Torque Equation = Td = NBAI | Swamping Resistance = reduces temperature error
+- Moving Iron Instruments | Rugged instruments for AC and DC. | Attraction Type = iron drawn into coil | Repulsion Type = two irons repel each other | Square Law Scale = deflection proportional to I²
+- Electrodynamometer Instruments | Fixed and moving coils interact. | Electrodynamometer = no iron, accurate for AC | Transfer Instrument = calibrated on DC, used on AC | Wattmeter Application = current and pressure coils
+- Extending Ranges | Shunts and multipliers extend range. | Shunt Resistance = Rsh = Rm/(m − 1) | Multiplier = Rs = Rm(m − 1) | Universal Shunt = Ayrton shunt for multi-range ammeters
+# Power & Energy Measurement
+- Wattmeters | Wattmeters measure power. | Dynamometer Wattmeter = current and potential coils | Low Power Factor Wattmeter = for small power factors | Wattmeter Errors = pressure coil inductance and connection errors
+- Three-phase Power Measurement | Methods measure three-phase power. | Two Wattmeter Method = P = W1 + W2 for three-wire systems | Power Factor from Two Wattmeters = tan φ = √3(W1 − W2)/(W1 + W2) | Three Wattmeter Method = for four-wire systems
+- Energy Meters | Energy meters integrate power over time. | Induction Type Energy Meter = rotating disc meter | Creeping = disc rotation at no load | Meter Constant = revolutions per kWh
+- Electronic Energy Meters | Modern meters are digital. | Static Energy Meter = electronic metering | Smart Meter = two-way communication meter | Maximum Demand Indicator = records peak demand
+# Bridges & Potentiometers
+- Measurement of Resistance | Methods depend on resistance range. | Wheatstone Bridge = medium resistance | Kelvin Double Bridge = low resistance | Megger = insulation resistance tester
+- AC Bridges | AC bridges measure L and C. | Maxwell's Bridge = inductance measurement | Schering Bridge = capacitance and dielectric loss | Wien's Bridge = frequency measurement
+- DC Potentiometer | Null method for accurate voltage. | DC Potentiometer = compares unknown emf with standard | Standardisation = calibrating against standard cell | Crompton Potentiometer = laboratory DC potentiometer
+- AC Potentiometer | Measures magnitude and phase. | Polar Potentiometer = reads magnitude and angle | Coordinate Potentiometer = reads in-phase and quadrature components | Drysdale Potentiometer = polar type AC potentiometer
+# Instrument Transformers & Digital Instruments
+- Current Transformers | CTs step down current for meters. | Current Transformer = primary in series with line | Ratio Error = deviation from nominal ratio | Open-circuit Danger = never open CT secondary under load
+- Potential Transformers | PTs step down voltage. | Potential Transformer = primary across line | Phase Angle Error = angle between primary and reversed secondary | Burden = load on secondary in VA
+- Digital Instruments | Digital meters show numerical readings. | Digital Voltmeter = ADC-based voltmeter | Digital Frequency Meter = counts cycles in time gate | Resolution = smallest change detectable
+- Oscilloscope & Recorders | Waveforms are displayed and recorded. | CRO = displays voltage waveforms | DSO = digital storage oscilloscope | X-Y Recorder = plots one variable against another
+
+@ ex402 | EX-402 | Electrical Machine-I | Magnetic circuits, single-phase and three-phase transformers, autotransformers and three-phase induction motors.
+# Magnetic Circuits & Transformer Basics
+- Magnetic Circuits | Magnetic circuits guide flux. | Reluctance = S = l/(μA) | Hysteresis Loss = Ph = η Bmax^1.6 f V | Eddy Current Loss = Pe ∝ B² f² t²
+- Transformer Principle | Mutual induction transfers energy. | Transformer = static device changing AC voltage | EMF Equation = E = 4.44 f N Φm | Transformation Ratio = K = N2/N1
+- Ideal & Practical Transformer | Practical transformers have losses and leakage. | Ideal Transformer = no losses or leakage | Leakage Reactance = due to flux not linking both windings | Magnetising Current = current producing core flux
+- Construction | Core and winding arrangements. | Core Type = windings surround core limbs | Shell Type = core surrounds windings | Transformer Oil = cooling and insulation
+# Transformer Performance
+- Equivalent Circuit | Circuit models predict performance. | Equivalent Circuit = referred to primary or secondary | Referred Impedance = Z' = Z/K² | Approximate Equivalent Circuit = shunt branch moved to terminals
+- Open & Short Circuit Tests | Tests find parameters. | Open Circuit Test = gives core loss and shunt parameters | Short Circuit Test = gives copper loss and series impedance | Sumpner's Test = back-to-back test for heat run
+- Voltage Regulation | Output voltage changes with load. | Voltage Regulation = (E2 − V2)/V2 | Regulation Approximation = I(R cos φ ± X sin φ)/V | Zero Regulation = possible at leading power factor
+- Efficiency | Losses decide efficiency. | Efficiency = output/(output + losses) | Maximum Efficiency Condition = copper loss equals iron loss | All-day Efficiency = energy output / energy input over 24 h
+# Three-phase Transformers & Autotransformers
+- Three-phase Connections | Windings are connected in star or delta. | Star-Delta Connection = used for step-down at substations | Vector Group = phase displacement notation, e.g. Dyn11 | Open Delta = V-V connection with 57.7% capacity
+- Parallel Operation | Transformers share load in parallel. | Conditions for Parallel Operation = same ratio, polarity, phase sequence and vector group | Load Sharing = inversely proportional to impedance | Circulating Current = flows when ratios differ
+- Autotransformer | Single winding with tap. | Autotransformer = single winding transformer | Copper Saving = (1 − K) fraction saved | Application = motor starting and voltage regulation
+- Special Transformers | Transformers for special purposes. | Scott Connection = three-phase to two-phase | Tap Changer = adjusts turns ratio | Welding Transformer = high current low voltage
+# Three-phase Induction Motor
+- Construction & Principle | Rotating field induces rotor currents. | Rotating Magnetic Field = produced by three-phase currents | Squirrel Cage Rotor = bars short-circuited by end rings | Slip Ring Rotor = wound rotor with external resistance
+- Slip & Rotor Quantities | Rotor frequency depends on slip. | Slip = s = (Ns − N)/Ns | Rotor Frequency = f2 = s f | Rotor EMF = sE2
+- Torque Equation | Torque depends on slip and rotor parameters. | Torque = T ∝ s E2² R2/(R2² + (sX2)²) | Maximum Torque Condition = R2 = sX2 | Starting Torque = maximum when R2 = X2
+- Power Flow | Power splits into losses and output. | Rotor Input = Pg | Rotor Copper Loss = s × Pg | Mechanical Power = (1 − s) Pg
+# Induction Motor Performance & Control
+- Equivalent Circuit & Tests | Tests find motor parameters. | No-load Test = finds core and mechanical losses | Blocked Rotor Test = finds short-circuit parameters | Circle Diagram = graphical performance prediction
+- Starting Methods | Starters limit starting current. | DOL Starter = direct on line for small motors | Star-Delta Starter = reduces starting current to 1/3 | Rotor Resistance Starter = for slip ring motors
+- Speed Control | Speed is varied by several methods. | Stator Voltage Control = changes torque-speed curve | Frequency Control = V/f control | Pole Changing = changes synchronous speed
+- Induction Generator & Braking | Machine can generate and brake. | Induction Generator = runs above synchronous speed | Plugging = reversing phase sequence to brake | Cogging and Crawling = abnormal starting phenomena
+
+@ ex404 | EX-404 | Power System-I | Power generation, transmission line parameters, performance, insulators, cables, corona and distribution.
+# Power Generation
+- Structure of Power System | Generation, transmission and distribution. | Power System = generation, transmission, distribution and load | Grid = interconnected network | Load Curve = load versus time
+- Thermal & Hydro Plants | Conventional generation sources. | Thermal Power Plant = coal-fired steam plant | Hydro Power = P = 9.81 Q H η kW | Pumped Storage = stores energy by pumping water
+- Nuclear & Renewable Generation | Alternative sources supply power. | Nuclear Plant = fission heat produces steam | Solar PV Plant = direct conversion of sunlight | Wind Farm = group of wind turbines
+- Load Factors & Tariffs | Economics of generation. | Load Factor = average load / maximum demand | Diversity Factor = sum of maximum demands / system maximum | Two-part Tariff = fixed plus energy charges
+# Transmission Line Parameters
+- Resistance & Skin Effect | Conductor resistance depends on current distribution. | Skin Effect = AC current concentrates near surface | ACSR = aluminium conductor steel reinforced | Proximity Effect = nearby conductors alter distribution
+- Inductance | Lines have inductance due to flux linkage. | Inductance of Single-phase Line = L = 4×10⁻⁷ ln(D/r') H/m | GMR = geometric mean radius r' = 0.7788 r | Transposition = equalises inductance of phases
+- Capacitance | Lines have shunt capacitance. | Capacitance = C = 2πε/ln(D/r) per conductor | Effect of Earth = increases capacitance | Bundled Conductors = reduce reactance and corona
+- GMD & Composite Conductors | Geometric means simplify calculations. | GMD = geometric mean distance | Composite Conductor = stranded conductor | Double Circuit Line = two circuits on same tower
+# Transmission Line Performance
+- Short Transmission Lines | Lines up to 80 km neglect capacitance. | Short Line = series impedance only | Regulation = (VS − VR)/VR | Efficiency = output power / input power
+- Medium Transmission Lines | Lines 80-250 km use lumped capacitance. | Nominal T Method = capacitance at midpoint | Nominal π Method = capacitance split at ends | ABCD Constants = relate sending and receiving quantities
+- Long Transmission Lines | Distributed parameters needed. | Propagation Constant = γ = √(zy) | Surge Impedance = Zc = √(z/y) | SIL = surge impedance loading V²/Zc
+- Ferranti Effect & Compensation | Light loads raise receiving voltage. | Ferranti Effect = receiving voltage exceeds sending at no load | Shunt Reactor = compensates line charging | Series Capacitor = reduces line reactance
+# Insulators, Cables & Corona
+- Overhead Line Insulators | Insulators support conductors. | Pin Insulator = up to 33 kV | Suspension Insulator = string of discs for high voltage | String Efficiency = V/(n × V of disc nearest conductor)
+- Grading & Sag | Improving string efficiency and line clearance. | Guard Ring = equalises voltage across discs | Sag = W L²/(8T) for equal supports | Effect of Wind and Ice = increases loading on conductor
+- Underground Cables | Cables are used in cities. | Cable Construction = conductor, insulation, sheath and armour | Insulation Resistance = R = (ρ/2πl) ln(R/r) | Capacitance Grading = layers of different permittivity
+- Corona | Ionisation of air around conductors. | Corona = ionisation when field exceeds breakdown | Disruptive Critical Voltage = voltage at which corona starts | Corona Loss = Peek's formula estimates loss
+# Distribution Systems
+- Distribution Classification | Distribution delivers power to consumers. | Primary Distribution = 11 kV feeders | Secondary Distribution = 415/230 V | Feeder = line from substation without tappings
+- Radial & Ring Systems | Layouts trade cost and reliability. | Radial System = single feed path | Ring Main System = closed loop for reliability | Interconnected System = multiple sources
+- DC & AC Distributors | Voltage drop calculations. | Uniformly Loaded Distributor = voltage drop at centre or end | Fed at Both Ends = reduces drop | Kelvin's Law = economical conductor size
+- Substations | Substations transform and switch power. | Substation = equipment for voltage transformation | Busbar Arrangement = single, double or ring bus | Earthing = protection against fault currents
+
+@ ex501 | EX-501 | Electrical Machine-II | DC machines, synchronous generators and motors, and single-phase induction motors.
+# DC Machines
+- DC Generator Construction & EMF | DC generators convert mechanical to DC power. | Commutator = converts AC in armature to DC | EMF Equation = E = PΦZN/(60A) | Lap vs Wave Winding = A = P for lap, A = 2 for wave
+- Armature Reaction & Commutation | Armature flux distorts main field. | Armature Reaction = effect of armature flux on main field | Interpoles = improve commutation | Compensating Winding = neutralises armature reaction
+- DC Generator Characteristics | Excitation determines characteristics. | Shunt Generator = voltage drops with load | Critical Field Resistance = maximum for self-excitation | Compound Generator = series field compensates drop
+- DC Motor Principles | DC motors convert electrical to mechanical power. | Back EMF = Eb = V − IaRa | Torque Equation = T ∝ ΦIa | Series Motor = high starting torque, never start without load
+# DC Motor Control & Testing
+- Speed Control of DC Motors | Speed depends on flux and voltage. | Speed Relation = N ∝ Eb/Φ | Field Control = above base speed | Armature Voltage Control = below base speed
+- Starting of DC Motors | Starters limit current. | Three-point Starter = for shunt motors | Four-point Starter = no-volt coil independent of field | Starting Resistance = limits armature current
+- Losses & Efficiency | Losses reduce output. | Copper Losses = I²R in windings | Iron Losses = hysteresis and eddy current | Maximum Efficiency = when variable losses equal constant losses
+- Testing of DC Machines | Tests find efficiency. | Swinburne's Test = no-load test for constant losses | Hopkinson's Test = regenerative test of two machines | Brake Test = direct load test for small motors
+# Synchronous Generators
+- Alternator Construction | Rotating field produces AC. | Salient Pole Rotor = for low-speed hydro alternators | Cylindrical Rotor = for high-speed turbo alternators | Synchronous Speed = Ns = 120f/P
+- EMF Equation & Winding Factors | Winding design affects EMF. | Alternator EMF = E = 4.44 f Φ T Kp Kd | Pitch Factor = Kp = cos(α/2) | Distribution Factor = Kd = sin(mβ/2)/(m sin(β/2))
+- Voltage Regulation Methods | Regulation is predicted by tests. | Synchronous Impedance Method = EMF method, pessimistic | MMF Method = ampere-turn method, optimistic | ZPF Method = Potier triangle method, accurate
+- Two-reaction Theory | Salient pole machines need two axes. | Direct Axis Reactance = Xd | Quadrature Axis Reactance = Xq | Slip Test = determines Xd and Xq
+# Synchronous Machine Operation
+- Parallel Operation | Alternators are synchronised to grid. | Synchronisation Conditions = equal voltage, frequency and phase sequence | Synchroscope = indicates phase difference | Load Sharing = by governor and excitation control
+- Synchronous Motor | Runs at constant speed. | Synchronous Motor = not self-starting | Damper Winding = enables starting and damps hunting | V-curves = armature current versus field current
+- Power Factor Control | Excitation controls power factor. | Over-excited Motor = draws leading current | Synchronous Condenser = improves power factor | Hunting = oscillation about synchronous speed
+- Power-Angle Characteristics | Power depends on load angle. | Power Equation = P = (EV/Xs) sin δ | Steady-state Stability Limit = δ = 90° | Load Angle = angle between E and V
+# Single-phase Induction Motors
+- Double Field Revolving Theory | Single-phase field is two rotating fields. | Double Revolving Field Theory = pulsating field as two opposite rotating fields | Not Self-starting = net starting torque is zero | Forward and Backward Slip = s and 2 − s
+- Split-phase & Capacitor Motors | Auxiliary winding provides starting torque. | Split-phase Motor = resistance difference creates phase shift | Capacitor Start Motor = high starting torque | Permanent Split Capacitor = capacitor always in circuit
+- Shaded Pole & Universal Motors | Small motors for appliances. | Shaded Pole Motor = shading ring creates rotating field | Universal Motor = series motor running on AC and DC | Reluctance Motor = runs at synchronous speed
+- Applications | Motors suit different loads. | Fans = PSC motors | Mixer = universal motor | Compressor = capacitor start capacitor run motor
+
+@ ex502 | EX-502 | Power Electronics | Power semiconductor devices, controlled rectifiers, choppers, inverters, AC voltage controllers and cycloconverters.
+# Power Semiconductor Devices
+- Power Diodes & Thyristors | Devices switch high power. | Power Diode = uncontrolled two-layer switch | SCR = four-layer PNPN device turned on by gate | Holding Current = minimum current to stay on
+- SCR Characteristics & Turn-on | SCRs have distinct operating modes. | Forward Blocking Mode = off state with forward voltage | Latching Current = minimum current to latch on | Gate Triggering = turning on by gate pulse
+- Commutation of SCR | SCRs need external turn-off. | Natural Commutation = AC supply reverses current | Forced Commutation = circuit forces current to zero | Turn-off Time = time to regain blocking
+- Modern Power Devices | Fully controllable devices. | Power MOSFET = fast switching, low voltage | IGBT = combines MOSFET gate and BJT conduction | GTO = gate turn-off thyristor
+# Controlled Rectifiers
+- Single-phase Half-wave Converter | Phase control varies DC output. | Firing Angle = delay α before triggering | Average Output = Vdc = (Vm/2π)(1 + cos α) for R load | Freewheeling Diode = provides path for inductive current
+- Single-phase Full Converters | Full-wave control gives higher output. | Full Converter = Vdc = (2Vm/π) cos α | Semi Converter = mix of SCRs and diodes | Inversion Mode = α > 90° returns power to source
+- Three-phase Converters | Three-phase gives smoother DC. | Three-phase Full Converter = Vdc = (3√3 Vm/π) cos α | Six-pulse Output = lower ripple | Overlap Angle = due to source inductance
+- Converter Performance | Quality of input and output. | Input Power Factor = depends on firing angle | Harmonics = non-sinusoidal input current | Dual Converter = two converters for four-quadrant operation
+# DC-DC Converters (Choppers)
+- Chopper Principle | Choppers control DC voltage. | Chopper = DC-DC switching converter | Duty Ratio = D = Ton/T | Step-down Chopper = Vo = D Vs
+- Chopper Control Strategies | Output controlled by timing. | Constant Frequency = PWM control | Variable Frequency = frequency modulation | Current Limit Control = switch on current limits
+- Chopper Configurations | Quadrants of operation. | Type A Chopper = first quadrant | Type E Chopper = four-quadrant | Regenerative Braking = power returned to source
+- Switched-mode Supplies | SMPS convert efficiently. | Buck Converter = step-down | Boost Converter = Vo = Vs/(1 − D) | Buck-Boost Converter = inverted output of variable magnitude
+# Inverters
+- Single-phase Inverters | Inverters convert DC to AC. | Half-bridge Inverter = output ± Vs/2 | Full-bridge Inverter = output ± Vs | Square Wave Output = contains harmonics
+- Three-phase Inverters | Three-phase output for motors. | 180° Conduction = each switch conducts half cycle | 120° Conduction = two switches conduct at a time | Six-step Inverter = basic three-phase inverter
+- PWM Techniques | PWM reduces harmonics. | Sinusoidal PWM = compares sine with triangular carrier | Modulation Index = ratio of reference to carrier amplitude | Space Vector PWM = better DC bus utilisation
+- Current Source & Resonant Inverters | Other inverter types. | CSI = current source inverter | Resonant Inverter = LC circuit enables soft switching | Applications = induction heating and UPS
+# AC Voltage Controllers & Cycloconverters
+- AC Voltage Controllers | Control RMS AC voltage. | Phase Control = varying firing angle each half cycle | Integral Cycle Control = switching whole cycles | TRIAC = bidirectional thyristor for AC control
+- Applications of AC Controllers | Controllers serve many loads. | Fan Regulator = TRIAC-based speed control | Light Dimmer = phase-controlled lamp brightness | Soft Starter = reduces motor starting current
+- Cycloconverters | Direct AC-AC frequency conversion. | Cycloconverter = converts frequency without DC link | Step-down Cycloconverter = output frequency lower than input | Applications = large low-speed drives
+- Protection of Devices | Devices need protection. | Snubber Circuit = limits dv/dt | di/dt Protection = series inductor | Heat Sink = removes device heat
+
+@ ex503c | EX-503(C) | Renewable Power Generation | Solar thermal and PV, wind energy, small hydro, biomass, fuel cells, storage and grid integration.
+# Energy Scenario
+- Renewable Energy Overview | Renewables reduce fossil dependence. | Renewable Energy = naturally replenished energy | India's RE Target = 500 GW non-fossil capacity by 2030 | Capacity Factor = actual output / rated output
+- Solar Radiation | Solar resource estimation. | Solar Constant = 1367 W/m² | Global Radiation = beam plus diffuse radiation | Pyranometer = measures global solar radiation
+- Energy Policy | Policies support renewables. | MNRE = Ministry of New and Renewable Energy | Renewable Purchase Obligation = mandatory RE share for utilities | Net Metering = billing for rooftop export
+- Environmental Benefits | Renewables lower emissions. | Carbon Credit = tradable unit for reduced emissions | Life Cycle Emissions = emissions over full life | Sustainability = meeting needs without depletion
+# Solar Energy
+- Solar Thermal Systems | Heat from sun is collected. | Flat Plate Collector = low-temperature water heating | Concentrating Collector = focuses sunlight for high temperature | Solar Pond = salt gradient pond storing heat
+- Photovoltaic Cell | PV converts light to electricity. | PV Cell = p-n junction producing current from light | Fill Factor = Pmax/(Voc Isc) | Cell Efficiency = output / incident power
+- PV Modules & Arrays | Cells form modules and arrays. | Series Connection = increases voltage | Parallel Connection = increases current | Bypass Diode = protects shaded cells
+- MPPT & PV Systems | Electronics extract maximum power. | MPPT = maximum power point tracking | Perturb and Observe = common MPPT algorithm | Grid-tied PV = feeds power to grid via inverter
+# Wind Energy
+- Wind Power Basics | Wind kinetic energy is converted. | Power in Wind = P = ½ρAV³ | Betz Limit = maximum 59.3% extraction | Tip Speed Ratio = blade tip speed / wind speed
+- Wind Turbines | Turbines differ in axis orientation. | HAWT = horizontal axis wind turbine | VAWT = vertical axis wind turbine, e.g. Darrieus | Pitch Control = adjusting blade angle
+- Wind Generators | Generators convert rotation to electricity. | DFIG = doubly fed induction generator | PMSG = permanent magnet synchronous generator | Full Converter = decouples generator from grid
+- Wind Farm Planning | Sites and layouts optimise output. | Wind Resource Assessment = measuring wind speeds | Wake Effect = reduced speed behind turbines | Offshore Wind = turbines at sea
+# Other Renewable Sources
+- Small Hydro | Small hydro plants up to 25 MW. | Small Hydro = up to 25 MW in India | Run-of-river = no large storage | Micro Hydro = up to 100 kW
+- Biomass & Biogas | Organic matter produces energy. | Biomass Gasification = converts biomass to producer gas | Biogas Plant = anaerobic digestion producing methane | Cogeneration = power and heat from biomass
+- Geothermal & Ocean | Earth and ocean energy. | Geothermal Plant = uses underground heat | Tidal Power = uses tidal range | OTEC = ocean thermal energy conversion
+- Fuel Cells | Electrochemical generation. | Fuel Cell = converts chemical energy directly to electricity | PEMFC = proton exchange membrane fuel cell | Green Hydrogen = hydrogen from renewable electrolysis
+# Storage & Grid Integration
+- Energy Storage | Storage balances intermittency. | Battery Storage = lithium-ion and flow batteries | Pumped Hydro Storage = largest grid storage | Supercapacitor = high power short duration
+- Grid Integration Issues | Variable renewables challenge grids. | Intermittency = variable output of solar and wind | Grid Code = rules for connecting generators | Curtailment = forced reduction of RE output
+- Power Electronic Interfaces | Converters link RE to grid. | Grid-tie Inverter = synchronises with grid | Islanding Protection = disconnects during grid outage | Harmonics = distortion from converters
+- Hybrid & Microgrids | Combining sources improves reliability. | Hybrid System = solar-wind-battery combination | Microgrid = local grid able to island | Energy Management System = optimises sources and loads
+
+@ ex504a | EX-504(A) | Industrial Electronics | Power devices in industry, timers, heating, welding, motor control, PLCs and industrial instrumentation.
+# Industrial Power Devices
+- Thyristor Family | Thyristors control industrial power. | SCR = unidirectional controlled switch | TRIAC = bidirectional thyristor | DIAC = bidirectional trigger diode
+- Triggering Circuits | Triggering controls firing. | UJT Relaxation Oscillator = generates trigger pulses | Pulse Transformer = isolates gate circuit | Opto-isolator = optical isolation of control
+- Protection Circuits | Devices are protected from stress. | Snubber = RC network limiting dv/dt | Crowbar = protects against overvoltage | Fuse = overcurrent protection
+- Power Supplies | Regulated supplies feed industrial electronics. | Linear Regulator = series pass regulator | SMPS = switched-mode power supply | UPS = uninterruptible power supply
+# Timers & Control Circuits
+- Timers | Timers delay or sequence operations. | 555 Timer = versatile timing IC | Monostable Mode = single pulse output | Astable Mode = continuous oscillation
+- Time Delay Relays | Relays switch after delay. | On-delay Timer = output after delay on energising | Off-delay Timer = output persists after de-energising | Electronic Timer = IC-based timing
+- Counters & Sequencers | Digital circuits sequence processes. | Industrial Counter = counts products | Sequencer = steps through operations | Interlocking = prevents unsafe sequences
+- Photoelectric Controls | Light-based sensing. | Photoelectric Sensor = detects objects with light beam | Burglar Alarm = light interruption detector | Automatic Street Light = LDR-based switching
+# Heating & Welding
+- Induction Heating | Eddy currents heat conductive material. | Induction Heating = heating by induced eddy currents | Skin Depth = depth of current penetration | Applications = hardening, melting, brazing
+- Dielectric Heating | High-frequency field heats insulators. | Dielectric Heating = heating non-conductors by dielectric loss | Applications = wood gluing and plastic welding | Frequency Range = 1-100 MHz
+- Resistance Welding Control | Electronics control weld timing. | Resistance Welding = heat from current through contact | Weld Timer = controls current duration | Synchronous Timer = synchronised with supply
+- Electric Arc Furnace | Arc heating melts metals. | Arc Furnace = melting by electric arc | Electrode Control = maintains arc length | Power Factor in Furnaces = typically low
+# Motor Control
+- DC Motor Control | Converters control DC motor speed. | Phase-controlled DC Drive = SCR rectifier feeding motor | Chopper Drive = DC-DC converter control | Closed-loop Speed Control = tachogenerator feedback
+- AC Motor Control | Inverters control AC motors. | VFD = variable frequency drive | V/f Control = constant flux control | Soft Starter = reduces inrush current
+- Stepper & Servo Control | Precise positioning motors. | Stepper Motor Driver = sequences phase currents | Servo Drive = closed-loop position control | Encoder Feedback = position measurement
+- Motor Protection | Protection prevents damage. | Overload Relay = trips on sustained overcurrent | Single Phasing Preventer = trips on phase loss | Thermistor Protection = winding temperature sensing
+# PLC & Industrial Automation
+- PLC Basics | PLCs automate industrial processes. | PLC = programmable logic controller | Scan Cycle = input scan, program execution, output update | I/O Module = connects field devices
+- Ladder Programming | Ladder logic programs PLCs. | Ladder Diagram = relay-style program | Timer and Counter Instructions = TON, TOF, CTU | Latching Circuit = holds output on
+- SCADA & DCS | Supervisory systems monitor plants. | SCADA = supervisory control and data acquisition | DCS = distributed control system | HMI = human machine interface
+- Industrial Communication | Networks connect devices. | Modbus = common industrial protocol | Profibus = fieldbus for automation | Industrial Ethernet = Ethernet-based control networks
+
+@ ex601 | EX-601 | Power System-II | Per-unit system, load flow studies, economic dispatch, fault analysis, stability and power system control.
+# Per-unit System & Network Matrices
+- Per-unit System | Normalised quantities simplify analysis. | Per-unit Value = actual value / base value | Base Impedance = Zb = kVb²/MVAb | Change of Base = Znew = Zold (MVAnew/MVAold)(kVold/kVnew)²
+- Single Line Diagram | Simplified representation of system. | Single Line Diagram = one-line representation of three-phase system | Impedance Diagram = equivalent circuit for analysis | Reactance Diagram = resistance neglected
+- Bus Admittance Matrix | Network modelled by Ybus. | Ybus = bus admittance matrix | Diagonal Element = sum of admittances at bus | Off-diagonal Element = negative admittance between buses
+- Bus Impedance Matrix | Zbus is used for fault analysis. | Zbus = inverse of Ybus | Zbus Building Algorithm = step-by-step addition of elements | Sparsity = Ybus is sparse
+# Load Flow Studies
+- Load Flow Problem | Load flow finds steady-state voltages. | Load Flow = calculates bus voltages and power flows | Slack Bus = reference bus with fixed V and δ | PV Bus = generator bus with fixed P and voltage magnitude
+- Gauss-Seidel Method | Iterative method using Ybus. | Gauss-Seidel Load Flow = updates voltages one bus at a time | Acceleration Factor = speeds convergence, about 1.6 | Convergence = slow for large systems
+- Newton-Raphson Method | Fast quadratic convergence. | Newton-Raphson Load Flow = uses Jacobian matrix | Jacobian = partial derivatives of power equations | Convergence = few iterations
+- Fast Decoupled Load Flow | Approximations speed computation. | FDLF = decouples P-δ and Q-V | Constant Jacobian = reduces computation | Applications = real-time studies
+# Economic Operation
+- Economic Dispatch | Load is shared at minimum cost. | Incremental Cost = dC/dP of generator | Equal Incremental Cost Criterion = optimal dispatch condition | Lagrange Multiplier = system incremental cost λ
+- Transmission Losses | Losses affect dispatch. | B-coefficients = model transmission loss | Penalty Factor = Li = 1/(1 − ∂PL/∂Pi) | Loss Formula = PL = Σ Σ Pi Bij Pj
+- Unit Commitment | Decide which units run. | Unit Commitment = scheduling on/off of units | Spinning Reserve = online unused capacity | Priority List Method = commits cheapest units first
+- Hydro-thermal Coordination | Hydro and thermal plants are scheduled together. | Hydrothermal Scheduling = minimise thermal cost using hydro | Water Value = equivalent cost of water | Short-term Scheduling = daily operation
+# Fault Analysis
+- Symmetrical Faults | Three-phase faults are balanced. | Symmetrical Fault = three-phase fault | Short Circuit MVA = base MVA / Zpu | Current Limiting Reactor = limits fault current
+- Symmetrical Components | Unbalanced systems are decomposed. | Symmetrical Components = positive, negative and zero sequence | Operator a = 1∠120° | Sequence Impedances = differ for machines and lines
+- Unsymmetrical Faults | LG, LL and LLG faults. | LG Fault Current = If = 3E/(Z1 + Z2 + Z0) | LL Fault = involves positive and negative sequence | LLG Fault = involves all three sequences
+- Fault Analysis Using Zbus | Systematic fault computation. | Fault Current from Zbus = If = Vf/(Zkk + Zf) | Post-fault Voltages = from Zbus elements | Circuit Breaker Rating = from fault MVA
+# Power System Stability & Control
+- Stability Concepts | Stability is ability to remain in synchronism. | Steady-state Stability = small slow disturbances | Transient Stability = large sudden disturbances | Swing Equation = M d²δ/dt² = Pm − Pe
+- Equal Area Criterion | Graphical transient stability. | Equal Area Criterion = accelerating area equals decelerating area | Critical Clearing Angle = maximum angle for stability | Critical Clearing Time = time to clear fault
+- Load Frequency Control | Frequency is regulated by governors. | Speed Governor = adjusts mechanical power | Speed Regulation = R = Δf/ΔP | AGC = automatic generation control
+- Voltage Control | Reactive power controls voltage. | Reactive Power Compensation = capacitors and reactors | Tap Changing Transformer = voltage regulation | AVR = automatic voltage regulator
+
+@ ex603a | EX-603(A) | Utilization of Electrical Energy | Electric heating, welding, illumination, electric traction, electrolysis and energy-efficient utilisation.
+# Electric Heating
+- Methods of Heating | Electricity provides clean heat. | Resistance Heating = heat by I²R | Induction Heating = eddy current heating | Arc Heating = heat from electric arc
+- Resistance Ovens | Ovens use heating elements. | Heating Element = nichrome wire | Element Design = based on power and temperature | Temperature Control = thermostat or on-off switching
+- Induction Furnaces | Induction melts metals. | Core-type Induction Furnace = transformer principle | Coreless Induction Furnace = high-frequency field | Applications = steel and non-ferrous melting
+- Dielectric Heating | Insulators heated by RF fields. | Dielectric Loss = P ∝ f V² tan δ | Microwave Heating = cooking and drying | Applications = plastics and wood
+# Electric Welding
+- Welding Fundamentals | Electric welding joins metals. | Arc Welding = heat from arc between electrode and work | Resistance Welding = heat from contact resistance | Welding Transformer = low voltage high current
+- Resistance Welding Types | Several resistance processes. | Spot Welding = overlapping sheets | Seam Welding = continuous series of spots | Butt Welding = end-to-end joining
+- Arc Welding Equipment | Equipment provides suitable arc. | DC Welding Generator = stable arc | AC Welding Transformer = economical | Electrode Coating = stabilises arc and shields weld
+- Modern Welding | Advanced methods. | TIG Welding = tungsten inert gas | MIG Welding = metal inert gas | Plasma Arc Welding = constricted arc
+# Illumination
+- Laws of Illumination | Light distribution follows laws. | Luminous Flux = light energy in lumens | Illuminance = lux = lumen/m² | Inverse Square Law = E = I/d²
+- Lamps | Lamps convert electricity to light. | Incandescent Lamp = heated filament | Fluorescent Lamp = gas discharge with phosphor | LED Lamp = solid-state lighting, high efficacy
+- Lighting Design | Designs achieve required illuminance. | Utilisation Factor = flux on working plane / total flux | Maintenance Factor = accounts for dirt and ageing | Space-height Ratio = spacing of luminaires
+- Street & Flood Lighting | Outdoor lighting design. | Street Lighting = uniform road illumination | Flood Lighting = illumination of large areas | Glare = discomfort from bright sources
+# Electric Traction
+- Traction Systems | Electric traction powers trains. | 25 kV AC Traction = standard Indian Railways system | DC Traction = used in metros | Overhead Catenary = supplies traction power
+- Speed-Time Curves | Train motion is analysed. | Speed-Time Curve = acceleration, free running, coasting, braking | Schedule Speed = distance / total time including stops | Crest Speed = maximum speed attained
+- Tractive Effort | Force required for train movement. | Tractive Effort = force to accelerate and overcome resistance | Specific Energy Consumption = Wh per tonne-km | Adhesion = friction between wheel and rail
+- Traction Motors & Braking | Motors and braking for trains. | Traction Motor = DC series or three-phase induction | Regenerative Braking = returns energy to supply | Rheostatic Braking = dissipates energy in resistors
+# Electrolysis & Energy Efficiency
+- Electrolytic Processes | Electrolysis serves industry. | Faraday's Laws = mass deposited ∝ charge | Electroplating = depositing metal coating | Electro-refining = purifying metals
+- Battery Charging | Charging of storage batteries. | Constant Current Charging = fixed current | Constant Voltage Charging = fixed voltage | Trickle Charging = maintains full charge
+- Energy-efficient Motors & Drives | Efficient utilisation saves energy. | IE3 Motor = premium efficiency class | VFD Savings = pump and fan energy reduction | Power Factor Improvement = capacitor banks
+- Domestic Utilisation | Household appliances. | Refrigerator = vapour compression appliance | Air Conditioner = cooling and dehumidifying | Star Rating = BEE efficiency label
+
+@ ex701 | EX-701 | Power System Protection | Fault analysis, relays, protection schemes for generators, transformers, lines, circuit breakers and numerical relaying.
+# Protection Fundamentals
+- Need for Protection | Protection isolates faults quickly. | Protective Relay = senses fault and trips breaker | Zone of Protection = region a relay protects | Primary and Backup Protection = main and fallback protection
+- Relay Characteristics | Good relays are selective and fast. | Selectivity = isolating only faulty section | Sensitivity = detecting smallest fault | Reliability = operating when required
+- Instrument Transformers for Protection | CTs and PTs feed relays. | Protection CT = accurate at high fault currents | CT Saturation = distortion at high currents | Knee Point Voltage = onset of CT saturation
+- Earthing in Power Systems | Neutral earthing affects fault currents. | Solid Earthing = neutral connected directly to earth | Resistance Earthing = limits earth fault current | Peterson Coil = arc suppression coil
+# Relays
+- Electromagnetic Relays | Classic relays use magnetic attraction. | Attracted Armature Relay = instantaneous relay | Induction Disc Relay = inverse time characteristic | Plug Setting Multiplier = fault current / (relay setting × CT ratio)
+- Overcurrent Relays | Overcurrent relays protect feeders. | IDMT Relay = inverse definite minimum time | Time Multiplier Setting = scales operating time | Relay Coordination = grading of relay times
+- Directional & Differential Relays | Relays respond to direction or difference. | Directional Relay = operates for current in one direction | Differential Relay = operates on difference of currents | Percentage Differential = bias for CT mismatch
+- Distance Relays | Distance relays measure impedance. | Impedance Relay = operates when Z < setting | Mho Relay = directional circular characteristic | Zones of Distance Protection = zone 1, 2 and 3 settings
+# Apparatus Protection
+- Generator Protection | Generators face many faults. | Stator Differential Protection = for internal faults | Loss of Excitation Protection = detects field failure | Reverse Power Protection = prevents motoring
+- Transformer Protection | Transformers need special schemes. | Buchholz Relay = gas-actuated relay for oil transformers | Harmonic Restraint = prevents tripping on inrush | Restricted Earth Fault = protects winding against earth faults
+- Busbar Protection | Busbars need fast protection. | Busbar Differential = sums currents at bus | High Impedance Scheme = stable for through faults | Frame Leakage Protection = for metal-clad switchgear
+- Motor Protection | Motors are protected against overloads. | Thermal Overload Relay = models motor heating | Negative Sequence Relay = detects unbalance | Locked Rotor Protection = protects during stall
+# Line Protection & Circuit Breakers
+- Transmission Line Protection | Lines use distance and pilot schemes. | Pilot Protection = communication between line ends | Carrier Current Protection = PLCC-based scheme | Auto-reclosing = recloses after transient faults
+- Circuit Breaker Principles | Breakers interrupt fault currents. | Arc Interruption = high resistance or current zero methods | Restriking Voltage = transient voltage after arc extinction | Recovery Voltage = normal frequency voltage after interruption
+- Types of Circuit Breakers | Media quench the arc. | SF6 Circuit Breaker = uses sulphur hexafluoride gas | Vacuum Circuit Breaker = for medium voltage | Air Blast Breaker = compressed air extinguishes arc
+- Breaker Ratings & Testing | Ratings describe capability. | Breaking Capacity = maximum interruptible current | Making Capacity = 2.55 × symmetrical breaking current | Short Circuit Testing = verifies ratings
+# Modern Protection
+- Static Relays | Electronic relays replace electromechanical ones. | Static Relay = solid-state relay | Comparator = compares amplitude or phase | Advantages = fast, low burden
+- Numerical Relays | Microprocessor relays sample signals. | Numerical Relay = digital processing of sampled signals | Fourier Algorithm = extracts phasors | Self-monitoring = continuous internal checks
+- Substation Automation | IEC 61850 integrates protection. | IEC 61850 = substation communication standard | GOOSE Message = fast peer-to-peer signalling | IED = intelligent electronic device
+- Protection Against Overvoltages | Surges are diverted. | Lightning Arrester = diverts surges to earth | Surge Absorber = smooths steep fronts | Insulation Coordination = matching insulation to protection
+
+@ ex702b | EX-702(B) | HVDC & FACTS | HVDC transmission, converters, control, and flexible AC transmission devices such as SVC, STATCOM, TCSC and UPFC.
+# HVDC Fundamentals
+- HVDC vs HVAC | DC transmission suits long distances. | HVDC = high-voltage direct current transmission | Break-even Distance = about 600-800 km for overhead lines | Asynchronous Link = connects grids of different frequency
+- HVDC Link Types | Links differ in conductor arrangement. | Monopolar Link = single conductor with earth return | Bipolar Link = two conductors of opposite polarity | Back-to-back Link = converters at same site
+- HVDC Components | Converter stations contain key equipment. | Converter Transformer = feeds converters | Smoothing Reactor = reduces ripple | AC Filters = remove harmonics and supply reactive power
+- HVDC in India | Major projects. | Rihand-Dadri = early bipolar HVDC link | Champa-Kurukshetra = ±800 kV UHVDC | Raigarh-Pugalur = large VSC-HVDC
+# HVDC Converters & Control
+- Line Commutated Converters | Thyristor bridges convert AC-DC. | Six-pulse Bridge = basic Graetz bridge | Twelve-pulse Converter = reduces harmonics | Overlap Angle = due to commutation reactance
+- Rectifier & Inverter Operation | Firing angle sets mode. | Rectifier Operation = α < 90° | Inverter Operation = extinction angle γ controlled | Commutation Failure = inverter fails to commutate
+- HVDC Control | Controls regulate current and voltage. | Constant Current Control = at rectifier | Constant Extinction Angle Control = at inverter | Power Reversal = by reversing DC voltage
+- VSC-HVDC | Voltage source converters offer flexibility. | VSC-HVDC = uses IGBTs | MMC = modular multilevel converter | Black Start Capability = VSC can energise dead grid
+# Reactive Power & FACTS Concepts
+- Reactive Power Control | Reactive power controls voltage. | Reactive Power = Q = V I sin φ | Shunt Compensation = improves voltage profile | Series Compensation = increases power transfer
+- FACTS Concept | FACTS devices control power flow. | FACTS = flexible AC transmission systems | Power Transfer Equation = P = (V1V2/X) sin δ | Controllable Parameters = voltage, impedance and angle
+- Shunt Devices | Shunt devices inject reactive current. | SVC = static VAR compensator using TCR and TSC | STATCOM = static synchronous compensator using VSC | TCR = thyristor controlled reactor
+- Series Devices | Series devices change line impedance. | TCSC = thyristor controlled series capacitor | SSSC = static synchronous series compensator | Subsynchronous Resonance = risk with series compensation
+# Advanced FACTS
+- UPFC | Unified controller controls all parameters. | UPFC = unified power flow controller | Shunt and Series Converters = share DC link | Independent P and Q Control = key UPFC feature
+- IPFC & Phase Shifters | Other power flow controllers. | IPFC = interline power flow controller | Phase Shifting Transformer = controls angle | TCPAR = thyristor controlled phase angle regulator
+- Stability Enhancement | FACTS improve stability. | Damping of Oscillations = power oscillation damping control | Transient Stability Improvement = rapid control | Voltage Stability = support during contingencies
+- Harmonics & Filters | Converters generate harmonics. | Characteristic Harmonics = 12k ± 1 for 12-pulse | Passive Filter = tuned LC filter | Active Filter = injects compensating current
+# Applications & Grid Integration
+- Renewable Integration | HVDC and FACTS support renewables. | Offshore Wind Connection = VSC-HVDC links | Green Energy Corridor = Indian RE transmission | Grid Strength = short circuit ratio
+- Multi-terminal HVDC | Several converters on one DC network. | MTDC = multi-terminal DC system | DC Circuit Breaker = interrupts DC fault currents | DC Grid = meshed DC network
+- Power Quality Applications | Custom power devices. | DSTATCOM = distribution STATCOM | DVR = dynamic voltage restorer | Custom Power = power quality improvement devices
+- Economics & Planning | Choosing technology. | Cost Comparison = terminal versus line costs | Right of Way = HVDC needs narrower corridor | Losses = lower line losses for HVDC
+
+@ ex702c | EX-702(C) | High Voltage Engineering | Breakdown in gases, liquids and solids, generation and measurement of high voltages, overvoltages and HV testing.
+# Breakdown in Gases
+- Ionisation Processes | Gases break down by ionisation. | Townsend's First Ionisation Coefficient = electrons produced per unit length | Townsend's Second Coefficient = secondary emission | Townsend Criterion = γ(e^(αd) − 1) = 1
+- Paschen's Law | Breakdown voltage depends on pd. | Paschen's Law = Vb = f(pd) | Paschen Minimum = lowest breakdown voltage point | Streamer Theory = breakdown in long gaps
+- Corona Discharge | Partial breakdown near conductors. | Corona = localised ionisation | Positive Corona = from positive electrode | Corona Inception Voltage = start of corona
+- SF6 & Vacuum Insulation | Special media insulate equipment. | SF6 Gas = electronegative insulating gas | Vacuum Breakdown = field emission mechanisms | GIS = gas insulated substation
+# Breakdown in Liquids & Solids
+- Liquid Dielectrics | Oils insulate transformers. | Transformer Oil = mineral insulating oil | Suspended Particle Theory = impurities bridge gap | Cavitation Theory = bubbles cause breakdown
+- Solid Dielectrics | Solids fail by several mechanisms. | Intrinsic Breakdown = electronic breakdown in pure solids | Thermal Breakdown = heating from dielectric loss | Electromechanical Breakdown = compression by field
+- Treeing & Tracking | Long-term degradation. | Electrical Treeing = branching channels in insulation | Tracking = conductive path on surface | Partial Discharge = local breakdown in voids
+- Composite Insulation | Combinations of materials. | Composite Insulator = polymer housing with FRP core | Insulation Ageing = degradation over time | Dielectric Strength = maximum field without breakdown
+# Generation of High Voltages
+- HV AC Generation | Transformers produce HV AC. | Cascaded Transformers = series connection for high AC | Resonant Transformer = uses resonance to produce HV | Tesla Coil = high-frequency high voltage
+- HV DC Generation | Multipliers produce HV DC. | Cockcroft-Walton Multiplier = voltage multiplier circuit | Van de Graaff Generator = electrostatic generator | Ripple = variation in DC output
+- Impulse Voltage Generation | Impulses simulate lightning. | Standard Lightning Impulse = 1.2/50 µs waveform | Marx Generator = charges capacitors in parallel, discharges in series | Switching Impulse = 250/2500 µs waveform
+- Impulse Current Generation | Large currents test arresters. | Impulse Current Generator = capacitor bank discharge | 8/20 µs Wave = standard current impulse | Applications = testing surge arresters
+# Measurement of High Voltages
+- Sphere Gaps | Sphere gaps measure peak voltage. | Sphere Gap = breakdown voltage depends on gap and diameter | Air Density Correction = correction for temperature and pressure | Accuracy = within 3%
+- Voltage Dividers | Dividers scale down voltages. | Resistive Divider = for DC and AC | Capacitive Divider = for AC and impulses | Mixed Divider = for impulse measurement
+- Electrostatic Voltmeter | Measures RMS voltage directly. | Electrostatic Voltmeter = force between electrodes | Generating Voltmeter = rotating electrode type | Peak Voltmeter = measures crest value
+- Current & PD Measurement | HV currents and discharges are measured. | Rogowski Coil = measures impulse currents | Partial Discharge Measurement = detects insulation defects | Shunt = low resistance current measurement
+# Overvoltages & HV Testing
+- Lightning Overvoltages | Lightning strikes induce surges. | Direct Stroke = lightning hits conductor | Induced Stroke = nearby lightning induces voltage | Shielding Wire = earth wire protecting conductors
+- Switching Overvoltages | Switching causes transients. | Switching Surge = due to breaker operations | Travelling Waves = surges propagating along lines | Reflection Coefficient = at line discontinuities
+- Insulation Coordination | Matching insulation to protection. | BIL = basic insulation level | Protective Margin = BIL above arrester protective level | Surge Arrester = metal oxide arrester
+- HV Testing | Equipment is tested before service. | Power Frequency Withstand Test = one-minute AC test | Impulse Test = lightning impulse withstand | Type Test = tests on representative sample
+
+@ ex801 | EX-801 | Electrical Drives | Drive dynamics, DC drives, induction motor drives, synchronous motor drives, braking and digital control.
+# Electric Drive Fundamentals
+- Elements of Electric Drive | Drives control motion of machines. | Electric Drive = motor, converter and controller | Load Torque = torque required by load | Four-quadrant Operation = forward/reverse motoring and braking
+- Dynamics of Drives | Motion follows torque balance. | Fundamental Torque Equation = T − TL = J dω/dt | Equivalent Inertia = referred to motor shaft | Steady-state Stability = slope condition of torque curves
+- Load Characteristics | Loads have different torque-speed profiles. | Constant Torque Load = conveyors and hoists | Fan Load = torque ∝ speed² | Constant Power Load = machine tool spindles
+- Motor Rating | Motors are rated thermally. | Continuous Duty = runs at constant load | Intermittent Duty = alternating load and rest | Heating Time Constant = governs temperature rise
+# DC Drives
+- Single-phase Converter Drives | Phase control feeds DC motors. | Half-controlled Converter Drive = semi converter feeding armature | Fully Controlled Drive = allows regenerative braking | Continuous Conduction = smooth armature current
+- Three-phase Converter Drives | Higher power DC drives. | Three-phase Fully Controlled Drive = for large motors | Dual Converter Drive = four-quadrant operation | Circulating Current Mode = both converters conduct
+- Chopper-fed DC Drives | Choppers give fast control. | Chopper Drive = DC-DC converter control | Regenerative Chopper = returns energy | Multi-quadrant Chopper = four-quadrant operation
+- Closed-loop DC Drives | Feedback ensures accuracy. | Speed Loop = outer control loop | Current Loop = inner control loop | PI Controller = common drive controller
+# Induction Motor Drives
+- Stator Voltage Control | Simple speed control. | Stator Voltage Control = AC voltage controller | Applications = fan and pump drives | Limitation = poor efficiency at low speed
+- V/f Control | Constant flux control. | V/f Control = voltage proportional to frequency | VSI-fed Drive = voltage source inverter drive | CSI-fed Drive = current source inverter drive
+- Rotor Resistance & Slip Power Recovery | Slip ring motor control. | Rotor Resistance Control = chopper-controlled resistance | Static Kramer Drive = recovers slip power to mechanical | Static Scherbius Drive = recovers slip power to supply
+- Vector Control | High-performance control. | Field Oriented Control = decouples flux and torque | DTC = direct torque control | Sensorless Control = speed estimated without sensor
+# Synchronous & Special Motor Drives
+- Synchronous Motor Drives | Synchronous drives run at exact speeds. | Open-loop Control = frequency control | Self-controlled Mode = load commutated inverter | LCI Drive = for large synchronous motors
+- BLDC & PMSM Drives | Permanent magnet drives are efficient. | BLDC Drive = trapezoidal back EMF | PMSM Drive = sinusoidal back EMF with vector control | Hall Sensors = rotor position detection
+- Stepper Motor Drives | Open-loop positioning. | Stepper Drive = sequences phase currents | Microstepping = fine resolution | Load Angle Control = keeps rotor synchronised
+- Switched Reluctance Drives | Rugged drives. | SRM Drive = asymmetric bridge converter | Torque Ripple = drawback of SRM | Applications = EVs and appliances
+# Braking & Digital Control
+- Electric Braking | Motors decelerate electrically. | Regenerative Braking = returns energy to source | Dynamic Braking = dissipates in resistor | Plugging = reverses supply
+- Energy Recovery | Recovering kinetic energy. | Energy Recovery System = stores or returns braking energy | Traction Applications = trains and EVs | Lift Drives = regenerative elevators
+- Digital Control of Drives | Microcontrollers control drives. | DSP-based Drive = digital signal processor control | PWM Generation = digital modulation | Encoder Interface = position feedback
+- Drive Applications | Drives power industry. | Rolling Mill Drive = high power DC or AC drive | Electric Traction Drive = locomotive drives | Pump and Fan Drive = VFD energy savings
+
+@ ex802b | EX-802(B) | Special Electrical Machines | Stepper, switched reluctance, BLDC, PMSM, linear induction and other special purpose machines.
+# Stepper Motors
+- Stepper Motor Principle | Steppers move in discrete steps. | Stepper Motor = converts pulses into steps | Step Angle = 360°/(steps per revolution) | Holding Torque = torque at standstill when energised
+- Types of Stepper Motors | Construction varies. | Variable Reluctance Stepper = toothed soft-iron rotor | Permanent Magnet Stepper = magnet rotor | Hybrid Stepper = combines both
+- Drive Modes | Excitation modes change performance. | Full Step = one or two phases energised | Half Step = alternates one and two phases | Microstepping = proportional currents for small steps
+- Characteristics | Performance curves. | Pull-in Torque = maximum torque to start in step | Pull-out Torque = maximum torque while running | Resonance = vibration at certain step rates
+# Switched Reluctance Motors
+- SRM Construction | Doubly salient structure. | SRM = salient stator and rotor, no windings on rotor | Stator Phases = concentrated windings | Rotor Position = determines phase switching
+- Torque Production | Torque from reluctance variation. | Reluctance Torque = T = ½ i² dL/dθ | Aligned Position = minimum reluctance | Unaligned Position = maximum reluctance
+- SRM Converters | Converters energise phases. | Asymmetric Bridge Converter = two switches per phase | Commutation = switching phases in sequence | Current Chopping = controls phase current
+- SRM Applications | Rugged motors for harsh conditions. | Advantages = robust, low cost | Torque Ripple = main drawback | Applications = EVs, aerospace, appliances
+# Permanent Magnet Machines
+- Permanent Magnet Materials | Magnets provide excitation. | NdFeB Magnet = high energy rare-earth magnet | Ferrite Magnet = low-cost magnet | Demagnetisation = loss of magnetism by heat or field
+- BLDC Motor | Electronic commutation replaces brushes. | BLDC Motor = trapezoidal back EMF | Hall Sensor = detects rotor position | Six-step Commutation = switching sequence
+- PMSM | Sinusoidal PM machines. | PMSM = sinusoidal back EMF | Surface Mounted PM = magnets on rotor surface | Interior PM = magnets embedded, adds reluctance torque
+- PM Generators | PM machines generate power. | PMSG = wind turbine generator | Axial Flux Machine = disc-shaped machine | Cogging Torque = torque ripple from slotting
+# Linear & Other Machines
+- Linear Induction Motor | Linear motion directly. | LIM = unrolled induction motor | End Effect = losses at entry and exit | Applications = maglev and conveyors
+- Synchronous Reluctance Motor | Reluctance with distributed winding. | SynRM = synchronous reluctance motor | Saliency Ratio = Ld/Lq | Advantages = no magnets, efficient
+- Hysteresis & Universal Motors | Small special motors. | Hysteresis Motor = constant torque from hysteresis | Universal Motor = runs on AC and DC | Applications = clocks and appliances
+- Servo Motors & Tachogenerators | Control machines. | AC Servo Motor = two-phase control motor | DC Servo Motor = precise position control | Tachogenerator = speed sensor
+# Control & Applications
+- Sensorless Control | Position estimation without sensors. | Back EMF Sensing = detects zero crossings | Observer = estimates rotor position | Applications = fans and compressors
+- Electric Vehicle Motors | EVs use special machines. | Traction Motor = PMSM or induction motor | Field Weakening = extends speed range | In-wheel Motor = motor inside wheel
+- Aerospace & Medical Machines | Special applications. | More Electric Aircraft = electric actuators | Fault-tolerant Machine = continues operating with faults | Medical Drives = precision motors
+- Machine Design Considerations | Design for performance. | Thermal Design = cooling of machine | Efficiency Classes = IE standards | Material Selection = laminations and magnets

@@ -1,6 +1,6 @@
 # BT-203 Basic Mechanical Engineering — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-203 · IT Sem 2: BT-203 · ECE Sem 2: BT-203 · ME Sem 2: BT-203 · AU Sem 2: BT-203.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-203 · IT Sem 2: BT-203 · ECE Sem 2: BT-203 · EX Sem 2: BT-203 · CE Sem 2: BT-203 · ME Sem 2: BT-203 · AU Sem 2: BT-203.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

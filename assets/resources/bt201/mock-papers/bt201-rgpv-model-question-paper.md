@@ -1,6 +1,6 @@
 # BT-201 Engineering Physics — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-201 · IT Sem 2: BT-201 · ECE Sem 2: BT-201 · ME Sem 2: BT-201 · AU Sem 2: BT-201.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-201 · IT Sem 2: BT-201 · ECE Sem 2: BT-201 · EX Sem 2: BT-201 · CE Sem 2: BT-201 · ME Sem 2: BT-201 · AU Sem 2: BT-201.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

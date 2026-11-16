@@ -1,6 +1,6 @@
 # CS-801 Internet of Things — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 8: CS-801 · IT Sem 7: CSIT-701 · ECE Sem 7: EC-703(B) · ME Sem 7: ME-702(B).
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 8: CS-801 · IT Sem 7: CSIT-701 · ECE Sem 7: EC-703(B) · EX Sem 6: EX-604(B) · CE Sem 7: CE-703(A) · ME Sem 7: ME-702(B).
 
 **Time: 3 Hours | Maximum Marks: 70**
 

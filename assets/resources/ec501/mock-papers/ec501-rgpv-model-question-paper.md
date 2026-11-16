@@ -1,6 +1,6 @@
 # EC-501 Microprocessor & Its Applications — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 5: EC-501.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 5: EC-501 · EX Sem 6: EX-602.
 
 **Time: 3 Hours | Maximum Marks: 70**
 
