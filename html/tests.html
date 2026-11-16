@@ -48,33 +48,12 @@
 
             <!-- Row 2: Semester & Subject Filters -->
             <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-800/60">
-                <div class="flex items-center gap-1 bg-slate-900/80 p-0.5 rounded-full border border-blue-500/20 text-xs shrink-0">
-                    <button onclick="setSemesterFilter('sem5')" id="semFilter-sem5" class="px-2.5 py-1 rounded-full text-blue-300 font-semibold bg-blue-500/20 shadow-sm transition">Sem 5</button>
-                    <button onclick="setSemesterFilter('sem6')" id="semFilter-sem6" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 6</button>
-                    <button onclick="setSemesterFilter('sem7')" id="semFilter-sem7" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">Sem 7</button>
+                <div class="flex items-center gap-1.5 shrink-0">
+                    <select id="testBranchSelect" aria-label="Branch" class="bg-slate-900/80 border border-blue-500/20 rounded-full text-xs text-slate-200 px-2.5 py-1"></select>
+                    <div id="semFilterGroup" class="flex items-center gap-1 bg-slate-900/80 p-0.5 rounded-full border border-blue-500/20 text-xs overflow-x-auto no-scrollbar" role="tablist" aria-label="Semester"></div>
                 </div>
 
-                <div id="coursePillContainer" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 min-w-0 py-0.5">
-                    <button id="allSemCoursesBtn" data-course-filter="all" onclick="setPracticeCourse('all')" class="course-pill course-pill-active">All Sem 5</button>
-                    <!-- Sem 5 subjects -->
-                    <button data-course-filter="cs501" data-sem="sem5" onclick="setPracticeCourse('cs501')" class="course-pill">TOC (CS501)</button>
-                    <button data-course-filter="cs502" data-sem="sem5" onclick="setPracticeCourse('cs502')" class="course-pill">DBMS (CS502)</button>
-                    <button data-course-filter="cs503" data-sem="sem5" onclick="setPracticeCourse('cs503')" class="course-pill">Data Analytics (CS503)</button>
-                    <button data-course-filter="cs503-cs" data-sem="sem5" onclick="setPracticeCourse('cs503-cs')" class="course-pill">Cyber Sec (CS503-CS)</button>
-                    <button data-course-filter="cs504" data-sem="sem5" onclick="setPracticeCourse('cs504')" class="course-pill">Web Tech (CS504)</button>
-                    <!-- Sem 6 subjects -->
-                    <button data-course-filter="cs601" data-sem="sem6" onclick="setPracticeCourse('cs601')" class="course-pill" style="display:none">ML (CS601)</button>
-                    <button data-course-filter="cs602" data-sem="sem6" onclick="setPracticeCourse('cs602')" class="course-pill" style="display:none">Networks (CS602)</button>
-                    <button data-course-filter="cs603" data-sem="sem6" onclick="setPracticeCourse('cs603')" class="course-pill" style="display:none">Compiler (CS603)</button>
-                    <button data-course-filter="cs604" data-sem="sem6" onclick="setPracticeCourse('cs604')" class="course-pill" style="display:none">Project Mgmt (CS604)</button>
-                    <button data-course-filter="cs603-cg" data-sem="sem6" onclick="setPracticeCourse('cs603-cg')" class="course-pill" style="display:none">Graphics (CS603-CG)</button>
-                    <!-- Sem 7 subjects -->
-                    <button data-course-filter="cs701" data-sem="sem7" onclick="setPracticeCourse('cs701')" class="course-pill" style="display:none">Software Arch (CS701)</button>
-                    <button data-course-filter="cs702-bd" data-sem="sem7" onclick="setPracticeCourse('cs702-bd')" class="course-pill" style="display:none">Big Data (CS702)</button>
-                    <button data-course-filter="cs702-wmc" data-sem="sem7" onclick="setPracticeCourse('cs702-wmc')" class="course-pill" style="display:none">Wireless &amp; Mobile</button>
-                    <button data-course-filter="cs703-cis" data-sem="sem7" onclick="setPracticeCourse('cs703-cis')" class="course-pill" style="display:none">Crypto &amp; InfoSec</button>
-                    <button data-course-filter="cs703-dm" data-sem="sem7" onclick="setPracticeCourse('cs703-dm')" class="course-pill" style="display:none">Disaster Mgmt</button>
-                </div>
+                <div id="coursePillContainer" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 min-w-0 py-0.5"></div>
 
                 <div id="drillControls" class="shrink-0">
                     <button onclick="buildPracticeSession(currentActiveMode === 'mock' ? 'mock' : 'drill')" class="secondary-cta text-xs !py-1 !px-2.5">Generate new set</button>

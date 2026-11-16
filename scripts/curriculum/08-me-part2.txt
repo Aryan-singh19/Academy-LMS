@@ -1,0 +1,270 @@
+// Mechanical semesters 6-8 (some shared with Automobile)
+@ me601 | ME-601 | Thermal Engineering & Gas Dynamics | Boilers, steam nozzles and turbines, condensers, compressors and compressible flow.
+# Steam Generators & Boilers
+- Classification of Boilers | Boilers generate steam for power and process. | Fire-tube Boiler = hot gases pass through tubes surrounded by water | Water-tube Boiler = water flows in tubes heated externally; high pressure | Babcock and Wilcox Boiler = inclined water-tube boiler
+- High-pressure Boilers | Modern boilers operate at very high pressures. | La Mont Boiler = forced circulation boiler | Benson Boiler = supercritical once-through boiler | Supercritical Boiler = operates above critical pressure; no boiling
+- Boiler Mountings & Accessories | Fittings ensure safety and efficiency. | Safety Valve = releases excess pressure | Economiser = preheats feed water using flue gases | Superheater = raises steam temperature above saturation
+- Boiler Performance & Draught | Performance is rated by evaporation and efficiency. | Equivalent Evaporation = water evaporated from and at 100 °C | Boiler Efficiency = heat used in steam / heat supplied by fuel | Natural Draught = chimney creates draught by density difference
+# Steam Nozzles & Turbines
+- Flow Through Nozzles | Nozzles convert enthalpy into kinetic energy. | Nozzle Exit Velocity = V = 44.72√(Δh) with Δh in kJ/kg | Critical Pressure Ratio = about 0.546 for superheated steam | Supersaturated Flow = steam expands without condensing (metastable)
+- Impulse Turbines | Impulse turbines expand steam in nozzles only. | Impulse Turbine = pressure drop occurs only in nozzles | De Laval Turbine = single-stage impulse turbine | Blade Efficiency = maximum when blade speed ratio is cos α/2
+- Compounding of Turbines | Compounding reduces rotor speed. | Velocity Compounding = Curtis stage with moving and fixed blade rows | Pressure Compounding = Rateau stages of nozzles and blades | Pressure-Velocity Compounding = combination of both
+- Reaction Turbines | Steam expands in both fixed and moving blades. | Reaction Turbine = pressure drop in fixed and moving blades | Degree of Reaction = enthalpy drop in moving blades / stage drop | Parsons Turbine = 50% reaction turbine
+# Condensers & Cooling Towers
+- Steam Condensers | Condensers lower back pressure and recover water. | Surface Condenser = steam and cooling water do not mix | Jet Condenser = steam mixes with cooling water | Condenser Vacuum = lower pressure increases turbine work
+- Condenser Efficiency | Air leakage reduces performance. | Vacuum Efficiency = actual vacuum / ideal vacuum | Dalton's Law = total pressure is the sum of partial pressures of steam and air | Air Pump = removes air from condenser
+- Cooling Towers | Cooling towers reject heat to atmosphere. | Natural Draught Cooling Tower = hyperbolic tower using buoyancy | Range = inlet minus outlet water temperature | Approach = outlet water temperature minus wet-bulb temperature
+- Rankine Cycle Improvements | Plant efficiency is raised by modifications. | Rankine Cycle = ideal steam power cycle | Reheat = steam reheated after partial expansion | Regeneration = feed water heated by bled steam
+# Air Compressors
+- Reciprocating Compressors | Pistons compress air in cylinders. | Isothermal Efficiency = isothermal work / actual work | Clearance Volume = reduces volumetric efficiency | Volumetric Efficiency = 1 + C − C(p2/p1)^(1/n)
+- Multistage Compression | Staging with intercooling saves work. | Intercooling = cooling air between stages | Perfect Intercooling = air cooled to initial temperature | Optimum Pressure Ratio = equal ratio per stage, √(p3/p1) for two stages
+- Rotary Compressors | Rotary machines deliver continuous flow. | Centrifugal Compressor = impeller imparts kinetic energy converted in diffuser | Axial Flow Compressor = rows of rotor and stator blades | Surging = unstable flow reversal at low flow rates
+- Compressor Performance | Performance maps show operating limits. | Slip Factor = ratio of actual to ideal whirl velocity | Choking = maximum flow when Mach 1 is reached | Pressure Coefficient = actual / isentropic pressure rise
+# Gas Dynamics
+- Compressible Flow Basics | Density changes matter at high speeds. | Mach Number = M = V/a | Speed of Sound = a = √(γRT) | Stagnation Properties = properties when flow is brought to rest isentropically
+- Isentropic Flow in Nozzles | Area changes accelerate subsonic and supersonic flow differently. | Area-Velocity Relation = dA/A = (M² − 1)dV/V | Convergent-Divergent Nozzle = needed to reach supersonic speeds | Choked Flow = maximum mass flow at M = 1 at throat
+- Normal Shock Waves | Shocks are abrupt irreversible changes. | Normal Shock = discontinuity converting supersonic to subsonic flow | Prandtl Relation = V1·V2 = a*² | Entropy Rise = entropy increases across a shock
+- Fanno & Rayleigh Flow | Friction and heat transfer affect duct flow. | Fanno Flow = adiabatic flow with friction | Rayleigh Flow = frictionless flow with heat transfer | Choking Length = duct length driving flow to M = 1
+
+@ me602 | ME-602 | Machine Component Design | Design for static and fatigue loads, shafts, keys, couplings, springs, bearings, gears, clutches and brakes.
+# Design Fundamentals
+- Design Process & Considerations | Machine design converts needs into components. | Machine Design = creating components to satisfy functional requirements | Factor of Safety = failure stress / allowable stress | Standardisation = using preferred sizes and standard parts
+- Theories of Failure | Failure theories predict yielding under combined stresses. | Maximum Principal Stress Theory = Rankine's theory for brittle materials | Maximum Shear Stress Theory = Tresca theory for ductile materials | Distortion Energy Theory = von Mises theory, most accurate for ductile metals
+- Stress Concentration | Discontinuities raise local stress. | Stress Concentration Factor = Kt = maximum stress / nominal stress | Notch Sensitivity = q = (Kf − 1)/(Kt − 1) | Fillet Radius = larger radius reduces stress concentration
+- Material Selection & Preferred Numbers | Materials and sizes are chosen systematically. | Material Selection = based on strength, cost and manufacturability | Preferred Numbers = Renard series for standard sizes | Ergonomics = designing for human comfort and use
+# Fatigue & Shafts
+- Fatigue Design | Cyclic loads cause failure below yield. | Endurance Limit = stress for infinite life, about 0.5 Sut for steels | Goodman Line = fatigue criterion linking alternating and mean stresses | Soderberg Line = conservative criterion using yield strength
+- Endurance Limit Modifying Factors | Real components have lower endurance limits. | Surface Finish Factor = rougher surfaces reduce fatigue strength | Size Factor = larger parts have lower endurance | Reliability Factor = adjusts for desired reliability
+- Design of Shafts | Shafts carry torque and bending. | ASME Shaft Equation = combines bending and torsion with shock factors | Equivalent Torque = Te = √((KmM)² + (KtT)²) | Critical Speed = shaft speed causing resonance
+- Keys & Couplings | Keys and couplings connect shafts and hubs. | Sunk Key = rectangular key fitted in keyways | Flange Coupling = rigid coupling bolted through flanges | Flexible Coupling = tolerates misalignment, e.g. bushed pin type
+# Springs & Bearings
+- Helical Springs | Springs store energy and absorb shock. | Wahl's Factor = K = (4C − 1)/(4C − 4) + 0.615/C | Spring Index = C = D/d | Spring Deflection = δ = 8PD³n/(Gd⁴)
+- Leaf Springs | Laminated springs carry vehicle loads. | Leaf Spring = layered plates with graduated lengths | Nipping = pre-stress by different curvature of leaves | Full-length Leaves = longest leaves including master leaf
+- Rolling Contact Bearings | Ball and roller bearings reduce friction. | Dynamic Load Rating = load for L10 life of one million revolutions | Bearing Life Equation = L10 = (C/P)^3 for ball bearings | Equivalent Dynamic Load = P = XFr + YFa
+- Sliding Contact Bearings | Journal bearings use a lubricant film. | Hydrodynamic Lubrication = pressure generated by relative motion | Sommerfeld Number = dimensionless bearing characteristic | Petroff's Equation = friction in lightly loaded bearings
+# Gears
+- Spur Gear Design | Spur gears are designed for strength and wear. | Lewis Equation = beam strength of gear tooth | Buckingham's Dynamic Load = additional load due to errors and speed | Wear Strength = surface durability against pitting
+- Helical Gears | Helical gears run smoother. | Helix Angle = angle of teeth to the axis | Virtual Number of Teeth = z/cos³ψ | Axial Thrust = produced by helical teeth
+- Bevel Gears | Bevel gears connect intersecting shafts. | Bevel Gear = conical gear for intersecting shafts | Pitch Cone Angle = cone angle of the pitch surface | Miter Gears = equal bevel gears at 90°
+- Worm Gears | Worm drives give high reductions. | Worm Gear = high ratio drive between non-intersecting shafts | Self-locking = worm drive cannot be back-driven | Efficiency of Worm Drive = depends on lead angle and friction
+# Clutches, Brakes & Engine Parts
+- Friction Clutches | Clutches engage and disengage power. | Single Plate Clutch = one friction plate between pressure plates | Multi-plate Clutch = several plates for compact high torque | Uniform Wear Assumption = gives conservative clutch torque
+- Brakes | Brakes absorb kinetic energy. | Block Brake = shoe pressed against drum | Internal Expanding Shoe Brake = used in vehicles | Disc Brake = calipers clamp a rotating disc
+- Engine Components Design | IC engine parts are designed for gas and inertia loads. | Cylinder Design = wall thickness from hoop stress | Piston Design = crown thickness by Grashoff's formula | Connecting Rod = I-section designed against buckling
+- Crankshaft & Flywheel | Rotating parts handle torque fluctuation. | Crankshaft = converts reciprocating to rotary motion | Flywheel = stores energy to smooth speed fluctuation | Coefficient of Fluctuation of Speed = (ωmax − ωmin)/ω
+
+@ me603-tm | ME-603(A) | Turbo Machinery | Energy transfer in turbomachines, centrifugal pumps, hydraulic turbines, compressors, fans and hydrostatic systems.
+# Energy Transfer in Turbomachines
+- Classification of Turbomachines | Turbomachines exchange energy with a flowing fluid. | Turbomachine = device transferring energy between rotor and fluid | Power-absorbing Machine = pump or compressor | Power-producing Machine = turbine
+- Euler's Turbine Equation | Euler's equation gives energy transfer. | Euler's Equation = E = (U1Vw1 − U2Vw2)/g | Velocity Triangle = vectors of blade, absolute and relative velocity | Whirl Velocity = tangential component of absolute velocity
+- Degree of Reaction | Reaction tells where pressure change occurs. | Degree of Reaction = static enthalpy change in rotor / total change | Impulse Stage = zero degree of reaction | 50% Reaction = symmetric velocity triangles
+- Dimensionless Parameters | Similarity laws compare machines. | Specific Speed = Ns = N√Q/H^(3/4) for pumps | Unit Speed = speed under unit head | Affinity Laws = Q ∝ N, H ∝ N², P ∝ N³
+# Centrifugal & Reciprocating Pumps
+- Centrifugal Pump Working | Impellers add energy to liquid. | Centrifugal Pump = impeller and casing raise liquid pressure | Priming = filling the pump with liquid before starting | Volute Casing = gradually increasing area converts velocity to pressure
+- Pump Heads & Efficiencies | Heads and efficiencies define performance. | Manometric Head = head measured across pump | Manometric Efficiency = manometric head / Euler head | Overall Efficiency = water power / shaft power
+- Cavitation & NPSH | Low pressure causes vapour bubbles. | Cavitation = formation and collapse of vapour bubbles | NPSH = net positive suction head | Thoma Cavitation Factor = σ = NPSH / H
+- Reciprocating Pumps | Positive displacement pumps deliver fixed volume per stroke. | Slip = theoretical minus actual discharge | Air Vessel = smooths flow and reduces acceleration head | Indicator Diagram = pressure versus stroke diagram
+# Hydraulic Turbines
+- Pelton Wheel | Impulse turbine for high heads. | Pelton Wheel = impulse turbine with buckets struck by jets | Jet Ratio = wheel diameter / jet diameter | Maximum Efficiency Condition = bucket speed about half jet speed
+- Francis Turbine | Mixed flow reaction turbine for medium heads. | Francis Turbine = inward mixed flow reaction turbine | Guide Vanes = control flow and direction into runner | Draft Tube = recovers kinetic energy at exit
+- Kaplan Turbine | Axial flow turbine for low heads. | Kaplan Turbine = axial flow turbine with adjustable blades | Propeller Turbine = Kaplan with fixed blades | High Specific Speed = Kaplan suits large flows at low heads
+- Turbine Performance & Governing | Characteristics and governing maintain speed. | Unit Quantities = performance at unit head | Main Characteristic Curves = performance at constant head | Governing = adjusting flow to keep speed constant
+# Compressors, Fans & Blowers
+- Centrifugal Compressors | Rotating impellers compress gases. | Centrifugal Compressor = radial flow compressor with diffuser | Slip Factor = accounts for flow deviation at impeller exit | Pre-whirl = guide vanes reduce inlet relative Mach number
+- Axial Flow Compressors | Axial machines handle large flows. | Axial Compressor = multiple stages of rotor and stator rows | Stage Pressure Ratio = small per stage, so many stages used | Work Done Factor = accounts for non-uniform axial velocity
+- Fans & Blowers | Low-pressure machines move air. | Fan = low pressure rise air mover | Blower = moderate pressure rise | Backward-curved Blades = stable characteristic and high efficiency
+- Surge & Stall | Instabilities limit operating range. | Surge = flow reversal oscillation in compressors | Rotating Stall = stalled cells moving around the annulus | Surge Line = boundary on compressor map
+# Hydraulic Systems
+- Hydrostatic Systems | Fluid power transmits force by pressure. | Positive Displacement Pump = fixed volume per revolution | Variable Displacement Pump = output adjustable at constant speed | Hydraulic Motor = converts fluid power into rotation
+- Hydraulic Devices | Classic devices use pressure. | Hydraulic Intensifier = increases fluid pressure | Hydraulic Accumulator = stores energy in pressurised fluid | Hydraulic Press = multiplies force by area ratio
+- Hydraulic Cranes & Lifts | Lifting devices use hydraulics. | Hydraulic Crane = lifts loads using hydraulic cylinders | Hydraulic Lift = elevator powered by hydraulics | Hydraulic Ram = uses water hammer to lift water
+- Fluid Couplings & Torque Converters | Hydrodynamic drives transmit torque smoothly. | Fluid Coupling = pump and turbine transmitting torque via fluid | Torque Converter = coupling with stator multiplying torque | Slip in Coupling = speed difference between pump and turbine
+
+@ me604-rob | ME-604(A) | Robotics | Robot anatomy, kinematics, dynamics, trajectory planning, sensors, actuators, programming and applications.
+# Introduction to Robotics
+- Robot Anatomy | Robots are programmable manipulators. | Industrial Robot = reprogrammable multifunctional manipulator | Degrees of Freedom = number of independent joint motions | Work Envelope = space reachable by the end effector
+- Robot Configurations | Coordinate systems classify robots. | Cartesian Robot = three linear joints | SCARA = selective compliance robot arm for assembly | Articulated Robot = rotary joints like a human arm
+- Robot Specifications | Specifications describe capability. | Payload = maximum load robot can carry | Repeatability = ability to return to the same point | Accuracy = ability to reach a commanded point
+- End Effectors | Tools at the robot wrist interact with work. | Gripper = end effector for grasping | Vacuum Gripper = uses suction cups | Tool Changer = allows automatic tool swapping
+# Robot Kinematics
+- Homogeneous Transformations | 4×4 matrices represent position and orientation. | Homogeneous Transformation = combines rotation and translation in 4×4 matrix | Rotation Matrix = 3×3 orthonormal matrix | Frame = coordinate system attached to a link
+- Forward Kinematics | Joint values give end-effector pose. | Forward Kinematics = computing pose from joint variables | DH Parameters = link length, twist, offset and joint angle | DH Convention = systematic assignment of link frames
+- Inverse Kinematics | Pose gives required joint values. | Inverse Kinematics = finding joint variables for a desired pose | Multiple Solutions = several joint sets may reach the same pose | Singularity = configuration losing a degree of freedom
+- Jacobian & Velocity Kinematics | Jacobian maps joint rates to end-effector velocity. | Jacobian = matrix relating joint velocities to end-effector velocities | Singular Jacobian = determinant zero at singularity | Static Force Relation = τ = J^T F
+# Dynamics & Trajectory Planning
+- Robot Dynamics | Dynamics relates torques to motion. | Lagrange-Euler Formulation = dynamics from kinetic and potential energy | Newton-Euler Formulation = recursive force and moment balance | Inertia Matrix = joint-space mass matrix
+- Trajectory Planning | Planned paths are smooth in time. | Joint-space Trajectory = interpolating joint angles | Cubic Polynomial Trajectory = satisfies position and velocity at ends | Via Points = intermediate points along a path
+- Path Planning | Robots avoid obstacles. | Configuration Space = space of all joint configurations | Potential Field Method = attractive goal and repulsive obstacles | Path vs Trajectory = path is geometric, trajectory adds timing
+- Robot Control | Controllers make robots follow trajectories. | PID Joint Control = independent joint control | Computed Torque Control = cancels non-linear dynamics | Force Control = regulates contact forces
+# Sensors & Actuators
+- Internal Sensors | Sensors measure robot state. | Encoder = measures joint position | Resolver = analog angular position sensor | Tachometer = measures joint velocity
+- External Sensors | Sensors perceive the environment. | Proximity Sensor = detects nearby objects | Force-Torque Sensor = measures forces at the wrist | Tactile Sensor = senses touch and pressure
+- Robot Vision | Cameras give rich information. | Machine Vision = image acquisition and analysis for robots | Image Segmentation = separating objects from background | Camera Calibration = finding camera parameters
+- Robot Actuators | Robots are driven by motors or fluid power. | Servo Motor = closed-loop motor for joints | Stepper Motor = open-loop position control | Harmonic Drive = compact high-ratio gearing for joints
+# Programming & Applications
+- Robot Programming Methods | Robots are taught or programmed. | Lead-through Programming = operator moves robot to teach points | Teach Pendant = handheld device for programming | Offline Programming = programs created in simulation
+- Robot Languages | Languages express robot tasks. | VAL = early robot programming language | Motion Commands = MOVE, APPROACH and DEPART | ROS = robot operating system framework
+- Industrial Applications | Robots automate manufacturing. | Spot Welding Robots = used in automobile body shops | Painting Robots = spray painting with consistent quality | Material Handling = pick-and-place and palletising
+- Mobile Robots & Safety | Robots move and work with humans. | Mobile Robot = wheeled or legged robot that navigates | Cobot = collaborative robot working safely with humans | Robot Safety = guarding, sensors and emergency stops
+
+@ me701 | ME-701 | Heat & Mass Transfer | Conduction, extended surfaces, transient conduction, convection, radiation, heat exchangers and mass transfer.
+# Conduction
+- Modes of Heat Transfer | Heat moves by conduction, convection and radiation. | Fourier's Law = q = −kA dT/dx | Newton's Law of Cooling = q = hA(Ts − T∞) | Stefan-Boltzmann Law = E = σT⁴
+- Heat Conduction Equation | General equation governs temperature fields. | General Conduction Equation = ∇²T + q/k = (1/α)∂T/∂t | Thermal Diffusivity = α = k/(ρc) | Steady State = temperature independent of time
+- Plane Wall, Cylinder & Sphere | 1D steady conduction uses thermal resistance. | Plane Wall Resistance = R = L/(kA) | Cylinder Resistance = R = ln(r2/r1)/(2πkL) | Composite Wall = resistances in series add
+- Critical Radius of Insulation | Insulation can increase heat loss below a radius. | Critical Radius for Cylinder = rc = k/h | Critical Radius for Sphere = rc = 2k/h | Overall Heat Transfer Coefficient = U = 1/ΣR per unit area
+# Extended Surfaces & Transient Conduction
+- Fins | Fins increase surface area for heat transfer. | Fin = extended surface enhancing convection | Fin Parameter = m = √(hP/(kA)) | Long Fin Heat Transfer = q = √(hPkA)·θ0
+- Fin Efficiency & Effectiveness | Measures of fin performance. | Fin Efficiency = actual heat transfer / ideal heat transfer at base temperature | Fin Effectiveness = heat transfer with fin / without fin | Fin Justification = useful when effectiveness ≥ 2
+- Lumped Capacitance Method | Small bodies have uniform temperature. | Biot Number = Bi = hLc/k | Lumped Condition = Bi < 0.1 | Lumped Solution = (T − T∞)/(Ti − T∞) = e^(−hAt/(ρVc))
+- Transient Charts | Heisler charts solve larger bodies. | Heisler Charts = centre temperature for slabs, cylinders and spheres | Fourier Number = Fo = αt/L² | Semi-infinite Solid = body extending infinitely in one direction
+# Convection
+- Convection Fundamentals | Convection combines conduction and fluid motion. | Forced Convection = flow driven externally by pump or fan | Natural Convection = flow driven by buoyancy | Thermal Boundary Layer = region of temperature variation near a wall
+- Dimensionless Numbers | Correlations use dimensionless groups. | Nusselt Number = Nu = hL/k | Prandtl Number = Pr = ν/α | Grashof Number = Gr = gβΔTL³/ν²
+- Forced Convection Correlations | Empirical correlations give h. | Dittus-Boelter Equation = Nu = 0.023Re^0.8Pr^n for turbulent pipe flow | Laminar Flat Plate = Nu = 0.664Re^0.5Pr^(1/3) | Reynolds Analogy = relates heat transfer and friction
+- Boiling & Condensation | Phase change gives high heat transfer. | Pool Boiling Curve = nucleate, transition and film boiling | Critical Heat Flux = maximum heat flux in nucleate boiling | Dropwise Condensation = higher h than filmwise condensation
+# Radiation
+- Radiation Fundamentals | All bodies emit thermal radiation. | Black Body = ideal absorber and emitter | Emissivity = ratio of emission to black body emission | Kirchhoff's Law = emissivity equals absorptivity at equilibrium
+- Planck's & Wien's Laws | Spectral emission depends on temperature. | Planck's Law = spectral distribution of black body radiation | Wien's Displacement Law = λmax·T = 2898 µm·K | Grey Body = emissivity independent of wavelength
+- View Factors | Geometry determines radiation exchange. | View Factor = fraction of radiation leaving one surface reaching another | Reciprocity Relation = A1F12 = A2F21 | Summation Rule = sum of view factors from a surface is 1
+- Radiation Exchange & Shields | Surfaces exchange radiation through networks. | Radiation Network = surface and space resistances | Radiation Shield = thin sheet reducing heat exchange | Two Parallel Plates = q = σ(T1⁴ − T2⁴)/(1/ε1 + 1/ε2 − 1)
+# Heat Exchangers & Mass Transfer
+- Heat Exchanger Types | Exchangers transfer heat between fluids. | Parallel Flow = both fluids flow in same direction | Counter Flow = fluids flow in opposite directions; most effective | Shell and Tube Exchanger = tubes inside a shell with baffles
+- LMTD Method | Log mean temperature difference sizes exchangers. | LMTD = (ΔT1 − ΔT2)/ln(ΔT1/ΔT2) | Heat Duty = Q = UA·LMTD | Correction Factor = applied for cross-flow and multipass exchangers
+- NTU-Effectiveness Method | Effectiveness method rates exchangers. | Effectiveness = actual heat transfer / maximum possible | NTU = UA/Cmin | Capacity Ratio = Cmin/Cmax
+- Mass Transfer | Concentration differences drive mass transfer. | Fick's Law = J = −D dC/dx | Mass Transfer Coefficient = analogous to heat transfer coefficient | Schmidt Number = Sc = ν/D
+
+@ me702-ppe | ME-702(C) | Power Plant Engineering | Thermal, hydro, nuclear, gas turbine and diesel plants, non-conventional power and power plant economics.
+# Introduction & Steam Power Plants
+- Energy Scenario & Power Plants | Power plants convert primary energy into electricity. | Base Load Plant = runs continuously at near full load | Peak Load Plant = supplies demand peaks | Installed Capacity = total rated capacity of plants
+- Layout of Thermal Power Plant | Coal plants have fuel, air, steam and water circuits. | Coal and Ash Circuit = handling coal to boiler and ash to disposal | Feed Water Circuit = condensate pumped back to boiler | Cooling Water Circuit = removes heat from condenser
+- Coal Handling & Combustion | Coal is prepared and burned. | Pulverised Coal Firing = finely ground coal burned in suspension | Fluidised Bed Combustion = coal burned in a bed of fluidised particles | Stoker Firing = coal burned on a moving grate
+- Draught & Dust Collection | Air and flue gases are moved and cleaned. | Induced Draught = fan pulls gases through boiler | Forced Draught = fan pushes air into furnace | Electrostatic Precipitator = removes fly ash from flue gas
+# Hydroelectric Power Plants
+- Hydrology & Site Selection | Water availability decides hydro potential. | Hydrograph = discharge versus time | Flow Duration Curve = discharge versus percentage of time exceeded | Mass Curve = cumulative flow used to size storage
+- Hydro Plant Layout | Main components of hydro plants. | Dam = raises water level and stores water | Penstock = pipe carrying water to turbines | Surge Tank = protects penstock from water hammer
+- Classification of Hydro Plants | Plants are classified by head and storage. | Run-of-river Plant = little or no storage | Pumped Storage Plant = pumps water uphill at off-peak times | High Head Plant = uses Pelton turbines
+- Advantages & Limitations | Hydro is clean but site-dependent. | Low Running Cost = no fuel cost | Quick Start = hydro plants pick up load quickly | High Initial Cost = dams and civil works are expensive
+# Nuclear & Gas Turbine Plants
+- Nuclear Fission & Reactor Components | Fission releases large energy. | Nuclear Fission = splitting of heavy nucleus releasing energy and neutrons | Moderator = slows neutrons, e.g. heavy water or graphite | Control Rods = absorb neutrons to control reaction, e.g. boron or cadmium
+- Types of Reactors | Reactors differ in coolant and moderator. | PWR = pressurised water reactor | BWR = boiling water reactor producing steam directly | PHWR = pressurised heavy water reactor used widely in India
+- Gas Turbine Power Plant | Gas turbines generate power quickly. | Open Cycle Gas Turbine = exhaust released to atmosphere | Closed Cycle = working fluid recirculated | Regenerator = recovers exhaust heat
+- Combined Cycle Plants | Combining cycles raises efficiency. | Combined Cycle = gas turbine exhaust raises steam for steam turbine | HRSG = heat recovery steam generator | Combined Cycle Efficiency = can exceed 55%
+# Diesel & Non-conventional Plants
+- Diesel Power Plant | Diesel plants suit small and standby loads. | Diesel Power Plant = diesel engines driving generators | Applications = standby, peak load and remote locations | Fuel System = storage, filters and injection
+- Solar Power Plants | Solar energy generates electricity. | Solar PV Plant = photovoltaic modules produce DC | Concentrated Solar Power = mirrors concentrate sunlight to produce steam | Solar Tracker = keeps panels facing the sun
+- Wind Power Plants | Wind turbines convert wind energy. | Horizontal Axis Wind Turbine = most common type | Power in Wind = P = ½ρAV³ | Capacity Factor = actual energy / rated energy
+- Geothermal, Tidal & Biomass | Other renewable sources supply power. | Geothermal Plant = uses Earth's heat | Tidal Plant = uses tidal range | Biomass Plant = burns organic matter or biogas
+# Power Plant Economics
+- Load Curves | Load curves describe demand. | Load Curve = load versus time | Load Duration Curve = loads arranged in descending order | Peak Load = maximum demand
+- Load Factors | Factors measure utilisation. | Load Factor = average load / peak load | Demand Factor = maximum demand / connected load | Diversity Factor = sum of individual maximum demands / maximum demand of system
+- Cost of Power Generation | Costs include fixed and operating components. | Fixed Cost = interest, depreciation and insurance | Operating Cost = fuel, labour and maintenance | Depreciation = loss of value over time
+- Tariffs & Environmental Aspects | Tariffs recover cost; plants affect environment. | Two-part Tariff = demand charge plus energy charge | Pollution Control = reducing SOx, NOx and particulates | Fly Ash Utilisation = using ash in cement and bricks
+
+@ me703-or | ME-703(A) | Operations Research & Supply Chain | Linear programming, transportation and assignment, queuing, inventory, project scheduling and supply chain management.
+# Linear Programming
+- LP Formulation | LP optimises a linear objective under constraints. | Linear Programming = optimising linear objective subject to linear constraints | Decision Variables = quantities to be determined | Feasible Region = set of points satisfying all constraints
+- Graphical Method | Two-variable LPs are solved graphically. | Corner Point Theorem = optimum lies at a vertex of the feasible region | Unbounded Solution = objective can increase indefinitely | Infeasible Problem = no point satisfies all constraints
+- Simplex Method | Simplex moves between vertices algebraically. | Slack Variable = added to ≤ constraint to form equality | Pivot Element = intersection of entering column and leaving row | Big-M Method = handles artificial variables with large penalty
+- Duality & Sensitivity | Every LP has a dual. | Dual Problem = LP derived from primal with roles reversed | Shadow Price = change in objective per unit change in resource | Sensitivity Analysis = effect of parameter changes on optimum
+# Transportation & Assignment
+- Transportation Problem | Goods are shipped at minimum cost. | Transportation Problem = minimise cost from sources to destinations | North-West Corner Method = initial solution starting top-left | Vogel's Approximation Method = initial solution using penalties
+- Optimality Test | Initial solutions are improved. | MODI Method = uses ui and vj to test optimality | Degeneracy = fewer than m + n − 1 allocations | Unbalanced Problem = supply not equal to demand; add dummy
+- Assignment Problem | Assign jobs to workers at minimum cost. | Assignment Problem = one-to-one allocation minimising cost | Hungarian Method = row and column reduction to find optimum | Prohibited Assignment = given very high cost
+- Travelling Salesman Problem | Visit each city once at minimum cost. | TSP = shortest route visiting each city exactly once | Branch and Bound = solves TSP by pruning | Sequencing = order of jobs on machines, e.g. Johnson's rule
+# Queuing & Game Theory
+- Queuing Fundamentals | Queuing models study waiting lines. | Arrival Rate = λ customers per unit time | Service Rate = μ customers per unit time | Kendall Notation = A/B/c/K/N/D describes a queue
+- M/M/1 Model | Single-server Poisson queue. | Utilisation = ρ = λ/μ | Average Number in System = Ls = λ/(μ − λ) | Average Waiting Time in Queue = Wq = λ/(μ(μ − λ))
+- Game Theory | Game theory analyses competitive decisions. | Two-person Zero-sum Game = one's gain is the other's loss | Saddle Point = maximin equals minimax | Mixed Strategy = players randomise among strategies
+- Decision Theory | Decisions under uncertainty use criteria. | Maximin Criterion = choose best of worst outcomes | Hurwicz Criterion = weighted optimism-pessimism | Expected Monetary Value = probability-weighted payoff
+# Inventory & Project Management
+- Inventory Models | Inventory balances ordering and holding costs. | EOQ = √(2DS/H) | Reorder Point = demand during lead time | Safety Stock = buffer against demand variation
+- Inventory Control Systems | Classification focuses attention. | ABC Analysis = classify items by annual value | VED Analysis = vital, essential and desirable items | JIT = just-in-time minimal inventory
+- CPM | Critical path method schedules deterministic projects. | CPM = finds critical path from activity durations | Float = slack time an activity can be delayed | Critical Activity = zero total float
+- PERT & Crashing | PERT handles uncertain durations. | PERT Expected Time = te = (to + 4tm + tp)/6 | Variance of Activity = ((tp − to)/6)² | Crashing = reducing duration at extra cost
+# Supply Chain Management
+- Supply Chain Concepts | Supply chains move material from suppliers to customers. | Supply Chain = network of suppliers, manufacturers, distributors and retailers | Supply Chain Management = coordinating flows of material, information and money | Value Chain = activities adding value to a product
+- Bullwhip Effect | Demand variability amplifies upstream. | Bullwhip Effect = demand fluctuations amplify up the supply chain | Information Sharing = reduces bullwhip effect | Vendor Managed Inventory = supplier manages customer stock
+- Logistics & Distribution | Logistics moves goods efficiently. | Logistics = planning transport and storage | Cross-docking = direct transfer from inbound to outbound | Third-party Logistics = outsourced logistics services
+- Sourcing & Performance | Suppliers and metrics drive SCM. | Strategic Sourcing = selecting suppliers for long-term value | Lead Time = time from order to delivery | Supply Chain Metrics = fill rate, inventory turns and cost
+
+@ me801 | ME-801 | Refrigeration & Air Conditioning | Refrigeration cycles, refrigerants, vapour absorption, psychrometry, air conditioning systems and load calculation.
+# Refrigeration Fundamentals
+- Refrigeration Basics | Refrigeration removes heat from a low-temperature space. | Refrigeration = process of removing heat from a space below ambient | Ton of Refrigeration = 3.5 kW, heat to freeze 1 ton of water in 24 h | COP = refrigerating effect / work input
+- Reversed Carnot Cycle | The ideal refrigeration cycle. | Reversed Carnot COP = T2/(T1 − T2) | Limitations = Carnot cycle is impractical due to wet compression | Heat Pump COP = T1/(T1 − T2)
+- Air Refrigeration | Air cycles serve aircraft cooling. | Bell-Coleman Cycle = reversed Brayton air refrigeration cycle | Aircraft Refrigeration = simple, bootstrap and regenerative systems | Low COP = air cycles have lower COP than vapour cycles
+- Refrigerants | Working fluids are chosen for properties and safety. | R-134a = HFC refrigerant with zero ozone depletion | ODP = ozone depletion potential | GWP = global warming potential
+# Vapour Compression Refrigeration
+- Simple VCR Cycle | VCR is the most common system. | Vapour Compression Cycle = compression, condensation, expansion and evaporation | Refrigerating Effect = h1 − h4 | Compressor Work = h2 − h1
+- p-h & T-s Diagrams | Charts analyse VCR cycles. | p-h Diagram = pressure-enthalpy chart for refrigerants | Throttling Process = constant enthalpy expansion | Saturation Dome = region of wet vapour
+- Subcooling & Superheating | Modifications improve the cycle. | Subcooling = cooling liquid below saturation increases refrigerating effect | Superheating = vapour heated above saturation at evaporator exit | Volumetric Efficiency = affects compressor capacity
+- Multistage & Cascade Systems | Low temperatures need staging. | Multistage Compression = reduces work for large pressure ratios | Flash Chamber = separates flash vapour between stages | Cascade System = two cycles with different refrigerants
+# Vapour Absorption & Other Systems
+- Vapour Absorption System | Heat drives the absorption cycle. | Vapour Absorption System = absorber, generator and pump replace compressor | NH3-Water System = ammonia refrigerant, water absorbent | LiBr-Water System = water refrigerant, lithium bromide absorbent
+- Electrolux Refrigerator | Three-fluid system without pump. | Electrolux Refrigerator = uses ammonia, water and hydrogen | No Moving Parts = silent operation | Partial Pressure Principle = hydrogen allows evaporation at low partial pressure
+- Steam Jet & Thermoelectric Refrigeration | Other methods for niche uses. | Steam Jet Refrigeration = uses steam ejector with water refrigerant | Thermoelectric Refrigeration = Peltier effect | Vortex Tube = separates compressed air into hot and cold streams
+- Refrigeration Components | Hardware of refrigeration systems. | Reciprocating Compressor = common in small systems | Thermostatic Expansion Valve = maintains constant superheat | Evaporator = coil where refrigerant absorbs heat
+# Psychrometry
+- Psychrometric Properties | Moist air properties govern comfort. | Specific Humidity = mass of water vapour per kg of dry air | Relative Humidity = vapour pressure / saturation vapour pressure | Dew Point = temperature at which condensation starts
+- Psychrometric Chart | Chart displays moist air properties. | Dry Bulb Temperature = air temperature by ordinary thermometer | Wet Bulb Temperature = temperature from wetted-bulb thermometer | Enthalpy of Moist Air = h = 1.005t + ω(2500 + 1.88t)
+- Psychrometric Processes | Air conditioning changes air state. | Sensible Heating = temperature rise without moisture change | Cooling and Dehumidification = cooling below dew point removes moisture | Adiabatic Mixing = mixing two air streams
+- Bypass Factor & Sensible Heat Factor | Coil performance and load ratio. | Bypass Factor = fraction of air not contacting the coil | Sensible Heat Factor = sensible heat / total heat | ADP = apparatus dew point of cooling coil
+# Air Conditioning Systems
+- Human Comfort | Comfort depends on temperature, humidity and air motion. | Effective Temperature = index combining temperature, humidity and air velocity | Comfort Zone = conditions where most people feel comfortable | Metabolic Heat = heat produced by human body
+- Cooling Load Calculation | Loads determine system size. | Sensible Heat Load = load from temperature difference | Latent Heat Load = load from moisture | Solar Heat Gain = heat through windows and walls
+- Air Conditioning Systems | Systems differ in layout and application. | Window AC = unitary system for single rooms | Split AC = indoor and outdoor units connected by piping | Central AC = chilled water or ducted systems for buildings
+- Duct Design & Automotive AC | Air distribution and vehicle cooling. | Duct Design = equal friction or velocity reduction method | AHU = air handling unit filtering and conditioning air | Automotive AC = belt-driven compressor system in vehicles
+
+@ me802-ae | ME-802(A) | Automobile Engineering | Chassis and body, transmission, suspension, steering, brakes, electrical systems and emission control.
+# Chassis & Body Engineering
+- Chassis & Frame | The chassis supports all vehicle components. | Chassis = frame with engine, transmission and running gear | Ladder Frame = two side members joined by cross members | Monocoque = body and frame integrated into one structure
+- Vehicle Layouts | Engine and drive position vary. | Front Engine Rear Drive = traditional layout | Front Engine Front Drive = compact layout common in cars | Four-wheel Drive = power to all four wheels
+- Resistance to Motion | Vehicles overcome several resistances. | Rolling Resistance = resistance from tyre deformation | Air Resistance = Fa = ½ρCdAV² | Gradient Resistance = W sin θ on slopes
+- Tractive Effort | Tractive effort must exceed resistance. | Tractive Effort = force at driving wheels | Power Required = total resistance × speed | Gradeability = maximum slope a vehicle can climb
+# Transmission System
+- Clutch | Clutch connects and disconnects engine. | Single Plate Clutch = friction plate between flywheel and pressure plate | Diaphragm Spring Clutch = uses conical diaphragm spring | Centrifugal Clutch = engages automatically with engine speed
+- Gearbox | Gearboxes vary torque and speed. | Sliding Mesh Gearbox = gears slide into mesh | Constant Mesh Gearbox = gears always in mesh, dog clutches engage | Synchromesh Gearbox = synchronisers equalise speeds before engagement
+- Automatic Transmission | Automatic boxes shift without driver. | Torque Converter = fluid coupling with torque multiplication | Epicyclic Gearbox = planetary gear sets | CVT = continuously variable transmission
+- Propeller Shaft & Differential | Power reaches wheels through driveline. | Propeller Shaft = transmits power to rear axle | Universal Joint = allows angular movement | Differential = allows wheels to rotate at different speeds in turns
+# Suspension & Steering
+- Suspension Systems | Suspension isolates body from road shocks. | Leaf Spring Suspension = used in heavy vehicles | Independent Suspension = wheels move independently | McPherson Strut = common front independent suspension
+- Shock Absorbers | Dampers control oscillations. | Telescopic Shock Absorber = hydraulic damper | Air Suspension = air springs for adjustable height | Damping = dissipating oscillation energy
+- Steering Geometry | Geometry ensures stability and ease. | Ackermann Steering = inner wheel turns more than outer | Camber = tilt of wheel from vertical | Caster = tilt of steering axis giving self-centring
+- Steering Gears & Power Steering | Mechanisms convert steering wheel motion. | Rack and Pinion = simple direct steering gear | Recirculating Ball = used in heavy vehicles | Power Steering = hydraulic or electric assistance
+# Brakes, Wheels & Tyres
+- Braking Systems | Brakes stop the vehicle. | Drum Brake = shoes press against rotating drum | Disc Brake = pads clamp a rotating disc | Hydraulic Brake = Pascal's law transmits pedal force
+- ABS & Advanced Braking | Electronics prevent wheel lock. | ABS = anti-lock braking system | Brake Fade = loss of braking due to heat | EBD = electronic brake-force distribution
+- Wheels & Tyres | Tyres provide grip and comfort. | Radial Tyre = plies run radially; better grip and life | Tubeless Tyre = no inner tube; slower deflation | Tyre Designation = e.g. 195/65 R15 for width, aspect ratio, rim
+- Wheel Alignment & Balancing | Alignment and balance improve handling. | Toe-in = front of wheels closer than rear | Wheel Balancing = removes vibration from uneven mass | Kingpin Inclination = inclination of steering axis
+# Electrical Systems & Emission Control
+- Battery & Charging System | Electrical power supply in vehicles. | Lead Acid Battery = 12 V battery in most cars | Alternator = generates AC rectified to DC | Voltage Regulator = maintains charging voltage
+- Starting & Lighting Systems | Starting motor cranks the engine. | Starter Motor = DC series motor with Bendix drive | Solenoid Switch = engages starter | Headlamp = main lighting with high and low beams
+- Vehicle Electronics | Electronics control engine and safety. | ECU = electronic control unit | CAN Bus = controller area network for in-vehicle communication | Airbag = inflatable restraint triggered by crash sensors
+- Emission Control & Alternative Vehicles | Vehicles must meet emission norms. | Catalytic Converter = reduces CO, HC and NOx | Electric Vehicle = battery-powered vehicle with electric motor | Hybrid Vehicle = combines IC engine and electric motor
+
+@ me803-eca | ME-803(B) | Energy Conservation & Audit | Energy scenario, audit methodology, energy efficiency in thermal and electrical systems, waste heat recovery and energy management.
+# Energy Scenario & Conservation
+- Energy Scenario | Energy use and supply shape policy. | Primary Energy Consumption = total energy from all sources | Energy Intensity = energy used per unit GDP | Energy Security = reliable access to affordable energy
+- Energy Conservation Act | Law promotes energy efficiency in India. | Energy Conservation Act 2001 = law establishing BEE and efficiency programmes | BEE = Bureau of Energy Efficiency | Designated Consumer = large energy user required to appoint energy manager
+- Energy Pricing & Policy | Prices influence conservation. | Time-of-day Tariff = different prices for peak and off-peak | PAT Scheme = perform, achieve and trade energy saving certificates | Star Labelling = BEE efficiency labels for appliances
+- Principles of Conservation | Save energy by matching supply to demand. | Energy Conservation = reducing energy use without reducing output | Energy Efficiency = useful output per unit input | Demand-side Management = shaping consumer demand
+# Energy Audit
+- Types of Energy Audit | Audits identify saving opportunities. | Preliminary Audit = quick walk-through assessment | Detailed Audit = comprehensive measurement and analysis | Energy Audit = verification and analysis of energy use
+- Audit Methodology | Audits follow a structured procedure. | Data Collection = bills, logs and measurements | Benchmarking = comparing performance against standards | Energy Saving Potential = estimated reduction achievable
+- Audit Instruments | Instruments measure energy flows. | Power Analyser = measures voltage, current, power factor | Flue Gas Analyser = measures O2, CO2 and CO | Ultrasonic Flow Meter = non-intrusive flow measurement
+- Energy Accounting | Sankey diagrams show where energy goes. | Sankey Diagram = flow diagram showing energy distribution | Specific Energy Consumption = energy per unit of production | Energy Balance = input equals useful output plus losses
+# Thermal Systems Efficiency
+- Boilers & Furnaces | Combustion efficiency saves fuel. | Excess Air = air beyond stoichiometric; too much lowers efficiency | Boiler Efficiency Direct Method = output / input | Indirect Method = 100 − sum of losses
+- Steam Systems | Efficient steam distribution saves energy. | Steam Trap = removes condensate without losing steam | Condensate Recovery = returning hot condensate to boiler | Insulation = reduces heat loss from pipes
+- Waste Heat Recovery | Waste heat is reused. | Recuperator = heat exchanger recovering heat from exhaust | Heat Pipe = efficient passive heat transfer device | Economiser = heats feed water using flue gas
+- Cogeneration | Combined heat and power improves efficiency. | Cogeneration = simultaneous production of electricity and heat | Topping Cycle = power first, then heat | Bottoming Cycle = heat first, then power from waste heat
+# Electrical Systems Efficiency
+- Electric Motors | Motors use most industrial electricity. | Energy-efficient Motor = higher efficiency class motors | Motor Loading = efficiency falls at low load | VFD = variable frequency drive adjusts motor speed
+- Pumps, Fans & Compressors | Flow control strongly affects energy. | Affinity Laws = power ∝ speed³ | Throttling Loss = wasting energy by valve control | Compressed Air Leaks = major source of waste
+- Lighting Systems | Efficient lighting saves energy. | LED Lighting = high efficacy light source | Luminous Efficacy = lumens per watt | Occupancy Sensor = switches lights based on presence
+- Power Factor Improvement | Improved power factor reduces losses. | Power Factor = real power / apparent power | Capacitor Bank = improves lagging power factor | Maximum Demand Control = reduces demand charges
+# Energy Management & Economics
+- Energy Management System | Organisations manage energy systematically. | Energy Management = planning and operating to optimise energy use | ISO 50001 = energy management system standard | Energy Manager = person responsible for energy performance
+- Financial Analysis | Projects are evaluated economically. | Simple Payback Period = investment / annual savings | NPV = present value of cash flows minus investment | IRR = discount rate giving NPV zero
+- Monitoring & Targeting | Continuous tracking sustains savings. | Monitoring and Targeting = regular measurement against targets | CUSUM = cumulative sum chart tracking savings | Energy KPI = key performance indicator for energy
+- Green Buildings & Renewables | Buildings and renewables cut energy use. | Green Building = designed for low environmental impact | ECBC = energy conservation building code | Rooftop Solar = on-site solar generation

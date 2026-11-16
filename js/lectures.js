@@ -1,4 +1,4 @@
-let activeLectureSemester = '5';
+let activeLectureSemester = String((window.ACADEMY && window.ACADEMY.getProgram) ? window.ACADEMY.getProgram().semester : 5);
 let activeLectureSubject = 'all';
 let activeLectureKey = '';
 let lectureSearchQuery = '';
@@ -44,7 +44,7 @@ const esc = (val) => {
         .replace(/'/g, '&#39;');
 };
 
-const ALL_LECTURE_SUBJECTS = [
+const LEGACY_LECTURE_SUBJECTS = [
     // Semester 5
     { id: 'cs501', semester: 5, code: 'CS-501', label: 'CS-501 (TOC)', fullLabel: 'Theory of Computation', aliases: ['cs501', '501', 'toc', 'cs-501', 'computation', 'automata'] },
     { id: 'cs502', semester: 5, code: 'CS-502', label: 'CS-502 (DBMS)', fullLabel: 'Database Management Systems', aliases: ['cs502', '502', 'dbms', 'cs-502', 'database', 'sql'] },
@@ -67,12 +67,52 @@ const ALL_LECTURE_SUBJECTS = [
     { id: 'cs703-dm', semester: 7, code: 'CS-703-DM', label: 'CS-703-DM (Disaster)', fullLabel: 'Disaster Management', aliases: ['cs703-dm', 'cs703dm', '703dm', 'dm', 'disaster', 'disastermgmt'] }
 ];
 
+// Subjects come from the student's branch plan so every branch/semester has a lecture shelf.
+const LECTURE_BRANCH = window.ACADEMY.getProgram().branch;
+const ALL_LECTURE_SUBJECTS = window.ACADEMY.getSemestersFor(LECTURE_BRANCH).flatMap((sem) =>
+    window.ACADEMY.getPlanEntries(LECTURE_BRANCH, sem).map(({ id, code, course }) => {
+        const legacyMatch = LEGACY_LECTURE_SUBJECTS.find((item) => item.id === id || (item.aliases || []).includes(id));
+        return {
+            id,
+            semester: sem,
+            code,
+            label: code,
+            fullLabel: course.title,
+            aliases: [id, code.toLowerCase(), ...(legacyMatch ? legacyMatch.aliases : [])]
+        };
+    })
+);
+
+// Unit-wise YouTube shelves for subjects that do not have hand-curated playlists yet.
+(function addGeneratedLectureShelves() {
+    const curated = new Set((window.lectureLibrary || []).map((item) => item.subject));
+    (window.coursesData || []).filter((course) => course.generated && !curated.has(course.id)).forEach((course) => {
+        course.units.forEach((unit) => {
+            const query = `${course.title} ${unit.title} lecture`;
+            (window.lectureLibrary = window.lectureLibrary || []).push({
+                semester: course.semester,
+                subject: course.id,
+                subjectCode: course.code,
+                subjectLabel: course.title,
+                title: `Unit ${unit.unitNumber}: ${unit.title}`,
+                lecturer: 'YouTube lecture search',
+                type: 'playlist',
+                typeLabel: 'Unit lecture shelf',
+                topics: unit.topics.map((topic) => topic.title),
+                description: `Opens YouTube lectures for ${course.code} Unit ${unit.unitNumber} (${unit.title}). Topics: ${unit.topics.map((topic) => topic.title).join(', ')}.`,
+                url: `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`,
+                lectureKey: `${course.id}-unit-${unit.unitNumber}-shelf`
+            });
+        });
+    });
+}());
+
 function getLectureSemesters() {
-    return [
-        { id: '5', label: 'Semester 5' },
-        { id: '6', label: 'Semester 6' },
-        { id: '7', label: 'Semester 7' }
-    ];
+    return window.ACADEMY.getSemestersFor(LECTURE_BRANCH).map((sem) => ({ id: String(sem), label: `Semester ${sem}` }));
+}
+
+function lectureInActiveSemester(item) {
+    return ALL_LECTURE_SUBJECTS.some((sub) => String(sub.semester) === String(activeLectureSemester) && isLectureMatchSubject(item.subject, sub.id));
 }
 
 function getLectureSubjects() {
@@ -131,7 +171,7 @@ function getFilteredLectures() {
         }
 
         // Semester filter (only when not searching for a specific code from another semester)
-        if (activeLectureSemester !== 'all' && String(item.semester) !== String(activeLectureSemester)) {
+        if (activeLectureSemester !== 'all' && !lectureInActiveSemester(item)) {
             if (!matchedSubjectIds || matchedSubjectIds.length === 0) {
                 return false;
             }

@@ -215,10 +215,10 @@ function renderProfilePage() {
         <section class="panel-card p-5">
             <div class="section-head">
                 <h3>Course coverage</h3>
-                <span>Per-subject progress</span>
+                <span>${window.ACADEMY.getProgramLabel()}</span>
             </div>
             <div class="space-y-4">
-                ${window.coursesData.map((course) => {
+                ${window.ACADEMY.getPlanEntries(window.ACADEMY.getProgram().branch, window.ACADEMY.getProgram().semester).map(({ course, code }) => ({ ...course, code })).map((course) => {
                     const courseStats = stats.courseStats[course.id] || { completed: 0, total: 0, completionRate: 0 };
                     return `
                         <div class="progress-row">

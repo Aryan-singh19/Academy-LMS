@@ -1,0 +1,49 @@
+{
+  "name": "academy-lms-desktop",
+  "productName": "Academy LMS",
+  "version": "2.0.0",
+  "description": "Academy LMS desktop app for RGPV B.Tech students (all branches, semesters 1-8).",
+  "main": "main.js",
+  "author": "Aryan Singh Chandel <aryansingh19gh@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "bundle-site": "node bundle-site.js",
+    "dist:win": "npm run bundle-site && electron-builder --win nsis portable --publish never",
+    "dist:linux": "npm run bundle-site && electron-builder --linux AppImage --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.academy.lms",
+    "productName": "Academy LMS",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "site/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "artifactName": "Academy-LMS-${version}-${arch}-${target}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "Academy-LMS-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "Academy-LMS-Portable-${version}.${ext}"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Education"
+    }
+  }
+}

@@ -1,0 +1,324 @@
+// Mechanical (and Automobile semesters 3-4) semesters 3-5
+@ me302 | ME-302 | Thermodynamics | Basic concepts, first and second laws, entropy, properties of steam, gas cycles and availability.
+# Basic Concepts & Zeroth Law
+- System, Surroundings & Properties | Thermodynamics studies energy interactions of systems. | Closed System = mass fixed, energy may cross the boundary | Open System = both mass and energy cross the boundary (control volume) | Intensive Property = independent of mass, e.g. pressure and temperature
+- State, Process & Cycle | Processes change the state of a system. | Quasi-static Process = infinitely slow process passing through equilibrium states | Thermodynamic Cycle = series of processes returning to the initial state | Point Function = property depending only on state, not path
+- Zeroth Law & Temperature | Thermal equilibrium defines temperature. | Zeroth Law = two bodies in equilibrium with a third are in equilibrium with each other | Thermometric Property = property that varies with temperature | Absolute Temperature = Kelvin scale, T(K) = T(°C) + 273.15
+- Work & Heat | Work and heat are energy in transit. | Displacement Work = W = ∫ p dV | Path Function = quantity depending on the path, e.g. work and heat | Sign Convention = heat added and work done by system are positive
+# First Law of Thermodynamics
+- First Law for Closed Systems | Energy is conserved in every process. | First Law for a Cycle = net heat equals net work | Internal Energy = energy stored in molecular motion; a property | First Law for a Process = Q − W = ΔU
+- Steady Flow Energy Equation | Open systems use the SFEE. | SFEE = h1 + V1²/2 + gz1 + q = h2 + V2²/2 + gz2 + w | Enthalpy = h = u + pv | Steady Flow = properties at each point do not change with time
+- Applications of SFEE | Devices are analysed with SFEE. | Nozzle = increases fluid velocity at the expense of enthalpy | Turbine = produces work as fluid expands | Throttling = isenthalpic process, h1 = h2
+- PMM1 & Ideal Gas Processes | First law forbids free energy. | PMM1 = perpetual motion machine of first kind, impossible | Isothermal Work = W = p1V1 ln(V2/V1) | Polytropic Process = pV^n = constant
+# Second Law & Entropy
+- Heat Engines & Heat Pumps | Second law limits conversion of heat into work. | Thermal Efficiency = η = W/Q1 | COP of Refrigerator = Q2/W | COP Relation = COP(HP) = COP(R) + 1
+- Kelvin-Planck & Clausius Statements | Two equivalent statements of the second law. | Kelvin-Planck Statement = no engine can convert all heat from a single reservoir into work | Clausius Statement = heat cannot flow from cold to hot without external work | PMM2 = perpetual motion machine of second kind, impossible
+- Carnot Cycle | Carnot cycle is the most efficient between two temperatures. | Carnot Efficiency = η = 1 − T2/T1 | Carnot Theorem = no engine is more efficient than a reversible engine | Reversible Process = can be reversed leaving no trace on surroundings
+- Entropy | Entropy measures irreversibility. | Clausius Inequality = cyclic integral of dQ/T ≤ 0 | Entropy Change = dS = dQrev/T | Principle of Increase of Entropy = entropy of an isolated system never decreases
+# Properties of Pure Substances
+- Phase Change of Water | Pure substances change phase at fixed conditions. | Saturation Temperature = boiling temperature at a given pressure | Critical Point = state where liquid and vapour become indistinguishable, 22.06 MPa for water | Triple Point = state where solid, liquid and vapour coexist
+- Dryness Fraction & Steam Tables | Wet steam properties use dryness fraction. | Dryness Fraction = x = mass of vapour / total mass | Wet Steam Enthalpy = h = hf + x·hfg | Superheated Steam = steam above saturation temperature
+- T-s & h-s Diagrams | Property charts aid analysis. | Mollier Diagram = h-s chart for steam | T-s Diagram = area under curve represents heat transfer | Isentropic Process = vertical line on T-s and h-s diagrams
+- Measurement of Dryness Fraction | Calorimeters measure steam quality. | Throttling Calorimeter = throttles steam to superheat to find x | Separating Calorimeter = separates water droplets mechanically | Combined Calorimeter = separating plus throttling for wet steam
+# Gas Power Cycles & Availability
+- Air Standard Cycles | Engine cycles are idealised with air. | Otto Cycle Efficiency = η = 1 − 1/r^(γ−1) | Diesel Cycle = heat added at constant pressure | Dual Cycle = heat added partly at constant volume and partly at constant pressure
+- Brayton Cycle | Gas turbines follow the Brayton cycle. | Brayton Cycle = two isentropic and two isobaric processes | Brayton Efficiency = η = 1 − 1/rp^((γ−1)/γ) | Regeneration = exhaust heats compressed air to improve efficiency
+- Mean Effective Pressure | MEP compares engine work output. | Mean Effective Pressure = net work divided by swept volume | Swept Volume = displacement volume of the piston | Compression Ratio = total volume / clearance volume
+- Availability & Irreversibility | Exergy is the useful part of energy. | Availability = maximum useful work obtainable relative to the dead state | Irreversibility = I = T0 × entropy generated | Dead State = system in equilibrium with environment
+
+@ me303 | ME-303 | Materials Technology | Crystal structure, imperfections, phase diagrams, heat treatment, ferrous and non-ferrous alloys and material testing.
+# Crystal Structure & Imperfections
+- Crystal Structures | Metals arrange atoms in repeating lattices. | BCC = body-centred cubic, APF 0.68, e.g. α-iron | FCC = face-centred cubic, APF 0.74, e.g. aluminium | HCP = hexagonal close-packed, APF 0.74, e.g. zinc
+- Miller Indices | Planes and directions are labelled by Miller indices. | Miller Indices = reciprocals of intercepts reduced to integers | Slip Plane = close-packed plane on which dislocations move | Coordination Number = number of nearest neighbours of an atom
+- Crystal Imperfections | Real crystals contain defects. | Vacancy = missing atom at a lattice site | Dislocation = line defect enabling plastic deformation | Grain Boundary = interface between differently oriented grains
+- Deformation & Strengthening | Plastic deformation occurs by slip and twinning. | Slip = shear displacement along slip planes | Work Hardening = strength rises with plastic deformation | Grain Refinement = smaller grains increase strength (Hall-Petch)
+# Phase Diagrams
+- Solid Solutions & Phase Rule | Alloys form phases governed by rules. | Substitutional Solid Solution = solute replaces solvent atoms | Interstitial Solid Solution = small solute atoms fit in gaps | Gibbs Phase Rule = F = C − P + 2
+- Binary Phase Diagrams | Diagrams show phases versus temperature and composition. | Isomorphous System = complete solubility in liquid and solid, e.g. Cu-Ni | Lever Rule = finds phase fractions in a two-phase region | Eutectic Reaction = liquid → two solid phases at one temperature
+- Iron-Carbon Diagram | Fe-Fe3C diagram is the basis of steel heat treatment. | Eutectoid Point = 0.8% C at 727 °C forming pearlite | Austenite = FCC γ-iron solid solution of carbon | Cementite = iron carbide Fe3C, hard and brittle
+- Microstructures of Steel & Cast Iron | Carbon content sets microstructure. | Pearlite = lamellar ferrite and cementite | Hypoeutectoid Steel = less than 0.8% C; ferrite plus pearlite | Cast Iron = iron with more than 2.11% carbon
+# Heat Treatment
+- TTT Diagrams | TTT curves predict transformation products. | TTT Diagram = time-temperature-transformation curve for isothermal cooling | Critical Cooling Rate = minimum rate to form martensite | Bainite = product of transformation between pearlite and martensite ranges
+- Annealing & Normalising | Softening and refining treatments. | Annealing = heat and slow furnace cool to soften | Normalising = heat and air cool to refine grain | Spheroidising = forms spherical carbides for machinability
+- Hardening & Tempering | Quenching hardens; tempering toughens. | Hardening = austenitise and quench to form martensite | Martensite = hard supersaturated BCT phase | Tempering = reheating martensite to improve toughness
+- Surface Hardening | Hard case with tough core. | Carburising = adding carbon to the surface | Nitriding = forming hard nitrides at low temperature | Induction Hardening = local heating by induction and quenching
+# Engineering Materials
+- Plain Carbon & Alloy Steels | Steels are classified by carbon and alloys. | Mild Steel = low carbon steel, below 0.3% C | Stainless Steel = at least 10.5% chromium for corrosion resistance | Tool Steel = high hardness steel for cutting tools
+- Cast Irons | Cast irons are classified by carbon form. | Grey Cast Iron = graphite flakes; good damping | Ductile Iron = spheroidal graphite giving ductility | White Cast Iron = cementite, hard and brittle
+- Non-ferrous Alloys | Copper and aluminium alloys are widely used. | Brass = copper-zinc alloy | Bronze = copper-tin alloy | Duralumin = aluminium-copper alloy, age hardenable
+- Polymers, Ceramics & Composites | Non-metallic materials offer special properties. | Thermoplastic = softens on heating and can be reshaped | Ceramic = inorganic, hard, brittle and heat resistant | Composite = two or more materials combined, e.g. fibre-reinforced plastic
+# Material Testing
+- Tensile Test | Tensile test gives strength and ductility. | Yield Strength = stress at onset of plastic deformation | Ultimate Tensile Strength = maximum engineering stress | Percentage Elongation = ductility measure after fracture
+- Hardness Testing | Hardness is resistance to indentation. | Brinell Hardness = steel ball indenter, BHN = load / indentation area | Rockwell Hardness = depth-based hardness with scales B and C | Vickers Hardness = diamond pyramid indenter
+- Impact & Fatigue Testing | Dynamic loads test toughness and endurance. | Charpy Test = impact energy of notched specimen | Fatigue = failure under cyclic stress below UTS | Endurance Limit = stress below which steel survives infinite cycles
+- Non-destructive Testing | NDT inspects without damage. | Ultrasonic Testing = sound waves detect internal flaws | Dye Penetrant Test = detects surface cracks | Radiography = X-rays reveal internal defects
+
+@ me304 | ME-304 | Strength of Materials | Stress and strain, SFD and BMD, bending and shear stresses, torsion, deflection, columns and principal stresses.
+# Simple Stress & Strain
+- Stress, Strain & Hooke's Law | Loads produce internal stress and deformation. | Normal Stress = σ = P/A | Hooke's Law = σ = Eε within the elastic limit | Poisson's Ratio = lateral strain / longitudinal strain
+- Elastic Constants | Material elasticity is described by related constants. | Young's Modulus = ratio of normal stress to strain | Modulus of Rigidity = G = shear stress / shear strain | Relation of Constants = E = 2G(1 + ν) = 3K(1 − 2ν)
+- Bars of Varying Section & Compound Bars | Composite and stepped bars share loads. | Deformation of Bar = δ = PL/(AE) | Compound Bar = bars of different materials sharing a load with equal strain | Thermal Stress = σ = EαΔT when expansion is prevented
+- Strain Energy | Energy is stored in deformed members. | Strain Energy = U = σ²V/(2E) | Resilience = strain energy stored up to elastic limit | Impact Loading = suddenly applied load gives twice the static stress
+# Shear Force & Bending Moment
+- Types of Beams & Loads | Beams carry transverse loads. | Cantilever = beam fixed at one end, free at the other | Simply Supported Beam = supported on a pin and roller | UDL = uniformly distributed load
+- SFD & BMD | Diagrams show internal force variation. | Shear Force = algebraic sum of forces on one side of a section | Bending Moment = algebraic sum of moments on one side | Relation = dM/dx = V
+- Point of Contraflexure | Bending moment may change sign. | Point of Contraflexure = location where bending moment is zero and changes sign | Maximum Bending Moment = occurs where shear force is zero | Overhanging Beam = beam extending beyond its support
+- Standard Results | Common beams have standard formulae. | SSB Central Load = Mmax = WL/4 | SSB with UDL = Mmax = wL²/8 | Cantilever End Load = Mmax = WL at the fixed end
+# Bending & Shear Stresses
+- Theory of Simple Bending | Bending stress varies linearly with depth. | Bending Equation = M/I = σ/y = E/R | Neutral Axis = layer with zero bending stress | Section Modulus = Z = I/ymax
+- Moment of Inertia | Section shape determines stiffness. | Rectangle I = bd³/12 about centroidal axis | Parallel Axis Theorem = I = Ig + Ah² | Circular Section I = πd⁴/64
+- Shear Stress in Beams | Shear stress varies across a section. | Shear Stress Formula = τ = VAȳ/(Ib) | Rectangular Section = maximum shear 1.5 times average | Circular Section = maximum shear 4/3 times average
+- Combined Direct & Bending Stress | Eccentric loads produce combined stresses. | Eccentric Load = load offset from centroid | Combined Stress = σ = P/A ± M/Z | Middle Third Rule = no tension if load lies within middle third
+# Torsion & Deflection
+- Torsion of Shafts | Shafts transmit torque. | Torsion Equation = T/J = τ/r = Gθ/L | Polar Moment of Inertia = J = πd⁴/32 for solid shaft | Power Transmitted = P = 2πNT/60
+- Hollow Shafts & Combined Loading | Hollow shafts are lighter for the same strength. | Hollow Shaft J = π(D⁴ − d⁴)/32 | Equivalent Torque = Te = √(M² + T²) | Equivalent Bending Moment = Me = ½(M + √(M² + T²))
+- Deflection of Beams | Deflection is found from the elastic curve. | Elastic Curve Equation = EI d²y/dx² = M | Macaulay's Method = single equation for beams with multiple loads | Cantilever End Load Deflection = WL³/(3EI)
+- Moment Area & Springs | Other methods for deflection; springs store energy. | Moment Area Method = slope change equals area of M/EI diagram | Close-coiled Helical Spring Stiffness = k = Gd⁴/(8D³n) | Leaf Spring = laminated spring used in vehicles
+# Columns, Cylinders & Principal Stresses
+- Columns & Struts | Long compression members fail by buckling. | Euler's Formula = Pcr = π²EI/Le² | Effective Length = depends on end conditions; Le = L for both ends hinged | Slenderness Ratio = Le/k
+- Rankine's Formula | Empirical formula covers short and long columns. | Rankine's Formula = 1/P = 1/Pc + 1/Pe | Crushing Load = σc·A for short columns | Rankine Constant = α depends on material
+- Thin & Thick Cylinders | Pressure vessels carry hoop and longitudinal stress. | Hoop Stress = σh = pd/(2t) for thin cylinder | Longitudinal Stress = σl = pd/(4t) | Lame's Equations = stresses in thick cylinders
+- Principal Stresses & Mohr's Circle | Stress transformation finds extreme stresses. | Principal Stress = normal stress on plane with zero shear | Maximum Shear Stress = (σ1 − σ2)/2 | Mohr's Circle = graphical method for stress transformation
+
+@ me305 | ME-305 | Manufacturing Process | Casting, forming, welding, powder metallurgy and plastic processing.
+# Casting Processes
+- Sand Casting & Patterns | Molten metal is poured into a mould cavity. | Pattern = replica of the casting used to make the mould | Pattern Allowance = extra size for shrinkage, machining and draft | Core = insert forming internal cavities
+- Moulding Sand & Gating System | Sand properties and gating control quality. | Permeability = ability of sand to let gases escape | Riser = reservoir feeding molten metal to compensate shrinkage | Sprue = vertical channel through which metal enters
+- Special Casting Processes | Special methods give better finish and accuracy. | Investment Casting = wax pattern coated in ceramic, lost wax process | Die Casting = metal forced into metal dies under pressure | Centrifugal Casting = mould rotated to distribute metal, e.g. pipes
+- Casting Defects | Defects arise from gas, shrinkage and mould issues. | Blow Hole = cavity caused by trapped gas | Cold Shut = incomplete fusion of two metal streams | Hot Tear = crack from restrained shrinkage
+# Metal Forming
+- Hot & Cold Working | Forming temperature affects properties. | Hot Working = above recrystallisation temperature; no strain hardening | Cold Working = below recrystallisation; improves strength and finish | Recrystallisation Temperature = about 0.4 of melting point (K)
+- Rolling | Rolling reduces thickness between rolls. | Rolling = compressing metal between rotating rolls | Angle of Bite = maximum angle for metal to enter rolls | Neutral Point = where roll and metal velocities are equal
+- Forging | Forging shapes metal by compressive forces. | Open Die Forging = metal deformed between flat dies | Closed Die Forging = metal fills a shaped die cavity | Upsetting = increasing cross-section by reducing length
+- Extrusion & Drawing | Metal is pushed or pulled through dies. | Direct Extrusion = ram and product move in the same direction | Indirect Extrusion = die moves towards the billet | Wire Drawing = pulling wire through a die to reduce diameter
+# Sheet Metal Operations
+- Shearing Operations | Shearing cuts sheet metal. | Blanking = punched piece is the product | Punching = punched piece is scrap; hole is the product | Clearance = gap between punch and die
+- Bending & Deep Drawing | Sheets are formed into shapes. | Spring Back = elastic recovery after bending | Deep Drawing = forming a cup from a blank | Limiting Draw Ratio = maximum blank to punch diameter ratio
+- Press Tools & Presses | Presses drive dies. | Progressive Die = several operations at successive stations | Compound Die = several operations in one stroke at one station | Stripper Plate = removes sheet from the punch
+- High Energy Rate Forming | Rapid energy release forms difficult parts. | Explosive Forming = explosive energy forms sheet into a die | Electromagnetic Forming = magnetic pulse forms conductive parts | Electrohydraulic Forming = spark discharge in liquid creates pressure
+# Welding & Joining
+- Arc Welding | Electric arc melts base and filler metals. | SMAW = shielded metal arc welding with flux-coated electrode | Arc Length = distance between electrode and workpiece | Polarity = DCEN gives deeper penetration
+- Gas Welding & Cutting | Oxy-acetylene flame welds and cuts. | Neutral Flame = equal oxygen and acetylene | Oxidising Flame = excess oxygen, used for brass | Oxy-fuel Cutting = oxidises steel in a jet of oxygen
+- TIG, MIG & Resistance Welding | Advanced processes improve quality and speed. | TIG = non-consumable tungsten electrode with inert gas | MIG = consumable wire electrode with inert gas shielding | Spot Welding = resistance welding of overlapping sheets
+- Welding Defects & Soldering | Defects and lower-temperature joining. | Porosity = gas pockets in weld metal | Heat Affected Zone = base metal altered by welding heat | Brazing = joining with filler above 450 °C without melting base metal
+# Powder Metallurgy & Plastics
+- Powder Production & Compaction | Metal powders are made and pressed. | Atomisation = molten metal broken into droplets | Compaction = pressing powder into a green compact | Green Strength = strength of compact before sintering
+- Sintering & Applications | Heating bonds powder particles. | Sintering = heating below melting point to bond particles | Self-lubricating Bearing = porous sintered bearing filled with oil | Cemented Carbide = tungsten carbide bonded with cobalt
+- Plastic Moulding Processes | Polymers are shaped by moulding. | Injection Moulding = molten plastic injected into a mould | Blow Moulding = air inflates a parison into a hollow shape | Compression Moulding = charge pressed in a heated mould
+- Extrusion & Thermoforming of Plastics | Continuous and sheet forming of plastics. | Plastic Extrusion = continuous profiles through a die | Thermoforming = heated sheet formed over a mould | Calendering = rolling plastic into sheets
+
+@ me402 | ME-402 | Instrumentation & Control | Measurement system characteristics, transducers for displacement, force, pressure, flow and temperature, and control systems.
+# Measurement Systems
+- Generalised Measurement System | Instruments have sensing, conditioning and readout stages. | Primary Sensing Element = first element receiving the measurand | Signal Conditioning = amplifying and filtering the signal | Data Presentation = display or record of the measurement
+- Static Characteristics | Static behaviour describes steady inputs. | Sensitivity = output change per unit input change | Linearity = closeness of calibration curve to a straight line | Hysteresis = different output for increasing and decreasing input
+- Dynamic Characteristics | Dynamic behaviour describes changing inputs. | Speed of Response = rapidity with which instrument responds | Time Lag = delay in instrument response | Dynamic Error = difference between true and indicated value with time
+- Errors & Uncertainty | All measurements carry error. | Systematic Error = consistent error from instrument or method | Random Error = unpredictable variation | Uncertainty Analysis = combining errors to estimate overall uncertainty
+# Displacement, Force & Torque Measurement
+- Displacement Measurement | Displacement transducers convert motion to signal. | LVDT = transformer with movable core for linear displacement | Potentiometer = sliding contact giving resistance proportional to position | Capacitive Transducer = capacitance changes with gap or area
+- Strain Measurement | Strain gauges measure surface strain. | Strain Gauge = resistance changes with strain | Wheatstone Bridge Circuit = converts resistance change to voltage | Gauge Factor = (ΔR/R)/ε, about 2 for metal gauges
+- Force Measurement | Load cells measure force. | Load Cell = elastic element with strain gauges | Proving Ring = elastic ring used to calibrate force | Hydraulic Load Cell = force measured by fluid pressure
+- Torque & Speed Measurement | Shaft output is measured with dynamometers and tachometers. | Dynamometer = device measuring torque and power | Stroboscope = measures speed by apparently freezing motion | Tachogenerator = generator producing voltage proportional to speed
+# Pressure & Flow Measurement
+- Pressure Gauges | Pressure is measured relative to atmosphere or vacuum. | Manometer = liquid column measuring pressure difference | Bourdon Tube = curved tube that straightens with pressure | Gauge Pressure = absolute pressure minus atmospheric pressure
+- Low Pressure Measurement | Vacuum gauges measure low pressure. | McLeod Gauge = compresses gas to measure vacuum | Pirani Gauge = thermal conductivity vacuum gauge | Ionisation Gauge = measures very high vacuum
+- Obstruction Flow Meters | Flow is inferred from pressure drop. | Venturimeter = converging-diverging tube measuring flow | Orifice Meter = plate with hole; cheap but higher loss | Coefficient of Discharge = actual flow / theoretical flow
+- Other Flow Meters | Various principles measure flow. | Rotameter = variable-area meter with float | Hot-wire Anemometer = measures velocity by heat loss | Electromagnetic Flowmeter = measures conductive fluid flow by induced emf
+# Temperature Measurement
+- Expansion Thermometers | Expansion of materials indicates temperature. | Bimetallic Strip = two metals bend differently with temperature | Liquid-in-glass Thermometer = liquid expands in a capillary | Pressure Thermometer = gas or liquid pressure in a bulb
+- Thermocouples | Thermocouples generate voltage from temperature difference. | Seebeck Effect = emf generated in a junction of dissimilar metals | Law of Intermediate Metals = third metal at same temperature adds no emf | K-type Thermocouple = chromel-alumel, widely used
+- Resistance Thermometers | Resistance varies with temperature. | RTD = platinum resistance thermometer | Thermistor = semiconductor with high temperature sensitivity | PT100 = platinum RTD with 100 Ω at 0 °C
+- Pyrometers | Non-contact methods measure high temperature. | Radiation Pyrometer = measures emitted thermal radiation | Optical Pyrometer = compares brightness with a calibrated filament | Emissivity = ratio of emitted radiation to black body radiation
+# Control Systems
+- Open & Closed Loop Control | Feedback improves accuracy. | Open-loop Control = no feedback of output | Closed-loop Control = output compared with set point | Error Signal = set point minus measured value
+- Transfer Function & Block Diagrams | Systems are modelled mathematically. | Transfer Function = Laplace output / input | Block Diagram = graphical representation of system | Closed-loop Gain = G/(1 + GH)
+- Controller Modes | Controllers act on error in different ways. | On-Off Control = two-position control with differential gap | Proportional Control = output proportional to error, leaves offset | PID Control = proportional, integral and derivative actions combined
+- Hydraulic & Pneumatic Control | Fluid power actuates industrial systems. | Hydraulic Actuator = uses pressurised oil for large forces | Pneumatic Control = uses compressed air | Servo Valve = valve controlling flow in proportion to signal
+
+@ me403 | ME-403 | Theory of Machines | Mechanisms, velocity and acceleration analysis, cams, gears, gear trains, friction, belts and governors.
+# Mechanisms
+- Kinematic Links & Pairs | Mechanisms are made of links joined by pairs. | Kinematic Link = rigid body connecting with others | Lower Pair = surface contact, e.g. turning pair | Higher Pair = point or line contact, e.g. cam and follower
+- Degrees of Freedom | Mobility tells how many inputs are needed. | Grubler's Equation = F = 3(n − 1) − 2j − h | Mechanism = kinematic chain with one link fixed and F = 1 | Structure = F = 0, no relative motion
+- Four-bar Chain & Inversions | Inversions give different mechanisms. | Grashof's Law = s + l ≤ p + q for continuous rotation | Inversion = fixing different links of a chain | Crank-Rocker = inversion with one link fully rotating
+- Slider-Crank & Double Slider | Inversions of slider-crank chains. | Whitworth Quick Return = inversion of slider-crank in shapers | Scotch Yoke = double slider giving simple harmonic motion | Elliptical Trammel = double slider tracing an ellipse
+# Velocity & Acceleration Analysis
+- Relative Velocity Method | Velocity polygons find link velocities. | Relative Velocity = v = ω × r perpendicular to the link | Velocity Polygon = vector diagram of velocities | Rubbing Velocity = relative velocity at a pin joint
+- Instantaneous Centre Method | ICs give velocities quickly. | Instantaneous Centre = point about which a link rotates at an instant | Kennedy's Theorem = three ICs of three bodies lie on a straight line | Number of ICs = n(n − 1)/2
+- Acceleration Analysis | Acceleration polygons include centripetal terms. | Centripetal Acceleration = ω²r towards the centre | Tangential Acceleration = αr | Coriolis Component = 2vω for sliding on a rotating link
+- Klein's Construction | Graphical method for slider-crank analysis. | Klein's Construction = finds velocity and acceleration of slider-crank | Piston Acceleration = ω²r(cos θ + cos 2θ / n) | Obliquity Ratio = n = connecting rod / crank length
+# Cams & Gears
+- Cams & Followers | Cams convert rotary into reciprocating motion. | Cam = rotating element imparting motion to follower | Roller Follower = reduces wear compared to knife edge | Pressure Angle = angle between follower motion and normal to the cam profile
+- Follower Motions | Motion laws affect smoothness. | Uniform Velocity = infinite acceleration at ends | SHM Follower Motion = smooth harmonic displacement | Cycloidal Motion = zero acceleration at start and end; best for high speed
+- Gear Terminology & Law of Gearing | Gears transmit motion at constant velocity ratio. | Law of Gearing = common normal at contact passes through pitch point | Module = m = pitch diameter / number of teeth | Involute Profile = most common tooth profile
+- Interference & Contact Ratio | Tooth geometry limits small pinions. | Interference = tip of one tooth digs into flank of another | Minimum Teeth = about 17 for 20° full-depth involute | Contact Ratio = arc of contact / circular pitch
+# Gear Trains & Friction Drives
+- Simple & Compound Gear Trains | Gear trains change speed and torque. | Simple Gear Train = each shaft has one gear | Compound Gear Train = intermediate shafts carry two gears | Train Value = output speed / input speed
+- Epicyclic Gear Trains | Planetary gears give high ratios compactly. | Epicyclic Train = gear axes move around a central axis | Sun and Planet Gear = common epicyclic arrangement | Tabular Method = finds speeds by adding rotations
+- Belt & Rope Drives | Belts transmit power by friction. | Tension Ratio = T1/T2 = e^(μθ) | Centrifugal Tension = Tc = mv² | Maximum Power Condition = Tc = Tmax/3
+- Friction, Clutches & Brakes | Friction transmits and absorbs power. | Friction Circle = circle of radius μr for journal bearings | Uniform Wear Theory = pr constant; used for clutch design | Band Brake = band around drum providing braking torque
+# Governors & Gyroscope
+- Watt & Porter Governors | Governors control engine speed. | Governor = regulates mean speed by controlling fuel supply | Watt Governor = simple pendulum governor | Porter Governor = Watt governor with central load
+- Hartnell Governor & Characteristics | Spring governors and their qualities. | Hartnell Governor = spring-loaded centrifugal governor | Sensitiveness = range of speed / mean speed | Isochronous Governor = same equilibrium speed at all radii
+- Governor Effort & Power | Effort and power quantify governor capability. | Governor Effort = mean force on sleeve for a speed change | Governor Power = effort × sleeve lift | Hunting = continuous fluctuation of speed
+- Gyroscopic Effects | Spinning bodies resist changes in axis. | Gyroscopic Couple = C = Iωωp | Precession = rotation of the spin axis | Applications = stability of aeroplanes, ships and two-wheelers
+
+@ me404 | ME-404 | Fluid Mechanics | Fluid properties, statics, kinematics, dynamics, flow measurement, viscous flow, boundary layer and dimensional analysis.
+# Fluid Properties & Statics
+- Properties of Fluids | Fluids deform continuously under shear. | Viscosity = resistance to shear; τ = μ du/dy | Newtonian Fluid = shear stress proportional to velocity gradient | Surface Tension = force per unit length at a liquid surface
+- Pressure & Its Measurement | Pressure acts equally in all directions at a point. | Pascal's Law = pressure at a point is equal in all directions | Hydrostatic Law = dp/dz = −ρg | U-tube Manometer = measures pressure using liquid columns
+- Hydrostatic Forces | Submerged surfaces experience pressure forces. | Total Pressure Force = F = ρgAh̄ | Centre of Pressure = depth h* = h̄ + I/(Ah̄) | Curved Surface Force = horizontal and vertical components found separately
+- Buoyancy & Stability | Floating bodies obey Archimedes' principle. | Archimedes' Principle = buoyant force equals weight of displaced fluid | Metacentric Height = GM; positive for stable floating | Metacentre = point about which a floating body oscillates
+# Fluid Kinematics
+- Types of Flow | Flows are classified by variation and nature. | Steady Flow = properties at a point do not change with time | Uniform Flow = velocity same at every point | Laminar Flow = fluid moves in smooth layers
+- Streamlines & Continuity | Streamlines visualise flow; continuity conserves mass. | Streamline = curve tangent to velocity everywhere | Continuity Equation = A1V1 = A2V2 for incompressible flow | Stream Tube = bundle of streamlines
+- Velocity Potential & Stream Function | Potential flow uses φ and ψ. | Velocity Potential = φ with u = −∂φ/∂x | Stream Function = ψ, constant along streamlines | Flow Net = grid of streamlines and equipotential lines
+- Rotation & Vorticity | Fluid elements may rotate. | Vorticity = twice the angular velocity | Irrotational Flow = zero vorticity | Circulation = line integral of velocity around a closed curve
+# Fluid Dynamics
+- Euler's & Bernoulli's Equations | Energy along a streamline is conserved. | Euler's Equation = dp/ρ + V dV + g dz = 0 | Bernoulli's Equation = p/ρg + V²/2g + z = constant | Assumptions = steady, incompressible, inviscid flow along a streamline
+- Flow Measurement Devices | Bernoulli explains flow meters. | Venturimeter = measures discharge using pressure difference | Pitot Tube = measures velocity from stagnation pressure | Orifice Meter = simple plate meter with higher losses
+- Momentum Equation | Momentum principle gives forces from flow. | Impulse-Momentum Equation = F = ρQ(V2 − V1) | Force on Pipe Bend = found from momentum change | Jet Impact on Plate = F = ρaV² on a fixed flat plate
+- Notches & Weirs | Open-channel flow is measured by notches. | Rectangular Notch = Q = (2/3)Cd·L·√(2g)·H^(3/2) | V-notch = Q = (8/15)Cd·tan(θ/2)√(2g)H^(5/2) | Weir = notch on a large scale
+# Viscous Flow & Pipe Flow
+- Laminar Flow in Pipes | Viscous flow obeys Hagen-Poiseuille law. | Hagen-Poiseuille Equation = Δp = 32μVL/D² | Reynolds Number = Re = ρVD/μ; laminar below about 2000 | Velocity Profile = parabolic in laminar pipe flow
+- Turbulent Flow & Friction | Turbulence increases losses. | Darcy-Weisbach Equation = hf = fLV²/(2gD) | Moody Chart = friction factor versus Re and relative roughness | Turbulent Velocity Profile = flatter than laminar profile
+- Minor Losses & Pipe Networks | Fittings add losses; pipes form networks. | Sudden Expansion Loss = (V1 − V2)²/2g | Pipes in Series = same flow, losses add | Pipes in Parallel = same head loss, flows add
+- Water Hammer | Sudden valve closure causes pressure surges. | Water Hammer = pressure rise from sudden stopping of flow | Pressure Wave Speed = depends on fluid bulk modulus and pipe elasticity | Surge Tank = absorbs pressure surges in pipelines
+# Boundary Layer & Dimensional Analysis
+- Boundary Layer Concept | Viscous effects are confined near surfaces. | Boundary Layer = thin layer where velocity rises from zero to free stream | Boundary Layer Thickness = distance where u = 0.99U | Displacement Thickness = shift of streamlines due to the boundary layer
+- Flow Separation & Drag | Adverse pressure gradients cause separation. | Flow Separation = boundary layer detaches from surface | Drag Force = FD = CD·½ρV²A | Lift Force = force perpendicular to flow direction
+- Dimensional Analysis | Dimensionless groups reduce variables. | Buckingham π Theorem = n variables and m dimensions give n − m π groups | Rayleigh's Method = finds relation using exponents of variables | Dimensional Homogeneity = each term has same dimensions
+- Model Analysis & Similitude | Models predict prototype behaviour. | Geometric Similarity = model and prototype shapes in fixed ratio | Froude Number = V/√(gL), used for free-surface flows | Reynolds Model Law = equal Re for viscous-dominated flows
+
+@ me405 | ME-405 | Manufacturing Technology | Metal cutting theory, machine tools, grinding, non-conventional machining, jigs and fixtures and metrology.
+# Theory of Metal Cutting
+- Orthogonal & Oblique Cutting | Cutting geometry affects forces and chips. | Orthogonal Cutting = cutting edge perpendicular to cutting velocity | Oblique Cutting = cutting edge inclined to velocity | Chip Thickness Ratio = r = t / tc
+- Chip Formation | Chip type depends on material and conditions. | Continuous Chip = ductile material at high speed | Discontinuous Chip = brittle materials like cast iron | Built-up Edge = welded material on tool tip at low speed
+- Merchant's Circle | Force analysis of orthogonal cutting. | Merchant's Circle = force diagram relating cutting forces | Shear Angle Relation = 2φ + β − α = 90° | Cutting Force = force component in direction of cutting velocity
+- Tool Life & Wear | Tools wear and must be replaced. | Taylor's Tool Life Equation = VT^n = C | Flank Wear = wear on clearance face | Crater Wear = wear on rake face
+# Machine Tools
+- Lathe | Lathe produces cylindrical surfaces. | Lathe = machine rotating work against a single-point tool | Taper Turning = by compound rest, tailstock offset or attachment | Thread Cutting = lead screw synchronises carriage with spindle
+- Drilling & Boring | Holes are made and enlarged. | Drilling = making holes with a twist drill | Reaming = finishing a drilled hole to accurate size | Boring = enlarging an existing hole with a single-point tool
+- Shaper, Planer & Slotter | Reciprocating tools make flat surfaces. | Shaper = tool reciprocates over stationary work | Planer = work reciprocates under stationary tool | Quick Return Ratio = cutting stroke time / return stroke time
+- Milling | Multi-tooth cutters machine many shapes. | Up Milling = cutter rotates against feed direction | Down Milling = cutter rotates with feed direction | Indexing = dividing head for equally spaced features
+# Grinding & Finishing
+- Grinding Process | Abrasives remove small amounts of material. | Grinding Wheel = bonded abrasive grains | Grit Size = abrasive particle size number | Wheel Dressing = restoring sharp grains on a wheel
+- Grinding Wheel Specification | Wheels are specified by standard code. | Abrasive Type = aluminium oxide for steel, silicon carbide for cast iron | Grade = hardness of the bond | Structure = spacing of grains in the wheel
+- Superfinishing Processes | Finishing improves surface quality. | Honing = abrasive stones finish bores | Lapping = loose abrasive between lap and work | Buffing = polishing to a lustrous finish
+- Surface Roughness | Surface quality is quantified. | Ra Value = arithmetic mean roughness | Lay = direction of dominant surface pattern | Surface Finish Symbol = drawing notation for roughness
+# Non-conventional Machining
+- Need for Unconventional Processes | Hard materials and complex shapes need new methods. | Unconventional Machining = removes material without traditional chips | Hard Materials = carbides and ceramics difficult to cut | Energy Classification = mechanical, thermal, chemical and electrochemical
+- EDM & Wire EDM | Sparks erode conductive materials. | EDM = electric discharge machining using sparks in dielectric | Dielectric Fluid = kerosene or deionised water | Wire EDM = travelling wire cuts complex profiles
+- ECM & Chemical Machining | Electrochemical dissolution removes metal. | ECM = electrochemical machining, reverse of electroplating | Electrolyte = NaCl solution commonly used | Chemical Milling = selective etching with masks
+- USM, LBM & AJM | Other unconventional processes. | USM = ultrasonic machining with abrasive slurry | LBM = laser beam machining by melting and vaporising | AJM = abrasive jet machining with high-velocity particles
+# Jigs, Fixtures & Metrology
+- Jigs & Fixtures | Work-holding devices improve accuracy. | Jig = holds work and guides the tool | Fixture = holds work without guiding the tool | 3-2-1 Principle = six points locate a body
+- Limits, Fits & Tolerances | Interchangeability needs controlled sizes. | Tolerance = permissible variation in size | Clearance Fit = hole always larger than shaft | Interference Fit = shaft always larger than hole
+- Linear & Angular Measurement | Instruments measure dimensions accurately. | Vernier Caliper = measures with least count 0.02 mm | Micrometer = screw gauge with least count 0.01 mm | Sine Bar = measures angles using slip gauges
+- Comparators & Gauges | Gauges check limits quickly. | Slip Gauges = precision blocks for length standards | Limit Gauge = GO and NO-GO gauges | Comparator = magnifies deviation from a standard
+
+@ me501 | ME-501 | Internal Combustion Engines | Engine classification, fuel-air cycles, carburetion and injection, combustion, performance testing and emissions.
+# IC Engine Fundamentals
+- Classification of IC Engines | Engines are classified by cycle, fuel and ignition. | SI Engine = spark ignition engine working on Otto cycle | CI Engine = compression ignition engine working on Diesel cycle | Two-stroke Engine = one power stroke per revolution
+- Engine Components & Terminology | Basic parts and dimensions. | Bore = cylinder diameter | Stroke = distance piston travels between dead centres | Compression Ratio = (Vs + Vc)/Vc
+- Valve Timing Diagram | Valves open and close around dead centres. | Valve Overlap = both valves open near TDC | Inlet Valve Opening = before TDC for better filling | Port Timing = timing of ports in two-stroke engines
+- Fuel-air & Actual Cycles | Real cycles deviate from air-standard cycles. | Fuel-air Cycle = accounts for variable specific heat and dissociation | Time Loss = due to finite combustion time | Exhaust Blowdown Loss = loss when exhaust valve opens early
+# Fuel Supply Systems
+- Carburetion | Carburettors mix air and fuel in SI engines. | Simple Carburettor = venturi draws fuel from float chamber | Air-fuel Ratio = stoichiometric about 14.7:1 for petrol | Choke = enriches mixture for cold starting
+- Petrol Injection | Injection replaces carburettors. | MPFI = multi-point fuel injection near each intake valve | GDI = gasoline direct injection into cylinder | ECU = electronic control unit managing injection
+- Diesel Injection | CI engines inject fuel at high pressure. | Fuel Injection Pump = delivers metered high-pressure fuel | Common Rail = high-pressure accumulator feeding injectors | Injector Nozzle = atomises fuel into spray
+- Ignition Systems | SI engines need a spark at the right time. | Battery Ignition = coil-based system with contact breaker | Electronic Ignition = transistor-switched ignition | Spark Advance = igniting before TDC at higher speeds
+# Combustion
+- Combustion in SI Engines | Flame propagates from the spark plug. | Ignition Lag = delay between spark and flame development | Flame Propagation = flame front travelling across chamber | Knock = autoignition of end gas causing pressure waves
+- Combustion in CI Engines | Fuel self-ignites after injection. | Ignition Delay = time between injection and start of combustion | Diesel Knock = sudden combustion of accumulated fuel | Cetane Number = ignition quality of diesel fuel
+- Fuel Ratings | Ratings quantify knock resistance. | Octane Number = knock resistance of petrol versus iso-octane | Anti-knock Agent = additive increasing octane number | Higher Octane = allows higher compression ratio
+- Combustion Chamber Design | Chamber shape affects combustion. | Squish = radial inward air motion at TDC | Swirl = rotational air motion improving mixing | Direct Injection Chamber = open chamber for CI engines
+# Engine Performance & Testing
+- Performance Parameters | Engine output and efficiency are measured. | Indicated Power = power developed in cylinder | Brake Power = power at the crankshaft | Mechanical Efficiency = BP / IP
+- Fuel Consumption & Efficiency | Fuel use is compared across engines. | BSFC = brake specific fuel consumption, kg/kWh | Brake Thermal Efficiency = BP / (fuel energy input) | Volumetric Efficiency = actual air inducted / swept volume
+- Engine Testing | Tests determine friction and heat balance. | Morse Test = finds IP of multi-cylinder engine by cutting cylinders | Willan's Line = extrapolates fuel line to find friction power | Heat Balance Sheet = distribution of fuel energy into BP, cooling, exhaust
+- Supercharging & Turbocharging | Forced induction raises power. | Supercharging = compressing intake air with engine-driven compressor | Turbocharger = exhaust-driven turbine powering a compressor | Intercooler = cools compressed air to increase density
+# Lubrication, Cooling & Emissions
+- Lubrication Systems | Lubrication reduces friction and wear. | Splash Lubrication = crank dips into oil | Pressure Lubrication = oil pump forces oil to bearings | Viscosity Index = change of viscosity with temperature
+- Cooling Systems | Excess heat must be removed. | Air Cooling = fins dissipate heat | Water Cooling = coolant circulated through jackets and radiator | Thermostat = controls coolant flow to maintain temperature
+- Engine Emissions | Combustion produces pollutants. | CO = carbon monoxide from rich mixtures | NOx = oxides of nitrogen at high temperatures | Particulate Matter = soot mainly from diesel engines
+- Emission Control | Devices and norms reduce emissions. | Catalytic Converter = three-way catalyst converts CO, HC and NOx | EGR = exhaust gas recirculation reduces NOx | Bharat Stage VI = Indian emission norms equivalent to Euro VI
+
+@ me502 | ME-502 | Mechanical Vibrations | Free and forced vibration, damping, two-degree and multi-degree systems, vibration isolation, measurement and noise.
+# Fundamentals of Vibration
+- Vibration Basics | Vibration is oscillatory motion about equilibrium. | Free Vibration = vibration after initial disturbance with no external force | Forced Vibration = vibration under external periodic force | Degree of Freedom = number of independent coordinates to describe motion
+- Simple Harmonic Motion | SHM is the simplest periodic motion. | SHM = acceleration proportional to displacement and directed towards mean | Amplitude = maximum displacement | Time Period = time for one complete cycle
+- Elements of Vibrating Systems | Mass, spring and damper form the model. | Spring Stiffness = force per unit deflection | Springs in Series = 1/k = 1/k1 + 1/k2 | Springs in Parallel = k = k1 + k2
+- Harmonic Analysis | Periodic vibration is analysed by Fourier series. | Fourier Analysis = expresses periodic motion as harmonics | Beats = periodic amplitude variation from close frequencies | Phase Angle = lead or lag between motions
+# Undamped Free Vibration
+- Natural Frequency | Natural frequency depends on stiffness and mass. | Natural Frequency = ωn = √(k/m) | Static Deflection Relation = fn = (1/2π)√(g/δ) | Equation of Motion = mẍ + kx = 0
+- Energy & Rayleigh's Methods | Energy methods give natural frequency quickly. | Energy Method = total energy constant; d/dt(T + U) = 0 | Rayleigh's Method = max kinetic energy equals max potential energy | Effect of Spring Mass = add one-third of spring mass
+- Torsional Vibration | Shafts with rotors vibrate torsionally. | Torsional Natural Frequency = ωn = √(kt/I) | Two-rotor System = node exists between rotors | Equivalent Shaft = stepped shaft reduced to uniform equivalent
+- Transverse Vibration & Whirling | Beams and shafts vibrate transversely. | Dunkerley's Method = 1/fn² = Σ 1/fni² | Whirling Speed = critical speed equal to transverse natural frequency | Critical Speed = speed at which shaft deflection becomes large
+# Damped & Forced Vibration
+- Damped Free Vibration | Damping dissipates energy. | Damping Ratio = ζ = c/cc | Critical Damping = cc = 2√(km) | Logarithmic Decrement = δ = ln(x1/x2) = 2πζ/√(1 − ζ²)
+- Forced Vibration & Resonance | External forcing at natural frequency causes resonance. | Magnification Factor = ratio of dynamic to static amplitude | Resonance = forcing frequency equals natural frequency | Frequency Ratio = r = ω/ωn
+- Rotating & Reciprocating Unbalance | Unbalanced masses excite vibration. | Rotating Unbalance = force meω² rotating with the shaft | Support Motion = vibration excited by base movement | Half-power Bandwidth = measures damping near resonance
+- Vibration Isolation & Transmissibility | Isolators reduce transmitted force. | Transmissibility = transmitted force / applied force | Isolation Condition = r > √2 for effective isolation | Isolator Materials = rubber pads, springs and cork
+# Multi-degree of Freedom Systems
+- Two-degree of Freedom Systems | Two masses give two natural frequencies. | Principal Modes = natural modes of vibration | Mode Shape = relative amplitudes in a mode | Coupled Coordinates = coordinates linked through stiffness or mass
+- Vibration Absorber | Auxiliary mass cancels vibration. | Dynamic Vibration Absorber = tuned auxiliary mass-spring | Tuning Condition = absorber natural frequency equals forcing frequency | Centrifugal Pendulum Absorber = absorber for torsional vibration
+- Holzer's Method | Iterative method for multi-rotor systems. | Holzer's Method = trial frequencies until residual torque is zero | Multi-rotor System = shafts with many discs | Node = point of zero amplitude
+- Matrix Methods | Matrix methods solve many DOF systems. | Eigenvalue Problem = [K − ω²M]{X} = 0 | Stiffness Matrix = matrix of spring coefficients | Orthogonality of Modes = mode shapes are orthogonal w.r.t. M and K
+# Vibration Measurement & Noise
+- Vibration Measuring Instruments | Transducers measure displacement, velocity and acceleration. | Seismic Instrument = mass-spring device measuring vibration | Accelerometer = high natural frequency seismic instrument | Vibrometer = low natural frequency instrument measuring displacement
+- Condition Monitoring | Vibration indicates machine health. | Condition Monitoring = tracking machine health from signals | FFT Analyser = displays vibration spectrum | Predictive Maintenance = maintenance based on measured condition
+- Fundamentals of Noise | Noise is unwanted sound. | Sound Pressure Level = SPL = 20 log(p/p0) dB | Decibel Addition = levels add logarithmically | Frequency Weighting = A-weighting mimics human hearing
+- Noise Control | Noise is reduced at source, path or receiver. | Source Control = quieter machines and damping | Sound Absorption = porous materials absorb sound | Enclosure = barrier around noisy equipment
+
+@ me503-mt | ME-503(A) | Mechatronics | Sensors, actuators, signal conditioning, microcontrollers, PLCs and mechatronic system design.
+# Introduction to Mechatronics
+- Mechatronics Concept | Mechatronics integrates mechanics, electronics and computing. | Mechatronics = synergistic integration of mechanical, electrical and computer engineering | Mechatronic System = sensors, actuators, controller and mechanical structure | Examples = washing machine, ABS brakes, robots
+- Measurement Systems | Mechatronic systems sense and process signals. | Sensor = element producing a signal related to the measured quantity | Transducer = converts one energy form into another | Signal Processor = conditions signals for display or control
+- Control Systems in Mechatronics | Control systems decide actuator commands. | Closed-loop Control = feedback compares output with reference | Sequential Control = steps executed in sequence, e.g. washing cycle | Embedded Controller = microcontroller controlling the system
+- Design Process | Mechatronic design is integrated and concurrent. | Concurrent Design = disciplines designed together | Traditional vs Mechatronic Design = mechanical solutions replaced by electronics | Modelling and Simulation = predicting behaviour before building
+# Sensors & Transducers
+- Displacement & Position Sensors | Position is sensed in many ways. | Optical Encoder = disk with slots giving digital position | Incremental Encoder = pulses for relative motion | Absolute Encoder = unique code for each position
+- Proximity & Velocity Sensors | Non-contact sensing of presence and speed. | Inductive Proximity Sensor = detects metal objects | Hall Effect Sensor = senses magnetic field | Tachogenerator = voltage proportional to speed
+- Force, Pressure & Temperature Sensors | Common physical quantities are sensed. | Piezoelectric Sensor = charge produced by force | Strain Gauge Load Cell = measures force | Thermocouple = temperature sensor based on Seebeck effect
+- Selection of Sensors | Sensors are chosen by specifications. | Range = limits of measurable input | Response Time = time to reach a stated output | Repeatability = consistency of output for same input
+# Signal Conditioning & Data Acquisition
+- Operational Amplifier Circuits | Op-amps condition sensor signals. | Inverting Amplifier = gain −Rf/Rin | Differential Amplifier = amplifies difference of two inputs | Instrumentation Amplifier = high CMRR for small signals
+- Filtering & Protection | Filters remove noise; protection prevents damage. | Low-pass Filter = removes high-frequency noise | Optical Isolation = optocoupler separates circuits | Wheatstone Bridge = converts resistance change to voltage
+- ADC & DAC | Converters link analog and digital domains. | ADC = converts analog signal into digital value | Resolution = smallest change detectable, Vref/2^n | DAC = converts digital value into analog signal
+- Data Acquisition Systems | DAQ systems gather data for computers. | DAQ = hardware and software acquiring signals | Sampling Rate = samples per second | Multiplexer = selects one of several channels
+# Actuators
+- Electrical Actuators | Motors convert electrical to mechanical energy. | DC Motor = speed varies with armature voltage | Stepper Motor = moves in discrete steps | Servo Motor = closed-loop motor for precise positioning
+- Hydraulic & Pneumatic Actuators | Fluid power provides large forces. | Hydraulic Cylinder = linear actuator using oil pressure | Pneumatic Cylinder = actuator using compressed air | Directional Control Valve = controls flow direction
+- Mechanical Actuation Systems | Mechanisms transmit actuator motion. | Ball Screw = converts rotation into linear motion with low friction | Gear Train = changes speed and torque | Cam = converts rotary to reciprocating motion
+- Solenoids & Smart Actuators | Simple and smart actuators. | Solenoid = electromagnet producing linear motion | Piezo Actuator = small precise motion from voltage | Shape Memory Alloy = returns to shape when heated
+# Controllers & PLC
+- Microcontrollers in Mechatronics | MCUs run control algorithms. | Microcontroller = CPU, memory and I/O on one chip | PWM = pulse-width modulation for motor speed | Interrupt = event-driven response
+- Programmable Logic Controllers | PLCs control industrial processes. | PLC = rugged computer for industrial control | Scan Cycle = read inputs, execute program, update outputs | I/O Module = interfaces field devices to PLC
+- Ladder Logic Programming | PLC programs use ladder diagrams. | Ladder Diagram = graphical PLC programming language | Timer Instruction = delays an output | Latching = output held on after input removed
+- Mechatronic System Case Studies | Examples integrate all elements. | Automatic Camera = autofocus and exposure control | Engine Management System = ECU controls fuel and ignition | Pick-and-Place Robot = sensors, actuators and controller automate handling
+
+@ me504-fem | ME-504(C) | Finite Element Method | Variational and weighted residual methods, 1D and 2D elements, isoparametric formulation, structural and thermal analysis.
+# Introduction to FEM
+- Basics of FEM | FEM divides a domain into small elements. | Finite Element Method = numerical technique solving PDEs by discretisation | Element = small subdomain with nodes | Node = point where unknowns are computed
+- Steps in FEM | FEM follows a standard procedure. | Discretisation = dividing domain into elements | Assembly = combining element matrices into global matrix | Boundary Conditions = known displacements or forces applied
+- Variational Methods | Energy principles yield FE equations. | Rayleigh-Ritz Method = minimises total potential energy | Total Potential Energy = strain energy minus work of loads | Principle of Minimum Potential Energy = equilibrium at minimum potential
+- Weighted Residual Methods | Residual methods minimise errors. | Galerkin Method = weight functions equal to trial functions | Residual = error from approximate solution in governing equation | Collocation Method = residual zero at chosen points
+# One-dimensional Elements
+- Bar Element | Bar elements carry axial loads. | Bar Element Stiffness = k = (AE/L)[1 −1; −1 1] | Shape Function = interpolates displacement within element | Linear Element = two nodes, linear displacement
+- Truss Analysis | Trusses are assemblies of bar elements. | Truss Element = bar with arbitrary orientation in 2D | Transformation Matrix = converts local to global coordinates | Member Force = computed from nodal displacements
+- Beam Element | Beam elements carry bending. | Beam Element DOF = transverse displacement and rotation at each node | Hermite Shape Functions = cubic functions for beam elements | Beam Stiffness = depends on EI/L³
+- Quadratic Elements | Higher order elements improve accuracy. | Quadratic Element = three nodes, quadratic displacement | Convergence = solution approaches exact as mesh refines | h-refinement = increasing number of elements
+# Two-dimensional Elements
+- Plane Stress & Plane Strain | 2D problems use simplifying assumptions. | Plane Stress = thin plates with σz = 0 | Plane Strain = long bodies with εz = 0 | Constitutive Matrix = [D] relates stress and strain
+- CST Element | Constant strain triangle is the simplest 2D element. | CST = 3-node triangle with constant strain | B Matrix = strain-displacement matrix | Element Stiffness = [k] = t·A·[B]^T[D][B]
+- Quadrilateral & Higher Elements | Quadrilaterals give better accuracy. | Q4 Element = 4-node bilinear quadrilateral | LST = linear strain triangle with 6 nodes | Axisymmetric Element = for bodies of revolution
+- Mesh Generation | Meshing affects accuracy and cost. | Mesh = arrangement of elements | Aspect Ratio = longest to shortest side; should be near 1 | Mesh Refinement = finer elements at stress concentrations
+# Isoparametric Formulation & Integration
+- Isoparametric Elements | Same functions describe geometry and displacement. | Isoparametric Element = geometry and field use same shape functions | Natural Coordinates = ξ, η ranging from −1 to 1 | Jacobian = maps natural to global coordinates
+- Numerical Integration | Gauss quadrature evaluates element integrals. | Gauss Quadrature = integration using optimal points and weights | Two-point Rule = exact for cubic polynomials | Reduced Integration = fewer points to avoid locking
+- Convergence Requirements | Elements must satisfy criteria. | Completeness = rigid body motion and constant strain represented | Compatibility = displacements continuous across elements | Patch Test = checks convergence of element formulation
+- Error Estimation | Results must be checked. | Discretisation Error = error from finite element approximation | Stress Smoothing = averaging stresses at nodes | Adaptive Meshing = refining mesh where error is high
+# Applications
+- Heat Transfer Analysis | FEM solves conduction problems. | Thermal Conductivity Matrix = analogous to stiffness matrix | 1D Heat Conduction = element matrix kA/L | Convection Boundary = adds terms to matrix and load
+- Dynamic Analysis | FEM finds natural frequencies. | Mass Matrix = consistent or lumped | Eigenvalue Analysis = [K − ω²M]{u} = 0 | Mode Shapes = deformation patterns at natural frequencies
+- Fluid Flow & Torsion | Field problems share FE formulation. | Potential Flow = Laplace equation solved by FEM | Torsion Problem = Prandtl stress function | Field Problem = governed by Poisson-type equations
+- FEA Software | Commercial tools automate FEM. | ANSYS = general-purpose FEA software | Pre-processing = geometry, meshing and boundary conditions | Post-processing = viewing stresses and displacements

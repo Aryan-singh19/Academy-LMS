@@ -30,7 +30,7 @@ if (!process.env.GOOGLE_CLIENT_ID) {
 
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 const HOST = '0.0.0.0';
 
 // Middlewares

@@ -1405,7 +1405,7 @@ function pickRandomQuestions(bank, amount) {
  */
 function initializeTestsPage() {
     renderPracticeHeader();
-    setSemesterFilter('sem5');
+    setSemesterFilter(window.ACADEMY.getProgram().semester);
     renderPracticeHistory();
     initFlashcards();
     loadSpeedHighScore();
@@ -1479,7 +1479,7 @@ function updateBannerContent(mode) {
     if (mode === 'drill') {
         if (label) label.textContent = 'Active Recall Drills';
         title.textContent = 'Subject-wise drills with instant explanation';
-        desc.textContent = 'Choose any subject across Semesters 5, 6, and 7 to test your understanding with instant feedback, comprehensive derivations, and stored test accuracy.';
+        desc.textContent = 'Choose any subject from your branch and semester (1-8) to test your understanding with instant feedback, comprehensive derivations, and stored test accuracy.';
     } else if (mode === 'mock') {
         if (label) label.textContent = 'Timed Assessment';
         title.textContent = 'Timed Mock Exam Simulation';
@@ -1508,43 +1508,56 @@ function updateBannerContent(mode) {
 }
 
 /**
- * Filter by Semester (Only individual semesters, no All Sems)
+ * Branch + semester filter. Defaults to the student's own programme; other semesters are one tap away.
  */
+let currentTestBranch = null;
+let currentTestSemester = null;
+
+function getTestEntries() {
+    return window.ACADEMY.getPlanEntries(currentTestBranch, currentTestSemester);
+}
+
+function renderTestProgramControls() {
+    const program = window.ACADEMY.getProgram();
+    const branches = window.ACADEMY.getBranches();
+    const select = document.getElementById('testBranchSelect');
+    if (select) {
+        select.innerHTML = Object.entries(branches).map(([key, meta]) => `<option value="${key}" ${key === currentTestBranch ? 'selected' : ''}>${meta.short}${key === program.branch ? ' (mine)' : ''}</option>`).join('');
+        select.onchange = () => {
+            currentTestBranch = select.value;
+            const sems = window.ACADEMY.getSemestersFor(currentTestBranch);
+            setSemesterFilter(sems.includes(currentTestSemester) ? currentTestSemester : sems[0]);
+        };
+    }
+    const group = document.getElementById('semFilterGroup');
+    if (group) {
+        group.innerHTML = window.ACADEMY.getSemestersFor(currentTestBranch).map((sem) => {
+            const active = sem === currentTestSemester;
+            const mine = sem === program.semester && currentTestBranch === program.branch;
+            return `<button type="button" role="tab" aria-selected="${active}" onclick="setSemesterFilter(${sem})" class="px-2.5 py-1 rounded-full whitespace-nowrap transition ${active ? 'text-blue-300 font-semibold bg-blue-500/20 shadow-sm' : 'text-slate-400 hover:text-white'}">S${sem}${mine ? ' &#9733;' : ''}</button>`;
+        }).join('');
+    }
+    const pills = document.getElementById('coursePillContainer');
+    if (pills) {
+        pills.innerHTML = `<button id="allSemCoursesBtn" data-course-filter="all" onclick="setPracticeCourse('all')" class="course-pill">All Sem ${currentTestSemester}</button>`
+            + getTestEntries().map(({ id, code, course }) => `<button data-course-filter="${id}" onclick="setPracticeCourse('${id}')" class="course-pill" title="${course.title}">${code}</button>`).join('');
+    }
+}
+
 function setSemesterFilter(semester) {
-    if (!['sem5', 'sem6', 'sem7'].includes(semester)) {
-        semester = 'sem5';
+    if (!currentTestBranch) {
+        const program = window.ACADEMY.getProgram();
+        currentTestBranch = program.branch;
+        currentTestSemester = program.semester;
     }
-    currentSemesterFilter = semester;
-
-    ['sem5', 'sem6', 'sem7'].forEach((sem) => {
-        const btn = document.getElementById(`semFilter-${sem}`);
-        if (btn) {
-            if (sem === semester) {
-                btn.className = 'px-2.5 py-1 rounded-full text-blue-300 font-medium bg-blue-500/20 shadow-sm transition';
-            } else {
-                btn.className = 'px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition';
-            }
-        }
-    });
-
-    const semLabel = semester === 'sem5' ? 'Sem 5' : (semester === 'sem6' ? 'Sem 6' : 'Sem 7');
-    const allBtn = document.getElementById('allSemCoursesBtn');
-    if (allBtn) {
-        allBtn.textContent = `All ${semLabel}`;
-    }
-
-    // Toggle subject pills visibility: strictly show only the pills of the active semester
-    document.querySelectorAll('[data-course-filter]').forEach((button) => {
-        const courseSem = button.dataset.sem;
-        if (button.dataset.courseFilter === 'all') {
-            button.style.display = 'inline-block';
-        } else {
-            button.style.display = courseSem === semester ? 'inline-block' : 'none';
-        }
-    });
-
-    // Reset to all subjects of the selected semester
-    setPracticeCourse('all');
+    const legacy = String(semester).match(/^sem(\d)$/);
+    const sem = Number(legacy ? legacy[1] : semester);
+    const sems = window.ACADEMY.getSemestersFor(currentTestBranch);
+    currentTestSemester = sems.includes(sem) ? sem : (sems.includes(currentTestSemester) ? currentTestSemester : sems[0]);
+    currentSemesterFilter = `sem${currentTestSemester}`;
+    renderTestProgramControls();
+    const ids = getTestEntries().map((entry) => entry.id);
+    window.ACADEMY.loadCourseScripts(ids, '../js/').then(() => setPracticeCourse('all'));
 }
 
 /**
@@ -1608,16 +1621,10 @@ function buildPracticeSession(mode = 'drill', durationMinutes = 0) {
 
     let bank = buildPracticeBank();
 
-    // Filter by semester if needed
-    if (currentSemesterFilter === 'sem5') {
-        const sem5Courses = ['cs501', 'cs502', 'cs503', 'cs503-cs', 'cs504'];
-        bank = bank.filter((q) => sem5Courses.includes(q.courseId));
-    } else if (currentSemesterFilter === 'sem6') {
-        const sem6Courses = ['cs601', 'cs602', 'cs603', 'cs604', 'cs603-cg'];
-        bank = bank.filter((q) => sem6Courses.includes(q.courseId));
-    } else if (currentSemesterFilter === 'sem7') {
-        const sem7Courses = ['cs701', 'cs702-bd', 'cs702-wmc', 'cs703-cis', 'cs703-dm'];
-        bank = bank.filter((q) => sem7Courses.includes(q.courseId));
+    // Keep the bank inside the selected branch + semester
+    const semesterIds = getTestEntries().map((entry) => entry.id);
+    if (semesterIds.length) {
+        bank = bank.filter((q) => semesterIds.includes(q.courseId));
     }
 
     // Filter by specific course
@@ -1826,16 +1833,9 @@ function formatTimer(totalSeconds) {
 function initFlashcards() {
     let bank = buildPracticeBank();
 
-    if (currentSemesterFilter === 'sem5') {
-        const sem5Courses = ['cs501', 'cs502', 'cs503', 'cs503-cs', 'cs504'];
-        bank = bank.filter((q) => sem5Courses.includes(q.courseId));
-    } else if (currentSemesterFilter === 'sem6') {
-        const sem6Courses = ['cs601', 'cs602', 'cs603', 'cs604', 'cs603-cg'];
-        bank = bank.filter((q) => sem6Courses.includes(q.courseId));
-    } else if (currentSemesterFilter === 'sem7') {
-        const sem7Courses = ['cs701', 'cs702-bd', 'cs702-wmc', 'cs703-cis', 'cs703-dm'];
-        bank = bank.filter((q) => sem7Courses.includes(q.courseId));
-    }
+    const semesterIds = getTestEntries().map((entry) => entry.id);
+
+    if (semesterIds.length) bank = bank.filter((q) => semesterIds.includes(q.courseId));
 
     if (practiceCourse !== 'all') {
         bank = bank.filter((q) => q.courseId === practiceCourse);

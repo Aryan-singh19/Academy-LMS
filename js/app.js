@@ -3,7 +3,8 @@ let activeUnitId = 'cs601-u1';
 let activeTopicId = 't1';
 let appStarted = false;
 const loadedCourses = {};
-let activeSemesterFilter = '5';
+let viewBranch = null;
+let viewSemester = null;
 let topicListFilter = 'all';
 let topicComments = [];
 let openUnits = {};
@@ -19,6 +20,7 @@ function startApp() {
 function initApp() {
     window.ACADEMY.scheduleCloudSync();
     hydrateLastVisited();
+    alignViewWithProgram();
     hydrateStudentName();
     bindGlobalEvents();
     renderCoursesNav();
@@ -28,6 +30,43 @@ function initApp() {
         renderCourseView();
         preloadRemainingCourses();
     });
+    if (!window.ACADEMY.hasStoredProgram()) {
+        openProgramPicker({ firstRun: true });
+    }
+}
+
+function getViewEntries() {
+    return window.ACADEMY.getPlanEntries(viewBranch, viewSemester);
+}
+
+function isViewingOwnProgram() {
+    const program = window.ACADEMY.getProgram();
+    return program.branch === viewBranch && program.semester === viewSemester;
+}
+
+// Keep the desk inside the student's own branch + semester unless they deliberately browse elsewhere.
+function alignViewWithProgram() {
+    const program = window.ACADEMY.getProgram();
+    viewBranch = program.branch;
+    viewSemester = program.semester;
+    const entries = getViewEntries();
+    if (!entries.length) return;
+    if (!entries.some((entry) => entry.id === activeCourseId)) {
+        selectCourseState(entries[0].id);
+    }
+}
+
+function selectCourseState(courseId) {
+    const course = coursesData.find((item) => item.id === courseId);
+    if (!course) return;
+    activeCourseId = course.id;
+    activeUnitId = course.units[0].id;
+    activeTopicId = course.units[0].topics[0].id;
+    openUnits = { [activeUnitId]: true };
+}
+
+function getActiveDisplayCode(courseId = activeCourseId) {
+    return window.ACADEMY.getDisplayCode(courseId, viewBranch, viewSemester);
 }
 
 async function bootstrapLanding() {
@@ -199,7 +238,8 @@ function bindGlobalEvents() {
 }
 
 function preloadRemainingCourses() {
-    const remaining = coursesData.filter((course) => course.id !== activeCourseId);
+    const viewIds = new Set(getViewEntries().map((entry) => entry.id));
+    const remaining = coursesData.filter((course) => course.id !== activeCourseId && viewIds.has(course.id));
     const loadNext = (index) => {
         if (index >= remaining.length) return;
         loadCourseData(remaining[index].id, () => loadNext(index + 1));
@@ -334,13 +374,23 @@ function renderStudentDock() {
 }
 
 function setSemesterFilter(sem) {
-    activeSemesterFilter = String(sem);
-    const semesterCourses = coursesData.filter((course) => String(course.semester) === String(activeSemesterFilter));
-    if (semesterCourses.length > 0 && !semesterCourses.some((c) => c.id === activeCourseId)) {
-        switchCourse(semesterCourses[0].id);
+    browseTo(viewBranch, Number(sem));
+}
+
+function browseTo(branch, semester) {
+    viewBranch = branch;
+    viewSemester = Number(semester);
+    const entries = getViewEntries();
+    if (entries.length && !entries.some((entry) => entry.id === activeCourseId)) {
+        switchCourse(entries[0].id);
     } else {
         renderCoursesNav();
     }
+}
+
+function returnToMyProgram() {
+    const program = window.ACADEMY.getProgram();
+    browseTo(program.branch, program.semester);
 }
 
 function renderCoursesNav() {
@@ -348,42 +398,54 @@ function renderCoursesNav() {
     const nav = document.getElementById('coursesNav');
     if (!nav) return;
 
-    const semesters = [
-        { id: '5', label: '5th Semester' },
-        { id: '6', label: '6th Semester' },
-        { id: '7', label: '7th Semester' }
-    ];
-
-    const filteredCourses = coursesData.filter((course) => {
-        return String(course.semester) === String(activeSemesterFilter);
-    });
+    const program = window.ACADEMY.getProgram();
+    const branches = window.ACADEMY.getBranches();
+    const own = isViewingOwnProgram();
+    const entries = getViewEntries();
+    const semesters = window.ACADEMY.getSemestersFor(viewBranch);
+    const branchMeta = branches[viewBranch] || { name: viewBranch, short: viewBranch, icon: '🎓' };
+    document.documentElement.dataset.branch = viewBranch;
 
     nav.innerHTML = `
         <div class="w-full flex flex-wrap items-center justify-between gap-3 mb-2 pb-2 border-b border-slate-800">
-            <div class="flex items-center gap-1 bg-slate-900/80 p-1 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2 min-w-0">
+                <button type="button" onclick="openProgramPicker()" class="program-chip" title="Change your branch or semester">
+                    <span class="text-base leading-none">${branchMeta.icon}</span>
+                    <span class="min-w-0 text-left">
+                        <span class="block text-[10px] uppercase tracking-[0.18em] pick-muted">${own ? 'My programme' : 'Browsing'}</span>
+                        <span class="block text-sm font-bold text-white truncate">B.Tech ${branchMeta.short} &middot; Semester ${viewSemester}</span>
+                    </span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                ${own ? '' : `
+                    <button type="button" onclick="returnToMyProgram()" class="browse-back" title="Go back to your own semester">
+                        &larr; Back to ${window.ACADEMY.getProgramLabel(program)}
+                    </button>
+                `}
+            </div>
+            <div class="flex items-center gap-1 bg-slate-900/80 p-1 rounded-xl border border-slate-800 overflow-x-auto max-w-full" role="tablist" aria-label="Semester">
                 ${semesters.map((sem) => `
-                    <button type="button" onclick="setSemesterFilter('${sem.id}')" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${activeSemesterFilter === sem.id ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}">
-                        ${sem.label}
+                    <button type="button" role="tab" aria-selected="${sem === viewSemester}" onclick="setSemesterFilter('${sem}')" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${sem === viewSemester ? 'bg-blue-600 text-white shadow-sm' : (sem === program.semester && viewBranch === program.branch ? 'text-blue-300 hover:text-white' : 'text-slate-400 hover:text-white')}" title="${sem === program.semester && viewBranch === program.branch ? 'Your semester' : `Semester ${sem}`}">
+                        S${sem}${sem === program.semester && viewBranch === program.branch ? ' &#9733;' : ''}
                     </button>
                 `).join('')}
             </div>
-            <span class="text-xs text-slate-400 font-medium">${filteredCourses.length} subjects</span>
         </div>
+        ${own ? '' : `
+            <div class="w-full text-xs browse-banner px-3 py-2 mb-1" role="status">
+                You are browsing <strong>${branchMeta.name}, Semester ${viewSemester}</strong>. Your own semester is <strong>${window.ACADEMY.getProgramLabel(program)}</strong>.
+            </div>
+        `}
         <div class="flex flex-wrap gap-2 w-full">
-            ${filteredCourses.map((course) => {
-                const courseStats = stats.courseStats[course.id] || { completionRate: 0, completed: 0, total: course.units.reduce((sum, unit) => sum + unit.topics.length, 0) };
-                const badgeColor = course.semester === 5
-                    ? 'bg-amber-500/20 text-amber-300'
-                    : course.semester === 7
-                        ? 'bg-emerald-500/20 text-emerald-300'
-                        : 'bg-blue-500/20 text-blue-300';
+            ${entries.map(({ id, code, course }) => {
+                const courseStats = stats.courseStats[id] || { completionRate: 0, completed: 0, total: course.units.reduce((sum, unit) => sum + unit.topics.length, 0) };
                 return `
-                    <button onclick="switchCourse('${course.id}')" class="course-pill ${course.id === activeCourseId ? 'course-pill-active' : ''}">
+                    <button onclick="switchCourse('${id}')" class="course-pill ${id === activeCourseId ? 'course-pill-active' : ''}" title="${course.title}">
                         <div class="flex items-center gap-1.5">
-                            <span class="text-[10px] px-1.5 py-0.5 rounded font-mono font-bold ${badgeColor}">Sem ${course.semester || 6}</span>
-                            <span class="font-semibold">${course.code}</span>
+                            <span class="font-semibold">${code}</span>
                         </div>
-                        <span class="text-xs text-slate-400">${courseStats.completed}/${courseStats.total} done</span>
+                        <span class="text-[11px] pick-text truncate max-w-[11rem]">${course.title}</span>
+                        <span class="text-[10px] pick-muted">${courseStats.completed}/${courseStats.total} done</span>
                     </button>
                 `;
             }).join('')}
@@ -391,17 +453,119 @@ function renderCoursesNav() {
     `;
 }
 
+function openProgramPicker(options = {}) {
+    closeProgramPicker();
+    const program = window.ACADEMY.getProgram();
+    const branches = window.ACADEMY.getBranches();
+    let pickBranch = viewBranch || program.branch;
+    let pickSemester = viewSemester || program.semester;
+
+    const modal = document.createElement('div');
+    modal.id = 'programPickerModal';
+    modal.className = 'program-picker-backdrop fixed inset-0 z-[80] flex items-center justify-center p-4';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-labelledby', 'programPickerTitle');
+
+    const render = () => {
+        const sems = window.ACADEMY.getSemestersFor(pickBranch);
+        if (!sems.includes(pickSemester)) pickSemester = sems[0];
+        const preview = window.ACADEMY.getPlanEntries(pickBranch, pickSemester);
+        modal.innerHTML = `
+            <div class="panel-card w-full max-w-2xl max-h-[90vh] overflow-y-auto p-5 sm:p-6">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <div>
+                        <p class="text-[11px] uppercase tracking-[0.2em] text-blue-400 font-semibold">${options.firstRun ? 'Welcome' : 'Programme'}</p>
+                        <h2 id="programPickerTitle" class="text-xl font-extrabold text-white mt-1">${options.firstRun ? 'What do you study?' : 'Choose branch &amp; semester'}</h2>
+                        <p class="text-sm pick-muted mt-1">We will show only your semester's subjects. You can browse others any time.</p>
+                    </div>
+                    ${options.firstRun ? '' : '<button type="button" onclick="closeProgramPicker()" class="side-panel-collapse-btn" aria-label="Close">&times;</button>'}
+                </div>
+                <p class="text-xs font-bold uppercase tracking-wider pick-muted mb-2">Degree</p>
+                <div class="flex gap-2 mb-4">
+                    <span class="course-pill course-pill-active !py-1.5">B.Tech</span>
+                    <span class="course-pill !py-1.5 opacity-60 cursor-not-allowed" title="M.Tech subjects are being added in upcoming batches">M.Tech &middot; coming soon</span>
+                </div>
+                <p class="text-xs font-bold uppercase tracking-wider pick-muted mb-2">Branch</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
+                    ${Object.entries(branches).map(([key, meta]) => `
+                        <button type="button" data-pick-branch="${key}" class="pick-option text-left p-3 ${key === pickBranch ? 'pick-option-active' : ''}">
+                            <span class="text-lg">${meta.icon}</span>
+                            <span class="block text-sm font-bold text-white mt-1">${meta.short}</span>
+                            <span class="block text-[11px] pick-muted leading-snug">${meta.name}</span>
+                        </button>
+                    `).join('')}
+                </div>
+                <p class="text-xs font-bold uppercase tracking-wider pick-muted mb-2">Semester</p>
+                <div class="grid grid-cols-4 sm:grid-cols-8 gap-2 mb-4">
+                    ${sems.map((sem) => `
+                        <button type="button" data-pick-sem="${sem}" class="pick-option py-2 text-sm font-bold text-center ${sem === pickSemester ? 'pick-option-active' : ''}">${sem}</button>
+                    `).join('')}
+                </div>
+                <div class="pick-preview p-3 mb-5">
+                    <p class="text-[11px] uppercase tracking-wider pick-muted mb-2">${preview.length} subjects in ${branches[pickBranch].short} &middot; Semester ${pickSemester}</p>
+                    <ul class="grid sm:grid-cols-2 gap-x-4 gap-y-1 text-xs pick-text">
+                        ${preview.map((entry) => `<li><span class="font-mono pick-code">${entry.code}</span> ${entry.course.title}</li>`).join('')}
+                    </ul>
+                    ${branches[pickBranch].note ? `<p class="text-[11px] browse-note mt-2">${branches[pickBranch].note}</p>` : ''}
+                </div>
+                <div class="flex flex-col sm:flex-row gap-2 sm:justify-end">
+                    ${options.firstRun ? '' : '<button type="button" data-pick-action="browse" class="secondary-cta text-sm !py-2 !px-4">Just browse this semester</button>'}
+                    <button type="button" data-pick-action="save" class="primary-cta text-sm !py-2 !px-4">Set as my programme</button>
+                </div>
+            </div>
+        `;
+    };
+
+    modal.addEventListener('click', (event) => {
+        const branchBtn = event.target.closest('[data-pick-branch]');
+        const semBtn = event.target.closest('[data-pick-sem]');
+        const action = event.target.closest('[data-pick-action]');
+        if (branchBtn) {
+            pickBranch = branchBtn.dataset.pickBranch;
+            render();
+        } else if (semBtn) {
+            pickSemester = Number(semBtn.dataset.pickSem);
+            render();
+        } else if (action) {
+            if (action.dataset.pickAction === 'save') {
+                window.ACADEMY.setProgram(pickBranch, pickSemester);
+                renderOverviewCards();
+            }
+            closeProgramPicker();
+            browseTo(pickBranch, pickSemester);
+        } else if (event.target === modal && !options.firstRun) {
+            closeProgramPicker();
+        }
+    });
+
+    render();
+    document.body.appendChild(modal);
+}
+
+function closeProgramPicker() {
+    const existing = document.getElementById('programPickerModal');
+    if (existing) existing.remove();
+}
+
 function switchCourse(courseId) {
-    if (courseId === activeCourseId) return;
     const course = coursesData.find((item) => item.id === courseId);
     if (!course) return;
-    activeCourseId = course.id;
-    if (activeSemesterFilter !== 'all' && String(course.semester) !== String(activeSemesterFilter)) {
-        activeSemesterFilter = String(course.semester);
+    // keep the student inside the current view when the subject lives there; otherwise jump to where it belongs
+    if (!getViewEntries().some((entry) => entry.id === courseId)) {
+        const program = window.ACADEMY.getProgram();
+        const placement = window.ACADEMY.findPlacement(courseId, viewBranch, viewSemester)
+            || window.ACADEMY.findPlacement(courseId, program.branch, program.semester);
+        if (placement) {
+            viewBranch = placement.branch;
+            viewSemester = placement.semester;
+        }
     }
-    activeUnitId = course.units[0].id;
-    activeTopicId = course.units[0].topics[0].id;
-    openUnits = { [activeUnitId]: true };
+    if (courseId === activeCourseId) {
+        renderCoursesNav();
+        return;
+    }
+    selectCourseState(course.id);
     window.ACADEMY.setLastVisited(activeCourseId, activeUnitId, activeTopicId);
     renderCoursesNav();
     loadCourseData(courseId, renderCourseView);
@@ -442,6 +606,7 @@ function renderCourseView() {
     const unit = course.units.find((item) => item.id === activeUnitId);
     const topicMeta = unit.topics.find((topic) => topic.id === activeTopicId);
     const topicSummary = topicMeta ? topicMeta.title : 'Unit Revision';
+    const displayCode = getActiveDisplayCode(course.id);
 
     renderStudentDock();
     syncProfileAvatarNav();
@@ -465,14 +630,14 @@ function renderCourseView() {
                 <div class="hidden xl:flex flex-col items-center">
                     <button onclick="toggleSidePanel('left')" class="restore-edge-btn" title="Expand Outline sidebar (Press [)">
                         <svg class="w-4 h-4 mr-1.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
-                        <span>Outline (${course.code})</span>
+                        <span>Outline (${displayCode})</span>
                     </button>
                 </div>
             ` : `
                 <aside class="panel-card p-4 workspace-panel workspace-panel-left">
                     <div class="flex items-start justify-between gap-3 mb-4">
                         <div>
-                            <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code}</p>
+                            <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${displayCode}</p>
                             <h2 class="text-xl font-bold text-white mt-1">${course.title}</h2>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
@@ -499,11 +664,11 @@ function renderCourseView() {
             <section class="panel-card overflow-hidden workspace-panel workspace-panel-center">
                 <div class="border-b border-white/8 px-5 sm:px-8 py-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
                     <div>
-                        <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${course.code} / Unit ${unit.unitNumber}</p>
+                        <p class="text-xs uppercase tracking-[0.24em] text-slate-500">${displayCode} / Unit ${unit.unitNumber}</p>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">${topicSummary}</h2>
                     </div>
                     <div class="flex flex-wrap items-center gap-2.5">
-                        <a href="html/lectures.html?subject=${course.id}" class="secondary-cta text-sm !py-2 !px-4 font-semibold inline-flex items-center gap-1.5 text-blue-300 hover:text-white" title="Watch video lectures for ${course.name}">
+                        <a href="html/lectures.html?subject=${course.id}" class="secondary-cta text-sm !py-2 !px-4 font-semibold inline-flex items-center gap-1.5 text-blue-300 hover:text-white" title="Watch video lectures for ${course.title}">
                             <svg class="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                             <span>Watch Lectures</span>
                         </a>
@@ -1301,16 +1466,15 @@ function openProgressModal() {
     if (!modal || !content) return;
 
     const stats = window.ACADEMY.calculateStats();
-    const semesters = [
-        { sem: '5', label: 'Semester 5' },
-        { sem: '6', label: 'Semester 6' },
-        { sem: '7', label: 'Semester 7' }
-    ];
-
+    const program = window.ACADEMY.getProgram();
+    const semesters = window.ACADEMY.getSemestersFor(program.branch).map((sem) => ({
+        sem,
+        label: `Semester ${sem}${sem === program.semester ? ' (current)' : ''}`
+    }));
     let html = `
         <div class="grid sm:grid-cols-3 gap-3">
             <div class="p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 text-center">
-                <span class="text-xs text-slate-400">Total Completed</span>
+                <span class="text-xs text-slate-400">Completed (${stats.programLabel})</span>
                 <p class="text-xl font-extrabold text-blue-400 mt-0.5">${stats.completedTopics} / ${stats.totalTopics}</p>
             </div>
             <div class="p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 text-center">
@@ -1324,20 +1488,21 @@ function openProgressModal() {
         </div>
 
         <div class="space-y-3 mt-4">
-            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Semester Coverage</h4>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Semester Coverage &middot; ${window.ACADEMY.getProgramLabel(program).split(' · ')[0]}</h4>
     `;
 
     semesters.forEach(s => {
-        const courses = (window.courseManifest || []).filter(c => c.semester === s.sem);
+        const courses = window.ACADEMY.getPlanEntries(program.branch, s.sem)
+            .map((entry) => ({ id: entry.id, code: entry.code, name: entry.course.title }));
         if (!courses.length) return;
 
         let semTotal = 0;
         let semCompleted = 0;
 
         const courseRows = courses.map(c => {
-            const cs = stats.courseStats[c.id] || { totalTopics: 0, completedTopics: 0, completionRate: 0 };
-            semTotal += cs.totalTopics;
-            semCompleted += cs.completedTopics;
+            const cs = stats.courseStats[c.id] || { total: 0, completed: 0, completionRate: 0 };
+            semTotal += cs.total;
+            semCompleted += cs.completed;
             return `
                 <div class="flex items-center justify-between py-1.5 px-2.5 rounded-lg bg-slate-900/80 hover:bg-slate-800/60 text-xs">
                     <span class="font-medium text-slate-300">${c.name} (${c.code})</span>
@@ -1523,7 +1688,7 @@ function openSavedNotesModal() {
     Object.entries(notes).forEach(([key, noteText]) => {
         if (!noteText || !noteText.trim()) return;
         const [courseId, unitId, topicId] = key.split(':');
-        const course = (window.courseManifest || []).find(c => c.id === courseId);
+        const course = (window.coursesData || []).find(c => c.id === courseId);
         allSavedNotesList.push({
             type: 'note',
             key,
@@ -1531,7 +1696,7 @@ function openSavedNotesModal() {
             unitId,
             topicId,
             courseCode: course ? course.code : (courseId || '').toUpperCase(),
-            courseName: course ? course.name : '',
+            courseName: course ? course.title : '',
             text: noteText.trim()
         });
     });
@@ -1539,7 +1704,7 @@ function openSavedNotesModal() {
     Object.entries(highlights).forEach(([key, list]) => {
         if (!Array.isArray(list) || !list.length) return;
         const [courseId, unitId, topicId] = key.split(':');
-        const course = (window.courseManifest || []).find(c => c.id === courseId);
+        const course = (window.coursesData || []).find(c => c.id === courseId);
         list.forEach(hl => {
             if (!hl || !hl.text) return;
             allSavedNotesList.push({
@@ -1549,7 +1714,7 @@ function openSavedNotesModal() {
                 unitId,
                 topicId,
                 courseCode: course ? course.code : (courseId || '').toUpperCase(),
-                courseName: course ? course.name : '',
+                courseName: course ? course.title : '',
                 text: hl.text.trim()
             });
         });

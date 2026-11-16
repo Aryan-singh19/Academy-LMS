@@ -1,0 +1,324 @@
+// Electronics & Communication semesters 3-5
+@ ec302 | EC-302 | Electronic Measurement & Instrumentation | Measurement errors, analog and digital meters, bridges, oscilloscopes, transducers and data acquisition.
+# Measurement Fundamentals
+- Characteristics of Instruments | Instruments are judged by static and dynamic characteristics. | Accuracy = closeness of a reading to the true value | Precision = closeness of repeated readings to each other | Resolution = smallest input change an instrument can detect
+- Errors in Measurement | Every measurement contains some error. | Gross Error = human mistake in reading or recording | Systematic Error = repeatable error from instrument or environment | Random Error = unpredictable error reduced by averaging
+- Standards & Calibration | Instruments are calibrated against standards. | Calibration = comparing an instrument with a known standard | Primary Standard = highest accuracy standard kept by national labs | Traceability = unbroken chain of calibrations to national standards
+- Statistical Analysis of Data | Statistics quantify uncertainty in readings. | Arithmetic Mean = best estimate of the true value from many readings | Standard Deviation = spread of readings about the mean | Probable Error = 0.6745 × standard deviation
+# Analog & Digital Meters
+- PMMC Instruments | Moving-coil meters measure DC current and voltage. | PMMC = permanent magnet moving coil instrument with linear scale | Shunt = low resistance in parallel to extend ammeter range | Multiplier = high series resistance to extend voltmeter range
+- Moving Iron & Electrodynamometer Instruments | These meters measure AC and DC quantities. | Moving Iron Instrument = works on AC and DC with a non-linear scale | Electrodynamometer = fixed and moving coils used as a wattmeter | Loading Effect = meter draws current and alters the measured circuit
+- Digital Voltmeters | DVMs convert analog voltage to digital readings. | Ramp-type DVM = counts clock pulses during a linear ramp | Dual-slope DVM = integrating converter with good noise rejection | Successive Approximation DVM = binary search conversion
+- Digital Multimeter & Frequency Counter | Digital meters measure many quantities. | Digital Multimeter = measures voltage, current and resistance digitally | 3½ Digit Display = maximum reading 1999 | Frequency Counter = counts cycles in a precise time gate
+# Bridges
+- DC Bridges | Bridges measure resistance by null balance. | Wheatstone Bridge = balance condition R1·R4 = R2·R3 for medium resistance | Kelvin Double Bridge = measures low resistance, removing lead resistance | Null Detection = galvanometer shows zero at balance
+- AC Bridges for Inductance | AC bridges balance both magnitude and phase. | Maxwell Bridge = measures medium-Q inductance with a capacitor | Hay's Bridge = suits high-Q coils | Anderson Bridge = accurate inductance measurement using a modified Maxwell bridge
+- AC Bridges for Capacitance & Frequency | Other bridges measure capacitance and frequency. | Schering Bridge = measures capacitance and dissipation factor | Wien Bridge = frequency-dependent bridge used in oscillators | De Sauty Bridge = simple capacitance comparison bridge
+- Q-meter | The Q-meter measures coil quality factor. | Q-meter = measures Q using series resonance | Quality Factor = Q = ωL/R | Distributed Capacitance = self-capacitance of a coil found with a Q-meter
+# Oscilloscopes & Signal Generators
+- Cathode Ray Oscilloscope | The CRO displays voltage against time. | CRT = cathode ray tube with electron gun, deflection plates and screen | Time Base = sawtooth sweep moving the beam horizontally | Deflection Sensitivity = beam deflection per volt
+- Lissajous Patterns & Measurements | CROs measure phase and frequency. | Lissajous Figure = pattern from two sinusoids on X and Y plates | Frequency Ratio = fy/fx = horizontal tangencies / vertical tangencies | Phase Angle = sin φ = Y-intercept / Y-max for an ellipse
+- Digital Storage Oscilloscope | DSOs sample and store waveforms. | DSO = digitises and stores waveforms in memory | Sampling Rate = samples per second taken by the scope | Pre-trigger View = shows events before the trigger point
+- Signal Generators & Analysers | Generators supply test signals; analysers study spectra. | Function Generator = produces sine, square and triangular waves | Spectrum Analyser = displays signal amplitude versus frequency | Wave Analyser = measures amplitude of individual harmonics
+# Transducers & Data Acquisition
+- Transducer Classification | Transducers convert physical quantities to electrical signals. | Active Transducer = generates its own output, e.g. thermocouple | Passive Transducer = needs external excitation, e.g. strain gauge | Inverse Transducer = converts electrical signal into physical quantity
+- Strain Gauges & LVDT | Displacement and strain are measured electrically. | Strain Gauge = resistance changes with strain | Gauge Factor = (ΔR/R)/(Δl/l) | LVDT = linear variable differential transformer for displacement
+- Temperature & Pressure Transducers | Common sensors measure temperature and pressure. | Thermocouple = Seebeck-effect sensor generating voltage with temperature | RTD = resistance temperature detector, usually platinum | Thermistor = semiconductor with large negative temperature coefficient
+- Data Acquisition Systems | DAQ systems condition, convert and record signals. | Signal Conditioning = amplification, filtering and isolation | Sample-and-Hold = holds the input steady during conversion | Telemetry = measuring and transmitting data from remote points
+
+@ ec303 | EC-303 | Digital System Design | Logic minimisation, combinational and sequential design, state machines, memories, PLDs and logic families.
+# Logic Simplification
+- Boolean Algebra Review | Boolean laws simplify digital expressions. | Consensus Theorem = AB + A'C + BC = AB + A'C | De Morgan's Theorem = complement of a sum is the product of complements | Duality = interchanging AND/OR and 0/1 gives a valid identity
+- K-Map Minimisation | K-maps group adjacent minterms. | Karnaugh Map = Gray-ordered grid for grouping 1s | Essential Prime Implicant = prime implicant covering a minterm no other covers | Don't-care Condition = unspecified output usable for larger groups
+- Quine-McCluskey Method | Tabulation suits many variables. | Quine-McCluskey = tabular minimisation by combining minterms differing in one bit | Prime Implicant Chart = table selecting implicants that cover all minterms | Petrick's Method = algebraic way to choose minimal cover
+- Hazards in Combinational Circuits | Hazards cause glitches during transitions. | Static Hazard = output momentarily changes when it should stay constant | Dynamic Hazard = output changes several times instead of once | Hazard Cover = adding redundant terms to remove static hazards
+# Combinational Design
+- Arithmetic Circuits | Adders and subtractors build ALUs. | Full Adder = Sum = A ⊕ B ⊕ Cin, Cout = AB + Cin(A ⊕ B) | Carry Look-ahead = generate and propagate terms compute carries quickly | BCD Adder = adds BCD digits with correction when sum exceeds 9
+- MUX & DEMUX Design | Data selectors implement functions. | Multiplexer = selects one input with select lines | Function Implementation with MUX = n-variable function on 2^(n−1):1 MUX | Demultiplexer = routes one input to one of several outputs
+- Decoders & Encoders | Code conversion circuits support addressing. | Decoder = activates one of 2^n outputs | Priority Encoder = encodes the highest-priority active input | 7-Segment Decoder = drives display segments from a BCD input
+- Comparators & ALU Design | Comparators and ALUs perform decisions and operations. | Magnitude Comparator = indicates greater, equal or less | 74181 ALU = classic 4-bit arithmetic logic unit IC | Parity Checker = detects odd number of errors
+# Sequential Circuits
+- Flip-Flops | Bistable elements store state. | JK Flip-Flop = J = K = 1 toggles the state | T Flip-Flop = toggles when T = 1 | Master-Slave Flip-Flop = avoids race-around using two latches
+- Counters | Counters cycle through states. | Ripple Counter = asynchronous counter with cumulative delay | Synchronous Counter = all flip-flops clocked together | Johnson Counter = twisted ring counter with 2n states
+- Shift Registers | Shift registers move data serially. | SISO = serial-in serial-out | Universal Shift Register = shifts left, right and loads in parallel | Serial-to-parallel Conversion = data shifted in serially and read in parallel
+- Timing & Clocking | Clocking constraints govern reliable operation. | Setup Time = input stable before clock edge | Hold Time = input stable after clock edge | Clock Skew = arrival time difference of the clock at different flip-flops
+# Finite State Machines
+- Mealy & Moore Machines | FSMs model sequential behaviour. | Moore Machine = outputs depend only on present state | Mealy Machine = outputs depend on present state and inputs | State Diagram = graph of states and transitions
+- State Reduction & Assignment | Fewer states mean less hardware. | Equivalent States = states with same outputs and equivalent next states | State Assignment = choosing binary codes for states | One-hot Encoding = one flip-flop per state
+- Sequence Detector Design | FSMs recognise bit patterns. | Sequence Detector = FSM outputting 1 when a pattern appears | Overlapping Detection = allows a pattern to start within a previous match | Excitation Equations = flip-flop input equations derived from tables
+- Asynchronous Sequential Circuits | Circuits without clocks respond to input changes. | Fundamental Mode = only one input changes at a time | Critical Race = race whose outcome depends on delays | Flow Table = table of states for asynchronous circuits
+# Memories, PLDs & HDL
+- Semiconductor Memories | Memories store binary data in arrays. | ROM = non-volatile read-only memory | SRAM = static RAM using flip-flops | DRAM = dynamic RAM needing periodic refresh
+- Programmable Logic Devices | PLDs implement custom logic. | PLA = programmable AND and OR arrays | PAL = programmable AND array with fixed OR array | FPGA = array of configurable logic blocks and interconnects
+- Logic Families | Technologies differ in speed and power. | TTL = bipolar logic family, 74 series | CMOS = complementary MOS with very low static power | Fan-out = number of loads an output can drive
+- Introduction to Verilog/VHDL | HDLs describe hardware for simulation and synthesis. | HDL = hardware description language such as Verilog or VHDL | Behavioural Modelling = describing what a circuit does | Synthesis = converting HDL into a gate-level netlist
+
+@ ec304 | EC-304 | Electronic Devices | Semiconductor physics, PN junction, BJT, FET and MOSFET, special diodes and optoelectronic devices.
+# Semiconductor Material Properties
+- Energy Bands & Carriers | Band theory explains conductors, insulators and semiconductors. | Energy Band Gap = energy gap between valence and conduction bands; about 1.1 eV for Si | Intrinsic Semiconductor = pure semiconductor with equal electrons and holes | Fermi Level = energy with 50% occupation probability
+- Doping & Extrinsic Semiconductors | Impurities control conductivity. | N-type = doped with pentavalent donors; electrons majority | P-type = doped with trivalent acceptors; holes majority | Mass Action Law = n·p = ni²
+- Carrier Transport | Carriers move by drift and diffusion. | Drift Current = carrier flow due to an electric field | Diffusion Current = flow from high to low concentration | Mobility = drift velocity per unit electric field
+- Hall Effect & Carrier Lifetime | Measurements reveal carrier type and density. | Hall Effect = transverse voltage when current flows in a magnetic field | Hall Coefficient = RH = 1/(nq) | Recombination = electron filling a hole, ending both carriers
+# PN Junction Diode
+- PN Junction Formation | A depletion region forms at the junction. | Depletion Region = region empty of mobile carriers near the junction | Barrier Potential = about 0.7 V for Si and 0.3 V for Ge | Built-in Field = field opposing further diffusion
+- Diode Characteristics | Forward and reverse bias give rectifying behaviour. | Diode Equation = I = Is(e^(V/ηVT) − 1) | Reverse Saturation Current = small current under reverse bias | Dynamic Resistance = rd = ηVT/I
+- Diode Capacitances & Breakdown | Junctions store charge and break down at high reverse voltage. | Transition Capacitance = depletion capacitance under reverse bias | Diffusion Capacitance = dominant capacitance under forward bias | Avalanche Breakdown = carrier multiplication at high reverse voltage
+- Rectifiers & Clippers | Diodes convert AC to DC and shape waveforms. | Half-wave Rectifier = ripple factor 1.21, efficiency 40.6% | Bridge Rectifier = full-wave with four diodes; efficiency 81.2% | Clipper = circuit removing part of a waveform
+# Bipolar Junction Transistor
+- BJT Construction & Operation | A BJT is two back-to-back junctions controlled by base current. | BJT = three-terminal current-controlled device | Current Gain β = IC/IB | Alpha α = IC/IE = β/(1 + β)
+- BJT Configurations | Each configuration offers different gains and impedances. | Common Emitter = high voltage and current gain; phase inversion | Common Base = low input impedance; current gain near 1 | Common Collector = emitter follower with voltage gain near 1
+- BJT Biasing | Biasing fixes a stable operating point. | Q-point = DC operating point on the load line | Voltage Divider Bias = most stable common biasing method | Stability Factor = S = ∂IC/∂ICO
+- BJT Small-signal Models | Models analyse amplifier behaviour. | h-parameter Model = hybrid parameters hie, hfe, hre, hoe | re Model = small-signal model with re = 26 mV/IE | Early Effect = base-width modulation with collector voltage
+# Field Effect Transistors
+- JFET | Junction FETs are voltage-controlled. | JFET = field effect transistor controlled by gate-junction reverse bias | Pinch-off Voltage = VGS at which the channel closes | Shockley Equation = ID = IDSS(1 − VGS/VP)²
+- MOSFET | MOSFETs use an insulated gate. | Enhancement MOSFET = channel induced when VGS exceeds threshold | Depletion MOSFET = channel exists at VGS = 0 | Threshold Voltage = minimum VGS to form an inversion channel
+- FET Biasing & Small-signal Model | FET amplifiers are biased and modelled like BJTs. | Self Bias = source resistor sets VGS | Transconductance = gm = ΔID/ΔVGS | Common Source Amplifier = FET amplifier with gain −gm·RD
+- CMOS & Comparison of Devices | CMOS pairs NMOS and PMOS devices. | CMOS Inverter = complementary pair with negligible static current | BJT vs FET = BJT current controlled, FET voltage controlled | Channel Length Modulation = ID increases slightly with VDS in saturation
+# Special Semiconductor Devices
+- Zener Diode & Regulators | Zener breakdown provides voltage regulation. | Zener Diode = heavily doped diode operating in reverse breakdown | Zener Regulator = keeps load voltage constant | Zener Breakdown = tunnelling breakdown below about 5 V
+- Tunnel & Varactor Diodes | Special diodes exploit unusual characteristics. | Tunnel Diode = negative resistance region from quantum tunnelling | Varactor Diode = capacitance varies with reverse voltage | Schottky Diode = metal-semiconductor diode with fast switching
+- Optoelectronic Devices | Devices convert light and electricity. | LED = emits light when forward biased | Photodiode = generates current proportional to light | Solar Cell = large-area PN junction producing power from light
+- Thyristors | PNPN devices switch large power. | SCR = silicon controlled rectifier turned on by a gate pulse | UJT = unijunction transistor used in relaxation oscillators | DIAC and TRIAC = bidirectional switching devices for AC control
+
+@ ec305 | EC-305 | Network Analysis | Circuit laws, network theorems, transient analysis, Laplace methods, two-port networks and filters.
+# Circuit Fundamentals
+- Circuit Elements & Sources | Networks are built from passive elements and sources. | Active Element = supplies energy, e.g. voltage source | Passive Element = absorbs or stores energy, e.g. R, L, C | Dependent Source = source whose value depends on another circuit quantity
+- Kirchhoff's Laws | KCL and KVL are the basis of circuit analysis. | KCL = algebraic sum of currents at a node is zero | KVL = algebraic sum of voltages around a loop is zero | Source Transformation = converting a voltage source with series R to a current source with parallel R
+- Mesh & Nodal Analysis | Systematic methods write equations for any network. | Mesh Analysis = KVL around meshes using mesh currents | Nodal Analysis = KCL at nodes using node voltages | Supermesh = mesh formed when a current source lies between meshes
+- Graph Theory of Networks | Network topology organises equation writing. | Tree = connected subgraph with all nodes and no loops | Tie-set = loop formed by one link and tree branches | Incidence Matrix = node-branch matrix of a network graph
+# Network Theorems
+- Superposition & Linearity | Linear networks allow sources to be considered one at a time. | Superposition Theorem = response is the sum of responses to each source alone | Linearity = output proportional to input | Source Deactivation = voltage sources shorted, current sources opened
+- Thevenin & Norton Theorems | Any linear network seen from two terminals has a simple equivalent. | Thevenin Equivalent = voltage source Vth in series with Rth | Norton Equivalent = current source IN in parallel with RN | Rth = Vth / IN
+- Maximum Power Transfer | Load power peaks at a particular load. | Maximum Power Transfer = load resistance equals source resistance | AC Maximum Power = load impedance is the complex conjugate of source impedance | Efficiency at Maximum Power = 50%
+- Reciprocity, Millman & Tellegen | Other theorems simplify specific problems. | Reciprocity Theorem = ratio of response to excitation unchanged when swapped | Millman's Theorem = combines parallel voltage sources into one | Tellegen's Theorem = sum of instantaneous powers in a network is zero
+# Transient Analysis
+- RL & RC Transients | First-order circuits respond exponentially. | Time Constant RC = τ = RC; capacitor charges to 63.2% in τ | Time Constant RL = τ = L/R | Initial Conditions = capacitor voltage and inductor current cannot change instantly
+- RLC Transients | Second-order circuits can oscillate. | Damping Ratio = ζ = (R/2)√(C/L) for a series RLC | Underdamped Response = oscillatory decaying response when ζ < 1 | Critically Damped = fastest non-oscillatory response, ζ = 1
+- Laplace Transform in Circuits | Laplace turns differential equations into algebra. | s-domain Impedance = R, sL and 1/(sC) | Initial Value Theorem = f(0+) = lim s·F(s) as s → ∞ | Final Value Theorem = f(∞) = lim s·F(s) as s → 0
+- Step & Impulse Response | Standard inputs characterise a network. | Unit Step Response = output to a sudden constant input | Impulse Response = output to a unit impulse; inverse Laplace of H(s) | Convolution = output equals input convolved with impulse response
+# Network Functions & Two-port Networks
+- Network Functions | Transfer functions relate outputs to inputs. | Driving Point Impedance = ratio of voltage to current at the same port | Transfer Function = output transform divided by input transform | Poles and Zeros = roots of denominator and numerator
+- Z & Y Parameters | Two-ports are described by impedance or admittance parameters. | Z-parameters = open-circuit impedance parameters | Y-parameters = short-circuit admittance parameters | Reciprocal Network = Z12 = Z21
+- h & ABCD Parameters | Hybrid and transmission parameters suit transistors and cascades. | h-parameters = hybrid parameters used for transistor models | ABCD Parameters = transmission parameters relating input to output | Cascade Connection = overall ABCD is the product of individual matrices
+- Interconnection of Two-ports | Two-ports combine in series, parallel and cascade. | Series Connection = Z-parameters add | Parallel Connection = Y-parameters add | Symmetrical Network = Z11 = Z22
+# Resonance & Filters
+- Series Resonance | Series RLC resonates when reactances cancel. | Resonant Frequency = f0 = 1/(2π√(LC)) | Q-factor = Q = ω0L/R | Bandwidth = f0 / Q
+- Parallel Resonance | Parallel circuits show maximum impedance at resonance. | Anti-resonance = parallel resonance with maximum impedance | Dynamic Resistance = L/(CR) at parallel resonance | Selectivity = ability to discriminate between nearby frequencies
+- Passive Filters | Filters pass desired frequencies. | Low-pass Filter = passes frequencies below cut-off | Constant-k Filter = filter with Z1·Z2 = k² independent of frequency | m-derived Filter = sharper cut-off than constant-k
+- Attenuators & Coupled Circuits | Attenuators reduce signal level; coupled coils transfer energy. | Attenuator = resistive network giving fixed loss | Mutual Inductance = M = k√(L1L2) | Dot Convention = marks coil ends for polarity of mutual voltage
+
+@ ec402 | EC-402 | Signals & Systems | Signal classification, LTI systems, convolution, Fourier series and transforms, Laplace and Z-transforms, sampling.
+# Signals & Their Classification
+- Continuous & Discrete Signals | Signals are defined in continuous or discrete time. | Continuous-time Signal = defined for every instant t | Discrete-time Signal = defined only at integer n | Digital Signal = discrete in both time and amplitude
+- Elementary Signals | Basic signals build more complex ones. | Unit Step = u(t) = 1 for t ≥ 0, else 0 | Unit Impulse = δ(t) with unit area concentrated at t = 0 | Complex Exponential = e^(jωt), the eigenfunction of LTI systems
+- Signal Operations | Signals are shifted, scaled and reflected. | Time Shifting = x(t − t0) delays a signal | Time Scaling = x(at) compresses or expands a signal | Time Reversal = x(−t) reflects the signal about t = 0
+- Even, Odd, Energy & Power Signals | Signals are decomposed and classified by energy. | Even Signal = x(t) = x(−t) | Odd Signal = x(t) = −x(−t) | Energy Signal = finite energy and zero average power
+# LTI Systems
+- System Properties | Systems are classified by their input-output behaviour. | Linearity = superposition holds | Time Invariance = a delayed input gives an equally delayed output | Causality = output depends only on present and past inputs
+- Convolution | LTI output equals input convolved with impulse response. | Convolution Integral = y(t) = ∫ x(τ) h(t − τ) dτ | Convolution Sum = y[n] = Σ x[k] h[n − k] | Commutative Property = x * h = h * x
+- Stability & Impulse Response | Impulse response reveals system properties. | BIBO Stability = bounded input gives bounded output | Stability Condition = impulse response absolutely integrable | Memoryless System = output depends only on current input
+- Difference & Differential Equations | LTI systems are described by constant-coefficient equations. | Difference Equation = relates y[n] to past outputs and inputs | FIR System = finite-duration impulse response | IIR System = infinite-duration impulse response with feedback
+# Fourier Analysis
+- Fourier Series | Periodic signals are sums of harmonics. | Exponential Fourier Series = x(t) = Σ ck e^(jkω0t) | Parseval's Theorem = signal power equals sum of squared coefficient magnitudes | Gibbs Phenomenon = overshoot near discontinuities in partial sums
+- Continuous-time Fourier Transform | CTFT gives the spectrum of aperiodic signals. | CTFT = X(jω) = ∫ x(t) e^(−jωt) dt | Duality = time and frequency roles can be swapped | Convolution Property = convolution in time is multiplication in frequency
+- Discrete-time Fourier Transform | DTFT is periodic in frequency. | DTFT = X(e^jω) = Σ x[n] e^(−jωn) | Periodicity of DTFT = DTFT repeats every 2π | Frequency Response = DTFT of the impulse response
+- DFT & FFT | Computable transforms of finite sequences. | DFT = N-point transform of a finite sequence | FFT = fast algorithm computing DFT in O(N log N) | Circular Convolution = convolution corresponding to DFT multiplication
+# Laplace & Z-Transform
+- Laplace Transform & ROC | Laplace generalises Fourier analysis. | Bilateral Laplace = X(s) = ∫ x(t) e^(−st) dt over all t | ROC = region of s-plane where the transform converges | Stable Causal System = all poles in the left half s-plane
+- Z-Transform | Z-transform is the discrete counterpart of Laplace. | Z-Transform = X(z) = Σ x[n] z^(−n) | ROC of Causal Sequence = exterior of a circle | Stability in z-domain = all poles inside the unit circle
+- Inverse Z-Transform | Sequences are recovered from X(z). | Partial Fraction Method = expands X(z)/z into simple terms | Power Series Method = long division gives samples directly | Residue Method = contour integration using residues
+- System Analysis with Transforms | Transforms give transfer functions and responses. | Transfer Function H(z) = Y(z)/X(z) | Pole-Zero Plot = locations of poles and zeros in the complex plane | Initial Value Theorem (Z) = x[0] = lim X(z) as z → ∞
+# Sampling & Correlation
+- Sampling Theorem | Sampling links continuous and discrete signals. | Sampling Theorem = signal recoverable if fs > 2fmax | Aliasing = spectral overlap from undersampling | Nyquist Rate = twice the highest frequency
+- Reconstruction | Samples are interpolated back into a continuous signal. | Ideal Reconstruction = sinc interpolation by an ideal low-pass filter | Zero-order Hold = holds each sample until the next | Interpolation = estimating values between samples
+- Correlation | Correlation measures similarity between signals. | Cross-correlation = similarity of one signal with a shifted other | Autocorrelation = correlation of a signal with itself | Power Spectral Density = Fourier transform of autocorrelation
+- Random Signals | Random processes model noise. | Random Process = ensemble of random signals indexed by time | Wide-sense Stationary = constant mean and shift-invariant autocorrelation | White Noise = flat power spectral density
+
+@ ec403 | EC-403 | Analog Communication | Amplitude, angle and pulse modulation, transmitters, receivers, noise and performance.
+# Amplitude Modulation
+- AM Fundamentals | AM varies carrier amplitude with the message. | Modulation Index = m = Am/Ac; overmodulation when m > 1 | AM Spectrum = carrier plus upper and lower sidebands | Total Power = Pt = Pc(1 + m²/2)
+- AM Generation | AM is produced by linear or square-law methods. | Square-law Modulator = uses non-linear device to produce AM | Collector Modulation = high-level AM in the final stage | Switching Modulator = diode switching to generate AM
+- AM Detection | Detectors recover the message from AM. | Envelope Detector = diode-RC circuit following the envelope | Diagonal Clipping = distortion when RC is too large | Square-law Detector = demodulates small-signal AM
+- DSB-SC, SSB & VSB | Variants save power or bandwidth. | DSB-SC = carrier suppressed; needs coherent detection | SSB = one sideband; half the AM bandwidth | VSB = vestigial sideband used for TV video
+# Angle Modulation
+- Frequency Modulation | FM varies carrier frequency with the message. | Frequency Deviation = Δf = kf × Am | FM Modulation Index = β = Δf / fm | Narrowband FM = β much less than 1, bandwidth about 2fm
+- FM Spectrum & Bandwidth | FM produces many sidebands given by Bessel functions. | Bessel Function Coefficients = amplitudes of FM sidebands | Carson's Rule = BW ≈ 2(Δf + fm) | Wideband FM = β greater than 1
+- FM Generation | FM is generated directly or indirectly. | Direct Method = varactor varies oscillator frequency | Armstrong Method = indirect FM via narrowband PM and frequency multiplication | Frequency Multiplier = multiplies carrier and deviation
+- FM Detection | Discriminators convert frequency changes to amplitude. | Foster-Seeley Discriminator = phase-shift discriminator | Ratio Detector = discriminator insensitive to amplitude variations | PLL Demodulator = phase-locked loop tracks frequency changes
+# Transmitters & Receivers
+- AM & FM Transmitters | Transmitters generate and amplify modulated signals. | Low-level Modulation = modulation before final amplification | High-level Modulation = modulation at the final stage | Pre-emphasis = boosting high audio frequencies before FM transmission
+- Tuned Radio Frequency Receiver | Early receivers amplify at RF directly. | TRF Receiver = cascaded tuned RF amplifiers | Selectivity Problem = bandwidth varies with tuning | Sensitivity = minimum input for a specified output
+- Superheterodyne Receiver | Converting to a fixed IF gives uniform performance. | Intermediate Frequency = fixed frequency, e.g. 455 kHz for AM | Image Frequency = fs + 2IF, rejected by RF stage | Mixer = combines signal and local oscillator to produce IF
+- AGC & Receiver Characteristics | Control circuits keep output steady. | AGC = automatic gain control adjusting gain with signal strength | Fidelity = faithful reproduction of all modulating frequencies | De-emphasis = restores audio balance after pre-emphasis
+# Noise in Communication
+- Sources of Noise | Noise originates inside and outside the system. | Thermal Noise = Pn = kTB | Shot Noise = random arrival of charge carriers | Atmospheric Noise = noise from lightning and natural sources
+- Noise Figure & Temperature | Noise is quantified for amplifiers and receivers. | Noise Figure = ratio of input SNR to output SNR | Friis Formula = overall noise factor of cascaded stages | Equivalent Noise Temperature = Te = (F − 1)T0
+- Noise in AM Systems | AM performance depends on detection method. | Figure of Merit = output SNR divided by channel SNR | Threshold Effect = sharp SNR drop in envelope detection at low input | Coherent Detection = synchronous demodulation with a local carrier
+- Noise in FM Systems | FM trades bandwidth for noise performance. | FM Noise Advantage = output SNR grows with β² | Capture Effect = stronger FM signal suppresses the weaker | FM Threshold = minimum carrier-to-noise ratio for good FM performance
+# Pulse Modulation & Multiplexing
+- Sampling & PAM | Pulse modulation starts with sampling. | Natural Sampling = pulse tops follow the signal | Flat-top Sampling = sample-and-hold pulses | Aperture Effect = distortion from flat-top pulse width
+- PWM & PPM | Pulse timing carries the message. | PWM = pulse width proportional to sample value | PPM = pulse position varies with sample value | PPM Generation = derived from PWM trailing edges
+- Frequency Division Multiplexing | FDM stacks signals in frequency. | FDM = signals placed in separate frequency bands | Guard Band = unused band separating channels | Group and Supergroup = FDM hierarchy in telephony
+- Time Division Multiplexing | TDM interleaves samples in time. | TDM = signals share time slots | Frame = one cycle of all channel samples | Synchronisation = aligning receiver timing with transmitter
+
+@ ec404 | EC-404 | Control System | Control system modelling, time response, stability, root locus, frequency response and state-space analysis.
+# Introduction & Modelling
+- Control System Basics | Control systems regulate outputs using inputs and feedback. | Open-loop System = output has no effect on control action | Closed-loop System = output fed back to correct errors | Feedback = comparison of output with reference
+- Transfer Function | Transfer functions model LTI systems in s-domain. | Transfer Function = Laplace output over input with zero initial conditions | Order of System = highest power of s in the denominator | Characteristic Equation = denominator of closed-loop TF set to zero
+- Block Diagram Reduction | Block diagrams combine into one transfer function. | Closed-loop TF = G/(1 + GH) for negative feedback | Cascade Blocks = transfer functions multiply | Moving a Summing Point = rules preserve the overall TF
+- Signal Flow Graph & Mason's Gain | SFGs and Mason's rule find overall gain. | Signal Flow Graph = nodes and branches representing signals | Mason's Gain Formula = T = Σ Pk Δk / Δ | Non-touching Loops = loops with no common node
+# Time Response Analysis
+- Standard Test Signals | Systems are tested with standard inputs. | Step Input = sudden constant change | Ramp Input = linearly increasing input | Impulse Response = inverse Laplace of the transfer function
+- First & Second Order Response | Order determines response shape. | Time Constant = time to reach 63.2% for a first-order step response | Natural Frequency = ωn, oscillation frequency without damping | Damping Ratio = ζ determines oscillation and overshoot
+- Time-domain Specifications | Specifications describe transient performance. | Peak Overshoot = Mp = e^(−πζ/√(1 − ζ²)) | Settling Time = about 4/(ζωn) for 2% band | Rise Time = time from 10% to 90% of final value
+- Steady-state Error | Error constants measure steady-state accuracy. | Type of System = number of poles at the origin | Position Error Constant = Kp = lim G(s)H(s) as s → 0 | Velocity Error Constant = Kv = lim s·G(s)H(s) as s → 0
+# Stability Analysis
+- Concept of Stability | Stable systems return to equilibrium. | BIBO Stability = bounded input gives bounded output | Absolute Stability = whether the system is stable or not | Relative Stability = how close a stable system is to instability
+- Routh-Hurwitz Criterion | Routh array checks stability without solving roots. | Routh Array = tabulation from characteristic equation coefficients | Sign Changes = number equals roots in right half-plane | Row of Zeros = indicates symmetric roots; use auxiliary equation
+- Root Locus | Root locus tracks closed-loop poles as gain varies. | Root Locus = path of closed-loop poles as K goes from 0 to ∞ | Asymptote Angle = (2q + 1)180° / (P − Z) | Breakaway Point = where loci leave the real axis
+- Effect of Adding Poles & Zeros | Pole-zero placement shapes response. | Adding a Zero = tends to increase stability and speed | Adding a Pole = tends to reduce stability | Dominant Poles = poles nearest the jω-axis govern response
+# Frequency Response Analysis
+- Frequency-domain Specifications | Frequency response describes steady-state sinusoidal behaviour. | Resonant Peak = Mr, maximum of closed-loop magnitude | Bandwidth = frequency range where gain ≥ −3 dB | Correlation with Time Domain = higher bandwidth means faster response
+- Bode Plot | Bode plots show magnitude and phase on log frequency. | Bode Plot = magnitude in dB and phase versus log ω | Corner Frequency = where asymptote slope changes | Slope of Pole = −20 dB per decade for each simple pole
+- Gain & Phase Margin | Margins measure relative stability. | Gain Margin = gain change needed to reach instability at phase crossover | Phase Margin = 180° + phase at gain crossover | Stable Condition = positive gain and phase margins
+- Nyquist & Polar Plots | Nyquist criterion assesses closed-loop stability from open-loop data. | Polar Plot = locus of G(jω) in the complex plane | Nyquist Criterion = Z = N + P, encirclements of −1 point | Nichols Chart = magnitude versus phase with closed-loop contours
+# Controllers & State Space
+- Compensators | Compensators reshape system response. | Lead Compensator = adds phase lead to improve transient response | Lag Compensator = improves steady-state error | Lead-Lag Compensator = combines both effects
+- PID Controllers | PID combines proportional, integral and derivative action. | Proportional Control = output proportional to error | Integral Control = removes steady-state error | Derivative Control = anticipates error and improves damping
+- State-space Representation | State models handle MIMO and time-varying systems. | State Equation = ẋ = Ax + Bu | Output Equation = y = Cx + Du | State Transition Matrix = φ(t) = e^(At)
+- Controllability & Observability | These properties decide if states can be controlled or estimated. | Controllability = all states can be driven by inputs | Kalman Controllability Matrix = [B AB A²B …] must have full rank | Observability = states can be determined from outputs
+
+@ ec405 | EC-405 | Analog Circuits | Amplifier frequency response, feedback, oscillators, power amplifiers, op-amps and their applications.
+# Amplifier Frequency Response
+- Multistage Amplifiers | Cascading stages raises gain. | Cascade Gain = overall gain is the product of stage gains | RC Coupling = stages coupled by capacitors for audio amplifiers | Direct Coupling = no coupling capacitors, passes DC
+- Low-frequency Response | Coupling and bypass capacitors limit low frequencies. | Lower Cut-off Frequency = fL = 1/(2πRC) of dominant capacitor | Bypass Capacitor = shunts emitter resistor for AC | Half-power Point = frequency where gain drops by 3 dB
+- High-frequency Response | Device capacitances limit high frequencies. | Miller Effect = feedback capacitance multiplied by (1 − Av) at input | Hybrid-π Model = high-frequency BJT model | Gain-bandwidth Product = constant product of gain and bandwidth
+- Cascode & Darlington Amplifiers | Special configurations improve performance. | Cascode Amplifier = CE followed by CB; reduces Miller effect | Darlington Pair = two BJTs giving β1·β2 current gain | Bootstrapping = raises input impedance using positive feedback
+# Feedback Amplifiers
+- Negative Feedback Concepts | Feedback trades gain for stability. | Feedback Gain = Af = A/(1 + Aβ) | Desensitivity = gain less sensitive to parameter changes | Loop Gain = Aβ
+- Feedback Topologies | Topologies differ in sampling and mixing. | Voltage-Series Feedback = increases input and decreases output impedance | Current-Shunt Feedback = decreases input, increases output impedance | Sampling Network = senses output voltage or current
+- Effect of Feedback | Negative feedback improves amplifier properties. | Bandwidth Improvement = bandwidth multiplied by (1 + Aβ) | Distortion Reduction = non-linear distortion divided by (1 + Aβ) | Noise Reduction = internal noise reduced by feedback
+- Stability of Feedback Amplifiers | Too much phase shift makes feedback positive. | Barkhausen Criterion = Aβ = 1 at 0° or 360° gives oscillation | Phase Margin = margin before feedback turns positive | Frequency Compensation = shaping response to keep amplifiers stable
+# Oscillators
+- Oscillator Principles | Oscillators produce signals without input. | Oscillator = amplifier with positive feedback sustaining oscillation | Barkhausen Conditions = loop gain magnitude 1 and phase 0° | Amplitude Stabilisation = limiting gain to keep amplitude steady
+- RC Oscillators | RC networks set frequency in audio range. | RC Phase Shift Oscillator = three RC sections give 180° shift; f = 1/(2πRC√6) | Wien Bridge Oscillator = f = 1/(2πRC); needs gain of 3 | Audio Frequency Range = RC oscillators suit low frequencies
+- LC Oscillators | LC tanks set frequency at RF. | Hartley Oscillator = tapped inductor feedback | Colpitts Oscillator = tapped capacitor feedback | Clapp Oscillator = Colpitts with series capacitor for stability
+- Crystal Oscillators | Quartz crystals give very stable frequency. | Piezoelectric Effect = mechanical stress produces voltage and vice versa | Series Resonance = crystal acts as low impedance | High Q = crystals have Q of thousands, giving stability
+# Power Amplifiers & Tuned Amplifiers
+- Classification of Power Amplifiers | Classes differ in conduction angle. | Class A = conducts 360°; max efficiency 25% (50% transformer coupled) | Class B = conducts 180°; max efficiency 78.5% | Class C = conducts less than 180°; used in RF
+- Push-Pull Amplifiers | Two devices share alternate half cycles. | Push-Pull Amplifier = two transistors conduct on alternate halves | Crossover Distortion = dead zone near zero crossing in class B | Class AB = slight bias removes crossover distortion
+- Complementary Symmetry & Heat Sinks | Output stages need thermal care. | Complementary Symmetry = NPN and PNP pair without transformer | Thermal Runaway = rising temperature increases current further | Heat Sink = dissipates device heat to surroundings
+- Tuned Amplifiers | Tuned amplifiers amplify a narrow band. | Single-tuned Amplifier = one LC tank load | Double-tuned Amplifier = two coupled tanks for flatter response | Stagger Tuning = stages tuned to slightly different frequencies
+# Operational Amplifiers
+- Op-amp Characteristics | Ideal and practical op-amps differ in key parameters. | Ideal Op-amp = infinite gain and input impedance, zero output impedance | CMRR = ratio of differential gain to common-mode gain | Slew Rate = maximum rate of change of output voltage
+- Basic Op-amp Circuits | Feedback sets precise gains. | Inverting Amplifier = gain −Rf/R1 | Non-inverting Amplifier = gain 1 + Rf/R1 | Voltage Follower = unity-gain buffer
+- Op-amp Applications | Op-amps compute and condition signals. | Integrator = output proportional to integral of input | Differentiator = output proportional to derivative of input | Instrumentation Amplifier = high-CMRR differential amplifier using three op-amps
+- Comparators, Filters & 555 Timer | Non-linear and filter applications. | Schmitt Trigger = comparator with hysteresis | Active Filter = op-amp filter with gain, e.g. Butterworth | 555 Timer = IC for astable and monostable timing
+
+@ ec501 | EC-501 | Microprocessor & Its Applications | 8085 and 8086 architecture, instruction sets, assembly programming, interrupts and peripheral interfacing.
+# 8085 Microprocessor
+- 8085 Architecture | The 8085 is an 8-bit microprocessor with a 16-bit address bus. | 8085 = 8-bit processor, 16-bit address bus, 64 KB addressable memory | Accumulator = 8-bit register A used in arithmetic and logic | Flag Register = S, Z, AC, P and CY status flags
+- 8085 Pin Diagram & Buses | Multiplexed buses save pins. | AD0-AD7 = multiplexed lower address and data bus | ALE = address latch enable to demultiplex AD lines | IO/M Signal = distinguishes I/O from memory operation
+- Timing Diagrams | Instructions are executed in machine cycles. | Machine Cycle = basic operation such as opcode fetch or memory read | T-state = one clock period | Opcode Fetch = takes 4 T-states in 8085
+- 8085 Interrupts | Interrupts let devices request service. | TRAP = non-maskable highest-priority interrupt | RST 7.5 = maskable vectored interrupt, edge triggered | INTR = non-vectored interrupt acknowledged with INTA
+# 8085 Instruction Set & Programming
+- Addressing Modes of 8085 | Modes specify operand location. | Immediate Addressing = data in the instruction, e.g. MVI A, 32H | Register Indirect = memory addressed by a register pair, e.g. MOV A, M | Direct Addressing = address in the instruction, e.g. LDA 2000H
+- Data Transfer & Arithmetic Instructions | Instructions move and process data. | MOV = copies data between registers | ADD = adds register to accumulator | DAA = decimal adjust accumulator after BCD addition
+- Logical, Branch & Machine Control Instructions | Instructions test, jump and control the CPU. | CMP = compares register with accumulator setting flags | JNZ = jump if zero flag is reset | HLT = halts the processor
+- Stack & Subroutines | Stack supports calls and temporary storage. | Stack Pointer = holds address of top of stack | CALL and RET = enter and return from subroutines | PUSH and POP = save and restore register pairs
+# 8086 Microprocessor
+- 8086 Architecture | The 8086 is a 16-bit processor with pipelined units. | BIU = bus interface unit fetching instructions and data | EU = execution unit decoding and executing instructions | Instruction Queue = 6-byte prefetch queue enabling pipelining
+- Memory Segmentation | Segments let a 16-bit CPU address 1 MB. | Physical Address = segment × 16 + offset | Segment Registers = CS, DS, SS and ES | 1 MB Address Space = 20-bit address bus
+- 8086 Addressing Modes & Instructions | 8086 supports rich addressing. | Based Indexed Addressing = BX or BP plus SI or DI | String Instructions = MOVSB, CMPSB with REP prefix | MUL and DIV = unsigned multiply and divide
+- Minimum & Maximum Mode | 8086 operates alone or with coprocessors. | Minimum Mode = single processor generating control signals | Maximum Mode = multiprocessor mode using 8288 bus controller | 8087 = math coprocessor for floating point
+# Peripheral Interfacing
+- Memory & I/O Interfacing | Address decoding connects memory and ports. | Memory-mapped I/O = devices addressed as memory locations | I/O-mapped I/O = separate I/O address space with IN and OUT | Address Decoding = generating chip select from address lines
+- 8255 PPI | Programmable peripheral interface provides parallel ports. | 8255 = programmable peripheral interface with ports A, B and C | Mode 0 = simple input/output | Control Word = byte configuring 8255 ports and modes
+- 8253/8254 Timer & 8259 PIC | Timers and interrupt controllers support real-time tasks. | 8253 = programmable interval timer with three 16-bit counters | 8259 = programmable interrupt controller for 8 interrupts, cascadable to 64 | Priority Resolver = selects highest priority pending interrupt
+- 8257 DMA & 8251 USART | DMA and serial controllers handle data transfer. | 8257 = DMA controller with four channels | 8251 = USART for serial communication | Baud Rate = number of signal changes per second
+# Applications & Microcontrollers
+- ADC & DAC Interfacing | Microprocessors measure and generate analog signals. | ADC0808 = 8-bit ADC with 8-channel multiplexer | DAC0808 = 8-bit digital-to-analog converter | Start of Conversion = signal starting an ADC conversion
+- Display & Keyboard Interfacing | User I/O devices are scanned and driven. | 8279 = keyboard and display controller | Key Debouncing = ignoring contact bounce | Multiplexed Display = digits lit one at a time rapidly
+- Stepper Motor & Traffic Light Control | Typical lab applications. | Stepper Motor = motor moving in fixed angle steps | Step Sequence = pattern of coil energisation | Traffic Light Controller = timed output sequence driving lamps
+- Introduction to 8051 Microcontroller | Microcontrollers integrate CPU, memory and I/O. | 8051 = 8-bit microcontroller with 4 KB ROM and 128 bytes RAM | Microcontroller vs Microprocessor = MCU integrates peripherals on chip | SFR = special function registers controlling peripherals
+
+@ ec502 | EC-502 | Digital Communication | Pulse code modulation, baseband transmission, digital modulation, detection, spread spectrum and error control.
+# Sampling & Waveform Coding
+- Sampling & Quantisation | Analog signals are digitised by sampling and quantising. | Nyquist Criterion = sample at fs ≥ 2fm | Uniform Quantisation = equal step sizes | Quantisation Noise Power = Δ²/12
+- Pulse Code Modulation | PCM encodes each sample into bits. | PCM Bit Rate = n × fs | SQNR = about 6.02n + 1.76 dB for n bits | Companding = μ-law or A-law compression for non-uniform quantisation
+- DPCM & Delta Modulation | Differential schemes send changes. | DPCM = encodes difference between sample and prediction | Delta Modulation = 1-bit DPCM | Adaptive Delta Modulation = step size adapts to reduce slope overload
+- Line Codes & Spectra | Line codes shape the baseband spectrum. | Unipolar NRZ = 1 as +V, 0 as zero | Bipolar RZ = alternate polarity pulses that return to zero | Manchester Code = self-clocking with mid-bit transition
+# Baseband Transmission
+- Inter-symbol Interference | Pulses spread and overlap in band-limited channels. | ISI = overlap of adjacent symbol pulses | Nyquist Criterion for Zero ISI = pulse zero at all other sampling instants | Raised Cosine Filter = pulse shaping with roll-off factor
+- Eye Diagram | Eye pattern visualises ISI and noise. | Eye Diagram = overlay of received symbol waveforms | Eye Opening = margin against noise | Timing Jitter = width of zero-crossing region
+- Equalisation | Equalisers compensate channel distortion. | Equaliser = filter reversing channel distortion | Zero-forcing Equaliser = forces ISI to zero at sampling instants | Adaptive Equaliser = updates coefficients using LMS
+- Matched Filter | Matched filters maximise SNR at the sampling time. | Matched Filter = impulse response is time-reversed signal | Maximum SNR = 2E/N0 at the output | Correlator Receiver = equivalent implementation using multiplication and integration
+# Digital Modulation Techniques
+- Binary ASK, FSK & PSK | Binary schemes modulate one bit per symbol. | BASK = on-off keying of a carrier | BFSK = two frequencies for 0 and 1 | BPSK = phases 0 and π; best binary error performance
+- DPSK & QPSK | Differential and quadrature schemes improve efficiency. | DPSK = information in phase change between symbols | QPSK = 2 bits per symbol with four phases | Offset QPSK = staggered quadrature avoids 180° phase jumps
+- M-ary Modulation & QAM | M-ary schemes send log2 M bits per symbol. | M-ary PSK = M phases on a circle | 16-QAM = 4 bits per symbol using amplitude and phase | Bandwidth Efficiency = bits per second per hertz
+- MSK & GMSK | Continuous-phase schemes reduce bandwidth. | MSK = minimum shift keying with h = 0.5 | GMSK = Gaussian-filtered MSK used in GSM | Continuous Phase = no abrupt phase changes
+# Detection & Performance
+- Optimum Detection | Receivers decide symbols to minimise error. | Maximum Likelihood Detection = chooses symbol with highest likelihood | Decision Region = signal-space region assigned to each symbol | Signal Space = vector representation using orthonormal basis functions
+- Probability of Error | Error rates compare modulation schemes. | BPSK BER = Q(√(2Eb/N0)) | Coherent BFSK = needs 3 dB more Eb/N0 than BPSK | Q-function = tail probability of a standard normal distribution
+- Coherent & Non-coherent Detection | Detection may or may not need carrier phase. | Coherent Detection = uses phase-synchronised local carrier | Non-coherent Detection = envelope detection without phase | Carrier Recovery = extracting carrier phase at the receiver
+- Synchronisation | Receivers align carrier, symbol and frame timing. | Symbol Synchronisation = finding correct sampling instants | Costas Loop = carrier recovery loop for suppressed carriers | Frame Synchronisation = locating frame boundaries using sync words
+# Spread Spectrum & Error Control
+- Spread Spectrum Concepts | Spreading widens bandwidth for robustness. | Processing Gain = spread bandwidth divided by data bandwidth | PN Sequence = pseudo-noise binary sequence with noise-like properties | Jamming Margin = tolerable interference relative to signal
+- DSSS & FHSS | Two main spread spectrum techniques. | DSSS = data multiplied by a fast PN chip sequence | FHSS = carrier frequency hops by a PN pattern | CDMA = multiple users share band using different codes
+- Linear Block Codes | Block codes add parity for error control. | Generator Matrix = produces codewords from messages | Syndrome = s = rH^T reveals error pattern | Minimum Distance = dmin; corrects (dmin − 1)/2 errors
+- Convolutional Codes | Convolutional codes encode continuous streams. | Constraint Length = number of input bits affecting output | Trellis Diagram = state transitions over time | Viterbi Decoding = maximum-likelihood decoding through the trellis
+
+@ ec503-mc | EC-503(B) | Mobile Communication | Cellular concepts, frequency reuse, propagation, multiple access, GSM, CDMA and 4G/5G systems.
+# Cellular Concept
+- Evolution of Mobile Systems | Mobile systems evolved from analog to broadband. | 1G = analog voice systems such as AMPS | 2G = digital voice systems such as GSM and IS-95 | 4G LTE = all-IP broadband using OFDMA
+- Frequency Reuse | Reuse lets limited spectrum serve many users. | Cell = geographic area served by one base station | Cluster Size = N = i² + ij + j² | Co-channel Reuse Ratio = Q = D/R = √(3N)
+- Channel Assignment & Handoff | Channels are assigned and calls handed over. | Fixed Channel Assignment = each cell gets a fixed set of channels | Handoff = transferring an ongoing call to another cell | Hysteresis Margin = threshold preventing rapid ping-pong handoffs
+- Capacity Improvement | Techniques increase cellular capacity. | Cell Splitting = dividing cells into smaller ones | Sectoring = directional antennas reduce co-channel interference | Microcell Zone Concept = zones under one base station reduce handoffs
+# Mobile Radio Propagation
+- Large-scale Path Loss | Average received power falls with distance. | Free-space Path Loss = proportional to (4πd/λ)² | Path Loss Exponent = n, 2 in free space, larger in cities | Okumura-Hata Model = empirical urban path loss model
+- Reflection, Diffraction & Scattering | Mechanisms let signals reach shadowed areas. | Two-ray Ground Model = direct and ground-reflected paths | Knife-edge Diffraction = bending over obstacles | Scattering = reflection from rough surfaces and small objects
+- Small-scale Fading | Multipath causes rapid fluctuations. | Multipath Fading = constructive and destructive interference of paths | Rayleigh Fading = fading with no line-of-sight component | Rician Fading = fading with a dominant line-of-sight path
+- Doppler & Delay Spread | Motion and multipath set channel parameters. | Doppler Shift = fd = v/λ cos θ | Coherence Bandwidth = range over which channel is flat; about 1/delay spread | Coherence Time = time over which channel is constant
+# Multiple Access & Diversity
+- FDMA & TDMA | Users share by frequency or time. | FDMA = each user gets a separate frequency band | TDMA = users share a channel in time slots | Guard Time = gap preventing slot overlap
+- CDMA & OFDMA | Codes or subcarriers separate users. | CDMA = users separated by orthogonal spreading codes | Near-far Problem = strong nearby users swamp distant ones; solved by power control | OFDMA = users assigned groups of orthogonal subcarriers
+- Diversity Techniques | Diversity combats fading. | Space Diversity = multiple antennas separated in space | Maximal Ratio Combining = weights branches by SNR | RAKE Receiver = combines multipath components in CDMA
+- MIMO Basics | Multiple antennas increase capacity. | MIMO = multiple-input multiple-output antenna systems | Spatial Multiplexing = independent streams on different antennas | Beamforming = steering energy towards a user
+# GSM & CDMA Systems
+- GSM Architecture | GSM is the widely used 2G standard. | BTS = base transceiver station | MSC = mobile switching centre routing calls | HLR and VLR = home and visitor location registers
+- GSM Channels & Frame Structure | GSM uses TDMA frames on 200 kHz carriers. | TDMA Frame = 8 time slots on each carrier | Traffic Channel = carries speech or data | Control Channel = carries signalling, e.g. BCCH
+- GPRS & EDGE | 2.5G added packet data. | GPRS = general packet radio service over GSM | EDGE = enhanced data rates using 8-PSK | SGSN = serving GPRS support node
+- IS-95 & CDMA2000 | CDMA standards use spread spectrum. | IS-95 = first CDMA cellular standard | Soft Handoff = mobile connected to two base stations at once | Walsh Codes = orthogonal codes separating channels
+# 3G, 4G & 5G
+- UMTS & WCDMA | 3G introduced wideband CDMA. | UMTS = universal mobile telecommunication system | WCDMA = 5 MHz wideband CDMA air interface | HSPA = high-speed packet access improving 3G data rates
+- LTE Architecture | LTE is an all-IP network. | eNodeB = LTE base station | EPC = evolved packet core | OFDMA Downlink = LTE downlink multiple access
+- 5G Technologies | 5G targets higher speed, lower latency and massive connectivity. | eMBB = enhanced mobile broadband | URLLC = ultra-reliable low-latency communication | mmWave = millimetre-wave bands for very high capacity
+- Mobile IP & Wireless Standards | Supporting protocols and standards. | Mobile IP = keeps IP address while moving between networks | Wi-Fi 802.11 = wireless LAN standard family | Bluetooth = short-range wireless personal area network
+
+@ ec504-emt | EC-504(A) | Electromagnetic Theory | Vector analysis, electrostatics, magnetostatics, Maxwell's equations, plane waves and transmission lines.
+# Vector Analysis & Electrostatics
+- Vector Calculus | Fields are described with gradient, divergence and curl. | Gradient = vector of maximum rate of increase of a scalar | Divergence = net outward flux per unit volume | Curl = circulation per unit area
+- Coordinate Systems | Problems use the most convenient coordinates. | Cartesian Coordinates = x, y, z | Cylindrical Coordinates = ρ, φ, z | Spherical Coordinates = r, θ, φ
+- Coulomb's Law & Electric Field | Charges exert forces and create fields. | Coulomb's Law = F = Q1Q2/(4πε0R²) | Electric Field Intensity = force per unit charge | Electric Flux Density = D = εE
+- Gauss's Law & Potential | Symmetric charge distributions are solved with Gauss's law. | Gauss's Law = net flux through closed surface equals enclosed charge | Electric Potential = work per unit charge to bring charge from infinity | E = −∇V = field is the negative gradient of potential
+# Dielectrics, Capacitance & Boundary Conditions
+- Conductors & Dielectrics | Materials respond differently to fields. | Polarisation = alignment of dipoles in a dielectric | Relative Permittivity = εr = ε/ε0 | Conductor in Static Field = E inside is zero
+- Capacitance | Capacitance stores electric energy. | Parallel Plate Capacitance = C = εA/d | Energy Stored = W = ½CV² | Coaxial Capacitance = C = 2πεL / ln(b/a)
+- Boundary Conditions | Fields obey rules at material interfaces. | Tangential E = continuous across a dielectric boundary | Normal D = differs by surface charge density | Perfect Conductor Boundary = tangential E is zero
+- Poisson's & Laplace's Equations | Potential satisfies differential equations. | Poisson's Equation = ∇²V = −ρv/ε | Laplace's Equation = ∇²V = 0 in charge-free regions | Uniqueness Theorem = solution satisfying boundary conditions is unique
+# Magnetostatics
+- Biot-Savart Law | Currents produce magnetic fields. | Biot-Savart Law = dH = I dl × aR / (4πR²) | Field of Infinite Wire = H = I/(2πρ) | Magnetic Field Intensity = H in amperes per metre
+- Ampere's Circuital Law | Line integral of H equals enclosed current. | Ampere's Law = closed line integral of H·dl = Ienc | Point Form = ∇ × H = J | Solenoid Field = H = nI inside a long solenoid
+- Magnetic Flux & Vector Potential | Flux density and potentials describe magnetic fields. | Magnetic Flux Density = B = μH | No Magnetic Monopoles = ∇·B = 0 | Vector Magnetic Potential = B = ∇ × A
+- Magnetic Forces & Inductance | Fields exert forces and store energy. | Lorentz Force = F = q(E + v × B) | Inductance = L = NΦ/I | Magnetic Energy = W = ½LI²
+# Maxwell's Equations & Plane Waves
+- Faraday's Law & Displacement Current | Time-varying fields complete Maxwell's equations. | Faraday's Law = emf = −dΦ/dt | Displacement Current Density = Jd = ∂D/∂t | Lenz's Law = induced current opposes the change causing it
+- Maxwell's Equations | Four equations govern all electromagnetic fields. | Maxwell's Equations = Gauss's laws for D and B, Faraday's law, Ampere-Maxwell law | Integral Form = equations over surfaces and contours | Time-harmonic Form = phasor form with ∂/∂t replaced by jω
+- Uniform Plane Waves | Waves propagate in free space and media. | Wave Equation = ∇²E = με ∂²E/∂t² | Intrinsic Impedance = η = √(μ/ε); 377 Ω in free space | Propagation Constant = γ = α + jβ
+- Wave Propagation in Media | Losses, skin effect and polarisation. | Skin Depth = δ = 1/√(πfμσ) | Poynting Vector = P = E × H, power flow density | Polarisation = orientation of the E field: linear, circular, elliptical
+# Transmission Lines
+- Transmission Line Parameters | Lines are modelled by distributed R, L, G, C. | Characteristic Impedance = Z0 = √((R + jωL)/(G + jωC)) | Lossless Line = R = G = 0, Z0 = √(L/C) | Velocity of Propagation = v = 1/√(LC)
+- Reflection & Standing Waves | Mismatched loads cause reflections. | Reflection Coefficient = Γ = (ZL − Z0)/(ZL + Z0) | VSWR = (1 + magnitude of Γ)/(1 − magnitude of Γ) | Standing Wave = pattern of maxima and minima from reflected waves
+- Input Impedance & Special Lines | Line length transforms impedance. | Input Impedance = depends on load, Z0 and electrical length | Quarter-wave Transformer = Zin = Z0²/ZL | Half-wave Line = repeats the load impedance
+- Smith Chart & Matching | Graphical tools design matching networks. | Smith Chart = graphical plot of normalised impedance and reflection | Single Stub Matching = short-circuited stub cancels susceptance | Impedance Matching = making load equal Z0 to stop reflections

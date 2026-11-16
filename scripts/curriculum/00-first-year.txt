@@ -1,0 +1,270 @@
+// First year (common to all B.Tech branches). RGPV runs Group A / Group B in alternate order; both semesters are listed.
+@ bt101 | BT-101 | Engineering Chemistry | Water treatment, fuels, lubricants, polymers, corrosion, spectroscopy and instrumental methods.
+# Water Analysis & Treatment
+- Hardness of Water | Dissolved calcium and magnesium salts make water hard. | Temporary Hardness = due to bicarbonates; removed by boiling | Permanent Hardness = due to chlorides and sulphates of Ca and Mg | Hardness Unit = expressed as mg/L (ppm) of CaCO3 equivalent
+- EDTA Method & Alkalinity | Titrations measure hardness and alkalinity. | EDTA Titration = complexometric method using Eriochrome Black-T indicator | Alkalinity = due to OH⁻, CO3²⁻ and HCO3⁻ ions | Phenolphthalein Alkalinity = alkalinity measured up to pH 8.3
+- Boiler Troubles | Hard water causes problems in boilers. | Scale and Sludge = deposits reducing heat transfer | Priming and Foaming = carry-over of water droplets with steam | Caustic Embrittlement = boiler metal cracking due to NaOH
+- Softening Methods | Hardness is removed by chemical or ion exchange processes. | Lime-Soda Process = adds lime and soda to precipitate hardness | Zeolite Process = sodium zeolite exchanges Na⁺ for Ca²⁺ and Mg²⁺ | Ion Exchange = cation and anion resins give demineralised water
+# Fuels & Combustion
+- Classification of Fuels | Fuels release heat by combustion. | Calorific Value = heat released by complete combustion of unit mass | HCV vs LCV = gross value includes latent heat of steam formed | Bomb Calorimeter = measures calorific value of solid and liquid fuels
+- Coal Analysis | Coal quality is judged by analysis. | Proximate Analysis = moisture, volatile matter, ash and fixed carbon | Ultimate Analysis = C, H, N, S and O percentages | Carbonisation = heating coal without air to make coke
+- Petroleum & Cracking | Crude oil is refined into fuels. | Fractional Distillation = separates crude oil by boiling range | Cracking = breaking large hydrocarbons into smaller ones | Octane Number = knock resistance of petrol
+- Combustion Calculations | Air needed for combustion is calculated. | Theoretical Air = minimum air for complete combustion | Excess Air = air supplied beyond theoretical | Flue Gas Analysis = Orsat apparatus measures CO2, CO and O2
+# Lubricants & Polymers
+- Lubricants & Mechanisms | Lubricants reduce friction and wear. | Fluid Film Lubrication = thick film separates surfaces | Boundary Lubrication = thin film when load is high | Extreme Pressure Lubrication = additives form protective films
+- Properties of Lubricants | Tests characterise lubricants. | Viscosity Index = change of viscosity with temperature | Flash and Fire Point = temperatures where vapours ignite | Cloud and Pour Point = low-temperature flow properties
+- Polymers | Polymers are long chain molecules. | Addition Polymerisation = monomers add without by-product, e.g. polyethylene | Condensation Polymerisation = monomers join with loss of small molecules, e.g. nylon | Thermosetting Polymer = sets permanently on heating, e.g. bakelite
+- Rubber & Composites | Elastomers and engineered polymers. | Vulcanisation = cross-linking rubber with sulphur | Conducting Polymer = polymer that conducts electricity, e.g. polyaniline | Biodegradable Polymer = decomposes naturally
+# Corrosion & Electrochemistry
+- Electrochemical Cells | Chemical energy is converted into electricity. | Galvanic Cell = spontaneous redox reaction produces current | Nernst Equation = E = E° − (0.0591/n) log Q at 25 °C | Standard Electrode Potential = potential versus standard hydrogen electrode
+- Batteries & Fuel Cells | Practical electrochemical energy sources. | Primary Cell = non-rechargeable, e.g. dry cell | Secondary Cell = rechargeable, e.g. lead-acid and Li-ion | Hydrogen-Oxygen Fuel Cell = produces electricity and water
+- Corrosion Mechanisms | Metals degrade by reaction with environment. | Dry Corrosion = direct chemical attack by gases | Wet Corrosion = electrochemical corrosion in moisture | Galvanic Corrosion = when two dissimilar metals contact in electrolyte
+- Corrosion Prevention | Corrosion is controlled by design and coatings. | Cathodic Protection = making the metal a cathode | Galvanising = coating iron with zinc | Sacrificial Anode = more active metal corrodes instead
+# Instrumental Methods
+- Spectroscopy Basics | Matter interacts with electromagnetic radiation. | Beer-Lambert Law = A = εcl | UV-Visible Spectroscopy = electronic transitions in molecules | IR Spectroscopy = identifies functional groups by vibrations
+- Chromatography | Mixtures are separated by differential migration. | Chromatography = separation between mobile and stationary phases | Rf Value = distance by solute / distance by solvent | Gas Chromatography = separation of volatile compounds
+- Thermal Analysis | Heating reveals material properties. | TGA = thermogravimetric analysis measures mass change | DTA = differential thermal analysis | DSC = differential scanning calorimetry
+- Green Chemistry & Nanomaterials | Sustainable chemistry and nanoscale materials. | Green Chemistry = designing processes to reduce hazardous substances | Atom Economy = fraction of reactant atoms in desired product | Nanomaterial = material with dimensions 1-100 nm
+
+@ bt102 | BT-102 | Mathematics-I | Calculus, sequences and series, matrices, multivariable calculus and multiple integrals.
+# Calculus
+- Rolle's & Mean Value Theorems | Mean value theorems link function values and derivatives. | Rolle's Theorem = f(a) = f(b) implies f'(c) = 0 for some c in (a,b) | Lagrange MVT = f'(c) = (f(b) − f(a))/(b − a) | Cauchy MVT = generalisation using two functions
+- Taylor & Maclaurin Series | Functions are expanded as power series. | Taylor Series = f(a + h) = f(a) + hf'(a) + h²f''(a)/2! + … | Maclaurin Series = Taylor series about 0 | Series of e^x = 1 + x + x²/2! + x³/3! + …
+- Indeterminate Forms | Limits of forms like 0/0 are evaluated. | L'Hospital's Rule = limit of f/g equals limit of f'/g' for 0/0 or ∞/∞ | Indeterminate Forms = 0/0, ∞/∞, 0·∞, ∞ − ∞, 1^∞ | Logarithmic Method = handles 1^∞ and 0^0 forms
+- Maxima & Minima | Extreme values are found from derivatives. | Stationary Point = f'(x) = 0 | Second Derivative Test = f''(x) < 0 gives maximum | Point of Inflection = curvature changes sign
+# Sequences & Series
+- Sequences | Sequences are ordered lists with limits. | Convergent Sequence = approaches a finite limit | Monotonic Sequence = always increasing or always decreasing | Bounded Sequence = all terms lie within a fixed range
+- Tests for Convergence | Tests decide whether series converge. | Comparison Test = compare with a known series | D'Alembert's Ratio Test = converges if limit of a(n+1)/a(n) < 1 | Cauchy's Root Test = converges if nth root of a(n) tends to below 1
+- p-series & Alternating Series | Standard series aid testing. | p-series = Σ 1/n^p converges for p > 1 | Leibniz Test = alternating series converges if terms decrease to zero | Absolute Convergence = convergence of series of absolute values
+- Fourier Series Basics | Periodic functions as sine-cosine sums. | Fourier Coefficients = a0, an and bn computed by integration | Half-range Series = sine or cosine series over half period | Even Function Series = contains only cosine terms
+# Matrices
+- Rank of a Matrix | Rank measures independent rows. | Rank = order of largest non-zero minor | Echelon Form = row-reduced form revealing rank | Normal Form = [I 0; 0 0] form via elementary operations
+- System of Linear Equations | Consistency is decided by ranks. | Consistent System = rank of A equals rank of augmented matrix | Unique Solution = rank equals number of unknowns | Homogeneous System = AX = 0 always has trivial solution
+- Eigenvalues & Eigenvectors | Eigen-analysis finds invariant directions. | Characteristic Equation = det(A − λI) = 0 | Eigenvector = non-zero X with AX = λX | Sum of Eigenvalues = trace of A
+- Cayley-Hamilton & Diagonalisation | Matrices satisfy their characteristic equation. | Cayley-Hamilton Theorem = every square matrix satisfies its characteristic equation | Diagonalisation = P⁻¹AP = D using eigenvectors | Inverse by Cayley-Hamilton = A⁻¹ from the characteristic polynomial
+# Multivariable Calculus
+- Partial Differentiation | Derivatives with respect to one variable at a time. | Partial Derivative = rate of change keeping other variables constant | Euler's Theorem = x∂u/∂x + y∂u/∂y = nu for homogeneous u | Total Derivative = du = (∂u/∂x)dx + (∂u/∂y)dy
+- Jacobians | Jacobians relate variable transformations. | Jacobian = determinant of partial derivatives ∂(u,v)/∂(x,y) | Functional Dependence = Jacobian zero implies dependence | Chain Property = J·J' = 1 for inverse transformations
+- Maxima & Minima of Two Variables | Extrema use second partial derivatives. | Condition for Extremum = fx = fy = 0 | rt − s² Test = maximum if rt − s² > 0 and r < 0 | Saddle Point = rt − s² < 0
+- Lagrange Multipliers | Constrained optimisation. | Lagrange Multiplier Method = extremise f subject to g = 0 using F = f + λg | Constraint = condition the variables must satisfy | Stationary Conditions = ∂F/∂x = ∂F/∂y = ∂F/∂λ = 0
+# Multiple Integrals
+- Double Integrals | Area and volume via double integration. | Double Integral = ∫∫ f(x,y) dx dy over a region | Change of Order = swapping integration order with new limits | Area by Double Integral = ∫∫ dx dy
+- Polar Coordinates in Integration | Circular regions use polar form. | Polar Element = dx dy = r dr dθ | Change of Variables = uses Jacobian | Area in Polar = ∫∫ r dr dθ
+- Triple Integrals | Volume integration in three dimensions. | Triple Integral = ∫∫∫ f dx dy dz | Volume = ∫∫∫ dV | Spherical Coordinates = dV = r² sin θ dr dθ dφ
+- Beta & Gamma Functions | Special functions evaluate integrals. | Gamma Function = Γ(n) = ∫0^∞ e^(−x) x^(n−1) dx | Beta Function = B(m,n) = Γ(m)Γ(n)/Γ(m + n) | Γ(1/2) = √π
+
+@ bt103 | BT-103 | English for Communication | Communication process, grammar, vocabulary, reading, writing, technical writing and presentation skills.
+# Communication Fundamentals
+- Process of Communication | Communication transfers meaning between people. | Communication Process = sender, message, channel, receiver and feedback | Encoding = converting ideas into a message | Feedback = receiver's response completing the cycle
+- Barriers to Communication | Barriers distort or block messages. | Semantic Barrier = misunderstanding of words or meanings | Physical Barrier = noise or distance | Psychological Barrier = emotions and attitudes affecting understanding
+- Verbal & Non-verbal Communication | Messages travel through words and body language. | Kinesics = study of body movements and gestures | Proxemics = use of personal space | Paralanguage = tone, pitch and pace of voice
+- Formal & Informal Channels | Organisations communicate through networks. | Upward Communication = from subordinates to superiors | Grapevine = informal communication network | Horizontal Communication = between peers
+# Grammar & Vocabulary
+- Parts of Speech & Tenses | Grammar structures sentences correctly. | Present Perfect Tense = action completed with present relevance | Subject-Verb Agreement = verb agrees with subject in number | Article Usage = a, an, the before nouns
+- Voice & Narration | Sentences are transformed for emphasis. | Active Voice = subject performs the action | Passive Voice = subject receives the action | Indirect Speech = reported speech with tense changes
+- Vocabulary Building | Word knowledge improves expression. | Synonym = word with similar meaning | Antonym = word with opposite meaning | One-word Substitution = single word replacing a phrase
+- Common Errors | Learners avoid typical mistakes. | Dangling Modifier = modifier not clearly attached to a word | Redundancy = unnecessary repetition | Homophones = words sounding alike with different meanings
+# Reading & Listening
+- Reading Comprehension | Reading extracts meaning efficiently. | Skimming = reading quickly for the gist | Scanning = searching for specific information | Inference = conclusion drawn from implied information
+- Note Making & Summarising | Notes condense key ideas. | Note Making = recording main ideas in structured form | Summary = brief restatement of main points | Precis Writing = concise summary about one-third of original
+- Listening Skills | Active listening improves understanding. | Active Listening = fully concentrating and responding | Barriers to Listening = distraction and prejudice | Empathetic Listening = understanding the speaker's feelings
+- Critical Reading | Critical readers evaluate texts. | Critical Reading = analysing arguments and evidence | Bias = one-sided presentation | Main Idea = central point of a passage
+# Writing Skills
+- Paragraph & Essay Writing | Writing is organised into coherent units. | Topic Sentence = states main idea of a paragraph | Coherence = logical connection between sentences | Essay Structure = introduction, body and conclusion
+- Business Letters | Letters follow standard formats. | Block Format = all lines start at left margin | Enquiry Letter = asks for information | Complaint Letter = reports a problem and seeks remedy
+- Emails & Memos | Workplace messages are short and clear. | Email Etiquette = clear subject, polite tone, concise body | Memo = internal written communication | CC and BCC = copy and blind copy recipients
+- Job Applications & Resume | Applications present candidates professionally. | Resume = summary of education, skills and experience | Cover Letter = introduces the applicant | Objective Statement = career goal in a resume
+# Technical Writing & Presentation
+- Technical Reports | Reports present technical information formally. | Technical Report = structured document presenting findings | Abstract = brief summary of report | Recommendations = suggested actions based on findings
+- Proposals & Minutes | Proposals request approval; minutes record meetings. | Proposal = document seeking approval or funding | Minutes of Meeting = official record of decisions | Agenda = list of items for a meeting
+- Presentation Skills | Effective presentations engage audiences. | Audience Analysis = understanding listener needs | Visual Aids = slides and charts supporting talk | Delivery = voice, eye contact and body language
+- Group Discussion & Interviews | Oral skills matter in placements. | Group Discussion = evaluated discussion on a topic | Interview = formal conversation assessing suitability | STAR Method = situation, task, action, result answers
+
+@ bt104 | BT-104 | Basic Electrical & Electronics Engineering | DC circuits, AC circuits, magnetic circuits, transformers, machines and basic electronics.
+# DC Circuits
+- Circuit Elements & Ohm's Law | Basic laws describe electric circuits. | Ohm's Law = V = IR | Resistivity = R = ρL/A | Power = P = VI = I²R
+- Kirchhoff's Laws | KCL and KVL analyse networks. | KCL = sum of currents at a node is zero | KVL = sum of voltages around a loop is zero | Voltage Divider = Vout = Vin·R2/(R1 + R2)
+- Network Theorems | Theorems simplify circuits. | Thevenin's Theorem = equivalent voltage source with series resistance | Norton's Theorem = equivalent current source with parallel resistance | Superposition = response is sum of individual source responses
+- Star-Delta Transformation | Networks are converted for analysis. | Delta to Star = RA = R1R2/(R1 + R2 + R3) | Star to Delta = R12 = R1 + R2 + R1R2/R3 | Application = simplifying bridge networks
+# AC Circuits
+- AC Fundamentals | Alternating quantities vary sinusoidally. | RMS Value = Vm/√2 for a sine wave | Average Value = 2Vm/π for a half cycle | Form Factor = RMS / average = 1.11
+- Phasors & Single-phase Circuits | Phasors represent sinusoids. | Impedance = Z = R + jX | Power Factor = cos φ, ratio of real to apparent power | Inductive Reactance = XL = 2πfL
+- Resonance | Series RLC resonates when XL = XC. | Resonant Frequency = f0 = 1/(2π√(LC)) | Quality Factor = Q = ω0L/R | Series Resonance = impedance minimum, current maximum
+- Three-phase Systems | Three-phase supply powers industry. | Star Connection = VL = √3 Vph, IL = Iph | Delta Connection = VL = Vph, IL = √3 Iph | Three-phase Power = P = √3 VL IL cos φ
+# Magnetic Circuits & Transformers
+- Magnetic Circuits | Magnetic circuits are analogous to electric circuits. | MMF = magnetomotive force NI | Reluctance = S = l/(μA) | Flux = Φ = MMF / reluctance
+- Electromagnetic Induction | Changing flux induces emf. | Faraday's Law = e = −N dΦ/dt | Lenz's Law = induced current opposes the change | Self Inductance = L = NΦ/I
+- Single-phase Transformer | Transformers change AC voltage levels. | EMF Equation = E = 4.44 f N Φm | Turns Ratio = V1/V2 = N1/N2 | Ideal Transformer = no losses
+- Transformer Losses & Efficiency | Losses reduce efficiency. | Core Loss = hysteresis and eddy current loss | Copper Loss = I²R loss in windings | Maximum Efficiency = when copper loss equals core loss
+# Electrical Machines
+- DC Machines | DC machines convert energy with commutators. | DC Generator EMF = E = PΦZN/(60A) | Back EMF = Eb = V − IaRa in a motor | DC Series Motor = high starting torque
+- Three-phase Induction Motor | Most common industrial motor. | Synchronous Speed = Ns = 120f/P | Slip = (Ns − N)/Ns | Rotating Magnetic Field = produced by three-phase stator currents
+- Single-phase Motors | Small appliances use single-phase motors. | Split-phase Motor = auxiliary winding for starting | Capacitor Start Motor = capacitor gives starting torque | Universal Motor = runs on AC and DC
+- Synchronous Machines | Alternators generate power at constant speed. | Alternator = synchronous generator | Synchronous Motor = runs at constant synchronous speed | Not Self-starting = synchronous motors need starting methods
+# Basic Electronics
+- Semiconductor Diode | Diodes conduct in one direction. | PN Junction = junction of p- and n-type semiconductor | Forward Bias = p connected to positive; diode conducts | Zener Diode = regulates voltage in reverse breakdown
+- Rectifiers | Rectifiers convert AC to DC. | Half-wave Rectifier = uses one diode | Bridge Rectifier = four diodes, full-wave output | Ripple Factor = AC content in rectified output
+- Transistors | Transistors amplify and switch. | BJT = bipolar junction transistor | CE Configuration = common emitter amplifier | Transistor as Switch = operates in cut-off and saturation
+- Digital Electronics Basics | Logic gates process binary signals. | Logic Gate = performs Boolean operation | Universal Gate = NAND or NOR | Number Systems = binary, octal, decimal and hexadecimal
+
+@ bt105 | BT-105 | Engineering Graphics | Drawing instruments, scales, curves, projections of points, lines, planes and solids, sections, developments and isometric views.
+# Drawing Fundamentals
+- Drawing Instruments & Conventions | Standard tools and conventions ensure clarity. | BIS SP-46 = Indian code for engineering drawing practice | Line Types = continuous thick for visible, dashed for hidden edges | Lettering = standard single-stroke letters
+- Dimensioning | Dimensions specify size and location. | Aligned System = dimensions read from bottom or right | Unidirectional System = all dimensions read from bottom | Dimension Line = thin line with arrowheads
+- Scales | Scales represent objects at reduced or enlarged size. | Representative Fraction = drawing size / actual size | Plain Scale = reads two units, e.g. m and dm | Diagonal Scale = reads three units using diagonals
+- Vernier Scale | Vernier scales read small fractions. | Vernier Scale = main and vernier scale for precise reading | Least Count = one main division minus one vernier division | Scale of Chords = used to set off angles
+# Engineering Curves
+- Conic Sections | Conics are sections of a cone. | Ellipse = eccentricity less than 1 | Parabola = eccentricity equal to 1 | Hyperbola = eccentricity greater than 1
+- Construction of Conics | Conics are drawn by standard methods. | Eccentricity Method = distance from focus / distance from directrix | Concentric Circle Method = draws ellipse from two circles | Rectangle Method = draws ellipse or parabola in a rectangle
+- Cycloidal Curves | Rolling circles generate cycloids. | Cycloid = locus of a point on a circle rolling on a straight line | Epicycloid = circle rolls outside another circle | Hypocycloid = circle rolls inside another circle
+- Involutes & Spirals | Involutes are used in gear teeth. | Involute = locus of end of a string unwound from a circle | Archimedean Spiral = radius increases uniformly with angle | Helix = curve on a cylinder with uniform pitch
+# Projections of Points, Lines & Planes
+- Orthographic Projection | 3D objects are shown in 2D views. | First Angle Projection = object between observer and plane; used in India | Third Angle Projection = plane between observer and object | Reference Line = XY line separating views
+- Projection of Points | Points are located by distances from planes. | Front View = projection on vertical plane | Top View = projection on horizontal plane | Quadrant = position of point relative to HP and VP
+- Projection of Lines | Inclined lines appear shortened. | True Length = actual length of the line | Apparent Inclination = inclination seen in a view | Traces = points where line meets reference planes
+- Projection of Planes | Planes are drawn in stages of inclination. | Plane Perpendicular to One Plane = appears as a line in that view | Inclined Plane = drawn in two or three stages | True Shape = seen when plane is parallel to projection plane
+# Projections & Sections of Solids
+- Types of Solids | Solids are polyhedra or solids of revolution. | Prism = two equal end faces joined by rectangles | Pyramid = polygon base with triangular faces meeting at apex | Cone = circular base tapering to apex
+- Projection of Solids | Solids are projected in simple and inclined positions. | Axis Perpendicular to HP = base seen as true shape in top view | Axis Inclined = drawn in two stages | Generator = line from apex to base edge of cone
+- Sections of Solids | Cutting planes reveal interior shape. | Section Plane = imaginary cutting plane | True Shape of Section = seen on auxiliary plane parallel to section | Hatching = thin lines at 45° indicating cut surface
+- Development of Surfaces | Surfaces are unfolded into flat patterns. | Parallel Line Development = used for prisms and cylinders | Radial Line Development = used for pyramids and cones | Application = sheet metal work such as ducts and funnels
+# Isometric & Computer Graphics
+- Isometric Projection | Isometric views show three faces. | Isometric Axes = three axes at 120° | Isometric Scale = 0.816 of true length | Isometric View = drawn with true lengths
+- Conversion of Views | Orthographic and isometric views are interconverted. | Orthographic from Isometric = draw front, top and side views | Isometric from Orthographic = build up using box method | Hidden Lines = shown dashed in orthographic views
+- Introduction to CAD | CAD software creates drawings digitally. | CAD = computer aided design | AutoCAD = popular 2D and 3D drafting software | Layers = organise drawing elements
+- CAD Commands | Basic commands create and edit geometry. | LINE Command = draws straight lines | TRIM Command = cuts objects at boundaries | Coordinate Entry = absolute, relative and polar inputs
+
+@ bt201 | BT-201 | Engineering Physics | Quantum mechanics, wave optics, lasers, fibre optics, solid state physics and nuclear physics.
+# Quantum Physics
+- Wave-Particle Duality | Matter and radiation show both wave and particle nature. | de Broglie Wavelength = λ = h/p | Photoelectric Effect = emission of electrons by light above threshold frequency | Compton Effect = increase in wavelength of X-rays scattered by electrons
+- Heisenberg Uncertainty Principle | Position and momentum cannot both be exact. | Uncertainty Principle = Δx·Δp ≥ h/(4π) | Energy-Time Uncertainty = ΔE·Δt ≥ h/(4π) | Consequence = electrons cannot exist inside nucleus
+- Schrödinger Wave Equation | Wave function describes quantum systems. | Time-independent Schrödinger Equation = −(ħ²/2m)∇²ψ + Vψ = Eψ | Wave Function = ψ, with probability density given by its square | Normalisation = total probability equals 1
+- Particle in a Box | Quantum confinement gives discrete energies. | Particle in 1D Box = En = n²h²/(8mL²) | Quantisation = energy has discrete values | Zero-point Energy = lowest energy is non-zero
+# Wave Optics
+- Interference | Superposition of coherent waves gives fringes. | Coherent Sources = constant phase difference | Young's Double Slit = fringe width β = λD/d | Constructive Interference = path difference nλ
+- Thin Film & Newton's Rings | Thin films produce colours and rings. | Thin Film Interference = reflections from film surfaces interfere | Newton's Rings = dark ring diameter D² = 4nλR | Wedge-shaped Film = straight equally spaced fringes
+- Diffraction | Bending of light around obstacles. | Fraunhofer Diffraction = source and screen at infinity | Single Slit Minima = a sin θ = nλ | Diffraction Grating = (a + b) sin θ = nλ
+- Polarisation | Light vibrations restricted to one plane. | Malus's Law = I = I0 cos²θ | Brewster's Law = tan θp = μ | Double Refraction = splitting into ordinary and extraordinary rays
+# Lasers & Fibre Optics
+- Laser Principles | Lasers produce coherent amplified light. | Stimulated Emission = incident photon triggers identical photon | Population Inversion = more atoms in excited state | Einstein Coefficients = A and B coefficients relating emission and absorption
+- Types of Lasers | Lasers use different active media. | Ruby Laser = three-level solid-state laser | He-Ne Laser = four-level gas laser at 632.8 nm | Semiconductor Laser = diode laser
+- Applications of Lasers | Lasers serve industry and medicine. | Holography = recording 3D images using interference | Laser Cutting = precise material processing | LIDAR = laser-based distance measurement
+- Optical Fibres | Fibres guide light by total internal reflection. | Numerical Aperture = NA = √(n1² − n2²) | Acceptance Angle = maximum angle for guided light | Step-index Fibre = abrupt change of refractive index
+# Solid State Physics
+- Crystal Structure | Atoms arrange in lattices. | Unit Cell = smallest repeating unit | Bravais Lattices = 14 types of lattices | Miller Indices = notation for crystal planes
+- X-ray Diffraction | X-rays reveal crystal structure. | Bragg's Law = 2d sin θ = nλ | Interplanar Spacing = d = a/√(h² + k² + l²) for cubic | Powder Method = XRD of polycrystalline samples
+- Band Theory | Energy bands explain conductivity. | Valence Band = highest filled band | Conduction Band = band allowing conduction | Band Gap = separates insulators, semiconductors and conductors
+- Semiconductors & Hall Effect | Semiconductors have tunable conductivity. | Intrinsic Semiconductor = pure semiconductor | Fermi Level = energy with 50% occupation probability | Hall Effect = transverse voltage in magnetic field gives carrier type
+# Nuclear Physics & Modern Materials
+- Nuclear Structure | Nucleus is held by strong force. | Binding Energy = energy to break nucleus into nucleons | Mass Defect = difference between nucleon mass sum and nuclear mass | Nuclear Force = short-range strong attraction
+- Radioactivity | Unstable nuclei decay. | Half-life = time for half the nuclei to decay | Decay Law = N = N0 e^(−λt) | Alpha, Beta, Gamma = types of radioactive emission
+- Nuclear Fission & Fusion | Nuclear reactions release energy. | Fission = splitting of heavy nucleus | Fusion = combining light nuclei, powering the Sun | Chain Reaction = self-sustaining fission
+- Superconductors & Nanomaterials | Special materials show unusual properties. | Superconductivity = zero resistance below critical temperature | Meissner Effect = expulsion of magnetic field from superconductor | Nanotechnology = control of matter at 1-100 nm
+
+@ bt202 | BT-202 | Mathematics-II | Ordinary differential equations, partial differential equations, complex variables and vector calculus.
+# First Order ODEs
+- Exact Differential Equations | Exact equations come from a total differential. | Exactness Condition = ∂M/∂y = ∂N/∂x | Integrating Factor = multiplier making equation exact | Solution = ∫M dx + ∫(terms of N without x) dy = c
+- Linear & Bernoulli Equations | Linear first-order equations have closed forms. | Linear Equation = dy/dx + Py = Q | Integrating Factor of Linear = e^(∫P dx) | Bernoulli Equation = dy/dx + Py = Qy^n
+- Equations of Higher Degree | Equations solvable for p, x or y. | Clairaut's Equation = y = px + f(p) | Singular Solution = solution not obtained from general solution | Solvable for p = factorise in p = dy/dx
+- Applications of First Order ODEs | ODEs model growth, cooling and circuits. | Newton's Law of Cooling = dT/dt = −k(T − Ts) | Exponential Growth = dN/dt = kN | RL Circuit = L di/dt + Ri = E
+# Higher Order Linear ODEs
+- Homogeneous Equations | Solution uses the auxiliary equation. | Auxiliary Equation = replace D by m and solve | Distinct Roots = y = c1e^(m1x) + c2e^(m2x) | Complex Roots = y = e^(αx)(c1 cos βx + c2 sin βx)
+- Particular Integral | PI handles the non-homogeneous term. | Complete Solution = CF + PI | PI for e^(ax) = e^(ax)/f(a) if f(a) ≠ 0 | PI for sin ax = replace D² by −a²
+- Variation of Parameters | General method for PI. | Variation of Parameters = uses Wronskian to find PI | Wronskian = W = y1y2' − y2y1' | Method of Undetermined Coefficients = guess PI form
+- Cauchy-Euler Equations | Variable coefficient equations reduce to constant. | Cauchy-Euler Equation = x²y'' + axy' + by = f(x) | Substitution = x = e^z converts to constant coefficients | Legendre's Equation = (ax + b) form generalisation
+# Partial Differential Equations
+- Formation of PDEs | PDEs arise by eliminating constants or functions. | PDE = equation with partial derivatives | Order = highest derivative order | Eliminating Arbitrary Functions = forms PDE from relation
+- Lagrange's Linear Equation | First order linear PDEs. | Lagrange's Equation = Pp + Qq = R | Subsidiary Equations = dx/P = dy/Q = dz/R | General Solution = φ(u, v) = 0
+- Non-linear First Order PDEs | Standard forms have known solutions. | Charpit's Method = general method for non-linear PDEs | Complete Integral = solution with arbitrary constants | Standard Form f(p,q) = 0 = z = ax + by + c
+- Method of Separation of Variables | PDEs are separated into ODEs. | Separation of Variables = assume u = X(x)T(t) | Heat Equation = ∂u/∂t = c²∂²u/∂x² | Wave Equation = ∂²u/∂t² = c²∂²u/∂x²
+# Complex Variables
+- Analytic Functions | Analytic functions are complex differentiable. | Analytic Function = differentiable in a neighbourhood | Cauchy-Riemann Equations = ux = vy, uy = −vx | Harmonic Function = satisfies Laplace's equation
+- Complex Integration | Integrals in the complex plane. | Cauchy's Integral Theorem = integral of analytic f over closed curve is zero | Cauchy's Integral Formula = f(a) = (1/2πi)∮ f(z)/(z − a) dz | Contour = path of integration
+- Series & Singularities | Laurent series reveal singularities. | Taylor Series (complex) = expansion around analytic point | Laurent Series = includes negative powers | Pole = singularity of finite order
+- Residue Theorem | Residues evaluate integrals. | Residue = coefficient of 1/(z − a) in Laurent series | Residue Theorem = ∮ f dz = 2πi × sum of residues | Real Integral Evaluation = using contour integration
+# Vector Calculus
+- Gradient, Divergence & Curl | Differential operators on fields. | Gradient = ∇φ, normal to level surface | Divergence = ∇·F, measures outflow | Curl = ∇ × F, measures rotation
+- Directional Derivative | Rate of change along a direction. | Directional Derivative = ∇φ·â | Maximum Directional Derivative = magnitude of gradient | Solenoidal Field = divergence zero
+- Line & Surface Integrals | Integrals along curves and surfaces. | Line Integral = ∫ F·dr | Work Done = line integral of force | Conservative Field = curl F = 0
+- Integral Theorems | Theorems relate integrals of different dimensions. | Green's Theorem = relates line integral to double integral in plane | Stokes' Theorem = ∮ F·dr = ∫∫ (curl F)·n dS | Gauss Divergence Theorem = ∫∫ F·n dS = ∫∫∫ div F dV
+
+@ bt203 | BT-203 | Basic Mechanical Engineering | Materials, measurement, machine tools, fluid basics, thermodynamics, steam boilers and IC engines.
+# Engineering Materials
+- Classification of Materials | Materials are metals, non-metals and composites. | Ferrous Metal = contains iron, e.g. steel | Non-ferrous Metal = no iron, e.g. copper and aluminium | Composite = combination of two or more materials
+- Mechanical Properties | Properties describe response to loads. | Ductility = ability to be drawn into wire | Malleability = ability to be hammered into sheets | Toughness = energy absorbed before fracture
+- Stress-Strain Diagram | Tensile behaviour of mild steel. | Elastic Limit = stress up to which material regains shape | Yield Point = stress where plastic deformation begins | Ultimate Stress = maximum stress in the test
+- Heat Treatment Basics | Heating and cooling change properties. | Annealing = softening by slow cooling | Hardening = quenching to increase hardness | Tempering = reheating to reduce brittleness
+# Measurement & Machine Tools
+- Measuring Instruments | Precision instruments measure dimensions. | Vernier Caliper = least count 0.02 mm | Micrometer = least count 0.01 mm | Dial Gauge = measures small deviations
+- Lathe Machine | Lathe makes cylindrical parts. | Lathe Operations = turning, facing, threading and taper turning | Headstock = holds spindle and drive | Tailstock = supports long work
+- Drilling & Milling | Holes and flat surfaces are machined. | Drilling Machine = makes holes using twist drill | Milling Machine = multi-point cutter removes metal | Shaper = reciprocating tool for flat surfaces
+- Basic Manufacturing Processes | Shaping methods for metals. | Casting = pouring molten metal into mould | Welding = joining by fusion | Forging = shaping by compressive force
+# Fluid Mechanics Basics
+- Fluid Properties | Fluids are characterised by properties. | Density = mass per unit volume | Viscosity = resistance to flow | Specific Gravity = density relative to water
+- Pressure Measurement | Pressure is measured by manometers and gauges. | Pascal's Law = pressure transmitted equally in all directions | Manometer = liquid column instrument | Bourdon Gauge = mechanical pressure gauge
+- Bernoulli's Equation | Energy conservation in fluid flow. | Bernoulli's Equation = p/ρg + v²/2g + z = constant | Continuity Equation = A1v1 = A2v2 | Venturimeter = measures flow rate
+- Hydraulic Machines | Machines convert fluid energy. | Pump = adds energy to fluid | Turbine = extracts energy from fluid | Hydraulic Press = force multiplication using Pascal's law
+# Thermodynamics
+- Basic Concepts | Systems exchange heat and work. | Thermodynamic System = quantity of matter under study | Property = measurable characteristic like p, V, T | Thermal Equilibrium = no temperature difference
+- Laws of Thermodynamics | Laws govern energy conversion. | Zeroth Law = basis of temperature measurement | First Law = energy conservation, Q − W = ΔU | Second Law = heat cannot fully convert into work in a cycle
+- Ideal Gas Processes | Gases follow simple relations. | Ideal Gas Equation = pV = mRT | Isothermal Process = constant temperature | Adiabatic Process = no heat transfer; pV^γ = constant
+- Heat Engines & Efficiency | Engines convert heat into work. | Heat Engine = device converting heat into work | Carnot Efficiency = 1 − T2/T1 | Refrigerator = transfers heat from cold to hot using work
+# Steam Boilers & IC Engines
+- Properties of Steam | Steam is a common working fluid. | Wet Steam = mixture of water and vapour | Dry Saturated Steam = no water particles | Superheated Steam = heated above saturation temperature
+- Steam Boilers | Boilers produce steam. | Fire-tube Boiler = hot gases in tubes, e.g. Cochran | Water-tube Boiler = water in tubes, e.g. Babcock and Wilcox | Boiler Mountings = safety valves and gauges
+- IC Engines | Engines burn fuel inside the cylinder. | Four-stroke Engine = suction, compression, power, exhaust | Two-stroke Engine = power stroke every revolution | Petrol vs Diesel = spark ignition versus compression ignition
+- Engine Performance Basics | Engines are rated by power and efficiency. | Indicated Power = power in cylinder | Brake Power = output at shaft | Mechanical Efficiency = BP/IP
+
+@ bt204 | BT-204 | Basic Civil Engineering & Mechanics | Building materials, surveying, construction, forces, equilibrium, friction and properties of sections.
+# Building Materials
+- Stones, Bricks & Lime | Traditional materials for construction. | First Class Brick = well burnt, standard size, water absorption below 20% | Stone = natural material for masonry | Lime = binding material from limestone
+- Cement & Concrete | Cement binds aggregates into concrete. | OPC = ordinary Portland cement | Water-Cement Ratio = governs concrete strength | Concrete Grade = M20 means 20 N/mm² characteristic strength
+- Timber, Steel & Modern Materials | Other construction materials. | Seasoning of Timber = removing moisture to prevent decay | Structural Steel = rolled sections for frames | Fly Ash Brick = eco-friendly brick from fly ash
+- Tests on Materials | Tests ensure quality. | Slump Test = measures workability of concrete | Compressive Strength Test = cube test of concrete | Setting Time Test = Vicat apparatus for cement
+# Surveying
+- Principles of Surveying | Surveying measures positions on Earth. | Plane Surveying = Earth's curvature ignored | Working from Whole to Part = principle to limit error accumulation | Chain Surveying = measuring distances with chain or tape
+- Compass Surveying | Compass measures bearings. | Bearing = direction of a line with respect to meridian | Whole Circle Bearing = measured clockwise from north 0-360° | Local Attraction = magnetic disturbance affecting compass
+- Levelling | Levelling finds relative elevations. | Benchmark = point of known elevation | Reduced Level = elevation relative to datum | Height of Instrument Method = RL = HI − staff reading
+- Modern Surveying Instruments | Electronic instruments improve accuracy. | Total Station = combines theodolite and EDM | GPS Surveying = satellite-based positioning | Theodolite = measures horizontal and vertical angles
+# Building Construction
+- Foundations | Foundations transfer loads to soil. | Shallow Foundation = depth less than width, e.g. isolated footing | Deep Foundation = piles transferring load to deeper strata | Bearing Capacity = load per unit area soil can safely support
+- Masonry & Walls | Walls are built of bricks or stones. | English Bond = alternate courses of headers and stretchers | Load-bearing Wall = carries loads from above | Damp Proof Course = layer preventing moisture rise
+- Floors, Roofs & Building Components | Other building elements. | Lintel = beam over openings | RCC Slab = reinforced concrete floor or roof | Staircase = steps connecting floors
+- Building Planning & Bye-laws | Planning ensures function and safety. | Orientation = positioning building for sun and wind | FAR = floor area ratio | Setback = open space between building and boundary
+# Engineering Mechanics: Forces
+- System of Forces | Forces are vectors acting on bodies. | Coplanar Forces = forces in the same plane | Resultant = single force equivalent to a system | Parallelogram Law = resultant of two forces by diagonal
+- Lami's Theorem & Equilibrium | Bodies in equilibrium have zero resultant. | Lami's Theorem = P/sin α = Q/sin β = R/sin γ for three concurrent forces | Equilibrium Conditions = ΣFx = 0, ΣFy = 0, ΣM = 0 | Free Body Diagram = isolated body with all forces
+- Moments & Couples | Forces cause rotation. | Moment = force × perpendicular distance | Varignon's Theorem = moment of resultant equals sum of moments | Couple = two equal, opposite, parallel forces
+- Support Reactions & Trusses | Beams and trusses are analysed for reactions. | Simple Support = provides vertical reaction | Method of Joints = equilibrium at each truss joint | Method of Sections = cutting truss to find member forces
+# Friction & Properties of Sections
+- Laws of Friction | Friction opposes relative motion. | Coefficient of Friction = μ = F/N | Angle of Friction = tan φ = μ | Limiting Friction = maximum static friction
+- Applications of Friction | Friction problems include ladders and wedges. | Ladder Friction = equilibrium of ladder against wall | Wedge = uses friction to lift loads | Angle of Repose = equals angle of friction
+- Centroid & Centre of Gravity | Centroid locates the geometric centre. | Centroid = point where area is concentrated | Centroid of Triangle = h/3 from base | Composite Area Centroid = x̄ = ΣAx/ΣA
+- Moment of Inertia | Area moment of inertia measures resistance to bending. | Moment of Inertia = ∫ y² dA | Rectangle I = bd³/12 | Parallel Axis Theorem = I = Ig + Ah²
+
+@ bt205 | BT-205 | Basic Computer Engineering | Computer fundamentals, operating systems, C++ programming basics, networking, databases and emerging technologies.
+# Computer Fundamentals
+- Computer Organisation | A computer has input, processing, memory and output units. | CPU = central processing unit with ALU and control unit | Primary Memory = RAM and ROM directly accessed by CPU | Secondary Storage = HDD, SSD for permanent storage
+- Number Systems | Computers use binary representation. | Binary = base 2 | Hexadecimal = base 16 | Bit and Byte = 8 bits make one byte
+- Generations & Types of Computers | Computers evolved through generations. | First Generation = vacuum tubes | Fourth Generation = microprocessors | Supercomputer = highest performance computer
+- Software Types | Software is system or application software. | System Software = operating system, compilers | Application Software = programs for user tasks | Compiler vs Interpreter = whole program translation versus line-by-line
+# Operating Systems
+- OS Functions | OS manages hardware and resources. | Operating System = interface between user and hardware | Process Management = scheduling and executing programs | Memory Management = allocating memory to processes
+- Types of OS | OS designs serve different needs. | Batch OS = jobs processed in batches | Time-sharing OS = CPU time shared among users | Real-time OS = strict timing constraints
+- File Systems & Commands | OS organises files in directories. | File System = method of storing and organising files | Directory = container of files | Linux Commands = ls, cd, mkdir, cp
+- Windows & Linux | Popular operating systems. | Windows = GUI-based OS by Microsoft | Linux = open-source Unix-like OS | Shell = command-line interpreter
+# Programming in C++
+- Basics of C++ | C++ supports procedural and object-oriented programming. | Variable = named storage location | Data Types = int, float, char, bool | cin and cout = standard input and output
+- Control Structures | Control flow directs program execution. | if-else = conditional branching | for Loop = repeats a known number of times | switch = multi-way branching
+- Functions & Arrays | Functions modularise code; arrays store lists. | Function = reusable block of code | Array = collection of same-type elements | Call by Reference = function modifies caller's variable
+- OOP Concepts | C++ supports classes and objects. | Class = blueprint for objects | Inheritance = deriving new class from existing | Polymorphism = same interface, different behaviour
+# Networking & Internet
+- Computer Networks | Networks connect computers to share resources. | LAN = local area network | WAN = wide area network | Topology = arrangement such as star, bus, ring
+- Internet & Protocols | Internet uses standard protocols. | TCP/IP = protocol suite of the Internet | IP Address = unique address of a device | HTTP = protocol for web pages
+- Network Devices | Devices route and connect traffic. | Router = forwards packets between networks | Switch = connects devices within a LAN | Modem = modulates and demodulates signals
+- Cyber Security Basics | Protecting systems from threats. | Malware = malicious software such as viruses | Firewall = filters network traffic | Encryption = encoding data for confidentiality
+# Databases & Emerging Technologies
+- Database Basics | Databases store structured data. | DBMS = software managing databases | Table = rows and columns of data | SQL = language to query databases
+- Cloud Computing | Computing delivered over the Internet. | Cloud Computing = on-demand resources over network | SaaS = software as a service | Virtualisation = running multiple OS on one machine
+- IoT & AI | New technologies connect devices and add intelligence. | IoT = network of connected devices | Artificial Intelligence = machines performing intelligent tasks | Machine Learning = learning from data
+- Big Data & Blockchain | Data scale and distributed ledgers. | Big Data = very large and complex datasets | Blockchain = distributed tamper-proof ledger | Data Analytics = examining data to draw conclusions
