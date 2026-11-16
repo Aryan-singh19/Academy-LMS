@@ -2,12 +2,12 @@
 
 Built by `scripts/lectures/build_from_found.mjs` from `found.json`.
 
-- Subjects with lectures: **53 / 148**
-- Topics linked: **1060 / 2960**
-  - matched to a video about the topic: 101
-  - unit lecture video: 258
-  - whole-course video: 281
-  - subject playlist only: 420
+- Subjects with lectures: **115 / 148**
+- Topics linked: **2300 / 2960**
+  - matched to a video about the topic: 377
+  - unit lecture video: 369
+  - whole-course video: 1110
+  - subject playlist only: 444
 
 Report a broken link by subject code and topic; it gets replaced in `found.json`.
 
@@ -66,69 +66,69 @@ Report a broken link by subject code and topic; it gets replaced in `found.json`
 | ME-302 | Thermodynamics | 3 | [AK Saini](https://www.youtube.com/playlist?list=PL-LmHfaJJVxLwf7VVEVuTbX3EoOYnLBWv) | 20 | 20 (4 with own video) |
 | ME-303 | Materials Technology | 3 | [Ekeeda](https://www.youtube.com/playlist?list=PLm_MSClsnwm9YONCGl82eZGUebWI7riky) | 20 | 20 (0 with own video) |
 | ME-304 | Strength of Materials | 3 | [NPTEL](https://www.youtube.com/playlist?list=PL521D094C8752CE67) | 20 | 20 (4 with own video) |
-| ME-305 | Manufacturing Process | 3 | none yet | 20 | 0 |
-| ME-402 | Instrumentation & Control | 4 | none yet | 20 | 0 |
-| ME-403 | Theory of Machines | 4 | none yet | 20 | 0 |
-| ME-404 | Fluid Mechanics | 4 | none yet | 20 | 0 |
+| ME-305 | Manufacturing Process | 3 | [Manufacturing lectures](https://www.youtube.com/playlist?list=PLCroaJeHBTHaeL2vw3l8YZ781Sq7SXdKi) | 20 | 20 (8 with own video) |
+| ME-402 | Instrumentation & Control | 4 | [AB Classes](https://www.youtube.com/playlist?list=PLbkIghvjQ7P-YzHeZWMaPpjGMAjRCYqkI) | 20 | 20 (3 with own video) |
+| ME-403 | Theory of Machines | 4 | [TOM lectures](https://www.youtube.com/playlist?list=PLYRGB44zNZWVibVLmWANp-7obQzOhJLRt) | 20 | 20 (4 with own video) |
+| ME-404 | Fluid Mechanics | 4 | [Clari Concepts](https://www.youtube.com/playlist?list=PLOKNrldi7ClhMMDSfsvL67nTzrT7q-38S) | 20 | 20 (4 with own video) |
 | ME-405 | Manufacturing Technology | 4 | none yet | 20 | 0 |
-| ME-501 | Internal Combustion Engines | 5 | none yet | 20 | 0 |
-| ME-502 | Mechanical Vibrations | 5 | none yet | 20 | 0 |
-| ME-503(A) | Mechatronics | 5 | none yet | 20 | 0 |
-| ME-504(C) | Finite Element Method | 2 | none yet | 20 | 0 |
-| ME-601 | Thermal Engineering & Gas Dynamics | 6 | none yet | 20 | 0 |
-| ME-602 | Machine Component Design | 6 | none yet | 20 | 0 |
-| ME-603(A) | Turbo Machinery | 6 | none yet | 20 | 0 |
-| ME-604(A) | Robotics | 6 | none yet | 20 | 0 |
-| ME-701 | Heat & Mass Transfer | 7 | none yet | 20 | 0 |
-| ME-702(C) | Power Plant Engineering | 7 | none yet | 20 | 0 |
-| ME-703(A) | Operations Research & Supply Chain | 6 | none yet | 20 | 0 |
-| ME-801 | Refrigeration & Air Conditioning | 8 | none yet | 20 | 0 |
-| ME-802(A) | Automobile Engineering | 8 | none yet | 20 | 0 |
-| ME-803(B) | Energy Conservation & Audit | 8 | none yet | 20 | 0 |
-| AU-501 | Automotive Engines | 5 | none yet | 20 | 0 |
-| AU-502 | Automotive Chassis System | 5 | none yet | 20 | 0 |
-| AU-503(A) | Automotive Transmission System | 5 | none yet | 20 | 0 |
-| AU-503(C) | Alternate Automotive Fuels & Emissions | 5 | none yet | 20 | 0 |
-| AU-601 | Automotive Electrical & Electronics | 6 | none yet | 20 | 0 |
-| AU-603 | Vehicle Dynamics | 6 | none yet | 20 | 0 |
-| AU-703 | Vehicle Body Engineering & Aerodynamics | 7 | none yet | 20 | 0 |
-| AU-704 | Electric & Hybrid Vehicles | 7 | none yet | 20 | 0 |
-| AU-801 | Vehicle Maintenance & Fault Diagnosis | 8 | none yet | 20 | 0 |
-| AU-802 | Automotive Safety & Legislation | 8 | none yet | 20 | 0 |
-| CE-302 | Construction Materials | 3 | none yet | 20 | 0 |
-| CE-303 | Surveying | 3 | none yet | 20 | 0 |
-| CE-304 | Building Planning & Architecture | 3 | none yet | 20 | 0 |
-| CE-402 | Construction Technology | 4 | none yet | 20 | 0 |
-| CE-403 | Structural Analysis-I | 4 | none yet | 20 | 0 |
-| CE-404 | Transportation Engineering-I | 4 | none yet | 20 | 0 |
-| CE-405 | Engineering Geology & Remote Sensing | 4 | none yet | 20 | 0 |
-| CE-502 | Transportation Engineering-II | 5 | none yet | 20 | 0 |
-| CE-503(A) | Structural Analysis-II | 5 | none yet | 20 | 0 |
-| CE-504(B) | Remote Sensing & GIS | 5 | none yet | 20 | 0 |
-| CE-601 | Structural Design & Drawing (RCC-I) | 6 | none yet | 20 | 0 |
-| CE-602 | Environmental Engineering-I | 6 | none yet | 20 | 0 |
-| CE-603(A) | Water Resource Engineering | 6 | none yet | 20 | 0 |
-| CE-701 | Geotechnical Engineering | 7 | none yet | 20 | 0 |
-| CE-702(A) | Prestressed Concrete Structures | 7 | none yet | 20 | 0 |
-| CE-702(B) | Environmental Engineering-II | 7 | none yet | 20 | 0 |
-| CE-801 | Design of Steel Structures | 8 | none yet | 20 | 0 |
-| CE-802(B) | Foundation Engineering | 8 | none yet | 20 | 0 |
-| CE-802(D) | Earthquake Resistant Design of Structures | 2 | none yet | 20 | 0 |
-| EX-303 | Electrical Measurements & Measuring Instruments | 3 | none yet | 20 | 0 |
-| EX-402 | Electrical Machine-I | 4 | none yet | 20 | 0 |
-| EX-404 | Power System-I | 4 | none yet | 20 | 0 |
-| EX-501 | Electrical Machine-II | 5 | none yet | 20 | 0 |
-| EX-502 | Power Electronics | 5 | none yet | 20 | 0 |
-| EX-503(C) | Renewable Power Generation | 5 | none yet | 20 | 0 |
-| EX-504(A) | Industrial Electronics | 5 | none yet | 20 | 0 |
-| EX-601 | Power System-II | 6 | none yet | 20 | 0 |
-| EX-603(A) | Utilization of Electrical Energy | 6 | none yet | 20 | 0 |
-| EX-701 | Power System Protection | 7 | none yet | 20 | 0 |
-| EX-702(B) | HVDC & FACTS | 2 | none yet | 20 | 0 |
-| EX-702(C) | High Voltage Engineering | 7 | none yet | 20 | 0 |
-| EX-801 | Electrical Drives | 8 | none yet | 20 | 0 |
-| EX-802(B) | Special Electrical Machines | 8 | none yet | 20 | 0 |
-| MT-RM | Research Methodology & IPR | 2 | none yet | 20 | 0 |
+| ME-501 | Internal Combustion Engines | 5 | [IIT Kanpur](https://www.youtube.com/playlist?list=PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt) | 20 | 20 (12 with own video) |
+| ME-502 | Mechanical Vibrations | 5 | [NPTEL](https://www.youtube.com/playlist?list=PLAC668A0566953FB5) | 20 | 20 (3 with own video) |
+| ME-503(A) | Mechatronics | 5 | [Mechatronics lectures](https://www.youtube.com/playlist?list=PLjQMEOXj4i18_33ra0WN8m5h6SH17yBGZ) | 20 | 20 (4 with own video) |
+| ME-504(C) | Finite Element Method | 2 | [NPTEL](https://www.youtube.com/playlist?list=PLbMVogVj5nJRjnZA9oryBmDdUNe7lbnB0) | 20 | 20 (6 with own video) |
+| ME-601 | Thermal Engineering & Gas Dynamics | 6 | [TEGD lectures](https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL) | 20 | 20 (8 with own video) |
+| ME-602 | Machine Component Design | 6 | [NPTEL](https://www.youtube.com/playlist?list=PL3D4EECEFAA99D9BE) | 20 | 20 (6 with own video) |
+| ME-603(A) | Turbo Machinery | 6 | [Turbo machines lectures](https://www.youtube.com/playlist?list=PLbFnetAJfrO6VXBNGEYVVl-uexrbvS8IS) | 20 | 20 (12 with own video) |
+| ME-604(A) | Robotics | 6 | [NPTEL](https://www.youtube.com/playlist?list=PLbRMhDVUMngcdUbBySzyzcPiFTYWr4rV_) | 20 | 20 (9 with own video) |
+| ME-701 | Heat & Mass Transfer | 7 | [NPTEL](https://www.youtube.com/playlist?list=PL5F4F46C1983C6785) | 20 | 20 (10 with own video) |
+| ME-702(C) | Power Plant Engineering | 7 | [Power plant lectures](https://www.youtube.com/playlist?list=PLYRGB44zNZWXrxEj6l4L09d3Rcvc9K7B1) | 20 | 20 (8 with own video) |
+| ME-703(A) | Operations Research & Supply Chain | 6 | [Dr. Gajendra Purohit](https://www.youtube.com/playlist?list=PLU6SqdYcYsfLyEPjMPHT_1ZhTRrnXA55R) | 20 | 20 (4 with own video) |
+| ME-801 | Refrigeration & Air Conditioning | 8 | [NPTEL](https://www.youtube.com/playlist?list=PLE2DA184A2E479885) | 20 | 20 (13 with own video) |
+| ME-802(A) | Automobile Engineering | 8 | [AB Classes](https://www.youtube.com/playlist?list=PLbkIghvjQ7P9znl5JaqzLN0mkAvWXVyqw) | 20 | 20 (8 with own video) |
+| ME-803(B) | Energy Conservation & Audit | 8 | [Energy audit lectures](https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg) | 20 | 20 (12 with own video) |
+| AU-501 | Automotive Engines | 5 | [IIT Kanpur](https://www.youtube.com/playlist?list=PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt) | 20 | 20 (3 with own video) |
+| AU-502 | Automotive Chassis System | 5 | [Magic Marks](https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd) | 20 | 20 (2 with own video) |
+| AU-503(A) | Automotive Transmission System | 5 | [LJ University](https://www.youtube.com/playlist?list=PLQmc-I2-FO2GXPNpWS6TExp50f5xEfVnX) | 20 | 20 (7 with own video) |
+| AU-503(C) | Alternate Automotive Fuels & Emissions | 5 | [Automobile lectures](https://www.youtube.com/playlist?list=PLSJZETVyEssmc2CMU4E4c7TlA0gvwhS10) | 20 | 20 (10 with own video) |
+| AU-601 | Automotive Electrical & Electronics | 6 | [Uplatz](https://www.youtube.com/playlist?list=PLTndtixj8kK1fELVCsPFbk1y_lBES3e_I) | 20 | 20 (8 with own video) |
+| AU-603 | Vehicle Dynamics | 6 | [NPTEL](https://www.youtube.com/playlist?list=PLbMVogVj5nJTW50jj9_gvJmdwFWHaqR5J) | 20 | 20 (2 with own video) |
+| AU-703 | Vehicle Body Engineering & Aerodynamics | 7 | [Automotive aerodynamics](https://www.youtube.com/playlist?list=PLqlJm3zZSka3cAEiUmLUHP1yrXtuKCpv6) | 20 | 20 (6 with own video) |
+| AU-704 | Electric & Hybrid Vehicles | 7 | [EV lectures](https://www.youtube.com/playlist?list=PLSJZETVyEssniyF9TXc4uhcRaxOyKlmb9) | 20 | 20 (7 with own video) |
+| AU-801 | Vehicle Maintenance & Fault Diagnosis | 8 | [Vehicle maintenance](https://www.youtube.com/playlist?list=PLEzuf0bSROyEdNtG4dM286IIjIMtPNGzY) | 20 | 20 (1 with own video) |
+| AU-802 | Automotive Safety & Legislation | 8 | [Automotive safety](https://www.youtube.com/playlist?list=PLB85E2FB44D430CDE) | 20 | 20 (1 with own video) |
+| CE-302 | Construction Materials | 3 | [NPTEL](https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2) | 20 | 20 (3 with own video) |
+| CE-303 | Surveying | 3 | [NPTEL](https://www.youtube.com/playlist?list=PL20A0651466E8A776) | 20 | 20 (3 with own video) |
+| CE-304 | Building Planning & Architecture | 3 | [Civil drawing lectures](https://www.youtube.com/playlist?list=PLGstbEuPUsWVsJC4o3fYgQsEEi63NG1Ox) | 20 | 20 (6 with own video) |
+| CE-402 | Construction Technology | 4 | [Yogesh Kaushik](https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv) | 20 | 20 (1 with own video) |
+| CE-403 | Structural Analysis-I | 4 | [NPTEL](https://www.youtube.com/playlist?list=PLUogGZJOiMtNOus85Tq1zNvg9EU3aJ8VO) | 20 | 20 (3 with own video) |
+| CE-404 | Transportation Engineering-I | 4 | [NPTEL](https://www.youtube.com/playlist?list=PLE88643285BC70E0F) | 20 | 20 (8 with own video) |
+| CE-405 | Engineering Geology & Remote Sensing | 4 | [NPTEL](https://www.youtube.com/playlist?list=PLDF5162B475DD915F) | 20 | 20 (8 with own video) |
+| CE-502 | Transportation Engineering-II | 5 | [Ekeeda](https://www.youtube.com/playlist?list=PLm_MSClsnwm9CI47urUKdTTgf2bS4CT53) | 20 | 20 (4 with own video) |
+| CE-503(A) | Structural Analysis-II | 5 | [NPTEL](https://www.youtube.com/playlist?list=PLAE2D920B08D74108) | 20 | 20 (2 with own video) |
+| CE-504(B) | Remote Sensing & GIS | 5 | [DigiSikshak](https://www.youtube.com/playlist?list=PL425biB-mTSRUyM4_B4AIvh196SO0dIns) | 20 | 20 (7 with own video) |
+| CE-601 | Structural Design & Drawing (RCC-I) | 6 | [Civil Engineering Fanatics](https://www.youtube.com/playlist?list=PL0_vJux4nrG2DVhrYuHkv0tMauEnbEzwN) | 20 | 20 (13 with own video) |
+| CE-602 | Environmental Engineering-I | 6 | [NPTEL](https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172) | 20 | 20 (8 with own video) |
+| CE-603(A) | Water Resource Engineering | 6 | [Irrigation lectures](https://www.youtube.com/playlist?list=PL9HI1tOu3A0xjbKD9uVb3diy7IAD9X522) | 20 | 20 (6 with own video) |
+| CE-701 | Geotechnical Engineering | 7 | [APSEd](https://www.youtube.com/playlist?list=PLSNhedsleX10Y2LsL8eo-qlF6_cu31TR_) | 20 | 20 (16 with own video) |
+| CE-702(A) | Prestressed Concrete Structures | 7 | [NPTEL](https://www.youtube.com/playlist?list=PLB50EF6A79D1F8C14) | 20 | 20 (3 with own video) |
+| CE-702(B) | Environmental Engineering-II | 7 | [Env Engg lectures](https://www.youtube.com/playlist?list=PLZvSSwzLFnRBBIe04q7rB2NSKSk4roAHU) | 20 | 20 (6 with own video) |
+| CE-801 | Design of Steel Structures | 8 | [Education Point Online](https://www.youtube.com/playlist?list=PLg2LVpcRrOF69sEBIUtH2W9xip4VFgGX3) | 20 | 20 (4 with own video) |
+| CE-802(B) | Foundation Engineering | 8 | [NPTEL](https://www.youtube.com/playlist?list=PLA4019BB0B0CF6518) | 20 | 20 (10 with own video) |
+| CE-802(D) | Earthquake Resistant Design of Structures | 2 | [IIT Roorkee lectures](https://www.youtube.com/playlist?list=PLrT-P0eWqLg2pcRxaKufDoB8oB2Ikf4Oj) | 20 | 20 (3 with own video) |
+| EX-303 | Electrical Measurements & Measuring Instruments | 3 | [EMI lectures](https://www.youtube.com/playlist?list=PLwAOmydmnlw3zD8_MG2RNvHNqnIUMK-0z) | 20 | 20 (8 with own video) |
+| EX-402 | Electrical Machine-I | 4 | [Electrical machines lectures](https://www.youtube.com/playlist?list=PLPpCFgQP7QKHUOFYvZhQ6ra5XrU3dN2dD) | 20 | 20 (5 with own video) |
+| EX-404 | Power System-I | 4 | [Power system lectures](https://www.youtube.com/playlist?list=PL5TKV1tzb09lqZC86_XuDAdCy5UbEg8d5) | 20 | 20 (3 with own video) |
+| EX-501 | Electrical Machine-II | 5 | [Electrical machines lectures](https://www.youtube.com/playlist?list=PLPpCFgQP7QKFrkYIYaZt0idq7ocZq9AYU) | 20 | 20 (3 with own video) |
+| EX-502 | Power Electronics | 5 | [Engineering Funda](https://www.youtube.com/playlist?list=PLgwJf8NK-2e5Hnu82T1CYLZ8kbZs4Jx8x) | 20 | 20 (3 with own video) |
+| EX-503(C) | Renewable Power Generation | 5 | - | 20 | 20 (11 with own video) |
+| EX-504(A) | Industrial Electronics | 5 | [Engineering Funda](https://www.youtube.com/playlist?list=PLgwJf8NK-2e72_JGv854NPnQnB7NOFRmG) | 20 | 20 (2 with own video) |
+| EX-601 | Power System-II | 6 | [NPTEL](https://www.youtube.com/playlist?list=PL319A4391E593ADF3) | 20 | 20 (10 with own video) |
+| EX-603(A) | Utilization of Electrical Energy | 6 | [Electric traction lectures](https://www.youtube.com/playlist?list=PLLj_IOzkHLu1r2dWzHF6T9975FxBYdLcd) | 20 | 20 (3 with own video) |
+| EX-701 | Power System Protection | 7 | [Protection lectures](https://www.youtube.com/playlist?list=PL5EF04353762441B8) | 20 | 20 (12 with own video) |
+| EX-702(B) | HVDC & FACTS | 2 | [Ekeeda](https://www.youtube.com/playlist?list=PLm_MSClsnwm-uH5g4Nv9pVdahToudi0HU) | 20 | 20 (5 with own video) |
+| EX-702(C) | High Voltage Engineering | 7 | [HV lectures](https://www.youtube.com/playlist?list=PLiE0cr_0IcyT3p0oKloOXYve2qFmBCYbu) | 20 | 20 (5 with own video) |
+| EX-801 | Electrical Drives | 8 | [NPTEL](https://www.youtube.com/playlist?list=PLFW6lRTa1g83sIfVY1p1xGqPGYUmXyahx) | 20 | 20 (8 with own video) |
+| EX-802(B) | Special Electrical Machines | 8 | [SEM lectures](https://www.youtube.com/playlist?list=PL_mruqjnuVd9ftLVehO6-P_HUCBICeBX3) | 20 | 20 (7 with own video) |
+| MT-RM | Research Methodology & IPR | 2 | [RM and IPR lectures](https://www.youtube.com/playlist?list=PLwKeZUTD_XirenK_QA9Gq3v-KDbO2s5sL) | 20 | 20 (7 with own video) |
 | MCSE-101 | Advanced Computational Mathematics | 1 | none yet | 20 | 0 |
 | MCSE-102 | Advanced Data Structures & Algorithms | 1 | none yet | 20 | 0 |
 | MCSE-103 | Advanced Computer Architecture | 1 | none yet | 20 | 0 |

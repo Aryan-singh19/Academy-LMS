@@ -1298,5 +1298,1728 @@
    "title": "Strength of Materials, Dr. S.P. Harsha, IIT Roorkee",
    "by": "NPTEL"
   }
+ },
+ "me305": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "BCDYqEEo3JA",
+    "t": "Introduction to manufacturing process",
+    "by": "Manufacturing lectures"
+   },
+   {
+    "u": 1,
+    "id": "O7NEpKoiQVs",
+    "t": "Manufacturing process unit 1: casting, its types",
+    "by": "Manufacturing lectures"
+   },
+   {
+    "u": 1,
+    "id": "Q8MfIzRZlGc",
+    "t": "Shrinkage, casting types and forging",
+    "by": "Manufacturing lectures"
+   },
+   {
+    "u": 2,
+    "id": "aUIrR21W4YY",
+    "t": "Extrusion, shearing and metallurgy",
+    "by": "Manufacturing lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLCroaJeHBTHaeL2vw3l8YZ781Sq7SXdKi",
+   "title": "Manufacturing Processes video lectures",
+   "by": "Manufacturing lectures"
+  }
+ },
+ "me402": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "Orjc5-N04YI",
+    "t": "RGPV Instrumentation and Control most important questions",
+    "by": "Education Point Online"
+   },
+   {
+    "u": 0,
+    "id": "PLm_MSClsnwm-neKtn3L0qndw95ukSfUlZ",
+    "t": "Mechanical measurements and control",
+    "by": "Ekeeda"
+   }
+  ],
+  "playlist": {
+   "id": "PLbkIghvjQ7P-YzHeZWMaPpjGMAjRCYqkI",
+   "title": "ME402 Instrumentation & Control (RGPV scheme)",
+   "by": "AB Classes"
+  }
+ },
+ "me403": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+    "t": "Theory of Machines lectures: brakes, gear train, dynamometer, clutch",
+    "by": "TOM lectures"
+   },
+   {
+    "u": 0,
+    "id": "PLYRGB44zNZWX45eXHZmMEuR7wkuhSlMKz",
+    "t": "Governor: watt, porter, proell, hartnell governors",
+    "by": "TOM lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLYRGB44zNZWVibVLmWANp-7obQzOhJLRt",
+   "title": "Theory of Machine lectures playlist",
+   "by": "TOM lectures"
+  }
+ },
+ "me404": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+    "t": "Fluid mechanics and hydraulic machines (Hindi)",
+    "by": "Clari Concepts"
+   },
+   {
+    "u": 1,
+    "id": "Bxbz5lVlG1E",
+    "t": "Introduction to fluid mechanics and its significance",
+    "by": "Clari Concepts"
+   },
+   {
+    "u": 1,
+    "id": "Yi0NQiaio5c",
+    "t": "Properties of fluid, capillarity",
+    "by": "AKME Academy"
+   }
+  ],
+  "playlist": {
+   "id": "PLOKNrldi7ClhMMDSfsvL67nTzrT7q-38S",
+   "title": "Fluid Mechanics (Hindi)",
+   "by": "Clari Concepts"
+  }
+ },
+ "me501": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "rch4VLHsx0w",
+    "t": "Internal combustion engines complete course L-1",
+    "by": "Vinod Datusliya"
+   },
+   {
+    "u": 1,
+    "id": "z7x3UAGRjgU",
+    "t": "IC engines L-2 engine components",
+    "by": "Vinod Datusliya"
+   },
+   {
+    "u": 2,
+    "id": "3rXIC1zbw2o",
+    "t": "Otto cycle, two stroke engine layout and working",
+    "by": "Vinod Datusliya"
+   }
+  ],
+  "playlist": {
+   "id": "PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt",
+   "title": "Internal Combustion Engines, Prof. Sameer Khandekar, IIT Kanpur",
+   "by": "IIT Kanpur"
+  }
+ },
+ "me502": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+    "t": "Video lectures on mechanical vibrations (V.P. Singh text)",
+    "by": "Vibration lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLAC668A0566953FB5",
+   "title": "Mechanical Vibrations, IIT Guwahati",
+   "by": "NPTEL"
+  }
+ },
+ "me503-mt": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+    "t": "Mechatronics lectures: sensors, actuators, controllers",
+    "by": "Mechatronics lectures"
+   },
+   {
+    "u": 0,
+    "id": "PLp1qEjZkl3b1Ord7yYhnwRVwD2mztHM0M",
+    "t": "Mechatronics PLC SCADA ladder diagrams",
+    "by": "Mechatronics lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLjQMEOXj4i18_33ra0WN8m5h6SH17yBGZ",
+   "title": "Mechatronics lectures",
+   "by": "Mechatronics lectures"
+  }
+ },
+ "me504-fem": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+    "t": "Finite element method complete tutorial series (beginner)",
+    "by": "FEM tutorials"
+   }
+  ],
+  "playlist": {
+   "id": "PLbMVogVj5nJRjnZA9oryBmDdUNe7lbnB0",
+   "title": "Introduction to Finite Element Method, Dr. R. Krishnakumar, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "me601": {
+  "videos": [
+   {
+    "u": 1,
+    "id": "PLdoIhVhbPQV5sKElB634nPZoamm84GKHj",
+    "t": "Thermal power plant: boilers, Rankine cycle, supercritical boiler",
+    "by": "Thermal lectures"
+   },
+   {
+    "u": 2,
+    "id": "vRyOQb8KGd4",
+    "t": "Types of nozzle: convergent, divergent, convergent-divergent",
+    "by": "TEGD lectures"
+   },
+   {
+    "u": 2,
+    "id": "ZlMqES0KQw0",
+    "t": "Friction in a nozzle and nozzle efficiency",
+    "by": "TEGD lectures"
+   },
+   {
+    "u": 2,
+    "id": "Q8pSefckHqo",
+    "t": "Numerical of steam nozzle",
+    "by": "TEGD lectures"
+   },
+   {
+    "u": 2,
+    "id": "_do2PIkvNMw",
+    "t": "Nozzle governing steam turbine",
+    "by": "TEGD lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+   "title": "Thermal Engineering and Gas Dynamics",
+   "by": "TEGD lectures"
+  }
+ },
+ "me602": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+    "t": "Design of machine elements online lecture series",
+    "by": "LJ University"
+   },
+   {
+    "u": 4,
+    "id": "PLv_ZsZmTHkvzsgPC81j9soK77rPyerJgw",
+    "t": "Design of spur gear, helical gear, worm gear",
+    "by": "DME lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PL3D4EECEFAA99D9BE",
+   "title": "Design of Machine Elements I, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "me603-tm": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+    "t": "Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "sdRQYw8sd-U",
+    "t": "Introduction and classification of turbomachines",
+    "by": "Turbo machines lectures"
+   },
+   {
+    "u": 2,
+    "id": "VQqiVVYuNks",
+    "t": "Hydro turbomachines centrifugal pumps part 1",
+    "by": "Turbo machines lectures"
+   },
+   {
+    "u": 3,
+    "id": "5JlaKUTEV6w",
+    "t": "Fluid machinery hydraulic turbines part 1",
+    "by": "GATE Academy Plus"
+   }
+  ],
+  "playlist": {
+   "id": "PLbFnetAJfrO6VXBNGEYVVl-uexrbvS8IS",
+   "title": "Turbo Machines: turbines, pumps, compressors",
+   "by": "Turbo machines lectures"
+  }
+ },
+ "me604-rob": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+    "t": "NPTEL industrial robotics: theories for implementation",
+    "by": "NPTEL"
+   },
+   {
+    "u": 2,
+    "id": "X7iBT5l599c",
+    "t": "Industrial manipulators and its kinematics",
+    "by": "NPTEL"
+   },
+   {
+    "u": 2,
+    "id": "9Xyy24mbLQ0",
+    "t": "Robots kinematics",
+    "by": "NPTEL"
+   },
+   {
+    "u": 3,
+    "id": "FR1W8YFfTL4",
+    "t": "Robot dynamics and control",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLbRMhDVUMngcdUbBySzyzcPiFTYWr4rV_",
+   "title": "Robotics by Prof. D K Pratihar, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "me701": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+    "t": "Fundamentals of heat transfer, IIT Delhi live lectures",
+    "by": "IIT Delhi"
+   },
+   {
+    "u": 0,
+    "id": "qa-PQOjS3zA",
+    "t": "Introduction on heat and mass transfer",
+    "by": "NPTEL"
+   },
+   {
+    "u": 4,
+    "id": "CDncSyDvpdQ",
+    "t": "Thermal radiation 1",
+    "by": "NPTEL"
+   },
+   {
+    "u": 3,
+    "id": "PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo",
+    "t": "Convective heat and mass transfer",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL5F4F46C1983C6785",
+   "title": "Heat and Mass Transfer, IIT Bombay",
+   "by": "NPTEL"
+  }
+ },
+ "me702-ppe": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+    "t": "Power plant system engineering, IIT Guwahati",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "Qfh1k-eNw_s",
+    "t": "Introduction of power plant engineering",
+    "by": "Vishal Acharya"
+   },
+   {
+    "u": 1,
+    "id": "PLdoIhVhbPQV5sKElB634nPZoamm84GKHj",
+    "t": "Thermal steam power plant: layout, components, Rankine cycle",
+    "by": "Thermal lectures"
+   },
+   {
+    "u": 0,
+    "id": "v6d2oCTXhf0",
+    "t": "Power plant engineering 10 chapters quick lecture, economics",
+    "by": "Power plant lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLYRGB44zNZWXrxEj6l4L09d3Rcvc9K7B1",
+   "title": "Power plant engineering lectures",
+   "by": "Power plant lectures"
+  }
+ },
+ "me703-or": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL05350A31E6C09B7A",
+    "t": "Fundamentals of Operations Research, IIT Madras",
+    "by": "NPTEL"
+   },
+   {
+    "u": 2,
+    "id": "PL23dd-8zssJDLv4Zc6975_FKKd4MXwsTC",
+    "t": "Transportation problem in operation research",
+    "by": "OR Hindi"
+   }
+  ],
+  "playlist": {
+   "id": "PLU6SqdYcYsfLyEPjMPHT_1ZhTRrnXA55R",
+   "title": "Operations Research complete course",
+   "by": "Dr. Gajendra Purohit"
+  }
+ },
+ "me801": {
+  "videos": [
+   {
+    "u": 1,
+    "id": "PLdoIhVhbPQV5uXXhPFmsrX1HucjtOOV6J",
+    "t": "Introduction of refrigeration and air conditioning",
+    "by": "RAC lectures"
+   },
+   {
+    "u": 1,
+    "id": "PLdoIhVhbPQV7uXG5gEPgq6o-tutTeEQpW",
+    "t": "Refrigerants",
+    "by": "RAC lectures"
+   },
+   {
+    "u": 1,
+    "id": "PLdoIhVhbPQV4rfizTVmnY8wdWKREr7eFY",
+    "t": "Air refrigeration system",
+    "by": "RAC lectures"
+   },
+   {
+    "u": 2,
+    "id": "PLdoIhVhbPQV77-tSpt2toTofUUfu8hoOw",
+    "t": "Vapour compression refrigeration system VCRS",
+    "by": "RAC lectures"
+   },
+   {
+    "u": 2,
+    "id": "PLdoIhVhbPQV6eSw5A1lIP8PLcZQ9XQCxE",
+    "t": "Compound vapour compression refrigeration system",
+    "by": "RAC lectures"
+   },
+   {
+    "u": 3,
+    "id": "PLdoIhVhbPQV7I6sy4DkyVLp-Rz6y3k65h",
+    "t": "Vapour absorption refrigeration system VARS",
+    "by": "RAC lectures"
+   },
+   {
+    "u": 1,
+    "id": "AGHIepPNk2Y",
+    "t": "Introduction to refrigeration and air conditioning",
+    "by": "AB Classes"
+   },
+   {
+    "u": 0,
+    "id": "PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+    "t": "Refrigeration and air conditioning lectures",
+    "by": "AB Classes"
+   }
+  ],
+  "playlist": {
+   "id": "PLE2DA184A2E479885",
+   "title": "Refrigeration and Air Conditioning, Prof. M. Ramgopal, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "me802-ae": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+    "t": "Automobile engineering lectures: engines, transmission, chassis",
+    "by": "Magic Marks"
+   },
+   {
+    "u": 2,
+    "id": "sTE1uHbNfvQ",
+    "t": "Automobile transmission system major parts",
+    "by": "AB Classes"
+   },
+   {
+    "u": 1,
+    "id": "PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+    "t": "Anatomy of the vehicles: chassis and body",
+    "by": "AB Classes"
+   }
+  ],
+  "playlist": {
+   "id": "PLbkIghvjQ7P9znl5JaqzLN0mkAvWXVyqw",
+   "title": "Automobile Engineering (Hindi and English)",
+   "by": "AB Classes"
+  }
+ },
+ "me803-eca": {
+  "videos": [
+   {
+    "u": 1,
+    "id": "PLQmc-I2-FO2GCp2szVRnoIk3e2E5J7oLl",
+    "t": "Energy scenario and Energy Conservation Act 2001: energy conservation and management",
+    "by": "LJ University"
+   },
+   {
+    "u": 2,
+    "id": "FwXvCMENY68",
+    "t": "Energy audit methodology: types of energy audit, preliminary and detailed audit",
+    "by": "Energy audit lectures"
+   },
+   {
+    "u": 2,
+    "id": "cJ7hXbk1iA8",
+    "t": "Energy Conservation Act 2001 energy management and audit",
+    "by": "Energy audit lectures"
+   },
+   {
+    "u": 4,
+    "id": "kEP6S6RGstE",
+    "t": "Electrical energy conservation and auditing lecture 1",
+    "by": "Energy audit lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+   "title": "Energy Audit and Management (unit-wise)",
+   "by": "Energy audit lectures"
+  }
+ },
+ "au501": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+    "t": "A course in internal combustion engines",
+    "by": "Prof. D.S. Ghodake"
+   },
+   {
+    "u": 0,
+    "id": "rch4VLHsx0w",
+    "t": "Internal combustion engines complete course L-1",
+    "by": "Vinod Datusliya"
+   }
+  ],
+  "playlist": {
+   "id": "PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt",
+   "title": "Internal Combustion Engines, Prof. Sameer Khandekar, IIT Kanpur",
+   "by": "IIT Kanpur"
+  }
+ },
+ "au502": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+    "t": "Anatomy of the vehicles: chassis, frame, body",
+    "by": "Magic Marks"
+   }
+  ],
+  "playlist": {
+   "id": "PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+   "title": "Automobile Engineering lectures: chassis, transmission, suspension, brakes",
+   "by": "Magic Marks"
+  }
+ },
+ "au503-ats": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "sTE1uHbNfvQ",
+    "t": "Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential",
+    "by": "LJ University"
+   },
+   {
+    "u": 0,
+    "id": "PLY6be7r7PT8KEvzcGquK2sT1teILFLP0O",
+    "t": "Design of transmission systems: belt, chain, gear drive, gear box",
+    "by": "LJ University"
+   }
+  ],
+  "playlist": {
+   "id": "PLQmc-I2-FO2GXPNpWS6TExp50f5xEfVnX",
+   "title": "Basics of Automotive Systems",
+   "by": "LJ University"
+  }
+ },
+ "au503-aaf": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "niKpCjq0pWk",
+    "t": "Introduction of alternative fuel power system",
+    "by": "Automobile lectures"
+   },
+   {
+    "u": 0,
+    "id": "iSfI_OtSKxs",
+    "t": "Alternate fuels and sustainable transportation",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "WZb9Bx1cekI",
+    "t": "Diesel engine emissions and pollution control, alternative fuels",
+    "by": "Automobile lectures"
+   },
+   {
+    "u": 0,
+    "id": "ztFxQHr2gpU",
+    "t": "Alternative fuels: biodiesel, ethanol, biomass, biogas, hydrogen",
+    "by": "Automobile lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLSJZETVyEssmc2CMU4E4c7TlA0gvwhS10",
+   "title": "Automobile Engineering lecture series (Hindi and English)",
+   "by": "Automobile lectures"
+  }
+ },
+ "au601": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "Zpbj3C4RtBc",
+    "t": "Introduction to automotive electricals and electronics",
+    "by": "Uplatz"
+   },
+   {
+    "u": 0,
+    "id": "PLjB22Nn4jO250aGd8NRCsKV3Xhc4PE95N",
+    "t": "Automotive electrical system: starting and charging system, battery",
+    "by": "Uplatz"
+   },
+   {
+    "u": 0,
+    "id": "PL0QX2tTK83MUrK-0ksj8RRZ7g60OU84y7",
+    "t": "Automotive switches and sensors",
+    "by": "Cars Simplified"
+   }
+  ],
+  "playlist": {
+   "id": "PLTndtixj8kK1fELVCsPFbk1y_lBES3e_I",
+   "title": "Automotive Electrics and Automotive Electronics",
+   "by": "Uplatz"
+  }
+ },
+ "au603": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "T7el7XL1aK8",
+    "t": "Longitudinal dynamics",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "jijrhTDQdQI",
+    "t": "Roll center, anti dive and squat, motion ratio, unsprung weight suspension",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLbMVogVj5nJTW50jj9_gvJmdwFWHaqR5J",
+   "title": "Vehicle Dynamics, Dr. R. Krishnakumar, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "au703": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "UgtjRob5qMg",
+    "t": "Fundamentals of electric vehicles: technology and economics",
+    "by": "NPTEL IIT Madras"
+   },
+   {
+    "u": 0,
+    "id": "PL8NHLTFJUENHmzVzGTyl9518i6e9q7pba",
+    "t": "Electric hybrid vehicle electric propulsion: DC motor drives",
+    "by": "EV lectures"
+   },
+   {
+    "u": 0,
+    "id": "PLFW6lRTa1g83sIfVY1p1xGqPGYUmXyahx",
+    "t": "Fundamentals of electric drives",
+    "by": "NPTEL IIT Kanpur"
+   }
+  ],
+  "playlist": {
+   "id": "PLSJZETVyEssniyF9TXc4uhcRaxOyKlmb9",
+   "title": "Hybrid and Electric Vehicles complete course",
+   "by": "EV lectures"
+  }
+ },
+ "au702": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "19nvEQXeXmk",
+    "t": "Concept of car aerodynamics and drag force, automobile chassis and body engineering",
+    "by": "Automotive aerodynamics"
+   },
+   {
+    "u": 0,
+    "id": "94m8u0nNmrw",
+    "t": "Fundamentals and theory of aerodynamics and its effects on vehicles",
+    "by": "Automotive aerodynamics"
+   }
+  ],
+  "playlist": {
+   "id": "PLqlJm3zZSka3cAEiUmLUHP1yrXtuKCpv6",
+   "title": "Course on Automotive Aerodynamics",
+   "by": "Automotive aerodynamics"
+  }
+ },
+ "au801": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+    "t": "Automotive diagnostic training: troubleshooting and diagnostic tools",
+    "by": "Vehicle maintenance"
+   },
+   {
+    "u": 0,
+    "id": "PLb8kQiBmdXE9wzjiJ1-y0_cJwPpKOyzmF",
+    "t": "Automotive diagnostic guides",
+    "by": "Vehicle maintenance"
+   }
+  ],
+  "playlist": {
+   "id": "PLEzuf0bSROyEdNtG4dM286IIjIMtPNGzY",
+   "title": "Vehicle maintenance: diagnose and fix common car problems",
+   "by": "Vehicle maintenance"
+  }
+ },
+ "au802": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "GKiNdWkWuvM",
+    "t": "How airbags work: complete airbag system from crash detection",
+    "by": "Automotive safety"
+   },
+   {
+    "u": 0,
+    "id": "Ugf13wR0Jd4",
+    "t": "How the car knows when to deploy airbags: supplemental restraint system sensors",
+    "by": "Automotive safety"
+   },
+   {
+    "u": 0,
+    "id": "6vOdBgO7NFM",
+    "t": "Seatbelts, airbags and car safety features",
+    "by": "Automotive safety"
+   }
+  ],
+  "playlist": {
+   "id": "PLB85E2FB44D430CDE",
+   "title": "Brakes, safety and control systems: ABS, traction control, ESC",
+   "by": "Automotive safety"
+  }
+ },
+ "ce302": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+    "t": "Building materials and construction and concrete technology lectures",
+    "by": "Yogesh Kaushik"
+   },
+   {
+    "u": 0,
+    "id": "TC9A8sn9mMw",
+    "t": "Bricks: composition, testing, manufacturing, harmful ingredients",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "uPAE2ZcFdo4",
+    "t": "Concrete material",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL8BA090E69BF01BC2",
+   "title": "Building Materials and Construction, Dr. B. Bhattacharjee, IIT Delhi",
+   "by": "NPTEL"
+  }
+ },
+ "ce303": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+    "t": "Surveying lectures unit wise for BTech civil",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "p0427b8st58",
+    "t": "Surveying in one shot complete revision",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL20A0651466E8A776",
+   "title": "Surveying, Prof. Bharat Lohani, IIT Kanpur",
+   "by": "NPTEL"
+  }
+ },
+ "ce304": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "mM_HkSm_wKY",
+    "t": "Elements and principles of planning of residential building",
+    "by": "GATE Academy Plus"
+   },
+   {
+    "u": 0,
+    "id": "FF_5w5hZav4",
+    "t": "Principle of planning of residential building part 2",
+    "by": "GATE Academy Plus"
+   },
+   {
+    "u": 0,
+    "id": "9ra0XT_MT-s",
+    "t": "Principles of building planning residential building",
+    "by": "Civil drawing lectures"
+   },
+   {
+    "u": 0,
+    "id": "z3ZTURGPkzs",
+    "t": "Building drawing: plan, elevation, section, trusses, septic tank, door, window",
+    "by": "Civil drawing lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLGstbEuPUsWVsJC4o3fYgQsEEi63NG1Ox",
+   "title": "Civil engineering drawings in AutoCAD: floor plan, site plan, elevation, section",
+   "by": "Civil drawing lectures"
+  }
+ },
+ "ce402": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL8BA090E69BF01BC2",
+    "t": "Building materials and construction, IIT Delhi",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLbMVogVj5nJQdvb0fm2VMtl4xsmpeufmO",
+    "t": "Modern construction materials, IIT Madras",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+   "title": "Building Materials & Construction and Concrete Technology lectures",
+   "by": "Yogesh Kaushik"
+  }
+ },
+ "ce403": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+    "t": "Structural analysis of determinate structures: stability, reactions, trusses, beams",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLFhC0uIVDk-8hgF68ZAJbJQMc5PoTmNxb",
+    "t": "Structural analysis lectures",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLUogGZJOiMtNOus85Tq1zNvg9EU3aJ8VO",
+   "title": "Structural Analysis introduction (NPTEL)",
+   "by": "NPTEL"
+  }
+ },
+ "ce404": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+    "t": "Highway engineering lectures: geometric design, materials, pavement, traffic",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "t4tSroKNbJQ",
+    "t": "Geometric design of highways part 1",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "OOVdhUFl4HU",
+    "t": "Highway geometric design and traffic engineering",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLE88643285BC70E0F",
+   "title": "Introduction to Transportation Engineering, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "ce502": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+    "t": "Railway engineering complete playlist: permanent way, gradients",
+    "by": "Ekeeda"
+   },
+   {
+    "u": 0,
+    "id": "kfBnHjWsLqw",
+    "t": "Permanent way, requirements of ideal permanent way, components",
+    "by": "Ekeeda"
+   },
+   {
+    "u": 0,
+    "id": "DANibjJz1vc",
+    "t": "Types of gradients railway",
+    "by": "Ekeeda"
+   },
+   {
+    "u": 0,
+    "id": "d4isqDdIzsE",
+    "t": "Highway materials, pavement design, railway and airport engineering",
+    "by": "Ekeeda"
+   }
+  ],
+  "playlist": {
+   "id": "PLm_MSClsnwm9CI47urUKdTTgf2bS4CT53",
+   "title": "Transportation Engineering II",
+   "by": "Ekeeda"
+  }
+ },
+ "ce503a": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+    "t": "Structure analysis course: indeterminate structures, influence lines",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLAE2D920B08D74108",
+   "title": "Structural Analysis II, Prof. P. Banerjee, IIT Bombay",
+   "by": "NPTEL"
+  }
+ },
+ "ce504b": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+    "t": "Remote sensing and GIS basic concepts",
+    "by": "DigiSikshak"
+   },
+   {
+    "u": 1,
+    "id": "UokHOfOyrVw",
+    "t": "Remote sensing process: energy source, radiation and atmosphere",
+    "by": "DigiSikshak"
+   },
+   {
+    "u": 0,
+    "id": "rSNm3pJ1e1o",
+    "t": "Components of GIS: computer system, data, user",
+    "by": "DigiSikshak"
+   }
+  ],
+  "playlist": {
+   "id": "PL425biB-mTSRUyM4_B4AIvh196SO0dIns",
+   "title": "Remote Sensing & GIS full course (Hindi)",
+   "by": "DigiSikshak"
+  }
+ },
+ "ce601": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+    "t": "RCC design lectures: working stress, limit state, beams, slabs, staircase",
+    "by": "Civil Engineering Fanatics"
+   },
+   {
+    "u": 1,
+    "id": "imwRrnY4CMY",
+    "t": "Limit state method of design of RCC structures",
+    "by": "Civil Engineering Fanatics"
+   },
+   {
+    "u": 1,
+    "id": "xw3DGXW6LjQ",
+    "t": "Limit state of collapse IS 456",
+    "by": "Civil Engineering Fanatics"
+   },
+   {
+    "u": 1,
+    "id": "ktdS9B-vfKM",
+    "t": "Loads in RCC design IS 456",
+    "by": "Civil Engineering Fanatics"
+   },
+   {
+    "u": 1,
+    "id": "SLH72SNvl6s",
+    "t": "Design methods of RCC: working stress, ultimate load, limit state",
+    "by": "Civil Engineering Fanatics"
+   },
+   {
+    "u": 2,
+    "id": "c0AVtMMA2CM",
+    "t": "Singly reinforced beam numerical, limit state method",
+    "by": "Civil Engineering Fanatics"
+   },
+   {
+    "u": 3,
+    "id": "HhpHeiromOg",
+    "t": "Design of RCC slabs one-way slab IS 456",
+    "by": "Civil Engineering Fanatics"
+   }
+  ],
+  "playlist": {
+   "id": "PL0_vJux4nrG2DVhrYuHkv0tMauEnbEzwN",
+   "title": "Reinforced Concrete Design (RCC): limit state, beams, shear, bond",
+   "by": "Civil Engineering Fanatics"
+  }
+ },
+ "ce602": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+    "t": "Water supply engineering: water demand, quality standards, treatment",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "zVZ9c6EXfTA",
+    "t": "Introduction to water and waste water engineering",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "MKxacR9JXxw",
+    "t": "Water supply engineering lecture 1",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL1BFC82F3A63B4172",
+   "title": "Water & Wastewater Engineering, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "ce603a": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+    "t": "Engineering hydrology lecture playlist",
+    "by": "Irrigation lectures"
+   },
+   {
+    "u": 1,
+    "id": "Eok9VYfesOk",
+    "t": "Engineering hydrology: the hydrologic cycle",
+    "by": "Irrigation lectures"
+   },
+   {
+    "u": 0,
+    "id": "8U-ptf_1cLE",
+    "t": "Water resource engineering hydrology and irrigation module 1",
+    "by": "Irrigation lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PL9HI1tOu3A0xjbKD9uVb3diy7IAD9X522",
+   "title": "Complete course of irrigation engineering",
+   "by": "Irrigation lectures"
+  }
+ },
+ "ce701": {
+  "videos": [
+   {
+    "u": 1,
+    "id": "PL7aULcvvgJj91k73IT7aZUGojoH53Go64",
+    "t": "Introduction to geotechnical engineering",
+    "by": "APSEd"
+   },
+   {
+    "u": 1,
+    "id": "PL7aULcvvgJj8frE2ef9R3_o50XWWpQRul",
+    "t": "Origin of soil and grain size",
+    "by": "APSEd"
+   },
+   {
+    "u": 1,
+    "id": "PL7aULcvvgJj_pJraKf9RZHzG08vCVjxJX",
+    "t": "Weight-volume relationships",
+    "by": "APSEd"
+   },
+   {
+    "u": 2,
+    "id": "PL7aULcvvgJj_5qER2qVPuRpEKrEZqfN2F",
+    "t": "Plasticity and structure of soil",
+    "by": "APSEd"
+   },
+   {
+    "u": 2,
+    "id": "PL7aULcvvgJj_gL3p29EkQF1BjC1SJwytR",
+    "t": "Classification of soil",
+    "by": "APSEd"
+   },
+   {
+    "u": 3,
+    "id": "PL7aULcvvgJj8Xa2yHLsi0LywH_1y02DnQ",
+    "t": "Soil compaction",
+    "by": "APSEd"
+   },
+   {
+    "u": 3,
+    "id": "PL7aULcvvgJj8PfwvLH-L-JcVGz84MYq8j",
+    "t": "Permeability",
+    "by": "APSEd"
+   },
+   {
+    "u": 5,
+    "id": "PL7aULcvvgJj-W56Yp0W_WpamUlj0chGAN",
+    "t": "Shear strength of soil",
+    "by": "APSEd"
+   }
+  ],
+  "playlist": {
+   "id": "PLSNhedsleX10Y2LsL8eo-qlF6_cu31TR_",
+   "title": "Soil Mechanics lectures",
+   "by": "APSEd"
+  }
+ },
+ "ce702a": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+    "t": "Prestressed concrete lecture series",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "BvsgybgzB2w",
+    "t": "Prestressed concrete design 1 introduction",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "ztiFxoi-O-Y",
+    "t": "Transmission of prestress",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLB50EF6A79D1F8C14",
+   "title": "Prestressed Concrete Structures, Prof. A.K. Sengupta, IIT Madras",
+   "by": "NPTEL"
+  }
+ },
+ "ce702b": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL1BFC82F3A63B4172",
+    "t": "Water and wastewater engineering, IIT Madras",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLYKlNKKQ8QQMI1Gh6TJ_-qOj2Y9_F8PEO",
+    "t": "Wastewater treatment design lectures",
+    "by": "Env Engg lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLZvSSwzLFnRBBIe04q7rB2NSKSk4roAHU",
+   "title": "Wastewater engineering and sewage treatment lectures",
+   "by": "Env Engg lectures"
+  }
+ },
+ "ce801": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+    "t": "Design of steel structures and plastic analysis",
+    "by": "Yogesh Kaushik"
+   },
+   {
+    "u": 1,
+    "id": "mtRR-5fzKo8",
+    "t": "Introduction to design of steel structures",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "2KH-5N84KII",
+    "t": "Design steel structures lecture 1 introduction IS 800",
+    "by": "Education Point Online"
+   }
+  ],
+  "playlist": {
+   "id": "PLg2LVpcRrOF69sEBIUtH2W9xip4VFgGX3",
+   "title": "RGPV Design of Steel Structures (STEEL) B.Tech 8th Sem",
+   "by": "Education Point Online"
+  }
+ },
+ "ce802b": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+    "t": "Foundation engineering, IIT Kharagpur",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "H6_J8LuTa-M",
+    "t": "Shallow foundation",
+    "by": "NPTEL"
+   },
+   {
+    "u": 2,
+    "id": "tLs6dkzBxa0",
+    "t": "Lateral earth pressure theories and retaining walls",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLA4019BB0B0CF6518",
+   "title": "Foundation Engineering, IIT Roorkee",
+   "by": "NPTEL"
+  }
+ },
+ "ce802d": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "c7VNrPZSp-M",
+    "t": "Design of earthquake resistant buildings and IS 1893: seismic effects, general principles",
+    "by": "SISTec"
+   },
+   {
+    "u": 0,
+    "id": "Dcudbipx3OI",
+    "t": "Earthquake resistant design of steel structures",
+    "by": "IIT Roorkee lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLrT-P0eWqLg2pcRxaKufDoB8oB2Ikf4Oj",
+   "title": "EQN-563 Earthquake Resistant Design of Structures (Agrawal and Shrikhande text)",
+   "by": "IIT Roorkee lectures"
+  }
+ },
+ "ce405": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+    "t": "Engineering geology",
+    "by": "Ekeeda"
+   },
+   {
+    "u": 1,
+    "id": "aTVDiRtRook",
+    "t": "Introduction to engineering geology",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "nUj8gE-RvG4",
+    "t": "Internal structure of the earth, geology",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "G2tooKnmCXY",
+    "t": "Scope of geology in civil engineering",
+    "by": "NPTEL"
+   },
+   {
+    "u": 5,
+    "id": "PL425biB-mTSRUyM4_B4AIvh196SO0dIns",
+    "t": "Remote sensing and GIS full course",
+    "by": "DigiSikshak"
+   }
+  ],
+  "playlist": {
+   "id": "PLDF5162B475DD915F",
+   "title": "Engineering Geology, Prof. Debasis Roy, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "ex303": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+    "t": "Electrical measuring instruments: absolute, indicating, recording instruments",
+    "by": "EMI lectures"
+   },
+   {
+    "u": 1,
+    "id": "MEoEQZdB9dI",
+    "t": "Introduction to electrical measuring instrument",
+    "by": "EMI lectures"
+   },
+   {
+    "u": 0,
+    "id": "PLO4TWepMw7gjgNxJJwZIKDrvXfejlNBv-",
+    "t": "Electrical and electronic measurement",
+    "by": "Ekeeda"
+   }
+  ],
+  "playlist": {
+   "id": "PLwAOmydmnlw3zD8_MG2RNvHNqnIUMK-0z",
+   "title": "Electrical Measurements & Instrumentation (Hindi)",
+   "by": "EMI lectures"
+  }
+ },
+ "ex402": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "pBXH1NUr0AQ",
+    "t": "Electrical machines complete course: DC generator construction, EMF equation, transformer",
+    "by": "Electrical machines lectures"
+   },
+   {
+    "u": 0,
+    "id": "Jq6nMgWifHE",
+    "t": "Construction of DC machine",
+    "by": "Electrical machines lectures"
+   },
+   {
+    "u": 0,
+    "id": "gRvYhsdcYo8",
+    "t": "Fundamentals of a DC machine",
+    "by": "Electrical machines lectures"
+   },
+   {
+    "u": 0,
+    "id": "PL59861DBF8EC85491",
+    "t": "Electrical Machines-I, Prof. Debaprasad Kastha, IIT Kharagpur",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLPpCFgQP7QKHUOFYvZhQ6ra5XrU3dN2dD",
+   "title": "DC Machines complete course: fundamentals, motors and generators",
+   "by": "Electrical machines lectures"
+  }
+ },
+ "ex404": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "uy9lZCdkQIM",
+    "t": "Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "bCy62oTr_CQ",
+    "t": "Power systems course intro: generation, transmission and distribution",
+    "by": "Power system lectures"
+   },
+   {
+    "u": 0,
+    "id": "zpgsAqJ9S3c",
+    "t": "Transmission and distribution part 1",
+    "by": "Power system lectures"
+   },
+   {
+    "u": 0,
+    "id": "yRZaqhym5y0",
+    "t": "Power distribution system: radial, ring main, interconnected",
+    "by": "Power system lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PL5TKV1tzb09lqZC86_XuDAdCy5UbEg8d5",
+   "title": "Electric power systems tutorial: generation, transmission, distribution",
+   "by": "Power system lectures"
+  }
+ },
+ "ex501": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+    "t": "AC motors: induction and synchronous motor examples",
+    "by": "Electrical machines lectures"
+   },
+   {
+    "u": 0,
+    "id": "PLPpCFgQP7QKHSJQnSwaigL89gshecycXs",
+    "t": "Synchronous motor complete course",
+    "by": "Electrical machines lectures"
+   },
+   {
+    "u": 0,
+    "id": "1OfjiucgpuE",
+    "t": "Synchronous speed of a 3-phase induction motor",
+    "by": "Electrical machines lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLPpCFgQP7QKFrkYIYaZt0idq7ocZq9AYU",
+   "title": "Synchronous machines complete course",
+   "by": "Electrical machines lectures"
+  }
+ },
+ "ex502": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLA07ACBDE053A8229",
+    "t": "Power electronics, Prof. B.G. Fernandes, IIT Bombay",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLPiW9OGvxN2PUnW9WoNIJbo_2nEdUHuOA",
+    "t": "Power electronic fundamentals: rectifiers, choppers, inverters, AC/AC converters",
+    "by": "Engineering Funda"
+   }
+  ],
+  "playlist": {
+   "id": "PLgwJf8NK-2e5Hnu82T1CYLZ8kbZs4Jx8x",
+   "title": "Power Electronics, Prof. Hitesh Dholakiya",
+   "by": "Engineering Funda"
+  }
+ },
+ "ex503c": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "mh51mAUexK4",
+    "t": "Renewable energy engineering: solar, wind and biomass energy systems",
+    "by": "NPTEL IIT Guwahati"
+   },
+   {
+    "u": 0,
+    "id": "Yl_fAF4BmB8",
+    "t": "Grid connected solar photovoltaic systems",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "yKgKW4K9ILU",
+    "t": "Wind and solar energy conversion systems",
+    "by": "NPTEL"
+   }
+  ]
+ },
+ "ex504a": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLED1B6C0DE8A84B6E",
+    "t": "Industrial drives and power electronics, IISc Bangalore",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLgwJf8NK-2e72_JGv854NPnQnB7NOFRmG",
+   "title": "Power Electronics Applications, Prof. Hitesh Dholakiya",
+   "by": "Engineering Funda"
+  }
+ },
+ "ex601": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+    "t": "Load flow analysis playlist",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+    "t": "Fault analysis playlist: symmetrical and unsymmetrical faults",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLEVP-S4VFKO_QznuoooIl0o4vQeCV3NHe",
+    "t": "Stability analysis playlist",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+    "t": "Economic operation of power system playlist",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "rEyE3NxK8vE",
+    "t": "Load flow studies",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "24m4xnIFj4E",
+    "t": "Unbalanced fault analysis",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "dhmYOIBcwOU",
+    "t": "Transmission line parameters",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PL319A4391E593ADF3",
+   "title": "Power System Analysis, Prof. A.K. Sinha, IIT Kharagpur",
+   "by": "NPTEL"
+  }
+ },
+ "ex603a": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "hDlMxIyUGiM",
+    "t": "Utilization of electrical energy full course",
+    "by": "Electric traction lectures"
+   },
+   {
+    "u": 0,
+    "id": "QnunBV3dwdQ",
+    "t": "Utilization of electrical energy illumination with syllabus overview",
+    "by": "Aakarshak Academy"
+   },
+   {
+    "u": 0,
+    "id": "r8Zb7oUN_ZU",
+    "t": "Electric heating",
+    "by": "Electric traction lectures"
+   },
+   {
+    "u": 0,
+    "id": "VRozKNqFhKI",
+    "t": "Electrical heating complete theory, types and applications",
+    "by": "Electric traction lectures"
+   },
+   {
+    "u": 0,
+    "id": "AmnVa55BMJo",
+    "t": "Utilization of electrical energy one shot",
+    "by": "Electric traction lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLLj_IOzkHLu1r2dWzHF6T9975FxBYdLcd",
+   "title": "Electric traction: all important topics",
+   "by": "Electric traction lectures"
+  }
+ },
+ "ex701": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "G4dex0ZVUhM",
+    "t": "Power system protection: over current relays",
+    "by": "Protection lectures"
+   },
+   {
+    "u": 0,
+    "id": "eCq3NXYul4A",
+    "t": "Switchgear and protection syllabus overview",
+    "by": "Protection lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PL5EF04353762441B8",
+   "title": "Power system protection: protective relays tutorials",
+   "by": "Protection lectures"
+  }
+ },
+ "ex702b": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "XkEKFYiPhDA",
+    "t": "High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "6WmOuK7oVHI",
+    "t": "High voltage DC transmission lecture 3",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "gbu2DzBEAkI",
+    "t": "HVDC transmission disadvantages",
+    "by": "Ekeeda"
+   }
+  ],
+  "playlist": {
+   "id": "PLm_MSClsnwm-uH5g4Nv9pVdahToudi0HU",
+   "title": "High Voltage Direct Current Transmission",
+   "by": "Ekeeda"
+  }
+ },
+ "ex702c": {
+  "videos": [
+   {
+    "u": 1,
+    "id": "0as-VQq9igA",
+    "t": "High voltage engineering course introduction, HV insulation design and testing",
+    "by": "HV lectures"
+   },
+   {
+    "u": 0,
+    "id": "PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+    "t": "High voltage engineering applications course",
+    "by": "HV lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLiE0cr_0IcyT3p0oKloOXYve2qFmBCYbu",
+   "title": "High Voltage Engineering",
+   "by": "HV lectures"
+  }
+ },
+ "ex801": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLA5CA7D35114BA425",
+    "t": "Advanced electric drives, Dr. S.P. Das, IIT Kanpur",
+    "by": "NPTEL"
+   },
+   {
+    "u": 1,
+    "id": "Ub-csHc4VhA",
+    "t": "Electric drive lecture 1",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "8ltC-M-Ve9U",
+    "t": "Electric drives: four quadrant drive and load characteristics, selection of motor",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "96hvtQ8Qlvo",
+    "t": "Induction motor drives",
+    "by": "NPTEL"
+   }
+  ],
+  "playlist": {
+   "id": "PLFW6lRTa1g83sIfVY1p1xGqPGYUmXyahx",
+   "title": "Fundamentals of Electric Drives, IIT Kanpur",
+   "by": "NPTEL"
+  }
+ },
+ "ex802b": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+    "t": "Special electrical machines",
+    "by": "SEM lectures"
+   },
+   {
+    "u": 0,
+    "id": "Qy6mA4TEpyI",
+    "t": "Step motor drives and BLDC drives",
+    "by": "NPTEL"
+   },
+   {
+    "u": 0,
+    "id": "3h5OgRt1auU",
+    "t": "Linear switched reluctance motor SRM",
+    "by": "SEM lectures"
+   },
+   {
+    "u": 0,
+    "id": "bBWJcM5XBLE",
+    "t": "Linear induction motor and linear synchronous motor",
+    "by": "SEM lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PL_mruqjnuVd9ftLVehO6-P_HUCBICeBX3",
+   "title": "Lectures on Special Electrical Machines",
+   "by": "SEM lectures"
+  }
+ },
+ "mt-rm": {
+  "videos": [
+   {
+    "u": 0,
+    "id": "PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+    "t": "Research methodology and IPR full playlist",
+    "by": "RM and IPR lectures"
+   },
+   {
+    "u": 1,
+    "id": "SSvZ5UqhkxY",
+    "t": "Research methodology module 1 all concepts",
+    "by": "RM and IPR lectures"
+   },
+   {
+    "u": 0,
+    "id": "PLrFsz7ebp6wsql8h3WtTC4vEDdPLu2Bqe",
+    "t": "Research methodology lectures: how to conduct sound research",
+    "by": "RM and IPR lectures"
+   }
+  ],
+  "playlist": {
+   "id": "PLwKeZUTD_XirenK_QA9Gq3v-KDbO2s5sL",
+   "title": "Research Methodology & IPR",
+   "by": "RM and IPR lectures"
+  }
  }
 }

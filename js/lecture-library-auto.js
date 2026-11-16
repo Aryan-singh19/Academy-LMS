@@ -21200,5 +21200,24785 @@ window.lectureLibraryAuto = [
   "url": "https://www.youtube.com/playlist?list=PLi0hoi2vOpnSq17hTZhVpIy4HhV7FANix",
   "lectureKey": "me304-u5-t4",
   "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Manufacturing Process: full lecture series",
+  "lecturer": "Manufacturing lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Casting Processes",
+   "Metal Forming",
+   "Sheet Metal Operations",
+   "Welding & Joining",
+   "Powder Metallurgy & Plastics"
+  ],
+  "description": "\"Manufacturing Processes video lectures\" by Manufacturing lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLCroaJeHBTHaeL2vw3l8YZ781Sq7SXdKi",
+  "lectureKey": "me305-auto-playlist"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Sand Casting & Patterns",
+  "unit": 1,
+  "topicId": "me305-u1t1",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Casting Processes",
+  "topics": [
+   "Sand Casting & Patterns"
+  ],
+  "description": "\"Manufacturing process unit 1: casting, its types\" covers Casting Processes.",
+  "url": "https://www.youtube.com/watch?v=O7NEpKoiQVs",
+  "lectureKey": "me305-u1-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Moulding Sand & Gating System",
+  "unit": 1,
+  "topicId": "me305-u1t2",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Casting Processes",
+  "topics": [
+   "Moulding Sand & Gating System"
+  ],
+  "description": "\"Manufacturing process unit 1: casting, its types\" covers Casting Processes.",
+  "url": "https://www.youtube.com/watch?v=O7NEpKoiQVs",
+  "lectureKey": "me305-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Special Casting Processes",
+  "unit": 1,
+  "topicId": "me305-u1t3",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Casting Processes",
+  "topics": [
+   "Special Casting Processes"
+  ],
+  "description": "\"Manufacturing process unit 1: casting, its types\" covers Casting Processes.",
+  "url": "https://www.youtube.com/watch?v=O7NEpKoiQVs",
+  "lectureKey": "me305-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Casting Defects",
+  "unit": 1,
+  "topicId": "me305-u1t4",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Casting Processes",
+  "topics": [
+   "Casting Defects"
+  ],
+  "description": "\"Manufacturing process unit 1: casting, its types\".",
+  "url": "https://www.youtube.com/watch?v=O7NEpKoiQVs",
+  "lectureKey": "me305-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Hot & Cold Working",
+  "unit": 2,
+  "topicId": "me305-u2t1",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Metal Forming",
+  "topics": [
+   "Hot & Cold Working"
+  ],
+  "description": "\"Extrusion, shearing and metallurgy\" covers Metal Forming.",
+  "url": "https://www.youtube.com/watch?v=aUIrR21W4YY",
+  "lectureKey": "me305-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Rolling",
+  "unit": 2,
+  "topicId": "me305-u2t2",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Metal Forming",
+  "topics": [
+   "Rolling"
+  ],
+  "description": "\"Extrusion, shearing and metallurgy\" covers Metal Forming.",
+  "url": "https://www.youtube.com/watch?v=aUIrR21W4YY",
+  "lectureKey": "me305-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Forging",
+  "unit": 2,
+  "topicId": "me305-u2t3",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Metal Forming",
+  "topics": [
+   "Forging"
+  ],
+  "description": "\"Extrusion, shearing and metallurgy\" covers Metal Forming.",
+  "url": "https://www.youtube.com/watch?v=aUIrR21W4YY",
+  "lectureKey": "me305-u2-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Extrusion & Drawing",
+  "unit": 2,
+  "topicId": "me305-u2t4",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Metal Forming",
+  "topics": [
+   "Extrusion & Drawing"
+  ],
+  "description": "\"Extrusion, shearing and metallurgy\".",
+  "url": "https://www.youtube.com/watch?v=aUIrR21W4YY",
+  "lectureKey": "me305-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Shearing Operations",
+  "unit": 3,
+  "topicId": "me305-u3t1",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Sheet Metal Operations",
+  "topics": [
+   "Shearing Operations"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Sheet Metal Operations.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Bending & Deep Drawing",
+  "unit": 3,
+  "topicId": "me305-u3t2",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Sheet Metal Operations",
+  "topics": [
+   "Bending & Deep Drawing"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Sheet Metal Operations.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Press Tools & Presses",
+  "unit": 3,
+  "topicId": "me305-u3t3",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Sheet Metal Operations",
+  "topics": [
+   "Press Tools & Presses"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Sheet Metal Operations.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "High Energy Rate Forming",
+  "unit": 3,
+  "topicId": "me305-u3t4",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Sheet Metal Operations",
+  "topics": [
+   "High Energy Rate Forming"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Sheet Metal Operations.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Arc Welding",
+  "unit": 4,
+  "topicId": "me305-u4t1",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Welding & Joining",
+  "topics": [
+   "Arc Welding"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Welding & Joining.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Gas Welding & Cutting",
+  "unit": 4,
+  "topicId": "me305-u4t2",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Welding & Joining",
+  "topics": [
+   "Gas Welding & Cutting"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Welding & Joining.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "TIG, MIG & Resistance Welding",
+  "unit": 4,
+  "topicId": "me305-u4t3",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Welding & Joining",
+  "topics": [
+   "TIG, MIG & Resistance Welding"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Welding & Joining.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Welding Defects & Soldering",
+  "unit": 4,
+  "topicId": "me305-u4t4",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Welding & Joining",
+  "topics": [
+   "Welding Defects & Soldering"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Welding & Joining.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Powder Production & Compaction",
+  "unit": 5,
+  "topicId": "me305-u5t1",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Powder Metallurgy & Plastics",
+  "topics": [
+   "Powder Production & Compaction"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Powder Metallurgy & Plastics.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Sintering & Applications",
+  "unit": 5,
+  "topicId": "me305-u5t2",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Powder Metallurgy & Plastics",
+  "topics": [
+   "Sintering & Applications"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Powder Metallurgy & Plastics.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Plastic Moulding Processes",
+  "unit": 5,
+  "topicId": "me305-u5t3",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Powder Metallurgy & Plastics",
+  "topics": [
+   "Plastic Moulding Processes"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Powder Metallurgy & Plastics.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "me305",
+  "subjectCode": "ME-305",
+  "subjectLabel": "Manufacturing Process",
+  "title": "Extrusion & Thermoforming of Plastics",
+  "unit": 5,
+  "topicId": "me305-u5t4",
+  "lecturer": "Manufacturing lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Powder Metallurgy & Plastics",
+  "topics": [
+   "Extrusion & Thermoforming of Plastics"
+  ],
+  "description": "\"Introduction to manufacturing process\" covers Powder Metallurgy & Plastics.",
+  "url": "https://www.youtube.com/watch?v=BCDYqEEo3JA",
+  "lectureKey": "me305-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Instrumentation & Control: full lecture series",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Measurement Systems",
+   "Displacement, Force & Torque Measurement",
+   "Pressure & Flow Measurement",
+   "Temperature Measurement",
+   "Control Systems"
+  ],
+  "description": "\"ME402 Instrumentation & Control (RGPV scheme)\" by AB Classes.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P-YzHeZWMaPpjGMAjRCYqkI",
+  "lectureKey": "me402-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Generalised Measurement System",
+  "unit": 1,
+  "topicId": "me402-u1t1",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 1: Measurement Systems",
+  "topics": [
+   "Generalised Measurement System"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Measurement Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Static Characteristics",
+  "unit": 1,
+  "topicId": "me402-u1t2",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 1: Measurement Systems",
+  "topics": [
+   "Static Characteristics"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Measurement Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Dynamic Characteristics",
+  "unit": 1,
+  "topicId": "me402-u1t3",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 1: Measurement Systems",
+  "topics": [
+   "Dynamic Characteristics"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Measurement Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Errors & Uncertainty",
+  "unit": 1,
+  "topicId": "me402-u1t4",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 1: Measurement Systems",
+  "topics": [
+   "Errors & Uncertainty"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Measurement Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Displacement Measurement",
+  "unit": 2,
+  "topicId": "me402-u2t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Displacement, Force & Torque Measurement",
+  "topics": [
+   "Displacement Measurement"
+  ],
+  "description": "\"Mechanical measurements and control\".",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm-neKtn3L0qndw95ukSfUlZ",
+  "lectureKey": "me402-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Strain Measurement",
+  "unit": 2,
+  "topicId": "me402-u2t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Displacement, Force & Torque Measurement",
+  "topics": [
+   "Strain Measurement"
+  ],
+  "description": "\"Mechanical measurements and control\".",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm-neKtn3L0qndw95ukSfUlZ",
+  "lectureKey": "me402-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Force Measurement",
+  "unit": 2,
+  "topicId": "me402-u2t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Displacement, Force & Torque Measurement",
+  "topics": [
+   "Force Measurement"
+  ],
+  "description": "\"Mechanical measurements and control\".",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm-neKtn3L0qndw95ukSfUlZ",
+  "lectureKey": "me402-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Torque & Speed Measurement",
+  "unit": 2,
+  "topicId": "me402-u2t4",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 2: Displacement, Force & Torque Measurement",
+  "topics": [
+   "Torque & Speed Measurement"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Displacement, Force & Torque Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Pressure Gauges",
+  "unit": 3,
+  "topicId": "me402-u3t1",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 3: Pressure & Flow Measurement",
+  "topics": [
+   "Pressure Gauges"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Pressure & Flow Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Low Pressure Measurement",
+  "unit": 3,
+  "topicId": "me402-u3t2",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 3: Pressure & Flow Measurement",
+  "topics": [
+   "Low Pressure Measurement"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Pressure & Flow Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Obstruction Flow Meters",
+  "unit": 3,
+  "topicId": "me402-u3t3",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 3: Pressure & Flow Measurement",
+  "topics": [
+   "Obstruction Flow Meters"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Pressure & Flow Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Other Flow Meters",
+  "unit": 3,
+  "topicId": "me402-u3t4",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 3: Pressure & Flow Measurement",
+  "topics": [
+   "Other Flow Meters"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Pressure & Flow Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Expansion Thermometers",
+  "unit": 4,
+  "topicId": "me402-u4t1",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 4: Temperature Measurement",
+  "topics": [
+   "Expansion Thermometers"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Temperature Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Thermocouples",
+  "unit": 4,
+  "topicId": "me402-u4t2",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 4: Temperature Measurement",
+  "topics": [
+   "Thermocouples"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Temperature Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Resistance Thermometers",
+  "unit": 4,
+  "topicId": "me402-u4t3",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 4: Temperature Measurement",
+  "topics": [
+   "Resistance Thermometers"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Temperature Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Pyrometers",
+  "unit": 4,
+  "topicId": "me402-u4t4",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 4: Temperature Measurement",
+  "topics": [
+   "Pyrometers"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Temperature Measurement.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Open & Closed Loop Control",
+  "unit": 5,
+  "topicId": "me402-u5t1",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 5: Control Systems",
+  "topics": [
+   "Open & Closed Loop Control"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Control Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Transfer Function & Block Diagrams",
+  "unit": 5,
+  "topicId": "me402-u5t2",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 5: Control Systems",
+  "topics": [
+   "Transfer Function & Block Diagrams"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Control Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Controller Modes",
+  "unit": 5,
+  "topicId": "me402-u5t3",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 5: Control Systems",
+  "topics": [
+   "Controller Modes"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Control Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me402",
+  "subjectCode": "ME-402",
+  "subjectLabel": "Instrumentation & Control",
+  "title": "Hydraulic & Pneumatic Control",
+  "unit": 5,
+  "topicId": "me402-u5t4",
+  "lecturer": "Education Point Online",
+  "type": "video",
+  "typeLabel": "Unit 5: Control Systems",
+  "topics": [
+   "Hydraulic & Pneumatic Control"
+  ],
+  "description": "\"RGPV Instrumentation and Control most important questions\" covers Control Systems.",
+  "url": "https://www.youtube.com/watch?v=Orjc5-N04YI",
+  "lectureKey": "me402-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Theory of Machines: full lecture series",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Mechanisms",
+   "Velocity & Acceleration Analysis",
+   "Cams & Gears",
+   "Gear Trains & Friction Drives",
+   "Governors & Gyroscope"
+  ],
+  "description": "\"Theory of Machine lectures playlist\" by TOM lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLYRGB44zNZWVibVLmWANp-7obQzOhJLRt",
+  "lectureKey": "me403-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Kinematic Links & Pairs",
+  "unit": 1,
+  "topicId": "me403-u1t1",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Mechanisms",
+  "topics": [
+   "Kinematic Links & Pairs"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Mechanisms.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Degrees of Freedom",
+  "unit": 1,
+  "topicId": "me403-u1t2",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Mechanisms",
+  "topics": [
+   "Degrees of Freedom"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Mechanisms.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Four-bar Chain & Inversions",
+  "unit": 1,
+  "topicId": "me403-u1t3",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Mechanisms",
+  "topics": [
+   "Four-bar Chain & Inversions"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Mechanisms.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Slider-Crank & Double Slider",
+  "unit": 1,
+  "topicId": "me403-u1t4",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Mechanisms",
+  "topics": [
+   "Slider-Crank & Double Slider"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Mechanisms.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Relative Velocity Method",
+  "unit": 2,
+  "topicId": "me403-u2t1",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Velocity & Acceleration Analysis",
+  "topics": [
+   "Relative Velocity Method"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Velocity & Acceleration Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Instantaneous Centre Method",
+  "unit": 2,
+  "topicId": "me403-u2t2",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Velocity & Acceleration Analysis",
+  "topics": [
+   "Instantaneous Centre Method"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Velocity & Acceleration Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Acceleration Analysis",
+  "unit": 2,
+  "topicId": "me403-u2t3",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Velocity & Acceleration Analysis",
+  "topics": [
+   "Acceleration Analysis"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Velocity & Acceleration Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Klein's Construction",
+  "unit": 2,
+  "topicId": "me403-u2t4",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Velocity & Acceleration Analysis",
+  "topics": [
+   "Klein's Construction"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Velocity & Acceleration Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Cams & Followers",
+  "unit": 3,
+  "topicId": "me403-u3t1",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Cams & Gears",
+  "topics": [
+   "Cams & Followers"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Cams & Gears.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Follower Motions",
+  "unit": 3,
+  "topicId": "me403-u3t2",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Cams & Gears",
+  "topics": [
+   "Follower Motions"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Cams & Gears.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Gear Terminology & Law of Gearing",
+  "unit": 3,
+  "topicId": "me403-u3t3",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Cams & Gears",
+  "topics": [
+   "Gear Terminology & Law of Gearing"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Cams & Gears.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Interference & Contact Ratio",
+  "unit": 3,
+  "topicId": "me403-u3t4",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Cams & Gears",
+  "topics": [
+   "Interference & Contact Ratio"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Cams & Gears.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Simple & Compound Gear Trains",
+  "unit": 4,
+  "topicId": "me403-u4t1",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gear Trains & Friction Drives",
+  "topics": [
+   "Simple & Compound Gear Trains"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\".",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Epicyclic Gear Trains",
+  "unit": 4,
+  "topicId": "me403-u4t2",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gear Trains & Friction Drives",
+  "topics": [
+   "Epicyclic Gear Trains"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\".",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Belt & Rope Drives",
+  "unit": 4,
+  "topicId": "me403-u4t3",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gear Trains & Friction Drives",
+  "topics": [
+   "Belt & Rope Drives"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Gear Trains & Friction Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Friction, Clutches & Brakes",
+  "unit": 4,
+  "topicId": "me403-u4t4",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gear Trains & Friction Drives",
+  "topics": [
+   "Friction, Clutches & Brakes"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Gear Trains & Friction Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Watt & Porter Governors",
+  "unit": 5,
+  "topicId": "me403-u5t1",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Governors & Gyroscope",
+  "topics": [
+   "Watt & Porter Governors"
+  ],
+  "description": "\"Governor: watt, porter, proell, hartnell governors\".",
+  "url": "https://www.youtube.com/playlist?list=PLYRGB44zNZWX45eXHZmMEuR7wkuhSlMKz",
+  "lectureKey": "me403-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Hartnell Governor & Characteristics",
+  "unit": 5,
+  "topicId": "me403-u5t2",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Governors & Gyroscope",
+  "topics": [
+   "Hartnell Governor & Characteristics"
+  ],
+  "description": "\"Governor: watt, porter, proell, hartnell governors\".",
+  "url": "https://www.youtube.com/playlist?list=PLYRGB44zNZWX45eXHZmMEuR7wkuhSlMKz",
+  "lectureKey": "me403-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Governor Effort & Power",
+  "unit": 5,
+  "topicId": "me403-u5t3",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Governors & Gyroscope",
+  "topics": [
+   "Governor Effort & Power"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Governors & Gyroscope.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me403",
+  "subjectCode": "ME-403",
+  "subjectLabel": "Theory of Machines",
+  "title": "Gyroscopic Effects",
+  "unit": 5,
+  "topicId": "me403-u5t4",
+  "lecturer": "TOM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Governors & Gyroscope",
+  "topics": [
+   "Gyroscopic Effects"
+  ],
+  "description": "\"Theory of Machines lectures: brakes, gear train, dynamometer, clutch\" covers Governors & Gyroscope.",
+  "url": "https://www.youtube.com/playlist?list=PLv2JOZ8f_S4SPMa3ndALrPxfv5Mq7KlPC",
+  "lectureKey": "me403-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Fluid Mechanics: full lecture series",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Fluid Properties & Statics",
+   "Fluid Kinematics",
+   "Fluid Dynamics",
+   "Viscous Flow & Pipe Flow",
+   "Boundary Layer & Dimensional Analysis"
+  ],
+  "description": "\"Fluid Mechanics (Hindi)\" by Clari Concepts.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhMMDSfsvL67nTzrT7q-38S",
+  "lectureKey": "me404-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Properties of Fluids",
+  "unit": 1,
+  "topicId": "me404-u1t1",
+  "lecturer": "AKME Academy",
+  "type": "video",
+  "typeLabel": "Unit 1: Fluid Properties & Statics",
+  "topics": [
+   "Properties of Fluids"
+  ],
+  "description": "\"Properties of fluid, capillarity\".",
+  "url": "https://www.youtube.com/watch?v=Yi0NQiaio5c",
+  "lectureKey": "me404-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Pressure & Its Measurement",
+  "unit": 1,
+  "topicId": "me404-u1t2",
+  "lecturer": "Clari Concepts",
+  "type": "video",
+  "typeLabel": "Unit 1: Fluid Properties & Statics",
+  "topics": [
+   "Pressure & Its Measurement"
+  ],
+  "description": "\"Introduction to fluid mechanics and its significance\" covers Fluid Properties & Statics.",
+  "url": "https://www.youtube.com/watch?v=Bxbz5lVlG1E",
+  "lectureKey": "me404-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Hydrostatic Forces",
+  "unit": 1,
+  "topicId": "me404-u1t3",
+  "lecturer": "Clari Concepts",
+  "type": "video",
+  "typeLabel": "Unit 1: Fluid Properties & Statics",
+  "topics": [
+   "Hydrostatic Forces"
+  ],
+  "description": "\"Introduction to fluid mechanics and its significance\" covers Fluid Properties & Statics.",
+  "url": "https://www.youtube.com/watch?v=Bxbz5lVlG1E",
+  "lectureKey": "me404-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Buoyancy & Stability",
+  "unit": 1,
+  "topicId": "me404-u1t4",
+  "lecturer": "Clari Concepts",
+  "type": "video",
+  "typeLabel": "Unit 1: Fluid Properties & Statics",
+  "topics": [
+   "Buoyancy & Stability"
+  ],
+  "description": "\"Introduction to fluid mechanics and its significance\" covers Fluid Properties & Statics.",
+  "url": "https://www.youtube.com/watch?v=Bxbz5lVlG1E",
+  "lectureKey": "me404-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Types of Flow",
+  "unit": 2,
+  "topicId": "me404-u2t1",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fluid Kinematics",
+  "topics": [
+   "Types of Flow"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Kinematics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Streamlines & Continuity",
+  "unit": 2,
+  "topicId": "me404-u2t2",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fluid Kinematics",
+  "topics": [
+   "Streamlines & Continuity"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Kinematics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Velocity Potential & Stream Function",
+  "unit": 2,
+  "topicId": "me404-u2t3",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fluid Kinematics",
+  "topics": [
+   "Velocity Potential & Stream Function"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Kinematics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Rotation & Vorticity",
+  "unit": 2,
+  "topicId": "me404-u2t4",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fluid Kinematics",
+  "topics": [
+   "Rotation & Vorticity"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Kinematics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Euler's & Bernoulli's Equations",
+  "unit": 3,
+  "topicId": "me404-u3t1",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Fluid Dynamics",
+  "topics": [
+   "Euler's & Bernoulli's Equations"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Flow Measurement Devices",
+  "unit": 3,
+  "topicId": "me404-u3t2",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Fluid Dynamics",
+  "topics": [
+   "Flow Measurement Devices"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Momentum Equation",
+  "unit": 3,
+  "topicId": "me404-u3t3",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Fluid Dynamics",
+  "topics": [
+   "Momentum Equation"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Notches & Weirs",
+  "unit": 3,
+  "topicId": "me404-u3t4",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Fluid Dynamics",
+  "topics": [
+   "Notches & Weirs"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Fluid Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Laminar Flow in Pipes",
+  "unit": 4,
+  "topicId": "me404-u4t1",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Viscous Flow & Pipe Flow",
+  "topics": [
+   "Laminar Flow in Pipes"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Viscous Flow & Pipe Flow.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Turbulent Flow & Friction",
+  "unit": 4,
+  "topicId": "me404-u4t2",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Viscous Flow & Pipe Flow",
+  "topics": [
+   "Turbulent Flow & Friction"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Viscous Flow & Pipe Flow.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Minor Losses & Pipe Networks",
+  "unit": 4,
+  "topicId": "me404-u4t3",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Viscous Flow & Pipe Flow",
+  "topics": [
+   "Minor Losses & Pipe Networks"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Viscous Flow & Pipe Flow.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Water Hammer",
+  "unit": 4,
+  "topicId": "me404-u4t4",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Viscous Flow & Pipe Flow",
+  "topics": [
+   "Water Hammer"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Viscous Flow & Pipe Flow.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Boundary Layer Concept",
+  "unit": 5,
+  "topicId": "me404-u5t1",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Boundary Layer & Dimensional Analysis",
+  "topics": [
+   "Boundary Layer Concept"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Boundary Layer & Dimensional Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Flow Separation & Drag",
+  "unit": 5,
+  "topicId": "me404-u5t2",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Boundary Layer & Dimensional Analysis",
+  "topics": [
+   "Flow Separation & Drag"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Boundary Layer & Dimensional Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Dimensional Analysis",
+  "unit": 5,
+  "topicId": "me404-u5t3",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Boundary Layer & Dimensional Analysis",
+  "topics": [
+   "Dimensional Analysis"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Boundary Layer & Dimensional Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "me404",
+  "subjectCode": "ME-404",
+  "subjectLabel": "Fluid Mechanics",
+  "title": "Model Analysis & Similitude",
+  "unit": 5,
+  "topicId": "me404-u5t4",
+  "lecturer": "Clari Concepts",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Boundary Layer & Dimensional Analysis",
+  "topics": [
+   "Model Analysis & Similitude"
+  ],
+  "description": "\"Fluid mechanics and hydraulic machines (Hindi)\" covers Boundary Layer & Dimensional Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLOKNrldi7ClhBBFuL8LCxJAlHBwW_P4Zx",
+  "lectureKey": "me404-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Internal Combustion Engines: full lecture series",
+  "lecturer": "IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "IC Engine Fundamentals",
+   "Fuel Supply Systems",
+   "Combustion",
+   "Engine Performance & Testing",
+   "Lubrication, Cooling & Emissions"
+  ],
+  "description": "\"Internal Combustion Engines, Prof. Sameer Khandekar, IIT Kanpur\" by IIT Kanpur.",
+  "url": "https://www.youtube.com/playlist?list=PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt",
+  "lectureKey": "me501-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Classification of IC Engines",
+  "unit": 1,
+  "topicId": "me501-u1t1",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 1: IC Engine Fundamentals",
+  "topics": [
+   "Classification of IC Engines"
+  ],
+  "description": "\"IC engines L-2 engine components\".",
+  "url": "https://www.youtube.com/watch?v=z7x3UAGRjgU",
+  "lectureKey": "me501-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Engine Components & Terminology",
+  "unit": 1,
+  "topicId": "me501-u1t2",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 1: IC Engine Fundamentals",
+  "topics": [
+   "Engine Components & Terminology"
+  ],
+  "description": "\"IC engines L-2 engine components\".",
+  "url": "https://www.youtube.com/watch?v=z7x3UAGRjgU",
+  "lectureKey": "me501-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Valve Timing Diagram",
+  "unit": 1,
+  "topicId": "me501-u1t3",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 1: IC Engine Fundamentals",
+  "topics": [
+   "Valve Timing Diagram"
+  ],
+  "description": "\"IC engines L-2 engine components\" covers IC Engine Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=z7x3UAGRjgU",
+  "lectureKey": "me501-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Fuel-air & Actual Cycles",
+  "unit": 1,
+  "topicId": "me501-u1t4",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 1: IC Engine Fundamentals",
+  "topics": [
+   "Fuel-air & Actual Cycles"
+  ],
+  "description": "\"IC engines L-2 engine components\" covers IC Engine Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=z7x3UAGRjgU",
+  "lectureKey": "me501-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Carburetion",
+  "unit": 2,
+  "topicId": "me501-u2t1",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 2: Fuel Supply Systems",
+  "topics": [
+   "Carburetion"
+  ],
+  "description": "\"Otto cycle, two stroke engine layout and working\" covers Fuel Supply Systems.",
+  "url": "https://www.youtube.com/watch?v=3rXIC1zbw2o",
+  "lectureKey": "me501-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Petrol Injection",
+  "unit": 2,
+  "topicId": "me501-u2t2",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 2: Fuel Supply Systems",
+  "topics": [
+   "Petrol Injection"
+  ],
+  "description": "\"Otto cycle, two stroke engine layout and working\" covers Fuel Supply Systems.",
+  "url": "https://www.youtube.com/watch?v=3rXIC1zbw2o",
+  "lectureKey": "me501-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Diesel Injection",
+  "unit": 2,
+  "topicId": "me501-u2t3",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 2: Fuel Supply Systems",
+  "topics": [
+   "Diesel Injection"
+  ],
+  "description": "\"Otto cycle, two stroke engine layout and working\" covers Fuel Supply Systems.",
+  "url": "https://www.youtube.com/watch?v=3rXIC1zbw2o",
+  "lectureKey": "me501-u2-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Ignition Systems",
+  "unit": 2,
+  "topicId": "me501-u2t4",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 2: Fuel Supply Systems",
+  "topics": [
+   "Ignition Systems"
+  ],
+  "description": "\"Otto cycle, two stroke engine layout and working\" covers Fuel Supply Systems.",
+  "url": "https://www.youtube.com/watch?v=3rXIC1zbw2o",
+  "lectureKey": "me501-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Combustion in SI Engines",
+  "unit": 3,
+  "topicId": "me501-u3t1",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 3: Combustion",
+  "topics": [
+   "Combustion in SI Engines"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\".",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Combustion in CI Engines",
+  "unit": 3,
+  "topicId": "me501-u3t2",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 3: Combustion",
+  "topics": [
+   "Combustion in CI Engines"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\".",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Fuel Ratings",
+  "unit": 3,
+  "topicId": "me501-u3t3",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 3: Combustion",
+  "topics": [
+   "Fuel Ratings"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Combustion.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Combustion Chamber Design",
+  "unit": 3,
+  "topicId": "me501-u3t4",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 3: Combustion",
+  "topics": [
+   "Combustion Chamber Design"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Combustion.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Performance Parameters",
+  "unit": 4,
+  "topicId": "me501-u4t1",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 4: Engine Performance & Testing",
+  "topics": [
+   "Performance Parameters"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Engine Performance & Testing.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Fuel Consumption & Efficiency",
+  "unit": 4,
+  "topicId": "me501-u4t2",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 4: Engine Performance & Testing",
+  "topics": [
+   "Fuel Consumption & Efficiency"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Engine Performance & Testing.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Engine Testing",
+  "unit": 4,
+  "topicId": "me501-u4t3",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 4: Engine Performance & Testing",
+  "topics": [
+   "Engine Testing"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\".",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Supercharging & Turbocharging",
+  "unit": 4,
+  "topicId": "me501-u4t4",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 4: Engine Performance & Testing",
+  "topics": [
+   "Supercharging & Turbocharging"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Engine Performance & Testing.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Lubrication Systems",
+  "unit": 5,
+  "topicId": "me501-u5t1",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 5: Lubrication, Cooling & Emissions",
+  "topics": [
+   "Lubrication Systems"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Lubrication, Cooling & Emissions.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Cooling Systems",
+  "unit": 5,
+  "topicId": "me501-u5t2",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 5: Lubrication, Cooling & Emissions",
+  "topics": [
+   "Cooling Systems"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Lubrication, Cooling & Emissions.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Engine Emissions",
+  "unit": 5,
+  "topicId": "me501-u5t3",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 5: Lubrication, Cooling & Emissions",
+  "topics": [
+   "Engine Emissions"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\".",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me501",
+  "subjectCode": "ME-501",
+  "subjectLabel": "Internal Combustion Engines",
+  "title": "Emission Control",
+  "unit": 5,
+  "topicId": "me501-u5t4",
+  "lecturer": "Vinod Datusliya",
+  "type": "video",
+  "typeLabel": "Unit 5: Lubrication, Cooling & Emissions",
+  "topics": [
+   "Emission Control"
+  ],
+  "description": "\"Internal combustion engines complete course L-1\" covers Lubrication, Cooling & Emissions.",
+  "url": "https://www.youtube.com/watch?v=rch4VLHsx0w",
+  "lectureKey": "me501-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Mechanical Vibrations: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Fundamentals of Vibration",
+   "Undamped Free Vibration",
+   "Damped & Forced Vibration",
+   "Multi-degree of Freedom Systems",
+   "Vibration Measurement & Noise"
+  ],
+  "description": "\"Mechanical Vibrations, IIT Guwahati\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLAC668A0566953FB5",
+  "lectureKey": "me502-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Vibration Basics",
+  "unit": 1,
+  "topicId": "me502-u1t1",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Vibration",
+  "topics": [
+   "Vibration Basics"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\".",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Simple Harmonic Motion",
+  "unit": 1,
+  "topicId": "me502-u1t2",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Vibration",
+  "topics": [
+   "Simple Harmonic Motion"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Fundamentals of Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Elements of Vibrating Systems",
+  "unit": 1,
+  "topicId": "me502-u1t3",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Vibration",
+  "topics": [
+   "Elements of Vibrating Systems"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Fundamentals of Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Harmonic Analysis",
+  "unit": 1,
+  "topicId": "me502-u1t4",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Vibration",
+  "topics": [
+   "Harmonic Analysis"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Fundamentals of Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Natural Frequency",
+  "unit": 2,
+  "topicId": "me502-u2t1",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Undamped Free Vibration",
+  "topics": [
+   "Natural Frequency"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Undamped Free Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Energy & Rayleigh's Methods",
+  "unit": 2,
+  "topicId": "me502-u2t2",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Undamped Free Vibration",
+  "topics": [
+   "Energy & Rayleigh's Methods"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Undamped Free Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Torsional Vibration",
+  "unit": 2,
+  "topicId": "me502-u2t3",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Undamped Free Vibration",
+  "topics": [
+   "Torsional Vibration"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\".",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Transverse Vibration & Whirling",
+  "unit": 2,
+  "topicId": "me502-u2t4",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Undamped Free Vibration",
+  "topics": [
+   "Transverse Vibration & Whirling"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Undamped Free Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Damped Free Vibration",
+  "unit": 3,
+  "topicId": "me502-u3t1",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damped & Forced Vibration",
+  "topics": [
+   "Damped Free Vibration"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Damped & Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Forced Vibration & Resonance",
+  "unit": 3,
+  "topicId": "me502-u3t2",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damped & Forced Vibration",
+  "topics": [
+   "Forced Vibration & Resonance"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Damped & Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Rotating & Reciprocating Unbalance",
+  "unit": 3,
+  "topicId": "me502-u3t3",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damped & Forced Vibration",
+  "topics": [
+   "Rotating & Reciprocating Unbalance"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Damped & Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Vibration Isolation & Transmissibility",
+  "unit": 3,
+  "topicId": "me502-u3t4",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damped & Forced Vibration",
+  "topics": [
+   "Vibration Isolation & Transmissibility"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Damped & Forced Vibration.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Two-degree of Freedom Systems",
+  "unit": 4,
+  "topicId": "me502-u4t1",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multi-degree of Freedom Systems",
+  "topics": [
+   "Two-degree of Freedom Systems"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Multi-degree of Freedom Systems.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Vibration Absorber",
+  "unit": 4,
+  "topicId": "me502-u4t2",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multi-degree of Freedom Systems",
+  "topics": [
+   "Vibration Absorber"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\".",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Holzer's Method",
+  "unit": 4,
+  "topicId": "me502-u4t3",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multi-degree of Freedom Systems",
+  "topics": [
+   "Holzer's Method"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Multi-degree of Freedom Systems.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Matrix Methods",
+  "unit": 4,
+  "topicId": "me502-u4t4",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Multi-degree of Freedom Systems",
+  "topics": [
+   "Matrix Methods"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Multi-degree of Freedom Systems.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Vibration Measuring Instruments",
+  "unit": 5,
+  "topicId": "me502-u5t1",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Vibration Measurement & Noise",
+  "topics": [
+   "Vibration Measuring Instruments"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Vibration Measurement & Noise.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Condition Monitoring",
+  "unit": 5,
+  "topicId": "me502-u5t2",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Vibration Measurement & Noise",
+  "topics": [
+   "Condition Monitoring"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Vibration Measurement & Noise.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Fundamentals of Noise",
+  "unit": 5,
+  "topicId": "me502-u5t3",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Vibration Measurement & Noise",
+  "topics": [
+   "Fundamentals of Noise"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Vibration Measurement & Noise.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me502",
+  "subjectCode": "ME-502",
+  "subjectLabel": "Mechanical Vibrations",
+  "title": "Noise Control",
+  "unit": 5,
+  "topicId": "me502-u5t4",
+  "lecturer": "Vibration lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Vibration Measurement & Noise",
+  "topics": [
+   "Noise Control"
+  ],
+  "description": "\"Video lectures on mechanical vibrations (V.P. Singh text)\" covers Vibration Measurement & Noise.",
+  "url": "https://www.youtube.com/playlist?list=PL5KGb23FFL8coxRw9EkLaCuvL8FX7oE2h",
+  "lectureKey": "me502-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Mechatronics: full lecture series",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction to Mechatronics",
+   "Sensors & Transducers",
+   "Signal Conditioning & Data Acquisition",
+   "Actuators",
+   "Controllers & PLC"
+  ],
+  "description": "\"Mechatronics lectures\" by Mechatronics lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLjQMEOXj4i18_33ra0WN8m5h6SH17yBGZ",
+  "lectureKey": "me503-mt-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Mechatronics Concept",
+  "unit": 1,
+  "topicId": "me503-mt-u1t1",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Mechatronics",
+  "topics": [
+   "Mechatronics Concept"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\".",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Measurement Systems",
+  "unit": 1,
+  "topicId": "me503-mt-u1t2",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Mechatronics",
+  "topics": [
+   "Measurement Systems"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Introduction to Mechatronics.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Control Systems in Mechatronics",
+  "unit": 1,
+  "topicId": "me503-mt-u1t3",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Mechatronics",
+  "topics": [
+   "Control Systems in Mechatronics"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Introduction to Mechatronics.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Design Process",
+  "unit": 1,
+  "topicId": "me503-mt-u1t4",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Mechatronics",
+  "topics": [
+   "Design Process"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Introduction to Mechatronics.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Displacement & Position Sensors",
+  "unit": 2,
+  "topicId": "me503-mt-u2t1",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Transducers",
+  "topics": [
+   "Displacement & Position Sensors"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Sensors & Transducers.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Proximity & Velocity Sensors",
+  "unit": 2,
+  "topicId": "me503-mt-u2t2",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Transducers",
+  "topics": [
+   "Proximity & Velocity Sensors"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Sensors & Transducers.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Force, Pressure & Temperature Sensors",
+  "unit": 2,
+  "topicId": "me503-mt-u2t3",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Transducers",
+  "topics": [
+   "Force, Pressure & Temperature Sensors"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Sensors & Transducers.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Selection of Sensors",
+  "unit": 2,
+  "topicId": "me503-mt-u2t4",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Transducers",
+  "topics": [
+   "Selection of Sensors"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\".",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Operational Amplifier Circuits",
+  "unit": 3,
+  "topicId": "me503-mt-u3t1",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Signal Conditioning & Data Acquisition",
+  "topics": [
+   "Operational Amplifier Circuits"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Signal Conditioning & Data Acquisition.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Filtering & Protection",
+  "unit": 3,
+  "topicId": "me503-mt-u3t2",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Signal Conditioning & Data Acquisition",
+  "topics": [
+   "Filtering & Protection"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Signal Conditioning & Data Acquisition.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "ADC & DAC",
+  "unit": 3,
+  "topicId": "me503-mt-u3t3",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Signal Conditioning & Data Acquisition",
+  "topics": [
+   "ADC & DAC"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Signal Conditioning & Data Acquisition.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Data Acquisition Systems",
+  "unit": 3,
+  "topicId": "me503-mt-u3t4",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Signal Conditioning & Data Acquisition",
+  "topics": [
+   "Data Acquisition Systems"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Signal Conditioning & Data Acquisition.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Electrical Actuators",
+  "unit": 4,
+  "topicId": "me503-mt-u4t1",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Actuators",
+  "topics": [
+   "Electrical Actuators"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\".",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Hydraulic & Pneumatic Actuators",
+  "unit": 4,
+  "topicId": "me503-mt-u4t2",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Actuators",
+  "topics": [
+   "Hydraulic & Pneumatic Actuators"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Actuators.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Mechanical Actuation Systems",
+  "unit": 4,
+  "topicId": "me503-mt-u4t3",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Actuators",
+  "topics": [
+   "Mechanical Actuation Systems"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Actuators.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Solenoids & Smart Actuators",
+  "unit": 4,
+  "topicId": "me503-mt-u4t4",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Actuators",
+  "topics": [
+   "Solenoids & Smart Actuators"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Actuators.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Microcontrollers in Mechatronics",
+  "unit": 5,
+  "topicId": "me503-mt-u5t1",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Controllers & PLC",
+  "topics": [
+   "Microcontrollers in Mechatronics"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\".",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Programmable Logic Controllers",
+  "unit": 5,
+  "topicId": "me503-mt-u5t2",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Controllers & PLC",
+  "topics": [
+   "Programmable Logic Controllers"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Controllers & PLC.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Ladder Logic Programming",
+  "unit": 5,
+  "topicId": "me503-mt-u5t3",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Controllers & PLC",
+  "topics": [
+   "Ladder Logic Programming"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Controllers & PLC.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "me503-mt",
+  "subjectCode": "ME-503(A)",
+  "subjectLabel": "Mechatronics",
+  "title": "Mechatronic System Case Studies",
+  "unit": 5,
+  "topicId": "me503-mt-u5t4",
+  "lecturer": "Mechatronics lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Controllers & PLC",
+  "topics": [
+   "Mechatronic System Case Studies"
+  ],
+  "description": "\"Mechatronics lectures: sensors, actuators, controllers\" covers Controllers & PLC.",
+  "url": "https://www.youtube.com/playlist?list=PLrFsz7ebp6wvQGO7ppRsWainWQTx64yBl",
+  "lectureKey": "me503-mt-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Finite Element Method: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction to FEM",
+   "One-dimensional Elements",
+   "Two-dimensional Elements",
+   "Isoparametric Formulation & Integration",
+   "Applications"
+  ],
+  "description": "\"Introduction to Finite Element Method, Dr. R. Krishnakumar, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJRjnZA9oryBmDdUNe7lbnB0",
+  "lectureKey": "me504-fem-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Basics of FEM",
+  "unit": 1,
+  "topicId": "me504-fem-u1t1",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to FEM",
+  "topics": [
+   "Basics of FEM"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Introduction to FEM.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Steps in FEM",
+  "unit": 1,
+  "topicId": "me504-fem-u1t2",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to FEM",
+  "topics": [
+   "Steps in FEM"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Introduction to FEM.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Variational Methods",
+  "unit": 1,
+  "topicId": "me504-fem-u1t3",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to FEM",
+  "topics": [
+   "Variational Methods"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\".",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Weighted Residual Methods",
+  "unit": 1,
+  "topicId": "me504-fem-u1t4",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to FEM",
+  "topics": [
+   "Weighted Residual Methods"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Introduction to FEM.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Bar Element",
+  "unit": 2,
+  "topicId": "me504-fem-u2t1",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 2: One-dimensional Elements",
+  "topics": [
+   "Bar Element"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\".",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Truss Analysis",
+  "unit": 2,
+  "topicId": "me504-fem-u2t2",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 2: One-dimensional Elements",
+  "topics": [
+   "Truss Analysis"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers One-dimensional Elements.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Beam Element",
+  "unit": 2,
+  "topicId": "me504-fem-u2t3",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 2: One-dimensional Elements",
+  "topics": [
+   "Beam Element"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\".",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Quadratic Elements",
+  "unit": 2,
+  "topicId": "me504-fem-u2t4",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 2: One-dimensional Elements",
+  "topics": [
+   "Quadratic Elements"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\".",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Plane Stress & Plane Strain",
+  "unit": 3,
+  "topicId": "me504-fem-u3t1",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Two-dimensional Elements",
+  "topics": [
+   "Plane Stress & Plane Strain"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Two-dimensional Elements.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "CST Element",
+  "unit": 3,
+  "topicId": "me504-fem-u3t2",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Two-dimensional Elements",
+  "topics": [
+   "CST Element"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\".",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Quadrilateral & Higher Elements",
+  "unit": 3,
+  "topicId": "me504-fem-u3t3",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Two-dimensional Elements",
+  "topics": [
+   "Quadrilateral & Higher Elements"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Two-dimensional Elements.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Mesh Generation",
+  "unit": 3,
+  "topicId": "me504-fem-u3t4",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Two-dimensional Elements",
+  "topics": [
+   "Mesh Generation"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Two-dimensional Elements.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Isoparametric Elements",
+  "unit": 4,
+  "topicId": "me504-fem-u4t1",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Isoparametric Formulation & Integration",
+  "topics": [
+   "Isoparametric Elements"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\".",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Numerical Integration",
+  "unit": 4,
+  "topicId": "me504-fem-u4t2",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Isoparametric Formulation & Integration",
+  "topics": [
+   "Numerical Integration"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Isoparametric Formulation & Integration.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Convergence Requirements",
+  "unit": 4,
+  "topicId": "me504-fem-u4t3",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Isoparametric Formulation & Integration",
+  "topics": [
+   "Convergence Requirements"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Isoparametric Formulation & Integration.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Error Estimation",
+  "unit": 4,
+  "topicId": "me504-fem-u4t4",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Isoparametric Formulation & Integration",
+  "topics": [
+   "Error Estimation"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Isoparametric Formulation & Integration.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Heat Transfer Analysis",
+  "unit": 5,
+  "topicId": "me504-fem-u5t1",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications",
+  "topics": [
+   "Heat Transfer Analysis"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Dynamic Analysis",
+  "unit": 5,
+  "topicId": "me504-fem-u5t2",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications",
+  "topics": [
+   "Dynamic Analysis"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "Fluid Flow & Torsion",
+  "unit": 5,
+  "topicId": "me504-fem-u5t3",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications",
+  "topics": [
+   "Fluid Flow & Torsion"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "me504-fem",
+  "subjectCode": "ME-504(C)",
+  "subjectLabel": "Finite Element Method",
+  "title": "FEA Software",
+  "unit": 5,
+  "topicId": "me504-fem-u5t4",
+  "lecturer": "FEM tutorials",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Applications",
+  "topics": [
+   "FEA Software"
+  ],
+  "description": "\"Finite element method complete tutorial series (beginner)\" covers Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLcyuCSvXMJ8GgGK0unwfzEpVjFQaa_EGl",
+  "lectureKey": "me504-fem-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Thermal Engineering & Gas Dynamics: full lecture series",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Steam Generators & Boilers",
+   "Steam Nozzles & Turbines",
+   "Condensers & Cooling Towers",
+   "Air Compressors",
+   "Gas Dynamics"
+  ],
+  "description": "\"Thermal Engineering and Gas Dynamics\" by TEGD lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Classification of Boilers",
+  "unit": 1,
+  "topicId": "me601-u1t1",
+  "lecturer": "Thermal lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Steam Generators & Boilers",
+  "topics": [
+   "Classification of Boilers"
+  ],
+  "description": "\"Thermal power plant: boilers, Rankine cycle, supercritical boiler\".",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5sKElB634nPZoamm84GKHj",
+  "lectureKey": "me601-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "High-pressure Boilers",
+  "unit": 1,
+  "topicId": "me601-u1t2",
+  "lecturer": "Thermal lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Steam Generators & Boilers",
+  "topics": [
+   "High-pressure Boilers"
+  ],
+  "description": "\"Thermal power plant: boilers, Rankine cycle, supercritical boiler\" covers Steam Generators & Boilers.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5sKElB634nPZoamm84GKHj",
+  "lectureKey": "me601-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Boiler Mountings & Accessories",
+  "unit": 1,
+  "topicId": "me601-u1t3",
+  "lecturer": "Thermal lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Steam Generators & Boilers",
+  "topics": [
+   "Boiler Mountings & Accessories"
+  ],
+  "description": "\"Thermal power plant: boilers, Rankine cycle, supercritical boiler\" covers Steam Generators & Boilers.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5sKElB634nPZoamm84GKHj",
+  "lectureKey": "me601-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Boiler Performance & Draught",
+  "unit": 1,
+  "topicId": "me601-u1t4",
+  "lecturer": "Thermal lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Steam Generators & Boilers",
+  "topics": [
+   "Boiler Performance & Draught"
+  ],
+  "description": "\"Thermal power plant: boilers, Rankine cycle, supercritical boiler\" covers Steam Generators & Boilers.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5sKElB634nPZoamm84GKHj",
+  "lectureKey": "me601-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Flow Through Nozzles",
+  "unit": 2,
+  "topicId": "me601-u2t1",
+  "lecturer": "TEGD lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Steam Nozzles & Turbines",
+  "topics": [
+   "Flow Through Nozzles"
+  ],
+  "description": "\"Types of nozzle: convergent, divergent, convergent-divergent\" covers Steam Nozzles & Turbines.",
+  "url": "https://www.youtube.com/watch?v=vRyOQb8KGd4",
+  "lectureKey": "me601-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Impulse Turbines",
+  "unit": 2,
+  "topicId": "me601-u2t2",
+  "lecturer": "TEGD lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Steam Nozzles & Turbines",
+  "topics": [
+   "Impulse Turbines"
+  ],
+  "description": "\"Nozzle governing steam turbine\".",
+  "url": "https://www.youtube.com/watch?v=_do2PIkvNMw",
+  "lectureKey": "me601-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Compounding of Turbines",
+  "unit": 2,
+  "topicId": "me601-u2t3",
+  "lecturer": "TEGD lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Steam Nozzles & Turbines",
+  "topics": [
+   "Compounding of Turbines"
+  ],
+  "description": "\"Nozzle governing steam turbine\".",
+  "url": "https://www.youtube.com/watch?v=_do2PIkvNMw",
+  "lectureKey": "me601-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Reaction Turbines",
+  "unit": 2,
+  "topicId": "me601-u2t4",
+  "lecturer": "TEGD lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Steam Nozzles & Turbines",
+  "topics": [
+   "Reaction Turbines"
+  ],
+  "description": "\"Nozzle governing steam turbine\".",
+  "url": "https://www.youtube.com/watch?v=_do2PIkvNMw",
+  "lectureKey": "me601-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Steam Condensers",
+  "unit": 3,
+  "topicId": "me601-u3t1",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Condensers & Cooling Towers",
+  "topics": [
+   "Steam Condensers"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Condensers & Cooling Towers.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Condenser Efficiency",
+  "unit": 3,
+  "topicId": "me601-u3t2",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Condensers & Cooling Towers",
+  "topics": [
+   "Condenser Efficiency"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Condensers & Cooling Towers.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Cooling Towers",
+  "unit": 3,
+  "topicId": "me601-u3t3",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Condensers & Cooling Towers",
+  "topics": [
+   "Cooling Towers"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Condensers & Cooling Towers.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Rankine Cycle Improvements",
+  "unit": 3,
+  "topicId": "me601-u3t4",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Condensers & Cooling Towers",
+  "topics": [
+   "Rankine Cycle Improvements"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Condensers & Cooling Towers.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Reciprocating Compressors",
+  "unit": 4,
+  "topicId": "me601-u4t1",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Air Compressors",
+  "topics": [
+   "Reciprocating Compressors"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Air Compressors.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Multistage Compression",
+  "unit": 4,
+  "topicId": "me601-u4t2",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Air Compressors",
+  "topics": [
+   "Multistage Compression"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Air Compressors.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Rotary Compressors",
+  "unit": 4,
+  "topicId": "me601-u4t3",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Air Compressors",
+  "topics": [
+   "Rotary Compressors"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Air Compressors.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Compressor Performance",
+  "unit": 4,
+  "topicId": "me601-u4t4",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Air Compressors",
+  "topics": [
+   "Compressor Performance"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Air Compressors.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Compressible Flow Basics",
+  "unit": 5,
+  "topicId": "me601-u5t1",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Gas Dynamics",
+  "topics": [
+   "Compressible Flow Basics"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Gas Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Isentropic Flow in Nozzles",
+  "unit": 5,
+  "topicId": "me601-u5t2",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Gas Dynamics",
+  "topics": [
+   "Isentropic Flow in Nozzles"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Gas Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Normal Shock Waves",
+  "unit": 5,
+  "topicId": "me601-u5t3",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Gas Dynamics",
+  "topics": [
+   "Normal Shock Waves"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Gas Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me601",
+  "subjectCode": "ME-601",
+  "subjectLabel": "Thermal Engineering & Gas Dynamics",
+  "title": "Fanno & Rayleigh Flow",
+  "unit": 5,
+  "topicId": "me601-u5t4",
+  "lecturer": "TEGD lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Gas Dynamics",
+  "topics": [
+   "Fanno & Rayleigh Flow"
+  ],
+  "description": "Full Thermal Engineering & Gas Dynamics series; pick the lecture on Gas Dynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLelAq9xzEDXCKMMCU1eLhlqj8RpgjuOPL",
+  "lectureKey": "me601-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Machine Component Design: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Design Fundamentals",
+   "Fatigue & Shafts",
+   "Springs & Bearings",
+   "Gears",
+   "Clutches, Brakes & Engine Parts"
+  ],
+  "description": "\"Design of Machine Elements I, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL3D4EECEFAA99D9BE",
+  "lectureKey": "me602-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Design Process & Considerations",
+  "unit": 1,
+  "topicId": "me602-u1t1",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Design Process & Considerations"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Theories of Failure",
+  "unit": 1,
+  "topicId": "me602-u1t2",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Theories of Failure"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Stress Concentration",
+  "unit": 1,
+  "topicId": "me602-u1t3",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Stress Concentration"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Material Selection & Preferred Numbers",
+  "unit": 1,
+  "topicId": "me602-u1t4",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Design Fundamentals",
+  "topics": [
+   "Material Selection & Preferred Numbers"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Design Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Fatigue Design",
+  "unit": 2,
+  "topicId": "me602-u2t1",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fatigue & Shafts",
+  "topics": [
+   "Fatigue Design"
+  ],
+  "description": "\"Design of machine elements online lecture series\".",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Endurance Limit Modifying Factors",
+  "unit": 2,
+  "topicId": "me602-u2t2",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fatigue & Shafts",
+  "topics": [
+   "Endurance Limit Modifying Factors"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Fatigue & Shafts.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Design of Shafts",
+  "unit": 2,
+  "topicId": "me602-u2t3",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fatigue & Shafts",
+  "topics": [
+   "Design of Shafts"
+  ],
+  "description": "\"Design of machine elements online lecture series\".",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Keys & Couplings",
+  "unit": 2,
+  "topicId": "me602-u2t4",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fatigue & Shafts",
+  "topics": [
+   "Keys & Couplings"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Fatigue & Shafts.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Helical Springs",
+  "unit": 3,
+  "topicId": "me602-u3t1",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Springs & Bearings",
+  "topics": [
+   "Helical Springs"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Springs & Bearings.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Leaf Springs",
+  "unit": 3,
+  "topicId": "me602-u3t2",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Springs & Bearings",
+  "topics": [
+   "Leaf Springs"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Springs & Bearings.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Rolling Contact Bearings",
+  "unit": 3,
+  "topicId": "me602-u3t3",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Springs & Bearings",
+  "topics": [
+   "Rolling Contact Bearings"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Springs & Bearings.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Sliding Contact Bearings",
+  "unit": 3,
+  "topicId": "me602-u3t4",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Springs & Bearings",
+  "topics": [
+   "Sliding Contact Bearings"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Springs & Bearings.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Spur Gear Design",
+  "unit": 4,
+  "topicId": "me602-u4t1",
+  "lecturer": "DME lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gears",
+  "topics": [
+   "Spur Gear Design"
+  ],
+  "description": "\"Design of spur gear, helical gear, worm gear\".",
+  "url": "https://www.youtube.com/playlist?list=PLv_ZsZmTHkvzsgPC81j9soK77rPyerJgw",
+  "lectureKey": "me602-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Helical Gears",
+  "unit": 4,
+  "topicId": "me602-u4t2",
+  "lecturer": "DME lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gears",
+  "topics": [
+   "Helical Gears"
+  ],
+  "description": "\"Design of spur gear, helical gear, worm gear\".",
+  "url": "https://www.youtube.com/playlist?list=PLv_ZsZmTHkvzsgPC81j9soK77rPyerJgw",
+  "lectureKey": "me602-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Bevel Gears",
+  "unit": 4,
+  "topicId": "me602-u4t3",
+  "lecturer": "DME lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gears",
+  "topics": [
+   "Bevel Gears"
+  ],
+  "description": "\"Design of spur gear, helical gear, worm gear\".",
+  "url": "https://www.youtube.com/playlist?list=PLv_ZsZmTHkvzsgPC81j9soK77rPyerJgw",
+  "lectureKey": "me602-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Worm Gears",
+  "unit": 4,
+  "topicId": "me602-u4t4",
+  "lecturer": "DME lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Gears",
+  "topics": [
+   "Worm Gears"
+  ],
+  "description": "\"Design of spur gear, helical gear, worm gear\".",
+  "url": "https://www.youtube.com/playlist?list=PLv_ZsZmTHkvzsgPC81j9soK77rPyerJgw",
+  "lectureKey": "me602-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Friction Clutches",
+  "unit": 5,
+  "topicId": "me602-u5t1",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Clutches, Brakes & Engine Parts",
+  "topics": [
+   "Friction Clutches"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Clutches, Brakes & Engine Parts.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Brakes",
+  "unit": 5,
+  "topicId": "me602-u5t2",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Clutches, Brakes & Engine Parts",
+  "topics": [
+   "Brakes"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Clutches, Brakes & Engine Parts.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Engine Components Design",
+  "unit": 5,
+  "topicId": "me602-u5t3",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Clutches, Brakes & Engine Parts",
+  "topics": [
+   "Engine Components Design"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Clutches, Brakes & Engine Parts.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me602",
+  "subjectCode": "ME-602",
+  "subjectLabel": "Machine Component Design",
+  "title": "Crankshaft & Flywheel",
+  "unit": 5,
+  "topicId": "me602-u5t4",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Clutches, Brakes & Engine Parts",
+  "topics": [
+   "Crankshaft & Flywheel"
+  ],
+  "description": "\"Design of machine elements online lecture series\" covers Clutches, Brakes & Engine Parts.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2Fczs4py0g4gxe00L3g9oUU",
+  "lectureKey": "me602-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Turbo Machinery: full lecture series",
+  "lecturer": "Turbo machines lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Energy Transfer in Turbomachines",
+   "Centrifugal & Reciprocating Pumps",
+   "Hydraulic Turbines",
+   "Compressors, Fans & Blowers",
+   "Hydraulic Systems"
+  ],
+  "description": "\"Turbo Machines: turbines, pumps, compressors\" by Turbo machines lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO6VXBNGEYVVl-uexrbvS8IS",
+  "lectureKey": "me603-tm-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Classification of Turbomachines",
+  "unit": 1,
+  "topicId": "me603-tm-u1t1",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Transfer in Turbomachines",
+  "topics": [
+   "Classification of Turbomachines"
+  ],
+  "description": "\"Introduction and classification of turbomachines\".",
+  "url": "https://www.youtube.com/watch?v=sdRQYw8sd-U",
+  "lectureKey": "me603-tm-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Euler's Turbine Equation",
+  "unit": 1,
+  "topicId": "me603-tm-u1t2",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Transfer in Turbomachines",
+  "topics": [
+   "Euler's Turbine Equation"
+  ],
+  "description": "\"Introduction and classification of turbomachines\" covers Energy Transfer in Turbomachines.",
+  "url": "https://www.youtube.com/watch?v=sdRQYw8sd-U",
+  "lectureKey": "me603-tm-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Degree of Reaction",
+  "unit": 1,
+  "topicId": "me603-tm-u1t3",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Transfer in Turbomachines",
+  "topics": [
+   "Degree of Reaction"
+  ],
+  "description": "\"Introduction and classification of turbomachines\" covers Energy Transfer in Turbomachines.",
+  "url": "https://www.youtube.com/watch?v=sdRQYw8sd-U",
+  "lectureKey": "me603-tm-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Dimensionless Parameters",
+  "unit": 1,
+  "topicId": "me603-tm-u1t4",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Transfer in Turbomachines",
+  "topics": [
+   "Dimensionless Parameters"
+  ],
+  "description": "\"Introduction and classification of turbomachines\" covers Energy Transfer in Turbomachines.",
+  "url": "https://www.youtube.com/watch?v=sdRQYw8sd-U",
+  "lectureKey": "me603-tm-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Centrifugal Pump Working",
+  "unit": 2,
+  "topicId": "me603-tm-u2t1",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Centrifugal & Reciprocating Pumps",
+  "topics": [
+   "Centrifugal Pump Working"
+  ],
+  "description": "\"Hydro turbomachines centrifugal pumps part 1\".",
+  "url": "https://www.youtube.com/watch?v=VQqiVVYuNks",
+  "lectureKey": "me603-tm-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Pump Heads & Efficiencies",
+  "unit": 2,
+  "topicId": "me603-tm-u2t2",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Centrifugal & Reciprocating Pumps",
+  "topics": [
+   "Pump Heads & Efficiencies"
+  ],
+  "description": "\"Hydro turbomachines centrifugal pumps part 1\" covers Centrifugal & Reciprocating Pumps.",
+  "url": "https://www.youtube.com/watch?v=VQqiVVYuNks",
+  "lectureKey": "me603-tm-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Cavitation & NPSH",
+  "unit": 2,
+  "topicId": "me603-tm-u2t3",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Centrifugal & Reciprocating Pumps",
+  "topics": [
+   "Cavitation & NPSH"
+  ],
+  "description": "\"Hydro turbomachines centrifugal pumps part 1\" covers Centrifugal & Reciprocating Pumps.",
+  "url": "https://www.youtube.com/watch?v=VQqiVVYuNks",
+  "lectureKey": "me603-tm-u2-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Reciprocating Pumps",
+  "unit": 2,
+  "topicId": "me603-tm-u2t4",
+  "lecturer": "Turbo machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Centrifugal & Reciprocating Pumps",
+  "topics": [
+   "Reciprocating Pumps"
+  ],
+  "description": "\"Hydro turbomachines centrifugal pumps part 1\".",
+  "url": "https://www.youtube.com/watch?v=VQqiVVYuNks",
+  "lectureKey": "me603-tm-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Pelton Wheel",
+  "unit": 3,
+  "topicId": "me603-tm-u3t1",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 3: Hydraulic Turbines",
+  "topics": [
+   "Pelton Wheel"
+  ],
+  "description": "\"Fluid machinery hydraulic turbines part 1\" covers Hydraulic Turbines.",
+  "url": "https://www.youtube.com/watch?v=5JlaKUTEV6w",
+  "lectureKey": "me603-tm-u3-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Francis Turbine",
+  "unit": 3,
+  "topicId": "me603-tm-u3t2",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 3: Hydraulic Turbines",
+  "topics": [
+   "Francis Turbine"
+  ],
+  "description": "\"Fluid machinery hydraulic turbines part 1\".",
+  "url": "https://www.youtube.com/watch?v=5JlaKUTEV6w",
+  "lectureKey": "me603-tm-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Kaplan Turbine",
+  "unit": 3,
+  "topicId": "me603-tm-u3t3",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 3: Hydraulic Turbines",
+  "topics": [
+   "Kaplan Turbine"
+  ],
+  "description": "\"Fluid machinery hydraulic turbines part 1\".",
+  "url": "https://www.youtube.com/watch?v=5JlaKUTEV6w",
+  "lectureKey": "me603-tm-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Turbine Performance & Governing",
+  "unit": 3,
+  "topicId": "me603-tm-u3t4",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 3: Hydraulic Turbines",
+  "topics": [
+   "Turbine Performance & Governing"
+  ],
+  "description": "\"Fluid machinery hydraulic turbines part 1\" covers Hydraulic Turbines.",
+  "url": "https://www.youtube.com/watch?v=5JlaKUTEV6w",
+  "lectureKey": "me603-tm-u3-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Centrifugal Compressors",
+  "unit": 4,
+  "topicId": "me603-tm-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Compressors, Fans & Blowers",
+  "topics": [
+   "Centrifugal Compressors"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Compressors, Fans & Blowers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Axial Flow Compressors",
+  "unit": 4,
+  "topicId": "me603-tm-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Compressors, Fans & Blowers",
+  "topics": [
+   "Axial Flow Compressors"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Compressors, Fans & Blowers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Fans & Blowers",
+  "unit": 4,
+  "topicId": "me603-tm-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Compressors, Fans & Blowers",
+  "topics": [
+   "Fans & Blowers"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Compressors, Fans & Blowers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Surge & Stall",
+  "unit": 4,
+  "topicId": "me603-tm-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Compressors, Fans & Blowers",
+  "topics": [
+   "Surge & Stall"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Compressors, Fans & Blowers.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Hydrostatic Systems",
+  "unit": 5,
+  "topicId": "me603-tm-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Systems",
+  "topics": [
+   "Hydrostatic Systems"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Hydraulic Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Hydraulic Devices",
+  "unit": 5,
+  "topicId": "me603-tm-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Systems",
+  "topics": [
+   "Hydraulic Devices"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Hydraulic Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Hydraulic Cranes & Lifts",
+  "unit": 5,
+  "topicId": "me603-tm-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Systems",
+  "topics": [
+   "Hydraulic Cranes & Lifts"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Hydraulic Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me603-tm",
+  "subjectCode": "ME-603(A)",
+  "subjectLabel": "Turbo Machinery",
+  "title": "Fluid Couplings & Torque Converters",
+  "unit": 5,
+  "topicId": "me603-tm-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Systems",
+  "topics": [
+   "Fluid Couplings & Torque Converters"
+  ],
+  "description": "\"Introduction to Turbomachines, Prof. Babu Viswanathan, IIT Madras\" covers Hydraulic Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQQp3QLuzbcHrt0XncZZTiE",
+  "lectureKey": "me603-tm-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robotics: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction to Robotics",
+   "Robot Kinematics",
+   "Dynamics & Trajectory Planning",
+   "Sensors & Actuators",
+   "Programming & Applications"
+  ],
+  "description": "\"Robotics by Prof. D K Pratihar, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngcdUbBySzyzcPiFTYWr4rV_",
+  "lectureKey": "me604-rob-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Anatomy",
+  "unit": 1,
+  "topicId": "me604-rob-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Robotics",
+  "topics": [
+   "Robot Anatomy"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Introduction to Robotics.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Configurations",
+  "unit": 1,
+  "topicId": "me604-rob-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Robotics",
+  "topics": [
+   "Robot Configurations"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Introduction to Robotics.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Specifications",
+  "unit": 1,
+  "topicId": "me604-rob-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Robotics",
+  "topics": [
+   "Robot Specifications"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Introduction to Robotics.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "End Effectors",
+  "unit": 1,
+  "topicId": "me604-rob-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Robotics",
+  "topics": [
+   "End Effectors"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Introduction to Robotics.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Homogeneous Transformations",
+  "unit": 2,
+  "topicId": "me604-rob-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Robot Kinematics",
+  "topics": [
+   "Homogeneous Transformations"
+  ],
+  "description": "\"Industrial manipulators and its kinematics\" covers Robot Kinematics.",
+  "url": "https://www.youtube.com/watch?v=X7iBT5l599c",
+  "lectureKey": "me604-rob-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Forward Kinematics",
+  "unit": 2,
+  "topicId": "me604-rob-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Robot Kinematics",
+  "topics": [
+   "Forward Kinematics"
+  ],
+  "description": "\"Industrial manipulators and its kinematics\".",
+  "url": "https://www.youtube.com/watch?v=X7iBT5l599c",
+  "lectureKey": "me604-rob-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Inverse Kinematics",
+  "unit": 2,
+  "topicId": "me604-rob-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Robot Kinematics",
+  "topics": [
+   "Inverse Kinematics"
+  ],
+  "description": "\"Industrial manipulators and its kinematics\".",
+  "url": "https://www.youtube.com/watch?v=X7iBT5l599c",
+  "lectureKey": "me604-rob-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Jacobian & Velocity Kinematics",
+  "unit": 2,
+  "topicId": "me604-rob-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Robot Kinematics",
+  "topics": [
+   "Jacobian & Velocity Kinematics"
+  ],
+  "description": "\"Industrial manipulators and its kinematics\" covers Robot Kinematics.",
+  "url": "https://www.youtube.com/watch?v=X7iBT5l599c",
+  "lectureKey": "me604-rob-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Dynamics",
+  "unit": 3,
+  "topicId": "me604-rob-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Dynamics & Trajectory Planning",
+  "topics": [
+   "Robot Dynamics"
+  ],
+  "description": "\"Robot dynamics and control\".",
+  "url": "https://www.youtube.com/watch?v=FR1W8YFfTL4",
+  "lectureKey": "me604-rob-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Trajectory Planning",
+  "unit": 3,
+  "topicId": "me604-rob-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Dynamics & Trajectory Planning",
+  "topics": [
+   "Trajectory Planning"
+  ],
+  "description": "\"Robot dynamics and control\" covers Dynamics & Trajectory Planning.",
+  "url": "https://www.youtube.com/watch?v=FR1W8YFfTL4",
+  "lectureKey": "me604-rob-u3-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Path Planning",
+  "unit": 3,
+  "topicId": "me604-rob-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Dynamics & Trajectory Planning",
+  "topics": [
+   "Path Planning"
+  ],
+  "description": "\"Robot dynamics and control\" covers Dynamics & Trajectory Planning.",
+  "url": "https://www.youtube.com/watch?v=FR1W8YFfTL4",
+  "lectureKey": "me604-rob-u3-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Control",
+  "unit": 3,
+  "topicId": "me604-rob-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Dynamics & Trajectory Planning",
+  "topics": [
+   "Robot Control"
+  ],
+  "description": "\"Robot dynamics and control\".",
+  "url": "https://www.youtube.com/watch?v=FR1W8YFfTL4",
+  "lectureKey": "me604-rob-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Internal Sensors",
+  "unit": 4,
+  "topicId": "me604-rob-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "Internal Sensors"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Sensors & Actuators.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "External Sensors",
+  "unit": 4,
+  "topicId": "me604-rob-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "External Sensors"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Sensors & Actuators.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Vision",
+  "unit": 4,
+  "topicId": "me604-rob-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "Robot Vision"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Sensors & Actuators.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Actuators",
+  "unit": 4,
+  "topicId": "me604-rob-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "Robot Actuators"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Sensors & Actuators.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Programming Methods",
+  "unit": 5,
+  "topicId": "me604-rob-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Programming & Applications",
+  "topics": [
+   "Robot Programming Methods"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Programming & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Robot Languages",
+  "unit": 5,
+  "topicId": "me604-rob-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Programming & Applications",
+  "topics": [
+   "Robot Languages"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Programming & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Industrial Applications",
+  "unit": 5,
+  "topicId": "me604-rob-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Programming & Applications",
+  "topics": [
+   "Industrial Applications"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\".",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me604-rob",
+  "subjectCode": "ME-604(A)",
+  "subjectLabel": "Robotics",
+  "title": "Mobile Robots & Safety",
+  "unit": 5,
+  "topicId": "me604-rob-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Programming & Applications",
+  "topics": [
+   "Mobile Robots & Safety"
+  ],
+  "description": "\"NPTEL industrial robotics: theories for implementation\" covers Programming & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLXDsvE7qtfNf_N99hJZbdTEM001mOii6_",
+  "lectureKey": "me604-rob-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Heat & Mass Transfer: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Conduction",
+   "Extended Surfaces & Transient Conduction",
+   "Convection",
+   "Radiation",
+   "Heat Exchangers & Mass Transfer"
+  ],
+  "description": "\"Heat and Mass Transfer, IIT Bombay\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL5F4F46C1983C6785",
+  "lectureKey": "me701-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Modes of Heat Transfer",
+  "unit": 1,
+  "topicId": "me701-u1t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Conduction",
+  "topics": [
+   "Modes of Heat Transfer"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Heat Conduction Equation",
+  "unit": 1,
+  "topicId": "me701-u1t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Conduction",
+  "topics": [
+   "Heat Conduction Equation"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Plane Wall, Cylinder & Sphere",
+  "unit": 1,
+  "topicId": "me701-u1t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Conduction",
+  "topics": [
+   "Plane Wall, Cylinder & Sphere"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Critical Radius of Insulation",
+  "unit": 1,
+  "topicId": "me701-u1t4",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Conduction",
+  "topics": [
+   "Critical Radius of Insulation"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Fins",
+  "unit": 2,
+  "topicId": "me701-u2t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Extended Surfaces & Transient Conduction",
+  "topics": [
+   "Fins"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Extended Surfaces & Transient Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Fin Efficiency & Effectiveness",
+  "unit": 2,
+  "topicId": "me701-u2t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Extended Surfaces & Transient Conduction",
+  "topics": [
+   "Fin Efficiency & Effectiveness"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Extended Surfaces & Transient Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Lumped Capacitance Method",
+  "unit": 2,
+  "topicId": "me701-u2t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Extended Surfaces & Transient Conduction",
+  "topics": [
+   "Lumped Capacitance Method"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Extended Surfaces & Transient Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Transient Charts",
+  "unit": 2,
+  "topicId": "me701-u2t4",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Extended Surfaces & Transient Conduction",
+  "topics": [
+   "Transient Charts"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Extended Surfaces & Transient Conduction.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Convection Fundamentals",
+  "unit": 3,
+  "topicId": "me701-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Convection",
+  "topics": [
+   "Convection Fundamentals"
+  ],
+  "description": "\"Convective heat and mass transfer\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo",
+  "lectureKey": "me701-u3-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Dimensionless Numbers",
+  "unit": 3,
+  "topicId": "me701-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Convection",
+  "topics": [
+   "Dimensionless Numbers"
+  ],
+  "description": "\"Convective heat and mass transfer\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo",
+  "lectureKey": "me701-u3-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Forced Convection Correlations",
+  "unit": 3,
+  "topicId": "me701-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Convection",
+  "topics": [
+   "Forced Convection Correlations"
+  ],
+  "description": "\"Convective heat and mass transfer\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo",
+  "lectureKey": "me701-u3-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Boiling & Condensation",
+  "unit": 3,
+  "topicId": "me701-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Convection",
+  "topics": [
+   "Boiling & Condensation"
+  ],
+  "description": "\"Convective heat and mass transfer\" covers Convection.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJQ1egblJLMA1gbHs3DYT2uo",
+  "lectureKey": "me701-u3-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Radiation Fundamentals",
+  "unit": 4,
+  "topicId": "me701-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "Radiation Fundamentals"
+  ],
+  "description": "\"Thermal radiation 1\".",
+  "url": "https://www.youtube.com/watch?v=CDncSyDvpdQ",
+  "lectureKey": "me701-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Planck's & Wien's Laws",
+  "unit": 4,
+  "topicId": "me701-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "Planck's & Wien's Laws"
+  ],
+  "description": "\"Thermal radiation 1\" covers Radiation.",
+  "url": "https://www.youtube.com/watch?v=CDncSyDvpdQ",
+  "lectureKey": "me701-u4-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "View Factors",
+  "unit": 4,
+  "topicId": "me701-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "View Factors"
+  ],
+  "description": "\"Thermal radiation 1\" covers Radiation.",
+  "url": "https://www.youtube.com/watch?v=CDncSyDvpdQ",
+  "lectureKey": "me701-u4-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Radiation Exchange & Shields",
+  "unit": 4,
+  "topicId": "me701-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Radiation",
+  "topics": [
+   "Radiation Exchange & Shields"
+  ],
+  "description": "\"Thermal radiation 1\" covers Radiation.",
+  "url": "https://www.youtube.com/watch?v=CDncSyDvpdQ",
+  "lectureKey": "me701-u4-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Heat Exchanger Types",
+  "unit": 5,
+  "topicId": "me701-u5t1",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Heat Exchangers & Mass Transfer",
+  "topics": [
+   "Heat Exchanger Types"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Heat Exchangers & Mass Transfer.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "LMTD Method",
+  "unit": 5,
+  "topicId": "me701-u5t2",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Heat Exchangers & Mass Transfer",
+  "topics": [
+   "LMTD Method"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Heat Exchangers & Mass Transfer.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "NTU-Effectiveness Method",
+  "unit": 5,
+  "topicId": "me701-u5t3",
+  "lecturer": "IIT Delhi",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Heat Exchangers & Mass Transfer",
+  "topics": [
+   "NTU-Effectiveness Method"
+  ],
+  "description": "\"Fundamentals of heat transfer, IIT Delhi live lectures\" covers Heat Exchangers & Mass Transfer.",
+  "url": "https://www.youtube.com/playlist?list=PLgV-fKI3Z3QgTxV088As0bdgXXz3EimE-",
+  "lectureKey": "me701-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me701",
+  "subjectCode": "ME-701",
+  "subjectLabel": "Heat & Mass Transfer",
+  "title": "Mass Transfer",
+  "unit": 5,
+  "topicId": "me701-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Heat Exchangers & Mass Transfer",
+  "topics": [
+   "Mass Transfer"
+  ],
+  "description": "\"Introduction on heat and mass transfer\".",
+  "url": "https://www.youtube.com/watch?v=qa-PQOjS3zA",
+  "lectureKey": "me701-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Power Plant Engineering: full lecture series",
+  "lecturer": "Power plant lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction & Steam Power Plants",
+   "Hydroelectric Power Plants",
+   "Nuclear & Gas Turbine Plants",
+   "Diesel & Non-conventional Plants",
+   "Power Plant Economics"
+  ],
+  "description": "\"Power plant engineering lectures\" by Power plant lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLYRGB44zNZWXrxEj6l4L09d3Rcvc9K7B1",
+  "lectureKey": "me702-ppe-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Energy Scenario & Power Plants",
+  "unit": 1,
+  "topicId": "me702-ppe-u1t1",
+  "lecturer": "Vishal Acharya",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction & Steam Power Plants",
+  "topics": [
+   "Energy Scenario & Power Plants"
+  ],
+  "description": "\"Introduction of power plant engineering\".",
+  "url": "https://www.youtube.com/watch?v=Qfh1k-eNw_s",
+  "lectureKey": "me702-ppe-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Layout of Thermal Power Plant",
+  "unit": 1,
+  "topicId": "me702-ppe-u1t2",
+  "lecturer": "Thermal lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction & Steam Power Plants",
+  "topics": [
+   "Layout of Thermal Power Plant"
+  ],
+  "description": "\"Thermal steam power plant: layout, components, Rankine cycle\".",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5sKElB634nPZoamm84GKHj",
+  "lectureKey": "me702-ppe-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Coal Handling & Combustion",
+  "unit": 1,
+  "topicId": "me702-ppe-u1t3",
+  "lecturer": "Vishal Acharya",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction & Steam Power Plants",
+  "topics": [
+   "Coal Handling & Combustion"
+  ],
+  "description": "\"Introduction of power plant engineering\" covers Introduction & Steam Power Plants.",
+  "url": "https://www.youtube.com/watch?v=Qfh1k-eNw_s",
+  "lectureKey": "me702-ppe-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Draught & Dust Collection",
+  "unit": 1,
+  "topicId": "me702-ppe-u1t4",
+  "lecturer": "Vishal Acharya",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction & Steam Power Plants",
+  "topics": [
+   "Draught & Dust Collection"
+  ],
+  "description": "\"Introduction of power plant engineering\" covers Introduction & Steam Power Plants.",
+  "url": "https://www.youtube.com/watch?v=Qfh1k-eNw_s",
+  "lectureKey": "me702-ppe-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Hydrology & Site Selection",
+  "unit": 2,
+  "topicId": "me702-ppe-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Hydroelectric Power Plants",
+  "topics": [
+   "Hydrology & Site Selection"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Hydroelectric Power Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Hydro Plant Layout",
+  "unit": 2,
+  "topicId": "me702-ppe-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Hydroelectric Power Plants",
+  "topics": [
+   "Hydro Plant Layout"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Hydroelectric Power Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Classification of Hydro Plants",
+  "unit": 2,
+  "topicId": "me702-ppe-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Hydroelectric Power Plants",
+  "topics": [
+   "Classification of Hydro Plants"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Hydroelectric Power Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Advantages & Limitations",
+  "unit": 2,
+  "topicId": "me702-ppe-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Hydroelectric Power Plants",
+  "topics": [
+   "Advantages & Limitations"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Hydroelectric Power Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Nuclear Fission & Reactor Components",
+  "unit": 3,
+  "topicId": "me702-ppe-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Nuclear & Gas Turbine Plants",
+  "topics": [
+   "Nuclear Fission & Reactor Components"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Nuclear & Gas Turbine Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Types of Reactors",
+  "unit": 3,
+  "topicId": "me702-ppe-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Nuclear & Gas Turbine Plants",
+  "topics": [
+   "Types of Reactors"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Nuclear & Gas Turbine Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Gas Turbine Power Plant",
+  "unit": 3,
+  "topicId": "me702-ppe-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Nuclear & Gas Turbine Plants",
+  "topics": [
+   "Gas Turbine Power Plant"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\".",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Combined Cycle Plants",
+  "unit": 3,
+  "topicId": "me702-ppe-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Nuclear & Gas Turbine Plants",
+  "topics": [
+   "Combined Cycle Plants"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Nuclear & Gas Turbine Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Diesel Power Plant",
+  "unit": 4,
+  "topicId": "me702-ppe-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Diesel & Non-conventional Plants",
+  "topics": [
+   "Diesel Power Plant"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\".",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Solar Power Plants",
+  "unit": 4,
+  "topicId": "me702-ppe-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Diesel & Non-conventional Plants",
+  "topics": [
+   "Solar Power Plants"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\".",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Wind Power Plants",
+  "unit": 4,
+  "topicId": "me702-ppe-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Diesel & Non-conventional Plants",
+  "topics": [
+   "Wind Power Plants"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\".",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Geothermal, Tidal & Biomass",
+  "unit": 4,
+  "topicId": "me702-ppe-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Diesel & Non-conventional Plants",
+  "topics": [
+   "Geothermal, Tidal & Biomass"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Diesel & Non-conventional Plants.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Load Curves",
+  "unit": 5,
+  "topicId": "me702-ppe-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Plant Economics",
+  "topics": [
+   "Load Curves"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Power Plant Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Load Factors",
+  "unit": 5,
+  "topicId": "me702-ppe-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Plant Economics",
+  "topics": [
+   "Load Factors"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Power Plant Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Cost of Power Generation",
+  "unit": 5,
+  "topicId": "me702-ppe-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Plant Economics",
+  "topics": [
+   "Cost of Power Generation"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Power Plant Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "me702-ppe",
+  "subjectCode": "ME-702(C)",
+  "subjectLabel": "Power Plant Engineering",
+  "title": "Tariffs & Environmental Aspects",
+  "unit": 5,
+  "topicId": "me702-ppe-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power Plant Economics",
+  "topics": [
+   "Tariffs & Environmental Aspects"
+  ],
+  "description": "\"Power plant system engineering, IIT Guwahati\" covers Power Plant Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoXZIxDYHM3aavBr5E8kDvH8",
+  "lectureKey": "me702-ppe-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Operations Research & Supply Chain: full lecture series",
+  "lecturer": "Dr. Gajendra Purohit",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Linear Programming",
+   "Transportation & Assignment",
+   "Queuing & Game Theory",
+   "Inventory & Project Management",
+   "Supply Chain Management"
+  ],
+  "description": "\"Operations Research complete course\" by Dr. Gajendra Purohit.",
+  "url": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfLyEPjMPHT_1ZhTRrnXA55R",
+  "lectureKey": "me703-or-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "LP Formulation",
+  "unit": 1,
+  "topicId": "me703-or-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Programming",
+  "topics": [
+   "LP Formulation"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Linear Programming.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Graphical Method",
+  "unit": 1,
+  "topicId": "me703-or-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Programming",
+  "topics": [
+   "Graphical Method"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Linear Programming.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Simplex Method",
+  "unit": 1,
+  "topicId": "me703-or-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Programming",
+  "topics": [
+   "Simplex Method"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Linear Programming.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Duality & Sensitivity",
+  "unit": 1,
+  "topicId": "me703-or-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Linear Programming",
+  "topics": [
+   "Duality & Sensitivity"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Linear Programming.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Transportation Problem",
+  "unit": 2,
+  "topicId": "me703-or-u2t1",
+  "lecturer": "OR Hindi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Transportation & Assignment",
+  "topics": [
+   "Transportation Problem"
+  ],
+  "description": "\"Transportation problem in operation research\".",
+  "url": "https://www.youtube.com/playlist?list=PL23dd-8zssJDLv4Zc6975_FKKd4MXwsTC",
+  "lectureKey": "me703-or-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Optimality Test",
+  "unit": 2,
+  "topicId": "me703-or-u2t2",
+  "lecturer": "OR Hindi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Transportation & Assignment",
+  "topics": [
+   "Optimality Test"
+  ],
+  "description": "\"Transportation problem in operation research\" covers Transportation & Assignment.",
+  "url": "https://www.youtube.com/playlist?list=PL23dd-8zssJDLv4Zc6975_FKKd4MXwsTC",
+  "lectureKey": "me703-or-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Assignment Problem",
+  "unit": 2,
+  "topicId": "me703-or-u2t3",
+  "lecturer": "OR Hindi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Transportation & Assignment",
+  "topics": [
+   "Assignment Problem"
+  ],
+  "description": "\"Transportation problem in operation research\" covers Transportation & Assignment.",
+  "url": "https://www.youtube.com/playlist?list=PL23dd-8zssJDLv4Zc6975_FKKd4MXwsTC",
+  "lectureKey": "me703-or-u2-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Travelling Salesman Problem",
+  "unit": 2,
+  "topicId": "me703-or-u2t4",
+  "lecturer": "OR Hindi",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Transportation & Assignment",
+  "topics": [
+   "Travelling Salesman Problem"
+  ],
+  "description": "\"Transportation problem in operation research\" covers Transportation & Assignment.",
+  "url": "https://www.youtube.com/playlist?list=PL23dd-8zssJDLv4Zc6975_FKKd4MXwsTC",
+  "lectureKey": "me703-or-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Queuing Fundamentals",
+  "unit": 3,
+  "topicId": "me703-or-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Queuing & Game Theory",
+  "topics": [
+   "Queuing Fundamentals"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Queuing & Game Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "M/M/1 Model",
+  "unit": 3,
+  "topicId": "me703-or-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Queuing & Game Theory",
+  "topics": [
+   "M/M/1 Model"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Queuing & Game Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Game Theory",
+  "unit": 3,
+  "topicId": "me703-or-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Queuing & Game Theory",
+  "topics": [
+   "Game Theory"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Queuing & Game Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Decision Theory",
+  "unit": 3,
+  "topicId": "me703-or-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Queuing & Game Theory",
+  "topics": [
+   "Decision Theory"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Queuing & Game Theory.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Inventory Models",
+  "unit": 4,
+  "topicId": "me703-or-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inventory & Project Management",
+  "topics": [
+   "Inventory Models"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Inventory & Project Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Inventory Control Systems",
+  "unit": 4,
+  "topicId": "me703-or-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inventory & Project Management",
+  "topics": [
+   "Inventory Control Systems"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Inventory & Project Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "CPM",
+  "unit": 4,
+  "topicId": "me703-or-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inventory & Project Management",
+  "topics": [
+   "CPM"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Inventory & Project Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "PERT & Crashing",
+  "unit": 4,
+  "topicId": "me703-or-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inventory & Project Management",
+  "topics": [
+   "PERT & Crashing"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Inventory & Project Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Supply Chain Concepts",
+  "unit": 5,
+  "topicId": "me703-or-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Supply Chain Management",
+  "topics": [
+   "Supply Chain Concepts"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Supply Chain Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Bullwhip Effect",
+  "unit": 5,
+  "topicId": "me703-or-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Supply Chain Management",
+  "topics": [
+   "Bullwhip Effect"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Supply Chain Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Logistics & Distribution",
+  "unit": 5,
+  "topicId": "me703-or-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Supply Chain Management",
+  "topics": [
+   "Logistics & Distribution"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Supply Chain Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "me703-or",
+  "subjectCode": "ME-703(A)",
+  "subjectLabel": "Operations Research & Supply Chain",
+  "title": "Sourcing & Performance",
+  "unit": 5,
+  "topicId": "me703-or-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Supply Chain Management",
+  "topics": [
+   "Sourcing & Performance"
+  ],
+  "description": "\"Fundamentals of Operations Research, IIT Madras\" covers Supply Chain Management.",
+  "url": "https://www.youtube.com/playlist?list=PL05350A31E6C09B7A",
+  "lectureKey": "me703-or-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Refrigeration & Air Conditioning: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Refrigeration Fundamentals",
+   "Vapour Compression Refrigeration",
+   "Vapour Absorption & Other Systems",
+   "Psychrometry",
+   "Air Conditioning Systems"
+  ],
+  "description": "\"Refrigeration and Air Conditioning, Prof. M. Ramgopal, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLE2DA184A2E479885",
+  "lectureKey": "me801-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Refrigeration Basics",
+  "unit": 1,
+  "topicId": "me801-u1t1",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Refrigeration Fundamentals",
+  "topics": [
+   "Refrigeration Basics"
+  ],
+  "description": "\"Introduction of refrigeration and air conditioning\".",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5uXXhPFmsrX1HucjtOOV6J",
+  "lectureKey": "me801-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Reversed Carnot Cycle",
+  "unit": 1,
+  "topicId": "me801-u1t2",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Refrigeration Fundamentals",
+  "topics": [
+   "Reversed Carnot Cycle"
+  ],
+  "description": "\"Introduction of refrigeration and air conditioning\" covers Refrigeration Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5uXXhPFmsrX1HucjtOOV6J",
+  "lectureKey": "me801-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Air Refrigeration",
+  "unit": 1,
+  "topicId": "me801-u1t3",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Refrigeration Fundamentals",
+  "topics": [
+   "Air Refrigeration"
+  ],
+  "description": "\"Introduction of refrigeration and air conditioning\".",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV5uXXhPFmsrX1HucjtOOV6J",
+  "lectureKey": "me801-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Refrigerants",
+  "unit": 1,
+  "topicId": "me801-u1t4",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Refrigeration Fundamentals",
+  "topics": [
+   "Refrigerants"
+  ],
+  "description": "\"Refrigerants\".",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV7uXG5gEPgq6o-tutTeEQpW",
+  "lectureKey": "me801-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Simple VCR Cycle",
+  "unit": 2,
+  "topicId": "me801-u2t1",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Vapour Compression Refrigeration",
+  "topics": [
+   "Simple VCR Cycle"
+  ],
+  "description": "\"Vapour compression refrigeration system VCRS\" covers Vapour Compression Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV77-tSpt2toTofUUfu8hoOw",
+  "lectureKey": "me801-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "p-h & T-s Diagrams",
+  "unit": 2,
+  "topicId": "me801-u2t2",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Vapour Compression Refrigeration",
+  "topics": [
+   "p-h & T-s Diagrams"
+  ],
+  "description": "\"Vapour compression refrigeration system VCRS\" covers Vapour Compression Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV77-tSpt2toTofUUfu8hoOw",
+  "lectureKey": "me801-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Subcooling & Superheating",
+  "unit": 2,
+  "topicId": "me801-u2t3",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Vapour Compression Refrigeration",
+  "topics": [
+   "Subcooling & Superheating"
+  ],
+  "description": "\"Vapour compression refrigeration system VCRS\" covers Vapour Compression Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV77-tSpt2toTofUUfu8hoOw",
+  "lectureKey": "me801-u2-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Multistage & Cascade Systems",
+  "unit": 2,
+  "topicId": "me801-u2t4",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Vapour Compression Refrigeration",
+  "topics": [
+   "Multistage & Cascade Systems"
+  ],
+  "description": "\"Vapour compression refrigeration system VCRS\" covers Vapour Compression Refrigeration.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV77-tSpt2toTofUUfu8hoOw",
+  "lectureKey": "me801-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Vapour Absorption System",
+  "unit": 3,
+  "topicId": "me801-u3t1",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Vapour Absorption & Other Systems",
+  "topics": [
+   "Vapour Absorption System"
+  ],
+  "description": "\"Vapour absorption refrigeration system VARS\".",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV7I6sy4DkyVLp-Rz6y3k65h",
+  "lectureKey": "me801-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Electrolux Refrigerator",
+  "unit": 3,
+  "topicId": "me801-u3t2",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Vapour Absorption & Other Systems",
+  "topics": [
+   "Electrolux Refrigerator"
+  ],
+  "description": "\"Vapour absorption refrigeration system VARS\" covers Vapour Absorption & Other Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV7I6sy4DkyVLp-Rz6y3k65h",
+  "lectureKey": "me801-u3-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Steam Jet & Thermoelectric Refrigeration",
+  "unit": 3,
+  "topicId": "me801-u3t3",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Vapour Absorption & Other Systems",
+  "topics": [
+   "Steam Jet & Thermoelectric Refrigeration"
+  ],
+  "description": "\"Vapour absorption refrigeration system VARS\" covers Vapour Absorption & Other Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV7I6sy4DkyVLp-Rz6y3k65h",
+  "lectureKey": "me801-u3-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Refrigeration Components",
+  "unit": 3,
+  "topicId": "me801-u3t4",
+  "lecturer": "RAC lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Vapour Absorption & Other Systems",
+  "topics": [
+   "Refrigeration Components"
+  ],
+  "description": "\"Vapour absorption refrigeration system VARS\".",
+  "url": "https://www.youtube.com/playlist?list=PLdoIhVhbPQV7I6sy4DkyVLp-Rz6y3k65h",
+  "lectureKey": "me801-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Psychrometric Properties",
+  "unit": 4,
+  "topicId": "me801-u4t1",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Psychrometry",
+  "topics": [
+   "Psychrometric Properties"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\" covers Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Psychrometric Chart",
+  "unit": 4,
+  "topicId": "me801-u4t2",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Psychrometry",
+  "topics": [
+   "Psychrometric Chart"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\" covers Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Psychrometric Processes",
+  "unit": 4,
+  "topicId": "me801-u4t3",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Psychrometry",
+  "topics": [
+   "Psychrometric Processes"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\" covers Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Bypass Factor & Sensible Heat Factor",
+  "unit": 4,
+  "topicId": "me801-u4t4",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Psychrometry",
+  "topics": [
+   "Bypass Factor & Sensible Heat Factor"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\" covers Psychrometry.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Human Comfort",
+  "unit": 5,
+  "topicId": "me801-u5t1",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air Conditioning Systems",
+  "topics": [
+   "Human Comfort"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\" covers Air Conditioning Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Cooling Load Calculation",
+  "unit": 5,
+  "topicId": "me801-u5t2",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air Conditioning Systems",
+  "topics": [
+   "Cooling Load Calculation"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\" covers Air Conditioning Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Air Conditioning Systems",
+  "unit": 5,
+  "topicId": "me801-u5t3",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air Conditioning Systems",
+  "topics": [
+   "Air Conditioning Systems"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me801",
+  "subjectCode": "ME-801",
+  "subjectLabel": "Refrigeration & Air Conditioning",
+  "title": "Duct Design & Automotive AC",
+  "unit": 5,
+  "topicId": "me801-u5t4",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air Conditioning Systems",
+  "topics": [
+   "Duct Design & Automotive AC"
+  ],
+  "description": "\"Refrigeration and air conditioning lectures\" covers Air Conditioning Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P_usSX4HsE1CXnDMy_R44Ov",
+  "lectureKey": "me801-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Automobile Engineering: full lecture series",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Chassis & Body Engineering",
+   "Transmission System",
+   "Suspension & Steering",
+   "Brakes, Wheels & Tyres",
+   "Electrical Systems & Emission Control"
+  ],
+  "description": "\"Automobile Engineering (Hindi and English)\" by AB Classes.",
+  "url": "https://www.youtube.com/playlist?list=PLbkIghvjQ7P9znl5JaqzLN0mkAvWXVyqw",
+  "lectureKey": "me802-ae-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Chassis & Frame",
+  "unit": 1,
+  "topicId": "me802-ae-u1t1",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chassis & Body Engineering",
+  "topics": [
+   "Chassis & Frame"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis and body\".",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "me802-ae-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Vehicle Layouts",
+  "unit": 1,
+  "topicId": "me802-ae-u1t2",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chassis & Body Engineering",
+  "topics": [
+   "Vehicle Layouts"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis and body\".",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "me802-ae-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Resistance to Motion",
+  "unit": 1,
+  "topicId": "me802-ae-u1t3",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chassis & Body Engineering",
+  "topics": [
+   "Resistance to Motion"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis and body\" covers Chassis & Body Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "me802-ae-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Tractive Effort",
+  "unit": 1,
+  "topicId": "me802-ae-u1t4",
+  "lecturer": "AB Classes",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chassis & Body Engineering",
+  "topics": [
+   "Tractive Effort"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis and body\" covers Chassis & Body Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "me802-ae-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Clutch",
+  "unit": 2,
+  "topicId": "me802-ae-u2t1",
+  "lecturer": "AB Classes",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission System",
+  "topics": [
+   "Clutch"
+  ],
+  "description": "\"Automobile transmission system major parts\" covers Transmission System.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "me802-ae-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Gearbox",
+  "unit": 2,
+  "topicId": "me802-ae-u2t2",
+  "lecturer": "AB Classes",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission System",
+  "topics": [
+   "Gearbox"
+  ],
+  "description": "\"Automobile transmission system major parts\" covers Transmission System.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "me802-ae-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Automatic Transmission",
+  "unit": 2,
+  "topicId": "me802-ae-u2t3",
+  "lecturer": "AB Classes",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission System",
+  "topics": [
+   "Automatic Transmission"
+  ],
+  "description": "\"Automobile transmission system major parts\".",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "me802-ae-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Propeller Shaft & Differential",
+  "unit": 2,
+  "topicId": "me802-ae-u2t4",
+  "lecturer": "AB Classes",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission System",
+  "topics": [
+   "Propeller Shaft & Differential"
+  ],
+  "description": "\"Automobile transmission system major parts\" covers Transmission System.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "me802-ae-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Suspension Systems",
+  "unit": 3,
+  "topicId": "me802-ae-u3t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension & Steering",
+  "topics": [
+   "Suspension Systems"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Suspension & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Shock Absorbers",
+  "unit": 3,
+  "topicId": "me802-ae-u3t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension & Steering",
+  "topics": [
+   "Shock Absorbers"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Suspension & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Steering Geometry",
+  "unit": 3,
+  "topicId": "me802-ae-u3t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension & Steering",
+  "topics": [
+   "Steering Geometry"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Suspension & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Steering Gears & Power Steering",
+  "unit": 3,
+  "topicId": "me802-ae-u3t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension & Steering",
+  "topics": [
+   "Steering Gears & Power Steering"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Suspension & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Braking Systems",
+  "unit": 4,
+  "topicId": "me802-ae-u4t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Brakes, Wheels & Tyres",
+  "topics": [
+   "Braking Systems"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Brakes, Wheels & Tyres.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "ABS & Advanced Braking",
+  "unit": 4,
+  "topicId": "me802-ae-u4t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Brakes, Wheels & Tyres",
+  "topics": [
+   "ABS & Advanced Braking"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Brakes, Wheels & Tyres.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Wheels & Tyres",
+  "unit": 4,
+  "topicId": "me802-ae-u4t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Brakes, Wheels & Tyres",
+  "topics": [
+   "Wheels & Tyres"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Brakes, Wheels & Tyres.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Wheel Alignment & Balancing",
+  "unit": 4,
+  "topicId": "me802-ae-u4t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Brakes, Wheels & Tyres",
+  "topics": [
+   "Wheel Alignment & Balancing"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Brakes, Wheels & Tyres.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Battery & Charging System",
+  "unit": 5,
+  "topicId": "me802-ae-u5t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Electrical Systems & Emission Control",
+  "topics": [
+   "Battery & Charging System"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Electrical Systems & Emission Control.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Starting & Lighting Systems",
+  "unit": 5,
+  "topicId": "me802-ae-u5t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Electrical Systems & Emission Control",
+  "topics": [
+   "Starting & Lighting Systems"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Electrical Systems & Emission Control.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Vehicle Electronics",
+  "unit": 5,
+  "topicId": "me802-ae-u5t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Electrical Systems & Emission Control",
+  "topics": [
+   "Vehicle Electronics"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Electrical Systems & Emission Control.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me802-ae",
+  "subjectCode": "ME-802(A)",
+  "subjectLabel": "Automobile Engineering",
+  "title": "Emission Control & Alternative Vehicles",
+  "unit": 5,
+  "topicId": "me802-ae-u5t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Electrical Systems & Emission Control",
+  "topics": [
+   "Emission Control & Alternative Vehicles"
+  ],
+  "description": "\"Automobile engineering lectures: engines, transmission, chassis\" covers Electrical Systems & Emission Control.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "me802-ae-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Energy Conservation & Audit: full lecture series",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Energy Scenario & Conservation",
+   "Energy Audit",
+   "Thermal Systems Efficiency",
+   "Electrical Systems Efficiency",
+   "Energy Management & Economics"
+  ],
+  "description": "\"Energy Audit and Management (unit-wise)\" by Energy audit lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Energy Scenario",
+  "unit": 1,
+  "topicId": "me803-eca-u1t1",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Energy Scenario & Conservation",
+  "topics": [
+   "Energy Scenario"
+  ],
+  "description": "\"Energy scenario and Energy Conservation Act 2001: energy conservation and management\".",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2GCp2szVRnoIk3e2E5J7oLl",
+  "lectureKey": "me803-eca-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Energy Conservation Act",
+  "unit": 1,
+  "topicId": "me803-eca-u1t2",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Energy Scenario & Conservation",
+  "topics": [
+   "Energy Conservation Act"
+  ],
+  "description": "\"Energy scenario and Energy Conservation Act 2001: energy conservation and management\".",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2GCp2szVRnoIk3e2E5J7oLl",
+  "lectureKey": "me803-eca-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Energy Pricing & Policy",
+  "unit": 1,
+  "topicId": "me803-eca-u1t3",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Energy Scenario & Conservation",
+  "topics": [
+   "Energy Pricing & Policy"
+  ],
+  "description": "\"Energy scenario and Energy Conservation Act 2001: energy conservation and management\" covers Energy Scenario & Conservation.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2GCp2szVRnoIk3e2E5J7oLl",
+  "lectureKey": "me803-eca-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Principles of Conservation",
+  "unit": 1,
+  "topicId": "me803-eca-u1t4",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Energy Scenario & Conservation",
+  "topics": [
+   "Principles of Conservation"
+  ],
+  "description": "\"Energy scenario and Energy Conservation Act 2001: energy conservation and management\".",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2GCp2szVRnoIk3e2E5J7oLl",
+  "lectureKey": "me803-eca-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Types of Energy Audit",
+  "unit": 2,
+  "topicId": "me803-eca-u2t1",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Energy Audit",
+  "topics": [
+   "Types of Energy Audit"
+  ],
+  "description": "\"Energy audit methodology: types of energy audit, preliminary and detailed audit\".",
+  "url": "https://www.youtube.com/watch?v=FwXvCMENY68",
+  "lectureKey": "me803-eca-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Audit Methodology",
+  "unit": 2,
+  "topicId": "me803-eca-u2t2",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Energy Audit",
+  "topics": [
+   "Audit Methodology"
+  ],
+  "description": "\"Energy audit methodology: types of energy audit, preliminary and detailed audit\".",
+  "url": "https://www.youtube.com/watch?v=FwXvCMENY68",
+  "lectureKey": "me803-eca-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Audit Instruments",
+  "unit": 2,
+  "topicId": "me803-eca-u2t3",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Energy Audit",
+  "topics": [
+   "Audit Instruments"
+  ],
+  "description": "\"Energy audit methodology: types of energy audit, preliminary and detailed audit\".",
+  "url": "https://www.youtube.com/watch?v=FwXvCMENY68",
+  "lectureKey": "me803-eca-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Energy Accounting",
+  "unit": 2,
+  "topicId": "me803-eca-u2t4",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Energy Audit",
+  "topics": [
+   "Energy Accounting"
+  ],
+  "description": "\"Energy audit methodology: types of energy audit, preliminary and detailed audit\".",
+  "url": "https://www.youtube.com/watch?v=FwXvCMENY68",
+  "lectureKey": "me803-eca-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Boilers & Furnaces",
+  "unit": 3,
+  "topicId": "me803-eca-u3t1",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Thermal Systems Efficiency",
+  "topics": [
+   "Boilers & Furnaces"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Thermal Systems Efficiency.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u3-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Steam Systems",
+  "unit": 3,
+  "topicId": "me803-eca-u3t2",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Thermal Systems Efficiency",
+  "topics": [
+   "Steam Systems"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Thermal Systems Efficiency.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u3-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Waste Heat Recovery",
+  "unit": 3,
+  "topicId": "me803-eca-u3t3",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Thermal Systems Efficiency",
+  "topics": [
+   "Waste Heat Recovery"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Thermal Systems Efficiency.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u3-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Cogeneration",
+  "unit": 3,
+  "topicId": "me803-eca-u3t4",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Thermal Systems Efficiency",
+  "topics": [
+   "Cogeneration"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Thermal Systems Efficiency.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u3-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Electric Motors",
+  "unit": 4,
+  "topicId": "me803-eca-u4t1",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electrical Systems Efficiency",
+  "topics": [
+   "Electric Motors"
+  ],
+  "description": "\"Electrical energy conservation and auditing lecture 1\" covers Electrical Systems Efficiency.",
+  "url": "https://www.youtube.com/watch?v=kEP6S6RGstE",
+  "lectureKey": "me803-eca-u4-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Pumps, Fans & Compressors",
+  "unit": 4,
+  "topicId": "me803-eca-u4t2",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electrical Systems Efficiency",
+  "topics": [
+   "Pumps, Fans & Compressors"
+  ],
+  "description": "\"Electrical energy conservation and auditing lecture 1\" covers Electrical Systems Efficiency.",
+  "url": "https://www.youtube.com/watch?v=kEP6S6RGstE",
+  "lectureKey": "me803-eca-u4-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Lighting Systems",
+  "unit": 4,
+  "topicId": "me803-eca-u4t3",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electrical Systems Efficiency",
+  "topics": [
+   "Lighting Systems"
+  ],
+  "description": "\"Electrical energy conservation and auditing lecture 1\" covers Electrical Systems Efficiency.",
+  "url": "https://www.youtube.com/watch?v=kEP6S6RGstE",
+  "lectureKey": "me803-eca-u4-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Power Factor Improvement",
+  "unit": 4,
+  "topicId": "me803-eca-u4t4",
+  "lecturer": "Energy audit lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electrical Systems Efficiency",
+  "topics": [
+   "Power Factor Improvement"
+  ],
+  "description": "\"Electrical energy conservation and auditing lecture 1\" covers Electrical Systems Efficiency.",
+  "url": "https://www.youtube.com/watch?v=kEP6S6RGstE",
+  "lectureKey": "me803-eca-u4-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Energy Management System",
+  "unit": 5,
+  "topicId": "me803-eca-u5t1",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Energy Management & Economics",
+  "topics": [
+   "Energy Management System"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Energy Management & Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u5-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Financial Analysis",
+  "unit": 5,
+  "topicId": "me803-eca-u5t2",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Energy Management & Economics",
+  "topics": [
+   "Financial Analysis"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Energy Management & Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u5-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Monitoring & Targeting",
+  "unit": 5,
+  "topicId": "me803-eca-u5t3",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Energy Management & Economics",
+  "topics": [
+   "Monitoring & Targeting"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Energy Management & Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u5-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "me803-eca",
+  "subjectCode": "ME-803(B)",
+  "subjectLabel": "Energy Conservation & Audit",
+  "title": "Green Buildings & Renewables",
+  "unit": 5,
+  "topicId": "me803-eca-u5t4",
+  "lecturer": "Energy audit lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Energy Management & Economics",
+  "topics": [
+   "Green Buildings & Renewables"
+  ],
+  "description": "Full Energy Conservation & Audit series; pick the lecture on Energy Management & Economics.",
+  "url": "https://www.youtube.com/playlist?list=PLbFnetAJfrO4YhCcZ9g9akVZ6-v1cwrvg",
+  "lectureKey": "me803-eca-u5-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Automotive Engines: full lecture series",
+  "lecturer": "IIT Kanpur",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Engine Construction",
+   "Fuel Systems",
+   "Combustion & Engine Management",
+   "Engine Performance",
+   "Cooling, Lubrication & Emissions"
+  ],
+  "description": "\"Internal Combustion Engines, Prof. Sameer Khandekar, IIT Kanpur\" by IIT Kanpur.",
+  "url": "https://www.youtube.com/playlist?list=PLh_Qa0GX8LCCjBgZdyASLWqhde-KokWUt",
+  "lectureKey": "au501-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Engine Classification for Vehicles",
+  "unit": 1,
+  "topicId": "au501-u1t1",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Engine Construction",
+  "topics": [
+   "Engine Classification for Vehicles"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Engine Construction.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Cylinder Block & Head",
+  "unit": 1,
+  "topicId": "au501-u1t2",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Engine Construction",
+  "topics": [
+   "Cylinder Block & Head"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Engine Construction.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Piston, Rings & Connecting Rod",
+  "unit": 1,
+  "topicId": "au501-u1t3",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Engine Construction",
+  "topics": [
+   "Piston, Rings & Connecting Rod"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Engine Construction.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Crankshaft, Camshaft & Valve Train",
+  "unit": 1,
+  "topicId": "au501-u1t4",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Engine Construction",
+  "topics": [
+   "Crankshaft, Camshaft & Valve Train"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Engine Construction.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Petrol Fuel Supply",
+  "unit": 2,
+  "topicId": "au501-u2t1",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fuel Systems",
+  "topics": [
+   "Petrol Fuel Supply"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Fuel Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Electronic Fuel Injection",
+  "unit": 2,
+  "topicId": "au501-u2t2",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fuel Systems",
+  "topics": [
+   "Electronic Fuel Injection"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Fuel Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Diesel Fuel Systems",
+  "unit": 2,
+  "topicId": "au501-u2t3",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fuel Systems",
+  "topics": [
+   "Diesel Fuel Systems"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Fuel Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Alternative Fuel Systems",
+  "unit": 2,
+  "topicId": "au501-u2t4",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Fuel Systems",
+  "topics": [
+   "Alternative Fuel Systems"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Fuel Systems.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "SI Engine Combustion & Knock",
+  "unit": 3,
+  "topicId": "au501-u3t1",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combustion & Engine Management",
+  "topics": [
+   "SI Engine Combustion & Knock"
+  ],
+  "description": "\"A course in internal combustion engines\".",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "CI Engine Combustion",
+  "unit": 3,
+  "topicId": "au501-u3t2",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combustion & Engine Management",
+  "topics": [
+   "CI Engine Combustion"
+  ],
+  "description": "\"A course in internal combustion engines\".",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Engine Management Systems",
+  "unit": 3,
+  "topicId": "au501-u3t3",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combustion & Engine Management",
+  "topics": [
+   "Engine Management Systems"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Combustion & Engine Management.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Variable Valve Timing",
+  "unit": 3,
+  "topicId": "au501-u3t4",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Combustion & Engine Management",
+  "topics": [
+   "Variable Valve Timing"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Combustion & Engine Management.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Performance Characteristics",
+  "unit": 4,
+  "topicId": "au501-u4t1",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Engine Performance",
+  "topics": [
+   "Performance Characteristics"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Engine Performance.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Engine Testing Methods",
+  "unit": 4,
+  "topicId": "au501-u4t2",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Engine Performance",
+  "topics": [
+   "Engine Testing Methods"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Engine Performance.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Supercharging & Turbocharging",
+  "unit": 4,
+  "topicId": "au501-u4t3",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Engine Performance",
+  "topics": [
+   "Supercharging & Turbocharging"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Engine Performance.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Engine Downsizing",
+  "unit": 4,
+  "topicId": "au501-u4t4",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Engine Performance",
+  "topics": [
+   "Engine Downsizing"
+  ],
+  "description": "\"A course in internal combustion engines\".",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Cooling System Components",
+  "unit": 5,
+  "topicId": "au501-u5t1",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cooling, Lubrication & Emissions",
+  "topics": [
+   "Cooling System Components"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Cooling, Lubrication & Emissions.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Lubrication System",
+  "unit": 5,
+  "topicId": "au501-u5t2",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cooling, Lubrication & Emissions",
+  "topics": [
+   "Lubrication System"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Cooling, Lubrication & Emissions.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Exhaust System",
+  "unit": 5,
+  "topicId": "au501-u5t3",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cooling, Lubrication & Emissions",
+  "topics": [
+   "Exhaust System"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Cooling, Lubrication & Emissions.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au501",
+  "subjectCode": "AU-501",
+  "subjectLabel": "Automotive Engines",
+  "title": "Emission Aftertreatment",
+  "unit": 5,
+  "topicId": "au501-u5t4",
+  "lecturer": "Prof. D.S. Ghodake",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Cooling, Lubrication & Emissions",
+  "topics": [
+   "Emission Aftertreatment"
+  ],
+  "description": "\"A course in internal combustion engines\" covers Cooling, Lubrication & Emissions.",
+  "url": "https://www.youtube.com/playlist?list=PLiw3seDMOg9JyZ62ishWkM9y1jDgOLRVu",
+  "lectureKey": "au501-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Automotive Chassis System: full lecture series",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Frames & Body",
+   "Front Axle & Steering",
+   "Suspension",
+   "Rear Axle & Final Drive",
+   "Wheels, Tyres & Brakes"
+  ],
+  "description": "\"Automobile Engineering lectures: chassis, transmission, suspension, brakes\" by Magic Marks.",
+  "url": "https://www.youtube.com/playlist?list=PLpe3qgeJLpB2wAoaRSY9_yAeOt7u0LTNd",
+  "lectureKey": "au502-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Types of Frames",
+  "unit": 1,
+  "topicId": "au502-u1t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Frames & Body",
+  "topics": [
+   "Types of Frames"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\".",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Frame Materials & Loads",
+  "unit": 1,
+  "topicId": "au502-u1t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Frames & Body",
+  "topics": [
+   "Frame Materials & Loads"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Frames & Body.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Vehicle Dimensions",
+  "unit": 1,
+  "topicId": "au502-u1t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Frames & Body",
+  "topics": [
+   "Vehicle Dimensions"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\".",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Weight Distribution",
+  "unit": 1,
+  "topicId": "au502-u1t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Frames & Body",
+  "topics": [
+   "Weight Distribution"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Frames & Body.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Front Axle Types",
+  "unit": 2,
+  "topicId": "au502-u2t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Front Axle & Steering",
+  "topics": [
+   "Front Axle Types"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Front Axle & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Steering Geometry",
+  "unit": 2,
+  "topicId": "au502-u2t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Front Axle & Steering",
+  "topics": [
+   "Steering Geometry"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Front Axle & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Steering Mechanisms",
+  "unit": 2,
+  "topicId": "au502-u2t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Front Axle & Steering",
+  "topics": [
+   "Steering Mechanisms"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Front Axle & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Steering Gearboxes & Power Steering",
+  "unit": 2,
+  "topicId": "au502-u2t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Front Axle & Steering",
+  "topics": [
+   "Steering Gearboxes & Power Steering"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Front Axle & Steering.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Suspension Requirements",
+  "unit": 3,
+  "topicId": "au502-u3t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension",
+  "topics": [
+   "Suspension Requirements"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Suspension.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Springs",
+  "unit": 3,
+  "topicId": "au502-u3t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension",
+  "topics": [
+   "Springs"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Suspension.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Independent Suspension Types",
+  "unit": 3,
+  "topicId": "au502-u3t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension",
+  "topics": [
+   "Independent Suspension Types"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Suspension.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Dampers & Stabilisers",
+  "unit": 3,
+  "topicId": "au502-u3t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Suspension",
+  "topics": [
+   "Dampers & Stabilisers"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Suspension.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Final Drive",
+  "unit": 4,
+  "topicId": "au502-u4t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Rear Axle & Final Drive",
+  "topics": [
+   "Final Drive"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Rear Axle & Final Drive.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Differential",
+  "unit": 4,
+  "topicId": "au502-u4t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Rear Axle & Final Drive",
+  "topics": [
+   "Differential"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Rear Axle & Final Drive.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Rear Axle Types",
+  "unit": 4,
+  "topicId": "au502-u4t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Rear Axle & Final Drive",
+  "topics": [
+   "Rear Axle Types"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Rear Axle & Final Drive.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Rear Axle Drives",
+  "unit": 4,
+  "topicId": "au502-u4t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Rear Axle & Final Drive",
+  "topics": [
+   "Rear Axle Drives"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Rear Axle & Final Drive.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Wheels",
+  "unit": 5,
+  "topicId": "au502-u5t1",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wheels, Tyres & Brakes",
+  "topics": [
+   "Wheels"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Wheels, Tyres & Brakes.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Tyres",
+  "unit": 5,
+  "topicId": "au502-u5t2",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wheels, Tyres & Brakes",
+  "topics": [
+   "Tyres"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Wheels, Tyres & Brakes.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Brake Systems",
+  "unit": 5,
+  "topicId": "au502-u5t3",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wheels, Tyres & Brakes",
+  "topics": [
+   "Brake Systems"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Wheels, Tyres & Brakes.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au502",
+  "subjectCode": "AU-502",
+  "subjectLabel": "Automotive Chassis System",
+  "title": "Brake Performance",
+  "unit": 5,
+  "topicId": "au502-u5t4",
+  "lecturer": "Magic Marks",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Wheels, Tyres & Brakes",
+  "topics": [
+   "Brake Performance"
+  ],
+  "description": "\"Anatomy of the vehicles: chassis, frame, body\" covers Wheels, Tyres & Brakes.",
+  "url": "https://www.youtube.com/playlist?list=PLhqHHC-xbfBPIIAGzL4YCODxhkQwfHiSV",
+  "lectureKey": "au502-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Automotive Transmission System: full lecture series",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Clutches",
+   "Manual Gearbox",
+   "Fluid Drives & Automatic Transmission",
+   "CVT, DCT & AMT",
+   "Driveline"
+  ],
+  "description": "\"Basics of Automotive Systems\" by LJ University.",
+  "url": "https://www.youtube.com/playlist?list=PLQmc-I2-FO2GXPNpWS6TExp50f5xEfVnX",
+  "lectureKey": "au503-ats-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Clutch Requirements",
+  "unit": 1,
+  "topicId": "au503-ats-u1t1",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 1: Clutches",
+  "topics": [
+   "Clutch Requirements"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\".",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Clutch Types",
+  "unit": 1,
+  "topicId": "au503-ats-u1t2",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 1: Clutches",
+  "topics": [
+   "Clutch Types"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\".",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Clutch Torque Calculation",
+  "unit": 1,
+  "topicId": "au503-ats-u1t3",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 1: Clutches",
+  "topics": [
+   "Clutch Torque Calculation"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Clutches.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Clutch Operation & Faults",
+  "unit": 1,
+  "topicId": "au503-ats-u1t4",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 1: Clutches",
+  "topics": [
+   "Clutch Operation & Faults"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Clutches.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Need for Gearbox",
+  "unit": 2,
+  "topicId": "au503-ats-u2t1",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 2: Manual Gearbox",
+  "topics": [
+   "Need for Gearbox"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\".",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Gearbox Types",
+  "unit": 2,
+  "topicId": "au503-ats-u2t2",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 2: Manual Gearbox",
+  "topics": [
+   "Gearbox Types"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\".",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Gear Ratio Design",
+  "unit": 2,
+  "topicId": "au503-ats-u2t3",
+  "lecturer": "LJ University",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Manual Gearbox",
+  "topics": [
+   "Gear Ratio Design"
+  ],
+  "description": "\"Design of transmission systems: belt, chain, gear drive, gear box\".",
+  "url": "https://www.youtube.com/playlist?list=PLY6be7r7PT8KEvzcGquK2sT1teILFLP0O",
+  "lectureKey": "au503-ats-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Gear Shift Mechanism",
+  "unit": 2,
+  "topicId": "au503-ats-u2t4",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 2: Manual Gearbox",
+  "topics": [
+   "Gear Shift Mechanism"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Manual Gearbox.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Fluid Coupling",
+  "unit": 3,
+  "topicId": "au503-ats-u3t1",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 3: Fluid Drives & Automatic Transmission",
+  "topics": [
+   "Fluid Coupling"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Fluid Drives & Automatic Transmission.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Torque Converter",
+  "unit": 3,
+  "topicId": "au503-ats-u3t2",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 3: Fluid Drives & Automatic Transmission",
+  "topics": [
+   "Torque Converter"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Fluid Drives & Automatic Transmission.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Epicyclic Gear Sets",
+  "unit": 3,
+  "topicId": "au503-ats-u3t3",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 3: Fluid Drives & Automatic Transmission",
+  "topics": [
+   "Epicyclic Gear Sets"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Fluid Drives & Automatic Transmission.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Automatic Transmission Control",
+  "unit": 3,
+  "topicId": "au503-ats-u3t4",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 3: Fluid Drives & Automatic Transmission",
+  "topics": [
+   "Automatic Transmission Control"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Fluid Drives & Automatic Transmission.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Continuously Variable Transmission",
+  "unit": 4,
+  "topicId": "au503-ats-u4t1",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 4: CVT, DCT & AMT",
+  "topics": [
+   "Continuously Variable Transmission"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers CVT, DCT & AMT.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Dual Clutch Transmission",
+  "unit": 4,
+  "topicId": "au503-ats-u4t2",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 4: CVT, DCT & AMT",
+  "topics": [
+   "Dual Clutch Transmission"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\".",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Automated Manual Transmission",
+  "unit": 4,
+  "topicId": "au503-ats-u4t3",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 4: CVT, DCT & AMT",
+  "topics": [
+   "Automated Manual Transmission"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers CVT, DCT & AMT.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Electric & Hybrid Transmissions",
+  "unit": 4,
+  "topicId": "au503-ats-u4t4",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 4: CVT, DCT & AMT",
+  "topics": [
+   "Electric & Hybrid Transmissions"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers CVT, DCT & AMT.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Propeller Shaft",
+  "unit": 5,
+  "topicId": "au503-ats-u5t1",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 5: Driveline",
+  "topics": [
+   "Propeller Shaft"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\".",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Universal & CV Joints",
+  "unit": 5,
+  "topicId": "au503-ats-u5t2",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 5: Driveline",
+  "topics": [
+   "Universal & CV Joints"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Driveline.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Transfer Case & 4WD",
+  "unit": 5,
+  "topicId": "au503-ats-u5t3",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 5: Driveline",
+  "topics": [
+   "Transfer Case & 4WD"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Driveline.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-ats",
+  "subjectCode": "AU-503(A)",
+  "subjectLabel": "Automotive Transmission System",
+  "title": "Driveline Vibration & Losses",
+  "unit": 5,
+  "topicId": "au503-ats-u5t4",
+  "lecturer": "LJ University",
+  "type": "video",
+  "typeLabel": "Unit 5: Driveline",
+  "topics": [
+   "Driveline Vibration & Losses"
+  ],
+  "description": "\"Automobile transmission system major parts: clutch, gearbox, propeller shaft, differential\" covers Driveline.",
+  "url": "https://www.youtube.com/watch?v=sTE1uHbNfvQ",
+  "lectureKey": "au503-ats-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Alternate Automotive Fuels & Emissions: full lecture series",
+  "lecturer": "Automobile lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Need for Alternative Fuels",
+   "Alcohols & Biodiesel",
+   "Gaseous Fuels",
+   "Emission Formation",
+   "Emission Control & Norms"
+  ],
+  "description": "\"Automobile Engineering lecture series (Hindi and English)\" by Automobile lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLSJZETVyEssmc2CMU4E4c7TlA0gvwhS10",
+  "lectureKey": "au503-aaf-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Energy Crisis & Fuel Scenario",
+  "unit": 1,
+  "topicId": "au503-aaf-u1t1",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Need for Alternative Fuels",
+  "topics": [
+   "Energy Crisis & Fuel Scenario"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Need for Alternative Fuels.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Fuel Quality Parameters",
+  "unit": 1,
+  "topicId": "au503-aaf-u1t2",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Need for Alternative Fuels",
+  "topics": [
+   "Fuel Quality Parameters"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Need for Alternative Fuels.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Classification of Alternative Fuels",
+  "unit": 1,
+  "topicId": "au503-aaf-u1t3",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Need for Alternative Fuels",
+  "topics": [
+   "Classification of Alternative Fuels"
+  ],
+  "description": "\"Introduction of alternative fuel power system\".",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Fuel Policy in India",
+  "unit": 1,
+  "topicId": "au503-aaf-u1t4",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Need for Alternative Fuels",
+  "topics": [
+   "Fuel Policy in India"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Need for Alternative Fuels.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Alcohol Fuels",
+  "unit": 2,
+  "topicId": "au503-aaf-u2t1",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Alcohols & Biodiesel",
+  "topics": [
+   "Alcohol Fuels"
+  ],
+  "description": "\"Introduction of alternative fuel power system\".",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Alcohol in Engines",
+  "unit": 2,
+  "topicId": "au503-aaf-u2t2",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Alcohols & Biodiesel",
+  "topics": [
+   "Alcohol in Engines"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "au503-aaf-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Biodiesel",
+  "unit": 2,
+  "topicId": "au503-aaf-u2t3",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Alcohols & Biodiesel",
+  "topics": [
+   "Biodiesel"
+  ],
+  "description": "\"Alternative fuels: biodiesel, ethanol, biomass, biogas, hydrogen\".",
+  "url": "https://www.youtube.com/watch?v=ztFxQHr2gpU",
+  "lectureKey": "au503-aaf-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Vegetable Oils & Biodiesel Issues",
+  "unit": 2,
+  "topicId": "au503-aaf-u2t4",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Alcohols & Biodiesel",
+  "topics": [
+   "Vegetable Oils & Biodiesel Issues"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Alcohols & Biodiesel.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "CNG & LPG",
+  "unit": 3,
+  "topicId": "au503-aaf-u3t1",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Gaseous Fuels",
+  "topics": [
+   "CNG & LPG"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Gaseous Fuels.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Hydrogen as Fuel",
+  "unit": 3,
+  "topicId": "au503-aaf-u3t2",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Gaseous Fuels",
+  "topics": [
+   "Hydrogen as Fuel"
+  ],
+  "description": "\"Alternative fuels: biodiesel, ethanol, biomass, biogas, hydrogen\".",
+  "url": "https://www.youtube.com/watch?v=ztFxQHr2gpU",
+  "lectureKey": "au503-aaf-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Biogas & Producer Gas",
+  "unit": 3,
+  "topicId": "au503-aaf-u3t3",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Gaseous Fuels",
+  "topics": [
+   "Biogas & Producer Gas"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Gaseous Fuels.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Fuel Cells for Vehicles",
+  "unit": 3,
+  "topicId": "au503-aaf-u3t4",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Gaseous Fuels",
+  "topics": [
+   "Fuel Cells for Vehicles"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Gaseous Fuels.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Pollutants from SI Engines",
+  "unit": 4,
+  "topicId": "au503-aaf-u4t1",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Emission Formation",
+  "topics": [
+   "Pollutants from SI Engines"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "au503-aaf-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Pollutants from CI Engines",
+  "unit": 4,
+  "topicId": "au503-aaf-u4t2",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Emission Formation",
+  "topics": [
+   "Pollutants from CI Engines"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "au503-aaf-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Evaporative & Crankcase Emissions",
+  "unit": 4,
+  "topicId": "au503-aaf-u4t3",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Emission Formation",
+  "topics": [
+   "Evaporative & Crankcase Emissions"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Emission Formation.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Effects of Pollutants",
+  "unit": 4,
+  "topicId": "au503-aaf-u4t4",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Emission Formation",
+  "topics": [
+   "Effects of Pollutants"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Emission Formation.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Engine Modifications",
+  "unit": 5,
+  "topicId": "au503-aaf-u5t1",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Emission Control & Norms",
+  "topics": [
+   "Engine Modifications"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "au503-aaf-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Aftertreatment Devices",
+  "unit": 5,
+  "topicId": "au503-aaf-u5t2",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Emission Control & Norms",
+  "topics": [
+   "Aftertreatment Devices"
+  ],
+  "description": "\"Introduction of alternative fuel power system\" covers Emission Control & Norms.",
+  "url": "https://www.youtube.com/watch?v=niKpCjq0pWk",
+  "lectureKey": "au503-aaf-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Emission Measurement",
+  "unit": 5,
+  "topicId": "au503-aaf-u5t3",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Emission Control & Norms",
+  "topics": [
+   "Emission Measurement"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "au503-aaf-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "au503-aaf",
+  "subjectCode": "AU-503(C)",
+  "subjectLabel": "Alternate Automotive Fuels & Emissions",
+  "title": "Emission Norms",
+  "unit": 5,
+  "topicId": "au503-aaf-u5t4",
+  "lecturer": "Automobile lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Emission Control & Norms",
+  "topics": [
+   "Emission Norms"
+  ],
+  "description": "\"Diesel engine emissions and pollution control, alternative fuels\".",
+  "url": "https://www.youtube.com/watch?v=WZb9Bx1cekI",
+  "lectureKey": "au503-aaf-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Automotive Electrical & Electronics: full lecture series",
+  "lecturer": "Uplatz",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Batteries & Charging",
+   "Starting & Ignition Systems",
+   "Lighting & Accessories",
+   "Sensors & Actuators",
+   "Vehicle Electronics & Networks"
+  ],
+  "description": "\"Automotive Electrics and Automotive Electronics\" by Uplatz.",
+  "url": "https://www.youtube.com/playlist?list=PLTndtixj8kK1fELVCsPFbk1y_lBES3e_I",
+  "lectureKey": "au601-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Lead-acid Battery",
+  "unit": 1,
+  "topicId": "au601-u1t1",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 1: Batteries & Charging",
+  "topics": [
+   "Lead-acid Battery"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Batteries & Charging.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Maintenance-free & Advanced Batteries",
+  "unit": 1,
+  "topicId": "au601-u1t2",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 1: Batteries & Charging",
+  "topics": [
+   "Maintenance-free & Advanced Batteries"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Batteries & Charging.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Alternator & Charging System",
+  "unit": 1,
+  "topicId": "au601-u1t3",
+  "lecturer": "Uplatz",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Batteries & Charging",
+  "topics": [
+   "Alternator & Charging System"
+  ],
+  "description": "\"Automotive electrical system: starting and charging system, battery\".",
+  "url": "https://www.youtube.com/playlist?list=PLjB22Nn4jO250aGd8NRCsKV3Xhc4PE95N",
+  "lectureKey": "au601-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Charging System Faults",
+  "unit": 1,
+  "topicId": "au601-u1t4",
+  "lecturer": "Uplatz",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Batteries & Charging",
+  "topics": [
+   "Charging System Faults"
+  ],
+  "description": "\"Automotive electrical system: starting and charging system, battery\".",
+  "url": "https://www.youtube.com/playlist?list=PLjB22Nn4jO250aGd8NRCsKV3Xhc4PE95N",
+  "lectureKey": "au601-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Starting System",
+  "unit": 2,
+  "topicId": "au601-u2t1",
+  "lecturer": "Uplatz",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Starting & Ignition Systems",
+  "topics": [
+   "Starting System"
+  ],
+  "description": "\"Automotive electrical system: starting and charging system, battery\".",
+  "url": "https://www.youtube.com/playlist?list=PLjB22Nn4jO250aGd8NRCsKV3Xhc4PE95N",
+  "lectureKey": "au601-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Conventional Ignition",
+  "unit": 2,
+  "topicId": "au601-u2t2",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 2: Starting & Ignition Systems",
+  "topics": [
+   "Conventional Ignition"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Starting & Ignition Systems.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Electronic & Distributorless Ignition",
+  "unit": 2,
+  "topicId": "au601-u2t3",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 2: Starting & Ignition Systems",
+  "topics": [
+   "Electronic & Distributorless Ignition"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Starting & Ignition Systems.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Spark Plugs",
+  "unit": 2,
+  "topicId": "au601-u2t4",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 2: Starting & Ignition Systems",
+  "topics": [
+   "Spark Plugs"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Starting & Ignition Systems.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Lighting System",
+  "unit": 3,
+  "topicId": "au601-u3t1",
+  "lecturer": "Uplatz",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Lighting & Accessories",
+  "topics": [
+   "Lighting System"
+  ],
+  "description": "\"Automotive electrical system: starting and charging system, battery\".",
+  "url": "https://www.youtube.com/playlist?list=PLjB22Nn4jO250aGd8NRCsKV3Xhc4PE95N",
+  "lectureKey": "au601-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Signalling & Instrumentation",
+  "unit": 3,
+  "topicId": "au601-u3t2",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 3: Lighting & Accessories",
+  "topics": [
+   "Signalling & Instrumentation"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Lighting & Accessories.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Wiring & Protection",
+  "unit": 3,
+  "topicId": "au601-u3t3",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 3: Lighting & Accessories",
+  "topics": [
+   "Wiring & Protection"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Lighting & Accessories.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Comfort Accessories",
+  "unit": 3,
+  "topicId": "au601-u3t4",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 3: Lighting & Accessories",
+  "topics": [
+   "Comfort Accessories"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Lighting & Accessories.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Engine Sensors",
+  "unit": 4,
+  "topicId": "au601-u4t1",
+  "lecturer": "Cars Simplified",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "Engine Sensors"
+  ],
+  "description": "\"Automotive switches and sensors\".",
+  "url": "https://www.youtube.com/playlist?list=PL0QX2tTK83MUrK-0ksj8RRZ7g60OU84y7",
+  "lectureKey": "au601-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Exhaust & Air Sensors",
+  "unit": 4,
+  "topicId": "au601-u4t2",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "Exhaust & Air Sensors"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Sensors & Actuators.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Chassis Sensors",
+  "unit": 4,
+  "topicId": "au601-u4t3",
+  "lecturer": "Cars Simplified",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "Chassis Sensors"
+  ],
+  "description": "\"Automotive switches and sensors\".",
+  "url": "https://www.youtube.com/playlist?list=PL0QX2tTK83MUrK-0ksj8RRZ7g60OU84y7",
+  "lectureKey": "au601-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Actuators",
+  "unit": 4,
+  "topicId": "au601-u4t4",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 4: Sensors & Actuators",
+  "topics": [
+   "Actuators"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Sensors & Actuators.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Electronic Control Unit",
+  "unit": 5,
+  "topicId": "au601-u5t1",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 5: Vehicle Electronics & Networks",
+  "topics": [
+   "Electronic Control Unit"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\".",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "In-vehicle Networks",
+  "unit": 5,
+  "topicId": "au601-u5t2",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 5: Vehicle Electronics & Networks",
+  "topics": [
+   "In-vehicle Networks"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Vehicle Electronics & Networks.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Safety Electronics",
+  "unit": 5,
+  "topicId": "au601-u5t3",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 5: Vehicle Electronics & Networks",
+  "topics": [
+   "Safety Electronics"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\".",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au601",
+  "subjectCode": "AU-601",
+  "subjectLabel": "Automotive Electrical & Electronics",
+  "title": "Diagnostics & ADAS",
+  "unit": 5,
+  "topicId": "au601-u5t4",
+  "lecturer": "Uplatz",
+  "type": "video",
+  "typeLabel": "Unit 5: Vehicle Electronics & Networks",
+  "topics": [
+   "Diagnostics & ADAS"
+  ],
+  "description": "\"Introduction to automotive electricals and electronics\" covers Vehicle Electronics & Networks.",
+  "url": "https://www.youtube.com/watch?v=Zpbj3C4RtBc",
+  "lectureKey": "au601-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Vehicle Dynamics: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Tyre Mechanics",
+   "Longitudinal Dynamics",
+   "Lateral Dynamics & Handling",
+   "Vertical Dynamics & Ride",
+   "Stability & Control Systems"
+  ],
+  "description": "\"Vehicle Dynamics, Dr. R. Krishnakumar, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLbMVogVj5nJTW50jj9_gvJmdwFWHaqR5J",
+  "lectureKey": "au603-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Tyre Forces",
+  "unit": 1,
+  "topicId": "au603-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Tyre Mechanics",
+  "topics": [
+   "Tyre Forces"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Tyre Mechanics.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Cornering Force & Slip Angle",
+  "unit": 1,
+  "topicId": "au603-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Tyre Mechanics",
+  "topics": [
+   "Cornering Force & Slip Angle"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Tyre Mechanics.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Tyre Models",
+  "unit": 1,
+  "topicId": "au603-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Tyre Mechanics",
+  "topics": [
+   "Tyre Models"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Tyre Mechanics.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Tyre Characteristics",
+  "unit": 1,
+  "topicId": "au603-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Tyre Mechanics",
+  "topics": [
+   "Tyre Characteristics"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Tyre Mechanics.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Tractive Performance",
+  "unit": 2,
+  "topicId": "au603-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Longitudinal Dynamics",
+  "topics": [
+   "Tractive Performance"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Longitudinal Dynamics.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Braking Dynamics",
+  "unit": 2,
+  "topicId": "au603-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Longitudinal Dynamics",
+  "topics": [
+   "Braking Dynamics"
+  ],
+  "description": "\"Longitudinal dynamics\".",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Aerodynamic Resistance",
+  "unit": 2,
+  "topicId": "au603-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Longitudinal Dynamics",
+  "topics": [
+   "Aerodynamic Resistance"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Longitudinal Dynamics.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Fuel Economy & Performance",
+  "unit": 2,
+  "topicId": "au603-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Longitudinal Dynamics",
+  "topics": [
+   "Fuel Economy & Performance"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Longitudinal Dynamics.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Steady-state Cornering",
+  "unit": 3,
+  "topicId": "au603-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Lateral Dynamics & Handling",
+  "topics": [
+   "Steady-state Cornering"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Lateral Dynamics & Handling.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Understeer & Oversteer",
+  "unit": 3,
+  "topicId": "au603-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Lateral Dynamics & Handling",
+  "topics": [
+   "Understeer & Oversteer"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Lateral Dynamics & Handling.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Critical & Characteristic Speed",
+  "unit": 3,
+  "topicId": "au603-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Lateral Dynamics & Handling",
+  "topics": [
+   "Critical & Characteristic Speed"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Lateral Dynamics & Handling.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Rollover & Load Transfer",
+  "unit": 3,
+  "topicId": "au603-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Lateral Dynamics & Handling",
+  "topics": [
+   "Rollover & Load Transfer"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Lateral Dynamics & Handling.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Ride Comfort",
+  "unit": 4,
+  "topicId": "au603-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Vertical Dynamics & Ride",
+  "topics": [
+   "Ride Comfort"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Vertical Dynamics & Ride.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Quarter Car Model",
+  "unit": 4,
+  "topicId": "au603-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Vertical Dynamics & Ride",
+  "topics": [
+   "Quarter Car Model"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Vertical Dynamics & Ride.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Pitch & Bounce",
+  "unit": 4,
+  "topicId": "au603-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Vertical Dynamics & Ride",
+  "topics": [
+   "Pitch & Bounce"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Vertical Dynamics & Ride.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Suspension Tuning",
+  "unit": 4,
+  "topicId": "au603-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Vertical Dynamics & Ride",
+  "topics": [
+   "Suspension Tuning"
+  ],
+  "description": "\"Roll center, anti dive and squat, motion ratio, unsprung weight suspension\".",
+  "url": "https://www.youtube.com/watch?v=jijrhTDQdQI",
+  "lectureKey": "au603-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Directional Stability",
+  "unit": 5,
+  "topicId": "au603-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Stability & Control Systems",
+  "topics": [
+   "Directional Stability"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Stability & Control Systems.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Electronic Stability Control",
+  "unit": 5,
+  "topicId": "au603-u5t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Stability & Control Systems",
+  "topics": [
+   "Electronic Stability Control"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Stability & Control Systems.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Active Chassis Systems",
+  "unit": 5,
+  "topicId": "au603-u5t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Stability & Control Systems",
+  "topics": [
+   "Active Chassis Systems"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Stability & Control Systems.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "au603",
+  "subjectCode": "AU-603",
+  "subjectLabel": "Vehicle Dynamics",
+  "title": "Vehicle Testing",
+  "unit": 5,
+  "topicId": "au603-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Stability & Control Systems",
+  "topics": [
+   "Vehicle Testing"
+  ],
+  "description": "\"Longitudinal dynamics\" covers Stability & Control Systems.",
+  "url": "https://www.youtube.com/watch?v=T7el7XL1aK8",
+  "lectureKey": "au603-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Vehicle Body Engineering & Aerodynamics: full lecture series",
+  "lecturer": "Automotive aerodynamics",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Car Body Design",
+   "Vehicle Aerodynamics",
+   "Body Safety",
+   "Bus & Commercial Vehicle Bodies",
+   "Body Manufacturing & Finishing"
+  ],
+  "description": "\"Course on Automotive Aerodynamics\" by Automotive aerodynamics.",
+  "url": "https://www.youtube.com/playlist?list=PLqlJm3zZSka3cAEiUmLUHP1yrXtuKCpv6",
+  "lectureKey": "au702-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Body Types",
+  "unit": 1,
+  "topicId": "au702-u1t1",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 1: Car Body Design",
+  "topics": [
+   "Body Types"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\".",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Body Construction",
+  "unit": 1,
+  "topicId": "au702-u1t2",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 1: Car Body Design",
+  "topics": [
+   "Body Construction"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\".",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Visibility & Ergonomics",
+  "unit": 1,
+  "topicId": "au702-u1t3",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 1: Car Body Design",
+  "topics": [
+   "Visibility & Ergonomics"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Car Body Design.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Body Materials",
+  "unit": 1,
+  "topicId": "au702-u1t4",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 1: Car Body Design",
+  "topics": [
+   "Body Materials"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\".",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Aerodynamic Forces",
+  "unit": 2,
+  "topicId": "au702-u2t1",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 2: Vehicle Aerodynamics",
+  "topics": [
+   "Aerodynamic Forces"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\".",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Drag Reduction",
+  "unit": 2,
+  "topicId": "au702-u2t2",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 2: Vehicle Aerodynamics",
+  "topics": [
+   "Drag Reduction"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\".",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Aerodynamic Devices",
+  "unit": 2,
+  "topicId": "au702-u2t3",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 2: Vehicle Aerodynamics",
+  "topics": [
+   "Aerodynamic Devices"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\".",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Wind Tunnel Testing",
+  "unit": 2,
+  "topicId": "au702-u2t4",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 2: Vehicle Aerodynamics",
+  "topics": [
+   "Wind Tunnel Testing"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Vehicle Aerodynamics.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Passive Safety",
+  "unit": 3,
+  "topicId": "au702-u3t1",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 3: Body Safety",
+  "topics": [
+   "Passive Safety"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Safety.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Crash Testing",
+  "unit": 3,
+  "topicId": "au702-u3t2",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 3: Body Safety",
+  "topics": [
+   "Crash Testing"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Safety.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Restraint Systems",
+  "unit": 3,
+  "topicId": "au702-u3t3",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 3: Body Safety",
+  "topics": [
+   "Restraint Systems"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Safety.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Pedestrian Safety",
+  "unit": 3,
+  "topicId": "au702-u3t4",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 3: Body Safety",
+  "topics": [
+   "Pedestrian Safety"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Safety.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Bus Body Types",
+  "unit": 4,
+  "topicId": "au702-u4t1",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 4: Bus & Commercial Vehicle Bodies",
+  "topics": [
+   "Bus Body Types"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Bus & Commercial Vehicle Bodies.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Bus Body Construction",
+  "unit": 4,
+  "topicId": "au702-u4t2",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 4: Bus & Commercial Vehicle Bodies",
+  "topics": [
+   "Bus Body Construction"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Bus & Commercial Vehicle Bodies.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Commercial Vehicle Bodies",
+  "unit": 4,
+  "topicId": "au702-u4t3",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 4: Bus & Commercial Vehicle Bodies",
+  "topics": [
+   "Commercial Vehicle Bodies"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Bus & Commercial Vehicle Bodies.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Driver Cabin Design",
+  "unit": 4,
+  "topicId": "au702-u4t4",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 4: Bus & Commercial Vehicle Bodies",
+  "topics": [
+   "Driver Cabin Design"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Bus & Commercial Vehicle Bodies.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Panel Manufacturing",
+  "unit": 5,
+  "topicId": "au702-u5t1",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 5: Body Manufacturing & Finishing",
+  "topics": [
+   "Panel Manufacturing"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Manufacturing & Finishing.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Painting Process",
+  "unit": 5,
+  "topicId": "au702-u5t2",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 5: Body Manufacturing & Finishing",
+  "topics": [
+   "Painting Process"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Manufacturing & Finishing.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Corrosion Protection",
+  "unit": 5,
+  "topicId": "au702-u5t3",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 5: Body Manufacturing & Finishing",
+  "topics": [
+   "Corrosion Protection"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Manufacturing & Finishing.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au702",
+  "subjectCode": "AU-703",
+  "subjectLabel": "Vehicle Body Engineering & Aerodynamics",
+  "title": "Interior Trim & NVH",
+  "unit": 5,
+  "topicId": "au702-u5t4",
+  "lecturer": "Automotive aerodynamics",
+  "type": "video",
+  "typeLabel": "Unit 5: Body Manufacturing & Finishing",
+  "topics": [
+   "Interior Trim & NVH"
+  ],
+  "description": "\"Concept of car aerodynamics and drag force, automobile chassis and body engineering\" covers Body Manufacturing & Finishing.",
+  "url": "https://www.youtube.com/watch?v=19nvEQXeXmk",
+  "lectureKey": "au702-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Electric & Hybrid Vehicles: full lecture series",
+  "lecturer": "EV lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction to Electric Vehicles",
+   "Electric Motors for EVs",
+   "Batteries & Energy Storage",
+   "Power Electronics & Charging",
+   "Hybrid Vehicles"
+  ],
+  "description": "\"Hybrid and Electric Vehicles complete course\" by EV lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLSJZETVyEssniyF9TXc4uhcRaxOyKlmb9",
+  "lectureKey": "au703-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "History & Need for EVs",
+  "unit": 1,
+  "topicId": "au703-u1t1",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Electric Vehicles",
+  "topics": [
+   "History & Need for EVs"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Introduction to Electric Vehicles.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "EV Architecture",
+  "unit": 1,
+  "topicId": "au703-u1t2",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Electric Vehicles",
+  "topics": [
+   "EV Architecture"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Introduction to Electric Vehicles.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "EV Types",
+  "unit": 1,
+  "topicId": "au703-u1t3",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Electric Vehicles",
+  "topics": [
+   "EV Types"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Introduction to Electric Vehicles.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Vehicle Performance",
+  "unit": 1,
+  "topicId": "au703-u1t4",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Electric Vehicles",
+  "topics": [
+   "Vehicle Performance"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\".",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "DC Motors",
+  "unit": 2,
+  "topicId": "au703-u2t1",
+  "lecturer": "EV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Electric Motors for EVs",
+  "topics": [
+   "DC Motors"
+  ],
+  "description": "\"Electric hybrid vehicle electric propulsion: DC motor drives\".",
+  "url": "https://www.youtube.com/playlist?list=PL8NHLTFJUENHmzVzGTyl9518i6e9q7pba",
+  "lectureKey": "au703-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Induction Motors",
+  "unit": 2,
+  "topicId": "au703-u2t2",
+  "lecturer": "EV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Electric Motors for EVs",
+  "topics": [
+   "Induction Motors"
+  ],
+  "description": "\"Electric hybrid vehicle electric propulsion: DC motor drives\".",
+  "url": "https://www.youtube.com/playlist?list=PL8NHLTFJUENHmzVzGTyl9518i6e9q7pba",
+  "lectureKey": "au703-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Permanent Magnet Motors",
+  "unit": 2,
+  "topicId": "au703-u2t3",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 2: Electric Motors for EVs",
+  "topics": [
+   "Permanent Magnet Motors"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Electric Motors for EVs.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Switched Reluctance Motors",
+  "unit": 2,
+  "topicId": "au703-u2t4",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 2: Electric Motors for EVs",
+  "topics": [
+   "Switched Reluctance Motors"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Electric Motors for EVs.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Battery Types",
+  "unit": 3,
+  "topicId": "au703-u3t1",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 3: Batteries & Energy Storage",
+  "topics": [
+   "Battery Types"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Batteries & Energy Storage.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Battery Parameters",
+  "unit": 3,
+  "topicId": "au703-u3t2",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 3: Batteries & Energy Storage",
+  "topics": [
+   "Battery Parameters"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Batteries & Energy Storage.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Battery Management System",
+  "unit": 3,
+  "topicId": "au703-u3t3",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 3: Batteries & Energy Storage",
+  "topics": [
+   "Battery Management System"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Batteries & Energy Storage.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Other Storage Devices",
+  "unit": 3,
+  "topicId": "au703-u3t4",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 3: Batteries & Energy Storage",
+  "topics": [
+   "Other Storage Devices"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Batteries & Energy Storage.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Power Converters",
+  "unit": 4,
+  "topicId": "au703-u4t1",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 4: Power Electronics & Charging",
+  "topics": [
+   "Power Converters"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Power Electronics & Charging.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Motor Drives",
+  "unit": 4,
+  "topicId": "au703-u4t2",
+  "lecturer": "EV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Power Electronics & Charging",
+  "topics": [
+   "Motor Drives"
+  ],
+  "description": "\"Electric hybrid vehicle electric propulsion: DC motor drives\".",
+  "url": "https://www.youtube.com/playlist?list=PL8NHLTFJUENHmzVzGTyl9518i6e9q7pba",
+  "lectureKey": "au703-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "EV Charging",
+  "unit": 4,
+  "topicId": "au703-u4t3",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 4: Power Electronics & Charging",
+  "topics": [
+   "EV Charging"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Power Electronics & Charging.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Charging Infrastructure",
+  "unit": 4,
+  "topicId": "au703-u4t4",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 4: Power Electronics & Charging",
+  "topics": [
+   "Charging Infrastructure"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Power Electronics & Charging.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Hybrid Concepts",
+  "unit": 5,
+  "topicId": "au703-u5t1",
+  "lecturer": "EV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hybrid Vehicles",
+  "topics": [
+   "Hybrid Concepts"
+  ],
+  "description": "\"Electric hybrid vehicle electric propulsion: DC motor drives\".",
+  "url": "https://www.youtube.com/playlist?list=PL8NHLTFJUENHmzVzGTyl9518i6e9q7pba",
+  "lectureKey": "au703-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Series Hybrid",
+  "unit": 5,
+  "topicId": "au703-u5t2",
+  "lecturer": "EV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hybrid Vehicles",
+  "topics": [
+   "Series Hybrid"
+  ],
+  "description": "\"Electric hybrid vehicle electric propulsion: DC motor drives\".",
+  "url": "https://www.youtube.com/playlist?list=PL8NHLTFJUENHmzVzGTyl9518i6e9q7pba",
+  "lectureKey": "au703-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Parallel Hybrid",
+  "unit": 5,
+  "topicId": "au703-u5t3",
+  "lecturer": "EV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hybrid Vehicles",
+  "topics": [
+   "Parallel Hybrid"
+  ],
+  "description": "\"Electric hybrid vehicle electric propulsion: DC motor drives\".",
+  "url": "https://www.youtube.com/playlist?list=PL8NHLTFJUENHmzVzGTyl9518i6e9q7pba",
+  "lectureKey": "au703-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "au703",
+  "subjectCode": "AU-704",
+  "subjectLabel": "Electric & Hybrid Vehicles",
+  "title": "Series-Parallel Hybrid & Control",
+  "unit": 5,
+  "topicId": "au703-u5t4",
+  "lecturer": "NPTEL IIT Madras",
+  "type": "video",
+  "typeLabel": "Unit 5: Hybrid Vehicles",
+  "topics": [
+   "Series-Parallel Hybrid & Control"
+  ],
+  "description": "\"Fundamentals of electric vehicles: technology and economics\" covers Hybrid Vehicles.",
+  "url": "https://www.youtube.com/watch?v=UgtjRob5qMg",
+  "lectureKey": "au703-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Vehicle Maintenance & Fault Diagnosis: full lecture series",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Maintenance Fundamentals",
+   "Engine Diagnosis & Overhaul",
+   "Chassis Maintenance",
+   "Electrical Diagnosis",
+   "Diagnostic Tools & Inspection"
+  ],
+  "description": "\"Vehicle maintenance: diagnose and fix common car problems\" by Vehicle maintenance.",
+  "url": "https://www.youtube.com/playlist?list=PLEzuf0bSROyEdNtG4dM286IIjIMtPNGzY",
+  "lectureKey": "au801-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Types of Maintenance",
+  "unit": 1,
+  "topicId": "au801-u1t1",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Maintenance Fundamentals",
+  "topics": [
+   "Types of Maintenance"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Maintenance Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Service Schedules",
+  "unit": 1,
+  "topicId": "au801-u1t2",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Maintenance Fundamentals",
+  "topics": [
+   "Service Schedules"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Maintenance Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Workshop Layout & Tools",
+  "unit": 1,
+  "topicId": "au801-u1t3",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Maintenance Fundamentals",
+  "topics": [
+   "Workshop Layout & Tools"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Maintenance Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Workshop Safety",
+  "unit": 1,
+  "topicId": "au801-u1t4",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Maintenance Fundamentals",
+  "topics": [
+   "Workshop Safety"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Maintenance Fundamentals.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Engine Fault Diagnosis",
+  "unit": 2,
+  "topicId": "au801-u2t1",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Engine Diagnosis & Overhaul",
+  "topics": [
+   "Engine Fault Diagnosis"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Engine Diagnosis & Overhaul.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Engine Overhaul",
+  "unit": 2,
+  "topicId": "au801-u2t2",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Engine Diagnosis & Overhaul",
+  "topics": [
+   "Engine Overhaul"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Engine Diagnosis & Overhaul.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Fuel System Diagnosis",
+  "unit": 2,
+  "topicId": "au801-u2t3",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Engine Diagnosis & Overhaul",
+  "topics": [
+   "Fuel System Diagnosis"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Engine Diagnosis & Overhaul.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Cooling & Lubrication Faults",
+  "unit": 2,
+  "topicId": "au801-u2t4",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Engine Diagnosis & Overhaul",
+  "topics": [
+   "Cooling & Lubrication Faults"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Engine Diagnosis & Overhaul.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Clutch & Transmission Faults",
+  "unit": 3,
+  "topicId": "au801-u3t1",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Chassis Maintenance",
+  "topics": [
+   "Clutch & Transmission Faults"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Chassis Maintenance.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Brake Maintenance",
+  "unit": 3,
+  "topicId": "au801-u3t2",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Chassis Maintenance",
+  "topics": [
+   "Brake Maintenance"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Chassis Maintenance.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Suspension & Steering Faults",
+  "unit": 3,
+  "topicId": "au801-u3t3",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Chassis Maintenance",
+  "topics": [
+   "Suspension & Steering Faults"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Chassis Maintenance.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Tyre Maintenance",
+  "unit": 3,
+  "topicId": "au801-u3t4",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Chassis Maintenance",
+  "topics": [
+   "Tyre Maintenance"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Chassis Maintenance.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Battery & Charging Tests",
+  "unit": 4,
+  "topicId": "au801-u4t1",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electrical Diagnosis",
+  "topics": [
+   "Battery & Charging Tests"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Electrical Diagnosis.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Starting System Diagnosis",
+  "unit": 4,
+  "topicId": "au801-u4t2",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electrical Diagnosis",
+  "topics": [
+   "Starting System Diagnosis"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Electrical Diagnosis.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Wiring Faults",
+  "unit": 4,
+  "topicId": "au801-u4t3",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electrical Diagnosis",
+  "topics": [
+   "Wiring Faults"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Electrical Diagnosis.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Lighting & Accessory Faults",
+  "unit": 4,
+  "topicId": "au801-u4t4",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Electrical Diagnosis",
+  "topics": [
+   "Lighting & Accessory Faults"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Electrical Diagnosis.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "On-board Diagnostics",
+  "unit": 5,
+  "topicId": "au801-u5t1",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Diagnostic Tools & Inspection",
+  "topics": [
+   "On-board Diagnostics"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\".",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Scan Tools & Oscilloscopes",
+  "unit": 5,
+  "topicId": "au801-u5t2",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Diagnostic Tools & Inspection",
+  "topics": [
+   "Scan Tools & Oscilloscopes"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Diagnostic Tools & Inspection.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Vehicle Inspection & Certification",
+  "unit": 5,
+  "topicId": "au801-u5t3",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Diagnostic Tools & Inspection",
+  "topics": [
+   "Vehicle Inspection & Certification"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Diagnostic Tools & Inspection.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au801",
+  "subjectCode": "AU-801",
+  "subjectLabel": "Vehicle Maintenance & Fault Diagnosis",
+  "title": "Fleet Maintenance Management",
+  "unit": 5,
+  "topicId": "au801-u5t4",
+  "lecturer": "Vehicle maintenance",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Diagnostic Tools & Inspection",
+  "topics": [
+   "Fleet Maintenance Management"
+  ],
+  "description": "\"Automotive diagnostic training: troubleshooting and diagnostic tools\" covers Diagnostic Tools & Inspection.",
+  "url": "https://www.youtube.com/playlist?list=PLVvgwVry54KcPwW1qWgl-3mB66mVac0Ye",
+  "lectureKey": "au801-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Automotive Safety & Legislation: full lecture series",
+  "lecturer": "Automotive safety",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction to Vehicle Safety",
+   "Active Safety Systems",
+   "Passive Safety & Crashworthiness",
+   "Motor Vehicle Legislation",
+   "Homologation & Testing"
+  ],
+  "description": "\"Brakes, safety and control systems: ABS, traction control, ESC\" by Automotive safety.",
+  "url": "https://www.youtube.com/playlist?list=PLB85E2FB44D430CDE",
+  "lectureKey": "au802-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Road Safety Scenario",
+  "unit": 1,
+  "topicId": "au802-u1t1",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Vehicle Safety",
+  "topics": [
+   "Road Safety Scenario"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Introduction to Vehicle Safety.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Active vs Passive Safety",
+  "unit": 1,
+  "topicId": "au802-u1t2",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Vehicle Safety",
+  "topics": [
+   "Active vs Passive Safety"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Introduction to Vehicle Safety.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Human Factors",
+  "unit": 1,
+  "topicId": "au802-u1t3",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Vehicle Safety",
+  "topics": [
+   "Human Factors"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Introduction to Vehicle Safety.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Vehicle Conspicuity",
+  "unit": 1,
+  "topicId": "au802-u1t4",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction to Vehicle Safety",
+  "topics": [
+   "Vehicle Conspicuity"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Introduction to Vehicle Safety.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Braking Safety Systems",
+  "unit": 2,
+  "topicId": "au802-u2t1",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 2: Active Safety Systems",
+  "topics": [
+   "Braking Safety Systems"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Active Safety Systems.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Stability & Traction",
+  "unit": 2,
+  "topicId": "au802-u2t2",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 2: Active Safety Systems",
+  "topics": [
+   "Stability & Traction"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Active Safety Systems.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "ADAS",
+  "unit": 2,
+  "topicId": "au802-u2t3",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 2: Active Safety Systems",
+  "topics": [
+   "ADAS"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Active Safety Systems.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Tyre & Visibility Safety",
+  "unit": 2,
+  "topicId": "au802-u2t4",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 2: Active Safety Systems",
+  "topics": [
+   "Tyre & Visibility Safety"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Active Safety Systems.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Crash Dynamics",
+  "unit": 3,
+  "topicId": "au802-u3t1",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 3: Passive Safety & Crashworthiness",
+  "topics": [
+   "Crash Dynamics"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\".",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Crashworthy Structure",
+  "unit": 3,
+  "topicId": "au802-u3t2",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 3: Passive Safety & Crashworthiness",
+  "topics": [
+   "Crashworthy Structure"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Passive Safety & Crashworthiness.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Occupant Protection",
+  "unit": 3,
+  "topicId": "au802-u3t3",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 3: Passive Safety & Crashworthiness",
+  "topics": [
+   "Occupant Protection"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Passive Safety & Crashworthiness.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Injury Criteria",
+  "unit": 3,
+  "topicId": "au802-u3t4",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 3: Passive Safety & Crashworthiness",
+  "topics": [
+   "Injury Criteria"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Passive Safety & Crashworthiness.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Motor Vehicles Act",
+  "unit": 4,
+  "topicId": "au802-u4t1",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 4: Motor Vehicle Legislation",
+  "topics": [
+   "Motor Vehicles Act"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Motor Vehicle Legislation.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Central Motor Vehicle Rules",
+  "unit": 4,
+  "topicId": "au802-u4t2",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 4: Motor Vehicle Legislation",
+  "topics": [
+   "Central Motor Vehicle Rules"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Motor Vehicle Legislation.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Emission & Safety Regulations",
+  "unit": 4,
+  "topicId": "au802-u4t3",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 4: Motor Vehicle Legislation",
+  "topics": [
+   "Emission & Safety Regulations"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Motor Vehicle Legislation.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Insurance & Liability",
+  "unit": 4,
+  "topicId": "au802-u4t4",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 4: Motor Vehicle Legislation",
+  "topics": [
+   "Insurance & Liability"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Motor Vehicle Legislation.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Homologation",
+  "unit": 5,
+  "topicId": "au802-u5t1",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 5: Homologation & Testing",
+  "topics": [
+   "Homologation"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Homologation & Testing.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Testing Agencies",
+  "unit": 5,
+  "topicId": "au802-u5t2",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 5: Homologation & Testing",
+  "topics": [
+   "Testing Agencies"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Homologation & Testing.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "International Standards",
+  "unit": 5,
+  "topicId": "au802-u5t3",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 5: Homologation & Testing",
+  "topics": [
+   "International Standards"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Homologation & Testing.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "au802",
+  "subjectCode": "AU-802",
+  "subjectLabel": "Automotive Safety & Legislation",
+  "title": "Recall & Product Liability",
+  "unit": 5,
+  "topicId": "au802-u5t4",
+  "lecturer": "Automotive safety",
+  "type": "video",
+  "typeLabel": "Unit 5: Homologation & Testing",
+  "topics": [
+   "Recall & Product Liability"
+  ],
+  "description": "\"How airbags work: complete airbag system from crash detection\" covers Homologation & Testing.",
+  "url": "https://www.youtube.com/watch?v=GKiNdWkWuvM",
+  "lectureKey": "au802-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Construction Materials: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Stones, Bricks & Tiles",
+   "Lime, Cement & Mortar",
+   "Concrete",
+   "Timber & Metals",
+   "Modern & Miscellaneous Materials"
+  ],
+  "description": "\"Building Materials and Construction, Dr. B. Bhattacharjee, IIT Delhi\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce302-auto-playlist"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Building Stones",
+  "unit": 1,
+  "topicId": "ce302-u1t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Stones, Bricks & Tiles",
+  "topics": [
+   "Building Stones"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Tests on Stones",
+  "unit": 1,
+  "topicId": "ce302-u1t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Stones, Bricks & Tiles",
+  "topics": [
+   "Tests on Stones"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Stones, Bricks & Tiles.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Bricks",
+  "unit": 1,
+  "topicId": "ce302-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Stones, Bricks & Tiles",
+  "topics": [
+   "Bricks"
+  ],
+  "description": "\"Bricks: composition, testing, manufacturing, harmful ingredients\".",
+  "url": "https://www.youtube.com/watch?v=TC9A8sn9mMw",
+  "lectureKey": "ce302-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Tiles & Clay Products",
+  "unit": 1,
+  "topicId": "ce302-u1t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Stones, Bricks & Tiles",
+  "topics": [
+   "Tiles & Clay Products"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Stones, Bricks & Tiles.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Lime",
+  "unit": 2,
+  "topicId": "ce302-u2t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Lime, Cement & Mortar",
+  "topics": [
+   "Lime"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Lime, Cement & Mortar.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Portland Cement",
+  "unit": 2,
+  "topicId": "ce302-u2t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Lime, Cement & Mortar",
+  "topics": [
+   "Portland Cement"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Lime, Cement & Mortar.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Types & Tests of Cement",
+  "unit": 2,
+  "topicId": "ce302-u2t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Lime, Cement & Mortar",
+  "topics": [
+   "Types & Tests of Cement"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Lime, Cement & Mortar.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Mortar",
+  "unit": 2,
+  "topicId": "ce302-u2t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Lime, Cement & Mortar",
+  "topics": [
+   "Mortar"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Lime, Cement & Mortar.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Constituents of Concrete",
+  "unit": 3,
+  "topicId": "ce302-u3t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Concrete",
+  "topics": [
+   "Constituents of Concrete"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Fresh Concrete Properties",
+  "unit": 3,
+  "topicId": "ce302-u3t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Concrete",
+  "topics": [
+   "Fresh Concrete Properties"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Concrete.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Hardened Concrete Properties",
+  "unit": 3,
+  "topicId": "ce302-u3t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Concrete",
+  "topics": [
+   "Hardened Concrete Properties"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Concrete.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Admixtures & Special Concretes",
+  "unit": 3,
+  "topicId": "ce302-u3t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Concrete",
+  "topics": [
+   "Admixtures & Special Concretes"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Concrete.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Timber",
+  "unit": 4,
+  "topicId": "ce302-u4t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Timber & Metals",
+  "topics": [
+   "Timber"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Timber & Metals.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Preservation of Timber",
+  "unit": 4,
+  "topicId": "ce302-u4t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Timber & Metals",
+  "topics": [
+   "Preservation of Timber"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Timber & Metals.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Ferrous Metals",
+  "unit": 4,
+  "topicId": "ce302-u4t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Timber & Metals",
+  "topics": [
+   "Ferrous Metals"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Timber & Metals.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Non-ferrous Metals",
+  "unit": 4,
+  "topicId": "ce302-u4t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Timber & Metals",
+  "topics": [
+   "Non-ferrous Metals"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Timber & Metals.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Glass & Plastics",
+  "unit": 5,
+  "topicId": "ce302-u5t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern & Miscellaneous Materials",
+  "topics": [
+   "Glass & Plastics"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Modern & Miscellaneous Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Paints & Varnishes",
+  "unit": 5,
+  "topicId": "ce302-u5t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern & Miscellaneous Materials",
+  "topics": [
+   "Paints & Varnishes"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Modern & Miscellaneous Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Eco-friendly Materials",
+  "unit": 5,
+  "topicId": "ce302-u5t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern & Miscellaneous Materials",
+  "topics": [
+   "Eco-friendly Materials"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Modern & Miscellaneous Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce302",
+  "subjectCode": "CE-302",
+  "subjectLabel": "Construction Materials",
+  "title": "Geosynthetics & Smart Materials",
+  "unit": 5,
+  "topicId": "ce302-u5t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern & Miscellaneous Materials",
+  "topics": [
+   "Geosynthetics & Smart Materials"
+  ],
+  "description": "\"Building materials and construction and concrete technology lectures\" covers Modern & Miscellaneous Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce302-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Surveying: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Chain & Compass Surveying",
+   "Levelling & Contouring",
+   "Plane Table & Theodolite",
+   "Tacheometry & Curves",
+   "Modern Surveying"
+  ],
+  "description": "\"Surveying, Prof. Bharat Lohani, IIT Kanpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL20A0651466E8A776",
+  "lectureKey": "ce303-auto-playlist"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Principles of Surveying",
+  "unit": 1,
+  "topicId": "ce303-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chain & Compass Surveying",
+  "topics": [
+   "Principles of Surveying"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\".",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Chain Surveying",
+  "unit": 1,
+  "topicId": "ce303-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chain & Compass Surveying",
+  "topics": [
+   "Chain Surveying"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\".",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Compass Surveying",
+  "unit": 1,
+  "topicId": "ce303-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chain & Compass Surveying",
+  "topics": [
+   "Compass Surveying"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\".",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Traversing",
+  "unit": 1,
+  "topicId": "ce303-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Chain & Compass Surveying",
+  "topics": [
+   "Traversing"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Chain & Compass Surveying.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Levelling Fundamentals",
+  "unit": 2,
+  "topicId": "ce303-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Levelling & Contouring",
+  "topics": [
+   "Levelling Fundamentals"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Levelling & Contouring.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Reduction of Levels",
+  "unit": 2,
+  "topicId": "ce303-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Levelling & Contouring",
+  "topics": [
+   "Reduction of Levels"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Levelling & Contouring.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Errors & Special Levelling",
+  "unit": 2,
+  "topicId": "ce303-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Levelling & Contouring",
+  "topics": [
+   "Errors & Special Levelling"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Levelling & Contouring.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Contouring",
+  "unit": 2,
+  "topicId": "ce303-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Levelling & Contouring",
+  "topics": [
+   "Contouring"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Levelling & Contouring.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Plane Table Surveying",
+  "unit": 3,
+  "topicId": "ce303-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Plane Table & Theodolite",
+  "topics": [
+   "Plane Table Surveying"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Plane Table & Theodolite.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Theodolite",
+  "unit": 3,
+  "topicId": "ce303-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Plane Table & Theodolite",
+  "topics": [
+   "Theodolite"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Plane Table & Theodolite.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Measurement of Angles",
+  "unit": 3,
+  "topicId": "ce303-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Plane Table & Theodolite",
+  "topics": [
+   "Measurement of Angles"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Plane Table & Theodolite.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Traverse Computation",
+  "unit": 3,
+  "topicId": "ce303-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Plane Table & Theodolite",
+  "topics": [
+   "Traverse Computation"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Plane Table & Theodolite.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Tacheometry",
+  "unit": 4,
+  "topicId": "ce303-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tacheometry & Curves",
+  "topics": [
+   "Tacheometry"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Tacheometry & Curves.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Simple Circular Curves",
+  "unit": 4,
+  "topicId": "ce303-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tacheometry & Curves",
+  "topics": [
+   "Simple Circular Curves"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Tacheometry & Curves.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Transition Curves",
+  "unit": 4,
+  "topicId": "ce303-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tacheometry & Curves",
+  "topics": [
+   "Transition Curves"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Tacheometry & Curves.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Vertical Curves",
+  "unit": 4,
+  "topicId": "ce303-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tacheometry & Curves",
+  "topics": [
+   "Vertical Curves"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Tacheometry & Curves.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Electronic Distance Measurement",
+  "unit": 5,
+  "topicId": "ce303-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern Surveying",
+  "topics": [
+   "Electronic Distance Measurement"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Modern Surveying.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "GPS & GNSS",
+  "unit": 5,
+  "topicId": "ce303-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern Surveying",
+  "topics": [
+   "GPS & GNSS"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Modern Surveying.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "Remote Sensing in Surveying",
+  "unit": 5,
+  "topicId": "ce303-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern Surveying",
+  "topics": [
+   "Remote Sensing in Surveying"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Modern Surveying.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce303",
+  "subjectCode": "CE-303",
+  "subjectLabel": "Surveying",
+  "title": "GIS Basics",
+  "unit": 5,
+  "topicId": "ce303-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Modern Surveying",
+  "topics": [
+   "GIS Basics"
+  ],
+  "description": "\"Surveying lectures unit wise for BTech civil\" covers Modern Surveying.",
+  "url": "https://www.youtube.com/playlist?list=PLgmzB5ukysJlqKu6BLgn8nZr5AQKJHbEV",
+  "lectureKey": "ce303-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Building Planning & Architecture: full lecture series",
+  "lecturer": "Civil drawing lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Principles of Planning",
+   "Building Bye-laws & Regulations",
+   "Functional Planning of Buildings",
+   "Architecture",
+   "Building Services"
+  ],
+  "description": "\"Civil engineering drawings in AutoCAD: floor plan, site plan, elevation, section\" by Civil drawing lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLGstbEuPUsWVsJC4o3fYgQsEEi63NG1Ox",
+  "lectureKey": "ce304-auto-playlist"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Planning Principles",
+  "unit": 1,
+  "topicId": "ce304-u1t1",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 1: Principles of Planning",
+  "topics": [
+   "Planning Principles"
+  ],
+  "description": "\"Elements and principles of planning of residential building\".",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Grouping & Circulation",
+  "unit": 1,
+  "topicId": "ce304-u1t2",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 1: Principles of Planning",
+  "topics": [
+   "Grouping & Circulation"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Principles of Planning.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Orientation",
+  "unit": 1,
+  "topicId": "ce304-u1t3",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 1: Principles of Planning",
+  "topics": [
+   "Orientation"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Principles of Planning.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Economy & Flexibility",
+  "unit": 1,
+  "topicId": "ce304-u1t4",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 1: Principles of Planning",
+  "topics": [
+   "Economy & Flexibility"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Principles of Planning.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Building Bye-laws",
+  "unit": 2,
+  "topicId": "ce304-u2t1",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 2: Building Bye-laws & Regulations",
+  "topics": [
+   "Building Bye-laws"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Bye-laws & Regulations.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "FAR & Ground Coverage",
+  "unit": 2,
+  "topicId": "ce304-u2t2",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 2: Building Bye-laws & Regulations",
+  "topics": [
+   "FAR & Ground Coverage"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Bye-laws & Regulations.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Minimum Room Sizes",
+  "unit": 2,
+  "topicId": "ce304-u2t3",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 2: Building Bye-laws & Regulations",
+  "topics": [
+   "Minimum Room Sizes"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Bye-laws & Regulations.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Fire & Accessibility Norms",
+  "unit": 2,
+  "topicId": "ce304-u2t4",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 2: Building Bye-laws & Regulations",
+  "topics": [
+   "Fire & Accessibility Norms"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Bye-laws & Regulations.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Residential Buildings",
+  "unit": 3,
+  "topicId": "ce304-u3t1",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 3: Functional Planning of Buildings",
+  "topics": [
+   "Residential Buildings"
+  ],
+  "description": "\"Elements and principles of planning of residential building\".",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Public Buildings",
+  "unit": 3,
+  "topicId": "ce304-u3t2",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 3: Functional Planning of Buildings",
+  "topics": [
+   "Public Buildings"
+  ],
+  "description": "\"Elements and principles of planning of residential building\".",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Industrial Buildings",
+  "unit": 3,
+  "topicId": "ce304-u3t3",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 3: Functional Planning of Buildings",
+  "topics": [
+   "Industrial Buildings"
+  ],
+  "description": "\"Elements and principles of planning of residential building\".",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Building Drawing",
+  "unit": 3,
+  "topicId": "ce304-u3t4",
+  "lecturer": "Civil drawing lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Functional Planning of Buildings",
+  "topics": [
+   "Building Drawing"
+  ],
+  "description": "\"Building drawing: plan, elevation, section, trusses, septic tank, door, window\".",
+  "url": "https://www.youtube.com/watch?v=z3ZTURGPkzs",
+  "lectureKey": "ce304-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Elements of Architecture",
+  "unit": 4,
+  "topicId": "ce304-u4t1",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 4: Architecture",
+  "topics": [
+   "Elements of Architecture"
+  ],
+  "description": "\"Elements and principles of planning of residential building\".",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "History of Architecture",
+  "unit": 4,
+  "topicId": "ce304-u4t2",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 4: Architecture",
+  "topics": [
+   "History of Architecture"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Architecture.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Green Building Design",
+  "unit": 4,
+  "topicId": "ce304-u4t3",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 4: Architecture",
+  "topics": [
+   "Green Building Design"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Architecture.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Landscape & Interior",
+  "unit": 4,
+  "topicId": "ce304-u4t4",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 4: Architecture",
+  "topics": [
+   "Landscape & Interior"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Architecture.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Water Supply & Drainage",
+  "unit": 5,
+  "topicId": "ce304-u5t1",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 5: Building Services",
+  "topics": [
+   "Water Supply & Drainage"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Services.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Electrical Services",
+  "unit": 5,
+  "topicId": "ce304-u5t2",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 5: Building Services",
+  "topics": [
+   "Electrical Services"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Services.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "Acoustics",
+  "unit": 5,
+  "topicId": "ce304-u5t3",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 5: Building Services",
+  "topics": [
+   "Acoustics"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Services.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ce304",
+  "subjectCode": "CE-304",
+  "subjectLabel": "Building Planning & Architecture",
+  "title": "HVAC & Lifts",
+  "unit": 5,
+  "topicId": "ce304-u5t4",
+  "lecturer": "GATE Academy Plus",
+  "type": "video",
+  "typeLabel": "Unit 5: Building Services",
+  "topics": [
+   "HVAC & Lifts"
+  ],
+  "description": "\"Elements and principles of planning of residential building\" covers Building Services.",
+  "url": "https://www.youtube.com/watch?v=mM_HkSm_wKY",
+  "lectureKey": "ce304-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Construction Technology: full lecture series",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Foundations & Masonry",
+   "Floors, Roofs & Stairs",
+   "Damp Proofing & Finishes",
+   "Formwork & Scaffolding",
+   "Construction Equipment & Methods"
+  ],
+  "description": "\"Building Materials & Construction and Concrete Technology lectures\" by Yogesh Kaushik.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99dPOWeo5HPCm7VtYhGeB7vv",
+  "lectureKey": "ce402-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Types of Foundations",
+  "unit": 1,
+  "topicId": "ce402-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Foundations & Masonry",
+  "topics": [
+   "Types of Foundations"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Foundations & Masonry.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Brick Masonry",
+  "unit": 1,
+  "topicId": "ce402-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Foundations & Masonry",
+  "topics": [
+   "Brick Masonry"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Foundations & Masonry.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Stone Masonry",
+  "unit": 1,
+  "topicId": "ce402-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Foundations & Masonry",
+  "topics": [
+   "Stone Masonry"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Foundations & Masonry.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Composite & Hollow Block Masonry",
+  "unit": 1,
+  "topicId": "ce402-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Foundations & Masonry",
+  "topics": [
+   "Composite & Hollow Block Masonry"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Foundations & Masonry.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Floors",
+  "unit": 2,
+  "topicId": "ce402-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Floors, Roofs & Stairs",
+  "topics": [
+   "Floors"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Floors, Roofs & Stairs.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Roofs",
+  "unit": 2,
+  "topicId": "ce402-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Floors, Roofs & Stairs",
+  "topics": [
+   "Roofs"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Floors, Roofs & Stairs.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Staircases",
+  "unit": 2,
+  "topicId": "ce402-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Floors, Roofs & Stairs",
+  "topics": [
+   "Staircases"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Floors, Roofs & Stairs.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Doors & Windows",
+  "unit": 2,
+  "topicId": "ce402-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Floors, Roofs & Stairs",
+  "topics": [
+   "Doors & Windows"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Floors, Roofs & Stairs.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Dampness in Buildings",
+  "unit": 3,
+  "topicId": "ce402-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damp Proofing & Finishes",
+  "topics": [
+   "Dampness in Buildings"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\".",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Waterproofing",
+  "unit": 3,
+  "topicId": "ce402-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damp Proofing & Finishes",
+  "topics": [
+   "Waterproofing"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Damp Proofing & Finishes.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Plastering & Pointing",
+  "unit": 3,
+  "topicId": "ce402-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damp Proofing & Finishes",
+  "topics": [
+   "Plastering & Pointing"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Damp Proofing & Finishes.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Painting & Finishing",
+  "unit": 3,
+  "topicId": "ce402-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Damp Proofing & Finishes",
+  "topics": [
+   "Painting & Finishing"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Damp Proofing & Finishes.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Formwork",
+  "unit": 4,
+  "topicId": "ce402-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Formwork & Scaffolding",
+  "topics": [
+   "Formwork"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Formwork & Scaffolding.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Scaffolding & Shoring",
+  "unit": 4,
+  "topicId": "ce402-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Formwork & Scaffolding",
+  "topics": [
+   "Scaffolding & Shoring"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Formwork & Scaffolding.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Slip & Modular Formwork",
+  "unit": 4,
+  "topicId": "ce402-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Formwork & Scaffolding",
+  "topics": [
+   "Slip & Modular Formwork"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Formwork & Scaffolding.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Expansion & Construction Joints",
+  "unit": 4,
+  "topicId": "ce402-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Formwork & Scaffolding",
+  "topics": [
+   "Expansion & Construction Joints"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Formwork & Scaffolding.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Earth Moving Equipment",
+  "unit": 5,
+  "topicId": "ce402-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Construction Equipment & Methods",
+  "topics": [
+   "Earth Moving Equipment"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Construction Equipment & Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Concreting Equipment",
+  "unit": 5,
+  "topicId": "ce402-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Construction Equipment & Methods",
+  "topics": [
+   "Concreting Equipment"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Construction Equipment & Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Hoisting Equipment",
+  "unit": 5,
+  "topicId": "ce402-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Construction Equipment & Methods",
+  "topics": [
+   "Hoisting Equipment"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Construction Equipment & Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce402",
+  "subjectCode": "CE-402",
+  "subjectLabel": "Construction Technology",
+  "title": "Prefabrication & Fast-track Construction",
+  "unit": 5,
+  "topicId": "ce402-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Construction Equipment & Methods",
+  "topics": [
+   "Prefabrication & Fast-track Construction"
+  ],
+  "description": "\"Building materials and construction, IIT Delhi\" covers Construction Equipment & Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL8BA090E69BF01BC2",
+  "lectureKey": "ce402-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Structural Analysis-I: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Fundamentals of Structural Analysis",
+   "Deflection of Beams",
+   "Energy Methods",
+   "Arches & Cables",
+   "Influence Lines & Rolling Loads"
+  ],
+  "description": "\"Structural Analysis introduction (NPTEL)\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLUogGZJOiMtNOus85Tq1zNvg9EU3aJ8VO",
+  "lectureKey": "ce403-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Structures & Supports",
+  "unit": 1,
+  "topicId": "ce403-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Structural Analysis",
+  "topics": [
+   "Structures & Supports"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\".",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Static & Kinematic Indeterminacy",
+  "unit": 1,
+  "topicId": "ce403-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Structural Analysis",
+  "topics": [
+   "Static & Kinematic Indeterminacy"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Fundamentals of Structural Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Analysis of Trusses",
+  "unit": 1,
+  "topicId": "ce403-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Structural Analysis",
+  "topics": [
+   "Analysis of Trusses"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\".",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Principle of Superposition",
+  "unit": 1,
+  "topicId": "ce403-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Fundamentals of Structural Analysis",
+  "topics": [
+   "Principle of Superposition"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Fundamentals of Structural Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Double Integration Method",
+  "unit": 2,
+  "topicId": "ce403-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Deflection of Beams",
+  "topics": [
+   "Double Integration Method"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Deflection of Beams.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Moment Area Method",
+  "unit": 2,
+  "topicId": "ce403-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Deflection of Beams",
+  "topics": [
+   "Moment Area Method"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Deflection of Beams.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Conjugate Beam Method",
+  "unit": 2,
+  "topicId": "ce403-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Deflection of Beams",
+  "topics": [
+   "Conjugate Beam Method"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Deflection of Beams.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Standard Deflections",
+  "unit": 2,
+  "topicId": "ce403-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Deflection of Beams",
+  "topics": [
+   "Standard Deflections"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Deflection of Beams.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Strain Energy",
+  "unit": 3,
+  "topicId": "ce403-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Methods",
+  "topics": [
+   "Strain Energy"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Energy Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Castigliano's Theorems",
+  "unit": 3,
+  "topicId": "ce403-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Methods",
+  "topics": [
+   "Castigliano's Theorems"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Energy Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Unit Load Method",
+  "unit": 3,
+  "topicId": "ce403-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Methods",
+  "topics": [
+   "Unit Load Method"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Energy Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Maxwell & Betti Theorems",
+  "unit": 3,
+  "topicId": "ce403-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Energy Methods",
+  "topics": [
+   "Maxwell & Betti Theorems"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Energy Methods.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Three-hinged Arches",
+  "unit": 4,
+  "topicId": "ce403-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Arches & Cables",
+  "topics": [
+   "Three-hinged Arches"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Arches & Cables.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Two-hinged Arches",
+  "unit": 4,
+  "topicId": "ce403-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Arches & Cables",
+  "topics": [
+   "Two-hinged Arches"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Arches & Cables.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Cables",
+  "unit": 4,
+  "topicId": "ce403-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Arches & Cables",
+  "topics": [
+   "Cables"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Arches & Cables.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Stiffening Girders",
+  "unit": 4,
+  "topicId": "ce403-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Arches & Cables",
+  "topics": [
+   "Stiffening Girders"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Arches & Cables.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Influence Lines",
+  "unit": 5,
+  "topicId": "ce403-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Influence Lines & Rolling Loads",
+  "topics": [
+   "Influence Lines"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Influence Lines & Rolling Loads.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Rolling Loads",
+  "unit": 5,
+  "topicId": "ce403-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Influence Lines & Rolling Loads",
+  "topics": [
+   "Rolling Loads"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Influence Lines & Rolling Loads.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Absolute Maximum Moment",
+  "unit": 5,
+  "topicId": "ce403-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Influence Lines & Rolling Loads",
+  "topics": [
+   "Absolute Maximum Moment"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\" covers Influence Lines & Rolling Loads.",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce403",
+  "subjectCode": "CE-403",
+  "subjectLabel": "Structural Analysis-I",
+  "title": "Indeterminate Beams",
+  "unit": 5,
+  "topicId": "ce403-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Influence Lines & Rolling Loads",
+  "topics": [
+   "Indeterminate Beams"
+  ],
+  "description": "\"Structural analysis of determinate structures: stability, reactions, trusses, beams\".",
+  "url": "https://www.youtube.com/playlist?list=PLHnphd_tTh4EaHeJEb-RLH0k1-mfdaAlI",
+  "lectureKey": "ce403-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Transportation Engineering-I: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Highway Development & Planning",
+   "Geometric Design",
+   "Highway Materials",
+   "Pavement Design",
+   "Traffic Engineering & Railways"
+  ],
+  "description": "\"Introduction to Transportation Engineering, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLE88643285BC70E0F",
+  "lectureKey": "ce404-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "History of Road Development",
+  "unit": 1,
+  "topicId": "ce404-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Highway Development & Planning",
+  "topics": [
+   "History of Road Development"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Highway Development & Planning.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Road Classification",
+  "unit": 1,
+  "topicId": "ce404-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Highway Development & Planning",
+  "topics": [
+   "Road Classification"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Highway Development & Planning.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Highway Alignment",
+  "unit": 1,
+  "topicId": "ce404-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Highway Development & Planning",
+  "topics": [
+   "Highway Alignment"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Highway Financing & Agencies",
+  "unit": 1,
+  "topicId": "ce404-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Highway Development & Planning",
+  "topics": [
+   "Highway Financing & Agencies"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Highway Development & Planning.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Cross-section Elements",
+  "unit": 2,
+  "topicId": "ce404-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Geometric Design",
+  "topics": [
+   "Cross-section Elements"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Geometric Design.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Sight Distance",
+  "unit": 2,
+  "topicId": "ce404-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Geometric Design",
+  "topics": [
+   "Sight Distance"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Geometric Design.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Horizontal Alignment",
+  "unit": 2,
+  "topicId": "ce404-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Geometric Design",
+  "topics": [
+   "Horizontal Alignment"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Geometric Design.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Vertical Alignment",
+  "unit": 2,
+  "topicId": "ce404-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Geometric Design",
+  "topics": [
+   "Vertical Alignment"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Geometric Design.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Soil Subgrade",
+  "unit": 3,
+  "topicId": "ce404-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Highway Materials",
+  "topics": [
+   "Soil Subgrade"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Highway Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Aggregates",
+  "unit": 3,
+  "topicId": "ce404-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Highway Materials",
+  "topics": [
+   "Aggregates"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Highway Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Bitumen",
+  "unit": 3,
+  "topicId": "ce404-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Highway Materials",
+  "topics": [
+   "Bitumen"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Highway Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Bituminous Mixes",
+  "unit": 3,
+  "topicId": "ce404-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Highway Materials",
+  "topics": [
+   "Bituminous Mixes"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Highway Materials.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Types of Pavements",
+  "unit": 4,
+  "topicId": "ce404-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pavement Design",
+  "topics": [
+   "Types of Pavements"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Flexible Pavement Design",
+  "unit": 4,
+  "topicId": "ce404-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pavement Design",
+  "topics": [
+   "Flexible Pavement Design"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Rigid Pavement Design",
+  "unit": 4,
+  "topicId": "ce404-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pavement Design",
+  "topics": [
+   "Rigid Pavement Design"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Pavement Failures",
+  "unit": 4,
+  "topicId": "ce404-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pavement Design",
+  "topics": [
+   "Pavement Failures"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Traffic Characteristics",
+  "unit": 5,
+  "topicId": "ce404-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Traffic Engineering & Railways",
+  "topics": [
+   "Traffic Characteristics"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Traffic Control",
+  "unit": 5,
+  "topicId": "ce404-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Traffic Engineering & Railways",
+  "topics": [
+   "Traffic Control"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Railway Track Components",
+  "unit": 5,
+  "topicId": "ce404-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Traffic Engineering & Railways",
+  "topics": [
+   "Railway Track Components"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\" covers Traffic Engineering & Railways.",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce404",
+  "subjectCode": "CE-404",
+  "subjectLabel": "Transportation Engineering-I",
+  "title": "Railway Geometric Design",
+  "unit": 5,
+  "topicId": "ce404-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Traffic Engineering & Railways",
+  "topics": [
+   "Railway Geometric Design"
+  ],
+  "description": "\"Highway engineering lectures: geometric design, materials, pavement, traffic\".",
+  "url": "https://www.youtube.com/playlist?list=PLZmv_MNQCMBjOX9qChv1LCNfqHyFP_4fU",
+  "lectureKey": "ce404-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Engineering Geology & Remote Sensing: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "General Geology",
+   "Mineralogy & Petrology",
+   "Structural Geology",
+   "Geology for Civil Works",
+   "Remote Sensing"
+  ],
+  "description": "\"Engineering Geology, Prof. Debasis Roy, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLDF5162B475DD915F",
+  "lectureKey": "ce405-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Scope of Engineering Geology",
+  "unit": 1,
+  "topicId": "ce405-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: General Geology",
+  "topics": [
+   "Scope of Engineering Geology"
+  ],
+  "description": "\"Scope of geology in civil engineering\".",
+  "url": "https://www.youtube.com/watch?v=G2tooKnmCXY",
+  "lectureKey": "ce405-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Weathering & Erosion",
+  "unit": 1,
+  "topicId": "ce405-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: General Geology",
+  "topics": [
+   "Weathering & Erosion"
+  ],
+  "description": "\"Introduction to engineering geology\" covers General Geology.",
+  "url": "https://www.youtube.com/watch?v=aTVDiRtRook",
+  "lectureKey": "ce405-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Geological Agents",
+  "unit": 1,
+  "topicId": "ce405-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: General Geology",
+  "topics": [
+   "Geological Agents"
+  ],
+  "description": "\"Introduction to engineering geology\" covers General Geology.",
+  "url": "https://www.youtube.com/watch?v=aTVDiRtRook",
+  "lectureKey": "ce405-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Earthquakes",
+  "unit": 1,
+  "topicId": "ce405-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: General Geology",
+  "topics": [
+   "Earthquakes"
+  ],
+  "description": "\"Introduction to engineering geology\" covers General Geology.",
+  "url": "https://www.youtube.com/watch?v=aTVDiRtRook",
+  "lectureKey": "ce405-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Minerals",
+  "unit": 2,
+  "topicId": "ce405-u2t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Mineralogy & Petrology",
+  "topics": [
+   "Minerals"
+  ],
+  "description": "\"Engineering geology\" covers Mineralogy & Petrology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Rock-forming Minerals",
+  "unit": 2,
+  "topicId": "ce405-u2t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Mineralogy & Petrology",
+  "topics": [
+   "Rock-forming Minerals"
+  ],
+  "description": "\"Engineering geology\" covers Mineralogy & Petrology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Igneous & Sedimentary Rocks",
+  "unit": 2,
+  "topicId": "ce405-u2t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Mineralogy & Petrology",
+  "topics": [
+   "Igneous & Sedimentary Rocks"
+  ],
+  "description": "\"Engineering geology\" covers Mineralogy & Petrology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Metamorphic Rocks",
+  "unit": 2,
+  "topicId": "ce405-u2t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Mineralogy & Petrology",
+  "topics": [
+   "Metamorphic Rocks"
+  ],
+  "description": "\"Engineering geology\" covers Mineralogy & Petrology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Dip & Strike",
+  "unit": 3,
+  "topicId": "ce405-u3t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Structural Geology",
+  "topics": [
+   "Dip & Strike"
+  ],
+  "description": "\"Engineering geology\" covers Structural Geology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Folds",
+  "unit": 3,
+  "topicId": "ce405-u3t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Structural Geology",
+  "topics": [
+   "Folds"
+  ],
+  "description": "\"Engineering geology\" covers Structural Geology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Faults",
+  "unit": 3,
+  "topicId": "ce405-u3t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Structural Geology",
+  "topics": [
+   "Faults"
+  ],
+  "description": "\"Engineering geology\" covers Structural Geology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Joints & Unconformities",
+  "unit": 3,
+  "topicId": "ce405-u3t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Structural Geology",
+  "topics": [
+   "Joints & Unconformities"
+  ],
+  "description": "\"Engineering geology\" covers Structural Geology.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Geological Investigations",
+  "unit": 4,
+  "topicId": "ce405-u4t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Geology for Civil Works",
+  "topics": [
+   "Geological Investigations"
+  ],
+  "description": "\"Engineering geology\" covers Geology for Civil Works.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Dams & Reservoirs",
+  "unit": 4,
+  "topicId": "ce405-u4t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Geology for Civil Works",
+  "topics": [
+   "Dams & Reservoirs"
+  ],
+  "description": "\"Engineering geology\" covers Geology for Civil Works.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Tunnels",
+  "unit": 4,
+  "topicId": "ce405-u4t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Geology for Civil Works",
+  "topics": [
+   "Tunnels"
+  ],
+  "description": "\"Engineering geology\" covers Geology for Civil Works.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Landslides & Groundwater",
+  "unit": 4,
+  "topicId": "ce405-u4t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Geology for Civil Works",
+  "topics": [
+   "Landslides & Groundwater"
+  ],
+  "description": "\"Engineering geology\" covers Geology for Civil Works.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9m3u5EB38QBN43GzdiSLTR",
+  "lectureKey": "ce405-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Principles of Remote Sensing",
+  "unit": 5,
+  "topicId": "ce405-u5t1",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Remote Sensing",
+  "topics": [
+   "Principles of Remote Sensing"
+  ],
+  "description": "\"Remote sensing and GIS full course\".",
+  "url": "https://www.youtube.com/playlist?list=PL425biB-mTSRUyM4_B4AIvh196SO0dIns",
+  "lectureKey": "ce405-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Sensors & Platforms",
+  "unit": 5,
+  "topicId": "ce405-u5t2",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Remote Sensing",
+  "topics": [
+   "Sensors & Platforms"
+  ],
+  "description": "\"Remote sensing and GIS full course\" covers Remote Sensing.",
+  "url": "https://www.youtube.com/playlist?list=PL425biB-mTSRUyM4_B4AIvh196SO0dIns",
+  "lectureKey": "ce405-u5-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Image Interpretation",
+  "unit": 5,
+  "topicId": "ce405-u5t3",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Remote Sensing",
+  "topics": [
+   "Image Interpretation"
+  ],
+  "description": "\"Remote sensing and GIS full course\" covers Remote Sensing.",
+  "url": "https://www.youtube.com/playlist?list=PL425biB-mTSRUyM4_B4AIvh196SO0dIns",
+  "lectureKey": "ce405-u5-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 4,
+  "subject": "ce405",
+  "subjectCode": "CE-405",
+  "subjectLabel": "Engineering Geology & Remote Sensing",
+  "title": "Applications in Civil Engineering",
+  "unit": 5,
+  "topicId": "ce405-u5t4",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Remote Sensing",
+  "topics": [
+   "Applications in Civil Engineering"
+  ],
+  "description": "\"Remote sensing and GIS full course\" covers Remote Sensing.",
+  "url": "https://www.youtube.com/playlist?list=PL425biB-mTSRUyM4_B4AIvh196SO0dIns",
+  "lectureKey": "ce405-u5-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Transportation Engineering-II: full lecture series",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Railway Engineering",
+   "Points, Crossings & Stations",
+   "Airport Engineering",
+   "Tunnel Engineering",
+   "Docks & Harbours"
+  ],
+  "description": "\"Transportation Engineering II\" by Ekeeda.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm9CI47urUKdTTgf2bS4CT53",
+  "lectureKey": "ce502-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Permanent Way",
+  "unit": 1,
+  "topicId": "ce502-u1t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Railway Engineering",
+  "topics": [
+   "Permanent Way"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\".",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Sleepers & Ballast",
+  "unit": 1,
+  "topicId": "ce502-u1t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Railway Engineering",
+  "topics": [
+   "Sleepers & Ballast"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Railway Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Railway Curves",
+  "unit": 1,
+  "topicId": "ce502-u1t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Railway Engineering",
+  "topics": [
+   "Railway Curves"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\".",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Signalling & Interlocking",
+  "unit": 1,
+  "topicId": "ce502-u1t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Railway Engineering",
+  "topics": [
+   "Signalling & Interlocking"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Railway Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Turnouts",
+  "unit": 2,
+  "topicId": "ce502-u2t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Points, Crossings & Stations",
+  "topics": [
+   "Turnouts"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Points, Crossings & Stations.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Stations & Yards",
+  "unit": 2,
+  "topicId": "ce502-u2t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Points, Crossings & Stations",
+  "topics": [
+   "Stations & Yards"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Points, Crossings & Stations.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "High-speed & Metro Rail",
+  "unit": 2,
+  "topicId": "ce502-u2t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Points, Crossings & Stations",
+  "topics": [
+   "High-speed & Metro Rail"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Points, Crossings & Stations.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Track Maintenance",
+  "unit": 2,
+  "topicId": "ce502-u2t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Points, Crossings & Stations",
+  "topics": [
+   "Track Maintenance"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Points, Crossings & Stations.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Airport Planning",
+  "unit": 3,
+  "topicId": "ce502-u3t1",
+  "lecturer": "Ekeeda",
+  "type": "video",
+  "typeLabel": "Unit 3: Airport Engineering",
+  "topics": [
+   "Airport Planning"
+  ],
+  "description": "\"Highway materials, pavement design, railway and airport engineering\".",
+  "url": "https://www.youtube.com/watch?v=d4isqDdIzsE",
+  "lectureKey": "ce502-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Runway Design",
+  "unit": 3,
+  "topicId": "ce502-u3t2",
+  "lecturer": "Ekeeda",
+  "type": "video",
+  "typeLabel": "Unit 3: Airport Engineering",
+  "topics": [
+   "Runway Design"
+  ],
+  "description": "\"Highway materials, pavement design, railway and airport engineering\".",
+  "url": "https://www.youtube.com/watch?v=d4isqDdIzsE",
+  "lectureKey": "ce502-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Taxiways & Aprons",
+  "unit": 3,
+  "topicId": "ce502-u3t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Airport Engineering",
+  "topics": [
+   "Taxiways & Aprons"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Airport Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Airport Lighting & Navigation",
+  "unit": 3,
+  "topicId": "ce502-u3t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Airport Engineering",
+  "topics": [
+   "Airport Lighting & Navigation"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Airport Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Tunnels & Classification",
+  "unit": 4,
+  "topicId": "ce502-u4t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tunnel Engineering",
+  "topics": [
+   "Tunnels & Classification"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Tunnel Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Tunnelling Methods in Soft Ground",
+  "unit": 4,
+  "topicId": "ce502-u4t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tunnel Engineering",
+  "topics": [
+   "Tunnelling Methods in Soft Ground"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Tunnel Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Tunnelling in Rock",
+  "unit": 4,
+  "topicId": "ce502-u4t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tunnel Engineering",
+  "topics": [
+   "Tunnelling in Rock"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Tunnel Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Tunnel Services",
+  "unit": 4,
+  "topicId": "ce502-u4t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Tunnel Engineering",
+  "topics": [
+   "Tunnel Services"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Tunnel Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Harbours",
+  "unit": 5,
+  "topicId": "ce502-u5t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Docks & Harbours",
+  "topics": [
+   "Harbours"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Docks & Harbours.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Breakwaters",
+  "unit": 5,
+  "topicId": "ce502-u5t2",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Docks & Harbours",
+  "topics": [
+   "Breakwaters"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Docks & Harbours.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Docks & Quays",
+  "unit": 5,
+  "topicId": "ce502-u5t3",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Docks & Harbours",
+  "topics": [
+   "Docks & Quays"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Docks & Harbours.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce502",
+  "subjectCode": "CE-502",
+  "subjectLabel": "Transportation Engineering-II",
+  "title": "Dredging & Navigation Aids",
+  "unit": 5,
+  "topicId": "ce502-u5t4",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Docks & Harbours",
+  "topics": [
+   "Dredging & Navigation Aids"
+  ],
+  "description": "\"Railway engineering complete playlist: permanent way, gradients\" covers Docks & Harbours.",
+  "url": "https://www.youtube.com/playlist?list=PLXQ1-WvqNcXYhBQmEERyNyL58MWmWKxlx",
+  "lectureKey": "ce502-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Structural Analysis-II: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Slope Deflection Method",
+   "Moment Distribution Method",
+   "Column Analogy & Approximate Methods",
+   "Matrix Methods",
+   "Plastic Analysis"
+  ],
+  "description": "\"Structural Analysis II, Prof. P. Banerjee, IIT Bombay\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLAE2D920B08D74108",
+  "lectureKey": "ce503a-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Basics of Slope Deflection",
+  "unit": 1,
+  "topicId": "ce503a-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Slope Deflection Method",
+  "topics": [
+   "Basics of Slope Deflection"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Slope Deflection Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Continuous Beams",
+  "unit": 1,
+  "topicId": "ce503a-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Slope Deflection Method",
+  "topics": [
+   "Continuous Beams"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Slope Deflection Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Portal Frames without Sway",
+  "unit": 1,
+  "topicId": "ce503a-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Slope Deflection Method",
+  "topics": [
+   "Portal Frames without Sway"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Slope Deflection Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Frames with Sway",
+  "unit": 1,
+  "topicId": "ce503a-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Slope Deflection Method",
+  "topics": [
+   "Frames with Sway"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Slope Deflection Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Concepts of Moment Distribution",
+  "unit": 2,
+  "topicId": "ce503a-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Moment Distribution Method",
+  "topics": [
+   "Concepts of Moment Distribution"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Moment Distribution Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Continuous Beams by MDM",
+  "unit": 2,
+  "topicId": "ce503a-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Moment Distribution Method",
+  "topics": [
+   "Continuous Beams by MDM"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Moment Distribution Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Frames by MDM",
+  "unit": 2,
+  "topicId": "ce503a-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Moment Distribution Method",
+  "topics": [
+   "Frames by MDM"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Moment Distribution Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Kani's Method",
+  "unit": 2,
+  "topicId": "ce503a-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Moment Distribution Method",
+  "topics": [
+   "Kani's Method"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Moment Distribution Method.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Column Analogy",
+  "unit": 3,
+  "topicId": "ce503a-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Column Analogy & Approximate Methods",
+  "topics": [
+   "Column Analogy"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Column Analogy & Approximate Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Approximate Methods for Frames",
+  "unit": 3,
+  "topicId": "ce503a-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Column Analogy & Approximate Methods",
+  "topics": [
+   "Approximate Methods for Frames"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Column Analogy & Approximate Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Analysis for Vertical Loads",
+  "unit": 3,
+  "topicId": "ce503a-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Column Analogy & Approximate Methods",
+  "topics": [
+   "Analysis for Vertical Loads"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Column Analogy & Approximate Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Influence Lines for Indeterminate Beams",
+  "unit": 3,
+  "topicId": "ce503a-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Column Analogy & Approximate Methods",
+  "topics": [
+   "Influence Lines for Indeterminate Beams"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\".",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Flexibility Method",
+  "unit": 4,
+  "topicId": "ce503a-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Matrix Methods",
+  "topics": [
+   "Flexibility Method"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Matrix Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Stiffness Method",
+  "unit": 4,
+  "topicId": "ce503a-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Matrix Methods",
+  "topics": [
+   "Stiffness Method"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Matrix Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Member Stiffness Matrices",
+  "unit": 4,
+  "topicId": "ce503a-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Matrix Methods",
+  "topics": [
+   "Member Stiffness Matrices"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Matrix Methods.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Computer Analysis",
+  "unit": 4,
+  "topicId": "ce503a-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Matrix Methods",
+  "topics": [
+   "Computer Analysis"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\".",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Plastic Theory",
+  "unit": 5,
+  "topicId": "ce503a-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Plastic Analysis",
+  "topics": [
+   "Plastic Theory"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Plastic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Collapse Mechanisms",
+  "unit": 5,
+  "topicId": "ce503a-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Plastic Analysis",
+  "topics": [
+   "Collapse Mechanisms"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Plastic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Methods of Plastic Analysis",
+  "unit": 5,
+  "topicId": "ce503a-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Plastic Analysis",
+  "topics": [
+   "Methods of Plastic Analysis"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Plastic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce503a",
+  "subjectCode": "CE-503(A)",
+  "subjectLabel": "Structural Analysis-II",
+  "title": "Load Factor",
+  "unit": 5,
+  "topicId": "ce503a-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Plastic Analysis",
+  "topics": [
+   "Load Factor"
+  ],
+  "description": "\"Structure analysis course: indeterminate structures, influence lines\" covers Plastic Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL1Qx-cxDf3x3h6aMh1vJQl6Ip1AplMkew",
+  "lectureKey": "ce503a-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Remote Sensing & GIS: full lecture series",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Remote Sensing Physics",
+   "Sensors & Data Products",
+   "Digital Image Processing",
+   "Geographic Information System",
+   "Spatial Analysis & Applications"
+  ],
+  "description": "\"Remote Sensing & GIS full course (Hindi)\" by DigiSikshak.",
+  "url": "https://www.youtube.com/playlist?list=PL425biB-mTSRUyM4_B4AIvh196SO0dIns",
+  "lectureKey": "ce504b-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Electromagnetic Radiation",
+  "unit": 1,
+  "topicId": "ce504b-u1t1",
+  "lecturer": "DigiSikshak",
+  "type": "video",
+  "typeLabel": "Unit 1: Remote Sensing Physics",
+  "topics": [
+   "Electromagnetic Radiation"
+  ],
+  "description": "\"Remote sensing process: energy source, radiation and atmosphere\".",
+  "url": "https://www.youtube.com/watch?v=UokHOfOyrVw",
+  "lectureKey": "ce504b-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Energy Interaction with Surface",
+  "unit": 1,
+  "topicId": "ce504b-u1t2",
+  "lecturer": "DigiSikshak",
+  "type": "video",
+  "typeLabel": "Unit 1: Remote Sensing Physics",
+  "topics": [
+   "Energy Interaction with Surface"
+  ],
+  "description": "\"Remote sensing process: energy source, radiation and atmosphere\" covers Remote Sensing Physics.",
+  "url": "https://www.youtube.com/watch?v=UokHOfOyrVw",
+  "lectureKey": "ce504b-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Resolutions",
+  "unit": 1,
+  "topicId": "ce504b-u1t3",
+  "lecturer": "DigiSikshak",
+  "type": "video",
+  "typeLabel": "Unit 1: Remote Sensing Physics",
+  "topics": [
+   "Resolutions"
+  ],
+  "description": "\"Remote sensing process: energy source, radiation and atmosphere\" covers Remote Sensing Physics.",
+  "url": "https://www.youtube.com/watch?v=UokHOfOyrVw",
+  "lectureKey": "ce504b-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Orbits & Platforms",
+  "unit": 1,
+  "topicId": "ce504b-u1t4",
+  "lecturer": "DigiSikshak",
+  "type": "video",
+  "typeLabel": "Unit 1: Remote Sensing Physics",
+  "topics": [
+   "Orbits & Platforms"
+  ],
+  "description": "\"Remote sensing process: energy source, radiation and atmosphere\" covers Remote Sensing Physics.",
+  "url": "https://www.youtube.com/watch?v=UokHOfOyrVw",
+  "lectureKey": "ce504b-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Optical Sensors",
+  "unit": 2,
+  "topicId": "ce504b-u2t1",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Data Products",
+  "topics": [
+   "Optical Sensors"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Sensors & Data Products.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Microwave Sensors",
+  "unit": 2,
+  "topicId": "ce504b-u2t2",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Data Products",
+  "topics": [
+   "Microwave Sensors"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Sensors & Data Products.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Indian Satellites",
+  "unit": 2,
+  "topicId": "ce504b-u2t3",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Data Products",
+  "topics": [
+   "Indian Satellites"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Sensors & Data Products.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Thermal Remote Sensing",
+  "unit": 2,
+  "topicId": "ce504b-u2t4",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Sensors & Data Products",
+  "topics": [
+   "Thermal Remote Sensing"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\".",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Preprocessing",
+  "unit": 3,
+  "topicId": "ce504b-u3t1",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Digital Image Processing",
+  "topics": [
+   "Preprocessing"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Digital Image Processing.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Image Enhancement",
+  "unit": 3,
+  "topicId": "ce504b-u3t2",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Digital Image Processing",
+  "topics": [
+   "Image Enhancement"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Digital Image Processing.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Image Classification",
+  "unit": 3,
+  "topicId": "ce504b-u3t3",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Digital Image Processing",
+  "topics": [
+   "Image Classification"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Digital Image Processing.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Accuracy Assessment",
+  "unit": 3,
+  "topicId": "ce504b-u3t4",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Digital Image Processing",
+  "topics": [
+   "Accuracy Assessment"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Digital Image Processing.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "GIS Components",
+  "unit": 4,
+  "topicId": "ce504b-u4t1",
+  "lecturer": "DigiSikshak",
+  "type": "video",
+  "typeLabel": "Unit 4: Geographic Information System",
+  "topics": [
+   "GIS Components"
+  ],
+  "description": "\"Components of GIS: computer system, data, user\".",
+  "url": "https://www.youtube.com/watch?v=rSNm3pJ1e1o",
+  "lectureKey": "ce504b-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Data Models",
+  "unit": 4,
+  "topicId": "ce504b-u4t2",
+  "lecturer": "DigiSikshak",
+  "type": "video",
+  "typeLabel": "Unit 4: Geographic Information System",
+  "topics": [
+   "Data Models"
+  ],
+  "description": "\"Components of GIS: computer system, data, user\".",
+  "url": "https://www.youtube.com/watch?v=rSNm3pJ1e1o",
+  "lectureKey": "ce504b-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Map Projections & Coordinates",
+  "unit": 4,
+  "topicId": "ce504b-u4t3",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Geographic Information System",
+  "topics": [
+   "Map Projections & Coordinates"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Geographic Information System.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Data Input & Management",
+  "unit": 4,
+  "topicId": "ce504b-u4t4",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Geographic Information System",
+  "topics": [
+   "Data Input & Management"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Geographic Information System.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Spatial Analysis",
+  "unit": 5,
+  "topicId": "ce504b-u5t1",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Spatial Analysis & Applications",
+  "topics": [
+   "Spatial Analysis"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Spatial Analysis & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Terrain Analysis",
+  "unit": 5,
+  "topicId": "ce504b-u5t2",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Spatial Analysis & Applications",
+  "topics": [
+   "Terrain Analysis"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Spatial Analysis & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Applications in Infrastructure",
+  "unit": 5,
+  "topicId": "ce504b-u5t3",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Spatial Analysis & Applications",
+  "topics": [
+   "Applications in Infrastructure"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Spatial Analysis & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ce504b",
+  "subjectCode": "CE-504(B)",
+  "subjectLabel": "Remote Sensing & GIS",
+  "title": "Applications in Water & Disaster",
+  "unit": 5,
+  "topicId": "ce504b-u5t4",
+  "lecturer": "DigiSikshak",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Spatial Analysis & Applications",
+  "topics": [
+   "Applications in Water & Disaster"
+  ],
+  "description": "\"Remote sensing and GIS basic concepts\" covers Spatial Analysis & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLp76zJxzEriMstHWJssWiczio7rtIAU6r",
+  "lectureKey": "ce504b-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Structural Design & Drawing (RCC-I): full lecture series",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Design Philosophies",
+   "Design of Beams",
+   "Design of Slabs",
+   "Columns & Footings",
+   "Staircases & Detailing"
+  ],
+  "description": "\"Reinforced Concrete Design (RCC): limit state, beams, shear, bond\" by Civil Engineering Fanatics.",
+  "url": "https://www.youtube.com/playlist?list=PL0_vJux4nrG2DVhrYuHkv0tMauEnbEzwN",
+  "lectureKey": "ce601-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Working Stress vs Limit State",
+  "unit": 1,
+  "topicId": "ce601-u1t1",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 1: Design Philosophies",
+  "topics": [
+   "Working Stress vs Limit State"
+  ],
+  "description": "\"Design methods of RCC: working stress, ultimate load, limit state\".",
+  "url": "https://www.youtube.com/watch?v=SLH72SNvl6s",
+  "lectureKey": "ce601-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Limit States",
+  "unit": 1,
+  "topicId": "ce601-u1t2",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 1: Design Philosophies",
+  "topics": [
+   "Limit States"
+  ],
+  "description": "\"Limit state method of design of RCC structures\".",
+  "url": "https://www.youtube.com/watch?v=imwRrnY4CMY",
+  "lectureKey": "ce601-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Characteristic Values",
+  "unit": 1,
+  "topicId": "ce601-u1t3",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 1: Design Philosophies",
+  "topics": [
+   "Characteristic Values"
+  ],
+  "description": "\"Limit state method of design of RCC structures\" covers Design Philosophies.",
+  "url": "https://www.youtube.com/watch?v=imwRrnY4CMY",
+  "lectureKey": "ce601-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Stress-Strain Behaviour",
+  "unit": 1,
+  "topicId": "ce601-u1t4",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 1: Design Philosophies",
+  "topics": [
+   "Stress-Strain Behaviour"
+  ],
+  "description": "\"Limit state method of design of RCC structures\" covers Design Philosophies.",
+  "url": "https://www.youtube.com/watch?v=imwRrnY4CMY",
+  "lectureKey": "ce601-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Singly Reinforced Beams",
+  "unit": 2,
+  "topicId": "ce601-u2t1",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 2: Design of Beams",
+  "topics": [
+   "Singly Reinforced Beams"
+  ],
+  "description": "\"Singly reinforced beam numerical, limit state method\".",
+  "url": "https://www.youtube.com/watch?v=c0AVtMMA2CM",
+  "lectureKey": "ce601-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Doubly Reinforced Beams",
+  "unit": 2,
+  "topicId": "ce601-u2t2",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 2: Design of Beams",
+  "topics": [
+   "Doubly Reinforced Beams"
+  ],
+  "description": "\"Singly reinforced beam numerical, limit state method\".",
+  "url": "https://www.youtube.com/watch?v=c0AVtMMA2CM",
+  "lectureKey": "ce601-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Flanged Beams",
+  "unit": 2,
+  "topicId": "ce601-u2t3",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 2: Design of Beams",
+  "topics": [
+   "Flanged Beams"
+  ],
+  "description": "\"Singly reinforced beam numerical, limit state method\".",
+  "url": "https://www.youtube.com/watch?v=c0AVtMMA2CM",
+  "lectureKey": "ce601-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Shear & Bond",
+  "unit": 2,
+  "topicId": "ce601-u2t4",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 2: Design of Beams",
+  "topics": [
+   "Shear & Bond"
+  ],
+  "description": "\"Singly reinforced beam numerical, limit state method\" covers Design of Beams.",
+  "url": "https://www.youtube.com/watch?v=c0AVtMMA2CM",
+  "lectureKey": "ce601-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "One-way Slabs",
+  "unit": 3,
+  "topicId": "ce601-u3t1",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 3: Design of Slabs",
+  "topics": [
+   "One-way Slabs"
+  ],
+  "description": "\"Design of RCC slabs one-way slab IS 456\".",
+  "url": "https://www.youtube.com/watch?v=HhpHeiromOg",
+  "lectureKey": "ce601-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Two-way Slabs",
+  "unit": 3,
+  "topicId": "ce601-u3t2",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 3: Design of Slabs",
+  "topics": [
+   "Two-way Slabs"
+  ],
+  "description": "\"Design of RCC slabs one-way slab IS 456\".",
+  "url": "https://www.youtube.com/watch?v=HhpHeiromOg",
+  "lectureKey": "ce601-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Continuous Slabs",
+  "unit": 3,
+  "topicId": "ce601-u3t3",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 3: Design of Slabs",
+  "topics": [
+   "Continuous Slabs"
+  ],
+  "description": "\"Design of RCC slabs one-way slab IS 456\".",
+  "url": "https://www.youtube.com/watch?v=HhpHeiromOg",
+  "lectureKey": "ce601-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Deflection Control",
+  "unit": 3,
+  "topicId": "ce601-u3t4",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "video",
+  "typeLabel": "Unit 3: Design of Slabs",
+  "topics": [
+   "Deflection Control"
+  ],
+  "description": "\"Design of RCC slabs one-way slab IS 456\" covers Design of Slabs.",
+  "url": "https://www.youtube.com/watch?v=HhpHeiromOg",
+  "lectureKey": "ce601-u3-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Short Columns",
+  "unit": 4,
+  "topicId": "ce601-u4t1",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Columns & Footings",
+  "topics": [
+   "Short Columns"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\" covers Columns & Footings.",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Columns with Bending",
+  "unit": 4,
+  "topicId": "ce601-u4t2",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Columns & Footings",
+  "topics": [
+   "Columns with Bending"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\" covers Columns & Footings.",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Isolated Footings",
+  "unit": 4,
+  "topicId": "ce601-u4t3",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Columns & Footings",
+  "topics": [
+   "Isolated Footings"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\" covers Columns & Footings.",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Combined Footings",
+  "unit": 4,
+  "topicId": "ce601-u4t4",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Columns & Footings",
+  "topics": [
+   "Combined Footings"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\" covers Columns & Footings.",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Staircase Design",
+  "unit": 5,
+  "topicId": "ce601-u5t1",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Staircases & Detailing",
+  "topics": [
+   "Staircase Design"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\".",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Reinforcement Detailing",
+  "unit": 5,
+  "topicId": "ce601-u5t2",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Staircases & Detailing",
+  "topics": [
+   "Reinforcement Detailing"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\" covers Staircases & Detailing.",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Durability Requirements",
+  "unit": 5,
+  "topicId": "ce601-u5t3",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Staircases & Detailing",
+  "topics": [
+   "Durability Requirements"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\" covers Staircases & Detailing.",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce601",
+  "subjectCode": "CE-601",
+  "subjectLabel": "Structural Design & Drawing (RCC-I)",
+  "title": "Structural Drawing",
+  "unit": 5,
+  "topicId": "ce601-u5t4",
+  "lecturer": "Civil Engineering Fanatics",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Staircases & Detailing",
+  "topics": [
+   "Structural Drawing"
+  ],
+  "description": "\"RCC design lectures: working stress, limit state, beams, slabs, staircase\" covers Staircases & Detailing.",
+  "url": "https://www.youtube.com/playlist?list=PLUiitznCET3arqfKDSMzXMuyL87WbNRqy",
+  "lectureKey": "ce601-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Environmental Engineering-I: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Water Demand & Sources",
+   "Water Quality",
+   "Water Treatment",
+   "Conveyance & Distribution",
+   "Rural & Advanced Water Supply"
+  ],
+  "description": "\"Water & Wastewater Engineering, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce602-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Water Demand",
+  "unit": 1,
+  "topicId": "ce602-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Water Demand & Sources",
+  "topics": [
+   "Water Demand"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\".",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Population Forecasting",
+  "unit": 1,
+  "topicId": "ce602-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Water Demand & Sources",
+  "topics": [
+   "Population Forecasting"
+  ],
+  "description": "\"Introduction to water and waste water engineering\" covers Water Demand & Sources.",
+  "url": "https://www.youtube.com/watch?v=zVZ9c6EXfTA",
+  "lectureKey": "ce602-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Surface Sources",
+  "unit": 1,
+  "topicId": "ce602-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Water Demand & Sources",
+  "topics": [
+   "Surface Sources"
+  ],
+  "description": "\"Introduction to water and waste water engineering\" covers Water Demand & Sources.",
+  "url": "https://www.youtube.com/watch?v=zVZ9c6EXfTA",
+  "lectureKey": "ce602-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Groundwater Sources",
+  "unit": 1,
+  "topicId": "ce602-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Water Demand & Sources",
+  "topics": [
+   "Groundwater Sources"
+  ],
+  "description": "\"Introduction to water and waste water engineering\" covers Water Demand & Sources.",
+  "url": "https://www.youtube.com/watch?v=zVZ9c6EXfTA",
+  "lectureKey": "ce602-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Physical Parameters",
+  "unit": 2,
+  "topicId": "ce602-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Water Quality",
+  "topics": [
+   "Physical Parameters"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Water Quality.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Chemical Parameters",
+  "unit": 2,
+  "topicId": "ce602-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Water Quality",
+  "topics": [
+   "Chemical Parameters"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Water Quality.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Biological Parameters",
+  "unit": 2,
+  "topicId": "ce602-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Water Quality",
+  "topics": [
+   "Biological Parameters"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Water Quality.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Drinking Water Standards",
+  "unit": 2,
+  "topicId": "ce602-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Water Quality",
+  "topics": [
+   "Drinking Water Standards"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\".",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Screening & Plain Sedimentation",
+  "unit": 3,
+  "topicId": "ce602-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Water Treatment",
+  "topics": [
+   "Screening & Plain Sedimentation"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Water Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Coagulation & Flocculation",
+  "unit": 3,
+  "topicId": "ce602-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Water Treatment",
+  "topics": [
+   "Coagulation & Flocculation"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Water Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Filtration",
+  "unit": 3,
+  "topicId": "ce602-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Water Treatment",
+  "topics": [
+   "Filtration"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Water Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Disinfection & Softening",
+  "unit": 3,
+  "topicId": "ce602-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Water Treatment",
+  "topics": [
+   "Disinfection & Softening"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Water Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Pipes & Conveyance",
+  "unit": 4,
+  "topicId": "ce602-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Conveyance & Distribution",
+  "topics": [
+   "Pipes & Conveyance"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Conveyance & Distribution.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Distribution Systems",
+  "unit": 4,
+  "topicId": "ce602-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Conveyance & Distribution",
+  "topics": [
+   "Distribution Systems"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Conveyance & Distribution.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Storage & Pumping",
+  "unit": 4,
+  "topicId": "ce602-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Conveyance & Distribution",
+  "topics": [
+   "Storage & Pumping"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Conveyance & Distribution.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Network Analysis",
+  "unit": 4,
+  "topicId": "ce602-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Conveyance & Distribution",
+  "topics": [
+   "Network Analysis"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Conveyance & Distribution.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Rural Water Supply",
+  "unit": 5,
+  "topicId": "ce602-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Rural & Advanced Water Supply",
+  "topics": [
+   "Rural Water Supply"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\".",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Advanced Treatment",
+  "unit": 5,
+  "topicId": "ce602-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Rural & Advanced Water Supply",
+  "topics": [
+   "Advanced Treatment"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\".",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Water Conservation",
+  "unit": 5,
+  "topicId": "ce602-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Rural & Advanced Water Supply",
+  "topics": [
+   "Water Conservation"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\".",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce602",
+  "subjectCode": "CE-602",
+  "subjectLabel": "Environmental Engineering-I",
+  "title": "Plumbing in Buildings",
+  "unit": 5,
+  "topicId": "ce602-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Rural & Advanced Water Supply",
+  "topics": [
+   "Plumbing in Buildings"
+  ],
+  "description": "\"Water supply engineering: water demand, quality standards, treatment\" covers Rural & Advanced Water Supply.",
+  "url": "https://www.youtube.com/playlist?list=PLGlrZqB-Sb3RoMqn33INhSfsvNe7I_ZT3",
+  "lectureKey": "ce602-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Water Resource Engineering: full lecture series",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Hydrology",
+   "Irrigation Engineering",
+   "Canals",
+   "Dams & Spillways",
+   "Hydraulic Structures & Management"
+  ],
+  "description": "\"Complete course of irrigation engineering\" by Irrigation lectures.",
+  "url": "https://www.youtube.com/playlist?list=PL9HI1tOu3A0xjbKD9uVb3diy7IAD9X522",
+  "lectureKey": "ce603a-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Hydrological Cycle",
+  "unit": 1,
+  "topicId": "ce603a-u1t1",
+  "lecturer": "Irrigation lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Hydrology",
+  "topics": [
+   "Hydrological Cycle"
+  ],
+  "description": "\"Engineering hydrology: the hydrologic cycle\".",
+  "url": "https://www.youtube.com/watch?v=Eok9VYfesOk",
+  "lectureKey": "ce603a-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Rainfall Measurement",
+  "unit": 1,
+  "topicId": "ce603a-u1t2",
+  "lecturer": "Irrigation lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Hydrology",
+  "topics": [
+   "Rainfall Measurement"
+  ],
+  "description": "\"Engineering hydrology: the hydrologic cycle\" covers Hydrology.",
+  "url": "https://www.youtube.com/watch?v=Eok9VYfesOk",
+  "lectureKey": "ce603a-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Runoff & Hydrographs",
+  "unit": 1,
+  "topicId": "ce603a-u1t3",
+  "lecturer": "Irrigation lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Hydrology",
+  "topics": [
+   "Runoff & Hydrographs"
+  ],
+  "description": "\"Engineering hydrology: the hydrologic cycle\" covers Hydrology.",
+  "url": "https://www.youtube.com/watch?v=Eok9VYfesOk",
+  "lectureKey": "ce603a-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Floods",
+  "unit": 1,
+  "topicId": "ce603a-u1t4",
+  "lecturer": "Irrigation lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Hydrology",
+  "topics": [
+   "Floods"
+  ],
+  "description": "\"Engineering hydrology: the hydrologic cycle\" covers Hydrology.",
+  "url": "https://www.youtube.com/watch?v=Eok9VYfesOk",
+  "lectureKey": "ce603a-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Irrigation & Its Types",
+  "unit": 2,
+  "topicId": "ce603a-u2t1",
+  "lecturer": "Irrigation lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Irrigation Engineering",
+  "topics": [
+   "Irrigation & Its Types"
+  ],
+  "description": "\"Water resource engineering hydrology and irrigation module 1\".",
+  "url": "https://www.youtube.com/watch?v=8U-ptf_1cLE",
+  "lectureKey": "ce603a-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Water Requirement of Crops",
+  "unit": 2,
+  "topicId": "ce603a-u2t2",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Irrigation Engineering",
+  "topics": [
+   "Water Requirement of Crops"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Irrigation Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Soil-Water Relations",
+  "unit": 2,
+  "topicId": "ce603a-u2t3",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Irrigation Engineering",
+  "topics": [
+   "Soil-Water Relations"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Irrigation Engineering.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Irrigation Efficiencies",
+  "unit": 2,
+  "topicId": "ce603a-u2t4",
+  "lecturer": "Irrigation lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Irrigation Engineering",
+  "topics": [
+   "Irrigation Efficiencies"
+  ],
+  "description": "\"Water resource engineering hydrology and irrigation module 1\".",
+  "url": "https://www.youtube.com/watch?v=8U-ptf_1cLE",
+  "lectureKey": "ce603a-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Canal Classification",
+  "unit": 3,
+  "topicId": "ce603a-u3t1",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Canals",
+  "topics": [
+   "Canal Classification"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Canals.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Canal Design",
+  "unit": 3,
+  "topicId": "ce603a-u3t2",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Canals",
+  "topics": [
+   "Canal Design"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Canals.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Canal Lining",
+  "unit": 3,
+  "topicId": "ce603a-u3t3",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Canals",
+  "topics": [
+   "Canal Lining"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Canals.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Waterlogging & Drainage",
+  "unit": 3,
+  "topicId": "ce603a-u3t4",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Canals",
+  "topics": [
+   "Waterlogging & Drainage"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Canals.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Types of Dams",
+  "unit": 4,
+  "topicId": "ce603a-u4t1",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Dams & Spillways",
+  "topics": [
+   "Types of Dams"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Dams & Spillways.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Gravity Dam Design",
+  "unit": 4,
+  "topicId": "ce603a-u4t2",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Dams & Spillways",
+  "topics": [
+   "Gravity Dam Design"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Dams & Spillways.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Earth Dams",
+  "unit": 4,
+  "topicId": "ce603a-u4t3",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Dams & Spillways",
+  "topics": [
+   "Earth Dams"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Dams & Spillways.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Spillways & Energy Dissipation",
+  "unit": 4,
+  "topicId": "ce603a-u4t4",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Dams & Spillways",
+  "topics": [
+   "Spillways & Energy Dissipation"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Dams & Spillways.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Diversion Headworks",
+  "unit": 5,
+  "topicId": "ce603a-u5t1",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Structures & Management",
+  "topics": [
+   "Diversion Headworks"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Hydraulic Structures & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Canal Structures",
+  "unit": 5,
+  "topicId": "ce603a-u5t2",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Structures & Management",
+  "topics": [
+   "Canal Structures"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Hydraulic Structures & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Watershed Management",
+  "unit": 5,
+  "topicId": "ce603a-u5t3",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Structures & Management",
+  "topics": [
+   "Watershed Management"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Hydraulic Structures & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ce603a",
+  "subjectCode": "CE-603(A)",
+  "subjectLabel": "Water Resource Engineering",
+  "title": "Integrated Water Management",
+  "unit": 5,
+  "topicId": "ce603a-u5t4",
+  "lecturer": "Irrigation lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Hydraulic Structures & Management",
+  "topics": [
+   "Integrated Water Management"
+  ],
+  "description": "\"Engineering hydrology lecture playlist\" covers Hydraulic Structures & Management.",
+  "url": "https://www.youtube.com/playlist?list=PLXLUpwDRCVsSSeyKWT03rLb6X9DbqHsSX",
+  "lectureKey": "ce603a-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Geotechnical Engineering: full lecture series",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Soil Properties & Classification",
+   "Permeability & Seepage",
+   "Compaction & Consolidation",
+   "Shear Strength",
+   "Earth Pressure & Slopes"
+  ],
+  "description": "\"Soil Mechanics lectures\" by APSEd.",
+  "url": "https://www.youtube.com/playlist?list=PLSNhedsleX10Y2LsL8eo-qlF6_cu31TR_",
+  "lectureKey": "ce701-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Soil Formation & Phase Relations",
+  "unit": 1,
+  "topicId": "ce701-u1t1",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Soil Properties & Classification",
+  "topics": [
+   "Soil Formation & Phase Relations"
+  ],
+  "description": "\"Introduction to geotechnical engineering\" covers Soil Properties & Classification.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj91k73IT7aZUGojoH53Go64",
+  "lectureKey": "ce701-u1-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Index Properties",
+  "unit": 1,
+  "topicId": "ce701-u1t2",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Soil Properties & Classification",
+  "topics": [
+   "Index Properties"
+  ],
+  "description": "\"Introduction to geotechnical engineering\" covers Soil Properties & Classification.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj91k73IT7aZUGojoH53Go64",
+  "lectureKey": "ce701-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Particle Size Analysis",
+  "unit": 1,
+  "topicId": "ce701-u1t3",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Soil Properties & Classification",
+  "topics": [
+   "Particle Size Analysis"
+  ],
+  "description": "\"Introduction to geotechnical engineering\" covers Soil Properties & Classification.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj91k73IT7aZUGojoH53Go64",
+  "lectureKey": "ce701-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Soil Classification",
+  "unit": 1,
+  "topicId": "ce701-u1t4",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Soil Properties & Classification",
+  "topics": [
+   "Soil Classification"
+  ],
+  "description": "\"Origin of soil and grain size\".",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj8frE2ef9R3_o50XWWpQRul",
+  "lectureKey": "ce701-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Darcy's Law",
+  "unit": 2,
+  "topicId": "ce701-u2t1",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Permeability & Seepage",
+  "topics": [
+   "Darcy's Law"
+  ],
+  "description": "\"Plasticity and structure of soil\" covers Permeability & Seepage.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj_5qER2qVPuRpEKrEZqfN2F",
+  "lectureKey": "ce701-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Factors & Tests",
+  "unit": 2,
+  "topicId": "ce701-u2t2",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Permeability & Seepage",
+  "topics": [
+   "Factors & Tests"
+  ],
+  "description": "\"Plasticity and structure of soil\" covers Permeability & Seepage.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj_5qER2qVPuRpEKrEZqfN2F",
+  "lectureKey": "ce701-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Seepage & Flow Nets",
+  "unit": 2,
+  "topicId": "ce701-u2t3",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Permeability & Seepage",
+  "topics": [
+   "Seepage & Flow Nets"
+  ],
+  "description": "\"Plasticity and structure of soil\" covers Permeability & Seepage.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj_5qER2qVPuRpEKrEZqfN2F",
+  "lectureKey": "ce701-u2-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Effective Stress & Quicksand",
+  "unit": 2,
+  "topicId": "ce701-u2t4",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Permeability & Seepage",
+  "topics": [
+   "Effective Stress & Quicksand"
+  ],
+  "description": "\"Plasticity and structure of soil\" covers Permeability & Seepage.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj_5qER2qVPuRpEKrEZqfN2F",
+  "lectureKey": "ce701-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Compaction",
+  "unit": 3,
+  "topicId": "ce701-u3t1",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Compaction & Consolidation",
+  "topics": [
+   "Compaction"
+  ],
+  "description": "\"Soil compaction\".",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj8Xa2yHLsi0LywH_1y02DnQ",
+  "lectureKey": "ce701-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Field Compaction",
+  "unit": 3,
+  "topicId": "ce701-u3t2",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Compaction & Consolidation",
+  "topics": [
+   "Field Compaction"
+  ],
+  "description": "\"Soil compaction\".",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj8Xa2yHLsi0LywH_1y02DnQ",
+  "lectureKey": "ce701-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Consolidation",
+  "unit": 3,
+  "topicId": "ce701-u3t3",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Compaction & Consolidation",
+  "topics": [
+   "Consolidation"
+  ],
+  "description": "\"Soil compaction\" covers Compaction & Consolidation.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj8Xa2yHLsi0LywH_1y02DnQ",
+  "lectureKey": "ce701-u3-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Settlement",
+  "unit": 3,
+  "topicId": "ce701-u3t4",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Compaction & Consolidation",
+  "topics": [
+   "Settlement"
+  ],
+  "description": "\"Soil compaction\" covers Compaction & Consolidation.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj8Xa2yHLsi0LywH_1y02DnQ",
+  "lectureKey": "ce701-u3-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Mohr-Coulomb Criterion",
+  "unit": 4,
+  "topicId": "ce701-u4t1",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Shear Strength",
+  "topics": [
+   "Mohr-Coulomb Criterion"
+  ],
+  "description": "Full Geotechnical Engineering series; pick the lecture on Shear Strength.",
+  "url": "https://www.youtube.com/playlist?list=PLSNhedsleX10Y2LsL8eo-qlF6_cu31TR_",
+  "lectureKey": "ce701-u4-t1",
+  "match": "playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Shear Tests",
+  "unit": 4,
+  "topicId": "ce701-u4t2",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Shear Strength",
+  "topics": [
+   "Shear Tests"
+  ],
+  "description": "Full Geotechnical Engineering series; pick the lecture on Shear Strength.",
+  "url": "https://www.youtube.com/playlist?list=PLSNhedsleX10Y2LsL8eo-qlF6_cu31TR_",
+  "lectureKey": "ce701-u4-t2",
+  "match": "playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Drainage Conditions",
+  "unit": 4,
+  "topicId": "ce701-u4t3",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Shear Strength",
+  "topics": [
+   "Drainage Conditions"
+  ],
+  "description": "Full Geotechnical Engineering series; pick the lecture on Shear Strength.",
+  "url": "https://www.youtube.com/playlist?list=PLSNhedsleX10Y2LsL8eo-qlF6_cu31TR_",
+  "lectureKey": "ce701-u4-t3",
+  "match": "playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Sensitivity & Liquefaction",
+  "unit": 4,
+  "topicId": "ce701-u4t4",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Shear Strength",
+  "topics": [
+   "Sensitivity & Liquefaction"
+  ],
+  "description": "Full Geotechnical Engineering series; pick the lecture on Shear Strength.",
+  "url": "https://www.youtube.com/playlist?list=PLSNhedsleX10Y2LsL8eo-qlF6_cu31TR_",
+  "lectureKey": "ce701-u4-t4",
+  "match": "playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Earth Pressure Theories",
+  "unit": 5,
+  "topicId": "ce701-u5t1",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Earth Pressure & Slopes",
+  "topics": [
+   "Earth Pressure Theories"
+  ],
+  "description": "\"Shear strength of soil\" covers Earth Pressure & Slopes.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj-W56Yp0W_WpamUlj0chGAN",
+  "lectureKey": "ce701-u5-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Rankine & Coulomb Theories",
+  "unit": 5,
+  "topicId": "ce701-u5t2",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Earth Pressure & Slopes",
+  "topics": [
+   "Rankine & Coulomb Theories"
+  ],
+  "description": "\"Shear strength of soil\" covers Earth Pressure & Slopes.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj-W56Yp0W_WpamUlj0chGAN",
+  "lectureKey": "ce701-u5-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Retaining Walls",
+  "unit": 5,
+  "topicId": "ce701-u5t3",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Earth Pressure & Slopes",
+  "topics": [
+   "Retaining Walls"
+  ],
+  "description": "\"Shear strength of soil\" covers Earth Pressure & Slopes.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj-W56Yp0W_WpamUlj0chGAN",
+  "lectureKey": "ce701-u5-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce701",
+  "subjectCode": "CE-701",
+  "subjectLabel": "Geotechnical Engineering",
+  "title": "Slope Stability",
+  "unit": 5,
+  "topicId": "ce701-u5t4",
+  "lecturer": "APSEd",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Earth Pressure & Slopes",
+  "topics": [
+   "Slope Stability"
+  ],
+  "description": "\"Shear strength of soil\" covers Earth Pressure & Slopes.",
+  "url": "https://www.youtube.com/playlist?list=PL7aULcvvgJj-W56Yp0W_WpamUlj0chGAN",
+  "lectureKey": "ce701-u5-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Prestressed Concrete Structures: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction to Prestressing",
+   "Materials & Analysis",
+   "Losses of Prestress",
+   "Design of Members",
+   "Anchorage Zones & Applications"
+  ],
+  "description": "\"Prestressed Concrete Structures, Prof. A.K. Sengupta, IIT Madras\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLB50EF6A79D1F8C14",
+  "lectureKey": "ce702a-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Concept of Prestressing",
+  "unit": 1,
+  "topicId": "ce702a-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Prestressing",
+  "topics": [
+   "Concept of Prestressing"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Introduction to Prestressing.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Pre-tensioning",
+  "unit": 1,
+  "topicId": "ce702a-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Prestressing",
+  "topics": [
+   "Pre-tensioning"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Introduction to Prestressing.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Post-tensioning",
+  "unit": 1,
+  "topicId": "ce702a-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Prestressing",
+  "topics": [
+   "Post-tensioning"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Introduction to Prestressing.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Prestressing Systems",
+  "unit": 1,
+  "topicId": "ce702a-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Introduction to Prestressing",
+  "topics": [
+   "Prestressing Systems"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Introduction to Prestressing.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "High-strength Materials",
+  "unit": 2,
+  "topicId": "ce702a-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Materials & Analysis",
+  "topics": [
+   "High-strength Materials"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Materials & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Stress Concept",
+  "unit": 2,
+  "topicId": "ce702a-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Materials & Analysis",
+  "topics": [
+   "Stress Concept"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Materials & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Load Balancing",
+  "unit": 2,
+  "topicId": "ce702a-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Materials & Analysis",
+  "topics": [
+   "Load Balancing"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Materials & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Strength Concept",
+  "unit": 2,
+  "topicId": "ce702a-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Materials & Analysis",
+  "topics": [
+   "Strength Concept"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Materials & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Immediate Losses",
+  "unit": 3,
+  "topicId": "ce702a-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Losses of Prestress",
+  "topics": [
+   "Immediate Losses"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Losses of Prestress.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Time-dependent Losses",
+  "unit": 3,
+  "topicId": "ce702a-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Losses of Prestress",
+  "topics": [
+   "Time-dependent Losses"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Losses of Prestress.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Total Loss Estimation",
+  "unit": 3,
+  "topicId": "ce702a-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Losses of Prestress",
+  "topics": [
+   "Total Loss Estimation"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Losses of Prestress.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Control of Losses",
+  "unit": 3,
+  "topicId": "ce702a-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Losses of Prestress",
+  "topics": [
+   "Control of Losses"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Losses of Prestress.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Flexural Design",
+  "unit": 4,
+  "topicId": "ce702a-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Design of Members",
+  "topics": [
+   "Flexural Design"
+  ],
+  "description": "\"Prestressed concrete design 1 introduction\".",
+  "url": "https://www.youtube.com/watch?v=BvsgybgzB2w",
+  "lectureKey": "ce702a-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Shear Design",
+  "unit": 4,
+  "topicId": "ce702a-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Design of Members",
+  "topics": [
+   "Shear Design"
+  ],
+  "description": "\"Prestressed concrete design 1 introduction\".",
+  "url": "https://www.youtube.com/watch?v=BvsgybgzB2w",
+  "lectureKey": "ce702a-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Deflection",
+  "unit": 4,
+  "topicId": "ce702a-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Design of Members",
+  "topics": [
+   "Deflection"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Design of Members.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Composite Construction",
+  "unit": 4,
+  "topicId": "ce702a-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Design of Members",
+  "topics": [
+   "Composite Construction"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Design of Members.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "End Block Design",
+  "unit": 5,
+  "topicId": "ce702a-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Anchorage Zones & Applications",
+  "topics": [
+   "End Block Design"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Anchorage Zones & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Transmission Length",
+  "unit": 5,
+  "topicId": "ce702a-u5t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Anchorage Zones & Applications",
+  "topics": [
+   "Transmission Length"
+  ],
+  "description": "\"Transmission of prestress\".",
+  "url": "https://www.youtube.com/watch?v=ztiFxoi-O-Y",
+  "lectureKey": "ce702a-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Continuous Members",
+  "unit": 5,
+  "topicId": "ce702a-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Anchorage Zones & Applications",
+  "topics": [
+   "Continuous Members"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Anchorage Zones & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702a",
+  "subjectCode": "CE-702(A)",
+  "subjectLabel": "Prestressed Concrete Structures",
+  "title": "Applications",
+  "unit": 5,
+  "topicId": "ce702a-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Anchorage Zones & Applications",
+  "topics": [
+   "Applications"
+  ],
+  "description": "\"Prestressed concrete lecture series\" covers Anchorage Zones & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLH_dpfeSyOFp5yP0z7nueXIZf81e95oyY",
+  "lectureKey": "ce702a-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Environmental Engineering-II: full lecture series",
+  "lecturer": "Env Engg lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Wastewater Characteristics & Collection",
+   "Primary Treatment",
+   "Secondary Treatment",
+   "Sludge & Tertiary Treatment",
+   "Air & Solid Waste Management"
+  ],
+  "description": "\"Wastewater engineering and sewage treatment lectures\" by Env Engg lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLZvSSwzLFnRBBIe04q7rB2NSKSk4roAHU",
+  "lectureKey": "ce702b-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Sewage Characteristics",
+  "unit": 1,
+  "topicId": "ce702b-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wastewater Characteristics & Collection",
+  "topics": [
+   "Sewage Characteristics"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Wastewater Characteristics & Collection.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Sewerage Systems",
+  "unit": 1,
+  "topicId": "ce702b-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wastewater Characteristics & Collection",
+  "topics": [
+   "Sewerage Systems"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Wastewater Characteristics & Collection.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Sewer Design",
+  "unit": 1,
+  "topicId": "ce702b-u1t3",
+  "lecturer": "Env Engg lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wastewater Characteristics & Collection",
+  "topics": [
+   "Sewer Design"
+  ],
+  "description": "\"Wastewater treatment design lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLYKlNKKQ8QQMI1Gh6TJ_-qOj2Y9_F8PEO",
+  "lectureKey": "ce702b-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Sewer Appurtenances",
+  "unit": 1,
+  "topicId": "ce702b-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Wastewater Characteristics & Collection",
+  "topics": [
+   "Sewer Appurtenances"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Wastewater Characteristics & Collection.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Preliminary Treatment",
+  "unit": 2,
+  "topicId": "ce702b-u2t1",
+  "lecturer": "Env Engg lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Primary Treatment",
+  "topics": [
+   "Preliminary Treatment"
+  ],
+  "description": "\"Wastewater treatment design lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLYKlNKKQ8QQMI1Gh6TJ_-qOj2Y9_F8PEO",
+  "lectureKey": "ce702b-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Primary Sedimentation",
+  "unit": 2,
+  "topicId": "ce702b-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Primary Treatment",
+  "topics": [
+   "Primary Sedimentation"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Primary Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Equalisation & Neutralisation",
+  "unit": 2,
+  "topicId": "ce702b-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Primary Treatment",
+  "topics": [
+   "Equalisation & Neutralisation"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Primary Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Chemical Treatment",
+  "unit": 2,
+  "topicId": "ce702b-u2t4",
+  "lecturer": "Env Engg lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Primary Treatment",
+  "topics": [
+   "Chemical Treatment"
+  ],
+  "description": "\"Wastewater treatment design lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLYKlNKKQ8QQMI1Gh6TJ_-qOj2Y9_F8PEO",
+  "lectureKey": "ce702b-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Biological Treatment Principles",
+  "unit": 3,
+  "topicId": "ce702b-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Secondary Treatment",
+  "topics": [
+   "Biological Treatment Principles"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Secondary Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Activated Sludge Process",
+  "unit": 3,
+  "topicId": "ce702b-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Secondary Treatment",
+  "topics": [
+   "Activated Sludge Process"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Secondary Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Trickling Filters",
+  "unit": 3,
+  "topicId": "ce702b-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Secondary Treatment",
+  "topics": [
+   "Trickling Filters"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Secondary Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Stabilisation Ponds & Anaerobic Treatment",
+  "unit": 3,
+  "topicId": "ce702b-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Secondary Treatment",
+  "topics": [
+   "Stabilisation Ponds & Anaerobic Treatment"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Secondary Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Sludge Treatment",
+  "unit": 4,
+  "topicId": "ce702b-u4t1",
+  "lecturer": "Env Engg lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sludge & Tertiary Treatment",
+  "topics": [
+   "Sludge Treatment"
+  ],
+  "description": "\"Wastewater treatment design lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLYKlNKKQ8QQMI1Gh6TJ_-qOj2Y9_F8PEO",
+  "lectureKey": "ce702b-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Tertiary Treatment",
+  "unit": 4,
+  "topicId": "ce702b-u4t2",
+  "lecturer": "Env Engg lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sludge & Tertiary Treatment",
+  "topics": [
+   "Tertiary Treatment"
+  ],
+  "description": "\"Wastewater treatment design lectures\".",
+  "url": "https://www.youtube.com/playlist?list=PLYKlNKKQ8QQMI1Gh6TJ_-qOj2Y9_F8PEO",
+  "lectureKey": "ce702b-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Disposal of Effluent",
+  "unit": 4,
+  "topicId": "ce702b-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sludge & Tertiary Treatment",
+  "topics": [
+   "Disposal of Effluent"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Sludge & Tertiary Treatment.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Wastewater Reuse",
+  "unit": 4,
+  "topicId": "ce702b-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Sludge & Tertiary Treatment",
+  "topics": [
+   "Wastewater Reuse"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\".",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Air Pollution Sources & Effects",
+  "unit": 5,
+  "topicId": "ce702b-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air & Solid Waste Management",
+  "topics": [
+   "Air Pollution Sources & Effects"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Air & Solid Waste Management.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Air Pollution Control",
+  "unit": 5,
+  "topicId": "ce702b-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air & Solid Waste Management",
+  "topics": [
+   "Air Pollution Control"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Air & Solid Waste Management.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Solid Waste Management",
+  "unit": 5,
+  "topicId": "ce702b-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air & Solid Waste Management",
+  "topics": [
+   "Solid Waste Management"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Air & Solid Waste Management.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ce702b",
+  "subjectCode": "CE-702(B)",
+  "subjectLabel": "Environmental Engineering-II",
+  "title": "Waste Processing & Disposal",
+  "unit": 5,
+  "topicId": "ce702b-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Air & Solid Waste Management",
+  "topics": [
+   "Waste Processing & Disposal"
+  ],
+  "description": "\"Water and wastewater engineering, IIT Madras\" covers Air & Solid Waste Management.",
+  "url": "https://www.youtube.com/playlist?list=PL1BFC82F3A63B4172",
+  "lectureKey": "ce702b-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Design of Steel Structures: full lecture series",
+  "lecturer": "Education Point Online",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Introduction & Connections",
+   "Tension & Compression Members",
+   "Flexural Members",
+   "Plate Girders",
+   "Roof Trusses & Industrial Buildings"
+  ],
+  "description": "\"RGPV Design of Steel Structures (STEEL) B.Tech 8th Sem\" by Education Point Online.",
+  "url": "https://www.youtube.com/playlist?list=PLg2LVpcRrOF69sEBIUtH2W9xip4VFgGX3",
+  "lectureKey": "ce801-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Steel as Structural Material",
+  "unit": 1,
+  "topicId": "ce801-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction & Connections",
+  "topics": [
+   "Steel as Structural Material"
+  ],
+  "description": "\"Introduction to design of steel structures\" covers Introduction & Connections.",
+  "url": "https://www.youtube.com/watch?v=mtRR-5fzKo8",
+  "lectureKey": "ce801-u1-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Limit State Design of Steel",
+  "unit": 1,
+  "topicId": "ce801-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction & Connections",
+  "topics": [
+   "Limit State Design of Steel"
+  ],
+  "description": "\"Introduction to design of steel structures\".",
+  "url": "https://www.youtube.com/watch?v=mtRR-5fzKo8",
+  "lectureKey": "ce801-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Bolted Connections",
+  "unit": 1,
+  "topicId": "ce801-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction & Connections",
+  "topics": [
+   "Bolted Connections"
+  ],
+  "description": "\"Introduction to design of steel structures\" covers Introduction & Connections.",
+  "url": "https://www.youtube.com/watch?v=mtRR-5fzKo8",
+  "lectureKey": "ce801-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Welded Connections",
+  "unit": 1,
+  "topicId": "ce801-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Introduction & Connections",
+  "topics": [
+   "Welded Connections"
+  ],
+  "description": "\"Introduction to design of steel structures\" covers Introduction & Connections.",
+  "url": "https://www.youtube.com/watch?v=mtRR-5fzKo8",
+  "lectureKey": "ce801-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Tension Members",
+  "unit": 2,
+  "topicId": "ce801-u2t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Tension & Compression Members",
+  "topics": [
+   "Tension Members"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Tension & Compression Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Compression Members",
+  "unit": 2,
+  "topicId": "ce801-u2t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Tension & Compression Members",
+  "topics": [
+   "Compression Members"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Tension & Compression Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Built-up Columns",
+  "unit": 2,
+  "topicId": "ce801-u2t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Tension & Compression Members",
+  "topics": [
+   "Built-up Columns"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Tension & Compression Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Column Bases",
+  "unit": 2,
+  "topicId": "ce801-u2t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Tension & Compression Members",
+  "topics": [
+   "Column Bases"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Tension & Compression Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Laterally Supported Beams",
+  "unit": 3,
+  "topicId": "ce801-u3t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Flexural Members",
+  "topics": [
+   "Laterally Supported Beams"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Flexural Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Laterally Unsupported Beams",
+  "unit": 3,
+  "topicId": "ce801-u3t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Flexural Members",
+  "topics": [
+   "Laterally Unsupported Beams"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Flexural Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Web Buckling & Crippling",
+  "unit": 3,
+  "topicId": "ce801-u3t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Flexural Members",
+  "topics": [
+   "Web Buckling & Crippling"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Flexural Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Purlins",
+  "unit": 3,
+  "topicId": "ce801-u3t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Flexural Members",
+  "topics": [
+   "Purlins"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Flexural Members.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Plate Girder Components",
+  "unit": 4,
+  "topicId": "ce801-u4t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Plate Girders",
+  "topics": [
+   "Plate Girder Components"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Plate Girders.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Design of Plate Girder",
+  "unit": 4,
+  "topicId": "ce801-u4t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Plate Girders",
+  "topics": [
+   "Design of Plate Girder"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Plate Girders.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Stiffeners",
+  "unit": 4,
+  "topicId": "ce801-u4t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Plate Girders",
+  "topics": [
+   "Stiffeners"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Plate Girders.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Gantry Girders",
+  "unit": 4,
+  "topicId": "ce801-u4t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Plate Girders",
+  "topics": [
+   "Gantry Girders"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Plate Girders.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Roof Trusses",
+  "unit": 5,
+  "topicId": "ce801-u5t1",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Roof Trusses & Industrial Buildings",
+  "topics": [
+   "Roof Trusses"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Roof Trusses & Industrial Buildings.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Loads on Trusses",
+  "unit": 5,
+  "topicId": "ce801-u5t2",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Roof Trusses & Industrial Buildings",
+  "topics": [
+   "Loads on Trusses"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Roof Trusses & Industrial Buildings.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Design of Truss Members",
+  "unit": 5,
+  "topicId": "ce801-u5t3",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Roof Trusses & Industrial Buildings",
+  "topics": [
+   "Design of Truss Members"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Roof Trusses & Industrial Buildings.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce801",
+  "subjectCode": "CE-801",
+  "subjectLabel": "Design of Steel Structures",
+  "title": "Industrial Building Frames",
+  "unit": 5,
+  "topicId": "ce801-u5t4",
+  "lecturer": "Yogesh Kaushik",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Roof Trusses & Industrial Buildings",
+  "topics": [
+   "Industrial Building Frames"
+  ],
+  "description": "\"Design of steel structures and plastic analysis\" covers Roof Trusses & Industrial Buildings.",
+  "url": "https://www.youtube.com/playlist?list=PLhrhn0HLO99deFC4Cv4VjUKByzG56Xwqk",
+  "lectureKey": "ce801-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Foundation Engineering: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Soil Exploration",
+   "Bearing Capacity",
+   "Shallow Foundations",
+   "Pile Foundations",
+   "Well Foundations & Ground Improvement"
+  ],
+  "description": "\"Foundation Engineering, IIT Roorkee\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLA4019BB0B0CF6518",
+  "lectureKey": "ce802b-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Site Investigation",
+  "unit": 1,
+  "topicId": "ce802b-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Soil Exploration",
+  "topics": [
+   "Site Investigation"
+  ],
+  "description": "\"Shallow foundation\" covers Soil Exploration.",
+  "url": "https://www.youtube.com/watch?v=H6_J8LuTa-M",
+  "lectureKey": "ce802b-u1-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Sampling",
+  "unit": 1,
+  "topicId": "ce802b-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Soil Exploration",
+  "topics": [
+   "Sampling"
+  ],
+  "description": "\"Shallow foundation\" covers Soil Exploration.",
+  "url": "https://www.youtube.com/watch?v=H6_J8LuTa-M",
+  "lectureKey": "ce802b-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "In-situ Tests",
+  "unit": 1,
+  "topicId": "ce802b-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Soil Exploration",
+  "topics": [
+   "In-situ Tests"
+  ],
+  "description": "\"Shallow foundation\" covers Soil Exploration.",
+  "url": "https://www.youtube.com/watch?v=H6_J8LuTa-M",
+  "lectureKey": "ce802b-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Geophysical Methods",
+  "unit": 1,
+  "topicId": "ce802b-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Soil Exploration",
+  "topics": [
+   "Geophysical Methods"
+  ],
+  "description": "\"Shallow foundation\" covers Soil Exploration.",
+  "url": "https://www.youtube.com/watch?v=H6_J8LuTa-M",
+  "lectureKey": "ce802b-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Bearing Capacity Concepts",
+  "unit": 2,
+  "topicId": "ce802b-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Bearing Capacity",
+  "topics": [
+   "Bearing Capacity Concepts"
+  ],
+  "description": "\"Lateral earth pressure theories and retaining walls\" covers Bearing Capacity.",
+  "url": "https://www.youtube.com/watch?v=tLs6dkzBxa0",
+  "lectureKey": "ce802b-u2-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Terzaghi's Theory",
+  "unit": 2,
+  "topicId": "ce802b-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Bearing Capacity",
+  "topics": [
+   "Terzaghi's Theory"
+  ],
+  "description": "\"Lateral earth pressure theories and retaining walls\" covers Bearing Capacity.",
+  "url": "https://www.youtube.com/watch?v=tLs6dkzBxa0",
+  "lectureKey": "ce802b-u2-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "IS Code Method",
+  "unit": 2,
+  "topicId": "ce802b-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Bearing Capacity",
+  "topics": [
+   "IS Code Method"
+  ],
+  "description": "\"Lateral earth pressure theories and retaining walls\" covers Bearing Capacity.",
+  "url": "https://www.youtube.com/watch?v=tLs6dkzBxa0",
+  "lectureKey": "ce802b-u2-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Effect of Water Table",
+  "unit": 2,
+  "topicId": "ce802b-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Bearing Capacity",
+  "topics": [
+   "Effect of Water Table"
+  ],
+  "description": "\"Lateral earth pressure theories and retaining walls\" covers Bearing Capacity.",
+  "url": "https://www.youtube.com/watch?v=tLs6dkzBxa0",
+  "lectureKey": "ce802b-u2-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Types of Shallow Foundations",
+  "unit": 3,
+  "topicId": "ce802b-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Shallow Foundations",
+  "topics": [
+   "Types of Shallow Foundations"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Shallow Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Settlement Analysis",
+  "unit": 3,
+  "topicId": "ce802b-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Shallow Foundations",
+  "topics": [
+   "Settlement Analysis"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Shallow Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Floating Foundation",
+  "unit": 3,
+  "topicId": "ce802b-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Shallow Foundations",
+  "topics": [
+   "Floating Foundation"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\".",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Foundations on Expansive Soils",
+  "unit": 3,
+  "topicId": "ce802b-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Shallow Foundations",
+  "topics": [
+   "Foundations on Expansive Soils"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Shallow Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Types of Piles",
+  "unit": 4,
+  "topicId": "ce802b-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pile Foundations",
+  "topics": [
+   "Types of Piles"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Pile Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Load Capacity of Piles",
+  "unit": 4,
+  "topicId": "ce802b-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pile Foundations",
+  "topics": [
+   "Load Capacity of Piles"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Pile Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Pile Groups",
+  "unit": 4,
+  "topicId": "ce802b-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pile Foundations",
+  "topics": [
+   "Pile Groups"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Pile Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Lateral Load & Pile Caps",
+  "unit": 4,
+  "topicId": "ce802b-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Pile Foundations",
+  "topics": [
+   "Lateral Load & Pile Caps"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Pile Foundations.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Well Foundations",
+  "unit": 5,
+  "topicId": "ce802b-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Well Foundations & Ground Improvement",
+  "topics": [
+   "Well Foundations"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\".",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Caissons & Cofferdams",
+  "unit": 5,
+  "topicId": "ce802b-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Well Foundations & Ground Improvement",
+  "topics": [
+   "Caissons & Cofferdams"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Well Foundations & Ground Improvement.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Ground Improvement",
+  "unit": 5,
+  "topicId": "ce802b-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Well Foundations & Ground Improvement",
+  "topics": [
+   "Ground Improvement"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Well Foundations & Ground Improvement.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ce802b",
+  "subjectCode": "CE-802(B)",
+  "subjectLabel": "Foundation Engineering",
+  "title": "Soil Stabilisation",
+  "unit": 5,
+  "topicId": "ce802b-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Well Foundations & Ground Improvement",
+  "topics": [
+   "Soil Stabilisation"
+  ],
+  "description": "\"Foundation engineering, IIT Kharagpur\" covers Well Foundations & Ground Improvement.",
+  "url": "https://www.youtube.com/playlist?list=PLbRMhDVUMngeiZjKPTPEFl1CByXmYX3Kv",
+  "lectureKey": "ce802b-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Earthquake Resistant Design of Structures: full lecture series",
+  "lecturer": "IIT Roorkee lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Engineering Seismology",
+   "Structural Dynamics",
+   "Seismic Analysis as per IS 1893",
+   "Ductile Detailing",
+   "Seismic Design of Buildings"
+  ],
+  "description": "\"EQN-563 Earthquake Resistant Design of Structures (Agrawal and Shrikhande text)\" by IIT Roorkee lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLrT-P0eWqLg2pcRxaKufDoB8oB2Ikf4Oj",
+  "lectureKey": "ce802d-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Earthquake Basics",
+  "unit": 1,
+  "topicId": "ce802d-u1t1",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 1: Engineering Seismology",
+  "topics": [
+   "Earthquake Basics"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\".",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Seismic Waves",
+  "unit": 1,
+  "topicId": "ce802d-u1t2",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 1: Engineering Seismology",
+  "topics": [
+   "Seismic Waves"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\".",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Magnitude & Intensity",
+  "unit": 1,
+  "topicId": "ce802d-u1t3",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 1: Engineering Seismology",
+  "topics": [
+   "Magnitude & Intensity"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Engineering Seismology.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Seismic Zoning of India",
+  "unit": 1,
+  "topicId": "ce802d-u1t4",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 1: Engineering Seismology",
+  "topics": [
+   "Seismic Zoning of India"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Engineering Seismology.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "SDOF Systems",
+  "unit": 2,
+  "topicId": "ce802d-u2t1",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 2: Structural Dynamics",
+  "topics": [
+   "SDOF Systems"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Structural Dynamics.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Response to Ground Motion",
+  "unit": 2,
+  "topicId": "ce802d-u2t2",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 2: Structural Dynamics",
+  "topics": [
+   "Response to Ground Motion"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Structural Dynamics.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Response Spectrum",
+  "unit": 2,
+  "topicId": "ce802d-u2t3",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 2: Structural Dynamics",
+  "topics": [
+   "Response Spectrum"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Structural Dynamics.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "MDOF Systems",
+  "unit": 2,
+  "topicId": "ce802d-u2t4",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 2: Structural Dynamics",
+  "topics": [
+   "MDOF Systems"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Structural Dynamics.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Design Lateral Force",
+  "unit": 3,
+  "topicId": "ce802d-u3t1",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 3: Seismic Analysis as per IS 1893",
+  "topics": [
+   "Design Lateral Force"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Seismic Analysis as per IS 1893.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Response Reduction Factor",
+  "unit": 3,
+  "topicId": "ce802d-u3t2",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 3: Seismic Analysis as per IS 1893",
+  "topics": [
+   "Response Reduction Factor"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Seismic Analysis as per IS 1893.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Equivalent Static Method",
+  "unit": 3,
+  "topicId": "ce802d-u3t3",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 3: Seismic Analysis as per IS 1893",
+  "topics": [
+   "Equivalent Static Method"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Seismic Analysis as per IS 1893.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Irregularities",
+  "unit": 3,
+  "topicId": "ce802d-u3t4",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 3: Seismic Analysis as per IS 1893",
+  "topics": [
+   "Irregularities"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Seismic Analysis as per IS 1893.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Ductility Concepts",
+  "unit": 4,
+  "topicId": "ce802d-u4t1",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 4: Ductile Detailing",
+  "topics": [
+   "Ductility Concepts"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Ductile Detailing.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "IS 13920 Beam Detailing",
+  "unit": 4,
+  "topicId": "ce802d-u4t2",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 4: Ductile Detailing",
+  "topics": [
+   "IS 13920 Beam Detailing"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Ductile Detailing.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "IS 13920 Column Detailing",
+  "unit": 4,
+  "topicId": "ce802d-u4t3",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 4: Ductile Detailing",
+  "topics": [
+   "IS 13920 Column Detailing"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Ductile Detailing.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Beam-Column Joints",
+  "unit": 4,
+  "topicId": "ce802d-u4t4",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 4: Ductile Detailing",
+  "topics": [
+   "Beam-Column Joints"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Ductile Detailing.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Shear Walls",
+  "unit": 5,
+  "topicId": "ce802d-u5t1",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 5: Seismic Design of Buildings",
+  "topics": [
+   "Shear Walls"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Seismic Design of Buildings.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Masonry Buildings",
+  "unit": 5,
+  "topicId": "ce802d-u5t2",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 5: Seismic Design of Buildings",
+  "topics": [
+   "Masonry Buildings"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\".",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Base Isolation & Dampers",
+  "unit": 5,
+  "topicId": "ce802d-u5t3",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 5: Seismic Design of Buildings",
+  "topics": [
+   "Base Isolation & Dampers"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Seismic Design of Buildings.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ce802d",
+  "subjectCode": "CE-802(D)",
+  "subjectLabel": "Earthquake Resistant Design of Structures",
+  "title": "Retrofitting",
+  "unit": 5,
+  "topicId": "ce802d-u5t4",
+  "lecturer": "SISTec",
+  "type": "video",
+  "typeLabel": "Unit 5: Seismic Design of Buildings",
+  "topics": [
+   "Retrofitting"
+  ],
+  "description": "\"Design of earthquake resistant buildings and IS 1893: seismic effects, general principles\" covers Seismic Design of Buildings.",
+  "url": "https://www.youtube.com/watch?v=c7VNrPZSp-M",
+  "lectureKey": "ce802d-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Electrical Measurements & Measuring Instruments: full lecture series",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Measurement Fundamentals & Galvanometers",
+   "Indicating Instruments",
+   "Power & Energy Measurement",
+   "Bridges & Potentiometers",
+   "Instrument Transformers & Digital Instruments"
+  ],
+  "description": "\"Electrical Measurements & Instrumentation (Hindi)\" by EMI lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLwAOmydmnlw3zD8_MG2RNvHNqnIUMK-0z",
+  "lectureKey": "ex303-auto-playlist"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Measurement Basics",
+  "unit": 1,
+  "topicId": "ex303-u1t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Measurement Fundamentals & Galvanometers",
+  "topics": [
+   "Measurement Basics"
+  ],
+  "description": "\"Electrical and electronic measurement\".",
+  "url": "https://www.youtube.com/playlist?list=PLO4TWepMw7gjgNxJJwZIKDrvXfejlNBv-",
+  "lectureKey": "ex303-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Torques in Instruments",
+  "unit": 1,
+  "topicId": "ex303-u1t2",
+  "lecturer": "EMI lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Measurement Fundamentals & Galvanometers",
+  "topics": [
+   "Torques in Instruments"
+  ],
+  "description": "\"Introduction to electrical measuring instrument\".",
+  "url": "https://www.youtube.com/watch?v=MEoEQZdB9dI",
+  "lectureKey": "ex303-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "D'Arsonval Galvanometer",
+  "unit": 1,
+  "topicId": "ex303-u1t3",
+  "lecturer": "EMI lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Measurement Fundamentals & Galvanometers",
+  "topics": [
+   "D'Arsonval Galvanometer"
+  ],
+  "description": "\"Introduction to electrical measuring instrument\" covers Measurement Fundamentals & Galvanometers.",
+  "url": "https://www.youtube.com/watch?v=MEoEQZdB9dI",
+  "lectureKey": "ex303-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Ballistic Galvanometer",
+  "unit": 1,
+  "topicId": "ex303-u1t4",
+  "lecturer": "EMI lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Measurement Fundamentals & Galvanometers",
+  "topics": [
+   "Ballistic Galvanometer"
+  ],
+  "description": "\"Introduction to electrical measuring instrument\" covers Measurement Fundamentals & Galvanometers.",
+  "url": "https://www.youtube.com/watch?v=MEoEQZdB9dI",
+  "lectureKey": "ex303-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "PMMC Instrument",
+  "unit": 2,
+  "topicId": "ex303-u2t1",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Indicating Instruments",
+  "topics": [
+   "PMMC Instrument"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\".",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Moving Iron Instruments",
+  "unit": 2,
+  "topicId": "ex303-u2t2",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Indicating Instruments",
+  "topics": [
+   "Moving Iron Instruments"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Indicating Instruments.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Electrodynamometer Instruments",
+  "unit": 2,
+  "topicId": "ex303-u2t3",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Indicating Instruments",
+  "topics": [
+   "Electrodynamometer Instruments"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\".",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Extending Ranges",
+  "unit": 2,
+  "topicId": "ex303-u2t4",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Indicating Instruments",
+  "topics": [
+   "Extending Ranges"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Indicating Instruments.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Wattmeters",
+  "unit": 3,
+  "topicId": "ex303-u3t1",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Power & Energy Measurement",
+  "topics": [
+   "Wattmeters"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Power & Energy Measurement.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Three-phase Power Measurement",
+  "unit": 3,
+  "topicId": "ex303-u3t2",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Power & Energy Measurement",
+  "topics": [
+   "Three-phase Power Measurement"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Power & Energy Measurement.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Energy Meters",
+  "unit": 3,
+  "topicId": "ex303-u3t3",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Power & Energy Measurement",
+  "topics": [
+   "Energy Meters"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Power & Energy Measurement.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Electronic Energy Meters",
+  "unit": 3,
+  "topicId": "ex303-u3t4",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Power & Energy Measurement",
+  "topics": [
+   "Electronic Energy Meters"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Power & Energy Measurement.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Measurement of Resistance",
+  "unit": 4,
+  "topicId": "ex303-u4t1",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Bridges & Potentiometers",
+  "topics": [
+   "Measurement of Resistance"
+  ],
+  "description": "\"Electrical and electronic measurement\".",
+  "url": "https://www.youtube.com/playlist?list=PLO4TWepMw7gjgNxJJwZIKDrvXfejlNBv-",
+  "lectureKey": "ex303-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "AC Bridges",
+  "unit": 4,
+  "topicId": "ex303-u4t2",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Bridges & Potentiometers",
+  "topics": [
+   "AC Bridges"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Bridges & Potentiometers.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "DC Potentiometer",
+  "unit": 4,
+  "topicId": "ex303-u4t3",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Bridges & Potentiometers",
+  "topics": [
+   "DC Potentiometer"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Bridges & Potentiometers.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "AC Potentiometer",
+  "unit": 4,
+  "topicId": "ex303-u4t4",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Bridges & Potentiometers",
+  "topics": [
+   "AC Potentiometer"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Bridges & Potentiometers.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Current Transformers",
+  "unit": 5,
+  "topicId": "ex303-u5t1",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Instrument Transformers & Digital Instruments",
+  "topics": [
+   "Current Transformers"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Instrument Transformers & Digital Instruments.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Potential Transformers",
+  "unit": 5,
+  "topicId": "ex303-u5t2",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Instrument Transformers & Digital Instruments",
+  "topics": [
+   "Potential Transformers"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Instrument Transformers & Digital Instruments.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Digital Instruments",
+  "unit": 5,
+  "topicId": "ex303-u5t3",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Instrument Transformers & Digital Instruments",
+  "topics": [
+   "Digital Instruments"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\".",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u5-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 3,
+  "subject": "ex303",
+  "subjectCode": "EX-303",
+  "subjectLabel": "Electrical Measurements & Measuring Instruments",
+  "title": "Oscilloscope & Recorders",
+  "unit": 5,
+  "topicId": "ex303-u5t4",
+  "lecturer": "EMI lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Instrument Transformers & Digital Instruments",
+  "topics": [
+   "Oscilloscope & Recorders"
+  ],
+  "description": "\"Electrical measuring instruments: absolute, indicating, recording instruments\" covers Instrument Transformers & Digital Instruments.",
+  "url": "https://www.youtube.com/playlist?list=PLhSp9OSVmeyKvw2DTpzlCdl226DJ-QjTx",
+  "lectureKey": "ex303-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Electrical Machine-I: full lecture series",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Magnetic Circuits & Transformer Basics",
+   "Transformer Performance",
+   "Three-phase Transformers & Autotransformers",
+   "Three-phase Induction Motor",
+   "Induction Motor Performance & Control"
+  ],
+  "description": "\"DC Machines complete course: fundamentals, motors and generators\" by Electrical machines lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLPpCFgQP7QKHUOFYvZhQ6ra5XrU3dN2dD",
+  "lectureKey": "ex402-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Magnetic Circuits",
+  "unit": 1,
+  "topicId": "ex402-u1t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Magnetic Circuits & Transformer Basics",
+  "topics": [
+   "Magnetic Circuits"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Magnetic Circuits & Transformer Basics.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Transformer Principle",
+  "unit": 1,
+  "topicId": "ex402-u1t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Magnetic Circuits & Transformer Basics",
+  "topics": [
+   "Transformer Principle"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\".",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Ideal & Practical Transformer",
+  "unit": 1,
+  "topicId": "ex402-u1t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Magnetic Circuits & Transformer Basics",
+  "topics": [
+   "Ideal & Practical Transformer"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Magnetic Circuits & Transformer Basics.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Construction",
+  "unit": 1,
+  "topicId": "ex402-u1t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Magnetic Circuits & Transformer Basics",
+  "topics": [
+   "Construction"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\".",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Equivalent Circuit",
+  "unit": 2,
+  "topicId": "ex402-u2t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Transformer Performance",
+  "topics": [
+   "Equivalent Circuit"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Transformer Performance.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Open & Short Circuit Tests",
+  "unit": 2,
+  "topicId": "ex402-u2t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Transformer Performance",
+  "topics": [
+   "Open & Short Circuit Tests"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Transformer Performance.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Voltage Regulation",
+  "unit": 2,
+  "topicId": "ex402-u2t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Transformer Performance",
+  "topics": [
+   "Voltage Regulation"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Transformer Performance.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Efficiency",
+  "unit": 2,
+  "topicId": "ex402-u2t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Transformer Performance",
+  "topics": [
+   "Efficiency"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Transformer Performance.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Three-phase Connections",
+  "unit": 3,
+  "topicId": "ex402-u3t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Three-phase Transformers & Autotransformers",
+  "topics": [
+   "Three-phase Connections"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Three-phase Transformers & Autotransformers.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Parallel Operation",
+  "unit": 3,
+  "topicId": "ex402-u3t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Three-phase Transformers & Autotransformers",
+  "topics": [
+   "Parallel Operation"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Three-phase Transformers & Autotransformers.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Autotransformer",
+  "unit": 3,
+  "topicId": "ex402-u3t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Three-phase Transformers & Autotransformers",
+  "topics": [
+   "Autotransformer"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Three-phase Transformers & Autotransformers.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Special Transformers",
+  "unit": 3,
+  "topicId": "ex402-u3t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Three-phase Transformers & Autotransformers",
+  "topics": [
+   "Special Transformers"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\".",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Construction & Principle",
+  "unit": 4,
+  "topicId": "ex402-u4t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Three-phase Induction Motor",
+  "topics": [
+   "Construction & Principle"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\".",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Slip & Rotor Quantities",
+  "unit": 4,
+  "topicId": "ex402-u4t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Three-phase Induction Motor",
+  "topics": [
+   "Slip & Rotor Quantities"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Three-phase Induction Motor.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Torque Equation",
+  "unit": 4,
+  "topicId": "ex402-u4t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Three-phase Induction Motor",
+  "topics": [
+   "Torque Equation"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\".",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Power Flow",
+  "unit": 4,
+  "topicId": "ex402-u4t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Three-phase Induction Motor",
+  "topics": [
+   "Power Flow"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Three-phase Induction Motor.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Equivalent Circuit & Tests",
+  "unit": 5,
+  "topicId": "ex402-u5t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Induction Motor Performance & Control",
+  "topics": [
+   "Equivalent Circuit & Tests"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Induction Motor Performance & Control.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Starting Methods",
+  "unit": 5,
+  "topicId": "ex402-u5t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Induction Motor Performance & Control",
+  "topics": [
+   "Starting Methods"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Induction Motor Performance & Control.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Speed Control",
+  "unit": 5,
+  "topicId": "ex402-u5t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Induction Motor Performance & Control",
+  "topics": [
+   "Speed Control"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Induction Motor Performance & Control.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex402",
+  "subjectCode": "EX-402",
+  "subjectLabel": "Electrical Machine-I",
+  "title": "Induction Generator & Braking",
+  "unit": 5,
+  "topicId": "ex402-u5t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Induction Motor Performance & Control",
+  "topics": [
+   "Induction Generator & Braking"
+  ],
+  "description": "\"Electrical machines complete course: DC generator construction, EMF equation, transformer\" covers Induction Motor Performance & Control.",
+  "url": "https://www.youtube.com/watch?v=pBXH1NUr0AQ",
+  "lectureKey": "ex402-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Power System-I: full lecture series",
+  "lecturer": "Power system lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Power Generation",
+   "Transmission Line Parameters",
+   "Transmission Line Performance",
+   "Insulators, Cables & Corona",
+   "Distribution Systems"
+  ],
+  "description": "\"Electric power systems tutorial: generation, transmission, distribution\" by Power system lectures.",
+  "url": "https://www.youtube.com/playlist?list=PL5TKV1tzb09lqZC86_XuDAdCy5UbEg8d5",
+  "lectureKey": "ex404-auto-playlist"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Structure of Power System",
+  "unit": 1,
+  "topicId": "ex404-u1t1",
+  "lecturer": "Power system lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Power Generation",
+  "topics": [
+   "Structure of Power System"
+  ],
+  "description": "\"Power systems course intro: generation, transmission and distribution\".",
+  "url": "https://www.youtube.com/watch?v=bCy62oTr_CQ",
+  "lectureKey": "ex404-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Thermal & Hydro Plants",
+  "unit": 1,
+  "topicId": "ex404-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Power Generation",
+  "topics": [
+   "Thermal & Hydro Plants"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Power Generation.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Nuclear & Renewable Generation",
+  "unit": 1,
+  "topicId": "ex404-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Power Generation",
+  "topics": [
+   "Nuclear & Renewable Generation"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Power Generation.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Load Factors & Tariffs",
+  "unit": 1,
+  "topicId": "ex404-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Power Generation",
+  "topics": [
+   "Load Factors & Tariffs"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Power Generation.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Resistance & Skin Effect",
+  "unit": 2,
+  "topicId": "ex404-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission Line Parameters",
+  "topics": [
+   "Resistance & Skin Effect"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Parameters.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Inductance",
+  "unit": 2,
+  "topicId": "ex404-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission Line Parameters",
+  "topics": [
+   "Inductance"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Parameters.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Capacitance",
+  "unit": 2,
+  "topicId": "ex404-u2t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission Line Parameters",
+  "topics": [
+   "Capacitance"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Parameters.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "GMD & Composite Conductors",
+  "unit": 2,
+  "topicId": "ex404-u2t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Transmission Line Parameters",
+  "topics": [
+   "GMD & Composite Conductors"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Parameters.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Short Transmission Lines",
+  "unit": 3,
+  "topicId": "ex404-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Transmission Line Performance",
+  "topics": [
+   "Short Transmission Lines"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Performance.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Medium Transmission Lines",
+  "unit": 3,
+  "topicId": "ex404-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Transmission Line Performance",
+  "topics": [
+   "Medium Transmission Lines"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Performance.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Long Transmission Lines",
+  "unit": 3,
+  "topicId": "ex404-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Transmission Line Performance",
+  "topics": [
+   "Long Transmission Lines"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Performance.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Ferranti Effect & Compensation",
+  "unit": 3,
+  "topicId": "ex404-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Transmission Line Performance",
+  "topics": [
+   "Ferranti Effect & Compensation"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Transmission Line Performance.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Overhead Line Insulators",
+  "unit": 4,
+  "topicId": "ex404-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Insulators, Cables & Corona",
+  "topics": [
+   "Overhead Line Insulators"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Insulators, Cables & Corona.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Grading & Sag",
+  "unit": 4,
+  "topicId": "ex404-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Insulators, Cables & Corona",
+  "topics": [
+   "Grading & Sag"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Insulators, Cables & Corona.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Underground Cables",
+  "unit": 4,
+  "topicId": "ex404-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Insulators, Cables & Corona",
+  "topics": [
+   "Underground Cables"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Insulators, Cables & Corona.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Corona",
+  "unit": 4,
+  "topicId": "ex404-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Insulators, Cables & Corona",
+  "topics": [
+   "Corona"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Insulators, Cables & Corona.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Distribution Classification",
+  "unit": 5,
+  "topicId": "ex404-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Distribution Systems",
+  "topics": [
+   "Distribution Classification"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\".",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Radial & Ring Systems",
+  "unit": 5,
+  "topicId": "ex404-u5t2",
+  "lecturer": "Power system lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Distribution Systems",
+  "topics": [
+   "Radial & Ring Systems"
+  ],
+  "description": "\"Power distribution system: radial, ring main, interconnected\".",
+  "url": "https://www.youtube.com/watch?v=yRZaqhym5y0",
+  "lectureKey": "ex404-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "DC & AC Distributors",
+  "unit": 5,
+  "topicId": "ex404-u5t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Distribution Systems",
+  "topics": [
+   "DC & AC Distributors"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Distribution Systems.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 4,
+  "subject": "ex404",
+  "subjectCode": "EX-404",
+  "subjectLabel": "Power System-I",
+  "title": "Substations",
+  "unit": 5,
+  "topicId": "ex404-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Distribution Systems",
+  "topics": [
+   "Substations"
+  ],
+  "description": "\"Electric energy systems: generation, transmission and distribution, Prof. D.P. Kothari\" covers Distribution Systems.",
+  "url": "https://www.youtube.com/watch?v=uy9lZCdkQIM",
+  "lectureKey": "ex404-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Electrical Machine-II: full lecture series",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "DC Machines",
+   "DC Motor Control & Testing",
+   "Synchronous Generators",
+   "Synchronous Machine Operation",
+   "Single-phase Induction Motors"
+  ],
+  "description": "\"Synchronous machines complete course\" by Electrical machines lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLPpCFgQP7QKFrkYIYaZt0idq7ocZq9AYU",
+  "lectureKey": "ex501-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "DC Generator Construction & EMF",
+  "unit": 1,
+  "topicId": "ex501-u1t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: DC Machines",
+  "topics": [
+   "DC Generator Construction & EMF"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers DC Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Armature Reaction & Commutation",
+  "unit": 1,
+  "topicId": "ex501-u1t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: DC Machines",
+  "topics": [
+   "Armature Reaction & Commutation"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers DC Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "DC Generator Characteristics",
+  "unit": 1,
+  "topicId": "ex501-u1t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: DC Machines",
+  "topics": [
+   "DC Generator Characteristics"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers DC Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "DC Motor Principles",
+  "unit": 1,
+  "topicId": "ex501-u1t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: DC Machines",
+  "topics": [
+   "DC Motor Principles"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers DC Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Speed Control of DC Motors",
+  "unit": 2,
+  "topicId": "ex501-u2t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: DC Motor Control & Testing",
+  "topics": [
+   "Speed Control of DC Motors"
+  ],
+  "description": "\"Synchronous speed of a 3-phase induction motor\".",
+  "url": "https://www.youtube.com/watch?v=1OfjiucgpuE",
+  "lectureKey": "ex501-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Starting of DC Motors",
+  "unit": 2,
+  "topicId": "ex501-u2t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC Motor Control & Testing",
+  "topics": [
+   "Starting of DC Motors"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers DC Motor Control & Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Losses & Efficiency",
+  "unit": 2,
+  "topicId": "ex501-u2t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC Motor Control & Testing",
+  "topics": [
+   "Losses & Efficiency"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers DC Motor Control & Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Testing of DC Machines",
+  "unit": 2,
+  "topicId": "ex501-u2t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC Motor Control & Testing",
+  "topics": [
+   "Testing of DC Machines"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers DC Motor Control & Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Alternator Construction",
+  "unit": 3,
+  "topicId": "ex501-u3t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synchronous Generators",
+  "topics": [
+   "Alternator Construction"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Synchronous Generators.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "EMF Equation & Winding Factors",
+  "unit": 3,
+  "topicId": "ex501-u3t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synchronous Generators",
+  "topics": [
+   "EMF Equation & Winding Factors"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Synchronous Generators.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Voltage Regulation Methods",
+  "unit": 3,
+  "topicId": "ex501-u3t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synchronous Generators",
+  "topics": [
+   "Voltage Regulation Methods"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Synchronous Generators.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Two-reaction Theory",
+  "unit": 3,
+  "topicId": "ex501-u3t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Synchronous Generators",
+  "topics": [
+   "Two-reaction Theory"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Synchronous Generators.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Parallel Operation",
+  "unit": 4,
+  "topicId": "ex501-u4t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Synchronous Machine Operation",
+  "topics": [
+   "Parallel Operation"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Synchronous Machine Operation.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Synchronous Motor",
+  "unit": 4,
+  "topicId": "ex501-u4t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Synchronous Machine Operation",
+  "topics": [
+   "Synchronous Motor"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\".",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Power Factor Control",
+  "unit": 4,
+  "topicId": "ex501-u4t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Synchronous Machine Operation",
+  "topics": [
+   "Power Factor Control"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Synchronous Machine Operation.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Power-Angle Characteristics",
+  "unit": 4,
+  "topicId": "ex501-u4t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Synchronous Machine Operation",
+  "topics": [
+   "Power-Angle Characteristics"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Synchronous Machine Operation.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Double Field Revolving Theory",
+  "unit": 5,
+  "topicId": "ex501-u5t1",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Single-phase Induction Motors",
+  "topics": [
+   "Double Field Revolving Theory"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Single-phase Induction Motors.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Split-phase & Capacitor Motors",
+  "unit": 5,
+  "topicId": "ex501-u5t2",
+  "lecturer": "Electrical machines lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Single-phase Induction Motors",
+  "topics": [
+   "Split-phase & Capacitor Motors"
+  ],
+  "description": "\"Synchronous speed of a 3-phase induction motor\".",
+  "url": "https://www.youtube.com/watch?v=1OfjiucgpuE",
+  "lectureKey": "ex501-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Shaded Pole & Universal Motors",
+  "unit": 5,
+  "topicId": "ex501-u5t3",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Single-phase Induction Motors",
+  "topics": [
+   "Shaded Pole & Universal Motors"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Single-phase Induction Motors.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex501",
+  "subjectCode": "EX-501",
+  "subjectLabel": "Electrical Machine-II",
+  "title": "Applications",
+  "unit": 5,
+  "topicId": "ex501-u5t4",
+  "lecturer": "Electrical machines lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Single-phase Induction Motors",
+  "topics": [
+   "Applications"
+  ],
+  "description": "\"AC motors: induction and synchronous motor examples\" covers Single-phase Induction Motors.",
+  "url": "https://www.youtube.com/playlist?list=PLuUNUe8EVqlk1F5ELD3FzVdmHst9P5yBN",
+  "lectureKey": "ex501-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Power Electronics: full lecture series",
+  "lecturer": "Engineering Funda",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Power Semiconductor Devices",
+   "Controlled Rectifiers",
+   "DC-DC Converters (Choppers)",
+   "Inverters",
+   "AC Voltage Controllers & Cycloconverters"
+  ],
+  "description": "\"Power Electronics, Prof. Hitesh Dholakiya\" by Engineering Funda.",
+  "url": "https://www.youtube.com/playlist?list=PLgwJf8NK-2e5Hnu82T1CYLZ8kbZs4Jx8x",
+  "lectureKey": "ex502-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Power Diodes & Thyristors",
+  "unit": 1,
+  "topicId": "ex502-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "Power Diodes & Thyristors"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "SCR Characteristics & Turn-on",
+  "unit": 1,
+  "topicId": "ex502-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "SCR Characteristics & Turn-on"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Commutation of SCR",
+  "unit": 1,
+  "topicId": "ex502-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "Commutation of SCR"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Modern Power Devices",
+  "unit": 1,
+  "topicId": "ex502-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Power Semiconductor Devices",
+  "topics": [
+   "Modern Power Devices"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Power Semiconductor Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Single-phase Half-wave Converter",
+  "unit": 2,
+  "topicId": "ex502-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Controlled Rectifiers",
+  "topics": [
+   "Single-phase Half-wave Converter"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Controlled Rectifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Single-phase Full Converters",
+  "unit": 2,
+  "topicId": "ex502-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Controlled Rectifiers",
+  "topics": [
+   "Single-phase Full Converters"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Controlled Rectifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Three-phase Converters",
+  "unit": 2,
+  "topicId": "ex502-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Controlled Rectifiers",
+  "topics": [
+   "Three-phase Converters"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Controlled Rectifiers.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Converter Performance",
+  "unit": 2,
+  "topicId": "ex502-u2t4",
+  "lecturer": "Engineering Funda",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Controlled Rectifiers",
+  "topics": [
+   "Converter Performance"
+  ],
+  "description": "\"Power electronic fundamentals: rectifiers, choppers, inverters, AC/AC converters\".",
+  "url": "https://www.youtube.com/playlist?list=PLPiW9OGvxN2PUnW9WoNIJbo_2nEdUHuOA",
+  "lectureKey": "ex502-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Chopper Principle",
+  "unit": 3,
+  "topicId": "ex502-u3t1",
+  "lecturer": "Engineering Funda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: DC-DC Converters (Choppers)",
+  "topics": [
+   "Chopper Principle"
+  ],
+  "description": "\"Power electronic fundamentals: rectifiers, choppers, inverters, AC/AC converters\".",
+  "url": "https://www.youtube.com/playlist?list=PLPiW9OGvxN2PUnW9WoNIJbo_2nEdUHuOA",
+  "lectureKey": "ex502-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Chopper Control Strategies",
+  "unit": 3,
+  "topicId": "ex502-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: DC-DC Converters (Choppers)",
+  "topics": [
+   "Chopper Control Strategies"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers DC-DC Converters (Choppers).",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Chopper Configurations",
+  "unit": 3,
+  "topicId": "ex502-u3t3",
+  "lecturer": "Engineering Funda",
+  "type": "playlist",
+  "typeLabel": "Unit 3: DC-DC Converters (Choppers)",
+  "topics": [
+   "Chopper Configurations"
+  ],
+  "description": "\"Power electronic fundamentals: rectifiers, choppers, inverters, AC/AC converters\".",
+  "url": "https://www.youtube.com/playlist?list=PLPiW9OGvxN2PUnW9WoNIJbo_2nEdUHuOA",
+  "lectureKey": "ex502-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Switched-mode Supplies",
+  "unit": 3,
+  "topicId": "ex502-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: DC-DC Converters (Choppers)",
+  "topics": [
+   "Switched-mode Supplies"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers DC-DC Converters (Choppers).",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Single-phase Inverters",
+  "unit": 4,
+  "topicId": "ex502-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inverters",
+  "topics": [
+   "Single-phase Inverters"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Inverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Three-phase Inverters",
+  "unit": 4,
+  "topicId": "ex502-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inverters",
+  "topics": [
+   "Three-phase Inverters"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Inverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "PWM Techniques",
+  "unit": 4,
+  "topicId": "ex502-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inverters",
+  "topics": [
+   "PWM Techniques"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Inverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Current Source & Resonant Inverters",
+  "unit": 4,
+  "topicId": "ex502-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Inverters",
+  "topics": [
+   "Current Source & Resonant Inverters"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers Inverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "AC Voltage Controllers",
+  "unit": 5,
+  "topicId": "ex502-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: AC Voltage Controllers & Cycloconverters",
+  "topics": [
+   "AC Voltage Controllers"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers AC Voltage Controllers & Cycloconverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Applications of AC Controllers",
+  "unit": 5,
+  "topicId": "ex502-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: AC Voltage Controllers & Cycloconverters",
+  "topics": [
+   "Applications of AC Controllers"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers AC Voltage Controllers & Cycloconverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Cycloconverters",
+  "unit": 5,
+  "topicId": "ex502-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: AC Voltage Controllers & Cycloconverters",
+  "topics": [
+   "Cycloconverters"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers AC Voltage Controllers & Cycloconverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex502",
+  "subjectCode": "EX-502",
+  "subjectLabel": "Power Electronics",
+  "title": "Protection of Devices",
+  "unit": 5,
+  "topicId": "ex502-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: AC Voltage Controllers & Cycloconverters",
+  "topics": [
+   "Protection of Devices"
+  ],
+  "description": "\"Power electronics, Prof. B.G. Fernandes, IIT Bombay\" covers AC Voltage Controllers & Cycloconverters.",
+  "url": "https://www.youtube.com/playlist?list=PLA07ACBDE053A8229",
+  "lectureKey": "ex502-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Renewable Energy Overview",
+  "unit": 1,
+  "topicId": "ex503c-u1t1",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Scenario",
+  "topics": [
+   "Renewable Energy Overview"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Solar Radiation",
+  "unit": 1,
+  "topicId": "ex503c-u1t2",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Scenario",
+  "topics": [
+   "Solar Radiation"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Energy Policy",
+  "unit": 1,
+  "topicId": "ex503c-u1t3",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Scenario",
+  "topics": [
+   "Energy Policy"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Environmental Benefits",
+  "unit": 1,
+  "topicId": "ex503c-u1t4",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 1: Energy Scenario",
+  "topics": [
+   "Environmental Benefits"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Energy Scenario.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Solar Thermal Systems",
+  "unit": 2,
+  "topicId": "ex503c-u2t1",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 2: Solar Energy",
+  "topics": [
+   "Solar Thermal Systems"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Photovoltaic Cell",
+  "unit": 2,
+  "topicId": "ex503c-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: Solar Energy",
+  "topics": [
+   "Photovoltaic Cell"
+  ],
+  "description": "\"Grid connected solar photovoltaic systems\".",
+  "url": "https://www.youtube.com/watch?v=Yl_fAF4BmB8",
+  "lectureKey": "ex503c-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "PV Modules & Arrays",
+  "unit": 2,
+  "topicId": "ex503c-u2t3",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 2: Solar Energy",
+  "topics": [
+   "PV Modules & Arrays"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Solar Energy.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "MPPT & PV Systems",
+  "unit": 2,
+  "topicId": "ex503c-u2t4",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 2: Solar Energy",
+  "topics": [
+   "MPPT & PV Systems"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Wind Power Basics",
+  "unit": 3,
+  "topicId": "ex503c-u3t1",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 3: Wind Energy",
+  "topics": [
+   "Wind Power Basics"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Wind Turbines",
+  "unit": 3,
+  "topicId": "ex503c-u3t2",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 3: Wind Energy",
+  "topics": [
+   "Wind Turbines"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Wind Generators",
+  "unit": 3,
+  "topicId": "ex503c-u3t3",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 3: Wind Energy",
+  "topics": [
+   "Wind Generators"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Wind Farm Planning",
+  "unit": 3,
+  "topicId": "ex503c-u3t4",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 3: Wind Energy",
+  "topics": [
+   "Wind Farm Planning"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Wind Energy.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Small Hydro",
+  "unit": 4,
+  "topicId": "ex503c-u4t1",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 4: Other Renewable Sources",
+  "topics": [
+   "Small Hydro"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Other Renewable Sources.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Biomass & Biogas",
+  "unit": 4,
+  "topicId": "ex503c-u4t2",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 4: Other Renewable Sources",
+  "topics": [
+   "Biomass & Biogas"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Geothermal & Ocean",
+  "unit": 4,
+  "topicId": "ex503c-u4t3",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 4: Other Renewable Sources",
+  "topics": [
+   "Geothermal & Ocean"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Other Renewable Sources.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Fuel Cells",
+  "unit": 4,
+  "topicId": "ex503c-u4t4",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 4: Other Renewable Sources",
+  "topics": [
+   "Fuel Cells"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Other Renewable Sources.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Energy Storage",
+  "unit": 5,
+  "topicId": "ex503c-u5t1",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 5: Storage & Grid Integration",
+  "topics": [
+   "Energy Storage"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\".",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Grid Integration Issues",
+  "unit": 5,
+  "topicId": "ex503c-u5t2",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 5: Storage & Grid Integration",
+  "topics": [
+   "Grid Integration Issues"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Storage & Grid Integration.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Power Electronic Interfaces",
+  "unit": 5,
+  "topicId": "ex503c-u5t3",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 5: Storage & Grid Integration",
+  "topics": [
+   "Power Electronic Interfaces"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Storage & Grid Integration.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex503c",
+  "subjectCode": "EX-503(C)",
+  "subjectLabel": "Renewable Power Generation",
+  "title": "Hybrid & Microgrids",
+  "unit": 5,
+  "topicId": "ex503c-u5t4",
+  "lecturer": "NPTEL IIT Guwahati",
+  "type": "video",
+  "typeLabel": "Unit 5: Storage & Grid Integration",
+  "topics": [
+   "Hybrid & Microgrids"
+  ],
+  "description": "\"Renewable energy engineering: solar, wind and biomass energy systems\" covers Storage & Grid Integration.",
+  "url": "https://www.youtube.com/watch?v=mh51mAUexK4",
+  "lectureKey": "ex503c-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Industrial Electronics: full lecture series",
+  "lecturer": "Engineering Funda",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Industrial Power Devices",
+   "Timers & Control Circuits",
+   "Heating & Welding",
+   "Motor Control",
+   "PLC & Industrial Automation"
+  ],
+  "description": "\"Power Electronics Applications, Prof. Hitesh Dholakiya\" by Engineering Funda.",
+  "url": "https://www.youtube.com/playlist?list=PLgwJf8NK-2e72_JGv854NPnQnB7NOFRmG",
+  "lectureKey": "ex504a-auto-playlist"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Thyristor Family",
+  "unit": 1,
+  "topicId": "ex504a-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Industrial Power Devices",
+  "topics": [
+   "Thyristor Family"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Industrial Power Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Triggering Circuits",
+  "unit": 1,
+  "topicId": "ex504a-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Industrial Power Devices",
+  "topics": [
+   "Triggering Circuits"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Industrial Power Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Protection Circuits",
+  "unit": 1,
+  "topicId": "ex504a-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Industrial Power Devices",
+  "topics": [
+   "Protection Circuits"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Industrial Power Devices.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Power Supplies",
+  "unit": 1,
+  "topicId": "ex504a-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Industrial Power Devices",
+  "topics": [
+   "Power Supplies"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\".",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Timers",
+  "unit": 2,
+  "topicId": "ex504a-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Timers & Control Circuits",
+  "topics": [
+   "Timers"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Timers & Control Circuits.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Time Delay Relays",
+  "unit": 2,
+  "topicId": "ex504a-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Timers & Control Circuits",
+  "topics": [
+   "Time Delay Relays"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Timers & Control Circuits.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Counters & Sequencers",
+  "unit": 2,
+  "topicId": "ex504a-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Timers & Control Circuits",
+  "topics": [
+   "Counters & Sequencers"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Timers & Control Circuits.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Photoelectric Controls",
+  "unit": 2,
+  "topicId": "ex504a-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Timers & Control Circuits",
+  "topics": [
+   "Photoelectric Controls"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Timers & Control Circuits.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Induction Heating",
+  "unit": 3,
+  "topicId": "ex504a-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Heating & Welding",
+  "topics": [
+   "Induction Heating"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Heating & Welding.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Dielectric Heating",
+  "unit": 3,
+  "topicId": "ex504a-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Heating & Welding",
+  "topics": [
+   "Dielectric Heating"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Heating & Welding.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Resistance Welding Control",
+  "unit": 3,
+  "topicId": "ex504a-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Heating & Welding",
+  "topics": [
+   "Resistance Welding Control"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Heating & Welding.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Electric Arc Furnace",
+  "unit": 3,
+  "topicId": "ex504a-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Heating & Welding",
+  "topics": [
+   "Electric Arc Furnace"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Heating & Welding.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "DC Motor Control",
+  "unit": 4,
+  "topicId": "ex504a-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Motor Control",
+  "topics": [
+   "DC Motor Control"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Motor Control.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "AC Motor Control",
+  "unit": 4,
+  "topicId": "ex504a-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Motor Control",
+  "topics": [
+   "AC Motor Control"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Motor Control.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Stepper & Servo Control",
+  "unit": 4,
+  "topicId": "ex504a-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Motor Control",
+  "topics": [
+   "Stepper & Servo Control"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Motor Control.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Motor Protection",
+  "unit": 4,
+  "topicId": "ex504a-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Motor Control",
+  "topics": [
+   "Motor Protection"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers Motor Control.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "PLC Basics",
+  "unit": 5,
+  "topicId": "ex504a-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: PLC & Industrial Automation",
+  "topics": [
+   "PLC Basics"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers PLC & Industrial Automation.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Ladder Programming",
+  "unit": 5,
+  "topicId": "ex504a-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: PLC & Industrial Automation",
+  "topics": [
+   "Ladder Programming"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers PLC & Industrial Automation.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "SCADA & DCS",
+  "unit": 5,
+  "topicId": "ex504a-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: PLC & Industrial Automation",
+  "topics": [
+   "SCADA & DCS"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\" covers PLC & Industrial Automation.",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 5,
+  "subject": "ex504a",
+  "subjectCode": "EX-504(A)",
+  "subjectLabel": "Industrial Electronics",
+  "title": "Industrial Communication",
+  "unit": 5,
+  "topicId": "ex504a-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: PLC & Industrial Automation",
+  "topics": [
+   "Industrial Communication"
+  ],
+  "description": "\"Industrial drives and power electronics, IISc Bangalore\".",
+  "url": "https://www.youtube.com/playlist?list=PLED1B6C0DE8A84B6E",
+  "lectureKey": "ex504a-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Power System-II: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Per-unit System & Network Matrices",
+   "Load Flow Studies",
+   "Economic Operation",
+   "Fault Analysis",
+   "Power System Stability & Control"
+  ],
+  "description": "\"Power System Analysis, Prof. A.K. Sinha, IIT Kharagpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PL319A4391E593ADF3",
+  "lectureKey": "ex601-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Per-unit System",
+  "unit": 1,
+  "topicId": "ex601-u1t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Per-unit System & Network Matrices",
+  "topics": [
+   "Per-unit System"
+  ],
+  "description": "\"Economic operation of power system playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "ex601-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Single Line Diagram",
+  "unit": 1,
+  "topicId": "ex601-u1t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Per-unit System & Network Matrices",
+  "topics": [
+   "Single Line Diagram"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Per-unit System & Network Matrices.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Bus Admittance Matrix",
+  "unit": 1,
+  "topicId": "ex601-u1t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Per-unit System & Network Matrices",
+  "topics": [
+   "Bus Admittance Matrix"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Per-unit System & Network Matrices.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Bus Impedance Matrix",
+  "unit": 1,
+  "topicId": "ex601-u1t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Per-unit System & Network Matrices",
+  "topics": [
+   "Bus Impedance Matrix"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Per-unit System & Network Matrices.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Load Flow Problem",
+  "unit": 2,
+  "topicId": "ex601-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Studies",
+  "topics": [
+   "Load Flow Problem"
+  ],
+  "description": "\"Load flow analysis playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Gauss-Seidel Method",
+  "unit": 2,
+  "topicId": "ex601-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Studies",
+  "topics": [
+   "Gauss-Seidel Method"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Load Flow Studies.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Newton-Raphson Method",
+  "unit": 2,
+  "topicId": "ex601-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Studies",
+  "topics": [
+   "Newton-Raphson Method"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Load Flow Studies.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Fast Decoupled Load Flow",
+  "unit": 2,
+  "topicId": "ex601-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Load Flow Studies",
+  "topics": [
+   "Fast Decoupled Load Flow"
+  ],
+  "description": "\"Load flow analysis playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Economic Dispatch",
+  "unit": 3,
+  "topicId": "ex601-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Economic Operation",
+  "topics": [
+   "Economic Dispatch"
+  ],
+  "description": "\"Economic operation of power system playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO8q1uJ4MFDmjv824_3--yor",
+  "lectureKey": "ex601-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Transmission Losses",
+  "unit": 3,
+  "topicId": "ex601-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Economic Operation",
+  "topics": [
+   "Transmission Losses"
+  ],
+  "description": "\"Transmission line parameters\".",
+  "url": "https://www.youtube.com/watch?v=dhmYOIBcwOU",
+  "lectureKey": "ex601-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Unit Commitment",
+  "unit": 3,
+  "topicId": "ex601-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Economic Operation",
+  "topics": [
+   "Unit Commitment"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Economic Operation.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Hydro-thermal Coordination",
+  "unit": 3,
+  "topicId": "ex601-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Economic Operation",
+  "topics": [
+   "Hydro-thermal Coordination"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Economic Operation.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Symmetrical Faults",
+  "unit": 4,
+  "topicId": "ex601-u4t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Symmetrical Faults"
+  ],
+  "description": "\"Fault analysis playlist: symmetrical and unsymmetrical faults\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+  "lectureKey": "ex601-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Symmetrical Components",
+  "unit": 4,
+  "topicId": "ex601-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Symmetrical Components"
+  ],
+  "description": "\"Fault analysis playlist: symmetrical and unsymmetrical faults\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+  "lectureKey": "ex601-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Unsymmetrical Faults",
+  "unit": 4,
+  "topicId": "ex601-u4t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Unsymmetrical Faults"
+  ],
+  "description": "\"Fault analysis playlist: symmetrical and unsymmetrical faults\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+  "lectureKey": "ex601-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Fault Analysis Using Zbus",
+  "unit": 4,
+  "topicId": "ex601-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Fault Analysis",
+  "topics": [
+   "Fault Analysis Using Zbus"
+  ],
+  "description": "\"Fault analysis playlist: symmetrical and unsymmetrical faults\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO982dA5wFyL__G18Awbqe7p",
+  "lectureKey": "ex601-u4-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Stability Concepts",
+  "unit": 5,
+  "topicId": "ex601-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power System Stability & Control",
+  "topics": [
+   "Stability Concepts"
+  ],
+  "description": "\"Stability analysis playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_QznuoooIl0o4vQeCV3NHe",
+  "lectureKey": "ex601-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Equal Area Criterion",
+  "unit": 5,
+  "topicId": "ex601-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power System Stability & Control",
+  "topics": [
+   "Equal Area Criterion"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Power System Stability & Control.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Load Frequency Control",
+  "unit": 5,
+  "topicId": "ex601-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power System Stability & Control",
+  "topics": [
+   "Load Frequency Control"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Power System Stability & Control.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex601",
+  "subjectCode": "EX-601",
+  "subjectLabel": "Power System-II",
+  "title": "Voltage Control",
+  "unit": 5,
+  "topicId": "ex601-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Power System Stability & Control",
+  "topics": [
+   "Voltage Control"
+  ],
+  "description": "\"Load flow analysis playlist\" covers Power System Stability & Control.",
+  "url": "https://www.youtube.com/playlist?list=PLEVP-S4VFKO_bVbMPXIWn5vy8fOSgzaao",
+  "lectureKey": "ex601-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Utilization of Electrical Energy: full lecture series",
+  "lecturer": "Electric traction lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Electric Heating",
+   "Electric Welding",
+   "Illumination",
+   "Electric Traction",
+   "Electrolysis & Energy Efficiency"
+  ],
+  "description": "\"Electric traction: all important topics\" by Electric traction lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLLj_IOzkHLu1r2dWzHF6T9975FxBYdLcd",
+  "lectureKey": "ex603a-auto-playlist"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Methods of Heating",
+  "unit": 1,
+  "topicId": "ex603a-u1t1",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Heating",
+  "topics": [
+   "Methods of Heating"
+  ],
+  "description": "\"Electric heating\".",
+  "url": "https://www.youtube.com/watch?v=r8Zb7oUN_ZU",
+  "lectureKey": "ex603a-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Resistance Ovens",
+  "unit": 1,
+  "topicId": "ex603a-u1t2",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Heating",
+  "topics": [
+   "Resistance Ovens"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Heating.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Induction Furnaces",
+  "unit": 1,
+  "topicId": "ex603a-u1t3",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Heating",
+  "topics": [
+   "Induction Furnaces"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Heating.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Dielectric Heating",
+  "unit": 1,
+  "topicId": "ex603a-u1t4",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Heating",
+  "topics": [
+   "Dielectric Heating"
+  ],
+  "description": "\"Electric heating\".",
+  "url": "https://www.youtube.com/watch?v=r8Zb7oUN_ZU",
+  "lectureKey": "ex603a-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Welding Fundamentals",
+  "unit": 2,
+  "topicId": "ex603a-u2t1",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Electric Welding",
+  "topics": [
+   "Welding Fundamentals"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Welding.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Resistance Welding Types",
+  "unit": 2,
+  "topicId": "ex603a-u2t2",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Electric Welding",
+  "topics": [
+   "Resistance Welding Types"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Welding.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Arc Welding Equipment",
+  "unit": 2,
+  "topicId": "ex603a-u2t3",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Electric Welding",
+  "topics": [
+   "Arc Welding Equipment"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Welding.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Modern Welding",
+  "unit": 2,
+  "topicId": "ex603a-u2t4",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Electric Welding",
+  "topics": [
+   "Modern Welding"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Welding.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Laws of Illumination",
+  "unit": 3,
+  "topicId": "ex603a-u3t1",
+  "lecturer": "Aakarshak Academy",
+  "type": "video",
+  "typeLabel": "Unit 3: Illumination",
+  "topics": [
+   "Laws of Illumination"
+  ],
+  "description": "\"Utilization of electrical energy illumination with syllabus overview\".",
+  "url": "https://www.youtube.com/watch?v=QnunBV3dwdQ",
+  "lectureKey": "ex603a-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Lamps",
+  "unit": 3,
+  "topicId": "ex603a-u3t2",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Illumination",
+  "topics": [
+   "Lamps"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Illumination.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Lighting Design",
+  "unit": 3,
+  "topicId": "ex603a-u3t3",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Illumination",
+  "topics": [
+   "Lighting Design"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Illumination.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Street & Flood Lighting",
+  "unit": 3,
+  "topicId": "ex603a-u3t4",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Illumination",
+  "topics": [
+   "Street & Flood Lighting"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Illumination.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Traction Systems",
+  "unit": 4,
+  "topicId": "ex603a-u4t1",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electric Traction",
+  "topics": [
+   "Traction Systems"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Traction.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Speed-Time Curves",
+  "unit": 4,
+  "topicId": "ex603a-u4t2",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electric Traction",
+  "topics": [
+   "Speed-Time Curves"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Traction.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Tractive Effort",
+  "unit": 4,
+  "topicId": "ex603a-u4t3",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electric Traction",
+  "topics": [
+   "Tractive Effort"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Traction.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Traction Motors & Braking",
+  "unit": 4,
+  "topicId": "ex603a-u4t4",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Electric Traction",
+  "topics": [
+   "Traction Motors & Braking"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electric Traction.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Electrolytic Processes",
+  "unit": 5,
+  "topicId": "ex603a-u5t1",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Electrolysis & Energy Efficiency",
+  "topics": [
+   "Electrolytic Processes"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electrolysis & Energy Efficiency.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Battery Charging",
+  "unit": 5,
+  "topicId": "ex603a-u5t2",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Electrolysis & Energy Efficiency",
+  "topics": [
+   "Battery Charging"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electrolysis & Energy Efficiency.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Energy-efficient Motors & Drives",
+  "unit": 5,
+  "topicId": "ex603a-u5t3",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Electrolysis & Energy Efficiency",
+  "topics": [
+   "Energy-efficient Motors & Drives"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electrolysis & Energy Efficiency.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 6,
+  "subject": "ex603a",
+  "subjectCode": "EX-603(A)",
+  "subjectLabel": "Utilization of Electrical Energy",
+  "title": "Domestic Utilisation",
+  "unit": 5,
+  "topicId": "ex603a-u5t4",
+  "lecturer": "Electric traction lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Electrolysis & Energy Efficiency",
+  "topics": [
+   "Domestic Utilisation"
+  ],
+  "description": "\"Utilization of electrical energy full course\" covers Electrolysis & Energy Efficiency.",
+  "url": "https://www.youtube.com/watch?v=hDlMxIyUGiM",
+  "lectureKey": "ex603a-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Power System Protection: full lecture series",
+  "lecturer": "Protection lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Protection Fundamentals",
+   "Relays",
+   "Apparatus Protection",
+   "Line Protection & Circuit Breakers",
+   "Modern Protection"
+  ],
+  "description": "\"Power system protection: protective relays tutorials\" by Protection lectures.",
+  "url": "https://www.youtube.com/playlist?list=PL5EF04353762441B8",
+  "lectureKey": "ex701-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Need for Protection",
+  "unit": 1,
+  "topicId": "ex701-u1t1",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Protection Fundamentals",
+  "topics": [
+   "Need for Protection"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Relay Characteristics",
+  "unit": 1,
+  "topicId": "ex701-u1t2",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Protection Fundamentals",
+  "topics": [
+   "Relay Characteristics"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Instrument Transformers for Protection",
+  "unit": 1,
+  "topicId": "ex701-u1t3",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Protection Fundamentals",
+  "topics": [
+   "Instrument Transformers for Protection"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Protection Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u1-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Earthing in Power Systems",
+  "unit": 1,
+  "topicId": "ex701-u1t4",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Protection Fundamentals",
+  "topics": [
+   "Earthing in Power Systems"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Electromagnetic Relays",
+  "unit": 2,
+  "topicId": "ex701-u2t1",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Relays",
+  "topics": [
+   "Electromagnetic Relays"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Overcurrent Relays",
+  "unit": 2,
+  "topicId": "ex701-u2t2",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Relays",
+  "topics": [
+   "Overcurrent Relays"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u2-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Directional & Differential Relays",
+  "unit": 2,
+  "topicId": "ex701-u2t3",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Relays",
+  "topics": [
+   "Directional & Differential Relays"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Relays.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Distance Relays",
+  "unit": 2,
+  "topicId": "ex701-u2t4",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Relays",
+  "topics": [
+   "Distance Relays"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Generator Protection",
+  "unit": 3,
+  "topicId": "ex701-u3t1",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Apparatus Protection",
+  "topics": [
+   "Generator Protection"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u3-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Transformer Protection",
+  "unit": 3,
+  "topicId": "ex701-u3t2",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Apparatus Protection",
+  "topics": [
+   "Transformer Protection"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Busbar Protection",
+  "unit": 3,
+  "topicId": "ex701-u3t3",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Apparatus Protection",
+  "topics": [
+   "Busbar Protection"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u3-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Motor Protection",
+  "unit": 3,
+  "topicId": "ex701-u3t4",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 3: Apparatus Protection",
+  "topics": [
+   "Motor Protection"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u3-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Transmission Line Protection",
+  "unit": 4,
+  "topicId": "ex701-u4t1",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Line Protection & Circuit Breakers",
+  "topics": [
+   "Transmission Line Protection"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Line Protection & Circuit Breakers.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Circuit Breaker Principles",
+  "unit": 4,
+  "topicId": "ex701-u4t2",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Line Protection & Circuit Breakers",
+  "topics": [
+   "Circuit Breaker Principles"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Line Protection & Circuit Breakers.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Types of Circuit Breakers",
+  "unit": 4,
+  "topicId": "ex701-u4t3",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Line Protection & Circuit Breakers",
+  "topics": [
+   "Types of Circuit Breakers"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Line Protection & Circuit Breakers.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Breaker Ratings & Testing",
+  "unit": 4,
+  "topicId": "ex701-u4t4",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Line Protection & Circuit Breakers",
+  "topics": [
+   "Breaker Ratings & Testing"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Line Protection & Circuit Breakers.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Static Relays",
+  "unit": 5,
+  "topicId": "ex701-u5t1",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Modern Protection",
+  "topics": [
+   "Static Relays"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Numerical Relays",
+  "unit": 5,
+  "topicId": "ex701-u5t2",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Modern Protection",
+  "topics": [
+   "Numerical Relays"
+  ],
+  "description": "\"Power system protection: over current relays\".",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u5-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Substation Automation",
+  "unit": 5,
+  "topicId": "ex701-u5t3",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Modern Protection",
+  "topics": [
+   "Substation Automation"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Modern Protection.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex701",
+  "subjectCode": "EX-701",
+  "subjectLabel": "Power System Protection",
+  "title": "Protection Against Overvoltages",
+  "unit": 5,
+  "topicId": "ex701-u5t4",
+  "lecturer": "Protection lectures",
+  "type": "video",
+  "typeLabel": "Unit 5: Modern Protection",
+  "topics": [
+   "Protection Against Overvoltages"
+  ],
+  "description": "\"Power system protection: over current relays\" covers Modern Protection.",
+  "url": "https://www.youtube.com/watch?v=G4dex0ZVUhM",
+  "lectureKey": "ex701-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "HVDC & FACTS: full lecture series",
+  "lecturer": "Ekeeda",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "HVDC Fundamentals",
+   "HVDC Converters & Control",
+   "Reactive Power & FACTS Concepts",
+   "Advanced FACTS",
+   "Applications & Grid Integration"
+  ],
+  "description": "\"High Voltage Direct Current Transmission\" by Ekeeda.",
+  "url": "https://www.youtube.com/playlist?list=PLm_MSClsnwm-uH5g4Nv9pVdahToudi0HU",
+  "lectureKey": "ex702b-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "HVDC vs HVAC",
+  "unit": 1,
+  "topicId": "ex702b-u1t1",
+  "lecturer": "Ekeeda",
+  "type": "video",
+  "typeLabel": "Unit 1: HVDC Fundamentals",
+  "topics": [
+   "HVDC vs HVAC"
+  ],
+  "description": "\"HVDC transmission disadvantages\".",
+  "url": "https://www.youtube.com/watch?v=gbu2DzBEAkI",
+  "lectureKey": "ex702b-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "HVDC Link Types",
+  "unit": 1,
+  "topicId": "ex702b-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: HVDC Fundamentals",
+  "topics": [
+   "HVDC Link Types"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers HVDC Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "HVDC Components",
+  "unit": 1,
+  "topicId": "ex702b-u1t3",
+  "lecturer": "Ekeeda",
+  "type": "video",
+  "typeLabel": "Unit 1: HVDC Fundamentals",
+  "topics": [
+   "HVDC Components"
+  ],
+  "description": "\"HVDC transmission disadvantages\".",
+  "url": "https://www.youtube.com/watch?v=gbu2DzBEAkI",
+  "lectureKey": "ex702b-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "HVDC in India",
+  "unit": 1,
+  "topicId": "ex702b-u1t4",
+  "lecturer": "Ekeeda",
+  "type": "video",
+  "typeLabel": "Unit 1: HVDC Fundamentals",
+  "topics": [
+   "HVDC in India"
+  ],
+  "description": "\"HVDC transmission disadvantages\".",
+  "url": "https://www.youtube.com/watch?v=gbu2DzBEAkI",
+  "lectureKey": "ex702b-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Line Commutated Converters",
+  "unit": 2,
+  "topicId": "ex702b-u2t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: HVDC Converters & Control",
+  "topics": [
+   "Line Commutated Converters"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers HVDC Converters & Control.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Rectifier & Inverter Operation",
+  "unit": 2,
+  "topicId": "ex702b-u2t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 2: HVDC Converters & Control",
+  "topics": [
+   "Rectifier & Inverter Operation"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers HVDC Converters & Control.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "HVDC Control",
+  "unit": 2,
+  "topicId": "ex702b-u2t3",
+  "lecturer": "Ekeeda",
+  "type": "video",
+  "typeLabel": "Unit 2: HVDC Converters & Control",
+  "topics": [
+   "HVDC Control"
+  ],
+  "description": "\"HVDC transmission disadvantages\".",
+  "url": "https://www.youtube.com/watch?v=gbu2DzBEAkI",
+  "lectureKey": "ex702b-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "VSC-HVDC",
+  "unit": 2,
+  "topicId": "ex702b-u2t4",
+  "lecturer": "Ekeeda",
+  "type": "video",
+  "typeLabel": "Unit 2: HVDC Converters & Control",
+  "topics": [
+   "VSC-HVDC"
+  ],
+  "description": "\"HVDC transmission disadvantages\".",
+  "url": "https://www.youtube.com/watch?v=gbu2DzBEAkI",
+  "lectureKey": "ex702b-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Reactive Power Control",
+  "unit": 3,
+  "topicId": "ex702b-u3t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Reactive Power & FACTS Concepts",
+  "topics": [
+   "Reactive Power Control"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Reactive Power & FACTS Concepts.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "FACTS Concept",
+  "unit": 3,
+  "topicId": "ex702b-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Reactive Power & FACTS Concepts",
+  "topics": [
+   "FACTS Concept"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Reactive Power & FACTS Concepts.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Shunt Devices",
+  "unit": 3,
+  "topicId": "ex702b-u3t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Reactive Power & FACTS Concepts",
+  "topics": [
+   "Shunt Devices"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Reactive Power & FACTS Concepts.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Series Devices",
+  "unit": 3,
+  "topicId": "ex702b-u3t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Reactive Power & FACTS Concepts",
+  "topics": [
+   "Series Devices"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Reactive Power & FACTS Concepts.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "UPFC",
+  "unit": 4,
+  "topicId": "ex702b-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Advanced FACTS",
+  "topics": [
+   "UPFC"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Advanced FACTS.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "IPFC & Phase Shifters",
+  "unit": 4,
+  "topicId": "ex702b-u4t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Advanced FACTS",
+  "topics": [
+   "IPFC & Phase Shifters"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Advanced FACTS.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Stability Enhancement",
+  "unit": 4,
+  "topicId": "ex702b-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Advanced FACTS",
+  "topics": [
+   "Stability Enhancement"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Advanced FACTS.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Harmonics & Filters",
+  "unit": 4,
+  "topicId": "ex702b-u4t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Advanced FACTS",
+  "topics": [
+   "Harmonics & Filters"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Advanced FACTS.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Renewable Integration",
+  "unit": 5,
+  "topicId": "ex702b-u5t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Applications & Grid Integration",
+  "topics": [
+   "Renewable Integration"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Applications & Grid Integration.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Multi-terminal HVDC",
+  "unit": 5,
+  "topicId": "ex702b-u5t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Applications & Grid Integration",
+  "topics": [
+   "Multi-terminal HVDC"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Applications & Grid Integration.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Power Quality Applications",
+  "unit": 5,
+  "topicId": "ex702b-u5t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Applications & Grid Integration",
+  "topics": [
+   "Power Quality Applications"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Applications & Grid Integration.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "ex702b",
+  "subjectCode": "EX-702(B)",
+  "subjectLabel": "HVDC & FACTS",
+  "title": "Economics & Planning",
+  "unit": 5,
+  "topicId": "ex702b-u5t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 5: Applications & Grid Integration",
+  "topics": [
+   "Economics & Planning"
+  ],
+  "description": "\"High voltage DC transmission lecture 4, Prof. S.N. Singh, IIT Kanpur\" covers Applications & Grid Integration.",
+  "url": "https://www.youtube.com/watch?v=XkEKFYiPhDA",
+  "lectureKey": "ex702b-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "High Voltage Engineering: full lecture series",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Breakdown in Gases",
+   "Breakdown in Liquids & Solids",
+   "Generation of High Voltages",
+   "Measurement of High Voltages",
+   "Overvoltages & HV Testing"
+  ],
+  "description": "\"High Voltage Engineering\" by HV lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLiE0cr_0IcyT3p0oKloOXYve2qFmBCYbu",
+  "lectureKey": "ex702c-auto-playlist"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Ionisation Processes",
+  "unit": 1,
+  "topicId": "ex702c-u1t1",
+  "lecturer": "HV lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Breakdown in Gases",
+  "topics": [
+   "Ionisation Processes"
+  ],
+  "description": "\"High voltage engineering course introduction, HV insulation design and testing\" covers Breakdown in Gases.",
+  "url": "https://www.youtube.com/watch?v=0as-VQq9igA",
+  "lectureKey": "ex702c-u1-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Paschen's Law",
+  "unit": 1,
+  "topicId": "ex702c-u1t2",
+  "lecturer": "HV lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Breakdown in Gases",
+  "topics": [
+   "Paschen's Law"
+  ],
+  "description": "\"High voltage engineering course introduction, HV insulation design and testing\" covers Breakdown in Gases.",
+  "url": "https://www.youtube.com/watch?v=0as-VQq9igA",
+  "lectureKey": "ex702c-u1-t2",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Corona Discharge",
+  "unit": 1,
+  "topicId": "ex702c-u1t3",
+  "lecturer": "HV lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Breakdown in Gases",
+  "topics": [
+   "Corona Discharge"
+  ],
+  "description": "\"High voltage engineering course introduction, HV insulation design and testing\" covers Breakdown in Gases.",
+  "url": "https://www.youtube.com/watch?v=0as-VQq9igA",
+  "lectureKey": "ex702c-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "SF6 & Vacuum Insulation",
+  "unit": 1,
+  "topicId": "ex702c-u1t4",
+  "lecturer": "HV lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Breakdown in Gases",
+  "topics": [
+   "SF6 & Vacuum Insulation"
+  ],
+  "description": "\"High voltage engineering course introduction, HV insulation design and testing\" covers Breakdown in Gases.",
+  "url": "https://www.youtube.com/watch?v=0as-VQq9igA",
+  "lectureKey": "ex702c-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Liquid Dielectrics",
+  "unit": 2,
+  "topicId": "ex702c-u2t1",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Breakdown in Liquids & Solids",
+  "topics": [
+   "Liquid Dielectrics"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Breakdown in Liquids & Solids.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Solid Dielectrics",
+  "unit": 2,
+  "topicId": "ex702c-u2t2",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Breakdown in Liquids & Solids",
+  "topics": [
+   "Solid Dielectrics"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Breakdown in Liquids & Solids.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Treeing & Tracking",
+  "unit": 2,
+  "topicId": "ex702c-u2t3",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Breakdown in Liquids & Solids",
+  "topics": [
+   "Treeing & Tracking"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Breakdown in Liquids & Solids.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Composite Insulation",
+  "unit": 2,
+  "topicId": "ex702c-u2t4",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Breakdown in Liquids & Solids",
+  "topics": [
+   "Composite Insulation"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Breakdown in Liquids & Solids.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "HV AC Generation",
+  "unit": 3,
+  "topicId": "ex702c-u3t1",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Generation of High Voltages",
+  "topics": [
+   "HV AC Generation"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Generation of High Voltages.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "HV DC Generation",
+  "unit": 3,
+  "topicId": "ex702c-u3t2",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Generation of High Voltages",
+  "topics": [
+   "HV DC Generation"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Generation of High Voltages.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Impulse Voltage Generation",
+  "unit": 3,
+  "topicId": "ex702c-u3t3",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Generation of High Voltages",
+  "topics": [
+   "Impulse Voltage Generation"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Generation of High Voltages.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Impulse Current Generation",
+  "unit": 3,
+  "topicId": "ex702c-u3t4",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Generation of High Voltages",
+  "topics": [
+   "Impulse Current Generation"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Generation of High Voltages.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Sphere Gaps",
+  "unit": 4,
+  "topicId": "ex702c-u4t1",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Measurement of High Voltages",
+  "topics": [
+   "Sphere Gaps"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Measurement of High Voltages.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u4-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Voltage Dividers",
+  "unit": 4,
+  "topicId": "ex702c-u4t2",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Measurement of High Voltages",
+  "topics": [
+   "Voltage Dividers"
+  ],
+  "description": "\"High voltage engineering applications course\".",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Electrostatic Voltmeter",
+  "unit": 4,
+  "topicId": "ex702c-u4t3",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Measurement of High Voltages",
+  "topics": [
+   "Electrostatic Voltmeter"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Measurement of High Voltages.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Current & PD Measurement",
+  "unit": 4,
+  "topicId": "ex702c-u4t4",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Measurement of High Voltages",
+  "topics": [
+   "Current & PD Measurement"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Measurement of High Voltages.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Lightning Overvoltages",
+  "unit": 5,
+  "topicId": "ex702c-u5t1",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Overvoltages & HV Testing",
+  "topics": [
+   "Lightning Overvoltages"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Overvoltages & HV Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Switching Overvoltages",
+  "unit": 5,
+  "topicId": "ex702c-u5t2",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Overvoltages & HV Testing",
+  "topics": [
+   "Switching Overvoltages"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Overvoltages & HV Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "Insulation Coordination",
+  "unit": 5,
+  "topicId": "ex702c-u5t3",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Overvoltages & HV Testing",
+  "topics": [
+   "Insulation Coordination"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Overvoltages & HV Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 7,
+  "subject": "ex702c",
+  "subjectCode": "EX-702(C)",
+  "subjectLabel": "High Voltage Engineering",
+  "title": "HV Testing",
+  "unit": 5,
+  "topicId": "ex702c-u5t4",
+  "lecturer": "HV lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Overvoltages & HV Testing",
+  "topics": [
+   "HV Testing"
+  ],
+  "description": "\"High voltage engineering applications course\" covers Overvoltages & HV Testing.",
+  "url": "https://www.youtube.com/playlist?list=PLDkq31epwdjxHfjhS2j4y9z__lJP2ueRB",
+  "lectureKey": "ex702c-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Electrical Drives: full lecture series",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Electric Drive Fundamentals",
+   "DC Drives",
+   "Induction Motor Drives",
+   "Synchronous & Special Motor Drives",
+   "Braking & Digital Control"
+  ],
+  "description": "\"Fundamentals of Electric Drives, IIT Kanpur\" by NPTEL.",
+  "url": "https://www.youtube.com/playlist?list=PLFW6lRTa1g83sIfVY1p1xGqPGYUmXyahx",
+  "lectureKey": "ex801-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Elements of Electric Drive",
+  "unit": 1,
+  "topicId": "ex801-u1t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Drive Fundamentals",
+  "topics": [
+   "Elements of Electric Drive"
+  ],
+  "description": "\"Electric drive lecture 1\".",
+  "url": "https://www.youtube.com/watch?v=Ub-csHc4VhA",
+  "lectureKey": "ex801-u1-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Dynamics of Drives",
+  "unit": 1,
+  "topicId": "ex801-u1t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Drive Fundamentals",
+  "topics": [
+   "Dynamics of Drives"
+  ],
+  "description": "\"Electric drive lecture 1\".",
+  "url": "https://www.youtube.com/watch?v=Ub-csHc4VhA",
+  "lectureKey": "ex801-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Load Characteristics",
+  "unit": 1,
+  "topicId": "ex801-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Drive Fundamentals",
+  "topics": [
+   "Load Characteristics"
+  ],
+  "description": "\"Electric drives: four quadrant drive and load characteristics, selection of motor\".",
+  "url": "https://www.youtube.com/watch?v=8ltC-M-Ve9U",
+  "lectureKey": "ex801-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Motor Rating",
+  "unit": 1,
+  "topicId": "ex801-u1t4",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Electric Drive Fundamentals",
+  "topics": [
+   "Motor Rating"
+  ],
+  "description": "\"Electric drives: four quadrant drive and load characteristics, selection of motor\".",
+  "url": "https://www.youtube.com/watch?v=8ltC-M-Ve9U",
+  "lectureKey": "ex801-u1-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Single-phase Converter Drives",
+  "unit": 2,
+  "topicId": "ex801-u2t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC Drives",
+  "topics": [
+   "Single-phase Converter Drives"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers DC Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Three-phase Converter Drives",
+  "unit": 2,
+  "topicId": "ex801-u2t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC Drives",
+  "topics": [
+   "Three-phase Converter Drives"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers DC Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Chopper-fed DC Drives",
+  "unit": 2,
+  "topicId": "ex801-u2t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC Drives",
+  "topics": [
+   "Chopper-fed DC Drives"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers DC Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Closed-loop DC Drives",
+  "unit": 2,
+  "topicId": "ex801-u2t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 2: DC Drives",
+  "topics": [
+   "Closed-loop DC Drives"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers DC Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Stator Voltage Control",
+  "unit": 3,
+  "topicId": "ex801-u3t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Induction Motor Drives",
+  "topics": [
+   "Stator Voltage Control"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Induction Motor Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "V/f Control",
+  "unit": 3,
+  "topicId": "ex801-u3t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Induction Motor Drives",
+  "topics": [
+   "V/f Control"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Induction Motor Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Rotor Resistance & Slip Power Recovery",
+  "unit": 3,
+  "topicId": "ex801-u3t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Induction Motor Drives",
+  "topics": [
+   "Rotor Resistance & Slip Power Recovery"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Induction Motor Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Vector Control",
+  "unit": 3,
+  "topicId": "ex801-u3t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Induction Motor Drives",
+  "topics": [
+   "Vector Control"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Induction Motor Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Synchronous Motor Drives",
+  "unit": 4,
+  "topicId": "ex801-u4t1",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Synchronous & Special Motor Drives",
+  "topics": [
+   "Synchronous Motor Drives"
+  ],
+  "description": "\"Electric drives: four quadrant drive and load characteristics, selection of motor\".",
+  "url": "https://www.youtube.com/watch?v=8ltC-M-Ve9U",
+  "lectureKey": "ex801-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "BLDC & PMSM Drives",
+  "unit": 4,
+  "topicId": "ex801-u4t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Synchronous & Special Motor Drives",
+  "topics": [
+   "BLDC & PMSM Drives"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Synchronous & Special Motor Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Stepper Motor Drives",
+  "unit": 4,
+  "topicId": "ex801-u4t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 4: Synchronous & Special Motor Drives",
+  "topics": [
+   "Stepper Motor Drives"
+  ],
+  "description": "\"Electric drives: four quadrant drive and load characteristics, selection of motor\".",
+  "url": "https://www.youtube.com/watch?v=8ltC-M-Ve9U",
+  "lectureKey": "ex801-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Switched Reluctance Drives",
+  "unit": 4,
+  "topicId": "ex801-u4t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Synchronous & Special Motor Drives",
+  "topics": [
+   "Switched Reluctance Drives"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Synchronous & Special Motor Drives.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Electric Braking",
+  "unit": 5,
+  "topicId": "ex801-u5t1",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Braking & Digital Control",
+  "topics": [
+   "Electric Braking"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\".",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Energy Recovery",
+  "unit": 5,
+  "topicId": "ex801-u5t2",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Braking & Digital Control",
+  "topics": [
+   "Energy Recovery"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Braking & Digital Control.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Digital Control of Drives",
+  "unit": 5,
+  "topicId": "ex801-u5t3",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Braking & Digital Control",
+  "topics": [
+   "Digital Control of Drives"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\" covers Braking & Digital Control.",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex801",
+  "subjectCode": "EX-801",
+  "subjectLabel": "Electrical Drives",
+  "title": "Drive Applications",
+  "unit": 5,
+  "topicId": "ex801-u5t4",
+  "lecturer": "NPTEL",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Braking & Digital Control",
+  "topics": [
+   "Drive Applications"
+  ],
+  "description": "\"Advanced electric drives, Dr. S.P. Das, IIT Kanpur\".",
+  "url": "https://www.youtube.com/playlist?list=PLA5CA7D35114BA425",
+  "lectureKey": "ex801-u5-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Special Electrical Machines: full lecture series",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Stepper Motors",
+   "Switched Reluctance Motors",
+   "Permanent Magnet Machines",
+   "Linear & Other Machines",
+   "Control & Applications"
+  ],
+  "description": "\"Lectures on Special Electrical Machines\" by SEM lectures.",
+  "url": "https://www.youtube.com/playlist?list=PL_mruqjnuVd9ftLVehO6-P_HUCBICeBX3",
+  "lectureKey": "ex802b-auto-playlist"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Stepper Motor Principle",
+  "unit": 1,
+  "topicId": "ex802b-u1t1",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Stepper Motors",
+  "topics": [
+   "Stepper Motor Principle"
+  ],
+  "description": "\"Special electrical machines\" covers Stepper Motors.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u1-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Types of Stepper Motors",
+  "unit": 1,
+  "topicId": "ex802b-u1t2",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Stepper Motors",
+  "topics": [
+   "Types of Stepper Motors"
+  ],
+  "description": "\"Special electrical machines\" covers Stepper Motors.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u1-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Drive Modes",
+  "unit": 1,
+  "topicId": "ex802b-u1t3",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 1: Stepper Motors",
+  "topics": [
+   "Drive Modes"
+  ],
+  "description": "\"Step motor drives and BLDC drives\".",
+  "url": "https://www.youtube.com/watch?v=Qy6mA4TEpyI",
+  "lectureKey": "ex802b-u1-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Characteristics",
+  "unit": 1,
+  "topicId": "ex802b-u1t4",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 1: Stepper Motors",
+  "topics": [
+   "Characteristics"
+  ],
+  "description": "\"Special electrical machines\" covers Stepper Motors.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u1-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "SRM Construction",
+  "unit": 2,
+  "topicId": "ex802b-u2t1",
+  "lecturer": "SEM lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Switched Reluctance Motors",
+  "topics": [
+   "SRM Construction"
+  ],
+  "description": "\"Linear switched reluctance motor SRM\".",
+  "url": "https://www.youtube.com/watch?v=3h5OgRt1auU",
+  "lectureKey": "ex802b-u2-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Torque Production",
+  "unit": 2,
+  "topicId": "ex802b-u2t2",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Switched Reluctance Motors",
+  "topics": [
+   "Torque Production"
+  ],
+  "description": "\"Special electrical machines\" covers Switched Reluctance Motors.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "SRM Converters",
+  "unit": 2,
+  "topicId": "ex802b-u2t3",
+  "lecturer": "SEM lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Switched Reluctance Motors",
+  "topics": [
+   "SRM Converters"
+  ],
+  "description": "\"Linear switched reluctance motor SRM\".",
+  "url": "https://www.youtube.com/watch?v=3h5OgRt1auU",
+  "lectureKey": "ex802b-u2-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "SRM Applications",
+  "unit": 2,
+  "topicId": "ex802b-u2t4",
+  "lecturer": "SEM lectures",
+  "type": "video",
+  "typeLabel": "Unit 2: Switched Reluctance Motors",
+  "topics": [
+   "SRM Applications"
+  ],
+  "description": "\"Linear switched reluctance motor SRM\".",
+  "url": "https://www.youtube.com/watch?v=3h5OgRt1auU",
+  "lectureKey": "ex802b-u2-t4",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Permanent Magnet Materials",
+  "unit": 3,
+  "topicId": "ex802b-u3t1",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Permanent Magnet Machines",
+  "topics": [
+   "Permanent Magnet Materials"
+  ],
+  "description": "\"Special electrical machines\" covers Permanent Magnet Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "BLDC Motor",
+  "unit": 3,
+  "topicId": "ex802b-u3t2",
+  "lecturer": "NPTEL",
+  "type": "video",
+  "typeLabel": "Unit 3: Permanent Magnet Machines",
+  "topics": [
+   "BLDC Motor"
+  ],
+  "description": "\"Step motor drives and BLDC drives\".",
+  "url": "https://www.youtube.com/watch?v=Qy6mA4TEpyI",
+  "lectureKey": "ex802b-u3-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "PMSM",
+  "unit": 3,
+  "topicId": "ex802b-u3t3",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Permanent Magnet Machines",
+  "topics": [
+   "PMSM"
+  ],
+  "description": "\"Special electrical machines\" covers Permanent Magnet Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "PM Generators",
+  "unit": 3,
+  "topicId": "ex802b-u3t4",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Permanent Magnet Machines",
+  "topics": [
+   "PM Generators"
+  ],
+  "description": "\"Special electrical machines\" covers Permanent Magnet Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Linear Induction Motor",
+  "unit": 4,
+  "topicId": "ex802b-u4t1",
+  "lecturer": "SEM lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Linear & Other Machines",
+  "topics": [
+   "Linear Induction Motor"
+  ],
+  "description": "\"Linear induction motor and linear synchronous motor\".",
+  "url": "https://www.youtube.com/watch?v=bBWJcM5XBLE",
+  "lectureKey": "ex802b-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Synchronous Reluctance Motor",
+  "unit": 4,
+  "topicId": "ex802b-u4t2",
+  "lecturer": "SEM lectures",
+  "type": "video",
+  "typeLabel": "Unit 4: Linear & Other Machines",
+  "topics": [
+   "Synchronous Reluctance Motor"
+  ],
+  "description": "\"Linear switched reluctance motor SRM\".",
+  "url": "https://www.youtube.com/watch?v=3h5OgRt1auU",
+  "lectureKey": "ex802b-u4-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Hysteresis & Universal Motors",
+  "unit": 4,
+  "topicId": "ex802b-u4t3",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Linear & Other Machines",
+  "topics": [
+   "Hysteresis & Universal Motors"
+  ],
+  "description": "\"Special electrical machines\" covers Linear & Other Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u4-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Servo Motors & Tachogenerators",
+  "unit": 4,
+  "topicId": "ex802b-u4t4",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Linear & Other Machines",
+  "topics": [
+   "Servo Motors & Tachogenerators"
+  ],
+  "description": "\"Special electrical machines\" covers Linear & Other Machines.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Sensorless Control",
+  "unit": 5,
+  "topicId": "ex802b-u5t1",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Control & Applications",
+  "topics": [
+   "Sensorless Control"
+  ],
+  "description": "\"Special electrical machines\" covers Control & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u5-t1",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Electric Vehicle Motors",
+  "unit": 5,
+  "topicId": "ex802b-u5t2",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Control & Applications",
+  "topics": [
+   "Electric Vehicle Motors"
+  ],
+  "description": "\"Special electrical machines\" covers Control & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Aerospace & Medical Machines",
+  "unit": 5,
+  "topicId": "ex802b-u5t3",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Control & Applications",
+  "topics": [
+   "Aerospace & Medical Machines"
+  ],
+  "description": "\"Special electrical machines\" covers Control & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 8,
+  "subject": "ex802b",
+  "subjectCode": "EX-802(B)",
+  "subjectLabel": "Special Electrical Machines",
+  "title": "Machine Design Considerations",
+  "unit": 5,
+  "topicId": "ex802b-u5t4",
+  "lecturer": "SEM lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Control & Applications",
+  "topics": [
+   "Machine Design Considerations"
+  ],
+  "description": "\"Special electrical machines\" covers Control & Applications.",
+  "url": "https://www.youtube.com/playlist?list=PLQ1eZ7sL4r_3cxNHkxzWDiZgKpmhBU_68",
+  "lectureKey": "ex802b-u5-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Research Methodology & IPR: full lecture series",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Full course playlist",
+  "topics": [
+   "Research Fundamentals",
+   "Data Collection & Analysis",
+   "Technical Writing",
+   "Research Ethics",
+   "Intellectual Property Rights"
+  ],
+  "description": "\"Research Methodology & IPR\" by RM and IPR lectures.",
+  "url": "https://www.youtube.com/playlist?list=PLwKeZUTD_XirenK_QA9Gq3v-KDbO2s5sL",
+  "lectureKey": "mt-rm-auto-playlist"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Meaning & Types of Research",
+  "unit": 1,
+  "topicId": "mt-rm-u1t1",
+  "lecturer": "RM and IPR lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Research Fundamentals",
+  "topics": [
+   "Meaning & Types of Research"
+  ],
+  "description": "\"Research methodology module 1 all concepts\" covers Research Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=SSvZ5UqhkxY",
+  "lectureKey": "mt-rm-u1-t1",
+  "match": "unit"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Research Process",
+  "unit": 1,
+  "topicId": "mt-rm-u1t2",
+  "lecturer": "RM and IPR lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Research Fundamentals",
+  "topics": [
+   "Research Process"
+  ],
+  "description": "\"Research methodology module 1 all concepts\".",
+  "url": "https://www.youtube.com/watch?v=SSvZ5UqhkxY",
+  "lectureKey": "mt-rm-u1-t2",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Literature Review",
+  "unit": 1,
+  "topicId": "mt-rm-u1t3",
+  "lecturer": "RM and IPR lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Research Fundamentals",
+  "topics": [
+   "Literature Review"
+  ],
+  "description": "\"Research methodology module 1 all concepts\" covers Research Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=SSvZ5UqhkxY",
+  "lectureKey": "mt-rm-u1-t3",
+  "match": "unit"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Problem Formulation",
+  "unit": 1,
+  "topicId": "mt-rm-u1t4",
+  "lecturer": "RM and IPR lectures",
+  "type": "video",
+  "typeLabel": "Unit 1: Research Fundamentals",
+  "topics": [
+   "Problem Formulation"
+  ],
+  "description": "\"Research methodology module 1 all concepts\" covers Research Fundamentals.",
+  "url": "https://www.youtube.com/watch?v=SSvZ5UqhkxY",
+  "lectureKey": "mt-rm-u1-t4",
+  "match": "unit"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Data Collection Methods",
+  "unit": 2,
+  "topicId": "mt-rm-u2t1",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Data Collection & Analysis",
+  "topics": [
+   "Data Collection Methods"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Data Collection & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u2-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Statistical Analysis",
+  "unit": 2,
+  "topicId": "mt-rm-u2t2",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Data Collection & Analysis",
+  "topics": [
+   "Statistical Analysis"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Data Collection & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u2-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Design of Experiments",
+  "unit": 2,
+  "topicId": "mt-rm-u2t3",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Data Collection & Analysis",
+  "topics": [
+   "Design of Experiments"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Data Collection & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u2-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Modelling & Simulation",
+  "unit": 2,
+  "topicId": "mt-rm-u2t4",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 2: Data Collection & Analysis",
+  "topics": [
+   "Modelling & Simulation"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Data Collection & Analysis.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u2-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Structure of a Research Paper",
+  "unit": 3,
+  "topicId": "mt-rm-u3t1",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Technical Writing",
+  "topics": [
+   "Structure of a Research Paper"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Technical Writing.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u3-t1",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Thesis Writing",
+  "unit": 3,
+  "topicId": "mt-rm-u3t2",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Technical Writing",
+  "topics": [
+   "Thesis Writing"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Technical Writing.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u3-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Referencing Styles",
+  "unit": 3,
+  "topicId": "mt-rm-u3t3",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Technical Writing",
+  "topics": [
+   "Referencing Styles"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Technical Writing.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u3-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Publishing",
+  "unit": 3,
+  "topicId": "mt-rm-u3t4",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 3: Technical Writing",
+  "topics": [
+   "Publishing"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Technical Writing.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u3-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Ethics in Research",
+  "unit": 4,
+  "topicId": "mt-rm-u4t1",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Research Ethics",
+  "topics": [
+   "Ethics in Research"
+  ],
+  "description": "\"Research methodology and IPR full playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u4-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Plagiarism",
+  "unit": 4,
+  "topicId": "mt-rm-u4t2",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Research Ethics",
+  "topics": [
+   "Plagiarism"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Research Ethics.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u4-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Research Misconduct",
+  "unit": 4,
+  "topicId": "mt-rm-u4t3",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Research Ethics",
+  "topics": [
+   "Research Misconduct"
+  ],
+  "description": "\"Research methodology and IPR full playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u4-t3",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Reproducibility",
+  "unit": 4,
+  "topicId": "mt-rm-u4t4",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 4: Research Ethics",
+  "topics": [
+   "Reproducibility"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Research Ethics.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u4-t4",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Types of IPR",
+  "unit": 5,
+  "topicId": "mt-rm-u5t1",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Intellectual Property Rights",
+  "topics": [
+   "Types of IPR"
+  ],
+  "description": "\"Research methodology and IPR full playlist\".",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u5-t1",
+  "match": "topic"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Patents",
+  "unit": 5,
+  "topicId": "mt-rm-u5t2",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Intellectual Property Rights",
+  "topics": [
+   "Patents"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Intellectual Property Rights.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u5-t2",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Patent Process in India",
+  "unit": 5,
+  "topicId": "mt-rm-u5t3",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Intellectual Property Rights",
+  "topics": [
+   "Patent Process in India"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Intellectual Property Rights.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u5-t3",
+  "match": "course"
+ },
+ {
+  "semester": 2,
+  "subject": "mt-rm",
+  "subjectCode": "MT-RM",
+  "subjectLabel": "Research Methodology & IPR",
+  "title": "Other IPR & Technology Transfer",
+  "unit": 5,
+  "topicId": "mt-rm-u5t4",
+  "lecturer": "RM and IPR lectures",
+  "type": "playlist",
+  "typeLabel": "Unit 5: Intellectual Property Rights",
+  "topics": [
+   "Other IPR & Technology Transfer"
+  ],
+  "description": "\"Research methodology and IPR full playlist\" covers Intellectual Property Rights.",
+  "url": "https://www.youtube.com/playlist?list=PL_7hVUUMi3eyoyxa8bVU7xJi7NMBeu_W0",
+  "lectureKey": "mt-rm-u5-t4",
+  "match": "course"
  }
 ];
