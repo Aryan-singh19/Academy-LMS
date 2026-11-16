@@ -33,7 +33,7 @@ def build(name, md):
         b = p.chromium.launch(executable_path='/usr/bin/google-chrome') if pathlib.Path('/usr/bin/google-chrome').exists() else p.chromium.launch(); pg = b.new_page()
         pg.goto(tmp.as_uri()); pg.wait_for_load_state('networkidle')
         title = pg.evaluate("() => document.querySelector('meta[name=book-title]')?.content || document.title")
-        pg.pdf(path=str(pdf), format='A4', print_background=True, display_header_footer=True,
+        pg.pdf(path=str(pdf), format='A4', print_background=True, outline=True, tagged=True, display_header_footer=True,
                header_template='<div></div>',
                footer_template=f'<div style="font-family:Inter,sans-serif;font-size:7.5pt;color:#94a3b8;width:100%;padding:0 20mm;display:flex;justify-content:space-between;"><span>{title}</span><span class="pageNumber"></span></div>',
                margin={'top': '20mm', 'bottom': '20mm', 'left': '20mm', 'right': '20mm'})
