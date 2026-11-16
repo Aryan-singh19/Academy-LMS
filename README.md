@@ -133,8 +133,8 @@ Every M.Tech programme includes Research Methodology & IPR in semester 2.
 - **S8:** AU-801 Vehicle Maintenance & Fault Diagnosis, AU-802 Automotive Safety & Legislation, AU-803 Refrigeration & Air Conditioning
 
 **EX:**
-- **S3:** ES-301, EX-302 Electronic Devices, EX-303 Electrical Measurements & Instrumentation, EX-304 Network Analysis, EX-305 Signals & Systems
-- **S4:** BT-401, EX-402 Electrical Machines-I, EX-403 Digital Electronics, EX-404 Power Systems-I, EX-405 Control Systems
+- **S3:** ES-301, EX-302 Signals & Systems, EX-303 Electrical Measurements & Instrumentation, EX-304 Network Analysis, EX-305 Analog Circuits
+- **S4:** BT-401, EX-402 Electrical Machines-I, EX-403 Digital System Design, EX-404 Power Systems-I, EX-405 Control System
 - **S5:** EX-501 Electrical Machines-II, EX-502 Power Electronics, EX-503(C) Renewable Power Generation, EX-504(A) Industrial Electronics
 - **S6:** EX-601 Power Systems-II, EX-602 Microprocessors, EX-603(A) Utilization of Electrical Energy, EX-604(B) IoT
 - **S7:** EX-701 Power System Protection, EX-702(B) HVDC & FACTS, EX-702(C) High Voltage Engg., EX-703(A) Electric & Hybrid Vehicles
@@ -266,7 +266,7 @@ docker pull ghcr.io/aryan-singh19/academy-lms:main
 |---|---|
 | `DATABASE_URL` / `POSTGRES_URL` | Neon connection string (optional; mock store if empty) |
 | `GOOGLE_CLIENT_ID` | Enables Google sign-in |
-| `ADMIN_SECRET`, `ADMIN_EMAILS` | Admin dashboard access |
+| `ADMIN_SECRET` (12+ characters), `ADMIN_EMAILS` | Admin dashboard access |
 | `BLOB_READ_WRITE_TOKEN` | Avatar and solved-PDF uploads (Vercel Blob) |
 | `PORT` | Server port (default `3000`) |
 
@@ -341,6 +341,16 @@ Cut a release:
 ```bash
 git tag v2.0.0 && git push origin v2.0.0
 ```
+
+## 📚 Documentation
+
+| Document | What it covers |
+|---|---|
+| [**The Journey** (PDF, 77 pages)](docs/journey/JOURNEY.pdf) | How the project was planned, built, broken and fixed, from the first page in May 2026 to v2.2 |
+| [**Roadmap & Technical Guide** (PDF, 66 pages)](docs/roadmap/ROADMAP-GUIDE.pdf) | Every subsystem in detail: Vercel hosting, Neon Postgres schema, Google sign-in and sessions, Blob uploads, YouTube embeds, Tailwind + app.css, the curriculum generator, tests, Android/Windows apps, workflows |
+| [`ROADMAP.md`](ROADMAP.md) | Stage-by-stage summary and what comes next |
+| [`docs/play-store/`](docs/play-store/README.md) | Google Play launch kit |
+| [`docs/academy_schema.sql`](docs/academy_schema.sql) | Database schema |
 
 ## 🛣 Roadmap
 

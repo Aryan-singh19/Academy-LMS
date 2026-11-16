@@ -9,6 +9,21 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - More M.Tech specialisations (Communication, Production, Environmental, Data Science).
 - Hand-curated YouTube playlists (currently unit-wise lecture search shelves).
 
+## [2.2.1] - 2026-11-16
+
+### Added
+- **`docs/journey/JOURNEY.pdf`** (77 pages): how Academy LMS was planned, built and shipped, from the first page to v2.2.
+- **`docs/roadmap/ROADMAP-GUIDE.pdf`** (66 pages): the roadmap, plus a technical reference for every part: hosting (Vercel), database (Neon Postgres) and schema, sign-in and sessions, uploads (Vercel Blob), YouTube embedding, CSS, generators, tests, apps and workflows.
+- `ROADMAP.md` and the `tools/docs/` book pipeline (pandoc → HTML → Chromium PDF), with Graphviz figures in `docs/figures/`.
+- Accent colours for the Electrical, Civil and M.Tech programmes.
+
+### Security
+- **Admin authentication hardened.** The shared secret previously accepted the hard-coded strings `admin123` and `admin` even when `ADMIN_SECRET` was set, and could be passed in the URL. The secret is now read only from the `x-admin-secret` header, compared in constant time, and requires a configured `ADMIN_SECRET` of 12+ characters. `admin123` works only against the local in-memory mock store. **Deployments should set a strong `ADMIN_SECRET`.**
+
+### Fixed
+- `docs/academy_schema.sql` was missing the `banned_devices` table used by device bans.
+- README: Electrical semester 3–4 paper names.
+
 ## [2.2.0] - 2026-11-16
 
 ### Added

@@ -1,0 +1,5 @@
+digraph G {
+  rankdir=LR; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=10, color="#93c5fd", fillcolor="#eff6ff"]; edge [fontname="Inter", fontsize=8.5, color="#64748b"];
+  first [label="First visit"]; pick [label="Programme picker\ndegree · branch · semester"]; mine [label="My programme\nonly this semester's subjects", fillcolor="#f0fdf4", color="#86efac"]; browse [label="Browsing mode\nbanner + Back button", fillcolor="#fef3c7", color="#fcd34d"];
+  first -> pick; pick -> mine [label="Set as my programme"]; pick -> browse [label="Just browse"]; mine -> browse [label="tap another S1–S8\nor search hit"]; browse -> mine [label="Back to my semester"]; mine -> pick [label="programme chip"];
+}

@@ -1,0 +1,8 @@
+digraph G {
+  rankdir=LR; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=10, color="#93c5fd", fillcolor="#eff6ff"]; edge [fontname="Inter", fontsize=8.5, color="#64748b"];
+  tag [label="Publish release / push tag v*", fillcolor="#fef3c7", color="#fcd34d"];
+  and [label="android job (ubuntu)\nbundle-android-site.js → Gradle\nsigned release or debug APK"]; win [label="windows job\nbundle-site.js → electron-builder\nNSIS installer + portable EXE"];
+  pub [label="publish job\nsoftprops/action-gh-release\nattach APK + EXEs", fillcolor="#f0fdf4", color="#86efac"];
+  docker [label="docker.yml\nimage → ghcr.io"]; aab [label="play-bundle.yml (manual)\nsigned .aab for Google Play"];
+  tag -> and; tag -> win; and -> pub; win -> pub; tag -> docker [style=dashed]; aab [style="rounded,dashed,filled"];
+}

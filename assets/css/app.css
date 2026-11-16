@@ -1376,6 +1376,9 @@ html[data-branch="IT"] { --branch-accent: #0891b2; }
 html[data-branch="EC"] { --branch-accent: #7c3aed; }
 html[data-branch="ME"] { --branch-accent: #ea580c; }
 html[data-branch="AU"] { --branch-accent: #059669; }
+html[data-branch="EX"] { --branch-accent: #ca8a04; }
+html[data-branch="CE"] { --branch-accent: #b45309; }
+html[data-branch^="MT-"] { --branch-accent: #4f46e5; }
 html[data-branch] .program-chip { border-color: color-mix(in srgb, var(--branch-accent) 45%, transparent); }
 html[data-branch] #coursesNav .course-pill-active { border-color: var(--branch-accent) !important; box-shadow: inset 0 0 0 1px var(--branch-accent); }
 html[data-branch] #topicContentArea h3.text-2xl { color: var(--branch-accent) !important; }
