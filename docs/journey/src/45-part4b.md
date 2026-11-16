@@ -12,6 +12,8 @@ The Windows app is built with Electron, which packages a copy of the Chromium br
 
 `main.js` does four things. It shows a splash window first: frameless, transparent, with the emblem glowing in with a slight bounce, the name and tagline rising beneath it, and a loading bar sweeping underneath. It creates the main window hidden and loads the live site. When the page finishes loading, after at least 2.2 seconds so the animation is never cut off, and at most eight, it shows the main window and closes the splash. And if the live site fails to load, it loads the bundled copy of the site from disk instead, so notes, quizzes and the generated PDFs still work offline. Links to YouTube, the RGPV portal and textbooks open in the student's normal browser rather than inside the app.
 
+![How the Windows app starts.](../figures/desktop-app.svg)
+
 `electron-builder` produces two files: an NSIS installer, which installs the app with a Start menu entry and a desktop shortcut and lets the user choose the folder, and a portable EXE that runs without installing. Both use the Academy LMS emblem as their icon.
 
 ## The Android app
@@ -30,7 +32,7 @@ The Academy LMS logo is a wide image: a glowing graduation cap over a circuit-bo
 
 `release.yml` runs when a version tag such as `v2.2.0` is created, usually by publishing a release on GitHub. It has three jobs. The Android job bundles the site into the app, builds the APK with Gradle, and signs it if the signing key is available as a repository secret. The Windows job copies the site into `desktop/site`, installs Electron and builds both EXEs on a Windows runner. The publish job runs only if both succeed, and attaches the APK, the installer and the portable EXE to the release. A separate `docker.yml` builds a container image for every push and tag and publishes it to the GitHub Container Registry, and `play-bundle.yml`, run by hand, builds the signed Android App Bundle that Google Play requires.
 
-The Docker image exists for people who want to run the whole thing, functions included, on their own machine or a server. The `Dockerfile` installs the production dependencies, copies the site, and runs `server.js`, a small Express server that serves the static files with compression and dispatches `/api/*` requests to the same handler files Vercel uses. With no `DATABASE_URL`, the functions fall back to the in-memory store, so `docker compose up` gives a working site with no configuration at all.
+The Docker image exists for people who want to run the whole thing, functions included, on their own machine or a server. The `Dockerfile` installs the production dependencies, copies the site, and runs `server.js`, a small Express server that serves the static files with compression and passes `/api/*` requests to the same handler files Vercel uses. With no `DATABASE_URL`, the functions fall back to the in-memory store, so `docker compose up` gives a working site with no configuration at all.
 
 # 21. Offline and the Play Store
 
@@ -40,7 +42,9 @@ The first Android app had an obvious gap: without internet it showed Android's "
 
 The app serves the bundle through `WebViewAssetLoader` at `https://appassets.androidplatform.net/assets/site/`, a real HTTPS origin, rather than from a `file://` URL. That matters: `localStorage`, relative links and script loading all behave exactly as they do on the website. If the device is offline when the app starts, or the live site fails to load, the app opens the bundled copy. Pull-to-refresh tries the live site again once a connection returns.
 
-The cost is honest to state. The bundled copy and the live site are different origins, so progress made offline lives in a separate store from progress made online. A student who mostly studies offline is unaffected; one who switches back and forth sees two sets of progress until they sign in, which syncs the online one. Making the two stores reconcile automatically is on the roadmap.
+![How the Android app chooses between the live site and its bundled copy.](../figures/android-app.svg)
+
+The limitation should be stated plainly. The bundled copy and the live site are different origins, so progress made offline lives in a separate store from progress made online. A student who mostly studies offline is unaffected; one who switches back and forth sees two sets of progress until they sign in, which syncs the online one. Making the two stores reconcile automatically is on the roadmap.
 
 ## Android 16
 

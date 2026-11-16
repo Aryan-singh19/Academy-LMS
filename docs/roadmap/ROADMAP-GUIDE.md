@@ -1,6 +1,6 @@
 ---
 title: "Academy LMS: Roadmap and Technical Guide"
-subtitle: "How every part of Academy LMS was planned, built and connected (hosting, database, sign-in, styling, content generation, lectures, tests, apps and release automation), with the roadmap of what was built when and what comes next"
+subtitle: "How Academy LMS was planned and built, how each part of it works, and where it is going next"
 author: "Aryan Singh Chandel"
 affiliation: "B.Tech Computer Science and Engineering, Rustamji Institute of Technology, Gwalior"
 date: "November 2026 · v2.2.1"
@@ -9,13 +9,45 @@ repo: "github.com/Aryan-singh19/Academy-LMS · academy-lms-sepia.vercel.app"
 cover: "../figures/architecture.svg"
 ---
 
-# How to use this guide {.unnumbered}
+# About this guide {.unnumbered}
 
-This guide is the reference companion to *Academy LMS: The Journey*. The journey tells the story of the project in order; this guide explains how each part works today, precisely enough that a new developer can change it safely. It is organised by subsystem, not by date.
+Thank you for taking an interest in Academy LMS. This guide explains, in one place, how the project was built and how it works today. I have written it for three groups of readers:
 
-Part I is the roadmap: every stage of the project from the first page to version 2.2, with what was built, why, and what it taught, followed by the plan ahead. Part II is the system at a glance: the stack, the services, the repository and how to run it. Part III covers the front end: pages, the shared script, state, the study desk, practice, lectures, resources and styling. Part IV covers content: the data formats, the curriculum language and the two generators, with a recipe for adding a subject or a branch. Part V covers the back end: hosting on Vercel, the serverless functions, Neon Postgres and its tables, sign-in, sessions, uploads, moderation and security. Part VI covers the apps and the delivery pipeline: the Android and Windows apps, Docker, every GitHub workflow, testing and quality checks. The appendices list environment variables, npm scripts and a troubleshooting guide.
+- **Students and visitors** who use the site and would like to understand what happens behind it. Part I (the roadmap) and the *In plain terms* boxes at the start of each part are written for you, and assume no programming knowledge.
+- **Developers and contributors** who want to run the project, fix something or add a branch. Parts II to VI describe every component in detail, with the exact files, settings and commands involved.
+- **Teachers and reviewers** who want to evaluate the design and the decisions behind it.
 
-A note on names. The project's database is **Neon**, a hosted PostgreSQL service, not Supabase. Hosting is on **Vercel**. **GitHub** hosts the code, runs the automation (GitHub Actions), stores the release files (GitHub Releases) and the container image (GitHub Container Registry). Lectures are plain **YouTube embeds** in an `<iframe>`, served from the privacy-enhanced `youtube-nocookie.com` domain; there is no wrapper library. Styling is **Tailwind CSS 3**, built ahead of time, plus a hand-written stylesheet.
+The companion book, *Academy LMS: The Journey*, tells the story of the project in the order it happened, including the mistakes. This guide is the reference: it is organised by component rather than by date.
+
+## The project at a glance {.unnumbered}
+
+Academy LMS is a free study portal for students of Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV). It covers seven B.Tech branches across all eight semesters and five M.Tech programmes, with notes, diagrams, quizzes, mock tests, lectures and downloadable study material for every subject.
+
+![What a student does on Academy LMS.](../figures/student-journey.svg)
+
+Behind the pages, a small number of services do the work:
+
+| Service | Role in Academy LMS |
+|---|---|
+| **Vercel** | Hosts the website and runs the small server programs (the API) |
+| **Neon** | Hosted PostgreSQL database that stores accounts, progress and community posts |
+| **Vercel Blob** | Stores files that students upload |
+| **Google Sign-In** | Lets students sign in with their Google account, without a new password |
+| **YouTube** | Plays lectures inside the site through YouTube's standard embedded player |
+| **GitHub** | Holds the source code, builds the Android and Windows apps automatically, and publishes releases |
+
+## How this guide is organised {.unnumbered}
+
+| Part | Topic | Best for |
+|---|---|---|
+| I | Roadmap: what was built, when, and what comes next | Everyone |
+| II | The system at a glance: services, folders, running the project | Developers |
+| III | The front end: the pages, saved progress, the study desk, practice, lectures, styling | Developers |
+| IV | Content: how subjects are written and turned into pages and PDFs | Contributors |
+| V | The back end: server functions, database, sign-in, uploads, moderation, security | Developers |
+| VI | Apps and automation: Android, Windows, releases and quality checks | Developers |
+
+Technical terms are explained when they first appear, and collected in the glossary at the end.
 
 <div class="pagebreak"></div>
 
@@ -25,13 +57,13 @@ What was built, in what order, and what comes next.
 
 # 1. Stages at a glance
 
-```
- Stage 0       Stage 1          Stage 2           Stage 3          Stage 4          Stage 5           Stage 6
- First page →  Study portal  →  Online layer  →   Fix-up week  →   Sem 5–7, apps →  v2: all RGPV  →   v2.1–2.2: CE, EX,
- 13 May 2026   13 May 2026      13–14 May 2026    29 May 2026      Sep 2026         16 Nov 2026       M.Tech, offline, Play
-```
+::: {.callout data-title="In plain terms"}
+Academy LMS started on 13 May 2026 as a single page covering five sixth-semester Computer Science subjects. Within a day it had practice tests, a lecture page and a database. Over the summer it gained sign-in, a community area and a first Android app. In November 2026 it grew to cover every RGPV B.Tech branch and five M.Tech programmes, with Windows and Android apps that also work offline.
+:::
 
-Each stage below lists its steps, the files they touched, and the lesson it left behind. Dates come from the repository history.
+![The seven stages of Academy LMS.](../figures/stages-timeline.svg)
+
+Each stage below lists what was built, the files involved, and the lesson it left behind. All dates come from the project's version history on GitHub.
 
 # 2. Completed stages
 
@@ -75,7 +107,7 @@ Each stage below lists its steps, the files they touched, and the lesson it left
 
 | PR | Fix |
 |---|---|
-| #1 | Postgres parameter typing in the Google sign-in upsert |
+| #1 | Postgres parameter typing in the Google sign-in query |
 | #2 | Vercel Blob client and server SDK versions aligned |
 | #3 | PowerPoint uploads, size-formatting crash, PDF keyword check for uploaded solutions |
 | #4 | Resources page auth bootstrap; Tailwind CDN replaced by a built stylesheet |
@@ -138,6 +170,11 @@ The stack, the services, the repository, and how to run it.
 
 # 4. Stack and services
 
+::: {.callout data-title="In plain terms"}
+The website is made of ordinary web pages that your browser downloads and runs. A few small programs on Vercel's servers (the *API*) save your progress and run the community features, using a database hosted by Neon. The Android and Windows apps show the same website inside an app window, and carry a copy of it for use without internet.
+:::
+
+
 | Layer | Technology | Why |
 |---|---|---|
 | Pages | Plain HTML5, one file per feature | Opens instantly on slow phones; no build step; works from `file://` |
@@ -152,7 +189,7 @@ The stack, the services, the repository, and how to run it.
 | Fallback DB | `api/_lib/mock-db.js`, an in-memory imitation | Site runs with zero configuration |
 | File storage | Vercel Blob | Direct browser uploads with short-lived tokens |
 | Sign-in | Google Identity Services + `google-auth-library` | No passwords to store; verified ID tokens |
-| Lectures | YouTube `<iframe>` embeds on `youtube-nocookie.com` | No wrapper library; privacy-enhanced by default |
+| Lectures | YouTube's standard embedded player (`<iframe>`) on `youtube-nocookie.com` | No extra library needed; privacy-enhanced by default |
 | Local / Docker server | Express 5 + `compression` (`server.js`) | Same API handlers as Vercel, one process |
 | Android app | Native Java WebView shell, AndroidX `WebViewAssetLoader` | Live site online, bundled site offline |
 | Windows app | Electron 33 + electron-builder (NSIS + portable) | Splash, icon, offline fallback |
@@ -251,6 +288,11 @@ Pages, the shared script, state, and every feature a student touches.
 
 # 7. Pages and the shared script
 
+::: {.callout data-title="In plain terms"}
+Everything you see is built in your browser. Your progress, notes and highlights are saved on your own device first, so the site works without an account. If you sign in, a copy is also saved online so it follows you to other devices. Choosing your branch and semester once makes every page show only your subjects.
+:::
+
+
 ## Page lifecycle
 
 Every page follows the same order:
@@ -336,6 +378,8 @@ The desk keeps `viewBranch` and `viewSemester` separately from the stored progra
 
 ![Navigation states.](../figures/navigation.svg)
 
+![The programme picker as a student first sees it.](../figures/programme-picker.png){.screenshot}
+
 ## The programme picker
 
 `openProgramPicker({ firstRun })` builds a modal (`#programPickerModal`) with a degree toggle (B.Tech / M.Tech, filtering branches by `branch.degree`), a *Recent* row, the branch grid, the semester row and a live preview from `getPlanEntries`. *Set as my programme* calls `setProgram`; *Just browse this semester* only changes the view. The first-run picker cannot be dismissed without choosing.
@@ -354,6 +398,9 @@ A topic's HTML comes from `window.topicDetails[unitId][topicId].content` and is 
 Selecting text inside the topic shows `#selectionActionMenu` with *Highlight*, *Remove current*, *Remove last* and *Cancel*. It is hidden with Tailwind's `hidden` class; `app.css` includes `.selection-menu.hidden { display: none; }`, because the menu's own `display: flex` would otherwise override `hidden`.
 
 # 10. Practice (`html/tests.html`, `js/tests.js`)
+
+![The practice page: drills and timed mock exams for the student's semester.](../figures/practice-tests.png){.screenshot}
+
 
 | Feature | How it works |
 |---|---|
@@ -378,7 +425,7 @@ The player is a plain `<iframe>`:
         allowfullscreen></iframe>
 ```
 
-No YouTube IFrame API and no wrapper library are used: the page only displays videos. `normalizeLectureUrl` converts any stored link:
+The page uses YouTube's standard embedded player directly; no additional player library is involved, because the site only needs to display videos, not control them. A small function, `normalizeLectureUrl`, converts any stored YouTube link into the embedded form:
 
 | Input | Embed URL |
 |---|---|
@@ -391,6 +438,8 @@ No YouTube IFrame API and no wrapper library are used: the page only displays vi
 
 The host is `www.youtube-nocookie.com` by default (privacy-enhanced: no tracking cookies until playback) and `www.youtube.com` in *direct* mode, which a toggle switches to when a video refuses to play. *Reload player* blanks and restores the iframe.
 
+![The lecture page: player, playlist drawer and lecture room.](../figures/lectures.png){.screenshot}
+
 ## Library and shelves
 
 `js/lecture-library.js` holds curated entries: `{ type: 'playlist' | 'video', subject, semester, title, channel, url, note }`. Generated subjects get unit-wise *shelves* of YouTube search links built from subject, unit and topic names. `lectureInActiveSemester` scopes the list to the programme.
@@ -400,6 +449,8 @@ The host is `www.youtube-nocookie.com` by default (privacy-enhanced: no tracking
 While a lecture is open, a timer sends a heartbeat (`sendLectureHeartbeat`) and fetches chat for two scopes, `local` (this lecture) and `global` (the lectures page), via `/api/lecture-chat`. It skips a tick if the tab is hidden or a previous request is still running. Messages are posted with `POST /api/lecture-chat`.
 
 # 12. Resources (`html/resources.html`, `js/resources.js`)
+
+![The resource library, filtered to the student's semester.](../figures/resources.png){.screenshot}
 
 `js/resource-library.js` is the manifest: an array of entries such as `{ subject, subjectLabel, type, typeLabel, title, path, extension, branches, semesters, generated }`. Its hand-curated part is rewritten by `organize_resources.js`; its generated part lives between `// <<MULTIBRANCH-RESOURCES:START>>` and `// <<MULTIBRANCH-RESOURCES:END>>`. The page has two scopes, *My semester* (default, `resourceInMyProgram`) and *All*, plus type filters (notes, mock papers, assignments, slides) and search. Signed-in students can also upload, see Chapter 19.
 
@@ -448,6 +499,11 @@ The accent colours the programme chip's border, the active subject pill and topi
 How the curriculum is stored, written and generated, and how to add to it.
 
 # 15. Data formats
+
+::: {.callout data-title="In plain terms"}
+Subjects are written as simple text files that read like revision notes: a subject, its units, and for each topic a short summary and its key terms. A program then turns those files into the topic pages, quizzes, notes PDFs and model papers you see on the site. This is how a small team can cover more than 160 subjects, and how anyone who knows a subject well can correct it without knowing how to program.
+:::
+
 
 ## The outline: `coursesData`
 
@@ -546,6 +602,8 @@ const PLAN = {
 
 `e(id, code)` is a placement. The same `id` may appear in many branches with different codes. An optional `note` on a branch is shown in the programme picker.
 
+![One subject, written once, appears in several branches under each branch's own paper code.](../figures/subject-placement.svg)
+
 ## `references.js`
 
 `{ id: [[title, author], [title, author], [title, author]], … }`. Every generated subject must have an entry.
@@ -555,6 +613,8 @@ const PLAN = {
 `node scripts/build_multibranch_curriculum.js` (or `npm run build:curriculum`, which also runs the study-file generator).
 
 ![Curriculum pipeline.](../figures/curriculum-pipeline.svg)
+
+![The fixed outline of every generated topic page.](../figures/topic-anatomy.svg)
 
 ## Steps
 
@@ -636,9 +696,16 @@ Serverless functions, the database, sign-in, uploads, moderation and security.
 
 # 21. Serverless functions
 
+::: {.callout data-title="In plain terms"}
+When you save progress, post a comment or sign in, your browser sends a short request to a small program running on Vercel. That program checks who you are, stores or fetches the data from the Neon database, and replies. Your password is never involved: Google confirms your identity, and the site keeps only a random session key, stored in a form that cannot be reused even if the database were exposed.
+:::
+
+
 ## How a request is handled
 
 On Vercel, `api/profile.js` becomes `/api/profile`. Each file exports one `async function handler(req, res)`. Locally and in Docker, `server.js` maps `/api/:route` to the same exported handlers, so the code runs unchanged in both places. Express parses JSON bodies up to 15 MB.
+
+![What happens to every request.](../figures/request-lifecycle.svg)
 
 Every handler follows the same order:
 
@@ -654,7 +721,7 @@ Every handler follows the same order:
 | Route | Methods | Purpose | Rate limit (per minute) |
 |---|---|---|---|
 | `/api/app-config` | GET | Google client ID; whether Blob uploads are enabled | — |
-| `/api/auth-google` | POST | Verify Google ID token, upsert student, merge guest, create session | 20 |
+| `/api/auth-google` | POST | Verify Google ID token, create or update the student, merge guest data, create session | 20 |
 | `/api/auth-session` | GET | Return the signed-in student, if any | 80 |
 | `/api/auth-logout` | POST | Delete session, clear cookie | 30 |
 | `/api/profile` | GET, POST | Read profile and stats; save profile and synced state | 90 GET / 45 POST |
@@ -668,7 +735,7 @@ Every handler follows the same order:
 
 ## Rate limiting
 
-`api/_lib/rate-limit.js` keeps a `Map` of buckets keyed by scope and client IP (from `x-forwarded-for`), each with a count and a reset time. It is per function instance, so on Vercel the limit is approximate. The repository's `vercel-neon-setup.md` notes Redis (for example Upstash) as the upgrade path for exact, shared limits.
+`api/_lib/rate-limit.js` keeps a counter per route and per client IP address (from `x-forwarded-for`), each with a count and a reset time. It is per function instance, so on Vercel the limit is approximate. The repository's `vercel-neon-setup.md` notes Redis (for example Upstash) as the upgrade path for exact, shared limits.
 
 # 22. The database
 
@@ -707,7 +774,9 @@ The full schema is `docs/academy_schema.sql`. Run it once in the Neon SQL editor
 | `banned_devices` | Banned guest devices | `device_id` (PK), reason, admin, time |
 | `student_profile_summary` | View: per-student counts for the profile page | — |
 
-Indexes cover every hot path: progress by student and course, attempts and sessions by student and time, comments by topic and time, messages by lecture and scope, uploads by student and kind, sessions by student and expiry, reports by target and status.
+![The main tables and how they relate to a student.](../figures/er-diagram.svg)
+
+Indexes speed up the most frequent queries: progress by student and course, attempts and sessions by student and time, comments by topic and time, messages by lecture and scope, uploads by student and kind, sessions by student and expiry, reports by target and status.
 
 # 23. Sign-in and sessions
 
@@ -716,8 +785,8 @@ Indexes cover every hot path: progress by student and course, attempts and sessi
 1. **Guest.** `shared.js` creates `deviceId` with `crypto.randomUUID()`. The first sync creates a `students` row for it.
 2. **Button.** Google Identity Services is initialised with the client ID from `/api/app-config` and renders the standard button.
 3. **Token.** Google returns an ID token (a signed JWT) to the page, which posts it to `/api/auth-google`.
-4. **Verify.** `OAuth2Client.verifyIdToken({ idToken, audience: GOOGLE_CLIENT_ID })` checks signature, issuer, expiry and audience. Only the verified payload is used: `sub`, `email`, `name`, `picture`.
-5. **Upsert and merge.** The student is found by `google_sub` (or email). If a different guest row exists for this device, its progress, drafts, attempts, sessions, watch events, presence, chat, comments and connections are moved to the account, removing duplicates and self-connections. Each step has its own `try`, so a missing table in an older database cannot abort the merge.
+4. **Verify.** `OAuth2Client.verifyIdToken({ idToken, audience: GOOGLE_CLIENT_ID })` checks signature, issuer, expiry and audience. Only the verified contents of the token are used: `sub`, `email`, `name`, `picture`.
+5. **Create or update, then merge.** The student is found by `google_sub` (or email). If a different guest row exists for this device, its progress, drafts, attempts, sessions, watch events, presence, chat, comments and connections are moved to the account, removing duplicates and self-connections. Each step has its own `try`, so a missing table in an older database cannot abort the merge.
 6. **Session.** A 32-byte random token is set as the cookie `academy_session` (`HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age` 30 days). The database stores only `sha256(token)`, with an expiry and a revocation time.
 7. **Every request.** `getStudentFromSession` reads the cookie, hashes it, and joins the session to the student, checking expiry and bans.
 8. **Logout.** `/api/auth-logout` deletes the session row and expires the cookie.
@@ -774,6 +843,11 @@ The Android and Windows apps, Docker, every workflow, and how changes are checke
 
 # 27. The Android app
 
+::: {.callout data-title="In plain terms"}
+The Android and Windows apps open the same Academy LMS website inside an app window, with their own icon and an animated opening screen. Each app also carries a copy of the study material, so notes and quizzes still open without internet. New versions are built automatically by GitHub whenever a release is published.
+:::
+
+
 ## Project layout
 
 ```
@@ -788,6 +862,8 @@ android/
         ├── java/com/academy/lms/MainActivity.java
         └── res/                  mipmaps (icons), drawable-nodpi (splash logo), values(-v31) (themes)
 ```
+
+![How the Android app decides what to show.](../figures/android-app.svg)
 
 ## `MainActivity`
 
@@ -839,6 +915,8 @@ desktop/
 └── build/icon.png, icon.ico
 ```
 
+![How the Windows app starts.](../figures/desktop-app.svg)
+
 `main.js`:
 
 1. Creates the splash: 460×400, frameless, transparent, always on top, not in the taskbar; shows it on `ready-to-show`.
@@ -852,6 +930,9 @@ desktop/
 electron-builder targets: **NSIS** (`Academy-LMS-Setup-<version>.exe`: choose folder, desktop and Start menu shortcuts, custom installer and uninstaller icons) and **portable** (`Academy-LMS-Portable-<version>.exe`). `npm run dist:win` runs `bundle-site` first.
 
 # 29. Workflows
+
+![One release builds every app.](../figures/release-pipeline.svg)
+
 
 | Workflow | Trigger | What it does |
 |---|---|---|

@@ -4,6 +4,11 @@ The stack, the services, the repository, and how to run it.
 
 # 4. Stack and services
 
+::: {.callout data-title="In plain terms"}
+The website is made of ordinary web pages that your browser downloads and runs. A few small programs on Vercel's servers (the *API*) save your progress and run the community features, using a database hosted by Neon. The Android and Windows apps show the same website inside an app window, and carry a copy of it for use without internet.
+:::
+
+
 | Layer | Technology | Why |
 |---|---|---|
 | Pages | Plain HTML5, one file per feature | Opens instantly on slow phones; no build step; works from `file://` |
@@ -18,7 +23,7 @@ The stack, the services, the repository, and how to run it.
 | Fallback DB | `api/_lib/mock-db.js`, an in-memory imitation | Site runs with zero configuration |
 | File storage | Vercel Blob | Direct browser uploads with short-lived tokens |
 | Sign-in | Google Identity Services + `google-auth-library` | No passwords to store; verified ID tokens |
-| Lectures | YouTube `<iframe>` embeds on `youtube-nocookie.com` | No wrapper library; privacy-enhanced by default |
+| Lectures | YouTube's standard embedded player (`<iframe>`) on `youtube-nocookie.com` | No extra library needed; privacy-enhanced by default |
 | Local / Docker server | Express 5 + `compression` (`server.js`) | Same API handlers as Vercel, one process |
 | Android app | Native Java WebView shell, AndroidX `WebViewAssetLoader` | Live site online, bundled site offline |
 | Windows app | Electron 33 + electron-builder (NSIS + portable) | Splash, icon, offline fallback |

@@ -1,6 +1,6 @@
 ---
 title: "Academy LMS: Roadmap and Technical Guide"
-subtitle: "How every part of Academy LMS was planned, built and connected (hosting, database, sign-in, styling, content generation, lectures, tests, apps and release automation), with the roadmap of what was built when and what comes next"
+subtitle: "How Academy LMS was planned and built, how each part of it works, and where it is going next"
 author: "Aryan Singh Chandel"
 affiliation: "B.Tech Computer Science and Engineering, Rustamji Institute of Technology, Gwalior"
 date: "November 2026 · v2.2.1"
@@ -9,12 +9,44 @@ repo: "github.com/Aryan-singh19/Academy-LMS · academy-lms-sepia.vercel.app"
 cover: "../figures/architecture.svg"
 ---
 
-# How to use this guide {.unnumbered}
+# About this guide {.unnumbered}
 
-This guide is the reference companion to *Academy LMS: The Journey*. The journey tells the story of the project in order; this guide explains how each part works today, precisely enough that a new developer can change it safely. It is organised by subsystem, not by date.
+Thank you for taking an interest in Academy LMS. This guide explains, in one place, how the project was built and how it works today. I have written it for three groups of readers:
 
-Part I is the roadmap: every stage of the project from the first page to version 2.2, with what was built, why, and what it taught, followed by the plan ahead. Part II is the system at a glance: the stack, the services, the repository and how to run it. Part III covers the front end: pages, the shared script, state, the study desk, practice, lectures, resources and styling. Part IV covers content: the data formats, the curriculum language and the two generators, with a recipe for adding a subject or a branch. Part V covers the back end: hosting on Vercel, the serverless functions, Neon Postgres and its tables, sign-in, sessions, uploads, moderation and security. Part VI covers the apps and the delivery pipeline: the Android and Windows apps, Docker, every GitHub workflow, testing and quality checks. The appendices list environment variables, npm scripts and a troubleshooting guide.
+- **Students and visitors** who use the site and would like to understand what happens behind it. Part I (the roadmap) and the *In plain terms* boxes at the start of each part are written for you, and assume no programming knowledge.
+- **Developers and contributors** who want to run the project, fix something or add a branch. Parts II to VI describe every component in detail, with the exact files, settings and commands involved.
+- **Teachers and reviewers** who want to evaluate the design and the decisions behind it.
 
-A note on names. The project's database is **Neon**, a hosted PostgreSQL service, not Supabase. Hosting is on **Vercel**. **GitHub** hosts the code, runs the automation (GitHub Actions), stores the release files (GitHub Releases) and the container image (GitHub Container Registry). Lectures are plain **YouTube embeds** in an `<iframe>`, served from the privacy-enhanced `youtube-nocookie.com` domain; there is no wrapper library. Styling is **Tailwind CSS 3**, built ahead of time, plus a hand-written stylesheet.
+The companion book, *Academy LMS: The Journey*, tells the story of the project in the order it happened, including the mistakes. This guide is the reference: it is organised by component rather than by date.
+
+## The project at a glance {.unnumbered}
+
+Academy LMS is a free study portal for students of Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV). It covers seven B.Tech branches across all eight semesters and five M.Tech programmes, with notes, diagrams, quizzes, mock tests, lectures and downloadable study material for every subject.
+
+![What a student does on Academy LMS.](../figures/student-journey.svg)
+
+Behind the pages, a small number of services do the work:
+
+| Service | Role in Academy LMS |
+|---|---|
+| **Vercel** | Hosts the website and runs the small server programs (the API) |
+| **Neon** | Hosted PostgreSQL database that stores accounts, progress and community posts |
+| **Vercel Blob** | Stores files that students upload |
+| **Google Sign-In** | Lets students sign in with their Google account, without a new password |
+| **YouTube** | Plays lectures inside the site through YouTube's standard embedded player |
+| **GitHub** | Holds the source code, builds the Android and Windows apps automatically, and publishes releases |
+
+## How this guide is organised {.unnumbered}
+
+| Part | Topic | Best for |
+|---|---|---|
+| I | Roadmap: what was built, when, and what comes next | Everyone |
+| II | The system at a glance: services, folders, running the project | Developers |
+| III | The front end: the pages, saved progress, the study desk, practice, lectures, styling | Developers |
+| IV | Content: how subjects are written and turned into pages and PDFs | Contributors |
+| V | The back end: server functions, database, sign-in, uploads, moderation, security | Developers |
+| VI | Apps and automation: Android, Windows, releases and quality checks | Developers |
+
+Technical terms are explained when they first appear, and collected in the glossary at the end.
 
 <div class="pagebreak"></div>

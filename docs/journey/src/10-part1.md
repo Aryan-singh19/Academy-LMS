@@ -24,9 +24,11 @@ The goal I wrote down at the start was narrow on purpose: one web page that cove
 
 That goal shaped everything that followed. "No installation" meant a website, not an app. "No account" meant the progress had to live in the browser. "No build step" meant plain HTML, CSS and JavaScript that could be edited in any text editor and served by any static host. Six months later the project has a curriculum generator, a database, three workflows that build apps, and an optional sign-in, but each of those was added on top of the original promise rather than in place of it. The site still works without an account, still opens without installing anything, and the generated files it serves are still plain JavaScript.
 
+![The path a student takes through Academy LMS today.](../figures/student-journey.svg)
+
 ## From my problem to other people's tool
 
-The second motivation arrived as soon as the first version worked. Classmates asked for the link. Then juniors asked whether the fifth semester could be added, and seniors asked about the seventh. Then a friend in Electronics asked, half joking, whether there was "an ECE version". Within a few months the question had changed from "does this help me revise" to "can this help everyone at RGPV revise".
+The second motivation arrived as soon as the first version worked. Classmates asked for the link. Then juniors asked whether the fifth semester could be added, and seniors asked about the seventh. Then friends in Electronics asked whether there was an ECE version. Within a few months the question had changed from "does this help me revise" to "can this help everyone at RGPV revise".
 
 Those two faces of the project explain most of its design. As a tool for myself, it favours depth over breadth: every topic page is long, every subject has an exam blueprint, and I would rather have five subjects done properly than fifty done badly. As a tool for other people, it favours structure: the content has to be organised by the university's own scheme, the navigation has to stop people getting lost, and the whole thing has to be maintainable by someone other than me. The November rebuild is where the second face finally won enough to change the architecture.
 
@@ -60,15 +62,15 @@ Watching classmates revise taught me that students need four things from a study
 
 ## Five subjects, three files
 
-The first version went up on 13 May 2026 as three files: `index.html`, `app.js` and `data.js`. The page was titled, a little grandly, "Academy LMS — Linear Aesthetic", after the dark, high-contrast look of the Linear issue tracker that I was trying to imitate. It loaded Tailwind from its CDN, configured it inline with a custom colour palette, and loaded Mermaid from jsDelivr to draw diagrams.
+The first version went up on 13 May 2026 as three files: `index.html`, `app.js` and `data.js`. The page was titled "Academy LMS — Linear Aesthetic", after the dark, high-contrast style of the Linear project-management tool that inspired its look. It loaded Tailwind from its CDN, configured it inline with a custom colour palette, and loaded Mermaid from jsDelivr to draw diagrams.
 
-`data.js` held a single array, `coursesData`, with the five sixth-semester subjects. Each course had an id (`cs601`), a code, a title, a jokey description ("Teach machines to think, so you don't have to. Warning: might lead to Skynet."), and a list of units; each unit had a list of topics with an id and a title. Twenty-one topics in total. The content for each topic lived in a second object keyed by unit and topic, so the navigation could load without the content.
+`data.js` held a single array, `coursesData`, with the five sixth-semester subjects. Each course had an id (`cs601`), a code, a title, a short light-hearted description, and a list of units; each unit had a list of topics with an id and a title. Twenty-one topics in total. The content for each topic lived in a second object keyed by unit and topic, so the navigation could load without the content.
 
 `app.js` was about 270 lines. It rendered the subject tabs, the unit sidebar and the topic view, ran Mermaid over any diagram in the content, and kept a set of completed topics in `localStorage`. There was no router, no framework and no build. Opening `index.html` from a folder worked as well as opening it from a server.
 
 ## The lab computer incident
 
-The same afternoon produced the project's most embarrassing commit history. I was working on a college lab machine, and the folder I synchronised to GitHub turned out to be the whole Windows user profile rather than the project folder. Over about sixteen minutes, between 12:38 and 12:54, the tool I was using created 474 commits named "Sync E:/UserProfile/0902CS231028/…", one per file, and pushed them: browser extensions, editor settings and, memorably, `ntuser.dat`, the Windows registry hive of the lab account.
+The same afternoon produced the project's most embarrassing commit history. I was working on a college lab machine, and the folder I synchronised to GitHub turned out to be the whole Windows user profile rather than the project folder. Over about sixteen minutes, between 12:38 and 12:54, the tool I was using created 474 commits named "Sync E:/UserProfile/0902CS231028/…", one per file, and pushed them: browser extensions, editor settings and even `ntuser.dat`, the file in which Windows stores the settings of a user account.
 
 The cleanup came in two steps. A few "Cleanup absolute paths" commits removed the obvious mistakes, and the next substantial commit, "Upgrade study experience and add maintenance workflows", deleted the rest: it shows 122,866 lines removed across 482 files, nearly all of them from the stray profile. The files are gone from the tree, but the commits remain in the history, and anyone who scrolls far enough down the log will find them.
 

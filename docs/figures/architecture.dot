@@ -1,12 +1,14 @@
 digraph G {
-  rankdir=LR; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=10, color="#93c5fd", fillcolor="#eff6ff"]; edge [fontname="Inter", fontsize=8.5, color="#64748b"];
-  subgraph cluster_client { label="Student's browser / Android WebView / Electron"; fontname="Inter"; fontsize=10; style="rounded,dashed"; color="#94a3b8";
-    pages [label="Static pages\nindex.html · html/*.html"]; js [label="Vanilla JS\nshared.js · app.js · tests.js\nlectures.js · resources.js · profile.js"]; data [label="Curriculum data\njs/data.js + 148 lazy\njs/data_<id>.js files"]; ls [label="localStorage\nacademy_lms_state_v4\nacademy-program-v1", fillcolor="#fef3c7", color="#fcd34d"]; }
-  subgraph cluster_vercel { label="Vercel"; fontname="Inter"; fontsize=10; style="rounded"; color="#94a3b8";
-    cdn [label="Static hosting\n(outputDirectory \".\")"]; api [label="Serverless functions\n/api/*.js (Node)"]; blob [label="Vercel Blob\navatars · uploads", fillcolor="#f0fdf4", color="#86efac"]; }
-  neon [label="Neon PostgreSQL\n(serverless driver)", fillcolor="#f0fdf4", color="#86efac"];
-  gis [label="Google Identity\nServices", fillcolor="#fdf2f8", color="#f9a8d4"]; yt [label="YouTube\n(youtube-nocookie embeds)", fillcolor="#fdf2f8", color="#f9a8d4"];
-  pages -> js; js -> data [label="lazy <script>"]; js -> ls [label="every change"];
-  cdn -> pages [label="HTML/CSS/JS/PDF"]; js -> api [label="fetch /api/…"]; api -> neon [label="SQL"]; api -> blob [label="upload tokens"];
-  js -> gis [label="ID token"]; api -> gis [label="verify"]; js -> yt [label="<iframe>"];
+  rankdir=TB; nodesep=0.35; ranksep=0.5; bgcolor="transparent";
+  node [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, color="#93c5fd", fillcolor="#eff6ff", margin="0.18,0.08"]; edge [fontname="Inter", fontsize=10, color="#64748b"];
+  subgraph cluster_client { label="On the student's device (browser, Android app or Windows app)"; fontname="Inter"; fontsize=12; style="rounded,dashed"; color="#94a3b8";
+    pages [label="Pages\nindex.html · html/*.html"]; js [label="Scripts\nshared.js · app.js · tests.js …"]; ls [label="Saved progress\nlocalStorage", fillcolor="#fef3c7", color="#fcd34d"]; }
+  subgraph cluster_vercel { label="Vercel"; fontname="Inter"; fontsize=12; style="rounded"; color="#94a3b8";
+    cdn [label="Website files\n(HTML, CSS, JS, PDFs)"]; api [label="API functions\n/api/*.js"]; }
+  neon [label="Neon PostgreSQL\naccounts · progress · posts", fillcolor="#f0fdf4", color="#86efac"]; blob [label="Vercel Blob\nuploaded files", fillcolor="#f0fdf4", color="#86efac"];
+  gis [label="Google Sign-In", fillcolor="#fdf2f8", color="#f9a8d4"]; yt [label="YouTube player", fillcolor="#fdf2f8", color="#f9a8d4"];
+  pages -> js; js -> ls [label=" saves"]; pages -> cdn [dir=back, label=" downloaded from"];
+  js -> api [label=" requests"]; api -> neon; api -> blob;
+  js -> gis [style=dashed]; js -> yt [style=dashed];
+  {rank=same; cdn; api} {rank=same; neon; blob} gis; yt; ls -> gis [style=invis]; ls -> yt [style=invis];
 }

@@ -4,6 +4,11 @@ The Android and Windows apps, Docker, every workflow, and how changes are checke
 
 # 27. The Android app
 
+::: {.callout data-title="In plain terms"}
+The Android and Windows apps open the same Academy LMS website inside an app window, with their own icon and an animated opening screen. Each app also carries a copy of the study material, so notes and quizzes still open without internet. New versions are built automatically by GitHub whenever a release is published.
+:::
+
+
 ## Project layout
 
 ```
@@ -18,6 +23,8 @@ android/
         ├── java/com/academy/lms/MainActivity.java
         └── res/                  mipmaps (icons), drawable-nodpi (splash logo), values(-v31) (themes)
 ```
+
+![How the Android app decides what to show.](../figures/android-app.svg)
 
 ## `MainActivity`
 
@@ -69,6 +76,8 @@ desktop/
 └── build/icon.png, icon.ico
 ```
 
+![How the Windows app starts.](../figures/desktop-app.svg)
+
 `main.js`:
 
 1. Creates the splash: 460×400, frameless, transparent, always on top, not in the taskbar; shows it on `ready-to-show`.
@@ -82,6 +91,9 @@ desktop/
 electron-builder targets: **NSIS** (`Academy-LMS-Setup-<version>.exe`: choose folder, desktop and Start menu shortcuts, custom installer and uninstaller icons) and **portable** (`Academy-LMS-Portable-<version>.exe`). `npm run dist:win` runs `bundle-site` first.
 
 # 29. Workflows
+
+![One release builds every app.](../figures/release-pipeline.svg)
+
 
 | Workflow | Trigger | What it does |
 |---|---|---|

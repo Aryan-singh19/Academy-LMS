@@ -46,6 +46,8 @@ Every topic in Academy LMS follows the same outline, which grew out of how I rev
 8. **Video lectures and study material**: lecture links, the subject's notes PDF and model paper, the official RGPV portal and standard textbooks.
 9. A short quiz.
 
+![The nine sections of every topic page.](../figures/topic-anatomy.svg)
+
 The hand-written pages from May and September follow this outline loosely; the generated pages from November follow it exactly, because the generator writes it. Keeping the outline fixed has a cost, since some topics deserve a worked derivation rather than a table, but it has a much larger benefit: a student who has read one page knows where everything is on every other page.
 
 ## Diagrams with Mermaid
@@ -64,7 +66,7 @@ That toolbar later caused one of November's bugs. A CSS rule gave the toolbar `d
 
 ## One object, saved on every change
 
-Everything a student does is recorded in a single state object, saved to `localStorage` under the key `academy_lms_state_v4`. Its fields read like a list of the features: `completedTopics`, `quizAttempts`, `notes`, `highlights`, `bookmarks`, `examDrafts`, `practiceSessions`, `recentTopics`, `lastVisited`, the student's name and avatar, a randomly generated `deviceId`, and a `remoteSync` block describing the last cloud sync. The `v4` in the key is a scar from three earlier formats; each change of shape got a new key rather than a migration, which is crude but means an old browser never crashes on a new format.
+Everything a student does is recorded in a single state object, saved to `localStorage` under the key `academy_lms_state_v4`. Its fields read like a list of the features: `completedTopics`, `quizAttempts`, `notes`, `highlights`, `bookmarks`, `examDrafts`, `practiceSessions`, `recentTopics`, `lastVisited`, the student's name and avatar, a randomly generated `deviceId`, and a `remoteSync` block describing the last cloud sync. The `v4` in the key records that the format has changed three times before. Each change used a new key instead of converting old data, which is a simple approach, but it guarantees that a browser holding old data never fails on the new format.
 
 Loading the state is defensive. It reads the stored JSON, merges it over a default object so that missing fields are filled in, generates a device ID if there is none, and, if the stored data cannot be parsed at all, starts fresh rather than leaving the page blank. Saving stamps `updatedAt`, writes the JSON back and dispatches the change event.
 

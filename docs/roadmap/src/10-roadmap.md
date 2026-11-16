@@ -4,13 +4,13 @@ What was built, in what order, and what comes next.
 
 # 1. Stages at a glance
 
-```
- Stage 0       Stage 1          Stage 2           Stage 3          Stage 4          Stage 5           Stage 6
- First page →  Study portal  →  Online layer  →   Fix-up week  →   Sem 5–7, apps →  v2: all RGPV  →   v2.1–2.2: CE, EX,
- 13 May 2026   13 May 2026      13–14 May 2026    29 May 2026      Sep 2026         16 Nov 2026       M.Tech, offline, Play
-```
+::: {.callout data-title="In plain terms"}
+Academy LMS started on 13 May 2026 as a single page covering five sixth-semester Computer Science subjects. Within a day it had practice tests, a lecture page and a database. Over the summer it gained sign-in, a community area and a first Android app. In November 2026 it grew to cover every RGPV B.Tech branch and five M.Tech programmes, with Windows and Android apps that also work offline.
+:::
 
-Each stage below lists its steps, the files they touched, and the lesson it left behind. Dates come from the repository history.
+![The seven stages of Academy LMS.](../figures/stages-timeline.svg)
+
+Each stage below lists what was built, the files involved, and the lesson it left behind. All dates come from the project's version history on GitHub.
 
 # 2. Completed stages
 
@@ -54,7 +54,7 @@ Each stage below lists its steps, the files they touched, and the lesson it left
 
 | PR | Fix |
 |---|---|
-| #1 | Postgres parameter typing in the Google sign-in upsert |
+| #1 | Postgres parameter typing in the Google sign-in query |
 | #2 | Vercel Blob client and server SDK versions aligned |
 | #3 | PowerPoint uploads, size-formatting crash, PDF keyword check for uploaded solutions |
 | #4 | Resources page auth bootstrap; Tailwind CDN replaced by a built stylesheet |

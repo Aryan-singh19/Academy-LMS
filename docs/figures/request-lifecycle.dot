@@ -1,0 +1,5 @@
+digraph G { rankdir=TB; nodesep=0.3; ranksep=0.25; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=14, color="#93c5fd", fillcolor="#eff6ff", margin="0.2,0.1"]; edge [fontname="Inter", fontsize=10, color="#64748b"];
+ b [label="1  Browser sends a request\nfetch('/api/profile')"]; v [label="2  Vercel runs\napi/profile.js"]; m [label="3  Method allowed?\nWithin rate limit?"];
+ s [label="4  Identify the student\nsession cookie or guest ID"]; q [label="5  Query Neon\nwith bound parameters"]; r [label="6  Reply with JSON", fillcolor="#f0fdf4", color="#86efac"];
+ 
+ b->v->m; m->s; s->q->r; }

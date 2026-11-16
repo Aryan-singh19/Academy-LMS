@@ -4,9 +4,16 @@ Serverless functions, the database, sign-in, uploads, moderation and security.
 
 # 21. Serverless functions
 
+::: {.callout data-title="In plain terms"}
+When you save progress, post a comment or sign in, your browser sends a short request to a small program running on Vercel. That program checks who you are, stores or fetches the data from the Neon database, and replies. Your password is never involved: Google confirms your identity, and the site keeps only a random session key, stored in a form that cannot be reused even if the database were exposed.
+:::
+
+
 ## How a request is handled
 
 On Vercel, `api/profile.js` becomes `/api/profile`. Each file exports one `async function handler(req, res)`. Locally and in Docker, `server.js` maps `/api/:route` to the same exported handlers, so the code runs unchanged in both places. Express parses JSON bodies up to 15 MB.
+
+![What happens to every request.](../figures/request-lifecycle.svg)
 
 Every handler follows the same order:
 
@@ -22,7 +29,7 @@ Every handler follows the same order:
 | Route | Methods | Purpose | Rate limit (per minute) |
 |---|---|---|---|
 | `/api/app-config` | GET | Google client ID; whether Blob uploads are enabled | — |
-| `/api/auth-google` | POST | Verify Google ID token, upsert student, merge guest, create session | 20 |
+| `/api/auth-google` | POST | Verify Google ID token, create or update the student, merge guest data, create session | 20 |
 | `/api/auth-session` | GET | Return the signed-in student, if any | 80 |
 | `/api/auth-logout` | POST | Delete session, clear cookie | 30 |
 | `/api/profile` | GET, POST | Read profile and stats; save profile and synced state | 90 GET / 45 POST |
@@ -36,7 +43,7 @@ Every handler follows the same order:
 
 ## Rate limiting
 
-`api/_lib/rate-limit.js` keeps a `Map` of buckets keyed by scope and client IP (from `x-forwarded-for`), each with a count and a reset time. It is per function instance, so on Vercel the limit is approximate. The repository's `vercel-neon-setup.md` notes Redis (for example Upstash) as the upgrade path for exact, shared limits.
+`api/_lib/rate-limit.js` keeps a counter per route and per client IP address (from `x-forwarded-for`), each with a count and a reset time. It is per function instance, so on Vercel the limit is approximate. The repository's `vercel-neon-setup.md` notes Redis (for example Upstash) as the upgrade path for exact, shared limits.
 
 # 22. The database
 
@@ -75,7 +82,9 @@ The full schema is `docs/academy_schema.sql`. Run it once in the Neon SQL editor
 | `banned_devices` | Banned guest devices | `device_id` (PK), reason, admin, time |
 | `student_profile_summary` | View: per-student counts for the profile page | — |
 
-Indexes cover every hot path: progress by student and course, attempts and sessions by student and time, comments by topic and time, messages by lecture and scope, uploads by student and kind, sessions by student and expiry, reports by target and status.
+![The main tables and how they relate to a student.](../figures/er-diagram.svg)
+
+Indexes speed up the most frequent queries: progress by student and course, attempts and sessions by student and time, comments by topic and time, messages by lecture and scope, uploads by student and kind, sessions by student and expiry, reports by target and status.
 
 # 23. Sign-in and sessions
 
@@ -84,8 +93,8 @@ Indexes cover every hot path: progress by student and course, attempts and sessi
 1. **Guest.** `shared.js` creates `deviceId` with `crypto.randomUUID()`. The first sync creates a `students` row for it.
 2. **Button.** Google Identity Services is initialised with the client ID from `/api/app-config` and renders the standard button.
 3. **Token.** Google returns an ID token (a signed JWT) to the page, which posts it to `/api/auth-google`.
-4. **Verify.** `OAuth2Client.verifyIdToken({ idToken, audience: GOOGLE_CLIENT_ID })` checks signature, issuer, expiry and audience. Only the verified payload is used: `sub`, `email`, `name`, `picture`.
-5. **Upsert and merge.** The student is found by `google_sub` (or email). If a different guest row exists for this device, its progress, drafts, attempts, sessions, watch events, presence, chat, comments and connections are moved to the account, removing duplicates and self-connections. Each step has its own `try`, so a missing table in an older database cannot abort the merge.
+4. **Verify.** `OAuth2Client.verifyIdToken({ idToken, audience: GOOGLE_CLIENT_ID })` checks signature, issuer, expiry and audience. Only the verified contents of the token are used: `sub`, `email`, `name`, `picture`.
+5. **Create or update, then merge.** The student is found by `google_sub` (or email). If a different guest row exists for this device, its progress, drafts, attempts, sessions, watch events, presence, chat, comments and connections are moved to the account, removing duplicates and self-connections. Each step has its own `try`, so a missing table in an older database cannot abort the merge.
 6. **Session.** A 32-byte random token is set as the cookie `academy_session` (`HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age` 30 days). The database stores only `sha256(token)`, with an expiry and a revocation time.
 7. **Every request.** `getStudentFromSession` reads the cookie, hashes it, and joins the session to the student, checking expiry and bans.
 8. **Logout.** `/api/auth-logout` deletes the session row and expires the cookie.

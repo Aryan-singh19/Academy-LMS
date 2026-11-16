@@ -4,6 +4,11 @@ Pages, the shared script, state, and every feature a student touches.
 
 # 7. Pages and the shared script
 
+::: {.callout data-title="In plain terms"}
+Everything you see is built in your browser. Your progress, notes and highlights are saved on your own device first, so the site works without an account. If you sign in, a copy is also saved online so it follows you to other devices. Choosing your branch and semester once makes every page show only your subjects.
+:::
+
+
 ## Page lifecycle
 
 Every page follows the same order:
@@ -89,6 +94,8 @@ The desk keeps `viewBranch` and `viewSemester` separately from the stored progra
 
 ![Navigation states.](../figures/navigation.svg)
 
+![The programme picker as a student first sees it.](../figures/programme-picker.png){.screenshot}
+
 ## The programme picker
 
 `openProgramPicker({ firstRun })` builds a modal (`#programPickerModal`) with a degree toggle (B.Tech / M.Tech, filtering branches by `branch.degree`), a *Recent* row, the branch grid, the semester row and a live preview from `getPlanEntries`. *Set as my programme* calls `setProgram`; *Just browse this semester* only changes the view. The first-run picker cannot be dismissed without choosing.
@@ -107,6 +114,9 @@ A topic's HTML comes from `window.topicDetails[unitId][topicId].content` and is 
 Selecting text inside the topic shows `#selectionActionMenu` with *Highlight*, *Remove current*, *Remove last* and *Cancel*. It is hidden with Tailwind's `hidden` class; `app.css` includes `.selection-menu.hidden { display: none; }`, because the menu's own `display: flex` would otherwise override `hidden`.
 
 # 10. Practice (`html/tests.html`, `js/tests.js`)
+
+![The practice page: drills and timed mock exams for the student's semester.](../figures/practice-tests.png){.screenshot}
+
 
 | Feature | How it works |
 |---|---|
@@ -131,7 +141,7 @@ The player is a plain `<iframe>`:
         allowfullscreen></iframe>
 ```
 
-No YouTube IFrame API and no wrapper library are used: the page only displays videos. `normalizeLectureUrl` converts any stored link:
+The page uses YouTube's standard embedded player directly; no additional player library is involved, because the site only needs to display videos, not control them. A small function, `normalizeLectureUrl`, converts any stored YouTube link into the embedded form:
 
 | Input | Embed URL |
 |---|---|
@@ -144,6 +154,8 @@ No YouTube IFrame API and no wrapper library are used: the page only displays vi
 
 The host is `www.youtube-nocookie.com` by default (privacy-enhanced: no tracking cookies until playback) and `www.youtube.com` in *direct* mode, which a toggle switches to when a video refuses to play. *Reload player* blanks and restores the iframe.
 
+![The lecture page: player, playlist drawer and lecture room.](../figures/lectures.png){.screenshot}
+
 ## Library and shelves
 
 `js/lecture-library.js` holds curated entries: `{ type: 'playlist' | 'video', subject, semester, title, channel, url, note }`. Generated subjects get unit-wise *shelves* of YouTube search links built from subject, unit and topic names. `lectureInActiveSemester` scopes the list to the programme.
@@ -153,6 +165,8 @@ The host is `www.youtube-nocookie.com` by default (privacy-enhanced: no tracking
 While a lecture is open, a timer sends a heartbeat (`sendLectureHeartbeat`) and fetches chat for two scopes, `local` (this lecture) and `global` (the lectures page), via `/api/lecture-chat`. It skips a tick if the tab is hidden or a previous request is still running. Messages are posted with `POST /api/lecture-chat`.
 
 # 12. Resources (`html/resources.html`, `js/resources.js`)
+
+![The resource library, filtered to the student's semester.](../figures/resources.png){.screenshot}
 
 `js/resource-library.js` is the manifest: an array of entries such as `{ subject, subjectLabel, type, typeLabel, title, path, extension, branches, semesters, generated }`. Its hand-curated part is rewritten by `organize_resources.js`; its generated part lives between `// <<MULTIBRANCH-RESOURCES:START>>` and `// <<MULTIBRANCH-RESOURCES:END>>`. The page has two scopes, *My semester* (default, `resourceInMyProgram`) and *All*, plus type filters (notes, mock papers, assignments, slides) and search. Signed-in students can also upload, see Chapter 19.
 

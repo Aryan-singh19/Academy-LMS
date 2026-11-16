@@ -53,9 +53,11 @@ The goal I wrote down at the start was narrow on purpose: one web page that cove
 
 That goal shaped everything that followed. "No installation" meant a website, not an app. "No account" meant the progress had to live in the browser. "No build step" meant plain HTML, CSS and JavaScript that could be edited in any text editor and served by any static host. Six months later the project has a curriculum generator, a database, three workflows that build apps, and an optional sign-in, but each of those was added on top of the original promise rather than in place of it. The site still works without an account, still opens without installing anything, and the generated files it serves are still plain JavaScript.
 
+![The path a student takes through Academy LMS today.](../figures/student-journey.svg)
+
 ## From my problem to other people's tool
 
-The second motivation arrived as soon as the first version worked. Classmates asked for the link. Then juniors asked whether the fifth semester could be added, and seniors asked about the seventh. Then a friend in Electronics asked, half joking, whether there was "an ECE version". Within a few months the question had changed from "does this help me revise" to "can this help everyone at RGPV revise".
+The second motivation arrived as soon as the first version worked. Classmates asked for the link. Then juniors asked whether the fifth semester could be added, and seniors asked about the seventh. Then friends in Electronics asked whether there was an ECE version. Within a few months the question had changed from "does this help me revise" to "can this help everyone at RGPV revise".
 
 Those two faces of the project explain most of its design. As a tool for myself, it favours depth over breadth: every topic page is long, every subject has an exam blueprint, and I would rather have five subjects done properly than fifty done badly. As a tool for other people, it favours structure: the content has to be organised by the university's own scheme, the navigation has to stop people getting lost, and the whole thing has to be maintainable by someone other than me. The November rebuild is where the second face finally won enough to change the architecture.
 
@@ -89,15 +91,15 @@ Watching classmates revise taught me that students need four things from a study
 
 ## Five subjects, three files
 
-The first version went up on 13 May 2026 as three files: `index.html`, `app.js` and `data.js`. The page was titled, a little grandly, "Academy LMS — Linear Aesthetic", after the dark, high-contrast look of the Linear issue tracker that I was trying to imitate. It loaded Tailwind from its CDN, configured it inline with a custom colour palette, and loaded Mermaid from jsDelivr to draw diagrams.
+The first version went up on 13 May 2026 as three files: `index.html`, `app.js` and `data.js`. The page was titled "Academy LMS — Linear Aesthetic", after the dark, high-contrast style of the Linear project-management tool that inspired its look. It loaded Tailwind from its CDN, configured it inline with a custom colour palette, and loaded Mermaid from jsDelivr to draw diagrams.
 
-`data.js` held a single array, `coursesData`, with the five sixth-semester subjects. Each course had an id (`cs601`), a code, a title, a jokey description ("Teach machines to think, so you don't have to. Warning: might lead to Skynet."), and a list of units; each unit had a list of topics with an id and a title. Twenty-one topics in total. The content for each topic lived in a second object keyed by unit and topic, so the navigation could load without the content.
+`data.js` held a single array, `coursesData`, with the five sixth-semester subjects. Each course had an id (`cs601`), a code, a title, a short light-hearted description, and a list of units; each unit had a list of topics with an id and a title. Twenty-one topics in total. The content for each topic lived in a second object keyed by unit and topic, so the navigation could load without the content.
 
 `app.js` was about 270 lines. It rendered the subject tabs, the unit sidebar and the topic view, ran Mermaid over any diagram in the content, and kept a set of completed topics in `localStorage`. There was no router, no framework and no build. Opening `index.html` from a folder worked as well as opening it from a server.
 
 ## The lab computer incident
 
-The same afternoon produced the project's most embarrassing commit history. I was working on a college lab machine, and the folder I synchronised to GitHub turned out to be the whole Windows user profile rather than the project folder. Over about sixteen minutes, between 12:38 and 12:54, the tool I was using created 474 commits named "Sync E:/UserProfile/0902CS231028/…", one per file, and pushed them: browser extensions, editor settings and, memorably, `ntuser.dat`, the Windows registry hive of the lab account.
+The same afternoon produced the project's most embarrassing commit history. I was working on a college lab machine, and the folder I synchronised to GitHub turned out to be the whole Windows user profile rather than the project folder. Over about sixteen minutes, between 12:38 and 12:54, the tool I was using created 474 commits named "Sync E:/UserProfile/0902CS231028/…", one per file, and pushed them: browser extensions, editor settings and even `ntuser.dat`, the file in which Windows stores the settings of a user account.
 
 The cleanup came in two steps. A few "Cleanup absolute paths" commits removed the obvious mistakes, and the next substantial commit, "Upgrade study experience and add maintenance workflows", deleted the rest: it shows 122,866 lines removed across 482 files, nearly all of them from the stray profile. The files are gone from the tree, but the commits remain in the history, and anyone who scrolls far enough down the log will find them.
 
@@ -157,6 +159,8 @@ Every topic in Academy LMS follows the same outline, which grew out of how I rev
 8. **Video lectures and study material**: lecture links, the subject's notes PDF and model paper, the official RGPV portal and standard textbooks.
 9. A short quiz.
 
+![The nine sections of every topic page.](../figures/topic-anatomy.svg)
+
 The hand-written pages from May and September follow this outline loosely; the generated pages from November follow it exactly, because the generator writes it. Keeping the outline fixed has a cost, since some topics deserve a worked derivation rather than a table, but it has a much larger benefit: a student who has read one page knows where everything is on every other page.
 
 ## Diagrams with Mermaid
@@ -175,7 +179,7 @@ That toolbar later caused one of November's bugs. A CSS rule gave the toolbar `d
 
 ## One object, saved on every change
 
-Everything a student does is recorded in a single state object, saved to `localStorage` under the key `academy_lms_state_v4`. Its fields read like a list of the features: `completedTopics`, `quizAttempts`, `notes`, `highlights`, `bookmarks`, `examDrafts`, `practiceSessions`, `recentTopics`, `lastVisited`, the student's name and avatar, a randomly generated `deviceId`, and a `remoteSync` block describing the last cloud sync. The `v4` in the key is a scar from three earlier formats; each change of shape got a new key rather than a migration, which is crude but means an old browser never crashes on a new format.
+Everything a student does is recorded in a single state object, saved to `localStorage` under the key `academy_lms_state_v4`. Its fields read like a list of the features: `completedTopics`, `quizAttempts`, `notes`, `highlights`, `bookmarks`, `examDrafts`, `practiceSessions`, `recentTopics`, `lastVisited`, the student's name and avatar, a randomly generated `deviceId`, and a `remoteSync` block describing the last cloud sync. The `v4` in the key records that the format has changed three times before. Each change used a new key instead of converting old data, which is a simple approach, but it guarantees that a browser holding old data never fails on the new format.
 
 Loading the state is defensive. It reads the stored JSON, merges it over a default object so that missing fields are filled in, generates a device ID if there is none, and, if the stored data cannot be parsed at all, starts fresh rather than leaving the page blank. Saving stamps `updatedAt`, writes the JSON back and dispatches the change event.
 
@@ -221,7 +225,7 @@ All three needed a shared place to store data, and the commit "Add Neon-backed s
 
 The `api/` folder holds one file per area: `profile.js` for the student record and state sync, `auth-google.js`, `auth-session.js` and `auth-logout.js` for sign-in, `topic-comments.js`, `lecture-chat.js`, `messages.js` and `social.js` for the community features, `blob-upload.js` for files, `report-user.js` and `admin.js` for moderation, and `app-config.js`, which tells the browser which features the server has switched on. Shared helpers live in `api/_lib/`: `db.js` for queries and sessions, `http.js` for reading bodies, parsing cookies and sending JSON, `rate-limit.js`, `admin-auth.js`, and `mock-db.js`.
 
-Queries are written as tagged template literals: `` sql`SELECT … WHERE device_id = ${deviceId}` ``. The driver turns each interpolated value into a query parameter, so values are never pasted into SQL text. That one convention removes the most common class of database security bug without any effort at the call site. The only place it caught me out was type inference: on 29 May the Google sign-in upsert started failing because Postgres could not infer the type of a parameter used in two places, and the fix was an explicit cast.
+Queries are written as tagged template literals: `` sql`SELECT … WHERE device_id = ${deviceId}` ``. The driver turns each interpolated value into a query parameter, so values are never pasted into SQL text. That one convention removes the most common class of database security bug without any effort at the call site. The one problem it caused was with data types: on 29 May the Google sign-in query (which creates or updates a student record) started failing because Postgres could not infer the type of a parameter used in two places, and the fix was an explicit cast.
 
 ![How the browser, Vercel, Neon, Blob, Google and YouTube fit together.](../figures/architecture.svg)
 
@@ -231,7 +235,7 @@ Over the summer the schema grew to about twenty tables. The heart is `students`:
 
 ## Working without a database
 
-The September commit "enable local & Neon db study workspace without requiring Google OAuth" fixed a problem I had created in May. The site had quietly come to assume that a database was always present. Run it locally without the right environment variables and the profile page failed, sign-in failed, and parts of the study desk showed error states. Anyone who cloned the repository to contribute hit this in the first five minutes.
+The September commit "enable local & Neon db study workspace without requiring Google OAuth" fixed a problem I had created in May. Without my noticing, the site had come to assume that a database was always present. Run it locally without the right environment variables and the profile page failed, sign-in failed, and parts of the study desk showed error states. Anyone who cloned the repository to contribute hit this in the first five minutes.
 
 The fix was `api/_lib/mock-db.js`, about 800 lines that imitate the subset of SQL the functions use against in-memory JavaScript arrays. `getSql()` looks for `DATABASE_URL` (or `POSTGRES_URL`); if it finds one, it returns the Neon driver; if it does not, or if the driver fails to load, it logs a warning and returns the mock. Everything works locally, nothing persists across restarts, and nobody needs a Neon account to try the site. The same fallback is what lets the Docker image and the Windows app start with no configuration at all.
 
@@ -245,7 +249,7 @@ Every visitor is a guest until they choose otherwise. On the first visit, `share
 
 ## Google sign-in
 
-Signing in uses Google Identity Services. The page loads Google's client script, renders the standard "Sign in with Google" button, and receives an *ID token*: a signed JSON Web Token that says which Google account the user is. The browser posts that token to `/api/auth-google`, and the server verifies it with Google's official `google-auth-library`, checking the signature and that the token was issued for this site's client ID. Only the verified payload is trusted: the account's stable `sub`, the email, the name and the picture URL. The site never sees a password and asks for no extra permissions.
+Signing in uses Google Identity Services. The page loads Google's client script, renders the standard "Sign in with Google" button, and receives an *ID token*: a signed JSON Web Token that says which Google account the user is. The browser posts that token to `/api/auth-google`, and the server verifies it with Google's official `google-auth-library`, checking the signature and that the token was issued for this site's client ID. Only the verified contents of the token are trusted: the account's stable `sub`, the email, the name and the picture URL. The site never sees a password and asks for no extra permissions.
 
 ![Sign-in, from guest to session.](../figures/auth-flow.svg)
 
@@ -289,7 +293,7 @@ In November this script nearly destroyed the generated resource library. It rewr
 
 Student uploads go straight from the browser to Vercel Blob, without passing through a function. The page asks `/api/blob-upload` for permission; the function checks that the student is signed in and not banned, and returns a short-lived upload token that allows only certain content types: JPEG, PNG and WebP for avatars, PDF and PowerPoint for study files. The browser uploads to Blob with that token, and when the upload completes, Blob calls the function back to record the file in `student_uploads` with its size and title.
 
-Two of the 29 May fixes came from this path. The browser and server packages of `@vercel/blob` had drifted to different versions, and the browser upload failed with an unhelpful error until they were aligned. And the profile page crashed when it tried to format a file size that was missing, which needed a guard. A third fix in the same batch added an automatic check for uploaded solutions. When a PDF arrives, the function downloads it, extracts its text with `pdf-parse`, and looks for a small set of keywords for the subject: *scope*, *risk*, *milestone* and *budget* for Project Management, and so on, with a generic set (*definition*, *example*, *advantages*) for other subjects. If at least 45% of the keywords appear, the upload is tagged *likely correct*; otherwise it is tagged *needs review* for a moderator. It is a blunt instrument, but it catches the most common bad upload, the wrong file.
+Two of the 29 May fixes came from this path. The browser and server packages of `@vercel/blob` had drifted to different versions, and the browser upload failed with an unhelpful error until they were aligned. And the profile page crashed when it tried to format a file size that was missing, which needed a guard. A third fix in the same batch added an automatic check for uploaded solutions. When a PDF arrives, the function downloads it, extracts its text with `pdf-parse`, and looks for a small set of keywords for the subject: *scope*, *risk*, *milestone* and *budget* for Project Management, and so on, with a generic set (*definition*, *example*, *advantages*) for other subjects. If at least 45% of the keywords appear, the upload is tagged *likely correct*; otherwise it is tagged *needs review* for a moderator. The check is simple, but it reliably catches the most common problem: a student uploading the wrong file.
 
 # 12. Moderation
 
@@ -311,7 +315,7 @@ The lesson is uncomfortable but simple. A convenience added "just for testing" b
 
 Almost every RGPV student learns part of every subject from YouTube. The lectures page exists to make that less chaotic: one place that lists the useful playlists for each subject, plays them without leaving the site, and keeps the chat room for that lecture alongside.
 
-The player is a plain YouTube embed: an `<iframe>` pointed at an `/embed/` URL, with `loading="lazy"`, a strict referrer policy and the usual `allow` list for autoplay, fullscreen and picture-in-picture. There is no wrapper library and no YouTube IFrame API script; the page only needs to show a video, not control it. A small function, `normalizeLectureUrl`, turns whatever link I pasted into an embed URL. A `watch?v=` link becomes `/embed/<id>`, a `youtu.be` short link becomes the same, a link with a `list=` parameter keeps the playlist, and a bare playlist becomes `/embed/videoseries?list=<id>`. Every embed adds `rel=0` so the end screen suggests videos from the same channel rather than anything YouTube likes.
+The player is a plain YouTube embed: an `<iframe>` pointed at an `/embed/` URL, with `loading="lazy"`, a strict referrer policy and the usual `allow` list for autoplay, fullscreen and picture-in-picture. The page uses YouTube's standard player directly, without any additional library, because it only needs to show a video, not control it. A small function, `normalizeLectureUrl`, turns whatever link I pasted into an embed URL. A `watch?v=` link becomes `/embed/<id>`, a `youtu.be` short link becomes the same, a link with a `list=` parameter keeps the playlist, and a bare playlist becomes `/embed/videoseries?list=<id>`. Every embed adds `rel=0` so the end screen suggests videos from the same channel rather than anything YouTube likes.
 
 By default the embed is served from `www.youtube-nocookie.com`, YouTube's privacy-enhanced mode, which does not set tracking cookies until the student actually plays the video. A toggle switches to the normal `www.youtube.com` host, because a few videos refuse to play in privacy mode and some networks block the nocookie domain. When a video still refuses to load, a *reload player* link resets the iframe, which fixes the most common failure: an embed that stalled on a slow connection.
 
@@ -331,7 +335,7 @@ This is the part of version two I am least satisfied with. A search link is hone
 
 On 29 May five pull requests landed from my second GitHub account, each a focused fix found by actually using the site for a week:
 
-1. **Postgres parameter typing in the Google sign-in upsert.** The query used a parameter whose type Postgres could not infer, so sign-in failed for new accounts.
+1. **Postgres parameter typing in the Google sign-in query.** The query used a parameter whose type Postgres could not infer, so sign-in failed for new accounts.
 2. **Vercel Blob SDK versions.** The browser and server halves of the upload library were on different versions, and browser uploads failed.
 3. **Study file uploads, byte formatting and PDF keyword checks.** PowerPoint uploads were rejected by an over-strict content-type check, the profile page crashed on files without a recorded size, and solutions gained the automatic keyword check.
 4. **Resources auth bootstrap, and Tailwind built instead of loaded from a CDN.** The resources page called the session API before the shared script had set up sign-in, and the site was still styled by the Tailwind CDN script.
@@ -371,7 +375,7 @@ Every branch, every semester, and the machinery that made that possible.
 
 # 16. Every branch, every semester
 
-## The request
+## A larger goal
 
 By November the site had fifteen hand-written CSE subjects across three semesters, and the requests had not stopped. Juniors wanted semesters three and four. Friends in IT, Electronics, Mechanical and Automobile wanted their branches. First-year students, who share ten papers across every branch, wanted those. I wrote the goal down in one sentence: every RGPV B.Tech branch, every semester from one to eight, and the M.Tech theory semesters, with every subject at the level of the sixth-semester CSE pages, with papers, questions, study material, lecture links, original references and downloadable PDFs.
 
@@ -379,9 +383,9 @@ That sentence describes about 150 subjects and 3,000 topics. Writing each topic 
 
 ## Working with an AI assistant
 
-Version two was built with an AI coding assistant, Claude, working in the repository under my direction across several long sessions. The repository history records its commits under its own name. I want to be clear about the division of labour, because it shaped the result. I set the goals and the constraints: which branches, which semesters, the sixth-semester CSE pages as the quality bar, keeping the existing CSS, the navigation rules. I tested what came back on my own phone and pushed back when something was wrong. The assistant did the bulk of the writing: the curriculum text, the generator, the navigation code, the workflows, and the first drafts of the documentation.
+Version two was built with the help of an AI coding assistant, Claude, working in the repository under my direction over several long sessions; the version history records its commits under its own name. The division of work was clear. I defined the goals and constraints: which branches and semesters to cover, the sixth-semester CSE pages as the standard of quality, the existing design to be preserved, and the navigation rules. I tested every result on my own phone and asked for corrections where something was wrong. The assistant wrote most of the curriculum text, the generator, the navigation code, the automation and the first drafts of the documentation.
 
-Two things made the collaboration work. First, the work was organised so that its output could be checked mechanically: the generator validates its input, a CI job fails if generated files are stale, and every change was exercised in a headless browser before it was committed. Second, I asked for honesty about limits, and got it. Where the assistant could not verify something, such as the current RGPV scheme for Automobile semesters six to eight, which RGPV does not publish online, it said so, and the app now says so too.
+Two things made the collaboration work. First, the work was organised so that its output could be checked mechanically: the generator validates its input, a CI job fails if generated files are stale, and every change was exercised in a headless browser before it was committed. Second, limitations were stated openly rather than hidden. Where something could not be verified, such as the current RGPV scheme for Automobile semesters six to eight, which RGPV does not publish online, it said so, and the app now says so too.
 
 ## Separating content from code
 
@@ -404,6 +408,8 @@ Fourteen files hold the whole of version two's content: the first year, the comm
 The second input is `scripts/curriculum/plan.js`, which says where subjects appear. It defines the branches, with a name, a short name, an icon, a degree (B.Tech or M.Tech) and an optional note, and for each branch and semester the list of papers as (subject ID, paper code) pairs. The first year is defined once and spread into every B.Tech branch.
 
 This is where the distinction from Chapter 2 between subjects and placements pays off. Data Structures is written once and placed in CSE and IT under different codes. Thermodynamics is written once and placed in Mechanical and Automobile. Strength of Materials appears in Mechanical semester three as ME-304 and in Civil semester three as CE-305. The common papers BT-301 and ES-301 appear in semester three for some branches and semester four for others. Because the progress engine stores progress by subject, a student who switches from Mechanical to Automobile keeps their Thermodynamics progress, and a student who looks at the same subject from two branches sees one set of notes, not two.
+
+![One subject, written once, placed in three branches under their own paper codes.](../figures/subject-placement.svg)
 
 The third input, `references.js`, gives every subject three standard textbooks with authors: Rajput for Thermal Engineering, Bhavikatti for Structural Analysis, Kothari and Nagrath for power systems, Razavi for analog IC design. The generator refuses to run if a subject has no references, if a plan names a subject that does not exist, or if a subject exists but no plan uses it.
 
@@ -433,13 +439,13 @@ The second script, `scripts/build_study_resources.js`, turns the same curriculum
 - **An RGPV-pattern model paper** as a PDF and as Markdown, in two sets. Each set has eight questions, one or two per unit, of which a student attempts five, for seventy marks. Every question has two seven-mark parts, (a) and (b), in the style of recent RGPV papers, and the Markdown version adds a short answer hint for each part. The topics are rotated between the two sets so they test different material. The paper says plainly that it is a practice paper, not an official RGPV paper.
 - **A question bank** in Markdown, unit by unit, with answers.
 
-The PDFs are drawn with `pdfkit` using the DejaVu fonts committed under `scripts/fonts/`, so symbols such as ε, Ω, Δ and ≤ render correctly. The fonts were the most fiddly part, because the default PDF fonts cannot draw most of the symbols engineering subjects use. The PDF creation date is fixed, so regenerating produces byte-identical files and Git sees no change. The script registers every file in the resource library's marked block, which is how 444 new entries appear on the resources page without anyone typing them.
+The PDFs are drawn with `pdfkit` using the DejaVu fonts committed under `scripts/fonts/`, so symbols such as ε, Ω, Δ and ≤ render correctly. The fonts required the most care, because the standard PDF fonts cannot display most of the symbols used in engineering subjects. The PDF creation date is fixed, so regenerating produces byte-identical files and Git sees no change. The script registers every file in the resource library's marked block, which is how 444 new entries appear on the resources page without anyone typing them.
 
 # 18. Navigation that keeps you in your semester
 
 ## The problem
 
-With three semesters of one branch, a row of semester pills was enough. With seven branches, eight semesters and five M.Tech programmes, it was a trap. The problem I described when asking for version two was concrete: a sixth-semester CSE student must not get lost in the eighth semester of IT. With the old navigation, one wrong tap put a student in another semester's subjects with no sign that anything had changed, and the progress numbers silently counted subjects they would never study.
+With three semesters of one branch, a row of semester pills was enough. With seven branches, eight semesters and five M.Tech programmes, it became a real risk. The requirement was clear: a sixth-semester CSE student must never find themselves lost in the eighth semester of IT. With the old navigation, one wrong tap put a student in another semester's subjects with no sign that anything had changed, and the progress numbers silently counted subjects they would never study.
 
 ## My programme
 
@@ -487,6 +493,8 @@ The Windows app is built with Electron, which packages a copy of the Chromium br
 
 `main.js` does four things. It shows a splash window first: frameless, transparent, with the emblem glowing in with a slight bounce, the name and tagline rising beneath it, and a loading bar sweeping underneath. It creates the main window hidden and loads the live site. When the page finishes loading, after at least 2.2 seconds so the animation is never cut off, and at most eight, it shows the main window and closes the splash. And if the live site fails to load, it loads the bundled copy of the site from disk instead, so notes, quizzes and the generated PDFs still work offline. Links to YouTube, the RGPV portal and textbooks open in the student's normal browser rather than inside the app.
 
+![How the Windows app starts.](../figures/desktop-app.svg)
+
 `electron-builder` produces two files: an NSIS installer, which installs the app with a Start menu entry and a desktop shortcut and lets the user choose the folder, and a portable EXE that runs without installing. Both use the Academy LMS emblem as their icon.
 
 ## The Android app
@@ -505,7 +513,7 @@ The Academy LMS logo is a wide image: a glowing graduation cap over a circuit-bo
 
 `release.yml` runs when a version tag such as `v2.2.0` is created, usually by publishing a release on GitHub. It has three jobs. The Android job bundles the site into the app, builds the APK with Gradle, and signs it if the signing key is available as a repository secret. The Windows job copies the site into `desktop/site`, installs Electron and builds both EXEs on a Windows runner. The publish job runs only if both succeed, and attaches the APK, the installer and the portable EXE to the release. A separate `docker.yml` builds a container image for every push and tag and publishes it to the GitHub Container Registry, and `play-bundle.yml`, run by hand, builds the signed Android App Bundle that Google Play requires.
 
-The Docker image exists for people who want to run the whole thing, functions included, on their own machine or a server. The `Dockerfile` installs the production dependencies, copies the site, and runs `server.js`, a small Express server that serves the static files with compression and dispatches `/api/*` requests to the same handler files Vercel uses. With no `DATABASE_URL`, the functions fall back to the in-memory store, so `docker compose up` gives a working site with no configuration at all.
+The Docker image exists for people who want to run the whole thing, functions included, on their own machine or a server. The `Dockerfile` installs the production dependencies, copies the site, and runs `server.js`, a small Express server that serves the static files with compression and passes `/api/*` requests to the same handler files Vercel uses. With no `DATABASE_URL`, the functions fall back to the in-memory store, so `docker compose up` gives a working site with no configuration at all.
 
 # 21. Offline and the Play Store
 
@@ -515,7 +523,9 @@ The first Android app had an obvious gap: without internet it showed Android's "
 
 The app serves the bundle through `WebViewAssetLoader` at `https://appassets.androidplatform.net/assets/site/`, a real HTTPS origin, rather than from a `file://` URL. That matters: `localStorage`, relative links and script loading all behave exactly as they do on the website. If the device is offline when the app starts, or the live site fails to load, the app opens the bundled copy. Pull-to-refresh tries the live site again once a connection returns.
 
-The cost is honest to state. The bundled copy and the live site are different origins, so progress made offline lives in a separate store from progress made online. A student who mostly studies offline is unaffected; one who switches back and forth sees two sets of progress until they sign in, which syncs the online one. Making the two stores reconcile automatically is on the roadmap.
+![How the Android app chooses between the live site and its bundled copy.](../figures/android-app.svg)
+
+The limitation should be stated plainly. The bundled copy and the live site are different origins, so progress made offline lives in a separate store from progress made online. A student who mostly studies offline is unaffected; one who switches back and forth sees two sets of progress until they sign in, which syncs the online one. Making the two stores reconcile automatically is on the roadmap.
 
 ## Android 16
 
@@ -637,7 +647,7 @@ Several of the worst bugs came from assuming that something would always be ther
 
 ## Conveniences that become vulnerabilities
 
-The admin secret that accepted `admin123` even in production is the bug I am least proud of, because it was not complicated. It was a convenience for testing that I never removed, in a repository where anyone could read it. I found it only because writing this book made me read every file again. Reading your own code as a stranger would is the cheapest security review there is.
+The admin secret that accepted `admin123` even in production is the bug I am least proud of, because it was not complicated. It was a convenience for testing that I never removed, in a repository where anyone could read it. I found it only because writing this book made me read every file again. Reading one's own code as a stranger would is the simplest security review available.
 
 ## Being honest about limits
 
@@ -652,7 +662,7 @@ The parts of version two I trust most are the ones that say what they are. The A
 5. **Every default is a navigation decision.** Showing everything is not neutral; it is a choice to make students do the filtering.
 6. **Ship the honest version.** Label generated, unverified and searched content as such.
 7. **Small pull requests, even alone.** A change that can be described in one sentence can be reviewed, reverted and understood a year later.
-8. **Read the code as a stranger.** Especially authentication, especially before a release.
+8. **Review code as a stranger would.** Above all the sign-in and administration code, and above all before a release.
 
 # 26. The project in numbers
 
@@ -691,6 +701,9 @@ The roadmap in the repository is the authoritative list, but the direction is cl
 **Contributions from other students.** The curriculum language was designed so that someone who knows a subject well, but not JavaScript, can improve it by editing a text file and opening a pull request. The first outside contribution of that kind will be the real test of version two.
 
 # Appendix A — Timeline {.unnumbered}
+
+![The project at a glance.](../figures/stages-timeline.svg)
+
 
 | Date | Event |
 |---|---|

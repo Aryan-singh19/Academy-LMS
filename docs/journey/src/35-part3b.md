@@ -4,7 +4,7 @@
 
 Almost every RGPV student learns part of every subject from YouTube. The lectures page exists to make that less chaotic: one place that lists the useful playlists for each subject, plays them without leaving the site, and keeps the chat room for that lecture alongside.
 
-The player is a plain YouTube embed: an `<iframe>` pointed at an `/embed/` URL, with `loading="lazy"`, a strict referrer policy and the usual `allow` list for autoplay, fullscreen and picture-in-picture. There is no wrapper library and no YouTube IFrame API script; the page only needs to show a video, not control it. A small function, `normalizeLectureUrl`, turns whatever link I pasted into an embed URL. A `watch?v=` link becomes `/embed/<id>`, a `youtu.be` short link becomes the same, a link with a `list=` parameter keeps the playlist, and a bare playlist becomes `/embed/videoseries?list=<id>`. Every embed adds `rel=0` so the end screen suggests videos from the same channel rather than anything YouTube likes.
+The player is a plain YouTube embed: an `<iframe>` pointed at an `/embed/` URL, with `loading="lazy"`, a strict referrer policy and the usual `allow` list for autoplay, fullscreen and picture-in-picture. The page uses YouTube's standard player directly, without any additional library, because it only needs to show a video, not control it. A small function, `normalizeLectureUrl`, turns whatever link I pasted into an embed URL. A `watch?v=` link becomes `/embed/<id>`, a `youtu.be` short link becomes the same, a link with a `list=` parameter keeps the playlist, and a bare playlist becomes `/embed/videoseries?list=<id>`. Every embed adds `rel=0` so the end screen suggests videos from the same channel rather than anything YouTube likes.
 
 By default the embed is served from `www.youtube-nocookie.com`, YouTube's privacy-enhanced mode, which does not set tracking cookies until the student actually plays the video. A toggle switches to the normal `www.youtube.com` host, because a few videos refuse to play in privacy mode and some networks block the nocookie domain. When a video still refuses to load, a *reload player* link resets the iframe, which fixes the most common failure: an embed that stalled on a slow connection.
 
@@ -24,7 +24,7 @@ This is the part of version two I am least satisfied with. A search link is hone
 
 On 29 May five pull requests landed from my second GitHub account, each a focused fix found by actually using the site for a week:
 
-1. **Postgres parameter typing in the Google sign-in upsert.** The query used a parameter whose type Postgres could not infer, so sign-in failed for new accounts.
+1. **Postgres parameter typing in the Google sign-in query.** The query used a parameter whose type Postgres could not infer, so sign-in failed for new accounts.
 2. **Vercel Blob SDK versions.** The browser and server halves of the upload library were on different versions, and browser uploads failed.
 3. **Study file uploads, byte formatting and PDF keyword checks.** PowerPoint uploads were rejected by an over-strict content-type check, the profile page crashed on files without a recorded size, and solutions gained the automatic keyword check.
 4. **Resources auth bootstrap, and Tailwind built instead of loaded from a CDN.** The resources page called the session API before the shared script had set up sign-in, and the site was still styled by the Tailwind CDN script.

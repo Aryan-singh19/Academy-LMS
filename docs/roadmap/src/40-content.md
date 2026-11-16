@@ -4,6 +4,11 @@ How the curriculum is stored, written and generated, and how to add to it.
 
 # 15. Data formats
 
+::: {.callout data-title="In plain terms"}
+Subjects are written as simple text files that read like revision notes: a subject, its units, and for each topic a short summary and its key terms. A program then turns those files into the topic pages, quizzes, notes PDFs and model papers you see on the site. This is how a small team can cover more than 160 subjects, and how anyone who knows a subject well can correct it without knowing how to program.
+:::
+
+
 ## The outline: `coursesData`
 
 `js/data.js` defines `const coursesData = [ … ]`. Each course:
@@ -101,6 +106,8 @@ const PLAN = {
 
 `e(id, code)` is a placement. The same `id` may appear in many branches with different codes. An optional `note` on a branch is shown in the programme picker.
 
+![One subject, written once, appears in several branches under each branch's own paper code.](../figures/subject-placement.svg)
+
 ## `references.js`
 
 `{ id: [[title, author], [title, author], [title, author]], … }`. Every generated subject must have an entry.
@@ -110,6 +117,8 @@ const PLAN = {
 `node scripts/build_multibranch_curriculum.js` (or `npm run build:curriculum`, which also runs the study-file generator).
 
 ![Curriculum pipeline.](../figures/curriculum-pipeline.svg)
+
+![The fixed outline of every generated topic page.](../figures/topic-anatomy.svg)
 
 ## Steps
 

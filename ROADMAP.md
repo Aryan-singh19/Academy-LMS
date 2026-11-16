@@ -1,12 +1,8 @@
 # Academy LMS Roadmap
 
-How Academy LMS was built, stage by stage, and what comes next. The full story is in **[`docs/journey/JOURNEY.pdf`](docs/journey/JOURNEY.pdf)** (77 pages). How every part works, including hosting, database, sign-in, CSS, generators, lectures, tests, apps and workflows, is in **[`docs/roadmap/ROADMAP-GUIDE.pdf`](docs/roadmap/ROADMAP-GUIDE.pdf)** (66 pages).
+How Academy LMS was built, stage by stage, and what is planned next. The full story is in **[`docs/journey/JOURNEY.pdf`](docs/journey/JOURNEY.pdf)** (80 pages). How every part works, including hosting, database, sign-in, CSS, generators, lectures, tests, apps and workflows, is in **[`docs/roadmap/ROADMAP-GUIDE.pdf`](docs/roadmap/ROADMAP-GUIDE.pdf)** (77 pages).
 
-```
- Stage 0       Stage 1          Stage 2           Stage 3          Stage 4          Stage 5           Stage 6
- First page →  Study portal  →  Online layer  →   Fix-up week  →   Sem 5–7, apps →  v2: all RGPV  →   CE, EX, M.Tech,
- 13 May 2026   13 May 2026      13–14 May 2026    29 May 2026      Sep 2026         16 Nov 2026       offline, Play kit
-```
+![Academy LMS stages](docs/figures/stages-timeline.svg)
 
 ## ✅ Stage 0 — The first page (13 May 2026)
 | Step | What |
@@ -65,7 +61,6 @@ Five PRs: Postgres typing, Blob SDK alignment, upload fixes + PDF keyword check,
 | High | Curated lecture playlists for generated subjects |
 | High | Google Play release (12 testers × 14 days; kit in `docs/play-store/`) |
 | High | Unit tests (generator, programme API) and a Playwright smoke test in CI |
-| High | Decide on `prettier --check` in `static-site-checks.yml` (currently fails on ~700 files) |
 | Medium | Numerical trainers for every branch; previous-year papers; spaced-repetition flashcards |
 | Medium | Offline/online progress that reconciles automatically |
 | Low | More M.Tech specialisations; code-signed Windows build |

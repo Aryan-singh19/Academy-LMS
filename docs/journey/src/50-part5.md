@@ -20,7 +20,7 @@ Several of the worst bugs came from assuming that something would always be ther
 
 ## Conveniences that become vulnerabilities
 
-The admin secret that accepted `admin123` even in production is the bug I am least proud of, because it was not complicated. It was a convenience for testing that I never removed, in a repository where anyone could read it. I found it only because writing this book made me read every file again. Reading your own code as a stranger would is the cheapest security review there is.
+The admin secret that accepted `admin123` even in production is the bug I am least proud of, because it was not complicated. It was a convenience for testing that I never removed, in a repository where anyone could read it. I found it only because writing this book made me read every file again. Reading one's own code as a stranger would is the simplest security review available.
 
 ## Being honest about limits
 
@@ -35,7 +35,7 @@ The parts of version two I trust most are the ones that say what they are. The A
 5. **Every default is a navigation decision.** Showing everything is not neutral; it is a choice to make students do the filtering.
 6. **Ship the honest version.** Label generated, unverified and searched content as such.
 7. **Small pull requests, even alone.** A change that can be described in one sentence can be reviewed, reverted and understood a year later.
-8. **Read the code as a stranger.** Especially authentication, especially before a release.
+8. **Review code as a stranger would.** Above all the sign-in and administration code, and above all before a release.
 
 # 26. The project in numbers
 
@@ -74,6 +74,9 @@ The roadmap in the repository is the authoritative list, but the direction is cl
 **Contributions from other students.** The curriculum language was designed so that someone who knows a subject well, but not JavaScript, can improve it by editing a text file and opening a pull request. The first outside contribution of that kind will be the real test of version two.
 
 # Appendix A — Timeline {.unnumbered}
+
+![The project at a glance.](../figures/stages-timeline.svg)
+
 
 | Date | Event |
 |---|---|
