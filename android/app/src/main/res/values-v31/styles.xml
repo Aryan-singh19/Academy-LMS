@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.AcademyLMS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#0b0f19</item>
+        <item name="android:navigationBarColor">#0b0f19</item>
+        <item name="android:windowBackground">@color/splash_background</item>
+        <!-- Android 12+ system splash hands over to the animated in-app splash -->
+        <item name="android:windowSplashScreenBackground">@color/splash_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_icon_v31</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/splash_background</item>
+    </style>
+</resources>

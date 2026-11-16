@@ -1,7 +1,7 @@
 {
   "name": "academy-lms-desktop",
   "productName": "Academy LMS",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Academy LMS desktop app for RGPV B.Tech students (all branches, semesters 1-8).",
   "main": "main.js",
   "author": "Aryan Singh Chandel <aryansingh19gh@gmail.com>",
@@ -20,10 +20,14 @@
     "appId": "com.academy.lms",
     "productName": "Academy LMS",
     "directories": {
-      "output": "dist"
+      "output": "dist",
+      "buildResources": "build"
     },
     "files": [
       "main.js",
+      "splash.html",
+      "splash-logo.png",
+      "build/icon.png",
       "site/**/*"
     ],
     "win": {
@@ -31,19 +35,25 @@
         "nsis",
         "portable"
       ],
-      "artifactName": "Academy-LMS-${version}-${arch}-${target}.${ext}"
+      "artifactName": "Academy-LMS-${version}-${arch}-${target}.${ext}",
+      "icon": "build/icon.ico"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
-      "artifactName": "Academy-LMS-Setup-${version}.${ext}"
+      "artifactName": "Academy-LMS-Setup-${version}.${ext}",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "createDesktopShortcut": true,
+      "shortcutName": "Academy LMS"
     },
     "portable": {
       "artifactName": "Academy-LMS-Portable-${version}.${ext}"
     },
     "linux": {
       "target": "AppImage",
-      "category": "Education"
+      "category": "Education",
+      "icon": "build/icon.png"
     }
   }
 }

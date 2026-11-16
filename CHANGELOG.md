@@ -9,6 +9,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - More M.Tech specialisations (Communication, Production, Environmental, Data Science).
 - Hand-curated YouTube playlists (currently unit-wise lecture search shelves).
 
+## [2.1.1] - 2026-11-16
+
+### Added
+- **App icons**: the Academy LMS emblem is now the Android launcher icon (adaptive and round) and the Windows icon for the app, installer, taskbar and desktop shortcut.
+- **Animated launch splash**:
+  - **Android:** the emblem glows in with a bounce and the name and tagline rise in under it, with a loading sweep. It fades into the app once the desk has loaded (shown for at least 2.2 s, at most 7 s). Android 12+ also shows the emblem on the system splash.
+  - **Windows:** a frameless splash window with the same animation stays up until the desk is ready.
+
 ## [2.1.0] - 2026-11-16
 
 ### Added
