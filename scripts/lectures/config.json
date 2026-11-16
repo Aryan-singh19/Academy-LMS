@@ -1,0 +1,16 @@
+{
+  "_about": "Settings for fetch_youtube_lectures.mjs. Channels listed here are preferred when choosing a subject's lecture playlist.",
+  "trustedChannels": [
+    "NPTEL-NOC IITM", "NPTEL", "nptelhrd", "IIT Madras - B.S. Degree Programme", "Gate Smashers", "Neso Academy",
+    "KNOWLEDGE GATE", "Last Moment Tuitions", "Ekeeda", "Easy Engineering Classes", "Sudhakar Atchala",
+    "Jenny's Lectures CS IT", "Abdul Bari", "5 Minutes Engineering", "Dr. Gajendra Purohit", "Engineering Funda",
+    "Tutorials Point", "MIT OpenCourseWare", "Education 4u", "Ravindrababu Ravula", "ALL ABOUT ELECTRONICS",
+    "Dr. Trefor Bazett", "Ali Hajimiri", "Engineering Mechanics by Mahesh", "Mechanical Engineering Concepts",
+    "The Efficient Engineer", "Sabin Mathew", "GATE Wallah - EE, EC, CS & IN", "Unacademy GATE - EE, EC, IN",
+    "Civil Engineering Lectures", "Structural Engineering Lectures", "LEARN AND GROW", "NPTEL IIT Guwahati",
+    "CEC", "Vidya-mitra", "IIT Bombay July 2018", "nptelhrd2"
+  ],
+  "minPlaylistVideos": 8,
+  "maxSearchesPerRun": 95,
+  "matchThreshold": 0.5
+}
