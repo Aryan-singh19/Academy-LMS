@@ -1,0 +1,5 @@
+digraph G { rankdir=TB; nodesep=0.4; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=12, color="#93c5fd", fillcolor="#eff6ff", margin="0.2,0.1"]; edge [fontname="Inter", fontsize=10, color="#64748b"];
+  tag [label="Publish a release on GitHub (tag v*)", fillcolor="#fef3c7", color="#fcd34d"];
+  and [label="Android job\nbundle site → Gradle → APK"]; win [label="Windows job\nbundle site → electron-builder\ninstaller + portable EXE"]; docker [label="Docker job\nimage → ghcr.io"];
+  pub [label="Publish job\nattach APK and EXEs to the release", fillcolor="#f0fdf4", color="#86efac"];
+  tag -> and; tag -> win; tag -> docker [style=dashed]; and -> pub; win -> pub; }

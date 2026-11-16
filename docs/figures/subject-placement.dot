@@ -1,0 +1,5 @@
+digraph G { rankdir=TB; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, color="#93c5fd", fillcolor="#eff6ff"]; edge [fontname="Inter", fontsize=8.5, color="#64748b"];
+ s [label="Subject (written once)\nStrength of Materials\nid: me304", fillcolor="#fef3c7", color="#fcd34d"];
+ p1 [label="Mechanical · Semester 3\nME-304"]; p2 [label="Automobile · Semester 3\nME-304"]; p3 [label="Civil · Semester 3\nCE-305"];
+ pr [label="Progress is stored\nagainst the subject", fillcolor="#f0fdf4", color="#86efac"];
+ s->p1; s->p2; s->p3; s->pr [style=dashed]; }

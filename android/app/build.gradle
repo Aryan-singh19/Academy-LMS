@@ -10,8 +10,8 @@ android {
         applicationId "com.academy.lms"
         minSdk 24
         targetSdk 36
-        versionCode 5
-        versionName "2.2.0"
+        versionCode 6
+        versionName "2.2.1"
     }
 
     // Release signing (Play Store). Supplied by CI secrets or local env vars; absent = unsigned release.

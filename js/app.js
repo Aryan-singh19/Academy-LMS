@@ -794,8 +794,18 @@ function renderTopicContent() {
         <button onclick="openReferenceModal('${ref.url}', '${window.ACADEMY.escapeHtml(ref.title)}')" class="reference-chip">${ref.title}</button>
     `).join('');
 
+    // Topic ids look like "<course>-u<unit>t<topic>"; the lectures page uses "<course>-u<unit>-t<topic>"
+    // for the matching video (and falls back to the subject's first lecture).
+    const topicIdMatch = String(activeTopicId).match(/^(.*)-u(\d+)t(\d+)$/);
+    const lectureHref = topicIdMatch
+        ? `html/lectures.html?subject=${encodeURIComponent(topicIdMatch[1])}&lecture=${encodeURIComponent(`${topicIdMatch[1]}-u${topicIdMatch[2]}-t${topicIdMatch[3]}`)}`
+        : `html/lectures.html?subject=${encodeURIComponent(String(activeUnitId).replace(/-u\d+$/, ''))}`;
+
     contentArea.innerHTML = `
         <div class="content-shell">
+            <a href="${lectureHref}" class="secondary-cta text-sm !py-2 !px-4 font-semibold inline-flex items-center gap-1.5 text-blue-300 hover:text-white mb-6" title="Watch the video lecture for this topic">
+                <span aria-hidden="true">▶</span> Watch lecture for this topic
+            </a>
             <details class="topic-fold" open>
                 <summary class="topic-fold-summary">
                     <span>Core topic notes</span>

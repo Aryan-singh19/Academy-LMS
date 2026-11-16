@@ -1,0 +1,14 @@
+digraph G {
+  rankdir=TB; nodesep=0.35; ranksep=0.5; bgcolor="transparent";
+  node [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, color="#93c5fd", fillcolor="#eff6ff", margin="0.18,0.08"]; edge [fontname="Inter", fontsize=10, color="#64748b"];
+  subgraph cluster_client { label="On the student's device (browser, Android app or Windows app)"; fontname="Inter"; fontsize=12; style="rounded,dashed"; color="#94a3b8";
+    pages [label="Pages\nindex.html · html/*.html"]; js [label="Scripts\nshared.js · app.js · tests.js …"]; ls [label="Saved progress\nlocalStorage", fillcolor="#fef3c7", color="#fcd34d"]; }
+  subgraph cluster_vercel { label="Vercel"; fontname="Inter"; fontsize=12; style="rounded"; color="#94a3b8";
+    cdn [label="Website files\n(HTML, CSS, JS, PDFs)"]; api [label="API functions\n/api/*.js"]; }
+  neon [label="Neon PostgreSQL\naccounts · progress · posts", fillcolor="#f0fdf4", color="#86efac"]; blob [label="Vercel Blob\nuploaded files", fillcolor="#f0fdf4", color="#86efac"];
+  gis [label="Google Sign-In", fillcolor="#fdf2f8", color="#f9a8d4"]; yt [label="YouTube player", fillcolor="#fdf2f8", color="#f9a8d4"];
+  pages -> js; js -> ls [label=" saves"]; pages -> cdn [dir=back, label=" downloaded from"];
+  js -> api [label=" requests"]; api -> neon; api -> blob;
+  js -> gis [style=dashed]; js -> yt [style=dashed];
+  {rank=same; cdn; api} {rank=same; neon; blob} gis; yt; ls -> gis [style=invis]; ls -> yt [style=invis];
+}

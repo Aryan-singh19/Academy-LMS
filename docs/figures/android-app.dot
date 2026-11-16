@@ -1,0 +1,4 @@
+digraph G { rankdir=TB; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=10, color="#93c5fd", fillcolor="#eff6ff"]; edge [fontname="Inter", fontsize=8.5, color="#64748b"];
+ l [label="App starts"]; sp [label="Animated splash\n(at least 2.2 s)"]; n [label="Internet available?", shape=diamond, style=filled, fillcolor="#fef3c7", color="#fcd34d"];
+ on [label="Live site\nacademy-lms-sepia.vercel.app"]; off [label="Bundled copy inside the app\nappassets.androidplatform.net", fillcolor="#f0fdf4", color="#86efac"]; d [label="Study desk"];
+ l->sp->n; n->on [label="yes"]; n->off [label="no"]; on->off [label="page fails to load", style=dashed]; on->d; off->d; }

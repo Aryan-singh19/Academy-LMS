@@ -1,0 +1,9 @@
+digraph G {
+  rankdir=TB; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, color="#93c5fd", fillcolor="#eff6ff"]; edge [fontname="Inter", fontsize=8.5, color="#64748b"];
+  txt [label="scripts/curriculum/*.txt\n(syllabus DSL)", fillcolor="#fef3c7", color="#fcd34d"]; plan [label="plan.js\nbranch → semester → papers", fillcolor="#fef3c7", color="#fcd34d"]; refs [label="references.js\ntextbooks", fillcolor="#fef3c7", color="#fcd34d"];
+  gen [label="build_multibranch_curriculum.js\nparse · validate · render\nseeded MCQs"]; res [label="build_study_resources.js\npdfkit + DejaVu fonts"];
+  dataf [label="js/data_<id>.js\n(topic HTML + quizzes)"]; block [label="js/data.js\n<<MULTIBRANCH>> block\ncoursesData · BRANCHES · branchPlan"];
+  pdfs [label="assets/resources/<id>/\nnotes PDF/MD · model paper\nquestion bank"]; lib [label="js/resource-library.js\n<<MULTIBRANCH-RESOURCES>> block"];
+  ci [label="curriculum.yml\nrebuild + git diff --exit-code", fillcolor="#f0fdf4", color="#86efac"];
+  txt -> gen; plan -> gen; refs -> gen; gen -> dataf; gen -> block; gen -> res; res -> pdfs; res -> lib; dataf -> ci [style=dashed]; lib -> ci [style=dashed];
+}

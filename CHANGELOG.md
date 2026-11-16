@@ -3,11 +3,38 @@
 All notable changes to Academy LMS are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [Unreleased] - 2026-11-17
+
+### Added
+- **Real lectures added for all 148 subjects and all 2,960 topics** (`scripts/lectures/found.json`, built by `build_from_found.mjs`): a full-course playlist per subject plus unit and topic videos from RGPV channels, NPTEL, Neso Academy, Engineering Funda, MIT OCW and others. No API key needed.
+- **Optional YouTube API fetcher.** `scripts/lectures/fetch_youtube_lectures.mjs` uses the YouTube Data API to pick a full-course playlist for each of the 148 subjects without a curated shelf (trusted channels first), keeps only public and embeddable videos, and matches each of their topics to its own video (or its unit's lecture). Results go to `js/lecture-library-auto.js`, with coverage in `scripts/lectures/REPORT.md`. The Lectures page shows them like the curated CSE playlists; units without a video keep the YouTube search shelf.
+- **Watch lecture for this topic** button on every topic page.
+- `Lectures` GitHub workflow (feature branch only): self-test with a mock API, then fetch and commit the results. Needs a `YOUTUBE_API_KEY` secret; see `scripts/lectures/README.md`.
+- Journey (80 pages) and Roadmap & Technical Guide (77 pages) PDFs in `docs/`.
+
+### Removed
+- Prettier formatting check from `static-site-checks.yml`.
+
 ## [Unreleased]
 
 ### Planned
 - More M.Tech specialisations (Communication, Production, Environmental, Data Science).
 - Hand-curated YouTube playlists (currently unit-wise lecture search shelves).
+
+## [2.2.1] - 2026-11-16
+
+### Added
+- **`docs/journey/JOURNEY.md`**: how Academy LMS was planned, built and shipped, from the first page to v2.2.
+- **`docs/roadmap/ROADMAP-GUIDE.md`**: the roadmap, plus a technical reference for every part: hosting (Vercel), database (Neon Postgres) and schema, sign-in and sessions, uploads (Vercel Blob), YouTube embedding, CSS, generators, tests, apps and workflows.
+- `ROADMAP.md` and the `tools/docs/` book pipeline (pandoc → HTML → Chromium PDF), with Graphviz figures in `docs/figures/`.
+- Accent colours for the Electrical, Civil and M.Tech programmes.
+
+### Security
+- **Admin authentication hardened.** The shared secret previously accepted the hard-coded strings `admin123` and `admin` even when `ADMIN_SECRET` was set, and could be passed in the URL. The secret is now read only from the `x-admin-secret` header, compared in constant time, and requires a configured `ADMIN_SECRET` of 12+ characters. `admin123` works only against the local in-memory mock store. **Deployments should set a strong `ADMIN_SECRET`.**
+
+### Fixed
+- `docs/academy_schema.sql` was missing the `banned_devices` table used by device bans.
+- README: Electrical semester 3–4 paper names.
 
 ## [2.2.0] - 2026-11-16
 

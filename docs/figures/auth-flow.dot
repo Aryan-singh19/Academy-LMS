@@ -1,0 +1,6 @@
+digraph G {
+  rankdir=TB; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=10, color="#93c5fd", fillcolor="#eff6ff"]; edge [fontname="Inter", fontsize=8.5, color="#64748b"];
+  a [label="First visit: device ID created\nguest student row (by device_id)"]; b [label="\"Sign in with Google\" button\n(Google Identity Services)"]; c [label="POST /api/auth-google\n{ credential: ID token }"]; d [label="google-auth-library\nverifyIdToken(audience = GOOGLE_CLIENT_ID)"];
+  e [label="Upsert student by google_sub\nmerge the guest's progress, attempts,\nmessages and connections into it"]; f [label="Random 32-byte token → HttpOnly cookie\nacademy_session; only its SHA-256\nis stored in student_sessions", fillcolor="#f0fdf4", color="#86efac"]; g [label="Every API call: cookie → hash →\nsession row → student", fillcolor="#f0fdf4", color="#86efac"];
+  a -> b -> c -> d -> e -> f -> g;
+}

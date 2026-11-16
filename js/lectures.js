@@ -83,13 +83,20 @@ const ALL_LECTURE_SUBJECTS = window.ACADEMY.getSemestersFor(LECTURE_BRANCH).flat
     })
 );
 
-// Unit-wise YouTube shelves for subjects that do not have hand-curated playlists yet.
-(function addGeneratedLectureShelves() {
-    const curated = new Set((window.lectureLibrary || []).map((item) => item.subject));
+// Lectures for subjects without a hand-curated shelf come from js/lecture-library-auto.js
+// (real, embeddable YouTube videos matched to each topic by scripts/lectures/fetch_youtube_lectures.mjs).
+// Units that still have no video keep a YouTube search shelf.
+(function addAutoAndSearchShelves() {
+    const library = (window.lectureLibrary = window.lectureLibrary || []);
+    const curated = new Set(library.map((item) => item.subject));
+    const auto = (window.lectureLibraryAuto || []).filter((item) => !curated.has(item.subject));
+    library.push(...auto);
+    const unitsWithVideos = new Set(auto.filter((item) => item.unit).map((item) => `${item.subject}#${item.unit}`));
     (window.coursesData || []).filter((course) => course.generated && !curated.has(course.id)).forEach((course) => {
         course.units.forEach((unit) => {
+            if (unitsWithVideos.has(`${course.id}#${unit.unitNumber}`)) return;
             const query = `${course.title} ${unit.title} lecture`;
-            (window.lectureLibrary = window.lectureLibrary || []).push({
+            library.push({
                 semester: course.semester,
                 subject: course.id,
                 subjectCode: course.code,
