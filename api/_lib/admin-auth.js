@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const { getStudentFromSession } = require('./db');
 
 const BUILT_IN_ADMIN_EMAILS = new Set([
@@ -21,7 +22,24 @@ function isEmailAdmin(email) {
 }
 
 function getAdminSecret(req) {
-    return String(req.headers['x-admin-secret'] || req.query.secret || '').trim();
+    // header only: a secret in the query string ends up in access logs and browser history
+    return String(req.headers['x-admin-secret'] || '').trim();
+}
+
+// The secret fallback is only enabled when ADMIN_SECRET is configured (12+ characters).
+// Local development without a database (in-memory mock store) accepts 'admin123'.
+function getConfiguredSecret() {
+    const configured = String(process.env.ADMIN_SECRET || '').trim();
+    if (configured.length >= 12) return configured;
+    const usingMockStore = !(process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.STORAGE_URL);
+    return usingMockStore ? 'admin123' : '';
+}
+
+function secretsMatch(provided, expected) {
+    if (!provided || !expected) return false;
+    const a = Buffer.from(provided);
+    const b = Buffer.from(expected);
+    return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
 
 function getAdminEmailHeader(req) {
@@ -30,7 +48,7 @@ function getAdminEmailHeader(req) {
 
 async function authenticateAdmin(req, sql) {
     const allowed = getAllowedAdminEmails();
-    const configuredSecret = String(process.env.ADMIN_SECRET || 'admin123').trim();
+    const configuredSecret = getConfiguredSecret();
 
     // 1. Direct session check (logged in with admin Google account)
     const sessionStudent = await getStudentFromSession(req, sql);
@@ -50,28 +68,13 @@ async function authenticateAdmin(req, sql) {
     const headerEmail = getAdminEmailHeader(req);
     const providedSecret = getAdminSecret(req);
 
-    const isSecretValid = Boolean(
-        providedSecret && (
-            providedSecret === configuredSecret ||
-            providedSecret === 'admin123' ||
-            providedSecret === 'admin'
-        )
-    );
+    const isSecretValid = secretsMatch(providedSecret, configuredSecret);
 
     if (isSecretValid) {
-        if (headerEmail && allowed.has(headerEmail)) {
-            return {
-                ok: true,
-                adminEmail: headerEmail,
-                student: null,
-                mode: 'secret'
-            };
-        }
-        // If valid secret is provided but no header email, pick first allowed admin email
-        const fallbackEmail = (headerEmail && allowed.has(headerEmail)) ? headerEmail : (Array.from(allowed)[0] || 'admin@academylms.local');
+        const adminEmail = (headerEmail && allowed.has(headerEmail)) ? headerEmail : (Array.from(allowed)[0] || 'admin@academylms.local');
         return {
             ok: true,
-            adminEmail: fallbackEmail,
+            adminEmail,
             student: null,
             mode: 'secret'
         };

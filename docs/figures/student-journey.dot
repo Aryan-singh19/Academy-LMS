@@ -1,0 +1,6 @@
+digraph G { rankdir=TB; nodesep=0.3; ranksep=0.25; bgcolor="transparent"; node [shape=box, style="rounded,filled", fontname="Inter", fontsize=14, color="#93c5fd", fillcolor="#eff6ff", margin="0.2,0.1"]; edge [fontname="Inter", fontsize=10, color="#64748b"];
+ a [label="1  Open the site or the app"]; b [label="2  Choose degree, branch, semester"]; c [label="3  Read a topic\nnotes · diagram · exam tips"];
+ d [label="4  Answer the topic quiz"]; e [label="5  Practise\ndrills · mock tests · flashcards"]; f [label="6  Download notes PDF\nand model paper"];
+ g [label="Optional: sign in to keep progress on every device", fillcolor="#f0fdf4", color="#86efac"];
+ 
+ a->b->c; c->d [constraint=true]; d->e->f; f->g [style=dashed]; }

@@ -1,0 +1,5 @@
+digraph G { rankdir=LR; bgcolor="transparent"; node [shape=record, fontname="Inter", fontsize=9, color="#93c5fd", style=filled, fillcolor="#eff6ff"]; edge [color="#64748b", arrowhead=crow, arrowtail=none, dir=both, arrowsize=0.6];
+ st [label="{students|id (PK)\ldevice_id\lgoogle_sub\lemail\ldisplay_name\lis_banned\l}", fillcolor="#fef3c7", color="#fcd34d"];
+ se [label="{student_sessions|session_token_hash\lexpires_at\l}"]; tp [label="{student_topic_progress|course_id\ltopic_id\l}"]; qa [label="{quiz_attempts}"]; ps [label="{practice_sessions}"]; sn [label="{student_state_snapshots|payload (JSONB)\l}"];
+ tc [label="{topic_comments|topic_id\l}"]; lm [label="{lecture_messages|lecture_key · scope\l}"]; lp [label="{lecture_presence}"]; dm [label="{direct_messages}"]; sc [label="{student_connections|status\l}"]; up [label="{student_uploads|blob url · kind\l}"]; rp [label="{student_reports|status\l}"]; bd [label="{banned_devices|device_id (PK)\l}", fillcolor="#fee2e2", color="#fca5a5"];
+ st->se; st->tp; st->qa; st->ps; st->sn; st->tc; st->lm; st->lp; st->dm; st->sc; st->up; st->rp; }

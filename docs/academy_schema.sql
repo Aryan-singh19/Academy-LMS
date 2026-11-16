@@ -238,6 +238,14 @@ CREATE TABLE IF NOT EXISTS student_state_snapshots (
     synced_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+-- Devices banned by an administrator (abusive guests who never sign in).
+CREATE TABLE IF NOT EXISTS banned_devices (
+    device_id TEXT PRIMARY KEY,
+    banned_reason TEXT DEFAULT '',
+    banned_by_admin TEXT DEFAULT '',
+    banned_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
 CREATE INDEX IF NOT EXISTS idx_topic_progress_student_course ON student_topic_progress (student_id, course_id);
 CREATE INDEX IF NOT EXISTS idx_quiz_attempts_student_time ON quiz_attempts (student_id, attempted_at DESC);
 CREATE INDEX IF NOT EXISTS idx_practice_sessions_student_time ON practice_sessions (student_id, finished_at DESC);
