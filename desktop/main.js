@@ -8,6 +8,29 @@ const path = require('path');
 
 const APP_URL = process.env.ACADEMY_URL || 'https://academy-lms-sepia.vercel.app/';
 const OFFLINE_INDEX = path.join(__dirname, 'site', 'index.html');
+const ICON = path.join(__dirname, 'build', 'icon.png');
+const SPLASH_MIN_MS = 2200;
+const SPLASH_MAX_MS = 8000;
+
+function createSplash() {
+    const splash = new BrowserWindow({
+        width: 460,
+        height: 400,
+        frame: false,
+        transparent: true,
+        resizable: false,
+        movable: true,
+        alwaysOnTop: true,
+        skipTaskbar: true,
+        show: false,
+        center: true,
+        icon: ICON,
+        webPreferences: { contextIsolation: true, sandbox: true }
+    });
+    splash.loadFile(path.join(__dirname, 'splash.html'));
+    splash.once('ready-to-show', () => splash.show());
+    return splash;
+}
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -16,6 +39,8 @@ function createWindow() {
         minWidth: 960,
         minHeight: 640,
         title: 'Academy LMS',
+        icon: ICON,
+        show: false,
         backgroundColor: '#eef4ff',
         autoHideMenuBar: true,
         webPreferences: {
@@ -36,6 +61,23 @@ function createWindow() {
         if (/^https?:/i.test(url)) shell.openExternal(url);
         return { action: 'deny' };
     });
+
+    // keep the animated splash up until the desk has loaded (at least SPLASH_MIN_MS, at most SPLASH_MAX_MS)
+    const splash = createSplash();
+    const shownAt = Date.now();
+    let revealed = false;
+    const reveal = () => {
+        if (revealed) return;
+        revealed = true;
+        const wait = Math.max(0, SPLASH_MIN_MS - (Date.now() - shownAt));
+        setTimeout(() => {
+            win.show();
+            win.focus();
+            if (!splash.isDestroyed()) splash.destroy();
+        }, wait);
+    };
+    win.webContents.on('did-finish-load', reveal);
+    setTimeout(reveal, SPLASH_MAX_MS);
 
     win.loadURL(APP_URL);
 }
