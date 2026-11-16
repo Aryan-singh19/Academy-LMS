@@ -354,7 +354,7 @@ git tag v2.0.0 && git push origin v2.0.0
 - [ ] Solved numericals and branch-specific trainers (thermo cycles, beam SFD/BMD, DSP filters)
 - [ ] Previous-year question links per subject
 - [ ] Offline-first PWA with background sync
-- [ ] Signed Windows build and Play Store listing
+- [ ] Code-signed Windows build
 
 Suggestions are welcome as [issues](https://github.com/Aryan-singh19/Academy-LMS/issues).
 
