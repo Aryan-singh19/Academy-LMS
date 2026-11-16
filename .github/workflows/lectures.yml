@@ -1,8 +1,8 @@
-# Finds real, embeddable YouTube lectures for every subject and topic without a curated shelf
-# and commits js/lecture-library-auto.js, scripts/lectures/REPORT.md and the API cache
-# to the feature branch it runs on (never to main; the pull request carries them upstream).
+# Checks that every topic has a YouTube lecture (scripts/lectures/found.json). Optionally, with an API
+# key, also runs the YouTube Data API fetcher and commits its separate results
+# (scripts/lectures/api-results.js, REPORT-api.md) to the feature branch, never to main.
 #
-# Needs the repository secret YOUTUBE_API_KEY (or YOUTUBE_API_KEYS: several keys from different
+# The optional fetch needs the repository secret YOUTUBE_API_KEY (or YOUTUBE_API_KEYS: several keys from different
 # Google Cloud projects, comma-separated). One key covers about 95 subjects a day; the run resumes
 # from cache, so re-run it the next day until REPORT.md shows no "pending" subjects.
 name: Lectures
@@ -14,6 +14,8 @@ on:
     paths:
       - scripts/lectures/fetch_youtube_lectures.mjs
       - scripts/lectures/config.json
+      - scripts/lectures/found.json
+      - scripts/lectures/build_from_found.mjs
       - .github/workflows/lectures.yml
 
 permissions:
@@ -32,25 +34,31 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Self-test (mock YouTube API)
+      - name: Tests (every topic has a lecture; fetcher against a mock API)
         run: node --test scripts/lectures/fetch_youtube_lectures.test.mjs
       - name: Check for an API key
+        id: key
         env:
           KEY1: ${{ secrets.YOUTUBE_API_KEY }}
           KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
         run: |
           if [ -z "$KEY1$KEYS" ]; then
-            echo "::error::Add a YOUTUBE_API_KEY repository secret (see scripts/lectures/README.md), then re-run this workflow."
-            exit 1
+            echo "::notice::No YOUTUBE_API_KEY secret, so the optional API fetch is skipped. The site already uses scripts/lectures/found.json."
+            echo "has=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has=true" >> "$GITHUB_OUTPUT"
           fi
       - name: Fetch lectures
+        if: steps.key.outputs.has == 'true'
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
         run: node scripts/lectures/fetch_youtube_lectures.mjs
       - name: Coverage report
+        if: steps.key.outputs.has == 'true'
         run: cat scripts/lectures/REPORT-api.md >> "$GITHUB_STEP_SUMMARY"
       - name: Commit results to this branch
+        if: steps.key.outputs.has == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
