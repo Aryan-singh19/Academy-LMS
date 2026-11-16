@@ -1,0 +1,60 @@
+# Finds real, embeddable YouTube lectures for every subject and topic without a curated shelf
+# and commits js/lecture-library-auto.js, scripts/lectures/REPORT.md and the API cache
+# to the feature branch it runs on (never to main; the pull request carries them upstream).
+#
+# Needs the repository secret YOUTUBE_API_KEY (or YOUTUBE_API_KEYS: several keys from different
+# Google Cloud projects, comma-separated). One key covers about 95 subjects a day; the run resumes
+# from cache, so re-run it the next day until REPORT.md shows no "pending" subjects.
+name: Lectures
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feat/rgpv-all-branches-v2]
+    paths:
+      - scripts/lectures/fetch_youtube_lectures.mjs
+      - scripts/lectures/config.json
+      - .github/workflows/lectures.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lectures-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    if: github.ref == 'refs/heads/feat/rgpv-all-branches-v2'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Self-test (mock YouTube API)
+        run: node --test scripts/lectures/fetch_youtube_lectures.test.mjs
+      - name: Check for an API key
+        env:
+          KEY1: ${{ secrets.YOUTUBE_API_KEY }}
+          KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          if [ -z "$KEY1$KEYS" ]; then
+            echo "::error::Add a YOUTUBE_API_KEY repository secret (see scripts/lectures/README.md), then re-run this workflow."
+            exit 1
+          fi
+      - name: Fetch lectures
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: node scripts/lectures/fetch_youtube_lectures.mjs
+      - name: Coverage report
+        run: cat scripts/lectures/REPORT.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit results to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/lecture-library-auto.js scripts/lectures/REPORT.md scripts/lectures/cache.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "lectures: update YouTube lecture library"
+          git push origin HEAD:feat/rgpv-all-branches-v2
