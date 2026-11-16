@@ -11,3 +11,5 @@ node_modules/
 vercel.env
 vercel-import.env
 android/app/src/main/assets/site/
+docs/journey/*.pdf
+docs/roadmap/*.pdf

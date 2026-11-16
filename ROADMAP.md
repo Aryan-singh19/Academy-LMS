@@ -1,6 +1,6 @@
 # Academy LMS Roadmap
 
-How Academy LMS was built, stage by stage, and what is planned next. The full story is in **[`docs/journey/JOURNEY.pdf`](docs/journey/JOURNEY.pdf)** (80 pages). How every part works, including hosting, database, sign-in, CSS, generators, lectures, tests, apps and workflows, is in **[`docs/roadmap/ROADMAP-GUIDE.pdf`](docs/roadmap/ROADMAP-GUIDE.pdf)** (77 pages).
+How Academy LMS was built, stage by stage, and what is planned next. The full story is in **[`docs/journey/JOURNEY.md`](docs/journey/JOURNEY.md)**. How every part works, including hosting, database, sign-in, CSS, generators, lectures, tests, apps and workflows, is in **[`docs/roadmap/ROADMAP-GUIDE.md`](docs/roadmap/ROADMAP-GUIDE.md)**.
 
 ![Academy LMS stages](docs/figures/stages-timeline.svg)
 
@@ -65,4 +65,4 @@ Five PRs: Postgres typing, Blob SDK alignment, upload fixes + PDF keyword check,
 | Medium | Offline/online progress that reconciles automatically |
 | Low | More M.Tech specialisations; code-signed Windows build |
 
-Rebuild the PDFs with `python3 tools/docs/build_docs.py` (needs pandoc, Graphviz and Playwright).
+Build PDF versions with `python3 tools/docs/build_docs.py` (needs pandoc, Graphviz and Playwright).

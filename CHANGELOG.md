@@ -12,8 +12,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 ## [2.2.1] - 2026-11-16
 
 ### Added
-- **`docs/journey/JOURNEY.pdf`** (80 pages): how Academy LMS was planned, built and shipped, from the first page to v2.2.
-- **`docs/roadmap/ROADMAP-GUIDE.pdf`** (77 pages): the roadmap, plus a technical reference for every part: hosting (Vercel), database (Neon Postgres) and schema, sign-in and sessions, uploads (Vercel Blob), YouTube embedding, CSS, generators, tests, apps and workflows.
+- **`docs/journey/JOURNEY.md`**: how Academy LMS was planned, built and shipped, from the first page to v2.2.
+- **`docs/roadmap/ROADMAP-GUIDE.md`**: the roadmap, plus a technical reference for every part: hosting (Vercel), database (Neon Postgres) and schema, sign-in and sessions, uploads (Vercel Blob), YouTube embedding, CSS, generators, tests, apps and workflows.
 - `ROADMAP.md` and the `tools/docs/` book pipeline (pandoc → HTML → Chromium PDF), with Graphviz figures in `docs/figures/`.
 - Accent colours for the Electrical, Civil and M.Tech programmes.
 

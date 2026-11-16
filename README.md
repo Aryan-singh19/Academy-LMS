@@ -346,8 +346,8 @@ git tag v2.0.0 && git push origin v2.0.0
 
 | Document | What it covers |
 |---|---|
-| [**The Journey** (PDF, 80 pages)](docs/journey/JOURNEY.pdf) | How the project was planned, built, broken and fixed, from the first page in May 2026 to v2.2 |
-| [**Roadmap & Technical Guide** (PDF, 77 pages)](docs/roadmap/ROADMAP-GUIDE.pdf) | Every subsystem in detail: Vercel hosting, Neon Postgres schema, Google sign-in and sessions, Blob uploads, YouTube embeds, Tailwind + app.css, the curriculum generator, tests, Android/Windows apps, workflows |
+| [**The Journey**](docs/journey/JOURNEY.md) | How the project was planned, built, broken and fixed, from the first page in May 2026 to v2.2 |
+| [**Roadmap & Technical Guide**](docs/roadmap/ROADMAP-GUIDE.md) | Every subsystem in detail: Vercel hosting, Neon Postgres schema, Google sign-in and sessions, Blob uploads, YouTube embeds, Tailwind + app.css, the curriculum generator, tests, Android/Windows apps, workflows |
 | [`ROADMAP.md`](ROADMAP.md) | Stage-by-stage summary and what comes next |
 | [`docs/play-store/`](docs/play-store/README.md) | Google Play launch kit |
 | [`docs/academy_schema.sql`](docs/academy_schema.sql) | Database schema |
