@@ -32,6 +32,8 @@ function initApp() {
     });
     if (!window.ACADEMY.hasStoredProgram()) {
         openProgramPicker({ firstRun: true });
+    } else if (new URLSearchParams(window.location.search).get('pick') === '1') {
+        openProgramPicker();
     }
 }
 
@@ -413,7 +415,7 @@ function renderCoursesNav() {
                     <span class="text-base leading-none">${branchMeta.icon}</span>
                     <span class="min-w-0 text-left">
                         <span class="block text-[10px] uppercase tracking-[0.18em] pick-muted">${own ? 'My programme' : 'Browsing'}</span>
-                        <span class="block text-sm font-bold text-white truncate">B.Tech ${branchMeta.short} &middot; Semester ${viewSemester}</span>
+                        <span class="block text-sm font-bold text-white truncate">${(branchMeta.degree || 'B.Tech') === 'M.Tech' ? '' : 'B.Tech '}${branchMeta.short} &middot; Semester ${viewSemester}</span>
                     </span>
                     <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
@@ -459,6 +461,7 @@ function openProgramPicker(options = {}) {
     const branches = window.ACADEMY.getBranches();
     let pickBranch = viewBranch || program.branch;
     let pickSemester = viewSemester || program.semester;
+    let pickDegree = window.ACADEMY.getDegree(pickBranch);
 
     const modal = document.createElement('div');
     modal.id = 'programPickerModal';
@@ -468,7 +471,10 @@ function openProgramPicker(options = {}) {
     modal.setAttribute('aria-labelledby', 'programPickerTitle');
 
     const render = () => {
+        const degreeBranches = Object.entries(branches).filter(([, meta]) => (meta.degree || 'B.Tech') === pickDegree);
+        if (!degreeBranches.some(([key]) => key === pickBranch)) pickBranch = degreeBranches[0][0];
         const sems = window.ACADEMY.getSemestersFor(pickBranch);
+        const recent = window.ACADEMY.getRecentPrograms().filter((item) => !(item.branch === program.branch && item.semester === program.semester));
         if (!sems.includes(pickSemester)) pickSemester = sems[0];
         const preview = window.ACADEMY.getPlanEntries(pickBranch, pickSemester);
         modal.innerHTML = `
@@ -478,17 +484,22 @@ function openProgramPicker(options = {}) {
                         <p class="text-[11px] uppercase tracking-[0.2em] text-blue-400 font-semibold">${options.firstRun ? 'Welcome' : 'Programme'}</p>
                         <h2 id="programPickerTitle" class="text-xl font-extrabold text-white mt-1">${options.firstRun ? 'What do you study?' : 'Choose branch &amp; semester'}</h2>
                         <p class="text-sm pick-muted mt-1">We will show only your semester's subjects. You can browse others any time.</p>
+                        ${options.firstRun ? '' : '<p class="text-xs browse-note mt-2">&#10003; Switching is safe: your progress, notes, highlights and quiz history for every subject stay saved, so you can switch back any time.</p>'}
                     </div>
                     ${options.firstRun ? '' : '<button type="button" onclick="closeProgramPicker()" class="side-panel-collapse-btn" aria-label="Close">&times;</button>'}
                 </div>
                 <p class="text-xs font-bold uppercase tracking-wider pick-muted mb-2">Degree</p>
                 <div class="flex gap-2 mb-4">
-                    <span class="course-pill course-pill-active !py-1.5">B.Tech</span>
-                    <span class="course-pill !py-1.5 opacity-60 cursor-not-allowed" title="M.Tech subjects are being added in upcoming batches">M.Tech &middot; coming soon</span>
+                    ${['B.Tech', 'M.Tech'].map((degree) => `<button type="button" data-pick-degree="${degree}" class="course-pill !py-1.5 ${degree === pickDegree ? 'course-pill-active' : ''}">${degree}</button>`).join('')}
                 </div>
+                ${recent.length ? `
+                    <p class="text-xs font-bold uppercase tracking-wider pick-muted mb-2">Recent</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        ${recent.map((item) => `<button type="button" data-pick-recent="${item.branch}|${item.semester}" class="course-pill !py-1.5">${(branches[item.branch] || {}).icon || '🎓'} ${window.ACADEMY.getProgramLabel(item)}</button>`).join('')}
+                    </div>` : ''}
                 <p class="text-xs font-bold uppercase tracking-wider pick-muted mb-2">Branch</p>
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
-                    ${Object.entries(branches).map(([key, meta]) => `
+                    ${degreeBranches.map(([key, meta]) => `
                         <button type="button" data-pick-branch="${key}" class="pick-option text-left p-3 ${key === pickBranch ? 'pick-option-active' : ''}">
                             <span class="text-lg">${meta.icon}</span>
                             <span class="block text-sm font-bold text-white mt-1">${meta.short}</span>
@@ -521,7 +532,18 @@ function openProgramPicker(options = {}) {
         const branchBtn = event.target.closest('[data-pick-branch]');
         const semBtn = event.target.closest('[data-pick-sem]');
         const action = event.target.closest('[data-pick-action]');
-        if (branchBtn) {
+        const degreeBtn = event.target.closest('[data-pick-degree]');
+        const recentBtn = event.target.closest('[data-pick-recent]');
+        if (degreeBtn) {
+            pickDegree = degreeBtn.dataset.pickDegree;
+            render();
+        } else if (recentBtn) {
+            const [branch, sem] = recentBtn.dataset.pickRecent.split('|');
+            pickBranch = branch;
+            pickSemester = Number(sem);
+            pickDegree = window.ACADEMY.getDegree(branch);
+            render();
+        } else if (branchBtn) {
             pickBranch = branchBtn.dataset.pickBranch;
             render();
         } else if (semBtn) {

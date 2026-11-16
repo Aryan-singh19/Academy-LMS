@@ -1,0 +1,405 @@
+// M.Tech (CSE, VLSI) + common Research Methodology
+@ mt-rm | MT-RM | Research Methodology & IPR | Research design, literature review, data analysis, technical writing, ethics and intellectual property rights for M.Tech students.
+# Research Fundamentals
+- Meaning & Types of Research | Research is a systematic search for new knowledge. | Basic Research = expands fundamental knowledge without immediate application | Applied Research = solves a specific practical problem | Research Problem = clearly stated question the study answers
+- Research Process | Research follows a structured cycle. | Hypothesis = testable statement predicting a relationship | Research Design = plan for collecting and analysing data | Research Gap = unanswered question identified from literature
+- Literature Review | Reviews position the work among prior studies. | Systematic Review = structured search with inclusion criteria | Citation Database = Scopus, Web of Science, Google Scholar | Annotated Bibliography = sources with summaries and critique
+- Problem Formulation | Good problems are specific and feasible. | Objectives = measurable aims of the research | Scope = boundaries of the study | Feasibility = time, data and resources available
+# Data Collection & Analysis
+- Data Collection Methods | Data comes from experiments, surveys and simulations. | Primary Data = collected first-hand for the study | Secondary Data = collected earlier by others | Sampling = selecting a representative subset
+- Statistical Analysis | Statistics test hypotheses. | t-test = compares means of two groups | ANOVA = compares means of several groups | Regression = models relationship between variables
+- Design of Experiments | Experiments are planned to isolate effects. | Factorial Design = varies several factors simultaneously | Taguchi Method = orthogonal arrays for robust design | Replication = repeating runs to estimate error
+- Modelling & Simulation | Models test ideas cheaply. | Simulation = imitating system behaviour on computer | Validation = checking model against reality | Sensitivity Analysis = effect of parameter changes
+# Technical Writing
+- Structure of a Research Paper | Papers follow IMRaD. | IMRaD = introduction, methods, results and discussion | Abstract = concise summary of the whole paper | Keywords = terms used for indexing
+- Thesis Writing | A dissertation documents the full work. | Thesis Chapters = introduction, review, methodology, results, conclusion | Figures and Tables = present results clearly | Future Scope = directions for further work
+- Referencing Styles | Citations credit prior work. | IEEE Style = numbered citations in brackets | APA Style = author-date citations | Reference Manager = Zotero or Mendeley
+- Publishing | Journals and conferences disseminate research. | Peer Review = evaluation by experts before publication | Impact Factor = average citations per article | Open Access = freely available publication
+# Research Ethics
+- Ethics in Research | Researchers must act honestly. | Research Ethics = principles of honesty and integrity | Informed Consent = participants agree knowingly | Conflict of Interest = competing interests affecting judgement
+- Plagiarism | Copying without credit is misconduct. | Plagiarism = using others' work without attribution | Similarity Check = software such as Turnitin | Self-plagiarism = reusing own published text without citation
+- Research Misconduct | Fabrication and falsification undermine science. | Fabrication = making up data | Falsification = manipulating data or results | Predatory Journal = publishes without genuine peer review
+- Reproducibility | Results must be repeatable. | Reproducibility = others obtain same results with same data | Open Data = sharing datasets publicly | Code Availability = publishing analysis code
+# Intellectual Property Rights
+- Types of IPR | IPR protects creations of the mind. | Patent = exclusive right to an invention for 20 years | Copyright = protects original works of authorship | Trademark = distinctive sign identifying goods
+- Patents | Patents require specific criteria. | Novelty = invention must be new | Inventive Step = not obvious to a skilled person | Industrial Applicability = can be made or used in industry
+- Patent Process in India | Applications follow defined stages. | Provisional Specification = early filing to secure priority date | Complete Specification = full description and claims | Patent Claims = define scope of protection
+- Other IPR & Technology Transfer | Other protections and commercialisation. | Industrial Design = protects appearance of products | Geographical Indication = product linked to origin | Technology Transfer = licensing research to industry
+
+@ mcse101 | MCSE-101 | Advanced Computational Mathematics | Linear algebra, probability, random processes, optimisation, graph theory and queueing for computer science research.
+# Linear Algebra for Computing
+- Vector Spaces & Linear Maps | Vector spaces underlie ML and graphics. | Vector Space = set closed under addition and scalar multiplication | Basis = linearly independent spanning set | Rank-Nullity Theorem = rank + nullity = number of columns
+- Eigen Decomposition | Eigenvectors reveal structure of matrices. | Eigen Decomposition = A = QΛQ⁻¹ for diagonalisable A | Spectral Theorem = real symmetric matrices have orthogonal eigenvectors | Power Iteration = finds dominant eigenvector
+- Singular Value Decomposition | SVD factorises any matrix. | SVD = A = UΣVᵀ | Low-rank Approximation = truncated SVD gives best rank-k approximation | Pseudo-inverse = A⁺ = VΣ⁺Uᵀ
+- Matrix Norms & Conditioning | Norms measure sensitivity. | Frobenius Norm = square root of sum of squared entries | Condition Number = ratio of largest to smallest singular value | Ill-conditioned System = small input changes give large output changes
+# Probability & Statistics
+- Random Variables & Distributions | Probability models uncertainty. | Expectation = probability-weighted average | Variance = E[(X − μ)²] | Gaussian Distribution = bell-shaped density defined by mean and variance
+- Joint Distributions & Bayes | Multiple variables and inference. | Joint Distribution = probability of variables together | Bayes' Rule = posterior ∝ likelihood × prior | Covariance Matrix = pairwise covariances of a random vector
+- Estimation | Parameters are estimated from data. | Maximum Likelihood Estimation = parameter maximising likelihood | MAP Estimation = maximises posterior | Unbiased Estimator = expected value equals true parameter
+- Limit Theorems & Inequalities | Bounds describe large samples. | Law of Large Numbers = sample mean converges to expected value | Central Limit Theorem = sum of many variables tends to Gaussian | Chernoff Bound = exponential tail bound
+# Random Processes & Queueing
+- Random Processes | Processes evolve randomly in time. | Stationary Process = statistics invariant to time shift | Poisson Process = counts events with exponential inter-arrival times | Ergodicity = time averages equal ensemble averages
+- Markov Chains | Next state depends only on current state. | Markov Property = memoryless state transitions | Transition Matrix = probabilities between states | Stationary Distribution = π = πP
+- Queueing Models | Queues model networks and servers. | M/M/1 Queue = Poisson arrivals, exponential service, one server | Little's Law = L = λW | Utilisation = ρ = λ/μ
+- Hidden Markov Models | Hidden states produce observations. | HMM = Markov chain with unobserved states | Forward Algorithm = computes observation likelihood | Viterbi Decoding = most likely hidden state sequence
+# Optimisation
+- Convex Optimisation | Convex problems have global optima. | Convex Function = line between points lies above graph | Convex Set = contains segment between any two points | Global Minimum = every local minimum of a convex function
+- Gradient Methods | Iterative descent finds minima. | Gradient Descent = x ← x − η∇f(x) | Newton's Method = uses Hessian for quadratic convergence | Stochastic Gradient Descent = uses random mini-batches
+- Constrained Optimisation | Constraints are handled with multipliers. | Lagrangian = f(x) + λg(x) | KKT Conditions = optimality conditions with inequality constraints | Duality Gap = difference between primal and dual optima
+- Linear & Integer Programming | LP and IP model resource allocation. | Simplex Method = moves along vertices of feasible region | Interior Point Method = polynomial-time LP solver | Integer Programming = variables restricted to integers; NP-hard
+# Graph Theory & Combinatorics
+- Graph Algorithms | Graphs model networks. | Max-flow Min-cut Theorem = maximum flow equals minimum cut capacity | Bipartite Matching = pairs vertices across two sets | Network Flow = Ford-Fulkerson augmenting paths
+- Spectral Graph Theory | Matrices reveal graph structure. | Graph Laplacian = L = D − A | Algebraic Connectivity = second smallest Laplacian eigenvalue | Spectral Clustering = clusters using Laplacian eigenvectors
+- Combinatorial Counting | Counting supports algorithm analysis. | Generating Function = power series encoding sequences | Catalan Numbers = count binary trees and balanced parentheses | Inclusion-Exclusion = counts union by alternating sums
+- Information Theory Basics | Information measures underpin ML. | Entropy = H(X) = −Σ p log p | KL Divergence = difference between distributions | Mutual Information = shared information between variables
+
+@ mcse102 | MCSE-102 | Advanced Data Structures & Algorithms | Amortised analysis, advanced trees and heaps, graph algorithms, randomised, approximation and parameterised algorithms.
+# Analysis Techniques
+- Amortised Analysis | Average cost over sequences of operations. | Aggregate Method = total cost divided by operations | Accounting Method = assigns credits to cheap operations | Potential Method = potential function stores prepaid work
+- Advanced Recurrences | Divide and conquer recurrences. | Akra-Bazzi Method = generalises master theorem | Recursion Tree = sums cost per level | Lower Bound for Comparison Sorting = Ω(n log n)
+- Competitive Analysis | Online algorithms are compared with optimum. | Online Algorithm = processes input without future knowledge | Competitive Ratio = worst-case ratio to offline optimum | Paging Problem = LRU is k-competitive
+- External Memory Model | Disk access dominates cost. | I/O Model = counts block transfers | External Merge Sort = sorts data larger than memory | Cache-oblivious Algorithm = optimal without knowing cache size
+# Advanced Trees & Heaps
+- Balanced Search Trees | Trees stay logarithmic in height. | Red-Black Tree = colour rules keep height ≤ 2 log n | Splay Tree = self-adjusting tree with amortised O(log n) | Treap = BST with random heap priorities
+- Advanced Heaps | Heaps support fast priority operations. | Binomial Heap = forest of binomial trees | Fibonacci Heap = O(1) amortised decrease-key | Pairing Heap = simple heap with good practical performance
+- Range Query Structures | Structures answer range queries fast. | Segment Tree = range queries and updates in O(log n) | Fenwick Tree = prefix sums with O(log n) updates | Sparse Table = O(1) range minimum after O(n log n) preprocessing
+- String Data Structures | Structures index text efficiently. | Trie = tree of characters for prefix search | Suffix Array = sorted suffixes of a string | Suffix Tree = compressed trie of all suffixes
+# Graph Algorithms
+- Shortest Paths | Algorithms for weighted graphs. | Dijkstra with Fibonacci Heap = O(E + V log V) | Johnson's Algorithm = all pairs using reweighting | A* Search = heuristic-guided shortest path
+- Network Flow | Flow algorithms solve matching and cuts. | Edmonds-Karp = BFS augmenting paths, O(VE²) | Push-Relabel = preflow-based max-flow algorithm | Min-cost Flow = flow with minimum total cost
+- Matching | Matchings pair vertices. | Hopcroft-Karp = bipartite matching in O(E√V) | Hungarian Algorithm = minimum cost assignment | Blossom Algorithm = matching in general graphs
+- Connectivity & Decomposition | Structural graph properties. | Strongly Connected Components = Tarjan's or Kosaraju's algorithm | Bridges and Articulation Points = found with DFS low values | Minimum Spanning Tree = Kruskal and Prim
+# Randomised Algorithms
+- Randomisation Basics | Randomness simplifies algorithms. | Las Vegas Algorithm = always correct, random running time | Monte Carlo Algorithm = bounded time, may err | Expected Running Time = average over random choices
+- Randomised Data Structures | Randomness gives balanced structures. | Skip List = probabilistic balanced list | Universal Hashing = random hash family limits collisions | Bloom Filter = space-efficient set membership with false positives
+- Randomised Graph Algorithms | Random choices solve graph problems. | Karger's Min-cut = random edge contraction | Random Walk = probabilistic graph exploration | Randomised Quicksort = expected O(n log n)
+- Streaming & Sketching | Summaries of massive data streams. | Count-Min Sketch = approximate frequency counts | HyperLogLog = estimates distinct elements | Reservoir Sampling = uniform sample from a stream
+# Approximation & Parameterised Algorithms
+- NP-hardness & Reductions | Hardness guides algorithm choice. | NP-hard = at least as hard as every NP problem | Polynomial Reduction = transforms one problem into another | 3-SAT = canonical NP-complete problem
+- Approximation Algorithms | Near-optimal solutions with guarantees. | Approximation Ratio = solution cost relative to optimum | Vertex Cover 2-approximation = via maximal matching | Set Cover Greedy = ln n approximation
+- PTAS & FPTAS | Schemes approach optimum arbitrarily. | PTAS = (1 + ε)-approximation in polynomial time for fixed ε | FPTAS = polynomial in input size and 1/ε | Knapsack FPTAS = scaling and rounding profits
+- Parameterised Complexity | Fixed-parameter tractability. | FPT = solvable in f(k)·poly(n) time | Kernelisation = reduce instance to size depending on k | Bounded Search Tree = branching with depth k
+
+@ mcse103 | MCSE-103 | Advanced Computer Architecture | Performance, instruction-level parallelism, memory hierarchy, multiprocessors, GPUs and domain-specific architectures.
+# Fundamentals & Performance
+- Performance Metrics | Architects quantify performance. | CPI = cycles per instruction | Execution Time = IC × CPI × clock period | Amdahl's Law = speedup limited by serial fraction
+- Instruction Set Design | ISAs balance simplicity and capability. | RISC-V = open modular RISC instruction set | Load-Store Architecture = only loads and stores access memory | Addressing Modes = ways operands are located
+- Power & Energy | Power limits modern designs. | Dynamic Power = αCV²f | Dennard Scaling = power density constant as transistors shrank | Dark Silicon = portions of chip that must stay off
+- Benchmarks | Benchmarks compare systems. | SPEC CPU = standard CPU benchmark suite | Geometric Mean = averages normalised benchmark results | Roofline Model = performance bounded by compute or bandwidth
+# Instruction-level Parallelism
+- Pipelining & Hazards | Pipelines overlap instructions. | Data Hazard = instruction depends on earlier result | Forwarding = bypasses results to dependent instructions | Control Hazard = branch outcome unknown
+- Branch Prediction | Predictors reduce control stalls. | 2-bit Predictor = saturating counter per branch | Tournament Predictor = chooses between local and global predictors | Branch Target Buffer = caches branch targets
+- Dynamic Scheduling | Out-of-order execution exploits ILP. | Tomasulo's Algorithm = register renaming with reservation stations | Reorder Buffer = commits instructions in order | Register Renaming = removes false dependencies
+- Superscalar & VLIW | Multiple issue increases throughput. | Superscalar = issues several instructions per cycle dynamically | VLIW = compiler packs parallel operations | Speculation = executes before branch is resolved
+# Memory Hierarchy
+- Cache Design | Caches exploit locality. | AMAT = hit time + miss rate × miss penalty | Three Cs = compulsory, capacity and conflict misses | Write-back Cache = writes memory only on eviction
+- Advanced Cache Optimisations | Techniques reduce miss penalty. | Non-blocking Cache = serves hits during misses | Prefetching = fetches data before use | Victim Cache = small cache for evicted lines
+- Virtual Memory & TLB | Address translation must be fast. | TLB = caches page table entries | Page Walk = traversing page table on TLB miss | Virtually Indexed Physically Tagged Cache = overlaps lookup and translation
+- Memory Technologies | DRAM and new memories. | DRAM Row Buffer = open row speeds access | HBM = high bandwidth stacked memory | NVM = non-volatile memory such as 3D XPoint
+# Multiprocessors
+- Thread-level Parallelism | Multiple cores run threads. | SMT = simultaneous multithreading on one core | Chip Multiprocessor = multiple cores on a chip | Shared Memory Multiprocessor = cores share address space
+- Cache Coherence | Copies of data must agree. | MESI Protocol = modified, exclusive, shared, invalid states | Snooping Protocol = caches monitor shared bus | Directory Protocol = central directory tracks sharers
+- Memory Consistency | Ordering rules for memory operations. | Sequential Consistency = operations appear in program order | Relaxed Consistency = allows reordering with fences | Memory Fence = enforces ordering
+- Interconnection Networks | Networks connect cores. | Mesh Network = 2D grid of routers | Network on Chip = packet-switched on-chip network | Bisection Bandwidth = bandwidth across network cut
+# Data-level Parallelism & Accelerators
+- Vector & SIMD | One instruction operates on many data. | Vector Processor = operates on vector registers | SIMD Extensions = AVX and NEON instructions | Strip Mining = splits loops into vector-length chunks
+- GPU Architecture | GPUs run thousands of threads. | SIMT = single instruction multiple threads | Warp = group of 32 threads executing together | CUDA = NVIDIA programming model for GPUs
+- Domain-specific Architectures | Specialised hardware accelerates workloads. | TPU = Google's tensor processing unit | Systolic Array = grid of processing elements for matrix multiply | FPGA Accelerator = reconfigurable hardware
+- Warehouse-scale Computers | Data centres are computers. | Warehouse-scale Computer = data centre treated as one machine | PUE = power usage effectiveness | Tail Latency = slowest responses dominate user experience
+
+@ mcse104 | MCSE-104 | Advanced Computer Networks | Network architecture, routing, transport, QoS, software-defined networking, wireless and network security.
+# Network Architecture
+- Layered Architecture | Layers modularise networking. | OSI Model = seven-layer reference model | TCP/IP Model = four-layer Internet model | End-to-end Principle = intelligence at end hosts
+- Switching Techniques | Data moves by circuits or packets. | Circuit Switching = dedicated path for session | Packet Switching = packets routed independently | Virtual Circuit = connection-oriented packet switching
+- Network Performance | Metrics measure networks. | Bandwidth-Delay Product = data in flight on a link | Throughput = actual data delivered per unit time | Jitter = variation in packet delay
+- Internet Architecture | The Internet is a network of networks. | Autonomous System = network under single routing policy | IXP = Internet exchange point | CDN = content delivery network caching near users
+# Routing
+- Intra-domain Routing | Routing within an AS. | OSPF = link-state routing protocol | RIP = distance-vector protocol with hop count | Dijkstra in OSPF = computes shortest path tree
+- Inter-domain Routing | BGP connects autonomous systems. | BGP = path-vector inter-domain routing protocol | AS Path = list of ASes a route traverses | Route Policy = business relationships decide routes
+- Multicast Routing | One-to-many delivery. | IP Multicast = group communication | PIM = protocol independent multicast | IGMP = hosts join multicast groups
+- IPv6 & Addressing | IPv6 expands address space. | IPv6 = 128-bit addressing | CIDR = classless inter-domain routing | NAT = translates private to public addresses
+# Transport & QoS
+- TCP Congestion Control | TCP adapts sending rate. | AIMD = additive increase multiplicative decrease | Slow Start = exponential window growth | TCP CUBIC = default congestion control in Linux
+- Advanced Transport | New protocols improve performance. | QUIC = UDP-based transport with built-in TLS | BBR = congestion control based on bandwidth and RTT | Multipath TCP = uses several paths simultaneously
+- Quality of Service | QoS guarantees performance. | IntServ = per-flow reservations with RSVP | DiffServ = class-based traffic handling | Token Bucket = traffic shaping mechanism
+- Queue Management | Routers manage buffers. | RED = random early detection | Bufferbloat = excessive buffering causing latency | Fair Queuing = equal share among flows
+# Software-defined & Virtual Networks
+- SDN | Control plane is separated from data plane. | SDN = centralised programmable network control | OpenFlow = protocol between controller and switches | Flow Table = match-action rules in switch
+- NFV | Network functions run as software. | NFV = network function virtualisation | VNF = virtualised network function | Service Function Chaining = ordered set of VNFs
+- Data Centre Networks | Data centres use special topologies. | Fat-tree Topology = Clos network with high bisection bandwidth | ECMP = equal-cost multipath routing | Overlay Network = VXLAN tunnels over physical network
+- Programmable Data Planes | Switches become programmable. | P4 = language for programming packet processing | Network Telemetry = fine-grained monitoring | Intent-based Networking = high-level policy translated to configuration
+# Wireless & Secure Networks
+- Wireless LANs | Wi-Fi uses CSMA/CA. | CSMA/CA = collision avoidance in Wi-Fi | Hidden Terminal Problem = stations not hearing each other | RTS/CTS = handshake mitigating hidden terminals
+- Mobile & Ad Hoc Networks | Networks without fixed infrastructure. | MANET = mobile ad hoc network | AODV = on-demand routing protocol | DTN = delay tolerant networking
+- Network Security Protocols | Security protects communications. | TLS = transport layer security | IPsec = network-layer security | VPN = secure tunnel over public network
+- Network Attacks & Defence | Networks face attacks. | DDoS = distributed denial of service | IDS = intrusion detection system | Zero Trust = never trust, always verify
+
+@ mcse201 | MCSE-201 | Advanced Machine Learning | Learning theory, kernel methods, probabilistic models, deep learning, generative models and reinforcement learning.
+# Learning Theory
+- PAC Learning | Formal guarantees on learning. | PAC Learning = probably approximately correct learning | Sample Complexity = examples needed to learn | Hypothesis Class = set of candidate models
+- VC Dimension | Capacity of hypothesis classes. | VC Dimension = largest set the class can shatter | Shattering = classifying all labelings of a set | Generalisation Bound = test error bounded by training error plus complexity
+- Bias-Variance & Regularisation | Trade-offs in model complexity. | Bias-Variance Decomposition = error = bias² + variance + noise | L2 Regularisation = penalises squared weights | Early Stopping = stops training before overfitting
+- Model Selection | Choosing models fairly. | Cross-validation = estimates generalisation error | Hyperparameter Tuning = grid, random or Bayesian search | Information Criteria = AIC and BIC penalise complexity
+# Kernel & Ensemble Methods
+- Support Vector Machines | Maximum-margin classifiers. | Margin = distance from hyperplane to nearest points | Soft Margin SVM = allows misclassification with slack | Hinge Loss = max(0, 1 − y f(x))
+- Kernel Methods | Kernels compute similarity in feature space. | Kernel Trick = inner products in high-dimensional space implicitly | RBF Kernel = exp(−γ‖x − y‖²) | Mercer's Condition = kernel matrix positive semidefinite
+- Ensemble Learning | Combining models improves accuracy. | Bagging = trains models on bootstrap samples | Boosting = sequentially focuses on errors | Gradient Boosting = fits residuals with trees, e.g. XGBoost
+- Dimensionality Reduction | Reduce features while keeping structure. | PCA = projects onto directions of maximum variance | t-SNE = non-linear embedding for visualisation | Autoencoder = neural network learning compact codes
+# Probabilistic Models
+- Bayesian Learning | Uncertainty over parameters. | Posterior = P(θ given data) | Conjugate Prior = prior giving posterior of same family | Bayesian Model Averaging = averages over models
+- Graphical Models | Graphs encode dependencies. | Bayesian Network = directed acyclic probabilistic model | Markov Random Field = undirected graphical model | Belief Propagation = message passing for inference
+- Latent Variable Models | Hidden variables explain data. | EM Algorithm = alternates expectation and maximisation | Gaussian Mixture Model = mixture of Gaussians | Variational Inference = approximates posterior by optimisation
+- Gaussian Processes | Distributions over functions. | Gaussian Process = any finite set of values is jointly Gaussian | Covariance Function = kernel defining smoothness | Predictive Uncertainty = variance of GP prediction
+# Deep Learning
+- Optimisation for Deep Networks | Training large networks. | Adam = adaptive moment estimation optimiser | Batch Normalisation = normalises layer activations | Learning Rate Schedule = varies learning rate during training
+- CNNs & Sequence Models | Architectures for images and sequences. | CNN = convolution and pooling layers | LSTM = gated recurrent network | Residual Connection = skip connection easing training
+- Transformers | Attention-based architectures. | Self-attention = softmax(QKᵀ/√d)V | Multi-head Attention = several attention heads in parallel | Pretraining and Fine-tuning = learn general then adapt
+- Regularising Deep Networks | Preventing overfitting in deep models. | Dropout = randomly drops units during training | Data Augmentation = synthetic training variations | Weight Decay = L2 penalty on weights
+# Generative Models & Reinforcement Learning
+- Generative Models | Models that create data. | VAE = variational autoencoder with latent sampling | GAN = generator and discriminator in adversarial game | Diffusion Model = learns to reverse a noising process
+- Reinforcement Learning Basics | Agents learn from rewards. | MDP = states, actions, transitions and rewards | Bellman Equation = value = reward + discounted future value | Q-learning = off-policy temporal difference control
+- Deep Reinforcement Learning | Neural networks approximate value and policy. | DQN = deep Q-network with replay buffer | Policy Gradient = optimises policy directly | PPO = proximal policy optimisation with clipped objective
+- Responsible ML | ML must be fair and explainable. | Fairness Metric = e.g. demographic parity | SHAP = explains predictions using Shapley values | Model Card = documentation of model use and limits
+
+@ mcse202 | MCSE-202 | Distributed Systems & Cloud Computing | Distributed system models, time, consensus, replication, distributed storage, big data frameworks and cloud-native systems.
+# Distributed System Models
+- Characteristics of Distributed Systems | Independent computers appear as one system. | Distributed System = components on networked computers coordinating by messages | Transparency = hides distribution from users | Partial Failure = some components fail while others work
+- System Models | Models specify timing and failures. | Synchronous Model = bounded delays | Asynchronous Model = no timing bounds | Byzantine Failure = arbitrary malicious behaviour
+- Communication | Processes communicate by messages. | RPC = remote procedure call | Message Queue = asynchronous decoupled messaging | Publish-Subscribe = topic-based message distribution
+- CAP Theorem | Trade-offs in distributed data. | CAP Theorem = choose two of consistency, availability, partition tolerance | PACELC = adds latency-consistency trade-off without partitions | Eventual Consistency = replicas converge over time
+# Time & Coordination
+- Logical Clocks | Ordering without global clock. | Lamport Clock = scalar logical timestamps | Vector Clock = captures causality between events | Happened-before Relation = causal ordering of events
+- Clock Synchronisation | Physical clocks drift. | NTP = network time protocol | Cristian's Algorithm = synchronise with time server | Berkeley Algorithm = averages clocks of group
+- Mutual Exclusion & Election | Coordination among processes. | Ricart-Agrawala Algorithm = permission-based mutual exclusion | Bully Algorithm = highest-ID process becomes leader | Ring Election = token passed around logical ring
+- Global State & Snapshots | Capturing consistent state. | Chandy-Lamport Snapshot = records consistent global state | Consistent Cut = no message received before being sent | Deadlock Detection = in distributed systems via wait-for graphs
+# Consensus & Replication
+- Consensus Problem | Nodes agree on a value. | FLP Impossibility = no deterministic consensus in async system with one crash | Paxos = consensus with proposers, acceptors and learners | Quorum = majority overlap ensures agreement
+- Raft | Understandable consensus algorithm. | Raft = leader-based consensus with replicated log | Leader Election = randomised timeouts choose leader | Log Replication = leader appends entries to followers
+- Replication Strategies | Copies improve availability. | Primary-backup Replication = primary handles writes | Chain Replication = writes flow along a chain | State Machine Replication = replicas apply same commands in order
+- Byzantine Fault Tolerance | Tolerating malicious nodes. | PBFT = practical Byzantine fault tolerance | 3f + 1 Rule = nodes needed to tolerate f Byzantine faults | Blockchain Consensus = BFT applied to ledgers
+# Distributed Storage & Big Data
+- Distributed File Systems | Files spread across machines. | GFS/HDFS = large-block replicated distributed file systems | NameNode = metadata server in HDFS | Replication Factor = copies of each block
+- Distributed Databases | Databases scale horizontally. | Sharding = partitioning data across nodes | Consistent Hashing = minimises remapping when nodes change | Two-phase Commit = atomic distributed transactions
+- NoSQL Systems | Flexible scalable stores. | Key-value Store = e.g. DynamoDB, Redis | Wide-column Store = e.g. Cassandra, Bigtable | Document Store = e.g. MongoDB
+- Big Data Frameworks | Frameworks process massive data. | MapReduce = map and reduce over partitions | Apache Spark = in-memory RDD-based processing | Apache Kafka = distributed commit log for streams
+# Cloud-native Systems
+- Virtualisation & Containers | Isolation for cloud workloads. | Hypervisor = runs virtual machines | Container = lightweight OS-level isolation | Kubernetes = container orchestration platform
+- Microservices | Applications as small services. | Microservice = independently deployable service | Service Mesh = infrastructure for service communication, e.g. Istio | API Gateway = single entry point for clients
+- Serverless Computing | Functions run on demand. | FaaS = function as a service | Cold Start = latency of initialising function | Event-driven Architecture = components react to events
+- Reliability Engineering | Running services reliably. | SLO = service level objective | Observability = metrics, logs and traces | Chaos Engineering = injecting failures to test resilience
+
+@ mcse203 | MCSE-203 | Advanced Information Security | Cryptography, protocols, system and network security, web security, privacy and security of AI systems.
+# Cryptographic Foundations
+- Symmetric Cryptography | Shared-key encryption. | AES = 128-bit block cipher with 10-14 rounds | Block Cipher Modes = CBC, CTR and GCM | Authenticated Encryption = confidentiality plus integrity, e.g. AES-GCM
+- Public-key Cryptography | Key pairs enable secure exchange. | RSA = security from integer factorisation | Diffie-Hellman = key exchange over insecure channel | Elliptic Curve Cryptography = smaller keys for same security
+- Hash Functions & MACs | Integrity and authentication. | SHA-3 = Keccak-based hash function | HMAC = hash-based message authentication code | Birthday Attack = collisions in about 2^(n/2) attempts
+- Digital Signatures & PKI | Authenticating identities. | Digital Signature = proves origin and integrity | PKI = public key infrastructure with certificates | Certificate Authority = issues and signs certificates
+# Security Protocols
+- Authentication Protocols | Verifying identities. | Kerberos = ticket-based network authentication | OAuth 2.0 = delegated authorisation framework | Multi-factor Authentication = combines several factors
+- TLS 1.3 | Securing web traffic. | TLS Handshake = negotiates keys and authenticates server | Forward Secrecy = past sessions safe if long-term key leaks | 0-RTT = resumption with early data
+- Protocol Attacks | Protocols can be attacked. | Replay Attack = reusing captured messages | Man-in-the-middle = intercepting and altering communication | Downgrade Attack = forcing weaker protocol versions
+- Formal Verification | Proving protocols secure. | Dolev-Yao Model = attacker controls network | ProVerif = automated protocol verifier | Security Proof = reduction to hard problem
+# System & Software Security
+- Memory Safety Vulnerabilities | Low-level bugs enable exploits. | Buffer Overflow = writing beyond buffer bounds | Use-after-free = accessing freed memory | Return-oriented Programming = chaining code gadgets
+- Exploit Mitigations | Defences raise attack cost. | ASLR = randomises memory layout | DEP/NX = non-executable memory regions | Stack Canary = detects stack smashing
+- Access Control | Who can do what. | DAC = owner-controlled access | MAC = system-enforced labels | RBAC = role-based access control
+- Trusted Computing & Sandboxing | Isolation and attestation. | TEE = trusted execution environment, e.g. Intel SGX | Remote Attestation = proves software state | Sandbox = restricts untrusted code
+# Network & Web Security
+- Network Security | Protecting networks. | Firewall = filters traffic by rules | IDS/IPS = detects and blocks intrusions | Network Segmentation = limits lateral movement
+- Web Application Security | Web apps face common attacks. | SQL Injection = injecting SQL through input | XSS = injecting scripts into web pages | CSRF = forging requests from authenticated users
+- Malware Analysis | Studying malicious software. | Static Analysis = examining code without running | Dynamic Analysis = observing behaviour in sandbox | Ransomware = encrypts data for ransom
+- Security Operations | Detect and respond. | SIEM = security information and event management | Threat Intelligence = information on attackers | Incident Response = structured handling of breaches
+# Privacy & AI Security
+- Privacy Technologies | Protecting personal data. | Differential Privacy = adds noise to protect individuals | k-Anonymity = each record indistinguishable from k − 1 others | Homomorphic Encryption = computation on encrypted data
+- Privacy Regulation | Laws govern data use. | DPDP Act 2023 = India's digital personal data protection law | GDPR = EU data protection regulation | Data Minimisation = collect only what is needed
+- Adversarial Machine Learning | ML models can be attacked. | Adversarial Example = small perturbation causing misclassification | Data Poisoning = corrupting training data | Model Extraction = stealing model via queries
+- LLM & Agent Security | AI systems add new risks. | Prompt Injection = malicious instructions in model input | Sandbox Escape = untrusted code breaking out of isolation | Red Teaming = adversarial testing of systems
+
+@ mvl101 | MVL-101 | Digital IC Design | MOS devices, CMOS inverter, combinational and sequential logic, interconnect, timing and arithmetic circuits.
+# MOS Device Models
+- MOSFET Operation | Transistor behaviour sets circuit performance. | Square-law Model = ID = (μCox/2)(W/L)(VGS − VT)² | Velocity Saturation = limits current in short channels | Subthreshold Current = exponential leakage below VT
+- Short-channel Effects | Scaling introduces non-idealities. | DIBL = drain-induced barrier lowering | Threshold Roll-off = VT decreases with channel length | Hot Carrier Effect = degradation from energetic carriers
+- FinFET & Advanced Devices | New devices continue scaling. | FinFET = 3D multi-gate transistor | GAA FET = gate-all-around nanosheet transistor | FD-SOI = fully depleted silicon on insulator
+- Device Capacitances | Capacitances determine delay. | Gate Capacitance = Cox × W × L | Junction Capacitance = depletion capacitance at source/drain | Miller Capacitance = gate-drain capacitance amplified
+# CMOS Inverter
+- Static Characteristics | VTC defines logic levels. | Switching Threshold = VM where Vin = Vout | Noise Margins = NMH and NML | Sizing Ratio = PMOS wider to balance mobility
+- Dynamic Behaviour | Switching delay depends on RC. | Propagation Delay = tp ≈ 0.69 Req CL | Rise and Fall Time = 10-90% transition times | Load Capacitance = intrinsic plus fan-out plus wire
+- Power Consumption | Inverter power components. | Dynamic Power = α CL VDD² f | Short-circuit Power = direct path current during switching | Leakage Power = static subthreshold and gate leakage
+- Inverter Chains & Sizing | Optimal buffering drives large loads. | Fan-out of 4 = typical efficient stage effort | Optimal Stage Count = about ln(F) stages | Tapering Factor = size ratio between stages
+# Combinational Logic
+- Static CMOS Gates | Complementary networks implement logic. | Pull-down Network = NMOS implementing function complement | Stack Effect = series transistors reduce leakage | Transistor Sizing = equalise worst-case resistance
+- Logical Effort | Systematic delay estimation. | Logical Effort = gate input capacitance relative to inverter | Electrical Effort = Cout/Cin | Path Effort = product of stage efforts
+- Ratioed & Pass-transistor Logic | Alternatives to static CMOS. | Pseudo-NMOS = PMOS always on load | Transmission Gate Logic = NMOS and PMOS in parallel | CPL = complementary pass-transistor logic
+- Dynamic Logic | Precharge-evaluate circuits. | Domino Logic = dynamic stage plus static inverter | Charge Sharing = reduces dynamic node voltage | Keeper Transistor = maintains dynamic node
+# Sequential Circuits & Timing
+- Latches & Flip-flops | Storage elements. | Static Latch = cross-coupled inverters | Master-slave Flip-flop = two latches | Pulsed Latch = latch with narrow clock pulse
+- Timing Constraints | Clocked circuits must meet constraints. | Setup Constraint = Tclk ≥ tcq + tlogic + tsetup | Hold Constraint = tcq + tlogic,min ≥ thold | Clock Skew = arrival time difference of clock
+- Clock Distribution | Clocks reach all registers. | H-tree = balanced clock distribution | Clock Jitter = cycle-to-cycle variation | PLL = phase-locked loop generating clock
+- Metastability & Synchronisers | Asynchronous inputs cause metastability. | Metastability = unresolved flip-flop output | Two-flop Synchroniser = reduces failure probability | MTBF = mean time between synchronisation failures
+# Interconnect & Arithmetic
+- Interconnect Modelling | Wires dominate delay. | Wire Resistance = R = ρL/(Wt) | Elmore Delay = RC delay of distributed line | Repeater Insertion = splits long wires
+- Crosstalk & Signal Integrity | Coupling disturbs signals. | Crosstalk = coupling between adjacent wires | Ground Bounce = supply noise from switching | Shielding = grounded wires between signals
+- Adders | Fast adders reduce carry delay. | Carry Look-ahead Adder = generate and propagate logic | Kogge-Stone Adder = parallel prefix adder | Carry Select Adder = precomputes both carry cases
+- Multipliers | Multipliers combine partial products. | Array Multiplier = regular adder array | Booth Encoding = halves partial products | Wallace Tree = fast reduction of partial products
+
+@ mvl102 | MVL-102 | Analog IC Design | Single-stage and differential amplifiers, current mirrors, op-amps, frequency response, noise, comparators and data converters.
+# Single-stage Amplifiers
+- Small-signal Models | Models analyse amplifiers. | Transconductance = gm = 2ID/(VGS − VT) | Output Resistance = ro = 1/(λID) | Intrinsic Gain = gm ro
+- Common-source Amplifier | Basic voltage amplifier. | CS Gain = −gm (ro parallel RD) | Source Degeneration = improves linearity, reduces gain | Diode-connected Load = gain set by transconductance ratio
+- Common-gate & Source Follower | Other configurations. | Source Follower = unity gain buffer | Common-gate = low input impedance | Cascode = CS with CG for high output resistance
+- Biasing | Stable bias points. | Current Source Bias = sets drain current | Bandgap Reference = temperature-stable voltage | Constant-gm Bias = transconductance independent of process
+# Current Mirrors & Differential Pairs
+- Current Mirrors | Mirrors copy currents. | Basic Current Mirror = Iout = Iref (W/L)2/(W/L)1 | Cascode Current Mirror = higher output resistance | Wide-swing Mirror = preserves headroom
+- Differential Pair | Differential amplifiers reject common mode. | Differential Gain = gm RD | CMRR = differential gain / common-mode gain | Input Offset = due to mismatch
+- Active Load | Mirrors as loads boost gain. | Active-load Differential Amplifier = mirror load converts to single-ended | Gain = gm (ro2 parallel ro4) | Systematic Offset = from asymmetry
+- Mismatch | Random variations limit precision. | Pelgrom's Law = mismatch ∝ 1/√(WL) | Common Centroid Layout = cancels gradients | Dummy Devices = improve matching
+# Operational Amplifiers
+- Two-stage Op-amp | High gain with compensation. | Two-stage Op-amp = differential pair plus CS stage | Miller Compensation = capacitor splits poles | Unity-gain Bandwidth = gm1/Cc
+- Folded Cascode Op-amp | Single-stage high gain. | Folded Cascode = high gain and wide input range | Telescopic Cascode = highest gain, limited swing | Output Swing = limited by stacked devices
+- Stability & Compensation | Feedback amplifiers must be stable. | Phase Margin = typically 60° target | Right-half-plane Zero = from feedforward through Cc | Nulling Resistor = cancels RHP zero
+- Common-mode Feedback | Fully differential amplifiers need CMFB. | Fully Differential Op-amp = differential output | CMFB = sets output common-mode | Slew Rate = I/Cc
+# Noise & Frequency Response
+- Frequency Response | Poles limit bandwidth. | Miller Effect = input capacitance multiplied | Dominant Pole = sets bandwidth | Gain-bandwidth Product = constant for single pole
+- Noise Sources | Devices generate noise. | Thermal Noise = 4kTγ gm current noise in MOSFET | Flicker Noise = 1/f noise dominant at low frequency | Input-referred Noise = output noise divided by gain
+- Noise Optimisation | Design for low noise. | Corner Frequency = where flicker equals thermal noise | Chopper Stabilisation = moves offset and flicker noise | kT/C Noise = sampling noise on capacitor
+- Switched-capacitor Circuits | Capacitor ratios set gain. | Switched-capacitor Integrator = resistor emulated by switched capacitor | Charge Injection = error from switch turn-off | Clock Feedthrough = coupling of clock to output
+# Comparators & Data Converters
+- Comparators | Comparators make binary decisions. | Latched Comparator = regenerative positive feedback | Kickback Noise = disturbance to input | Comparator Offset = limits resolution
+- DAC Architectures | DACs convert digital to analog. | Current-steering DAC = high-speed switched currents | R-2R DAC = resistor ladder | DNL and INL = differential and integral non-linearity
+- ADC Architectures | ADCs digitise signals. | SAR ADC = binary search with capacitor DAC | Pipeline ADC = stages each resolving few bits | Flash ADC = fastest with 2^N − 1 comparators
+- Sigma-Delta Converters | Oversampling and noise shaping. | Oversampling Ratio = fs / 2fB | Noise Shaping = pushes quantisation noise out of band | ENOB = effective number of bits
+
+@ mvl103 | MVL-103 | VLSI Technology & Fabrication | Crystal growth, oxidation, lithography, etching, diffusion, implantation, deposition, metallisation and CMOS process integration.
+# Wafer Preparation
+- Crystal Growth | Wafers start as single crystals. | Czochralski Method = pulling crystal from melt | Float Zone Method = high-purity crystal growth | Wafer Orientation = (100) or (111) planes
+- Wafer Processing | Wafers are shaped and polished. | Slicing = cutting ingot into wafers | CMP = chemical mechanical polishing | Epitaxy = growing crystalline layer on substrate
+- Cleanroom Technology | Contamination control is critical. | Cleanroom Class = particles per cubic foot | RCA Clean = standard wafer cleaning | Yield = fraction of working dies
+- Defects | Defects reduce yield. | Point Defect = vacancy or interstitial | Dislocation = line defect in crystal | Gettering = removing impurities from active region
+# Oxidation & Lithography
+- Thermal Oxidation | SiO2 grows on silicon. | Dry Oxidation = slower, high-quality oxide | Wet Oxidation = faster, thicker oxide | Deal-Grove Model = linear-parabolic oxide growth
+- Photolithography | Patterns are transferred optically. | Photoresist = light-sensitive polymer | Resolution = k1 λ/NA | Mask Alignment = overlay of layers
+- Advanced Lithography | New methods print smaller features. | EUV Lithography = 13.5 nm wavelength | Immersion Lithography = water increases NA | Multiple Patterning = splits dense patterns
+- High-k Dielectrics | Thin gate oxides leak. | High-k Dielectric = e.g. HfO2 replacing SiO2 | EOT = equivalent oxide thickness | Metal Gate = replaces polysilicon gate
+# Etching & Doping
+- Wet & Dry Etching | Material is removed selectively. | Wet Etching = isotropic chemical etch | Plasma Etching = dry etching with reactive ions | Anisotropy = directional etching
+- Diffusion | Dopants spread at high temperature. | Fick's Laws = govern dopant diffusion | Predeposition = constant surface concentration | Drive-in = redistributes dopants
+- Ion Implantation | Accelerated ions dope precisely. | Ion Implantation = dopant ions shot into wafer | Projected Range = mean penetration depth | Annealing = repairs damage and activates dopants
+- Rapid Thermal Processing | Short high-temperature steps. | RTA = rapid thermal annealing | Thermal Budget = time-temperature exposure | Spike Anneal = very short anneal
+# Deposition & Metallisation
+- CVD | Films form from gas reactions. | LPCVD = low-pressure chemical vapour deposition | PECVD = plasma-enhanced CVD at low temperature | ALD = atomic layer deposition for ultra-thin films
+- PVD | Physical deposition methods. | Sputtering = ejecting target atoms by ion bombardment | Evaporation = heating source to vapour | Step Coverage = film uniformity over steps
+- Metallisation | Interconnects wire the chip. | Copper Damascene = trench filling and CMP | Barrier Layer = TaN prevents copper diffusion | Electromigration = metal migration under high current
+- Low-k Dielectrics | Reduce interconnect capacitance. | Low-k Dielectric = lower permittivity insulator | Air Gap = lowest possible k | RC Delay = reduced by low-k and copper
+# Process Integration & Packaging
+- CMOS Process Flow | Steps combine into a process. | Twin-well Process = separate n and p wells | STI = shallow trench isolation | LDD = lightly doped drain reduces hot carriers
+- Process Monitoring | Measurements control quality. | Ellipsometry = measures film thickness | Four-point Probe = measures sheet resistance | SEM = scanning electron microscopy inspection
+- Packaging | Dies are packaged for use. | Wire Bonding = connects die pads to package | Flip-chip = bumps connect face-down die | 3D IC = stacked dies with TSVs
+- Yield & Reliability | Chips must work and last. | Yield Model = Y = e^(−DA) Poisson model | Burn-in = stress testing to remove early failures | TDDB = time-dependent dielectric breakdown
+
+@ mvl104 | MVL-104 | Advanced Digital System Design & Verification | RTL design with Verilog/SystemVerilog, FSMs, datapaths, synthesis, static timing analysis and functional verification.
+# HDL-based Design
+- Verilog Constructs | HDLs describe hardware. | Module = basic design unit with ports | Continuous Assignment = assign for combinational logic | Always Block = procedural description
+- Blocking vs Non-blocking | Assignment types affect simulation. | Blocking Assignment = executes in order (=) | Non-blocking Assignment = updates at end of time step (<=) | Race Condition = order-dependent simulation result
+- SystemVerilog for Design | Extensions improve design. | always_ff = sequential logic block | always_comb = combinational logic block | Interface = bundles signals between modules
+- Parameterised Design | Reusable modules. | Parameter = compile-time constant | Generate Block = replicates hardware | Hierarchy = modules instantiated within modules
+# FSMs & Datapaths
+- FSM Design | State machines control datapaths. | Moore FSM = outputs depend on state | Mealy FSM = outputs depend on state and input | State Encoding = binary, Gray or one-hot
+- Datapath & Controller | Designs split into data and control. | ASMD Chart = algorithmic state machine with datapath | Register Transfer = data moves between registers | Control Signals = select datapath operations
+- Pipelining in RTL | Pipelines raise throughput. | Pipeline Register = splits combinational path | Latency = cycles from input to output | Throughput = results per cycle
+- Memories & FIFOs | Storage structures in RTL. | Synchronous FIFO = same clock for read and write | Asynchronous FIFO = Gray-code pointers across clocks | Inferred RAM = HDL pattern mapped to memory
+# Synthesis & Timing
+- Logic Synthesis | RTL becomes gates. | Synthesis = translate, optimise and map to library | Technology Library = cell timing and area data | Constraints File = SDC timing constraints
+- Static Timing Analysis | STA checks timing without simulation. | STA = exhaustive path timing analysis | Slack = required time minus arrival time | Critical Path = longest delay path
+- Timing Closure | Fixing violations. | Setup Violation = path too slow | Hold Violation = path too fast | Clock Gating = reduces dynamic power
+- Clock Domain Crossing | Signals crossing clocks need care. | CDC = signals between asynchronous clocks | Synchroniser = two flip-flops reduce metastability | Handshake = safe multi-bit transfer
+# Functional Verification
+- Verification Planning | Verification consumes most effort. | Verification Plan = features and coverage goals | Testbench = environment driving and checking DUT | Directed Test = specific stimulus for a feature
+- Constrained Random Verification | Random tests explore corners. | Constrained Random = random stimulus within constraints | Functional Coverage = covergroups measure tested features | Scoreboard = compares DUT output with reference
+- UVM | Standard methodology for testbenches. | UVM = universal verification methodology | Agent = driver, monitor and sequencer | Sequence = stimulus generator
+- Assertions | Assertions check properties. | SVA = SystemVerilog assertions | Immediate Assertion = checks at a point in time | Concurrent Assertion = checks temporal behaviour
+# FPGA & Formal Methods
+- FPGA Architecture | FPGAs implement RTL directly. | CLB = configurable logic block | LUT = look-up table implementing logic | DSP Slice = hardened multiply-accumulate block
+- FPGA Design Flow | From RTL to bitstream. | Place and Route = maps netlist onto FPGA | Bitstream = configuration file | Timing Report = shows achieved frequency
+- Formal Verification | Mathematical proofs of correctness. | Equivalence Checking = proves two designs match | Model Checking = exhaustively checks properties | Bounded Model Checking = checks up to depth k
+- Emulation & Prototyping | Fast pre-silicon validation. | Hardware Emulation = runs design on special hardware | FPGA Prototyping = runs design on FPGA boards | Hardware-software Co-verification = tests software on hardware model
+
+@ mvl201 | MVL-201 | Low Power VLSI Design | Sources of power, device and circuit techniques, architecture-level methods, power management and low-power memories.
+# Power Fundamentals
+- Sources of Power Dissipation | Power has several components. | Switching Power = α C V² f | Short-circuit Power = during input transitions | Leakage Power = subthreshold, gate and junction leakage
+- Need for Low Power | Battery and thermal limits. | Battery Life = depends on average power | Thermal Design Power = maximum sustained heat | Energy per Operation = key metric for efficiency
+- Leakage Mechanisms | Leakage grows with scaling. | Subthreshold Leakage = exponential with VT | Gate Tunnelling = current through thin oxide | GIDL = gate-induced drain leakage
+- Power Estimation | Estimating power early. | Switching Activity = fraction of cycles a node toggles | Probabilistic Estimation = statistical activity propagation | Gate-level Power Simulation = activity from simulation
+# Circuit-level Techniques
+- Voltage Scaling | Supply voltage strongly affects power. | Dynamic Voltage Scaling = lower VDD for lower speed | Near-threshold Computing = operate near VT | Energy-Delay Product = metric balancing speed and energy
+- Multi-threshold CMOS | Mix of high and low VT. | MTCMOS = high-VT sleep transistors | Dual-VT Assignment = low VT on critical paths | Leakage Reduction = high VT off critical paths
+- Body Biasing | Body voltage tunes VT. | Reverse Body Bias = raises VT to cut leakage | Forward Body Bias = lowers VT for speed | Adaptive Body Bias = compensates variation
+- Low-power Logic Styles | Logic families for low power. | Adiabatic Logic = recovers charge | Stack Forcing = series transistors cut leakage | Glitch Reduction = balanced paths reduce spurious toggles
+# Architecture & System Techniques
+- Clock Gating | Disabling unused clocks. | Clock Gating = stops clock to idle registers | Integrated Clock Gate = latch-based gating cell | Fine-grained Gating = per-register enables
+- Power Gating | Switching off idle blocks. | Power Gating = cutting supply to blocks | Retention Register = saves state during power-down | Isolation Cell = clamps outputs of off blocks
+- Multi-voltage Design | Different domains at different voltages. | Voltage Island = block with own supply | Level Shifter = converts signals between domains | UPF = unified power format specification
+- DVFS | Adapting voltage and frequency at runtime. | DVFS = dynamic voltage and frequency scaling | Performance State = voltage-frequency pair | Governor = OS policy selecting states
+# Low-power Memory & Arithmetic
+- SRAM Power | Memories dominate power. | Bitline Power = from charging long bitlines | Sleep Mode SRAM = reduced retention voltage | Read Assist = improves stability at low voltage
+- Low-power Caches | Cache architecture reduces energy. | Way Prediction = accesses only predicted way | Drowsy Cache = low voltage for inactive lines | Filter Cache = small cache before L1
+- Low-power Arithmetic | Efficient arithmetic units. | Operand Isolation = blocks inputs of unused units | Approximate Computing = trades accuracy for energy | Bit-width Optimisation = fewer bits reduce switching
+- Bus Encoding | Reducing bus transitions. | Bus-invert Coding = inverts data to cut toggles | Gray Code Addressing = one bit change per step | Low-swing Signalling = smaller voltage swing on buses
+# Power Analysis & Management
+- Power-aware Design Flow | Power considered at every step. | RTL Power Analysis = early estimation | Power Intent = UPF describing domains | Sign-off Power = final verified power numbers
+- IR Drop & Electromigration | Power grid integrity. | IR Drop = voltage drop on supply network | Decap = decoupling capacitance | EM Analysis = checks current density limits
+- Thermal Management | Heat must be controlled. | Hotspot = local high temperature | Thermal Throttling = reduces frequency when hot | Dark Silicon = unpowered regions due to power limits
+- Energy Harvesting & IoT Chips | Ultra-low-power systems. | Energy Harvesting = power from ambient sources | Subthreshold Design = operation below VT | Wake-up Radio = low-power receiver for duty cycling
+
+@ mvl202 | MVL-202 | VLSI Testing & Testability | Fault models, test generation, fault simulation, design for testability, BIST and memory testing.
+# Testing Fundamentals
+- Need for Testing | Manufacturing defects must be screened. | Testing = detecting manufacturing defects | Verification vs Testing = design correctness versus physical defects | Test Cost = significant share of chip cost
+- Defects & Fault Models | Faults abstract physical defects. | Stuck-at Fault = node fixed at 0 or 1 | Bridging Fault = short between nets | Transition Fault = slow-to-rise or slow-to-fall
+- Fault Equivalence & Collapsing | Reduce fault list. | Fault Equivalence = faults with identical tests | Fault Dominance = test for one detects another | Fault Collapsing = removes redundant faults
+- Yield & Quality | Test quality affects shipped quality. | Defect Level = fraction of bad chips shipped | Fault Coverage = detected faults / total faults | DPPM = defective parts per million
+# Test Generation
+- Combinational ATPG | Algorithms generate tests. | D-algorithm = uses D and D-bar notation | PODEM = path-oriented decision making | FAN = fanout-oriented test generation
+- Fault Activation & Propagation | Tests excite and observe faults. | Fault Activation = set node opposite to stuck value | Fault Propagation = sensitise path to output | Justification = set inputs to achieve values
+- Sequential ATPG | Sequential circuits are harder. | Time-frame Expansion = unrolls circuit over cycles | Initialisation = bringing circuit to known state | Scan Converts = sequential to combinational test problem
+- Delay Testing | Timing defects need two-pattern tests. | Path Delay Fault = path slower than specified | Launch-on-capture = at-speed test method | Small Delay Defects = subtle timing defects
+# Fault Simulation
+- Fault Simulation Purpose | Measures test effectiveness. | Fault Simulation = determines faults detected by tests | Serial Fault Simulation = one fault at a time | Fault Dropping = remove detected faults
+- Parallel & Deductive Simulation | Faster simulation techniques. | Parallel Fault Simulation = bits represent faulty machines | Deductive Fault Simulation = propagates fault lists | Concurrent Fault Simulation = simulates differences only
+- Test Compaction | Fewer patterns save time. | Static Compaction = merges compatible patterns | Dynamic Compaction = during generation | Test Data Volume = storage required for patterns
+- Diagnosis | Locating defects in failing chips. | Fault Diagnosis = identifies likely fault locations | Failure Analysis = physical inspection of defect | Volume Diagnosis = statistics across many chips
+# Design for Testability
+- Testability Measures | Controllability and observability. | SCOAP = testability measures | Controllability = ease of setting a node | Observability = ease of observing a node
+- Scan Design | Scan chains make flip-flops accessible. | Scan Flip-flop = mux selects functional or scan input | Scan Chain = flip-flops linked as shift register | Scan Overhead = area and timing cost
+- Boundary Scan | Testing boards and I/O. | IEEE 1149.1 = JTAG boundary scan standard | TAP Controller = 16-state test access port FSM | Boundary Scan Cell = cell at each I/O pin
+- Test Compression | Reducing test data. | Test Compression = decompressor feeds many scan chains | EDT = embedded deterministic test | X-masking = handles unknown values
+# BIST & Memory Testing
+- Built-in Self-Test | On-chip test generation and checking. | BIST = circuit tests itself | LFSR = pseudo-random pattern generator | MISR = multiple input signature register compactor
+- Logic BIST | Random patterns test logic. | Pseudo-random Testing = LFSR patterns | Test Points = improve random-pattern testability | Aliasing = faulty signature equals good signature
+- Memory Fault Models | Memories have specific faults. | Coupling Fault = one cell affects another | Address Decoder Fault = wrong cell accessed | Retention Fault = cell loses data over time
+- Memory BIST & Repair | Testing and repairing memories. | March Test = sequence of read/write operations, e.g. March C− | MBIST = memory built-in self-test | Redundancy Repair = spare rows and columns
+
+@ mvl203 | MVL-203 | System-on-Chip & Embedded System Design | SoC architecture, processor cores, on-chip buses, hardware-software co-design, IP integration and embedded software.
+# SoC Fundamentals
+- SoC Concept | Whole systems on one chip. | SoC = processor, memory, peripherals and accelerators on one chip | IP Core = reusable design block | Platform-based Design = reuse of a common architecture
+- SoC Design Flow | Design spans hardware and software. | System Specification = functional and performance requirements | Architecture Exploration = evaluating alternatives | Integration = combining IP blocks
+- Processor Cores | CPUs anchor SoCs. | ARM Cortex-A = application processors | ARM Cortex-M = microcontroller cores | RISC-V Core = open ISA processor
+- Accelerators | Specialised hardware boosts efficiency. | Hardware Accelerator = dedicated logic for a task | NPU = neural processing unit | DSP Core = signal processing engine
+# On-chip Communication
+- On-chip Buses | Buses connect IP blocks. | AMBA = ARM bus family | AXI = high-performance AMBA interface with separate channels | APB = simple bus for peripherals
+- Network on Chip | Scalable interconnect. | NoC = packet-based on-chip network | Router = forwards flits between links | Wormhole Routing = flits follow header through network
+- Memory Subsystem | Memory organisation in SoC. | Memory Controller = interfaces with DRAM | Cache Coherent Interconnect = keeps caches consistent | DMA Controller = transfers data without CPU
+- Interrupts & Peripherals | Peripheral integration. | Interrupt Controller = prioritises interrupts, e.g. GIC | Timer = time base for software | GPIO = general-purpose I/O
+# Hardware-Software Co-design
+- Partitioning | Decide hardware versus software. | HW/SW Partitioning = assigning functions to hardware or software | Co-simulation = simulating hardware and software together | Profiling = finds performance hotspots
+- High-level Synthesis | C to RTL. | HLS = generates RTL from C/C++ | Loop Unrolling = parallelises loops in hardware | Pipelining Pragma = directs HLS pipelining
+- Virtual Prototyping | Early software development. | Virtual Platform = software model of hardware | TLM = transaction-level modelling | SystemC = C++ library for system modelling
+- Design Space Exploration | Evaluating trade-offs. | Pareto Front = optimal trade-off points | Performance Model = estimates throughput | Power-Performance-Area = PPA trade-offs
+# Embedded Software
+- Embedded Programming | Software close to hardware. | Bare-metal = software without operating system | Device Driver = software controlling hardware | Memory-mapped I/O = registers accessed as memory
+- RTOS | Real-time scheduling. | RTOS = deterministic real-time operating system | Rate Monotonic Scheduling = shorter period gets higher priority | Priority Inheritance = prevents priority inversion
+- Embedded Linux | Full OS for complex SoCs. | Bootloader = initialises hardware and loads OS, e.g. U-Boot | Device Tree = describes hardware to kernel | Kernel Module = loadable driver
+- Firmware Updates & Security | Keeping devices safe. | Secure Boot = verifies firmware signatures | OTA Update = over-the-air firmware update | Root of Trust = hardware trust anchor
+# Verification & Applications
+- SoC Verification | Verification of integrated systems. | SoC-level Verification = tests integrated IPs | Hardware-in-the-loop = real hardware in test loop | Emulation = fast execution of SoC model
+- Low-power SoC | Power management at system level. | Power Management Unit = controls domains | Power States = active, idle and sleep | Wake-up Sources = events that resume system
+- Automotive & IoT SoCs | Domain-specific SoCs. | Automotive SoC = ADAS and infotainment chips | ISO 26262 = automotive functional safety standard | IoT SoC = low-power connected device chip
+- Chiplets & Advanced Packaging | Modular silicon systems. | Chiplet = small die combined in package | UCIe = universal chiplet interconnect express | 2.5D Integration = dies on silicon interposer

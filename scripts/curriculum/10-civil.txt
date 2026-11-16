@@ -1,0 +1,513 @@
+// Civil Engineering (CE) semesters 3-8
+@ ce302 | CE-302 | Construction Materials | Stones, bricks, lime, cement, concrete, timber, metals, polymers and modern construction materials.
+# Stones, Bricks & Tiles
+- Building Stones | Natural stones are classified and tested for construction use. | Igneous Rock = formed by cooling of magma, e.g. granite; hard and durable | Sedimentary Rock = formed by deposition, e.g. sandstone and limestone | Dressing of Stones = shaping quarried stone to required size and finish
+- Tests on Stones | Tests decide whether a stone suits a structure. | Crushing Strength Test = compressive strength of a stone cube | Water Absorption Test = percentage of water absorbed in 24 hours | Attrition Test = resistance of stone to wear by rubbing
+- Bricks | Burnt clay bricks are the most common masonry unit. | Standard Brick Size = 190 × 90 × 90 mm (modular) in India | Brick Earth Constituents = silica, alumina, lime, iron oxide and magnesia | Efflorescence = white salt deposits caused by soluble salts in bricks
+- Tiles & Clay Products | Burnt clay products include tiles and pipes. | Roofing Tile = clay tile such as Mangalore pattern | Terracotta = burnt clay used for ornamental work | Vitrified Tile = dense low-porosity tile fired at high temperature
+# Lime, Cement & Mortar
+- Lime | Lime is a traditional binding material. | Fat Lime = high-calcium lime that slakes vigorously | Hydraulic Lime = sets under water due to clay content | Slaking = adding water to quicklime to form hydrated lime
+- Portland Cement | Cement hydrates to bind aggregates. | Bogue Compounds = C3S, C2S, C3A and C4AF | C3S = responsible for early strength | Heat of Hydration = heat released when cement reacts with water
+- Types & Tests of Cement | Different cements suit different works. | PPC = Portland pozzolana cement with fly ash | Rapid Hardening Cement = gains strength quickly | Vicat Apparatus = finds initial and final setting time
+- Mortar | Mortar binds masonry units. | Cement Mortar = cement, sand and water | Mix Proportion = e.g. 1:6 cement to sand for brickwork | Lime Mortar = lime and sand, slower setting
+# Concrete
+- Constituents of Concrete | Concrete is cement, aggregates and water. | Fine Aggregate = particles passing 4.75 mm sieve | Coarse Aggregate = particles retained on 4.75 mm sieve | Fineness Modulus = index of aggregate coarseness from sieve analysis
+- Fresh Concrete Properties | Workability governs placing and compaction. | Workability = ease of mixing, placing and compacting | Slump Test = measures consistency of fresh concrete | Segregation = separation of coarse aggregate from the mix
+- Hardened Concrete Properties | Strength and durability of concrete. | Water-Cement Ratio Law = strength falls as w/c ratio rises (Abrams' law) | Curing = maintaining moisture for hydration | Characteristic Strength = strength below which only 5% results fall
+- Admixtures & Special Concretes | Admixtures modify concrete properties. | Plasticiser = improves workability at same water content | Accelerator = speeds setting, e.g. calcium chloride | Self-compacting Concrete = flows and compacts under its own weight
+# Timber & Metals
+- Timber | Timber is a natural building material. | Seasoning = reducing moisture content of timber | Defects in Timber = knots, shakes and decay | Plywood = layers of veneer glued with grain at right angles
+- Preservation of Timber | Treatments protect timber. | ASCU Treatment = arsenic-copper preservative | Creosote = oil-based preservative | Fire Proofing = coatings that delay ignition
+- Ferrous Metals | Steel is the main structural metal. | Mild Steel = low carbon steel for structures | TMT Bars = thermo-mechanically treated reinforcement bars | HYSD Bars = high yield strength deformed bars
+- Non-ferrous Metals | Aluminium and copper are also used. | Aluminium = light, corrosion resistant | Copper = good conductor for wiring and plumbing | Corrosion Protection = painting and galvanising
+# Modern & Miscellaneous Materials
+- Glass & Plastics | Glass and polymers find wide use. | Float Glass = flat glass of uniform thickness | PVC = polymer for pipes and fittings | FRP = fibre reinforced polymer for strengthening
+- Paints & Varnishes | Coatings protect and decorate surfaces. | Paint Constituents = base, vehicle, pigment, drier and thinner | Distemper = water-based coating for interior walls | Varnish = transparent protective coating
+- Eco-friendly Materials | Sustainable materials reduce environmental impact. | Fly Ash Brick = brick made with fly ash, lime and gypsum | Bamboo = renewable structural material | Recycled Aggregate = aggregate from demolition waste
+- Geosynthetics & Smart Materials | New materials improve performance. | Geotextile = permeable fabric used with soil | Ferrocement = thin mortar with closely spaced mesh | Smart Material = responds to stimuli, e.g. shape memory alloys
+
+@ ce303 | CE-303 | Surveying | Chain, compass, levelling, plane table, theodolite, tacheometry, curves and modern surveying instruments.
+# Chain & Compass Surveying
+- Principles of Surveying | Surveying fixes relative positions of points. | Plane Surveying = Earth's curvature neglected | Geodetic Surveying = curvature considered for large areas | Working from Whole to Part = limits accumulation of errors
+- Chain Surveying | Distances are measured with chain or tape. | Survey Station = point at the end of a chain line | Offset = lateral measurement to locate details | Ranging = establishing intermediate points on a line
+- Compass Surveying | Compass measures bearings of lines. | Prismatic Compass = reads whole circle bearing | Magnetic Declination = angle between true and magnetic meridian | Local Attraction = disturbance of compass needle by nearby iron
+- Traversing | Traverses link survey stations. | Closed Traverse = starts and ends at same point | Closing Error = misclosure of traverse | Bowditch Rule = distributes closing error in proportion to line lengths
+# Levelling & Contouring
+- Levelling Fundamentals | Levelling finds difference in elevation. | Benchmark = point of known reduced level | Backsight = first reading after setting up instrument | Foresight = last reading before shifting instrument
+- Reduction of Levels | Readings are converted to reduced levels. | Height of Collimation Method = RL = HI − staff reading | Rise and Fall Method = compares consecutive readings | Arithmetic Check = ΣBS − ΣFS = last RL − first RL
+- Errors & Special Levelling | Curvature and refraction affect long sights. | Curvature Correction = −0.0785 d² m with d in km | Reciprocal Levelling = eliminates instrument and curvature errors | Profile Levelling = levels along a route for a section
+- Contouring | Contours show relief on maps. | Contour Line = line joining points of equal elevation | Contour Interval = vertical distance between contours | Contour Characteristics = closely spaced contours indicate steep slope
+# Plane Table & Theodolite
+- Plane Table Surveying | Plotting is done in the field. | Radiation Method = locating points from one station | Intersection Method = locating points by rays from two stations | Resection = locating the plane table station itself
+- Theodolite | Theodolite measures horizontal and vertical angles. | Transit Theodolite = telescope can be transited | Face Left and Face Right = observations to eliminate errors | Temporary Adjustments = setting up, centring, levelling and focusing
+- Measurement of Angles | Methods improve accuracy. | Repetition Method = measures angle several times cumulatively | Reiteration Method = measures several angles from one station | Vertical Angle = angle from horizontal to line of sight
+- Traverse Computation | Coordinates are computed from angles and lengths. | Latitude = L cos θ | Departure = L sin θ | Consecutive Coordinates = latitude and departure of each line
+# Tacheometry & Curves
+- Tacheometry | Distances measured optically. | Tacheometric Constant = multiplying constant usually 100 | Stadia Method = distance from staff intercept | Horizontal Distance = D = ks + C for horizontal sight
+- Simple Circular Curves | Curves connect straights on roads. | Degree of Curve = angle subtended by 30 m chord | Tangent Length = R tan(Δ/2) | Rankine's Method = setting out curve by deflection angles
+- Transition Curves | Gradual change of curvature improves comfort. | Transition Curve = curvature increases gradually | Clothoid = spiral with curvature proportional to length | Superelevation = raising outer edge on curves
+- Vertical Curves | Curves join different gradients. | Summit Curve = vertical curve with convexity upward | Valley Curve = vertical curve with concavity upward | Parabolic Curve = commonly used vertical curve
+# Modern Surveying
+- Electronic Distance Measurement | EDM uses electromagnetic waves. | EDM = measures distance by phase of modulated wave | Total Station = electronic theodolite with EDM | Prism Reflector = target returning EDM signal
+- GPS & GNSS | Satellites give positions. | GNSS = global navigation satellite systems such as GPS and NavIC | DGPS = differential GPS improving accuracy | RTK = real-time kinematic centimetre-level positioning
+- Remote Sensing in Surveying | Aerial and satellite imagery map large areas. | Aerial Photogrammetry = measurements from overlapping photographs | Stereoscopic Vision = depth from overlapping images | LiDAR = laser scanning to create elevation models
+- GIS Basics | GIS stores and analyses spatial data. | GIS = geographic information system | Vector Data = points, lines and polygons | Raster Data = grid of cells with values
+
+@ ce304 | CE-304 | Building Planning & Architecture | Principles of planning, building bye-laws, functional design, orientation, architecture history and building services.
+# Principles of Planning
+- Planning Principles | Good planning ensures function and comfort. | Aspect = arrangement of doors and windows to get sun and breeze | Prospect = view from the building | Privacy = screening of rooms from outside and inside
+- Grouping & Circulation | Rooms are grouped by function. | Roominess = efficient use of space without waste | Horizontal Circulation = passages and corridors | Vertical Circulation = stairs, lifts and ramps
+- Orientation | Orientation affects light and heat. | Building Orientation = placing building relative to sun and wind | Sun Path Diagram = shows sun position through the year | Cross Ventilation = openings on opposite walls for air flow
+- Economy & Flexibility | Efficient designs reduce cost. | Economy in Planning = minimum wall area for floor area | Flexibility = rooms adaptable for different uses | Sanitation = planning for hygiene and drainage
+# Building Bye-laws & Regulations
+- Building Bye-laws | Bye-laws regulate construction. | Building Bye-laws = local rules for safe orderly construction | National Building Code = NBC of India guiding design and construction | Building Permit = approval before construction
+- FAR & Ground Coverage | Density is controlled by ratios. | FAR = total floor area divided by plot area | Ground Coverage = built-up area as percentage of plot | Setback = mandatory open space from plot boundary
+- Minimum Room Sizes | Codes specify minimum dimensions. | Habitable Room = minimum area about 9.5 m² | Ceiling Height = minimum about 2.75 m for habitable rooms | Lighting and Ventilation = openings at least one-tenth of floor area
+- Fire & Accessibility Norms | Buildings must be safe and accessible. | Fire Exit = escape route to safe place | Ramp Gradient = about 1:12 for wheelchair access | Fire Rating = time a component resists fire
+# Functional Planning of Buildings
+- Residential Buildings | Houses are planned around family needs. | Bungalow = detached single-family house | Apartment = multi-dwelling building | Kitchen Work Triangle = sink, stove and fridge arrangement
+- Public Buildings | Schools and hospitals need special planning. | School Planning = classrooms, labs and play areas | Hospital Planning = zoning for wards, OT and services | Office Building = open plan or cellular offices
+- Industrial Buildings | Factories follow process flow. | Process Layout = machines grouped by function | Product Layout = machines arranged in sequence | North-light Roof = gives uniform daylight in factories
+- Building Drawing | Drawings communicate the design. | Plan = horizontal section at window level | Elevation = view of exterior face | Section = vertical cut showing internal details
+# Architecture
+- Elements of Architecture | Design uses basic visual elements. | Proportion = relation of parts to the whole | Scale = size relative to human body | Rhythm = repetition of elements
+- History of Architecture | Styles evolved across eras. | Indian Temple Architecture = Nagara and Dravida styles | Mughal Architecture = domes, arches and gardens, e.g. Taj Mahal | Modern Architecture = function over ornament, e.g. Le Corbusier
+- Green Building Design | Sustainable buildings save resources. | Green Building = reduces energy, water and material use | GRIHA = Indian green building rating system | Passive Solar Design = uses sun for heating and lighting
+- Landscape & Interior | Spaces around and within buildings. | Landscape Architecture = design of outdoor spaces | Interior Design = arrangement of interior spaces | Ergonomics = design for human comfort
+# Building Services
+- Water Supply & Drainage | Services supply water and remove waste. | Plumbing = pipes for water supply | Sanitary Fittings = WC, wash basin and sinks | Septic Tank = on-site treatment of sewage
+- Electrical Services | Electrical layouts power the building. | Wiring System = conduit, casing-capping | Earthing = connecting to ground for safety | Lighting Design = illumination levels in lux
+- Acoustics | Acoustics controls sound in buildings. | Reverberation Time = Sabine's formula T = 0.16V/A | Sound Insulation = reduces noise transmission | Echo = reflected sound heard distinctly
+- HVAC & Lifts | Mechanical services ensure comfort. | HVAC = heating, ventilation and air conditioning | Lift Planning = based on traffic and waiting time | Escalator = moving staircase for heavy traffic
+
+@ ce402 | CE-402 | Construction Technology | Foundations, masonry, floors, roofs, stairs, formwork, damp proofing, construction equipment and modern methods.
+# Foundations & Masonry
+- Types of Foundations | Foundations transfer loads to soil. | Spread Footing = enlarged base for column or wall | Raft Foundation = single slab under whole building | Pile Foundation = transfers load to deep strata
+- Brick Masonry | Bonds give strength to walls. | English Bond = alternate header and stretcher courses | Flemish Bond = headers and stretchers in each course | Header = brick laid with length across the wall
+- Stone Masonry | Stone walls use rubble or ashlar. | Rubble Masonry = undressed or roughly dressed stones | Ashlar Masonry = finely dressed stones with thin joints | Through Stone = stone extending across wall thickness
+- Composite & Hollow Block Masonry | Other masonry types. | Hollow Concrete Block = lightweight masonry unit | Cavity Wall = two leaves with gap for insulation | Reinforced Masonry = steel bars in masonry for strength
+# Floors, Roofs & Stairs
+- Floors | Floors give level surfaces. | Ground Floor = laid on prepared base | Terrazzo Floor = marble chips in cement | Flooring Selection = durability, cleanliness and cost
+- Roofs | Roofs protect buildings from weather. | Pitched Roof = sloping roof with trusses | Flat Roof = RCC slab with slope for drainage | King Post Truss = timber truss for spans up to 8 m
+- Staircases | Stairs connect floors. | Tread = horizontal part of step | Riser = vertical part of step | Dog-legged Stair = two flights with half landing
+- Doors & Windows | Openings for access and ventilation. | Panelled Door = frame with panels | Casement Window = side-hinged window | Lintel = beam over opening carrying load
+# Damp Proofing & Finishes
+- Dampness in Buildings | Moisture causes deterioration. | Rising Damp = moisture rising by capillarity | DPC = damp proof course preventing rising damp | Efflorescence = salt deposits from moisture
+- Waterproofing | Roofs and basements need waterproofing. | Membrane Waterproofing = bituminous or polymer sheet | Integral Waterproofing = admixture in concrete | Grouting = injecting material to seal cracks
+- Plastering & Pointing | Finishes protect walls. | Plastering = covering walls with mortar | Pointing = finishing mortar joints | Defects in Plaster = cracking, blistering and efflorescence
+- Painting & Finishing | Coatings protect and decorate. | Primer = first coat improving adhesion | Emulsion Paint = water-based paint | Texture Finish = decorative surface finish
+# Formwork & Scaffolding
+- Formwork | Formwork shapes fresh concrete. | Formwork = temporary mould for concrete | Shuttering = formwork for slabs and walls | Removal of Formwork = after specified curing period
+- Scaffolding & Shoring | Temporary structures support work. | Scaffolding = temporary platform for workers | Shoring = support for unsafe structures | Underpinning = strengthening existing foundations
+- Slip & Modular Formwork | Modern formwork speeds construction. | Slip Form = continuously moving formwork for tall structures | Aluminium Formwork = reusable system formwork | Table Form = large formwork for slabs
+- Expansion & Construction Joints | Joints control movements. | Expansion Joint = gap allowing thermal movement | Construction Joint = joint between successive pours | Contraction Joint = controls shrinkage cracks
+# Construction Equipment & Methods
+- Earth Moving Equipment | Machines excavate and move soil. | Bulldozer = tractor with blade for pushing earth | Excavator = digs with bucket on arm | Scraper = excavates and transports soil
+- Concreting Equipment | Machines mix and place concrete. | Transit Mixer = truck mixing concrete in transit | Concrete Pump = pumps concrete to placement | Vibrator = compacts concrete
+- Hoisting Equipment | Cranes lift materials. | Tower Crane = tall crane for high-rise construction | Mobile Crane = truck-mounted crane | Hoist = vertical lifting of materials
+- Prefabrication & Fast-track Construction | Industrialised methods save time. | Precast Construction = elements cast off-site | Modular Construction = factory-built modules | Pre-engineered Building = steel buildings with standard components
+
+@ ce403 | CE-403 | Structural Analysis-I | Determinacy, deflection methods, energy principles, arches, cables, influence lines and indeterminate beams.
+# Fundamentals of Structural Analysis
+- Structures & Supports | Analysis predicts internal forces and deflections. | Determinate Structure = solvable by equilibrium alone | Indeterminate Structure = needs compatibility in addition to equilibrium | Degree of Indeterminacy = unknown reactions minus equilibrium equations
+- Static & Kinematic Indeterminacy | Two measures characterise structures. | Static Indeterminacy = excess unknown forces | Kinematic Indeterminacy = unknown joint displacements | Stability = structure resists loads without collapse
+- Analysis of Trusses | Truss members carry axial forces. | Method of Joints = equilibrium at each joint | Method of Sections = cut through members to find forces | Zero Force Member = member carrying no load under given loading
+- Principle of Superposition | Linear structures allow superposition. | Superposition = total response equals sum of individual responses | Linearity = displacements proportional to loads | Small Deflection Assumption = geometry unchanged by loading
+# Deflection of Beams
+- Double Integration Method | Elastic curve gives deflection. | Elastic Curve = EI d²y/dx² = M | Boundary Conditions = known slopes and deflections at supports | Macaulay's Method = single equation with brackets
+- Moment Area Method | Areas of M/EI diagram give slope and deflection. | First Moment Area Theorem = slope change equals area of M/EI | Second Theorem = deflection equals moment of M/EI area | Application = cantilevers and symmetric beams
+- Conjugate Beam Method | Fictitious beam loaded with M/EI. | Conjugate Beam = beam loaded by M/EI diagram | Shear in Conjugate Beam = slope in real beam | Moment in Conjugate Beam = deflection in real beam
+- Standard Deflections | Common results are memorised. | Cantilever End Load = WL³/(3EI) | SSB Central Load = WL³/(48EI) | SSB UDL = 5wL⁴/(384EI)
+# Energy Methods
+- Strain Energy | Work done is stored as strain energy. | Strain Energy in Bending = ∫ M²/(2EI) dx | Strain Energy in Axial Load = P²L/(2AE) | Complementary Energy = energy used in non-linear analysis
+- Castigliano's Theorems | Derivatives of strain energy give deflections. | Castigliano's First Theorem = ∂U/∂Δ = P | Castigliano's Second Theorem = ∂U/∂P = Δ | Dummy Load Method = apply fictitious load to find deflection
+- Unit Load Method | Virtual work finds deflections. | Virtual Work Principle = external virtual work equals internal virtual work | Unit Load Method = δ = ∫ Mm/(EI) dx | Truss Deflection = δ = Σ PuL/(AE)
+- Maxwell & Betti Theorems | Reciprocal theorems relate deflections. | Maxwell's Reciprocal Theorem = deflection at A due to load at B equals deflection at B due to load at A | Betti's Theorem = generalised reciprocal work theorem | Application = influence lines by Müller-Breslau
+# Arches & Cables
+- Three-hinged Arches | Determinate arches carry loads by thrust. | Three-hinged Arch = determinate with hinge at crown | Horizontal Thrust = H = wL²/(8h) for parabolic arch under UDL | Normal Thrust = axial force along arch
+- Two-hinged Arches | Indeterminate arches need compatibility. | Two-hinged Arch = one degree indeterminate | Rib Shortening = effect of axial deformation | Temperature Effect = changes horizontal thrust
+- Cables | Cables carry loads in tension. | Cable Equation = parabolic shape under uniform horizontal load | Maximum Tension = at supports | Suspension Bridge = cable-supported deck
+- Stiffening Girders | Girders distribute loads to cables. | Stiffening Girder = spreads loads in suspension bridges | Two-hinged Stiffening Girder = common arrangement | Tension Coefficient Method = analyses space trusses
+# Influence Lines & Rolling Loads
+- Influence Lines | ILs show effect of a moving unit load. | Influence Line = response at a point as unit load moves | IL for Reaction = straight line for simply supported beam | Müller-Breslau Principle = IL shape equals deflected shape from released constraint
+- Rolling Loads | Moving loads produce maximum effects. | Single Concentrated Load = maximum moment when load is at section | UDL Longer than Span = covers whole span for maximum | Maximum Bending Moment = occurs under a load near mid-span
+- Absolute Maximum Moment | Moving load trains create peak effects. | Absolute Maximum Moment = largest moment anywhere in span | Resultant Rule = centre of span bisects distance between resultant and nearest load | Equivalent UDL = uniform load giving same maximum effect
+- Indeterminate Beams | Propped and fixed beams. | Propped Cantilever = one degree indeterminate | Fixed Beam = fixing moments at both ends; wL²/12 for UDL | Clapeyron's Three Moment Equation = analyses continuous beams
+
+@ ce404 | CE-404 | Transportation Engineering-I | Highway development, geometric design, materials, pavement design, construction, traffic engineering and railways basics.
+# Highway Development & Planning
+- History of Road Development | Roads evolved through planning efforts. | Jayakar Committee = 1927 committee recommending road fund | Nagpur Road Plan = first 20-year road plan 1943 | PMGSY = rural road programme
+- Road Classification | Roads are classified by function. | National Highways = connect major cities and ports | State Highways = connect district headquarters | Expressway = access-controlled high-speed road
+- Highway Alignment | Alignment balances cost and safety. | Obligatory Points = control points route must pass | Engineering Surveys = map study, reconnaissance, preliminary and final location | Requirements of Alignment = short, easy, safe and economical
+- Highway Financing & Agencies | Agencies plan and fund roads. | NHAI = National Highways Authority of India | IRC = Indian Roads Congress setting standards | PPP = public-private partnership funding
+# Geometric Design
+- Cross-section Elements | Road cross-section has several parts. | Camber = transverse slope for drainage | Carriageway = paved width for traffic | Shoulder = strip beside carriageway
+- Sight Distance | Drivers need adequate visibility. | Stopping Sight Distance = lag distance + braking distance | Overtaking Sight Distance = distance needed to pass safely | Perception-Reaction Time = typically 2.5 s
+- Horizontal Alignment | Curves require superelevation and widening. | Superelevation = e + f = V²/(127R) | Extra Widening = mechanical plus psychological widening | Transition Curve Length = based on rate of change of centrifugal acceleration
+- Vertical Alignment | Gradients and vertical curves. | Ruling Gradient = design gradient for normal conditions | Summit Curve Length = based on sight distance | Valley Curve Length = based on headlight sight distance and comfort
+# Highway Materials
+- Soil Subgrade | Subgrade strength governs pavement design. | CBR = California bearing ratio of soil | Subgrade = prepared soil supporting pavement | Plate Load Test = finds modulus of subgrade reaction
+- Aggregates | Aggregates form pavement skeleton. | Los Angeles Abrasion Test = measures hardness | Aggregate Impact Value = toughness against impact | Flakiness Index = percentage of flaky particles
+- Bitumen | Bitumen binds flexible pavements. | Penetration Test = hardness of bitumen | Softening Point = ring and ball test | Ductility Test = ability to stretch
+- Bituminous Mixes | Mix design gives durable surfaces. | Marshall Mix Design = finds optimum bitumen content | Air Voids = voids in compacted mix | VG Grades = viscosity grading of bitumen, e.g. VG-30
+# Pavement Design
+- Types of Pavements | Pavements are flexible or rigid. | Flexible Pavement = layered system transmitting load by grain contact | Rigid Pavement = concrete slab acting by flexure | Composite Pavement = combination of both
+- Flexible Pavement Design | IRC:37 uses traffic and CBR. | Design Traffic = cumulative standard axles in msa | Standard Axle = 80 kN single axle | Layer Thickness = determined from design charts
+- Rigid Pavement Design | IRC:58 uses Westergaard theory. | Westergaard Stress = wheel load stresses at interior, edge and corner | Radius of Relative Stiffness = l = (Eh³/(12(1 − μ²)k))^0.25 | Dowel Bar = transfers load across joints
+- Pavement Failures | Distresses indicate failure modes. | Rutting = longitudinal depressions in wheel paths | Fatigue Cracking = alligator cracks from repeated loading | Pumping = ejection of fines at rigid pavement joints
+# Traffic Engineering & Railways
+- Traffic Characteristics | Traffic studies measure flow. | Traffic Volume = vehicles per unit time | Spot Speed = speed at a location | PCU = passenger car unit for mixed traffic
+- Traffic Control | Signals and signs regulate flow. | Traffic Signal = timed control at intersections | Webster's Method = optimum signal cycle time | Rotary = roundabout intersection
+- Railway Track Components | Railways run on permanent way. | Gauge = distance between rails; broad gauge 1676 mm | Sleeper = supports rails and holds gauge | Ballast = crushed stone bed distributing load
+- Railway Geometric Design | Track geometry ensures safety. | Cant = superelevation on railway curves | Cant Deficiency = shortfall from equilibrium cant | Points and Crossings = allow trains to change tracks
+
+@ ce405 | CE-405 | Engineering Geology & Remote Sensing | Earth processes, minerals, rocks, structural geology, geology for engineering projects and remote sensing applications.
+# General Geology
+- Scope of Engineering Geology | Geology informs safe construction. | Engineering Geology = geology applied to civil engineering | Earth Structure = crust, mantle and core | Weathering = breakdown of rocks at surface
+- Weathering & Erosion | Surface processes shape landforms. | Physical Weathering = mechanical breakdown by temperature and frost | Chemical Weathering = decomposition by chemical reactions | Erosion = removal of material by water, wind or ice
+- Geological Agents | Rivers, wind and glaciers modify landscape. | River Erosion = forms valleys and meanders | Aeolian Landforms = wind-formed features like dunes | Glacial Landforms = U-shaped valleys and moraines
+- Earthquakes | Earthquakes result from fault movement. | Focus = point of origin inside earth | Epicentre = point on surface above focus | Richter Scale = logarithmic measure of magnitude
+# Mineralogy & Petrology
+- Minerals | Minerals are naturally occurring crystalline solids. | Mineral = inorganic solid with definite composition | Mohs Hardness Scale = talc 1 to diamond 10 | Physical Properties = colour, lustre, streak, cleavage
+- Rock-forming Minerals | Common minerals form rocks. | Quartz = SiO2, very hard and resistant | Feldspar = most abundant mineral group | Mica = sheet silicate with perfect cleavage
+- Igneous & Sedimentary Rocks | Rocks form by different processes. | Granite = coarse-grained intrusive igneous rock | Basalt = fine-grained extrusive igneous rock | Shale = fine sedimentary rock from clay
+- Metamorphic Rocks | Heat and pressure transform rocks. | Marble = metamorphosed limestone | Slate = metamorphosed shale with cleavage | Gneiss = banded high-grade metamorphic rock
+# Structural Geology
+- Dip & Strike | Bedding attitude is measured in the field. | Dip = angle of inclination of bed from horizontal | Strike = direction of horizontal line on bed | Clinometer Compass = measures dip and strike
+- Folds | Rocks bend under compression. | Anticline = upward arching fold | Syncline = downward trough fold | Fold Axis = line about which beds are folded
+- Faults | Rocks break and move along faults. | Normal Fault = hanging wall moves down | Reverse Fault = hanging wall moves up | Fault Zone = crushed rock along fault
+- Joints & Unconformities | Fractures and gaps in rock record. | Joint = fracture without displacement | Unconformity = gap in geological record | Engineering Significance = joints reduce rock strength and allow seepage
+# Geology for Civil Works
+- Geological Investigations | Site investigations precede construction. | Site Investigation = surface and subsurface exploration | Core Drilling = obtains rock cores | RQD = rock quality designation from core recovery
+- Dams & Reservoirs | Dam sites need sound geology. | Dam Site Selection = strong impervious foundation rock | Reservoir Leakage = through porous or faulted rock | Grouting = sealing rock fractures
+- Tunnels | Tunnel stability depends on rock. | Tunnel in Folded Strata = alignment along axis preferred | Overbreak = excess excavation beyond profile | Rock Bolting = reinforcing tunnel rock
+- Landslides & Groundwater | Slopes and water affect safety. | Landslide = downslope movement of soil and rock | Aquifer = water-bearing rock layer | Slope Stabilisation = drainage, retaining walls and anchors
+# Remote Sensing
+- Principles of Remote Sensing | Sensors record electromagnetic energy. | Remote Sensing = acquiring information without contact | Electromagnetic Spectrum = range of wavelengths used | Spectral Signature = unique reflectance of a feature
+- Sensors & Platforms | Satellites carry sensors. | Passive Sensor = records reflected sunlight | Active Sensor = sends its own energy, e.g. radar | IRS Satellites = Indian remote sensing series
+- Image Interpretation | Images are interpreted visually or digitally. | Spatial Resolution = smallest detectable object size | False Colour Composite = infrared shown as red | Elements of Interpretation = tone, texture, shape, pattern
+- Applications in Civil Engineering | Remote sensing supports planning. | Land Use Mapping = classification of land cover | Watershed Management = planning water resources | Disaster Monitoring = floods and landslides mapping
+
+@ ce502 | CE-502 | Transportation Engineering-II | Railway engineering, airport engineering, tunnels, docks and harbours.
+# Railway Engineering
+- Permanent Way | The track system supports trains. | Rail Section = flat-footed rail commonly used | Creep of Rails = longitudinal movement of rails | Coning of Wheels = tapered wheels keep train centred
+- Sleepers & Ballast | Components distribute loads. | Sleeper Density = number of sleepers per rail length, e.g. M + 7 | Concrete Sleeper = durable prestressed sleeper | Ballast Cushion = depth of ballast below sleeper
+- Railway Curves | Curves need cant and transition. | Equilibrium Cant = e = GV²/(127R) | Negative Cant = cant opposite on turnout branch | Transition Length = based on cant gradient
+- Signalling & Interlocking | Signals ensure safe train movement. | Semaphore Signal = arm signal | Interlocking = prevents conflicting signal settings | Automatic Block System = track circuits control signals
+# Points, Crossings & Stations
+- Turnouts | Turnouts divert trains. | Turnout = switch and crossing assembly | Tongue Rail = movable rail of switch | Crossing Number = ratio defining crossing angle
+- Stations & Yards | Stations handle passengers and goods. | Junction Station = meeting of lines | Marshalling Yard = sorting wagons into trains | Platform = raised area for boarding
+- High-speed & Metro Rail | Modern rail systems. | High-speed Rail = trains above 250 km/h | Metro Rail = urban rapid transit | Ballastless Track = slab track for high speeds
+- Track Maintenance | Maintenance keeps track safe. | Track Geometry = gauge, alignment, level | Tamping = packing ballast under sleepers | Rail Welding = long welded rails reduce joints
+# Airport Engineering
+- Airport Planning | Airports require careful site selection. | Airport Site Selection = obstruction-free, accessible, suitable land | ICAO = International Civil Aviation Organization | Airport Master Plan = long-term development plan
+- Runway Design | Runways are oriented with wind. | Wind Rose Diagram = determines runway orientation | Basic Runway Length = corrected for elevation, temperature and gradient | Runway Configuration = single, parallel or intersecting
+- Taxiways & Aprons | Aircraft move between runway and terminal. | Taxiway = path connecting runway and apron | Exit Taxiway = high-speed exit reducing runway occupancy | Apron = parking area for aircraft
+- Airport Lighting & Navigation | Visual and instrument aids guide aircraft. | Approach Lighting = guides landing aircraft | ILS = instrument landing system | Air Traffic Control = manages aircraft movement
+# Tunnel Engineering
+- Tunnels & Classification | Tunnels pass through obstacles. | Tunnel = underground passage | Tunnel Shape = circular, horseshoe or D-shaped | Tunnel Surveying = transferring alignment underground
+- Tunnelling Methods in Soft Ground | Soft soils need support. | Cut and Cover = excavation from surface | Shield Tunnelling = protective shield advancing | NATM = new Austrian tunnelling method
+- Tunnelling in Rock | Rock tunnels use drilling and blasting. | Drill and Blast = drilling holes and blasting | TBM = tunnel boring machine | Full Face Method = whole section excavated at once
+- Tunnel Services | Tunnels need ventilation and drainage. | Ventilation = supplying fresh air | Tunnel Lining = supports and waterproofs | Dust Control = water spraying and ventilation
+# Docks & Harbours
+- Harbours | Harbours provide shelter for ships. | Natural Harbour = sheltered by land | Artificial Harbour = protected by breakwaters | Port = harbour with facilities for cargo
+- Breakwaters | Breakwaters protect from waves. | Rubble Mound Breakwater = stone mound | Vertical Wall Breakwater = reflects waves | Wave Height = key design parameter
+- Docks & Quays | Docks handle loading and repairs. | Wet Dock = enclosed basin with gates | Dry Dock = for ship repair | Quay Wall = berthing structure along shore
+- Dredging & Navigation Aids | Channels must remain navigable. | Dredging = removing sediment | Lighthouse = navigation aid | Buoy = floating marker for channels
+
+@ ce503a | CE-503(A) | Structural Analysis-II | Slope deflection, moment distribution, Kani's method, column analogy, matrix methods and plastic analysis.
+# Slope Deflection Method
+- Basics of Slope Deflection | Joint rotations are unknowns. | Slope Deflection Equation = M = Mf + (2EI/L)(2θa + θb − 3Δ/L) | Fixed End Moment = moment in fully fixed beam | Joint Equilibrium = sum of moments at joint is zero
+- Continuous Beams | Slope deflection solves continuous beams. | Continuous Beam = beam over more than two supports | Support Settlement = adds sway term in equations | Unknown Rotations = solved from joint equations
+- Portal Frames without Sway | Symmetric frames have no sway. | Non-sway Frame = no lateral displacement | Symmetry = reduces unknowns | Frame Joint = rigid connection
+- Frames with Sway | Unsymmetric frames sway sideways. | Sway = lateral displacement of frame | Shear Equation = additional equation for sway | Sidesway Correction = accounts for lateral movement
+# Moment Distribution Method
+- Concepts of Moment Distribution | Iterative balancing of moments. | Stiffness Factor = 4EI/L for far end fixed | Distribution Factor = member stiffness / total joint stiffness | Carry Over Factor = 1/2 for far end fixed
+- Continuous Beams by MDM | Hardy Cross method distributes unbalanced moments. | Hardy Cross Method = moment distribution method | Balancing = distributing unbalanced moments | Modified Stiffness = 3EI/L for far end pinned
+- Frames by MDM | Non-sway and sway frames. | Sway Correction = separate analysis for sway | Shear Condition = horizontal equilibrium of frame | Final Moments = sum of non-sway and sway moments
+- Kani's Method | Rotation contributions are iterated. | Kani's Method = iterative method using rotation factors | Rotation Factor = −1/2 × distribution factor | Displacement Factor = for sway in Kani's method
+# Column Analogy & Approximate Methods
+- Column Analogy | Analogy treats a fixed structure as a column. | Column Analogy = analogous column loaded by M/EI | Elastic Centre = centroid of analogous column | Indeterminate Moment = found like column stress
+- Approximate Methods for Frames | Quick methods for preliminary design. | Portal Method = assumes inflection points at mid-height | Cantilever Method = axial forces proportional to distance from centroid | Substitute Frame = analyses a floor separately
+- Analysis for Vertical Loads | Building frames under gravity. | Two-cycle Method = approximate moment distribution | Load Patterns = alternate span loading for maximum moments | Inflection Point = point of zero moment
+- Influence Lines for Indeterminate Beams | Müller-Breslau for indeterminate structures. | Müller-Breslau Principle = IL equals deflected shape | Qualitative IL = sketches for loading patterns | Propped Cantilever IL = curved influence line
+# Matrix Methods
+- Flexibility Method | Forces are unknowns. | Flexibility Matrix = displacements due to unit forces | Compatibility Equation = [F]{X} = {Δ} | Redundant = chosen extra unknown force
+- Stiffness Method | Displacements are unknowns. | Stiffness Matrix = forces due to unit displacements | Equilibrium Equation = [K]{D} = {P} | Direct Stiffness Method = assembles global stiffness matrix
+- Member Stiffness Matrices | Elements have standard matrices. | Beam Element Matrix = 4×4 relating end forces and displacements | Truss Element Matrix = axial stiffness AE/L | Transformation Matrix = local to global coordinates
+- Computer Analysis | Software implements matrix methods. | STAAD Pro = structural analysis software | ETABS = building analysis software | Bandwidth = sparsity reduces computation
+# Plastic Analysis
+- Plastic Theory | Steel structures redistribute moments. | Plastic Hinge = section yielding fully | Plastic Moment = Mp = fy × Zp | Shape Factor = Zp/Ze; 1.5 for rectangle
+- Collapse Mechanisms | Structures fail by mechanisms. | Beam Mechanism = hinges in a single span | Sway Mechanism = hinges in columns | Combined Mechanism = beam and sway together
+- Methods of Plastic Analysis | Collapse load is found by theorems. | Static Theorem = lower bound on collapse load | Kinematic Theorem = upper bound on collapse load | Uniqueness Theorem = satisfies equilibrium, mechanism and yield
+- Load Factor | Plastic design uses load factors. | Load Factor = collapse load / working load | Plastic Design = design based on collapse | Moment Redistribution = moments shift as hinges form
+
+@ ce504b | CE-504(B) | Remote Sensing & GIS | Remote sensing physics, sensors, image processing, GIS data models, spatial analysis and civil engineering applications.
+# Remote Sensing Physics
+- Electromagnetic Radiation | Energy interacts with atmosphere and surface. | EMR = energy propagating as waves | Atmospheric Window = wavelengths passing through atmosphere | Scattering = redirection of radiation by particles
+- Energy Interaction with Surface | Features reflect energy differently. | Reflectance = ratio of reflected to incident energy | Spectral Signature = reflectance curve of material | Vegetation Red Edge = sharp rise in reflectance near 700 nm
+- Resolutions | Sensors are characterised by resolution. | Spatial Resolution = ground pixel size | Spectral Resolution = number and width of bands | Temporal Resolution = revisit frequency
+- Orbits & Platforms | Satellites carry sensors in orbits. | Sun-synchronous Orbit = same local time crossing | Geostationary Orbit = fixed over equator | Swath = width of ground imaged
+# Sensors & Data Products
+- Optical Sensors | Optical sensors record reflected light. | Multispectral Sensor = several broad bands | Hyperspectral Sensor = hundreds of narrow bands | Panchromatic = single broad band, high resolution
+- Microwave Sensors | Radar sensors work day and night. | SAR = synthetic aperture radar | Backscatter = energy returned to radar | InSAR = measures ground deformation
+- Indian Satellites | India has strong EO programme. | Cartosat = high-resolution mapping satellite | Resourcesat = resource monitoring satellite | RISAT = radar imaging satellite
+- Thermal Remote Sensing | Thermal sensors record emitted energy. | Thermal Infrared = 8-14 µm band | Emissivity = emitting efficiency of surface | Urban Heat Island = warmer urban areas
+# Digital Image Processing
+- Preprocessing | Corrections remove distortions. | Radiometric Correction = removes sensor and atmospheric errors | Geometric Correction = aligns image to map | Georeferencing = assigning coordinates to image
+- Image Enhancement | Enhancement improves visual interpretation. | Contrast Stretching = expands range of values | NDVI = (NIR − Red)/(NIR + Red) vegetation index | Filtering = smooths or sharpens image
+- Image Classification | Pixels are grouped into classes. | Supervised Classification = uses training samples | Unsupervised Classification = clustering without training | Maximum Likelihood Classifier = statistical classifier
+- Accuracy Assessment | Maps are checked against ground truth. | Error Matrix = compares classified and reference data | Overall Accuracy = correct pixels / total | Kappa Coefficient = agreement beyond chance
+# Geographic Information System
+- GIS Components | GIS integrates hardware, software, data and people. | GIS = system to capture, store and analyse spatial data | Spatial Data = data with location | Attribute Data = non-spatial characteristics
+- Data Models | Vector and raster represent geography. | Vector Model = points, lines and polygons | Raster Model = grid cells | Topology = spatial relationships among features
+- Map Projections & Coordinates | Earth is projected onto a plane. | Map Projection = transforms globe to plane | UTM = universal transverse Mercator projection | Datum = reference surface, e.g. WGS84
+- Data Input & Management | Data enters GIS from many sources. | Digitisation = converting maps to vector | Geodatabase = spatial database | Metadata = data about data
+# Spatial Analysis & Applications
+- Spatial Analysis | GIS answers spatial questions. | Buffer Analysis = zone around features | Overlay Analysis = combining layers | Network Analysis = shortest routes on networks
+- Terrain Analysis | Elevation models support design. | DEM = digital elevation model | Slope and Aspect = derived terrain parameters | Watershed Delineation = drainage basin extraction
+- Applications in Infrastructure | GIS supports planning. | Site Suitability Analysis = multi-criteria site selection | Route Planning = optimal alignment of roads | Urban Planning = land use and growth mapping
+- Applications in Water & Disaster | GIS manages hazards. | Flood Mapping = flood extent from imagery | Groundwater Prospect Mapping = combining geology and terrain | Disaster Management = risk zoning and response
+
+@ ce601 | CE-601 | Structural Design & Drawing (RCC-I) | Limit state design of RCC beams, slabs, columns, footings and staircases as per IS 456.
+# Design Philosophies
+- Working Stress vs Limit State | Design methods ensure safety and serviceability. | Working Stress Method = elastic stresses within permissible limits | Limit State Method = safety against collapse and serviceability | IS 456:2000 = Indian code for plain and reinforced concrete
+- Limit States | Structures must avoid failure states. | Limit State of Collapse = flexure, shear, torsion, compression | Limit State of Serviceability = deflection and cracking | Partial Safety Factor = 1.5 for loads, 1.5 for concrete, 1.15 for steel
+- Characteristic Values | Design uses characteristic strengths. | Characteristic Strength = 95% exceedance value | Design Strength = characteristic strength / partial safety factor | Characteristic Load = 95% non-exceedance load
+- Stress-Strain Behaviour | Material models define design. | Concrete Stress Block = parabolic-rectangular, max 0.446 fck | Ultimate Concrete Strain = 0.0035 in flexure | Steel Design Stress = 0.87 fy
+# Design of Beams
+- Singly Reinforced Beams | Tension steel resists bending. | Limiting Depth of Neutral Axis = xu,max = 0.48d for Fe 415 | Moment of Resistance = Mu = 0.36 fck b xu (d − 0.42 xu) | Under-reinforced Section = steel yields before concrete crushes
+- Doubly Reinforced Beams | Compression steel adds capacity. | Doubly Reinforced Beam = steel in tension and compression | Additional Moment = Mu − Mu,lim taken by compression steel | Compression Steel Stress = from strain compatibility
+- Flanged Beams | T and L beams use slab as flange. | Effective Flange Width = lo/6 + bw + 6Df for T-beam | Neutral Axis in Flange = rectangular beam behaviour | T-beam = monolithic beam and slab
+- Shear & Bond | Shear reinforcement prevents diagonal tension failure. | Nominal Shear Stress = τv = Vu/(bd) | Stirrups = vertical shear reinforcement | Development Length = Ld = φσs/(4τbd)
+# Design of Slabs
+- One-way Slabs | Slabs spanning in one direction. | One-way Slab = ly/lx > 2 | Minimum Reinforcement = 0.12% for HYSD bars | Distribution Steel = perpendicular to main steel
+- Two-way Slabs | Slabs spanning both directions. | Two-way Slab = ly/lx ≤ 2 | Moment Coefficients = IS 456 Table 26 | Corner Reinforcement = torsion steel at restrained corners
+- Continuous Slabs | Slabs over multiple supports. | Moment Coefficients = for continuous slabs | Negative Moment Steel = at supports | Cantilever Slab = balcony and chajja design
+- Deflection Control | Span-to-depth ratios limit deflection. | Basic Span/Depth Ratio = 20 for simply supported | Modification Factor = depends on steel stress | Cracking = limited by bar spacing
+# Columns & Footings
+- Short Columns | Short columns fail by crushing. | Short Column = effective length / lateral dimension < 12 | Axial Load Capacity = Pu = 0.4 fck Ac + 0.67 fy Asc | Minimum Eccentricity = l/500 + D/30, not less than 20 mm
+- Columns with Bending | Interaction diagrams combine axial and bending. | Interaction Diagram = Pu versus Mu capacity | Uniaxial Bending = moment about one axis | Biaxial Bending = moments about both axes
+- Isolated Footings | Footings spread column loads. | Footing Area = load / safe bearing capacity | One-way Shear = checked at d from column face | Punching Shear = checked at d/2 from column face
+- Combined Footings | One footing for two columns. | Combined Footing = supports two columns | Rectangular Combined Footing = centroid coincides with load resultant | Strap Footing = connects two footings with beam
+# Staircases & Detailing
+- Staircase Design | Stairs are designed as slabs. | Dog-legged Staircase = waist slab spanning longitudinally | Waist Slab = inclined slab of stair | Effective Span = includes landings
+- Reinforcement Detailing | Details ensure performance. | Clear Cover = 20-75 mm depending on exposure | Lap Length = overlap for bar continuity | Bar Bending Schedule = list of bar shapes and lengths
+- Durability Requirements | Concrete must resist environment. | Exposure Conditions = mild to extreme as per IS 456 | Minimum Grade = M20 for RCC | Maximum w/c Ratio = depends on exposure
+- Structural Drawing | Drawings communicate reinforcement. | Beam Detail = longitudinal and cross-section reinforcement | Slab Detail = bar spacing in both directions | Column Schedule = sizes and bars of columns
+
+@ ce602 | CE-602 | Environmental Engineering-I | Water demand, sources, conveyance, quality, treatment and distribution systems.
+# Water Demand & Sources
+- Water Demand | Demand determines design capacity. | Per Capita Demand = 135 lpcd for urban areas as per CPHEEO | Fire Demand = water for firefighting | Peak Factor = maximum to average demand ratio
+- Population Forecasting | Design needs future population. | Arithmetic Increase Method = constant increment per decade | Geometric Increase Method = constant percentage growth | Incremental Increase Method = increment changes uniformly
+- Surface Sources | Rivers and lakes supply water. | Impounding Reservoir = dam storing river water | Intake Structure = draws water from source | River Intake = located upstream of towns
+- Groundwater Sources | Wells and springs tap aquifers. | Open Well = shallow dug well | Tube Well = deep bored well | Specific Yield = water drained per unit volume of aquifer
+# Water Quality
+- Physical Parameters | Physical tests characterise water. | Turbidity = cloudiness measured in NTU | Colour = due to dissolved organic matter | Taste and Odour = due to dissolved gases and organics
+- Chemical Parameters | Chemical tests check safety. | pH = 6.5 to 8.5 for drinking water | Hardness = due to Ca and Mg salts | Fluoride Limit = 1.0 mg/L desirable as per IS 10500
+- Biological Parameters | Microbes indicate contamination. | Coliform Bacteria = indicator of faecal contamination | MPN = most probable number test | E. coli = specific faecal indicator
+- Drinking Water Standards | Standards define safe limits. | IS 10500 = Indian drinking water specification | WHO Guidelines = international guideline values | Permissible Limit = maximum in absence of alternate source
+# Water Treatment
+- Screening & Plain Sedimentation | Removal of floating and settleable solids. | Screening = removes floating matter | Plain Sedimentation = settling without chemicals | Stokes' Law = settling velocity of discrete particles
+- Coagulation & Flocculation | Chemicals aggregate fine particles. | Coagulation = destabilising colloids with alum | Jar Test = determines optimum coagulant dose | Flocculation = gentle mixing to form flocs
+- Filtration | Filters remove remaining particles. | Slow Sand Filter = biological layer, low rate | Rapid Sand Filter = high rate with backwashing | Filter Backwashing = reversing flow to clean filter
+- Disinfection & Softening | Final treatment ensures safety. | Chlorination = killing pathogens with chlorine | Breakpoint Chlorination = dose beyond which free residual rises | Residual Chlorine = 0.2 mg/L at consumer end
+# Conveyance & Distribution
+- Pipes & Conveyance | Water is conveyed through pipes. | Hazen-Williams Formula = V = 0.849 C R^0.63 S^0.54 | Pipe Materials = CI, DI, PVC, HDPE | Water Hammer = pressure surge from sudden valve closure
+- Distribution Systems | Layouts deliver water to consumers. | Dead End System = branching layout | Grid Iron System = interconnected loops | Ring System = main around area
+- Storage & Pumping | Reservoirs balance supply and demand. | Service Reservoir = storage near distribution | Mass Curve Method = finds storage capacity | Pump Selection = based on head and discharge
+- Network Analysis | Hydraulic analysis sizes pipes. | Hardy Cross Method = iterative loop analysis | Equivalent Pipe = replaces pipe system | Leak Detection = reducing water losses
+# Rural & Advanced Water Supply
+- Rural Water Supply | Small systems serve villages. | Hand Pump = simple groundwater supply | Jal Jeevan Mission = tap water to rural households | Rainwater Harvesting = collecting rooftop runoff
+- Advanced Treatment | New technologies treat difficult water. | Reverse Osmosis = membrane removing dissolved salts | Activated Carbon = adsorbs organics | Defluoridation = Nalgonda technique removing fluoride
+- Water Conservation | Saving water reduces demand. | Water Audit = accounting for water use | Leakage Control = reducing distribution losses | Recycling = reuse of treated wastewater
+- Plumbing in Buildings | Internal systems deliver water. | House Connection = service pipe from main | Overhead Tank = storage on building | Cross Connection = contamination risk between systems
+
+@ ce603a | CE-603(A) | Water Resource Engineering | Hydrology, irrigation, canals, dams, spillways, hydraulic structures and water management.
+# Hydrology
+- Hydrological Cycle | Water circulates among atmosphere, land and sea. | Precipitation = rain, snow and hail | Infiltration = water entering soil | Runoff = water flowing over surface to streams
+- Rainfall Measurement | Rain gauges record precipitation. | Symons Rain Gauge = non-recording gauge | Average Rainfall = arithmetic, Thiessen polygon or isohyetal method | Double Mass Curve = checks consistency of records
+- Runoff & Hydrographs | Hydrographs show discharge over time. | Hydrograph = discharge versus time | Unit Hydrograph = runoff from 1 cm effective rain | Rational Formula = Q = CIA/360
+- Floods | Flood estimation guides design. | Design Flood = flood adopted for structure design | Return Period = average interval of occurrence | Gumbel's Method = statistical flood frequency analysis
+# Irrigation Engineering
+- Irrigation & Its Types | Irrigation supplies water to crops. | Flow Irrigation = by gravity from canals | Lift Irrigation = water lifted by pumps | Drip Irrigation = water applied at root zone
+- Water Requirement of Crops | Crops need specific water. | Duty = area irrigated per unit discharge | Delta = total depth of water for crop | Relation = Δ = 8.64B/D
+- Soil-Water Relations | Soil stores water for plants. | Field Capacity = water held after drainage | Permanent Wilting Point = moisture where plants wilt | Available Water = field capacity minus wilting point
+- Irrigation Efficiencies | Efficiencies measure water use. | Water Conveyance Efficiency = water delivered / diverted | Application Efficiency = water stored in root zone / delivered | Consumptive Use = evapotranspiration of crop
+# Canals
+- Canal Classification | Canals distribute irrigation water. | Main Canal = takes water from headworks | Distributary = supplies water to fields | Alignment = contour, watershed or side slope canal
+- Canal Design | Silt theories design stable canals. | Kennedy's Theory = critical velocity V0 = 0.55 m D^0.64 | Lacey's Theory = regime channel theory | Silt Factor = f = 1.76√d
+- Canal Lining | Lining reduces seepage losses. | Lined Canal = concrete or brick lining | Seepage Loss = water lost through bed and banks | Benefits of Lining = reduces waterlogging
+- Waterlogging & Drainage | Excess water harms land. | Waterlogging = saturated root zone | Tile Drain = subsurface drainage | Salinity = salt accumulation in soil
+# Dams & Spillways
+- Types of Dams | Dams store and divert water. | Gravity Dam = resists by own weight | Earth Dam = embankment of soil | Arch Dam = transfers load to abutments
+- Gravity Dam Design | Stability checks ensure safety. | Forces on Gravity Dam = water pressure, uplift, silt, wave and earthquake | Elementary Profile = triangular section | Factor of Safety Against Sliding = shear friction factor
+- Earth Dams | Earth dams need seepage control. | Phreatic Line = top seepage line in dam | Filter = prevents piping | Slope Stability = analysed by slip circle method
+- Spillways & Energy Dissipation | Spillways pass flood water safely. | Ogee Spillway = shaped overflow spillway | Hydraulic Jump = dissipates energy | Stilling Basin = structure for energy dissipation
+# Hydraulic Structures & Management
+- Diversion Headworks | Weirs and barrages divert flow. | Weir = raises water level for diversion | Barrage = gated structure across river | Bligh's Creep Theory = seepage path design
+- Canal Structures | Structures regulate canal flow. | Canal Fall = drop structure on steep ground | Aqueduct = carries canal over drainage | Cross Regulator = controls canal levels
+- Watershed Management | Watersheds are managed as units. | Watershed = area draining to a point | Check Dam = small dam reducing erosion | Contour Bunding = embankments along contours
+- Integrated Water Management | Resources are managed holistically. | IWRM = integrated water resources management | Groundwater Recharge = artificial replenishment | Water Policy = national guidelines on water use
+
+@ ce701 | CE-701 | Geotechnical Engineering | Soil properties, classification, permeability, compaction, consolidation, shear strength, earth pressure and slope stability.
+# Soil Properties & Classification
+- Soil Formation & Phase Relations | Soil is a three-phase system. | Void Ratio = volume of voids / volume of solids | Porosity = volume of voids / total volume | Degree of Saturation = volume of water / volume of voids
+- Index Properties | Index properties classify soils. | Specific Gravity = ratio of soil solids density to water | Liquid Limit = water content at transition to liquid | Plasticity Index = liquid limit minus plastic limit
+- Particle Size Analysis | Grading influences behaviour. | Sieve Analysis = for coarse-grained soils | Hydrometer Analysis = for fine-grained soils | Coefficient of Uniformity = Cu = D60/D10
+- Soil Classification | Systems group soils. | IS Classification = based on particle size and plasticity | Plasticity Chart = A-line separates clays and silts | Well-graded Soil = wide range of sizes
+# Permeability & Seepage
+- Darcy's Law | Water flows through soil pores. | Darcy's Law = v = ki | Coefficient of Permeability = flow velocity at unit gradient | Constant Head Test = permeability of coarse soils
+- Factors & Tests | Permeability varies widely. | Falling Head Test = for fine soils | Effect of Grain Size = Hazen's k = C D10² | Stratified Soil = equivalent permeability
+- Seepage & Flow Nets | Flow nets solve seepage. | Flow Net = flow lines and equipotential lines | Seepage Discharge = q = kH Nf/Nd | Laplace Equation = governs 2D seepage
+- Effective Stress & Quicksand | Effective stress controls strength. | Effective Stress = σ' = σ − u | Quicksand Condition = effective stress becomes zero | Critical Hydraulic Gradient = ic = (G − 1)/(1 + e)
+# Compaction & Consolidation
+- Compaction | Compaction densifies soil. | Standard Proctor Test = finds maximum dry density and OMC | Optimum Moisture Content = water content for maximum dry density | Zero Air Voids Line = theoretical maximum density
+- Field Compaction | Equipment compacts soil in layers. | Sheep Foot Roller = for clayey soils | Vibratory Roller = for granular soils | Field Density Test = sand replacement or core cutter
+- Consolidation | Saturated clays compress slowly. | Consolidation = volume decrease by expulsion of pore water | Terzaghi's Theory = one-dimensional consolidation theory | Coefficient of Consolidation = cv from time-settlement curve
+- Settlement | Consolidation causes settlement. | Compression Index = slope of e-log σ' curve | Primary Settlement = due to pore pressure dissipation | Overconsolidated Clay = past pressure exceeds present
+# Shear Strength
+- Mohr-Coulomb Criterion | Shear strength depends on cohesion and friction. | Mohr-Coulomb Equation = τ = c + σ tan φ | Cohesion = shear strength at zero normal stress | Angle of Internal Friction = frictional resistance parameter
+- Shear Tests | Laboratory tests measure strength. | Direct Shear Test = predetermined failure plane | Triaxial Test = controlled drainage and confining pressure | Unconfined Compression Test = for cohesive soils, qu = 2c
+- Drainage Conditions | Drainage affects measured strength. | UU Test = unconsolidated undrained | CU Test = consolidated undrained with pore pressure | CD Test = consolidated drained
+- Sensitivity & Liquefaction | Some soils lose strength. | Sensitivity = undisturbed / remoulded strength | Thixotropy = regain of strength with time | Liquefaction = loss of strength in saturated sand during earthquakes
+# Earth Pressure & Slopes
+- Earth Pressure Theories | Retaining walls resist lateral pressure. | Active Earth Pressure = Ka = (1 − sin φ)/(1 + sin φ) | Passive Earth Pressure = Kp = (1 + sin φ)/(1 − sin φ) | Earth Pressure at Rest = K0 = 1 − sin φ
+- Rankine & Coulomb Theories | Two classical approaches. | Rankine's Theory = smooth vertical wall | Coulomb's Wedge Theory = considers wall friction | Culmann's Method = graphical earth pressure
+- Retaining Walls | Walls are checked for stability. | Gravity Retaining Wall = resists by weight | Cantilever Retaining Wall = RCC stem and base | Stability Checks = sliding, overturning and bearing
+- Slope Stability | Slopes may fail by sliding. | Infinite Slope = factor of safety tan φ/tan β for cohesionless soil | Swedish Slip Circle = method of slices | Taylor's Stability Number = for cohesive slopes
+
+@ ce702a | CE-702(A) | Prestressed Concrete Structures | Prestressing principles, systems, losses, flexural and shear design and anchorage zones as per IS 1343.
+# Introduction to Prestressing
+- Concept of Prestressing | Prestress counteracts tensile stresses. | Prestressed Concrete = concrete with induced compressive stresses | Advantages = crack-free members and longer spans | IS 1343 = Indian code for prestressed concrete
+- Pre-tensioning | Tendons stressed before casting. | Pre-tensioning = tendons tensioned before concrete is placed | Hoyer System = long-line pre-tensioning | Bond Transfer = prestress transferred by bond
+- Post-tensioning | Tendons stressed after concrete hardens. | Post-tensioning = tendons stressed after concrete gains strength | Duct = sheath housing tendon | Grouting = filling ducts after stressing
+- Prestressing Systems | Anchorages hold tendons. | Freyssinet System = wedge-type anchorage | Magnel-Blaton System = sandwich plate anchorage | Gifford-Udall System = split cone anchorage
+# Materials & Analysis
+- High-strength Materials | Prestressing needs strong materials. | High Tensile Steel = strands or wires with high strength | Relaxation = loss of stress at constant strain | Concrete Grade = M30 for post-tensioned, M40 for pre-tensioned
+- Stress Concept | Stresses are combined linearly. | Stress Concept = σ = P/A ± Pe y/I ± M y/I | Kern Distance = limit of eccentricity for no tension | Pressure Line = line of resultant compression
+- Load Balancing | Prestress balances external loads. | Load Balancing Method = tendon profile balances load | Parabolic Tendon = balances uniformly distributed load | Upward Force = 8Pe/L² for parabolic tendon
+- Strength Concept | Internal couple resists moment. | Strength Concept = concrete and steel form internal couple | Lever Arm = distance between compression and tension forces | Cracking Moment = moment causing first crack
+# Losses of Prestress
+- Immediate Losses | Losses occur during transfer. | Elastic Shortening = shortening of concrete at transfer | Anchorage Slip = loss due to wedge seating | Friction Loss = P = P0 e^(−(μα + kx)) in post-tensioning
+- Time-dependent Losses | Losses grow with time. | Shrinkage Loss = due to concrete shrinkage | Creep Loss = due to sustained compressive stress | Relaxation Loss = due to steel relaxation
+- Total Loss Estimation | Typical losses are budgeted. | Total Loss = about 15-25% of initial prestress | Effective Prestress = initial prestress minus losses | Loss Ratio = effective / initial prestress
+- Control of Losses | Techniques reduce losses. | Overstressing = initial stress above design to offset losses | Restressing = re-tensioning tendons | Low Relaxation Strand = reduces relaxation loss
+# Design of Members
+- Flexural Design | Members are designed for limit states. | Limit State of Collapse = ultimate flexural strength | Limit State of Serviceability = stresses and deflection | Type 1 Member = no tensile stress allowed
+- Shear Design | Prestress improves shear capacity. | Shear Cracking = web shear and flexure shear | Vertical Component of Prestress = reduces shear | Shear Reinforcement = stirrups for excess shear
+- Deflection | Prestress creates camber. | Camber = upward deflection due to prestress | Long-term Deflection = due to creep and shrinkage | Deflection Limits = span/250 under total load
+- Composite Construction | Precast and cast-in-situ act together. | Composite Section = precast beam with in-situ slab | Differential Shrinkage = induces stresses | Propped Construction = supports during casting
+# Anchorage Zones & Applications
+- End Block Design | Concentrated forces cause bursting stresses. | End Block = anchorage zone of post-tensioned member | Bursting Tension = transverse tension behind anchorage | Spalling = tension near loaded face
+- Transmission Length | Pre-tensioned members transfer by bond. | Transmission Length = length for full prestress transfer | Hoyer Effect = wedging action of strand | Development Length = for ultimate strength
+- Continuous Members | Prestressing continuous beams. | Secondary Moments = due to support restraint | Concordant Cable = produces no secondary reactions | Linear Transformation = changes profile without changing resultant
+- Applications | Prestressing serves many structures. | Prestressed Bridges = long-span girders | Prestressed Sleepers = railway sleepers | Circular Prestressing = water tanks and pipes
+
+@ ce702b | CE-702(B) | Environmental Engineering-II | Wastewater characteristics, sewer design, primary, secondary and tertiary treatment, sludge, air and solid waste management.
+# Wastewater Characteristics & Collection
+- Sewage Characteristics | Wastewater quality guides treatment. | BOD = oxygen demand of microbes over 5 days at 20 °C | COD = oxygen equivalent of oxidisable matter | TSS = total suspended solids
+- Sewerage Systems | Sewers collect wastewater. | Separate System = sewage and storm water carried separately | Combined System = single sewer for both | Partially Separate System = part of storm water in sewers
+- Sewer Design | Sewers flow by gravity. | Manning's Formula = V = (1/n) R^(2/3) S^(1/2) | Self-cleansing Velocity = prevents deposition, about 0.6-0.9 m/s | Peak Factor = maximum to average flow
+- Sewer Appurtenances | Structures maintain sewers. | Manhole = access for inspection | Drop Manhole = handles large level difference | Inverted Siphon = carries sewage under obstacles
+# Primary Treatment
+- Preliminary Treatment | Large solids and grit are removed. | Screens = remove floating matter | Grit Chamber = removes sand and grit | Skimming Tank = removes oil and grease
+- Primary Sedimentation | Settleable solids are removed. | Primary Clarifier = removes about 60% suspended solids | Surface Overflow Rate = flow / surface area | Detention Time = typically 2 hours
+- Equalisation & Neutralisation | Flow and pH are stabilised. | Equalisation Tank = dampens flow variations | Neutralisation = adjusting pH | Industrial Wastewater = may need pretreatment
+- Chemical Treatment | Chemicals aid removal. | Chemical Precipitation = removes phosphorus | Coagulation in Wastewater = improves settling | Oil Separator = removes floating oils
+# Secondary Treatment
+- Biological Treatment Principles | Microbes oxidise organic matter. | Aerobic Treatment = microbes use oxygen | F/M Ratio = food to microorganism ratio | Biomass = microbial population
+- Activated Sludge Process | Suspended growth aerobic process. | Activated Sludge Process = aeration with recycled sludge | SVI = sludge volume index indicating settleability | MLSS = mixed liquor suspended solids
+- Trickling Filters | Attached growth process. | Trickling Filter = biofilm on media | Recirculation = improves efficiency | Rotating Biological Contactor = rotating discs with biofilm
+- Stabilisation Ponds & Anaerobic Treatment | Low-cost and anaerobic options. | Oxidation Pond = algae-bacteria symbiosis | UASB Reactor = upflow anaerobic sludge blanket | Septic Tank = anaerobic on-site treatment
+# Sludge & Tertiary Treatment
+- Sludge Treatment | Sludge is thickened and stabilised. | Sludge Thickening = increases solids content | Anaerobic Digestion = stabilises sludge, produces biogas | Sludge Drying Bed = dewatering sludge
+- Tertiary Treatment | Advanced treatment polishes effluent. | Nutrient Removal = nitrogen and phosphorus removal | Membrane Bioreactor = biological treatment with membranes | Disinfection of Effluent = chlorination or UV
+- Disposal of Effluent | Effluent is discharged or reused. | Dilution = disposal into water bodies | Streeter-Phelps Equation = oxygen sag curve | Land Disposal = irrigation with effluent
+- Wastewater Reuse | Treated water is recycled. | Greywater Reuse = reuse of non-toilet wastewater | Zero Liquid Discharge = no effluent discharge | Water Recycling = treated water for non-potable use
+# Air & Solid Waste Management
+- Air Pollution Sources & Effects | Emissions affect health. | Primary Pollutant = emitted directly, e.g. SO2 | Secondary Pollutant = formed in atmosphere, e.g. ozone | AQI = air quality index
+- Air Pollution Control | Devices reduce emissions. | Cyclone Separator = removes coarse particles | Electrostatic Precipitator = removes fine particulates | Wet Scrubber = removes gases and particles
+- Solid Waste Management | Waste is collected and processed. | Municipal Solid Waste = urban domestic and commercial waste | SWM Rules 2016 = Indian rules on waste management | Segregation at Source = separating wet and dry waste
+- Waste Processing & Disposal | Waste is treated and disposed. | Composting = aerobic decomposition | Incineration = combustion of waste | Sanitary Landfill = engineered disposal site
+
+@ ce801 | CE-801 | Design of Steel Structures | Limit state design of steel tension, compression, flexural members, connections, plate girders and roof trusses as per IS 800.
+# Introduction & Connections
+- Steel as Structural Material | Steel is strong and ductile. | Structural Steel = Fe 410 grade commonly used | IS 800:2007 = Indian code for steel design | Rolled Sections = I, channel, angle sections
+- Limit State Design of Steel | Partial safety factors ensure safety. | Partial Safety Factor γm0 = 1.10 for yielding | γm1 = 1.25 for ultimate stress | Load Combinations = dead, live, wind and earthquake
+- Bolted Connections | Bolts transfer forces. | Bearing Type Bolt = transfers load by bearing and shear | HSFG Bolt = high strength friction grip bolt | Bolt Strength = least of shear and bearing capacity
+- Welded Connections | Welds join members permanently. | Fillet Weld = triangular weld at corner | Butt Weld = full penetration weld | Effective Throat = 0.7 × size of fillet weld
+# Tension & Compression Members
+- Tension Members | Tension members are checked for three modes. | Gross Section Yielding = Tdg = Ag fy / γm0 | Net Section Rupture = Tdn = 0.9 An fu / γm1 | Block Shear = tearing along shear and tension planes
+- Compression Members | Struts and columns buckle. | Slenderness Ratio = KL/r | Buckling Class = a, b, c, d based on section | Design Compressive Stress = from IS 800 buckling curves
+- Built-up Columns | Laced and battened columns. | Lacing = diagonal bars connecting components | Battening = plates connecting components | Built-up Column = two or more sections combined
+- Column Bases | Bases transfer load to foundation. | Slab Base = thick plate under column | Gusseted Base = with gusset plates | Base Plate Thickness = from bearing pressure
+# Flexural Members
+- Laterally Supported Beams | Beams with restrained compression flange. | Plastic Section = develops full plastic moment | Design Bending Strength = Md = βb Zp fy / γm0 | Shear Strength = Vd = Av fy/(√3 γm0)
+- Laterally Unsupported Beams | Beams may buckle laterally. | Lateral Torsional Buckling = twisting and lateral bending | Effective Length = depends on restraint | Elastic Critical Moment = Mcr for LTB
+- Web Buckling & Crippling | Concentrated loads affect web. | Web Buckling = compression failure of web | Web Crippling = local yielding under load | Bearing Stiffener = prevents web failure
+- Purlins | Purlins support roof sheeting. | Purlin = beam spanning between trusses | Angle Purlin = simple design for light roofs | Channel Purlin = heavier roofs
+# Plate Girders
+- Plate Girder Components | Plate girders carry heavy loads. | Plate Girder = built-up I section | Web Plate = carries shear | Flange Plate = resists bending
+- Design of Plate Girder | Proportions are chosen for economy. | Economical Depth = based on moment and web slenderness | Tension Field Action = post-buckling strength of web | Web Thickness = based on serviceability and buckling
+- Stiffeners | Stiffeners prevent buckling. | Intermediate Stiffener = vertical stiffener preventing web buckling | Bearing Stiffener = at supports and loads | Longitudinal Stiffener = for deep webs
+- Gantry Girders | Gantry girders carry cranes. | Gantry Girder = supports crane rails | Impact Factor = dynamic allowance for crane | Lateral Load = surge from crane trolley
+# Roof Trusses & Industrial Buildings
+- Roof Trusses | Trusses span industrial sheds. | Fink Truss = common roof truss | Pratt Truss = diagonals in tension | Pitch = rise to span ratio
+- Loads on Trusses | Trusses carry several loads. | Dead Load = sheeting, purlins and self weight | Live Load = as per IS 875 Part 2 | Wind Load = as per IS 875 Part 3
+- Design of Truss Members | Members designed as struts and ties. | Rafter = top chord in compression | Tie Member = bottom chord in tension | Gusset Plate = connects truss members
+- Industrial Building Frames | Portal frames and bracing. | Portal Frame = rigid frame for sheds | Bracing = resists lateral loads | Pre-engineered Building = economical steel system
+
+@ ce802b | CE-802(B) | Foundation Engineering | Soil exploration, bearing capacity, shallow and pile foundations, well foundations and ground improvement.
+# Soil Exploration
+- Site Investigation | Exploration determines subsurface conditions. | Soil Exploration = investigation of subsoil | Trial Pit = open excavation for inspection | Boring = drilling holes to sample soil
+- Sampling | Samples are disturbed or undisturbed. | Disturbed Sample = structure altered | Undisturbed Sample = retains structure, e.g. Shelby tube | Area Ratio = indicates sampler disturbance
+- In-situ Tests | Field tests measure properties. | SPT = standard penetration test N value | Cone Penetration Test = measures tip and sleeve resistance | Plate Load Test = bearing capacity and settlement
+- Geophysical Methods | Indirect methods explore large areas. | Seismic Refraction = velocity of waves in strata | Electrical Resistivity = resistivity of strata | Borehole Log = record of soil layers
+# Bearing Capacity
+- Bearing Capacity Concepts | Foundations must not shear or settle excessively. | Ultimate Bearing Capacity = pressure causing shear failure | Safe Bearing Capacity = ultimate divided by factor of safety | Allowable Bearing Pressure = based on shear and settlement
+- Terzaghi's Theory | Classical bearing capacity equation. | Terzaghi's Equation = qu = cNc + qNq + 0.5γBNγ | Bearing Capacity Factors = depend on φ | General Shear Failure = dense soils with clear failure surface
+- IS Code Method | Factors adjust for shape and depth. | Shape Factors = for square and circular footings | Depth Factors = for embedment | Inclination Factors = for inclined loads
+- Effect of Water Table | Water reduces bearing capacity. | Water Table Correction = reduces unit weight terms | Local Shear Failure = loose soils | Punching Shear Failure = very loose or soft soils
+# Shallow Foundations
+- Types of Shallow Foundations | Footings and rafts spread loads. | Isolated Footing = under single column | Combined Footing = for two columns | Raft Foundation = for poor soils or heavy loads
+- Settlement Analysis | Settlement limits govern design. | Immediate Settlement = elastic settlement | Consolidation Settlement = time-dependent in clays | Differential Settlement = unequal settlement causing distress
+- Floating Foundation | Excavation offsets building load. | Floating Foundation = weight of excavated soil balances load | Compensated Raft = partially floating raft | Basement = provides compensation
+- Foundations on Expansive Soils | Swelling soils need special treatment. | Black Cotton Soil = expansive clay | Under-reamed Pile = for expansive soils | CNS Layer = cohesive non-swelling soil cushion
+# Pile Foundations
+- Types of Piles | Piles transfer load to deep strata. | End Bearing Pile = load to hard stratum | Friction Pile = load by skin friction | Bored Cast-in-situ Pile = drilled and concreted on site
+- Load Capacity of Piles | Capacity is estimated statically or dynamically. | Static Formula = Qu = Qb + Qs | Dynamic Formula = Hiley's or Engineering News formula | Pile Load Test = direct measurement of capacity
+- Pile Groups | Piles act together in groups. | Group Efficiency = group capacity / sum of individual capacities | Block Failure = group fails as a block | Negative Skin Friction = downdrag in consolidating soil
+- Lateral Load & Pile Caps | Piles also resist lateral loads. | Laterally Loaded Pile = analysed by Broms' method | Pile Cap = connects pile heads | Batter Pile = inclined pile resisting lateral load
+# Well Foundations & Ground Improvement
+- Well Foundations | Wells support bridge piers. | Well Foundation = caisson sunk into river bed | Well Sinking = excavation inside well | Tilt and Shift = problems during sinking
+- Caissons & Cofferdams | Structures for underwater construction. | Pneumatic Caisson = compressed air chamber | Cofferdam = temporary enclosure to exclude water | Sheet Pile = interlocking piles for cofferdams
+- Ground Improvement | Weak soils are improved. | Preloading = surcharge to consolidate soil | Vertical Drains = speed consolidation | Stone Columns = reinforce soft soils
+- Soil Stabilisation | Stabilisation strengthens soil. | Lime Stabilisation = for clayey soils | Cement Stabilisation = for granular soils | Geosynthetic Reinforcement = improves bearing capacity
+
+@ ce802d | CE-802(D) | Earthquake Resistant Design of Structures | Seismology, structural dynamics, IS 1893 seismic analysis, ductile detailing and seismic design of buildings.
+# Engineering Seismology
+- Earthquake Basics | Earthquakes release stored strain energy. | Elastic Rebound Theory = strain energy release along faults | Plate Tectonics = movement of lithospheric plates | Hypocentre = point of rupture origin
+- Seismic Waves | Waves propagate earthquake energy. | P-wave = primary compressional wave, fastest | S-wave = secondary shear wave | Surface Waves = Love and Rayleigh waves causing damage
+- Magnitude & Intensity | Measures describe earthquakes. | Magnitude = energy released, e.g. Richter scale | Intensity = damage at a location, e.g. MSK scale | Moment Magnitude = based on seismic moment
+- Seismic Zoning of India | India is divided into zones. | Seismic Zones = Zone II to V as per IS 1893 | Zone Factor = 0.10, 0.16, 0.24, 0.36 | Zone V = highest seismic risk, e.g. North-East
+# Structural Dynamics
+- SDOF Systems | Single degree of freedom models. | SDOF System = mass, spring and damper | Natural Period = T = 2π√(m/k) | Damping = energy dissipation, typically 5% for RCC
+- Response to Ground Motion | Structures respond to base excitation. | Ground Acceleration = input motion during earthquake | Resonance = amplified response near natural period | Duhamel's Integral = response to arbitrary loading
+- Response Spectrum | Spectra summarise peak response. | Response Spectrum = peak response versus period | Design Spectrum = smoothed spectrum for design | Spectral Acceleration = Sa/g from IS 1893
+- MDOF Systems | Buildings have many modes. | Mode Shape = vibration pattern | Modal Analysis = combines modal responses | SRSS = square root of sum of squares combination
+# Seismic Analysis as per IS 1893
+- Design Lateral Force | Codes give design base shear. | Design Base Shear = VB = Ah W | Design Horizontal Coefficient = Ah = (Z/2)(I/R)(Sa/g) | Importance Factor = 1.0 or 1.5 for important buildings
+- Response Reduction Factor | Ductility reduces design forces. | Response Reduction Factor = R, e.g. 5 for SMRF | SMRF = special moment resisting frame | OMRF = ordinary moment resisting frame
+- Equivalent Static Method | Base shear is distributed by height. | Vertical Distribution = Qi = VB Wi hi² / Σ Wj hj² | Fundamental Period = Ta = 0.075 h^0.75 for RC frames | Storey Drift Limit = 0.004 times storey height
+- Irregularities | Irregular buildings perform poorly. | Soft Storey = stiffness much less than storey above | Torsional Irregularity = uneven lateral stiffness distribution | Re-entrant Corner = L or T shaped plans
+# Ductile Detailing
+- Ductility Concepts | Ductility allows energy dissipation. | Ductility = ability to deform inelastically without collapse | Strong Column Weak Beam = columns stronger than beams | Capacity Design = forces hierarchy of failure
+- IS 13920 Beam Detailing | Beams are detailed for ductility. | IS 13920 = ductile detailing code | Hoops in Beams = closely spaced near supports | Minimum Tension Steel = at top and bottom throughout
+- IS 13920 Column Detailing | Columns need confinement. | Special Confining Reinforcement = closely spaced ties at ends | Lap Splice Location = in middle half of column | 135° Hook = anchors ties into core
+- Beam-Column Joints | Joints must remain intact. | Joint Shear = shear in beam-column joint | Confinement of Joint = ties through joint | Anchorage of Beam Bars = development into joint
+# Seismic Design of Buildings
+- Shear Walls | Walls resist lateral loads. | Shear Wall = RC wall resisting lateral forces | Boundary Element = confined ends of wall | Coupled Shear Wall = walls connected by beams
+- Masonry Buildings | Masonry needs seismic bands. | Seismic Band = RC band at plinth, lintel and roof | Vertical Reinforcement = at corners and junctions | IS 4326 = earthquake-resistant masonry code
+- Base Isolation & Dampers | Modern techniques reduce response. | Base Isolation = decouples building from ground | Lead Rubber Bearing = common isolator | Viscous Damper = dissipates energy
+- Retrofitting | Existing buildings are strengthened. | Jacketing = enlarging member with new concrete or steel | FRP Wrapping = confines columns | Seismic Evaluation = rapid visual screening

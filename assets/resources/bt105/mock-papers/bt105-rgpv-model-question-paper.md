@@ -1,6 +1,6 @@
 # BT-105 Engineering Graphics — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-105 · IT Sem 1: BT-105 · ECE Sem 1: BT-105 · ME Sem 1: BT-105 · AU Sem 1: BT-105.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-105 · IT Sem 1: BT-105 · ECE Sem 1: BT-105 · EX Sem 1: BT-105 · CE Sem 1: BT-105 · ME Sem 1: BT-105 · AU Sem 1: BT-105.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

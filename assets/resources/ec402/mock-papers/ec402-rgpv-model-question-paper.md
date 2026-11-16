@@ -1,6 +1,6 @@
 # EC-402 Signals & Systems — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 4: EC-402.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 4: EC-402 · EX Sem 3: EX-302.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

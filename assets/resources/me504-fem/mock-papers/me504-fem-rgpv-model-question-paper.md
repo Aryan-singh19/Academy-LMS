@@ -1,6 +1,6 @@
 # ME-504(C) Finite Element Method — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ME Sem 5: ME-504(C).
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ME Sem 5: ME-504(C) · M.Tech Structural Sem 2: MST-202.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

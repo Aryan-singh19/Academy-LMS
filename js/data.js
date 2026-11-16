@@ -3704,7 +3704,7 @@ coursesData.push(...[
     },
     {
         "id": "cs801",
-        "semester": 7,
+        "semester": 6,
         "title": "Internet of Things",
         "code": "CS-801",
         "description": "IoT architecture, sensors and actuators, networking, protocols (MQTT, CoAP), platforms, security and case studies.",
@@ -5602,7 +5602,7 @@ coursesData.push(...[
     },
     {
         "id": "ec402",
-        "semester": 4,
+        "semester": 3,
         "title": "Signals & Systems",
         "code": "EC-402",
         "description": "Signal classification, LTI systems, convolution, Fourier series and transforms, Laplace and Z-transforms, sampling.",
@@ -6040,7 +6040,7 @@ coursesData.push(...[
     },
     {
         "id": "ec405",
-        "semester": 4,
+        "semester": 3,
         "title": "Analog Circuits",
         "code": "EC-405",
         "description": "Amplifier frequency response, feedback, oscillators, power amplifiers, op-amps and their applications.",
@@ -9690,7 +9690,7 @@ coursesData.push(...[
     },
     {
         "id": "me504-fem",
-        "semester": 5,
+        "semester": 2,
         "title": "Finite Element Method",
         "code": "ME-504(C)",
         "description": "Variational and weighted residual methods, 1D and 2D elements, isoparametric formulation, structural and thermal analysis.",
@@ -10712,7 +10712,7 @@ coursesData.push(...[
     },
     {
         "id": "me703-or",
-        "semester": 7,
+        "semester": 6,
         "title": "Operations Research & Supply Chain",
         "code": "ME-703(A)",
         "description": "Linear programming, transportation and assignment, queuing, inventory, project scheduling and supply chain management.",
@@ -12753,34 +12753,9722 @@ coursesData.push(...[
                 ]
             }
         ]
+    },
+    {
+        "id": "ce302",
+        "semester": 3,
+        "title": "Construction Materials",
+        "code": "CE-302",
+        "description": "Stones, bricks, lime, cement, concrete, timber, metals, polymers and modern construction materials.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Building Materials",
+                "author": "S. K. Duggal"
+            },
+            {
+                "title": "Engineering Materials",
+                "author": "Rangwala"
+            },
+            {
+                "title": "Concrete Technology",
+                "author": "M. S. Shetty"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce302/notes/ce302-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce302/notes/ce302-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce302/mock-papers/ce302-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce302/mock-papers/ce302-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce302/mock-papers/ce302-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce302-u1",
+                "unitNumber": 1,
+                "title": "Stones, Bricks & Tiles",
+                "topics": [
+                    {
+                        "id": "ce302-u1t1",
+                        "title": "Building Stones"
+                    },
+                    {
+                        "id": "ce302-u1t2",
+                        "title": "Tests on Stones"
+                    },
+                    {
+                        "id": "ce302-u1t3",
+                        "title": "Bricks"
+                    },
+                    {
+                        "id": "ce302-u1t4",
+                        "title": "Tiles & Clay Products"
+                    }
+                ]
+            },
+            {
+                "id": "ce302-u2",
+                "unitNumber": 2,
+                "title": "Lime, Cement & Mortar",
+                "topics": [
+                    {
+                        "id": "ce302-u2t1",
+                        "title": "Lime"
+                    },
+                    {
+                        "id": "ce302-u2t2",
+                        "title": "Portland Cement"
+                    },
+                    {
+                        "id": "ce302-u2t3",
+                        "title": "Types & Tests of Cement"
+                    },
+                    {
+                        "id": "ce302-u2t4",
+                        "title": "Mortar"
+                    }
+                ]
+            },
+            {
+                "id": "ce302-u3",
+                "unitNumber": 3,
+                "title": "Concrete",
+                "topics": [
+                    {
+                        "id": "ce302-u3t1",
+                        "title": "Constituents of Concrete"
+                    },
+                    {
+                        "id": "ce302-u3t2",
+                        "title": "Fresh Concrete Properties"
+                    },
+                    {
+                        "id": "ce302-u3t3",
+                        "title": "Hardened Concrete Properties"
+                    },
+                    {
+                        "id": "ce302-u3t4",
+                        "title": "Admixtures & Special Concretes"
+                    }
+                ]
+            },
+            {
+                "id": "ce302-u4",
+                "unitNumber": 4,
+                "title": "Timber & Metals",
+                "topics": [
+                    {
+                        "id": "ce302-u4t1",
+                        "title": "Timber"
+                    },
+                    {
+                        "id": "ce302-u4t2",
+                        "title": "Preservation of Timber"
+                    },
+                    {
+                        "id": "ce302-u4t3",
+                        "title": "Ferrous Metals"
+                    },
+                    {
+                        "id": "ce302-u4t4",
+                        "title": "Non-ferrous Metals"
+                    }
+                ]
+            },
+            {
+                "id": "ce302-u5",
+                "unitNumber": 5,
+                "title": "Modern & Miscellaneous Materials",
+                "topics": [
+                    {
+                        "id": "ce302-u5t1",
+                        "title": "Glass & Plastics"
+                    },
+                    {
+                        "id": "ce302-u5t2",
+                        "title": "Paints & Varnishes"
+                    },
+                    {
+                        "id": "ce302-u5t3",
+                        "title": "Eco-friendly Materials"
+                    },
+                    {
+                        "id": "ce302-u5t4",
+                        "title": "Geosynthetics & Smart Materials"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce303",
+        "semester": 3,
+        "title": "Surveying",
+        "code": "CE-303",
+        "description": "Chain, compass, levelling, plane table, theodolite, tacheometry, curves and modern surveying instruments.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Surveying Vol. 1 & 2",
+                "author": "B. C. Punmia"
+            },
+            {
+                "title": "Surveying and Levelling",
+                "author": "R. Subramanian"
+            },
+            {
+                "title": "Surveying",
+                "author": "S. K. Duggal"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce303/notes/ce303-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce303/notes/ce303-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce303/mock-papers/ce303-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce303/mock-papers/ce303-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce303/mock-papers/ce303-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce303-u1",
+                "unitNumber": 1,
+                "title": "Chain & Compass Surveying",
+                "topics": [
+                    {
+                        "id": "ce303-u1t1",
+                        "title": "Principles of Surveying"
+                    },
+                    {
+                        "id": "ce303-u1t2",
+                        "title": "Chain Surveying"
+                    },
+                    {
+                        "id": "ce303-u1t3",
+                        "title": "Compass Surveying"
+                    },
+                    {
+                        "id": "ce303-u1t4",
+                        "title": "Traversing"
+                    }
+                ]
+            },
+            {
+                "id": "ce303-u2",
+                "unitNumber": 2,
+                "title": "Levelling & Contouring",
+                "topics": [
+                    {
+                        "id": "ce303-u2t1",
+                        "title": "Levelling Fundamentals"
+                    },
+                    {
+                        "id": "ce303-u2t2",
+                        "title": "Reduction of Levels"
+                    },
+                    {
+                        "id": "ce303-u2t3",
+                        "title": "Errors & Special Levelling"
+                    },
+                    {
+                        "id": "ce303-u2t4",
+                        "title": "Contouring"
+                    }
+                ]
+            },
+            {
+                "id": "ce303-u3",
+                "unitNumber": 3,
+                "title": "Plane Table & Theodolite",
+                "topics": [
+                    {
+                        "id": "ce303-u3t1",
+                        "title": "Plane Table Surveying"
+                    },
+                    {
+                        "id": "ce303-u3t2",
+                        "title": "Theodolite"
+                    },
+                    {
+                        "id": "ce303-u3t3",
+                        "title": "Measurement of Angles"
+                    },
+                    {
+                        "id": "ce303-u3t4",
+                        "title": "Traverse Computation"
+                    }
+                ]
+            },
+            {
+                "id": "ce303-u4",
+                "unitNumber": 4,
+                "title": "Tacheometry & Curves",
+                "topics": [
+                    {
+                        "id": "ce303-u4t1",
+                        "title": "Tacheometry"
+                    },
+                    {
+                        "id": "ce303-u4t2",
+                        "title": "Simple Circular Curves"
+                    },
+                    {
+                        "id": "ce303-u4t3",
+                        "title": "Transition Curves"
+                    },
+                    {
+                        "id": "ce303-u4t4",
+                        "title": "Vertical Curves"
+                    }
+                ]
+            },
+            {
+                "id": "ce303-u5",
+                "unitNumber": 5,
+                "title": "Modern Surveying",
+                "topics": [
+                    {
+                        "id": "ce303-u5t1",
+                        "title": "Electronic Distance Measurement"
+                    },
+                    {
+                        "id": "ce303-u5t2",
+                        "title": "GPS & GNSS"
+                    },
+                    {
+                        "id": "ce303-u5t3",
+                        "title": "Remote Sensing in Surveying"
+                    },
+                    {
+                        "id": "ce303-u5t4",
+                        "title": "GIS Basics"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce304",
+        "semester": 3,
+        "title": "Building Planning & Architecture",
+        "code": "CE-304",
+        "description": "Principles of planning, building bye-laws, functional design, orientation, architecture history and building services.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Building Planning and Drawing",
+                "author": "M. G. Shah, C. M. Kale & S. Y. Patki"
+            },
+            {
+                "title": "National Building Code of India 2016",
+                "author": "Bureau of Indian Standards"
+            },
+            {
+                "title": "Building Construction",
+                "author": "Sushil Kumar"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce304/notes/ce304-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce304/notes/ce304-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce304/mock-papers/ce304-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce304/mock-papers/ce304-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce304/mock-papers/ce304-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce304-u1",
+                "unitNumber": 1,
+                "title": "Principles of Planning",
+                "topics": [
+                    {
+                        "id": "ce304-u1t1",
+                        "title": "Planning Principles"
+                    },
+                    {
+                        "id": "ce304-u1t2",
+                        "title": "Grouping & Circulation"
+                    },
+                    {
+                        "id": "ce304-u1t3",
+                        "title": "Orientation"
+                    },
+                    {
+                        "id": "ce304-u1t4",
+                        "title": "Economy & Flexibility"
+                    }
+                ]
+            },
+            {
+                "id": "ce304-u2",
+                "unitNumber": 2,
+                "title": "Building Bye-laws & Regulations",
+                "topics": [
+                    {
+                        "id": "ce304-u2t1",
+                        "title": "Building Bye-laws"
+                    },
+                    {
+                        "id": "ce304-u2t2",
+                        "title": "FAR & Ground Coverage"
+                    },
+                    {
+                        "id": "ce304-u2t3",
+                        "title": "Minimum Room Sizes"
+                    },
+                    {
+                        "id": "ce304-u2t4",
+                        "title": "Fire & Accessibility Norms"
+                    }
+                ]
+            },
+            {
+                "id": "ce304-u3",
+                "unitNumber": 3,
+                "title": "Functional Planning of Buildings",
+                "topics": [
+                    {
+                        "id": "ce304-u3t1",
+                        "title": "Residential Buildings"
+                    },
+                    {
+                        "id": "ce304-u3t2",
+                        "title": "Public Buildings"
+                    },
+                    {
+                        "id": "ce304-u3t3",
+                        "title": "Industrial Buildings"
+                    },
+                    {
+                        "id": "ce304-u3t4",
+                        "title": "Building Drawing"
+                    }
+                ]
+            },
+            {
+                "id": "ce304-u4",
+                "unitNumber": 4,
+                "title": "Architecture",
+                "topics": [
+                    {
+                        "id": "ce304-u4t1",
+                        "title": "Elements of Architecture"
+                    },
+                    {
+                        "id": "ce304-u4t2",
+                        "title": "History of Architecture"
+                    },
+                    {
+                        "id": "ce304-u4t3",
+                        "title": "Green Building Design"
+                    },
+                    {
+                        "id": "ce304-u4t4",
+                        "title": "Landscape & Interior"
+                    }
+                ]
+            },
+            {
+                "id": "ce304-u5",
+                "unitNumber": 5,
+                "title": "Building Services",
+                "topics": [
+                    {
+                        "id": "ce304-u5t1",
+                        "title": "Water Supply & Drainage"
+                    },
+                    {
+                        "id": "ce304-u5t2",
+                        "title": "Electrical Services"
+                    },
+                    {
+                        "id": "ce304-u5t3",
+                        "title": "Acoustics"
+                    },
+                    {
+                        "id": "ce304-u5t4",
+                        "title": "HVAC & Lifts"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce402",
+        "semester": 4,
+        "title": "Construction Technology",
+        "code": "CE-402",
+        "description": "Foundations, masonry, floors, roofs, stairs, formwork, damp proofing, construction equipment and modern methods.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Building Construction",
+                "author": "B. C. Punmia"
+            },
+            {
+                "title": "Construction Technology",
+                "author": "Roy Chudley & Roger Greeno"
+            },
+            {
+                "title": "Construction Planning, Equipment and Methods",
+                "author": "Peurifoy & Schexnayder"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce402/notes/ce402-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce402/notes/ce402-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce402/mock-papers/ce402-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce402/mock-papers/ce402-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce402/mock-papers/ce402-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce402-u1",
+                "unitNumber": 1,
+                "title": "Foundations & Masonry",
+                "topics": [
+                    {
+                        "id": "ce402-u1t1",
+                        "title": "Types of Foundations"
+                    },
+                    {
+                        "id": "ce402-u1t2",
+                        "title": "Brick Masonry"
+                    },
+                    {
+                        "id": "ce402-u1t3",
+                        "title": "Stone Masonry"
+                    },
+                    {
+                        "id": "ce402-u1t4",
+                        "title": "Composite & Hollow Block Masonry"
+                    }
+                ]
+            },
+            {
+                "id": "ce402-u2",
+                "unitNumber": 2,
+                "title": "Floors, Roofs & Stairs",
+                "topics": [
+                    {
+                        "id": "ce402-u2t1",
+                        "title": "Floors"
+                    },
+                    {
+                        "id": "ce402-u2t2",
+                        "title": "Roofs"
+                    },
+                    {
+                        "id": "ce402-u2t3",
+                        "title": "Staircases"
+                    },
+                    {
+                        "id": "ce402-u2t4",
+                        "title": "Doors & Windows"
+                    }
+                ]
+            },
+            {
+                "id": "ce402-u3",
+                "unitNumber": 3,
+                "title": "Damp Proofing & Finishes",
+                "topics": [
+                    {
+                        "id": "ce402-u3t1",
+                        "title": "Dampness in Buildings"
+                    },
+                    {
+                        "id": "ce402-u3t2",
+                        "title": "Waterproofing"
+                    },
+                    {
+                        "id": "ce402-u3t3",
+                        "title": "Plastering & Pointing"
+                    },
+                    {
+                        "id": "ce402-u3t4",
+                        "title": "Painting & Finishing"
+                    }
+                ]
+            },
+            {
+                "id": "ce402-u4",
+                "unitNumber": 4,
+                "title": "Formwork & Scaffolding",
+                "topics": [
+                    {
+                        "id": "ce402-u4t1",
+                        "title": "Formwork"
+                    },
+                    {
+                        "id": "ce402-u4t2",
+                        "title": "Scaffolding & Shoring"
+                    },
+                    {
+                        "id": "ce402-u4t3",
+                        "title": "Slip & Modular Formwork"
+                    },
+                    {
+                        "id": "ce402-u4t4",
+                        "title": "Expansion & Construction Joints"
+                    }
+                ]
+            },
+            {
+                "id": "ce402-u5",
+                "unitNumber": 5,
+                "title": "Construction Equipment & Methods",
+                "topics": [
+                    {
+                        "id": "ce402-u5t1",
+                        "title": "Earth Moving Equipment"
+                    },
+                    {
+                        "id": "ce402-u5t2",
+                        "title": "Concreting Equipment"
+                    },
+                    {
+                        "id": "ce402-u5t3",
+                        "title": "Hoisting Equipment"
+                    },
+                    {
+                        "id": "ce402-u5t4",
+                        "title": "Prefabrication & Fast-track Construction"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce403",
+        "semester": 4,
+        "title": "Structural Analysis-I",
+        "code": "CE-403",
+        "description": "Determinacy, deflection methods, energy principles, arches, cables, influence lines and indeterminate beams.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Structural Analysis Vol. 1",
+                "author": "S. S. Bhavikatti"
+            },
+            {
+                "title": "Theory of Structures",
+                "author": "S. Ramamrutham"
+            },
+            {
+                "title": "Structural Analysis",
+                "author": "R. C. Hibbeler"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce403/notes/ce403-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce403/notes/ce403-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce403/mock-papers/ce403-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce403/mock-papers/ce403-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce403/mock-papers/ce403-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce403-u1",
+                "unitNumber": 1,
+                "title": "Fundamentals of Structural Analysis",
+                "topics": [
+                    {
+                        "id": "ce403-u1t1",
+                        "title": "Structures & Supports"
+                    },
+                    {
+                        "id": "ce403-u1t2",
+                        "title": "Static & Kinematic Indeterminacy"
+                    },
+                    {
+                        "id": "ce403-u1t3",
+                        "title": "Analysis of Trusses"
+                    },
+                    {
+                        "id": "ce403-u1t4",
+                        "title": "Principle of Superposition"
+                    }
+                ]
+            },
+            {
+                "id": "ce403-u2",
+                "unitNumber": 2,
+                "title": "Deflection of Beams",
+                "topics": [
+                    {
+                        "id": "ce403-u2t1",
+                        "title": "Double Integration Method"
+                    },
+                    {
+                        "id": "ce403-u2t2",
+                        "title": "Moment Area Method"
+                    },
+                    {
+                        "id": "ce403-u2t3",
+                        "title": "Conjugate Beam Method"
+                    },
+                    {
+                        "id": "ce403-u2t4",
+                        "title": "Standard Deflections"
+                    }
+                ]
+            },
+            {
+                "id": "ce403-u3",
+                "unitNumber": 3,
+                "title": "Energy Methods",
+                "topics": [
+                    {
+                        "id": "ce403-u3t1",
+                        "title": "Strain Energy"
+                    },
+                    {
+                        "id": "ce403-u3t2",
+                        "title": "Castigliano's Theorems"
+                    },
+                    {
+                        "id": "ce403-u3t3",
+                        "title": "Unit Load Method"
+                    },
+                    {
+                        "id": "ce403-u3t4",
+                        "title": "Maxwell & Betti Theorems"
+                    }
+                ]
+            },
+            {
+                "id": "ce403-u4",
+                "unitNumber": 4,
+                "title": "Arches & Cables",
+                "topics": [
+                    {
+                        "id": "ce403-u4t1",
+                        "title": "Three-hinged Arches"
+                    },
+                    {
+                        "id": "ce403-u4t2",
+                        "title": "Two-hinged Arches"
+                    },
+                    {
+                        "id": "ce403-u4t3",
+                        "title": "Cables"
+                    },
+                    {
+                        "id": "ce403-u4t4",
+                        "title": "Stiffening Girders"
+                    }
+                ]
+            },
+            {
+                "id": "ce403-u5",
+                "unitNumber": 5,
+                "title": "Influence Lines & Rolling Loads",
+                "topics": [
+                    {
+                        "id": "ce403-u5t1",
+                        "title": "Influence Lines"
+                    },
+                    {
+                        "id": "ce403-u5t2",
+                        "title": "Rolling Loads"
+                    },
+                    {
+                        "id": "ce403-u5t3",
+                        "title": "Absolute Maximum Moment"
+                    },
+                    {
+                        "id": "ce403-u5t4",
+                        "title": "Indeterminate Beams"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce404",
+        "semester": 4,
+        "title": "Transportation Engineering-I",
+        "code": "CE-404",
+        "description": "Highway development, geometric design, materials, pavement design, construction, traffic engineering and railways basics.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Highway Engineering",
+                "author": "S. K. Khanna, C. E. G. Justo & A. Veeraragavan"
+            },
+            {
+                "title": "Principles of Transportation Engineering",
+                "author": "Partha Chakroborty & Animesh Das"
+            },
+            {
+                "title": "IRC:37 and IRC:58 Guidelines",
+                "author": "Indian Roads Congress"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce404/notes/ce404-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce404/notes/ce404-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce404/mock-papers/ce404-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce404/mock-papers/ce404-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce404/mock-papers/ce404-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce404-u1",
+                "unitNumber": 1,
+                "title": "Highway Development & Planning",
+                "topics": [
+                    {
+                        "id": "ce404-u1t1",
+                        "title": "History of Road Development"
+                    },
+                    {
+                        "id": "ce404-u1t2",
+                        "title": "Road Classification"
+                    },
+                    {
+                        "id": "ce404-u1t3",
+                        "title": "Highway Alignment"
+                    },
+                    {
+                        "id": "ce404-u1t4",
+                        "title": "Highway Financing & Agencies"
+                    }
+                ]
+            },
+            {
+                "id": "ce404-u2",
+                "unitNumber": 2,
+                "title": "Geometric Design",
+                "topics": [
+                    {
+                        "id": "ce404-u2t1",
+                        "title": "Cross-section Elements"
+                    },
+                    {
+                        "id": "ce404-u2t2",
+                        "title": "Sight Distance"
+                    },
+                    {
+                        "id": "ce404-u2t3",
+                        "title": "Horizontal Alignment"
+                    },
+                    {
+                        "id": "ce404-u2t4",
+                        "title": "Vertical Alignment"
+                    }
+                ]
+            },
+            {
+                "id": "ce404-u3",
+                "unitNumber": 3,
+                "title": "Highway Materials",
+                "topics": [
+                    {
+                        "id": "ce404-u3t1",
+                        "title": "Soil Subgrade"
+                    },
+                    {
+                        "id": "ce404-u3t2",
+                        "title": "Aggregates"
+                    },
+                    {
+                        "id": "ce404-u3t3",
+                        "title": "Bitumen"
+                    },
+                    {
+                        "id": "ce404-u3t4",
+                        "title": "Bituminous Mixes"
+                    }
+                ]
+            },
+            {
+                "id": "ce404-u4",
+                "unitNumber": 4,
+                "title": "Pavement Design",
+                "topics": [
+                    {
+                        "id": "ce404-u4t1",
+                        "title": "Types of Pavements"
+                    },
+                    {
+                        "id": "ce404-u4t2",
+                        "title": "Flexible Pavement Design"
+                    },
+                    {
+                        "id": "ce404-u4t3",
+                        "title": "Rigid Pavement Design"
+                    },
+                    {
+                        "id": "ce404-u4t4",
+                        "title": "Pavement Failures"
+                    }
+                ]
+            },
+            {
+                "id": "ce404-u5",
+                "unitNumber": 5,
+                "title": "Traffic Engineering & Railways",
+                "topics": [
+                    {
+                        "id": "ce404-u5t1",
+                        "title": "Traffic Characteristics"
+                    },
+                    {
+                        "id": "ce404-u5t2",
+                        "title": "Traffic Control"
+                    },
+                    {
+                        "id": "ce404-u5t3",
+                        "title": "Railway Track Components"
+                    },
+                    {
+                        "id": "ce404-u5t4",
+                        "title": "Railway Geometric Design"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce405",
+        "semester": 4,
+        "title": "Engineering Geology & Remote Sensing",
+        "code": "CE-405",
+        "description": "Earth processes, minerals, rocks, structural geology, geology for engineering projects and remote sensing applications.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Engineering and General Geology",
+                "author": "Parbin Singh"
+            },
+            {
+                "title": "A Textbook of Engineering Geology",
+                "author": "N. Chenna Kesavulu"
+            },
+            {
+                "title": "Remote Sensing and Image Interpretation",
+                "author": "Lillesand, Kiefer & Chipman"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce405/notes/ce405-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce405/notes/ce405-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce405/mock-papers/ce405-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce405/mock-papers/ce405-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce405/mock-papers/ce405-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce405-u1",
+                "unitNumber": 1,
+                "title": "General Geology",
+                "topics": [
+                    {
+                        "id": "ce405-u1t1",
+                        "title": "Scope of Engineering Geology"
+                    },
+                    {
+                        "id": "ce405-u1t2",
+                        "title": "Weathering & Erosion"
+                    },
+                    {
+                        "id": "ce405-u1t3",
+                        "title": "Geological Agents"
+                    },
+                    {
+                        "id": "ce405-u1t4",
+                        "title": "Earthquakes"
+                    }
+                ]
+            },
+            {
+                "id": "ce405-u2",
+                "unitNumber": 2,
+                "title": "Mineralogy & Petrology",
+                "topics": [
+                    {
+                        "id": "ce405-u2t1",
+                        "title": "Minerals"
+                    },
+                    {
+                        "id": "ce405-u2t2",
+                        "title": "Rock-forming Minerals"
+                    },
+                    {
+                        "id": "ce405-u2t3",
+                        "title": "Igneous & Sedimentary Rocks"
+                    },
+                    {
+                        "id": "ce405-u2t4",
+                        "title": "Metamorphic Rocks"
+                    }
+                ]
+            },
+            {
+                "id": "ce405-u3",
+                "unitNumber": 3,
+                "title": "Structural Geology",
+                "topics": [
+                    {
+                        "id": "ce405-u3t1",
+                        "title": "Dip & Strike"
+                    },
+                    {
+                        "id": "ce405-u3t2",
+                        "title": "Folds"
+                    },
+                    {
+                        "id": "ce405-u3t3",
+                        "title": "Faults"
+                    },
+                    {
+                        "id": "ce405-u3t4",
+                        "title": "Joints & Unconformities"
+                    }
+                ]
+            },
+            {
+                "id": "ce405-u4",
+                "unitNumber": 4,
+                "title": "Geology for Civil Works",
+                "topics": [
+                    {
+                        "id": "ce405-u4t1",
+                        "title": "Geological Investigations"
+                    },
+                    {
+                        "id": "ce405-u4t2",
+                        "title": "Dams & Reservoirs"
+                    },
+                    {
+                        "id": "ce405-u4t3",
+                        "title": "Tunnels"
+                    },
+                    {
+                        "id": "ce405-u4t4",
+                        "title": "Landslides & Groundwater"
+                    }
+                ]
+            },
+            {
+                "id": "ce405-u5",
+                "unitNumber": 5,
+                "title": "Remote Sensing",
+                "topics": [
+                    {
+                        "id": "ce405-u5t1",
+                        "title": "Principles of Remote Sensing"
+                    },
+                    {
+                        "id": "ce405-u5t2",
+                        "title": "Sensors & Platforms"
+                    },
+                    {
+                        "id": "ce405-u5t3",
+                        "title": "Image Interpretation"
+                    },
+                    {
+                        "id": "ce405-u5t4",
+                        "title": "Applications in Civil Engineering"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce502",
+        "semester": 5,
+        "title": "Transportation Engineering-II",
+        "code": "CE-502",
+        "description": "Railway engineering, airport engineering, tunnels, docks and harbours.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Railway Engineering",
+                "author": "Satish Chandra & M. M. Agarwal"
+            },
+            {
+                "title": "Airport Planning and Design",
+                "author": "S. K. Khanna, M. G. Arora & S. S. Jain"
+            },
+            {
+                "title": "Docks and Harbour Engineering",
+                "author": "Srinivasan"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce502/notes/ce502-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce502/notes/ce502-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce502/mock-papers/ce502-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce502/mock-papers/ce502-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce502/mock-papers/ce502-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce502-u1",
+                "unitNumber": 1,
+                "title": "Railway Engineering",
+                "topics": [
+                    {
+                        "id": "ce502-u1t1",
+                        "title": "Permanent Way"
+                    },
+                    {
+                        "id": "ce502-u1t2",
+                        "title": "Sleepers & Ballast"
+                    },
+                    {
+                        "id": "ce502-u1t3",
+                        "title": "Railway Curves"
+                    },
+                    {
+                        "id": "ce502-u1t4",
+                        "title": "Signalling & Interlocking"
+                    }
+                ]
+            },
+            {
+                "id": "ce502-u2",
+                "unitNumber": 2,
+                "title": "Points, Crossings & Stations",
+                "topics": [
+                    {
+                        "id": "ce502-u2t1",
+                        "title": "Turnouts"
+                    },
+                    {
+                        "id": "ce502-u2t2",
+                        "title": "Stations & Yards"
+                    },
+                    {
+                        "id": "ce502-u2t3",
+                        "title": "High-speed & Metro Rail"
+                    },
+                    {
+                        "id": "ce502-u2t4",
+                        "title": "Track Maintenance"
+                    }
+                ]
+            },
+            {
+                "id": "ce502-u3",
+                "unitNumber": 3,
+                "title": "Airport Engineering",
+                "topics": [
+                    {
+                        "id": "ce502-u3t1",
+                        "title": "Airport Planning"
+                    },
+                    {
+                        "id": "ce502-u3t2",
+                        "title": "Runway Design"
+                    },
+                    {
+                        "id": "ce502-u3t3",
+                        "title": "Taxiways & Aprons"
+                    },
+                    {
+                        "id": "ce502-u3t4",
+                        "title": "Airport Lighting & Navigation"
+                    }
+                ]
+            },
+            {
+                "id": "ce502-u4",
+                "unitNumber": 4,
+                "title": "Tunnel Engineering",
+                "topics": [
+                    {
+                        "id": "ce502-u4t1",
+                        "title": "Tunnels & Classification"
+                    },
+                    {
+                        "id": "ce502-u4t2",
+                        "title": "Tunnelling Methods in Soft Ground"
+                    },
+                    {
+                        "id": "ce502-u4t3",
+                        "title": "Tunnelling in Rock"
+                    },
+                    {
+                        "id": "ce502-u4t4",
+                        "title": "Tunnel Services"
+                    }
+                ]
+            },
+            {
+                "id": "ce502-u5",
+                "unitNumber": 5,
+                "title": "Docks & Harbours",
+                "topics": [
+                    {
+                        "id": "ce502-u5t1",
+                        "title": "Harbours"
+                    },
+                    {
+                        "id": "ce502-u5t2",
+                        "title": "Breakwaters"
+                    },
+                    {
+                        "id": "ce502-u5t3",
+                        "title": "Docks & Quays"
+                    },
+                    {
+                        "id": "ce502-u5t4",
+                        "title": "Dredging & Navigation Aids"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce503a",
+        "semester": 5,
+        "title": "Structural Analysis-II",
+        "code": "CE-503(A)",
+        "description": "Slope deflection, moment distribution, Kani's method, column analogy, matrix methods and plastic analysis.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Structural Analysis Vol. 2",
+                "author": "S. S. Bhavikatti"
+            },
+            {
+                "title": "Indeterminate Structural Analysis",
+                "author": "C. K. Wang"
+            },
+            {
+                "title": "Matrix Analysis of Framed Structures",
+                "author": "Weaver & Gere"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce503a/notes/ce503a-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce503a/notes/ce503a-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce503a/mock-papers/ce503a-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce503a/mock-papers/ce503a-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce503a/mock-papers/ce503a-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce503a-u1",
+                "unitNumber": 1,
+                "title": "Slope Deflection Method",
+                "topics": [
+                    {
+                        "id": "ce503a-u1t1",
+                        "title": "Basics of Slope Deflection"
+                    },
+                    {
+                        "id": "ce503a-u1t2",
+                        "title": "Continuous Beams"
+                    },
+                    {
+                        "id": "ce503a-u1t3",
+                        "title": "Portal Frames without Sway"
+                    },
+                    {
+                        "id": "ce503a-u1t4",
+                        "title": "Frames with Sway"
+                    }
+                ]
+            },
+            {
+                "id": "ce503a-u2",
+                "unitNumber": 2,
+                "title": "Moment Distribution Method",
+                "topics": [
+                    {
+                        "id": "ce503a-u2t1",
+                        "title": "Concepts of Moment Distribution"
+                    },
+                    {
+                        "id": "ce503a-u2t2",
+                        "title": "Continuous Beams by MDM"
+                    },
+                    {
+                        "id": "ce503a-u2t3",
+                        "title": "Frames by MDM"
+                    },
+                    {
+                        "id": "ce503a-u2t4",
+                        "title": "Kani's Method"
+                    }
+                ]
+            },
+            {
+                "id": "ce503a-u3",
+                "unitNumber": 3,
+                "title": "Column Analogy & Approximate Methods",
+                "topics": [
+                    {
+                        "id": "ce503a-u3t1",
+                        "title": "Column Analogy"
+                    },
+                    {
+                        "id": "ce503a-u3t2",
+                        "title": "Approximate Methods for Frames"
+                    },
+                    {
+                        "id": "ce503a-u3t3",
+                        "title": "Analysis for Vertical Loads"
+                    },
+                    {
+                        "id": "ce503a-u3t4",
+                        "title": "Influence Lines for Indeterminate Beams"
+                    }
+                ]
+            },
+            {
+                "id": "ce503a-u4",
+                "unitNumber": 4,
+                "title": "Matrix Methods",
+                "topics": [
+                    {
+                        "id": "ce503a-u4t1",
+                        "title": "Flexibility Method"
+                    },
+                    {
+                        "id": "ce503a-u4t2",
+                        "title": "Stiffness Method"
+                    },
+                    {
+                        "id": "ce503a-u4t3",
+                        "title": "Member Stiffness Matrices"
+                    },
+                    {
+                        "id": "ce503a-u4t4",
+                        "title": "Computer Analysis"
+                    }
+                ]
+            },
+            {
+                "id": "ce503a-u5",
+                "unitNumber": 5,
+                "title": "Plastic Analysis",
+                "topics": [
+                    {
+                        "id": "ce503a-u5t1",
+                        "title": "Plastic Theory"
+                    },
+                    {
+                        "id": "ce503a-u5t2",
+                        "title": "Collapse Mechanisms"
+                    },
+                    {
+                        "id": "ce503a-u5t3",
+                        "title": "Methods of Plastic Analysis"
+                    },
+                    {
+                        "id": "ce503a-u5t4",
+                        "title": "Load Factor"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce504b",
+        "semester": 5,
+        "title": "Remote Sensing & GIS",
+        "code": "CE-504(B)",
+        "description": "Remote sensing physics, sensors, image processing, GIS data models, spatial analysis and civil engineering applications.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Remote Sensing and GIS",
+                "author": "Basudeb Bhatta"
+            },
+            {
+                "title": "Remote Sensing and Image Interpretation",
+                "author": "Lillesand, Kiefer & Chipman"
+            },
+            {
+                "title": "Concepts and Techniques of GIS",
+                "author": "C. P. Lo & Albert Yeung"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce504b/notes/ce504b-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce504b/notes/ce504b-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce504b/mock-papers/ce504b-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce504b/mock-papers/ce504b-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce504b/mock-papers/ce504b-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce504b-u1",
+                "unitNumber": 1,
+                "title": "Remote Sensing Physics",
+                "topics": [
+                    {
+                        "id": "ce504b-u1t1",
+                        "title": "Electromagnetic Radiation"
+                    },
+                    {
+                        "id": "ce504b-u1t2",
+                        "title": "Energy Interaction with Surface"
+                    },
+                    {
+                        "id": "ce504b-u1t3",
+                        "title": "Resolutions"
+                    },
+                    {
+                        "id": "ce504b-u1t4",
+                        "title": "Orbits & Platforms"
+                    }
+                ]
+            },
+            {
+                "id": "ce504b-u2",
+                "unitNumber": 2,
+                "title": "Sensors & Data Products",
+                "topics": [
+                    {
+                        "id": "ce504b-u2t1",
+                        "title": "Optical Sensors"
+                    },
+                    {
+                        "id": "ce504b-u2t2",
+                        "title": "Microwave Sensors"
+                    },
+                    {
+                        "id": "ce504b-u2t3",
+                        "title": "Indian Satellites"
+                    },
+                    {
+                        "id": "ce504b-u2t4",
+                        "title": "Thermal Remote Sensing"
+                    }
+                ]
+            },
+            {
+                "id": "ce504b-u3",
+                "unitNumber": 3,
+                "title": "Digital Image Processing",
+                "topics": [
+                    {
+                        "id": "ce504b-u3t1",
+                        "title": "Preprocessing"
+                    },
+                    {
+                        "id": "ce504b-u3t2",
+                        "title": "Image Enhancement"
+                    },
+                    {
+                        "id": "ce504b-u3t3",
+                        "title": "Image Classification"
+                    },
+                    {
+                        "id": "ce504b-u3t4",
+                        "title": "Accuracy Assessment"
+                    }
+                ]
+            },
+            {
+                "id": "ce504b-u4",
+                "unitNumber": 4,
+                "title": "Geographic Information System",
+                "topics": [
+                    {
+                        "id": "ce504b-u4t1",
+                        "title": "GIS Components"
+                    },
+                    {
+                        "id": "ce504b-u4t2",
+                        "title": "Data Models"
+                    },
+                    {
+                        "id": "ce504b-u4t3",
+                        "title": "Map Projections & Coordinates"
+                    },
+                    {
+                        "id": "ce504b-u4t4",
+                        "title": "Data Input & Management"
+                    }
+                ]
+            },
+            {
+                "id": "ce504b-u5",
+                "unitNumber": 5,
+                "title": "Spatial Analysis & Applications",
+                "topics": [
+                    {
+                        "id": "ce504b-u5t1",
+                        "title": "Spatial Analysis"
+                    },
+                    {
+                        "id": "ce504b-u5t2",
+                        "title": "Terrain Analysis"
+                    },
+                    {
+                        "id": "ce504b-u5t3",
+                        "title": "Applications in Infrastructure"
+                    },
+                    {
+                        "id": "ce504b-u5t4",
+                        "title": "Applications in Water & Disaster"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce601",
+        "semester": 6,
+        "title": "Structural Design & Drawing (RCC-I)",
+        "code": "CE-601",
+        "description": "Limit state design of RCC beams, slabs, columns, footings and staircases as per IS 456.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Limit State Design of Reinforced Concrete",
+                "author": "P. C. Varghese"
+            },
+            {
+                "title": "Reinforced Concrete Design",
+                "author": "S. Unnikrishna Pillai & Devdas Menon"
+            },
+            {
+                "title": "IS 456:2000",
+                "author": "Bureau of Indian Standards"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce601/notes/ce601-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce601/notes/ce601-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce601/mock-papers/ce601-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce601/mock-papers/ce601-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce601/mock-papers/ce601-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce601-u1",
+                "unitNumber": 1,
+                "title": "Design Philosophies",
+                "topics": [
+                    {
+                        "id": "ce601-u1t1",
+                        "title": "Working Stress vs Limit State"
+                    },
+                    {
+                        "id": "ce601-u1t2",
+                        "title": "Limit States"
+                    },
+                    {
+                        "id": "ce601-u1t3",
+                        "title": "Characteristic Values"
+                    },
+                    {
+                        "id": "ce601-u1t4",
+                        "title": "Stress-Strain Behaviour"
+                    }
+                ]
+            },
+            {
+                "id": "ce601-u2",
+                "unitNumber": 2,
+                "title": "Design of Beams",
+                "topics": [
+                    {
+                        "id": "ce601-u2t1",
+                        "title": "Singly Reinforced Beams"
+                    },
+                    {
+                        "id": "ce601-u2t2",
+                        "title": "Doubly Reinforced Beams"
+                    },
+                    {
+                        "id": "ce601-u2t3",
+                        "title": "Flanged Beams"
+                    },
+                    {
+                        "id": "ce601-u2t4",
+                        "title": "Shear & Bond"
+                    }
+                ]
+            },
+            {
+                "id": "ce601-u3",
+                "unitNumber": 3,
+                "title": "Design of Slabs",
+                "topics": [
+                    {
+                        "id": "ce601-u3t1",
+                        "title": "One-way Slabs"
+                    },
+                    {
+                        "id": "ce601-u3t2",
+                        "title": "Two-way Slabs"
+                    },
+                    {
+                        "id": "ce601-u3t3",
+                        "title": "Continuous Slabs"
+                    },
+                    {
+                        "id": "ce601-u3t4",
+                        "title": "Deflection Control"
+                    }
+                ]
+            },
+            {
+                "id": "ce601-u4",
+                "unitNumber": 4,
+                "title": "Columns & Footings",
+                "topics": [
+                    {
+                        "id": "ce601-u4t1",
+                        "title": "Short Columns"
+                    },
+                    {
+                        "id": "ce601-u4t2",
+                        "title": "Columns with Bending"
+                    },
+                    {
+                        "id": "ce601-u4t3",
+                        "title": "Isolated Footings"
+                    },
+                    {
+                        "id": "ce601-u4t4",
+                        "title": "Combined Footings"
+                    }
+                ]
+            },
+            {
+                "id": "ce601-u5",
+                "unitNumber": 5,
+                "title": "Staircases & Detailing",
+                "topics": [
+                    {
+                        "id": "ce601-u5t1",
+                        "title": "Staircase Design"
+                    },
+                    {
+                        "id": "ce601-u5t2",
+                        "title": "Reinforcement Detailing"
+                    },
+                    {
+                        "id": "ce601-u5t3",
+                        "title": "Durability Requirements"
+                    },
+                    {
+                        "id": "ce601-u5t4",
+                        "title": "Structural Drawing"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce602",
+        "semester": 6,
+        "title": "Environmental Engineering-I",
+        "code": "CE-602",
+        "description": "Water demand, sources, conveyance, quality, treatment and distribution systems.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Water Supply Engineering",
+                "author": "S. K. Garg"
+            },
+            {
+                "title": "Environmental Engineering",
+                "author": "Peavy, Rowe & Tchobanoglous"
+            },
+            {
+                "title": "CPHEEO Manual on Water Supply",
+                "author": "Government of India"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce602/notes/ce602-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce602/notes/ce602-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce602/mock-papers/ce602-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce602/mock-papers/ce602-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce602/mock-papers/ce602-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce602-u1",
+                "unitNumber": 1,
+                "title": "Water Demand & Sources",
+                "topics": [
+                    {
+                        "id": "ce602-u1t1",
+                        "title": "Water Demand"
+                    },
+                    {
+                        "id": "ce602-u1t2",
+                        "title": "Population Forecasting"
+                    },
+                    {
+                        "id": "ce602-u1t3",
+                        "title": "Surface Sources"
+                    },
+                    {
+                        "id": "ce602-u1t4",
+                        "title": "Groundwater Sources"
+                    }
+                ]
+            },
+            {
+                "id": "ce602-u2",
+                "unitNumber": 2,
+                "title": "Water Quality",
+                "topics": [
+                    {
+                        "id": "ce602-u2t1",
+                        "title": "Physical Parameters"
+                    },
+                    {
+                        "id": "ce602-u2t2",
+                        "title": "Chemical Parameters"
+                    },
+                    {
+                        "id": "ce602-u2t3",
+                        "title": "Biological Parameters"
+                    },
+                    {
+                        "id": "ce602-u2t4",
+                        "title": "Drinking Water Standards"
+                    }
+                ]
+            },
+            {
+                "id": "ce602-u3",
+                "unitNumber": 3,
+                "title": "Water Treatment",
+                "topics": [
+                    {
+                        "id": "ce602-u3t1",
+                        "title": "Screening & Plain Sedimentation"
+                    },
+                    {
+                        "id": "ce602-u3t2",
+                        "title": "Coagulation & Flocculation"
+                    },
+                    {
+                        "id": "ce602-u3t3",
+                        "title": "Filtration"
+                    },
+                    {
+                        "id": "ce602-u3t4",
+                        "title": "Disinfection & Softening"
+                    }
+                ]
+            },
+            {
+                "id": "ce602-u4",
+                "unitNumber": 4,
+                "title": "Conveyance & Distribution",
+                "topics": [
+                    {
+                        "id": "ce602-u4t1",
+                        "title": "Pipes & Conveyance"
+                    },
+                    {
+                        "id": "ce602-u4t2",
+                        "title": "Distribution Systems"
+                    },
+                    {
+                        "id": "ce602-u4t3",
+                        "title": "Storage & Pumping"
+                    },
+                    {
+                        "id": "ce602-u4t4",
+                        "title": "Network Analysis"
+                    }
+                ]
+            },
+            {
+                "id": "ce602-u5",
+                "unitNumber": 5,
+                "title": "Rural & Advanced Water Supply",
+                "topics": [
+                    {
+                        "id": "ce602-u5t1",
+                        "title": "Rural Water Supply"
+                    },
+                    {
+                        "id": "ce602-u5t2",
+                        "title": "Advanced Treatment"
+                    },
+                    {
+                        "id": "ce602-u5t3",
+                        "title": "Water Conservation"
+                    },
+                    {
+                        "id": "ce602-u5t4",
+                        "title": "Plumbing in Buildings"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce603a",
+        "semester": 6,
+        "title": "Water Resource Engineering",
+        "code": "CE-603(A)",
+        "description": "Hydrology, irrigation, canals, dams, spillways, hydraulic structures and water management.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Irrigation Engineering and Hydraulic Structures",
+                "author": "S. K. Garg"
+            },
+            {
+                "title": "Engineering Hydrology",
+                "author": "K. Subramanya"
+            },
+            {
+                "title": "Irrigation and Water Power Engineering",
+                "author": "B. C. Punmia"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce603a/notes/ce603a-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce603a/notes/ce603a-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce603a/mock-papers/ce603a-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce603a/mock-papers/ce603a-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce603a/mock-papers/ce603a-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce603a-u1",
+                "unitNumber": 1,
+                "title": "Hydrology",
+                "topics": [
+                    {
+                        "id": "ce603a-u1t1",
+                        "title": "Hydrological Cycle"
+                    },
+                    {
+                        "id": "ce603a-u1t2",
+                        "title": "Rainfall Measurement"
+                    },
+                    {
+                        "id": "ce603a-u1t3",
+                        "title": "Runoff & Hydrographs"
+                    },
+                    {
+                        "id": "ce603a-u1t4",
+                        "title": "Floods"
+                    }
+                ]
+            },
+            {
+                "id": "ce603a-u2",
+                "unitNumber": 2,
+                "title": "Irrigation Engineering",
+                "topics": [
+                    {
+                        "id": "ce603a-u2t1",
+                        "title": "Irrigation & Its Types"
+                    },
+                    {
+                        "id": "ce603a-u2t2",
+                        "title": "Water Requirement of Crops"
+                    },
+                    {
+                        "id": "ce603a-u2t3",
+                        "title": "Soil-Water Relations"
+                    },
+                    {
+                        "id": "ce603a-u2t4",
+                        "title": "Irrigation Efficiencies"
+                    }
+                ]
+            },
+            {
+                "id": "ce603a-u3",
+                "unitNumber": 3,
+                "title": "Canals",
+                "topics": [
+                    {
+                        "id": "ce603a-u3t1",
+                        "title": "Canal Classification"
+                    },
+                    {
+                        "id": "ce603a-u3t2",
+                        "title": "Canal Design"
+                    },
+                    {
+                        "id": "ce603a-u3t3",
+                        "title": "Canal Lining"
+                    },
+                    {
+                        "id": "ce603a-u3t4",
+                        "title": "Waterlogging & Drainage"
+                    }
+                ]
+            },
+            {
+                "id": "ce603a-u4",
+                "unitNumber": 4,
+                "title": "Dams & Spillways",
+                "topics": [
+                    {
+                        "id": "ce603a-u4t1",
+                        "title": "Types of Dams"
+                    },
+                    {
+                        "id": "ce603a-u4t2",
+                        "title": "Gravity Dam Design"
+                    },
+                    {
+                        "id": "ce603a-u4t3",
+                        "title": "Earth Dams"
+                    },
+                    {
+                        "id": "ce603a-u4t4",
+                        "title": "Spillways & Energy Dissipation"
+                    }
+                ]
+            },
+            {
+                "id": "ce603a-u5",
+                "unitNumber": 5,
+                "title": "Hydraulic Structures & Management",
+                "topics": [
+                    {
+                        "id": "ce603a-u5t1",
+                        "title": "Diversion Headworks"
+                    },
+                    {
+                        "id": "ce603a-u5t2",
+                        "title": "Canal Structures"
+                    },
+                    {
+                        "id": "ce603a-u5t3",
+                        "title": "Watershed Management"
+                    },
+                    {
+                        "id": "ce603a-u5t4",
+                        "title": "Integrated Water Management"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce701",
+        "semester": 7,
+        "title": "Geotechnical Engineering",
+        "code": "CE-701",
+        "description": "Soil properties, classification, permeability, compaction, consolidation, shear strength, earth pressure and slope stability.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Soil Mechanics and Foundations",
+                "author": "B. C. Punmia"
+            },
+            {
+                "title": "Geotechnical Engineering",
+                "author": "C. Venkatramaiah"
+            },
+            {
+                "title": "Principles of Geotechnical Engineering",
+                "author": "Braja M. Das"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce701/notes/ce701-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce701/notes/ce701-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce701/mock-papers/ce701-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce701/mock-papers/ce701-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce701/mock-papers/ce701-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce701-u1",
+                "unitNumber": 1,
+                "title": "Soil Properties & Classification",
+                "topics": [
+                    {
+                        "id": "ce701-u1t1",
+                        "title": "Soil Formation & Phase Relations"
+                    },
+                    {
+                        "id": "ce701-u1t2",
+                        "title": "Index Properties"
+                    },
+                    {
+                        "id": "ce701-u1t3",
+                        "title": "Particle Size Analysis"
+                    },
+                    {
+                        "id": "ce701-u1t4",
+                        "title": "Soil Classification"
+                    }
+                ]
+            },
+            {
+                "id": "ce701-u2",
+                "unitNumber": 2,
+                "title": "Permeability & Seepage",
+                "topics": [
+                    {
+                        "id": "ce701-u2t1",
+                        "title": "Darcy's Law"
+                    },
+                    {
+                        "id": "ce701-u2t2",
+                        "title": "Factors & Tests"
+                    },
+                    {
+                        "id": "ce701-u2t3",
+                        "title": "Seepage & Flow Nets"
+                    },
+                    {
+                        "id": "ce701-u2t4",
+                        "title": "Effective Stress & Quicksand"
+                    }
+                ]
+            },
+            {
+                "id": "ce701-u3",
+                "unitNumber": 3,
+                "title": "Compaction & Consolidation",
+                "topics": [
+                    {
+                        "id": "ce701-u3t1",
+                        "title": "Compaction"
+                    },
+                    {
+                        "id": "ce701-u3t2",
+                        "title": "Field Compaction"
+                    },
+                    {
+                        "id": "ce701-u3t3",
+                        "title": "Consolidation"
+                    },
+                    {
+                        "id": "ce701-u3t4",
+                        "title": "Settlement"
+                    }
+                ]
+            },
+            {
+                "id": "ce701-u4",
+                "unitNumber": 4,
+                "title": "Shear Strength",
+                "topics": [
+                    {
+                        "id": "ce701-u4t1",
+                        "title": "Mohr-Coulomb Criterion"
+                    },
+                    {
+                        "id": "ce701-u4t2",
+                        "title": "Shear Tests"
+                    },
+                    {
+                        "id": "ce701-u4t3",
+                        "title": "Drainage Conditions"
+                    },
+                    {
+                        "id": "ce701-u4t4",
+                        "title": "Sensitivity & Liquefaction"
+                    }
+                ]
+            },
+            {
+                "id": "ce701-u5",
+                "unitNumber": 5,
+                "title": "Earth Pressure & Slopes",
+                "topics": [
+                    {
+                        "id": "ce701-u5t1",
+                        "title": "Earth Pressure Theories"
+                    },
+                    {
+                        "id": "ce701-u5t2",
+                        "title": "Rankine & Coulomb Theories"
+                    },
+                    {
+                        "id": "ce701-u5t3",
+                        "title": "Retaining Walls"
+                    },
+                    {
+                        "id": "ce701-u5t4",
+                        "title": "Slope Stability"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce702a",
+        "semester": 7,
+        "title": "Prestressed Concrete Structures",
+        "code": "CE-702(A)",
+        "description": "Prestressing principles, systems, losses, flexural and shear design and anchorage zones as per IS 1343.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Prestressed Concrete",
+                "author": "N. Krishna Raju"
+            },
+            {
+                "title": "Design of Prestressed Concrete Structures",
+                "author": "T. Y. Lin & Ned Burns"
+            },
+            {
+                "title": "IS 1343:2012",
+                "author": "Bureau of Indian Standards"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce702a/notes/ce702a-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce702a/notes/ce702a-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce702a/mock-papers/ce702a-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce702a/mock-papers/ce702a-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce702a/mock-papers/ce702a-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce702a-u1",
+                "unitNumber": 1,
+                "title": "Introduction to Prestressing",
+                "topics": [
+                    {
+                        "id": "ce702a-u1t1",
+                        "title": "Concept of Prestressing"
+                    },
+                    {
+                        "id": "ce702a-u1t2",
+                        "title": "Pre-tensioning"
+                    },
+                    {
+                        "id": "ce702a-u1t3",
+                        "title": "Post-tensioning"
+                    },
+                    {
+                        "id": "ce702a-u1t4",
+                        "title": "Prestressing Systems"
+                    }
+                ]
+            },
+            {
+                "id": "ce702a-u2",
+                "unitNumber": 2,
+                "title": "Materials & Analysis",
+                "topics": [
+                    {
+                        "id": "ce702a-u2t1",
+                        "title": "High-strength Materials"
+                    },
+                    {
+                        "id": "ce702a-u2t2",
+                        "title": "Stress Concept"
+                    },
+                    {
+                        "id": "ce702a-u2t3",
+                        "title": "Load Balancing"
+                    },
+                    {
+                        "id": "ce702a-u2t4",
+                        "title": "Strength Concept"
+                    }
+                ]
+            },
+            {
+                "id": "ce702a-u3",
+                "unitNumber": 3,
+                "title": "Losses of Prestress",
+                "topics": [
+                    {
+                        "id": "ce702a-u3t1",
+                        "title": "Immediate Losses"
+                    },
+                    {
+                        "id": "ce702a-u3t2",
+                        "title": "Time-dependent Losses"
+                    },
+                    {
+                        "id": "ce702a-u3t3",
+                        "title": "Total Loss Estimation"
+                    },
+                    {
+                        "id": "ce702a-u3t4",
+                        "title": "Control of Losses"
+                    }
+                ]
+            },
+            {
+                "id": "ce702a-u4",
+                "unitNumber": 4,
+                "title": "Design of Members",
+                "topics": [
+                    {
+                        "id": "ce702a-u4t1",
+                        "title": "Flexural Design"
+                    },
+                    {
+                        "id": "ce702a-u4t2",
+                        "title": "Shear Design"
+                    },
+                    {
+                        "id": "ce702a-u4t3",
+                        "title": "Deflection"
+                    },
+                    {
+                        "id": "ce702a-u4t4",
+                        "title": "Composite Construction"
+                    }
+                ]
+            },
+            {
+                "id": "ce702a-u5",
+                "unitNumber": 5,
+                "title": "Anchorage Zones & Applications",
+                "topics": [
+                    {
+                        "id": "ce702a-u5t1",
+                        "title": "End Block Design"
+                    },
+                    {
+                        "id": "ce702a-u5t2",
+                        "title": "Transmission Length"
+                    },
+                    {
+                        "id": "ce702a-u5t3",
+                        "title": "Continuous Members"
+                    },
+                    {
+                        "id": "ce702a-u5t4",
+                        "title": "Applications"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce702b",
+        "semester": 7,
+        "title": "Environmental Engineering-II",
+        "code": "CE-702(B)",
+        "description": "Wastewater characteristics, sewer design, primary, secondary and tertiary treatment, sludge, air and solid waste management.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Wastewater Engineering",
+                "author": "Metcalf & Eddy"
+            },
+            {
+                "title": "Sewage Disposal and Air Pollution Engineering",
+                "author": "S. K. Garg"
+            },
+            {
+                "title": "Environmental Engineering",
+                "author": "Peavy, Rowe & Tchobanoglous"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce702b/notes/ce702b-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce702b/notes/ce702b-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce702b/mock-papers/ce702b-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce702b/mock-papers/ce702b-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce702b/mock-papers/ce702b-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce702b-u1",
+                "unitNumber": 1,
+                "title": "Wastewater Characteristics & Collection",
+                "topics": [
+                    {
+                        "id": "ce702b-u1t1",
+                        "title": "Sewage Characteristics"
+                    },
+                    {
+                        "id": "ce702b-u1t2",
+                        "title": "Sewerage Systems"
+                    },
+                    {
+                        "id": "ce702b-u1t3",
+                        "title": "Sewer Design"
+                    },
+                    {
+                        "id": "ce702b-u1t4",
+                        "title": "Sewer Appurtenances"
+                    }
+                ]
+            },
+            {
+                "id": "ce702b-u2",
+                "unitNumber": 2,
+                "title": "Primary Treatment",
+                "topics": [
+                    {
+                        "id": "ce702b-u2t1",
+                        "title": "Preliminary Treatment"
+                    },
+                    {
+                        "id": "ce702b-u2t2",
+                        "title": "Primary Sedimentation"
+                    },
+                    {
+                        "id": "ce702b-u2t3",
+                        "title": "Equalisation & Neutralisation"
+                    },
+                    {
+                        "id": "ce702b-u2t4",
+                        "title": "Chemical Treatment"
+                    }
+                ]
+            },
+            {
+                "id": "ce702b-u3",
+                "unitNumber": 3,
+                "title": "Secondary Treatment",
+                "topics": [
+                    {
+                        "id": "ce702b-u3t1",
+                        "title": "Biological Treatment Principles"
+                    },
+                    {
+                        "id": "ce702b-u3t2",
+                        "title": "Activated Sludge Process"
+                    },
+                    {
+                        "id": "ce702b-u3t3",
+                        "title": "Trickling Filters"
+                    },
+                    {
+                        "id": "ce702b-u3t4",
+                        "title": "Stabilisation Ponds & Anaerobic Treatment"
+                    }
+                ]
+            },
+            {
+                "id": "ce702b-u4",
+                "unitNumber": 4,
+                "title": "Sludge & Tertiary Treatment",
+                "topics": [
+                    {
+                        "id": "ce702b-u4t1",
+                        "title": "Sludge Treatment"
+                    },
+                    {
+                        "id": "ce702b-u4t2",
+                        "title": "Tertiary Treatment"
+                    },
+                    {
+                        "id": "ce702b-u4t3",
+                        "title": "Disposal of Effluent"
+                    },
+                    {
+                        "id": "ce702b-u4t4",
+                        "title": "Wastewater Reuse"
+                    }
+                ]
+            },
+            {
+                "id": "ce702b-u5",
+                "unitNumber": 5,
+                "title": "Air & Solid Waste Management",
+                "topics": [
+                    {
+                        "id": "ce702b-u5t1",
+                        "title": "Air Pollution Sources & Effects"
+                    },
+                    {
+                        "id": "ce702b-u5t2",
+                        "title": "Air Pollution Control"
+                    },
+                    {
+                        "id": "ce702b-u5t3",
+                        "title": "Solid Waste Management"
+                    },
+                    {
+                        "id": "ce702b-u5t4",
+                        "title": "Waste Processing & Disposal"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce801",
+        "semester": 8,
+        "title": "Design of Steel Structures",
+        "code": "CE-801",
+        "description": "Limit state design of steel tension, compression, flexural members, connections, plate girders and roof trusses as per IS 800.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Design of Steel Structures",
+                "author": "N. Subramanian"
+            },
+            {
+                "title": "Limit State Design of Steel Structures",
+                "author": "S. K. Duggal"
+            },
+            {
+                "title": "IS 800:2007",
+                "author": "Bureau of Indian Standards"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce801/notes/ce801-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce801/notes/ce801-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce801/mock-papers/ce801-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce801/mock-papers/ce801-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce801/mock-papers/ce801-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce801-u1",
+                "unitNumber": 1,
+                "title": "Introduction & Connections",
+                "topics": [
+                    {
+                        "id": "ce801-u1t1",
+                        "title": "Steel as Structural Material"
+                    },
+                    {
+                        "id": "ce801-u1t2",
+                        "title": "Limit State Design of Steel"
+                    },
+                    {
+                        "id": "ce801-u1t3",
+                        "title": "Bolted Connections"
+                    },
+                    {
+                        "id": "ce801-u1t4",
+                        "title": "Welded Connections"
+                    }
+                ]
+            },
+            {
+                "id": "ce801-u2",
+                "unitNumber": 2,
+                "title": "Tension & Compression Members",
+                "topics": [
+                    {
+                        "id": "ce801-u2t1",
+                        "title": "Tension Members"
+                    },
+                    {
+                        "id": "ce801-u2t2",
+                        "title": "Compression Members"
+                    },
+                    {
+                        "id": "ce801-u2t3",
+                        "title": "Built-up Columns"
+                    },
+                    {
+                        "id": "ce801-u2t4",
+                        "title": "Column Bases"
+                    }
+                ]
+            },
+            {
+                "id": "ce801-u3",
+                "unitNumber": 3,
+                "title": "Flexural Members",
+                "topics": [
+                    {
+                        "id": "ce801-u3t1",
+                        "title": "Laterally Supported Beams"
+                    },
+                    {
+                        "id": "ce801-u3t2",
+                        "title": "Laterally Unsupported Beams"
+                    },
+                    {
+                        "id": "ce801-u3t3",
+                        "title": "Web Buckling & Crippling"
+                    },
+                    {
+                        "id": "ce801-u3t4",
+                        "title": "Purlins"
+                    }
+                ]
+            },
+            {
+                "id": "ce801-u4",
+                "unitNumber": 4,
+                "title": "Plate Girders",
+                "topics": [
+                    {
+                        "id": "ce801-u4t1",
+                        "title": "Plate Girder Components"
+                    },
+                    {
+                        "id": "ce801-u4t2",
+                        "title": "Design of Plate Girder"
+                    },
+                    {
+                        "id": "ce801-u4t3",
+                        "title": "Stiffeners"
+                    },
+                    {
+                        "id": "ce801-u4t4",
+                        "title": "Gantry Girders"
+                    }
+                ]
+            },
+            {
+                "id": "ce801-u5",
+                "unitNumber": 5,
+                "title": "Roof Trusses & Industrial Buildings",
+                "topics": [
+                    {
+                        "id": "ce801-u5t1",
+                        "title": "Roof Trusses"
+                    },
+                    {
+                        "id": "ce801-u5t2",
+                        "title": "Loads on Trusses"
+                    },
+                    {
+                        "id": "ce801-u5t3",
+                        "title": "Design of Truss Members"
+                    },
+                    {
+                        "id": "ce801-u5t4",
+                        "title": "Industrial Building Frames"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce802b",
+        "semester": 8,
+        "title": "Foundation Engineering",
+        "code": "CE-802(B)",
+        "description": "Soil exploration, bearing capacity, shallow and pile foundations, well foundations and ground improvement.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Foundation Analysis and Design",
+                "author": "Joseph E. Bowles"
+            },
+            {
+                "title": "Principles of Foundation Engineering",
+                "author": "Braja M. Das"
+            },
+            {
+                "title": "Soil Mechanics and Foundation Engineering",
+                "author": "K. R. Arora"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce802b/notes/ce802b-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce802b/notes/ce802b-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce802b/mock-papers/ce802b-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce802b/mock-papers/ce802b-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce802b/mock-papers/ce802b-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce802b-u1",
+                "unitNumber": 1,
+                "title": "Soil Exploration",
+                "topics": [
+                    {
+                        "id": "ce802b-u1t1",
+                        "title": "Site Investigation"
+                    },
+                    {
+                        "id": "ce802b-u1t2",
+                        "title": "Sampling"
+                    },
+                    {
+                        "id": "ce802b-u1t3",
+                        "title": "In-situ Tests"
+                    },
+                    {
+                        "id": "ce802b-u1t4",
+                        "title": "Geophysical Methods"
+                    }
+                ]
+            },
+            {
+                "id": "ce802b-u2",
+                "unitNumber": 2,
+                "title": "Bearing Capacity",
+                "topics": [
+                    {
+                        "id": "ce802b-u2t1",
+                        "title": "Bearing Capacity Concepts"
+                    },
+                    {
+                        "id": "ce802b-u2t2",
+                        "title": "Terzaghi's Theory"
+                    },
+                    {
+                        "id": "ce802b-u2t3",
+                        "title": "IS Code Method"
+                    },
+                    {
+                        "id": "ce802b-u2t4",
+                        "title": "Effect of Water Table"
+                    }
+                ]
+            },
+            {
+                "id": "ce802b-u3",
+                "unitNumber": 3,
+                "title": "Shallow Foundations",
+                "topics": [
+                    {
+                        "id": "ce802b-u3t1",
+                        "title": "Types of Shallow Foundations"
+                    },
+                    {
+                        "id": "ce802b-u3t2",
+                        "title": "Settlement Analysis"
+                    },
+                    {
+                        "id": "ce802b-u3t3",
+                        "title": "Floating Foundation"
+                    },
+                    {
+                        "id": "ce802b-u3t4",
+                        "title": "Foundations on Expansive Soils"
+                    }
+                ]
+            },
+            {
+                "id": "ce802b-u4",
+                "unitNumber": 4,
+                "title": "Pile Foundations",
+                "topics": [
+                    {
+                        "id": "ce802b-u4t1",
+                        "title": "Types of Piles"
+                    },
+                    {
+                        "id": "ce802b-u4t2",
+                        "title": "Load Capacity of Piles"
+                    },
+                    {
+                        "id": "ce802b-u4t3",
+                        "title": "Pile Groups"
+                    },
+                    {
+                        "id": "ce802b-u4t4",
+                        "title": "Lateral Load & Pile Caps"
+                    }
+                ]
+            },
+            {
+                "id": "ce802b-u5",
+                "unitNumber": 5,
+                "title": "Well Foundations & Ground Improvement",
+                "topics": [
+                    {
+                        "id": "ce802b-u5t1",
+                        "title": "Well Foundations"
+                    },
+                    {
+                        "id": "ce802b-u5t2",
+                        "title": "Caissons & Cofferdams"
+                    },
+                    {
+                        "id": "ce802b-u5t3",
+                        "title": "Ground Improvement"
+                    },
+                    {
+                        "id": "ce802b-u5t4",
+                        "title": "Soil Stabilisation"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ce802d",
+        "semester": 2,
+        "title": "Earthquake Resistant Design of Structures",
+        "code": "CE-802(D)",
+        "description": "Seismology, structural dynamics, IS 1893 seismic analysis, ductile detailing and seismic design of buildings.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Earthquake Resistant Design of Structures",
+                "author": "Pankaj Agarwal & Manish Shrikhande"
+            },
+            {
+                "title": "Dynamics of Structures",
+                "author": "Anil K. Chopra"
+            },
+            {
+                "title": "IS 1893 and IS 13920",
+                "author": "Bureau of Indian Standards"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ce802d/notes/ce802d-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ce802d/notes/ce802d-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ce802d/mock-papers/ce802d-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ce802d/mock-papers/ce802d-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ce802d/mock-papers/ce802d-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ce802d-u1",
+                "unitNumber": 1,
+                "title": "Engineering Seismology",
+                "topics": [
+                    {
+                        "id": "ce802d-u1t1",
+                        "title": "Earthquake Basics"
+                    },
+                    {
+                        "id": "ce802d-u1t2",
+                        "title": "Seismic Waves"
+                    },
+                    {
+                        "id": "ce802d-u1t3",
+                        "title": "Magnitude & Intensity"
+                    },
+                    {
+                        "id": "ce802d-u1t4",
+                        "title": "Seismic Zoning of India"
+                    }
+                ]
+            },
+            {
+                "id": "ce802d-u2",
+                "unitNumber": 2,
+                "title": "Structural Dynamics",
+                "topics": [
+                    {
+                        "id": "ce802d-u2t1",
+                        "title": "SDOF Systems"
+                    },
+                    {
+                        "id": "ce802d-u2t2",
+                        "title": "Response to Ground Motion"
+                    },
+                    {
+                        "id": "ce802d-u2t3",
+                        "title": "Response Spectrum"
+                    },
+                    {
+                        "id": "ce802d-u2t4",
+                        "title": "MDOF Systems"
+                    }
+                ]
+            },
+            {
+                "id": "ce802d-u3",
+                "unitNumber": 3,
+                "title": "Seismic Analysis as per IS 1893",
+                "topics": [
+                    {
+                        "id": "ce802d-u3t1",
+                        "title": "Design Lateral Force"
+                    },
+                    {
+                        "id": "ce802d-u3t2",
+                        "title": "Response Reduction Factor"
+                    },
+                    {
+                        "id": "ce802d-u3t3",
+                        "title": "Equivalent Static Method"
+                    },
+                    {
+                        "id": "ce802d-u3t4",
+                        "title": "Irregularities"
+                    }
+                ]
+            },
+            {
+                "id": "ce802d-u4",
+                "unitNumber": 4,
+                "title": "Ductile Detailing",
+                "topics": [
+                    {
+                        "id": "ce802d-u4t1",
+                        "title": "Ductility Concepts"
+                    },
+                    {
+                        "id": "ce802d-u4t2",
+                        "title": "IS 13920 Beam Detailing"
+                    },
+                    {
+                        "id": "ce802d-u4t3",
+                        "title": "IS 13920 Column Detailing"
+                    },
+                    {
+                        "id": "ce802d-u4t4",
+                        "title": "Beam-Column Joints"
+                    }
+                ]
+            },
+            {
+                "id": "ce802d-u5",
+                "unitNumber": 5,
+                "title": "Seismic Design of Buildings",
+                "topics": [
+                    {
+                        "id": "ce802d-u5t1",
+                        "title": "Shear Walls"
+                    },
+                    {
+                        "id": "ce802d-u5t2",
+                        "title": "Masonry Buildings"
+                    },
+                    {
+                        "id": "ce802d-u5t3",
+                        "title": "Base Isolation & Dampers"
+                    },
+                    {
+                        "id": "ce802d-u5t4",
+                        "title": "Retrofitting"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex303",
+        "semester": 3,
+        "title": "Electrical Measurements & Measuring Instruments",
+        "code": "EX-303",
+        "description": "Galvanometers, indicating instruments, wattmeters, energy meters, bridges, instrument transformers and potentiometers.",
+        "generated": true,
+        "references": [
+            {
+                "title": "A Course in Electrical and Electronic Measurements and Instrumentation",
+                "author": "A. K. Sawhney"
+            },
+            {
+                "title": "Electrical Measurements and Measuring Instruments",
+                "author": "E. W. Golding"
+            },
+            {
+                "title": "Electronic Instrumentation",
+                "author": "H. S. Kalsi"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex303/notes/ex303-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex303/notes/ex303-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex303/mock-papers/ex303-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex303/mock-papers/ex303-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex303/mock-papers/ex303-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex303-u1",
+                "unitNumber": 1,
+                "title": "Measurement Fundamentals & Galvanometers",
+                "topics": [
+                    {
+                        "id": "ex303-u1t1",
+                        "title": "Measurement Basics"
+                    },
+                    {
+                        "id": "ex303-u1t2",
+                        "title": "Torques in Instruments"
+                    },
+                    {
+                        "id": "ex303-u1t3",
+                        "title": "D'Arsonval Galvanometer"
+                    },
+                    {
+                        "id": "ex303-u1t4",
+                        "title": "Ballistic Galvanometer"
+                    }
+                ]
+            },
+            {
+                "id": "ex303-u2",
+                "unitNumber": 2,
+                "title": "Indicating Instruments",
+                "topics": [
+                    {
+                        "id": "ex303-u2t1",
+                        "title": "PMMC Instrument"
+                    },
+                    {
+                        "id": "ex303-u2t2",
+                        "title": "Moving Iron Instruments"
+                    },
+                    {
+                        "id": "ex303-u2t3",
+                        "title": "Electrodynamometer Instruments"
+                    },
+                    {
+                        "id": "ex303-u2t4",
+                        "title": "Extending Ranges"
+                    }
+                ]
+            },
+            {
+                "id": "ex303-u3",
+                "unitNumber": 3,
+                "title": "Power & Energy Measurement",
+                "topics": [
+                    {
+                        "id": "ex303-u3t1",
+                        "title": "Wattmeters"
+                    },
+                    {
+                        "id": "ex303-u3t2",
+                        "title": "Three-phase Power Measurement"
+                    },
+                    {
+                        "id": "ex303-u3t3",
+                        "title": "Energy Meters"
+                    },
+                    {
+                        "id": "ex303-u3t4",
+                        "title": "Electronic Energy Meters"
+                    }
+                ]
+            },
+            {
+                "id": "ex303-u4",
+                "unitNumber": 4,
+                "title": "Bridges & Potentiometers",
+                "topics": [
+                    {
+                        "id": "ex303-u4t1",
+                        "title": "Measurement of Resistance"
+                    },
+                    {
+                        "id": "ex303-u4t2",
+                        "title": "AC Bridges"
+                    },
+                    {
+                        "id": "ex303-u4t3",
+                        "title": "DC Potentiometer"
+                    },
+                    {
+                        "id": "ex303-u4t4",
+                        "title": "AC Potentiometer"
+                    }
+                ]
+            },
+            {
+                "id": "ex303-u5",
+                "unitNumber": 5,
+                "title": "Instrument Transformers & Digital Instruments",
+                "topics": [
+                    {
+                        "id": "ex303-u5t1",
+                        "title": "Current Transformers"
+                    },
+                    {
+                        "id": "ex303-u5t2",
+                        "title": "Potential Transformers"
+                    },
+                    {
+                        "id": "ex303-u5t3",
+                        "title": "Digital Instruments"
+                    },
+                    {
+                        "id": "ex303-u5t4",
+                        "title": "Oscilloscope & Recorders"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex402",
+        "semester": 4,
+        "title": "Electrical Machine-I",
+        "code": "EX-402",
+        "description": "Magnetic circuits, single-phase and three-phase transformers, autotransformers and three-phase induction motors.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Electrical Machinery",
+                "author": "P. S. Bimbhra"
+            },
+            {
+                "title": "Electric Machines",
+                "author": "I. J. Nagrath & D. P. Kothari"
+            },
+            {
+                "title": "Electric Machinery",
+                "author": "Fitzgerald & Kingsley"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex402/notes/ex402-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex402/notes/ex402-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex402/mock-papers/ex402-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex402/mock-papers/ex402-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex402/mock-papers/ex402-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex402-u1",
+                "unitNumber": 1,
+                "title": "Magnetic Circuits & Transformer Basics",
+                "topics": [
+                    {
+                        "id": "ex402-u1t1",
+                        "title": "Magnetic Circuits"
+                    },
+                    {
+                        "id": "ex402-u1t2",
+                        "title": "Transformer Principle"
+                    },
+                    {
+                        "id": "ex402-u1t3",
+                        "title": "Ideal & Practical Transformer"
+                    },
+                    {
+                        "id": "ex402-u1t4",
+                        "title": "Construction"
+                    }
+                ]
+            },
+            {
+                "id": "ex402-u2",
+                "unitNumber": 2,
+                "title": "Transformer Performance",
+                "topics": [
+                    {
+                        "id": "ex402-u2t1",
+                        "title": "Equivalent Circuit"
+                    },
+                    {
+                        "id": "ex402-u2t2",
+                        "title": "Open & Short Circuit Tests"
+                    },
+                    {
+                        "id": "ex402-u2t3",
+                        "title": "Voltage Regulation"
+                    },
+                    {
+                        "id": "ex402-u2t4",
+                        "title": "Efficiency"
+                    }
+                ]
+            },
+            {
+                "id": "ex402-u3",
+                "unitNumber": 3,
+                "title": "Three-phase Transformers & Autotransformers",
+                "topics": [
+                    {
+                        "id": "ex402-u3t1",
+                        "title": "Three-phase Connections"
+                    },
+                    {
+                        "id": "ex402-u3t2",
+                        "title": "Parallel Operation"
+                    },
+                    {
+                        "id": "ex402-u3t3",
+                        "title": "Autotransformer"
+                    },
+                    {
+                        "id": "ex402-u3t4",
+                        "title": "Special Transformers"
+                    }
+                ]
+            },
+            {
+                "id": "ex402-u4",
+                "unitNumber": 4,
+                "title": "Three-phase Induction Motor",
+                "topics": [
+                    {
+                        "id": "ex402-u4t1",
+                        "title": "Construction & Principle"
+                    },
+                    {
+                        "id": "ex402-u4t2",
+                        "title": "Slip & Rotor Quantities"
+                    },
+                    {
+                        "id": "ex402-u4t3",
+                        "title": "Torque Equation"
+                    },
+                    {
+                        "id": "ex402-u4t4",
+                        "title": "Power Flow"
+                    }
+                ]
+            },
+            {
+                "id": "ex402-u5",
+                "unitNumber": 5,
+                "title": "Induction Motor Performance & Control",
+                "topics": [
+                    {
+                        "id": "ex402-u5t1",
+                        "title": "Equivalent Circuit & Tests"
+                    },
+                    {
+                        "id": "ex402-u5t2",
+                        "title": "Starting Methods"
+                    },
+                    {
+                        "id": "ex402-u5t3",
+                        "title": "Speed Control"
+                    },
+                    {
+                        "id": "ex402-u5t4",
+                        "title": "Induction Generator & Braking"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex404",
+        "semester": 4,
+        "title": "Power System-I",
+        "code": "EX-404",
+        "description": "Power generation, transmission line parameters, performance, insulators, cables, corona and distribution.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Principles of Power System",
+                "author": "V. K. Mehta"
+            },
+            {
+                "title": "Electrical Power Systems",
+                "author": "C. L. Wadhwa"
+            },
+            {
+                "title": "Power System Engineering",
+                "author": "Nagrath & Kothari"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex404/notes/ex404-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex404/notes/ex404-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex404/mock-papers/ex404-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex404/mock-papers/ex404-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex404/mock-papers/ex404-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex404-u1",
+                "unitNumber": 1,
+                "title": "Power Generation",
+                "topics": [
+                    {
+                        "id": "ex404-u1t1",
+                        "title": "Structure of Power System"
+                    },
+                    {
+                        "id": "ex404-u1t2",
+                        "title": "Thermal & Hydro Plants"
+                    },
+                    {
+                        "id": "ex404-u1t3",
+                        "title": "Nuclear & Renewable Generation"
+                    },
+                    {
+                        "id": "ex404-u1t4",
+                        "title": "Load Factors & Tariffs"
+                    }
+                ]
+            },
+            {
+                "id": "ex404-u2",
+                "unitNumber": 2,
+                "title": "Transmission Line Parameters",
+                "topics": [
+                    {
+                        "id": "ex404-u2t1",
+                        "title": "Resistance & Skin Effect"
+                    },
+                    {
+                        "id": "ex404-u2t2",
+                        "title": "Inductance"
+                    },
+                    {
+                        "id": "ex404-u2t3",
+                        "title": "Capacitance"
+                    },
+                    {
+                        "id": "ex404-u2t4",
+                        "title": "GMD & Composite Conductors"
+                    }
+                ]
+            },
+            {
+                "id": "ex404-u3",
+                "unitNumber": 3,
+                "title": "Transmission Line Performance",
+                "topics": [
+                    {
+                        "id": "ex404-u3t1",
+                        "title": "Short Transmission Lines"
+                    },
+                    {
+                        "id": "ex404-u3t2",
+                        "title": "Medium Transmission Lines"
+                    },
+                    {
+                        "id": "ex404-u3t3",
+                        "title": "Long Transmission Lines"
+                    },
+                    {
+                        "id": "ex404-u3t4",
+                        "title": "Ferranti Effect & Compensation"
+                    }
+                ]
+            },
+            {
+                "id": "ex404-u4",
+                "unitNumber": 4,
+                "title": "Insulators, Cables & Corona",
+                "topics": [
+                    {
+                        "id": "ex404-u4t1",
+                        "title": "Overhead Line Insulators"
+                    },
+                    {
+                        "id": "ex404-u4t2",
+                        "title": "Grading & Sag"
+                    },
+                    {
+                        "id": "ex404-u4t3",
+                        "title": "Underground Cables"
+                    },
+                    {
+                        "id": "ex404-u4t4",
+                        "title": "Corona"
+                    }
+                ]
+            },
+            {
+                "id": "ex404-u5",
+                "unitNumber": 5,
+                "title": "Distribution Systems",
+                "topics": [
+                    {
+                        "id": "ex404-u5t1",
+                        "title": "Distribution Classification"
+                    },
+                    {
+                        "id": "ex404-u5t2",
+                        "title": "Radial & Ring Systems"
+                    },
+                    {
+                        "id": "ex404-u5t3",
+                        "title": "DC & AC Distributors"
+                    },
+                    {
+                        "id": "ex404-u5t4",
+                        "title": "Substations"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex501",
+        "semester": 5,
+        "title": "Electrical Machine-II",
+        "code": "EX-501",
+        "description": "DC machines, synchronous generators and motors, and single-phase induction motors.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Electrical Machinery",
+                "author": "P. S. Bimbhra"
+            },
+            {
+                "title": "Electric Machines",
+                "author": "I. J. Nagrath & D. P. Kothari"
+            },
+            {
+                "title": "Performance and Design of AC Machines",
+                "author": "M. G. Say"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex501/notes/ex501-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex501/notes/ex501-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex501/mock-papers/ex501-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex501/mock-papers/ex501-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex501/mock-papers/ex501-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex501-u1",
+                "unitNumber": 1,
+                "title": "DC Machines",
+                "topics": [
+                    {
+                        "id": "ex501-u1t1",
+                        "title": "DC Generator Construction & EMF"
+                    },
+                    {
+                        "id": "ex501-u1t2",
+                        "title": "Armature Reaction & Commutation"
+                    },
+                    {
+                        "id": "ex501-u1t3",
+                        "title": "DC Generator Characteristics"
+                    },
+                    {
+                        "id": "ex501-u1t4",
+                        "title": "DC Motor Principles"
+                    }
+                ]
+            },
+            {
+                "id": "ex501-u2",
+                "unitNumber": 2,
+                "title": "DC Motor Control & Testing",
+                "topics": [
+                    {
+                        "id": "ex501-u2t1",
+                        "title": "Speed Control of DC Motors"
+                    },
+                    {
+                        "id": "ex501-u2t2",
+                        "title": "Starting of DC Motors"
+                    },
+                    {
+                        "id": "ex501-u2t3",
+                        "title": "Losses & Efficiency"
+                    },
+                    {
+                        "id": "ex501-u2t4",
+                        "title": "Testing of DC Machines"
+                    }
+                ]
+            },
+            {
+                "id": "ex501-u3",
+                "unitNumber": 3,
+                "title": "Synchronous Generators",
+                "topics": [
+                    {
+                        "id": "ex501-u3t1",
+                        "title": "Alternator Construction"
+                    },
+                    {
+                        "id": "ex501-u3t2",
+                        "title": "EMF Equation & Winding Factors"
+                    },
+                    {
+                        "id": "ex501-u3t3",
+                        "title": "Voltage Regulation Methods"
+                    },
+                    {
+                        "id": "ex501-u3t4",
+                        "title": "Two-reaction Theory"
+                    }
+                ]
+            },
+            {
+                "id": "ex501-u4",
+                "unitNumber": 4,
+                "title": "Synchronous Machine Operation",
+                "topics": [
+                    {
+                        "id": "ex501-u4t1",
+                        "title": "Parallel Operation"
+                    },
+                    {
+                        "id": "ex501-u4t2",
+                        "title": "Synchronous Motor"
+                    },
+                    {
+                        "id": "ex501-u4t3",
+                        "title": "Power Factor Control"
+                    },
+                    {
+                        "id": "ex501-u4t4",
+                        "title": "Power-Angle Characteristics"
+                    }
+                ]
+            },
+            {
+                "id": "ex501-u5",
+                "unitNumber": 5,
+                "title": "Single-phase Induction Motors",
+                "topics": [
+                    {
+                        "id": "ex501-u5t1",
+                        "title": "Double Field Revolving Theory"
+                    },
+                    {
+                        "id": "ex501-u5t2",
+                        "title": "Split-phase & Capacitor Motors"
+                    },
+                    {
+                        "id": "ex501-u5t3",
+                        "title": "Shaded Pole & Universal Motors"
+                    },
+                    {
+                        "id": "ex501-u5t4",
+                        "title": "Applications"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex502",
+        "semester": 5,
+        "title": "Power Electronics",
+        "code": "EX-502",
+        "description": "Power semiconductor devices, controlled rectifiers, choppers, inverters, AC voltage controllers and cycloconverters.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Power Electronics",
+                "author": "P. S. Bimbhra"
+            },
+            {
+                "title": "Power Electronics: Circuits, Devices and Applications",
+                "author": "Muhammad H. Rashid"
+            },
+            {
+                "title": "Power Electronics",
+                "author": "Mohan, Undeland & Robbins"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex502/notes/ex502-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex502/notes/ex502-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex502/mock-papers/ex502-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex502/mock-papers/ex502-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex502/mock-papers/ex502-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex502-u1",
+                "unitNumber": 1,
+                "title": "Power Semiconductor Devices",
+                "topics": [
+                    {
+                        "id": "ex502-u1t1",
+                        "title": "Power Diodes & Thyristors"
+                    },
+                    {
+                        "id": "ex502-u1t2",
+                        "title": "SCR Characteristics & Turn-on"
+                    },
+                    {
+                        "id": "ex502-u1t3",
+                        "title": "Commutation of SCR"
+                    },
+                    {
+                        "id": "ex502-u1t4",
+                        "title": "Modern Power Devices"
+                    }
+                ]
+            },
+            {
+                "id": "ex502-u2",
+                "unitNumber": 2,
+                "title": "Controlled Rectifiers",
+                "topics": [
+                    {
+                        "id": "ex502-u2t1",
+                        "title": "Single-phase Half-wave Converter"
+                    },
+                    {
+                        "id": "ex502-u2t2",
+                        "title": "Single-phase Full Converters"
+                    },
+                    {
+                        "id": "ex502-u2t3",
+                        "title": "Three-phase Converters"
+                    },
+                    {
+                        "id": "ex502-u2t4",
+                        "title": "Converter Performance"
+                    }
+                ]
+            },
+            {
+                "id": "ex502-u3",
+                "unitNumber": 3,
+                "title": "DC-DC Converters (Choppers)",
+                "topics": [
+                    {
+                        "id": "ex502-u3t1",
+                        "title": "Chopper Principle"
+                    },
+                    {
+                        "id": "ex502-u3t2",
+                        "title": "Chopper Control Strategies"
+                    },
+                    {
+                        "id": "ex502-u3t3",
+                        "title": "Chopper Configurations"
+                    },
+                    {
+                        "id": "ex502-u3t4",
+                        "title": "Switched-mode Supplies"
+                    }
+                ]
+            },
+            {
+                "id": "ex502-u4",
+                "unitNumber": 4,
+                "title": "Inverters",
+                "topics": [
+                    {
+                        "id": "ex502-u4t1",
+                        "title": "Single-phase Inverters"
+                    },
+                    {
+                        "id": "ex502-u4t2",
+                        "title": "Three-phase Inverters"
+                    },
+                    {
+                        "id": "ex502-u4t3",
+                        "title": "PWM Techniques"
+                    },
+                    {
+                        "id": "ex502-u4t4",
+                        "title": "Current Source & Resonant Inverters"
+                    }
+                ]
+            },
+            {
+                "id": "ex502-u5",
+                "unitNumber": 5,
+                "title": "AC Voltage Controllers & Cycloconverters",
+                "topics": [
+                    {
+                        "id": "ex502-u5t1",
+                        "title": "AC Voltage Controllers"
+                    },
+                    {
+                        "id": "ex502-u5t2",
+                        "title": "Applications of AC Controllers"
+                    },
+                    {
+                        "id": "ex502-u5t3",
+                        "title": "Cycloconverters"
+                    },
+                    {
+                        "id": "ex502-u5t4",
+                        "title": "Protection of Devices"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex503c",
+        "semester": 5,
+        "title": "Renewable Power Generation",
+        "code": "EX-503(C)",
+        "description": "Solar thermal and PV, wind energy, small hydro, biomass, fuel cells, storage and grid integration.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Non-Conventional Energy Sources",
+                "author": "G. D. Rai"
+            },
+            {
+                "title": "Renewable Energy Sources and Emerging Technologies",
+                "author": "Kothari, Singal & Ranjan"
+            },
+            {
+                "title": "Wind and Solar Power Systems",
+                "author": "Mukund R. Patel"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex503c/notes/ex503c-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex503c/notes/ex503c-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex503c/mock-papers/ex503c-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex503c/mock-papers/ex503c-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex503c/mock-papers/ex503c-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex503c-u1",
+                "unitNumber": 1,
+                "title": "Energy Scenario",
+                "topics": [
+                    {
+                        "id": "ex503c-u1t1",
+                        "title": "Renewable Energy Overview"
+                    },
+                    {
+                        "id": "ex503c-u1t2",
+                        "title": "Solar Radiation"
+                    },
+                    {
+                        "id": "ex503c-u1t3",
+                        "title": "Energy Policy"
+                    },
+                    {
+                        "id": "ex503c-u1t4",
+                        "title": "Environmental Benefits"
+                    }
+                ]
+            },
+            {
+                "id": "ex503c-u2",
+                "unitNumber": 2,
+                "title": "Solar Energy",
+                "topics": [
+                    {
+                        "id": "ex503c-u2t1",
+                        "title": "Solar Thermal Systems"
+                    },
+                    {
+                        "id": "ex503c-u2t2",
+                        "title": "Photovoltaic Cell"
+                    },
+                    {
+                        "id": "ex503c-u2t3",
+                        "title": "PV Modules & Arrays"
+                    },
+                    {
+                        "id": "ex503c-u2t4",
+                        "title": "MPPT & PV Systems"
+                    }
+                ]
+            },
+            {
+                "id": "ex503c-u3",
+                "unitNumber": 3,
+                "title": "Wind Energy",
+                "topics": [
+                    {
+                        "id": "ex503c-u3t1",
+                        "title": "Wind Power Basics"
+                    },
+                    {
+                        "id": "ex503c-u3t2",
+                        "title": "Wind Turbines"
+                    },
+                    {
+                        "id": "ex503c-u3t3",
+                        "title": "Wind Generators"
+                    },
+                    {
+                        "id": "ex503c-u3t4",
+                        "title": "Wind Farm Planning"
+                    }
+                ]
+            },
+            {
+                "id": "ex503c-u4",
+                "unitNumber": 4,
+                "title": "Other Renewable Sources",
+                "topics": [
+                    {
+                        "id": "ex503c-u4t1",
+                        "title": "Small Hydro"
+                    },
+                    {
+                        "id": "ex503c-u4t2",
+                        "title": "Biomass & Biogas"
+                    },
+                    {
+                        "id": "ex503c-u4t3",
+                        "title": "Geothermal & Ocean"
+                    },
+                    {
+                        "id": "ex503c-u4t4",
+                        "title": "Fuel Cells"
+                    }
+                ]
+            },
+            {
+                "id": "ex503c-u5",
+                "unitNumber": 5,
+                "title": "Storage & Grid Integration",
+                "topics": [
+                    {
+                        "id": "ex503c-u5t1",
+                        "title": "Energy Storage"
+                    },
+                    {
+                        "id": "ex503c-u5t2",
+                        "title": "Grid Integration Issues"
+                    },
+                    {
+                        "id": "ex503c-u5t3",
+                        "title": "Power Electronic Interfaces"
+                    },
+                    {
+                        "id": "ex503c-u5t4",
+                        "title": "Hybrid & Microgrids"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex504a",
+        "semester": 5,
+        "title": "Industrial Electronics",
+        "code": "EX-504(A)",
+        "description": "Power devices in industry, timers, heating, welding, motor control, PLCs and industrial instrumentation.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Industrial Electronics and Control",
+                "author": "S. K. Bhattacharya & S. Chatterjee"
+            },
+            {
+                "title": "Power Electronics",
+                "author": "P. S. Bimbhra"
+            },
+            {
+                "title": "Programmable Logic Controllers",
+                "author": "W. Bolton"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex504a/notes/ex504a-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex504a/notes/ex504a-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex504a/mock-papers/ex504a-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex504a/mock-papers/ex504a-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex504a/mock-papers/ex504a-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex504a-u1",
+                "unitNumber": 1,
+                "title": "Industrial Power Devices",
+                "topics": [
+                    {
+                        "id": "ex504a-u1t1",
+                        "title": "Thyristor Family"
+                    },
+                    {
+                        "id": "ex504a-u1t2",
+                        "title": "Triggering Circuits"
+                    },
+                    {
+                        "id": "ex504a-u1t3",
+                        "title": "Protection Circuits"
+                    },
+                    {
+                        "id": "ex504a-u1t4",
+                        "title": "Power Supplies"
+                    }
+                ]
+            },
+            {
+                "id": "ex504a-u2",
+                "unitNumber": 2,
+                "title": "Timers & Control Circuits",
+                "topics": [
+                    {
+                        "id": "ex504a-u2t1",
+                        "title": "Timers"
+                    },
+                    {
+                        "id": "ex504a-u2t2",
+                        "title": "Time Delay Relays"
+                    },
+                    {
+                        "id": "ex504a-u2t3",
+                        "title": "Counters & Sequencers"
+                    },
+                    {
+                        "id": "ex504a-u2t4",
+                        "title": "Photoelectric Controls"
+                    }
+                ]
+            },
+            {
+                "id": "ex504a-u3",
+                "unitNumber": 3,
+                "title": "Heating & Welding",
+                "topics": [
+                    {
+                        "id": "ex504a-u3t1",
+                        "title": "Induction Heating"
+                    },
+                    {
+                        "id": "ex504a-u3t2",
+                        "title": "Dielectric Heating"
+                    },
+                    {
+                        "id": "ex504a-u3t3",
+                        "title": "Resistance Welding Control"
+                    },
+                    {
+                        "id": "ex504a-u3t4",
+                        "title": "Electric Arc Furnace"
+                    }
+                ]
+            },
+            {
+                "id": "ex504a-u4",
+                "unitNumber": 4,
+                "title": "Motor Control",
+                "topics": [
+                    {
+                        "id": "ex504a-u4t1",
+                        "title": "DC Motor Control"
+                    },
+                    {
+                        "id": "ex504a-u4t2",
+                        "title": "AC Motor Control"
+                    },
+                    {
+                        "id": "ex504a-u4t3",
+                        "title": "Stepper & Servo Control"
+                    },
+                    {
+                        "id": "ex504a-u4t4",
+                        "title": "Motor Protection"
+                    }
+                ]
+            },
+            {
+                "id": "ex504a-u5",
+                "unitNumber": 5,
+                "title": "PLC & Industrial Automation",
+                "topics": [
+                    {
+                        "id": "ex504a-u5t1",
+                        "title": "PLC Basics"
+                    },
+                    {
+                        "id": "ex504a-u5t2",
+                        "title": "Ladder Programming"
+                    },
+                    {
+                        "id": "ex504a-u5t3",
+                        "title": "SCADA & DCS"
+                    },
+                    {
+                        "id": "ex504a-u5t4",
+                        "title": "Industrial Communication"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex601",
+        "semester": 6,
+        "title": "Power System-II",
+        "code": "EX-601",
+        "description": "Per-unit system, load flow studies, economic dispatch, fault analysis, stability and power system control.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Modern Power System Analysis",
+                "author": "D. P. Kothari & I. J. Nagrath"
+            },
+            {
+                "title": "Power System Analysis",
+                "author": "Hadi Saadat"
+            },
+            {
+                "title": "Power System Analysis",
+                "author": "Grainger & Stevenson"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex601/notes/ex601-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex601/notes/ex601-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex601/mock-papers/ex601-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex601/mock-papers/ex601-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex601/mock-papers/ex601-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex601-u1",
+                "unitNumber": 1,
+                "title": "Per-unit System & Network Matrices",
+                "topics": [
+                    {
+                        "id": "ex601-u1t1",
+                        "title": "Per-unit System"
+                    },
+                    {
+                        "id": "ex601-u1t2",
+                        "title": "Single Line Diagram"
+                    },
+                    {
+                        "id": "ex601-u1t3",
+                        "title": "Bus Admittance Matrix"
+                    },
+                    {
+                        "id": "ex601-u1t4",
+                        "title": "Bus Impedance Matrix"
+                    }
+                ]
+            },
+            {
+                "id": "ex601-u2",
+                "unitNumber": 2,
+                "title": "Load Flow Studies",
+                "topics": [
+                    {
+                        "id": "ex601-u2t1",
+                        "title": "Load Flow Problem"
+                    },
+                    {
+                        "id": "ex601-u2t2",
+                        "title": "Gauss-Seidel Method"
+                    },
+                    {
+                        "id": "ex601-u2t3",
+                        "title": "Newton-Raphson Method"
+                    },
+                    {
+                        "id": "ex601-u2t4",
+                        "title": "Fast Decoupled Load Flow"
+                    }
+                ]
+            },
+            {
+                "id": "ex601-u3",
+                "unitNumber": 3,
+                "title": "Economic Operation",
+                "topics": [
+                    {
+                        "id": "ex601-u3t1",
+                        "title": "Economic Dispatch"
+                    },
+                    {
+                        "id": "ex601-u3t2",
+                        "title": "Transmission Losses"
+                    },
+                    {
+                        "id": "ex601-u3t3",
+                        "title": "Unit Commitment"
+                    },
+                    {
+                        "id": "ex601-u3t4",
+                        "title": "Hydro-thermal Coordination"
+                    }
+                ]
+            },
+            {
+                "id": "ex601-u4",
+                "unitNumber": 4,
+                "title": "Fault Analysis",
+                "topics": [
+                    {
+                        "id": "ex601-u4t1",
+                        "title": "Symmetrical Faults"
+                    },
+                    {
+                        "id": "ex601-u4t2",
+                        "title": "Symmetrical Components"
+                    },
+                    {
+                        "id": "ex601-u4t3",
+                        "title": "Unsymmetrical Faults"
+                    },
+                    {
+                        "id": "ex601-u4t4",
+                        "title": "Fault Analysis Using Zbus"
+                    }
+                ]
+            },
+            {
+                "id": "ex601-u5",
+                "unitNumber": 5,
+                "title": "Power System Stability & Control",
+                "topics": [
+                    {
+                        "id": "ex601-u5t1",
+                        "title": "Stability Concepts"
+                    },
+                    {
+                        "id": "ex601-u5t2",
+                        "title": "Equal Area Criterion"
+                    },
+                    {
+                        "id": "ex601-u5t3",
+                        "title": "Load Frequency Control"
+                    },
+                    {
+                        "id": "ex601-u5t4",
+                        "title": "Voltage Control"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex603a",
+        "semester": 6,
+        "title": "Utilization of Electrical Energy",
+        "code": "EX-603(A)",
+        "description": "Electric heating, welding, illumination, electric traction, electrolysis and energy-efficient utilisation.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Utilization of Electric Energy",
+                "author": "E. Openshaw Taylor"
+            },
+            {
+                "title": "Art and Science of Utilization of Electrical Energy",
+                "author": "H. Partab"
+            },
+            {
+                "title": "Generation, Distribution and Utilization of Electrical Energy",
+                "author": "C. L. Wadhwa"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex603a/notes/ex603a-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex603a/notes/ex603a-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex603a/mock-papers/ex603a-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex603a/mock-papers/ex603a-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex603a/mock-papers/ex603a-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex603a-u1",
+                "unitNumber": 1,
+                "title": "Electric Heating",
+                "topics": [
+                    {
+                        "id": "ex603a-u1t1",
+                        "title": "Methods of Heating"
+                    },
+                    {
+                        "id": "ex603a-u1t2",
+                        "title": "Resistance Ovens"
+                    },
+                    {
+                        "id": "ex603a-u1t3",
+                        "title": "Induction Furnaces"
+                    },
+                    {
+                        "id": "ex603a-u1t4",
+                        "title": "Dielectric Heating"
+                    }
+                ]
+            },
+            {
+                "id": "ex603a-u2",
+                "unitNumber": 2,
+                "title": "Electric Welding",
+                "topics": [
+                    {
+                        "id": "ex603a-u2t1",
+                        "title": "Welding Fundamentals"
+                    },
+                    {
+                        "id": "ex603a-u2t2",
+                        "title": "Resistance Welding Types"
+                    },
+                    {
+                        "id": "ex603a-u2t3",
+                        "title": "Arc Welding Equipment"
+                    },
+                    {
+                        "id": "ex603a-u2t4",
+                        "title": "Modern Welding"
+                    }
+                ]
+            },
+            {
+                "id": "ex603a-u3",
+                "unitNumber": 3,
+                "title": "Illumination",
+                "topics": [
+                    {
+                        "id": "ex603a-u3t1",
+                        "title": "Laws of Illumination"
+                    },
+                    {
+                        "id": "ex603a-u3t2",
+                        "title": "Lamps"
+                    },
+                    {
+                        "id": "ex603a-u3t3",
+                        "title": "Lighting Design"
+                    },
+                    {
+                        "id": "ex603a-u3t4",
+                        "title": "Street & Flood Lighting"
+                    }
+                ]
+            },
+            {
+                "id": "ex603a-u4",
+                "unitNumber": 4,
+                "title": "Electric Traction",
+                "topics": [
+                    {
+                        "id": "ex603a-u4t1",
+                        "title": "Traction Systems"
+                    },
+                    {
+                        "id": "ex603a-u4t2",
+                        "title": "Speed-Time Curves"
+                    },
+                    {
+                        "id": "ex603a-u4t3",
+                        "title": "Tractive Effort"
+                    },
+                    {
+                        "id": "ex603a-u4t4",
+                        "title": "Traction Motors & Braking"
+                    }
+                ]
+            },
+            {
+                "id": "ex603a-u5",
+                "unitNumber": 5,
+                "title": "Electrolysis & Energy Efficiency",
+                "topics": [
+                    {
+                        "id": "ex603a-u5t1",
+                        "title": "Electrolytic Processes"
+                    },
+                    {
+                        "id": "ex603a-u5t2",
+                        "title": "Battery Charging"
+                    },
+                    {
+                        "id": "ex603a-u5t3",
+                        "title": "Energy-efficient Motors & Drives"
+                    },
+                    {
+                        "id": "ex603a-u5t4",
+                        "title": "Domestic Utilisation"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex701",
+        "semester": 7,
+        "title": "Power System Protection",
+        "code": "EX-701",
+        "description": "Fault analysis, relays, protection schemes for generators, transformers, lines, circuit breakers and numerical relaying.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Switchgear and Protection",
+                "author": "Sunil S. Rao"
+            },
+            {
+                "title": "Power System Protection and Switchgear",
+                "author": "B. Ram & D. N. Vishwakarma"
+            },
+            {
+                "title": "Protective Relaying",
+                "author": "Blackburn & Domin"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex701/notes/ex701-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex701/notes/ex701-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex701/mock-papers/ex701-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex701/mock-papers/ex701-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex701/mock-papers/ex701-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex701-u1",
+                "unitNumber": 1,
+                "title": "Protection Fundamentals",
+                "topics": [
+                    {
+                        "id": "ex701-u1t1",
+                        "title": "Need for Protection"
+                    },
+                    {
+                        "id": "ex701-u1t2",
+                        "title": "Relay Characteristics"
+                    },
+                    {
+                        "id": "ex701-u1t3",
+                        "title": "Instrument Transformers for Protection"
+                    },
+                    {
+                        "id": "ex701-u1t4",
+                        "title": "Earthing in Power Systems"
+                    }
+                ]
+            },
+            {
+                "id": "ex701-u2",
+                "unitNumber": 2,
+                "title": "Relays",
+                "topics": [
+                    {
+                        "id": "ex701-u2t1",
+                        "title": "Electromagnetic Relays"
+                    },
+                    {
+                        "id": "ex701-u2t2",
+                        "title": "Overcurrent Relays"
+                    },
+                    {
+                        "id": "ex701-u2t3",
+                        "title": "Directional & Differential Relays"
+                    },
+                    {
+                        "id": "ex701-u2t4",
+                        "title": "Distance Relays"
+                    }
+                ]
+            },
+            {
+                "id": "ex701-u3",
+                "unitNumber": 3,
+                "title": "Apparatus Protection",
+                "topics": [
+                    {
+                        "id": "ex701-u3t1",
+                        "title": "Generator Protection"
+                    },
+                    {
+                        "id": "ex701-u3t2",
+                        "title": "Transformer Protection"
+                    },
+                    {
+                        "id": "ex701-u3t3",
+                        "title": "Busbar Protection"
+                    },
+                    {
+                        "id": "ex701-u3t4",
+                        "title": "Motor Protection"
+                    }
+                ]
+            },
+            {
+                "id": "ex701-u4",
+                "unitNumber": 4,
+                "title": "Line Protection & Circuit Breakers",
+                "topics": [
+                    {
+                        "id": "ex701-u4t1",
+                        "title": "Transmission Line Protection"
+                    },
+                    {
+                        "id": "ex701-u4t2",
+                        "title": "Circuit Breaker Principles"
+                    },
+                    {
+                        "id": "ex701-u4t3",
+                        "title": "Types of Circuit Breakers"
+                    },
+                    {
+                        "id": "ex701-u4t4",
+                        "title": "Breaker Ratings & Testing"
+                    }
+                ]
+            },
+            {
+                "id": "ex701-u5",
+                "unitNumber": 5,
+                "title": "Modern Protection",
+                "topics": [
+                    {
+                        "id": "ex701-u5t1",
+                        "title": "Static Relays"
+                    },
+                    {
+                        "id": "ex701-u5t2",
+                        "title": "Numerical Relays"
+                    },
+                    {
+                        "id": "ex701-u5t3",
+                        "title": "Substation Automation"
+                    },
+                    {
+                        "id": "ex701-u5t4",
+                        "title": "Protection Against Overvoltages"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex702b",
+        "semester": 2,
+        "title": "HVDC & FACTS",
+        "code": "EX-702(B)",
+        "description": "HVDC transmission, converters, control, and flexible AC transmission devices such as SVC, STATCOM, TCSC and UPFC.",
+        "generated": true,
+        "references": [
+            {
+                "title": "HVDC Power Transmission Systems",
+                "author": "K. R. Padiyar"
+            },
+            {
+                "title": "Understanding FACTS",
+                "author": "N. G. Hingorani & L. Gyugyi"
+            },
+            {
+                "title": "FACTS Controllers in Power Transmission and Distribution",
+                "author": "K. R. Padiyar"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex702b/notes/ex702b-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex702b/notes/ex702b-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex702b/mock-papers/ex702b-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex702b/mock-papers/ex702b-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex702b/mock-papers/ex702b-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex702b-u1",
+                "unitNumber": 1,
+                "title": "HVDC Fundamentals",
+                "topics": [
+                    {
+                        "id": "ex702b-u1t1",
+                        "title": "HVDC vs HVAC"
+                    },
+                    {
+                        "id": "ex702b-u1t2",
+                        "title": "HVDC Link Types"
+                    },
+                    {
+                        "id": "ex702b-u1t3",
+                        "title": "HVDC Components"
+                    },
+                    {
+                        "id": "ex702b-u1t4",
+                        "title": "HVDC in India"
+                    }
+                ]
+            },
+            {
+                "id": "ex702b-u2",
+                "unitNumber": 2,
+                "title": "HVDC Converters & Control",
+                "topics": [
+                    {
+                        "id": "ex702b-u2t1",
+                        "title": "Line Commutated Converters"
+                    },
+                    {
+                        "id": "ex702b-u2t2",
+                        "title": "Rectifier & Inverter Operation"
+                    },
+                    {
+                        "id": "ex702b-u2t3",
+                        "title": "HVDC Control"
+                    },
+                    {
+                        "id": "ex702b-u2t4",
+                        "title": "VSC-HVDC"
+                    }
+                ]
+            },
+            {
+                "id": "ex702b-u3",
+                "unitNumber": 3,
+                "title": "Reactive Power & FACTS Concepts",
+                "topics": [
+                    {
+                        "id": "ex702b-u3t1",
+                        "title": "Reactive Power Control"
+                    },
+                    {
+                        "id": "ex702b-u3t2",
+                        "title": "FACTS Concept"
+                    },
+                    {
+                        "id": "ex702b-u3t3",
+                        "title": "Shunt Devices"
+                    },
+                    {
+                        "id": "ex702b-u3t4",
+                        "title": "Series Devices"
+                    }
+                ]
+            },
+            {
+                "id": "ex702b-u4",
+                "unitNumber": 4,
+                "title": "Advanced FACTS",
+                "topics": [
+                    {
+                        "id": "ex702b-u4t1",
+                        "title": "UPFC"
+                    },
+                    {
+                        "id": "ex702b-u4t2",
+                        "title": "IPFC & Phase Shifters"
+                    },
+                    {
+                        "id": "ex702b-u4t3",
+                        "title": "Stability Enhancement"
+                    },
+                    {
+                        "id": "ex702b-u4t4",
+                        "title": "Harmonics & Filters"
+                    }
+                ]
+            },
+            {
+                "id": "ex702b-u5",
+                "unitNumber": 5,
+                "title": "Applications & Grid Integration",
+                "topics": [
+                    {
+                        "id": "ex702b-u5t1",
+                        "title": "Renewable Integration"
+                    },
+                    {
+                        "id": "ex702b-u5t2",
+                        "title": "Multi-terminal HVDC"
+                    },
+                    {
+                        "id": "ex702b-u5t3",
+                        "title": "Power Quality Applications"
+                    },
+                    {
+                        "id": "ex702b-u5t4",
+                        "title": "Economics & Planning"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex702c",
+        "semester": 7,
+        "title": "High Voltage Engineering",
+        "code": "EX-702(C)",
+        "description": "Breakdown in gases, liquids and solids, generation and measurement of high voltages, overvoltages and HV testing.",
+        "generated": true,
+        "references": [
+            {
+                "title": "High Voltage Engineering",
+                "author": "M. S. Naidu & V. Kamaraju"
+            },
+            {
+                "title": "High Voltage Engineering Fundamentals",
+                "author": "Kuffel, Zaengl & Kuffel"
+            },
+            {
+                "title": "High Voltage Engineering",
+                "author": "C. L. Wadhwa"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex702c/notes/ex702c-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex702c/notes/ex702c-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex702c/mock-papers/ex702c-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex702c/mock-papers/ex702c-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex702c/mock-papers/ex702c-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex702c-u1",
+                "unitNumber": 1,
+                "title": "Breakdown in Gases",
+                "topics": [
+                    {
+                        "id": "ex702c-u1t1",
+                        "title": "Ionisation Processes"
+                    },
+                    {
+                        "id": "ex702c-u1t2",
+                        "title": "Paschen's Law"
+                    },
+                    {
+                        "id": "ex702c-u1t3",
+                        "title": "Corona Discharge"
+                    },
+                    {
+                        "id": "ex702c-u1t4",
+                        "title": "SF6 & Vacuum Insulation"
+                    }
+                ]
+            },
+            {
+                "id": "ex702c-u2",
+                "unitNumber": 2,
+                "title": "Breakdown in Liquids & Solids",
+                "topics": [
+                    {
+                        "id": "ex702c-u2t1",
+                        "title": "Liquid Dielectrics"
+                    },
+                    {
+                        "id": "ex702c-u2t2",
+                        "title": "Solid Dielectrics"
+                    },
+                    {
+                        "id": "ex702c-u2t3",
+                        "title": "Treeing & Tracking"
+                    },
+                    {
+                        "id": "ex702c-u2t4",
+                        "title": "Composite Insulation"
+                    }
+                ]
+            },
+            {
+                "id": "ex702c-u3",
+                "unitNumber": 3,
+                "title": "Generation of High Voltages",
+                "topics": [
+                    {
+                        "id": "ex702c-u3t1",
+                        "title": "HV AC Generation"
+                    },
+                    {
+                        "id": "ex702c-u3t2",
+                        "title": "HV DC Generation"
+                    },
+                    {
+                        "id": "ex702c-u3t3",
+                        "title": "Impulse Voltage Generation"
+                    },
+                    {
+                        "id": "ex702c-u3t4",
+                        "title": "Impulse Current Generation"
+                    }
+                ]
+            },
+            {
+                "id": "ex702c-u4",
+                "unitNumber": 4,
+                "title": "Measurement of High Voltages",
+                "topics": [
+                    {
+                        "id": "ex702c-u4t1",
+                        "title": "Sphere Gaps"
+                    },
+                    {
+                        "id": "ex702c-u4t2",
+                        "title": "Voltage Dividers"
+                    },
+                    {
+                        "id": "ex702c-u4t3",
+                        "title": "Electrostatic Voltmeter"
+                    },
+                    {
+                        "id": "ex702c-u4t4",
+                        "title": "Current & PD Measurement"
+                    }
+                ]
+            },
+            {
+                "id": "ex702c-u5",
+                "unitNumber": 5,
+                "title": "Overvoltages & HV Testing",
+                "topics": [
+                    {
+                        "id": "ex702c-u5t1",
+                        "title": "Lightning Overvoltages"
+                    },
+                    {
+                        "id": "ex702c-u5t2",
+                        "title": "Switching Overvoltages"
+                    },
+                    {
+                        "id": "ex702c-u5t3",
+                        "title": "Insulation Coordination"
+                    },
+                    {
+                        "id": "ex702c-u5t4",
+                        "title": "HV Testing"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex801",
+        "semester": 8,
+        "title": "Electrical Drives",
+        "code": "EX-801",
+        "description": "Drive dynamics, DC drives, induction motor drives, synchronous motor drives, braking and digital control.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Fundamentals of Electrical Drives",
+                "author": "G. K. Dubey"
+            },
+            {
+                "title": "Electric Motor Drives",
+                "author": "R. Krishnan"
+            },
+            {
+                "title": "Modern Power Electronics and AC Drives",
+                "author": "B. K. Bose"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex801/notes/ex801-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex801/notes/ex801-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex801/mock-papers/ex801-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex801/mock-papers/ex801-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex801/mock-papers/ex801-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex801-u1",
+                "unitNumber": 1,
+                "title": "Electric Drive Fundamentals",
+                "topics": [
+                    {
+                        "id": "ex801-u1t1",
+                        "title": "Elements of Electric Drive"
+                    },
+                    {
+                        "id": "ex801-u1t2",
+                        "title": "Dynamics of Drives"
+                    },
+                    {
+                        "id": "ex801-u1t3",
+                        "title": "Load Characteristics"
+                    },
+                    {
+                        "id": "ex801-u1t4",
+                        "title": "Motor Rating"
+                    }
+                ]
+            },
+            {
+                "id": "ex801-u2",
+                "unitNumber": 2,
+                "title": "DC Drives",
+                "topics": [
+                    {
+                        "id": "ex801-u2t1",
+                        "title": "Single-phase Converter Drives"
+                    },
+                    {
+                        "id": "ex801-u2t2",
+                        "title": "Three-phase Converter Drives"
+                    },
+                    {
+                        "id": "ex801-u2t3",
+                        "title": "Chopper-fed DC Drives"
+                    },
+                    {
+                        "id": "ex801-u2t4",
+                        "title": "Closed-loop DC Drives"
+                    }
+                ]
+            },
+            {
+                "id": "ex801-u3",
+                "unitNumber": 3,
+                "title": "Induction Motor Drives",
+                "topics": [
+                    {
+                        "id": "ex801-u3t1",
+                        "title": "Stator Voltage Control"
+                    },
+                    {
+                        "id": "ex801-u3t2",
+                        "title": "V/f Control"
+                    },
+                    {
+                        "id": "ex801-u3t3",
+                        "title": "Rotor Resistance & Slip Power Recovery"
+                    },
+                    {
+                        "id": "ex801-u3t4",
+                        "title": "Vector Control"
+                    }
+                ]
+            },
+            {
+                "id": "ex801-u4",
+                "unitNumber": 4,
+                "title": "Synchronous & Special Motor Drives",
+                "topics": [
+                    {
+                        "id": "ex801-u4t1",
+                        "title": "Synchronous Motor Drives"
+                    },
+                    {
+                        "id": "ex801-u4t2",
+                        "title": "BLDC & PMSM Drives"
+                    },
+                    {
+                        "id": "ex801-u4t3",
+                        "title": "Stepper Motor Drives"
+                    },
+                    {
+                        "id": "ex801-u4t4",
+                        "title": "Switched Reluctance Drives"
+                    }
+                ]
+            },
+            {
+                "id": "ex801-u5",
+                "unitNumber": 5,
+                "title": "Braking & Digital Control",
+                "topics": [
+                    {
+                        "id": "ex801-u5t1",
+                        "title": "Electric Braking"
+                    },
+                    {
+                        "id": "ex801-u5t2",
+                        "title": "Energy Recovery"
+                    },
+                    {
+                        "id": "ex801-u5t3",
+                        "title": "Digital Control of Drives"
+                    },
+                    {
+                        "id": "ex801-u5t4",
+                        "title": "Drive Applications"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex802b",
+        "semester": 8,
+        "title": "Special Electrical Machines",
+        "code": "EX-802(B)",
+        "description": "Stepper, switched reluctance, BLDC, PMSM, linear induction and other special purpose machines.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Special Electrical Machines",
+                "author": "E. G. Janardanan"
+            },
+            {
+                "title": "Brushless Permanent Magnet and Reluctance Motor Drives",
+                "author": "T. J. E. Miller"
+            },
+            {
+                "title": "Switched Reluctance Motor Drives",
+                "author": "R. Krishnan"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/ex802b/notes/ex802b-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/ex802b/notes/ex802b-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/ex802b/mock-papers/ex802b-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/ex802b/mock-papers/ex802b-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/ex802b/mock-papers/ex802b-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "ex802b-u1",
+                "unitNumber": 1,
+                "title": "Stepper Motors",
+                "topics": [
+                    {
+                        "id": "ex802b-u1t1",
+                        "title": "Stepper Motor Principle"
+                    },
+                    {
+                        "id": "ex802b-u1t2",
+                        "title": "Types of Stepper Motors"
+                    },
+                    {
+                        "id": "ex802b-u1t3",
+                        "title": "Drive Modes"
+                    },
+                    {
+                        "id": "ex802b-u1t4",
+                        "title": "Characteristics"
+                    }
+                ]
+            },
+            {
+                "id": "ex802b-u2",
+                "unitNumber": 2,
+                "title": "Switched Reluctance Motors",
+                "topics": [
+                    {
+                        "id": "ex802b-u2t1",
+                        "title": "SRM Construction"
+                    },
+                    {
+                        "id": "ex802b-u2t2",
+                        "title": "Torque Production"
+                    },
+                    {
+                        "id": "ex802b-u2t3",
+                        "title": "SRM Converters"
+                    },
+                    {
+                        "id": "ex802b-u2t4",
+                        "title": "SRM Applications"
+                    }
+                ]
+            },
+            {
+                "id": "ex802b-u3",
+                "unitNumber": 3,
+                "title": "Permanent Magnet Machines",
+                "topics": [
+                    {
+                        "id": "ex802b-u3t1",
+                        "title": "Permanent Magnet Materials"
+                    },
+                    {
+                        "id": "ex802b-u3t2",
+                        "title": "BLDC Motor"
+                    },
+                    {
+                        "id": "ex802b-u3t3",
+                        "title": "PMSM"
+                    },
+                    {
+                        "id": "ex802b-u3t4",
+                        "title": "PM Generators"
+                    }
+                ]
+            },
+            {
+                "id": "ex802b-u4",
+                "unitNumber": 4,
+                "title": "Linear & Other Machines",
+                "topics": [
+                    {
+                        "id": "ex802b-u4t1",
+                        "title": "Linear Induction Motor"
+                    },
+                    {
+                        "id": "ex802b-u4t2",
+                        "title": "Synchronous Reluctance Motor"
+                    },
+                    {
+                        "id": "ex802b-u4t3",
+                        "title": "Hysteresis & Universal Motors"
+                    },
+                    {
+                        "id": "ex802b-u4t4",
+                        "title": "Servo Motors & Tachogenerators"
+                    }
+                ]
+            },
+            {
+                "id": "ex802b-u5",
+                "unitNumber": 5,
+                "title": "Control & Applications",
+                "topics": [
+                    {
+                        "id": "ex802b-u5t1",
+                        "title": "Sensorless Control"
+                    },
+                    {
+                        "id": "ex802b-u5t2",
+                        "title": "Electric Vehicle Motors"
+                    },
+                    {
+                        "id": "ex802b-u5t3",
+                        "title": "Aerospace & Medical Machines"
+                    },
+                    {
+                        "id": "ex802b-u5t4",
+                        "title": "Machine Design Considerations"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mt-rm",
+        "semester": 2,
+        "title": "Research Methodology & IPR",
+        "code": "MT-RM",
+        "description": "Research design, literature review, data analysis, technical writing, ethics and intellectual property rights for M.Tech students.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Research Methodology: Methods and Techniques",
+                "author": "C. R. Kothari"
+            },
+            {
+                "title": "Research Methodology: A Step-by-Step Guide",
+                "author": "Ranjit Kumar"
+            },
+            {
+                "title": "Intellectual Property Rights",
+                "author": "N. K. Acharya"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mt-rm/notes/mt-rm-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mt-rm/notes/mt-rm-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mt-rm/mock-papers/mt-rm-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mt-rm/mock-papers/mt-rm-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mt-rm/mock-papers/mt-rm-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mt-rm-u1",
+                "unitNumber": 1,
+                "title": "Research Fundamentals",
+                "topics": [
+                    {
+                        "id": "mt-rm-u1t1",
+                        "title": "Meaning & Types of Research"
+                    },
+                    {
+                        "id": "mt-rm-u1t2",
+                        "title": "Research Process"
+                    },
+                    {
+                        "id": "mt-rm-u1t3",
+                        "title": "Literature Review"
+                    },
+                    {
+                        "id": "mt-rm-u1t4",
+                        "title": "Problem Formulation"
+                    }
+                ]
+            },
+            {
+                "id": "mt-rm-u2",
+                "unitNumber": 2,
+                "title": "Data Collection & Analysis",
+                "topics": [
+                    {
+                        "id": "mt-rm-u2t1",
+                        "title": "Data Collection Methods"
+                    },
+                    {
+                        "id": "mt-rm-u2t2",
+                        "title": "Statistical Analysis"
+                    },
+                    {
+                        "id": "mt-rm-u2t3",
+                        "title": "Design of Experiments"
+                    },
+                    {
+                        "id": "mt-rm-u2t4",
+                        "title": "Modelling & Simulation"
+                    }
+                ]
+            },
+            {
+                "id": "mt-rm-u3",
+                "unitNumber": 3,
+                "title": "Technical Writing",
+                "topics": [
+                    {
+                        "id": "mt-rm-u3t1",
+                        "title": "Structure of a Research Paper"
+                    },
+                    {
+                        "id": "mt-rm-u3t2",
+                        "title": "Thesis Writing"
+                    },
+                    {
+                        "id": "mt-rm-u3t3",
+                        "title": "Referencing Styles"
+                    },
+                    {
+                        "id": "mt-rm-u3t4",
+                        "title": "Publishing"
+                    }
+                ]
+            },
+            {
+                "id": "mt-rm-u4",
+                "unitNumber": 4,
+                "title": "Research Ethics",
+                "topics": [
+                    {
+                        "id": "mt-rm-u4t1",
+                        "title": "Ethics in Research"
+                    },
+                    {
+                        "id": "mt-rm-u4t2",
+                        "title": "Plagiarism"
+                    },
+                    {
+                        "id": "mt-rm-u4t3",
+                        "title": "Research Misconduct"
+                    },
+                    {
+                        "id": "mt-rm-u4t4",
+                        "title": "Reproducibility"
+                    }
+                ]
+            },
+            {
+                "id": "mt-rm-u5",
+                "unitNumber": 5,
+                "title": "Intellectual Property Rights",
+                "topics": [
+                    {
+                        "id": "mt-rm-u5t1",
+                        "title": "Types of IPR"
+                    },
+                    {
+                        "id": "mt-rm-u5t2",
+                        "title": "Patents"
+                    },
+                    {
+                        "id": "mt-rm-u5t3",
+                        "title": "Patent Process in India"
+                    },
+                    {
+                        "id": "mt-rm-u5t4",
+                        "title": "Other IPR & Technology Transfer"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mcse101",
+        "semester": 1,
+        "title": "Advanced Computational Mathematics",
+        "code": "MCSE-101",
+        "description": "Linear algebra, probability, random processes, optimisation, graph theory and queueing for computer science research.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Linear Algebra and Learning from Data",
+                "author": "Gilbert Strang"
+            },
+            {
+                "title": "Probability and Statistics for Computer Scientists",
+                "author": "Michael Baron"
+            },
+            {
+                "title": "Convex Optimization",
+                "author": "Boyd & Vandenberghe"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mcse101/notes/mcse101-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mcse101/notes/mcse101-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mcse101/mock-papers/mcse101-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mcse101/mock-papers/mcse101-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mcse101/mock-papers/mcse101-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mcse101-u1",
+                "unitNumber": 1,
+                "title": "Linear Algebra for Computing",
+                "topics": [
+                    {
+                        "id": "mcse101-u1t1",
+                        "title": "Vector Spaces & Linear Maps"
+                    },
+                    {
+                        "id": "mcse101-u1t2",
+                        "title": "Eigen Decomposition"
+                    },
+                    {
+                        "id": "mcse101-u1t3",
+                        "title": "Singular Value Decomposition"
+                    },
+                    {
+                        "id": "mcse101-u1t4",
+                        "title": "Matrix Norms & Conditioning"
+                    }
+                ]
+            },
+            {
+                "id": "mcse101-u2",
+                "unitNumber": 2,
+                "title": "Probability & Statistics",
+                "topics": [
+                    {
+                        "id": "mcse101-u2t1",
+                        "title": "Random Variables & Distributions"
+                    },
+                    {
+                        "id": "mcse101-u2t2",
+                        "title": "Joint Distributions & Bayes"
+                    },
+                    {
+                        "id": "mcse101-u2t3",
+                        "title": "Estimation"
+                    },
+                    {
+                        "id": "mcse101-u2t4",
+                        "title": "Limit Theorems & Inequalities"
+                    }
+                ]
+            },
+            {
+                "id": "mcse101-u3",
+                "unitNumber": 3,
+                "title": "Random Processes & Queueing",
+                "topics": [
+                    {
+                        "id": "mcse101-u3t1",
+                        "title": "Random Processes"
+                    },
+                    {
+                        "id": "mcse101-u3t2",
+                        "title": "Markov Chains"
+                    },
+                    {
+                        "id": "mcse101-u3t3",
+                        "title": "Queueing Models"
+                    },
+                    {
+                        "id": "mcse101-u3t4",
+                        "title": "Hidden Markov Models"
+                    }
+                ]
+            },
+            {
+                "id": "mcse101-u4",
+                "unitNumber": 4,
+                "title": "Optimisation",
+                "topics": [
+                    {
+                        "id": "mcse101-u4t1",
+                        "title": "Convex Optimisation"
+                    },
+                    {
+                        "id": "mcse101-u4t2",
+                        "title": "Gradient Methods"
+                    },
+                    {
+                        "id": "mcse101-u4t3",
+                        "title": "Constrained Optimisation"
+                    },
+                    {
+                        "id": "mcse101-u4t4",
+                        "title": "Linear & Integer Programming"
+                    }
+                ]
+            },
+            {
+                "id": "mcse101-u5",
+                "unitNumber": 5,
+                "title": "Graph Theory & Combinatorics",
+                "topics": [
+                    {
+                        "id": "mcse101-u5t1",
+                        "title": "Graph Algorithms"
+                    },
+                    {
+                        "id": "mcse101-u5t2",
+                        "title": "Spectral Graph Theory"
+                    },
+                    {
+                        "id": "mcse101-u5t3",
+                        "title": "Combinatorial Counting"
+                    },
+                    {
+                        "id": "mcse101-u5t4",
+                        "title": "Information Theory Basics"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mcse102",
+        "semester": 1,
+        "title": "Advanced Data Structures & Algorithms",
+        "code": "MCSE-102",
+        "description": "Amortised analysis, advanced trees and heaps, graph algorithms, randomised, approximation and parameterised algorithms.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Introduction to Algorithms",
+                "author": "Cormen, Leiserson, Rivest & Stein"
+            },
+            {
+                "title": "Randomized Algorithms",
+                "author": "Motwani & Raghavan"
+            },
+            {
+                "title": "The Design of Approximation Algorithms",
+                "author": "Williamson & Shmoys"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mcse102/notes/mcse102-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mcse102/notes/mcse102-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mcse102/mock-papers/mcse102-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mcse102/mock-papers/mcse102-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mcse102/mock-papers/mcse102-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mcse102-u1",
+                "unitNumber": 1,
+                "title": "Analysis Techniques",
+                "topics": [
+                    {
+                        "id": "mcse102-u1t1",
+                        "title": "Amortised Analysis"
+                    },
+                    {
+                        "id": "mcse102-u1t2",
+                        "title": "Advanced Recurrences"
+                    },
+                    {
+                        "id": "mcse102-u1t3",
+                        "title": "Competitive Analysis"
+                    },
+                    {
+                        "id": "mcse102-u1t4",
+                        "title": "External Memory Model"
+                    }
+                ]
+            },
+            {
+                "id": "mcse102-u2",
+                "unitNumber": 2,
+                "title": "Advanced Trees & Heaps",
+                "topics": [
+                    {
+                        "id": "mcse102-u2t1",
+                        "title": "Balanced Search Trees"
+                    },
+                    {
+                        "id": "mcse102-u2t2",
+                        "title": "Advanced Heaps"
+                    },
+                    {
+                        "id": "mcse102-u2t3",
+                        "title": "Range Query Structures"
+                    },
+                    {
+                        "id": "mcse102-u2t4",
+                        "title": "String Data Structures"
+                    }
+                ]
+            },
+            {
+                "id": "mcse102-u3",
+                "unitNumber": 3,
+                "title": "Graph Algorithms",
+                "topics": [
+                    {
+                        "id": "mcse102-u3t1",
+                        "title": "Shortest Paths"
+                    },
+                    {
+                        "id": "mcse102-u3t2",
+                        "title": "Network Flow"
+                    },
+                    {
+                        "id": "mcse102-u3t3",
+                        "title": "Matching"
+                    },
+                    {
+                        "id": "mcse102-u3t4",
+                        "title": "Connectivity & Decomposition"
+                    }
+                ]
+            },
+            {
+                "id": "mcse102-u4",
+                "unitNumber": 4,
+                "title": "Randomised Algorithms",
+                "topics": [
+                    {
+                        "id": "mcse102-u4t1",
+                        "title": "Randomisation Basics"
+                    },
+                    {
+                        "id": "mcse102-u4t2",
+                        "title": "Randomised Data Structures"
+                    },
+                    {
+                        "id": "mcse102-u4t3",
+                        "title": "Randomised Graph Algorithms"
+                    },
+                    {
+                        "id": "mcse102-u4t4",
+                        "title": "Streaming & Sketching"
+                    }
+                ]
+            },
+            {
+                "id": "mcse102-u5",
+                "unitNumber": 5,
+                "title": "Approximation & Parameterised Algorithms",
+                "topics": [
+                    {
+                        "id": "mcse102-u5t1",
+                        "title": "NP-hardness & Reductions"
+                    },
+                    {
+                        "id": "mcse102-u5t2",
+                        "title": "Approximation Algorithms"
+                    },
+                    {
+                        "id": "mcse102-u5t3",
+                        "title": "PTAS & FPTAS"
+                    },
+                    {
+                        "id": "mcse102-u5t4",
+                        "title": "Parameterised Complexity"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mcse103",
+        "semester": 1,
+        "title": "Advanced Computer Architecture",
+        "code": "MCSE-103",
+        "description": "Performance, instruction-level parallelism, memory hierarchy, multiprocessors, GPUs and domain-specific architectures.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Computer Architecture: A Quantitative Approach",
+                "author": "Hennessy & Patterson"
+            },
+            {
+                "title": "Advanced Computer Architecture",
+                "author": "Kai Hwang"
+            },
+            {
+                "title": "Parallel Computer Architecture",
+                "author": "Culler & Singh"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mcse103/notes/mcse103-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mcse103/notes/mcse103-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mcse103/mock-papers/mcse103-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mcse103/mock-papers/mcse103-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mcse103/mock-papers/mcse103-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mcse103-u1",
+                "unitNumber": 1,
+                "title": "Fundamentals & Performance",
+                "topics": [
+                    {
+                        "id": "mcse103-u1t1",
+                        "title": "Performance Metrics"
+                    },
+                    {
+                        "id": "mcse103-u1t2",
+                        "title": "Instruction Set Design"
+                    },
+                    {
+                        "id": "mcse103-u1t3",
+                        "title": "Power & Energy"
+                    },
+                    {
+                        "id": "mcse103-u1t4",
+                        "title": "Benchmarks"
+                    }
+                ]
+            },
+            {
+                "id": "mcse103-u2",
+                "unitNumber": 2,
+                "title": "Instruction-level Parallelism",
+                "topics": [
+                    {
+                        "id": "mcse103-u2t1",
+                        "title": "Pipelining & Hazards"
+                    },
+                    {
+                        "id": "mcse103-u2t2",
+                        "title": "Branch Prediction"
+                    },
+                    {
+                        "id": "mcse103-u2t3",
+                        "title": "Dynamic Scheduling"
+                    },
+                    {
+                        "id": "mcse103-u2t4",
+                        "title": "Superscalar & VLIW"
+                    }
+                ]
+            },
+            {
+                "id": "mcse103-u3",
+                "unitNumber": 3,
+                "title": "Memory Hierarchy",
+                "topics": [
+                    {
+                        "id": "mcse103-u3t1",
+                        "title": "Cache Design"
+                    },
+                    {
+                        "id": "mcse103-u3t2",
+                        "title": "Advanced Cache Optimisations"
+                    },
+                    {
+                        "id": "mcse103-u3t3",
+                        "title": "Virtual Memory & TLB"
+                    },
+                    {
+                        "id": "mcse103-u3t4",
+                        "title": "Memory Technologies"
+                    }
+                ]
+            },
+            {
+                "id": "mcse103-u4",
+                "unitNumber": 4,
+                "title": "Multiprocessors",
+                "topics": [
+                    {
+                        "id": "mcse103-u4t1",
+                        "title": "Thread-level Parallelism"
+                    },
+                    {
+                        "id": "mcse103-u4t2",
+                        "title": "Cache Coherence"
+                    },
+                    {
+                        "id": "mcse103-u4t3",
+                        "title": "Memory Consistency"
+                    },
+                    {
+                        "id": "mcse103-u4t4",
+                        "title": "Interconnection Networks"
+                    }
+                ]
+            },
+            {
+                "id": "mcse103-u5",
+                "unitNumber": 5,
+                "title": "Data-level Parallelism & Accelerators",
+                "topics": [
+                    {
+                        "id": "mcse103-u5t1",
+                        "title": "Vector & SIMD"
+                    },
+                    {
+                        "id": "mcse103-u5t2",
+                        "title": "GPU Architecture"
+                    },
+                    {
+                        "id": "mcse103-u5t3",
+                        "title": "Domain-specific Architectures"
+                    },
+                    {
+                        "id": "mcse103-u5t4",
+                        "title": "Warehouse-scale Computers"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mcse104",
+        "semester": 1,
+        "title": "Advanced Computer Networks",
+        "code": "MCSE-104",
+        "description": "Network architecture, routing, transport, QoS, software-defined networking, wireless and network security.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Computer Networks: A Systems Approach",
+                "author": "Peterson & Davie"
+            },
+            {
+                "title": "Computer Networking: A Top-Down Approach",
+                "author": "Kurose & Ross"
+            },
+            {
+                "title": "Software Defined Networks",
+                "author": "Nadeau & Gray"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mcse104/notes/mcse104-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mcse104/notes/mcse104-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mcse104/mock-papers/mcse104-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mcse104/mock-papers/mcse104-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mcse104/mock-papers/mcse104-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mcse104-u1",
+                "unitNumber": 1,
+                "title": "Network Architecture",
+                "topics": [
+                    {
+                        "id": "mcse104-u1t1",
+                        "title": "Layered Architecture"
+                    },
+                    {
+                        "id": "mcse104-u1t2",
+                        "title": "Switching Techniques"
+                    },
+                    {
+                        "id": "mcse104-u1t3",
+                        "title": "Network Performance"
+                    },
+                    {
+                        "id": "mcse104-u1t4",
+                        "title": "Internet Architecture"
+                    }
+                ]
+            },
+            {
+                "id": "mcse104-u2",
+                "unitNumber": 2,
+                "title": "Routing",
+                "topics": [
+                    {
+                        "id": "mcse104-u2t1",
+                        "title": "Intra-domain Routing"
+                    },
+                    {
+                        "id": "mcse104-u2t2",
+                        "title": "Inter-domain Routing"
+                    },
+                    {
+                        "id": "mcse104-u2t3",
+                        "title": "Multicast Routing"
+                    },
+                    {
+                        "id": "mcse104-u2t4",
+                        "title": "IPv6 & Addressing"
+                    }
+                ]
+            },
+            {
+                "id": "mcse104-u3",
+                "unitNumber": 3,
+                "title": "Transport & QoS",
+                "topics": [
+                    {
+                        "id": "mcse104-u3t1",
+                        "title": "TCP Congestion Control"
+                    },
+                    {
+                        "id": "mcse104-u3t2",
+                        "title": "Advanced Transport"
+                    },
+                    {
+                        "id": "mcse104-u3t3",
+                        "title": "Quality of Service"
+                    },
+                    {
+                        "id": "mcse104-u3t4",
+                        "title": "Queue Management"
+                    }
+                ]
+            },
+            {
+                "id": "mcse104-u4",
+                "unitNumber": 4,
+                "title": "Software-defined & Virtual Networks",
+                "topics": [
+                    {
+                        "id": "mcse104-u4t1",
+                        "title": "SDN"
+                    },
+                    {
+                        "id": "mcse104-u4t2",
+                        "title": "NFV"
+                    },
+                    {
+                        "id": "mcse104-u4t3",
+                        "title": "Data Centre Networks"
+                    },
+                    {
+                        "id": "mcse104-u4t4",
+                        "title": "Programmable Data Planes"
+                    }
+                ]
+            },
+            {
+                "id": "mcse104-u5",
+                "unitNumber": 5,
+                "title": "Wireless & Secure Networks",
+                "topics": [
+                    {
+                        "id": "mcse104-u5t1",
+                        "title": "Wireless LANs"
+                    },
+                    {
+                        "id": "mcse104-u5t2",
+                        "title": "Mobile & Ad Hoc Networks"
+                    },
+                    {
+                        "id": "mcse104-u5t3",
+                        "title": "Network Security Protocols"
+                    },
+                    {
+                        "id": "mcse104-u5t4",
+                        "title": "Network Attacks & Defence"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mcse201",
+        "semester": 2,
+        "title": "Advanced Machine Learning",
+        "code": "MCSE-201",
+        "description": "Learning theory, kernel methods, probabilistic models, deep learning, generative models and reinforcement learning.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Pattern Recognition and Machine Learning",
+                "author": "Christopher Bishop"
+            },
+            {
+                "title": "Deep Learning",
+                "author": "Goodfellow, Bengio & Courville"
+            },
+            {
+                "title": "Reinforcement Learning: An Introduction",
+                "author": "Sutton & Barto"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mcse201/notes/mcse201-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mcse201/notes/mcse201-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mcse201/mock-papers/mcse201-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mcse201/mock-papers/mcse201-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mcse201/mock-papers/mcse201-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mcse201-u1",
+                "unitNumber": 1,
+                "title": "Learning Theory",
+                "topics": [
+                    {
+                        "id": "mcse201-u1t1",
+                        "title": "PAC Learning"
+                    },
+                    {
+                        "id": "mcse201-u1t2",
+                        "title": "VC Dimension"
+                    },
+                    {
+                        "id": "mcse201-u1t3",
+                        "title": "Bias-Variance & Regularisation"
+                    },
+                    {
+                        "id": "mcse201-u1t4",
+                        "title": "Model Selection"
+                    }
+                ]
+            },
+            {
+                "id": "mcse201-u2",
+                "unitNumber": 2,
+                "title": "Kernel & Ensemble Methods",
+                "topics": [
+                    {
+                        "id": "mcse201-u2t1",
+                        "title": "Support Vector Machines"
+                    },
+                    {
+                        "id": "mcse201-u2t2",
+                        "title": "Kernel Methods"
+                    },
+                    {
+                        "id": "mcse201-u2t3",
+                        "title": "Ensemble Learning"
+                    },
+                    {
+                        "id": "mcse201-u2t4",
+                        "title": "Dimensionality Reduction"
+                    }
+                ]
+            },
+            {
+                "id": "mcse201-u3",
+                "unitNumber": 3,
+                "title": "Probabilistic Models",
+                "topics": [
+                    {
+                        "id": "mcse201-u3t1",
+                        "title": "Bayesian Learning"
+                    },
+                    {
+                        "id": "mcse201-u3t2",
+                        "title": "Graphical Models"
+                    },
+                    {
+                        "id": "mcse201-u3t3",
+                        "title": "Latent Variable Models"
+                    },
+                    {
+                        "id": "mcse201-u3t4",
+                        "title": "Gaussian Processes"
+                    }
+                ]
+            },
+            {
+                "id": "mcse201-u4",
+                "unitNumber": 4,
+                "title": "Deep Learning",
+                "topics": [
+                    {
+                        "id": "mcse201-u4t1",
+                        "title": "Optimisation for Deep Networks"
+                    },
+                    {
+                        "id": "mcse201-u4t2",
+                        "title": "CNNs & Sequence Models"
+                    },
+                    {
+                        "id": "mcse201-u4t3",
+                        "title": "Transformers"
+                    },
+                    {
+                        "id": "mcse201-u4t4",
+                        "title": "Regularising Deep Networks"
+                    }
+                ]
+            },
+            {
+                "id": "mcse201-u5",
+                "unitNumber": 5,
+                "title": "Generative Models & Reinforcement Learning",
+                "topics": [
+                    {
+                        "id": "mcse201-u5t1",
+                        "title": "Generative Models"
+                    },
+                    {
+                        "id": "mcse201-u5t2",
+                        "title": "Reinforcement Learning Basics"
+                    },
+                    {
+                        "id": "mcse201-u5t3",
+                        "title": "Deep Reinforcement Learning"
+                    },
+                    {
+                        "id": "mcse201-u5t4",
+                        "title": "Responsible ML"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mcse202",
+        "semester": 2,
+        "title": "Distributed Systems & Cloud Computing",
+        "code": "MCSE-202",
+        "description": "Distributed system models, time, consensus, replication, distributed storage, big data frameworks and cloud-native systems.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Distributed Systems",
+                "author": "van Steen & Tanenbaum"
+            },
+            {
+                "title": "Designing Data-Intensive Applications",
+                "author": "Martin Kleppmann"
+            },
+            {
+                "title": "Cloud Computing: Concepts, Technology & Architecture",
+                "author": "Thomas Erl"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mcse202/notes/mcse202-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mcse202/notes/mcse202-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mcse202/mock-papers/mcse202-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mcse202/mock-papers/mcse202-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mcse202/mock-papers/mcse202-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mcse202-u1",
+                "unitNumber": 1,
+                "title": "Distributed System Models",
+                "topics": [
+                    {
+                        "id": "mcse202-u1t1",
+                        "title": "Characteristics of Distributed Systems"
+                    },
+                    {
+                        "id": "mcse202-u1t2",
+                        "title": "System Models"
+                    },
+                    {
+                        "id": "mcse202-u1t3",
+                        "title": "Communication"
+                    },
+                    {
+                        "id": "mcse202-u1t4",
+                        "title": "CAP Theorem"
+                    }
+                ]
+            },
+            {
+                "id": "mcse202-u2",
+                "unitNumber": 2,
+                "title": "Time & Coordination",
+                "topics": [
+                    {
+                        "id": "mcse202-u2t1",
+                        "title": "Logical Clocks"
+                    },
+                    {
+                        "id": "mcse202-u2t2",
+                        "title": "Clock Synchronisation"
+                    },
+                    {
+                        "id": "mcse202-u2t3",
+                        "title": "Mutual Exclusion & Election"
+                    },
+                    {
+                        "id": "mcse202-u2t4",
+                        "title": "Global State & Snapshots"
+                    }
+                ]
+            },
+            {
+                "id": "mcse202-u3",
+                "unitNumber": 3,
+                "title": "Consensus & Replication",
+                "topics": [
+                    {
+                        "id": "mcse202-u3t1",
+                        "title": "Consensus Problem"
+                    },
+                    {
+                        "id": "mcse202-u3t2",
+                        "title": "Raft"
+                    },
+                    {
+                        "id": "mcse202-u3t3",
+                        "title": "Replication Strategies"
+                    },
+                    {
+                        "id": "mcse202-u3t4",
+                        "title": "Byzantine Fault Tolerance"
+                    }
+                ]
+            },
+            {
+                "id": "mcse202-u4",
+                "unitNumber": 4,
+                "title": "Distributed Storage & Big Data",
+                "topics": [
+                    {
+                        "id": "mcse202-u4t1",
+                        "title": "Distributed File Systems"
+                    },
+                    {
+                        "id": "mcse202-u4t2",
+                        "title": "Distributed Databases"
+                    },
+                    {
+                        "id": "mcse202-u4t3",
+                        "title": "NoSQL Systems"
+                    },
+                    {
+                        "id": "mcse202-u4t4",
+                        "title": "Big Data Frameworks"
+                    }
+                ]
+            },
+            {
+                "id": "mcse202-u5",
+                "unitNumber": 5,
+                "title": "Cloud-native Systems",
+                "topics": [
+                    {
+                        "id": "mcse202-u5t1",
+                        "title": "Virtualisation & Containers"
+                    },
+                    {
+                        "id": "mcse202-u5t2",
+                        "title": "Microservices"
+                    },
+                    {
+                        "id": "mcse202-u5t3",
+                        "title": "Serverless Computing"
+                    },
+                    {
+                        "id": "mcse202-u5t4",
+                        "title": "Reliability Engineering"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mcse203",
+        "semester": 2,
+        "title": "Advanced Information Security",
+        "code": "MCSE-203",
+        "description": "Cryptography, protocols, system and network security, web security, privacy and security of AI systems.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Cryptography and Network Security",
+                "author": "William Stallings"
+            },
+            {
+                "title": "Security Engineering",
+                "author": "Ross Anderson"
+            },
+            {
+                "title": "Introduction to Modern Cryptography",
+                "author": "Katz & Lindell"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mcse203/notes/mcse203-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mcse203/notes/mcse203-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mcse203/mock-papers/mcse203-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mcse203/mock-papers/mcse203-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mcse203/mock-papers/mcse203-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mcse203-u1",
+                "unitNumber": 1,
+                "title": "Cryptographic Foundations",
+                "topics": [
+                    {
+                        "id": "mcse203-u1t1",
+                        "title": "Symmetric Cryptography"
+                    },
+                    {
+                        "id": "mcse203-u1t2",
+                        "title": "Public-key Cryptography"
+                    },
+                    {
+                        "id": "mcse203-u1t3",
+                        "title": "Hash Functions & MACs"
+                    },
+                    {
+                        "id": "mcse203-u1t4",
+                        "title": "Digital Signatures & PKI"
+                    }
+                ]
+            },
+            {
+                "id": "mcse203-u2",
+                "unitNumber": 2,
+                "title": "Security Protocols",
+                "topics": [
+                    {
+                        "id": "mcse203-u2t1",
+                        "title": "Authentication Protocols"
+                    },
+                    {
+                        "id": "mcse203-u2t2",
+                        "title": "TLS 1.3"
+                    },
+                    {
+                        "id": "mcse203-u2t3",
+                        "title": "Protocol Attacks"
+                    },
+                    {
+                        "id": "mcse203-u2t4",
+                        "title": "Formal Verification"
+                    }
+                ]
+            },
+            {
+                "id": "mcse203-u3",
+                "unitNumber": 3,
+                "title": "System & Software Security",
+                "topics": [
+                    {
+                        "id": "mcse203-u3t1",
+                        "title": "Memory Safety Vulnerabilities"
+                    },
+                    {
+                        "id": "mcse203-u3t2",
+                        "title": "Exploit Mitigations"
+                    },
+                    {
+                        "id": "mcse203-u3t3",
+                        "title": "Access Control"
+                    },
+                    {
+                        "id": "mcse203-u3t4",
+                        "title": "Trusted Computing & Sandboxing"
+                    }
+                ]
+            },
+            {
+                "id": "mcse203-u4",
+                "unitNumber": 4,
+                "title": "Network & Web Security",
+                "topics": [
+                    {
+                        "id": "mcse203-u4t1",
+                        "title": "Network Security"
+                    },
+                    {
+                        "id": "mcse203-u4t2",
+                        "title": "Web Application Security"
+                    },
+                    {
+                        "id": "mcse203-u4t3",
+                        "title": "Malware Analysis"
+                    },
+                    {
+                        "id": "mcse203-u4t4",
+                        "title": "Security Operations"
+                    }
+                ]
+            },
+            {
+                "id": "mcse203-u5",
+                "unitNumber": 5,
+                "title": "Privacy & AI Security",
+                "topics": [
+                    {
+                        "id": "mcse203-u5t1",
+                        "title": "Privacy Technologies"
+                    },
+                    {
+                        "id": "mcse203-u5t2",
+                        "title": "Privacy Regulation"
+                    },
+                    {
+                        "id": "mcse203-u5t3",
+                        "title": "Adversarial Machine Learning"
+                    },
+                    {
+                        "id": "mcse203-u5t4",
+                        "title": "LLM & Agent Security"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mvl101",
+        "semester": 1,
+        "title": "Digital IC Design",
+        "code": "MVL-101",
+        "description": "MOS devices, CMOS inverter, combinational and sequential logic, interconnect, timing and arithmetic circuits.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Digital Integrated Circuits",
+                "author": "Rabaey, Chandrakasan & Nikolic"
+            },
+            {
+                "title": "CMOS VLSI Design",
+                "author": "Weste & Harris"
+            },
+            {
+                "title": "CMOS Digital Integrated Circuits",
+                "author": "Kang & Leblebici"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mvl101/notes/mvl101-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mvl101/notes/mvl101-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mvl101/mock-papers/mvl101-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mvl101/mock-papers/mvl101-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mvl101/mock-papers/mvl101-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mvl101-u1",
+                "unitNumber": 1,
+                "title": "MOS Device Models",
+                "topics": [
+                    {
+                        "id": "mvl101-u1t1",
+                        "title": "MOSFET Operation"
+                    },
+                    {
+                        "id": "mvl101-u1t2",
+                        "title": "Short-channel Effects"
+                    },
+                    {
+                        "id": "mvl101-u1t3",
+                        "title": "FinFET & Advanced Devices"
+                    },
+                    {
+                        "id": "mvl101-u1t4",
+                        "title": "Device Capacitances"
+                    }
+                ]
+            },
+            {
+                "id": "mvl101-u2",
+                "unitNumber": 2,
+                "title": "CMOS Inverter",
+                "topics": [
+                    {
+                        "id": "mvl101-u2t1",
+                        "title": "Static Characteristics"
+                    },
+                    {
+                        "id": "mvl101-u2t2",
+                        "title": "Dynamic Behaviour"
+                    },
+                    {
+                        "id": "mvl101-u2t3",
+                        "title": "Power Consumption"
+                    },
+                    {
+                        "id": "mvl101-u2t4",
+                        "title": "Inverter Chains & Sizing"
+                    }
+                ]
+            },
+            {
+                "id": "mvl101-u3",
+                "unitNumber": 3,
+                "title": "Combinational Logic",
+                "topics": [
+                    {
+                        "id": "mvl101-u3t1",
+                        "title": "Static CMOS Gates"
+                    },
+                    {
+                        "id": "mvl101-u3t2",
+                        "title": "Logical Effort"
+                    },
+                    {
+                        "id": "mvl101-u3t3",
+                        "title": "Ratioed & Pass-transistor Logic"
+                    },
+                    {
+                        "id": "mvl101-u3t4",
+                        "title": "Dynamic Logic"
+                    }
+                ]
+            },
+            {
+                "id": "mvl101-u4",
+                "unitNumber": 4,
+                "title": "Sequential Circuits & Timing",
+                "topics": [
+                    {
+                        "id": "mvl101-u4t1",
+                        "title": "Latches & Flip-flops"
+                    },
+                    {
+                        "id": "mvl101-u4t2",
+                        "title": "Timing Constraints"
+                    },
+                    {
+                        "id": "mvl101-u4t3",
+                        "title": "Clock Distribution"
+                    },
+                    {
+                        "id": "mvl101-u4t4",
+                        "title": "Metastability & Synchronisers"
+                    }
+                ]
+            },
+            {
+                "id": "mvl101-u5",
+                "unitNumber": 5,
+                "title": "Interconnect & Arithmetic",
+                "topics": [
+                    {
+                        "id": "mvl101-u5t1",
+                        "title": "Interconnect Modelling"
+                    },
+                    {
+                        "id": "mvl101-u5t2",
+                        "title": "Crosstalk & Signal Integrity"
+                    },
+                    {
+                        "id": "mvl101-u5t3",
+                        "title": "Adders"
+                    },
+                    {
+                        "id": "mvl101-u5t4",
+                        "title": "Multipliers"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mvl102",
+        "semester": 1,
+        "title": "Analog IC Design",
+        "code": "MVL-102",
+        "description": "Single-stage and differential amplifiers, current mirrors, op-amps, frequency response, noise, comparators and data converters.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Design of Analog CMOS Integrated Circuits",
+                "author": "Behzad Razavi"
+            },
+            {
+                "title": "CMOS Analog Circuit Design",
+                "author": "Allen & Holberg"
+            },
+            {
+                "title": "Analysis and Design of Analog Integrated Circuits",
+                "author": "Gray, Hurst, Lewis & Meyer"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mvl102/notes/mvl102-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mvl102/notes/mvl102-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mvl102/mock-papers/mvl102-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mvl102/mock-papers/mvl102-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mvl102/mock-papers/mvl102-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mvl102-u1",
+                "unitNumber": 1,
+                "title": "Single-stage Amplifiers",
+                "topics": [
+                    {
+                        "id": "mvl102-u1t1",
+                        "title": "Small-signal Models"
+                    },
+                    {
+                        "id": "mvl102-u1t2",
+                        "title": "Common-source Amplifier"
+                    },
+                    {
+                        "id": "mvl102-u1t3",
+                        "title": "Common-gate & Source Follower"
+                    },
+                    {
+                        "id": "mvl102-u1t4",
+                        "title": "Biasing"
+                    }
+                ]
+            },
+            {
+                "id": "mvl102-u2",
+                "unitNumber": 2,
+                "title": "Current Mirrors & Differential Pairs",
+                "topics": [
+                    {
+                        "id": "mvl102-u2t1",
+                        "title": "Current Mirrors"
+                    },
+                    {
+                        "id": "mvl102-u2t2",
+                        "title": "Differential Pair"
+                    },
+                    {
+                        "id": "mvl102-u2t3",
+                        "title": "Active Load"
+                    },
+                    {
+                        "id": "mvl102-u2t4",
+                        "title": "Mismatch"
+                    }
+                ]
+            },
+            {
+                "id": "mvl102-u3",
+                "unitNumber": 3,
+                "title": "Operational Amplifiers",
+                "topics": [
+                    {
+                        "id": "mvl102-u3t1",
+                        "title": "Two-stage Op-amp"
+                    },
+                    {
+                        "id": "mvl102-u3t2",
+                        "title": "Folded Cascode Op-amp"
+                    },
+                    {
+                        "id": "mvl102-u3t3",
+                        "title": "Stability & Compensation"
+                    },
+                    {
+                        "id": "mvl102-u3t4",
+                        "title": "Common-mode Feedback"
+                    }
+                ]
+            },
+            {
+                "id": "mvl102-u4",
+                "unitNumber": 4,
+                "title": "Noise & Frequency Response",
+                "topics": [
+                    {
+                        "id": "mvl102-u4t1",
+                        "title": "Frequency Response"
+                    },
+                    {
+                        "id": "mvl102-u4t2",
+                        "title": "Noise Sources"
+                    },
+                    {
+                        "id": "mvl102-u4t3",
+                        "title": "Noise Optimisation"
+                    },
+                    {
+                        "id": "mvl102-u4t4",
+                        "title": "Switched-capacitor Circuits"
+                    }
+                ]
+            },
+            {
+                "id": "mvl102-u5",
+                "unitNumber": 5,
+                "title": "Comparators & Data Converters",
+                "topics": [
+                    {
+                        "id": "mvl102-u5t1",
+                        "title": "Comparators"
+                    },
+                    {
+                        "id": "mvl102-u5t2",
+                        "title": "DAC Architectures"
+                    },
+                    {
+                        "id": "mvl102-u5t3",
+                        "title": "ADC Architectures"
+                    },
+                    {
+                        "id": "mvl102-u5t4",
+                        "title": "Sigma-Delta Converters"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mvl103",
+        "semester": 1,
+        "title": "VLSI Technology & Fabrication",
+        "code": "MVL-103",
+        "description": "Crystal growth, oxidation, lithography, etching, diffusion, implantation, deposition, metallisation and CMOS process integration.",
+        "generated": true,
+        "references": [
+            {
+                "title": "VLSI Technology",
+                "author": "S. M. Sze"
+            },
+            {
+                "title": "Silicon VLSI Technology",
+                "author": "Plummer, Deal & Griffin"
+            },
+            {
+                "title": "Fundamentals of Microfabrication",
+                "author": "Marc Madou"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mvl103/notes/mvl103-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mvl103/notes/mvl103-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mvl103/mock-papers/mvl103-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mvl103/mock-papers/mvl103-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mvl103/mock-papers/mvl103-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mvl103-u1",
+                "unitNumber": 1,
+                "title": "Wafer Preparation",
+                "topics": [
+                    {
+                        "id": "mvl103-u1t1",
+                        "title": "Crystal Growth"
+                    },
+                    {
+                        "id": "mvl103-u1t2",
+                        "title": "Wafer Processing"
+                    },
+                    {
+                        "id": "mvl103-u1t3",
+                        "title": "Cleanroom Technology"
+                    },
+                    {
+                        "id": "mvl103-u1t4",
+                        "title": "Defects"
+                    }
+                ]
+            },
+            {
+                "id": "mvl103-u2",
+                "unitNumber": 2,
+                "title": "Oxidation & Lithography",
+                "topics": [
+                    {
+                        "id": "mvl103-u2t1",
+                        "title": "Thermal Oxidation"
+                    },
+                    {
+                        "id": "mvl103-u2t2",
+                        "title": "Photolithography"
+                    },
+                    {
+                        "id": "mvl103-u2t3",
+                        "title": "Advanced Lithography"
+                    },
+                    {
+                        "id": "mvl103-u2t4",
+                        "title": "High-k Dielectrics"
+                    }
+                ]
+            },
+            {
+                "id": "mvl103-u3",
+                "unitNumber": 3,
+                "title": "Etching & Doping",
+                "topics": [
+                    {
+                        "id": "mvl103-u3t1",
+                        "title": "Wet & Dry Etching"
+                    },
+                    {
+                        "id": "mvl103-u3t2",
+                        "title": "Diffusion"
+                    },
+                    {
+                        "id": "mvl103-u3t3",
+                        "title": "Ion Implantation"
+                    },
+                    {
+                        "id": "mvl103-u3t4",
+                        "title": "Rapid Thermal Processing"
+                    }
+                ]
+            },
+            {
+                "id": "mvl103-u4",
+                "unitNumber": 4,
+                "title": "Deposition & Metallisation",
+                "topics": [
+                    {
+                        "id": "mvl103-u4t1",
+                        "title": "CVD"
+                    },
+                    {
+                        "id": "mvl103-u4t2",
+                        "title": "PVD"
+                    },
+                    {
+                        "id": "mvl103-u4t3",
+                        "title": "Metallisation"
+                    },
+                    {
+                        "id": "mvl103-u4t4",
+                        "title": "Low-k Dielectrics"
+                    }
+                ]
+            },
+            {
+                "id": "mvl103-u5",
+                "unitNumber": 5,
+                "title": "Process Integration & Packaging",
+                "topics": [
+                    {
+                        "id": "mvl103-u5t1",
+                        "title": "CMOS Process Flow"
+                    },
+                    {
+                        "id": "mvl103-u5t2",
+                        "title": "Process Monitoring"
+                    },
+                    {
+                        "id": "mvl103-u5t3",
+                        "title": "Packaging"
+                    },
+                    {
+                        "id": "mvl103-u5t4",
+                        "title": "Yield & Reliability"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mvl104",
+        "semester": 1,
+        "title": "Advanced Digital System Design & Verification",
+        "code": "MVL-104",
+        "description": "RTL design with Verilog/SystemVerilog, FSMs, datapaths, synthesis, static timing analysis and functional verification.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Verilog HDL",
+                "author": "Samir Palnitkar"
+            },
+            {
+                "title": "SystemVerilog for Verification",
+                "author": "Chris Spear"
+            },
+            {
+                "title": "Static Timing Analysis for Nanometer Designs",
+                "author": "Bhasker & Chadha"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mvl104/notes/mvl104-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mvl104/notes/mvl104-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mvl104/mock-papers/mvl104-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mvl104/mock-papers/mvl104-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mvl104/mock-papers/mvl104-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mvl104-u1",
+                "unitNumber": 1,
+                "title": "HDL-based Design",
+                "topics": [
+                    {
+                        "id": "mvl104-u1t1",
+                        "title": "Verilog Constructs"
+                    },
+                    {
+                        "id": "mvl104-u1t2",
+                        "title": "Blocking vs Non-blocking"
+                    },
+                    {
+                        "id": "mvl104-u1t3",
+                        "title": "SystemVerilog for Design"
+                    },
+                    {
+                        "id": "mvl104-u1t4",
+                        "title": "Parameterised Design"
+                    }
+                ]
+            },
+            {
+                "id": "mvl104-u2",
+                "unitNumber": 2,
+                "title": "FSMs & Datapaths",
+                "topics": [
+                    {
+                        "id": "mvl104-u2t1",
+                        "title": "FSM Design"
+                    },
+                    {
+                        "id": "mvl104-u2t2",
+                        "title": "Datapath & Controller"
+                    },
+                    {
+                        "id": "mvl104-u2t3",
+                        "title": "Pipelining in RTL"
+                    },
+                    {
+                        "id": "mvl104-u2t4",
+                        "title": "Memories & FIFOs"
+                    }
+                ]
+            },
+            {
+                "id": "mvl104-u3",
+                "unitNumber": 3,
+                "title": "Synthesis & Timing",
+                "topics": [
+                    {
+                        "id": "mvl104-u3t1",
+                        "title": "Logic Synthesis"
+                    },
+                    {
+                        "id": "mvl104-u3t2",
+                        "title": "Static Timing Analysis"
+                    },
+                    {
+                        "id": "mvl104-u3t3",
+                        "title": "Timing Closure"
+                    },
+                    {
+                        "id": "mvl104-u3t4",
+                        "title": "Clock Domain Crossing"
+                    }
+                ]
+            },
+            {
+                "id": "mvl104-u4",
+                "unitNumber": 4,
+                "title": "Functional Verification",
+                "topics": [
+                    {
+                        "id": "mvl104-u4t1",
+                        "title": "Verification Planning"
+                    },
+                    {
+                        "id": "mvl104-u4t2",
+                        "title": "Constrained Random Verification"
+                    },
+                    {
+                        "id": "mvl104-u4t3",
+                        "title": "UVM"
+                    },
+                    {
+                        "id": "mvl104-u4t4",
+                        "title": "Assertions"
+                    }
+                ]
+            },
+            {
+                "id": "mvl104-u5",
+                "unitNumber": 5,
+                "title": "FPGA & Formal Methods",
+                "topics": [
+                    {
+                        "id": "mvl104-u5t1",
+                        "title": "FPGA Architecture"
+                    },
+                    {
+                        "id": "mvl104-u5t2",
+                        "title": "FPGA Design Flow"
+                    },
+                    {
+                        "id": "mvl104-u5t3",
+                        "title": "Formal Verification"
+                    },
+                    {
+                        "id": "mvl104-u5t4",
+                        "title": "Emulation & Prototyping"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mvl201",
+        "semester": 2,
+        "title": "Low Power VLSI Design",
+        "code": "MVL-201",
+        "description": "Sources of power, device and circuit techniques, architecture-level methods, power management and low-power memories.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Low-Power CMOS VLSI Circuit Design",
+                "author": "Kaushik Roy & Sharat Prasad"
+            },
+            {
+                "title": "Low Power Methodology Manual",
+                "author": "Keating et al."
+            },
+            {
+                "title": "Practical Low Power Digital VLSI Design",
+                "author": "Gary Yeap"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mvl201/notes/mvl201-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mvl201/notes/mvl201-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mvl201/mock-papers/mvl201-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mvl201/mock-papers/mvl201-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mvl201/mock-papers/mvl201-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mvl201-u1",
+                "unitNumber": 1,
+                "title": "Power Fundamentals",
+                "topics": [
+                    {
+                        "id": "mvl201-u1t1",
+                        "title": "Sources of Power Dissipation"
+                    },
+                    {
+                        "id": "mvl201-u1t2",
+                        "title": "Need for Low Power"
+                    },
+                    {
+                        "id": "mvl201-u1t3",
+                        "title": "Leakage Mechanisms"
+                    },
+                    {
+                        "id": "mvl201-u1t4",
+                        "title": "Power Estimation"
+                    }
+                ]
+            },
+            {
+                "id": "mvl201-u2",
+                "unitNumber": 2,
+                "title": "Circuit-level Techniques",
+                "topics": [
+                    {
+                        "id": "mvl201-u2t1",
+                        "title": "Voltage Scaling"
+                    },
+                    {
+                        "id": "mvl201-u2t2",
+                        "title": "Multi-threshold CMOS"
+                    },
+                    {
+                        "id": "mvl201-u2t3",
+                        "title": "Body Biasing"
+                    },
+                    {
+                        "id": "mvl201-u2t4",
+                        "title": "Low-power Logic Styles"
+                    }
+                ]
+            },
+            {
+                "id": "mvl201-u3",
+                "unitNumber": 3,
+                "title": "Architecture & System Techniques",
+                "topics": [
+                    {
+                        "id": "mvl201-u3t1",
+                        "title": "Clock Gating"
+                    },
+                    {
+                        "id": "mvl201-u3t2",
+                        "title": "Power Gating"
+                    },
+                    {
+                        "id": "mvl201-u3t3",
+                        "title": "Multi-voltage Design"
+                    },
+                    {
+                        "id": "mvl201-u3t4",
+                        "title": "DVFS"
+                    }
+                ]
+            },
+            {
+                "id": "mvl201-u4",
+                "unitNumber": 4,
+                "title": "Low-power Memory & Arithmetic",
+                "topics": [
+                    {
+                        "id": "mvl201-u4t1",
+                        "title": "SRAM Power"
+                    },
+                    {
+                        "id": "mvl201-u4t2",
+                        "title": "Low-power Caches"
+                    },
+                    {
+                        "id": "mvl201-u4t3",
+                        "title": "Low-power Arithmetic"
+                    },
+                    {
+                        "id": "mvl201-u4t4",
+                        "title": "Bus Encoding"
+                    }
+                ]
+            },
+            {
+                "id": "mvl201-u5",
+                "unitNumber": 5,
+                "title": "Power Analysis & Management",
+                "topics": [
+                    {
+                        "id": "mvl201-u5t1",
+                        "title": "Power-aware Design Flow"
+                    },
+                    {
+                        "id": "mvl201-u5t2",
+                        "title": "IR Drop & Electromigration"
+                    },
+                    {
+                        "id": "mvl201-u5t3",
+                        "title": "Thermal Management"
+                    },
+                    {
+                        "id": "mvl201-u5t4",
+                        "title": "Energy Harvesting & IoT Chips"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mvl202",
+        "semester": 2,
+        "title": "VLSI Testing & Testability",
+        "code": "MVL-202",
+        "description": "Fault models, test generation, fault simulation, design for testability, BIST and memory testing.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Essentials of Electronic Testing",
+                "author": "Bushnell & Agrawal"
+            },
+            {
+                "title": "VLSI Test Principles and Architectures",
+                "author": "Wang, Wu & Wen"
+            },
+            {
+                "title": "Digital Systems Testing and Testable Design",
+                "author": "Abramovici, Breuer & Friedman"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mvl202/notes/mvl202-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mvl202/notes/mvl202-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mvl202/mock-papers/mvl202-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mvl202/mock-papers/mvl202-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mvl202/mock-papers/mvl202-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mvl202-u1",
+                "unitNumber": 1,
+                "title": "Testing Fundamentals",
+                "topics": [
+                    {
+                        "id": "mvl202-u1t1",
+                        "title": "Need for Testing"
+                    },
+                    {
+                        "id": "mvl202-u1t2",
+                        "title": "Defects & Fault Models"
+                    },
+                    {
+                        "id": "mvl202-u1t3",
+                        "title": "Fault Equivalence & Collapsing"
+                    },
+                    {
+                        "id": "mvl202-u1t4",
+                        "title": "Yield & Quality"
+                    }
+                ]
+            },
+            {
+                "id": "mvl202-u2",
+                "unitNumber": 2,
+                "title": "Test Generation",
+                "topics": [
+                    {
+                        "id": "mvl202-u2t1",
+                        "title": "Combinational ATPG"
+                    },
+                    {
+                        "id": "mvl202-u2t2",
+                        "title": "Fault Activation & Propagation"
+                    },
+                    {
+                        "id": "mvl202-u2t3",
+                        "title": "Sequential ATPG"
+                    },
+                    {
+                        "id": "mvl202-u2t4",
+                        "title": "Delay Testing"
+                    }
+                ]
+            },
+            {
+                "id": "mvl202-u3",
+                "unitNumber": 3,
+                "title": "Fault Simulation",
+                "topics": [
+                    {
+                        "id": "mvl202-u3t1",
+                        "title": "Fault Simulation Purpose"
+                    },
+                    {
+                        "id": "mvl202-u3t2",
+                        "title": "Parallel & Deductive Simulation"
+                    },
+                    {
+                        "id": "mvl202-u3t3",
+                        "title": "Test Compaction"
+                    },
+                    {
+                        "id": "mvl202-u3t4",
+                        "title": "Diagnosis"
+                    }
+                ]
+            },
+            {
+                "id": "mvl202-u4",
+                "unitNumber": 4,
+                "title": "Design for Testability",
+                "topics": [
+                    {
+                        "id": "mvl202-u4t1",
+                        "title": "Testability Measures"
+                    },
+                    {
+                        "id": "mvl202-u4t2",
+                        "title": "Scan Design"
+                    },
+                    {
+                        "id": "mvl202-u4t3",
+                        "title": "Boundary Scan"
+                    },
+                    {
+                        "id": "mvl202-u4t4",
+                        "title": "Test Compression"
+                    }
+                ]
+            },
+            {
+                "id": "mvl202-u5",
+                "unitNumber": 5,
+                "title": "BIST & Memory Testing",
+                "topics": [
+                    {
+                        "id": "mvl202-u5t1",
+                        "title": "Built-in Self-Test"
+                    },
+                    {
+                        "id": "mvl202-u5t2",
+                        "title": "Logic BIST"
+                    },
+                    {
+                        "id": "mvl202-u5t3",
+                        "title": "Memory Fault Models"
+                    },
+                    {
+                        "id": "mvl202-u5t4",
+                        "title": "Memory BIST & Repair"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mvl203",
+        "semester": 2,
+        "title": "System-on-Chip & Embedded System Design",
+        "code": "MVL-203",
+        "description": "SoC architecture, processor cores, on-chip buses, hardware-software co-design, IP integration and embedded software.",
+        "generated": true,
+        "references": [
+            {
+                "title": "On-Chip Communication Architectures",
+                "author": "Pasricha & Dutt"
+            },
+            {
+                "title": "Embedded System Design",
+                "author": "Frank Vahid & Tony Givargis"
+            },
+            {
+                "title": "ARM System-on-Chip Architecture",
+                "author": "Steve Furber"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mvl203/notes/mvl203-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mvl203/notes/mvl203-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mvl203/mock-papers/mvl203-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mvl203/mock-papers/mvl203-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mvl203/mock-papers/mvl203-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mvl203-u1",
+                "unitNumber": 1,
+                "title": "SoC Fundamentals",
+                "topics": [
+                    {
+                        "id": "mvl203-u1t1",
+                        "title": "SoC Concept"
+                    },
+                    {
+                        "id": "mvl203-u1t2",
+                        "title": "SoC Design Flow"
+                    },
+                    {
+                        "id": "mvl203-u1t3",
+                        "title": "Processor Cores"
+                    },
+                    {
+                        "id": "mvl203-u1t4",
+                        "title": "Accelerators"
+                    }
+                ]
+            },
+            {
+                "id": "mvl203-u2",
+                "unitNumber": 2,
+                "title": "On-chip Communication",
+                "topics": [
+                    {
+                        "id": "mvl203-u2t1",
+                        "title": "On-chip Buses"
+                    },
+                    {
+                        "id": "mvl203-u2t2",
+                        "title": "Network on Chip"
+                    },
+                    {
+                        "id": "mvl203-u2t3",
+                        "title": "Memory Subsystem"
+                    },
+                    {
+                        "id": "mvl203-u2t4",
+                        "title": "Interrupts & Peripherals"
+                    }
+                ]
+            },
+            {
+                "id": "mvl203-u3",
+                "unitNumber": 3,
+                "title": "Hardware-Software Co-design",
+                "topics": [
+                    {
+                        "id": "mvl203-u3t1",
+                        "title": "Partitioning"
+                    },
+                    {
+                        "id": "mvl203-u3t2",
+                        "title": "High-level Synthesis"
+                    },
+                    {
+                        "id": "mvl203-u3t3",
+                        "title": "Virtual Prototyping"
+                    },
+                    {
+                        "id": "mvl203-u3t4",
+                        "title": "Design Space Exploration"
+                    }
+                ]
+            },
+            {
+                "id": "mvl203-u4",
+                "unitNumber": 4,
+                "title": "Embedded Software",
+                "topics": [
+                    {
+                        "id": "mvl203-u4t1",
+                        "title": "Embedded Programming"
+                    },
+                    {
+                        "id": "mvl203-u4t2",
+                        "title": "RTOS"
+                    },
+                    {
+                        "id": "mvl203-u4t3",
+                        "title": "Embedded Linux"
+                    },
+                    {
+                        "id": "mvl203-u4t4",
+                        "title": "Firmware Updates & Security"
+                    }
+                ]
+            },
+            {
+                "id": "mvl203-u5",
+                "unitNumber": 5,
+                "title": "Verification & Applications",
+                "topics": [
+                    {
+                        "id": "mvl203-u5t1",
+                        "title": "SoC Verification"
+                    },
+                    {
+                        "id": "mvl203-u5t2",
+                        "title": "Low-power SoC"
+                    },
+                    {
+                        "id": "mvl203-u5t3",
+                        "title": "Automotive & IoT SoCs"
+                    },
+                    {
+                        "id": "mvl203-u5t4",
+                        "title": "Chiplets & Advanced Packaging"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mth101",
+        "semester": 1,
+        "title": "Advanced Thermodynamics",
+        "code": "MTH-101",
+        "description": "Exergy analysis, thermodynamic relations, real gases, mixtures, chemical equilibrium and irreversible thermodynamics.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Advanced Engineering Thermodynamics",
+                "author": "Adrian Bejan"
+            },
+            {
+                "title": "Engineering Thermodynamics",
+                "author": "P. K. Nag"
+            },
+            {
+                "title": "Thermodynamics: An Engineering Approach",
+                "author": "Cengel & Boles"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mth101/notes/mth101-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mth101/notes/mth101-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mth101/mock-papers/mth101-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mth101/mock-papers/mth101-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mth101/mock-papers/mth101-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mth101-u1",
+                "unitNumber": 1,
+                "title": "Exergy Analysis",
+                "topics": [
+                    {
+                        "id": "mth101-u1t1",
+                        "title": "Exergy Concept"
+                    },
+                    {
+                        "id": "mth101-u1t2",
+                        "title": "Exergy Balance"
+                    },
+                    {
+                        "id": "mth101-u1t3",
+                        "title": "Exergy of Power Cycles"
+                    },
+                    {
+                        "id": "mth101-u1t4",
+                        "title": "Entropy Generation Minimisation"
+                    }
+                ]
+            },
+            {
+                "id": "mth101-u2",
+                "unitNumber": 2,
+                "title": "Thermodynamic Relations",
+                "topics": [
+                    {
+                        "id": "mth101-u2t1",
+                        "title": "Maxwell Relations"
+                    },
+                    {
+                        "id": "mth101-u2t2",
+                        "title": "General Property Relations"
+                    },
+                    {
+                        "id": "mth101-u2t3",
+                        "title": "Real Gases"
+                    },
+                    {
+                        "id": "mth101-u2t4",
+                        "title": "Generalised Charts"
+                    }
+                ]
+            },
+            {
+                "id": "mth101-u3",
+                "unitNumber": 3,
+                "title": "Mixtures & Psychrometry",
+                "topics": [
+                    {
+                        "id": "mth101-u3t1",
+                        "title": "Ideal Gas Mixtures"
+                    },
+                    {
+                        "id": "mth101-u3t2",
+                        "title": "Real Mixtures"
+                    },
+                    {
+                        "id": "mth101-u3t3",
+                        "title": "Psychrometry Advanced"
+                    },
+                    {
+                        "id": "mth101-u3t4",
+                        "title": "Phase Equilibrium"
+                    }
+                ]
+            },
+            {
+                "id": "mth101-u4",
+                "unitNumber": 4,
+                "title": "Combustion & Chemical Equilibrium",
+                "topics": [
+                    {
+                        "id": "mth101-u4t1",
+                        "title": "Combustion Thermodynamics"
+                    },
+                    {
+                        "id": "mth101-u4t2",
+                        "title": "Chemical Equilibrium"
+                    },
+                    {
+                        "id": "mth101-u4t3",
+                        "title": "Second-law Analysis of Combustion"
+                    },
+                    {
+                        "id": "mth101-u4t4",
+                        "title": "Fuel Cells Thermodynamics"
+                    }
+                ]
+            },
+            {
+                "id": "mth101-u5",
+                "unitNumber": 5,
+                "title": "Irreversible & Statistical Thermodynamics",
+                "topics": [
+                    {
+                        "id": "mth101-u5t1",
+                        "title": "Irreversible Thermodynamics"
+                    },
+                    {
+                        "id": "mth101-u5t2",
+                        "title": "Statistical Thermodynamics Basics"
+                    },
+                    {
+                        "id": "mth101-u5t3",
+                        "title": "Kinetic Theory"
+                    },
+                    {
+                        "id": "mth101-u5t4",
+                        "title": "Advanced Cycles"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mth102",
+        "semester": 1,
+        "title": "Advanced Fluid Mechanics",
+        "code": "MTH-102",
+        "description": "Kinematics, Navier-Stokes equations, exact solutions, boundary layers, turbulence and compressible flow.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Viscous Fluid Flow",
+                "author": "Frank M. White"
+            },
+            {
+                "title": "Boundary Layer Theory",
+                "author": "Schlichting & Gersten"
+            },
+            {
+                "title": "Turbulent Flows",
+                "author": "Stephen B. Pope"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mth102/notes/mth102-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mth102/notes/mth102-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mth102/mock-papers/mth102-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mth102/mock-papers/mth102-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mth102/mock-papers/mth102-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mth102-u1",
+                "unitNumber": 1,
+                "title": "Fluid Kinematics & Conservation Laws",
+                "topics": [
+                    {
+                        "id": "mth102-u1t1",
+                        "title": "Description of Flow"
+                    },
+                    {
+                        "id": "mth102-u1t2",
+                        "title": "Strain Rate & Vorticity"
+                    },
+                    {
+                        "id": "mth102-u1t3",
+                        "title": "Reynolds Transport Theorem"
+                    },
+                    {
+                        "id": "mth102-u1t4",
+                        "title": "Energy Equation"
+                    }
+                ]
+            },
+            {
+                "id": "mth102-u2",
+                "unitNumber": 2,
+                "title": "Navier-Stokes Equations & Exact Solutions",
+                "topics": [
+                    {
+                        "id": "mth102-u2t1",
+                        "title": "Navier-Stokes Equations"
+                    },
+                    {
+                        "id": "mth102-u2t2",
+                        "title": "Couette & Poiseuille Flow"
+                    },
+                    {
+                        "id": "mth102-u2t3",
+                        "title": "Unsteady Exact Solutions"
+                    },
+                    {
+                        "id": "mth102-u2t4",
+                        "title": "Creeping Flow"
+                    }
+                ]
+            },
+            {
+                "id": "mth102-u3",
+                "unitNumber": 3,
+                "title": "Boundary Layer Theory",
+                "topics": [
+                    {
+                        "id": "mth102-u3t1",
+                        "title": "Boundary Layer Equations"
+                    },
+                    {
+                        "id": "mth102-u3t2",
+                        "title": "Integral Methods"
+                    },
+                    {
+                        "id": "mth102-u3t3",
+                        "title": "Separation"
+                    },
+                    {
+                        "id": "mth102-u3t4",
+                        "title": "Thermal Boundary Layer"
+                    }
+                ]
+            },
+            {
+                "id": "mth102-u4",
+                "unitNumber": 4,
+                "title": "Turbulence",
+                "topics": [
+                    {
+                        "id": "mth102-u4t1",
+                        "title": "Nature of Turbulence"
+                    },
+                    {
+                        "id": "mth102-u4t2",
+                        "title": "Reynolds Averaging"
+                    },
+                    {
+                        "id": "mth102-u4t3",
+                        "title": "Turbulence Models"
+                    },
+                    {
+                        "id": "mth102-u4t4",
+                        "title": "Wall Turbulence"
+                    }
+                ]
+            },
+            {
+                "id": "mth102-u5",
+                "unitNumber": 5,
+                "title": "Compressible & Potential Flow",
+                "topics": [
+                    {
+                        "id": "mth102-u5t1",
+                        "title": "Potential Flow"
+                    },
+                    {
+                        "id": "mth102-u5t2",
+                        "title": "Elementary Potential Flows"
+                    },
+                    {
+                        "id": "mth102-u5t3",
+                        "title": "Compressible Flow"
+                    },
+                    {
+                        "id": "mth102-u5t4",
+                        "title": "Oblique Shocks & Expansion"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mth103",
+        "semester": 1,
+        "title": "Advanced Heat & Mass Transfer",
+        "code": "MTH-103",
+        "description": "Multidimensional and transient conduction, convection analysis, boiling and condensation, radiation exchange and mass transfer.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Fundamentals of Heat and Mass Transfer",
+                "author": "Incropera & DeWitt"
+            },
+            {
+                "title": "Heat Transfer",
+                "author": "Adrian Bejan"
+            },
+            {
+                "title": "Radiative Heat Transfer",
+                "author": "Michael F. Modest"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mth103/notes/mth103-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mth103/notes/mth103-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mth103/mock-papers/mth103-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mth103/mock-papers/mth103-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mth103/mock-papers/mth103-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mth103-u1",
+                "unitNumber": 1,
+                "title": "Advanced Conduction",
+                "topics": [
+                    {
+                        "id": "mth103-u1t1",
+                        "title": "Multidimensional Steady Conduction"
+                    },
+                    {
+                        "id": "mth103-u1t2",
+                        "title": "Transient Conduction"
+                    },
+                    {
+                        "id": "mth103-u1t3",
+                        "title": "Numerical Conduction"
+                    },
+                    {
+                        "id": "mth103-u1t4",
+                        "title": "Extended Surfaces Advanced"
+                    }
+                ]
+            },
+            {
+                "id": "mth103-u2",
+                "unitNumber": 2,
+                "title": "Convection",
+                "topics": [
+                    {
+                        "id": "mth103-u2t1",
+                        "title": "Convection Equations"
+                    },
+                    {
+                        "id": "mth103-u2t2",
+                        "title": "Internal Forced Convection"
+                    },
+                    {
+                        "id": "mth103-u2t3",
+                        "title": "Natural Convection"
+                    },
+                    {
+                        "id": "mth103-u2t4",
+                        "title": "Convection Enhancement"
+                    }
+                ]
+            },
+            {
+                "id": "mth103-u3",
+                "unitNumber": 3,
+                "title": "Boiling & Condensation",
+                "topics": [
+                    {
+                        "id": "mth103-u3t1",
+                        "title": "Pool Boiling"
+                    },
+                    {
+                        "id": "mth103-u3t2",
+                        "title": "Flow Boiling"
+                    },
+                    {
+                        "id": "mth103-u3t3",
+                        "title": "Film Condensation"
+                    },
+                    {
+                        "id": "mth103-u3t4",
+                        "title": "Heat Pipes"
+                    }
+                ]
+            },
+            {
+                "id": "mth103-u4",
+                "unitNumber": 4,
+                "title": "Radiation",
+                "topics": [
+                    {
+                        "id": "mth103-u4t1",
+                        "title": "Radiation Properties"
+                    },
+                    {
+                        "id": "mth103-u4t2",
+                        "title": "Radiation Exchange"
+                    },
+                    {
+                        "id": "mth103-u4t3",
+                        "title": "Gas Radiation"
+                    },
+                    {
+                        "id": "mth103-u4t4",
+                        "title": "Solar Radiation"
+                    }
+                ]
+            },
+            {
+                "id": "mth103-u5",
+                "unitNumber": 5,
+                "title": "Mass Transfer & Heat Exchangers",
+                "topics": [
+                    {
+                        "id": "mth103-u5t1",
+                        "title": "Diffusion Mass Transfer"
+                    },
+                    {
+                        "id": "mth103-u5t2",
+                        "title": "Convective Mass Transfer"
+                    },
+                    {
+                        "id": "mth103-u5t3",
+                        "title": "Heat Exchanger Design"
+                    },
+                    {
+                        "id": "mth103-u5t4",
+                        "title": "Compact Heat Exchangers"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mth104",
+        "semester": 1,
+        "title": "Computational Fluid Dynamics",
+        "code": "MTH-104",
+        "description": "Governing equations, discretisation, finite difference and finite volume methods, pressure-velocity coupling, turbulence modelling and CFD practice.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Computational Fluid Dynamics",
+                "author": "John D. Anderson"
+            },
+            {
+                "title": "An Introduction to Computational Fluid Dynamics: The Finite Volume Method",
+                "author": "Versteeg & Malalasekera"
+            },
+            {
+                "title": "Numerical Heat Transfer and Fluid Flow",
+                "author": "Suhas V. Patankar"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mth104/notes/mth104-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mth104/notes/mth104-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mth104/mock-papers/mth104-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mth104/mock-papers/mth104-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mth104/mock-papers/mth104-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mth104-u1",
+                "unitNumber": 1,
+                "title": "Governing Equations",
+                "topics": [
+                    {
+                        "id": "mth104-u1t1",
+                        "title": "Conservation Equations"
+                    },
+                    {
+                        "id": "mth104-u1t2",
+                        "title": "Classification of PDEs"
+                    },
+                    {
+                        "id": "mth104-u1t3",
+                        "title": "Boundary Conditions"
+                    },
+                    {
+                        "id": "mth104-u1t4",
+                        "title": "Non-dimensionalisation"
+                    }
+                ]
+            },
+            {
+                "id": "mth104-u2",
+                "unitNumber": 2,
+                "title": "Finite Difference Method",
+                "topics": [
+                    {
+                        "id": "mth104-u2t1",
+                        "title": "Discretisation"
+                    },
+                    {
+                        "id": "mth104-u2t2",
+                        "title": "Consistency, Stability, Convergence"
+                    },
+                    {
+                        "id": "mth104-u2t3",
+                        "title": "Explicit & Implicit Schemes"
+                    },
+                    {
+                        "id": "mth104-u2t4",
+                        "title": "Solving Linear Systems"
+                    }
+                ]
+            },
+            {
+                "id": "mth104-u3",
+                "unitNumber": 3,
+                "title": "Finite Volume Method",
+                "topics": [
+                    {
+                        "id": "mth104-u3t1",
+                        "title": "FVM Fundamentals"
+                    },
+                    {
+                        "id": "mth104-u3t2",
+                        "title": "Convection Schemes"
+                    },
+                    {
+                        "id": "mth104-u3t3",
+                        "title": "Unstructured Meshes"
+                    },
+                    {
+                        "id": "mth104-u3t4",
+                        "title": "Unsteady FVM"
+                    }
+                ]
+            },
+            {
+                "id": "mth104-u4",
+                "unitNumber": 4,
+                "title": "Pressure-Velocity Coupling",
+                "topics": [
+                    {
+                        "id": "mth104-u4t1",
+                        "title": "Incompressible Flow Challenge"
+                    },
+                    {
+                        "id": "mth104-u4t2",
+                        "title": "SIMPLE Algorithm"
+                    },
+                    {
+                        "id": "mth104-u4t3",
+                        "title": "SIMPLER, SIMPLEC & PISO"
+                    },
+                    {
+                        "id": "mth104-u4t4",
+                        "title": "Compressible Solvers"
+                    }
+                ]
+            },
+            {
+                "id": "mth104-u5",
+                "unitNumber": 5,
+                "title": "Turbulence & CFD Practice",
+                "topics": [
+                    {
+                        "id": "mth104-u5t1",
+                        "title": "RANS Models in CFD"
+                    },
+                    {
+                        "id": "mth104-u5t2",
+                        "title": "LES & DNS"
+                    },
+                    {
+                        "id": "mth104-u5t3",
+                        "title": "Verification & Validation"
+                    },
+                    {
+                        "id": "mth104-u5t4",
+                        "title": "CFD Tools & Workflow"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mth201",
+        "semester": 2,
+        "title": "Design of Thermal Systems",
+        "code": "MTH-201",
+        "description": "Modelling, simulation and optimisation of thermal systems, economics, and design of heat exchangers, piping and energy systems.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Design of Thermal Systems",
+                "author": "W. F. Stoecker"
+            },
+            {
+                "title": "Design and Optimization of Thermal Systems",
+                "author": "Yogesh Jaluria"
+            },
+            {
+                "title": "Thermal Design and Optimization",
+                "author": "Bejan, Tsatsaronis & Moran"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mth201/notes/mth201-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mth201/notes/mth201-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mth201/mock-papers/mth201-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mth201/mock-papers/mth201-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mth201/mock-papers/mth201-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mth201-u1",
+                "unitNumber": 1,
+                "title": "Design Fundamentals",
+                "topics": [
+                    {
+                        "id": "mth201-u1t1",
+                        "title": "Engineering Design Process"
+                    },
+                    {
+                        "id": "mth201-u1t2",
+                        "title": "Problem Formulation"
+                    },
+                    {
+                        "id": "mth201-u1t3",
+                        "title": "Modelling of Thermal Systems"
+                    },
+                    {
+                        "id": "mth201-u1t4",
+                        "title": "Component Models"
+                    }
+                ]
+            },
+            {
+                "id": "mth201-u2",
+                "unitNumber": 2,
+                "title": "System Simulation",
+                "topics": [
+                    {
+                        "id": "mth201-u2t1",
+                        "title": "Steady-state Simulation"
+                    },
+                    {
+                        "id": "mth201-u2t2",
+                        "title": "Dynamic Simulation"
+                    },
+                    {
+                        "id": "mth201-u2t3",
+                        "title": "Information Flow Diagrams"
+                    },
+                    {
+                        "id": "mth201-u2t4",
+                        "title": "Simulation Tools"
+                    }
+                ]
+            },
+            {
+                "id": "mth201-u3",
+                "unitNumber": 3,
+                "title": "Economics",
+                "topics": [
+                    {
+                        "id": "mth201-u3t1",
+                        "title": "Time Value of Money"
+                    },
+                    {
+                        "id": "mth201-u3t2",
+                        "title": "Economic Evaluation"
+                    },
+                    {
+                        "id": "mth201-u3t3",
+                        "title": "Cost Estimation"
+                    },
+                    {
+                        "id": "mth201-u3t4",
+                        "title": "Thermoeconomics"
+                    }
+                ]
+            },
+            {
+                "id": "mth201-u4",
+                "unitNumber": 4,
+                "title": "Optimisation",
+                "topics": [
+                    {
+                        "id": "mth201-u4t1",
+                        "title": "Optimisation Basics"
+                    },
+                    {
+                        "id": "mth201-u4t2",
+                        "title": "Search Methods"
+                    },
+                    {
+                        "id": "mth201-u4t3",
+                        "title": "Linear & Dynamic Programming"
+                    },
+                    {
+                        "id": "mth201-u4t4",
+                        "title": "Evolutionary Optimisation"
+                    }
+                ]
+            },
+            {
+                "id": "mth201-u5",
+                "unitNumber": 5,
+                "title": "Design Applications",
+                "topics": [
+                    {
+                        "id": "mth201-u5t1",
+                        "title": "Heat Exchanger Design"
+                    },
+                    {
+                        "id": "mth201-u5t2",
+                        "title": "Piping & Pumping Systems"
+                    },
+                    {
+                        "id": "mth201-u5t3",
+                        "title": "Energy Systems Design"
+                    },
+                    {
+                        "id": "mth201-u5t4",
+                        "title": "Renewable Thermal Systems"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mth202",
+        "semester": 2,
+        "title": "Advanced IC Engines & Emissions",
+        "code": "MTH-202",
+        "description": "Engine thermodynamics, combustion modelling, advanced combustion modes, emissions formation and aftertreatment, alternative fuels.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Internal Combustion Engine Fundamentals",
+                "author": "John B. Heywood"
+            },
+            {
+                "title": "Introduction to Internal Combustion Engines",
+                "author": "Richard Stone"
+            },
+            {
+                "title": "Internal Combustion Engines",
+                "author": "V. Ganesan"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mth202/notes/mth202-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mth202/notes/mth202-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mth202/mock-papers/mth202-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mth202/mock-papers/mth202-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mth202/mock-papers/mth202-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mth202-u1",
+                "unitNumber": 1,
+                "title": "Engine Thermodynamics",
+                "topics": [
+                    {
+                        "id": "mth202-u1t1",
+                        "title": "Fuel-air Cycle Analysis"
+                    },
+                    {
+                        "id": "mth202-u1t2",
+                        "title": "Thermodynamic Engine Models"
+                    },
+                    {
+                        "id": "mth202-u1t3",
+                        "title": "Gas Exchange"
+                    },
+                    {
+                        "id": "mth202-u1t4",
+                        "title": "Heat Transfer in Engines"
+                    }
+                ]
+            },
+            {
+                "id": "mth202-u2",
+                "unitNumber": 2,
+                "title": "Combustion",
+                "topics": [
+                    {
+                        "id": "mth202-u2t1",
+                        "title": "SI Combustion"
+                    },
+                    {
+                        "id": "mth202-u2t2",
+                        "title": "CI Combustion"
+                    },
+                    {
+                        "id": "mth202-u2t3",
+                        "title": "Spray & Mixing"
+                    },
+                    {
+                        "id": "mth202-u2t4",
+                        "title": "Combustion Diagnostics"
+                    }
+                ]
+            },
+            {
+                "id": "mth202-u3",
+                "unitNumber": 3,
+                "title": "Advanced Combustion Modes",
+                "topics": [
+                    {
+                        "id": "mth202-u3t1",
+                        "title": "HCCI"
+                    },
+                    {
+                        "id": "mth202-u3t2",
+                        "title": "PCCI & RCCI"
+                    },
+                    {
+                        "id": "mth202-u3t3",
+                        "title": "GDI & Lean Burn"
+                    },
+                    {
+                        "id": "mth202-u3t4",
+                        "title": "Downsizing & Boosting"
+                    }
+                ]
+            },
+            {
+                "id": "mth202-u4",
+                "unitNumber": 4,
+                "title": "Emissions Formation & Control",
+                "topics": [
+                    {
+                        "id": "mth202-u4t1",
+                        "title": "Pollutant Formation"
+                    },
+                    {
+                        "id": "mth202-u4t2",
+                        "title": "In-cylinder Control"
+                    },
+                    {
+                        "id": "mth202-u4t3",
+                        "title": "Aftertreatment"
+                    },
+                    {
+                        "id": "mth202-u4t4",
+                        "title": "Emission Regulations & Testing"
+                    }
+                ]
+            },
+            {
+                "id": "mth202-u5",
+                "unitNumber": 5,
+                "title": "Alternative Fuels & Electrification",
+                "topics": [
+                    {
+                        "id": "mth202-u5t1",
+                        "title": "Biofuels"
+                    },
+                    {
+                        "id": "mth202-u5t2",
+                        "title": "Gaseous Fuels"
+                    },
+                    {
+                        "id": "mth202-u5t3",
+                        "title": "Hybrid Powertrains"
+                    },
+                    {
+                        "id": "mth202-u5t4",
+                        "title": "Engine Calibration"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mth203",
+        "semester": 2,
+        "title": "Advanced Refrigeration & Cryogenics",
+        "code": "MTH-203",
+        "description": "Advanced vapour compression and absorption systems, refrigerants, cryogenic liquefaction, separation and storage.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Refrigeration and Air Conditioning",
+                "author": "C. P. Arora"
+            },
+            {
+                "title": "Cryogenic Systems",
+                "author": "Randall F. Barron"
+            },
+            {
+                "title": "Cryogenic Engineering",
+                "author": "Thomas M. Flynn"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mth203/notes/mth203-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mth203/notes/mth203-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mth203/mock-papers/mth203-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mth203/mock-papers/mth203-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mth203/mock-papers/mth203-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mth203-u1",
+                "unitNumber": 1,
+                "title": "Advanced Vapour Compression",
+                "topics": [
+                    {
+                        "id": "mth203-u1t1",
+                        "title": "Multistage Systems"
+                    },
+                    {
+                        "id": "mth203-u1t2",
+                        "title": "Cascade Refrigeration"
+                    },
+                    {
+                        "id": "mth203-u1t3",
+                        "title": "Component Matching"
+                    },
+                    {
+                        "id": "mth203-u1t4",
+                        "title": "Transcritical CO2 Cycles"
+                    }
+                ]
+            },
+            {
+                "id": "mth203-u2",
+                "unitNumber": 2,
+                "title": "Absorption & Alternative Refrigeration",
+                "topics": [
+                    {
+                        "id": "mth203-u2t1",
+                        "title": "Vapour Absorption Advanced"
+                    },
+                    {
+                        "id": "mth203-u2t2",
+                        "title": "Adsorption Refrigeration"
+                    },
+                    {
+                        "id": "mth203-u2t3",
+                        "title": "Ejector & Thermoelectric"
+                    },
+                    {
+                        "id": "mth203-u2t4",
+                        "title": "Magnetic & Vortex Cooling"
+                    }
+                ]
+            },
+            {
+                "id": "mth203-u3",
+                "unitNumber": 3,
+                "title": "Refrigerants & Environment",
+                "topics": [
+                    {
+                        "id": "mth203-u3t1",
+                        "title": "Refrigerant Properties"
+                    },
+                    {
+                        "id": "mth203-u3t2",
+                        "title": "Refrigerant Phase-out"
+                    },
+                    {
+                        "id": "mth203-u3t3",
+                        "title": "Natural Refrigerants"
+                    },
+                    {
+                        "id": "mth203-u3t4",
+                        "title": "Refrigerant Safety"
+                    }
+                ]
+            },
+            {
+                "id": "mth203-u4",
+                "unitNumber": 4,
+                "title": "Cryogenics",
+                "topics": [
+                    {
+                        "id": "mth203-u4t1",
+                        "title": "Cryogenic Fundamentals"
+                    },
+                    {
+                        "id": "mth203-u4t2",
+                        "title": "Gas Liquefaction"
+                    },
+                    {
+                        "id": "mth203-u4t3",
+                        "title": "Gas Separation"
+                    },
+                    {
+                        "id": "mth203-u4t4",
+                        "title": "Cryocoolers"
+                    }
+                ]
+            },
+            {
+                "id": "mth203-u5",
+                "unitNumber": 5,
+                "title": "Cryogenic Systems & Applications",
+                "topics": [
+                    {
+                        "id": "mth203-u5t1",
+                        "title": "Cryogenic Insulation"
+                    },
+                    {
+                        "id": "mth203-u5t2",
+                        "title": "Storage & Transfer"
+                    },
+                    {
+                        "id": "mth203-u5t3",
+                        "title": "Material Properties at Low Temperature"
+                    },
+                    {
+                        "id": "mth203-u5t4",
+                        "title": "Applications"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mst101",
+        "semester": 1,
+        "title": "Advanced Structural Analysis",
+        "code": "MST-101",
+        "description": "Matrix methods, direct stiffness method for trusses, beams, frames and grids, non-linear and stability analysis.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Matrix Analysis of Framed Structures",
+                "author": "Weaver & Gere"
+            },
+            {
+                "title": "Matrix Methods of Structural Analysis",
+                "author": "P. N. Godbole et al."
+            },
+            {
+                "title": "Advanced Structural Analysis",
+                "author": "Devdas Menon"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mst101/notes/mst101-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mst101/notes/mst101-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mst101/mock-papers/mst101-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mst101/mock-papers/mst101-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mst101/mock-papers/mst101-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mst101-u1",
+                "unitNumber": 1,
+                "title": "Matrix Methods Fundamentals",
+                "topics": [
+                    {
+                        "id": "mst101-u1t1",
+                        "title": "Flexibility & Stiffness Concepts"
+                    },
+                    {
+                        "id": "mst101-u1t2",
+                        "title": "Degrees of Freedom"
+                    },
+                    {
+                        "id": "mst101-u1t3",
+                        "title": "Coordinate Systems"
+                    },
+                    {
+                        "id": "mst101-u1t4",
+                        "title": "Energy Principles"
+                    }
+                ]
+            },
+            {
+                "id": "mst101-u2",
+                "unitNumber": 2,
+                "title": "Direct Stiffness Method",
+                "topics": [
+                    {
+                        "id": "mst101-u2t1",
+                        "title": "Truss Element"
+                    },
+                    {
+                        "id": "mst101-u2t2",
+                        "title": "Beam Element"
+                    },
+                    {
+                        "id": "mst101-u2t3",
+                        "title": "Assembly & Boundary Conditions"
+                    },
+                    {
+                        "id": "mst101-u2t4",
+                        "title": "Solution & Post-processing"
+                    }
+                ]
+            },
+            {
+                "id": "mst101-u3",
+                "unitNumber": 3,
+                "title": "Frames & Grids",
+                "topics": [
+                    {
+                        "id": "mst101-u3t1",
+                        "title": "Plane Frames"
+                    },
+                    {
+                        "id": "mst101-u3t2",
+                        "title": "Space Frames"
+                    },
+                    {
+                        "id": "mst101-u3t3",
+                        "title": "Grids"
+                    },
+                    {
+                        "id": "mst101-u3t4",
+                        "title": "Special Effects"
+                    }
+                ]
+            },
+            {
+                "id": "mst101-u4",
+                "unitNumber": 4,
+                "title": "Non-linear Analysis",
+                "topics": [
+                    {
+                        "id": "mst101-u4t1",
+                        "title": "Sources of Non-linearity"
+                    },
+                    {
+                        "id": "mst101-u4t2",
+                        "title": "Geometric Stiffness"
+                    },
+                    {
+                        "id": "mst101-u4t3",
+                        "title": "Material Non-linearity"
+                    },
+                    {
+                        "id": "mst101-u4t4",
+                        "title": "Collapse Analysis"
+                    }
+                ]
+            },
+            {
+                "id": "mst101-u5",
+                "unitNumber": 5,
+                "title": "Stability & Dynamic Analysis",
+                "topics": [
+                    {
+                        "id": "mst101-u5t1",
+                        "title": "Elastic Stability"
+                    },
+                    {
+                        "id": "mst101-u5t2",
+                        "title": "Frame Stability"
+                    },
+                    {
+                        "id": "mst101-u5t3",
+                        "title": "Structural Dynamics Matrices"
+                    },
+                    {
+                        "id": "mst101-u5t4",
+                        "title": "Computer Implementation"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mst102",
+        "semester": 1,
+        "title": "Theory of Elasticity & Plasticity",
+        "code": "MST-102",
+        "description": "Stress and strain analysis, compatibility, 2D elasticity, torsion, plasticity theories and yield criteria.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Theory of Elasticity",
+                "author": "Timoshenko & Goodier"
+            },
+            {
+                "title": "Advanced Mechanics of Solids",
+                "author": "L. S. Srinath"
+            },
+            {
+                "title": "Theory of Plasticity",
+                "author": "J. Chakrabarty"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mst102/notes/mst102-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mst102/notes/mst102-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mst102/mock-papers/mst102-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mst102/mock-papers/mst102-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mst102/mock-papers/mst102-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mst102-u1",
+                "unitNumber": 1,
+                "title": "Analysis of Stress",
+                "topics": [
+                    {
+                        "id": "mst102-u1t1",
+                        "title": "Stress at a Point"
+                    },
+                    {
+                        "id": "mst102-u1t2",
+                        "title": "Principal Stresses"
+                    },
+                    {
+                        "id": "mst102-u1t3",
+                        "title": "Equilibrium Equations"
+                    },
+                    {
+                        "id": "mst102-u1t4",
+                        "title": "Octahedral & Deviatoric Stress"
+                    }
+                ]
+            },
+            {
+                "id": "mst102-u2",
+                "unitNumber": 2,
+                "title": "Analysis of Strain & Constitutive Relations",
+                "topics": [
+                    {
+                        "id": "mst102-u2t1",
+                        "title": "Strain at a Point"
+                    },
+                    {
+                        "id": "mst102-u2t2",
+                        "title": "Compatibility Equations"
+                    },
+                    {
+                        "id": "mst102-u2t3",
+                        "title": "Generalised Hooke's Law"
+                    },
+                    {
+                        "id": "mst102-u2t4",
+                        "title": "Strain Energy"
+                    }
+                ]
+            },
+            {
+                "id": "mst102-u3",
+                "unitNumber": 3,
+                "title": "Two-dimensional Elasticity",
+                "topics": [
+                    {
+                        "id": "mst102-u3t1",
+                        "title": "Plane Stress & Plane Strain"
+                    },
+                    {
+                        "id": "mst102-u3t2",
+                        "title": "Airy Stress Function"
+                    },
+                    {
+                        "id": "mst102-u3t3",
+                        "title": "Polar Coordinates"
+                    },
+                    {
+                        "id": "mst102-u3t4",
+                        "title": "Saint-Venant's Principle"
+                    }
+                ]
+            },
+            {
+                "id": "mst102-u4",
+                "unitNumber": 4,
+                "title": "Torsion of Non-circular Sections",
+                "topics": [
+                    {
+                        "id": "mst102-u4t1",
+                        "title": "Torsion Fundamentals"
+                    },
+                    {
+                        "id": "mst102-u4t2",
+                        "title": "Membrane Analogy"
+                    },
+                    {
+                        "id": "mst102-u4t3",
+                        "title": "Torsion of Thin Sections"
+                    },
+                    {
+                        "id": "mst102-u4t4",
+                        "title": "Torsion of Standard Shapes"
+                    }
+                ]
+            },
+            {
+                "id": "mst102-u5",
+                "unitNumber": 5,
+                "title": "Plasticity",
+                "topics": [
+                    {
+                        "id": "mst102-u5t1",
+                        "title": "Plastic Behaviour"
+                    },
+                    {
+                        "id": "mst102-u5t2",
+                        "title": "Yield Criteria"
+                    },
+                    {
+                        "id": "mst102-u5t3",
+                        "title": "Flow Rules"
+                    },
+                    {
+                        "id": "mst102-u5t4",
+                        "title": "Limit Analysis"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mst103",
+        "semester": 1,
+        "title": "Advanced Concrete Technology",
+        "code": "MST-103",
+        "description": "Cement chemistry, admixtures, mix design, special concretes, durability, testing and sustainable concrete.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Concrete Technology",
+                "author": "M. S. Shetty"
+            },
+            {
+                "title": "Concrete: Microstructure, Properties and Materials",
+                "author": "Mehta & Monteiro"
+            },
+            {
+                "title": "Properties of Concrete",
+                "author": "A. M. Neville"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mst103/notes/mst103-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mst103/notes/mst103-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mst103/mock-papers/mst103-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mst103/mock-papers/mst103-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mst103/mock-papers/mst103-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mst103-u1",
+                "unitNumber": 1,
+                "title": "Cement Chemistry & Hydration",
+                "topics": [
+                    {
+                        "id": "mst103-u1t1",
+                        "title": "Cement Composition"
+                    },
+                    {
+                        "id": "mst103-u1t2",
+                        "title": "Hydration Process"
+                    },
+                    {
+                        "id": "mst103-u1t3",
+                        "title": "Supplementary Cementitious Materials"
+                    },
+                    {
+                        "id": "mst103-u1t4",
+                        "title": "Microstructure"
+                    }
+                ]
+            },
+            {
+                "id": "mst103-u2",
+                "unitNumber": 2,
+                "title": "Admixtures & Aggregates",
+                "topics": [
+                    {
+                        "id": "mst103-u2t1",
+                        "title": "Chemical Admixtures"
+                    },
+                    {
+                        "id": "mst103-u2t2",
+                        "title": "Mineral Admixtures"
+                    },
+                    {
+                        "id": "mst103-u2t3",
+                        "title": "Aggregate Properties"
+                    },
+                    {
+                        "id": "mst103-u2t4",
+                        "title": "Rheology of Fresh Concrete"
+                    }
+                ]
+            },
+            {
+                "id": "mst103-u3",
+                "unitNumber": 3,
+                "title": "Mix Design",
+                "topics": [
+                    {
+                        "id": "mst103-u3t1",
+                        "title": "IS Method of Mix Design"
+                    },
+                    {
+                        "id": "mst103-u3t2",
+                        "title": "ACI Method"
+                    },
+                    {
+                        "id": "mst103-u3t3",
+                        "title": "High-strength Concrete Design"
+                    },
+                    {
+                        "id": "mst103-u3t4",
+                        "title": "Statistical Quality Control"
+                    }
+                ]
+            },
+            {
+                "id": "mst103-u4",
+                "unitNumber": 4,
+                "title": "Special Concretes",
+                "topics": [
+                    {
+                        "id": "mst103-u4t1",
+                        "title": "Self-compacting Concrete"
+                    },
+                    {
+                        "id": "mst103-u4t2",
+                        "title": "Fibre Reinforced Concrete"
+                    },
+                    {
+                        "id": "mst103-u4t3",
+                        "title": "Ultra-high Performance Concrete"
+                    },
+                    {
+                        "id": "mst103-u4t4",
+                        "title": "Other Special Concretes"
+                    }
+                ]
+            },
+            {
+                "id": "mst103-u5",
+                "unitNumber": 5,
+                "title": "Durability & Testing",
+                "topics": [
+                    {
+                        "id": "mst103-u5t1",
+                        "title": "Durability Mechanisms"
+                    },
+                    {
+                        "id": "mst103-u5t2",
+                        "title": "Durability Design"
+                    },
+                    {
+                        "id": "mst103-u5t3",
+                        "title": "Non-destructive Testing"
+                    },
+                    {
+                        "id": "mst103-u5t4",
+                        "title": "Sustainable Concrete"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mst104",
+        "semester": 1,
+        "title": "Structural Dynamics",
+        "code": "MST-104",
+        "description": "SDOF and MDOF vibration, modal analysis, response spectrum, continuous systems and numerical methods for dynamic response.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Dynamics of Structures",
+                "author": "Anil K. Chopra"
+            },
+            {
+                "title": "Dynamics of Structures",
+                "author": "Clough & Penzien"
+            },
+            {
+                "title": "Structural Dynamics",
+                "author": "Mario Paz"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mst104/notes/mst104-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mst104/notes/mst104-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mst104/mock-papers/mst104-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mst104/mock-papers/mst104-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mst104/mock-papers/mst104-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mst104-u1",
+                "unitNumber": 1,
+                "title": "SDOF Free Vibration",
+                "topics": [
+                    {
+                        "id": "mst104-u1t1",
+                        "title": "Equation of Motion"
+                    },
+                    {
+                        "id": "mst104-u1t2",
+                        "title": "Undamped Free Vibration"
+                    },
+                    {
+                        "id": "mst104-u1t3",
+                        "title": "Damped Free Vibration"
+                    },
+                    {
+                        "id": "mst104-u1t4",
+                        "title": "Damping Mechanisms"
+                    }
+                ]
+            },
+            {
+                "id": "mst104-u2",
+                "unitNumber": 2,
+                "title": "SDOF Forced Vibration",
+                "topics": [
+                    {
+                        "id": "mst104-u2t1",
+                        "title": "Harmonic Excitation"
+                    },
+                    {
+                        "id": "mst104-u2t2",
+                        "title": "Transmissibility & Isolation"
+                    },
+                    {
+                        "id": "mst104-u2t3",
+                        "title": "Arbitrary Excitation"
+                    },
+                    {
+                        "id": "mst104-u2t4",
+                        "title": "Earthquake Response"
+                    }
+                ]
+            },
+            {
+                "id": "mst104-u3",
+                "unitNumber": 3,
+                "title": "MDOF Systems",
+                "topics": [
+                    {
+                        "id": "mst104-u3t1",
+                        "title": "Equations of Motion"
+                    },
+                    {
+                        "id": "mst104-u3t2",
+                        "title": "Natural Frequencies & Modes"
+                    },
+                    {
+                        "id": "mst104-u3t3",
+                        "title": "Modal Analysis"
+                    },
+                    {
+                        "id": "mst104-u3t4",
+                        "title": "Damping in MDOF"
+                    }
+                ]
+            },
+            {
+                "id": "mst104-u4",
+                "unitNumber": 4,
+                "title": "Earthquake Analysis of MDOF",
+                "topics": [
+                    {
+                        "id": "mst104-u4t1",
+                        "title": "Response Spectrum Analysis"
+                    },
+                    {
+                        "id": "mst104-u4t2",
+                        "title": "Time History Analysis"
+                    },
+                    {
+                        "id": "mst104-u4t3",
+                        "title": "Torsional Response"
+                    },
+                    {
+                        "id": "mst104-u4t4",
+                        "title": "Soil-Structure Interaction"
+                    }
+                ]
+            },
+            {
+                "id": "mst104-u5",
+                "unitNumber": 5,
+                "title": "Continuous Systems & Numerical Methods",
+                "topics": [
+                    {
+                        "id": "mst104-u5t1",
+                        "title": "Vibration of Beams"
+                    },
+                    {
+                        "id": "mst104-u5t2",
+                        "title": "Approximate Methods"
+                    },
+                    {
+                        "id": "mst104-u5t3",
+                        "title": "Numerical Integration"
+                    },
+                    {
+                        "id": "mst104-u5t4",
+                        "title": "Machine Foundations & Wind"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mst201",
+        "semester": 2,
+        "title": "Advanced Design of Steel Structures",
+        "code": "MST-201",
+        "description": "Plastic design, connections, light-gauge, industrial buildings, multistorey frames, towers and bridges in steel.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Design of Steel Structures",
+                "author": "N. Subramanian"
+            },
+            {
+                "title": "Steel Structures: Design and Behavior",
+                "author": "Salmon & Johnson"
+            },
+            {
+                "title": "IS 800:2007",
+                "author": "Bureau of Indian Standards"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mst201/notes/mst201-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mst201/notes/mst201-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mst201/mock-papers/mst201-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mst201/mock-papers/mst201-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mst201/mock-papers/mst201-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mst201-u1",
+                "unitNumber": 1,
+                "title": "Plastic & Limit State Design",
+                "topics": [
+                    {
+                        "id": "mst201-u1t1",
+                        "title": "Plastic Analysis Review"
+                    },
+                    {
+                        "id": "mst201-u1t2",
+                        "title": "Limit State Design per IS 800"
+                    },
+                    {
+                        "id": "mst201-u1t3",
+                        "title": "Local Buckling"
+                    },
+                    {
+                        "id": "mst201-u1t4",
+                        "title": "Combined Forces"
+                    }
+                ]
+            },
+            {
+                "id": "mst201-u2",
+                "unitNumber": 2,
+                "title": "Connections",
+                "topics": [
+                    {
+                        "id": "mst201-u2t1",
+                        "title": "Bolted Connections Advanced"
+                    },
+                    {
+                        "id": "mst201-u2t2",
+                        "title": "Welded Connections Advanced"
+                    },
+                    {
+                        "id": "mst201-u2t3",
+                        "title": "Moment Connections"
+                    },
+                    {
+                        "id": "mst201-u2t4",
+                        "title": "Base Plates & Splices"
+                    }
+                ]
+            },
+            {
+                "id": "mst201-u3",
+                "unitNumber": 3,
+                "title": "Light-gauge & Industrial Structures",
+                "topics": [
+                    {
+                        "id": "mst201-u3t1",
+                        "title": "Cold-formed Steel"
+                    },
+                    {
+                        "id": "mst201-u3t2",
+                        "title": "Industrial Buildings"
+                    },
+                    {
+                        "id": "mst201-u3t3",
+                        "title": "Pre-engineered Buildings"
+                    },
+                    {
+                        "id": "mst201-u3t4",
+                        "title": "Space Structures"
+                    }
+                ]
+            },
+            {
+                "id": "mst201-u4",
+                "unitNumber": 4,
+                "title": "Multistorey & Tall Steel Buildings",
+                "topics": [
+                    {
+                        "id": "mst201-u4t1",
+                        "title": "Lateral Load Systems"
+                    },
+                    {
+                        "id": "mst201-u4t2",
+                        "title": "Composite Construction"
+                    },
+                    {
+                        "id": "mst201-u4t3",
+                        "title": "Seismic Design of Steel"
+                    },
+                    {
+                        "id": "mst201-u4t4",
+                        "title": "Fire Resistance"
+                    }
+                ]
+            },
+            {
+                "id": "mst201-u5",
+                "unitNumber": 5,
+                "title": "Towers & Bridges",
+                "topics": [
+                    {
+                        "id": "mst201-u5t1",
+                        "title": "Transmission Towers"
+                    },
+                    {
+                        "id": "mst201-u5t2",
+                        "title": "Chimneys & Tanks"
+                    },
+                    {
+                        "id": "mst201-u5t3",
+                        "title": "Steel Bridges"
+                    },
+                    {
+                        "id": "mst201-u5t4",
+                        "title": "Fatigue & Inspection"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mps101",
+        "semester": 1,
+        "title": "Advanced Power System Analysis",
+        "code": "MPS-101",
+        "description": "Network modelling, sparse techniques, load flow, contingency analysis, fault analysis and state estimation.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Computer Methods in Power System Analysis",
+                "author": "Stagg & El-Abiad"
+            },
+            {
+                "title": "Power System Analysis",
+                "author": "Hadi Saadat"
+            },
+            {
+                "title": "Power Generation, Operation and Control",
+                "author": "Wood & Wollenberg"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mps101/notes/mps101-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mps101/notes/mps101-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mps101/mock-papers/mps101-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mps101/mock-papers/mps101-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mps101/mock-papers/mps101-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mps101-u1",
+                "unitNumber": 1,
+                "title": "Network Modelling",
+                "topics": [
+                    {
+                        "id": "mps101-u1t1",
+                        "title": "Primitive Network"
+                    },
+                    {
+                        "id": "mps101-u1t2",
+                        "title": "Ybus & Zbus"
+                    },
+                    {
+                        "id": "mps101-u1t3",
+                        "title": "Sparse Matrix Techniques"
+                    },
+                    {
+                        "id": "mps101-u1t4",
+                        "title": "Component Modelling"
+                    }
+                ]
+            },
+            {
+                "id": "mps101-u2",
+                "unitNumber": 2,
+                "title": "Load Flow Analysis",
+                "topics": [
+                    {
+                        "id": "mps101-u2t1",
+                        "title": "Newton-Raphson Load Flow"
+                    },
+                    {
+                        "id": "mps101-u2t2",
+                        "title": "Fast Decoupled Load Flow"
+                    },
+                    {
+                        "id": "mps101-u2t3",
+                        "title": "DC Load Flow"
+                    },
+                    {
+                        "id": "mps101-u2t4",
+                        "title": "Control in Load Flow"
+                    }
+                ]
+            },
+            {
+                "id": "mps101-u3",
+                "unitNumber": 3,
+                "title": "Contingency Analysis & Security",
+                "topics": [
+                    {
+                        "id": "mps101-u3t1",
+                        "title": "Security Concepts"
+                    },
+                    {
+                        "id": "mps101-u3t2",
+                        "title": "Sensitivity Factors"
+                    },
+                    {
+                        "id": "mps101-u3t3",
+                        "title": "Contingency Ranking"
+                    },
+                    {
+                        "id": "mps101-u3t4",
+                        "title": "Security-constrained Dispatch"
+                    }
+                ]
+            },
+            {
+                "id": "mps101-u4",
+                "unitNumber": 4,
+                "title": "Fault Analysis",
+                "topics": [
+                    {
+                        "id": "mps101-u4t1",
+                        "title": "Symmetrical Components"
+                    },
+                    {
+                        "id": "mps101-u4t2",
+                        "title": "Unsymmetrical Faults"
+                    },
+                    {
+                        "id": "mps101-u4t3",
+                        "title": "Zbus Fault Analysis"
+                    },
+                    {
+                        "id": "mps101-u4t4",
+                        "title": "Short-circuit Studies"
+                    }
+                ]
+            },
+            {
+                "id": "mps101-u5",
+                "unitNumber": 5,
+                "title": "State Estimation",
+                "topics": [
+                    {
+                        "id": "mps101-u5t1",
+                        "title": "State Estimation Concept"
+                    },
+                    {
+                        "id": "mps101-u5t2",
+                        "title": "Weighted Least Squares"
+                    },
+                    {
+                        "id": "mps101-u5t3",
+                        "title": "Bad Data Detection"
+                    },
+                    {
+                        "id": "mps101-u5t4",
+                        "title": "PMU-based Estimation"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mps102",
+        "semester": 1,
+        "title": "Power System Dynamics & Stability",
+        "code": "MPS-102",
+        "description": "Synchronous machine modelling, excitation and governor systems, small-signal, transient and voltage stability.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Power System Stability and Control",
+                "author": "Prabha Kundur"
+            },
+            {
+                "title": "Power System Dynamics: Stability and Control",
+                "author": "K. R. Padiyar"
+            },
+            {
+                "title": "Power System Control and Stability",
+                "author": "Anderson & Fouad"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mps102/notes/mps102-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mps102/notes/mps102-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mps102/mock-papers/mps102-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mps102/mock-papers/mps102-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mps102/mock-papers/mps102-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mps102-u1",
+                "unitNumber": 1,
+                "title": "Synchronous Machine Modelling",
+                "topics": [
+                    {
+                        "id": "mps102-u1t1",
+                        "title": "Park's Transformation"
+                    },
+                    {
+                        "id": "mps102-u1t2",
+                        "title": "Machine Reactances"
+                    },
+                    {
+                        "id": "mps102-u1t3",
+                        "title": "Time Constants"
+                    },
+                    {
+                        "id": "mps102-u1t4",
+                        "title": "Simplified Models"
+                    }
+                ]
+            },
+            {
+                "id": "mps102-u2",
+                "unitNumber": 2,
+                "title": "Excitation & Governor Systems",
+                "topics": [
+                    {
+                        "id": "mps102-u2t1",
+                        "title": "Excitation Systems"
+                    },
+                    {
+                        "id": "mps102-u2t2",
+                        "title": "Excitation System Models"
+                    },
+                    {
+                        "id": "mps102-u2t3",
+                        "title": "Power System Stabiliser"
+                    },
+                    {
+                        "id": "mps102-u2t4",
+                        "title": "Prime Mover & Governor"
+                    }
+                ]
+            },
+            {
+                "id": "mps102-u3",
+                "unitNumber": 3,
+                "title": "Small-signal Stability",
+                "topics": [
+                    {
+                        "id": "mps102-u3t1",
+                        "title": "Linearisation"
+                    },
+                    {
+                        "id": "mps102-u3t2",
+                        "title": "Heffron-Phillips Model"
+                    },
+                    {
+                        "id": "mps102-u3t3",
+                        "title": "Modes of Oscillation"
+                    },
+                    {
+                        "id": "mps102-u3t4",
+                        "title": "Damping Control"
+                    }
+                ]
+            },
+            {
+                "id": "mps102-u4",
+                "unitNumber": 4,
+                "title": "Transient Stability",
+                "topics": [
+                    {
+                        "id": "mps102-u4t1",
+                        "title": "Transient Stability Concepts"
+                    },
+                    {
+                        "id": "mps102-u4t2",
+                        "title": "Equal Area Criterion"
+                    },
+                    {
+                        "id": "mps102-u4t3",
+                        "title": "Numerical Methods"
+                    },
+                    {
+                        "id": "mps102-u4t4",
+                        "title": "Enhancement Methods"
+                    }
+                ]
+            },
+            {
+                "id": "mps102-u5",
+                "unitNumber": 5,
+                "title": "Voltage Stability",
+                "topics": [
+                    {
+                        "id": "mps102-u5t1",
+                        "title": "Voltage Stability Concepts"
+                    },
+                    {
+                        "id": "mps102-u5t2",
+                        "title": "PV & QV Curves"
+                    },
+                    {
+                        "id": "mps102-u5t3",
+                        "title": "Analysis Methods"
+                    },
+                    {
+                        "id": "mps102-u5t4",
+                        "title": "Prevention of Collapse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mps103",
+        "semester": 1,
+        "title": "Advanced Power Electronic Converters",
+        "code": "MPS-103",
+        "description": "Switching devices, DC-DC converter design, multilevel inverters, PWM, grid-connected converters and control.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Power Electronics",
+                "author": "Mohan, Undeland & Robbins"
+            },
+            {
+                "title": "Fundamentals of Power Electronics",
+                "author": "Erickson & Maksimovic"
+            },
+            {
+                "title": "Grid Converters for Photovoltaic and Wind Power Systems",
+                "author": "Teodorescu, Liserre & Rodriguez"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mps103/notes/mps103-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mps103/notes/mps103-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mps103/mock-papers/mps103-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mps103/mock-papers/mps103-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mps103/mock-papers/mps103-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mps103-u1",
+                "unitNumber": 1,
+                "title": "Power Semiconductor Devices",
+                "topics": [
+                    {
+                        "id": "mps103-u1t1",
+                        "title": "Silicon Devices"
+                    },
+                    {
+                        "id": "mps103-u1t2",
+                        "title": "Wide Bandgap Devices"
+                    },
+                    {
+                        "id": "mps103-u1t3",
+                        "title": "Gate Drivers"
+                    },
+                    {
+                        "id": "mps103-u1t4",
+                        "title": "Thermal Management"
+                    }
+                ]
+            },
+            {
+                "id": "mps103-u2",
+                "unitNumber": 2,
+                "title": "DC-DC Converters",
+                "topics": [
+                    {
+                        "id": "mps103-u2t1",
+                        "title": "Non-isolated Converters"
+                    },
+                    {
+                        "id": "mps103-u2t2",
+                        "title": "Isolated Converters"
+                    },
+                    {
+                        "id": "mps103-u2t3",
+                        "title": "Resonant Converters"
+                    },
+                    {
+                        "id": "mps103-u2t4",
+                        "title": "Converter Design"
+                    }
+                ]
+            },
+            {
+                "id": "mps103-u3",
+                "unitNumber": 3,
+                "title": "Inverters & Multilevel Converters",
+                "topics": [
+                    {
+                        "id": "mps103-u3t1",
+                        "title": "Voltage Source Inverters"
+                    },
+                    {
+                        "id": "mps103-u3t2",
+                        "title": "Space Vector PWM"
+                    },
+                    {
+                        "id": "mps103-u3t3",
+                        "title": "Multilevel Inverters"
+                    },
+                    {
+                        "id": "mps103-u3t4",
+                        "title": "MMC"
+                    }
+                ]
+            },
+            {
+                "id": "mps103-u4",
+                "unitNumber": 4,
+                "title": "Grid-connected Converters",
+                "topics": [
+                    {
+                        "id": "mps103-u4t1",
+                        "title": "Grid Synchronisation"
+                    },
+                    {
+                        "id": "mps103-u4t2",
+                        "title": "Current Control"
+                    },
+                    {
+                        "id": "mps103-u4t3",
+                        "title": "Filters"
+                    },
+                    {
+                        "id": "mps103-u4t4",
+                        "title": "Grid-forming Converters"
+                    }
+                ]
+            },
+            {
+                "id": "mps103-u5",
+                "unitNumber": 5,
+                "title": "Applications & Control",
+                "topics": [
+                    {
+                        "id": "mps103-u5t1",
+                        "title": "Renewable Converters"
+                    },
+                    {
+                        "id": "mps103-u5t2",
+                        "title": "Motor Drive Converters"
+                    },
+                    {
+                        "id": "mps103-u5t3",
+                        "title": "EV Chargers"
+                    },
+                    {
+                        "id": "mps103-u5t4",
+                        "title": "Modelling & Simulation"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mps104",
+        "semester": 1,
+        "title": "Optimisation Techniques in Power Systems",
+        "code": "MPS-104",
+        "description": "Linear, non-linear, dynamic and evolutionary optimisation applied to economic dispatch, OPF and unit commitment.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Engineering Optimization: Theory and Practice",
+                "author": "S. S. Rao"
+            },
+            {
+                "title": "Optimization of Power System Operation",
+                "author": "Jizhong Zhu"
+            },
+            {
+                "title": "Power Generation, Operation and Control",
+                "author": "Wood & Wollenberg"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mps104/notes/mps104-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mps104/notes/mps104-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mps104/mock-papers/mps104-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mps104/mock-papers/mps104-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mps104/mock-papers/mps104-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mps104-u1",
+                "unitNumber": 1,
+                "title": "Optimisation Fundamentals",
+                "topics": [
+                    {
+                        "id": "mps104-u1t1",
+                        "title": "Problem Formulation"
+                    },
+                    {
+                        "id": "mps104-u1t2",
+                        "title": "Classification"
+                    },
+                    {
+                        "id": "mps104-u1t3",
+                        "title": "Convexity"
+                    },
+                    {
+                        "id": "mps104-u1t4",
+                        "title": "Optimality Conditions"
+                    }
+                ]
+            },
+            {
+                "id": "mps104-u2",
+                "unitNumber": 2,
+                "title": "Classical Methods",
+                "topics": [
+                    {
+                        "id": "mps104-u2t1",
+                        "title": "Linear Programming Methods"
+                    },
+                    {
+                        "id": "mps104-u2t2",
+                        "title": "Non-linear Programming Methods"
+                    },
+                    {
+                        "id": "mps104-u2t3",
+                        "title": "Dynamic Programming"
+                    },
+                    {
+                        "id": "mps104-u2t4",
+                        "title": "Integer Programming"
+                    }
+                ]
+            },
+            {
+                "id": "mps104-u3",
+                "unitNumber": 3,
+                "title": "Evolutionary & Metaheuristic Methods",
+                "topics": [
+                    {
+                        "id": "mps104-u3t1",
+                        "title": "Genetic Algorithm"
+                    },
+                    {
+                        "id": "mps104-u3t2",
+                        "title": "Particle Swarm Optimisation"
+                    },
+                    {
+                        "id": "mps104-u3t3",
+                        "title": "Other Metaheuristics"
+                    },
+                    {
+                        "id": "mps104-u3t4",
+                        "title": "Multi-objective Optimisation"
+                    }
+                ]
+            },
+            {
+                "id": "mps104-u4",
+                "unitNumber": 4,
+                "title": "Economic Dispatch & OPF",
+                "topics": [
+                    {
+                        "id": "mps104-u4t1",
+                        "title": "Economic Load Dispatch"
+                    },
+                    {
+                        "id": "mps104-u4t2",
+                        "title": "Optimal Power Flow"
+                    },
+                    {
+                        "id": "mps104-u4t3",
+                        "title": "Environmental Dispatch"
+                    },
+                    {
+                        "id": "mps104-u4t4",
+                        "title": "Reactive Power Optimisation"
+                    }
+                ]
+            },
+            {
+                "id": "mps104-u5",
+                "unitNumber": 5,
+                "title": "Unit Commitment & Planning",
+                "topics": [
+                    {
+                        "id": "mps104-u5t1",
+                        "title": "Unit Commitment"
+                    },
+                    {
+                        "id": "mps104-u5t2",
+                        "title": "UC Solution Methods"
+                    },
+                    {
+                        "id": "mps104-u5t3",
+                        "title": "Hydro-thermal Scheduling"
+                    },
+                    {
+                        "id": "mps104-u5t4",
+                        "title": "Expansion Planning"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mps201",
+        "semester": 2,
+        "title": "Power System Operation & Control",
+        "code": "MPS-201",
+        "description": "Load frequency control, AGC, voltage and reactive power control, energy management systems and electricity markets.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Power Generation, Operation and Control",
+                "author": "Wood & Wollenberg"
+            },
+            {
+                "title": "Power System Operation and Control",
+                "author": "S. Sivanagaraju"
+            },
+            {
+                "title": "Operation of Restructured Power Systems",
+                "author": "Bhattacharya, Bollen & Daalder"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mps201/notes/mps201-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mps201/notes/mps201-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mps201/mock-papers/mps201-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mps201/mock-papers/mps201-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mps201/mock-papers/mps201-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mps201-u1",
+                "unitNumber": 1,
+                "title": "Load Frequency Control",
+                "topics": [
+                    {
+                        "id": "mps201-u1t1",
+                        "title": "Frequency Control Basics"
+                    },
+                    {
+                        "id": "mps201-u1t2",
+                        "title": "Single-area LFC"
+                    },
+                    {
+                        "id": "mps201-u1t3",
+                        "title": "Two-area LFC"
+                    },
+                    {
+                        "id": "mps201-u1t4",
+                        "title": "AGC & Modern Control"
+                    }
+                ]
+            },
+            {
+                "id": "mps201-u2",
+                "unitNumber": 2,
+                "title": "Voltage & Reactive Power Control",
+                "topics": [
+                    {
+                        "id": "mps201-u2t1",
+                        "title": "Reactive Power Sources"
+                    },
+                    {
+                        "id": "mps201-u2t2",
+                        "title": "Voltage Control Methods"
+                    },
+                    {
+                        "id": "mps201-u2t3",
+                        "title": "Hierarchical Voltage Control"
+                    },
+                    {
+                        "id": "mps201-u2t4",
+                        "title": "Reactive Power Management"
+                    }
+                ]
+            },
+            {
+                "id": "mps201-u3",
+                "unitNumber": 3,
+                "title": "Energy Management Systems",
+                "topics": [
+                    {
+                        "id": "mps201-u3t1",
+                        "title": "Control Centres"
+                    },
+                    {
+                        "id": "mps201-u3t2",
+                        "title": "EMS Functions"
+                    },
+                    {
+                        "id": "mps201-u3t3",
+                        "title": "Load Forecasting"
+                    },
+                    {
+                        "id": "mps201-u3t4",
+                        "title": "WAMS"
+                    }
+                ]
+            },
+            {
+                "id": "mps201-u4",
+                "unitNumber": 4,
+                "title": "Electricity Markets",
+                "topics": [
+                    {
+                        "id": "mps201-u4t1",
+                        "title": "Power Sector Restructuring"
+                    },
+                    {
+                        "id": "mps201-u4t2",
+                        "title": "Market Structures"
+                    },
+                    {
+                        "id": "mps201-u4t3",
+                        "title": "Pricing"
+                    },
+                    {
+                        "id": "mps201-u4t4",
+                        "title": "Ancillary Services"
+                    }
+                ]
+            },
+            {
+                "id": "mps201-u5",
+                "unitNumber": 5,
+                "title": "Grid Operation with Renewables",
+                "topics": [
+                    {
+                        "id": "mps201-u5t1",
+                        "title": "Variability & Forecasting"
+                    },
+                    {
+                        "id": "mps201-u5t2",
+                        "title": "Flexibility"
+                    },
+                    {
+                        "id": "mps201-u5t3",
+                        "title": "Inertia & Frequency Stability"
+                    },
+                    {
+                        "id": "mps201-u5t4",
+                        "title": "Grid Codes for RE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mps202",
+        "semester": 2,
+        "title": "Smart Grid Technologies",
+        "code": "MPS-202",
+        "description": "Smart grid architecture, AMI, distribution automation, microgrids, communication, cyber security and EV integration.",
+        "generated": true,
+        "references": [
+            {
+                "title": "Smart Grid: Fundamentals of Design and Analysis",
+                "author": "James Momoh"
+            },
+            {
+                "title": "Smart Grid: Technology and Applications",
+                "author": "Ekanayake et al."
+            },
+            {
+                "title": "Microgrids: Architectures and Control",
+                "author": "Nikos Hatziargyriou"
+            }
+        ],
+        "resources": {
+            "notesPdf": "assets/resources/mps202/notes/mps202-unit-wise-study-notes.pdf",
+            "notesMd": "assets/resources/mps202/notes/mps202-unit-wise-study-notes.md",
+            "paperPdf": "assets/resources/mps202/mock-papers/mps202-rgpv-model-question-paper.pdf",
+            "paperMd": "assets/resources/mps202/mock-papers/mps202-rgpv-model-question-paper.md",
+            "bankMd": "assets/resources/mps202/mock-papers/mps202-question-bank-with-answers.md"
+        },
+        "units": [
+            {
+                "id": "mps202-u1",
+                "unitNumber": 1,
+                "title": "Smart Grid Fundamentals",
+                "topics": [
+                    {
+                        "id": "mps202-u1t1",
+                        "title": "Smart Grid Concept"
+                    },
+                    {
+                        "id": "mps202-u1t2",
+                        "title": "Smart Grid Architecture"
+                    },
+                    {
+                        "id": "mps202-u1t3",
+                        "title": "Smart Grid in India"
+                    },
+                    {
+                        "id": "mps202-u1t4",
+                        "title": "Drivers & Benefits"
+                    }
+                ]
+            },
+            {
+                "id": "mps202-u2",
+                "unitNumber": 2,
+                "title": "Advanced Metering & Demand Response",
+                "topics": [
+                    {
+                        "id": "mps202-u2t1",
+                        "title": "AMI"
+                    },
+                    {
+                        "id": "mps202-u2t2",
+                        "title": "Demand Response"
+                    },
+                    {
+                        "id": "mps202-u2t3",
+                        "title": "Home Energy Management"
+                    },
+                    {
+                        "id": "mps202-u2t4",
+                        "title": "Data Analytics"
+                    }
+                ]
+            },
+            {
+                "id": "mps202-u3",
+                "unitNumber": 3,
+                "title": "Distribution Automation & Microgrids",
+                "topics": [
+                    {
+                        "id": "mps202-u3t1",
+                        "title": "Distribution Automation"
+                    },
+                    {
+                        "id": "mps202-u3t2",
+                        "title": "Distributed Energy Resources"
+                    },
+                    {
+                        "id": "mps202-u3t3",
+                        "title": "Microgrids"
+                    },
+                    {
+                        "id": "mps202-u3t4",
+                        "title": "Microgrid Control"
+                    }
+                ]
+            },
+            {
+                "id": "mps202-u4",
+                "unitNumber": 4,
+                "title": "Communication & Cyber Security",
+                "topics": [
+                    {
+                        "id": "mps202-u4t1",
+                        "title": "Communication Technologies"
+                    },
+                    {
+                        "id": "mps202-u4t2",
+                        "title": "Communication Standards"
+                    },
+                    {
+                        "id": "mps202-u4t3",
+                        "title": "Cyber Security Threats"
+                    },
+                    {
+                        "id": "mps202-u4t4",
+                        "title": "Cyber Security Measures"
+                    }
+                ]
+            },
+            {
+                "id": "mps202-u5",
+                "unitNumber": 5,
+                "title": "EVs, Storage & Future Grids",
+                "topics": [
+                    {
+                        "id": "mps202-u5t1",
+                        "title": "EV Integration"
+                    },
+                    {
+                        "id": "mps202-u5t2",
+                        "title": "Energy Storage in Smart Grids"
+                    },
+                    {
+                        "id": "mps202-u5t3",
+                        "title": "Virtual Power Plants"
+                    },
+                    {
+                        "id": "mps202-u5t4",
+                        "title": "Digital Twins & AI"
+                    }
+                ]
+            }
+        ]
     }
 ]);
 window.BRANCHES = {
     "CSE": {
+        "degree": "B.Tech",
         "name": "Computer Science & Engineering",
         "short": "CSE",
         "icon": "💻"
     },
     "IT": {
+        "degree": "B.Tech",
         "name": "Information Technology (CSIT)",
         "short": "IT",
         "icon": "🌐"
     },
     "EC": {
+        "degree": "B.Tech",
         "name": "Electronics & Communication",
         "short": "ECE",
         "icon": "📡"
     },
+    "EX": {
+        "degree": "B.Tech",
+        "name": "Electrical & Electronics",
+        "short": "EX",
+        "icon": "⚡"
+    },
     "ME": {
+        "degree": "B.Tech",
         "name": "Mechanical Engineering",
         "short": "ME",
         "icon": "⚙️"
     },
+    "CE": {
+        "degree": "B.Tech",
+        "name": "Civil Engineering",
+        "short": "CE",
+        "icon": "🏗️"
+    },
     "AU": {
+        "degree": "B.Tech",
         "name": "Automobile Engineering",
         "short": "AU",
         "icon": "🚗",
-        "note": "Semesters 6-8 follow the commonly offered RGPV AU papers; confirm elective codes with your department."
+        "note": "RGPV does not publish the current AU semester 6-8 scheme online; these are the commonly offered papers. Confirm codes with your department."
+    },
+    "MT-CSE": {
+        "degree": "M.Tech",
+        "name": "Computer Science & Engineering",
+        "short": "M.Tech CSE",
+        "icon": "🧠",
+        "note": "M.Tech semesters 3-4 are electives and dissertation; theory papers are in semesters 1-2. Paper codes vary slightly between RGPV institutes."
+    },
+    "MT-VLSI": {
+        "degree": "M.Tech",
+        "name": "VLSI Design",
+        "short": "M.Tech VLSI",
+        "icon": "🔬",
+        "note": "M.Tech semesters 3-4 are electives and dissertation; paper codes vary slightly between institutes."
+    },
+    "MT-TH": {
+        "degree": "M.Tech",
+        "name": "Thermal Engineering",
+        "short": "M.Tech Thermal",
+        "icon": "🔥",
+        "note": "M.Tech semesters 3-4 are electives and dissertation; paper codes vary slightly between institutes."
+    },
+    "MT-ST": {
+        "degree": "M.Tech",
+        "name": "Structural Engineering",
+        "short": "M.Tech Structural",
+        "icon": "🏛️",
+        "note": "M.Tech semesters 3-4 are electives and dissertation; paper codes vary slightly between institutes."
+    },
+    "MT-PS": {
+        "degree": "M.Tech",
+        "name": "Power Systems",
+        "short": "M.Tech Power",
+        "icon": "🔌",
+        "note": "M.Tech semesters 3-4 are electives and dissertation; paper codes vary slightly between institutes."
     }
 };
 window.branchPlan = {
@@ -13286,6 +22974,326 @@ window.branchPlan = {
             }
         ]
     },
+    "EX": {
+        "1": [
+            {
+                "id": "bt101",
+                "code": "BT-101"
+            },
+            {
+                "id": "bt102",
+                "code": "BT-102"
+            },
+            {
+                "id": "bt103",
+                "code": "BT-103"
+            },
+            {
+                "id": "bt104",
+                "code": "BT-104"
+            },
+            {
+                "id": "bt105",
+                "code": "BT-105"
+            }
+        ],
+        "2": [
+            {
+                "id": "bt201",
+                "code": "BT-201"
+            },
+            {
+                "id": "bt202",
+                "code": "BT-202"
+            },
+            {
+                "id": "bt203",
+                "code": "BT-203"
+            },
+            {
+                "id": "bt204",
+                "code": "BT-204"
+            },
+            {
+                "id": "bt205",
+                "code": "BT-205"
+            }
+        ],
+        "3": [
+            {
+                "id": "es301",
+                "code": "ES-301"
+            },
+            {
+                "id": "ec402",
+                "code": "EX-302"
+            },
+            {
+                "id": "ex303",
+                "code": "EX-303"
+            },
+            {
+                "id": "ec305",
+                "code": "EX-304"
+            },
+            {
+                "id": "ec405",
+                "code": "EX-305"
+            }
+        ],
+        "4": [
+            {
+                "id": "bt301",
+                "code": "BT-401"
+            },
+            {
+                "id": "ex402",
+                "code": "EX-402"
+            },
+            {
+                "id": "ec303",
+                "code": "EX-403"
+            },
+            {
+                "id": "ex404",
+                "code": "EX-404"
+            },
+            {
+                "id": "ec404",
+                "code": "EX-405"
+            }
+        ],
+        "5": [
+            {
+                "id": "ex501",
+                "code": "EX-501"
+            },
+            {
+                "id": "ex502",
+                "code": "EX-502"
+            },
+            {
+                "id": "ex503c",
+                "code": "EX-503(C)"
+            },
+            {
+                "id": "ex504a",
+                "code": "EX-504(A)"
+            }
+        ],
+        "6": [
+            {
+                "id": "ex601",
+                "code": "EX-601"
+            },
+            {
+                "id": "ec501",
+                "code": "EX-602"
+            },
+            {
+                "id": "ex603a",
+                "code": "EX-603(A)"
+            },
+            {
+                "id": "cs801",
+                "code": "EX-604(B)"
+            }
+        ],
+        "7": [
+            {
+                "id": "ex701",
+                "code": "EX-701"
+            },
+            {
+                "id": "ex702b",
+                "code": "EX-702(B)"
+            },
+            {
+                "id": "ex702c",
+                "code": "EX-702(C)"
+            },
+            {
+                "id": "au703",
+                "code": "EX-703(A)"
+            }
+        ],
+        "8": [
+            {
+                "id": "ex801",
+                "code": "EX-801"
+            },
+            {
+                "id": "ex802b",
+                "code": "EX-802(B)"
+            },
+            {
+                "id": "it504-ai",
+                "code": "EX-802(D)"
+            }
+        ]
+    },
+    "CE": {
+        "1": [
+            {
+                "id": "bt101",
+                "code": "BT-101"
+            },
+            {
+                "id": "bt102",
+                "code": "BT-102"
+            },
+            {
+                "id": "bt103",
+                "code": "BT-103"
+            },
+            {
+                "id": "bt104",
+                "code": "BT-104"
+            },
+            {
+                "id": "bt105",
+                "code": "BT-105"
+            }
+        ],
+        "2": [
+            {
+                "id": "bt201",
+                "code": "BT-201"
+            },
+            {
+                "id": "bt202",
+                "code": "BT-202"
+            },
+            {
+                "id": "bt203",
+                "code": "BT-203"
+            },
+            {
+                "id": "bt204",
+                "code": "BT-204"
+            },
+            {
+                "id": "bt205",
+                "code": "BT-205"
+            }
+        ],
+        "3": [
+            {
+                "id": "bt301",
+                "code": "BT-301"
+            },
+            {
+                "id": "ce302",
+                "code": "CE-302"
+            },
+            {
+                "id": "ce303",
+                "code": "CE-303"
+            },
+            {
+                "id": "ce304",
+                "code": "CE-304"
+            },
+            {
+                "id": "me304",
+                "code": "CE-305"
+            }
+        ],
+        "4": [
+            {
+                "id": "es301",
+                "code": "ES-401"
+            },
+            {
+                "id": "ce402",
+                "code": "CE-402"
+            },
+            {
+                "id": "ce403",
+                "code": "CE-403"
+            },
+            {
+                "id": "ce404",
+                "code": "CE-404"
+            },
+            {
+                "id": "ce405",
+                "code": "CE-405"
+            }
+        ],
+        "5": [
+            {
+                "id": "me404",
+                "code": "CE-501"
+            },
+            {
+                "id": "ce502",
+                "code": "CE-502"
+            },
+            {
+                "id": "ce503a",
+                "code": "CE-503(A)"
+            },
+            {
+                "id": "ce504b",
+                "code": "CE-504(B)"
+            }
+        ],
+        "6": [
+            {
+                "id": "ce601",
+                "code": "CE-601"
+            },
+            {
+                "id": "ce602",
+                "code": "CE-602"
+            },
+            {
+                "id": "ce603a",
+                "code": "CE-603(A)"
+            },
+            {
+                "id": "me703-or",
+                "code": "CE-604(D)"
+            }
+        ],
+        "7": [
+            {
+                "id": "ce701",
+                "code": "CE-701"
+            },
+            {
+                "id": "ce702a",
+                "code": "CE-702(A)"
+            },
+            {
+                "id": "ce702b",
+                "code": "CE-702(B)"
+            },
+            {
+                "id": "cs801",
+                "code": "CE-703(A)"
+            }
+        ],
+        "8": [
+            {
+                "id": "ce801",
+                "code": "CE-801"
+            },
+            {
+                "id": "ce802b",
+                "code": "CE-802(B)"
+            },
+            {
+                "id": "ce802d",
+                "code": "CE-802(D)"
+            },
+            {
+                "id": "cs503",
+                "code": "CE-803(B)"
+            }
+        ]
+    },
     "ME": {
         "1": [
             {
@@ -13607,6 +23615,196 @@ window.branchPlan = {
             {
                 "id": "me801",
                 "code": "AU-803"
+            }
+        ]
+    },
+    "MT-CSE": {
+        "1": [
+            {
+                "id": "mcse101",
+                "code": "MCSE-101"
+            },
+            {
+                "id": "mcse102",
+                "code": "MCSE-102"
+            },
+            {
+                "id": "mcse103",
+                "code": "MCSE-103"
+            },
+            {
+                "id": "mcse104",
+                "code": "MCSE-104"
+            }
+        ],
+        "2": [
+            {
+                "id": "mcse201",
+                "code": "MCSE-201"
+            },
+            {
+                "id": "mcse202",
+                "code": "MCSE-202"
+            },
+            {
+                "id": "mcse203",
+                "code": "MCSE-203"
+            },
+            {
+                "id": "mt-rm",
+                "code": "MCSE-204"
+            }
+        ]
+    },
+    "MT-VLSI": {
+        "1": [
+            {
+                "id": "mvl101",
+                "code": "MVL-101"
+            },
+            {
+                "id": "mvl102",
+                "code": "MVL-102"
+            },
+            {
+                "id": "mvl103",
+                "code": "MVL-103"
+            },
+            {
+                "id": "mvl104",
+                "code": "MVL-104"
+            }
+        ],
+        "2": [
+            {
+                "id": "mvl201",
+                "code": "MVL-201"
+            },
+            {
+                "id": "mvl202",
+                "code": "MVL-202"
+            },
+            {
+                "id": "mvl203",
+                "code": "MVL-203"
+            },
+            {
+                "id": "mt-rm",
+                "code": "MVL-204"
+            }
+        ]
+    },
+    "MT-TH": {
+        "1": [
+            {
+                "id": "mth101",
+                "code": "MTH-101"
+            },
+            {
+                "id": "mth102",
+                "code": "MTH-102"
+            },
+            {
+                "id": "mth103",
+                "code": "MTH-103"
+            },
+            {
+                "id": "mth104",
+                "code": "MTH-104"
+            }
+        ],
+        "2": [
+            {
+                "id": "mth201",
+                "code": "MTH-201"
+            },
+            {
+                "id": "mth202",
+                "code": "MTH-202"
+            },
+            {
+                "id": "mth203",
+                "code": "MTH-203"
+            },
+            {
+                "id": "mt-rm",
+                "code": "MTH-204"
+            }
+        ]
+    },
+    "MT-ST": {
+        "1": [
+            {
+                "id": "mst101",
+                "code": "MST-101"
+            },
+            {
+                "id": "mst102",
+                "code": "MST-102"
+            },
+            {
+                "id": "mst103",
+                "code": "MST-103"
+            },
+            {
+                "id": "mst104",
+                "code": "MST-104"
+            }
+        ],
+        "2": [
+            {
+                "id": "mst201",
+                "code": "MST-201"
+            },
+            {
+                "id": "me504-fem",
+                "code": "MST-202"
+            },
+            {
+                "id": "ce802d",
+                "code": "MST-203"
+            },
+            {
+                "id": "mt-rm",
+                "code": "MST-204"
+            }
+        ]
+    },
+    "MT-PS": {
+        "1": [
+            {
+                "id": "mps101",
+                "code": "MPS-101"
+            },
+            {
+                "id": "mps102",
+                "code": "MPS-102"
+            },
+            {
+                "id": "mps103",
+                "code": "MPS-103"
+            },
+            {
+                "id": "mps104",
+                "code": "MPS-104"
+            }
+        ],
+        "2": [
+            {
+                "id": "mps201",
+                "code": "MPS-201"
+            },
+            {
+                "id": "mps202",
+                "code": "MPS-202"
+            },
+            {
+                "id": "ex702b",
+                "code": "MPS-203"
+            },
+            {
+                "id": "mt-rm",
+                "code": "MPS-204"
             }
         ]
     }

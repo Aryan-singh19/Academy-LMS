@@ -1,6 +1,6 @@
 # BT-103 English for Communication — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-103 · IT Sem 1: BT-103 · ECE Sem 1: BT-103 · ME Sem 1: BT-103 · AU Sem 1: BT-103.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-103 · IT Sem 1: BT-103 · ECE Sem 1: BT-103 · EX Sem 1: BT-103 · CE Sem 1: BT-103 · ME Sem 1: BT-103 · AU Sem 1: BT-103.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

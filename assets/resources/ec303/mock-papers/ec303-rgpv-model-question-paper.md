@@ -1,6 +1,6 @@
 # EC-303 Digital System Design — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 3: EC-303.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ECE Sem 3: EC-303 · EX Sem 4: EX-403.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

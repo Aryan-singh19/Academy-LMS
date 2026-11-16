@@ -1,6 +1,6 @@
 # BT-205 Basic Computer Engineering — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-205 · IT Sem 2: BT-205 · ECE Sem 2: BT-205 · ME Sem 2: BT-205 · AU Sem 2: BT-205.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 2: BT-205 · IT Sem 2: BT-205 · ECE Sem 2: BT-205 · EX Sem 2: BT-205 · CE Sem 2: BT-205 · ME Sem 2: BT-205 · AU Sem 2: BT-205.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

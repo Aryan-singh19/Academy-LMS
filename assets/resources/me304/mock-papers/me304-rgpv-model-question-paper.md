@@ -1,6 +1,6 @@
 # ME-304 Strength of Materials — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: ME Sem 3: ME-304 · AU Sem 3: AU-304.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CE Sem 3: CE-305 · ME Sem 3: ME-304 · AU Sem 3: AU-304.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

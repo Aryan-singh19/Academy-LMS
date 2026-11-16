@@ -1,6 +1,6 @@
 # BT-104 Basic Electrical & Electronics Engineering — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-104 · IT Sem 1: BT-104 · ECE Sem 1: BT-104 · ME Sem 1: BT-104 · AU Sem 1: BT-104.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 1: BT-104 · IT Sem 1: BT-104 · ECE Sem 1: BT-104 · EX Sem 1: BT-104 · CE Sem 1: BT-104 · ME Sem 1: BT-104 · AU Sem 1: BT-104.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

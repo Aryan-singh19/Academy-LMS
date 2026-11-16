@@ -6,9 +6,24 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 ## [Unreleased]
 
 ### Planned
-- Civil (CE) and Electrical & Electronics (EX) B.Tech branches, semesters 1–8.
-- M.Tech programmes (CSE, VLSI/ECE, Thermal/Design ME) once B.Tech coverage is complete.
-- Hand-curated YouTube playlists for the new subjects (currently unit-wise lecture search shelves).
+- More M.Tech specialisations (Communication, Production, Environmental, Data Science).
+- Hand-curated YouTube playlists (currently unit-wise lecture search shelves).
+
+## [2.1.0] - 2026-11-16
+
+### Added
+- **Civil (CE) and Electrical & Electronics (EX)** B.Tech branches, semesters 1–8 (33 new subjects, with shared papers reused across branches).
+- **M.Tech**: Computer Science, VLSI Design, Thermal, Structural and Power Systems, semesters 1–2, plus Research Methodology & IPR (33 new subjects).
+- In total: 148 generated subjects, 2,960 topics, 8,880 MCQs, and notes PDFs and model papers for every subject.
+- The programme picker's **B.Tech / M.Tech toggle** now works and lists each degree's branches.
+- **Safe switching**: the picker states that progress is kept, a **Recent** row offers one-tap return to previous programmes, and the profile page has a *Change programme* link.
+
+### Changed
+- The landing page now covers B.Tech Sem 1–8 and M.Tech across 7 branches (it previously listed only Sem 5–7).
+- More precise Automobile note: RGPV does not publish the current AU 6–8 scheme online.
+
+### Fixed
+- The text-highlight toolbar (Highlight / Remove current / Remove last / Cancel) showed permanently on the landing page because a CSS rule overrode `.hidden`.
 
 ## [2.0.0] - 2026-11-16
 

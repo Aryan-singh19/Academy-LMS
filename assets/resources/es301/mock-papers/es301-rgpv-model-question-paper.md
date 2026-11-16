@@ -1,6 +1,6 @@
 # ES-301 Energy & Environmental Engineering — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 3: ES-301 · IT Sem 3: ES-301 · ECE Sem 4: ES-401 · ME Sem 4: ES-401 · AU Sem 4: ES-401.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: CSE Sem 3: ES-301 · IT Sem 3: ES-301 · ECE Sem 4: ES-401 · EX Sem 3: ES-301 · CE Sem 4: ES-401 · ME Sem 4: ES-401 · AU Sem 4: ES-401.
 
 **Time: 3 Hours | Maximum Marks: 70**
 

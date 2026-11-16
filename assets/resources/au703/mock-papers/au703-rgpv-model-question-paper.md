@@ -1,6 +1,6 @@
 # AU-704 Electric & Hybrid Vehicles — RGPV Model Question Paper
 
-> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: AU Sem 7: AU-704.
+> Practice paper generated from the RGPV syllabus by Academy LMS. Not an official RGPV paper. Applies to: EX Sem 7: EX-703(A) · AU Sem 7: AU-704.
 
 **Time: 3 Hours | Maximum Marks: 70**
 
