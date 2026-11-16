@@ -63,6 +63,8 @@ function walkResources(dir) {
             if (!fs.statSync(typeDir).isDirectory()) return;
             fs.readdirSync(typeDir).forEach((file) => {
                 if (file.startsWith('.') || file.includes('gitkeep')) return;
+                // files produced by scripts/build_study_resources.js are registered in its own generated block
+                if (/-(unit-wise-study-notes|rgpv-model-question-paper|question-bank-with-answers)\.(md|pdf)$/.test(file)) return;
                 const ext = path.extname(file).slice(1).toLowerCase();
                 const subjectRule = subjectRules.find((rule) => rule.id === subject) || { id: subject, label: subject.toUpperCase() };
                 const typeRule = typeRules.find((rule) => rule.id === type) || { id: type, label: type };
@@ -102,7 +104,10 @@ function main() {
     });
 
     const resources = walkResources(outputRoot);
-    const manifest = `window.resourceLibrary = window.resourceLibrary || ${JSON.stringify(resources, null, 4)};\n`;
+    const marker = '// <<MULTIBRANCH-RESOURCES:START>>';
+    const previous = fs.existsSync(manifestPath) ? fs.readFileSync(manifestPath, 'utf8') : '';
+    const generatedBlock = previous.includes(marker) ? `\n${previous.slice(previous.indexOf(marker))}` : '';
+    const manifest = `window.resourceLibrary = window.resourceLibrary || ${JSON.stringify(resources, null, 4)};\n${generatedBlock}`;
     fs.writeFileSync(manifestPath, manifest);
 }
 

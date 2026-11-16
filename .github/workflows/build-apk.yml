@@ -1,15 +1,14 @@
-name: Build Android APK and Release
+name: Android CI
 
+# Builds the APK on every push / PR so breakage is caught early.
+# Publishing to GitHub Releases is handled by release.yml (on version tags).
 on:
   push:
-    branches:
-      - main
-    tags:
-      - 'v*'
+    branches: [main]
+    paths: ['android/**', '.github/workflows/build-apk.yml']
+  pull_request:
+    paths: ['android/**', '.github/workflows/build-apk.yml']
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   build:
@@ -17,10 +16,8 @@ jobs:
     defaults:
       run:
         working-directory: android
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -30,40 +27,14 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.5'
 
-      - name: Ensure gradlew exists
-        run: |
-          if [ ! -f "gradlew" ]; then
-            gradle wrapper --gradle-version 8.5
-          fi
-          chmod +x gradlew
+      - name: Build debug APK
+        run: gradle assembleDebug --stacktrace
 
-      - name: Build Android APK
-        run: ./gradlew assembleDebug --stacktrace
-
-      - name: Prepare Release APK
-        run: |
-          cp app/build/outputs/apk/debug/app-debug.apk ../Academy-LMS.apk
-
-      - name: Upload APK Artifact
+      - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: Academy-LMS-apk
-          path: Academy-LMS.apk
-
-      - name: Publish GitHub Release
-        uses: softprops/action-gh-release@v2
-        if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
-        with:
-          tag_name: v1.0.0
-          name: "Academy LMS v1.0.0 (Android APK)"
-          body: |
-            ### Academy LMS Android Release v1.0.0
-            - Download `Academy-LMS.apk` to install on any Android device.
-            - Direct Google authentication & Neon database cloud sync.
-            - Study desk, practice tests, lecture notes, and discussions.
-          files: Academy-LMS.apk
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: android/app/build/outputs/apk/debug/app-debug.apk

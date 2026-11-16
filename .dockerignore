@@ -1,0 +1,11 @@
+.git
+.github
+node_modules
+android
+desktop
+docs/screenshots
+*.log
+.env
+.env.*
+!.env.example
+.vercel

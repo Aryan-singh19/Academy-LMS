@@ -323,6 +323,120 @@
         return bank;
     }
 
+    // ---------------------------------------------------------------- programme (branch + semester)
+    const PROGRAM_KEY = 'academy-program-v1';
+    const DEFAULT_PROGRAM = { branch: 'CSE', semester: 6 };
+
+    function getBranchPlan() {
+        return window.branchPlan || {};
+    }
+
+    function getBranches() {
+        return window.BRANCHES || {};
+    }
+
+    function hasStoredProgram() {
+        try {
+            return Boolean(localStorage.getItem(PROGRAM_KEY));
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function getProgram() {
+        let stored = null;
+        try {
+            stored = JSON.parse(localStorage.getItem(PROGRAM_KEY) || 'null');
+        } catch (error) {
+            stored = null;
+        }
+        const plan = getBranchPlan();
+        if (stored && plan[stored.branch] && plan[stored.branch][stored.semester]) {
+            return { branch: stored.branch, semester: Number(stored.semester) };
+        }
+        return { ...DEFAULT_PROGRAM };
+    }
+
+    function setProgram(branch, semester) {
+        const plan = getBranchPlan();
+        if (!plan[branch] || !plan[branch][semester]) return getProgram();
+        const program = { branch, semester: Number(semester) };
+        try {
+            localStorage.setItem(PROGRAM_KEY, JSON.stringify(program));
+        } catch (error) {
+            // storage unavailable: keep in-memory default
+        }
+        window.dispatchEvent(new CustomEvent('academy:program-changed', { detail: program }));
+        return program;
+    }
+
+    function getSemestersFor(branch) {
+        return Object.keys(getBranchPlan()[branch] || {}).map(Number).sort((a, b) => a - b);
+    }
+
+    function getPlanEntries(branch, semester) {
+        const entries = ((getBranchPlan()[branch] || {})[semester]) || [];
+        return entries.map((entry) => ({
+            ...entry,
+            course: (window.coursesData || []).find((course) => course.id === entry.id)
+        })).filter((entry) => entry.course);
+    }
+
+    function getPlacements(courseId) {
+        const out = [];
+        Object.entries(getBranchPlan()).forEach(([branch, sems]) => {
+            Object.entries(sems).forEach(([semester, entries]) => {
+                entries.forEach((entry) => {
+                    if (entry.id === courseId) out.push({ branch, semester: Number(semester), code: entry.code });
+                });
+            });
+        });
+        return out;
+    }
+
+    function findPlacement(courseId, preferBranch, preferSemester) {
+        const all = getPlacements(courseId);
+        return all.find((p) => p.branch === preferBranch && p.semester === Number(preferSemester))
+            || all.find((p) => p.branch === preferBranch)
+            || all[0]
+            || null;
+    }
+
+    function getDisplayCode(courseId, branch, semester) {
+        const placement = findPlacement(courseId, branch || getProgram().branch, semester || getProgram().semester);
+        if (placement) return placement.code;
+        const course = (window.coursesData || []).find((item) => item.id === courseId);
+        return course ? course.code : String(courseId || '').toUpperCase();
+    }
+
+    function getProgramLabel(program) {
+        const p = program || getProgram();
+        const branch = getBranches()[p.branch];
+        return `${branch ? branch.short : p.branch} · Semester ${p.semester}`;
+    }
+
+    const loadedScripts = {};
+    function loadCourseScripts(courseIds, basePath = 'js/') {
+        return Promise.all(courseIds.map((id) => {
+            if (loadedScripts[id] || document.querySelector(`script[data-course-script="${id}"]`)
+                || document.querySelector(`script[src$="data_${id}.js"]`)) {
+                loadedScripts[id] = true;
+                return Promise.resolve();
+            }
+            return new Promise((resolve) => {
+                const script = document.createElement('script');
+                script.src = `${basePath}data_${id}.js`;
+                script.dataset.courseScript = id;
+                script.onload = () => {
+                    loadedScripts[id] = true;
+                    resolve();
+                };
+                script.onerror = () => resolve();
+                document.body.appendChild(script);
+            });
+        }));
+    }
+
     function calculateStats() {
         const topics = getAllTopics();
         const completedTopics = topics.filter((topic) => state.completedTopics[topic.topicId]).length;
@@ -344,6 +458,11 @@
             };
         });
 
+        const program = getProgram();
+        const programIds = new Set(getPlanEntries(program.branch, program.semester).map((entry) => entry.id));
+        const scopedTopics = programIds.size ? topics.filter((topic) => programIds.has(topic.courseId)) : topics;
+        const scopedCompleted = scopedTopics.filter((topic) => state.completedTopics[topic.topicId]).length;
+
         let lastVisitedLabel = '';
         if (state.lastVisited) {
             const meta = getTopicMeta(state.lastVisited.topicId);
@@ -351,9 +470,12 @@
         }
 
         return {
-            totalTopics: topics.length,
-            completedTopics,
-            completionRate: topics.length ? Math.round((completedTopics / topics.length) * 100) : 0,
+            totalTopics: scopedTopics.length,
+            completedTopics: scopedCompleted,
+            completionRate: scopedTopics.length ? Math.round((scopedCompleted / scopedTopics.length) * 100) : 0,
+            allTopics: topics.length,
+            allCompletedTopics: completedTopics,
+            programLabel: getProgramLabel(program),
             totalAttempts: attempts.length,
             correctAnswers,
             quizAccuracy: attempts.length ? Math.round((correctAnswers / attempts.length) * 100) : 0,
@@ -386,7 +508,18 @@
 
     function exportStudentSnapshot() {
         const topicDirectory = {};
-        getAllTopics().forEach((topic) => {
+        const touchedIds = new Set([
+            ...Object.keys(state.completedTopics || {}),
+            ...Object.keys(state.bookmarks || {}),
+            ...Object.keys(state.notes || {}).map((key) => key.split(':').pop()),
+            ...Object.keys(state.highlights || {}).map((key) => key.split(':').pop()),
+            ...Object.keys(state.examDrafts || {}).map((key) => key.split(':').pop()),
+            ...(state.recentTopics || []),
+            ...Object.keys(state.quizAttempts || {}).flatMap((key) => key.split(':'))
+        ]);
+        if (state.lastVisited) touchedIds.add(state.lastVisited.topicId);
+        const touched = (topicId) => touchedIds.has(topicId);
+        getAllTopics().filter((topic) => touched(topic.topicId)).forEach((topic) => {
             topicDirectory[topic.topicId] = {
                 courseId: topic.courseId,
                 courseCode: topic.courseCode,
@@ -754,6 +887,17 @@
         getUnitMeta,
         getLoadedQuestionBank,
         calculateStats,
+        getProgram,
+        setProgram,
+        hasStoredProgram,
+        getBranches,
+        getSemestersFor,
+        getPlanEntries,
+        getPlacements,
+        findPlacement,
+        getDisplayCode,
+        getProgramLabel,
+        loadCourseScripts,
         getStorageSummary,
         exportStudentSnapshot,
         getRemoteSyncStamp,

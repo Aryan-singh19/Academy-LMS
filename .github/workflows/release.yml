@@ -1,0 +1,112 @@
+name: Release (APK + EXE)
+
+# Push a tag like v2.0.0 (or run manually with a tag name) to build the Android APK
+# and the Windows installer + portable EXE, then attach all of them to a GitHub Release.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to create or update (e.g. v2.0.0)'
+        required: true
+        default: 'v2.0.0'
+
+permissions:
+  contents: write
+
+env:
+  RELEASE_TAG: ${{ github.event.inputs.tag || github.ref_name }}
+
+jobs:
+  android:
+    name: Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.5'
+
+      - name: Build APK
+        working-directory: android
+        run: gradle assembleDebug --stacktrace
+
+      - name: Rename APK
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk "Academy-LMS-${RELEASE_TAG}.apk"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android
+          path: Academy-LMS-*.apk
+
+  windows:
+    name: Windows EXE
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Set desktop version from tag
+        shell: bash
+        working-directory: desktop
+        run: |
+          VERSION="${RELEASE_TAG#v}"
+          npm pkg set version="$VERSION"
+
+      - name: Install desktop dependencies
+        working-directory: desktop
+        run: npm install --no-audit --no-fund
+
+      - name: Build installer + portable EXE
+        working-directory: desktop
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+        run: npm run dist:win
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: |
+            desktop/dist/*.exe
+
+  publish:
+    name: Publish GitHub Release
+    needs: [android, windows]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: release-files
+          merge-multiple: true
+
+      - name: List files
+        run: ls -la release-files
+
+      - name: Create / update release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.RELEASE_TAG }}
+          name: Academy LMS ${{ env.RELEASE_TAG }}
+          generate_release_notes: true
+          body: |
+            ### Downloads
+            - **Android:** `Academy-LMS-${{ env.RELEASE_TAG }}.apk` (enable "Install unknown apps" for your browser/file manager)
+            - **Windows installer:** `Academy-LMS-Setup-*.exe`
+            - **Windows portable (no install):** `Academy-LMS-Portable-*.exe`
+
+            The apps open the live study desk (sign-in, cloud sync, chat). The Windows app falls back to a bundled offline copy when there is no internet.
+            Windows SmartScreen may warn because the EXE is not code-signed yet: choose **More info → Run anyway**.
+          files: release-files/*
+          fail_on_unmatched_files: true

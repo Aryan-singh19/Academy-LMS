@@ -1246,3 +1246,125 @@ a {
     user-select: none;
 }
 
+
+/* Programme switcher (branch + semester) */
+.program-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    max-width: 100%;
+    padding: 0.45rem 0.75rem;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(59, 130, 246, 0.35);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.25), rgba(15, 23, 42, 0.85));
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.program-chip:hover {
+    border-color: rgba(96, 165, 250, 0.7);
+}
+.program-chip:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+.program-chip {
+    background: linear-gradient(135deg, #ffffff, #eef4ff);
+    border-color: rgba(37, 99, 235, 0.28);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
+}
+.pick-muted { color: #5f7491; }
+.pick-text { color: #21406c; }
+.pick-code { color: #2563eb; font-weight: 700; }
+.program-picker-backdrop {
+    background: rgba(15, 35, 62, 0.45);
+    backdrop-filter: blur(6px);
+}
+.pick-option {
+    border-radius: 0.85rem;
+    border: 1px solid rgba(37, 99, 235, 0.14);
+    background: #f8fbff;
+    color: #10233e;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.pick-option:hover {
+    border-color: rgba(37, 99, 235, 0.45);
+    transform: translateY(-1px);
+}
+.pick-option-active {
+    border-color: #2563eb;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(96, 165, 250, 0.18));
+    box-shadow: 0 0 0 1px #2563eb inset;
+}
+.pick-preview {
+    border-radius: 0.85rem;
+    border: 1px dashed rgba(37, 99, 235, 0.25);
+    background: #f8fbff;
+}
+.browse-banner {
+    border-radius: 0.75rem;
+    border: 1px solid rgba(217, 119, 6, 0.3);
+    background: #fffbeb;
+    color: #92400e;
+}
+.browse-banner strong { color: #78350f; }
+.browse-note { color: #b45309; }
+.browse-back {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(217, 119, 6, 0.4);
+    background: #fffbeb;
+    color: #92400e;
+}
+.browse-back:hover { background: #fef3c7; }
+
+/* Topic content: map dark-theme utility classes in note HTML onto the light study-desk palette */
+#topicContentArea .bg-gray-800\/90,
+#topicContentArea .bg-gray-900,
+#topicContentArea .bg-gray-950,
+#topicContentArea .bg-slate-900,
+#topicContentArea .bg-slate-900\/70,
+#topicContentArea .bg-slate-950 {
+    background: #f8fbff !important;
+}
+#topicContentArea .border-gray-700,
+#topicContentArea .border-slate-700,
+#topicContentArea .border-slate-800 {
+    border-color: rgba(37, 99, 235, 0.16) !important;
+}
+#topicContentArea .shadow-lg,
+#topicContentArea .shadow-inner {
+    box-shadow: 0 6px 18px rgba(16, 35, 62, 0.06) !important;
+}
+#topicContentArea .text-slate-300,
+#topicContentArea .text-gray-300,
+#topicContentArea .text-slate-200 {
+    color: #2c4566 !important;
+}
+#topicContentArea .text-slate-400,
+#topicContentArea .text-gray-400,
+#topicContentArea .text-slate-500 {
+    color: #5f7491 !important;
+}
+#topicContentArea .text-emerald-300,
+#topicContentArea .text-emerald-400 { color: #047857 !important; }
+#topicContentArea .text-amber-300,
+#topicContentArea .text-amber-400 { color: #b45309 !important; }
+#topicContentArea .text-amber-200\/90 { color: #78350f !important; }
+#topicContentArea .border-amber-500\/30 { border-color: rgba(217, 119, 6, 0.35) !important; }
+#topicContentArea .text-cyan-300,
+#topicContentArea .text-cyan-400 { color: #0e7490 !important; }
+#topicContentArea .text-red-300,
+#topicContentArea .text-red-200 { color: #b91c1c !important; }
+#topicContentArea .text-pink-300,
+#topicContentArea .text-purple-300 { color: #7c3aed !important; }
+
+/* Subtle per-branch accent: same layout and components everywhere, only the accent hue shifts */
+html[data-branch] { --branch-accent: #2563eb; }
+html[data-branch="IT"] { --branch-accent: #0891b2; }
+html[data-branch="EC"] { --branch-accent: #7c3aed; }
+html[data-branch="ME"] { --branch-accent: #ea580c; }
+html[data-branch="AU"] { --branch-accent: #059669; }
+html[data-branch] .program-chip { border-color: color-mix(in srgb, var(--branch-accent) 45%, transparent); }
+html[data-branch] #coursesNav .course-pill-active { border-color: var(--branch-accent) !important; box-shadow: inset 0 0 0 1px var(--branch-accent); }
+html[data-branch] #topicContentArea h3.text-2xl { color: var(--branch-accent) !important; }

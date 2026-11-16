@@ -1,0 +1,26 @@
+name: Curriculum build check
+
+# Fails if js/data*.js or generated study resources are out of date with scripts/curriculum/*.
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'js/data*.js', 'js/resource-library.js']
+  pull_request:
+    paths: ['scripts/**', 'js/data*.js', 'js/resource-library.js']
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build:curriculum
+      - name: Verify generated files are committed
+        run: |
+          git diff --stat -- js scripts
+          git diff --quiet -- js || (echo "::error::Generated curriculum is stale. Run npm run build:curriculum and commit." && exit 1)
+      - name: Syntax check generated data
+        run: for f in js/data*.js js/resource-library.js; do node --check "$f"; done

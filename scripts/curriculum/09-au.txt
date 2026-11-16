@@ -1,0 +1,270 @@
+// Automobile Engineering specific subjects
+@ au501 | AU-501 | Automotive Engines | Engine construction, fuel systems, combustion, engine management, performance and testing of automotive engines.
+# Engine Construction
+- Engine Classification for Vehicles | Automotive engines are classified by layout and cycle. | Inline Engine = cylinders arranged in a single row | V-Engine = two cylinder banks forming a V | Boxer Engine = horizontally opposed cylinders
+- Cylinder Block & Head | Main structural parts house the combustion process. | Cylinder Block = casting containing cylinders and coolant passages | Cylinder Head = closes cylinders and holds valves | Cylinder Liner = replaceable wet or dry sleeve
+- Piston, Rings & Connecting Rod | Reciprocating parts transmit gas force. | Piston = transmits gas force to connecting rod | Compression Ring = seals combustion gases | Oil Control Ring = scrapes excess oil from cylinder wall
+- Crankshaft, Camshaft & Valve Train | Rotating parts convert and time motion. | Crankshaft = converts reciprocating motion into rotation | Overhead Camshaft = camshaft placed in the cylinder head | Hydraulic Lifter = self-adjusting tappet removing valve clearance
+# Fuel Systems
+- Petrol Fuel Supply | Fuel is stored, pumped and metered. | Fuel Pump = delivers fuel from tank to engine | Fuel Filter = removes contaminants | Fuel Pressure Regulator = keeps injector pressure constant
+- Electronic Fuel Injection | Sensors and ECU meter fuel precisely. | MAP Sensor = measures intake manifold pressure | Lambda Sensor = measures exhaust oxygen for closed-loop control | Throttle Body Injection = single injector above throttle
+- Diesel Fuel Systems | Diesel engines inject fuel at high pressure. | Inline Pump = separate plunger for each cylinder | Distributor Pump = single plunger distributing to cylinders | CRDI = common rail direct injection with electronic injectors
+- Alternative Fuel Systems | Gaseous fuels need special systems. | CNG Kit = cylinder, regulator and mixer or injectors | LPG System = liquefied petroleum gas vaporiser and mixer | Dual Fuel = diesel pilot ignites gaseous fuel
+# Combustion & Engine Management
+- SI Engine Combustion & Knock | Abnormal combustion limits compression ratio. | Detonation = autoignition of end gas | Pre-ignition = ignition before the spark by hot spots | Knock Sensor = detects knocking to retard timing
+- CI Engine Combustion | Diesel combustion has distinct phases. | Ignition Delay Period = time before combustion starts | Rapid Combustion = uncontrolled burning of accumulated fuel | Controlled Combustion = burning as fuel is injected
+- Engine Management Systems | ECUs control fuel, ignition and emissions. | Engine Management System = ECU controlling fuel, spark and idle | Closed-loop Control = feedback from oxygen sensor | OBD-II = on-board diagnostics standard for fault codes
+- Variable Valve Timing | Valve events adapt to speed and load. | VVT = variable valve timing changing cam phase | VTEC = Honda system switching cam profiles | Cylinder Deactivation = shutting cylinders at light load
+# Engine Performance
+- Performance Characteristics | Torque and power vary with speed. | Torque Curve = engine torque versus speed | Brake Power = BP = 2πNT/60000 kW | Specific Power = power per litre of displacement
+- Engine Testing Methods | Dynamometers measure engine output. | Engine Dynamometer = absorbs and measures engine power | Chassis Dynamometer = tests vehicle on rollers | Heat Balance = accounts for distribution of fuel energy
+- Supercharging & Turbocharging | Forced induction increases power density. | Turbo Lag = delay in boost response | Wastegate = limits turbocharger boost pressure | VGT = variable geometry turbocharger
+- Engine Downsizing | Smaller turbocharged engines save fuel. | Downsizing = smaller engines with turbocharging | Friction Reduction = lower friction coatings and oils | Start-Stop System = stops engine at idle
+# Cooling, Lubrication & Emissions
+- Cooling System Components | Coolant circulates through radiator. | Radiator = heat exchanger rejecting coolant heat | Water Pump = circulates coolant | Thermostat = opens at set temperature to allow flow
+- Lubrication System | Oil reduces friction and cools parts. | Wet Sump = oil stored in engine sump | Dry Sump = separate oil tank for racing engines | SAE Grade = viscosity rating such as 10W-40
+- Exhaust System | Exhaust carries gases out quietly. | Exhaust Manifold = collects gases from cylinders | Muffler = reduces exhaust noise | DPF = diesel particulate filter
+- Emission Aftertreatment | Catalysts clean exhaust. | Three-way Catalyst = oxidises CO and HC, reduces NOx | SCR = selective catalytic reduction using urea for NOx | Lean NOx Trap = stores NOx during lean operation
+
+@ au502 | AU-502 | Automotive Chassis System | Frames, front axle and steering, suspension, rear axle and final drive, wheels, tyres and brakes.
+# Frames & Body
+- Types of Frames | Frames carry loads and mount components. | Conventional Frame = separate ladder frame with body bolted on | Integral Frame = unitary body construction | Semi-integral Frame = partial integration of body and frame
+- Frame Materials & Loads | Frames resist bending and torsion. | Frame Loads = static weight, braking, cornering and torsion | Cross Member = connects side members and adds stiffness | Frame Material = pressed steel channel sections
+- Vehicle Dimensions | Dimensions affect stability and handling. | Wheelbase = distance between front and rear axles | Track Width = distance between left and right wheels | Ground Clearance = lowest point height from road
+- Weight Distribution | Load sharing affects handling. | Kerb Weight = vehicle weight with fluids but no load | GVW = gross vehicle weight including payload | Centre of Gravity = point where vehicle weight acts
+# Front Axle & Steering
+- Front Axle Types | Front axles carry steering wheels. | Dead Axle = does not transmit power | Live Front Axle = transmits power in 4WD | Stub Axle = short axle carrying wheel, pivoted on kingpin
+- Steering Geometry | Angles improve stability and tyre life. | Camber Angle = wheel tilt from vertical | Castor Angle = backward tilt of kingpin giving self-centring | Toe-out on Turns = inner wheel turns more in a corner
+- Steering Mechanisms | Mechanisms achieve correct steering. | Ackermann Mechanism = approximates true rolling in turns | Davis Mechanism = exact steering using sliding pairs | Turning Radius = radius of circle traced by outer wheel
+- Steering Gearboxes & Power Steering | Gearboxes multiply driver effort. | Worm and Sector = early steering gear type | Rack and Pinion = direct steering gear in cars | EPS = electric power steering with motor assistance
+# Suspension
+- Suspension Requirements | Suspension provides comfort and control. | Sprung Mass = mass supported by springs | Unsprung Mass = wheels, axles and brakes below springs | Ride Comfort = isolation from road irregularities
+- Springs | Springs absorb road shocks. | Leaf Spring = laminated steel spring | Coil Spring = helical spring in independent suspensions | Torsion Bar = twisting bar acting as a spring
+- Independent Suspension Types | Each wheel moves separately. | Double Wishbone = two control arms per wheel | MacPherson Strut = strut combining spring and damper | Multi-link Suspension = several links controlling wheel motion
+- Dampers & Stabilisers | Dampers and bars control motion. | Shock Absorber = converts oscillation energy to heat | Anti-roll Bar = reduces body roll in turns | Active Suspension = electronically adjusts damping or height
+# Rear Axle & Final Drive
+- Final Drive | Final drive reduces speed and turns power 90°. | Final Drive Ratio = crown wheel teeth / pinion teeth | Hypoid Gear = offset pinion allowing lower floor | Crown Wheel and Pinion = bevel gear pair in rear axle
+- Differential | Differential allows wheel speed difference. | Differential Gear = planetary bevel gears dividing torque | Limited Slip Differential = limits wheel spin on slippery roads | Differential Lock = locks both wheels together
+- Rear Axle Types | Axles support load and drive wheels. | Semi-floating Axle = axle shaft carries vehicle load and torque | Full-floating Axle = shaft carries only torque | Three-quarter Floating Axle = intermediate design
+- Rear Axle Drives | Torque reactions are handled by drives. | Hotchkiss Drive = leaf springs absorb torque reaction | Torque Tube Drive = enclosed propeller shaft takes torque | Axle Housing = encloses differential and shafts
+# Wheels, Tyres & Brakes
+- Wheels | Wheels support the tyre and vehicle. | Disc Wheel = pressed steel wheel | Alloy Wheel = light aluminium alloy wheel | Wire Wheel = spoked wheel
+- Tyres | Tyres provide traction and cushioning. | Cross-ply Tyre = plies at angles; stiff sidewall | Radial Ply Tyre = radial plies with belts | Tyre Wear Patterns = indicate alignment or inflation faults
+- Brake Systems | Brakes convert kinetic energy to heat. | Mechanical Brake = cable or rod operated | Hydraulic Brake = master and wheel cylinders | Air Brake = compressed air brakes in heavy vehicles
+- Brake Performance | Stopping distance depends on friction and speed. | Stopping Distance = v²/(2μg) ignoring reaction time | Weight Transfer = load shifts to front during braking | Brake Efficiency = braking force / vehicle weight
+
+@ au503-ats | AU-503(A) | Automotive Transmission System | Clutches, manual and automatic gearboxes, fluid drives, CVT, driveline and hybrid transmissions.
+# Clutches
+- Clutch Requirements | Clutch smoothly connects engine to gearbox. | Torque Capacity = clutch must transmit maximum engine torque | Clutch Free Play = pedal travel before disengagement | Heat Dissipation = clutch must shed friction heat
+- Clutch Types | Different clutches suit different vehicles. | Coil Spring Clutch = multiple coil springs press plate | Diaphragm Clutch = single diaphragm spring; compact | Multi-plate Wet Clutch = used in motorcycles
+- Clutch Torque Calculation | Torque depends on friction and pressure. | Clutch Torque = T = nμWR | Uniform Wear Mean Radius = (r1 + r2)/2 | Friction Lining = material on clutch plate faces
+- Clutch Operation & Faults | Actuation and common problems. | Hydraulic Clutch Actuation = master and slave cylinders | Clutch Slip = clutch fails to transmit full torque | Clutch Judder = vibration during engagement
+# Manual Gearbox
+- Need for Gearbox | Gearboxes match engine output to road load. | Gear Ratio = input speed / output speed | Overdrive = output faster than input | Tractive Effort Curve = varies with gear selected
+- Gearbox Types | Gear engagement methods evolved. | Sliding Mesh = gears slide into engagement | Constant Mesh = dog clutches engage gears | Synchromesh = cone clutches synchronise speeds
+- Gear Ratio Design | Ratios follow progression. | Geometric Progression = ratios in constant step | Top Gear Ratio = often 1:1 direct drive | Reverse Gear = idler gear reverses rotation
+- Gear Shift Mechanism | Linkages select gears. | Selector Fork = moves sleeve or gear | Interlock = prevents two gears engaging at once | Detent = holds gear in position
+# Fluid Drives & Automatic Transmission
+- Fluid Coupling | Fluid coupling transmits torque without wear. | Fluid Coupling = impeller and turbine in oil | Coupling Slip = turbine runs slower than impeller | Coupling Efficiency = turbine speed / impeller speed
+- Torque Converter | Torque converter multiplies torque. | Torque Converter = pump, turbine and stator | Stall Ratio = torque multiplication at turbine stall | Lock-up Clutch = mechanically locks converter at cruise
+- Epicyclic Gear Sets | Planetary sets give multiple ratios. | Planetary Gear Set = sun, planets, ring and carrier | Simpson Gear Set = two planetary sets sharing sun | Ravigneaux Gear Set = compound planetary set
+- Automatic Transmission Control | Hydraulics and electronics shift gears. | Valve Body = hydraulic control unit | TCU = transmission control unit | Shift Schedule = map of shift points by speed and throttle
+# CVT, DCT & AMT
+- Continuously Variable Transmission | CVT gives stepless ratios. | CVT = continuously variable ratio transmission | Variable Pulley = pulley sheaves change effective diameter | Push Belt = steel belt transmitting torque
+- Dual Clutch Transmission | DCT shifts quickly without power loss. | DCT = two clutches for odd and even gears | Pre-selection = next gear engaged in advance | Wet vs Dry DCT = oil-cooled or dry clutches
+- Automated Manual Transmission | AMT automates clutch and shift. | AMT = manual gearbox with electro-hydraulic actuators | Torque Interruption = brief power cut during shift | Cost Advantage = cheaper than full automatic
+- Electric & Hybrid Transmissions | Electrified drivetrains need new transmissions. | Single-speed Reduction = common in EVs | Power-split Device = planetary set in hybrids | e-CVT = electrically controlled CVT in hybrids
+# Driveline
+- Propeller Shaft | Shaft transmits torque to axle. | Propeller Shaft = tubular shaft with joints | Slip Joint = allows length change | Whirling = critical speed of long shafts
+- Universal & CV Joints | Joints allow angular movement. | Hooke's Joint = universal joint with speed fluctuation | Constant Velocity Joint = transmits uniform speed at angles | Rzeppa Joint = ball-type CV joint
+- Transfer Case & 4WD | 4WD distributes torque to both axles. | Transfer Case = splits power to front and rear | Part-time 4WD = driver selects 4WD | AWD = all-wheel drive with centre differential
+- Driveline Vibration & Losses | Driveline must be smooth and efficient. | Driveline Efficiency = power at wheels / engine power | Torsional Damper = reduces driveline vibration | Dual Mass Flywheel = isolates engine torsional vibration
+
+@ au503-aaf | AU-503(C) | Alternate Automotive Fuels & Emissions | Alternative fuels, their properties and engine adaptation, emission formation, measurement and control, norms.
+# Need for Alternative Fuels
+- Energy Crisis & Fuel Scenario | Oil dependence drives alternative fuels. | Fossil Fuel Depletion = finite crude oil reserves | Energy Security = reducing oil import dependence | Fuel Properties = calorific value, octane or cetane, density
+- Fuel Quality Parameters | Properties determine suitability. | Calorific Value = energy released per kg of fuel | Flash Point = lowest temperature where vapour ignites | Stoichiometric Ratio = chemically correct air-fuel ratio
+- Classification of Alternative Fuels | Fuels are liquid or gaseous. | Liquid Alternative Fuels = alcohols and biodiesel | Gaseous Fuels = CNG, LPG, hydrogen and biogas | Renewable Fuel = produced from biomass
+- Fuel Policy in India | Policies promote alternatives. | Ethanol Blending Programme = blending ethanol with petrol, e.g. E20 | National Biofuel Policy = promotes biofuels | CNG Programme = city gas distribution networks
+# Alcohols & Biodiesel
+- Alcohol Fuels | Ethanol and methanol suit SI engines. | Ethanol = alcohol fuel from sugarcane or grains | Methanol = alcohol from natural gas or coal | High Octane = alcohols resist knock
+- Alcohol in Engines | Engines need modification for alcohols. | Flex Fuel Vehicle = runs on variable ethanol blends | Cold Starting Problem = high latent heat of alcohols | Material Compatibility = alcohols corrode some metals and rubbers
+- Biodiesel | Vegetable oils converted for diesel engines. | Biodiesel = fatty acid methyl esters from oils | Transesterification = reaction of oil with alcohol and catalyst | B20 = 20% biodiesel blend with diesel
+- Vegetable Oils & Biodiesel Issues | Straight oils have problems. | High Viscosity = poor atomisation of raw vegetable oil | Cold Flow Properties = biodiesel gels in cold | Lower NOx Trade-off = biodiesel may raise NOx
+# Gaseous Fuels
+- CNG & LPG | Gaseous fuels are cleaner than liquids. | CNG = compressed natural gas, mainly methane, stored at about 200 bar | LPG = mixture of propane and butane stored as liquid | Bi-fuel Vehicle = runs on petrol or gas
+- Hydrogen as Fuel | Hydrogen burns without carbon. | Hydrogen = zero-carbon fuel with wide flammability | Hydrogen Storage = compressed, liquid or metal hydride | Backfire = flashback problem in hydrogen engines
+- Biogas & Producer Gas | Gases from biomass. | Biogas = methane and CO2 from digestion | Producer Gas = CO-rich gas from biomass gasification | Scrubbing = removes CO2 and H2S from biogas
+- Fuel Cells for Vehicles | Fuel cells convert hydrogen directly to electricity. | PEM Fuel Cell = proton exchange membrane cell for vehicles | FCEV = fuel cell electric vehicle | Fuel Cell Efficiency = higher than IC engines
+# Emission Formation
+- Pollutants from SI Engines | SI engines emit CO, HC and NOx. | CO Formation = incomplete combustion in rich mixtures | HC Formation = unburned fuel from crevices and wall quenching | NOx Formation = high-temperature reaction of N2 and O2
+- Pollutants from CI Engines | Diesel emits soot and NOx. | Particulate Matter = carbon soot with adsorbed hydrocarbons | Smoke = visible particulates | NOx-PM Trade-off = reducing one tends to increase the other
+- Evaporative & Crankcase Emissions | Non-exhaust emissions exist. | Evaporative Emissions = fuel vapour from tank | Blow-by Gases = gases leaking past rings into crankcase | PCV Valve = positive crankcase ventilation
+- Effects of Pollutants | Pollutants harm health and environment. | CO Toxicity = binds with haemoglobin | Photochemical Smog = from NOx and HC in sunlight | Greenhouse Gas = CO2 contributes to warming
+# Emission Control & Norms
+- Engine Modifications | Design changes reduce emissions. | Lean Burn = excess air lowers CO and HC | EGR = recirculated exhaust lowers combustion temperature | Injection Timing Retard = reduces NOx in diesel engines
+- Aftertreatment Devices | Exhaust treatment removes pollutants. | Catalytic Converter = platinum, palladium and rhodium catalysts | DOC = diesel oxidation catalyst | SCR with AdBlue = urea solution reduces NOx
+- Emission Measurement | Instruments measure exhaust pollutants. | NDIR Analyser = measures CO and CO2 | FID = flame ionisation detector for hydrocarbons | Chemiluminescence Analyser = measures NOx
+- Emission Norms | Standards limit vehicle emissions. | Bharat Stage Norms = Indian emission standards | BS-VI = equivalent to Euro VI, effective 2020 | Driving Cycle = standard test cycle, e.g. MIDC
+
+@ au601 | AU-601 | Automotive Electrical & Electronics | Batteries, charging, starting, ignition, lighting, sensors, actuators, ECUs and in-vehicle networks.
+# Batteries & Charging
+- Lead-acid Battery | The starting battery supplies electrical energy. | Lead-acid Battery = PbO2 positive, Pb negative plates in sulphuric acid | Specific Gravity Test = measures state of charge | Ampere-hour Capacity = current × hours a battery can supply
+- Maintenance-free & Advanced Batteries | Newer batteries reduce maintenance. | MF Battery = sealed battery with calcium alloy grids | AGM Battery = absorbed glass mat for start-stop vehicles | Lithium-ion Battery = high energy density battery for EVs
+- Alternator & Charging System | Alternators recharge the battery. | Alternator = AC generator with rectifier | Rectifier Bridge = diodes converting AC to DC | Voltage Regulator = keeps output near 14 V
+- Charging System Faults | Faults cause flat batteries. | Undercharging = battery not fully recharged | Overcharging = excessive voltage damages battery | Charging Warning Lamp = indicates charging failure
+# Starting & Ignition Systems
+- Starting System | Starter motor cranks the engine. | Starter Motor = DC series motor with high starting torque | Bendix Drive = inertia drive engaging pinion | Pre-engaged Starter = solenoid engages pinion before rotation
+- Conventional Ignition | Coil ignition produces high voltage. | Ignition Coil = transformer stepping up to kilovolts | Contact Breaker = switches primary current | Condenser = reduces arcing at contact points
+- Electronic & Distributorless Ignition | Electronics improve spark timing. | Transistorised Ignition = transistor switches coil current | DIS = distributorless ignition with coil packs | Coil-on-plug = separate coil on each spark plug
+- Spark Plugs | Spark plugs ignite the mixture. | Spark Plug Gap = electrode gap setting | Heat Range = ability to dissipate heat | Plug Fouling = deposits preventing sparking
+# Lighting & Accessories
+- Lighting System | Lights ensure visibility and signalling. | Headlamp = high and low beam lighting | LED Headlamp = efficient long-life lighting | Adaptive Headlamp = beam turns with steering
+- Signalling & Instrumentation | Indicators and gauges inform driver. | Flasher Unit = makes turn indicators blink | Instrument Cluster = speedometer, tachometer and warning lamps | Fuel Gauge = indicates fuel level using sender unit
+- Wiring & Protection | Wiring harness distributes power safely. | Wiring Harness = bundle of vehicle wires | Fuse = protects circuit by melting at overload | Relay = small current switches large current
+- Comfort Accessories | Electrical accessories improve convenience. | Power Window = motor-driven window regulator | Central Locking = locks all doors together | Wiper Motor = drives windscreen wipers
+# Sensors & Actuators
+- Engine Sensors | Sensors feed the ECU. | Crankshaft Position Sensor = gives engine speed and position | Coolant Temperature Sensor = thermistor measuring coolant | Throttle Position Sensor = potentiometer on throttle
+- Exhaust & Air Sensors | Sensors measure air and exhaust conditions. | Oxygen Sensor = measures oxygen in exhaust | MAF Sensor = measures mass of intake air | Knock Sensor = piezoelectric sensor detecting knock
+- Chassis Sensors | Sensors support safety systems. | Wheel Speed Sensor = used by ABS | Yaw Rate Sensor = used by stability control | Steering Angle Sensor = measures steering input
+- Actuators | Actuators carry out ECU commands. | Fuel Injector = solenoid valve spraying fuel | Idle Air Control Valve = controls idle speed | Electronic Throttle = motor-driven throttle body
+# Vehicle Electronics & Networks
+- Electronic Control Unit | ECUs process sensor data. | ECU = microcontroller-based controller | Look-up Table = maps stored in ECU | Limp Home Mode = reduced function on sensor failure
+- In-vehicle Networks | ECUs communicate over buses. | CAN Bus = robust serial bus for vehicle ECUs | LIN Bus = low-cost bus for simple devices | FlexRay = high-speed deterministic bus
+- Safety Electronics | Electronics enhance safety. | ABS = prevents wheel lock-up | ESC = electronic stability control | Airbag Control Unit = deploys airbags on crash
+- Diagnostics & ADAS | Diagnostics and driver assistance. | OBD Scanner = reads diagnostic trouble codes | ADAS = advanced driver assistance systems | Adaptive Cruise Control = maintains distance using radar
+
+@ au603 | AU-603 | Vehicle Dynamics | Tyre mechanics, longitudinal, lateral and vertical dynamics, handling, ride and stability.
+# Tyre Mechanics
+- Tyre Forces | Tyres generate all road forces. | Rolling Resistance Coefficient = rolling resistance / normal load | Slip Ratio = (wheel speed − vehicle speed) / vehicle speed | Contact Patch = tyre area touching the road
+- Cornering Force & Slip Angle | Lateral force comes from slip angle. | Slip Angle = angle between wheel heading and travel direction | Cornering Stiffness = lateral force per degree of slip angle | Self-aligning Torque = moment returning wheel to straight
+- Tyre Models | Models predict tyre behaviour. | Magic Formula = Pacejka empirical tyre model | Friction Circle = combined longitudinal and lateral limit | Camber Thrust = lateral force from camber
+- Tyre Characteristics | Construction affects behaviour. | Radial Tyre Behaviour = lower rolling resistance | Inflation Pressure Effect = changes stiffness and contact patch | Aquaplaning = tyre rides on water film
+# Longitudinal Dynamics
+- Tractive Performance | Acceleration depends on tractive force. | Tractive Force = engine torque × gear ratio × efficiency / wheel radius | Traction Limit = μ × normal load on driven wheels | Power-limited Acceleration = governed by engine power
+- Braking Dynamics | Braking involves load transfer. | Load Transfer in Braking = W·h·a/(g·L) | Brake Force Distribution = ideal front-rear proportion | Wheel Lock = loss of steering when front wheels lock
+- Aerodynamic Resistance | Drag dominates at high speed. | Drag Coefficient = Cd, dimensionless drag measure | Frontal Area = projected front area | Downforce = negative lift increasing grip
+- Fuel Economy & Performance | Resistances determine efficiency. | Road Load = sum of rolling, aero and grade resistance | Acceleration Time = 0-100 km/h time | Top Speed = when tractive force equals resistance
+# Lateral Dynamics & Handling
+- Steady-state Cornering | Vehicles corner with lateral acceleration. | Lateral Acceleration = V²/R | Ackermann Angle = L/R steering angle at low speed | Bicycle Model = two-wheel model for lateral dynamics
+- Understeer & Oversteer | Handling balance depends on tyres and weight. | Understeer = vehicle turns less than steering demands | Oversteer = vehicle turns more than demanded | Understeer Gradient = K, positive for understeer
+- Critical & Characteristic Speed | Speeds define stability limits. | Critical Speed = oversteer vehicle becomes unstable | Characteristic Speed = understeer vehicle needs double Ackermann steer | Neutral Steer = K = 0
+- Rollover & Load Transfer | Lateral load transfer can cause rollover. | Lateral Load Transfer = W·h·ay/(g·t) | Static Stability Factor = t/(2h) | Roll Centre = point about which body rolls
+# Vertical Dynamics & Ride
+- Ride Comfort | Ride depends on suspension and road. | Ride Frequency = body natural frequency, about 1-1.5 Hz | Road Roughness = random road profile input | Human Sensitivity = 4-8 Hz vertical vibration most uncomfortable
+- Quarter Car Model | Simplified model of one corner. | Quarter Car Model = sprung and unsprung masses with spring and tyre | Wheel Hop = unsprung mass resonance around 10 Hz | Transmissibility = body motion / road input
+- Pitch & Bounce | Body motions couple. | Bounce = vertical body motion | Pitch = rotation about lateral axis | Olley's Criteria = front ride frequency lower than rear
+- Suspension Tuning | Damping trades comfort and control. | Damping Ratio for Ride = about 0.2-0.4 | Suspension Travel = available wheel movement | Road Holding = tyre-road contact force variation
+# Stability & Control Systems
+- Directional Stability | Vehicles must remain controllable. | Yaw Rate = rotation about vertical axis | Yaw Gain = yaw rate per steer angle | Sideslip Angle = vehicle body slip angle
+- Electronic Stability Control | ESC corrects skids by braking. | ESC = brakes individual wheels to correct yaw | Traction Control = limits wheel spin | Rollover Mitigation = reduces risk of rollover
+- Active Chassis Systems | Active systems improve dynamics. | Active Steering = varies steering ratio | Torque Vectoring = distributes torque between wheels | Active Anti-roll = actuators reduce roll
+- Vehicle Testing | Tests evaluate dynamics. | Steady-state Circular Test = measures understeer gradient | Lane Change Test = ISO double lane change | Skid Pad = circular track for lateral grip
+
+@ au702 | AU-703 | Vehicle Body Engineering & Aerodynamics | Car body design, materials, safety, aerodynamics, bus and commercial vehicle bodies.
+# Car Body Design
+- Body Types | Car bodies vary by purpose. | Sedan = three-box body with separate boot | Hatchback = rear door including window | SUV = sport utility vehicle with high ground clearance
+- Body Construction | Bodies are built from pressed panels. | Body-in-White = welded body shell before painting | Monocoque Construction = body carries all loads | Crumple Zone = designed to absorb crash energy
+- Visibility & Ergonomics | Design ensures driver comfort and vision. | H-point = hip point of seated occupant | Driver Visibility = field of view and blind spots | Ergonomic Layout = placement of controls for reach
+- Body Materials | Materials balance weight and cost. | High Strength Steel = reduces weight while keeping strength | Aluminium Body = lighter but costlier | Composite Panels = plastics and fibre composites
+# Vehicle Aerodynamics
+- Aerodynamic Forces | Air exerts drag, lift and side forces. | Drag Force = ½ρV²ACd | Lift Force = vertical aerodynamic force | Side Force = crosswind force
+- Drag Reduction | Shape optimisation reduces drag. | Pressure Drag = due to flow separation | Boat Tailing = tapering rear to reduce wake | Underbody Panel = smooths underbody flow
+- Aerodynamic Devices | Devices modify flow. | Spoiler = disrupts airflow to reduce lift | Rear Wing = generates downforce | Air Dam = reduces underbody airflow
+- Wind Tunnel Testing | Testing validates design. | Wind Tunnel = facility for aerodynamic tests | Scale Model Testing = reduced-scale models | CFD = computational fluid dynamics simulation
+# Body Safety
+- Passive Safety | Structures protect occupants in crashes. | Passive Safety = protection during a crash | Side Impact Beam = door beam reducing intrusion | Safety Cage = rigid passenger compartment
+- Crash Testing | Crash tests rate safety. | Frontal Offset Test = crash with partial overlap | NCAP = new car assessment programme | Bharat NCAP = Indian crash rating programme
+- Restraint Systems | Restraints hold occupants. | Seat Belt Pretensioner = tightens belt in crash | Airbag = inflatable cushion | ISOFIX = child seat anchor system
+- Pedestrian Safety | Design reduces pedestrian injuries. | Soft Bumper = reduces leg injury | Pop-up Bonnet = raises bonnet for head protection | Bonnet Clearance = space above engine
+# Bus & Commercial Vehicle Bodies
+- Bus Body Types | Buses vary by application. | City Bus = low floor for easy boarding | Coach = long-distance comfort bus | Mini Bus = small capacity bus
+- Bus Body Construction | Buses use frames and panels. | Bus Chassis = ladder frame with body built on it | Integral Bus = self-supporting body structure | Bus Body Code = AIS-052 standard in India
+- Commercial Vehicle Bodies | Trucks have specialised bodies. | Tipper Body = tilting body for unloading | Container Body = enclosed cargo box | Tanker Body = carries liquids
+- Driver Cabin Design | Cabins ensure comfort and safety. | Cab-over Design = cabin above engine | Conventional Cab = engine ahead of cabin | Sleeper Cab = cabin with sleeping berth
+# Body Manufacturing & Finishing
+- Panel Manufacturing | Panels are pressed and joined. | Press Forming = stamping body panels | Spot Welding = primary joining method | Laser Welding = precise high-speed joining
+- Painting Process | Paint protects and decorates. | Pretreatment = cleaning and phosphating | E-coat = electrophoretic primer coating | Clear Coat = top protective layer
+- Corrosion Protection | Bodies must resist rust. | Galvanising = zinc coating on steel | Underbody Coating = protects from stones and moisture | Cavity Wax = protects hollow sections
+- Interior Trim & NVH | Interior design addresses noise. | NVH = noise, vibration and harshness | Sound Deadening = materials reducing noise | Interior Trim = dashboard, seats and panels
+
+@ au703 | AU-704 | Electric & Hybrid Vehicles | EV architecture, motors, batteries, power electronics, charging and hybrid configurations.
+# Introduction to Electric Vehicles
+- History & Need for EVs | EVs reduce emissions and oil dependence. | Electric Vehicle = vehicle propelled by electric motor from battery | Zero Tailpipe Emission = EVs emit no exhaust | Well-to-wheel Efficiency = efficiency from energy source to wheels
+- EV Architecture | EV main components. | Battery Pack = energy storage | Traction Motor = drives wheels | Power Electronics Controller = controls motor power
+- EV Types | Electrified vehicles vary. | BEV = battery electric vehicle | PHEV = plug-in hybrid electric vehicle | FCEV = fuel cell electric vehicle
+- Vehicle Performance | EV dynamics follow road load. | Regenerative Braking = motor recovers energy during braking | Range = distance per full charge | Energy Consumption = Wh per km
+# Electric Motors for EVs
+- DC Motors | DC motors were used in early EVs. | DC Series Motor = high starting torque | Brushed DC Motor = commutator and brushes | Speed Control = varying armature voltage
+- Induction Motors | Induction motors are rugged. | Induction Motor = rotor current induced by stator field | Slip = (Ns − N)/Ns | Field-oriented Control = vector control of induction motors
+- Permanent Magnet Motors | PM motors are efficient and compact. | PMSM = permanent magnet synchronous motor | BLDC Motor = brushless DC motor with electronic commutation | Rare Earth Magnets = neodymium magnets used in PM motors
+- Switched Reluctance Motors | SRM avoids magnets. | SRM = switched reluctance motor | Torque Ripple = drawback of SRM | Rugged Rotor = no windings or magnets on rotor
+# Batteries & Energy Storage
+- Battery Types | Battery chemistry decides performance. | Li-ion Battery = high energy density; common in EVs | LFP = lithium iron phosphate; safe and long life | NMC = nickel manganese cobalt with high energy density
+- Battery Parameters | Parameters describe batteries. | State of Charge = remaining capacity as percentage | Depth of Discharge = fraction of capacity used | C-rate = charge or discharge current relative to capacity
+- Battery Management System | BMS protects and balances cells. | BMS = monitors voltage, current and temperature | Cell Balancing = equalises cell charge | Thermal Runaway = uncontrolled heating leading to fire
+- Other Storage Devices | Supplementary storage. | Supercapacitor = high power density storage | Flywheel Storage = kinetic energy storage | Hybrid Energy Storage = battery with supercapacitor
+# Power Electronics & Charging
+- Power Converters | Converters manage power flow. | DC-DC Converter = changes DC voltage levels | Inverter = converts DC to AC for motor | Bidirectional Converter = allows regenerative flow
+- Motor Drives | Drives control motor torque and speed. | PWM Inverter = controls AC output by pulse width | IGBT = power switch used in inverters | SiC MOSFET = wide-bandgap switch with lower losses
+- EV Charging | Charging levels differ in power. | AC Charging = on-board charger converts AC to DC | DC Fast Charging = off-board charger supplies DC directly | Charging Connector = e.g. CCS2 and Type 2
+- Charging Infrastructure | Infrastructure supports EV adoption. | Charging Station = public EV charging point | Battery Swapping = replacing depleted battery quickly | Vehicle-to-Grid = EV feeds power back to grid
+# Hybrid Vehicles
+- Hybrid Concepts | Hybrids combine engine and motor. | HEV = hybrid electric vehicle | Degree of Hybridisation = motor power / total power | Mild Hybrid = small motor assisting engine
+- Series Hybrid | Engine drives generator only. | Series Hybrid = engine charges battery; motor drives wheels | Range Extender = small engine generating electricity | Advantage = engine runs at optimal point
+- Parallel Hybrid | Engine and motor both drive wheels. | Parallel Hybrid = mechanical coupling of engine and motor | Torque Coupling = combining torque from both sources | Advantage = fewer energy conversions
+- Series-Parallel Hybrid & Control | Power-split systems combine both. | Power-split Hybrid = planetary gear splits engine power | Energy Management Strategy = decides power split | Toyota Hybrid System = well-known power-split design
+
+@ au801 | AU-801 | Vehicle Maintenance & Fault Diagnosis | Maintenance types, workshop practice, engine and chassis diagnosis, electrical troubleshooting and diagnostic tools.
+# Maintenance Fundamentals
+- Types of Maintenance | Maintenance keeps vehicles reliable. | Preventive Maintenance = scheduled servicing to avoid failures | Breakdown Maintenance = repair after failure | Predictive Maintenance = based on condition monitoring
+- Service Schedules | Manufacturers specify service intervals. | Periodic Service = service at fixed km or time | Oil Change Interval = recommended engine oil replacement | Service Record = history of maintenance
+- Workshop Layout & Tools | Workshops are organised for efficiency. | Workshop Layout = arrangement of bays and equipment | Vehicle Hoist = lifts vehicle for underbody work | Torque Wrench = tightens bolts to specified torque
+- Workshop Safety | Safety prevents accidents. | PPE = personal protective equipment | Fire Extinguisher = for fuel and electrical fires | Jack Stand = supports raised vehicle safely
+# Engine Diagnosis & Overhaul
+- Engine Fault Diagnosis | Symptoms indicate engine faults. | Compression Test = checks cylinder sealing | Leak-down Test = locates compression leaks | Vacuum Gauge Test = indicates engine condition
+- Engine Overhaul | Overhaul restores worn engines. | Reboring = machining worn cylinders oversize | Crankshaft Grinding = regrinding journals | Valve Lapping = seating valves with abrasive
+- Fuel System Diagnosis | Fuel faults affect performance. | Injector Cleaning = removes deposits | Fuel Pressure Test = checks pump and regulator | Smoke Colour Diagnosis = black rich, blue oil, white coolant
+- Cooling & Lubrication Faults | Overheating and oil problems are common. | Overheating = due to low coolant, thermostat or pump failure | Radiator Pressure Test = finds leaks | Low Oil Pressure = due to worn bearings or pump
+# Chassis Maintenance
+- Clutch & Transmission Faults | Driveline faults affect driving. | Clutch Slipping = worn lining or weak springs | Hard Gear Shifting = clutch drag or worn synchronisers | Transmission Noise = worn bearings or gears
+- Brake Maintenance | Brakes need regular inspection. | Brake Bleeding = removing air from hydraulic lines | Pad Replacement = when lining wears to limit | Brake Pull = uneven braking to one side
+- Suspension & Steering Faults | Faults affect handling and comfort. | Wheel Alignment = adjusts camber, caster and toe | Steering Play = excessive free movement | Shock Absorber Test = bounce test for damping
+- Tyre Maintenance | Tyres need proper care. | Tyre Rotation = swapping positions for even wear | Inflation Check = correct pressure for wear and economy | Tread Depth = minimum legal depth 1.6 mm
+# Electrical Diagnosis
+- Battery & Charging Tests | Electrical tests find power faults. | Load Test = checks battery under load | Hydrometer = measures electrolyte specific gravity | Alternator Output Test = checks charging voltage
+- Starting System Diagnosis | Starting faults stop the vehicle. | Voltage Drop Test = finds high resistance connections | Starter Draw Test = current drawn by starter | Solenoid Click = indicates low battery or solenoid fault
+- Wiring Faults | Circuits are traced with meters. | Open Circuit = break in the wire | Short Circuit = unintended path to ground | Multimeter = measures voltage, current and resistance
+- Lighting & Accessory Faults | Common electrical complaints. | Blown Fuse = indicates overload or short | Relay Testing = checks coil and contacts | Earth Fault = poor ground connection
+# Diagnostic Tools & Inspection
+- On-board Diagnostics | OBD reads fault codes. | OBD-II = standard diagnostic interface | DTC = diagnostic trouble code, e.g. P0300 misfire | Freeze Frame Data = conditions when fault occurred
+- Scan Tools & Oscilloscopes | Tools analyse live data. | Scan Tool = reads codes and live sensor data | Automotive Oscilloscope = views sensor and ignition waveforms | Exhaust Gas Analyser = measures emissions
+- Vehicle Inspection & Certification | Vehicles are inspected for roadworthiness. | PUC Certificate = pollution under control certificate in India | Fitness Certificate = roadworthiness certificate for commercial vehicles | Pre-delivery Inspection = check before customer delivery
+- Fleet Maintenance Management | Fleets track maintenance systematically. | Fleet Management = maintenance planning for many vehicles | MTBF = mean time between failures | Maintenance Cost Analysis = tracking cost per km
+
+@ au802 | AU-802 | Automotive Safety & Legislation | Active and passive safety, crash dynamics, occupant protection, motor vehicle law, homologation and type approval.
+# Introduction to Vehicle Safety
+- Road Safety Scenario | Road accidents are a major public health issue. | Road Accident Statistics = India records over 1.5 lakh road deaths a year | Haddon Matrix = pre-crash, crash and post-crash factors | Safe System Approach = designing roads and vehicles to forgive mistakes
+- Active vs Passive Safety | Safety systems prevent or mitigate crashes. | Active Safety = systems preventing accidents, e.g. ABS | Passive Safety = systems reducing injury, e.g. airbags | Tertiary Safety = post-crash measures such as eCall
+- Human Factors | Driver behaviour causes most crashes. | Reaction Time = time to respond to hazard | Driver Fatigue = reduced alertness | Distracted Driving = attention diverted from road
+- Vehicle Conspicuity | Vehicles must be visible. | Daytime Running Lights = improve visibility | Retro-reflective Tape = for commercial vehicles | Conspicuity = ease of being seen
+# Active Safety Systems
+- Braking Safety Systems | Advanced brakes improve control. | ABS = maintains steering control in braking | EBD = balances brake force | Brake Assist = increases braking in emergencies
+- Stability & Traction | Systems keep vehicle stable. | ESC = prevents skidding | TCS = traction control system | Hill Hold Assist = prevents rollback
+- ADAS | Driver assistance prevents collisions. | AEB = autonomous emergency braking | Lane Departure Warning = alerts lane drift | Blind Spot Detection = warns of vehicles in blind spots
+- Tyre & Visibility Safety | Tyres and lights matter. | TPMS = tyre pressure monitoring system | Adaptive Lighting = headlamps follow curves | Rain Sensing Wipers = automatic wiping
+# Passive Safety & Crashworthiness
+- Crash Dynamics | Crashes involve rapid deceleration. | Crash Pulse = deceleration versus time | Energy Absorption = structure absorbs kinetic energy | Occupant Ride-down = slowing occupant with vehicle
+- Crashworthy Structure | Structures protect occupants. | Crumple Zone = deforms to absorb energy | Safety Cell = rigid occupant compartment | Load Path = route of crash forces through structure
+- Occupant Protection | Restraints reduce injury. | Seat Belt = primary restraint | Load Limiter = limits belt force on chest | Side Curtain Airbag = protects head in side impact
+- Injury Criteria | Injury risk is quantified. | HIC = head injury criterion | Crash Test Dummy = anthropomorphic test device | Chest Deflection = measure of thoracic injury
+# Motor Vehicle Legislation
+- Motor Vehicles Act | Law governs vehicles and drivers in India. | Motor Vehicles Act 1988 = main road transport law in India | MV Amendment Act 2019 = increased penalties and safety rules | Driving Licence = authorisation to drive specific vehicle classes
+- Central Motor Vehicle Rules | Rules set technical requirements. | CMVR = central motor vehicle rules | Registration = mandatory vehicle registration | Fitness Requirement = periodic fitness for transport vehicles
+- Emission & Safety Regulations | Regulations mandate standards. | AIS Standards = automotive industry standards | Mandatory Airbags = driver and passenger airbags required | Speed Limiting Device = mandatory in certain commercial vehicles
+- Insurance & Liability | Insurance protects road users. | Third-party Insurance = mandatory insurance covering others | Comprehensive Insurance = covers own vehicle too | Motor Accident Claims Tribunal = adjudicates compensation
+# Homologation & Testing
+- Homologation | Vehicles must be certified before sale. | Homologation = certification that vehicle meets regulations | Type Approval = approval of a vehicle model | COP = conformity of production checks
+- Testing Agencies | Agencies certify vehicles in India. | ARAI = Automotive Research Association of India | ICAT = International Centre for Automotive Technology | NATRAX = high-speed test track in Indore
+- International Standards | Global standards harmonise rules. | UNECE Regulations = international vehicle regulations | FMVSS = US federal motor vehicle safety standards | Euro NCAP = European safety rating
+- Recall & Product Liability | Defects must be fixed. | Vehicle Recall = manufacturer fixes safety defect | Product Liability = manufacturer responsibility for defects | Voluntary Recall Code = industry recall policy

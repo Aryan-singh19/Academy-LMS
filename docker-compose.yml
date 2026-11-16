@@ -1,0 +1,16 @@
+# docker compose up --build   ->  http://localhost:3000
+# Without DATABASE_URL the API uses an in-memory mock store (fine for local study / demos).
+# For real accounts and sync, put DATABASE_URL (Neon), GOOGLE_CLIENT_ID and ADMIN_SECRET in .env.
+services:
+  academy-lms:
+    build: .
+    image: academy-lms:latest
+    container_name: academy-lms
+    ports:
+      - "${PORT:-3000}:3000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

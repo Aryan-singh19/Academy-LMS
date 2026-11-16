@@ -1,5 +1,18 @@
 let activeResourceType = 'all';
 let resourceSearchQuery = '';
+let resourceScope = 'mine';
+
+function resourceInMyProgram(item) {
+    const program = window.ACADEMY.getProgram();
+    const placements = window.ACADEMY.getPlacements(item.subject);
+    if (!placements.length) return item.subject === 'general';
+    return placements.some((p) => p.branch === program.branch && p.semester === program.semester);
+}
+
+function setResourceScope(scope) {
+    resourceScope = scope;
+    renderResourcePage();
+}
 
 function getTypes() {
     return [
@@ -25,6 +38,9 @@ function getFilteredResources() {
     const query = resourceSearchQuery.trim().toLowerCase();
 
     return valid.filter((item) => {
+        if (resourceScope === 'mine' && !query && !resourceInMyProgram(item)) {
+            return false;
+        }
         // Type filter check
         if (activeResourceType !== 'all' && item.type !== activeResourceType) {
             return false;
@@ -51,7 +67,7 @@ function promptGuestResource(title) {
     if (window.ACADEMY && typeof window.ACADEMY.showSignInPrompt === 'function') {
         window.ACADEMY.showSignInPrompt({
             title: 'Sign In to Access All Resources',
-            reason: `"${title}" is part of the full curriculum. Sign in with Google to download and preview all 28+ semester revision handbooks, question papers, and solved notes.`
+            reason: `"${title}" is part of the full curriculum. Sign in with Google to download and preview all semester revision handbooks, model question papers, and solved notes.`
         });
     }
 }
@@ -77,10 +93,10 @@ function renderGuestNotice() {
                     <p class="text-xs sm:text-sm font-bold text-white">Guest Demo Access Active</p>
                     <span class="text-[9px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-mono font-bold border border-emerald-500/30">SAMPLE PREVIEW</span>
                 </div>
-                <p class="text-[11px] text-slate-300 mt-0.5">Sample study materials are open for download. Sign in with Google to unlock all 28+ semester revision handbooks, question banks, and notes.</p>
+                <p class="text-[11px] text-slate-300 mt-0.5">Sample study materials are open for download. Sign in with Google to unlock every semester's revision handbooks, model papers, and question banks.</p>
             </div>
         </div>
-        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Unlock All 28+ Study Resources', reason: 'Sign in with Google to download and preview all semester question banks, formula sheets, and solved handbooks.' })" class="primary-cta text-xs !py-1.5 !px-3.5 whitespace-nowrap shrink-0 shadow-md shadow-blue-500/20">
+        <button type="button" onclick="window.ACADEMY.showSignInPrompt({ title: 'Unlock All Study Resources', reason: 'Sign in with Google to download and preview all semester question banks, formula sheets, and solved handbooks.' })" class="primary-cta text-xs !py-1.5 !px-3.5 whitespace-nowrap shrink-0 shadow-md shadow-blue-500/20">
             Sign In to Unlock All
         </button>
     `;
@@ -100,8 +116,14 @@ function renderResourceTypeTabs() {
     if (!container) return;
 
     const allResources = getValidResources();
+    const program = window.ACADEMY.getProgram();
+    const scopeTabs = `
+        <span class="inline-flex items-center gap-1.5 mr-3 pr-3 border-r border-blue-500/15">
+            <button type="button" onclick="setResourceScope('mine')" class="course-pill !text-xs !py-1 !px-2.5 whitespace-nowrap ${resourceScope === 'mine' ? 'course-pill-active font-semibold' : ''}">&#127891; My semester &middot; ${window.ACADEMY.getProgramLabel(program)}</button>
+            <button type="button" onclick="setResourceScope('all')" class="course-pill !text-xs !py-1 !px-2.5 whitespace-nowrap ${resourceScope === 'all' ? 'course-pill-active font-semibold' : ''}">All branches</button>
+        </span>`;
 
-    container.innerHTML = getTypes().map((type) => {
+    container.innerHTML = scopeTabs + getTypes().map((type) => {
         const count = type.id === 'all'
             ? allResources.length
             : allResources.filter((item) => item.type === type.id).length;

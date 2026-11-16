@@ -1,0 +1,243 @@
+// Electronics & Communication semesters 6-8
+@ ec601 | EC-601 | Digital Signal Processing | Discrete-time systems, Z-transform, DFT/FFT, FIR and IIR filter design, multirate DSP and DSP processors.
+# Discrete-time Signals & Systems
+- Discrete-time Signals | DSP works on sequences of samples. | Unit Sample Sequence = δ[n] = 1 at n = 0, else 0 | Periodic Sequence = x[n + N] = x[n] for integer N | Energy of Sequence = Σ x[n]² over all n
+- LTI Systems & Convolution | LTI systems are fully described by impulse response. | Linear Convolution = y[n] = Σ x[k] h[n − k] | Causal System = h[n] = 0 for n < 0 | Stable System = Σ of absolute h[n] is finite
+- Difference Equations | Recursive equations describe digital filters. | Recursive System = output depends on past outputs | Non-recursive System = output depends only on inputs (FIR) | Zero-state Response = response with zero initial conditions
+- Correlation of Sequences | Correlation finds similarity and delay. | Cross-correlation = r_xy[l] = Σ x[n] y[n − l] | Autocorrelation = correlation of a sequence with itself | Application = radar echo delay estimation
+# Z-Transform & Frequency Analysis
+- Z-Transform & ROC | Z-transform analyses discrete systems. | Z-Transform = X(z) = Σ x[n] z^(−n) | ROC = values of z for which the series converges | Unit Circle = z = e^(jω); Z-transform on it gives DTFT
+- System Function & Pole-Zero Analysis | H(z) reveals stability and frequency response. | System Function = H(z) = Y(z)/X(z) | Causal Stable System = all poles inside the unit circle | Minimum Phase System = all zeros inside the unit circle
+- Frequency Response | Frequency response is H evaluated on the unit circle. | Magnitude Response = magnitude of H(e^jω) | Phase Response = angle of H(e^jω) | Linear Phase = constant group delay, no phase distortion
+- Inverse Z-Transform | Time sequences are recovered from X(z). | Partial Fractions = expand into first-order terms | Long Division = gives samples as power series | One-sided Z-transform = handles initial conditions in difference equations
+# DFT & FFT
+- Discrete Fourier Transform | DFT samples the DTFT at N points. | DFT = X[k] = Σ x[n] e^(−j2πkn/N) | Twiddle Factor = W_N = e^(−j2π/N) | Frequency Resolution = fs/N
+- DFT Properties | Properties simplify computation. | Circular Shift = shift in time multiplies DFT by a phase factor | Circular Convolution = product of DFTs | Zero Padding = appending zeros to interpolate the spectrum
+- FFT Algorithms | FFT reduces DFT complexity. | Radix-2 DIT FFT = splits even and odd time samples | Butterfly = basic two-point FFT computation | FFT Complexity = (N/2) log2 N complex multiplications
+- Linear Filtering via DFT | Long signals are filtered in blocks. | Overlap-Add Method = adds overlapping output blocks | Overlap-Save Method = discards aliased output samples | Linear via Circular = zero-pad to length L + M − 1
+# Digital Filter Design
+- FIR Filter Design by Windowing | FIR filters truncate an ideal impulse response. | Window Method = multiply ideal h[n] by a window | Hamming Window = reduces side lobes compared to rectangular | Linear Phase FIR = symmetric impulse response
+- Frequency Sampling Design | FIR filters designed from frequency samples. | Frequency Sampling = specifies H at equally spaced frequencies | Transition Samples = intermediate values reduce ripple | Optimal Equiripple = Parks-McClellan minimax design
+- IIR Filters from Analog Prototypes | IIR filters map analog designs to digital. | Butterworth Filter = maximally flat passband | Chebyshev Filter = equiripple passband, sharper roll-off | Elliptic Filter = ripple in both bands, sharpest transition
+- Bilinear & Impulse Invariant Transformation | Mappings convert s-plane to z-plane. | Bilinear Transformation = s = (2/T)(z − 1)/(z + 1) | Frequency Warping = non-linear frequency mapping in bilinear transform; prewarp | Impulse Invariance = samples analog impulse response; suffers aliasing
+# Filter Structures, Multirate & DSP Processors
+- Filter Realisation Structures | Same filter can be built in several structures. | Direct Form I = separate delays for input and output | Direct Form II = canonic form with minimum delays | Cascade Form = second-order sections in series
+- Finite Word-length Effects | Quantisation affects digital filters. | Coefficient Quantisation = changes pole-zero positions | Limit Cycles = sustained oscillations from rounding | Overflow = result exceeds register range
+- Multirate Signal Processing | Sampling rates are changed by decimation and interpolation. | Decimation = filtering then downsampling by M | Interpolation = upsampling by L then filtering | Polyphase Filter = efficient structure for multirate filtering
+- DSP Processors | Special processors execute DSP efficiently. | MAC Unit = multiply-accumulate in one cycle | Harvard Architecture = separate program and data memories | Circular Buffer = efficient delay-line addressing
+
+@ ec602 | EC-602 | Antennas & Wave Propagation | Antenna parameters, radiation from dipoles, arrays, practical antennas, measurements and propagation modes.
+# Antenna Fundamentals
+- Radiation Mechanism | Accelerating charges radiate electromagnetic energy. | Antenna = transducer between guided and free-space waves | Near Field = reactive region close to the antenna | Far Field = region beyond 2D²/λ where pattern is stable
+- Radiation Pattern & Beamwidth | Patterns show how power is distributed in space. | Radiation Pattern = plot of radiated power versus direction | HPBW = half-power beamwidth between −3 dB points | Side Lobe = minor lobe outside the main beam
+- Directivity, Gain & Efficiency | Parameters quantify antenna performance. | Directivity = maximum radiation intensity over average | Gain = directivity × radiation efficiency | Effective Aperture = Ae = Gλ²/(4π)
+- Radiation Resistance & Polarisation | Antennas present resistance and polarisation. | Radiation Resistance = resistance accounting for radiated power | Input Impedance = impedance seen at antenna terminals | Polarisation = orientation of radiated E-field
+# Wire Antennas
+- Hertzian Dipole | Infinitesimal dipole is the basic radiator. | Hertzian Dipole = short current element much smaller than λ | Radiation Resistance of Short Dipole = 80π²(dl/λ)² | Doughnut Pattern = sin θ field pattern
+- Half-wave Dipole | Most common resonant antenna. | Half-wave Dipole = length λ/2, radiation resistance about 73 Ω | Directivity of Dipole = 1.64 (2.15 dBi) | Folded Dipole = input resistance about 292 Ω
+- Monopole & Loop Antennas | Ground planes and loops give other options. | Quarter-wave Monopole = λ/4 over ground, about 36.5 Ω | Image Theory = ground plane creates image doubling the antenna | Small Loop = magnetic-dipole-like radiator used in receivers
+- Travelling Wave Antennas | Non-resonant antennas give broadband operation. | Rhombic Antenna = terminated travelling-wave antenna for HF | Beverage Antenna = long wire for low-frequency reception | Helical Antenna = circularly polarised in axial mode
+# Antenna Arrays
+- Array Fundamentals | Arrays combine elements for higher directivity. | Array Factor = pattern of isotropic elements in the array | Pattern Multiplication = total pattern = element pattern × array factor | Uniform Linear Array = equal amplitude and spacing elements
+- Broadside & End-fire Arrays | Phasing steers the main beam. | Broadside Array = maximum perpendicular to array axis; zero phase difference | End-fire Array = maximum along the array axis | Hansen-Woodyard Condition = increased directivity for end-fire
+- Binomial & Phased Arrays | Amplitude and phase control shape the beam. | Binomial Array = amplitudes follow binomial coefficients; no side lobes | Phased Array = electronically steers beam by phase shifters | Grating Lobe = unwanted lobe when spacing exceeds λ
+- Yagi-Uda Antenna | Parasitic arrays give directional gain. | Yagi-Uda = driven dipole with reflector and directors | Reflector = slightly longer parasitic element behind | Director = shorter elements in front increasing gain
+# Microwave & Special Antennas
+- Horn Antennas | Flared waveguides radiate efficiently. | Horn Antenna = flared waveguide for microwave radiation | Pyramidal Horn = flared in both planes | Optimum Horn = flare chosen for maximum gain with acceptable phase error
+- Parabolic Reflectors | Reflectors produce narrow high-gain beams. | Parabolic Reflector = focuses waves from feed into a plane wave | Focal Point = feed location | Cassegrain Feed = sub-reflector folds the optics
+- Microstrip Patch Antennas | Planar antennas suit modern devices. | Microstrip Patch = metal patch on dielectric over ground | Fringing Fields = cause radiation from patch edges | Bandwidth Limitation = patches are narrowband
+- Antenna Measurements | Patterns and gain are measured in ranges. | Anechoic Chamber = room lined with absorber for measurement | Gain Comparison Method = compare with a standard gain antenna | Far-field Range = test distance at least 2D²/λ
+# Wave Propagation
+- Ground Wave Propagation | Low-frequency waves follow the Earth's surface. | Ground Wave = surface wave guided along Earth, used below 2 MHz | Surface Wave Attenuation = increases with frequency | Vertical Polarisation = preferred for ground waves
+- Sky Wave Propagation | HF waves reflect from the ionosphere. | Ionosphere = ionised layers D, E, F1, F2 | Critical Frequency = highest frequency reflected at vertical incidence | MUF = maximum usable frequency = fc / cos θ
+- Space Wave Propagation | VHF and above travel by line of sight. | Line-of-sight Range = d ≈ 4.12(√h1 + √h2) km with heights in metres | Radio Horizon = 4/3 Earth radius model for refraction | Duct Propagation = trapping in atmospheric layers
+- Skip Distance & Fading | Sky waves create zones and fluctuations. | Skip Distance = minimum distance where sky wave returns | Virtual Height = apparent reflection height | Fading = signal strength variation due to multipath and ionosphere
+
+@ ec603-sat | EC-603(C) | Satellite Communication | Orbital mechanics, satellite subsystems, link budget, multiple access, earth stations and satellite services.
+# Orbital Mechanics
+- Kepler's Laws | Satellite motion obeys Kepler's laws. | Kepler's First Law = orbit is an ellipse with Earth at one focus | Kepler's Third Law = T² proportional to a³ | Orbital Period = T = 2π√(a³/μ)
+- Types of Orbits | Orbits suit different missions. | GEO = geostationary orbit at about 35,786 km | LEO = low Earth orbit, 500-2000 km | MEO = medium Earth orbit used by GPS
+- Orbital Elements & Perturbations | Parameters fix an orbit; forces disturb it. | Apogee = farthest point from Earth | Perigee = closest point to Earth | Orbital Perturbation = drift due to Earth oblateness, Sun and Moon
+- Look Angles & Launch | Ground antennas point using azimuth and elevation. | Azimuth = horizontal pointing angle | Elevation Angle = angle above the horizon | Launch Vehicle = rocket placing satellite into orbit, e.g. PSLV, GSLV
+# Satellite Subsystems
+- Space Segment Overview | Satellites have bus and payload. | Payload = transponders and antennas performing the mission | Bus = power, attitude, thermal and propulsion subsystems | Spacecraft Lifetime = limited by station-keeping fuel
+- Attitude & Orbit Control | Satellites must point accurately and hold position. | AOCS = attitude and orbit control system | Spin Stabilisation = spinning body gives gyroscopic stability | Three-axis Stabilisation = momentum wheels hold orientation
+- Power & Thermal Subsystems | Energy and temperature are managed carefully. | Solar Panels = primary power source | Batteries = power during eclipse | Thermal Control = keeps components within temperature limits
+- Transponders & TTC | Transponders relay signals; TTC monitors the satellite. | Transponder = receive, frequency-translate, amplify and retransmit | TWTA = travelling wave tube amplifier for high power | TTC = telemetry, tracking and command subsystem
+# Link Design
+- Frequency Bands | Satellite services use designated bands. | C-band = 6 GHz uplink, 4 GHz downlink | Ku-band = 14 GHz uplink, 12 GHz downlink | Ka-band = 30/20 GHz with high capacity but rain fade
+- Link Budget | Link budget accounts for all gains and losses. | EIRP = Pt + Gt in dBW | Free Space Loss = 20 log(4πd/λ) dB | Carrier-to-Noise Ratio = C/N = EIRP + Gr − losses − N
+- G/T & System Noise | Receive performance uses G/T. | G/T = figure of merit of receiving station | System Noise Temperature = antenna plus receiver noise temperature | Uplink vs Downlink = overall C/N combines both links
+- Atmospheric Effects | Propagation impairs higher bands. | Rain Attenuation = signal loss from rain, severe above 10 GHz | Faraday Rotation = rotation of polarisation in ionosphere | Scintillation = rapid fluctuation due to atmospheric turbulence
+# Multiple Access
+- FDMA in Satellites | Carriers share transponder by frequency. | FDMA = each earth station gets a frequency slot | Intermodulation = products generated in non-linear amplifiers | Back-off = reducing drive to keep amplifier linear
+- TDMA in Satellites | Stations share by time bursts. | TDMA = stations transmit in assigned time slots | Reference Burst = timing reference for the frame | Preamble = synchronisation bits at start of each burst
+- CDMA & DAMA | Codes or demand assignment improve efficiency. | CDMA = stations separated by spreading codes | DAMA = demand assigned multiple access | SPADE = early DAMA system for voice channels
+- VSAT Networks | Small terminals connect to a hub. | VSAT = very small aperture terminal | Star Topology = all VSATs communicate via a hub | Mesh Topology = VSATs communicate directly
+# Earth Stations & Applications
+- Earth Station Design | Earth stations transmit and receive. | Earth Station = ground terminal with antenna and RF equipment | LNA = low-noise amplifier at the receiver front end | Tracking = keeping the antenna pointed at the satellite
+- Satellite Broadcasting | Satellites deliver TV and radio. | DTH = direct-to-home television | DVB-S2 = digital video broadcasting standard for satellite | Footprint = coverage area on Earth
+- Navigation Satellites | Constellations provide positioning. | GPS = US global positioning system | NavIC = Indian regional navigation satellite system | Trilateration = position from distances to several satellites
+- Remote Sensing & Mobile Satellite Services | Satellites observe Earth and serve mobile users. | Remote Sensing = imaging Earth for resources and weather | INSAT = Indian national satellite system | LEO Constellation = many LEO satellites for global internet, e.g. Starlink
+
+@ ec604-mes | EC-604(A) | Microcontroller & Embedded Systems | 8051 and ARM architecture, programming, interfacing, embedded design and RTOS.
+# 8051 Architecture
+- 8051 Features | The 8051 is the classic 8-bit microcontroller. | 8051 = 8-bit MCU with 4 KB ROM, 128 B RAM, 4 ports, 2 timers | Harvard Architecture = separate program and data memory | Microcontroller = CPU, memory and peripherals on one chip
+- Memory Organisation | 8051 memory is split into banks and areas. | Register Banks = four banks of R0-R7 | Bit-addressable RAM = 16 bytes at 20H-2FH | SFR = special function registers in 80H-FFH
+- Ports & Pin Functions | I/O ports also have alternate functions. | Port 0 = needs external pull-ups; multiplexed address/data | Port 3 = alternate functions such as RxD, TxD, INT0 | PSEN = program store enable for external ROM
+- Oscillator & Reset | Timing and reset circuits start the MCU. | Machine Cycle = 12 oscillator periods in classic 8051 | Reset = sets PC to 0000H | Crystal Frequency = commonly 11.0592 MHz for standard baud rates
+# 8051 Programming
+- Addressing Modes | 8051 supports several addressing modes. | Immediate Addressing = MOV A, #25H | Indirect Addressing = MOV A, @R0 | Indexed Addressing = MOVC A, @A+DPTR for look-up tables
+- Instruction Set | Instructions move, compute and branch. | DJNZ = decrement and jump if not zero | SETB and CLR = set and clear bits | ACALL and LCALL = absolute and long subroutine calls
+- Embedded C for 8051 | High-level programming speeds development. | sbit = declares a single bit variable in Keil C | Data Types = unsigned char for 8-bit values | Delay Loop = software loop generating time delay
+- Assembler & Toolchain | Tools build and debug firmware. | Assembler = converts assembly into machine code | Cross Compiler = compiles on a PC for the target MCU | Simulator = runs code without hardware, e.g. Keil
+# Timers, Serial & Interrupts
+- Timers & Counters | Timers count clock pulses or external events. | TMOD = register selecting timer modes | Mode 1 = 16-bit timer | Mode 2 = 8-bit auto-reload, used for baud rate
+- Serial Communication | 8051 has a built-in UART. | SCON = serial control register | SBUF = serial buffer register | Baud Rate Calculation = timer 1 reload value sets the baud rate
+- Interrupts | Interrupts handle events promptly. | IE Register = enables individual interrupts | IP Register = sets interrupt priority | Interrupt Vector = fixed address of each ISR
+- Interfacing Peripherals | MCUs connect to displays, keypads and motors. | LCD Interfacing = data and command modes through RS, RW, EN | Keypad Scanning = rows driven, columns read | DC Motor Control = PWM speed control through a driver
+# ARM & Advanced Microcontrollers
+- ARM Architecture | ARM is a 32-bit RISC family. | ARM = 32-bit RISC architecture with load-store design | Thumb Instruction Set = 16-bit compressed instructions | Cortex-M = ARM profile for microcontrollers
+- ARM Registers & Modes | Banked registers support modes. | R13 = stack pointer | R14 = link register holding return address | CPSR = current program status register
+- Cortex-M Features | Cortex-M adds features for embedded use. | NVIC = nested vectored interrupt controller | SysTick = system tick timer for RTOS | Low-power Modes = sleep modes to save energy
+- Popular Development Platforms | Boards accelerate prototyping. | STM32 = Cortex-M microcontroller family | Arduino = easy AVR-based prototyping platform | ESP32 = Wi-Fi and Bluetooth MCU for IoT
+# Embedded System Design & RTOS
+- Embedded System Characteristics | Embedded systems are dedicated, constrained and reliable. | Embedded System = computer designed for a specific function within a device | Real-time Constraint = deadline for producing correct output | Hard Real-time = missing a deadline is a system failure
+- Embedded Design Process | Design moves from requirements to deployment. | Hardware-Software Co-design = concurrent design of hardware and software | Watchdog Timer = resets system if software hangs | Firmware = software stored in non-volatile memory
+- RTOS Concepts | RTOS schedules tasks to meet deadlines. | RTOS = operating system guaranteeing timing behaviour | Task = independent thread of execution | Preemptive Scheduling = higher-priority task interrupts lower one
+- Inter-task Communication | Tasks share data safely. | Semaphore = synchronises tasks and protects resources | Message Queue = passes data between tasks | Priority Inversion = low-priority task blocks high-priority one; fixed by priority inheritance
+
+@ ec701 | EC-701 | VLSI Design | MOS physics, CMOS logic, fabrication, layout, combinational and sequential design, memories and design flow.
+# MOS Transistor Theory
+- MOSFET Structure & Operation | MOSFET is the building block of VLSI. | NMOS = n-channel MOSFET conducting with positive gate voltage | Threshold Voltage = gate voltage needed to invert the channel | Inversion Layer = channel formed under the gate
+- I-V Characteristics | Drain current depends on region of operation. | Linear Region = ID ∝ (VGS − VT)VDS for small VDS | Saturation Region = ID = (k/2)(VGS − VT)² | Body Effect = threshold rises with source-to-body voltage
+- Second-order Effects | Small devices deviate from ideal models. | Channel Length Modulation = ID increases with VDS in saturation | Velocity Saturation = carrier speed limit at high fields | Subthreshold Conduction = leakage current below VT
+- Scaling | Shrinking devices improves density and speed. | Constant Field Scaling = dimensions and voltages scaled by 1/S | Moore's Law = transistor count doubles about every two years | Short Channel Effects = threshold roll-off in small devices
+# CMOS Logic & Fabrication
+- CMOS Inverter | The CMOS inverter is the fundamental gate. | CMOS Inverter = PMOS pull-up and NMOS pull-down | Voltage Transfer Characteristic = output versus input voltage curve | Noise Margin = NMH = VOH − VIH, NML = VIL − VOL
+- Static CMOS Gates | Complementary networks implement logic. | Pull-down Network = NMOS series/parallel network | Pull-up Network = dual PMOS network | NAND vs NOR = NAND preferred as PMOS are in parallel
+- Fabrication Process | ICs are made by layered photolithographic steps. | Photolithography = transfers patterns using light and photoresist | n-well Process = PMOS built in n-well on p-substrate | Ion Implantation = doping by accelerated ions
+- Layout & Design Rules | Layout follows rules for manufacturability. | Lambda Rules = scalable design rules in units of λ | Stick Diagram = symbolic layout showing layers | Latch-up = parasitic thyristor causing short circuit
+# Circuit Characterisation
+- Delay Estimation | Gate delay depends on resistance and capacitance. | Propagation Delay = average of rise and fall delays | Elmore Delay = RC delay model for networks | Logical Effort = method for sizing gates for minimum delay
+- Power Dissipation | Power has dynamic and static components. | Dynamic Power = P = α C V² f | Static Power = leakage power when idle | Short-circuit Power = current while both networks conduct
+- Interconnect | Wires add delay and noise. | Wire Resistance = R = ρL/(W·t) | Crosstalk = coupling between neighbouring wires | Repeater Insertion = buffers break long wires
+- Low-power Design | Techniques reduce energy. | Clock Gating = disables clock to idle blocks | Power Gating = shuts off supply to unused blocks | Voltage Scaling = lowering VDD reduces power quadratically
+# Combinational & Sequential Design
+- Pass Transistor & Transmission Gate Logic | Alternatives to static CMOS. | Pass Transistor = MOSFET passing a signal | Transmission Gate = parallel NMOS and PMOS passing full swing | Threshold Drop = NMOS passes weak 1
+- Dynamic Logic | Precharge-evaluate logic is fast. | Dynamic Logic = precharge then evaluate phases | Domino Logic = dynamic gate followed by static inverter | Charge Sharing = charge redistribution corrupting dynamic node
+- Latches & Flip-flops | Sequential elements store data. | Static Latch = cross-coupled inverters with clocked access | Master-slave Flip-flop = two latches on opposite clock phases | Metastability = unstable state when timing is violated
+- Datapath Elements | Datapaths implement arithmetic. | Ripple Carry Adder = simple but slow | Carry Select Adder = precomputes sums for both carries | Array Multiplier = regular array of AND gates and adders
+# Memories & Design Methodology
+- Semiconductor Memories | Memory arrays dominate chip area. | 6T SRAM Cell = two cross-coupled inverters with two access transistors | 1T1C DRAM Cell = transistor and capacitor storing charge | Sense Amplifier = detects small bit-line differences
+- Programmable Logic | FPGAs implement custom logic post-fabrication. | FPGA = configurable logic blocks and routing | LUT = look-up table implementing any function of k inputs | CPLD = complex PLD with macrocells
+- ASIC Design Flow | Designs move from RTL to silicon. | RTL Design = register-transfer level description in HDL | Logic Synthesis = RTL to gate netlist | Place and Route = physical placement and wiring
+- Testing & Design for Testability | Chips must be testable after fabrication. | Stuck-at Fault = node stuck at 0 or 1 | Scan Chain = flip-flops linked to shift test data | BIST = built-in self-test
+
+@ ec702-mw | EC-702(A) | Microwave Engineering | Waveguides, microwave components, S-parameters, microwave tubes, solid-state devices and measurements.
+# Waveguides
+- Rectangular Waveguides | Waveguides carry microwaves with low loss. | TE Mode = transverse electric, no E field along propagation | Dominant Mode = TE10 in rectangular waveguide | Cut-off Wavelength = λc = 2a for TE10
+- Waveguide Parameters | Propagation depends on frequency above cut-off. | Guide Wavelength = λg = λ0 / √(1 − (λ0/λc)²) | Phase Velocity = greater than c in a waveguide | Group Velocity = less than c; vp·vg = c²
+- Circular Waveguides & Cavities | Other guides and resonators. | Circular Waveguide Dominant Mode = TE11 | Cavity Resonator = closed waveguide section resonating at specific frequencies | Q of Cavity = very high, used in filters and oscillators
+- Planar Transmission Lines | Printed lines suit integrated circuits. | Microstrip = strip conductor over ground plane on dielectric | Stripline = conductor between two ground planes | Effective Permittivity = accounts for fields in air and dielectric
+# Microwave Components & S-parameters
+- Scattering Parameters | S-parameters describe microwave networks. | S-parameter = ratio of reflected or transmitted wave to incident wave | S11 = input reflection coefficient | Lossless Network = S matrix is unitary
+- Tee Junctions | Tees split or combine power. | E-plane Tee = series tee; outputs out of phase | H-plane Tee = shunt tee; outputs in phase | Magic Tee = hybrid with isolated E and H arms
+- Directional Couplers | Couplers sample power in one direction. | Coupling Factor = C = 10 log(P1/P3) | Directivity = 10 log(P3/P4) | Isolation = coupling plus directivity
+- Ferrite Devices | Ferrites provide non-reciprocal behaviour. | Isolator = passes power one way, absorbs reverse | Circulator = routes power port 1 to 2, 2 to 3, 3 to 1 | Faraday Rotation = rotation of polarisation in magnetised ferrite
+# Microwave Tubes
+- Limitations of Conventional Tubes | Ordinary tubes fail at microwave frequencies. | Transit Time Effect = electron transit comparable to RF period | Lead Inductance = limits high-frequency operation | Interelectrode Capacitance = shunts signal at high frequency
+- Klystrons | Velocity modulation and bunching amplify microwaves. | Two-cavity Klystron = amplifier using buncher and catcher cavities | Reflex Klystron = single-cavity oscillator with repeller | Velocity Modulation = varying electron speed to form bunches
+- Magnetron | Crossed-field tube for high-power oscillation. | Cavity Magnetron = crossed E and B fields generate microwaves | π-mode = adjacent cavities 180° out of phase | Application = radar and microwave ovens
+- Travelling Wave Tube | TWT gives broadband amplification. | TWT = electron beam interacts with slowed wave on a helix | Slow-wave Structure = helix reduces wave velocity to match beam | Broadband Gain = TWT amplifies over an octave
+# Solid-state Microwave Devices
+- Microwave Transistors | Special transistors work at GHz. | GaAs MESFET = metal-semiconductor FET for microwave amplifiers | HEMT = high electron mobility transistor with low noise | HBT = heterojunction bipolar transistor
+- Transferred Electron Devices | Gunn effect gives negative resistance. | Gunn Diode = uses transferred electron effect in GaAs | Negative Differential Resistance = current falls as voltage rises | Gunn Oscillator = microwave source using Gunn diode
+- Avalanche Transit-time Devices | Avalanche and transit time give oscillation. | IMPATT Diode = impact ionisation avalanche transit-time diode | TRAPATT = trapped plasma mode with high efficiency | BARITT = barrier injection transit time, low noise
+- PIN & Varactor Applications | Diodes switch and tune microwave circuits. | PIN Diode = used as microwave switch and attenuator | Varactor = voltage-variable capacitance for tuning | Parametric Amplifier = low-noise amplifier using a varactor
+# Microwave Measurements & Applications
+- Power Measurement | Microwave power is measured thermally. | Bolometer = resistance changes with absorbed power | Thermistor Mount = power meter sensor | Calorimetric Method = measures heating for high power
+- VSWR & Impedance Measurement | Slotted lines find standing waves. | Slotted Line = probe samples standing wave along a line | Double Minimum Method = measures high VSWR | Network Analyser = measures S-parameters directly
+- Frequency & Attenuation Measurement | Wavemeters and substitution methods. | Cavity Wavemeter = absorption dip at resonance | Attenuation = ratio of input to output power in dB | Insertion Loss = loss when a device is inserted
+- Microwave Applications | Microwaves serve communication and sensing. | Radar = detects range using echo time, R = cτ/2 | Microwave Link = line-of-sight relay communication | Microwave Heating = dielectric heating of water molecules
+
+@ ec702-itc | EC-702(B) | Information Theory & Coding | Entropy, source coding, channel capacity, block codes, cyclic codes, convolutional codes and modern codes.
+# Information & Entropy
+- Measure of Information | Information depends on probability. | Self-information = I(x) = −log2 p(x) bits | Unit of Information = bit for log base 2 | Less Probable Events = carry more information
+- Entropy | Entropy is average information. | Entropy = H(X) = −Σ p log2 p | Maximum Entropy = log2 M for equiprobable symbols | Entropy of Binary Source = maximum 1 bit when p = 0.5
+- Joint & Conditional Entropy | Entropies describe pairs of variables. | Joint Entropy = H(X,Y) | Conditional Entropy = H(Y given X), remaining uncertainty | Chain Rule = H(X,Y) = H(X) + H(Y given X)
+- Mutual Information | Mutual information measures shared information. | Mutual Information = I(X;Y) = H(X) − H(X given Y) | Non-negativity = I(X;Y) ≥ 0 | Symmetry = I(X;Y) = I(Y;X)
+# Source Coding
+- Source Coding Theorem | Average code length is bounded by entropy. | Shannon's Source Coding Theorem = L ≥ H(X) | Code Efficiency = H/L | Redundancy = 1 − efficiency
+- Prefix Codes & Kraft Inequality | Prefix codes are instantaneously decodable. | Prefix Code = no codeword is a prefix of another | Kraft Inequality = Σ 2^(−li) ≤ 1 | Uniquely Decodable = every sequence decodes in only one way
+- Shannon-Fano & Huffman Coding | Constructive algorithms build efficient codes. | Shannon-Fano Coding = recursive splitting into equal-probability halves | Huffman Coding = merges two least probable symbols repeatedly | Optimal Code = Huffman gives minimum average length
+- Lempel-Ziv & Arithmetic Coding | Universal methods adapt to data. | Lempel-Ziv = dictionary-based coding without known statistics | Arithmetic Coding = encodes a message as a sub-interval of [0,1) | Run-length Coding = encodes repeated symbols compactly
+# Channel Capacity
+- Discrete Memoryless Channels | Channels are modelled by transition probabilities. | DMC = channel where each output depends only on current input | Channel Matrix = matrix of P(y given x) | Binary Symmetric Channel = crossover probability p for both symbols
+- Channel Capacity | Capacity is maximum mutual information. | Channel Capacity = C = max I(X;Y) over input distributions | BSC Capacity = C = 1 − H(p) | Noiseless Channel = capacity log2 M
+- Shannon-Hartley Theorem | Capacity of band-limited AWGN channel. | Shannon-Hartley = C = B log2(1 + S/N) | Shannon Limit = Eb/N0 of −1.6 dB as bandwidth → ∞ | Bandwidth-Power Trade-off = increasing B reduces required S/N
+- Channel Coding Theorem | Reliable transmission possible below capacity. | Channel Coding Theorem = error probability can be made arbitrarily small if R < C | Code Rate = R = k/n | Converse = reliable communication impossible if R > C
+# Linear Block & Cyclic Codes
+- Linear Block Codes | Codewords are linear combinations of basis vectors. | (n, k) Code = k message bits mapped to n-bit codewords | Generator Matrix = G = [I P] in systematic form | Parity Check Matrix = H with GH^T = 0
+- Syndrome Decoding & Hamming Codes | Syndromes locate errors. | Syndrome = s = rH^T; zero if no detectable error | Hamming Code = single-error-correcting code with n = 2^m − 1 | Standard Array = table used for syndrome decoding
+- Cyclic Codes | Cyclic codes are generated by polynomials. | Generator Polynomial = g(x) divides x^n − 1 | Systematic Cyclic Encoding = remainder of x^(n−k)m(x) / g(x) gives parity | Shift Register Encoder = LFSR implementation of cyclic encoding
+- BCH & Reed-Solomon Codes | Powerful cyclic codes correct multiple errors. | BCH Code = cyclic code correcting multiple random errors | Reed-Solomon Code = non-binary code correcting burst errors | Application = RS codes in CDs, QR codes and DVB
+# Convolutional & Modern Codes
+- Convolutional Encoding | Encoders have memory. | Constraint Length = K, number of shifts affecting output | Code Tree = tree representation of encoder outputs | State Diagram = encoder states and transitions
+- Viterbi Decoding | Maximum-likelihood decoding uses the trellis. | Trellis = time-indexed state diagram | Path Metric = accumulated distance along a path | Survivor Path = best path into each state retained
+- Interleaving & Concatenated Codes | Combining codes handles bursts. | Interleaver = spreads burst errors into random errors | Concatenated Code = inner and outer codes combined | Burst Error = consecutive bit errors
+- Turbo & LDPC Codes | Modern codes approach Shannon limit. | Turbo Code = parallel concatenated convolutional codes with iterative decoding | LDPC Code = low-density parity-check code decoded by belief propagation | Polar Code = capacity-achieving code used in 5G control channels
+
+@ ec801 | EC-801 | Optical Fibre Communication | Light propagation, fibre types, losses and dispersion, sources, detectors, links and WDM.
+# Optical Fibre Fundamentals
+- Optical Communication Overview | Light carries data through glass fibres. | Optical Fibre = thin glass waveguide carrying light | Advantages of OFC = huge bandwidth, low loss, EMI immunity | Optical Windows = low-loss bands near 850, 1310 and 1550 nm
+- Total Internal Reflection | Light is guided by refraction at core-cladding boundary. | Total Internal Reflection = reflection when angle exceeds critical angle | Critical Angle = sin θc = n2/n1 | Snell's Law = n1 sin θ1 = n2 sin θ2
+- Numerical Aperture & Acceptance Angle | NA measures light-gathering ability. | Numerical Aperture = NA = √(n1² − n2²) | Acceptance Angle = maximum entry angle for guided rays | Relative Index Difference = Δ = (n1 − n2)/n1
+- Modes & V-number | Fibres support modes depending on V. | V-number = V = (2πa/λ)·NA | Single-mode Condition = V < 2.405 | Number of Modes = approximately V²/2 for step-index fibre
+# Fibre Types & Transmission Characteristics
+- Step-index & Graded-index Fibres | Index profile affects dispersion. | Step-index Fibre = uniform core index with abrupt change | Graded-index Fibre = core index decreases radially, reducing modal dispersion | Single-mode Fibre = small core carrying one mode
+- Attenuation | Signal power is lost along the fibre. | Attenuation = α = (10/L) log(Pin/Pout) dB/km | Rayleigh Scattering = loss proportional to 1/λ⁴ | Absorption Loss = due to impurities such as OH ions
+- Dispersion | Pulses broaden and limit bandwidth. | Intermodal Dispersion = different modes arrive at different times | Chromatic Dispersion = different wavelengths travel at different speeds | Polarisation Mode Dispersion = differential delay of polarisation modes
+- Bending & Splicing Losses | Mechanical effects cause loss. | Macrobending = loss from large-radius bends | Microbending = loss from small random distortions | Fusion Splice = joining fibres by melting, low loss
+# Optical Sources
+- LED Sources | LEDs are simple incoherent sources. | Surface-emitting LED = emits from the surface with broad pattern | Edge-emitting LED = higher brightness and narrower spectrum | Internal Quantum Efficiency = fraction of recombinations that emit photons
+- Laser Diodes | Lasers give coherent narrow-linewidth light. | Stimulated Emission = photon triggers emission of identical photon | Population Inversion = more electrons in excited state than ground | Threshold Current = current above which lasing begins
+- Laser Types | Structures improve single-mode operation. | DFB Laser = distributed feedback laser with grating, single longitudinal mode | VCSEL = vertical-cavity surface-emitting laser | Fabry-Perot Laser = simple cavity laser with multiple modes
+- Modulation of Sources | Data is impressed on light. | Direct Modulation = varying drive current | External Modulator = e.g. Mach-Zehnder modulator for high speed | Chirp = frequency shift during modulation causing dispersion
+# Optical Detectors & Receivers
+- Photodetector Principles | Detectors convert light into current. | Responsivity = R = Ip/P0 A/W | Quantum Efficiency = electrons generated per incident photon | Cut-off Wavelength = λc = 1.24/Eg µm
+- PIN & APD Photodiodes | Two main detector types. | PIN Photodiode = intrinsic layer widens depletion region | APD = avalanche photodiode with internal gain | Excess Noise Factor = extra noise due to avalanche multiplication
+- Receiver Noise & Sensitivity | Noise limits detection. | Shot Noise = from discrete photon arrivals | Thermal Noise = from load resistor | Receiver Sensitivity = minimum power for a target BER
+- Receiver Structures | Front ends amplify the photocurrent. | Transimpedance Amplifier = converts photocurrent to voltage | High-impedance Front End = low noise but limited bandwidth | Bit Error Rate = fraction of erroneous bits, often 10^−9 target
+# Optical Links & Networks
+- Link Power Budget | Budgets ensure enough power reaches the receiver. | Power Budget = Ptx − Prx(min) ≥ total losses + margin | System Margin = extra power allowed for ageing | Splice and Connector Loss = per-joint losses included in budget
+- Rise Time Budget | Bandwidth is checked through rise times. | Rise Time Budget = system rise time is root-sum-square of components | NRZ Requirement = tsys ≤ 0.7/B | Component Rise Times = transmitter, fibre dispersion and receiver
+- WDM & Optical Amplifiers | WDM multiplies fibre capacity. | WDM = multiple wavelengths on one fibre | DWDM = dense WDM with narrow channel spacing | EDFA = erbium-doped fibre amplifier for the 1550 nm band
+- Optical Networks | Fibres form access and core networks. | SONET/SDH = synchronous optical network standards | PON = passive optical network for FTTH | OTDR = optical time domain reflectometer locating faults
+
+@ ec802-wc | EC-802(B) | Wireless Communication | Wireless channels, fading, diversity, OFDM, MIMO, multiple access and wireless standards.
+# Wireless Channel
+- Path Loss Models | Signal power drops with distance. | Free Space Model = Friis equation Pr = PtGtGrλ²/(4πd)² | Log-distance Model = path loss grows with 10n log(d) | Shadowing = log-normal variation due to obstacles
+- Multipath Fading | Multiple paths cause rapid fades. | Flat Fading = signal bandwidth smaller than coherence bandwidth | Frequency-selective Fading = bandwidth larger than coherence bandwidth | Fast Fading = channel changes within a symbol period
+- Doppler Spread & Coherence Time | Motion causes time variation. | Doppler Spread = spectral broadening due to motion | Coherence Time = Tc ≈ 0.423/fm | Slow Fading = channel constant over many symbols
+- Channel Models | Statistical models describe fading. | Rayleigh Model = no LOS, envelope Rayleigh distributed | Rician K-factor = ratio of LOS power to scattered power | Jakes Model = classical Doppler spectrum model
+# Diversity & Equalisation
+- Diversity Types | Diversity provides independent copies. | Time Diversity = repeats or interleaves over time | Frequency Diversity = sends on separated frequencies | Antenna Diversity = multiple spaced antennas
+- Combining Techniques | Diversity branches are combined. | Selection Combining = picks the strongest branch | Equal Gain Combining = co-phases and adds branches | Maximal Ratio Combining = optimal SNR weighting
+- Equalisation | Equalisers fight ISI in frequency-selective channels. | Linear Equaliser = FIR filter reversing channel | Decision Feedback Equaliser = uses past decisions to cancel ISI | MLSE = maximum-likelihood sequence estimation
+- Channel Estimation | Receivers estimate channel response. | Pilot Symbols = known symbols for channel estimation | Training Sequence = known preamble | Blind Estimation = estimation without pilots
+# OFDM & MIMO
+- OFDM Principles | OFDM divides bandwidth into orthogonal subcarriers. | OFDM = parallel orthogonal subcarriers implemented by IFFT/FFT | Subcarrier Spacing = Δf = 1/T | Cyclic Prefix = guard interval copied from symbol end to absorb delay spread
+- OFDM Issues | OFDM has practical drawbacks. | PAPR = high peak-to-average power ratio | Carrier Frequency Offset = breaks subcarrier orthogonality | SC-FDMA = lower-PAPR uplink scheme in LTE
+- MIMO Channel & Capacity | Multiple antennas multiply capacity. | MIMO Capacity = grows linearly with min(Nt, Nr) | Channel Matrix = H describing all antenna paths | Spatial Multiplexing Gain = parallel data streams
+- Space-time Coding | Coding across antennas gives diversity. | Alamouti Code = 2×1 space-time block code giving full diversity | Diversity Gain = slope improvement of BER curve | Massive MIMO = very large antenna arrays at base station
+# Multiple Access & Spread Spectrum
+- Multiple Access Techniques | Users share the spectrum. | FDMA = separate frequencies | TDMA = separate time slots | OFDMA = separate subcarrier groups
+- CDMA & Spread Spectrum | Codes separate users. | DSSS = spreads data with fast PN chips | Processing Gain = chip rate / bit rate | Power Control = equalises received power to solve near-far problem
+- Random Access | Users contend for the channel. | ALOHA = transmit anytime; max throughput 18.4% | Slotted ALOHA = transmissions in slots; max 36.8% | CSMA/CA = carrier sense with collision avoidance used in Wi-Fi
+- NOMA & Cognitive Radio | Newer access methods use spectrum efficiently. | NOMA = non-orthogonal multiple access using power domain | Cognitive Radio = senses and uses idle spectrum | Spectrum Sensing = detecting presence of primary users
+# Wireless Standards & Networks
+- Wireless LAN | IEEE 802.11 defines Wi-Fi. | 802.11ac = Wi-Fi 5 with MU-MIMO in 5 GHz | 802.11ax = Wi-Fi 6 with OFDMA | Access Point = node connecting wireless clients to the network
+- WPAN Technologies | Short-range networks connect personal devices. | Bluetooth = 2.4 GHz WPAN with frequency hopping | Zigbee = low-power mesh networking | UWB = ultra-wideband short-range high-rate radio
+- Cellular Standards | Cellular generations evolved rapidly. | LTE = 4G OFDMA-based standard | 5G NR = new radio supporting mmWave and low latency | Network Slicing = virtual networks tailored to services
+- Wireless Sensor Networks | Sensor nodes monitor environments. | WSN = network of battery-powered sensing nodes | Clustering = cluster heads aggregate data, e.g. LEACH | Energy Efficiency = key design goal for long lifetime
